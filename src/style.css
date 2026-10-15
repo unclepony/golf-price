@@ -595,3 +595,6 @@ h1 small { font-size: .55em; color: var(--muted); font-weight: 600; margin-left:
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sole-base { fill: #64748b; } :root:not([data-theme="light"]) .sole-cut { fill: #334155; } :root:not([data-theme="light"]) .sole-le { stroke: #e2e8f0; } }
 .dist-list .bar { display: block; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
 .dist-list .bar i { display: block; height: 100%; }
+.ig-more { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px 20px 4px; margin: 0; }
+.ig-more a { display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; text-decoration: none; background: var(--surface); }
+.ig-more a:hover { border-color: var(--accent); color: var(--accent); }

@@ -350,18 +350,24 @@ function priceTier(g, id) {
 }
 // 비교 인포그래픽 표: 제품을 열로, 비교 항목을 행으로
 function infographic(g, highlight, opts = {}) {
-  const ps0 = opts.ids ? rankedPicks(g).filter((pk) => opts.ids.includes(pk.id)) : rankedPicks(g);
+  // 비교 대상이 많으면(8종 초과) 전체 표 대신 실력 단계별 1위(대표 모델)만 보여 주고, 전체는 수준별 탭·실력별 페이지에서 본다
+  const hlSkill = highlight && g.picks.length > 8 ? g.picks.find((pk) => pk.id === highlight)?.skill : null;
+  if (hlSkill && !opts.ids) opts = { ...opts, ids: g.picks.filter((pk) => pk.skill === hlSkill).map((pk) => pk.id), title: `${hlSkill} ${shortTitle(g.title)}` };
+  const many = !opts.ids && g.picks.length > 8 && g.picks.some((pk) => pk.skill);
+  const reps = many ? SKILLS.map((s) => rankedPicks(g).find((pk) => pk.skill === s)).filter(Boolean) : null;
+  if (many) opts = { ...opts, title: opts.title ?? `${shortTitle(g.title)} · 실력별 대표 모델` };
+  const ps0 = reps ?? (opts.ids ? rankedPicks(g).filter((pk) => opts.ids.includes(pk.id)) : rankedPicks(g));
   const ps = opts.byPrice ? [...ps0].sort((x, y) => (priceLevel(x.id)?.n ?? 9) - (priceLevel(y.id)?.n ?? 9)) : ps0;
   const crit = g.criteria ?? [];
   const col = (pk, i) => {
     const { p, hist } = byId[pk.id];
     const image = imageOf(p.id, hist);
-    return `<th class="${pk.id === highlight ? 'hl' : ''}"><a href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : `<span class="noimg">${esc(catName[p.category] ?? '')}<small>${esc(extOf(p.id)?.store ?? '')}</small></span>`}<span class="ig-rank">${opts.byPrice ? esc(priceLevel(pk.id)?.label ?? extOf(pk.id)?.store ?? '') : `${i + 1}위`}</span><b>${esc(p.name)}</b><span class="ig-role">${esc(pk.role)}</span></a></th>`;
+    return `<th class="${pk.id === highlight ? 'hl' : ''}"><a href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : `<span class="noimg">${esc(catName[p.category] ?? '')}<small>${esc(extOf(p.id)?.store ?? '')}</small></span>`}<span class="ig-rank">${opts.byPrice ? esc(priceLevel(pk.id)?.label ?? extOf(pk.id)?.store ?? '') : reps ? `${esc(pk.skill)} 1위` : `${i + 1}위`}</span><b>${esc(p.name)}</b><span class="ig-role">${esc(pk.role)}</span></a></th>`;
   };
   const row = (icon, label, cell, cls = '') =>
     `<tr class="${cls}"><th scope="row"><span class="ig-ico">${icon}</span>${label}</th>${ps.map((pk) => `<td class="${pk.id === highlight ? 'hl' : ''}">${cell(pk)}</td>`).join('')}</tr>`;
-  return `<div class="ig-wrap"><div class="ig-head"><p class="ig-kicker">${esc(SITE_NAME)} 비교표</p><h3>${esc(opts.title ?? shortTitle(g.title))} <span>${ps.length}종 한눈에 비교</span></h3></div>
-<div class="tablewrap ig-scroll"><table class="ig"><thead><tr><th class="ig-corner"></th>${ps.map(col).join('')}</tr></thead><tbody>
+  return `<div class="ig-wrap"><div class="ig-head"><p class="ig-kicker">${esc(SITE_NAME)} 비교표</p><h3>${esc(opts.title ?? shortTitle(g.title))} <span>${reps ? `전체 ${g.picks.length}종 중 실력별 1위` : `${ps.length}종 한눈에 비교`}</span></h3></div>
+<div class="tablewrap ig-scroll"><table class="ig" style="min-width:${150 + ps.length * 150}px"><thead><tr><th class="ig-corner"></th>${ps.map(col).join('')}</tr></thead><tbody>
 ${ps.some((pk) => pk.dist) ? row('🚀', '비거리', (pk) => (pk.dist ? `<b class="ig-total">${pk.dist}<small>/10</small></b><span class="bar dist"><i style="width:${pk.dist * 10}%"></i></span>` : '-')) : ''}
 ${row('🏆', '종합 점수', (pk) => (pk.scores ? `<b class="ig-total">${avg(pk.scores).toFixed(1)}</b><span class="bar"><i style="width:${(avg(pk.scores) / 5) * 100}%"></i></span>` : '-'), 'r-total')}
 ${row('🎯', '수준', (pk) => `<span class="tierline">${pk.skill ? `<span class="skill sk-${SKILLS.indexOf(pk.skill) + 1}">${pk.skill}</span>` : skillBadge(pk.id)}${levelBadge(pk.id)}</span>`)}
@@ -372,7 +378,7 @@ ${row('👎', '약점', (pk) => `<span class="ig-minus">${esc(pk.minus ?? pk.con
 ${crit.length ? row('📊', '항목별', (pk) => (pk.scores ? `<span class="ig-crits">${crit.map((c, i) => `<span><em>${esc(c.split('·')[0])}</em>${dots(pk.scores[i])}</span>`).join('')}</span>` : '-')) : ''}
 ${row('💰', '가격대', (pk) => levelLink(pk.id, byId[pk.id].hist, '쿠팡 ›'), 'r-price')}
 </tbody></table></div>
-<p class="note">점수는 주관적 참고 점수(공식 평가 아님) · 실력 단계는 추천 대상, 가격 단계는 아이템별 가격 구간 기준 · 가격대를 누르면 쿠팡(파트너스 링크)으로 이동</p></div>`;
+${reps ? `<p class="ig-more">${skillGroups(g).map((x) => `<a href="${skillPath(g, x.skill)}"><span class="skill sk-${SKILLS.indexOf(x.skill) + 1}">${x.skill}</span> ${x.ids.length}종 전체 비교 ›</a>`).join('')}</p>` : ''}<p class="note">점수는 주관적 참고 점수(공식 평가 아님) · 실력 단계는 추천 대상, 가격 단계는 아이템별 가격 구간 기준 · 가격대를 누르면 쿠팡(파트너스 링크)으로 이동</p></div>`;
 }
 // 수준별 비교: 실력(초심자·중급·고급·프로) / 가격(저가·중가·고가·프리미엄) 탭으로 나눠 비교
 let tierSeq = 0;
