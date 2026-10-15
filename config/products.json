@@ -4715,6 +4715,750 @@
         "2번 · Alta J LE A · 2025년"
       ],
       "ref": 390000
+    },
+    {
+      "id": "mizuno-jpx923-wedge",
+      "category": "wedge",
+      "name": "미즈노 JPX923 단조 샌드웨지",
+      "query": "미즈노 JPX923 단조 샌드웨지",
+      "must": [
+        "jpx923",
+        "웨지"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 60000,
+      "max": 170000,
+      "summary": "미즈노 JPX923 단조 아이언 라인의 샌드웨지 단품입니다.",
+      "points": [
+        "가격",
+        "55° · 크롬 · NSPRO950 S"
+      ],
+      "ref": 95060
+    },
+    {
+      "id": "cleveland-cgone-wedge",
+      "category": "wedge",
+      "name": "클리브랜드 CG ONE 웨지",
+      "query": "클리브랜드 CG ONE 웨지",
+      "must": [
+        "cg one",
+        "웨지"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 90000,
+      "max": 260000,
+      "summary": "클리브랜드 CG ONE 남성 웨지입니다. 캐비티 헤드로 관용성을 높였습니다.",
+      "points": [
+        "관용성",
+        "54° · 크롬 · 트렉션 스틸 S"
+      ],
+      "ref": 144500
+    },
+    {
+      "id": "david-woody2-wedge",
+      "category": "wedge",
+      "name": "데이비드 우디 웨지2",
+      "query": "데이비드 우디 웨지2",
+      "must": [
+        "우디 웨지",
+        "웨지"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 100000,
+      "max": 300000,
+      "summary": "데이비드골프 우디 웨지2입니다. 넓은 솔로 뒤땅 실수를 줄이는 콘셉트입니다.",
+      "points": [
+        "넓은 솔",
+        "58° · 판매처 확인 · DG S200"
+      ],
+      "ref": 169000
+    },
+    {
+      "id": "cleveland-smartsole-chipper",
+      "category": "wedge",
+      "name": "클리브랜드 스마트솔 C42 치퍼",
+      "query": "클리브랜드 스마트솔 C42 치퍼",
+      "must": [
+        "스마트솔",
+        "치퍼"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 110000,
+      "max": 320000,
+      "summary": "클리브랜드 스마트솔 풀페이스 C42 치퍼입니다. 연결 상품은 여성용 카본 샤프트입니다.",
+      "points": [
+        "쉬운 칩샷",
+        "42° · 판매처 확인 · 카본 (여성용)"
+      ],
+      "ref": 180000
+    },
+    {
+      "id": "ping-bunker-wedge",
+      "category": "wedge",
+      "name": "핑 벙커 웨지 64°",
+      "query": "핑 벙커 웨지 64°",
+      "must": [
+        "벙커 웨지",
+        "핑"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 120000,
+      "max": 370000,
+      "summary": "핑 벙커 웨지(2026, 64도)입니다. 벙커 탈출에 특화된 웨지입니다.",
+      "points": [
+        "벙커 탈출",
+        "64° · 판매처 확인 · 스틸"
+      ],
+      "ref": 208000
+    },
+    {
+      "id": "ping-chip-wedge",
+      "category": "wedge",
+      "name": "핑 칩 W",
+      "query": "핑 칩 W",
+      "must": [
+        "칩",
+        "핑"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 130000,
+      "max": 390000,
+      "summary": "핑 칩 W(삼양 정품)입니다. 짧은 칩샷 전용 클럽입니다.",
+      "points": [
+        "쉬운 칩샷",
+        "칩 전용 · 판매처 확인 · 스틸"
+      ],
+      "ref": 216400
+    },
+    {
+      "id": "callaway-jaws-forged-wedge",
+      "category": "wedge",
+      "name": "캘러웨이 죠스 포지드 웨지",
+      "query": "캘러웨이 죠스 포지드 웨지",
+      "must": [
+        "죠스 포지드",
+        "웨지"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 70000,
+      "max": 200000,
+      "summary": "캘러웨이 죠스 포지드 23 웨지입니다.",
+      "points": [
+        "스핀+가격",
+        "56° · 크롬 · S"
+      ],
+      "ref": 112310
+    },
+    {
+      "id": "cleveland-rtx6-wedge",
+      "category": "wedge",
+      "name": "클리브랜드 RTX 6 집코어 웨지",
+      "query": "클리브랜드 RTX 6 집코어 웨지",
+      "must": [
+        "rtx 6",
+        "웨지"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 90000,
+      "max": 270000,
+      "summary": "클리브랜드 RTX 6 ZIPCORE 웨지(2023년)입니다.",
+      "points": [
+        "스핀",
+        "56°(MID) · 투어사틴 · DG S200"
+      ],
+      "ref": 149000
+    },
+    {
+      "id": "honma-tww5-wedge",
+      "category": "wedge",
+      "name": "혼마 투어월드 TW-W5 웨지",
+      "query": "혼마 투어월드 TW-W5 웨지",
+      "must": [
+        "tw-w5",
+        "웨지"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 100000,
+      "max": 300000,
+      "summary": "혼마 투어월드 TW-W5 남성용 웨지입니다.",
+      "points": [
+        "손맛",
+        "56-12 · 크롬 · DG S200"
+      ],
+      "ref": 165360
+    },
+    {
+      "id": "ping-glide4-wedge",
+      "category": "wedge",
+      "name": "핑 글라이드 4.0 웨지",
+      "query": "핑 글라이드 4.0 웨지",
+      "must": [
+        "glide 4.0",
+        "웨지"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 110000,
+      "max": 340000,
+      "summary": "핑 GLIDE 4.0 웨지입니다.",
+      "points": [
+        "관용성+스핀",
+        "52° · 판매처 확인 · DG S200"
+      ],
+      "ref": 190000
+    },
+    {
+      "id": "fourteen-rm4-wedge",
+      "category": "wedge",
+      "name": "포틴 RM4 단조 웨지",
+      "query": "포틴 RM4 단조 웨지",
+      "must": [
+        "rm4",
+        "웨지"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 80000,
+      "max": 250000,
+      "summary": "포틴 ALL NEW RM4 단조 웨지(성화 정품)입니다.",
+      "points": [
+        "스핀+가격",
+        "52° · 크롬 · DG"
+      ],
+      "ref": 139000
+    },
+    {
+      "id": "taylormade-hitoe5-wedge",
+      "category": "wedge",
+      "name": "테일러메이드 하이토우 5 웨지",
+      "query": "테일러메이드 하이토우 5 웨지",
+      "must": [
+        "하이토우",
+        "웨지"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 130000,
+      "max": 400000,
+      "summary": "테일러메이드 하이토우 5 웨지입니다.",
+      "points": [
+        "페이스 열기",
+        "58° · 판매처 확인 · DG S200"
+      ],
+      "ref": 220000
+    },
+    {
+      "id": "ping-s159-wedge",
+      "category": "wedge",
+      "name": "핑 S159 웨지",
+      "query": "핑 S159 웨지",
+      "must": [
+        "s159",
+        "웨지"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 150000,
+      "max": 450000,
+      "summary": "핑 S159 웨지(삼양 정품)입니다.",
+      "points": [
+        "최신 그루브",
+        "60° · 판매처 확인 · DG S200"
+      ],
+      "ref": 249270
+    },
+    {
+      "id": "pxg-0311-3x-wedge",
+      "category": "wedge",
+      "name": "PXG 0311 3X 포지드 웨지",
+      "query": "PXG 0311 3X 포지드 웨지",
+      "must": [
+        "0311",
+        "웨지"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 150000,
+      "max": 450000,
+      "summary": "PXG 0311 3X 포지드 웨지(카네 정품)입니다.",
+      "points": [
+        "손맛·정교함",
+        "50° · 크롬 · S"
+      ],
+      "ref": 248000
+    },
+    {
+      "id": "fourteen-frz-wedge",
+      "category": "wedge",
+      "name": "포틴 FRZ 웨지",
+      "query": "포틴 FRZ 웨지",
+      "must": [
+        "frz",
+        "웨지"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 190000,
+      "max": 560000,
+      "summary": "포틴 FRZ 웨지(성화 정품)입니다.",
+      "points": [
+        "스핀",
+        "60° · 크롬 · DG S200"
+      ],
+      "ref": 310000
+    },
+    {
+      "id": "mizuno-pro-t1-wedge",
+      "category": "wedge",
+      "name": "미즈노 프로 T1 웨지",
+      "query": "미즈노 프로 T1 웨지",
+      "must": [
+        "t1",
+        "웨지"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 90000,
+      "max": 270000,
+      "summary": "미즈노 프로 T1 웨지(데님코퍼)입니다.",
+      "points": [
+        "손맛",
+        "48° · 데님코퍼 · 판매처 확인"
+      ],
+      "ref": 152500
+    },
+    {
+      "id": "callaway-twoball-ten-putter",
+      "category": "putter",
+      "name": "캘러웨이 투볼 텐 S 퍼터",
+      "query": "캘러웨이 투볼 텐 S 퍼터",
+      "must": [
+        "투볼",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 110000,
+      "max": 340000,
+      "summary": "캘러웨이 투볼 텐 S 퍼터입니다.",
+      "points": [
+        "정렬 편의",
+        "말렛(투볼) · 33인치 · 투볼 정렬"
+      ],
+      "ref": 190000
+    },
+    {
+      "id": "cleveland-hbsoft2-putter",
+      "category": "putter",
+      "name": "클리브랜드 HB 소프트 2 퍼터",
+      "query": "클리브랜드 HB 소프트 2 퍼터",
+      "must": [
+        "hb 소프트",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 80000,
+      "max": 230000,
+      "summary": "클리브랜드 HB 소프트 2 퍼터(11번)입니다.",
+      "points": [
+        "가격",
+        "말렛(11번) · 34인치 · 소프트 밀드 페이스"
+      ],
+      "ref": 129000
+    },
+    {
+      "id": "odyssey-aione-twoball-putter",
+      "category": "putter",
+      "name": "오디세이 Ai-ONE 투볼 퍼터",
+      "query": "오디세이 Ai-ONE 투볼 퍼터",
+      "must": [
+        "ai-one",
+        "투볼"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 140000,
+      "max": 430000,
+      "summary": "오디세이 Ai-ONE 투볼 CH 퍼터입니다.",
+      "points": [
+        "정렬+최신 인서트",
+        "말렛(투볼) · 33인치 · Ai-ONE 인서트"
+      ],
+      "ref": 240000
+    },
+    {
+      "id": "odyssey-aidual-s2s-putter",
+      "category": "putter",
+      "name": "오디세이 Ai-DUAL S2S 퍼터",
+      "query": "오디세이 Ai-DUAL S2S 퍼터",
+      "must": [
+        "ai-dual",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 190000,
+      "max": 580000,
+      "summary": "오디세이 2026 Ai-DUAL S2S 퍼터입니다.",
+      "points": [
+        "방향 안정",
+        "말렛(7번) · 33인치 · 스퀘어 투 스퀘어"
+      ],
+      "ref": 320000
+    },
+    {
+      "id": "ping-mundy-putter",
+      "category": "putter",
+      "name": "핑 먼디 퍼터",
+      "query": "핑 먼디 퍼터",
+      "must": [
+        "mundy",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 150000,
+      "max": 450000,
+      "summary": "핑 MUNDY 말렛 퍼터(2023, 삼양 정품)입니다.",
+      "points": [
+        "안정감",
+        "말렛 · 34인치 · 핑 2023"
+      ],
+      "ref": 249000
+    },
+    {
+      "id": "ping-shea-putter",
+      "category": "putter",
+      "name": "핑 쉬어 퍼터",
+      "query": "핑 쉬어 퍼터",
+      "must": [
+        "shea",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 160000,
+      "max": 490000,
+      "summary": "핑 SHEA 미드말렛 퍼터(2023, 삼양 정품)입니다.",
+      "points": [
+        "균형",
+        "미드말렛 · 34인치 · 핑 2023"
+      ],
+      "ref": 274010
+    },
+    {
+      "id": "honma-tw747-putter",
+      "category": "putter",
+      "name": "혼마 TW747 퍼터",
+      "query": "혼마 TW747 퍼터",
+      "must": [
+        "tw747",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 120000,
+      "max": 360000,
+      "summary": "혼마 TW747 퍼터(코오롱 정품)입니다.",
+      "points": [
+        "손맛",
+        "블레이드 · 판매처 확인 · 혼마 투어월드"
+      ],
+      "ref": 200000
+    },
+    {
+      "id": "odyssey-aione-tripletrack-putter",
+      "category": "putter",
+      "name": "오디세이 Ai-ONE 트리플트랙 퍼터",
+      "query": "오디세이 Ai-ONE 트리플트랙 퍼터",
+      "must": [
+        "트리플트랙",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 180000,
+      "max": 550000,
+      "summary": "오디세이 Ai-ONE 트리플트랙 퍼터(7 DB)입니다.",
+      "points": [
+        "정렬",
+        "말렛(7 DB) · 33인치 · 트리플트랙"
+      ],
+      "ref": 304550
+    },
+    {
+      "id": "ping-anserd-putter",
+      "category": "putter",
+      "name": "핑 앤서 D 퍼터",
+      "query": "핑 앤서 D 퍼터",
+      "must": [
+        "anser d",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 170000,
+      "max": 500000,
+      "summary": "핑 ANSER D 미드블레이드 퍼터(2024, 삼양 정품)입니다.",
+      "points": [
+        "블레이드+안정",
+        "미드블레이드 · 34인치 · 핑 2024"
+      ],
+      "ref": 275000
+    },
+    {
+      "id": "mizuno-mcraft-omoi6-putter",
+      "category": "putter",
+      "name": "미즈노 M CRAFT OMOI 6 퍼터",
+      "query": "미즈노 M CRAFT OMOI 6 퍼터",
+      "must": [
+        "omoi",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 170000,
+      "max": 500000,
+      "summary": "미즈노 M CRAFT OMOI 6 퍼터입니다.",
+      "points": [
+        "손맛",
+        "미드말렛 · 판매처 확인 · 미즈노 M CRAFT"
+      ],
+      "ref": 279000
+    },
+    {
+      "id": "evnroll-er22-putter",
+      "category": "putter",
+      "name": "이븐롤 ER2.2 퍼터",
+      "query": "이븐롤 ER2.2 퍼터",
+      "must": [
+        "er2",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 220000,
+      "max": 650000,
+      "summary": "이븐롤 네오클래식 ER2.2 퍼터입니다.",
+      "points": [
+        "거리감",
+        "블레이드 · 판매처 확인 · 네오클래식 플럼버넥"
+      ],
+      "ref": 359000
+    },
+    {
+      "id": "lab-mezz1-putter",
+      "category": "putter",
+      "name": "LAB 골프 MEZZ.1 퍼터",
+      "query": "LAB 골프 MEZZ.1 퍼터",
+      "must": [
+        "mezz",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 270000,
+      "max": 810000,
+      "summary": "랩골프 LAB MEZZ.1 말렛 퍼터입니다.",
+      "points": [
+        "방향 안정",
+        "말렛 · 판매처 확인 · 제로토크(Lie Angle Balance)"
+      ],
+      "ref": 449000
+    },
+    {
+      "id": "ping-scottsdale-anser4-putter",
+      "category": "putter",
+      "name": "핑 스캇데일 앤서4 2D 퍼터",
+      "query": "핑 스캇데일 앤서4 2D 퍼터",
+      "must": [
+        "앤서4",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 210000,
+      "max": 640000,
+      "summary": "핑 스캇데일 앤서4 2D 퍼터(2025)입니다.",
+      "points": [
+        "손맛·감각",
+        "블레이드 · 33인치 · 스캇데일 2D"
+      ],
+      "ref": 358000
+    },
+    {
+      "id": "evnroll-z5s-putter",
+      "category": "putter",
+      "name": "이븐롤 제로토크 Z5S 퍼터",
+      "query": "이븐롤 제로토크 Z5S 퍼터",
+      "must": [
+        "z5s",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 460000,
+      "max": 1390000,
+      "summary": "이븐롤 제로토크 Z5S 퍼터(이븐롤코리아 정품)입니다.",
+      "points": [
+        "방향+거리감",
+        "말렛 · 33인치 · 제로토크 + 그루브 페이스"
+      ],
+      "ref": 770000
+    },
+    {
+      "id": "pxg-hellcat-putter",
+      "category": "putter",
+      "name": "PXG 헬캣 제로토크 퍼터",
+      "query": "PXG 헬캣 제로토크 퍼터",
+      "must": [
+        "hellcat",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타",
+        "커버"
+      ],
+      "min": 210000,
+      "max": 630000,
+      "summary": "PXG 헬캣 제로토크 퍼터(카네 정품)입니다.",
+      "points": [
+        "방향 안정",
+        "말렛 · 33인치 · 제로토크"
+      ],
+      "ref": 350000
     }
   ]
 }
