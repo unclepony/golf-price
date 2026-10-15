@@ -1,0 +1,14 @@
+{
+  "name": "golf-price",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "골프용품 가격 추적 정적 사이트",
+  "engines": { "node": ">=22.9" },
+  "scripts": {
+    "collect": "node --env-file-if-exists=.env src/collect.mjs",
+    "build": "node --env-file-if-exists=.env src/build.mjs",
+    "demo": "node src/demo.mjs && node src/build.mjs --demo",
+    "preview": "node src/serve.mjs"
+  }
+}
