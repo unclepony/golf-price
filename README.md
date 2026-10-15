@@ -72,3 +72,7 @@ Actions 탭 → daily-collect → Run workflow 로 첫 수집을 돌려봅니다
 - `node src/tiercheck.mjs` — 가이드별 실력·가격 단계 분포 검사
 - 상품이 3종 미만인 실력 단계는 실력별 페이지를 만들지 않고 `_redirects` 로 상위 가이드에 301 연결된다
 - 가격 수집(`src/collect.mjs`)은 쿠팡 파트너스 API 키가 있을 때만 동작한다. 매시간 일부씩 수집하고 하루 한 번 사이트를 다시 만든다 (`.github/workflows/daily.yml`)
+- `node src/audit.mjs` — 데이터 점검 목록: 초보 추천 상품의 로프트·샤프트 기준(`config/rules.json`) 위반, 출시 칸 형식 오류
+- `config/variants.json` — 초보 기준에 맞는 옵션(예: 5번 우드, 10.5° R 샤프트)으로 쿠팡 상품을 바꿀 자리. `link` 를 채우면 빌드가 기존 링크·상품 정보 대신 사용
+- `config/howto.json` — 아이템×성별×실력별 '고르는 법' 본문·FAQ·한 줄 결론 수동 지정 (실력별 페이지에 표시, FAQ 는 FAQPage 구조화 데이터)
+- 출시 칸은 `YYYY년` 또는 빈 값만 허용 (빌드가 검사, 모르는 연도는 비워 둔다)

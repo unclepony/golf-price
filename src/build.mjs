@@ -5,6 +5,7 @@
 import { rmSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText, todayKst } from './lib.mjs';
+import { beginnerIssues, releaseIssues } from './rules.mjs';
 
 const DEMO = process.argv.includes('--demo');
 const SITE_URL = (process.env.SITE_URL || 'https://golf-price.pages.dev').replace(/\/$/, '');
@@ -18,6 +19,13 @@ const PRICE_NOTE = '표시 가격은 쿠팡 파트너스 링크를 만들 때 �
 const config = loadConfig();
 const links = loadLinks();
 const picks = readJson(join(ROOT, 'config', 'picks.json'), {});
+// 초보 기준에 맞는 옵션으로 바꿀 쿠팡 상품 (config/variants.json): link 를 채우면 기존 링크·상품 정보를 대신한다
+const variants = readJson(join(ROOT, 'config', 'variants.json'), {});
+for (const [id, v] of Object.entries(variants)) {
+  if (!v?.link) continue;
+  links[id] = v.link;
+  picks[id] = { ...picks[id], title: v.title ?? picks[id]?.title, price: v.price ?? null, image: v.image ?? picks[id]?.image, rocket: !!v.rocket, checked: v.checked ?? picks[id]?.checked };
+}
 const siteConf = readJson(join(ROOT, 'config', 'site.json'), {});
 const VERIFY = [
   siteConf.googleVerification && `<meta name="google-site-verification" content="${siteConf.googleVerification}">`,
@@ -146,8 +154,8 @@ ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표�
 </div></nav>`;
 }
 
-function layout({ title, desc, path, body, recent, ld = [] }) {
-  const full = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
+function layout({ title, desc, path, body, recent, ld = [], raw = false }) {
+  const full = raw || title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
   return `<!doctype html>
 <html lang="ko">
 <head>
@@ -303,7 +311,7 @@ function buyButton(id, hist) {
   const linked = links[id] ? picks[id]?.title : hist?.latest?.title;
   return `${linked ? `<p class="linked">연결 상품: ${esc(linked)}</p>` : ''}
 <a class="btn" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 현재 가격 보기</a>
-<p class="note">위 버튼은 쿠팡 파트너스 링크입니다. ${DISCLOSURE}</p>`;
+<p class="note">위 버튼은 쿠팡 파트너스 링크입니다.</p>`;
 }
 
 function card({ p, hist, a }) {
@@ -360,6 +368,15 @@ writeText(join(OUT, 'assets', 'logo.svg'), readFileSync(join(ROOT, 'src', 'figur
 
 // ---------- 비교·추천 가이드 데이터와 타일 ----------
 const guides = readJson(join(ROOT, 'config', 'guides.json'), { guides: [] }).guides;
+for (const g of guides) for (const pk of g.picks) if (variants[pk.id]?.link && variants[pk.id].specs) pk.specs = variants[pk.id].specs;
+// 출시 칸 형식 검사: 'YYYY년' 또는 빈 값 (모르는 연도는 지어내지 않고 비워 둔다)
+{
+  const bad = guides.flatMap((g) => releaseIssues(g).map((r) => `  ${g.slug} · ${r.id}: "${r.value}"`));
+  if (bad.length) {
+    console.error(`출시 칸은 "YYYY년" 형식이거나 비워 두어야 합니다:\n${bad.join('\n')}`);
+    process.exit(1);
+  }
+}
 const byId = Object.fromEntries(entries.map((e) => [e.p.id, e]));
 const SCORE_NOTE = '점수는 제조사 공개 정보, 보도된 투어 소식, 일반적인 사용자 평가와 현재 판매가를 바탕으로 이 사이트가 매긴 주관적인 참고 점수입니다. 직접 측정한 시험 결과나 공식 평가가 아니며, 개인의 체형·스윙에 따라 체감은 다를 수 있습니다.';
 const avg = (xs) => xs.reduce((s, x) => s + x, 0) / xs.length;
@@ -402,7 +419,20 @@ const CUR_YEAR = +todayKst().slice(0, 4);
 const scoreOf = {};
 for (const g of guides) for (const pk of g.picks) if (pk.scores?.length) scoreOf[pk.id] = Math.max(scoreOf[pk.id] ?? 0, avg(pk.scores));
 // 가이드 안 상품을 종합 점수 순으로
-const rankedPicks = (g) => g.picks.filter((pk) => byId[pk.id] && sellable(pk.id)).sort((x, y) => totalScore(y) - totalScore(x));
+// 동점이면 첫 비교 항목 점수가 높은 제품, 그래도 같으면 쿠팡 판매가가 낮은 제품을 앞에 둔다
+const rankedPicks = (g) =>
+  g.picks
+    .filter((pk) => byId[pk.id] && sellable(pk.id))
+    .sort((x, y) => totalScore(y) - totalScore(x) || (y.scores?.[tieIdx(g)] ?? 0) - (x.scores?.[tieIdx(g)] ?? 0) || (shownPrice(x.id)?.won ?? 9e9) - (shownPrice(y.id)?.won ?? 9e9));
+// 동점 기준 항목: 쉬움 계열 항목(쉬움·초보 적합·관용성·정렬·가벼움)이 있으면 그것, 없으면 첫 항목
+function tieIdx(g) {
+  const c = g.criteria ?? [];
+  for (const re of [/쉬움|초보 적합/, /관용성|정렬|방향/, /가벼움/]) {
+    const i = c.findIndex((x) => re.test(x));
+    if (i >= 0) return i;
+  }
+  return 0;
+}
 // 표 안 정렬: 실력 단계 순 → 단계 안 점수 순
 const stagedPicks = (g) => [...rankedPicks(g)].sort((x, y) => skillIdx(x) - skillIdx(y) || totalScore(y) - totalScore(x));
 // 실력 단계별 대표(1위): 남녀 공용으로 끌어온 모델보다 해당 가이드 전용 모델을 우선
@@ -444,13 +474,14 @@ ${ps.some((pk) => pk.dist) ? row('', '비거리', (pk) => (pk.dist ? `<b class="
 ${row('', '편집 점수', (pk) => (pk.scores ? `<b class="ig-total">${avg(pk.scores).toFixed(1)}</b><span class="bar"><i style="width:${(avg(pk.scores) / 5) * 100}%"></i></span>` : '-'), 'r-total')}
 ${row('', '실력·가격대', (pk) => `<span class="tierline">${pk.skill ? `<span class="skill sk-${SKILLS.indexOf(pk.skill) + 1}">${pk.skill}</span>` : skillBadge(pk.id)}${levelBadge(pk.id)}</span>`)}
 ${row('', '한마디', (pk) => `<b class="ig-short">${esc(pk.short ?? pk.role)}</b>`)}
-${(g.specRows ?? []).map((label, si) => row('', esc(label.replace('연결 상품 ', '')), (pk) => `<span class="ig-spec">${esc(pk.specs?.[si] ?? '-')}</span>`)).join('')}
+${(g.specRows ?? []).map((label, si) => row('', esc(label.replace('연결 상품 ', '')), (pk) => `<span class="ig-spec">${esc(pk.specs?.[si] || '-')}</span>`)).join('')}
+${ps.some((pk) => issuesOf(g, pk).length) ? row('', '확인할 점', (pk) => issuesOf(g, pk).map((x) => `<span class="tag warn">${esc(x.msg)}</span>`).join('') || '-') : ''}
 ${row('', '강점', (pk) => `<span class="ig-plus">${esc(pk.plus ?? pk.pros?.[0] ?? '-')}</span>`)}
 ${row('', '약점', (pk) => `<span class="ig-minus">${esc(pk.minus ?? pk.cons?.[0] ?? '-')}</span>`)}
 ${crit.length ? row('', '항목별', (pk) => (pk.scores ? `<span class="ig-crits">${crit.map((c, i) => `<span><em>${esc(c.split('·')[0])}</em>${dots(pk.scores[i])}</span>`).join('')}</span>` : '-')) : ''}
-${row('', '가격', (pk) => `${levelLink(pk.id, byId[pk.id].hist, '쿠팡 ›')}${priceShort(pk.id)}`, 'r-price')}
+${row('', '가격', (pk) => `${levelBadge(pk.id)}${priceShort(pk.id)}${buyBtn(pk.id, 'btn xs')}`, 'r-price')}
 </tbody></table></div>
-${reps ? `<p class="ig-more">${skillGroups(g).map((x) => `<a href="${skillPath(g, x.skill)}"><span class="skill sk-${SKILLS.indexOf(x.skill) + 1}">${x.skill}</span> ${x.ids.length}종 전체 비교 ›</a>`).join('')}</p>` : ''}${reps ? oldModelNote(g, reps) : ''}<p class="note">점수는 주관적 참고 점수(공식 평가 아님) · 순위는 같은 실력 단계 안에서만 매깁니다 · 가격은 링크 생성 시 확인한 쿠팡 판매가로 현재 가격과 다를 수 있음 · 가격을 누르면 쿠팡(파트너스 링크)으로 이동</p></div>`;
+${reps ? `<p class="ig-more">${skillGroups(g).map((x) => `<a href="${skillPath(g, x.skill)}"><span class="skill sk-${SKILLS.indexOf(x.skill) + 1}">${x.skill}</span> ${x.ids.length}종 전체 비교 ›</a>`).join('')}</p>` : ''}${reps ? oldModelNote(g, reps) : ''}<p class="note">점수는 주관적 참고 점수(공식 평가 아님) · 순위는 같은 실력 단계 안에서만 매깁니다 · 가격은 링크 생성 시 확인한 쿠팡 판매가로 현재 가격과 다를 수 있음 · 버튼은 쿠팡 파트너스 링크</p></div>`;
 }
 // 수준별 비교: 실력(초심자·중급·고급·프로) / 가격(저가·중가·고가·프리미엄) 탭으로 나눠 비교
 let tierSeq = 0;
@@ -535,7 +566,75 @@ function criteriaBox(g) {
   const crit = g.criteria ?? [];
   if (!crit.length) return '';
   const w = Math.round(100 / crit.length);
-  return `<aside class="crit-box"><b>점수 기준</b><p>${crit.map((c) => `${esc(c)} ${w}%`).join(' · ')}를 각 5점 만점으로 매긴 뒤 평균한 <b>주관적 편집 점수</b>입니다.${g.picks.some((pk) => pk.skill) ? ' 실력 단계마다 기대하는 성능이 달라, <b>순위는 같은 실력 단계 안에서만</b> 매깁니다.' : ''} <a href="/about#score">점수 매기는 방법</a></p></aside>`;
+  return `<aside class="crit-box"><b>점수 기준</b><p>${crit.map((c) => `${esc(c)} ${w}%`).join(' · ')}를 각 5점 만점으로 매긴 뒤 평균한 <b>주관적 편집 점수</b>입니다.${g.picks.some((pk) => pk.skill) ? ' 실력 단계마다 기대하는 성능이 달라, <b>순위는 같은 실력 단계 안에서만</b> 매깁니다.' : ''} 편집 점수가 같으면 ${esc(crit[tieIdx(g)])} 점수가 높은 제품, 그래도 같으면 쿠팡 판매가가 낮은 제품을 앞 순위로 둡니다. <a href="/about#score">점수 매기는 방법</a></p></aside>`;
+}
+// 초보 기준(로프트·샤프트) 점검 결과
+const issuesOf = (g, pk) => beginnerIssues(g, pk, byId[pk.id]?.p.category, picks);
+// 구매 버튼: 쿠팡(파트너스) 또는 공식몰(제휴 아님)
+function buyBtn(id, cls = 'btn sm', label = '쿠팡에서 현재 가격 보기') {
+  const link = links[id] ?? byId[id]?.hist?.latest?.link;
+  if (link) return `<a class="${cls}" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">${esc(label)}</a>`;
+  const ext = extOf(id);
+  return ext ? `<a class="${cls} ext" href="${esc(ext.url)}" target="_blank" rel="nofollow noopener">${esc(ext.store)}에서 보기</a>` : '';
+}
+function priceRange(ids) {
+  const xs = ids.map((id) => shownPrice(id)).filter(Boolean);
+  if (!xs.length) return null;
+  const w = xs.map((x) => x.won);
+  return { min: Math.min(...w), max: Math.max(...w), d: xs.map((x) => x.d).sort().at(-1) };
+}
+// 검색에서 많이 쓰는 실력 표현
+const SKILL_WORD = { 초심자: '초보', 중급: '중급자', 고급: '상급자', 프로: '프로' };
+// 아이템×성별×실력별 '고르는 법'·FAQ·한 줄 결론 수동 지정 (config/howto.json, 키: 카테고리|성별|실력)
+const howto = readJson(join(ROOT, 'config', 'howto.json'), {});
+const howtoOf = (g, skill) => howto[`${guideCat(g)?.id}|${g.gender ?? '공용'}|${skill ?? '전체'}`];
+const faqLd = (faq) => ({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) });
+function howtoBlock(h) {
+  if (!h) return '';
+  return `${h.sections?.length ? `<section id="howto" class="prose howto"><h2>${esc(h.title ?? '고르는 법')}</h2>${h.sections.map((x) => `<h3>${esc(x.h)}</h3>${String(x.p).split('\n').map((t) => `<p>${esc(t)}</p>`).join('')}`).join('')}</section>` : ''}
+${h.faq?.length ? `<section id="faq" class="prose"><h2>자주 묻는 질문</h2>${h.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>` : ''}`;
+}
+// '쉬움'에 해당하는 비교 항목 위치
+const easyIdx = (g) => {
+  const c = g.criteria ?? [];
+  for (const re of [/쉬움|초보 적합/, /관용성|정렬|방향/, /가벼움/]) {
+    const i = c.findIndex((x) => re.test(x));
+    if (i >= 0) return i;
+  }
+  return -1;
+};
+// 한 줄 결론: 예산 기준 1개 + 쉬움(초보·중급) 또는 성능(상급·프로) 기준 1개. howto.json 의 conclusion 으로 수동 지정 가능
+function conclusionBox(g, ps, skill) {
+  if (ps.length < 2) return '';
+  const man = howtoOf(g, skill)?.conclusion ?? {};
+  const pick = (id) => ps.find((pk) => pk.id === id);
+  // 초보 기준(로프트·샤프트)에 맞지 않는 연결 상품은 결론 후보에서 뒤로 미룬다
+  const ok = ps.filter((pk) => !issuesOf(g, pk).length);
+  const pool = ok.length >= 2 ? ok : ps;
+  const sc = pool.map(totalScore).sort((a, b) => b - a);
+  const median = sc[Math.floor((sc.length - 1) / 2)];
+  const budget = pick(man.budget) ?? [...pool].filter((pk) => totalScore(pk) >= median && shownPrice(pk.id)).sort((a, b) => shownPrice(a.id).won - shownPrice(b.id).won)[0];
+  const hard = skill === '고급' || skill === '프로';
+  const ei = easyIdx(g);
+  const order = hard || ei < 0 ? pool : [...pool].sort((a, b) => (b.scores?.[ei] ?? 0) - (a.scores?.[ei] ?? 0) || totalScore(b) - totalScore(a));
+  const second = pick(man.easy) ?? order.find((pk) => pk.id !== budget?.id);
+  const card = (label, why, pk) => {
+    if (!pk) return '';
+    const p = byId[pk.id].p;
+    const image = imageOf(p.id, byId[pk.id].hist);
+    return `<div class="cc"><span class="cc-l">${esc(label)}</span><a class="cc-p" href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="" width="64" height="64" loading="lazy" decoding="async">` : ''}<span><b>${esc(p.name)}</b><small>${esc(why)}</small></span></a>${priceLine(p.id, 'cc-won')}${buyBtn(p.id, 'btn sm')}</div>`;
+  };
+  return `<section class="conclusion" aria-label="한 줄 결론"><h2>한 줄 결론</h2><div class="cc-grid">
+${card('예산 기준 추천', man.budget ? '편집자 지정' : '편집 점수 상위 절반 중 쿠팡 판매가가 가장 낮은 모델', budget)}
+${card(hard || ei < 0 ? '성능 기준 추천' : '쉬움 기준 추천', man.easy ? '편집자 지정' : hard || ei < 0 ? '이 단계 편집 점수 1위' : `${(g.criteria ?? [])[ei]} 점수가 가장 높은 모델`, second)}
+</div></section>`;
+}
+// 모바일 하단 고정: 1위 상품 가격 보기
+function stickyBuy(pk) {
+  if (!pk) return '';
+  const p = byId[pk.id].p;
+  const sp = shownPrice(p.id);
+  return `<div class="stickybuy" role="complementary" aria-label="1위 상품 바로가기"><span class="sb-t"><b>1위</b> ${esc(p.name)}${sp ? ` · ${won(sp.won)}` : ''}</span>${buyBtn(p.id, 'btn sm', '1위 상품 가격 보기')}</div>`;
 }
 // 구형 모델이 실력별 1위일 때 이유와 최신 모델 1위
 function oldModelNote(g, reps) {
@@ -663,7 +762,7 @@ for (const { p, hist, a } of entries) {
   let body, title, desc;
 
   {
-    title = `${p.name} 특징·비교${shownPrice(p.id) ? '·쿠팡 판매가' : ''}`;
+    title = `${p.name} 가격·스펙·추천 대상`;
     desc = `${p.name}: ${p.summary}`;
     const sc = scoreOf[p.id];
     const top = guidesOf(p.id).filter((g) => !g.mergeInto).map((g) => ({ g, sr: stageRank(g, p.id) }));
@@ -715,6 +814,26 @@ ${related.map((g) => `<section id="g-${g.slug}" class="cat-cmp">${related.length
 }
 
 // ---------- 비교·추천 가이드 페이지 ----------
+// 제목: "[성별] [아이템] 추천 N종 비교 (연도) | 최저가원부터" — 최저가는 페이지 상품의 쿠팡 판매가에서 계산
+function guideTitle(g, skill) {
+  const c = guideCat(g);
+  const who = g.gender && g.gender !== '공용' ? `${g.gender} ` : '';
+  const ids = skill ? skillGroups(g).find((x) => x.skill === skill)?.ids ?? [] : rankedPicks(g).map((pk) => pk.id);
+  const pr = priceRange(ids);
+  return `${who}${skill ? `${SKILL_WORD[skill]} ` : ''}${c?.name ?? ''} 추천 ${ids.length}종 비교 (${CUR_YEAR})${pr ? ` | ${won(pr.min)}부터` : ''}`;
+}
+// 메타 설명: 가격 범위 + 핵심 추천 대상
+function guideDesc(g, skill) {
+  const c = guideCat(g);
+  const who = g.gender && g.gender !== '공용' ? `${g.gender} ` : '';
+  const ps = skill ? rankedPicks(g).filter((pk) => pk.skill === skill) : rankedPicks(g);
+  const pr = priceRange(ps.map((pk) => pk.id));
+  const top = ps[0];
+  const head = `${who}${skill ? `${SKILL_WORD[skill]} ` : ''}${c?.name ?? ''} ${ps.length}종 비교`;
+  const price = pr ? ` 쿠팡 판매가 ${won(pr.min)}~${won(pr.max)}(${dayLabel(pr.d)} 확인).` : '';
+  const target = skill && top ? ` ${top.forWhom}께 맞춘 추천으로, 1위는 ${byId[top.id].p.name}.` : ` ${g.desc}`;
+  return `${head}:${price}${target}`.slice(0, 160);
+}
 for (const g of pageGuides) {
   const picksIn = stagedPicks(g);
   const crit = g.criteria ?? [];
@@ -755,17 +874,20 @@ ${crit.map((_, i) => `<td class="sc">${pk.scores ? dots(pk.scores[i]) : '-'}</td
   writeText(
     join(OUT, 'g', `${g.slug}.html`),
     layout({
-      title: `${guideName(g)}${g.title.includes(':') ? `: ${g.title.split(':').slice(1).join(':').trim()}` : ''}`,
-      desc: g.desc,
+      title: guideTitle(g),
+      raw: true,
+      desc: guideDesc(g),
       path: `/g/${g.slug}`,
       ld: [
         crumbLd([['홈', '/'], [guideCat(g)?.name ?? '', `/c/${guideCat(g)?.id}`], [guideName(g), `/g/${g.slug}`]]),
         listLd(g.title, stagedPicks(g).map((pk) => pk.id)),
+        ...(g.faq?.length ? [faqLd(g.faq)] : []),
       ],
       body: `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${guideCat(g)?.id}">${esc(guideCat(g)?.name ?? '')}</a>${g.gender && g.gender !== '공용' ? ` › ${esc(g.gender)}` : ''}</nav>
 <p class="g-kicker">${g.gender ? `<span class="gender g-${esc(g.gender)}">${esc(g.gender === '공용' ? '남녀공용' : g.gender)}</span>` : ''}${esc(guideName(g))}</p>
 <h1>${esc(g.title)}</h1>
 ${updatedTag(g.updated)}
+${skillGroups(g).length ? '' : conclusionBox(g, rankedPicks(g), null)}
 <section class="prose"><p>${esc(g.intro)}</p></section>
 ${criteriaBox(g)}
 <nav class="toc">${mergedInto(g).some((m) => m.grinds) ? '<a href="#vokey">보키 그라인드 비교</a>' : ''}<a href="#cmp">비교표</a><a href="#tiers">수준별 비교</a>${g.picks.some((pk) => pk.dist) ? '<a href="#dist">비거리 비교</a>' : ''}<a href="#scores">항목별 점수</a><a href="#models">모델별 분석</a><a href="#choose">선택 가이드</a><a href="#faq">자주 묻는 질문</a></nav>
@@ -774,7 +896,7 @@ ${skillNav(g)}<div id="tiers">${tierCompare(g)}</div>
 <div id="dist">${distCompare(g)}</div>
 <section id="scores"><h2>한눈에 비교: 항목별 점수</h2><div class="tablewrap"><table class="scores"><thead><tr><th>모델</th>${crit.map((c) => `<th>${esc(c)}</th>`).join('')}<th>종합</th><th></th></tr></thead><tbody>${scoreRows}</tbody></table></div>
 <p class="note score-note">※ ${SCORE_NOTE}</p>
-<p class="note">${DISCLOSURE}</p></section>
+</section>
 <div id="models">${cards}</div>
 <section id="choose" class="choose"><h2>선택 가이드: 이렇게 고르세요</h2>
 <div class="choose-pick">${stagedPicks(g)
@@ -786,7 +908,8 @@ ${mergedInto(g)
   .map((m) => `<section id="vokey" class="merged"><h2>${esc(m.menuName ?? shortTitle(m.title))}</h2><p class="prose">${esc(m.intro)}</p>${grindCompare(m)}<div class="prose">${m.sections.map((x) => `<h3>${esc(x.h)}</h3><p>${esc(x.p)}</p>`).join('')}</div><div class="prose">${m.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</div></section>`)
   .join('')}
 <section id="faq" class="prose"><h2>자주 묻는 질문</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>
-<section><h2>다른 비교·추천 가이드</h2>${guideGrid(pageGuides.filter((o) => o.slug !== g.slug))}</section>`,
+<section><h2>다른 비교·추천 가이드</h2>${guideGrid(pageGuides.filter((o) => o.slug !== g.slug))}</section>
+${skillGroups(g).length ? '' : stickyBuy(rankedPicks(g)[0])}`,
     }),
   );
 }
@@ -799,38 +922,43 @@ function skillNav(g, active) {
     .map((x) => `<a href="${skillPath(g, x.skill)}"${x.skill === active ? ' class="on"' : ''}><span class="skill sk-${SKILLS.indexOf(x.skill) + 1}">${x.skill}</span> ${x.ids.length}종</a>`)
     .join('')}</nav>`;
 }
-// 실력 단계별 비교 페이지: 해당 실력대 상품을 저가→프리미엄 순으로
+// 실력 단계별 비교 페이지: 해당 실력대 상품을 순위 순으로
 for (const g of pageGuides) {
   const c = guideCat(g);
   const who = g.gender && g.gender !== '공용' ? `${g.gender} ` : '';
   for (const { skill, ids } of skillGroups(g)) {
     const ps = rankedPicks(g).filter((pk) => ids.includes(pk.id));
     const levels = LEVELS.filter((l) => l && ps.some((pk) => priceLevel(pk.id)?.label === l));
-    const name = `${who}${skill}용 ${c?.name ?? ''}`;
+    const name = `${who}${SKILL_WORD[skill]} ${c?.name ?? ''}`;
+    const h = howtoOf(g, skill);
     writeText(
       join(OUT, 'g', `${g.slug}-${SKILL_EN[skill]}.html`),
       layout({
-        title: `${name} 비교 추천 ${ps.length}종`,
-        desc: `${name} ${ps.length}종을 ${levels.join('·')} 가격대별로 비교했습니다. 장단점과 주관적 편집 점수${ps.some((pk) => pk.dist) ? ', 비거리 참고 점수' : ''}, 확인 날짜를 적은 쿠팡 판매가를 함께 정리했습니다.`,
+        title: guideTitle(g, skill),
+        raw: true,
+        desc: guideDesc(g, skill),
         path: skillPath(g, skill),
         ld: [
-          crumbLd([['홈', '/'], [c?.name ?? '', `/c/${c?.id}`], [guideName(g), `/g/${g.slug}`], [`${skill}용`, skillPath(g, skill)]]),
-          listLd(`${name} 비교`, ps.map((pk) => pk.id)),
+          crumbLd([['홈', '/'], [c?.name ?? '', `/c/${c?.id}`], [guideName(g), `/g/${g.slug}`], [`${SKILL_WORD[skill]}`, skillPath(g, skill)]]),
+          listLd(`${name} 추천`, ps.map((pk) => pk.id)),
+          ...(h?.faq?.length ? [faqLd(h.faq)] : []),
         ],
-        body: `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${c?.id}">${esc(c?.name ?? '')}</a>${who ? ` › <a href="/g/${g.slug}">${esc(g.gender)}</a>` : ''} › ${esc(skill)}</nav>
+        body: `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${c?.id}">${esc(c?.name ?? '')}</a>${who ? ` › <a href="/g/${g.slug}">${esc(g.gender)}</a>` : ''} › ${esc(SKILL_WORD[skill])}</nav>
 <p class="g-kicker"><span class="skill sk-${SKILLS.indexOf(skill) + 1}">${skill}</span>${esc(guideName(g))}</p>
-<h1>${esc(name)} 비교 추천 <small>${ps.length}종 · ${esc(levels.join('·'))}</small></h1>
-${updatedTag(g.updated)}
+<h1>${esc(name)} 추천 비교 <small>${ps.length}종 · ${esc(levels.join('·'))}</small></h1>
+${updatedTag(max2(g.updated, h?.updated))}
+${conclusionBox(g, ps, skill)}
 ${criteriaBox(g)}
 ${skillNav(g, skill)}
-<section>${infographic(g, null, { ids, byPrice: true, title: `${name}` })}</section>
+<section id="cmp">${infographic(g, null, { ids, title: `${name} 순위` })}</section>
+${howtoBlock(h)}
 ${distCompare(g, ids)}
-<section class="choose"><h2>${esc(skill)}에게 맞는 선택</h2><div class="choose-pick">${ps
-          .map((pk) => `<a href="/p/${pk.id}"><span class="tierline">${levelBadge(pk.id)}<span class="badge mid">${esc(pk.role)}</span>${unisexBadge(pk)}</span><b>${esc(byId[pk.id].p.name)}</b><small>${esc(pk.forWhom)}</small><small class="vd">${esc(pk.verdict ?? '')}</small></a>`)
+<section class="choose"><h2>${esc(SKILL_WORD[skill])}에게 맞는 선택</h2><div class="choose-pick">${ps
+          .map((pk) => `<a href="/p/${pk.id}"><span class="tierline"><span class="badge good">${esc(stageRank(g, pk.id)?.label ?? '')}</span>${levelBadge(pk.id)}<span class="badge mid">${esc(pk.role)}</span>${unisexBadge(pk)}</span><b>${esc(byId[pk.id].p.name)}</b><small>${esc(pk.forWhom)}</small><small class="vd">${esc(pk.verdict ?? '')}</small></a>`)
           .join('')}</div></section>
 <p class="note score-note">※ ${SCORE_NOTE}</p>
-<p class="note">${DISCLOSURE}</p>
-<a class="more-link" href="/g/${g.slug}">${esc(guideName(g))} 전체 보기 ›</a>`,
+<a class="more-link" href="/g/${g.slug}">${esc(guideName(g))} 전체 보기 ›</a>
+${stickyBuy(ps[0])}`,
       }),
     );
   }
@@ -931,7 +1059,7 @@ writeText(
 
 ${drops.length ? `<section class="block"><div class="block-h"><h2>최근 가격 하락</h2><span>7일 전 기록보다 내린 상품</span></div>${prow(drops)}</section>` : ''}
 
-<section class="hnote"><p>${DISCLOSURE}</p><p>※ ${SCORE_NOTE}</p><p>※ ${PRICE_NOTE}</p></section>`,
+<section class="hnote"><p>※ ${SCORE_NOTE}</p><p>※ ${PRICE_NOTE}</p></section>`,
   }),
 );
 
@@ -1076,4 +1204,8 @@ writeText(
 );
 writeText(join(OUT, 'robots.txt'), DEMO ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
+{
+  const n = pageGuides.reduce((s2, g) => s2 + g.picks.filter((pk) => byId[pk.id] && issuesOf(g, pk).length).length, 0);
+  if (n) console.log(`참고: 초보 기준(로프트·샤프트)에 맞지 않는 연결 상품 ${n}개 — node src/audit.mjs 로 목록 확인, config/variants.json 으로 교체`);
+}
 console.log(`사이트 생성 완료: 상품 ${entries.length}개 (가격 기록 ${tracked.length}개, 가이드 ${entries.length - tracked.length}개) → site/${DEMO ? ' (샘플 데이터)' : ''}`);
