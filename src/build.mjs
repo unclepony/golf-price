@@ -282,7 +282,11 @@ for (const g of guides) {
 <p class="note">${DISCLOSURE}</p></section>
 ${cards}
 <section class="prose">${g.sections.map((s) => `<h2>${esc(s.h)}</h2><p>${esc(s.p)}</p>`).join('')}</section>
-<section class="prose"><h2>자주 묻는 질문</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>`,
+<section class="prose"><h2>자주 묻는 질문</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>
+<section><h2>다른 비교·추천 가이드</h2><ul class="guides">${guides
+        .filter((o) => o.slug !== g.slug)
+        .map((o) => `<li><a href="/g/${o.slug}"><b>${esc(o.title)}</b></a></li>`)
+        .join('')}</ul></section>`,
     }),
   );
 }
