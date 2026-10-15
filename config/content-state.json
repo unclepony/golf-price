@@ -1,0 +1,1210 @@
+{
+  "_설명": "build.mjs 가 관리한다. pages: 주소별 본문 지문(h)과 콘텐츠 업데이트일(d). pending: IndexNow 로 보낼 주소(콘텐츠가 바뀐·새로 생긴·삭제된 페이지). 직접 고치지 않는다.",
+  "pages": {
+    "/p/taylormade-qi35-driver": {
+      "h": "8619c8e0a7d2bdf1",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-elyte-driver": {
+      "h": "bcc1defe58fda1bc",
+      "d": "2026-10-16"
+    },
+    "/p/ping-g440-driver": {
+      "h": "511dd899e302226e",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-gt2-driver": {
+      "h": "17b3d6e3c83c694a",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-p790-iron": {
+      "h": "09ce225fa04e5d12",
+      "d": "2026-10-16"
+    },
+    "/p/ping-g440-iron": {
+      "h": "695a55f094d0ca5f",
+      "d": "2026-10-16"
+    },
+    "/p/odyssey-ai-one-putter": {
+      "h": "008cbfe4cadfa26e",
+      "d": "2026-10-16"
+    },
+    "/p/ping-anser-2-putter": {
+      "h": "9b7e1ed0c0c719bc",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-pro-v1": {
+      "h": "a738a3254972aa20",
+      "d": "2026-10-16"
+    },
+    "/p/srixon-z-star": {
+      "h": "555d40e376b83d3e",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-chrome-soft": {
+      "h": "3e2a71d32f94893b",
+      "d": "2026-10-16"
+    },
+    "/p/bushnell-pro-x3": {
+      "h": "f7514ab13d3aeecf",
+      "d": "2026-10-16"
+    },
+    "/p/voicecaddie-sl3": {
+      "h": "285cea8528dfb81b",
+      "d": "2026-10-16"
+    },
+    "/p/footjoy-pro-sl": {
+      "h": "8d451ab8d4daaa08",
+      "d": "2026-10-16"
+    },
+    "/p/ping-gle4-women-driver": {
+      "h": "4471585f652653a6",
+      "d": "2026-10-16"
+    },
+    "/p/xxio14-women-driver": {
+      "h": "517c3c02ed49b7df",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-spider-tour-x-putter": {
+      "h": "196a284b5949ff94",
+      "d": "2026-10-16"
+    },
+    "/p/ecco-biom-c4-shoes": {
+      "h": "792d4278dac53370",
+      "d": "2026-10-16"
+    },
+    "/p/adidas-codechaos-shoes": {
+      "h": "8d5ec1e66270ea04",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-elyte-maxfast-women-driver": {
+      "h": "5f9d4e1fe8bfa00e",
+      "d": "2026-10-16"
+    },
+    "/p/ping-fetch-putter": {
+      "h": "a7aff43d36285940",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-tp5-ball": {
+      "h": "d9f4155a076e0678",
+      "d": "2026-10-16"
+    },
+    "/p/nikon-coolshot-pro3": {
+      "h": "266ef292a027683b",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi35-maxlite-women-driver": {
+      "h": "85c402b75fc49477",
+      "d": "2026-10-16"
+    },
+    "/p/bushnell-tour-v6-shift": {
+      "h": "86bef4a36a87c627",
+      "d": "2026-10-16"
+    },
+    "/p/footjoy-premiere-packard-shoes": {
+      "h": "a09d977274a76193",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-t100-iron": {
+      "h": "60a935bd0ad5bdd8",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-jpx925-forged-iron": {
+      "h": "0764f253932e8982",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-elyte-iron": {
+      "h": "1213604d51c07a7a",
+      "d": "2026-10-16"
+    },
+    "/p/cleveland-rtz-wedge": {
+      "h": "25c7446c1193790d",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-opus-sp-wedge": {
+      "h": "acff64ee956de789",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-mg4-wedge": {
+      "h": "de0dfb64851f9a67",
+      "d": "2026-10-16"
+    },
+    "/p/ping-s259-wedge": {
+      "h": "d6fc5ced15ee6086",
+      "d": "2026-10-16"
+    },
+    "/p/ping-g440-max-fairway": {
+      "h": "77bc57a577a0df6b",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi35-fairway": {
+      "h": "3bc76856f41aad11",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-elyte-fairway": {
+      "h": "de3228713add42ee",
+      "d": "2026-10-16"
+    },
+    "/p/cobra-optm-x-fairway": {
+      "h": "e921ef7df5a3330d",
+      "d": "2026-10-16"
+    },
+    "/p/ping-g440-hybrid": {
+      "h": "47d47a8f66308496",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi35-rescue": {
+      "h": "f3f6383fce4c83b6",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-elyte-hybrid": {
+      "h": "3c1709bf5ec0e218",
+      "d": "2026-10-16"
+    },
+    "/p/cobra-optm-hybrid": {
+      "h": "fd7d61a2b57aa929",
+      "d": "2026-10-16"
+    },
+    "/p/garmin-approach-s70": {
+      "h": "d9c0a828be17cb17",
+      "d": "2026-10-16"
+    },
+    "/p/garmin-approach-s50": {
+      "h": "f5da9f3d9b082e88",
+      "d": "2026-10-16"
+    },
+    "/p/voicecaddie-t13-pro": {
+      "h": "eaec88ffdfe6f1c7",
+      "d": "2026-10-16"
+    },
+    "/p/golfbuddy-aim-w12": {
+      "h": "009293deffa46d80",
+      "d": "2026-10-16"
+    },
+    "/p/garmin-approach-r10": {
+      "h": "f56c64be0d09dcba",
+      "d": "2026-10-16"
+    },
+    "/p/voicecaddie-sc4-pro": {
+      "h": "7d354f14378a1792",
+      "d": "2026-10-16"
+    },
+    "/p/blacktee-shot5": {
+      "h": "daec015b585ef0c8",
+      "d": "2026-10-16"
+    },
+    "/p/rapsodo-mlm2pro": {
+      "h": "dfeaa6c8bde0f561",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-players5-carbon-stand": {
+      "h": "ecebdddb1a0a5d69",
+      "d": "2026-10-16"
+    },
+    "/p/sunmountain-h2no-stand": {
+      "h": "57789961b32961c7",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-cart14-bag": {
+      "h": "b958318e2f1683ab",
+      "d": "2026-10-16"
+    },
+    "/p/ping-sporty-lt-bag": {
+      "h": "d7c51f7bf5e7a62c",
+      "d": "2026-10-16"
+    },
+    "/p/footjoy-pure-touch-glove": {
+      "h": "b5c7dea5b48a2c98",
+      "d": "2026-10-16"
+    },
+    "/p/footjoy-stasof-glove": {
+      "h": "beaabfd4da1a2987",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-players-glove": {
+      "h": "435a69e6c862cb7e",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-permasoft-glove": {
+      "h": "a001a214c0e17d8e",
+      "d": "2026-10-16"
+    },
+    "/p/orange-whip-trainer": {
+      "h": "45f408d1492e76a7",
+      "d": "2026-10-16"
+    },
+    "/p/zeroputt-digital-putting": {
+      "h": "af20f1947c1eec76",
+      "d": "2026-10-16"
+    },
+    "/p/swingimpact-swingcaddie": {
+      "h": "99cfd046a9612fbf",
+      "d": "2026-10-16"
+    },
+    "/p/pistop-topswing-trainer": {
+      "h": "f4262cb77a23f837",
+      "d": "2026-10-16"
+    },
+    "/p/xxio14-women-iron": {
+      "h": "d90b6852417a7823",
+      "d": "2026-10-16"
+    },
+    "/p/ping-gle4-women-iron": {
+      "h": "f9473ce171a42e13",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-elyte-maxfast-women-iron": {
+      "h": "f2c32af520e77d3e",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi-maxlite-women-iron": {
+      "h": "d97e82beab07da1f",
+      "d": "2026-10-16"
+    },
+    "/p/footjoy-pulse-boa-women-shoes": {
+      "h": "a3c56fa3b9983f51",
+      "d": "2026-10-16"
+    },
+    "/p/footjoy-flow2-boa-women-shoes": {
+      "h": "d7ae65d7ea556fa7",
+      "d": "2026-10-16"
+    },
+    "/p/ecco-goretex-women-shoes": {
+      "h": "24a28ca70345b5d3",
+      "d": "2026-10-16"
+    },
+    "/p/adidas-adipower-sl-women-shoes": {
+      "h": "2018587fb05bf316",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-gts2-driver": {
+      "h": "9f2c306aff6fd49d",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-gts2-fairway": {
+      "h": "5065f9e11b6d9f43",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-gt2-hybrid": {
+      "h": "e74d9050ac98231a",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-620mb-iron": {
+      "h": "c0e9991d218fb3ce",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-vokey-sm11": {
+      "h": "90f31063c31cad84",
+      "d": "2026-10-16"
+    },
+    "/p/scotty-cameron-phantom-2026": {
+      "h": "07874fb9a8042975",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-sim2max-driver": {
+      "h": "4637433713d2f7be",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi10max-driver": {
+      "h": "a8f1eace93d6f1c1",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi35max-driver": {
+      "h": "c0adaa84e34e9989",
+      "d": "2026-10-16"
+    },
+    "/p/majesty-prestigio13-driver": {
+      "h": "414fca1581a0ec7c",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-paradym-driver": {
+      "h": "6521396d4d84d2a8",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-quantum-tdmax-driver": {
+      "h": "79d8b869ea55c8f1",
+      "d": "2026-10-16"
+    },
+    "/p/xxio14plus-driver": {
+      "h": "78e767767e97f6da",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi35ls-driver": {
+      "h": "eae33a99fe96374f",
+      "d": "2026-10-16"
+    },
+    "/p/ping-g440lst-driver": {
+      "h": "b76b640406d2c4c2",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi4d-driver": {
+      "h": "6acf806551df49c4",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-gt3-driver": {
+      "h": "de52125b57988040",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-gts3-driver": {
+      "h": "605f7418b4d49ab5",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-quantum-td-driver": {
+      "h": "53e3b0e9abb02893",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi4dls-driver": {
+      "h": "a74a1c3d2b6a0fa0",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi10ls-driver": {
+      "h": "12cc45c07b073f70",
+      "d": "2026-10-16"
+    },
+    "/p/prgr-sweep-women-driver": {
+      "h": "2ba53a295fb9e17a",
+      "d": "2026-10-16"
+    },
+    "/p/honma-nx-women-driver": {
+      "h": "ef1cad6e86df4e7b",
+      "d": "2026-10-16"
+    },
+    "/p/majesty-shuttle-women-driver": {
+      "h": "743ce3d0b0874812",
+      "d": "2026-10-16"
+    },
+    "/p/ping-g440hl-women-driver": {
+      "h": "1c3c5aef73545e80",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-sim2max-women-driver": {
+      "h": "775efe0ea26eca28",
+      "d": "2026-10-16"
+    },
+    "/p/ping-gle3-women-driver": {
+      "h": "26281c8cb9577b58",
+      "d": "2026-10-16"
+    },
+    "/p/onoff-lp425-women-driver": {
+      "h": "518bc7c88b686ec9",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-roguest-women-driver": {
+      "h": "4a416e5ae619ace3",
+      "d": "2026-10-16"
+    },
+    "/p/honma-aizu-women-driver": {
+      "h": "ff096506541e779a",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-quantum-maxfast-women-driver": {
+      "h": "3ff172ad9a7ec8b6",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi4d-maxlite-women-driver": {
+      "h": "a315364ccc69c212",
+      "d": "2026-10-16"
+    },
+    "/p/ping-g440max-women-driver": {
+      "h": "f54f6b1a2cd10450",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-tsi1-driver": {
+      "h": "7ec0863954af13b9",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-vokey-sm8": {
+      "h": "286effd146ea7326",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-sim2max-iron": {
+      "h": "32f1d4140572fb6d",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi-iron": {
+      "h": "f1244fdd1b183426",
+      "d": "2026-10-16"
+    },
+    "/p/ping-g430-iron": {
+      "h": "8d2a5623f045d969",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-jpx925-hmpro-iron": {
+      "h": "6b7e4845d56a966c",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-xforged-starplus-iron": {
+      "h": "742b11858552ffc2",
+      "d": "2026-10-16"
+    },
+    "/p/bridgestone-v300-iron": {
+      "h": "f53cf1f16707bd55",
+      "d": "2026-10-16"
+    },
+    "/p/xxio13-iron": {
+      "h": "9ee2049fd644345a",
+      "d": "2026-10-16"
+    },
+    "/p/ping-i525-iron": {
+      "h": "5599e26b27e8d40d",
+      "d": "2026-10-16"
+    },
+    "/p/srixon-zxi5-iron": {
+      "h": "da9b62561290cbff",
+      "d": "2026-10-16"
+    },
+    "/p/titleist-t250-iron": {
+      "h": "2fca766e20da18dd",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-xforged-max-iron": {
+      "h": "b8a75da724d2cd11",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-pro-s1-iron": {
+      "h": "7aa3e0fc28b7acf0",
+      "d": "2026-10-16"
+    },
+    "/p/srixon-zxi7-iron": {
+      "h": "4e15a3c5db213fd3",
+      "d": "2026-10-16"
+    },
+    "/p/bridgestone-242cb-iron": {
+      "h": "48b7443b8fb94e89",
+      "d": "2026-10-16"
+    },
+    "/p/missile-axg-women-iron": {
+      "h": "f4422d1ad9b335fa",
+      "d": "2026-10-16"
+    },
+    "/p/prgr-sweep-women-iron": {
+      "h": "60ad630db4e1ad26",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-roguest-women-iron": {
+      "h": "0d9da92ad128f7fd",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-sim2max-women-iron": {
+      "h": "d63aef6c4436614e",
+      "d": "2026-10-16"
+    },
+    "/p/majesty-shuttle-women-iron": {
+      "h": "9b0a08c9e2f4c096",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-jpxq-women-iron": {
+      "h": "54bcd42528367a40",
+      "d": "2026-10-16"
+    },
+    "/p/ping-gle3-women-iron": {
+      "h": "62afde32ace507a3",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-jpxs30-women-iron": {
+      "h": "2b5af8c39b3e5146",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-jpx925f-women-iron": {
+      "h": "5001c6aa1f0addbd",
+      "d": "2026-10-16"
+    },
+    "/p/bridgestone-v300-women-iron": {
+      "h": "1dca0a8bc6391c28",
+      "d": "2026-10-16"
+    },
+    "/p/honma-aizu-women-iron": {
+      "h": "1d94ba7d6f93b688",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-p790-women-iron": {
+      "h": "2606ec27f4c28d2b",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-p8cb-women-iron": {
+      "h": "b64b5e190f1b9474",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-jpxs40-women-iron": {
+      "h": "b873fe5caa8bacee",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-sim2max-fairway": {
+      "h": "02b682cde4221d8f",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-stmax230-fairway": {
+      "h": "8a19cf3b5f664aeb",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi10-fairway": {
+      "h": "b064a44a15536272",
+      "d": "2026-10-16"
+    },
+    "/p/majesty-royalgold-fairway": {
+      "h": "5078c925a94eb747",
+      "d": "2026-10-16"
+    },
+    "/p/xxio12-fairway": {
+      "h": "7ccb71890e8925c2",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-jpxone-fairway": {
+      "h": "097830eef1ea02a1",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-quantummax-fairway": {
+      "h": "e419ed55b62bcac4",
+      "d": "2026-10-16"
+    },
+    "/p/xxio14-fairway": {
+      "h": "6c167885f149e54f",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi4dmax-fairway": {
+      "h": "7b4c98cd920e1d44",
+      "d": "2026-10-16"
+    },
+    "/p/srixon-zxi-fairway": {
+      "h": "8ac6d5a9f990879a",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-roguest-fairway": {
+      "h": "a94ce7d2c331feab",
+      "d": "2026-10-16"
+    },
+    "/p/ping-g430lst-fairway": {
+      "h": "968aa4aaf7b4a2a6",
+      "d": "2026-10-16"
+    },
+    "/p/honma-tw757-fairway": {
+      "h": "01accda5c0003679",
+      "d": "2026-10-16"
+    },
+    "/p/srixon-zxmk2-fairway": {
+      "h": "6413bc1582092988",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-stz230-fairway": {
+      "h": "e6d3c29cbaec67a2",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-roguest-hybrid": {
+      "h": "32850203713ad785",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-stmax230-hybrid": {
+      "h": "9fd715d76fba1a01",
+      "d": "2026-10-16"
+    },
+    "/p/majesty-royalgold-hybrid": {
+      "h": "f7ba004502bf5488",
+      "d": "2026-10-16"
+    },
+    "/p/ping-g430-hybrid": {
+      "h": "0f4d09215c1483fe",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi10-rescue": {
+      "h": "e3ee5385c8042584",
+      "d": "2026-10-16"
+    },
+    "/p/honma-beres-hybrid": {
+      "h": "c698c128c6710b68",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-jpxone-hybrid": {
+      "h": "dec578d27725fb22",
+      "d": "2026-10-16"
+    },
+    "/p/xxio14-hybrid": {
+      "h": "7b63338bc35158f4",
+      "d": "2026-10-16"
+    },
+    "/p/srixon-zxi-hybrid": {
+      "h": "5a7bf1e0985febfb",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-quantummax-hybrid": {
+      "h": "eb22c33a1dd649d6",
+      "d": "2026-10-16"
+    },
+    "/p/xxio13x-hybrid": {
+      "h": "dd234647317d981f",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-stz230-hybrid": {
+      "h": "f530f47f3bcb4d28",
+      "d": "2026-10-16"
+    },
+    "/p/srixon-zxhmk2-hybrid": {
+      "h": "addc75bf286d4eb7",
+      "d": "2026-10-16"
+    },
+    "/p/honma-tw757-hybrid": {
+      "h": "e23ba3176484ec6d",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-epic-superhybrid": {
+      "h": "765c1859108e58c0",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-jpxq-women-fairway": {
+      "h": "3126cf2c5f15015f",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-sim2maxd-women-fairway": {
+      "h": "18f45a8dc8d8d1fc",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-roguest-women-fairway": {
+      "h": "ee035920c38f0152",
+      "d": "2026-10-16"
+    },
+    "/p/xxio13-women-fairway": {
+      "h": "6478157ce2b27fa8",
+      "d": "2026-10-16"
+    },
+    "/p/majesty-royal-women-fairway": {
+      "h": "242d9494d58a0a67",
+      "d": "2026-10-16"
+    },
+    "/p/honma-nx-women-fairway": {
+      "h": "275e7dcc7e09686b",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi35maxlite-women-fairway": {
+      "h": "35c72ed86d47f8a3",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-elyte-women-fairway": {
+      "h": "18b53e1736fa8bc5",
+      "d": "2026-10-16"
+    },
+    "/p/honma-aizu-women-fairway": {
+      "h": "3bb958c1e39b4402",
+      "d": "2026-10-16"
+    },
+    "/p/ping-gle3-women-fairway": {
+      "h": "eddc235b6a82d464",
+      "d": "2026-10-16"
+    },
+    "/p/honma-kiwami6-women-fairway": {
+      "h": "4e15232640ba622d",
+      "d": "2026-10-16"
+    },
+    "/p/ping-gle4-women-fairway": {
+      "h": "a80949f8ba6d5bac",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-jpxq2-women-fairway": {
+      "h": "f016311d7caad36a",
+      "d": "2026-10-16"
+    },
+    "/p/xxio14-women-fairway": {
+      "h": "431ef729341505c6",
+      "d": "2026-10-16"
+    },
+    "/p/onoff-lp423-women-fairway": {
+      "h": "528f02d4db2eee6d",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi4d-women-fairway": {
+      "h": "03bded2b4f0cb5fa",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-gbb-women-fairway": {
+      "h": "20fb684bb03be3c5",
+      "d": "2026-10-16"
+    },
+    "/p/missile-axg-women-hybrid": {
+      "h": "41535a6132426462",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-jpxq-women-hybrid": {
+      "h": "6e289a118ee6214d",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-roguest-women-hybrid": {
+      "h": "463b531257e3fb14",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-qi35maxlite-women-hybrid": {
+      "h": "b7c7eeb5e40f44f1",
+      "d": "2026-10-16"
+    },
+    "/p/majesty-sterna-women-hybrid": {
+      "h": "ee22281702c586fb",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-elyte-women-hybrid": {
+      "h": "2a3dbc2c0d7ff7eb",
+      "d": "2026-10-16"
+    },
+    "/p/honma-aizu-women-hybrid": {
+      "h": "a781487223d6e547",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-jpxq2-women-hybrid": {
+      "h": "b6f889265b401faa",
+      "d": "2026-10-16"
+    },
+    "/p/ping-gle4-women-hybrid": {
+      "h": "7488de20bed24cd4",
+      "d": "2026-10-16"
+    },
+    "/p/xxio13-women-hybrid": {
+      "h": "958ca3e54f50902e",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-quantum-women-hybrid": {
+      "h": "dd2b19223079ed54",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-gloire-women-rescue": {
+      "h": "64a63fc025fafbe1",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-stealth-women-rescue": {
+      "h": "27653533aad1e10f",
+      "d": "2026-10-16"
+    },
+    "/p/xxio14-women-hybrid": {
+      "h": "d8aa8c10a8a73fd0",
+      "d": "2026-10-16"
+    },
+    "/p/honma-bezeal3-women-hybrid": {
+      "h": "5718d6081297472d",
+      "d": "2026-10-16"
+    },
+    "/p/ping-g440-women-hybrid": {
+      "h": "139a2b429e573034",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-jpx923-wedge": {
+      "h": "5ceb505cdff53c25",
+      "d": "2026-10-16"
+    },
+    "/p/cleveland-cgone-wedge": {
+      "h": "08622c343bf4e9ad",
+      "d": "2026-10-16"
+    },
+    "/p/david-woody2-wedge": {
+      "h": "e9a25f989a1d93ac",
+      "d": "2026-10-16"
+    },
+    "/p/cleveland-smartsole-chipper": {
+      "h": "f8223af5e3741d1f",
+      "d": "2026-10-16"
+    },
+    "/p/ping-bunker-wedge": {
+      "h": "3eff68449a889067",
+      "d": "2026-10-16"
+    },
+    "/p/ping-chip-wedge": {
+      "h": "209cb7e69a656a8b",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-jaws-forged-wedge": {
+      "h": "f71abe6d79c78a0c",
+      "d": "2026-10-16"
+    },
+    "/p/cleveland-rtx6-wedge": {
+      "h": "472449cc74c9397c",
+      "d": "2026-10-16"
+    },
+    "/p/honma-tww5-wedge": {
+      "h": "6630c515e8023fb1",
+      "d": "2026-10-16"
+    },
+    "/p/ping-glide4-wedge": {
+      "h": "e924bb65819743bf",
+      "d": "2026-10-16"
+    },
+    "/p/fourteen-rm4-wedge": {
+      "h": "467472af7ce9d6c9",
+      "d": "2026-10-16"
+    },
+    "/p/taylormade-hitoe5-wedge": {
+      "h": "fc8b352d880be728",
+      "d": "2026-10-16"
+    },
+    "/p/ping-s159-wedge": {
+      "h": "05a283891eb75ebc",
+      "d": "2026-10-16"
+    },
+    "/p/pxg-0311-3x-wedge": {
+      "h": "deb517b0bf2bd8b9",
+      "d": "2026-10-16"
+    },
+    "/p/fourteen-frz-wedge": {
+      "h": "c81fadb3cb5cff21",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-pro-t1-wedge": {
+      "h": "f59c8290b11761f3",
+      "d": "2026-10-16"
+    },
+    "/p/callaway-twoball-ten-putter": {
+      "h": "6d2a32823a92626a",
+      "d": "2026-10-16"
+    },
+    "/p/cleveland-hbsoft2-putter": {
+      "h": "2fb7e55d54ef7fbf",
+      "d": "2026-10-16"
+    },
+    "/p/odyssey-aione-twoball-putter": {
+      "h": "dfc8e4bd43f08a26",
+      "d": "2026-10-16"
+    },
+    "/p/odyssey-aidual-s2s-putter": {
+      "h": "97a2ba7fcd8e46e1",
+      "d": "2026-10-16"
+    },
+    "/p/ping-mundy-putter": {
+      "h": "312ffe7c068c77af",
+      "d": "2026-10-16"
+    },
+    "/p/ping-shea-putter": {
+      "h": "c8c730a725e5cbdb",
+      "d": "2026-10-16"
+    },
+    "/p/honma-tw747-putter": {
+      "h": "2b047b9ba2174cf2",
+      "d": "2026-10-16"
+    },
+    "/p/odyssey-aione-tripletrack-putter": {
+      "h": "55003b163f8fb661",
+      "d": "2026-10-16"
+    },
+    "/p/ping-anserd-putter": {
+      "h": "3ad0f733d4246ffd",
+      "d": "2026-10-16"
+    },
+    "/p/mizuno-mcraft-omoi6-putter": {
+      "h": "a8aaade678b950f2",
+      "d": "2026-10-16"
+    },
+    "/p/evnroll-er22-putter": {
+      "h": "bc3f1828b4376d3f",
+      "d": "2026-10-16"
+    },
+    "/p/lab-mezz1-putter": {
+      "h": "f9fae7a6a26c1c99",
+      "d": "2026-10-16"
+    },
+    "/p/ping-scottsdale-anser4-putter": {
+      "h": "d70b18072b9cefd8",
+      "d": "2026-10-16"
+    },
+    "/p/evnroll-z5s-putter": {
+      "h": "485bedef3c402069",
+      "d": "2026-10-16"
+    },
+    "/p/pxg-hellcat-putter": {
+      "h": "defdd543dd27942c",
+      "d": "2026-10-16"
+    },
+    "/c/driver": {
+      "h": "3902ce29f3c70241",
+      "d": "2026-10-16"
+    },
+    "/c/wood": {
+      "h": "4e2e5812f9b830df",
+      "d": "2026-10-16"
+    },
+    "/c/utility": {
+      "h": "24563b3757d1b990",
+      "d": "2026-10-16"
+    },
+    "/c/iron": {
+      "h": "5280b7de2bcf7646",
+      "d": "2026-10-16"
+    },
+    "/c/wedge": {
+      "h": "61ea71a6d04d4b6c",
+      "d": "2026-10-16"
+    },
+    "/c/putter": {
+      "h": "c1fe58927912aba2",
+      "d": "2026-10-16"
+    },
+    "/c/ball": {
+      "h": "b9662b083e818991",
+      "d": "2026-10-16"
+    },
+    "/c/rangefinder": {
+      "h": "d554ab526548f1e5",
+      "d": "2026-10-16"
+    },
+    "/c/gps": {
+      "h": "1b7111bc496e39d9",
+      "d": "2026-10-16"
+    },
+    "/c/launch": {
+      "h": "6f6cca677a8240d5",
+      "d": "2026-10-16"
+    },
+    "/c/shoes": {
+      "h": "3d7d7f4cca0d401f",
+      "d": "2026-10-16"
+    },
+    "/c/bag": {
+      "h": "6300485cb613ff28",
+      "d": "2026-10-16"
+    },
+    "/c/glove": {
+      "h": "9a03a140afd09d47",
+      "d": "2026-10-16"
+    },
+    "/c/practice": {
+      "h": "4714696037539e79",
+      "d": "2026-10-16"
+    },
+    "/g/driver-recommend-2026": {
+      "h": "552f5871434a3998",
+      "d": "2026-10-16"
+    },
+    "/g/fairway-wood-recommend": {
+      "h": "59e66a0ee3b8b747",
+      "d": "2026-10-16"
+    },
+    "/g/utility-recommend": {
+      "h": "6af3a5fe2f076208",
+      "d": "2026-10-16"
+    },
+    "/g/womens-fairway-wood-recommend": {
+      "h": "97d8bea489125173",
+      "d": "2026-10-16"
+    },
+    "/g/iron-recommend": {
+      "h": "abb5ef0088bf6b6b",
+      "d": "2026-10-16"
+    },
+    "/g/womens-utility-recommend": {
+      "h": "019f85c3d1eed9e4",
+      "d": "2026-10-16"
+    },
+    "/g/wedge-recommend": {
+      "h": "d214c08344530a59",
+      "d": "2026-10-16"
+    },
+    "/g/golf-ball-compare": {
+      "h": "cb6fa83f71b862b6",
+      "d": "2026-10-16"
+    },
+    "/g/rangefinder-recommend": {
+      "h": "fbc02bd70db9e3a1",
+      "d": "2026-10-16"
+    },
+    "/g/womens-driver-recommend": {
+      "h": "78186b606cac3b51",
+      "d": "2026-10-16"
+    },
+    "/g/putter-recommend": {
+      "h": "ca12728de3905aad",
+      "d": "2026-10-16"
+    },
+    "/g/golf-shoes-recommend": {
+      "h": "956491fb08931594",
+      "d": "2026-10-16"
+    },
+    "/g/golf-watch-recommend": {
+      "h": "ecab8441b1f00a3b",
+      "d": "2026-10-16"
+    },
+    "/g/launch-monitor-recommend": {
+      "h": "d8baec38c7e2c3b8",
+      "d": "2026-10-16"
+    },
+    "/g/golf-bag-recommend": {
+      "h": "8febaeb646656765",
+      "d": "2026-10-16"
+    },
+    "/g/golf-glove-recommend": {
+      "h": "aa973ce3b0247e4d",
+      "d": "2026-10-16"
+    },
+    "/g/practice-gear-recommend": {
+      "h": "ead2c07f149edb38",
+      "d": "2026-10-16"
+    },
+    "/g/womens-iron-recommend": {
+      "h": "8356d169dc2d6ec7",
+      "d": "2026-10-16"
+    },
+    "/g/womens-shoes-recommend": {
+      "h": "acc58dcf5578ede4",
+      "d": "2026-10-16"
+    },
+    "/g/driver-recommend-2026-beginner": {
+      "h": "bb8bbd5236ec369e",
+      "d": "2026-10-16"
+    },
+    "/g/driver-recommend-2026-intermediate": {
+      "h": "e2bb00f980443caa",
+      "d": "2026-10-16"
+    },
+    "/g/driver-recommend-2026-advanced": {
+      "h": "ecae912b951fe53b",
+      "d": "2026-10-16"
+    },
+    "/g/driver-recommend-2026-pro": {
+      "h": "32836ec69384d65c",
+      "d": "2026-10-16"
+    },
+    "/g/fairway-wood-recommend-beginner": {
+      "h": "581cc3a43e91916e",
+      "d": "2026-10-16"
+    },
+    "/g/fairway-wood-recommend-intermediate": {
+      "h": "6bd0588ac8791d82",
+      "d": "2026-10-16"
+    },
+    "/g/fairway-wood-recommend-advanced": {
+      "h": "d2ffa447dfc39b17",
+      "d": "2026-10-16"
+    },
+    "/g/fairway-wood-recommend-pro": {
+      "h": "d0b120d8d83e6ffa",
+      "d": "2026-10-16"
+    },
+    "/g/utility-recommend-beginner": {
+      "h": "04a7d9b5941c2eca",
+      "d": "2026-10-16"
+    },
+    "/g/utility-recommend-intermediate": {
+      "h": "eeafdcb8b364d4ef",
+      "d": "2026-10-16"
+    },
+    "/g/utility-recommend-advanced": {
+      "h": "c1c083eab8afd1f4",
+      "d": "2026-10-16"
+    },
+    "/g/utility-recommend-pro": {
+      "h": "0da93213aa73f773",
+      "d": "2026-10-16"
+    },
+    "/g/womens-fairway-wood-recommend-beginner": {
+      "h": "6ab64687d0ac8d09",
+      "d": "2026-10-16"
+    },
+    "/g/womens-fairway-wood-recommend-intermediate": {
+      "h": "5622a3461a63a0be",
+      "d": "2026-10-16"
+    },
+    "/g/womens-fairway-wood-recommend-advanced": {
+      "h": "9deb2c9940cdeb23",
+      "d": "2026-10-16"
+    },
+    "/g/womens-fairway-wood-recommend-pro": {
+      "h": "a117261223ead644",
+      "d": "2026-10-16"
+    },
+    "/g/iron-recommend-beginner": {
+      "h": "af6b598dcd9a7685",
+      "d": "2026-10-16"
+    },
+    "/g/iron-recommend-intermediate": {
+      "h": "6578d9c9cc3c9eba",
+      "d": "2026-10-16"
+    },
+    "/g/iron-recommend-advanced": {
+      "h": "6d174cce84d62555",
+      "d": "2026-10-16"
+    },
+    "/g/iron-recommend-pro": {
+      "h": "abc51f85057b1bd7",
+      "d": "2026-10-16"
+    },
+    "/g/womens-utility-recommend-beginner": {
+      "h": "26d18515be9b906d",
+      "d": "2026-10-16"
+    },
+    "/g/womens-utility-recommend-intermediate": {
+      "h": "2274604f8b360045",
+      "d": "2026-10-16"
+    },
+    "/g/womens-utility-recommend-advanced": {
+      "h": "fc089acfc50c77af",
+      "d": "2026-10-16"
+    },
+    "/g/womens-utility-recommend-pro": {
+      "h": "8357acc931eb17a6",
+      "d": "2026-10-16"
+    },
+    "/g/wedge-recommend-beginner": {
+      "h": "b02321fa2266a097",
+      "d": "2026-10-16"
+    },
+    "/g/wedge-recommend-intermediate": {
+      "h": "66d07d8d210e499d",
+      "d": "2026-10-16"
+    },
+    "/g/wedge-recommend-advanced": {
+      "h": "2d3b0d5cf23c762d",
+      "d": "2026-10-16"
+    },
+    "/g/wedge-recommend-pro": {
+      "h": "3f922548924c65f7",
+      "d": "2026-10-16"
+    },
+    "/g/womens-driver-recommend-beginner": {
+      "h": "0877742e88ea3369",
+      "d": "2026-10-16"
+    },
+    "/g/womens-driver-recommend-intermediate": {
+      "h": "44373e74ee3a34f1",
+      "d": "2026-10-16"
+    },
+    "/g/womens-driver-recommend-advanced": {
+      "h": "1a38baee5fa1e553",
+      "d": "2026-10-16"
+    },
+    "/g/womens-driver-recommend-pro": {
+      "h": "d8c59a0446189468",
+      "d": "2026-10-16"
+    },
+    "/g/putter-recommend-beginner": {
+      "h": "14057f9bdb80871c",
+      "d": "2026-10-16"
+    },
+    "/g/putter-recommend-intermediate": {
+      "h": "da0e24eb710bada8",
+      "d": "2026-10-16"
+    },
+    "/g/putter-recommend-advanced": {
+      "h": "42116c449b513652",
+      "d": "2026-10-16"
+    },
+    "/g/putter-recommend-pro": {
+      "h": "a3fbc5a8ac42668a",
+      "d": "2026-10-16"
+    },
+    "/g/womens-iron-recommend-beginner": {
+      "h": "e6be439859cd33e2",
+      "d": "2026-10-16"
+    },
+    "/g/womens-iron-recommend-intermediate": {
+      "h": "bf0f44a5a9763e9e",
+      "d": "2026-10-16"
+    },
+    "/g/womens-iron-recommend-advanced": {
+      "h": "9019242465c8dc17",
+      "d": "2026-10-16"
+    },
+    "/g/womens-iron-recommend-pro": {
+      "h": "0c4b895cb2834aef",
+      "d": "2026-10-16"
+    },
+    "/": {
+      "h": "4fe6c8da97975301",
+      "d": "2026-10-16"
+    },
+    "/about": {
+      "h": "b1c41cfcb274c6d0",
+      "d": "2026-10-16"
+    }
+  },
+  "pending": []
+}

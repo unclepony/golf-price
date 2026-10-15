@@ -13,5 +13,6 @@
     "_설명": "운영 안내(/about) 페이지의 운영자 소개와 문의처. 채우면 표시되고 비어 있으면 숨겨진다. operator 는 줄바꿈(\n)으로 문단을 나눈다.",
     "operator": "",
     "contact": ""
-  }
+  },
+  "indexNowKey": "36b2cd2193416b8382bf8da8bc2a5adc"
 }

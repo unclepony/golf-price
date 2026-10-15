@@ -2,9 +2,10 @@
 // 가격 기록이 없는 상품은 구매 가이드 페이지로, 있는 상품은 가격 추이 페이지로 만든다.
 // 사용: node src/build.mjs        → 실제 데이터 (data/)
 //       node src/build.mjs --demo → 샘플 데이터 (data-demo/)
-import { rmSync, readFileSync } from 'node:fs';
+import { rmSync, readFileSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { join } from 'node:path';
-import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText, todayKst } from './lib.mjs';
+import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText as rawWrite, todayKst } from './lib.mjs';
 import { beginnerIssues, releaseIssues } from './rules.mjs';
 
 const DEMO = process.argv.includes('--demo');
@@ -15,6 +16,56 @@ const LOGO_SVG = readFileSync(join(ROOT, 'src', 'figures', 'logo.svg'), 'utf8').
 const OUT = join(ROOT, 'site');
 const DISCLOSURE = '이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.';
 const PRICE_NOTE = '표시 가격은 쿠팡 파트너스 링크를 만들 때 확인한 쿠팡 판매가이며 확인 날짜를 함께 적었습니다. 옵션(샤프트, 사이즈 등)과 시점에 따라 현재 판매가와 다를 수 있습니다. 쿠팡 파트너스 API 승인 뒤에는 하루 한 번 최저가를 자동 기록해 가격 추이와 역대 최저가를 보여 드립니다.';
+
+// ---------- 콘텐츠 업데이트일 (가격 확인일과 분리) ----------
+// 페이지 <main> 본문에서 가격·날짜를 뺀 내용의 지문(hash)을 config/content-state.json 에 저장하고,
+// 지문이 바뀐 페이지만 '마지막 업데이트'와 sitemap lastmod 를 갱신하며 IndexNow 대기열(pending)에 넣는다.
+// 가격만 바뀐 페이지는 지문이 같아서 날짜가 바뀌지 않는다.
+const STATE_FILE = join(ROOT, 'config', 'content-state.json');
+const prevState = readJson(STATE_FILE, null);
+const SEEDING = !prevState; // 처음 만들 때는 기존 updated 값을 씨앗으로 쓰고 전송 대기열은 비워 둔다
+const state = { _설명: 'build.mjs 가 관리한다. pages: 주소별 본문 지문(h)과 콘텐츠 업데이트일(d). pending: IndexNow 로 보낼 주소(콘텐츠가 바뀐·새로 생긴·삭제된 페이지). 직접 고치지 않는다.', pages: {}, pending: prevState?.pending ?? [] };
+const pageDates = {};
+const TODAY = todayKst();
+function contentKey(html) {
+  const a = html.indexOf('<main');
+  const b = html.indexOf('</main>');
+  const main = (a >= 0 && b > a ? html.slice(a, b) : html)
+    .replace(/"pr":\d+,"pd":"[^"]*"/g, '')
+    .replace(/<p class="updated"[\s\S]*?<\/p>/g, '')
+    // 가격 기록에서 나오는 부분(판단 문구·그래프·통계·가격 하락 목록)은 가격만 바뀌어도 달라지므로 뺀다
+    .replace(/<p class="verdict[\s\S]*?<\/p>/g, '')
+    .replace(/<svg class="chart"[\s\S]*?<\/svg>/g, '')
+    .replace(/<section class="stats">[\s\S]*?<\/section>/g, '')
+    .replace(/<section class="block drops">[\s\S]*?<\/section>/g, '')
+    .replace(/\(\d+일 기록/g, '(# 기록')
+    .replace(/[+-]?\d+(?:\.\d+)?%/g, '#%')
+    .replace(/[\d,]+원/g, '#원')
+    .replace(/\d+월 \d+일/g, '#')
+    .replace(/\d+\.\d+ 확인/g, '# 확인')
+    .replace(/ stale/g, '')
+    .replace(/ · 오래된 가격/g, '');
+  return createHash('sha1').update(main).digest('hex').slice(0, 16);
+}
+function writeText(path, text) {
+  if (!path.endsWith('.html') || DEMO) return rawWrite(path, text);
+  const canon = (text.match(/<link rel="canonical" href="([^"]*)">/) ?? [])[1];
+  const url = canon?.startsWith(SITE_URL) ? canon.slice(SITE_URL.length) || '/' : null;
+  if (!url || /<meta name="robots" content="noindex">/.test(text)) return rawWrite(path, text.replaceAll('%%UPD%%', TODAY).replaceAll('%%UPDL%%', TODAY.replaceAll('-', '.')));
+  const h = contentKey(text);
+  const old = prevState?.pages?.[url];
+  const seed = (text.match(/data-seed="(\d{4}-\d\d-\d\d)"/) ?? [])[1];
+  let d;
+  if (old && old.h === h) d = old.d;
+  else if (SEEDING) d = seed ?? TODAY;
+  else {
+    d = TODAY;
+    state.pending.push({ url, kind: old ? 'updated' : 'new', d });
+  }
+  state.pages[url] = { h, d };
+  pageDates[url] = d;
+  rawWrite(path, text.replaceAll('%%UPD%%', d).replaceAll('%%UPDL%%', d.replaceAll('-', '.')));
+}
 
 const config = loadConfig();
 const links = loadLinks();
@@ -203,7 +254,8 @@ const listLd = (name, ids) => ({
   itemListElement: ids.map((id, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE_URL}/p/${id}`, name: config.products.find((p) => p.id === id)?.name })),
 });
 const ymd = (d) => (d ? d.replaceAll('-', '.') : '');
-const updatedTag = (d) => (d ? `<p class="updated">마지막 업데이트 <time datetime="${d}">${ymd(d)}</time></p>` : '');
+// 날짜는 페이지를 쓸 때 본문 지문으로 정한다 (d 는 처음 기록할 때의 씨앗)
+const updatedTag = (d) => `<p class="updated"${d ? ` data-seed="${d}"` : ''}>마지막 업데이트 <time datetime="%%UPD%%">%%UPDL%%</time></p>`;
 const max2 = (...ds) => ds.filter(Boolean).sort().at(-1);
 const imageOf = (id, hist) => hist?.latest?.image ?? picks[id]?.image;
 // 확인일 기준 쿠팡 판매가 (API 가격 기록이 있으면 그 값을 우선)
@@ -423,7 +475,7 @@ for (const g of guides) for (const pk of g.picks) if (pk.scores?.length) scoreOf
 const rankedPicks = (g) =>
   g.picks
     .filter((pk) => byId[pk.id] && sellable(pk.id))
-    .sort((x, y) => totalScore(y) - totalScore(x) || (y.scores?.[tieIdx(g)] ?? 0) - (x.scores?.[tieIdx(g)] ?? 0) || (shownPrice(x.id)?.won ?? 9e9) - (shownPrice(y.id)?.won ?? 9e9));
+    .sort((x, y) => totalScore(y) - totalScore(x) || (y.scores?.[tieIdx(g)] ?? 0) - (x.scores?.[tieIdx(g)] ?? 0) || (pickPrice(x.id) ?? 9e9) - (pickPrice(y.id) ?? 9e9));
 // 동점 기준 항목: 쉬움 계열 항목(쉬움·초보 적합·관용성·정렬·가벼움)이 있으면 그것, 없으면 첫 항목
 function tieIdx(g) {
   const c = g.criteria ?? [];
@@ -577,6 +629,12 @@ function buyBtn(id, cls = 'btn sm', label = '쿠팡에서 현재 가격 보기')
   const ext = extOf(id);
   return ext ? `<a class="${cls} ext" href="${esc(ext.url)}" target="_blank" rel="nofollow noopener">${esc(ext.store)}에서 보기</a>` : '';
 }
+// 제목용 가격 표기: 정확한 금액 대신 'N만원대' (기준가 기준이라 매일 바뀌지 않는다)
+const manwonBand = (n) => (n >= 1e6 ? `${Math.floor(n / 1e5) * 10}만원대` : `${Math.floor(n / 1e4)}만원대`);
+function baseMin(ids) {
+  const xs = ids.map((id) => pickPrice(id)).filter(Boolean);
+  return xs.length ? Math.min(...xs) : null;
+}
 function priceRange(ids) {
   const xs = ids.map((id) => shownPrice(id)).filter(Boolean);
   if (!xs.length) return null;
@@ -613,7 +671,7 @@ function conclusionBox(g, ps, skill) {
   const pool = ok.length >= 2 ? ok : ps;
   const sc = pool.map(totalScore).sort((a, b) => b - a);
   const median = sc[Math.floor((sc.length - 1) / 2)];
-  const budget = pick(man.budget) ?? [...pool].filter((pk) => totalScore(pk) >= median && shownPrice(pk.id)).sort((a, b) => shownPrice(a.id).won - shownPrice(b.id).won)[0];
+  const budget = pick(man.budget) ?? [...pool].filter((pk) => totalScore(pk) >= median && pickPrice(pk.id)).sort((a, b) => pickPrice(a.id) - pickPrice(b.id))[0];
   const hard = skill === '고급' || skill === '프로';
   const ei = easyIdx(g);
   const order = hard || ei < 0 ? pool : [...pool].sort((a, b) => (b.scores?.[ei] ?? 0) - (a.scores?.[ei] ?? 0) || totalScore(b) - totalScore(a));
@@ -772,7 +830,7 @@ ${gallery(p, hist)}
 <div class="pd-info">
 <span class="pt-cat">${esc(cat.name)}</span>
 <h1>${esc(p.name)}</h1>
-${updatedTag(max2(p.updated, a?.last.d))}
+${updatedTag(p.updated)}
 <div class="pt-badges">${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, sr }) => (sr ? `<span class="tag rank">${esc(guideName(g).replace(' 비교 및 선택 가이드', ''))} ${esc(sr.label)}</span>` : '')).join('')}${sellable(p.id) ? '' : '<span class="tag none">쿠팡 판매처 없음</span>'}</div>
 <div class="pd-price">${priceLine(p.id, 'pd-won')}${priceLevel(p.id) ? `<span>가격대 <small>(${esc(cat.name)} 비교 기준)</small></span>${levelLink(p.id, hist, '쿠팡에서 현재 가격 보기 ›')}` : ''}</div>
 <p class="pd-sum">${esc(p.summary)}</p>
@@ -819,8 +877,8 @@ function guideTitle(g, skill) {
   const c = guideCat(g);
   const who = g.gender && g.gender !== '공용' ? `${g.gender} ` : '';
   const ids = skill ? skillGroups(g).find((x) => x.skill === skill)?.ids ?? [] : rankedPicks(g).map((pk) => pk.id);
-  const pr = priceRange(ids);
-  return `${who}${skill ? `${SKILL_WORD[skill]} ` : ''}${c?.name ?? ''} 추천 ${ids.length}종 비교 (${CUR_YEAR})${pr ? ` | ${won(pr.min)}부터` : ''}`;
+  const bm = baseMin(ids);
+  return `${who}${skill ? `${SKILL_WORD[skill]} ` : ''}${c?.name ?? ''} 추천 ${ids.length}종 비교 (${CUR_YEAR})${bm ? ` | ${manwonBand(bm)}부터` : ''}`;
 }
 // 메타 설명: 가격 범위 + 핵심 추천 대상
 function guideDesc(g, skill) {
@@ -1057,7 +1115,7 @@ writeText(
 <section class="block" id="guides"><div class="block-h"><h2>대표 비교 가이드</h2><span>실력 단계별 5종씩 비교</span></div>${guideGrid(featured)}
 <details class="allguides"><summary>모든 비교 가이드 보기 (${pageGuides.length}개)</summary><ul>${pageGuides.map((g) => `<li><a href="/g/${g.slug}">${esc(guideName(g))}</a> <small>${rankedPicks(g).length}종</small></li>`).join('')}</ul></details></section>
 
-${drops.length ? `<section class="block"><div class="block-h"><h2>최근 가격 하락</h2><span>7일 전 기록보다 내린 상품</span></div>${prow(drops)}</section>` : ''}
+${drops.length ? `<section class="block drops"><div class="block-h"><h2>최근 가격 하락</h2><span>7일 전 기록보다 내린 상품</span></div>${prow(drops)}</section>` : ''}
 
 <section class="hnote"><p>※ ${SCORE_NOTE}</p><p>※ ${PRICE_NOTE}</p></section>`,
   }),
@@ -1147,7 +1205,8 @@ ${ABOUT.operator ? `<section class="prose" id="operator"><h2>운영자 소개</h
 <h2>업데이트 주기</h2>
 <ul>
 <li>가이드와 상품 정보: 신모델 출시나 판매처 변경이 있을 때 고치며, 각 페이지 상단에 '마지막 업데이트' 날짜를 적습니다.</li>
-<li>가격: API 승인 뒤 매일 자동 기록, 사이트는 하루 한 번 다시 만들어집니다.</li>
+<li>가격: API 승인 뒤 매일 자동 기록, 사이트는 하루 한 번 다시 만들어집니다. 가격만 바뀐 경우에는 '마지막 업데이트' 날짜를 바꾸지 않습니다.</li>
+<li>가격대 단계와 동점 순위에 쓰는 기준가는 가격이 10% 이상 변했을 때나 주 1회 정기 재계산 때만 바뀌어, 순위가 매일 흔들리지 않습니다.</li>
 </ul>
 </section>
 <section class="prose" id="ad">
@@ -1164,9 +1223,7 @@ const REDIRECTS = [
   ...pageGuides.flatMap((g) => SKILLS.filter((sk) => g.picks.some((pk) => pk.skill === sk) && !skillGroups(g).some((x) => x.skill === sk)).map((sk) => `${skillPath(g, sk)} /g/${g.slug} 301`)),
   ...guides.filter((g) => g.mergeInto).map((g) => `/g/${g.slug} /g/${g.mergeInto}#vokey 301`),
 ];
-writeText(
-  join(OUT, '_redirects'),
-  [
+const STATIC_REDIRECTS = [
     '/c/set / 301',
     '/g/beginner-full-set / 301',
     '/g/budget-golf-ball /c/ball 301',
@@ -1182,24 +1239,51 @@ writeText(
     '/p/nike-infinity-g-shoes /c/shoes 301',
     '/p/voicecaddie-laser-fit2 /c/rangefinder 301',
     '/p/scotty-cameron-phantom-putter /c/putter 301',
-    ...REDIRECTS,
-  ].join('\n') + '\n',
-);
+];
+rawWrite(join(OUT, '_redirects'), [...STATIC_REDIRECTS, ...REDIRECTS].join('\n') + '\n');
 
 // ---------- 검색엔진용 파일 ----------
-const gMax = max2(...pageGuides.map((g) => g.updated));
+// 사이트맵 lastmod = 콘텐츠 업데이트일 (가격만 바뀐 날은 반영하지 않는다)
 const urls = [
-  ['/', max2(gMax, updated)],
-  ['/about', BUILD_DAY],
-  ...pageGuides.map((g) => [`/g/${g.slug}`, g.updated]),
-  ...pageGuides.flatMap((g) => skillGroups(g).map((x) => [skillPath(g, x.skill), g.updated])),
-  ...cats.map((c) => [`/c/${c.id}`, max2(...guidesFor(c.id).map((g) => g.updated))]),
-  ...entries.map((e) => [`/p/${e.p.id}`, max2(e.p.updated, e.a?.last.d)]),
-];
-writeText(
+  '/',
+  '/about',
+  ...pageGuides.map((g) => `/g/${g.slug}`),
+  ...pageGuides.flatMap((g) => skillGroups(g).map((x) => skillPath(g, x.skill))),
+  ...cats.map((c) => `/c/${c.id}`),
+  ...entries.map((e) => `/p/${e.p.id}`),
+].map((u) => [u, pageDates[u] ?? TODAY]);
+
+// URL 보호: 한 번 공개한 주소(config/url-manifest.json)가 사라지면 경고하고, _redirects 에 301 이 없으면 빌드를 멈춘다
+if (!DEMO) {
+  const MANIFEST = join(ROOT, 'config', 'url-manifest.json');
+  const known = readJson(MANIFEST, null);
+  const now = new Set(urls.map(([u]) => u));
+  const redirectFrom = new Map([...STATIC_REDIRECTS, ...REDIRECTS].map((l) => l.split(/\s+/)).map(([f, t, c]) => [f, { t, c }]));
+  // 한 번이라도 공개한 주소 중 지금 없는 것은 모두 301 이 있어야 한다. 경고는 직전 빌드 이후 새로 사라진 주소만
+  const gone = (known?.urls ?? []).filter((u) => !now.has(u));
+  const missing = gone.filter((u) => redirectFrom.get(u)?.c !== '301');
+  const newlyGone = (known?.live ?? []).filter((u) => !now.has(u));
+  if (newlyGone.length) console.warn(`경고: 직전 빌드에 있던 주소 ${newlyGone.length}개가 사라졌습니다.\n${newlyGone.map((u) => `  ${u} → ${redirectFrom.get(u)?.t ?? '(리다이렉트 없음)'}`).join('\n')}`);
+  if (missing.length) {
+    console.error(`빌드 중단: 사라진 주소에 301 리다이렉트가 없습니다. _redirects 규칙을 추가하세요.\n${missing.map((u) => '  ' + u).join('\n')}`);
+    process.exit(1);
+  }
+  // 삭제된 페이지도 IndexNow 로 알린다
+  for (const u of Object.keys(prevState?.pages ?? {})) if (!state.pages[u] && !SEEDING) state.pending.push({ url: u, kind: 'removed', d: TODAY });
+  const all = [...new Set([...(known?.urls ?? []), ...now, ...(known ? [] : [...redirectFrom.keys()])])].sort();
+  writeFileSync(MANIFEST, JSON.stringify({ _설명: 'build.mjs 가 관리. urls: 한 번이라도 공개한 주소(사라지면 _redirects 에 301 이 있어야 빌드 통과), live: 직전 빌드의 주소(새로 사라진 주소 경고용).', urls: all, live: [...now].sort() }, null, 2) + '\n');
+  // 같은 주소가 여러 번 쌓이지 않게 정리
+  const seen = new Set();
+  state.pending = state.pending.reverse().filter((x) => !seen.has(x.url) && seen.add(x.url)).reverse();
+  writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n');
+  if (state.pending.length) console.log(`IndexNow 대기열: ${state.pending.length}개 (node src/indexnow.mjs 로 전송)`);
+}
+// IndexNow 키 파일
+if (SITE.indexNowKey && !DEMO) rawWrite(join(OUT, `${SITE.indexNowKey}.txt`), SITE.indexNowKey);
+rawWrite(
   join(OUT, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
-    .map(([u, d]) => `<url><loc>${SITE_URL}${u}</loc><lastmod>${d ?? updated}</lastmod></url>`)
+    .map(([u, d]) => `<url><loc>${SITE_URL}${u}</loc><lastmod>${d}</lastmod></url>`)
     .join('\n')}\n</urlset>\n`,
 );
 writeText(join(OUT, 'robots.txt'), DEMO ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);

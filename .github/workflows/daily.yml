@@ -1,8 +1,11 @@
-# 매시간 가격을 일부씩 수집해 data/ 에 쌓고, 하루 한 번만 사이트를 다시 만든다.
+# 매시간 가격을 일부씩 수집해 data/ 에 쌓고, 하루 한 번(한국 시간 23시)만 사이트를 다시 만든다.
 # - 쿠팡 API 호출 한도 때문에 한 번에 COUPANG_MAX_PER_RUN 개씩(기본 9개) 나눠 수집한다. 오늘 이미 수집한 상품은 건너뛴다.
-# - 매시간 커밋에는 [skip ci] 를 붙여 Cloudflare Pages 빌드를 건너뛰고(무료 빌드 한도 보호),
-#   한국 시간 23시 실행에서만 일반 커밋(필요하면 빈 커밋)을 올려 하루 한 번 사이트를 다시 만든다.
-# - 쿠팡 API 키(Secrets)가 없으면 수집 없이 끝나고, 23시의 하루 한 번 재빌드만 한다(가격 확인 날짜 표시 갱신).
+# - 매시간 커밋에는 [skip ci] 를 붙여 Cloudflare Pages 빌드를 건너뛴다(무료 빌드 한도 보호).
+# - 23시 실행:
+#   1) 기준가 재계산 (평소: 10% 이상 변동만, 월요일: 주간 정기 재계산) — 순위·제목이 매일 흔들리지 않게
+#   2) 빌드로 콘텐츠 지문 갱신 (가격만 바뀐 페이지는 '마지막 업데이트'·sitemap lastmod 가 바뀌지 않음) + URL 보호 검사
+#   3) 일반 커밋으로 Cloudflare 배포 → 5분 뒤 IndexNow 전송 (콘텐츠가 바뀐·새·삭제된 페이지만)
+# - 쿠팡 API 키(Secrets)가 없으면 수집 없이 지나가고, 23시의 하루 한 번 갱신만 한다.
 name: daily-collect
 
 on:
@@ -30,18 +33,41 @@ jobs:
           COUPANG_ACCESS_KEY: ${{ secrets.COUPANG_ACCESS_KEY }}
           COUPANG_SECRET_KEY: ${{ secrets.COUPANG_SECRET_KEY }}
         run: node src/collect.mjs
-      - name: 수집 결과 커밋
+      - name: 커밋 준비
         run: |
           git config user.name "golf-price-bot"
           git config user.email "golf-price-bot@users.noreply.github.com"
+          echo "HOUR=$(TZ=Asia/Seoul date +%H)" >> "$GITHUB_ENV"
+          echo "DAY=$(TZ=Asia/Seoul date +%F)" >> "$GITHUB_ENV"
+          echo "DOW=$(TZ=Asia/Seoul date +%u)" >> "$GITHUB_ENV"
+      - name: 매시간 수집 결과 커밋 (빌드 없음)
+        if: env.HOUR != '23'
+        run: |
           mkdir -p data
           git add data
-          HOUR=$(TZ=Asia/Seoul date +%H)
-          DAY=$(TZ=Asia/Seoul date +%F)
-          if [ "$HOUR" = "23" ]; then
-            git commit --allow-empty -m "가격 수집 $DAY (하루 1회 사이트 갱신)"
-          else
-            git diff --cached --quiet || git commit -m "가격 수집 $DAY ${HOUR}시 [skip ci]"
-          fi
+          git diff --cached --quiet || git commit -m "가격 수집 $DAY ${HOUR}시 [skip ci]"
+          git pull --rebase
+          git push
+      - name: 하루 1회 기준가·콘텐츠 날짜 갱신 후 배포
+        if: env.HOUR == '23'
+        env:
+          SITE_URL: https://golf-price.pages.dev
+        run: |
+          if [ "$DOW" = "1" ]; then node src/rebaseline.mjs --weekly; else node src/rebaseline.mjs; fi
+          node src/build.mjs
+          mkdir -p data
+          git add data config
+          git commit --allow-empty -m "가격 수집 $DAY (하루 1회 사이트 갱신)"
+          git pull --rebase
+          git push
+      - name: IndexNow 전송 (콘텐츠가 바뀐 페이지만)
+        if: env.HOUR == '23'
+        env:
+          SITE_URL: https://golf-price.pages.dev
+        run: |
+          sleep 300
+          node src/indexnow.mjs
+          git add config/content-state.json
+          git diff --cached --quiet || git commit -m "IndexNow 전송 $DAY [skip ci]"
           git pull --rebase
           git push

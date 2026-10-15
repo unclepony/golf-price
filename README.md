@@ -76,3 +76,4 @@ Actions 탭 → daily-collect → Run workflow 로 첫 수집을 돌려봅니다
 - `config/variants.json` — 초보 기준에 맞는 옵션(예: 5번 우드, 10.5° R 샤프트)으로 쿠팡 상품을 바꿀 자리. `link` 를 채우면 빌드가 기존 링크·상품 정보 대신 사용
 - `config/howto.json` — 아이템×성별×실력별 '고르는 법' 본문·FAQ·한 줄 결론 수동 지정 (실력별 페이지에 표시, FAQ 는 FAQPage 구조화 데이터)
 - 출시 칸은 `YYYY년` 또는 빈 값만 허용 (빌드가 검사, 모르는 연도는 비워 둔다)
+- 검색 순위 보호 원칙: 가격 확인일과 콘텐츠 업데이트일 분리(`config/content-state.json`, 본문 지문), 제목 가격은 'N만원대부터', 기준가는 10% 이상 변동·주 1회만 갱신(`src/rebaseline.mjs`), IndexNow 는 콘텐츠가 바뀐·새·삭제된 페이지만(`src/indexnow.mjs`), 공개했던 주소가 사라지면 301 필수(`config/url-manifest.json`, 없으면 빌드 실패)
