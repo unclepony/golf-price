@@ -100,7 +100,7 @@ const SEARCH_ICON = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden
 function catIcon(c) {
   const e = entries.find((x) => x.p.category === c.id);
   const src = e && imageOf(e.p.id, e.hist);
-  return src ? `<img src="${esc(src)}" alt="" loading="lazy">` : '<span>⛳</span>';
+  return src ? `<img src="${esc(src)}" alt="" loading="lazy">` : `<span>${esc(c.name.slice(0, 1))}</span>`;
 }
 function header() {
   const catLinks = cats
@@ -116,8 +116,8 @@ ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표�
 <div class="suggest" id="suggest" hidden></div>
 </form>
 <div class="hd-icons">
-<button type="button" class="hd-ico" id="recentBtn"><span class="hd-ico-i">🕘</span>최근 본 상품<b id="recentCount"></b></button>
-<a class="hd-ico" href="/#guides"><span class="hd-ico-i">📊</span>비교 가이드</a>
+<button type="button" class="hd-ico" id="recentBtn"><span class="hd-ico-i"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>최근 본 상품<b id="recentCount"></b></button>
+<a class="hd-ico" href="/#guides"><span class="hd-ico-i"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 19V11M12 19V5M19 19v-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>비교 가이드</a>
 <div class="recent-panel" id="recentPanel" hidden></div>
 </div>
 </div></header>
@@ -257,13 +257,13 @@ function buyButton(id, hist) {
   const ext = extOf(id);
   if (!link && ext) {
     return `<p class="linked">판매처: ${esc(ext.store)} (쿠팡에 국내 정품 판매가 없어 다른 판매처로 연결합니다)</p>
-<a class="btn ext" href="${esc(ext.url)}" target="_blank" rel="nofollow noopener">${esc(ext.store)}에서 확인하기</a>
+<a class="btn ext" href="${esc(ext.url)}" target="_blank" rel="nofollow noopener">${esc(ext.store)}에서 가격·재고 보기</a>
 <p class="note">위 버튼은 제휴 링크가 아니며, 이 사이트는 이 링크로 수수료를 받지 않습니다. 가격·재고는 판매처에서 확인하세요.</p>`;
   }
   if (!link) return '';
   const linked = links[id] ? picks[id]?.title : hist?.latest?.title;
   return `${linked ? `<p class="linked">연결 상품: ${esc(linked)}</p>` : ''}
-<a class="btn" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 가격 확인하기</a>
+<a class="btn" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 현재 가격 보기</a>
 <p class="note">위 버튼은 쿠팡 파트너스 링크입니다. ${DISCLOSURE}</p>`;
 }
 
@@ -458,7 +458,7 @@ ${rel.includes('toe') ? `<path class="sole-cut" d="M120,${y + h * 0.3} L98,${y +
 function grindCompare(g) {
   if (!g.grinds?.length) return '';
   const gs = g.grinds;
-  const row = (icon, label, cell) => `<tr><th scope="row"><span class="ig-ico">${icon}</span>${label}</th>${gs.map((gr) => `<td>${cell(gr)}</td>`).join('')}</tr>`;
+  const row = (icon, label, cell) => `<tr><th scope="row">${label}</th>${gs.map((gr) => `<td>${cell(gr)}</td>`).join('')}</tr>`;
   const meter = (n) => `<span class="meter">${[1, 2, 3, 4, 5].map((i) => `<i class="${i <= n ? 'on' : ''}"></i>`).join('')}</span>`;
   const m = g.matrix;
   return `<section id="grind" class="grind"><div class="ig-wrap"><div class="ig-head"><p class="ig-kicker">${esc(SITE_NAME)} 비교표</p><h3>그라인드별 비교 <span>${gs.length}종 한눈에 보기</span></h3></div>
@@ -689,7 +689,7 @@ for (const g of pageGuides) {
 <td class="pcell">${image ? `<img src="${esc(image)}" alt="" loading="lazy" width="48" height="48">` : ''}<a href="/p/${p.id}">${esc(p.name)}</a><br>${pk.skill ? `<span class="skill sk-${SKILLS.indexOf(pk.skill) + 1}">${pk.skill}</span> ` : ''}<span class="badge mid">${esc(pk.role)}</span></td>
 ${crit.map((_, i) => `<td class="sc">${pk.scores ? dots(pk.scores[i]) : '-'}</td>`).join('')}
 <td class="total">${total ? `<b>${total.toFixed(1)}</b><small>/5</small>${stageRank(g, pk.id)?.r === 1 ? `<br><span class="badge good">${esc(stageRank(g, pk.id).label)}</span>` : ''}` : '-'}</td>
-<td>${link ? `<a class="btn sm" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">쿠팡 보기</a>` : ''}</td>
+<td>${link ? `<a class="btn sm" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">쿠팡 가격 보기</a>` : ''}</td>
 </tr>`;
     })
     .join('');
@@ -794,7 +794,7 @@ function ptile({ p, hist, a }) {
   const sc = scoreOf[p.id];
   const rocket = picks[p.id]?.rocket;
   return `<a class="ptile" href="/p/${p.id}">
-<div class="pt-img">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : '<span class="ph">⛳</span>'}</div>
+<div class="pt-img">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : `<span class="ph">${esc(catName[p.category]?.slice(0, 1) ?? '')}</span>`}</div>
 <div class="pt-body"><span class="pt-cat">${esc(catName[p.category])}</span><h3>${esc(p.name)}</h3>
 <div class="pt-badges">${rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}</div>
 ${priceTag(p.id, a)}<p class="pt-cta">특징·비교 보기 ›</p></div>

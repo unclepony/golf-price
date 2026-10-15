@@ -79,13 +79,13 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
 <div class="sprod-body"><span class="pt-cat">${esc(p.c)}</span><a href="${p.u}"><h3>${esc(p.n)}</h3></a>
 <div class="pt-badges">${p.r ? '<span class="tag rocket">로켓배송</span>' : ''}${p.s ? `<span class="tag score">편집 점수 ${p.s.toFixed(1)}</span>` : ''}</div>
 <p>${esc(p.d)}</p></div>
-<div class="sprod-act">${p.lv ? `<span class="lvl lvl-${p.lvn}"><i>${'₩'.repeat(p.lvn)}</i>${esc(p.lv)}</span>` : ''}<a class="btn sm" href="${p.u}">상세·비교 보기</a>${p.l ? `<a class="btn sm ghost" href="${esc(p.l)}" target="_blank" rel="${p.st === '쿠팡' ? 'sponsored ' : ''}nofollow noopener">${p.st === '쿠팡' ? '쿠팡 가격 확인' : `${esc(p.st)} 보기`}</a>` : ''}</div>
+<div class="sprod-act">${p.lv ? `<span class="lvl lvl-${p.lvn}"><i>${'₩'.repeat(p.lvn)}</i>${esc(p.lv)}</span>` : ''}<a class="btn sm" href="${p.u}">상세·비교 보기</a>${p.l ? `<a class="btn sm ghost" href="${esc(p.l)}" target="_blank" rel="${p.st === '쿠팡' ? 'sponsored ' : ''}nofollow noopener">${p.st === '쿠팡' ? '쿠팡에서 현재 가격 보기' : `${esc(p.st)}에서 보기(제휴 아님)`}</a>` : ''}</div>
 </article>`,
           )
           .join('');
         sRes.innerHTML =
           (guideHtml ? `<section><h2 class="s-h">비교 정보</h2>${guideHtml}</section>` : '') +
-          (prodHtml ? `<section><h2 class="s-h">상품 정보 <small>${products.length}개</small></h2>${prodHtml}<p class="note">쿠팡 가격 확인 버튼은 쿠팡 파트너스 링크이며, 이 사이트는 쿠팡 파트너스 활동의 일환으로 일정액의 수수료를 제공받습니다.</p></section>` : '') ||
+          (prodHtml ? `<section><h2 class="s-h">상품 정보 <small>${products.length}개</small></h2>${prodHtml}<p class="note">쿠팡 가격 보기 버튼은 쿠팡 파트너스 링크이며, 이 사이트는 쿠팡 파트너스 활동의 일환으로 일정액의 수수료를 제공받습니다.</p></section>` : '') ||
           '<p class="empty">검색 결과가 없습니다. 드라이버, 퍼터, 골프공처럼 종류로 검색해 보세요.</p>';
       });
     }
