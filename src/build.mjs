@@ -313,27 +313,21 @@ function infographic(g, highlight) {
   const col = (pk, i) => {
     const { p, hist } = byId[pk.id];
     const image = imageOf(p.id, hist);
-    return `<th class="${pk.id === highlight ? 'hl' : ''}"><a href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : ''}<span class="ig-rank">${i + 1}위</span><b>${esc(p.name)}</b></a></th>`;
+    return `<th class="${pk.id === highlight ? 'hl' : ''}"><a href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : ''}<span class="ig-rank">${i + 1}위</span><b>${esc(p.name)}</b><span class="ig-role">${esc(pk.role)}</span></a></th>`;
   };
-  const row = (icon, label, cell) =>
-    `<tr><th scope="row"><span class="ig-ico">${icon}</span>${label}</th>${ps.map((pk) => `<td class="${pk.id === highlight ? 'hl' : ''}">${cell(pk)}</td>`).join('')}</tr>`;
+  const row = (icon, label, cell, cls = '') =>
+    `<tr class="${cls}"><th scope="row"><span class="ig-ico">${icon}</span>${label}</th>${ps.map((pk) => `<td class="${pk.id === highlight ? 'hl' : ''}">${cell(pk)}</td>`).join('')}</tr>`;
   return `<div class="ig-wrap"><div class="ig-head"><p class="ig-kicker">${esc(SITE_NAME)} 비교표</p><h3>${esc(shortTitle(g.title))} <span>${ps.length}종 한눈에 비교</span></h3></div>
-<div class="tablewrap ig-scroll"><table class="ig"><thead><tr><th class="ig-corner">비교 항목</th>${ps.map(col).join('')}</tr></thead><tbody>
-${row('🏆', '종합 점수', (pk) => (pk.scores ? `<b class="ig-total">${avg(pk.scores).toFixed(1)}</b><small>/5</small><span class="bar"><i style="width:${(avg(pk.scores) / 5) * 100}%"></i></span>` : '-'))}
-${row('🔍', '한 줄 평', (pk) => (pk.verdict ? `<span class="ig-verdict">${esc(pk.verdict)}</span>` : '-'))}
-${(g.specRows ?? []).map((label, si) => row('📐', esc(label), (pk) => `<span class="ig-spec">${esc(pk.specs?.[si] ?? '-')}</span>`)).join('')}
-${row('🎯', '성격', (pk) => esc(pk.role))}
-${row('👤', '이런 분께', (pk) => esc(pk.forWhom))}
-${row('💰', '가격대', (pk) => levelLink(pk.id, byId[pk.id].hist))}
-${row('✅', '강점', (pk) => (pk.pros ?? []).map(esc).join('<br>'))}
-${row('⚠️', '고려할 점', (pk) => (pk.cons ?? []).map(esc).join('<br>'))}
-${crit.length ? row('📊', '항목별 점수', (pk) => (pk.scores ? crit.map((c, i) => `<span class="ig-crit">${esc(c)} ${dots(pk.scores[i])}</span>`).join('') : '-')) : ''}
-${row('🛒', '가격 확인', (pk) => {
-    const link = links[pk.id] ?? byId[pk.id].hist?.latest?.link;
-    return link ? `<a class="btn sm" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">쿠팡 보기</a>` : '';
-  })}
+<div class="tablewrap ig-scroll"><table class="ig"><thead><tr><th class="ig-corner"></th>${ps.map(col).join('')}</tr></thead><tbody>
+${row('🏆', '종합 점수', (pk) => (pk.scores ? `<b class="ig-total">${avg(pk.scores).toFixed(1)}</b><span class="bar"><i style="width:${(avg(pk.scores) / 5) * 100}%"></i></span>` : '-'), 'r-total')}
+${row('💬', '한마디', (pk) => `<b class="ig-short">${esc(pk.short ?? pk.role)}</b>`)}
+${(g.specRows ?? []).map((label, si) => row('📐', esc(label.replace('연결 상품 ', '')), (pk) => `<span class="ig-spec">${esc(pk.specs?.[si] ?? '-')}</span>`)).join('')}
+${row('👍', '강점', (pk) => `<span class="ig-plus">${esc(pk.plus ?? pk.pros?.[0] ?? '-')}</span>`)}
+${row('👎', '약점', (pk) => `<span class="ig-minus">${esc(pk.minus ?? pk.cons?.[0] ?? '-')}</span>`)}
+${crit.length ? row('📊', '항목별', (pk) => (pk.scores ? `<span class="ig-crits">${crit.map((c, i) => `<span><em>${esc(c.split('·')[0])}</em>${dots(pk.scores[i])}</span>`).join('')}</span>` : '-')) : ''}
+${row('💰', '가격대', (pk) => levelLink(pk.id, byId[pk.id].hist, '쿠팡 ›'), 'r-price')}
 </tbody></table></div>
-<p class="note">가격대(합리적·중가·고가·최고가)는 이 비교 안에서의 상대적인 가격 수준이며, 누르면 쿠팡에서 현재 가격을 확인할 수 있습니다. 점수는 공식 평가가 아닌 주관적 참고 점수입니다. 쿠팡 보기 버튼은 쿠팡 파트너스 링크입니다.</p></div>`;
+<p class="note">점수는 주관적 참고 점수(공식 평가 아님) · 가격대는 이 비교 안에서의 상대 수준 · 가격대를 누르면 쿠팡(파트너스 링크)으로 이동</p></div>`;
 }
 const guidesFor = (catId) => guides.filter((g) => g.picks.some((pk) => byId[pk.id]?.p.category === catId));
 const genderLabel = (g, c) => (g.gender && g.gender !== '공용' ? `${g.gender} ${c.name} 비교` : `${c.name} 비교`);
