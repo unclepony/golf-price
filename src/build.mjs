@@ -122,7 +122,17 @@ ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표�
 </div></header>
 <nav class="gnb"><div class="wrap gnb-in">
 <div class="allcat"><button type="button" id="catBtn" aria-expanded="false">☰ 골프 카테고리</button><div class="catmenu" id="catMenu" hidden>${catLinks}</div></div>
-<div class="quick">${cats.map((c) => `<a href="/c/${c.id}">${esc(c.name)}</a>`).join('')}<a href="/#guides" class="hl">비교·추천</a></div>
+<div class="quick">${cats
+    .map((c) => {
+      const rel = guidesFor(c.id);
+      const sub = rel.length
+        ? `<div class="qsub">${rel
+            .map((g) => `<a href="/c/${c.id}#g-${g.slug}"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender ?? '공용')}</span>${esc(genderLabel(g, c))}</a>`)
+            .join('')}<a href="/c/${c.id}" class="qsub-all">${esc(c.name)} 전체 비교 ›</a></div>`
+        : '';
+      return `<div class="qitem"><a href="/c/${c.id}">${esc(c.name)}</a>${sub}</div>`;
+    })
+    .join('')}<a href="/#guides" class="hl">비교·추천</a></div>
 </div></nav>`;
 }
 
@@ -291,6 +301,7 @@ ${row('🛒', '가격 확인', (pk) => {
 <p class="note">가격대(₩~₩₩₩₩)는 2026년 10월 쿠팡 판매가를 기준으로 이 비교 안에서의 상대적인 수준입니다. 점수는 공식 평가가 아닌 주관적 참고 점수입니다. 쿠팡 보기 버튼은 쿠팡 파트너스 링크입니다.</p></div>`;
 }
 const guidesFor = (catId) => guides.filter((g) => g.picks.some((pk) => byId[pk.id]?.p.category === catId));
+const genderLabel = (g, c) => (g.gender && g.gender !== '공용' ? `${g.gender} ${c.name} 비교` : `${c.name} 비교`);
 
 // ---------- 상품 상세: 사진 갤러리와 비교 분석 ----------
 const galleryConf = readJson(join(ROOT, 'config', 'gallery.json'), { base: '', images: {} });
@@ -402,15 +413,15 @@ for (const c of cats) {
   writeText(
     join(OUT, 'c', `${c.id}.html`),
     layout({
-      title: `${c.name} 고르는 법과 추천 모델`,
-      desc: `${c.intro} ${items.map((e) => e.p.name).join(', ')}`,
+      title: `${c.name} 비교: 브랜드별 상위 모델 점수·장단점`,
+      desc: `${c.name} 상위 모델을 점수와 장단점으로 비교했습니다. ${items.map((e) => e.p.name).join(', ')}`,
       path: `/c/${c.id}`,
-      body: `<nav class="crumb"><a href="/">홈</a></nav>
-<h1>${esc(c.name)} 고르는 법</h1>
-<section class="prose"><p>${esc(c.intro)}</p>${figure(c.id)}<ul>${c.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
-<section><h2>추천 ${esc(c.name)}</h2>${grid(items)}</section>
-${related.map((g) => `<section>${infographic(g)}<a class="more-link" href="/g/${g.slug}">장단점·고르는 법 전체 보기 ›</a></section>`).join('')}
-${related.length ? `<section><h2>${esc(c.name)} 비교·추천 가이드</h2>${guideGrid(related)}</section>` : ''}`,
+      body: `<nav class="crumb"><a href="/">홈</a> › ${esc(c.name)}</nav>
+<h1>${esc(c.name)} 비교</h1>
+${related.length > 1 ? `<nav class="gtabs">${related.map((g) => `<a href="#g-${g.slug}">${esc(genderLabel(g, c))}</a>`).join('')}</nav>` : ''}
+${related.map((g) => `<section id="g-${g.slug}" class="cat-cmp">${related.length > 1 ? `<h2 class="cat-cmp-h"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender ?? '공용')}</span>${esc(genderLabel(g, c))}</h2>` : ''}${infographic(g)}<a class="more-link" href="/g/${g.slug}">장단점·고르는 법 전체 보기 ›</a></section>`).join('')}
+<section><h2>${esc(c.name)} 전체 상품</h2>${prow(items)}</section>
+<section class="prose"><h2>${esc(c.name)} 고르는 법</h2><p>${esc(c.intro)}</p>${figure(c.id)}<ul>${c.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>`,
     }),
   );
 }
@@ -491,7 +502,7 @@ function ptile({ p, hist, a }) {
 ${a ? `<p class="pt-price">${won(a.cur)}</p>` : '<p class="pt-cta">특징·비교 보기 ›</p>'}</div>
 </a>`;
 }
-const prow = (items) => `<div class="prow">${items.map(ptile).join('')}</div>`;
+function prow(items) { return `<div class="prow">${items.map(ptile).join('')}</div>`; }
 
 // 움직이는 비교 배너: 가이드마다 한 장, 상품 4개의 종합 점수 막대
 const BANNER_TONES = { driver: 'tone-a', putter: 'tone-b', ball: 'tone-c', rangefinder: 'tone-d', shoes: 'tone-e', set: 'tone-f' };
@@ -646,6 +657,28 @@ writeText(
 <p>${DISCLOSURE} 링크를 통해 구매하셔도 구매자에게 추가 비용은 없습니다.</p>
 </section>`,
   }),
+);
+
+// ---------- 없어진 페이지 주소 이동 (Cloudflare Pages _redirects) ----------
+writeText(
+  join(OUT, '_redirects'),
+  [
+    '/c/set / 301',
+    '/g/beginner-full-set / 301',
+    '/g/budget-golf-ball /c/ball 301',
+    '/p/pgm-vct3-set / 301',
+    '/p/callaway-xr-set / 301',
+    '/p/xxio14-set / 301',
+    '/p/taylormade-rbz-sl2-set / 301',
+    '/p/honma-d1-ball /c/ball 301',
+    '/p/srixon-distance-ball /c/ball 301',
+    '/p/callaway-supersoft-ball /c/ball 301',
+    '/p/titleist-velocity-ball /c/ball 301',
+    '/p/taylormade-sim2-max-women-driver /c/driver 301',
+    '/p/nike-infinity-g-shoes /c/shoes 301',
+    '/p/voicecaddie-laser-fit2 /c/rangefinder 301',
+    '/p/scotty-cameron-phantom-putter /c/putter 301',
+  ].join('\n') + '\n',
 );
 
 // ---------- 검색엔진용 파일 ----------
