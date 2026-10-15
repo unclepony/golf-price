@@ -30,8 +30,8 @@
       ],
       "priceBands": [
         400000,
-        600000,
-        800000
+        540000,
+        700000
       ]
     },
     {
@@ -1982,6 +1982,634 @@
         "store": "타이틀리스트 공식몰",
         "url": "https://www.titleist.co.kr/golf-clubs/putters/phantom"
       }
+    },
+    {
+      "id": "taylormade-sim2max-driver",
+      "category": "driver",
+      "name": "테일러메이드 SIM2 MAX 드라이버",
+      "query": "테일러메이드 SIM2 MAX 드라이버",
+      "must": [
+        "sim2",
+        "max",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 200000,
+      "max": 600000,
+      "summary": "2021년 출시된 SIM2 시리즈의 관용성 모델입니다. 구형이 된 만큼 가격이 많이 내려와 입문용 첫 드라이버로 자주 거론됩니다.",
+      "points": [
+        "구형 모델이라 가격 부담이 적음",
+        "뒤쪽 무게로 관용성 확보"
+      ],
+      "ref": 334310
+    },
+    {
+      "id": "taylormade-qi10max-driver",
+      "category": "driver",
+      "name": "테일러메이드 Qi10 MAX 드라이버",
+      "query": "테일러메이드 Qi10 MAX 드라이버",
+      "must": [
+        "qi10",
+        "max",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 300000,
+      "max": 900000,
+      "summary": "관성모멘트(MOI) 10K를 내세운 Qi10 시리즈의 MAX 모델입니다. 빗맞아도 거리 손실이 적은 쪽에 초점을 맞췄습니다.",
+      "points": [
+        "관성모멘트 10K 고관용 설계",
+        "테일러메이드코리아 판매"
+      ],
+      "ref": 499000
+    },
+    {
+      "id": "taylormade-qi35max-driver",
+      "category": "driver",
+      "name": "테일러메이드 Qi35 MAX 드라이버",
+      "query": "테일러메이드 Qi35 MAX 드라이버",
+      "must": [
+        "qi35",
+        "max",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 330000,
+      "max": 980000,
+      "summary": "Qi35 시리즈 중 관용성을 가장 높인 MAX 버전입니다. 기본형보다 실수 완화에 더 무게를 둡니다.",
+      "points": [
+        "Qi35 중 관용성 최상위",
+        "높은 탄도"
+      ],
+      "ref": 546200
+    },
+    {
+      "id": "majesty-prestigio13-driver",
+      "category": "driver",
+      "name": "마제스티 프레스티지오 13 드라이버",
+      "query": "마제스티 프레스티지오 13 드라이버",
+      "must": [
+        "프레스티지오",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 800000,
+      "max": 2390000,
+      "summary": "마제스티의 고급 라인 프레스티지오 13세대입니다. 가벼운 무게와 화려한 마감으로 스윙 스피드가 느린 시니어·입문 골퍼를 겨냥합니다.",
+      "points": [
+        "경량·고반발 지향 설계",
+        "고급 마감"
+      ],
+      "ref": 1330000
+    },
+    {
+      "id": "callaway-paradym-driver",
+      "category": "driver",
+      "name": "캘러웨이 패러다임 드라이버",
+      "query": "캘러웨이 패러다임 드라이버",
+      "must": [
+        "패러다임",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 180000,
+      "max": 550000,
+      "summary": "2023년 캘러웨이 패러다임 시리즈 드라이버입니다. 신모델 출시 후 가격이 내려와 중급자 가성비 모델로 꼽힙니다.",
+      "points": [
+        "직전 세대라 가격 하락",
+        "안정적 탄도"
+      ],
+      "ref": 305160
+    },
+    {
+      "id": "callaway-quantum-tdmax-driver",
+      "category": "driver",
+      "name": "캘러웨이 퀀텀 트리플 다이아몬드 MAX 드라이버",
+      "query": "캘러웨이 퀀텀 트리플 다이아몬드 MAX 드라이버",
+      "must": [
+        "퀀텀",
+        "트리플",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 410000,
+      "max": 1240000,
+      "summary": "캘러웨이 퀀텀 시리즈의 트리플 다이아몬드 MAX 버전입니다. 투어형 헤드 모양에 관용성을 더한 중간형입니다.",
+      "points": [
+        "투어 모양 + 관용성",
+        "TENSEI 60 샤프트"
+      ],
+      "ref": 689980
+    },
+    {
+      "id": "xxio14plus-driver",
+      "category": "driver",
+      "name": "젝시오 14 플러스 드라이버",
+      "query": "젝시오 14 플러스 드라이버",
+      "must": [
+        "젝시오",
+        "14",
+        "플러스",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 420000,
+      "max": 1270000,
+      "summary": "던롭 젝시오 14세대의 플러스 모델입니다. 가볍고 부드러운 샤프트로 힘을 덜 들여도 거리를 내도록 만든 프리미엄 경량 라인입니다.",
+      "points": [
+        "경량 고반발",
+        "던롭코리아 정품"
+      ],
+      "ref": 704000
+    },
+    {
+      "id": "taylormade-qi35ls-driver",
+      "category": "driver",
+      "name": "테일러메이드 Qi35 LS 드라이버",
+      "query": "테일러메이드 Qi35 LS 드라이버",
+      "must": [
+        "qi35",
+        "ls",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 310000,
+      "max": 920000,
+      "summary": "Qi35 시리즈의 저스핀(LS) 모델입니다. 스핀을 줄여 런과 관통력을 높이는 대신 관용성은 낮아집니다.",
+      "points": [
+        "저스핀으로 관통력",
+        "무게추 조정 가능"
+      ],
+      "ref": 509000
+    },
+    {
+      "id": "ping-g440lst-driver",
+      "category": "driver",
+      "name": "핑 G440 LST 드라이버",
+      "query": "핑 G440 LST 드라이버",
+      "must": [
+        "g440",
+        "lst",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 390000,
+      "max": 1170000,
+      "summary": "핑 G440 시리즈의 저스핀(LST) 모델입니다. 핑 특유의 관용성을 유지하면서 스핀을 줄였습니다.",
+      "points": [
+        "저스핀 + 핑 관용성",
+        "삼양인터내셔날 정품"
+      ],
+      "ref": 649000
+    },
+    {
+      "id": "taylormade-qi4d-driver",
+      "category": "driver",
+      "name": "테일러메이드 Qi4D 드라이버",
+      "query": "테일러메이드 Qi4D 드라이버",
+      "must": [
+        "qi4d",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 530000,
+      "max": 1580000,
+      "summary": "테일러메이드의 2026년 신모델 Qi4D 기본형입니다. 무게추 조정 폭을 넓혀 탄도와 구질을 맞추기 쉽게 했습니다.",
+      "points": [
+        "2026 최신 모델",
+        "무게추로 구질 조정"
+      ],
+      "ref": 880000
+    },
+    {
+      "id": "titleist-gt3-driver",
+      "category": "driver",
+      "name": "타이틀리스트 GT3 드라이버",
+      "query": "타이틀리스트 GT3 드라이버",
+      "must": [
+        "gt3",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 540000,
+      "max": 1620000,
+      "summary": "타이틀리스트 GT 시리즈의 GT3 모델입니다. 무게추로 구질을 조정할 수 있는 저스핀·조작형 헤드입니다.",
+      "points": [
+        "무게추 구질 조정",
+        "단정한 투어형 헤드"
+      ],
+      "ref": 899000
+    },
+    {
+      "id": "titleist-gts3-driver",
+      "category": "driver",
+      "name": "타이틀리스트 GTS3 드라이버",
+      "query": "타이틀리스트 GTS3 드라이버",
+      "must": [
+        "gts3",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 590000,
+      "max": 1780000,
+      "summary": "타이틀리스트의 2026년 GTS 시리즈 GTS3 모델입니다. 투어 선수용 조작형 헤드를 지향합니다.",
+      "points": [
+        "2026 투어형 신모델",
+        "무게추 구질 조정"
+      ],
+      "ref": 990000
+    },
+    {
+      "id": "callaway-quantum-td-driver",
+      "category": "driver",
+      "name": "캘러웨이 퀀텀 트리플 다이아몬드 드라이버 (2026 글로벌)",
+      "query": "캘러웨이 퀀텀 트리플 다이아몬드 드라이버 (2026 글로벌)",
+      "must": [
+        "퀀텀",
+        "트리플",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 390000,
+      "max": 1170000,
+      "summary": "캘러웨이 퀀텀 시리즈의 트리플 다이아몬드 계열 2026 글로벌 스펙 제품입니다. 투어형 헤드에 낮은 스핀을 지향합니다.",
+      "points": [
+        "투어형 저스핀",
+        "헤드커버 포함 세트"
+      ],
+      "ref": 652370
+    },
+    {
+      "id": "taylormade-qi4dls-driver",
+      "category": "driver",
+      "name": "테일러메이드 Qi4D LS 드라이버",
+      "query": "테일러메이드 Qi4D LS 드라이버",
+      "must": [
+        "qi4d",
+        "ls",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 740000,
+      "max": 2210000,
+      "summary": "Qi4D 시리즈의 저스핀(LS) 모델입니다. 투어 선수들이 많이 쓰는 성격의 저스핀 헤드입니다.",
+      "points": [
+        "최신 저스핀",
+        "VENTUS BLUE 샤프트"
+      ],
+      "ref": 1230000
+    },
+    {
+      "id": "taylormade-qi10ls-driver",
+      "category": "driver",
+      "name": "테일러메이드 Qi10 LS 드라이버",
+      "query": "테일러메이드 Qi10 LS 드라이버",
+      "must": [
+        "qi10",
+        "ls",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 390000,
+      "max": 1160000,
+      "summary": "Qi10 시리즈의 저스핀 모델입니다. 직전 세대가 되며 가격이 내려와 저스핀 모델 중 접근성이 좋습니다.",
+      "points": [
+        "직전 세대 저스핀",
+        "TOUR AD VF 커스텀 샤프트"
+      ],
+      "ref": 645000
+    },
+    {
+      "id": "prgr-sweep-women-driver",
+      "category": "driver",
+      "name": "프로기아 SWEEP 여성 드라이버",
+      "query": "프로기아 SWEEP 여성 드라이버",
+      "must": [
+        "sweep",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 110000,
+      "max": 340000,
+      "summary": "프로기아(PRGR)의 여성용 SWEEP 드라이버입니다. 가볍고 탄도가 높게 나오도록 만든 입문형입니다.",
+      "points": [
+        "초경량·고탄도",
+        "부담 없는 가격"
+      ],
+      "ref": 188780
+    },
+    {
+      "id": "honma-nx-women-driver",
+      "category": "driver",
+      "name": "혼마 베레스 NX 여성 드라이버",
+      "query": "혼마 베레스 NX 여성 드라이버",
+      "must": [
+        "베레스",
+        "nx",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 140000,
+      "max": 410000,
+      "summary": "혼마 베레스 NX 여성용 드라이버입니다. 혼마 특유의 가벼운 설계를 상대적으로 낮은 가격에 경험할 수 있습니다.",
+      "points": [
+        "경량 설계",
+        "혼마 브랜드"
+      ],
+      "ref": 229000
+    },
+    {
+      "id": "majesty-shuttle-women-driver",
+      "category": "driver",
+      "name": "마제스티 셔틀 골드 플러스 445 여성 드라이버",
+      "query": "마제스티 셔틀 골드 플러스 445 여성 드라이버",
+      "must": [
+        "셔틀",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 270000,
+      "max": 820000,
+      "summary": "마제스티의 셔틀 골드 플러스 여성용 드라이버입니다. 고반발 페이스와 경량 설계로 느린 스윙의 비거리를 돕는 콘셉트입니다.",
+      "points": [
+        "경량 고반발 콘셉트",
+        "화사한 디자인"
+      ],
+      "ref": 456570
+    },
+    {
+      "id": "ping-g440hl-women-driver",
+      "category": "driver",
+      "name": "핑 G440 HL MAX 여성 드라이버",
+      "query": "핑 G440 HL MAX 여성 드라이버",
+      "must": [
+        "g440",
+        "hl",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 410000,
+      "max": 1240000,
+      "summary": "핑 G440 MAX에 경량(HL) 사양을 더한 모델입니다. 핑의 관용성에 가벼운 무게를 더해 여성·시니어에게 맞췄습니다.",
+      "points": [
+        "핑 관용성 + 경량",
+        "삼양 정품"
+      ],
+      "ref": 690000
+    },
+    {
+      "id": "taylormade-sim2max-women-driver",
+      "category": "driver",
+      "name": "테일러메이드 SIM2 MAX 여성 드라이버",
+      "query": "테일러메이드 SIM2 MAX 여성 드라이버",
+      "must": [
+        "심2",
+        "여성",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 200000,
+      "max": 610000,
+      "summary": "테일러메이드 SIM2 MAX의 여성용 사양입니다. 구형이 되며 가격이 내려와 로켓배송으로 쉽게 구할 수 있습니다.",
+      "points": [
+        "구형이라 저렴",
+        "로켓배송"
+      ],
+      "ref": 339000
+    },
+    {
+      "id": "ping-gle3-women-driver",
+      "category": "driver",
+      "name": "핑 GLe3 여성 드라이버",
+      "query": "핑 GLe3 여성 드라이버",
+      "must": [
+        "gle3",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 340000,
+      "max": 1010000,
+      "summary": "핑의 여성 전용 GLe 시리즈 3세대입니다. GLe4 출시 후 가격이 내려와 여성 전용 설계를 합리적으로 쓸 수 있습니다.",
+      "points": [
+        "여성 전용 설계",
+        "삼양 정품"
+      ],
+      "ref": 560000
+    },
+    {
+      "id": "onoff-lp425-women-driver",
+      "category": "driver",
+      "name": "다이와 온오프 LP425 여성 드라이버",
+      "query": "다이와 온오프 LP425 여성 드라이버",
+      "must": [
+        "lp425",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 390000,
+      "max": 1170000,
+      "summary": "다이와(글로브라이드) 온오프 브랜드의 2025년 여성용 드라이버입니다. 경량 설계와 컬러 커스텀이 특징입니다.",
+      "points": [
+        "경량 설계",
+        "컬러 선택"
+      ],
+      "ref": 649000
+    },
+    {
+      "id": "callaway-roguest-women-driver",
+      "category": "driver",
+      "name": "캘러웨이 로그 ST MAX FAST 여성 드라이버",
+      "query": "캘러웨이 로그 ST MAX FAST 여성 드라이버",
+      "must": [
+        "로그",
+        "여성",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 220000,
+      "max": 650000,
+      "summary": "2022년 캘러웨이 로그 ST MAX FAST 여성용입니다. 구형이 되며 가격이 크게 내려왔고 로켓배송으로 구할 수 있습니다.",
+      "points": [
+        "경량 FAST 사양",
+        "로켓배송"
+      ],
+      "ref": 359000
+    },
+    {
+      "id": "honma-aizu-women-driver",
+      "category": "driver",
+      "name": "혼마 베레스 아이주 2스타 여성 드라이버",
+      "query": "혼마 베레스 아이주 2스타 여성 드라이버",
+      "must": [
+        "aizu",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 330000,
+      "max": 980000,
+      "summary": "혼마 베레스 AIZU 2스타 여성용 드라이버입니다. 혼마의 고급 라인 감성을 비교적 합리적인 가격대에 담았습니다.",
+      "points": [
+        "혼마 고급 라인",
+        "부드러운 타구감"
+      ],
+      "ref": 544000
+    },
+    {
+      "id": "callaway-quantum-maxfast-women-driver",
+      "category": "driver",
+      "name": "캘러웨이 퀀텀 MAX FAST 여성 드라이버",
+      "query": "캘러웨이 퀀텀 MAX FAST 여성 드라이버",
+      "must": [
+        "퀀텀",
+        "max fast",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 430000,
+      "max": 1300000,
+      "summary": "캘러웨이 2026 퀀텀 시리즈의 여성용 MAX FAST입니다. 최신 페이스 기술에 경량 설계를 더했습니다.",
+      "points": [
+        "2026 최신 모델",
+        "캘러웨이코리아 정품"
+      ],
+      "ref": 720000
+    },
+    {
+      "id": "taylormade-qi4d-maxlite-women-driver",
+      "category": "driver",
+      "name": "테일러메이드 Qi4D MAX LITE 여성 드라이버",
+      "query": "테일러메이드 Qi4D MAX LITE 여성 드라이버",
+      "must": [
+        "qi4d",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 530000,
+      "max": 1580000,
+      "summary": "테일러메이드 2026 Qi4D 시리즈의 여성용 경량(MAX LITE) 모델입니다.",
+      "points": [
+        "2026 최신 경량",
+        "관용성 MAX 헤드"
+      ],
+      "ref": 880000
+    },
+    {
+      "id": "ping-g440max-women-driver",
+      "category": "driver",
+      "name": "핑 G440 MAX 여성 드라이버",
+      "query": "핑 G440 MAX 여성 드라이버",
+      "must": [
+        "g440",
+        "max",
+        "여성",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 420000,
+      "max": 1260000,
+      "summary": "핑 G440 MAX의 여성용 사양(ALTA J LE)입니다. 표준 헤드라 스윙이 빠른 여성 상급자·투어 지망생에게도 맞습니다.",
+      "points": [
+        "표준 MAX 헤드",
+        "삼양 정품"
+      ],
+      "ref": 700000
+    },
+    {
+      "id": "titleist-tsi1-driver",
+      "category": "driver",
+      "name": "타이틀리스트 TSi1 드라이버",
+      "query": "타이틀리스트 TSi1 드라이버",
+      "must": [
+        "tsi1",
+        "드라이버"
+      ],
+      "exclude": [
+        "샤프트만"
+      ],
+      "min": 290000,
+      "max": 860000,
+      "summary": "타이틀리스트 TSi 시리즈의 경량 모델 TSi1입니다. 가벼우면서 표준 크기 헤드라 힘 있는 여성 골퍼도 많이 씁니다.",
+      "points": [
+        "경량 표준 헤드",
+        "타이틀리스트 타구감"
+      ],
+      "ref": 477540
+    },
+    {
+      "id": "titleist-vokey-sm8",
+      "category": "wedge",
+      "name": "타이틀리스트 보키 SM8 웨지",
+      "query": "타이틀리스트 SM8 보키 웨지",
+      "must": [
+        "sm8",
+        "보키"
+      ],
+      "exclude": [
+        "중고",
+        "병행"
+      ],
+      "min": 150000,
+      "max": 450000,
+      "summary": "타이틀리스트 보키의 2020년 SM8 웨지입니다. 무게중심을 앞쪽으로 옮겨 페이스 정렬과 직진성을 높인 세대로, 최신 SM11보다 한 세대 이상 전 모델입니다. 연결 상품은 58도 12D(D 그라인드) 사양입니다.",
+      "points": [
+        "D 그라인드 58° · 바운스 12°",
+        "구형 세대라 그루브 마모·재고 사양 확인 권장"
+      ],
+      "ref": 275100
     }
   ]
 }

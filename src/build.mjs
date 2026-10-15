@@ -130,7 +130,13 @@ ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표�
         ? `<div class="qsub">${rel
             .map(
               (g) =>
-                `<a href="/g/${g.slug}"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender && g.gender !== '공용' ? g.gender : '남녀공용')}</span><span class="qsub-t"><b>${esc(g.gender && g.gender !== '공용' ? `${g.gender} ${c.name}` : c.name)}</b><small>비교 및 선택 가이드</small></span></a>`,
+                `<div class="qg"><a href="/g/${g.slug}"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender && g.gender !== '공용' ? g.gender : '남녀공용')}</span><span class="qsub-t"><b>${esc(g.menuName ?? (g.gender && g.gender !== '공용' ? `${g.gender} ${c.name}` : c.name))}</b><small>${g.menuName ? '종류별 선택 비교법' : '비교 및 선택 가이드'}</small></span>${skillGroups(g).length ? '<i class="qarr">›</i>' : ''}</a>${
+                  skillGroups(g).length
+                    ? `<div class="qsub2"><p class="qsub2-h">${esc(g.gender && g.gender !== '공용' ? `${g.gender} ${c.name}` : c.name)} 실력별 비교</p>${skillGroups(g)
+                        .map((s) => `<a href="${skillPath(g, s.skill)}"><span class="skill sk-${SKILLS.indexOf(s.skill) + 1}">${s.skill}</span><span class="qsub-t"><b>${s.skill}용 ${esc(c.name)}</b><small>${s.ids.length}종 비교 · 저가~프리미엄</small></span></a>`)
+                        .join('')}${g.picks.some((pk) => pk.dist) ? `<a href="/g/${g.slug}#dist"><span class="skill sk-dist">비거리</span><span class="qsub-t"><b>비거리 비교 추천</b><small>실력별 비거리 순위</small></span></a>` : ''}</div>`
+                    : ''
+                }</div>`,
             )
             .join('')}<a href="/c/${c.id}" class="qsub-all">${esc(c.name)} 전체 비교 ›</a></div>`
         : '';
@@ -344,19 +350,21 @@ function priceTier(g, id) {
 }
 // 비교 인포그래픽 표: 제품을 열로, 비교 항목을 행으로
 function infographic(g, highlight, opts = {}) {
-  const ps = opts.ids ? rankedPicks(g).filter((pk) => opts.ids.includes(pk.id)) : rankedPicks(g);
+  const ps0 = opts.ids ? rankedPicks(g).filter((pk) => opts.ids.includes(pk.id)) : rankedPicks(g);
+  const ps = opts.byPrice ? [...ps0].sort((x, y) => (priceLevel(x.id)?.n ?? 9) - (priceLevel(y.id)?.n ?? 9)) : ps0;
   const crit = g.criteria ?? [];
   const col = (pk, i) => {
     const { p, hist } = byId[pk.id];
     const image = imageOf(p.id, hist);
-    return `<th class="${pk.id === highlight ? 'hl' : ''}"><a href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : `<span class="noimg">${esc(catName[p.category] ?? '')}<small>${esc(extOf(p.id)?.store ?? '')}</small></span>`}<span class="ig-rank">${i + 1}위</span><b>${esc(p.name)}</b><span class="ig-role">${esc(pk.role)}</span></a></th>`;
+    return `<th class="${pk.id === highlight ? 'hl' : ''}"><a href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : `<span class="noimg">${esc(catName[p.category] ?? '')}<small>${esc(extOf(p.id)?.store ?? '')}</small></span>`}<span class="ig-rank">${opts.byPrice ? esc(priceLevel(pk.id)?.label ?? extOf(pk.id)?.store ?? '') : `${i + 1}위`}</span><b>${esc(p.name)}</b><span class="ig-role">${esc(pk.role)}</span></a></th>`;
   };
   const row = (icon, label, cell, cls = '') =>
     `<tr class="${cls}"><th scope="row"><span class="ig-ico">${icon}</span>${label}</th>${ps.map((pk) => `<td class="${pk.id === highlight ? 'hl' : ''}">${cell(pk)}</td>`).join('')}</tr>`;
   return `<div class="ig-wrap"><div class="ig-head"><p class="ig-kicker">${esc(SITE_NAME)} 비교표</p><h3>${esc(opts.title ?? shortTitle(g.title))} <span>${ps.length}종 한눈에 비교</span></h3></div>
 <div class="tablewrap ig-scroll"><table class="ig"><thead><tr><th class="ig-corner"></th>${ps.map(col).join('')}</tr></thead><tbody>
+${ps.some((pk) => pk.dist) ? row('🚀', '비거리', (pk) => (pk.dist ? `<b class="ig-total">${pk.dist}<small>/10</small></b><span class="bar dist"><i style="width:${pk.dist * 10}%"></i></span>` : '-')) : ''}
 ${row('🏆', '종합 점수', (pk) => (pk.scores ? `<b class="ig-total">${avg(pk.scores).toFixed(1)}</b><span class="bar"><i style="width:${(avg(pk.scores) / 5) * 100}%"></i></span>` : '-'), 'r-total')}
-${row('🎯', '수준', (pk) => `<span class="tierline">${skillBadge(pk.id)}${levelBadge(pk.id)}</span>`)}
+${row('🎯', '수준', (pk) => `<span class="tierline">${pk.skill ? `<span class="skill sk-${SKILLS.indexOf(pk.skill) + 1}">${pk.skill}</span>` : skillBadge(pk.id)}${levelBadge(pk.id)}</span>`)}
 ${row('💬', '한마디', (pk) => `<b class="ig-short">${esc(pk.short ?? pk.role)}</b>`)}
 ${(g.specRows ?? []).map((label, si) => row('📐', esc(label.replace('연결 상품 ', '')), (pk) => `<span class="ig-spec">${esc(pk.specs?.[si] ?? '-')}</span>`)).join('')}
 ${row('👍', '강점', (pk) => `<span class="ig-plus">${esc(pk.plus ?? pk.pros?.[0] ?? '-')}</span>`)}
@@ -394,8 +402,73 @@ const genderLabel = (g, c) => (g.gender && g.gender !== '공용' ? `${g.gender} 
 const guideCat = (g) => cats.find((c) => c.id === byId[g.picks[0]?.id]?.p.category);
 const guideName = (g) => {
   const c = guideCat(g);
+  if (g.menuName) return g.menuName;
   return `${g.gender && g.gender !== '공용' ? `${g.gender} ` : ''}${c?.name ?? ''} 비교 및 선택 가이드`;
 };
+// 웨지 그라인드 비교 (guides.json 의 grinds·matrix): 솔 모양은 직접 그린 개념도
+function soleSvg(gr) {
+  const h = 10 + gr.sole * 5;
+  const y = 8;
+  const rel = gr.relief ?? '';
+  return `<svg class="sole" viewBox="0 0 124 ${y + h + 6}" role="img" aria-label="${esc(gr.name)} 솔 모양 개념도">
+<path class="sole-base" d="M6,${y} L118,${y} Q122,${y} 120,${y + h * 0.55} Q114,${y + h} 62,${y + h} Q12,${y + h} 6,${y + h * 0.55} Z"/>
+${rel.includes('trail') ? `<path class="sole-cut" d="M24,${y + h * 0.72} Q62,${y + h * 0.82} 100,${y + h * 0.72} L104,${y + h * 0.9} Q62,${y + h + 1} 20,${y + h * 0.9} Z"/>` : ''}
+${rel.includes('heel') ? `<path class="sole-cut" d="M6,${y + h * 0.3} L26,${y + h} L6,${y + h} Z"/>` : ''}
+${rel.includes('toe') ? `<path class="sole-cut" d="M120,${y + h * 0.3} L98,${y + h} L122,${y + h} Z"/>` : ''}
+<line class="sole-le" x1="6" y1="${y}" x2="118" y2="${y}"/><text x="4" y="${y + h + 5}" class="sole-tx">힐</text><text x="110" y="${y + h + 5}" class="sole-tx">토</text></svg>`;
+}
+function grindCompare(g) {
+  if (!g.grinds?.length) return '';
+  const gs = g.grinds;
+  const row = (icon, label, cell) => `<tr><th scope="row"><span class="ig-ico">${icon}</span>${label}</th>${gs.map((gr) => `<td>${cell(gr)}</td>`).join('')}</tr>`;
+  const meter = (n) => `<span class="meter">${[1, 2, 3, 4, 5].map((i) => `<i class="${i <= n ? 'on' : ''}"></i>`).join('')}</span>`;
+  const m = g.matrix;
+  return `<section id="grind" class="grind"><div class="ig-wrap"><div class="ig-head"><p class="ig-kicker">${esc(SITE_NAME)} 비교표</p><h3>그라인드별 비교 <span>${gs.length}종 한눈에 보기</span></h3></div>
+<div class="tablewrap ig-scroll"><table class="ig grind-t"><thead><tr><th class="ig-corner"></th>${gs.map((gr) => `<th><span class="gk">${esc(gr.k)}</span>${soleSvg(gr)}<b>${esc(gr.name)}</b></th>`).join('')}</tr></thead><tbody>
+${row('🎯', '추천 실력', (gr) => `<span class="skill sk-${SKILLS.indexOf(gr.skill) + 1}">${esc(gr.skill)}</span>`)}
+${row('📏', '바운스', (gr) => `${meter(gr.b)}<small class="ig-spec">${esc(gr.bounce)}</small>`)}
+${row('🪶', '솔 폭', (gr) => meter(gr.sole))}
+${row('🔓', '페이스 열기', (gr) => meter(gr.open))}
+${row('📐', '대표 로프트', (gr) => `<span class="ig-spec">${esc(gr.lofts)}</span>`)}
+${row('🏌️', '스윙 유형', (gr) => `<b class="ig-short">${esc(gr.swing)}</b>`)}
+${row('🌱', '잔디·벙커', (gr) => `<span class="ig-spec">${esc(gr.turf)}</span>`)}
+${row('💬', '이럴 때', (gr) => `<span class="ig-plus">${esc(gr.use)}</span>`)}
+</tbody></table></div>
+<p class="note">솔 모양은 이해를 돕기 위해 직접 그린 개념도이며 실제 형상과 다릅니다 · 바운스는 세대·로프트마다 달라 대표값입니다 · 정확한 스펙은 공식몰 확인</p></div>
+${m ? `<h3 class="grind-mh">내 스윙 × 잔디 조건으로 고르기</h3><div class="tablewrap"><table class="grind-m"><thead><tr><th></th>${m.cols.map((c) => `<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${m.rows.map((r) => `<tr><th scope="row">${esc(r.h)}</th>${r.v.map((v) => `<td><b>${esc(v)}</b></td>`).join('')}</tr>`).join('')}</tbody></table></div>` : ''}
+<div class="grind-cards">${gs.map((gr) => `<div><span class="gk">${esc(gr.k)}</span><b>${esc(gr.name)}</b><p>${esc(gr.desc)}</p></div>`).join('')}</div></section>`;
+}
+
+// 실력 단계별 비교 페이지 (/g/{slug}-{beginner|intermediate|advanced|pro})
+const SKILL_EN = { 초심자: 'beginner', 중급: 'intermediate', 고급: 'advanced', 프로: 'pro' };
+const skillPath = (g, s) => `/g/${g.slug}-${SKILL_EN[s]}`;
+const skillGroups = (g) =>
+  SKILLS.map((skill) => ({ skill, ids: g.picks.filter((pk) => pk.skill === skill && byId[pk.id]).map((pk) => pk.id) })).filter((x) => x.ids.length);
+const DIST_NOTE = '비거리 점수는 헤드 설계(반발·스핀·탄도)와 일반적인 사용자 평가를 바탕으로, 각 제품이 맞는 스윙 스피드에서 낼 수 있는 거리 잠재력을 매긴 주관적 참고값(10점 만점)입니다. 실측 비거리가 아니며 스윙에 맞지 않는 제품은 오히려 거리가 줄 수 있습니다.';
+// 비거리 비교 추천: 비거리 점수 순위 + 실력별 비거리 1위
+function distCompare(g, ids) {
+  const ps = g.picks.filter((pk) => pk.dist && byId[pk.id] && (!ids || ids.includes(pk.id)));
+  if (!ps.length) return '';
+  const sorted = [...ps].sort((x, y) => y.dist - x.dist || (y.scores ? avg(y.scores) : 0) - (x.scores ? avg(x.scores) : 0));
+  const tops = ids ? [] : SKILLS.map((s) => ({ s, pk: sorted.find((pk) => pk.skill === s) })).filter((x) => x.pk);
+  const sk = (s) => `<span class="skill sk-${SKILLS.indexOf(s) + 1}">${s}</span>`;
+  return `<section class="dist"><h2>🚀 비거리 비교 추천 <small>거리 잠재력 순위</small></h2>
+${tops.length ? `<div class="dist-top">${tops
+    .map(({ s, pk }) => {
+      const { p, hist } = byId[pk.id];
+      const image = imageOf(p.id, hist);
+      return `<a href="/p/${p.id}">${sk(s)}<span class="dist-tl">${esc(s)} 비거리 추천</span>${image ? `<img src="${esc(image)}" alt="" loading="lazy">` : ''}<b>${esc(p.name)}</b><span class="dist-n">${pk.dist}<small>/10</small></span>${levelBadge(p.id)}</a>`;
+    })
+    .join('')}</div>` : ''}
+<ol class="dist-list">${sorted
+    .map((pk) => {
+      const { p, hist } = byId[pk.id];
+      const image = imageOf(p.id, hist);
+      return `<li><a href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="" loading="lazy">` : '<span class="dimg"></span>'}<span class="dname"><b>${esc(p.name)}</b><span class="tierline">${pk.skill ? sk(pk.skill) : ''}${levelBadge(p.id)}</span></span><span class="bar dist"><i style="width:${pk.dist * 10}%"></i></span><b class="dnum">${pk.dist}</b></a></li>`;
+    })
+    .join('')}</ol>
+<p class="note">※ ${DIST_NOTE}</p></section>`;
+}
 
 // ---------- 상품 상세: 사진 갤러리와 비교 분석 ----------
 const galleryConf = readJson(join(ROOT, 'config', 'gallery.json'), { base: '', images: {} });
@@ -569,9 +642,10 @@ ${crit.map((_, i) => `<td class="sc">${pk.scores ? dots(pk.scores[i]) : '-'}</td
 <p class="g-kicker">${g.gender ? `<span class="gender g-${esc(g.gender)}">${esc(g.gender === '공용' ? '남녀공용' : g.gender)}</span>` : ''}${esc(guideName(g))}</p>
 <h1>${esc(g.title)}</h1>
 <section class="prose"><p>${esc(g.intro)}</p></section>
-<nav class="toc"><a href="#cmp">비교표</a><a href="#tiers">수준별 비교</a><a href="#scores">항목별 점수</a><a href="#models">모델별 분석</a><a href="#choose">선택 가이드</a><a href="#faq">자주 묻는 질문</a></nav>
-<section id="cmp">${infographic(g)}</section>
-<div id="tiers">${tierCompare(g)}</div>
+<nav class="toc">${g.grinds ? '<a href="#grind">그라인드 비교</a>' : ''}<a href="#cmp">비교표</a><a href="#tiers">수준별 비교</a>${g.picks.some((pk) => pk.dist) ? '<a href="#dist">비거리 비교</a>' : ''}<a href="#scores">항목별 점수</a><a href="#models">모델별 분석</a><a href="#choose">선택 가이드</a><a href="#faq">자주 묻는 질문</a></nav>
+${grindCompare(g)}<section id="cmp">${infographic(g)}</section>
+${skillNav(g)}<div id="tiers">${tierCompare(g)}</div>
+<div id="dist">${distCompare(g)}</div>
 <section id="scores"><h2>한눈에 비교: 항목별 점수</h2><div class="tablewrap"><table class="scores"><thead><tr><th>모델</th>${crit.map((c) => `<th>${esc(c)}</th>`).join('')}<th>종합</th><th></th></tr></thead><tbody>${scoreRows}</tbody></table></div>
 <p class="note score-note">※ ${SCORE_NOTE}</p>
 <p class="note">${DISCLOSURE}</p></section>
@@ -586,6 +660,45 @@ ${figure(guideCat(g)?.id)}
 <section><h2>다른 비교·추천 가이드</h2>${guideGrid(guides.filter((o) => o.slug !== g.slug))}</section>`,
     }),
   );
+}
+
+// 실력 단계 바로가기 칩
+function skillNav(g, active) {
+  const gs = skillGroups(g);
+  if (!gs.length) return '';
+  return `<nav class="skillnav" aria-label="실력별 비교"><span>실력별 비교</span><a href="/g/${g.slug}"${active ? '' : ' class="on"'}>전체 ${g.picks.length}종</a>${gs
+    .map((x) => `<a href="${skillPath(g, x.skill)}"${x.skill === active ? ' class="on"' : ''}><span class="skill sk-${SKILLS.indexOf(x.skill) + 1}">${x.skill}</span> ${x.ids.length}종</a>`)
+    .join('')}</nav>`;
+}
+// 실력 단계별 비교 페이지: 해당 실력대 상품을 저가→프리미엄 순으로
+for (const g of guides) {
+  const c = guideCat(g);
+  const who = g.gender && g.gender !== '공용' ? `${g.gender} ` : '';
+  for (const { skill, ids } of skillGroups(g)) {
+    const ps = rankedPicks(g).filter((pk) => ids.includes(pk.id));
+    const levels = LEVELS.filter((l) => l && ps.some((pk) => priceLevel(pk.id)?.label === l));
+    const name = `${who}${skill}용 ${c?.name ?? ''}`;
+    writeText(
+      join(OUT, 'g', `${g.slug}-${SKILL_EN[skill]}.html`),
+      layout({
+        title: `${name} 비교 추천 ${ps.length}종`,
+        desc: `${name} ${ps.length}종을 ${levels.join('·')} 가격대별로 비교했습니다. 장단점, 주관적 점수, 비거리 참고 점수와 쿠팡 가격 확인 링크를 함께 정리했습니다.`,
+        path: skillPath(g, skill),
+        body: `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${c?.id}">${esc(c?.name ?? '')}</a>${who ? ` › <a href="/g/${g.slug}">${esc(g.gender)}</a>` : ''} › ${esc(skill)}</nav>
+<p class="g-kicker"><span class="skill sk-${SKILLS.indexOf(skill) + 1}">${skill}</span>${esc(guideName(g))}</p>
+<h1>${esc(name)} 비교 추천 <small>${ps.length}종 · ${esc(levels.join('·'))}</small></h1>
+${skillNav(g, skill)}
+<section>${infographic(g, null, { ids, byPrice: true, title: `${name}` })}</section>
+${distCompare(g, ids)}
+<section class="choose"><h2>${esc(skill)}에게 맞는 선택</h2><div class="choose-pick">${ps
+          .map((pk) => `<a href="/p/${pk.id}"><span class="tierline">${levelBadge(pk.id)}<span class="badge mid">${esc(pk.role)}</span></span><b>${esc(byId[pk.id].p.name)}</b><small>${esc(pk.forWhom)}</small><small class="vd">${esc(pk.verdict ?? '')}</small></a>`)
+          .join('')}</div></section>
+<p class="note score-note">※ ${SCORE_NOTE}</p>
+<p class="note">${DISCLOSURE}</p>
+<a class="more-link" href="/g/${g.slug}">${esc(guideName(g))} 전체 보기 ›</a>`,
+      }),
+    );
+  }
 }
 
 // ---------- 메인 페이지 ----------
@@ -788,7 +901,7 @@ writeText(
 );
 
 // ---------- 검색엔진용 파일 ----------
-const urls = ['/', '/about', ...guides.map((g) => `/g/${g.slug}`), ...cats.map((c) => `/c/${c.id}`), ...entries.map((e) => `/p/${e.p.id}`)];
+const urls = ['/', '/about', ...guides.map((g) => `/g/${g.slug}`), ...guides.flatMap((g) => skillGroups(g).map((x) => skillPath(g, x.skill))), ...cats.map((c) => `/c/${c.id}`), ...entries.map((e) => `/p/${e.p.id}`)];
 writeText(
   join(OUT, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
