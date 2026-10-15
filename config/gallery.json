@@ -193,6 +193,42 @@
       "image/vendor_inventory/2b8c/2463c4c0a20b1d4ef2852087a18883b40c26f0e4c9af78b2633603f5018b.jpg",
       "image/retail/images/2026/08/27/13/8/d102d7a1-255b-408a-bf54-981917b81afc.jpg",
       "image/vendor_inventory/3b2a/f4daed8c3c3b33961eb58d843001a062f3d4b5dfc9a03459dfea35c8d8d4.jpg"
+    ],
+    "cleveland-rtz-wedge": [
+      "image/vendor_inventory/eecf/4ae17da0041e3901f77a9cee4f0aa88147e18d8861182bf7c6ae77858a7e.jpg"
+    ],
+    "callaway-opus-sp-wedge": [
+      "image/vendor_inventory/0066/94b31b3b1d4dee47db16c08633c5fbff33def9eddbb66240d82f9eb37bf5.jpg"
+    ],
+    "taylormade-mg4-wedge": [
+      "image/vendor_inventory/0ccf/e55d82d12212d0a931366758280fdb466eb9009e6ba4c4c57c77147bb36f.jpg"
+    ],
+    "ping-s259-wedge": [
+      "image/vendor_inventory/40cc/1ec7e051cf095e641be4d4973f2befe32ef2832cf8e0562188a06481c8c7.jpeg"
+    ],
+    "ping-g440-max-fairway": [
+      "image/vendor_inventory/6875/34571983b9abd87339c308faa2813a0bb44a602398d52851fe61c538e19d.jpg"
+    ],
+    "taylormade-qi35-fairway": [
+      "image/retail/images/2026/04/28/16/1/9271bd6c-a711-4762-bfb5-badbfaa3631d.jpg"
+    ],
+    "callaway-elyte-fairway": [
+      "image/retail/images/2026/09/18/16/0/9ceaf723-e1b3-41fa-b0e3-22edf4c8904f.jpg"
+    ],
+    "cobra-optm-x-fairway": [
+      "image/vendor_inventory/4e17/b88c2d15e9eee5aff8408dbc08c6b33dab97989c5c6845543501d2699fd0.jpg"
+    ],
+    "ping-g440-hybrid": [
+      "image/vendor_inventory/5ac6/b770e48d5fa5261c416ecca55f717c031dea03d6d9780bf6342942d029ac.jpg"
+    ],
+    "taylormade-qi35-rescue": [
+      "image/retail/images/2026/04/28/16/3/6ba112ce-32ec-4e5a-8cb8-680c17ec92ca.jpg"
+    ],
+    "callaway-elyte-hybrid": [
+      "image/vendor_inventory/ba8d/3c0e694d0a2241a98c1604e86f98e344d4ceb14e671b4fe9f5a3388ae5f4.jpg"
+    ],
+    "cobra-optm-hybrid": [
+      "image/vendor_inventory/6b32/0a83d7f315a9d64df74c179c2b39fd4d8de351156c38ddb0f6b92fc3ece3.jpg"
     ]
   }
 }
