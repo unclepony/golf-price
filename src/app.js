@@ -165,8 +165,10 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
   // ---------- 카테고리 탭 ----------
   $$('.tab').forEach((b) =>
     b.addEventListener('click', () => {
-      $$('.tab').forEach((x) => { x.classList.toggle('on', x === b); x.setAttribute('aria-selected', String(x === b)); });
-      $$('.tabpanel').forEach((p) => p.classList.toggle('on', p.dataset.panel === b.dataset.tab));
+      if (b.disabled) return;
+      const scope = b.closest('.tabs-wrap') || b.closest('#cats') || document;
+      $$('.tab', scope).forEach((x) => { x.classList.toggle('on', x === b); x.setAttribute('aria-selected', String(x === b)); });
+      $$('.tabpanel', scope).forEach((p) => p.classList.toggle('on', p.dataset.panel === b.dataset.tab));
     }),
   );
 })();

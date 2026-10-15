@@ -136,7 +136,7 @@ ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표�
         : '';
       return `<div class="qitem"><a href="/c/${c.id}">${esc(c.name)}</a>${sub}</div>`;
     })
-    .join('')}<a href="/#guides" class="hl">비교·추천</a></div>
+    .join('')}</div>
 </div></nav>`;
 }
 
@@ -179,18 +179,28 @@ const imageOf = (id, hist) => hist?.latest?.image ?? picks[id]?.image;
 const PRICE_DATE = SITE.priceCheckedAt ?? '';
 const priceDateLabel = PRICE_DATE ? `${+PRICE_DATE.slice(5, 7)}.${+PRICE_DATE.slice(8, 10)}` : '';
 const pickPrice = (id) => picks[id]?.price ?? null;
-// 가격 수준: 같은 비교 안에서 가장 싼 상품 대비 상대 단계 (숫자 가격은 표시하지 않음)
-const LEVELS = ['', '합리적', '보통', '높은 편', '최고가'];
+// 가격 단계: 아이템(카테고리)별 가격 구간(priceBands) 기준 저가·중가·고가·프리미엄 (숫자 가격은 표시하지 않음)
+const LEVELS = ['', '저가', '중가', '고가', '프리미엄'];
+const SKILLS = ['초심자', '중급', '고급', '프로'];
 function priceLevel(id) {
-  const g = guides.find((x) => x.picks.some((pk) => pk.id === id));
-  if (!g) return null;
-  const prices = g.picks.map((pk) => pickPrice(pk.id)).filter(Boolean);
   const p = pickPrice(id);
-  if (!p || !prices.length) return null;
-  const r = p / Math.min(...prices);
-  const n = r <= 1.3 ? 1 : r <= 2 ? 2 : r <= 3 ? 3 : 4;
+  const prod = config.products.find((x) => x.id === id);
+  const bands = cats.find((c) => c.id === prod?.category)?.priceBands;
+  if (!p || !bands) return null;
+  const n = p < bands[0] ? 1 : p < bands[1] ? 2 : p < bands[2] ? 3 : 4;
   return { n, label: LEVELS[n], marks: '₩'.repeat(n) };
 }
+const skillOf = (id) => {
+  for (const g of guides) {
+    const pk = g.picks.find((x) => x.id === id);
+    if (pk?.skill) return pk.skill;
+  }
+  return null;
+};
+const skillBadge = (id) => {
+  const s = skillOf(id);
+  return s ? `<span class="skill sk-${SKILLS.indexOf(s) + 1}">${s}</span>` : '';
+};
 const levelBadge = (id) => {
   const lv = priceLevel(id);
   return lv ? `<span class="lvl lvl-${lv.n}"><i>${lv.marks}</i>${lv.label}</span>` : '';
@@ -204,8 +214,8 @@ function levelLink(id, hist, extra = '쿠팡에서 가격 보기 ›') {
   return link ? `<a class="lvl-link" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">${inner}</a>` : `<span class="lvl-link">${inner}</span>`;
 }
 function priceTag(id, a, cls = 'pt-price') {
-  const b = levelBadge(id);
-  return b ? `<p class="${cls}">${b}</p>` : '';
+  const b = skillBadge(id) + levelBadge(id);
+  return b ? `<p class="${cls} tierline">${b}</p>` : '';
 }
 
 // ---------- 투어·뉴스 소식, 설명 그림 ----------
@@ -309,8 +319,8 @@ function priceTier(g, id) {
   return '₩'.repeat(r <= 1.3 ? 1 : r <= 2 ? 2 : r <= 3 ? 3 : 4);
 }
 // 비교 인포그래픽 표: 제품을 열로, 비교 항목을 행으로
-function infographic(g, highlight) {
-  const ps = rankedPicks(g);
+function infographic(g, highlight, opts = {}) {
+  const ps = opts.ids ? rankedPicks(g).filter((pk) => opts.ids.includes(pk.id)) : rankedPicks(g);
   const crit = g.criteria ?? [];
   const col = (pk, i) => {
     const { p, hist } = byId[pk.id];
@@ -319,9 +329,10 @@ function infographic(g, highlight) {
   };
   const row = (icon, label, cell, cls = '') =>
     `<tr class="${cls}"><th scope="row"><span class="ig-ico">${icon}</span>${label}</th>${ps.map((pk) => `<td class="${pk.id === highlight ? 'hl' : ''}">${cell(pk)}</td>`).join('')}</tr>`;
-  return `<div class="ig-wrap"><div class="ig-head"><p class="ig-kicker">${esc(SITE_NAME)} 비교표</p><h3>${esc(shortTitle(g.title))} <span>${ps.length}종 한눈에 비교</span></h3></div>
+  return `<div class="ig-wrap"><div class="ig-head"><p class="ig-kicker">${esc(SITE_NAME)} 비교표</p><h3>${esc(opts.title ?? shortTitle(g.title))} <span>${ps.length}종 한눈에 비교</span></h3></div>
 <div class="tablewrap ig-scroll"><table class="ig"><thead><tr><th class="ig-corner"></th>${ps.map(col).join('')}</tr></thead><tbody>
 ${row('🏆', '종합 점수', (pk) => (pk.scores ? `<b class="ig-total">${avg(pk.scores).toFixed(1)}</b><span class="bar"><i style="width:${(avg(pk.scores) / 5) * 100}%"></i></span>` : '-'), 'r-total')}
+${row('🎯', '수준', (pk) => `<span class="tierline">${skillBadge(pk.id)}${levelBadge(pk.id)}</span>`)}
 ${row('💬', '한마디', (pk) => `<b class="ig-short">${esc(pk.short ?? pk.role)}</b>`)}
 ${(g.specRows ?? []).map((label, si) => row('📐', esc(label.replace('연결 상품 ', '')), (pk) => `<span class="ig-spec">${esc(pk.specs?.[si] ?? '-')}</span>`)).join('')}
 ${row('👍', '강점', (pk) => `<span class="ig-plus">${esc(pk.plus ?? pk.pros?.[0] ?? '-')}</span>`)}
@@ -329,7 +340,30 @@ ${row('👎', '약점', (pk) => `<span class="ig-minus">${esc(pk.minus ?? pk.con
 ${crit.length ? row('📊', '항목별', (pk) => (pk.scores ? `<span class="ig-crits">${crit.map((c, i) => `<span><em>${esc(c.split('·')[0])}</em>${dots(pk.scores[i])}</span>`).join('')}</span>` : '-')) : ''}
 ${row('💰', '가격대', (pk) => levelLink(pk.id, byId[pk.id].hist, '쿠팡 ›'), 'r-price')}
 </tbody></table></div>
-<p class="note">점수는 주관적 참고 점수(공식 평가 아님) · 가격대는 이 비교 안에서의 상대 수준 · 가격대를 누르면 쿠팡(파트너스 링크)으로 이동</p></div>`;
+<p class="note">점수는 주관적 참고 점수(공식 평가 아님) · 실력 단계는 추천 대상, 가격 단계는 아이템별 가격 구간 기준 · 가격대를 누르면 쿠팡(파트너스 링크)으로 이동</p></div>`;
+}
+// 수준별 비교: 실력(초심자·중급·고급·프로) / 가격(저가·중가·고가·프리미엄) 탭으로 나눠 비교
+let tierSeq = 0;
+function tierCompare(g) {
+  const ps = rankedPicks(g);
+  const short = shortTitle(g.title);
+  const groups = [];
+  if (ps.some((pk) => pk.skill)) groups.push({ name: '실력별', items: SKILLS.map((s) => ({ label: s, ids: ps.filter((pk) => pk.skill === s).map((pk) => pk.id) })) });
+  groups.push({ name: '가격별', items: LEVELS.slice(1).map((l) => ({ label: l, ids: ps.filter((pk) => priceLevel(pk.id)?.label === l).map((pk) => pk.id) })) });
+  const all = groups.flatMap((gr) => gr.items.map((it) => ({ ...it, group: gr.name })));
+  const first = all.find((it) => it.ids.length);
+  const key = `t${++tierSeq}`;
+  const btn = (it) => {
+    const id = `${key}-${it.group}-${it.label}`;
+    return `<button type="button" class="tab${it === first ? ' on' : ''}" data-tab="${esc(id)}"${it.ids.length ? '' : ' disabled'}>${esc(it.label)} <small>${it.ids.length}</small></button>`;
+  };
+  return `<section class="tiers tabs-wrap"><h2>수준별 비교 <small>실력과 가격대로 나눠 보기</small></h2>
+${groups.map((gr) => `<div class="tier-row"><span class="tier-gname">${gr.name}</span><div class="tabs" role="tablist">${gr.items.map((it) => btn(all.find((a) => a.group === gr.name && a.label === it.label))).join('')}</div></div>`).join('')}
+${all
+  .filter((it) => it.ids.length)
+  .map((it) => `<div class="tabpanel${it === first ? ' on' : ''}" data-panel="${esc(`${key}-${it.group}-${it.label}`)}">${infographic(g, null, { ids: it.ids, title: `${it.label} ${short}` })}</div>`)
+  .join('')}
+</section>`;
 }
 const guidesFor = (catId) => guides.filter((g) => g.picks.some((pk) => byId[pk.id]?.p.category === catId));
 const genderLabel = (g, c) => (g.gender && g.gender !== '공용' ? `${g.gender} ${c.name} 비교` : `${c.name} 비교`);
@@ -456,7 +490,7 @@ for (const c of cats) {
       body: `<nav class="crumb"><a href="/">홈</a> › ${esc(c.name)}</nav>
 <h1>${esc(c.name)} 비교</h1>
 ${related.length > 1 ? `<nav class="gtabs">${related.map((g) => `<a href="#g-${g.slug}">${esc(genderLabel(g, c))}</a>`).join('')}</nav>` : ''}
-${related.map((g) => `<section id="g-${g.slug}" class="cat-cmp">${related.length > 1 ? `<h2 class="cat-cmp-h"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender ?? '공용')}</span>${esc(c.name)} 비교</h2>` : ''}${infographic(g)}<a class="more-link" href="/g/${g.slug}">장단점·고르는 법 전체 보기 ›</a></section>`).join('')}
+${related.map((g) => `<section id="g-${g.slug}" class="cat-cmp">${related.length > 1 ? `<h2 class="cat-cmp-h"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender ?? '공용')}</span>${esc(c.name)} 비교</h2>` : ''}${infographic(g)}${tierCompare(g)}<a class="more-link" href="/g/${g.slug}">장단점·고르는 법 전체 보기 ›</a></section>`).join('')}
 <section><h2>${esc(c.name)} 전체 상품</h2>${prow(items)}</section>
 <section class="prose"><h2>${esc(c.name)} 고르는 법</h2><p>${esc(c.intro)}</p>${figure(c.id)}<ul>${c.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>`,
     }),
@@ -511,8 +545,9 @@ ${crit.map((_, i) => `<td class="sc">${pk.scores ? dots(pk.scores[i]) : '-'}</td
 <p class="g-kicker">${g.gender ? `<span class="gender g-${esc(g.gender)}">${esc(g.gender === '공용' ? '남녀공용' : g.gender)}</span>` : ''}${esc(guideName(g))}</p>
 <h1>${esc(g.title)}</h1>
 <section class="prose"><p>${esc(g.intro)}</p></section>
-<nav class="toc"><a href="#cmp">비교표</a><a href="#scores">항목별 점수</a><a href="#models">모델별 분석</a><a href="#choose">선택 가이드</a><a href="#faq">자주 묻는 질문</a></nav>
+<nav class="toc"><a href="#cmp">비교표</a><a href="#tiers">수준별 비교</a><a href="#scores">항목별 점수</a><a href="#models">모델별 분석</a><a href="#choose">선택 가이드</a><a href="#faq">자주 묻는 질문</a></nav>
 <section id="cmp">${infographic(g)}</section>
+<div id="tiers">${tierCompare(g)}</div>
 <section id="scores"><h2>한눈에 비교: 항목별 점수</h2><div class="tablewrap"><table class="scores"><thead><tr><th>모델</th>${crit.map((c) => `<th>${esc(c)}</th>`).join('')}<th>종합</th><th></th></tr></thead><tbody>${scoreRows}</tbody></table></div>
 <p class="note score-note">※ ${SCORE_NOTE}</p>
 <p class="note">${DISCLOSURE}</p></section>
