@@ -180,7 +180,7 @@ const PRICE_DATE = SITE.priceCheckedAt ?? '';
 const priceDateLabel = PRICE_DATE ? `${+PRICE_DATE.slice(5, 7)}.${+PRICE_DATE.slice(8, 10)}` : '';
 const pickPrice = (id) => picks[id]?.price ?? null;
 // 가격 수준: 같은 비교 안에서 가장 싼 상품 대비 상대 단계 (숫자 가격은 표시하지 않음)
-const LEVELS = ['', '합리적', '중가', '고가', '최고가'];
+const LEVELS = ['', '합리적', '보통', '높은 편', '최고가'];
 function priceLevel(id) {
   const g = guides.find((x) => x.picks.some((pk) => pk.id === id));
   if (!g) return null;

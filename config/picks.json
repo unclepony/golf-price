@@ -365,5 +365,53 @@
     "price": 23980,
     "rocket": false,
     "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/6c22/d851c429d1392f81b5a32ab3edf7b93960b7e4dcb48d8b403efb44ba9964.jpg"
+  },
+  "xxio14-women-iron": {
+    "title": "젝시오 여성용 던롭코리아 14 아이언 7i 화이트, 30도, L",
+    "price": 1580000,
+    "rocket": true,
+    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/08/13/9/1/8371e372-997f-4406-81d1-130f6165c410.jpg"
+  },
+  "ping-gle4-women-iron": {
+    "title": "핑 GLE4 아이언세트 여성용 7개+5번 유틸리티, (삼양정품)5번유틸+7개세트 L 여성용",
+    "price": 1790000,
+    "rocket": false,
+    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/90d6/325d4b38e39fdda6dceac033a749e0786f2666350d5920e16aaaaf69e30b.jpg"
+  },
+  "callaway-elyte-maxfast-women-iron": {
+    "title": "캘러웨이 (25)엘리트 맥스 패스트 여성 아이언 7i, (UST LINQ GREEN 여성 L), L",
+    "price": 1012000,
+    "rocket": false,
+    "image": "https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1c26/55c60b18bbf4bd0b2257f9401b6186ccdb5501e7d74312c511e1e0abf482.jpg"
+  },
+  "taylormade-qi-maxlite-women-iron": {
+    "title": "테일러메이드 여성용 Qi MAX Lite 카본 7아이언, L, 26.5도",
+    "price": 799000,
+    "rocket": true,
+    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/06/08/10/9/98d79f28-c087-4269-b02a-b6e9648979f5.jpg"
+  },
+  "footjoy-pulse-boa-women-shoes": {
+    "title": "풋조이 정품 FJ 펄스 보아 스파이크리스 여성 방수 골프화 경량 발편한 파크 겸용 골프신발",
+    "price": 197000,
+    "rocket": false,
+    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/7252/d64586e3c27210ac663355219e26fd3e25c6df09a8c396618ab513950129.png"
+  },
+  "footjoy-flow2-boa-women-shoes": {
+    "title": "풋조이 여성용 플로우 2.0 보아 W형 골프화 90929",
+    "price": 176000,
+    "rocket": false,
+    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/01ba/d170bf10ecc6cfee48104303aed75fcd155edd2bd411e921c26539ec4017.jpg"
+  },
+  "ecco-goretex-women-shoes": {
+    "title": "에코 골프화 신발 운동화 여성 고어텍스 102903 59044",
+    "price": 128000,
+    "rocket": false,
+    "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d7b8/0de9e5ec142e7d0b81d8d7e38f8331e9ee327db8e8ea54f85be4243b9893.jpg"
+  },
+  "adidas-adipower-sl-women-shoes": {
+    "title": "아디다스 여성 아디파워 SL 보아 스파이크리스 골프화",
+    "price": 119000,
+    "rocket": false,
+    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/c089e74c3f810140ba75b4d1010d9468fa7236599785b2252da6b1b9c8d7_1790835233225.png"
   }
 }
