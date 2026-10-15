@@ -16,6 +16,13 @@ const PRICE_NOTE = '가격은 쿠팡 상품 검색 결과 중 조건에 맞는 �
 const config = loadConfig();
 const links = loadLinks();
 const picks = readJson(join(ROOT, 'config', 'picks.json'), {});
+const siteConf = readJson(join(ROOT, 'config', 'site.json'), {});
+const VERIFY = [
+  siteConf.googleVerification && `<meta name="google-site-verification" content="${siteConf.googleVerification}">`,
+  siteConf.naverVerification && `<meta name="naver-site-verification" content="${siteConf.naverVerification}">`,
+]
+  .filter(Boolean)
+  .join('\n');
 const cats = config.categories;
 const catName = Object.fromEntries(cats.map((c) => [c.id, c.name]));
 
@@ -101,7 +108,7 @@ function layout({ title, desc, path, body }) {
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${SITE_URL}${path}">
-${DEMO ? '<meta name="robots" content="noindex">' : ''}
+${DEMO ? '<meta name="robots" content="noindex">' : path === '/' ? VERIFY : ''}
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛳</text></svg>">
 </head>
