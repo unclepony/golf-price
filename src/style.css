@@ -93,6 +93,18 @@ h2 small, .label small { color: var(--muted); font-weight: 400; font-size: 13px;
 .hero.with-img { display: flex; gap: 20px; align-items: flex-start; }
 .hero-img { flex: 0 0 180px; width: 180px; height: 180px; object-fit: contain; background: #fff; border-radius: 12px; border: 1px solid var(--line); }
 @media (max-width: 640px) { .hero.with-img { flex-direction: column; } .hero-img { width: 140px; height: 140px; flex-basis: auto; } }
+.btn.sm { display: inline-block; padding: 6px 12px; font-size: 13px; max-width: none; }
+.pcell { white-space: normal; min-width: 180px; }
+.pcell img { width: 48px; height: 48px; object-fit: contain; background: #fff; border-radius: 6px; vertical-align: middle; margin-right: 8px; }
+.pcell a { font-weight: 600; text-decoration: none; }
+.pick { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 4px 20px 20px; margin-top: 16px; }
+.pick h2 small { margin-left: 6px; }
+.guides { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.guides a { display: block; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; text-decoration: none; }
+.guides a:hover { border-color: var(--accent); }
+.guides b { display: block; }
+.guides span { font-size: 13px; color: var(--muted); }
+.prose h3 { font-size: 16px; margin: 20px 0 4px; }
 .linked { font-size: 13px; color: var(--muted); margin: 12px 0 8px; }
 .note { font-size: 12px; color: var(--muted); margin: 8px 0 0; }
 

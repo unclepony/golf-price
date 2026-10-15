@@ -244,6 +244,49 @@ for (const c of cats) {
   );
 }
 
+// ---------- 비교·추천 가이드 ----------
+const guides = readJson(join(ROOT, 'config', 'guides.json'), { guides: [] }).guides;
+const byId = Object.fromEntries(entries.map((e) => [e.p.id, e]));
+for (const g of guides) {
+  const rows = g.picks
+    .filter((pk) => byId[pk.id])
+    .map((pk) => {
+      const { p, hist, a } = byId[pk.id];
+      const image = imageOf(p.id, hist);
+      const link = links[p.id] ?? hist?.latest?.link;
+      return `<tr>
+<td class="pcell">${image ? `<img src="${esc(image)}" alt="" loading="lazy">` : ''}<a href="/p/${p.id}">${esc(p.name)}</a></td>
+<td><span class="badge mid">${esc(pk.role)}</span></td>
+<td class="t">${esc(pk.forWhom)}</td>
+<td>${a ? `<b>${won(a.cur)}</b><br>` : ''}${link ? `<a class="btn sm" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">쿠팡 보기</a>` : ''}</td>
+</tr>`;
+    })
+    .join('');
+  const cards = g.picks
+    .filter((pk) => byId[pk.id])
+    .map((pk) => {
+      const { p, hist } = byId[pk.id];
+      return `<section class="pick"><h2>${esc(p.name)} <small>${esc(pk.role)}</small></h2><p>${esc(p.summary)}</p><p><b>이런 분께:</b> ${esc(pk.forWhom)}</p>${buyButton(p.id, hist)}</section>`;
+    })
+    .join('');
+  writeText(
+    join(OUT, 'g', `${g.slug}.html`),
+    layout({
+      title: g.title,
+      desc: g.desc,
+      path: `/g/${g.slug}`,
+      body: `<nav class="crumb"><a href="/">홈</a> › 비교·추천</nav>
+<h1>${esc(g.title)}</h1>
+<section class="prose"><p>${esc(g.intro)}</p></section>
+<section><h2>한눈에 비교</h2><div class="tablewrap"><table><thead><tr><th>모델</th><th>성격</th><th>이런 분께</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>
+<p class="note">${DISCLOSURE}</p></section>
+${cards}
+<section class="prose">${g.sections.map((s) => `<h2>${esc(s.h)}</h2><p>${esc(s.p)}</p>`).join('')}</section>
+<section class="prose"><h2>자주 묻는 질문</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>`,
+    }),
+  );
+}
+
 // ---------- 메인 페이지 ----------
 const deals = tracked.filter((e) => e.a.verdict.cls === 'good');
 const sections = cats
@@ -264,6 +307,7 @@ writeText(
 <nav class="chips">${cats.map((c) => `<a href="/c/${c.id}">${esc(c.name)}</a>`).join('')}</nav>
 </section>
 ${deals.length ? `<section><h2>🔥 지금 사기 좋은 상품</h2>${grid(deals)}</section>` : ''}
+${guides.length ? `<section><h2>비교·추천 가이드</h2><ul class="guides">${guides.map((g) => `<li><a href="/g/${g.slug}"><b>${esc(g.title)}</b><span>${esc(g.desc)}</span></a></li>`).join('')}</ul></section>` : ''}
 ${sections}`,
   }),
 );
@@ -295,7 +339,7 @@ writeText(
 );
 
 // ---------- 검색엔진용 파일 ----------
-const urls = ['/', '/about', ...cats.map((c) => `/c/${c.id}`), ...entries.map((e) => `/p/${e.p.id}`)];
+const urls = ['/', '/about', ...guides.map((g) => `/g/${g.slug}`), ...cats.map((c) => `/c/${c.id}`), ...entries.map((e) => `/p/${e.p.id}`)];
 writeText(
   join(OUT, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
