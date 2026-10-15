@@ -1830,6 +1830,158 @@
         "국내 정품 여부 확인"
       ],
       "ref": 119000
+    },
+    {
+      "id": "titleist-gts2-driver",
+      "category": "driver",
+      "name": "타이틀리스트 GTS2 드라이버 (2026)",
+      "query": "타이틀리스트 GTS2 드라이버",
+      "must": [
+        "gts2",
+        "드라이버"
+      ],
+      "exclude": [
+        "중고",
+        "헤드"
+      ],
+      "min": 400000,
+      "max": 2000000,
+      "summary": "타이틀리스트의 2026년 GTS 시리즈 드라이버입니다. GT2의 뒤를 잇는 균형형 모델로, 쿠팡에 국내 정품이 없어 공식몰 링크로 비교합니다.",
+      "points": [
+        "공식몰·공식 대리점 정품 구매 권장",
+        "피팅으로 샤프트·로프트 선택"
+      ],
+      "external": {
+        "store": "타이틀리스트 공식몰",
+        "url": "https://www.titleist.co.kr/golf-clubs/drivers/gts2"
+      }
+    },
+    {
+      "id": "titleist-gts2-fairway",
+      "category": "wood",
+      "name": "타이틀리스트 GTS2 페어웨이 우드",
+      "query": "타이틀리스트 GTS2 페어웨이",
+      "must": [
+        "gts2",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드"
+      ],
+      "min": 200000,
+      "max": 1200000,
+      "summary": "타이틀리스트의 2026년 GTS 시리즈 페어웨이 우드입니다. 쿠팡에 국내 정품이 없어 공식몰 링크로 비교합니다.",
+      "points": [
+        "공식몰·공식 대리점 정품 구매 권장",
+        "번호·로프트 피팅 권장"
+      ],
+      "external": {
+        "store": "타이틀리스트 공식몰",
+        "url": "https://www.titleist.co.kr/golf-clubs/fairways/gts2"
+      }
+    },
+    {
+      "id": "titleist-gt2-hybrid",
+      "category": "utility",
+      "name": "타이틀리스트 GT2 하이브리드",
+      "query": "타이틀리스트 GT2 하이브리드",
+      "must": [
+        "gt2"
+      ],
+      "mustAny": [
+        "하이브리드",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드"
+      ],
+      "min": 200000,
+      "max": 1000000,
+      "summary": "타이틀리스트 GT 시리즈의 하이브리드입니다. 쿠팡에 국내 정품이 없어 공식몰 링크로 비교합니다.",
+      "points": [
+        "공식몰·공식 대리점 정품 구매 권장",
+        "로프트 피팅 권장"
+      ],
+      "external": {
+        "store": "타이틀리스트 공식몰",
+        "url": "https://www.titleist.co.kr/golf-clubs/hybrids/gt2"
+      }
+    },
+    {
+      "id": "titleist-620mb-iron",
+      "category": "iron",
+      "name": "타이틀리스트 620 MB 아이언",
+      "query": "타이틀리스트 620 MB 아이언",
+      "must": [
+        "620",
+        "mb"
+      ],
+      "exclude": [
+        "중고"
+      ],
+      "min": 800000,
+      "max": 4000000,
+      "summary": "타이틀리스트의 머슬백(블레이드) 아이언입니다. 정확한 타격 능력을 갖춘 상급자·선수를 위한 모델로, 공식몰 링크로 비교합니다.",
+      "points": [
+        "초보자에게는 매우 어려움",
+        "공식몰·공식 대리점 정품 구매 권장"
+      ],
+      "external": {
+        "store": "타이틀리스트 공식몰",
+        "url": "https://www.titleist.co.kr/golf-clubs/irons/620mb"
+      }
+    },
+    {
+      "id": "titleist-vokey-sm11",
+      "category": "wedge",
+      "name": "타이틀리스트 보키 SM11 웨지",
+      "query": "보키 SM11 웨지",
+      "must": [
+        "sm11"
+      ],
+      "exclude": [
+        "중고",
+        "병행"
+      ],
+      "min": 150000,
+      "max": 600000,
+      "summary": "타이틀리스트 보키의 2026년 SM11 웨지입니다. 6가지 그라인드와 27가지 스펙 조합이 있고(공식 발표), 쿠팡에 국내 정품이 없어 공식몰 링크로 비교합니다.",
+      "points": [
+        "그라인드·바운스 선택이 핵심",
+        "병행수입품과 구분해 공식몰·대리점 구매 권장"
+      ],
+      "external": {
+        "store": "타이틀리스트 공식몰",
+        "url": "https://www.titleist.co.kr/golf-clubs/wedges/sm11"
+      }
+    },
+    {
+      "id": "scotty-cameron-phantom-2026",
+      "category": "putter",
+      "name": "스카티카메론 팬텀 퍼터 (2026)",
+      "query": "스카티카메론 팬텀 퍼터",
+      "must": [
+        "팬텀",
+        "퍼터"
+      ],
+      "exclude": [
+        "중고",
+        "그립",
+        "커버"
+      ],
+      "min": 300000,
+      "max": 1500000,
+      "summary": "타이틀리스트 스카티카메론의 2026년 팬텀 말렛 퍼터입니다. 공식 설명에 따르면 새 풀 페이스 스튜디오 카본 스틸 인서트를 썼습니다. 쿠팡에 국내 정품이 없어 공식몰 링크로 비교합니다.",
+      "points": [
+        "가품이 많아 공식몰·공식 대리점 구매 권장",
+        "넥 옵션별 스트로크 궁합 확인"
+      ],
+      "external": {
+        "store": "타이틀리스트 공식몰",
+        "url": "https://www.titleist.co.kr/golf-clubs/putters/phantom"
+      }
     }
   ]
 }

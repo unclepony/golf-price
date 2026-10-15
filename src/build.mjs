@@ -206,9 +206,15 @@ const levelBadge = (id) => {
   return lv ? `<span class="lvl lvl-${lv.n}"><i>${lv.marks}</i>${lv.label}</span>` : '';
 };
 // 가격 수준 + 쿠팡 링크
+// 쿠팡에 없는 상품: 공식몰 등 다른 판매처 일반 링크(제휴 아님)
+const extOf = (id) => config.products.find((x) => x.id === id)?.external ?? null;
 function levelLink(id, hist, extra = '쿠팡에서 가격 보기 ›') {
   const lv = priceLevel(id);
   const link = links[id] ?? hist?.latest?.link;
+  const ext = extOf(id);
+  if (!link && ext) {
+    return `<a class="lvl-link" href="${esc(ext.url)}" target="_blank" rel="nofollow noopener"><span class="lvl lvl-0">${lv ? `<i>${lv.marks}</i>${lv.label}` : '공식몰 확인'}</span><small>${esc(ext.store)} ›</small></a>`;
+  }
   if (!lv) return '';
   const inner = `<span class="lvl lvl-${lv.n}"><i>${lv.marks}</i>${lv.label}</span>${link ? `<small>${extra}</small>` : ''}`;
   return link ? `<a class="lvl-link" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">${inner}</a>` : `<span class="lvl-link">${inner}</span>`;
@@ -242,6 +248,12 @@ function figure(category) {
 
 function buyButton(id, hist) {
   const link = links[id] ?? hist?.latest?.link;
+  const ext = extOf(id);
+  if (!link && ext) {
+    return `<p class="linked">판매처: ${esc(ext.store)} (쿠팡에 국내 정품 판매가 없어 다른 판매처로 연결합니다)</p>
+<a class="btn ext" href="${esc(ext.url)}" target="_blank" rel="nofollow noopener">${esc(ext.store)}에서 확인하기</a>
+<p class="note">위 버튼은 제휴 링크가 아니며, 이 사이트는 이 링크로 수수료를 받지 않습니다. 가격·재고는 판매처에서 확인하세요.</p>`;
+  }
   if (!link) return '';
   const linked = links[id] ? picks[id]?.title : hist?.latest?.title;
   return `${linked ? `<p class="linked">연결 상품: ${esc(linked)}</p>` : ''}
@@ -273,6 +285,18 @@ function card({ p, hist, a }) {
 }
 
 const grid = (items) => `<div class="grid">${items.map(card).join('')}</div>`;
+
+// ---------- 쿠팡 링크 비율 검사 (60% 이상 유지) ----------
+{
+  const total = config.products.length;
+  const coupang = config.products.filter((p) => links[p.id]).length;
+  const ratio = coupang / total;
+  console.log(`쿠팡 링크 상품 ${coupang}/${total} (${(ratio * 100).toFixed(1)}%)`);
+  if (ratio < 0.6) {
+    console.error('쿠팡 링크 상품 비율이 60% 미만입니다. 쿠팡 상품을 늘리거나 다른 판매처 상품을 줄이세요.');
+    process.exit(1);
+  }
+}
 
 // ---------- 데이터 읽기 ----------
 const dir = historyDir(DEMO);
@@ -325,7 +349,7 @@ function infographic(g, highlight, opts = {}) {
   const col = (pk, i) => {
     const { p, hist } = byId[pk.id];
     const image = imageOf(p.id, hist);
-    return `<th class="${pk.id === highlight ? 'hl' : ''}"><a href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : ''}<span class="ig-rank">${i + 1}위</span><b>${esc(p.name)}</b><span class="ig-role">${esc(pk.role)}</span></a></th>`;
+    return `<th class="${pk.id === highlight ? 'hl' : ''}"><a href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : `<span class="noimg">${esc(catName[p.category] ?? '')}<small>${esc(extOf(p.id)?.store ?? '')}</small></span>`}<span class="ig-rank">${i + 1}위</span><b>${esc(p.name)}</b><span class="ig-role">${esc(pk.role)}</span></a></th>`;
   };
   const row = (icon, label, cell, cls = '') =>
     `<tr class="${cls}"><th scope="row"><span class="ig-ico">${icon}</span>${label}</th>${ps.map((pk) => `<td class="${pk.id === highlight ? 'hl' : ''}">${cell(pk)}</td>`).join('')}</tr>`;
@@ -603,7 +627,7 @@ ${top?.scores ? `<p class="sl-top">종합 1위 <b>${esc(byId[top.id].p.name)}</b
     .join('')}</ul>
 <span class="sl-cta">비교 전체 보기 ›</span>
 </div>
-<div class="sl-imgs">${ranked.map((pk) => `<img src="${esc(imageOf(pk.id, byId[pk.id].hist) ?? '')}" alt="" loading="${i === 0 ? 'eager' : 'lazy'}">`).join('')}</div>
+<div class="sl-imgs">${ranked.filter((pk) => imageOf(pk.id, byId[pk.id].hist)).slice(0, 4).map((pk) => `<img src="${esc(imageOf(pk.id, byId[pk.id].hist))}" alt="" loading="${i === 0 ? 'eager' : 'lazy'}">`).join('')}</div>
 </a>`;
 }
 
@@ -687,7 +711,8 @@ writeText(
       d: e.p.summary,
       s: scoreOf[e.p.id] ? +scoreOf[e.p.id].toFixed(1) : null,
       r: !!picks[e.p.id]?.rocket,
-      l: links[e.p.id] ?? e.hist?.latest?.link ?? '',
+      l: links[e.p.id] ?? e.hist?.latest?.link ?? e.p.external?.url ?? '',
+      st: links[e.p.id] ? '쿠팡' : e.p.external?.store ?? '',
       pr: null,
       lv: priceLevel(e.p.id)?.label ?? '',
       lvn: priceLevel(e.p.id)?.n ?? 0,

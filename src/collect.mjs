@@ -49,7 +49,7 @@ function matches(item, product, globalExclude) {
 const config = loadConfig();
 const dir = historyDir(false);
 const today = todayKst();
-const todo = config.products.filter((p) => !readJson(join(dir, `${p.id}.json`))?.points?.some((pt) => pt.d === today));
+const todo = config.products.filter((p) => !p.external && !readJson(join(dir, `${p.id}.json`))?.points?.some((pt) => pt.d === today));
 let ok = 0;
 
 for (const product of todo.slice(0, MAX_PER_RUN)) {
