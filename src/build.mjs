@@ -4,6 +4,7 @@
 //       node src/build.mjs --demo → 샘플 데이터 (data-demo/)
 import { rmSync, readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
 import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText as rawWrite, todayKst } from './lib.mjs';
 import { beginnerIssues, releaseIssues } from './rules.mjs';
@@ -81,6 +82,16 @@ function writeText(path, text) {
   pageDates[url] = d;
   rawWrite(path, text.replaceAll('%%UPD%%', d).replaceAll('%%UPDL%%', d.replaceAll('-', '.')));
 }
+
+// 빌드 버전: 배포된 페이지가 어느 커밋으로 만들어졌는지 하단과 /version.json 에 표시 (예전 사본을 보고 있는지 구분용)
+const BUILD_COMMIT = (process.env.CF_PAGES_COMMIT_SHA || (() => {
+  try {
+    return execFileSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+  } catch {
+    return '';
+  }
+})()).slice(0, 7);
+const BUILD_AT = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 16).replace('T', ' ');
 
 const config = loadConfig();
 const links = loadLinks();
@@ -227,6 +238,7 @@ function layout({ title, desc, path, body, recent, ld = [], raw = false }) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="build" content="${BUILD_COMMIT} ${BUILD_AT}">
 <title>${esc(full)}</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${SITE_URL}${path}">
@@ -248,6 +260,7 @@ ${body}
 <p>${DISCLOSURE}</p>
 <p>${PRICE_NOTE} 구매 전 판매 페이지에서 가격과 옵션을 꼭 확인하세요.</p>
 <p>점수는 이 사이트의 주관적인 참고 점수이며 공식 평가가 아닙니다. 상품 이미지는 쿠팡 파트너스가 제공하는 이미지입니다.</p>
+<p class="build">사이트 버전 ${BUILD_AT} (KST) · ${BUILD_COMMIT || 'local'}</p>
 </footer>
 <script src="/assets/app.js" defer></script>
 </body>
@@ -480,7 +493,8 @@ const totalScore = (pk) => (pk.scores?.length ? avg(pk.scores) : 0);
 function stageRank(g, id) {
   const pk = g.picks.find((x) => x.id === id);
   if (!pk || !sellable(id)) return null;
-  const same = rankedPicks(g).filter((x) => (x.skill ?? null) === (pk.skill ?? null));
+  if (warned(g, pk)) return { r: null, n: 0, skill: pk.skill ?? null, warn: true, label: '옵션 확인 필요' };
+  const same = rankedPicks(g).filter((x) => (x.skill ?? null) === (pk.skill ?? null) && !warned(g, x));
   const r = same.findIndex((x) => x.id === id) + 1;
   return { r, n: same.length, skill: pk.skill ?? null, label: pk.skill ? `${pk.skill} 추천 ${r}위` : `${same.length}종 중 ${r}위` };
 }
@@ -498,10 +512,12 @@ const scoreOf = {};
 for (const g of guides) for (const pk of g.picks) if (pk.scores?.length) scoreOf[pk.id] = Math.max(scoreOf[pk.id] ?? 0, avg(pk.scores));
 // 가이드 안 상품을 종합 점수 순으로
 // 동점이면 첫 비교 항목 점수가 높은 제품, 그래도 같으면 쿠팡 판매가가 낮은 제품을 앞에 둔다
+// 초보 기준(로프트·샤프트)에 맞지 않는 연결 상품은 '옵션 확인 필요'로 순위에서 빼고 목록 뒤로 보낸다 (config/variants.json 으로 권장 옵션이 들어오면 자동으로 순위에 돌아온다)
+const warned = (g, pk) => issuesOf(g, pk).length > 0;
 const rankedPicks = (g) =>
   g.picks
     .filter((pk) => byId[pk.id] && sellable(pk.id))
-    .sort((x, y) => totalScore(y) - totalScore(x) || (y.scores?.[tieIdx(g)] ?? 0) - (x.scores?.[tieIdx(g)] ?? 0) || (pickPrice(x.id) ?? 9e9) - (pickPrice(y.id) ?? 9e9));
+    .sort((x, y) => warned(g, x) - warned(g, y) || totalScore(y) - totalScore(x) || (y.scores?.[tieIdx(g)] ?? 0) - (x.scores?.[tieIdx(g)] ?? 0) || (pickPrice(x.id) ?? 9e9) - (pickPrice(y.id) ?? 9e9));
 // 동점 기준 항목: 쉬움 계열 항목(쉬움·초보 적합·관용성·정렬·가벼움)이 있으면 그것, 없으면 첫 항목
 function tieIdx(g) {
   const c = g.criteria ?? [];
@@ -512,11 +528,11 @@ function tieIdx(g) {
   return 0;
 }
 // 표 안 정렬: 실력 단계 순 → 단계 안 점수 순
-const stagedPicks = (g) => [...rankedPicks(g)].sort((x, y) => skillIdx(x) - skillIdx(y) || totalScore(y) - totalScore(x));
+const stagedPicks = (g) => [...rankedPicks(g)].sort((x, y) => skillIdx(x) - skillIdx(y)); // 단계 안에서는 rankedPicks 순서(순위 → 옵션 확인 필요) 유지
 // 실력 단계별 대표(1위): 남녀 공용으로 끌어온 모델보다 해당 가이드 전용 모델을 우선
 const stageTop = (g, skill) => {
   const ps = rankedPicks(g).filter((pk) => pk.skill === skill);
-  return ps.find((pk) => !pk.unisex) ?? ps[0];
+  return ps.find((pk) => !pk.unisex && !warned(g, pk)) ?? ps.find((pk) => !warned(g, pk)) ?? ps[0];
 };
 // 쿠팡 판매처가 없는 참고 모델
 const offerless = (g) => g.picks.filter((pk) => byId[pk.id] && !sellable(pk.id));
@@ -644,10 +660,12 @@ function criteriaBox(g) {
   const crit = g.criteria ?? [];
   if (!crit.length) return '';
   const w = Math.round(100 / crit.length);
-  return `<aside class="crit-box"><b>점수 기준</b><p>${crit.map((c) => `${esc(c)} ${w}%`).join(' · ')}를 각 5점 만점으로 매긴 뒤 평균한 <b>주관적 편집 점수</b>입니다.${g.picks.some((pk) => pk.skill) ? ' 실력 단계마다 기대하는 성능이 달라, <b>순위는 같은 실력 단계 안에서만</b> 매깁니다.' : ''} 편집 점수가 같으면 ${esc(crit[tieIdx(g)])} 점수가 높은 제품, 그래도 같으면 쿠팡 판매가가 낮은 제품을 앞 순위로 둡니다. <a href="/about#score">점수 매기는 방법</a></p></aside>`;
+  return `<aside class="crit-box"><b>점수 기준</b><p>${crit.map((c) => `${esc(c)} ${w}%`).join(' · ')}를 각 5점 만점으로 매긴 뒤 평균한 <b>주관적 편집 점수</b>입니다.${g.picks.some((pk) => pk.skill) ? ' 실력 단계마다 기대하는 성능이 달라, <b>순위는 같은 실력 단계 안에서만</b> 매깁니다.' : ''} 편집 점수가 같으면 ${esc(crit[tieIdx(g)])} 점수가 높은 제품, 그래도 같으면 쿠팡 판매가가 낮은 제품을 앞 순위로 둡니다.${g.picks.some((pk) => byId[pk.id] && warned(g, pk)) ? ' 연결된 쿠팡 상품의 옵션(로프트·샤프트)이 초보 기준과 맞지 않는 제품은 <b>“옵션 확인 필요”</b>로 표시하고 순위에서 뺍니다.' : ''} <a href="/about#score">점수 매기는 방법</a></p></aside>`;
 }
 // 초보 기준(로프트·샤프트) 점검 결과
-const issuesOf = (g, pk) => beginnerIssues(g, pk, byId[pk.id]?.p.category, picks);
+function issuesOf(g, pk) {
+  return beginnerIssues(g, pk, byId[pk.id]?.p.category, picks);
+}
 // 구매 버튼: 쿠팡(파트너스) 또는 공식몰(제휴 아님)
 function buyBtn(id, cls = 'btn sm', label = '쿠팡에서 현재 가격 보기') {
   const link = outHref(id);
@@ -800,7 +818,7 @@ function analysis(p) {
       return `<section class="ana">
 <div class="ana-head">
 <div class="ana-score"><b>${total ? total.toFixed(1) : '-'}</b><small>/ 5</small><span>편집 점수</span></div>
-<div><p class="ana-kicker">${esc(guideName(g))}${unisexBadge(pk)}</p><h2>${sr ? `<em>${esc(sr.label)}</em>${sr.skill ? ` <small>(${esc(sr.skill)} ${sr.n}종 중)</small>` : ''}` : '<em>순위 제외</em> <small>(쿠팡 판매처 없음)</small>'} · ${esc(pk.role)}</h2>
+<div><p class="ana-kicker">${esc(guideName(g))}${unisexBadge(pk)}</p><h2>${sr ? `<em>${esc(sr.label)}</em>${sr.warn ? ' <small>(연결 상품 옵션이 초보 기준과 맞지 않아 순위 제외)</small>' : sr.skill ? ` <small>(${esc(sr.skill)} ${sr.n}종 중)</small>` : ''}` : '<em>순위 제외</em> <small>(쿠팡 판매처 없음)</small>'} · ${esc(pk.role)}</h2>
 ${pk.verdict ? `<p class="ana-verdict">“${esc(pk.verdict)}”</p>` : ''}</div>
 </div>
 <div class="ana-grid">
@@ -814,11 +832,12 @@ ${sellable(p.id) ? infographic(g, p.id) : ''}
     .join('');
 }
 
-// 가격 기록 영역: API 일별 기록이 있으면 추이 그래프(30일·90일)와 역대 최저가 대비 현재가, 없으면 수집 예정 안내
+// 가격 기록 영역: 일별 기록(직접 입력·API)이 있을 때만 추이 그래프(30일·90일)와 역대 최저가 대비 현재가를 보여 준다.
+// 기록이 없으면 영역 자체를 숨기고, 가격이 14일을 넘으면 한 줄 안내만 둔다. 가격 안내 문단은 푸터에 한 번만 있다.
 function priceHistory(p, hist, a) {
-  if (!sellable(p.id)) return '';
+  if (!sellable(p.id) || !a) return '';
   // 가격 기록 영역은 가격만 바뀌어도 내용이 달라지므로 <!--phist--> 표시 사이를 콘텐츠 지문에서 뺀다
-  if (!a || !freshPrice(p.id)) return `<!--phist--><section class="phist empty"><h2>가격 추이</h2><p>${a ? `최근 확인한 가격이 ${PRICE_STALE_DAYS}일을 넘어 가격 정보를 숨겼습니다. 쿠팡에서 현재 가격을 확인하세요.` : '아직 가격 기록이 충분하지 않습니다. 기록이 쌓이면 최근 30일·90일 추이와 역대 최저가를 이곳에 보여 드립니다.'}</p><p class="note">${PRICE_NOTE}</p></section><!--/phist-->`;
+  if (!freshPrice(p.id)) return `<!--phist--><p class="note phist-stale">최근 확인한 가격이 ${PRICE_STALE_DAYS}일을 넘어 가격 정보를 숨겼습니다. 쿠팡에서 현재 가격을 확인하세요.</p><!--/phist-->`;
   const vsMin = pct(a.cur, a.allMin);
   const panel = (days, on) => {
     const from = addDays(a.last.d, -days);
@@ -835,41 +854,144 @@ function priceHistory(p, hist, a) {
 </section>
 <div class="tabs" role="tablist"><button type="button" class="tab on" data-tab="ph30">최근 30일</button><button type="button" class="tab" data-tab="ph90">최근 90일</button></div>
 ${panel(30, true)}${panel(90, false)}
-<p class="note">${PRICE_NOTE}</p></section><!--/phist-->`;
+</section><!--/phist-->`;
+}
+
+// ---------- 상품 설명 자동 작성: 데이터(사양·실력 단계·강점·약점·추천 대상·같은 가이드 상품)만 조합하고, 사실을 지어내지 않는다 ----------
+// 상품의 대표 가이드(쿠팡 판매처가 있으면 처음 등록된 가이드)와 그 안의 평가
+const mainPick = (id) => {
+  const g = guidesOf(id)[0];
+  return g ? { g, pk: g.picks.find((x) => x.id === id) } : null;
+};
+// 사양 칸 중 구매 판단에 쓰는 것(번호·로프트·샤프트·구성·길이 등)을 '이름 값' 형태로
+const SPEC_KEYS = /번호|로프트|샤프트|사양|구성|길이|헤드|유형|구조|소재|조임/;
+function specPairs(g, pk) {
+  return (g.specRows ?? [])
+    .map((label, i) => ({ label: label.replace('연결 상품 ', ''), value: pk.specs?.[i] }))
+    .filter((x) => x.value && x.value !== '-' && !/판매처 확인|공식몰 확인/.test(x.value) && SPEC_KEYS.test(x.label));
+}
+// 메타 설명: 사양 + 가격대(N만원대, 기준가) + 실력 단계·추천 대상
+function productDesc(p) {
+  const m = mainPick(p.id);
+  if (!m) return `${p.name}: ${p.summary}`.slice(0, 160);
+  const { g, pk } = m;
+  const specs = specPairs(g, pk).map((x) => `${x.label} ${x.value}`).join(' · ');
+  const base = pickPrice(p.id);
+  const who = pk.skill ? `${SKILL_WORD[pk.skill]}용` : '';
+  return `${p.name}${specs ? ` — ${specs}` : ''}${base ? `, 쿠팡 판매가 ${manwonBand(base)}` : ''}. ${who ? `${who}으로 ` : ''}${pk.forWhom}께 맞는 모델로 분류했습니다. 강점: ${pk.plus ?? pk.pros?.[0] ?? ''}.`.slice(0, 160);
+}
+// 같은 실력 단계의 비교 상품(순위에 든 상품 중 점수가 가까운 순)
+function peersOf(g, pk, n = 2) {
+  return rankedPicks(g)
+    .filter((x) => x.id !== pk.id && (x.skill ?? null) === (pk.skill ?? null) && !warned(g, x))
+    .sort((x, y) => Math.abs(totalScore(x) - totalScore(pk)) - Math.abs(totalScore(y) - totalScore(pk)))
+    .slice(0, n);
+}
+// 본문 2~3문단: 이런 분께 맞아요 / 이런 분은 다른 선택이 나아요 / 비슷한 상품과 차이
+function productStory(p) {
+  const m = mainPick(p.id);
+  if (!m) return '';
+  const { g, pk } = m;
+  const crit = g.criteria ?? [];
+  const name = (id) => byId[id].p.name;
+  const link = (id) => `<a href="/p/${id}">${esc(name(id))}</a>`;
+  const iss = issuesOf(g, pk);
+  // 1) 이런 분께 맞아요
+  const fit = `<p>${esc(pk.forWhom)}께 맞는 모델입니다.${pk.skill ? ` ${esc(guideName(g))}에서 <b>${esc(SKILL_WORD[pk.skill])}</b> 단계로 분류했습니다.` : ''}${pk.pros?.length ? ` 강점으로는 ${pk.pros.map((t) => esc(t)).join(', ')}을(를) 꼽았습니다.` : ''}</p>`;
+  // 2) 이런 분은 다른 선택이 나아요
+  const others = [];
+  if (iss.length) others.push(`연결된 쿠팡 상품은 ${esc(iss.map((x) => x.msg.split(' · ')[0].replace('연결 상품 ', '')).join(', '))} 옵션이라 초보 기준과 맞지 않습니다. 같은 모델의 ${esc(variantsNeed(p.id) || '권장 옵션')}을 고르세요.`);
+  if (pk.cons?.length) others.push(`${pk.cons.map((t) => esc(t)).join(', ')} 점이 마음에 걸린다면 다른 모델을 함께 보세요.`);
+  const cheaper = rankedPicks(g)
+    .filter((x) => x.id !== pk.id && (x.skill ?? null) === (pk.skill ?? null) && !warned(g, x) && pickPrice(x.id) && pickPrice(pk.id) && priceLevel(x.id)?.n < priceLevel(pk.id)?.n)
+    .sort((x, y) => totalScore(y) - totalScore(x))[0];
+  if (cheaper) others.push(`예산을 줄이고 싶다면 같은 단계의 ${link(cheaper.id)}(${esc(priceLevel(cheaper.id).label)})가 있습니다.`);
+  const si = pk.skill ? SKILLS.indexOf(pk.skill) : -1;
+  if (si > 0) {
+    const easier = rankedPicks(g).find((x) => x.skill === SKILLS[si - 1] && !warned(g, x));
+    if (easier) others.push(`더 쉽게 다룰 모델을 원하면 ${esc(SKILL_WORD[SKILLS[si - 1]])} 단계 1위 ${link(easier.id)}를 보세요.`);
+  }
+  const alt = others.length ? `<p>${others.join(' ')}</p>` : '';
+  // 3) 비슷한 상품과 차이 (주관 점수 비교)
+  const diffs = peersOf(g, pk)
+    .map((x) => {
+      const up = [], down = [];
+      crit.forEach((c, i) => {
+        const d = (pk.scores?.[i] ?? 0) - (x.scores?.[i] ?? 0);
+        if (d >= 1) up.push(c);
+        if (d <= -1) down.push(c);
+      });
+      const lv = priceLevel(pk.id)?.label && priceLevel(x.id)?.label ? ` 가격대는 ${esc(priceLevel(pk.id).label)}, ${esc(name(x.id))}는 ${esc(priceLevel(x.id).label)}입니다.` : '';
+      if (!up.length && !down.length) return `<li>${link(x.id)}와는 항목별 점수가 비슷합니다.${lv}</li>`;
+      return `<li>${link(x.id)}보다 ${up.length ? `${esc(up.join('·'))} 점수는 높게` : ''}${up.length && down.length ? ', ' : ''}${down.length ? `${esc(down.join('·'))} 점수는 낮게` : ''} 매겼습니다.${lv}</li>`;
+    })
+    .join('');
+  const near = diffs ? `<h3>비슷한 상품과 차이</h3><ul>${diffs}</ul><p class="note">점수 비교는 이 사이트의 주관적 편집 점수 기준입니다.</p>` : '';
+  return `<section class="prose story"><h2>이런 분께 맞아요</h2>${fit}${alt ? `<h3>이런 분은 다른 선택이 나아요</h3>${alt}` : ''}${near}</section>`;
+}
+const variantsNeedMap = readJson(join(ROOT, 'config', 'variants.json'), {});
+const variantsNeed = (id) => variantsNeedMap[id]?.need ?? '';
+// 구매 전 확인할 점: 옵션·사이즈·로프트·샤프트·정품 여부처럼 구매 전에 확인할 것만 (장점은 넣지 않는다)
+const CHECK_HINT = /확인|선택|옵션|사이즈|구성|버전|정품|AS|길이|로프트|샤프트|강도|번호|수량|호환/;
+const CATEGORY_CHECKS = {
+  driver: ['판매 페이지 옵션에서 로프트와 샤프트 강도(R·SR·S 등)를 확인하세요.'],
+  wood: ['번호(3번·5번·7번)와 로프트, 샤프트 강도를 옵션에서 확인하세요.'],
+  utility: ['번호와 로프트, 샤프트 강도를 옵션에서 확인하세요.'],
+  iron: ['세트 구성(몇 번부터 몇 번까지, 몇 자루)과 샤프트 종류·강도를 확인하세요.'],
+  wedge: ['로프트·바운스와 샤프트를 옵션에서 확인하세요.'],
+  putter: ['길이(33·34인치 등)와 헤드 모양을 옵션에서 확인하세요.'],
+  ball: ['구성 수량(더즌·알 수)과 색상을 확인하세요.'],
+  shoes: ['사이즈(mm)와 발볼 너비를 확인하세요.'],
+  glove: ['사이즈와 착용 손(왼손·양손)을 확인하세요.'],
+  rangefinder: ['국내 정식 AS 가능 여부를 확인하세요.'],
+  gps: ['국내 정식 AS 가능 여부와 국내 골프장 지도 지원을 확인하세요.'],
+  launch: ['국내 정식 AS 가능 여부와 함께 쓸 앱·기기 호환을 확인하세요.'],
+  bag: ['크기·무게와 수납 구성을 확인하세요.'],
+  practice: ['구성품과 크기를 확인하세요.'],
+};
+function buyChecks(p) {
+  const m = mainPick(p.id);
+  const out = [];
+  if (m) {
+    const iss = issuesOf(m.g, m.pk);
+    for (const x of iss) out.push(`${x.msg} — 같은 모델의 권장 옵션을 고르세요.`);
+    const covered = (label) => (iss.some((x) => x.kind === 'loft') && /로프트|번호/.test(label)) || (iss.some((x) => x.kind === 'shaft') && /샤프트/.test(label));
+    for (const x of specPairs(m.g, m.pk)) if (/번호|로프트|샤프트|사양|구성|길이/.test(x.label) && !covered(x.label)) out.push(`이 사이트가 연결한 상품의 ${x.label}: ${x.value} — 원하는 옵션인지 확인하세요.`);
+  }
+  out.push(...(CATEGORY_CHECKS[p.category] ?? []));
+  out.push(...(p.points ?? []).filter((t) => CHECK_HINT.test(t) && !/^\d/.test(t)));
+  out.push('국내 정품(병행수입·해외직구 아님)인지, 쿠팡 직매입인지 판매자 배송인지 판매 페이지에서 확인하세요.');
+  return [...new Set(out)];
 }
 
 // ---------- 상품 페이지 ----------
 for (const { p, hist, a } of entries) {
   const cat = cats.find((c) => c.id === p.category);
   const crumb = `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${p.category}">${esc(cat.name)}</a></nav>`;
-  const points = p.points?.length ? `<ul class="checks">${p.points.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : '';
-  const guideLink = `<p class="more"><a href="/c/${p.category}">${esc(cat.name)} 고르는 법 보기 →</a></p>`;
-  let body, title, desc;
-
-  {
-    title = `${p.name} 가격·스펙·추천 대상`;
-    desc = `${p.name}: ${p.summary}`;
-    const sc = scoreOf[p.id];
-    const top = guidesOf(p.id).filter((g) => !g.mergeInto).map((g) => ({ g, sr: stageRank(g, p.id) }));
-    body = `${crumb}
+  const checks = buyChecks(p);
+  const title = `${p.name} 가격·스펙·추천 대상`;
+  const desc = productDesc(p);
+  const sc = scoreOf[p.id];
+  const top = guidesOf(p.id).filter((g) => !g.mergeInto).map((g) => ({ g, sr: stageRank(g, p.id) }));
+  const body = `${crumb}
 <section class="pd">
 ${gallery(p, hist)}
 <div class="pd-info">
 <span class="pt-cat">${esc(cat.name)}</span>
 <h1>${esc(p.name)}</h1>
 ${updatedTag(p.updated)}
-<div class="pt-badges">${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, sr }) => (sr ? `<span class="tag rank">${esc(guideName(g).replace(' 비교 및 선택 가이드', ''))} ${esc(sr.label)}</span>` : '')).join('')}${sellable(p.id) ? '' : '<span class="tag none">쿠팡 판매처 없음</span>'}</div>
+<div class="pt-badges">${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, sr }) => (sr ? `<span class="tag ${sr.warn ? 'warn' : 'rank'}">${esc(guideName(g).replace(' 비교 및 선택 가이드', ''))} ${esc(sr.label)}</span>` : '')).join('')}${sellable(p.id) ? '' : '<span class="tag none">쿠팡 판매처 없음</span>'}</div>
 <div class="pd-price">${priceLine(p.id, 'pd-won')}${priceLevel(p.id) ? `<span>가격대 <small>(${esc(cat.name)} 비교 기준)</small></span>${levelLink(p.id, hist, '쿠팡에서 현재 가격 보기 ›')}` : ''}</div>
 <p class="pd-sum">${esc(p.summary)}</p>
-${points ? `<h2 class="sub">구매 전 확인할 점</h2>${points}` : ''}
+${checks.length ? `<h2 class="sub">구매 전 확인할 점</h2><ul class="checks">${checks.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
 ${buyButton(p.id, hist)}
 </div>
 </section>
+${productStory(p)}
 ${analysis(p)}
 ${newsBlock(p.id)}
 <section class="prose"><h2>${esc(cat.name)} 고르는 법</h2><p>${esc(cat.intro)}</p>${figure(p.category)}<ul>${cat.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
 ${priceHistory(p, hist, a)}`;
-  }
   writeText(
     join(OUT, 'p', `${p.id}.html`),
     layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' }, ld: [crumbLd([['홈', '/'], [cat.name, `/c/${p.category}`], [p.name, `/p/${p.id}`]])] }),
@@ -1306,6 +1428,8 @@ if (!DEMO) {
 }
 // 클릭 추적용 이동 표 (functions/go/[id].js 가 읽는다)
 rawWrite(join(OUT, 'assets', 'go.json'), JSON.stringify(Object.fromEntries(config.products.map((p) => [p.id, rawLink(p.id)]).filter(([, v]) => v))));
+// 빌드 버전 파일
+rawWrite(join(OUT, 'version.json'), JSON.stringify({ commit: BUILD_COMMIT, builtAt: `${BUILD_AT} KST` }));
 // IndexNow 키 파일
 if (SITE.indexNowKey && !DEMO) rawWrite(join(OUT, `${SITE.indexNowKey}.txt`), SITE.indexNowKey);
 rawWrite(
