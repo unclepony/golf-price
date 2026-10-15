@@ -442,7 +442,9 @@ table.ig .bar i { display: block; height: 100%; background: var(--accent); }
 .tab small { font-size: 11px; opacity: .7; margin-left: 2px; }
 .tab:disabled { opacity: .4; cursor: default; }
 .tiers .ig-wrap { margin: 10px 0 14px; }
-.sl-imgs { max-width: 300px; justify-self: end; align-self: center; }
+.tiers table.ig { min-width: 0; width: auto; }
+.tiers table.ig td, .tiers table.ig thead th:not(.ig-corner) { min-width: 170px; }
+.sl-imgs { max-width: 250px; justify-self: end; align-self: center; }
 .mhero, .slides { min-height: 360px; }
 /* ATL 로고 */
 .logo { gap: 10px; }
