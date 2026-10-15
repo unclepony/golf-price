@@ -245,5 +245,53 @@
     "price": 285000,
     "rocket": false,
     "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/6b32/0a83d7f315a9d64df74c179c2b39fd4d8de351156c38ddb0f6b92fc3ece3.jpg"
+  },
+  "garmin-approach-s70": {
+    "title": "가민 어프로치 S70 GC 47mm 골프 스마트워치, 블랙, GPS",
+    "price": 1040000,
+    "rocket": true,
+    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2024/08/06/10/5/242bdb12-6c95-488d-8757-b917323302ee.jpg"
+  },
+  "garmin-approach-s50": {
+    "title": "가민 어프로치 골프 GPS 스마트워치 S50, 블랙, 30.4mm, GPS + 블루투스",
+    "price": 399000,
+    "rocket": true,
+    "image": "https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/05/09/11/7/7ab5890a-c3a7-4dda-a4fe-72e53cda87c4.jpg"
+  },
+  "voicecaddie-t13-pro": {
+    "title": "보이스캐디 시계형 골프거리측정기, T13 PRO, 블랙",
+    "price": 455220,
+    "rocket": true,
+    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/02/23/16/2/64ad28ec-38e0-496f-8e87-b79ac7712a45.png"
+  },
+  "golfbuddy-aim-w12": {
+    "title": "골프버디 aim W12 GPS 시계형 스마트 거리측정기, aim_W12, aim_W12",
+    "price": 194770,
+    "rocket": false,
+    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/815d/f07b31e87f27384565f72e13c3f4cb0056bf28c6aceb6ad21a2af67f9c5e.jpeg"
+  },
+  "garmin-approach-r10": {
+    "title": "가민 Approach R10 휴대용 골프 런치모니터, 블랙",
+    "price": 875000,
+    "rocket": false,
+    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/335f3b40822045ef6f9328b0b4ea30fea8210e18be78cced440b7b7316fb_1775195060765.jpg"
+  },
+  "voicecaddie-sc4-pro": {
+    "title": "보이스캐디 론치 모니터, SC4 PRO, 블랙",
+    "price": 590870,
+    "rocket": false,
+    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/e6c2/e86810435a7377aeacbf909f3c4fc43fce1689ef34d520113544ac409bd7.jpg"
+  },
+  "blacktee-shot5": {
+    "title": "블랙티 런치모니터 SHOT5 스윙분석기, 블랙, 1개",
+    "price": 349000,
+    "rocket": true,
+    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/08/20/14/6/20a46c39-6a07-4da2-b4ee-527dc05aa793.png"
+  },
+  "rapsodo-mlm2pro": {
+    "title": "랩소도 런치 모니터 모바일 골프 모니터 MLM2PRO, 1개",
+    "price": 1529580,
+    "rocket": false,
+    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4c78/ab7d07a729a89f8fe3cf8923bdd907a25c3702c1e7411e29abb7ad1af351.png"
   }
 }
