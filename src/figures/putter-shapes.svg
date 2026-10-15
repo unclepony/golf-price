@@ -1,0 +1,25 @@
+<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="퍼터 헤드 모양 비교: 블레이드형, 와이드형, 말렛형을 위에서 본 모습">
+<text class="fig-title" x="320" y="24" text-anchor="middle">퍼터 헤드 모양 (위에서 본 모습)</text>
+<g transform="translate(40,60)">
+  <rect class="fig-fill" x="0" y="40" width="160" height="34" rx="8"/>
+  <line class="fig-accent" x1="80" y1="44" x2="80" y2="70"/>
+  <circle class="fig-line" cx="22" cy="57" r="6"/>
+  <text class="fig-label" x="80" y="120" text-anchor="middle">블레이드형</text>
+  <text class="fig-sub" x="80" y="142" text-anchor="middle">작고 얇음 · 손맛·거리감</text>
+</g>
+<g transform="translate(240,60)">
+  <rect class="fig-fill" x="0" y="25" width="160" height="62" rx="16"/>
+  <line class="fig-accent" x1="80" y1="30" x2="80" y2="82"/>
+  <circle class="fig-line" cx="22" cy="40" r="6"/>
+  <text class="fig-label" x="80" y="120" text-anchor="middle">와이드·미드 말렛형</text>
+  <text class="fig-sub" x="80" y="142" text-anchor="middle">중간 크기 · 균형</text>
+</g>
+<g transform="translate(440,60)">
+  <path class="fig-fill" d="M0,18 Q80,-6 160,18 L160,40 L118,40 L118,96 L100,96 L100,46 L60,46 L60,96 L42,96 L42,40 L0,40 Z"/>
+  <line class="fig-accent" x1="80" y1="10" x2="80" y2="96"/>
+  <circle class="fig-line" cx="22" cy="28" r="6"/>
+  <text class="fig-label" x="80" y="120" text-anchor="middle">말렛형</text>
+  <text class="fig-sub" x="80" y="142" text-anchor="middle">크고 뒤로 김 · 방향 안정성</text>
+</g>
+<text class="fig-note" x="320" y="222" text-anchor="middle">초록 선: 정렬선 · 작은 원: 샤프트 위치 (그림은 이해를 돕기 위한 예시)</text>
+</svg>

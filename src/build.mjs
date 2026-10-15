@@ -130,6 +130,28 @@ ${body}
 
 const imageOf = (id, hist) => hist?.latest?.image ?? picks[id]?.image;
 
+// ---------- 투어·뉴스 소식, 설명 그림 ----------
+const news = readJson(join(ROOT, 'config', 'news.json'), {});
+const NEWS_NOTE = '선수 사용 정보는 보도 시점 기준이며, 선수의 장비는 대회마다 바뀔 수 있습니다. 해당 선수가 이 사이트나 판매 상품을 추천하는 것은 아닙니다.';
+function newsBlock(id, heading = 'h2') {
+  const items = news[id];
+  if (!items?.length) return '';
+  return `<section class="news"><${heading}>투어·뉴스 소식</${heading}><ul>${items
+    .map(
+      (n) =>
+        `<li>${esc(n.text)} <a class="src" href="${esc(n.url)}" target="_blank" rel="nofollow noopener">출처: ${esc(n.source)}, ${esc(n.date)}</a></li>`,
+    )
+    .join('')}</ul><p class="note">${NEWS_NOTE}</p></section>`;
+}
+const FIGURE_BY_CATEGORY = { driver: 'driver-loft', putter: 'putter-shapes', ball: 'ball-layers', shoes: 'shoe-soles', rangefinder: 'slope' };
+const figCache = {};
+function figure(category) {
+  const name = FIGURE_BY_CATEGORY[category];
+  if (!name) return '';
+  figCache[name] ??= readFileSync(join(ROOT, 'src', 'figures', `${name}.svg`), 'utf8');
+  return `<figure class="fig">${figCache[name]}</figure>`;
+}
+
 function buyButton(id, hist) {
   const link = links[id] ?? hist?.latest?.link;
   if (!link) return '';
@@ -206,6 +228,7 @@ ${buyButton(p.id, hist)}
 ${chart(hist.points, a.allMin)}
 </section>
 <section><h2>이런 분께 맞아요</h2><p>${esc(p.summary)}</p>${points}${guideLink}</section>
+${newsBlock(p.id)}
 <p class="note">${PRICE_NOTE}</p>`;
   } else {
     title = `${p.name} 특징과 구매 전 확인할 점`;
@@ -221,7 +244,8 @@ ${points ? `<h2 class="sub">구매 전 확인할 점</h2>${points}` : ''}
 ${buyButton(p.id, hist)}
 </div>
 </section>
-<section class="prose"><h2>${esc(cat.name)} 고르는 법</h2><p>${esc(cat.intro)}</p><ul>${cat.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
+${newsBlock(p.id)}
+<section class="prose"><h2>${esc(cat.name)} 고르는 법</h2><p>${esc(cat.intro)}</p>${figure(p.category)}<ul>${cat.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
 <p class="note">가격 추이 기록은 준비 중입니다. 가격은 판매 페이지에서 확인하세요.</p>`;
   }
   writeText(join(OUT, 'p', `${p.id}.html`), layout({ title, desc, path: `/p/${p.id}`, body }));
@@ -238,7 +262,7 @@ for (const c of cats) {
       path: `/c/${c.id}`,
       body: `<nav class="crumb"><a href="/">홈</a></nav>
 <h1>${esc(c.name)} 고르는 법</h1>
-<section class="prose"><p>${esc(c.intro)}</p><ul>${c.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
+<section class="prose"><p>${esc(c.intro)}</p>${figure(c.id)}<ul>${c.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
 <section><h2>추천 ${esc(c.name)}</h2>${grid(items)}</section>`,
     }),
   );
@@ -266,7 +290,10 @@ for (const g of guides) {
     .filter((pk) => byId[pk.id])
     .map((pk) => {
       const { p, hist } = byId[pk.id];
-      return `<section class="pick"><h2>${esc(p.name)} <small>${esc(pk.role)}</small></h2><p>${esc(p.summary)}</p><p><b>이런 분께:</b> ${esc(pk.forWhom)}</p>${buyButton(p.id, hist)}</section>`;
+      const image = imageOf(p.id, hist);
+      return `<section class="pick"><h2>${esc(p.name)} <small>${esc(pk.role)}</small></h2>
+<div class="pick-body">${image ? `<img class="pick-img" src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : ''}<div>
+<p>${esc(p.summary)}</p><p><b>이런 분께:</b> ${esc(pk.forWhom)}</p>${newsBlock(p.id, 'h3')}${buyButton(p.id, hist)}</div></div></section>`;
     })
     .join('');
   writeText(
@@ -277,7 +304,7 @@ for (const g of guides) {
       path: `/g/${g.slug}`,
       body: `<nav class="crumb"><a href="/">홈</a> › 비교·추천</nav>
 <h1>${esc(g.title)}</h1>
-<section class="prose"><p>${esc(g.intro)}</p></section>
+<section class="prose"><p>${esc(g.intro)}</p>${figure(byId[g.picks[0]?.id]?.p.category)}</section>
 <section><h2>한눈에 비교</h2><div class="tablewrap"><table><thead><tr><th>모델</th><th>성격</th><th>이런 분께</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>
 <p class="note">${DISCLOSURE}</p></section>
 ${cards}

@@ -1,0 +1,11 @@
+<svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="거리측정기 경사 보정 개념 예시">
+<text class="fig-title" x="320" y="24" text-anchor="middle">경사 보정이란? (예시)</text>
+<path class="fig-ground" d="M40,215 L600,215 L600,80 Z"/>
+<circle class="fig-fill" cx="70" cy="207" r="7"/>
+<line class="fig-line" x1="590" y1="82" x2="590" y2="40"/>
+<path class="fig-accent-fill" d="M590,40 L620,48 L590,56 Z"/>
+<line class="fig-dash" x1="70" y1="207" x2="588" y2="84"/>
+<text class="fig-label" x="300" y="128" text-anchor="middle" transform="rotate(-13 300 128)">직선거리 140m</text>
+<text class="fig-sub" x="430" y="200">오르막 → 실제로는 약 150m처럼 쳐야 함</text>
+<text class="fig-note" x="320" y="242" text-anchor="middle">경사 보정 기능은 오르막·내리막을 고려한 거리를 알려줍니다. 공식 대회에서는 꺼야 합니다.</text>
+</svg>

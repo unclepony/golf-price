@@ -1,0 +1,12 @@
+<svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="드라이버 로프트에 따른 탄도 비교 예시">
+<text class="fig-title" x="320" y="24" text-anchor="middle">로프트가 높을수록 공이 더 높이 뜹니다</text>
+<line class="fig-line" x1="40" y1="220" x2="610" y2="220"/>
+<circle class="fig-fill" cx="60" cy="214" r="6"/>
+<path class="fig-curve c1" d="M60,214 Q300,120 600,214"/>
+<path class="fig-curve c2" d="M60,214 Q300,80 590,214"/>
+<path class="fig-curve c3" d="M60,214 Q290,40 570,214"/>
+<text class="fig-label" x="430" y="150">9° · 낮고 강한 탄도</text>
+<text class="fig-label" x="400" y="100">10.5° · 표준</text>
+<text class="fig-label" x="360" y="62">11.5°+ · 높은 탄도</text>
+<text class="fig-note" x="320" y="248" text-anchor="middle">스윙 속도가 느릴수록 높은 로프트가 비거리에 유리한 경우가 많습니다 (탄도는 이해를 돕기 위한 예시)</text>
+</svg>

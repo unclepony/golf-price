@@ -105,6 +105,34 @@ h2 small, .label small { color: var(--muted); font-weight: 400; font-size: 13px;
 .guides b { display: block; }
 .guides span { font-size: 13px; color: var(--muted); }
 .prose h3 { font-size: 16px; margin: 20px 0 4px; }
+.news { margin-top: 20px; }
+.news ul { padding-left: 20px; margin: 8px 0; }
+.news li { margin: 8px 0; }
+.news .src { font-size: 12px; color: var(--accent); white-space: nowrap; }
+.pick-body { display: flex; gap: 16px; align-items: flex-start; }
+.pick-img { flex: 0 0 120px; width: 120px; height: 120px; object-fit: contain; background: #fff; border: 1px solid var(--line); border-radius: 10px; }
+@media (max-width: 640px) { .pick-body { flex-direction: column; } .news .src { white-space: normal; } }
+.fig { margin: 16px 0; padding: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.fig svg { width: 100%; height: auto; display: block; }
+.fig .fig-title { fill: var(--text); font-size: 16px; font-weight: 700; }
+.fig .fig-label { fill: var(--text); font-size: 14px; font-weight: 600; }
+.fig .fig-sub, .fig .fig-note { fill: var(--muted); font-size: 12px; }
+.fig .fig-fill { fill: var(--wait-bg); stroke: var(--muted); stroke-width: 1.5; }
+.fig .fig-line { fill: none; stroke: var(--muted); stroke-width: 2; }
+.fig .fig-accent { stroke: var(--accent); stroke-width: 3; stroke-linecap: round; }
+.fig .fig-accent-fill { fill: var(--accent); }
+.fig .fig-dash { stroke: var(--accent); stroke-width: 2; stroke-dasharray: 6 5; }
+.fig .fig-ground { fill: var(--good-bg); }
+.fig .fig-curve { fill: none; stroke-width: 2.5; }
+.fig .c1 { stroke: var(--muted); }
+.fig .c2 { stroke: var(--accent); }
+.fig .c3 { stroke: var(--mid); }
+.fig .fig-core { fill: var(--good-bg); stroke: var(--accent); stroke-width: 1.5; }
+.fig .fig-cover { fill: var(--wait-bg); stroke: var(--muted); stroke-width: 1.5; }
+.fig .fig-mantle { fill: var(--mid-bg); stroke: var(--mid); stroke-width: 1.5; }
+.fig .fig-urethane { fill: var(--surface); stroke: var(--text); stroke-width: 2; }
+.fig .fig-spike circle { fill: var(--accent); }
+.fig .fig-nub circle { fill: var(--muted); }
 .linked { font-size: 13px; color: var(--muted); margin: 12px 0 8px; }
 .note { font-size: 12px; color: var(--muted); margin: 8px 0 0; }
 

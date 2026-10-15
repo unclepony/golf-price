@@ -1,0 +1,18 @@
+<svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2피스 골프공과 3피스 투어볼의 단면 비교">
+<text class="fig-title" x="320" y="24" text-anchor="middle">골프공 단면 비교</text>
+<g transform="translate(170,125)">
+  <circle class="fig-cover" r="78"/>
+  <circle class="fig-core" r="66"/>
+  <text class="fig-label" y="112" text-anchor="middle">2피스 (가성비 볼)</text>
+  <text class="fig-sub" y="5" text-anchor="middle">큰 코어</text>
+  <text class="fig-sub" y="134" text-anchor="middle">단단한 커버 · 비거리·내구성</text>
+</g>
+<g transform="translate(470,125)">
+  <circle class="fig-urethane" r="78"/>
+  <circle class="fig-mantle" r="70"/>
+  <circle class="fig-core" r="52"/>
+  <text class="fig-sub" y="5" text-anchor="middle">코어</text>
+  <text class="fig-label" y="112" text-anchor="middle">3피스 (투어볼)</text>
+  <text class="fig-sub" y="134" text-anchor="middle">얇은 우레탄 커버 · 그린 주변 스핀</text>
+</g>
+</svg>
