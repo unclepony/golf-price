@@ -1,5 +1,10 @@
 {
-  "_설명": "검색엔진 소유 확인 코드. 구글 서치 콘솔·네이버 서치어드바이저에서 받은 HTML 태그의 content 값만 넣는다.",
+  "_설명": "사이트 이름·로고 문구와 검색엔진 소유 확인 코드. logoBefore + logoAccent(강조) + logoAfter 가 로고가 된다. 검증 코드는 HTML 태그의 content 값만 넣는다.",
+  "name": "골프비교노트",
+  "logoBefore": "골프",
+  "logoAccent": "비교",
+  "logoAfter": "노트",
+  "tagline": "골프용품, 꼼꼼히 비교하고 고르세요",
   "googleVerification": "kXR_Tj5AFFkfpWaWDAZuxNZClW4tFVKZBaUDRZpcJQo",
   "naverVerification": "a297be4fee6ebab6b78b9896dc69036efef49866"
 }

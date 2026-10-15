@@ -8,7 +8,8 @@ import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText, todayKst 
 
 const DEMO = process.argv.includes('--demo');
 const SITE_URL = (process.env.SITE_URL || 'https://golf-price.pages.dev').replace(/\/$/, '');
-const SITE_NAME = '골프 최저가 기록장';
+const SITE = readJson(join(ROOT, 'config', 'site.json'), {});
+const SITE_NAME = SITE.name || '골프비교노트';
 const OUT = join(ROOT, 'site');
 const DISCLOSURE = '이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.';
 const PRICE_NOTE = '가격은 쿠팡 상품 검색 결과 중 조건에 맞는 새 상품의 최저가를 하루 한 번 기록한 값으로, 옵션(샤프트, 사이즈 등)과 시점에 따라 실제 판매가와 다를 수 있습니다.';
@@ -94,7 +95,38 @@ ${xl.join('')}
 }
 
 // ---------- 레이아웃 ----------
-function layout({ title, desc, path, body }) {
+const SEARCH_ICON = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><line x1="15.5" y1="15.5" x2="21" y2="21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>';
+function catIcon(c) {
+  const e = entries.find((x) => x.p.category === c.id);
+  const src = e && imageOf(e.p.id, e.hist);
+  return src ? `<img src="${esc(src)}" alt="" loading="lazy">` : '<span>⛳</span>';
+}
+function header() {
+  const catLinks = cats
+    .map((c) => `<a href="/c/${c.id}"><span class="ci">${catIcon(c)}</span>${esc(c.name)}<small>${entries.filter((e) => e.p.category === c.id).length}</small></a>`)
+    .join('');
+  return `<div class="util"><div class="wrap util-in"><span>${DISCLOSURE}</span><nav><a href="/about">운영 안내</a></nav></div></div>
+${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표시된 가격은 실제 가격이 아닙니다.</p>' : ''}
+<header class="hd"><div class="wrap hd-in">
+<a class="logo" href="/"><span class="logo-mark">⛳</span><span class="logo-txt">${esc(SITE.logoBefore ?? '')}<b>${esc(SITE.logoAccent ?? SITE_NAME)}</b>${esc(SITE.logoAfter ?? '')}</span></a>
+<form class="search" action="/search" role="search" autocomplete="off">
+<input type="search" name="q" id="q" placeholder="찾는 골프용품을 검색해 보세요 (예: 드라이버, 프로V1)" aria-label="골프용품 검색">
+<button type="submit" aria-label="검색">${SEARCH_ICON}</button>
+<div class="suggest" id="suggest" hidden></div>
+</form>
+<div class="hd-icons">
+<button type="button" class="hd-ico" id="recentBtn"><span class="hd-ico-i">🕘</span>최근 본 상품<b id="recentCount"></b></button>
+<a class="hd-ico" href="/#guides"><span class="hd-ico-i">📊</span>비교 가이드</a>
+<div class="recent-panel" id="recentPanel" hidden></div>
+</div>
+</div></header>
+<nav class="gnb"><div class="wrap gnb-in">
+<div class="allcat"><button type="button" id="catBtn" aria-expanded="false">☰ 골프 카테고리</button><div class="catmenu" id="catMenu" hidden>${catLinks}</div></div>
+<div class="quick">${cats.map((c) => `<a href="/c/${c.id}">${esc(c.name)}</a>`).join('')}<a href="/#guides" class="hl">비교·추천</a></div>
+</div></nav>`;
+}
+
+function layout({ title, desc, path, body, recent }) {
   const full = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
   return `<!doctype html>
 <html lang="ko">
@@ -113,16 +145,16 @@ ${DEMO ? '<meta name="robots" content="noindex">' : path === '/' ? VERIFY : ''}
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛳</text></svg>">
 </head>
 <body>
-<p class="disclosure">${DISCLOSURE}</p>
-${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표시된 가격은 실제 가격이 아닙니다.</p>' : ''}
-<header class="top"><div class="wrap"><a class="brand" href="/">⛳ ${SITE_NAME}</a><nav><a href="/about">운영 안내</a></nav></div></header>
-<main class="wrap">
+${header()}
+<main class="wrap"${recent ? ` data-recent="${esc(JSON.stringify(recent))}"` : ''}>
 ${body}
 </main>
 <footer class="wrap foot">
 <p>${DISCLOSURE}</p>
 <p>${PRICE_NOTE} 구매 전 판매 페이지에서 가격과 옵션을 꼭 확인하세요.</p>
+<p>점수는 이 사이트의 주관적인 참고 점수이며 공식 평가가 아닙니다. 상품 이미지는 쿠팡 파트너스가 제공하는 이미지입니다.</p>
 </footer>
+<script src="/assets/app.js" defer></script>
 </body>
 </html>
 `;
@@ -197,6 +229,7 @@ const updated = tracked.map((e) => e.a.last.d).sort().at(-1) ?? todayKst();
 
 rmSync(OUT, { recursive: true, force: true });
 writeText(join(OUT, 'assets', 'style.css'), readFileSync(join(ROOT, 'src', 'style.css'), 'utf8'));
+writeText(join(OUT, 'assets', 'app.js'), readFileSync(join(ROOT, 'src', 'app.js'), 'utf8'));
 
 // ---------- 상품 페이지 ----------
 for (const { p, hist, a } of entries) {
@@ -248,7 +281,10 @@ ${newsBlock(p.id)}
 <section class="prose"><h2>${esc(cat.name)} 고르는 법</h2><p>${esc(cat.intro)}</p>${figure(p.category)}<ul>${cat.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
 <p class="note">가격 추이 기록은 준비 중입니다. 가격은 판매 페이지에서 확인하세요.</p>`;
   }
-  writeText(join(OUT, 'p', `${p.id}.html`), layout({ title, desc, path: `/p/${p.id}`, body }));
+  writeText(
+    join(OUT, 'p', `${p.id}.html`),
+    layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' } }),
+  );
 }
 
 // ---------- 비교·추천 가이드 데이터와 타일 ----------
@@ -347,27 +383,136 @@ ${cards}
 
 // ---------- 메인 페이지 ----------
 const deals = tracked.filter((e) => e.a.verdict.cls === 'good');
-const sections = cats
-  .map((c) => {
-    const items = entries.filter((e) => e.p.category === c.id);
-    return `<section id="${c.id}"><h2><a href="/c/${c.id}">${esc(c.name)}</a></h2>${grid(items)}</section>`;
-  })
+
+// 상품별 최고 편집 점수 (가이드 점수 중 가장 높은 값)
+const scoreOf = {};
+for (const g of guides) for (const pk of g.picks) if (pk.scores?.length) scoreOf[pk.id] = Math.max(scoreOf[pk.id] ?? 0, avg(pk.scores));
+
+// 에누리식 상품 타일: 큰 이미지, 이름, 배지, 점수, 가격(기록이 있을 때)
+function ptile({ p, hist, a }) {
+  const image = imageOf(p.id, hist);
+  const sc = scoreOf[p.id];
+  const rocket = picks[p.id]?.rocket;
+  return `<a class="ptile" href="/p/${p.id}">
+<div class="pt-img">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : '<span class="ph">⛳</span>'}</div>
+<div class="pt-body"><span class="pt-cat">${esc(catName[p.category])}</span><h3>${esc(p.name)}</h3>
+<div class="pt-badges">${rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}</div>
+${a ? `<p class="pt-price">${won(a.cur)}</p>` : '<p class="pt-cta">특징·비교 보기 ›</p>'}</div>
+</a>`;
+}
+const prow = (items) => `<div class="prow">${items.map(ptile).join('')}</div>`;
+
+// 움직이는 비교 배너: 가이드마다 한 장, 상품 4개의 종합 점수 막대
+const BANNER_TONES = { driver: 'tone-a', putter: 'tone-b', ball: 'tone-c', rangefinder: 'tone-d', shoes: 'tone-e', set: 'tone-f' };
+const shortTitle = (t) => t.split(':')[0].trim();
+function banner(g, i) {
+  const ps = g.picks.filter((pk) => byId[pk.id]);
+  const ranked = [...ps].sort((x, y) => (y.scores ? avg(y.scores) : 0) - (x.scores ? avg(x.scores) : 0));
+  const top = ranked[0];
+  const tone = BANNER_TONES[byId[ps[0].id].p.category] ?? 'tone-a';
+  return `<a class="slide ${tone}${i === 0 ? ' on' : ''}" href="/g/${g.slug}" aria-label="${esc(g.title)}">
+<div class="sl-text">
+<span class="sl-badge">${ps.length}종 비교</span>
+<h2>${esc(shortTitle(g.title))}</h2>
+<p class="sl-sub">${esc(g.title.split(':')[1]?.trim() ?? '')}</p>
+${top?.scores ? `<p class="sl-top">종합 1위 <b>${esc(byId[top.id].p.name)}</b> <span>${avg(top.scores).toFixed(1)}점</span></p>` : ''}
+<ul class="sl-bars">${ranked
+    .map((pk) => {
+      const s = pk.scores ? avg(pk.scores) : 0;
+      return `<li><span class="nm">${esc(byId[pk.id].p.name)}</span><span class="bar"><i style="width:${(s / 5) * 100}%"></i></span><b>${s.toFixed(1)}</b></li>`;
+    })
+    .join('')}</ul>
+<span class="sl-cta">비교 전체 보기 ›</span>
+</div>
+<div class="sl-imgs">${ranked.map((pk) => `<img src="${esc(imageOf(pk.id, byId[pk.id].hist) ?? '')}" alt="" loading="${i === 0 ? 'eager' : 'lazy'}">`).join('')}</div>
+</a>`;
+}
+
+const sideCats = cats
+  .map((c) => `<a href="/c/${c.id}"><span class="ci">${catIcon(c)}</span>${esc(c.name)}</a>`)
   .join('');
+const rocketItems = entries.filter((e) => picks[e.p.id]?.rocket);
+const suggestItems = entries.filter((e) => scoreOf[e.p.id]).sort((x, y) => scoreOf[y.p.id] - scoreOf[x.p.id]).slice(0, 12);
+const tabs = cats
+  .map((c, i) => `<button type="button" role="tab" class="tab${i === 0 ? ' on' : ''}" data-tab="${c.id}" aria-selected="${i === 0}">${esc(c.name)}</button>`)
+  .join('');
+const panels = cats
+  .map((c, i) => `<div class="tabpanel${i === 0 ? ' on' : ''}" data-panel="${c.id}">${prow(entries.filter((e) => e.p.category === c.id))}<a class="more-link" href="/c/${c.id}">${esc(c.name)} 고르는 법과 전체 보기 ›</a></div>`)
+  .join('');
+
 writeText(
   join(OUT, 'index.html'),
   layout({
     title: SITE_NAME,
-    desc: '드라이버, 아이언, 퍼터, 골프공, 거리측정기, 골프화 고르는 법과 가격 정보. 지금 사도 되는지 알려드립니다.',
+    desc: '골프용품을 꼼꼼히 비교해 나에게 맞는 최고의 제품을 찾아 드립니다. 드라이버, 퍼터, 골프공, 거리측정기, 골프화, 풀세트 비교·추천과 장단점, 점수 비교.',
     path: '/',
-    body: `<section class="intro">
-<h1>골프용품, 지금 사도 될까?</h1>
-<p>인기 골프용품의 특징과 고르는 법을 정리하고, 가격을 기록해 살 때인지 알려드립니다.${tracked.length ? ` <small>가격 업데이트 ${updated}</small>` : ''}</p>
-<nav class="chips">${cats.map((c) => `<a href="/c/${c.id}">${esc(c.name)}</a>`).join('')}</nav>
+    body: `<h1 class="sr-only">${SITE_NAME}: 골프용품 비교·추천</h1>
+<div class="home-top">
+<aside class="side" aria-label="골프 카테고리"><p class="side-h">골프 카테고리</p>${sideCats}<a href="/#guides" class="side-guide">📊 비교·추천 가이드</a></aside>
+<div class="hero">
+<div class="slides" id="slides">${guides.map(banner).join('')}</div>
+<div class="sl-ctrl"><button type="button" class="sl-prev" aria-label="이전 배너">‹</button><span class="sl-dots">${guides.map((_, i) => `<button type="button" class="dot${i === 0 ? ' on' : ''}" aria-label="${i + 1}번째 배너"></button>`).join('')}</span><button type="button" class="sl-next" aria-label="다음 배너">›</button></div>
+</div>
+</div>
+
+<section class="mission">
+<div><b>${esc(SITE.tagline ?? '골프용품, 꼼꼼히 비교하고 고르세요')}</b>
+<p>인기 골프용품을 4개 이상씩 묶어 장단점과 항목별 점수로 비교하고, 나에게 맞는 최고의 제품을 찾아 드립니다.${tracked.length ? ' 가격은 매일 기록해 지금이 살 때인지도 알려드려요.' : ' 고른 제품은 쿠팡에서 바로 가격을 확인할 수 있어요.'}</p></div>
+<ul><li><b>${guides.length}</b>개 비교 가이드</li><li><b>${entries.length}</b>개 상품</li><li><b>${cats.length}</b>개 카테고리</li></ul>
 </section>
-${deals.length ? `<section><h2>🔥 지금 사기 좋은 상품</h2>${grid(deals)}</section>` : ''}
-${guides.length ? `<section><h2>비교·추천 가이드</h2>${guideGrid(guides)}</section>` : ''}
-${sections}`,
+
+${deals.length ? `<section class="block"><div class="block-h"><h2>🔥 지금 사기 좋은 상품</h2></div>${prow(deals)}</section>` : ''}
+
+<section class="block"><div class="block-h"><h2>이런 상품 어때요?</h2><span>비교 가이드 편집 점수가 높은 순</span></div>${prow(suggestItems)}</section>
+
+${rocketItems.length ? `<section class="block"><div class="block-h"><h2>🚀 로켓배송으로 빨리 받는 상품</h2></div><div class="hscroll">${prow(rocketItems)}</div></section>` : ''}
+
+<section class="block" id="cats"><div class="block-h"><h2>카테고리별 상품</h2></div>
+<div class="tabs" role="tablist">${tabs}</div>${panels}</section>
+
+<section class="block" id="guides"><div class="block-h"><h2>비교·추천 가이드</h2><span>4개 이상 제품을 장단점과 점수로 비교</span></div>${guideGrid(guides)}</section>
+
+<p class="note score-note">※ ${SCORE_NOTE}</p>`,
   }),
+);
+
+// ---------- 검색 ----------
+writeText(
+  join(OUT, 'assets', 'search.json'),
+  JSON.stringify({
+    products: entries.map((e) => ({
+      id: e.p.id,
+      n: e.p.name,
+      k: `${e.p.query} ${catName[e.p.category]} ${(e.p.must ?? []).join(' ')} ${(e.p.mustAny ?? []).join(' ')}`,
+      c: catName[e.p.category],
+      u: `/p/${e.p.id}`,
+      i: imageOf(e.p.id, e.hist) ?? '',
+      d: e.p.summary,
+      s: scoreOf[e.p.id] ? +scoreOf[e.p.id].toFixed(1) : null,
+      r: !!picks[e.p.id]?.rocket,
+      l: links[e.p.id] ?? e.hist?.latest?.link ?? '',
+      pr: e.a ? e.a.cur : null,
+    })),
+    guides: guides.map((g) => ({
+      t: g.title,
+      u: `/g/${g.slug}`,
+      k: g.desc,
+      crit: g.criteria ?? [],
+      picks: g.picks
+        .filter((pk) => byId[pk.id])
+        .map((pk) => ({ id: pk.id, n: byId[pk.id].p.name, role: pk.role, s: pk.scores ? +avg(pk.scores).toFixed(1) : null, sc: pk.scores ?? [], pro: pk.pros?.[0] ?? '', con: pk.cons?.[0] ?? '', i: imageOf(pk.id, byId[pk.id].hist) ?? '', u: `/p/${pk.id}` }))
+        .sort((x, y) => (y.s ?? 0) - (x.s ?? 0)),
+    })),
+  }),
+);
+writeText(
+  join(OUT, 'search.html'),
+  layout({
+    title: '검색',
+    desc: `${SITE_NAME} 검색`,
+    path: '/search',
+    body: `<h1 id="sTitle">검색</h1><div id="sResults" class="sresults"></div>`,
+  }).replace('<meta name="description"', '<meta name="robots" content="noindex">\n<meta name="description"'),
 );
 
 // ---------- 운영 안내 ----------
