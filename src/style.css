@@ -405,6 +405,21 @@ table.ig .bar i { display: block; height: 100%; background: var(--accent); }
 .gtabs a:hover { border-color: var(--accent); color: var(--accent); }
 .cat-cmp { scroll-margin-top: 60px; }
 .cat-cmp-h { display: flex; align-items: center; gap: 8px; margin: 28px 0 0; }
+.qsub { min-width: 240px; }
+.qsub-t { display: flex; flex-direction: column; line-height: 1.3; }
+.qsub-t b { font-size: 14px; }
+.qsub-t small { font-size: 12px; color: var(--muted); font-weight: 500; }
+.g-kicker { display: flex; align-items: center; gap: 8px; margin: 18px 0 -6px; font-weight: 700; color: var(--accent); font-size: 15px; }
+.toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 4px; position: sticky; top: 49px; z-index: 10; background: var(--bg); padding: 8px 0; }
+.toc a { padding: 6px 14px; border-radius: 99px; border: 1px solid var(--line); background: var(--surface); text-decoration: none; font-size: 13px; font-weight: 600; }
+.toc a:hover { border-color: var(--accent); color: var(--accent); }
+#cmp, #scores, #models, #choose, #faq { scroll-margin-top: 110px; }
+.choose { margin-top: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
+.choose h2 { margin-top: 0; }
+.choose-pick { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+.choose-pick a { display: flex; flex-direction: column; gap: 4px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; background: var(--bg); }
+.choose-pick a:hover { border-color: var(--accent); }
+.choose-pick small { color: var(--muted); font-size: 12px; }
 .linked { font-size: 13px; color: var(--muted); margin: 12px 0 8px; }
 .note { font-size: 12px; color: var(--muted); margin: 8px 0 0; }
 

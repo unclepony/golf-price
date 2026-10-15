@@ -127,7 +127,10 @@ ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표�
       const rel = guidesFor(c.id);
       const sub = rel.length
         ? `<div class="qsub">${rel
-            .map((g) => `<a href="/c/${c.id}#g-${g.slug}"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender ?? '공용')}</span>${esc(c.name)} 비교</a>`)
+            .map(
+              (g) =>
+                `<a href="/g/${g.slug}"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender && g.gender !== '공용' ? g.gender : '남녀공용')}</span><span class="qsub-t"><b>${esc(g.gender && g.gender !== '공용' ? `${g.gender} ${c.name}` : c.name)}</b><small>비교 및 선택 가이드</small></span></a>`,
+            )
             .join('')}<a href="/c/${c.id}" class="qsub-all">${esc(c.name)} 전체 비교 ›</a></div>`
         : '';
       return `<div class="qitem"><a href="/c/${c.id}">${esc(c.name)}</a>${sub}</div>`;
@@ -302,6 +305,11 @@ ${row('🛒', '가격 확인', (pk) => {
 }
 const guidesFor = (catId) => guides.filter((g) => g.picks.some((pk) => byId[pk.id]?.p.category === catId));
 const genderLabel = (g, c) => (g.gender && g.gender !== '공용' ? `${g.gender} ${c.name} 비교` : `${c.name} 비교`);
+const guideCat = (g) => cats.find((c) => c.id === byId[g.picks[0]?.id]?.p.category);
+const guideName = (g) => {
+  const c = guideCat(g);
+  return `${g.gender && g.gender !== '공용' ? `${g.gender} ` : ''}${c?.name ?? ''} 비교 및 선택 가이드`;
+};
 
 // ---------- 상품 상세: 사진 갤러리와 비교 분석 ----------
 const galleryConf = readJson(join(ROOT, 'config', 'gallery.json'), { base: '', images: {} });
@@ -467,20 +475,26 @@ ${crit.map((_, i) => `<td class="sc">${pk.scores ? dots(pk.scores[i]) : '-'}</td
   writeText(
     join(OUT, 'g', `${g.slug}.html`),
     layout({
-      title: g.title,
+      title: `${guideName(g)}${g.title.includes(':') ? `: ${g.title.split(':').slice(1).join(':').trim()}` : ''}`,
       desc: g.desc,
       path: `/g/${g.slug}`,
-      body: `<nav class="crumb"><a href="/">홈</a> › 비교·추천</nav>
+      body: `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${guideCat(g)?.id}">${esc(guideCat(g)?.name ?? '')}</a>${g.gender && g.gender !== '공용' ? ` › ${esc(g.gender)}` : ''}</nav>
+<p class="g-kicker">${g.gender ? `<span class="gender g-${esc(g.gender)}">${esc(g.gender === '공용' ? '남녀공용' : g.gender)}</span>` : ''}${esc(guideName(g))}</p>
 <h1>${esc(g.title)}</h1>
 <section class="prose"><p>${esc(g.intro)}</p></section>
-<section>${infographic(g)}</section>
-${figure(byId[g.picks[0]?.id]?.p.category)}
-<section><h2>한눈에 비교: 항목별 점수</h2><div class="tablewrap"><table class="scores"><thead><tr><th>모델</th>${crit.map((c) => `<th>${esc(c)}</th>`).join('')}<th>종합</th><th></th></tr></thead><tbody>${scoreRows}</tbody></table></div>
+<nav class="toc"><a href="#cmp">비교표</a><a href="#scores">항목별 점수</a><a href="#models">모델별 분석</a><a href="#choose">선택 가이드</a><a href="#faq">자주 묻는 질문</a></nav>
+<section id="cmp">${infographic(g)}</section>
+<section id="scores"><h2>한눈에 비교: 항목별 점수</h2><div class="tablewrap"><table class="scores"><thead><tr><th>모델</th>${crit.map((c) => `<th>${esc(c)}</th>`).join('')}<th>종합</th><th></th></tr></thead><tbody>${scoreRows}</tbody></table></div>
 <p class="note score-note">※ ${SCORE_NOTE}</p>
 <p class="note">${DISCLOSURE}</p></section>
-${cards}
-<section class="prose">${g.sections.map((s) => `<h2>${esc(s.h)}</h2><p>${esc(s.p)}</p>`).join('')}</section>
-<section class="prose"><h2>자주 묻는 질문</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>
+<div id="models">${cards}</div>
+<section id="choose" class="choose"><h2>선택 가이드: 이렇게 고르세요</h2>
+<div class="choose-pick">${rankedPicks(g)
+        .map((pk) => `<a href="/p/${pk.id}"><span class="badge mid">${esc(pk.role)}</span><b>${esc(byId[pk.id].p.name)}</b><small>${esc(pk.forWhom)}</small></a>`)
+        .join('')}</div>
+${figure(guideCat(g)?.id)}
+<div class="prose">${g.sections.map((s) => `<h3>${esc(s.h)}</h3><p>${esc(s.p)}</p>`).join('')}</div></section>
+<section id="faq" class="prose"><h2>자주 묻는 질문</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>
 <section><h2>다른 비교·추천 가이드</h2>${guideGrid(guides.filter((o) => o.slug !== g.slug))}</section>`,
     }),
   );
