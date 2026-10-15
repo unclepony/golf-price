@@ -127,7 +127,7 @@ ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표�
       const rel = guidesFor(c.id);
       const sub = rel.length
         ? `<div class="qsub">${rel
-            .map((g) => `<a href="/c/${c.id}#g-${g.slug}"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender ?? '공용')}</span>${esc(genderLabel(g, c))}</a>`)
+            .map((g) => `<a href="/c/${c.id}#g-${g.slug}"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender ?? '공용')}</span>${esc(c.name)} 비교</a>`)
             .join('')}<a href="/c/${c.id}" class="qsub-all">${esc(c.name)} 전체 비교 ›</a></div>`
         : '';
       return `<div class="qitem"><a href="/c/${c.id}">${esc(c.name)}</a>${sub}</div>`;
@@ -419,7 +419,7 @@ for (const c of cats) {
       body: `<nav class="crumb"><a href="/">홈</a> › ${esc(c.name)}</nav>
 <h1>${esc(c.name)} 비교</h1>
 ${related.length > 1 ? `<nav class="gtabs">${related.map((g) => `<a href="#g-${g.slug}">${esc(genderLabel(g, c))}</a>`).join('')}</nav>` : ''}
-${related.map((g) => `<section id="g-${g.slug}" class="cat-cmp">${related.length > 1 ? `<h2 class="cat-cmp-h"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender ?? '공용')}</span>${esc(genderLabel(g, c))}</h2>` : ''}${infographic(g)}<a class="more-link" href="/g/${g.slug}">장단점·고르는 법 전체 보기 ›</a></section>`).join('')}
+${related.map((g) => `<section id="g-${g.slug}" class="cat-cmp">${related.length > 1 ? `<h2 class="cat-cmp-h"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender ?? '공용')}</span>${esc(c.name)} 비교</h2>` : ''}${infographic(g)}<a class="more-link" href="/g/${g.slug}">장단점·고르는 법 전체 보기 ›</a></section>`).join('')}
 <section><h2>${esc(c.name)} 전체 상품</h2>${prow(items)}</section>
 <section class="prose"><h2>${esc(c.name)} 고르는 법</h2><p>${esc(c.intro)}</p>${figure(c.id)}<ul>${c.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>`,
     }),
