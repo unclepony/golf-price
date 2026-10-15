@@ -432,7 +432,7 @@ table.ig thead img { width: 96px; height: 96px; }
 .ig-plus { color: var(--good); font-weight: 700; }
 .ig-minus { color: var(--bad); font-weight: 700; }
 .ig-crits { display: inline-grid; grid-template-columns: auto auto; gap: 2px 6px; text-align: left; }
-.ig-crits span { display: contents; }
+.ig-crits > span { display: contents; }
 .ig-crits em { font-style: normal; font-size: 11px; color: var(--muted); }
 tr.r-total td { padding-top: 12px; }
 .ig-total { font-size: 24px; }
