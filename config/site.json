@@ -14,5 +14,7 @@
     "operator": "",
     "contact": ""
   },
-  "indexNowKey": "36b2cd2193416b8382bf8da8bc2a5adc"
+  "indexNowKey": "36b2cd2193416b8382bf8da8bc2a5adc",
+  "clickTracking": false,
+  "_clickTracking": "true 로 바꾸면 쿠팡 링크가 /go/{상품ID} (Cloudflare Pages Functions)를 거쳐 클릭 수가 D1 에 기록된다. Cloudflare 에 D1 데이터베이스와 CLICKS 바인딩을 먼저 만들 것 (README 참고)."
 }

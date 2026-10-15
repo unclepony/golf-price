@@ -1,73 +1,75 @@
-# 매시간 가격을 일부씩 수집해 data/ 에 쌓고, 하루 한 번(한국 시간 23시)만 사이트를 다시 만든다.
-# - 쿠팡 API 호출 한도 때문에 한 번에 COUPANG_MAX_PER_RUN 개씩(기본 9개) 나눠 수집한다. 오늘 이미 수집한 상품은 건너뛴다.
-# - 매시간 커밋에는 [skip ci] 를 붙여 Cloudflare Pages 빌드를 건너뛴다(무료 빌드 한도 보호).
-# - 23시 실행:
-#   1) 기준가 재계산 (평소: 10% 이상 변동만, 월요일: 주간 정기 재계산) — 순위·제목이 매일 흔들리지 않게
-#   2) 빌드로 콘텐츠 지문 갱신 (가격만 바뀐 페이지는 '마지막 업데이트'·sitemap lastmod 가 바뀌지 않음) + URL 보호 검사
-#   3) 일반 커밋으로 Cloudflare 배포 → 5분 뒤 IndexNow 전송 (콘텐츠가 바뀐·새·삭제된 페이지만)
-# - 쿠팡 API 키(Secrets)가 없으면 수집 없이 지나가고, 23시의 하루 한 번 갱신만 한다.
-name: daily-collect
+# 매일 한국 시간 23시: 데이터 점검 → 점검 이슈 갱신 → 기준가 재계산 → 빌드(콘텐츠 날짜·사이트맵·URL 보호) → 배포 → IndexNow
+# - AI 를 쓰지 않는다. 쿠팡 페이지·링크(link.coupang.com)에 요청을 보내지 않는다.
+# - 점검 결과는 'daily-check' 라벨의 이슈 하나에 매일 덮어쓴다(새 이슈를 만들지 않음). 점검 문제는 배포를 막지 않는다.
+# - 가격은 prices.csv → node src/prices/import.mjs 로 직접 넣는다. 쿠팡 파트너스 API 승인 후 src/prices/providers/coupang-api.mjs 를 구현하면 '가격 자동 수집' 단계가 동작한다.
+# - 매일 빈 커밋을 올려 사이트를 다시 만든다(확인한 지 14일 지난 가격 숨기기 반영). 가격만 바뀐 페이지는 '마지막 업데이트'·lastmod·IndexNow 대상이 아니다.
+name: daily-check
 
 on:
   schedule:
-    - cron: '5 * * * *' # 매시 5분
-  workflow_dispatch: {}  # Actions 탭에서 수동 실행 가능
+    - cron: '5 14 * * *' # UTC 14:05 = 한국 시간 23:05
+  workflow_dispatch: {}
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
-  group: daily-collect
+  group: daily-check
   cancel-in-progress: false
 
 jobs:
-  collect:
+  daily:
     runs-on: ubuntu-latest
+    env:
+      SITE_URL: https://golf-price.pages.dev
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: 가격 수집
+
+      - name: 가격 자동 수집 (API 승인 전에는 아무것도 하지 않음)
         env:
           COUPANG_ACCESS_KEY: ${{ secrets.COUPANG_ACCESS_KEY }}
           COUPANG_SECRET_KEY: ${{ secrets.COUPANG_SECRET_KEY }}
-        run: node src/collect.mjs
-      - name: 커밋 준비
+        run: node src/prices/collect.mjs
+
+      - name: 데이터 점검 → 이슈 하나에 갱신
+        continue-on-error: true
+        run: |
+          node src/check.mjs --out check.md > /dev/null
+          gh label create daily-check --color BFD4F2 --description "매일 데이터 점검 (자동)" --force
+          NUM=$(gh issue list --label daily-check --state open --json number --jq '.[0].number')
+          if [ -n "$NUM" ]; then
+            gh issue edit "$NUM" --title "데이터 점검 (매일 자동 갱신)" --body-file check.md
+          else
+            gh issue create --title "데이터 점검 (매일 자동 갱신)" --label daily-check --body-file check.md
+          fi
+
+      - name: 기준가 재계산 (평소 10% 이상 변동만, 월요일 주간 정기)
+        run: |
+          if [ "$(TZ=Asia/Seoul date +%u)" = "1" ]; then node src/rebaseline.mjs --weekly; else node src/rebaseline.mjs; fi
+
+      - name: 빌드 (콘텐츠 날짜·사이트맵·URL 301 보호 검사)
+        run: node src/build.mjs
+
+      - name: 커밋·배포
         run: |
           git config user.name "golf-price-bot"
           git config user.email "golf-price-bot@users.noreply.github.com"
-          echo "HOUR=$(TZ=Asia/Seoul date +%H)" >> "$GITHUB_ENV"
-          echo "DAY=$(TZ=Asia/Seoul date +%F)" >> "$GITHUB_ENV"
-          echo "DOW=$(TZ=Asia/Seoul date +%u)" >> "$GITHUB_ENV"
-      - name: 매시간 수집 결과 커밋 (빌드 없음)
-        if: env.HOUR != '23'
-        run: |
-          mkdir -p data
-          git add data
-          git diff --cached --quiet || git commit -m "가격 수집 $DAY ${HOUR}시 [skip ci]"
-          git pull --rebase
-          git push
-      - name: 하루 1회 기준가·콘텐츠 날짜 갱신 후 배포
-        if: env.HOUR == '23'
-        env:
-          SITE_URL: https://golf-price.pages.dev
-        run: |
-          if [ "$DOW" = "1" ]; then node src/rebaseline.mjs --weekly; else node src/rebaseline.mjs; fi
-          node src/build.mjs
           mkdir -p data
           git add data config
-          git commit --allow-empty -m "가격 수집 $DAY (하루 1회 사이트 갱신)"
+          git commit --allow-empty -m "매일 갱신 $(TZ=Asia/Seoul date +%F)"
           git pull --rebase
           git push
-      - name: IndexNow 전송 (콘텐츠가 바뀐 페이지만)
-        if: env.HOUR == '23'
-        env:
-          SITE_URL: https://golf-price.pages.dev
+
+      - name: IndexNow 전송 (콘텐츠가 바뀐·새·삭제된 페이지만, 배포 5분 뒤)
         run: |
           sleep 300
           node src/indexnow.mjs
           git add config/content-state.json
-          git diff --cached --quiet || git commit -m "IndexNow 전송 $DAY [skip ci]"
+          git diff --cached --quiet || git commit -m "IndexNow 전송 $(TZ=Asia/Seoul date +%F) [skip ci]"
           git pull --rebase
           git push

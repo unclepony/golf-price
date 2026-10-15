@@ -2,7 +2,7 @@
 // 가격 기록이 없는 상품은 구매 가이드 페이지로, 있는 상품은 가격 추이 페이지로 만든다.
 // 사용: node src/build.mjs        → 실제 데이터 (data/)
 //       node src/build.mjs --demo → 샘플 데이터 (data-demo/)
-import { rmSync, readFileSync, writeFileSync } from 'node:fs';
+import { rmSync, readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText as rawWrite, todayKst } from './lib.mjs';
@@ -14,8 +14,16 @@ const SITE = readJson(join(ROOT, 'config', 'site.json'), {});
 const SITE_NAME = SITE.name || 'ATL골프기어';
 const LOGO_SVG = readFileSync(join(ROOT, 'src', 'figures', 'logo.svg'), 'utf8').replace(/role="img" aria-label="[^"]*"/, 'aria-hidden="true"');
 const OUT = join(ROOT, 'site');
-const DISCLOSURE = '이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.';
-const PRICE_NOTE = '표시 가격은 쿠팡 파트너스 링크를 만들 때 확인한 쿠팡 판매가이며 확인 날짜를 함께 적었습니다. 옵션(샤프트, 사이즈 등)과 시점에 따라 현재 판매가와 다를 수 있습니다. 쿠팡 파트너스 API 승인 뒤에는 하루 한 번 최저가를 자동 기록해 가격 추이와 역대 최저가를 보여 드립니다.';
+// 안내 문구는 config/notices.json 한 곳에서 관리한다 (고지·점수·가격 안내)
+const NOTICES = readJson(join(ROOT, 'config', 'notices.json'), {});
+const DISCLOSURE = NOTICES.disclosure;
+// 가격 출처 상태: API 기록이 하나라도 있으면 api, 아니면 manual (링크 생성 때 확인·직접 입력)
+const PRICE_MODE = (() => {
+  const dir = historyDir(process.argv.includes('--demo'));
+  if (!existsSync(dir)) return 'manual';
+  return readdirSync(dir).some((f) => f.endsWith('.json') && (readJson(join(dir, f), {}).points ?? []).some((p) => (p.src ?? 'api') === 'api')) ? 'api' : 'manual';
+})();
+const PRICE_NOTE = NOTICES.price?.[PRICE_MODE];
 
 // ---------- 콘텐츠 업데이트일 (가격 확인일과 분리) ----------
 // 페이지 <main> 본문에서 가격·날짜를 뺀 내용의 지문(hash)을 config/content-state.json 에 저장하고,
@@ -34,6 +42,13 @@ function contentKey(html) {
     .replace(/"pr":\d+,"pd":"[^"]*"/g, '')
     .replace(/<p class="updated"[\s\S]*?<\/p>/g, '')
     // 가격 기록에서 나오는 부분(판단 문구·그래프·통계·가격 하락 목록)은 가격만 바뀌어도 달라지므로 뺀다
+    .replace(/<!--phist-->[\s\S]*?<!--\/phist-->/g, '')
+    // 쿠팡 이동 주소(직접 링크·/go/ 추적 링크)는 같은 것으로 본다
+    .replace(/href="(?:\/go\/[^"]*|https:\/\/link\.coupang\.com\/[^"]*)"/g, 'href="#out"')
+    // 가격 표시 요소는 통째로 뺀다 (14일이 지나 가격을 숨겨도 콘텐츠 날짜가 바뀌지 않게)
+    .replace(/<p class="(?:price-line|pt-won|pd-won|cc-won)[^"]*">[\s\S]*?<\/p>/g, '')
+    .replace(/<span class="pshort[^"]*">[\s\S]*?<\/small><\/span>/g, '')
+    .replace(/<span class="sb-t">[\s\S]*?<\/span>(?=<a)/g, '')
     .replace(/<p class="verdict[\s\S]*?<\/p>/g, '')
     .replace(/<svg class="chart"[\s\S]*?<\/svg>/g, '')
     .replace(/<section class="stats">[\s\S]*?<\/section>/g, '')
@@ -263,26 +278,33 @@ const PRICE_DATE = SITE.priceCheckedAt ?? '';
 const priceDateLabel = PRICE_DATE ? `${+PRICE_DATE.slice(5, 7)}.${+PRICE_DATE.slice(8, 10)}` : '';
 const pickPrice = (id) => picks[id]?.price ?? null;
 const BUILD_DAY = todayKst();
-const PRICE_STALE_DAYS = 14; // 이보다 오래된 가격은 흐리게 '오래된 가격'으로 표시
+const PRICE_STALE_DAYS = NOTICES.priceStaleDays ?? 14; // 확인한 지 이보다 오래된 가격은 숨기고 '현재 가격 보기' 버튼만 보여 준다
 const dayLabel = (d) => `${+d.slice(5, 7)}월 ${+d.slice(8, 10)}일`;
 const daysAgo = (d) => Math.round((Date.parse(BUILD_DAY) - Date.parse(d)) / 864e5);
-// 보여 줄 가격: API 일별 기록이 있으면 최근 최저가, 없으면 링크 생성 때 확인한 쿠팡 판매가
+// 보여 줄 가격: 가격 이력(data/history: 직접 입력·API)과 링크 생성 때 확인한 판매가 중 가장 최근 것
+const SRC_LABEL = { api: '최근 최저가', manual: '쿠팡 판매가', link: '쿠팡 판매가' };
 function shownPrice(id) {
-  const a = entryById[id]?.a;
-  if (a) return { won: a.cur, d: a.last.d, kind: 'api', allMin: a.allMin };
+  if (!links[id] && !entryById[id]?.hist?.latest?.link) return null;
+  const last = entryById[id]?.hist?.points?.at(-1);
   const pk = picks[id];
-  if (!pk?.price || !links[id]) return null;
-  return { won: pk.price, d: pk.checked ?? PRICE_DATE, kind: 'snap' };
+  const snap = pk?.price ? { won: pk.price, d: pk.checked ?? PRICE_DATE, kind: 'link' } : null;
+  const hist = last ? { won: last.low, d: last.d, kind: last.src ?? 'api', allMin: entryById[id]?.a?.allMin } : null;
+  if (hist && (!snap || hist.d >= snap.d)) return hist;
+  return snap;
 }
-function priceLine(id, cls = 'price-line') {
+// 화면에 보여도 되는 가격 (확인한 지 PRICE_STALE_DAYS 이내)
+const freshPrice = (id) => {
   const sp = shownPrice(id);
-  if (!sp) return extOf(id) ? `<p class="${cls} none"><small>쿠팡 판매처 없음 · 가격 정보 없음</small></p>` : '';
-  const stale = daysAgo(sp.d) > PRICE_STALE_DAYS;
-  return `<p class="${cls}${stale ? ' stale' : ''}"><b>${won(sp.won)}</b><small>${sp.kind === 'api' ? '최근 최저가' : '쿠팡 판매가'} · ${dayLabel(sp.d)} 확인${stale ? ' · 오래된 가격' : ''} · 현재 가격과 다를 수 있음</small></p>`;
+  return sp && daysAgo(sp.d) <= PRICE_STALE_DAYS ? sp : null;
+};
+function priceLine(id, cls = 'price-line') {
+  const sp = freshPrice(id);
+  if (!sp) return !shownPrice(id) && extOf(id) ? `<p class="${cls} none"><small>쿠팡 판매처 없음 · 가격 정보 없음</small></p>` : '';
+  return `<p class="${cls}"><b>${won(sp.won)}</b><small>${SRC_LABEL[sp.kind] ?? '쿠팡 판매가'} · ${dayLabel(sp.d)} 확인 · 현재 가격과 다를 수 있음</small></p>`;
 }
 const priceShort = (id) => {
-  const sp = shownPrice(id);
-  return sp ? `<span class="pshort${daysAgo(sp.d) > PRICE_STALE_DAYS ? ' stale' : ''}">${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small></span>` : '';
+  const sp = freshPrice(id);
+  return sp ? `<span class="pshort">${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small></span>` : '';
 };
 // 가격 단계: 아이템(카테고리)별 가격 구간(priceBands) 기준 저가·중가·고가·프리미엄 (숫자 가격은 표시하지 않음)
 const LEVELS = ['', '저가', '중가', '고가', '프리미엄'];
@@ -312,10 +334,14 @@ const levelBadge = (id) => {
 };
 // 가격 수준 + 쿠팡 링크
 // 쿠팡에 없는 상품: 공식몰 등 다른 판매처 일반 링크(제휴 아님)
+// 쿠팡으로 나가는 주소: 클릭 추적(config/site.json clickTracking)을 켜면 /go/{상품ID} 를 거친다 (Pages Functions 가 클릭 수만 세고 302 이동)
+const CLICK_TRACKING = SITE.clickTracking === true && !process.argv.includes('--demo');
+const rawLink = (id) => links[id] ?? entryById[id]?.hist?.latest?.link ?? null;
+const outHref = (id) => (rawLink(id) ? (CLICK_TRACKING ? `/go/${encodeURIComponent(id)}` : rawLink(id)) : null);
 const extOf = (id) => config.products.find((x) => x.id === id)?.external ?? null;
 function levelLink(id, hist, extra = '쿠팡에서 가격 보기 ›') {
   const lv = priceLevel(id);
-  const link = links[id] ?? hist?.latest?.link;
+  const link = outHref(id);
   const ext = extOf(id);
   if (!link && ext) {
     return `<a class="lvl-link" href="${esc(ext.url)}" target="_blank" rel="nofollow noopener"><span class="lvl lvl-0">${lv ? `<i>${lv.marks}</i>${lv.label}` : '공식몰 확인'}</span><small>${esc(ext.store)} ›</small></a>`;
@@ -352,7 +378,7 @@ function figure(category) {
 }
 
 function buyButton(id, hist) {
-  const link = links[id] ?? hist?.latest?.link;
+  const link = outHref(id);
   const ext = extOf(id);
   if (!link && ext) {
     return `<p class="linked">판매처: ${esc(ext.store)} (쿠팡에 국내 정품 판매가 없어 다른 판매처로 연결합니다)</p>
@@ -430,7 +456,7 @@ for (const g of guides) for (const pk of g.picks) if (variants[pk.id]?.link && v
   }
 }
 const byId = Object.fromEntries(entries.map((e) => [e.p.id, e]));
-const SCORE_NOTE = '점수는 제조사 공개 정보, 보도된 투어 소식, 일반적인 사용자 평가와 현재 판매가를 바탕으로 이 사이트가 매긴 주관적인 참고 점수입니다. 직접 측정한 시험 결과나 공식 평가가 아니며, 개인의 체형·스윙에 따라 체감은 다를 수 있습니다.';
+const SCORE_NOTE = NOTICES.score;
 const avg = (xs) => xs.reduce((s, x) => s + x, 0) / xs.length;
 const dots = (n) => `<span class="dots" aria-label="5점 중 ${n}점">${'●'.repeat(n)}<i>${'●'.repeat(5 - n)}</i></span>`;
 function guideTile(g) {
@@ -624,7 +650,7 @@ function criteriaBox(g) {
 const issuesOf = (g, pk) => beginnerIssues(g, pk, byId[pk.id]?.p.category, picks);
 // 구매 버튼: 쿠팡(파트너스) 또는 공식몰(제휴 아님)
 function buyBtn(id, cls = 'btn sm', label = '쿠팡에서 현재 가격 보기') {
-  const link = links[id] ?? byId[id]?.hist?.latest?.link;
+  const link = outHref(id);
   if (link) return `<a class="${cls}" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">${esc(label)}</a>`;
   const ext = extOf(id);
   return ext ? `<a class="${cls} ext" href="${esc(ext.url)}" target="_blank" rel="nofollow noopener">${esc(ext.store)}에서 보기</a>` : '';
@@ -636,7 +662,7 @@ function baseMin(ids) {
   return xs.length ? Math.min(...xs) : null;
 }
 function priceRange(ids) {
-  const xs = ids.map((id) => shownPrice(id)).filter(Boolean);
+  const xs = ids.map((id) => freshPrice(id)).filter(Boolean);
   if (!xs.length) return null;
   const w = xs.map((x) => x.won);
   return { min: Math.min(...w), max: Math.max(...w), d: xs.map((x) => x.d).sort().at(-1) };
@@ -691,7 +717,7 @@ ${card(hard || ei < 0 ? '성능 기준 추천' : '쉬움 기준 추천', man.eas
 function stickyBuy(pk) {
   if (!pk) return '';
   const p = byId[pk.id].p;
-  const sp = shownPrice(p.id);
+  const sp = freshPrice(p.id);
   return `<div class="stickybuy" role="complementary" aria-label="1위 상품 바로가기"><span class="sb-t"><b>1위</b> ${esc(p.name)}${sp ? ` · ${won(sp.won)}` : ''}</span>${buyBtn(p.id, 'btn sm', '1위 상품 가격 보기')}</div>`;
 }
 // 구형 모델이 실력별 1위일 때 이유와 최신 모델 1위
@@ -791,24 +817,25 @@ ${sellable(p.id) ? infographic(g, p.id) : ''}
 // 가격 기록 영역: API 일별 기록이 있으면 추이 그래프(30일·90일)와 역대 최저가 대비 현재가, 없으면 수집 예정 안내
 function priceHistory(p, hist, a) {
   if (!sellable(p.id)) return '';
-  if (!a) return `<section class="phist empty"><h2>가격 추이</h2><p>아직 일별 가격 기록이 없습니다. 쿠팡 파트너스 API 승인 뒤 하루 한 번 최저가를 기록해 최근 30일·90일 추이와 역대 최저가를 이곳에 보여 드립니다.</p><p class="note">${PRICE_NOTE}</p></section>`;
+  // 가격 기록 영역은 가격만 바뀌어도 내용이 달라지므로 <!--phist--> 표시 사이를 콘텐츠 지문에서 뺀다
+  if (!a || !freshPrice(p.id)) return `<!--phist--><section class="phist empty"><h2>가격 추이</h2><p>${a ? `최근 확인한 가격이 ${PRICE_STALE_DAYS}일을 넘어 가격 정보를 숨겼습니다. 쿠팡에서 현재 가격을 확인하세요.` : '아직 가격 기록이 충분하지 않습니다. 기록이 쌓이면 최근 30일·90일 추이와 역대 최저가를 이곳에 보여 드립니다.'}</p><p class="note">${PRICE_NOTE}</p></section><!--/phist-->`;
   const vsMin = pct(a.cur, a.allMin);
   const panel = (days, on) => {
     const from = addDays(a.last.d, -days);
     const pts = hist.points.filter((pt) => pt.d >= from);
     return `<div class="tabpanel${on ? ' on' : ''}" data-panel="ph${days}">${pts.length > 1 ? chart(pts, a.allMin) : '<p class="note">기록이 더 쌓이면 그래프가 표시됩니다.</p>'}</div>`;
   };
-  return `<section class="phist tabs-wrap"><h2>가격 추이 <small>(${a.days}일 기록 · ${dayLabel(a.last.d)} 기준)</small></h2>
+  return `<!--phist--><section class="phist tabs-wrap"><h2>가격 추이 <small>(${a.days}일 기록 · ${dayLabel(a.last.d)} 기준)</small></h2>
 <p class="verdict ${a.verdict.cls}"><b>${a.verdict.label}</b> · ${esc(a.verdict.text)}</p>
 <section class="stats">
-<div><span>최근 최저가</span><b>${won(a.cur)}</b></div>
+<div><span>${PRICE_MODE === 'api' ? '최근 최저가' : '최근 확인가'}</span><b>${won(a.cur)}</b></div>
 <div><span>역대 최저가</span><b>${won(a.allMin)}</b></div>
 <div><span>역대 최저 대비</span><b class="${vsMin > 0 ? 'up' : ''}">${vsMin > 0.05 ? `+${vsMin.toFixed(1)}%` : '최저가'}</b></div>
 <div><span>30일 평균</span><b>${won(a.avg30)}</b></div>
 </section>
 <div class="tabs" role="tablist"><button type="button" class="tab on" data-tab="ph30">최근 30일</button><button type="button" class="tab" data-tab="ph90">최근 90일</button></div>
 ${panel(30, true)}${panel(90, false)}
-<p class="note">${PRICE_NOTE}</p></section>`;
+<p class="note">${PRICE_NOTE}</p></section><!--/phist-->`;
 }
 
 // ---------- 상품 페이지 ----------
@@ -901,7 +928,7 @@ for (const g of pageGuides) {
     .map((pk) => {
       const { p, hist } = byId[pk.id];
       const image = imageOf(p.id, hist);
-      const link = links[p.id] ?? hist?.latest?.link;
+      const link = outHref(p.id);
       const total = totalOf(pk);
       return `<tr>
 <td class="pcell">${image ? `<img src="${esc(image)}" alt="" loading="lazy" width="48" height="48">` : ''}<a href="/p/${p.id}">${esc(p.name)}</a><br>${pk.skill ? `<span class="skill sk-${SKILLS.indexOf(pk.skill) + 1}">${pk.skill}</span> ` : ''}<span class="badge mid">${esc(pk.role)}</span></td>
@@ -1074,7 +1101,7 @@ const finderData = {
   items: pageGuides.flatMap((g) =>
     rankedPicks(g).map((pk) => {
       const { p, hist } = byId[pk.id];
-      const sp = shownPrice(p.id);
+      const sp = freshPrice(p.id);
       return { c: p.category, g: g.gender ?? '공용', s: pk.skill ?? '', lv: priceLevel(p.id)?.n ?? 0, n: p.name, i: imageOf(p.id, hist) ?? '', u: `/p/${p.id}`, r: pk.role, sc: +totalScore(pk).toFixed(1), pr: sp?.won ?? 0, pd: sp ? dayLabel(sp.d) : '', x: pk.unisex ? 1 : 0 };
     }),
   ),
@@ -1135,7 +1162,7 @@ writeText(
       d: e.p.summary,
       s: scoreOf[e.p.id] ? +scoreOf[e.p.id].toFixed(1) : null,
       r: !!picks[e.p.id]?.rocket,
-      l: links[e.p.id] ?? e.hist?.latest?.link ?? e.p.external?.url ?? '',
+      l: outHref(e.p.id) ?? e.p.external?.url ?? '',
       st: links[e.p.id] ? '쿠팡' : e.p.external?.store ?? '',
       pr: null,
       lv: priceLevel(e.p.id)?.label ?? '',
@@ -1195,8 +1222,7 @@ ${ABOUT.operator ? `<section class="prose" id="operator"><h2>운영자 소개</h
 <h2>가격 수집 방법</h2>
 <p>${PRICE_NOTE}</p>
 <ul>
-<li><b>지금 표시되는 가격</b>: 쿠팡 파트너스 사이트에서 상품 링크를 만들 때 확인한 판매가입니다. 가격 옆에 확인 날짜를 적고, ${PRICE_STALE_DAYS}일이 지나면 흐리게 '오래된 가격'으로 표시합니다.</li>
-<li><b>자동 기록(예정)</b>: 쿠팡 파트너스 API 승인 뒤 매시간 일부 상품씩 나눠 하루 한 번 전 상품의 최저가를 기록합니다. 기록이 쌓이면 상품 페이지에 최근 30일·90일 추이와 역대 최저가 대비 현재가, 홈에 '최근 가격 하락'이 표시됩니다.</li>
+${(NOTICES.priceDetails?.[PRICE_MODE] ?? []).map((t) => `<li>${esc(t)}</li>`).join('')}
 <li>"사기 좋은 때" 판단: 역대 최저가와 2% 이내면 '역대 최저가 근처', 최근 30일 평균보다 5% 이상 낮으면 '평소보다 저렴', 5% 이상 높으면 '평소보다 비쌈', 기록이 7일 미만이면 '데이터 수집 중'입니다.</li>
 <li>해외직구·구매대행·병행수입 상품은 비교와 가격 기록에서 뺍니다.</li>
 </ul>
@@ -1278,6 +1304,8 @@ if (!DEMO) {
   writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n');
   if (state.pending.length) console.log(`IndexNow 대기열: ${state.pending.length}개 (node src/indexnow.mjs 로 전송)`);
 }
+// 클릭 추적용 이동 표 (functions/go/[id].js 가 읽는다)
+rawWrite(join(OUT, 'assets', 'go.json'), JSON.stringify(Object.fromEntries(config.products.map((p) => [p.id, rawLink(p.id)]).filter(([, v]) => v))));
 // IndexNow 키 파일
 if (SITE.indexNowKey && !DEMO) rawWrite(join(OUT, `${SITE.indexNowKey}.txt`), SITE.indexNowKey);
 rawWrite(
@@ -1286,7 +1314,7 @@ rawWrite(
     .map(([u, d]) => `<url><loc>${SITE_URL}${u}</loc><lastmod>${d}</lastmod></url>`)
     .join('\n')}\n</urlset>\n`,
 );
-writeText(join(OUT, 'robots.txt'), DEMO ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+writeText(join(OUT, 'robots.txt'), DEMO ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nDisallow: /go/\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
 {
   const n = pageGuides.reduce((s2, g) => s2 + g.picks.filter((pk) => byId[pk.id] && issuesOf(g, pk).length).length, 0);

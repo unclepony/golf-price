@@ -1,79 +1,80 @@
-﻿# ATL골프기어
+# ATL골프기어
 
-골프용품의 특징과 고르는 법을 정리하고, 가격을 매일 기록해 "지금 사도 될까"를 알려주는 정적 사이트입니다.
-쿠팡 파트너스 링크로 수수료를 받습니다.
+골프용품을 실력(초보~프로)·성별·가격대별로 비교하고, 쿠팡 판매가를 확인 날짜와 함께 보여 주는 정적 사이트입니다.
+쿠팡 파트너스 링크로 수수료를 받습니다. 웹서버가 없어 서버 비용이 들지 않습니다(Cloudflare Pages + GitHub Actions).
 
-## 두 가지 모드
+## 가격 데이터 흐름
 
-| 모드 | 언제 | 내용 |
+| 단계 | 지금 (API 승인 전) | 쿠팡 파트너스 API 승인 후 |
 |---|---|---|
-| 가이드 모드 | 쿠팡 파트너스 최종 승인 전 (API 키 없음) | 상품 특징, 고르는 법, 쿠팡 간편링크 버튼 |
-| 가격 추적 모드 | 최종 승인 후 (API 키 있음) | 매일 가격 수집, 가격 추이 그래프, "사기 좋은 때" 판단 |
+| 가격 입력 | `prices.csv` 에 직접 확인한 판매가 → `node src/prices/import.mjs` | `src/prices/providers/coupang-api.mjs` 구현 → 매일 자동 수집 |
+| 저장 | `data/history/{상품ID}.json` 에 이력으로 쌓음 (출처 `src`: manual / link / api) | 같은 구조 |
+| 표시 | 확인 날짜와 함께 표시, 14일 지나면 숨기고 '쿠팡에서 현재 가격 보기'만 | 같음 + 가격 추이·역대 최저가 |
 
-API 키를 넣으면 가격이 수집된 상품부터 자동으로 가격 추적 페이지로 바뀝니다.
+- 가격 공급자 인터페이스: `src/prices/providers/*.mjs` — `csv`(지금), `coupang-api`(빈 껍데기·TODO, 승인 후 공식 문서를 보고 작성)
+- 쿠팡 페이지 크롤링·스크래핑, `link.coupang.com` 자동 요청은 하지 않습니다(파트너스 약관). 링크 점검도 자동으로 하지 않습니다.
 
-## 구조
+### 가격 넣는 법 (주 1회 권장)
+1. `node src/prices/template.mjs` — 이번 주 확인할 상품 20개 줄을 `prices.csv` 에 추가 (쿠팡 상품명 주석 포함)
+2. 쿠팡 파트너스 사이트에서 상품을 찾아 판매가와 확인일(YYYY-MM-DD)을 채움
+3. `node src/prices/import.mjs` — 오류(없는 상품ID, 형식, 미래 날짜)가 있으면 아무것도 반영하지 않고 알려 줌
+4. `npm run build` 로 확인 → 커밋·푸시
 
-```
-config/products.json   상품 목록, 검색 조건, 가이드 문구, 분류별 고르는 법
-config/links.json      상품별 쿠팡 파트너스 간편링크 (직접 붙여넣기)
-src/collect.mjs        쿠팡 파트너스 API로 최저가 수집 → data/history/*.json
-src/build.mjs          사이트 생성 → site/
-src/demo.mjs           가격 추적 모드 미리보기용 샘플 데이터 (실제 가격 아님)
-.github/workflows/     매일 아침 자동 수집
-```
+## 자동 실행 (GitHub Actions)
 
-운영 흐름: GitHub Actions가 매일 수집 → data/ 커밋 → Cloudflare Pages가 자동으로 사이트 재생성·배포.
-웹서버가 없어서 서버 비용이 들지 않습니다.
+| 워크플로 | 언제 | 하는 일 | AI |
+|---|---|---|---|
+| `daily.yml` (daily-check) | 매일 23:05 KST | 데이터 점검 → 'daily-check' 이슈 하나에 덮어쓰기, 기준가 재계산(월요일 주간), 빌드(콘텐츠 날짜·사이트맵·URL 보호), 배포, IndexNow | 없음 |
+| `weekly.yml` (weekly-analysis) | 월 09:00 KST | 서치콘솔·클릭 자료 수집, 가격 확인 목록, Claude Code 로 title/description 개선안·본문/FAQ 초안(최대 2페이지) → 검토용 PR (자동 병합 없음) | Claude Code (API 키) |
+
+## 클릭 추적 (선택)
+
+`config/site.json` 의 `clickTracking` 을 `true` 로 바꾸면 쿠팡 링크가 `/go/{상품ID}` 를 거칩니다.
+Cloudflare Pages Functions(`functions/go/[id].js`)가 Cloudflare D1 에 '날짜·상품ID·클릭한 페이지 경로·횟수'만 기록하고 쿠팡 파트너스 링크로 302 이동합니다(개인정보 저장 없음, 기록은 응답 뒤에 해서 이동 지연 최소화).
+링크에는 `rel="sponsored nofollow noopener"` 가 그대로 붙습니다. 주간 집계: `node src/clicks-report.mjs`.
+
+D1 준비(한 번): Cloudflare 대시보드 → Storage & Databases → D1 → 데이터베이스 만들기(예: `golf-clicks`) → Console 에서 `migrations/0001_clicks.sql` 실행 → Workers & Pages → golf-price → Settings → Bindings → D1 database 추가(변수 이름 `CLICKS`).
 
 ## 내 PC에서 실행
 
 Node.js 22.9 이상이 필요합니다.
 
-- 사이트 생성: `npm run build`
-- 미리보기: `npm run preview` → http://localhost:4173
-- 가격 추적 모드 샘플 보기: `npm run demo` 후 `npm run preview`
-- 가격 수집 (API 키 필요): `.env.example` 을 `.env` 로 복사해 키를 채우고 `npm run collect`
-
-## 배포 설정 (한 번만)
-
-### Cloudflare Pages
-1. Workers & Pages → Create → Pages → Connect to Git → `golf-price` 저장소 선택
-2. 빌드 설정
-   - Framework preset: None
-   - Build command: `node src/build.mjs`
-   - Build output directory: `site`
-   - 환경 변수: `NODE_VERSION` = `22`, `SITE_URL` = 배포 주소 (예: `https://golf-price.pages.dev`)
-
-### GitHub (최종 승인 후)
-저장소 Settings → Secrets and variables → Actions → New repository secret
-- `COUPANG_ACCESS_KEY`, `COUPANG_SECRET_KEY`
-
-Actions 탭 → daily-collect → Run workflow 로 첫 수집을 돌려봅니다.
-
-## 쿠팡 파트너스 링크 넣기 (승인 전)
-
-파트너스 사이트에서 상품별 간편링크를 만들어 `config/links.json` 의 해당 상품 id에 붙여넣습니다.
-링크가 있는 상품에만 "쿠팡에서 가격 확인하기" 버튼이 나타납니다.
-승인 후에는 API가 돌려주는 파트너스 링크가 자동으로 쓰입니다 (links.json 에 값이 있으면 그것이 우선).
-
-## 지켜야 할 것
-
-- 모든 페이지 상단·하단과 구매 버튼 아래에 대가성 문구가 자동으로 표시됩니다. 지우지 마세요.
-- 쿠팡 페이지를 크롤링하지 않습니다. 가격은 공식 파트너스 API로만 가져옵니다.
-- 승인 후 API 키를 받을 때 파트너스 API 이용 약관(호출 한도, 데이터 보관·표시 조건)을 확인하세요.
-  호출 한도에 맞춰 `COUPANG_MAX_PER_RUN`, `COUPANG_DELAY_SEC` 값과 수집 시간표(daily.yml)를 조정합니다.
+- 사이트 생성: `npm run build` · 미리보기: `npm run preview` → http://localhost:4173
+- 가격 반영: `npm run prices` (= `node src/prices/import.mjs`)
+- 데이터 점검: `npm run check`
 
 ## 점검·관리 스크립트
 
-- `node src/build.mjs` — 사이트 생성 (`site/`)
-- `node src/linkcheck.mjs` — 내부 링크·리다이렉트·사이트맵 검사 (배포 전 실행)
-- `node src/stamp-dates.mjs` — git 기록으로 판매가 확인일(`picks.json checked`)과 마지막 업데이트일(`updated`)을 채움. 데이터를 커밋한 뒤 실행하고 다시 커밋
+- `node src/build.mjs` — 사이트 생성 (`site/`). 콘텐츠 지문으로 '마지막 업데이트'·sitemap lastmod 결정, 사라진 주소에 301 이 없으면 실패
+- `node src/linkcheck.mjs` — 내부 링크·리다이렉트·사이트맵·`/go/` 이동 표 검사 (배포 전 실행)
+- `node src/check.mjs` — 매일 점검(출시 형식, 초보 로프트·샤프트 기준, 이미지·링크 누락, 14일 지난 가격)
+- `node src/audit.mjs` — 초보 기준 위반·출시 형식 상세 목록
+- `node src/rebaseline.mjs [--weekly]` — 기준가 재계산 (10% 이상 변동만, `--weekly` 는 정기 재계산)
+- `node src/indexnow.mjs` — IndexNow 대기열 전송 (콘텐츠가 바뀐·새·삭제된 페이지만)
+- `node src/gsc-fetch.mjs`, `node src/weekly-report.mjs` — 주간 분석 자료
+- `node src/stamp-dates.mjs` — git 기록으로 링크 생성 때 판매가 확인일(`picks.json checked`) 채우기
 - `node src/tiercheck.mjs` — 가이드별 실력·가격 단계 분포 검사
-- 상품이 3종 미만인 실력 단계는 실력별 페이지를 만들지 않고 `_redirects` 로 상위 가이드에 301 연결된다
-- 가격 수집(`src/collect.mjs`)은 쿠팡 파트너스 API 키가 있을 때만 동작한다. 매시간 일부씩 수집하고 하루 한 번 사이트를 다시 만든다 (`.github/workflows/daily.yml`)
-- `node src/audit.mjs` — 데이터 점검 목록: 초보 추천 상품의 로프트·샤프트 기준(`config/rules.json`) 위반, 출시 칸 형식 오류
-- `config/variants.json` — 초보 기준에 맞는 옵션(예: 5번 우드, 10.5° R 샤프트)으로 쿠팡 상품을 바꿀 자리. `link` 를 채우면 빌드가 기존 링크·상품 정보 대신 사용
-- `config/howto.json` — 아이템×성별×실력별 '고르는 법' 본문·FAQ·한 줄 결론 수동 지정 (실력별 페이지에 표시, FAQ 는 FAQPage 구조화 데이터)
-- 출시 칸은 `YYYY년` 또는 빈 값만 허용 (빌드가 검사, 모르는 연도는 비워 둔다)
-- 검색 순위 보호 원칙: 가격 확인일과 콘텐츠 업데이트일 분리(`config/content-state.json`, 본문 지문), 제목 가격은 'N만원대부터', 기준가는 10% 이상 변동·주 1회만 갱신(`src/rebaseline.mjs`), IndexNow 는 콘텐츠가 바뀐·새·삭제된 페이지만(`src/indexnow.mjs`), 공개했던 주소가 사라지면 301 필수(`config/url-manifest.json`, 없으면 빌드 실패)
+
+## 데이터 파일
+
+- `config/products.json` 상품·카테고리 · `config/links.json` 쿠팡 링크 · `config/picks.json` 연결 상품 정보·기준가 · `config/guides.json` 가이드·점수
+- `config/notices.json` — 고지·점수·가격 안내 문구 (사이트 전체에서 이 파일 한 곳만 씀)
+- `config/rules.json` 초보 기준 · `config/variants.json` 초보 기준에 맞는 옵션으로 바꿀 쿠팡 상품 자리
+- `config/howto.json` 아이템×성별×실력별 '고르는 법'·FAQ·한 줄 결론 수동 지정
+- `config/content-state.json`, `config/url-manifest.json` — 빌드가 관리 (직접 고치지 않음)
+- 출시 칸은 `YYYY년` 또는 빈 값만 허용(빌드 검사). 모르는 연도는 비워 둔다
+- 상품이 3종 미만인 실력 단계는 실력별 페이지를 만들지 않고 `_redirects` 로 상위 가이드에 301
+
+## 검색 순위 보호 원칙
+
+가격 확인일과 콘텐츠 업데이트일 분리(본문 지문), 제목 가격은 'N만원대부터', 기준가는 10% 이상 변동·주 1회만 갱신, IndexNow 는 콘텐츠가 바뀐·새·삭제된 페이지만, 공개했던 주소가 사라지면 301 필수, 글을 대량으로 찍어 내지 않음(자동화는 데이터에만).
+
+## 배포 설정
+
+Cloudflare Pages: Build command `node src/build.mjs`, Output `site`, 환경 변수 `NODE_VERSION=22`, `SITE_URL=https://golf-price.pages.dev`.
+
+## 지켜야 할 것
+
+- 모든 페이지 상단·하단에 쿠팡 파트너스 고지 문구가 표시됩니다. 지우지 마세요(`config/notices.json`).
+- 쿠팡 페이지를 크롤링하지 않습니다. 자동 가격은 승인 후 공식 파트너스 API 로만 가져옵니다.
+- API 승인 후 파트너스 API 이용 약관(호출 한도, 데이터 보관·표시 조건)을 확인하고 공급자를 구현하세요.
