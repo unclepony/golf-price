@@ -11,6 +11,7 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.xml':
 createServer(async (req, res) => {
   let path = normalize(decodeURIComponent(new URL(req.url, 'http://x').pathname)).replace(/^([/\\])+/, '');
   if (path === '' || path.endsWith('\\') || path.endsWith('/')) path += 'index.html';
+  else if (!extname(path)) path += '.html'; // Cloudflare Pages 처럼 .html 없는 주소 지원
   try {
     const body = await readFile(join(SITE, path));
     res.writeHead(200, { 'content-type': TYPES[extname(path)] ?? 'application/octet-stream' });

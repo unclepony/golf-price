@@ -107,7 +107,7 @@ ${DEMO ? '<meta name="robots" content="noindex">' : ''}
 <body>
 <p class="disclosure">${DISCLOSURE}</p>
 ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표시된 가격은 실제 가격이 아닙니다.</p>' : ''}
-<header class="top"><div class="wrap"><a class="brand" href="/">⛳ ${SITE_NAME}</a><nav><a href="/about.html">운영 안내</a></nav></div></header>
+<header class="top"><div class="wrap"><a class="brand" href="/">⛳ ${SITE_NAME}</a><nav><a href="/about">운영 안내</a></nav></div></header>
 <main class="wrap">
 ${body}
 </main>
@@ -146,7 +146,7 @@ function card({ p, hist, a }) {
 <h3>${esc(p.name)}</h3>
 <p class="meta">${esc(p.points?.[0] ?? '')}</p>`;
   }
-  return `<a class="card" href="/p/${p.id}.html"><div class="thumb">${img}</div><div class="info">${info}</div></a>`;
+  return `<a class="card" href="/p/${p.id}"><div class="thumb">${img}</div><div class="info">${info}</div></a>`;
 }
 
 const grid = (items) => `<div class="grid">${items.map(card).join('')}</div>`;
@@ -166,9 +166,9 @@ writeText(join(OUT, 'assets', 'style.css'), readFileSync(join(ROOT, 'src', 'styl
 // ---------- 상품 페이지 ----------
 for (const { p, hist, a } of entries) {
   const cat = cats.find((c) => c.id === p.category);
-  const crumb = `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${p.category}.html">${esc(cat.name)}</a></nav>`;
+  const crumb = `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${p.category}">${esc(cat.name)}</a></nav>`;
   const points = p.points?.length ? `<ul class="checks">${p.points.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : '';
-  const guideLink = `<p class="more"><a href="/c/${p.category}.html">${esc(cat.name)} 고르는 법 보기 →</a></p>`;
+  const guideLink = `<p class="more"><a href="/c/${p.category}">${esc(cat.name)} 고르는 법 보기 →</a></p>`;
   let body, title, desc;
 
   if (a) {
@@ -207,7 +207,7 @@ ${buyButton(p.id, hist)}
 <section class="prose"><h2>${esc(cat.name)} 고르는 법</h2><p>${esc(cat.intro)}</p><ul>${cat.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
 <p class="note">가격 추이 기록은 준비 중입니다. 가격은 판매 페이지에서 확인하세요.</p>`;
   }
-  writeText(join(OUT, 'p', `${p.id}.html`), layout({ title, desc, path: `/p/${p.id}.html`, body }));
+  writeText(join(OUT, 'p', `${p.id}.html`), layout({ title, desc, path: `/p/${p.id}`, body }));
 }
 
 // ---------- 분류 페이지 ----------
@@ -218,7 +218,7 @@ for (const c of cats) {
     layout({
       title: `${c.name} 고르는 법과 추천 모델`,
       desc: `${c.intro} ${items.map((e) => e.p.name).join(', ')}`,
-      path: `/c/${c.id}.html`,
+      path: `/c/${c.id}`,
       body: `<nav class="crumb"><a href="/">홈</a></nav>
 <h1>${esc(c.name)} 고르는 법</h1>
 <section class="prose"><p>${esc(c.intro)}</p><ul>${c.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
@@ -232,7 +232,7 @@ const deals = tracked.filter((e) => e.a.verdict.cls === 'good');
 const sections = cats
   .map((c) => {
     const items = entries.filter((e) => e.p.category === c.id);
-    return `<section id="${c.id}"><h2><a href="/c/${c.id}.html">${esc(c.name)}</a></h2>${grid(items)}</section>`;
+    return `<section id="${c.id}"><h2><a href="/c/${c.id}">${esc(c.name)}</a></h2>${grid(items)}</section>`;
   })
   .join('');
 writeText(
@@ -244,7 +244,7 @@ writeText(
     body: `<section class="intro">
 <h1>골프용품, 지금 사도 될까?</h1>
 <p>인기 골프용품의 특징과 고르는 법을 정리하고, 가격을 기록해 살 때인지 알려드립니다.${tracked.length ? ` <small>가격 업데이트 ${updated}</small>` : ''}</p>
-<nav class="chips">${cats.map((c) => `<a href="/c/${c.id}.html">${esc(c.name)}</a>`).join('')}</nav>
+<nav class="chips">${cats.map((c) => `<a href="/c/${c.id}">${esc(c.name)}</a>`).join('')}</nav>
 </section>
 ${deals.length ? `<section><h2>🔥 지금 사기 좋은 상품</h2>${grid(deals)}</section>` : ''}
 ${sections}`,
@@ -257,7 +257,7 @@ writeText(
   layout({
     title: '운영 안내',
     desc: `${SITE_NAME}의 가격 기록 방법과 제휴 안내`,
-    path: '/about.html',
+    path: '/about',
     body: `<h1>운영 안내</h1>
 <section class="prose">
 <h2>무엇을 하는 사이트인가요?</h2>
@@ -278,7 +278,7 @@ writeText(
 );
 
 // ---------- 검색엔진용 파일 ----------
-const urls = ['/', '/about.html', ...cats.map((c) => `/c/${c.id}.html`), ...entries.map((e) => `/p/${e.p.id}.html`)];
+const urls = ['/', '/about', ...cats.map((c) => `/c/${c.id}`), ...entries.map((e) => `/p/${e.p.id}`)];
 writeText(
   join(OUT, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
