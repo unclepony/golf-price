@@ -1,4 +1,4 @@
-// 골프비교노트 화면 동작: 검색(자동완성·결과), 골프 카테고리 메뉴, 최근 본 상품, 움직이는 배너, 탭
+﻿// 월드베스트골프기어 화면 동작: 검색(자동완성·결과), 골프 카테고리 메뉴, 최근 본 상품, 움직이는 배너, 탭
 (() => {
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -30,7 +30,7 @@
       const { products, guides } = find(await loadData(), v);
       const rows = [
         ...guides.slice(0, 3).map((g) => `<a href="${g.u}" class="sg"><span class="sg-c">비교</span><span class="sg-n">${esc(g.t)}</span></a>`),
-        ...products.slice(0, 6).map((p) => `<a href="${p.u}" class="sg">${p.i ? `<img src="${esc(p.i)}" alt="">` : ''}<span class="sg-n">${esc(p.n)}</span><span class="sg-c">${esc(p.c)}${p.s ? ` · ${p.s}점` : ''}</span></a>`),
+        ...products.slice(0, 6).map((p) => `<a href="${p.u}" class="sg">${p.i ? `<img src="${esc(p.i)}" alt="">` : ''}<span class="sg-n">${esc(p.n)}</span><span class="sg-c">${esc(p.c)}${p.s ? ` · ${p.s.toFixed(1)}점` : ''}</span></a>`),
       ];
       sug.innerHTML = rows.length
         ? rows.join('') + `<a class="sg all" href="/search?q=${encodeURIComponent(v)}">'${esc(v)}' 검색 결과 전체 보기 ›</a>`
@@ -63,7 +63,7 @@ ${g.picks
     (pk, i) => `<tr class="${ids.has(pk.id) ? 'match' : ''}"><td class="rk">${i + 1}</td>
 <td class="pcell">${pk.i ? `<img src="${esc(pk.i)}" alt="">` : ''}<a href="${pk.u}">${esc(pk.n)}</a><br><span class="badge mid">${esc(pk.role)}</span></td>
 ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'●'.repeat(5 - s)}</i></span></td>`).join('')}
-<td class="total"><b>${pk.s ?? '-'}</b></td>
+<td class="total"><b>${pk.s != null ? pk.s.toFixed(1) : '-'}</b></td>
 <td class="t"><span class="pro">＋ ${esc(pk.pro)}</span><br><span class="con">－ ${esc(pk.con)}</span></td></tr>`,
   )
   .join('')}
@@ -77,7 +77,7 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
             (p) => `<article class="sprod">
 <a class="sprod-img" href="${p.u}">${p.i ? `<img src="${esc(p.i)}" alt="${esc(p.n)}">` : ''}</a>
 <div class="sprod-body"><span class="pt-cat">${esc(p.c)}</span><a href="${p.u}"><h3>${esc(p.n)}</h3></a>
-<div class="pt-badges">${p.r ? '<span class="tag rocket">로켓배송</span>' : ''}${p.s ? `<span class="tag score">편집 점수 ${p.s}</span>` : ''}</div>
+<div class="pt-badges">${p.r ? '<span class="tag rocket">로켓배송</span>' : ''}${p.s ? `<span class="tag score">편집 점수 ${p.s.toFixed(1)}</span>` : ''}</div>
 <p>${esc(p.d)}</p></div>
 <div class="sprod-act">${p.pr ? `<b class="pt-price">${p.pr.toLocaleString('ko-KR')}원</b>` : ''}<a class="btn sm" href="${p.u}">상세·비교 보기</a>${p.l ? `<a class="btn sm ghost" href="${esc(p.l)}" target="_blank" rel="sponsored nofollow noopener">쿠팡 가격 확인</a>` : ''}</div>
 </article>`,
@@ -147,11 +147,20 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
     $('.sl-prev')?.addEventListener('click', () => { show(i - 1); play(); });
     $('.sl-next')?.addEventListener('click', () => { show(i + 1); play(); });
     dots.forEach((d, k) => d.addEventListener('click', () => { show(k); play(); }));
-    const hero = $('.hero');
+    const hero = $('.mhero');
     hero?.addEventListener('mouseenter', () => clearInterval(t));
     hero?.addEventListener('mouseleave', play);
     play();
   }
+
+  // ---------- 상세 페이지 사진 갤러리 ----------
+  const galMain = $('#galMain');
+  $$('.gal-t').forEach((b) =>
+    b.addEventListener('click', () => {
+      if (galMain) galMain.src = b.dataset.src;
+      $$('.gal-t').forEach((x) => x.classList.toggle('on', x === b));
+    }),
+  );
 
   // ---------- 카테고리 탭 ----------
   $$('.tab').forEach((b) =>

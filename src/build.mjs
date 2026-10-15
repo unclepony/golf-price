@@ -231,6 +231,109 @@ rmSync(OUT, { recursive: true, force: true });
 writeText(join(OUT, 'assets', 'style.css'), readFileSync(join(ROOT, 'src', 'style.css'), 'utf8'));
 writeText(join(OUT, 'assets', 'app.js'), readFileSync(join(ROOT, 'src', 'app.js'), 'utf8'));
 
+// ---------- 비교·추천 가이드 데이터와 타일 ----------
+const guides = readJson(join(ROOT, 'config', 'guides.json'), { guides: [] }).guides;
+const byId = Object.fromEntries(entries.map((e) => [e.p.id, e]));
+const SCORE_NOTE = '점수는 제조사 공개 정보, 보도된 투어 소식, 일반적인 사용자 평가와 현재 판매가를 바탕으로 이 사이트가 매긴 주관적인 참고 점수입니다. 직접 측정한 시험 결과나 공식 평가가 아니며, 개인의 체형·스윙에 따라 체감은 다를 수 있습니다.';
+const avg = (xs) => xs.reduce((s, x) => s + x, 0) / xs.length;
+const dots = (n) => `<span class="dots" aria-label="5점 중 ${n}점">${'●'.repeat(n)}<i>${'●'.repeat(5 - n)}</i></span>`;
+function guideTile(g) {
+  const imgs = g.picks.map((pk) => byId[pk.id] && imageOf(pk.id, byId[pk.id].hist)).filter(Boolean).slice(0, 4);
+  return `<a class="gcard" href="/g/${g.slug}">
+<div class="gthumb">${imgs.map((src) => `<img src="${esc(src)}" alt="" loading="lazy">`).join('')}</div>
+<div class="ginfo"><span class="badge good">${g.picks.length}개 비교</span><h3>${esc(g.title)}</h3><p>${esc(g.desc)}</p></div>
+</a>`;
+}
+const guideGrid = (list) => `<div class="ggrid">${list.map(guideTile).join('')}</div>`;
+
+const shortTitle = (t) => t.split(':')[0].trim();
+// 상품별 최고 편집 점수 (가이드 점수 중 가장 높은 값)
+const scoreOf = {};
+for (const g of guides) for (const pk of g.picks) if (pk.scores?.length) scoreOf[pk.id] = Math.max(scoreOf[pk.id] ?? 0, avg(pk.scores));
+// 가이드 안 상품을 종합 점수 순으로
+const rankedPicks = (g) =>
+  g.picks.filter((pk) => byId[pk.id]).sort((x, y) => (y.scores ? avg(y.scores) : 0) - (x.scores ? avg(x.scores) : 0));
+// 가격대: 가이드 안에서 가장 싼 상품 대비 상대 비교 (2026-10 쿠팡 판매가 기준)
+function priceTier(g, id) {
+  const prices = g.picks.map((pk) => picks[pk.id]?.price).filter(Boolean);
+  const p = picks[id]?.price;
+  if (!p || !prices.length) return '';
+  const r = p / Math.min(...prices);
+  return '₩'.repeat(r <= 1.3 ? 1 : r <= 2 ? 2 : r <= 3 ? 3 : 4);
+}
+// 비교 인포그래픽 표: 제품을 열로, 비교 항목을 행으로
+function infographic(g, highlight) {
+  const ps = rankedPicks(g);
+  const crit = g.criteria ?? [];
+  const col = (pk, i) => {
+    const { p, hist } = byId[pk.id];
+    const image = imageOf(p.id, hist);
+    return `<th class="${pk.id === highlight ? 'hl' : ''}"><a href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : ''}<span class="ig-rank">${i + 1}위</span><b>${esc(p.name)}</b></a></th>`;
+  };
+  const row = (icon, label, cell) =>
+    `<tr><th scope="row"><span class="ig-ico">${icon}</span>${label}</th>${ps.map((pk) => `<td class="${pk.id === highlight ? 'hl' : ''}">${cell(pk)}</td>`).join('')}</tr>`;
+  return `<div class="ig-wrap"><div class="ig-head"><p class="ig-kicker">${esc(SITE_NAME)} 비교표</p><h3>${esc(shortTitle(g.title))} <span>${ps.length}종 한눈에 비교</span></h3></div>
+<div class="tablewrap ig-scroll"><table class="ig"><thead><tr><th class="ig-corner">비교 항목</th>${ps.map(col).join('')}</tr></thead><tbody>
+${row('🏆', '종합 점수', (pk) => (pk.scores ? `<b class="ig-total">${avg(pk.scores).toFixed(1)}</b><small>/5</small><span class="bar"><i style="width:${(avg(pk.scores) / 5) * 100}%"></i></span>` : '-'))}
+${row('🔍', '한 줄 평', (pk) => (pk.verdict ? `<span class="ig-verdict">${esc(pk.verdict)}</span>` : '-'))}
+${(g.specRows ?? []).map((label, si) => row('📐', esc(label), (pk) => `<span class="ig-spec">${esc(pk.specs?.[si] ?? '-')}</span>`)).join('')}
+${row('🎯', '성격', (pk) => esc(pk.role))}
+${row('👤', '이런 분께', (pk) => esc(pk.forWhom))}
+${row('💰', '가격대', (pk) => `<span class="ig-price">${priceTier(g, pk.id)}</span>`)}
+${row('✅', '강점', (pk) => (pk.pros ?? []).map(esc).join('<br>'))}
+${row('⚠️', '고려할 점', (pk) => (pk.cons ?? []).map(esc).join('<br>'))}
+${crit.length ? row('📊', '항목별 점수', (pk) => (pk.scores ? crit.map((c, i) => `<span class="ig-crit">${esc(c)} ${dots(pk.scores[i])}</span>`).join('') : '-')) : ''}
+${row('🛒', '가격 확인', (pk) => {
+    const link = links[pk.id] ?? byId[pk.id].hist?.latest?.link;
+    return link ? `<a class="btn sm" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">쿠팡 보기</a>` : '';
+  })}
+</tbody></table></div>
+<p class="note">가격대(₩~₩₩₩₩)는 2026년 10월 쿠팡 판매가를 기준으로 이 비교 안에서의 상대적인 수준입니다. 점수는 공식 평가가 아닌 주관적 참고 점수입니다. 쿠팡 보기 버튼은 쿠팡 파트너스 링크입니다.</p></div>`;
+}
+const guidesFor = (catId) => guides.filter((g) => g.picks.some((pk) => byId[pk.id]?.p.category === catId));
+
+// ---------- 상품 상세: 사진 갤러리와 비교 분석 ----------
+const galleryConf = readJson(join(ROOT, 'config', 'gallery.json'), { base: '', images: {} });
+function galleryOf(p, hist) {
+  const list = (galleryConf.images[p.id] ?? []).map((path) => galleryConf.base + path);
+  const first = imageOf(p.id, hist);
+  if (!list.length && first) list.push(first);
+  return [...new Set(list)];
+}
+function gallery(p, hist) {
+  const imgs = galleryOf(p, hist);
+  if (!imgs.length) return '';
+  return `<div class="gal">
+<div class="gal-main"><img id="galMain" src="${esc(imgs[0])}" alt="${esc(p.name)}"></div>
+${imgs.length > 1 ? `<div class="gal-thumbs">${imgs.map((src, i) => `<button type="button" class="gal-t${i === 0 ? ' on' : ''}" data-src="${esc(src)}" aria-label="사진 ${i + 1}"><img src="${esc(src)}" alt="" loading="lazy"></button>`).join('')}</div>` : ''}
+<p class="gal-note">쿠팡 판매 상품 사진 · 판매처마다 옵션 구성이 다를 수 있습니다</p>
+</div>`;
+}
+const guidesOf = (id) => guides.filter((g) => g.picks.some((pk) => pk.id === id));
+function analysis(p) {
+  return guidesOf(p.id)
+    .map((g) => {
+      const ranked = rankedPicks(g);
+      const rank = ranked.findIndex((pk) => pk.id === p.id) + 1;
+      const pk = ranked[rank - 1];
+      const total = pk.scores ? avg(pk.scores) : null;
+      return `<section class="ana">
+<div class="ana-head">
+<div class="ana-score"><b>${total ? total.toFixed(1) : '-'}</b><small>/ 5</small><span>편집 점수</span></div>
+<div><p class="ana-kicker">${esc(shortTitle(g.title))} ${ranked.length}종 비교</p><h2>${rank === 1 ? '🥇 ' : ''}${ranked.length}개 중 <em>${rank}위</em> · ${esc(pk.role)}</h2>
+${pk.verdict ? `<p class="ana-verdict">“${esc(pk.verdict)}”</p>` : ''}</div>
+</div>
+<div class="ana-grid">
+<div class="ana-crit">${(g.criteria ?? []).map((c, i) => `<div class="ana-row"><span>${esc(c)}</span><span class="bar"><i style="width:${(pk.scores?.[i] ?? 0) * 20}%"></i></span><b>${pk.scores?.[i] ?? '-'}</b></div>`).join('')}</div>
+<div class="ana-pc"><p class="pro">${(pk.pros ?? []).map((t) => `＋ ${esc(t)}`).join('<br>')}</p><p class="con">${(pk.cons ?? []).map((t) => `－ ${esc(t)}`).join('<br>')}</p></div>
+</div>
+${infographic(g, p.id)}
+<a class="more-link" href="/g/${g.slug}">${esc(shortTitle(g.title))} 비교 전체 보기 ›</a>
+</section>`;
+    })
+    .join('');
+}
+
 // ---------- 상품 페이지 ----------
 for (const { p, hist, a } of entries) {
   const cat = cats.find((c) => c.id === p.category);
@@ -261,22 +364,27 @@ ${buyButton(p.id, hist)}
 ${chart(hist.points, a.allMin)}
 </section>
 <section><h2>이런 분께 맞아요</h2><p>${esc(p.summary)}</p>${points}${guideLink}</section>
+${analysis(p)}
 ${newsBlock(p.id)}
 <p class="note">${PRICE_NOTE}</p>`;
   } else {
     title = `${p.name} 특징과 구매 전 확인할 점`;
     desc = `${p.name}: ${p.summary}`;
-    const image = imageOf(p.id, hist);
+    const sc = scoreOf[p.id];
+    const top = guidesOf(p.id).map((g) => ({ g, r: rankedPicks(g).findIndex((pk) => pk.id === p.id) + 1 }));
     body = `${crumb}
+<section class="pd">
+${gallery(p, hist)}
+<div class="pd-info">
+<span class="pt-cat">${esc(cat.name)}</span>
 <h1>${esc(p.name)}</h1>
-<section class="hero${image ? ' with-img' : ''}">
-${image ? `<img class="hero-img" src="${esc(image)}" alt="${esc(p.name)}">` : ''}
-<div>
-<p>${esc(p.summary)}</p>
+<div class="pt-badges">${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, r }) => `<span class="tag rank">${esc(shortTitle(g.title))} ${r}위</span>`).join('')}</div>
+<p class="pd-sum">${esc(p.summary)}</p>
 ${points ? `<h2 class="sub">구매 전 확인할 점</h2>${points}` : ''}
 ${buyButton(p.id, hist)}
 </div>
 </section>
+${analysis(p)}
 ${newsBlock(p.id)}
 <section class="prose"><h2>${esc(cat.name)} 고르는 법</h2><p>${esc(cat.intro)}</p>${figure(p.category)}<ul>${cat.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
 <p class="note">가격 추이 기록은 준비 중입니다. 가격은 판매 페이지에서 확인하세요.</p>`;
@@ -286,22 +394,6 @@ ${newsBlock(p.id)}
     layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' } }),
   );
 }
-
-// ---------- 비교·추천 가이드 데이터와 타일 ----------
-const guides = readJson(join(ROOT, 'config', 'guides.json'), { guides: [] }).guides;
-const byId = Object.fromEntries(entries.map((e) => [e.p.id, e]));
-const SCORE_NOTE = '점수는 제조사 공개 정보, 보도된 투어 소식, 일반적인 사용자 평가와 현재 판매가를 바탕으로 이 사이트가 매긴 주관적인 참고 점수입니다. 직접 측정한 시험 결과나 공식 평가가 아니며, 개인의 체형·스윙에 따라 체감은 다를 수 있습니다.';
-const avg = (xs) => xs.reduce((s, x) => s + x, 0) / xs.length;
-const dots = (n) => `<span class="dots" aria-label="5점 중 ${n}점">${'●'.repeat(n)}<i>${'●'.repeat(5 - n)}</i></span>`;
-function guideTile(g) {
-  const imgs = g.picks.map((pk) => byId[pk.id] && imageOf(pk.id, byId[pk.id].hist)).filter(Boolean).slice(0, 4);
-  return `<a class="gcard" href="/g/${g.slug}">
-<div class="gthumb">${imgs.map((src) => `<img src="${esc(src)}" alt="" loading="lazy">`).join('')}</div>
-<div class="ginfo"><span class="badge good">${g.picks.length}개 비교</span><h3>${esc(g.title)}</h3><p>${esc(g.desc)}</p></div>
-</a>`;
-}
-const guideGrid = (list) => `<div class="ggrid">${list.map(guideTile).join('')}</div>`;
-const guidesFor = (catId) => guides.filter((g) => g.picks.some((pk) => byId[pk.id]?.p.category === catId));
 
 // ---------- 분류 페이지 ----------
 for (const c of cats) {
@@ -317,6 +409,7 @@ for (const c of cats) {
 <h1>${esc(c.name)} 고르는 법</h1>
 <section class="prose"><p>${esc(c.intro)}</p>${figure(c.id)}<ul>${c.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
 <section><h2>추천 ${esc(c.name)}</h2>${grid(items)}</section>
+${related.map((g) => `<section>${infographic(g)}<a class="more-link" href="/g/${g.slug}">장단점·고르는 법 전체 보기 ›</a></section>`).join('')}
 ${related.length ? `<section><h2>${esc(c.name)} 비교·추천 가이드</h2>${guideGrid(related)}</section>` : ''}`,
     }),
   );
@@ -368,11 +461,12 @@ ${crit.map((_, i) => `<td class="sc">${pk.scores ? dots(pk.scores[i]) : '-'}</td
       path: `/g/${g.slug}`,
       body: `<nav class="crumb"><a href="/">홈</a> › 비교·추천</nav>
 <h1>${esc(g.title)}</h1>
-<section class="prose"><p>${esc(g.intro)}</p>${figure(byId[g.picks[0]?.id]?.p.category)}</section>
+<section class="prose"><p>${esc(g.intro)}</p></section>
+<section>${infographic(g)}</section>
+${figure(byId[g.picks[0]?.id]?.p.category)}
 <section><h2>한눈에 비교: 항목별 점수</h2><div class="tablewrap"><table class="scores"><thead><tr><th>모델</th>${crit.map((c) => `<th>${esc(c)}</th>`).join('')}<th>종합</th><th></th></tr></thead><tbody>${scoreRows}</tbody></table></div>
 <p class="note score-note">※ ${SCORE_NOTE}</p>
 <p class="note">${DISCLOSURE}</p></section>
-<section><h2>장단점 비교</h2><div class="tablewrap"><table class="proscons"><thead><tr><th>모델</th><th>장점</th><th>단점</th></tr></thead><tbody>${proRows}</tbody></table></div></section>
 ${cards}
 <section class="prose">${g.sections.map((s) => `<h2>${esc(s.h)}</h2><p>${esc(s.p)}</p>`).join('')}</section>
 <section class="prose"><h2>자주 묻는 질문</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>
@@ -384,9 +478,6 @@ ${cards}
 // ---------- 메인 페이지 ----------
 const deals = tracked.filter((e) => e.a.verdict.cls === 'good');
 
-// 상품별 최고 편집 점수 (가이드 점수 중 가장 높은 값)
-const scoreOf = {};
-for (const g of guides) for (const pk of g.picks) if (pk.scores?.length) scoreOf[pk.id] = Math.max(scoreOf[pk.id] ?? 0, avg(pk.scores));
 
 // 에누리식 상품 타일: 큰 이미지, 이름, 배지, 점수, 가격(기록이 있을 때)
 function ptile({ p, hist, a }) {
@@ -404,7 +495,6 @@ const prow = (items) => `<div class="prow">${items.map(ptile).join('')}</div>`;
 
 // 움직이는 비교 배너: 가이드마다 한 장, 상품 4개의 종합 점수 막대
 const BANNER_TONES = { driver: 'tone-a', putter: 'tone-b', ball: 'tone-c', rangefinder: 'tone-d', shoes: 'tone-e', set: 'tone-f' };
-const shortTitle = (t) => t.split(':')[0].trim();
 function banner(g, i) {
   const ps = g.picks.filter((pk) => byId[pk.id]);
   const ranked = [...ps].sort((x, y) => (y.scores ? avg(y.scores) : 0) - (x.scores ? avg(x.scores) : 0));
@@ -449,7 +539,7 @@ writeText(
     body: `<h1 class="sr-only">${SITE_NAME}: 골프용품 비교·추천</h1>
 <div class="home-top">
 <aside class="side" aria-label="골프 카테고리"><p class="side-h">골프 카테고리</p>${sideCats}<a href="/#guides" class="side-guide">📊 비교·추천 가이드</a></aside>
-<div class="hero">
+<div class="mhero">
 <div class="slides" id="slides">${guides.map(banner).join('')}</div>
 <div class="sl-ctrl"><button type="button" class="sl-prev" aria-label="이전 배너">‹</button><span class="sl-dots">${guides.map((_, i) => `<button type="button" class="dot${i === 0 ? ' on' : ''}" aria-label="${i + 1}번째 배너"></button>`).join('')}</span><button type="button" class="sl-next" aria-label="다음 배너">›</button></div>
 </div>
@@ -471,6 +561,23 @@ ${rocketItems.length ? `<section class="block"><div class="block-h"><h2>🚀 로
 <div class="tabs" role="tablist">${tabs}</div>${panels}</section>
 
 <section class="block" id="guides"><div class="block-h"><h2>비교·추천 가이드</h2><span>4개 이상 제품을 장단점과 점수로 비교</span></div>${guideGrid(guides)}</section>
+
+<section class="block today"><div class="block-h"><h2>⭐ 오늘의 추천 상품</h2><span>비교 가이드에서 종합 1위를 차지한 제품</span></div>
+<div class="today-grid">${guides
+      .map((g) => {
+        const top = rankedPicks(g)[0];
+        if (!top) return '';
+        const { p, hist } = byId[top.id];
+        const image = galleryOf(p, hist)[0] ?? imageOf(p.id, hist);
+        return `<a class="tcard" href="/p/${p.id}">
+<div class="tc-img">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : ''}<span class="tc-ribbon">${esc(shortTitle(g.title))} 1위</span></div>
+<div class="tc-body"><span class="pt-cat">${esc(catName[p.category])}</span><h3>${esc(p.name)}</h3>
+<p class="tc-score"><b>${top.scores ? avg(top.scores).toFixed(1) : '-'}</b><small>/5 편집 점수</small></p>
+${top.verdict ? `<p class="tc-verdict">${esc(top.verdict)}</p>` : ''}
+<span class="pt-cta">상세 비교 보기 ›</span></div>
+</a>`;
+      })
+      .join('')}</div></section>
 
 <p class="note score-note">※ ${SCORE_NOTE}</p>`,
   }),
