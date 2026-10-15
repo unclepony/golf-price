@@ -1,0 +1,4 @@
+# 가격 입력 파일: 상품ID,가격,확인일(YYYY-MM-DD)
+# 쿠팡 파트너스 사이트에서 확인한 판매가를 적고 'node src/prices/import.mjs' 를 실행하면 data/history 에 쌓입니다.
+# 가격을 비워 둔 줄은 건너뜁니다. 이번 주 확인할 상품 줄은 'node src/prices/template.mjs' 가 채워 줍니다.
+상품ID,가격,확인일

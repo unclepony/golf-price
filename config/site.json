@@ -13,5 +13,8 @@
     "_설명": "운영 안내(/about) 페이지의 운영자 소개와 문의처. 채우면 표시되고 비어 있으면 숨겨진다. operator 는 줄바꿈(\n)으로 문단을 나눈다.",
     "operator": "",
     "contact": ""
-  }
+  },
+  "indexNowKey": "36b2cd2193416b8382bf8da8bc2a5adc",
+  "clickTracking": false,
+  "_clickTracking": "true 로 바꾸면 쿠팡 링크가 /go/{상품ID} (Cloudflare Pages Functions)를 거쳐 클릭 수가 D1 에 기록된다. Cloudflare 에 D1 데이터베이스와 CLICKS 바인딩을 먼저 만들 것 (README 참고)."
 }

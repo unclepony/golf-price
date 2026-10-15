@@ -1,0 +1,1 @@
+{ "_설명": "초보 기준(로프트·샤프트)에 맞는 옵션으로 쿠팡 상품을 바꿀 자리. id 마다 link 를 채우면 빌드가 links.json·picks.json 대신 이 값을 쓴다. link 가 비어 있으면 무시. title·price·image(212x212 썸네일)·checked(확인일)·specs(가이드 사양 3칸)를 함께 채운다." }

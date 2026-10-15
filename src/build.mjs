@@ -2,9 +2,11 @@
 // 가격 기록이 없는 상품은 구매 가이드 페이지로, 있는 상품은 가격 추이 페이지로 만든다.
 // 사용: node src/build.mjs        → 실제 데이터 (data/)
 //       node src/build.mjs --demo → 샘플 데이터 (data-demo/)
-import { rmSync, readFileSync } from 'node:fs';
+import { rmSync, readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { join } from 'node:path';
-import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText, todayKst } from './lib.mjs';
+import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText as rawWrite, todayKst } from './lib.mjs';
+import { beginnerIssues, releaseIssues } from './rules.mjs';
 
 const DEMO = process.argv.includes('--demo');
 const SITE_URL = (process.env.SITE_URL || 'https://golf-price.pages.dev').replace(/\/$/, '');
@@ -12,12 +14,84 @@ const SITE = readJson(join(ROOT, 'config', 'site.json'), {});
 const SITE_NAME = SITE.name || 'ATL골프기어';
 const LOGO_SVG = readFileSync(join(ROOT, 'src', 'figures', 'logo.svg'), 'utf8').replace(/role="img" aria-label="[^"]*"/, 'aria-hidden="true"');
 const OUT = join(ROOT, 'site');
-const DISCLOSURE = '이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.';
-const PRICE_NOTE = '표시 가격은 쿠팡 파트너스 링크를 만들 때 확인한 쿠팡 판매가이며 확인 날짜를 함께 적었습니다. 옵션(샤프트, 사이즈 등)과 시점에 따라 현재 판매가와 다를 수 있습니다. 쿠팡 파트너스 API 승인 뒤에는 하루 한 번 최저가를 자동 기록해 가격 추이와 역대 최저가를 보여 드립니다.';
+// 안내 문구는 config/notices.json 한 곳에서 관리한다 (고지·점수·가격 안내)
+const NOTICES = readJson(join(ROOT, 'config', 'notices.json'), {});
+const DISCLOSURE = NOTICES.disclosure;
+// 가격 출처 상태: API 기록이 하나라도 있으면 api, 아니면 manual (링크 생성 때 확인·직접 입력)
+const PRICE_MODE = (() => {
+  const dir = historyDir(process.argv.includes('--demo'));
+  if (!existsSync(dir)) return 'manual';
+  return readdirSync(dir).some((f) => f.endsWith('.json') && (readJson(join(dir, f), {}).points ?? []).some((p) => (p.src ?? 'api') === 'api')) ? 'api' : 'manual';
+})();
+const PRICE_NOTE = NOTICES.price?.[PRICE_MODE];
+
+// ---------- 콘텐츠 업데이트일 (가격 확인일과 분리) ----------
+// 페이지 <main> 본문에서 가격·날짜를 뺀 내용의 지문(hash)을 config/content-state.json 에 저장하고,
+// 지문이 바뀐 페이지만 '마지막 업데이트'와 sitemap lastmod 를 갱신하며 IndexNow 대기열(pending)에 넣는다.
+// 가격만 바뀐 페이지는 지문이 같아서 날짜가 바뀌지 않는다.
+const STATE_FILE = join(ROOT, 'config', 'content-state.json');
+const prevState = readJson(STATE_FILE, null);
+const SEEDING = !prevState; // 처음 만들 때는 기존 updated 값을 씨앗으로 쓰고 전송 대기열은 비워 둔다
+const state = { _설명: 'build.mjs 가 관리한다. pages: 주소별 본문 지문(h)과 콘텐츠 업데이트일(d). pending: IndexNow 로 보낼 주소(콘텐츠가 바뀐·새로 생긴·삭제된 페이지). 직접 고치지 않는다.', pages: {}, pending: prevState?.pending ?? [] };
+const pageDates = {};
+const TODAY = todayKst();
+function contentKey(html) {
+  const a = html.indexOf('<main');
+  const b = html.indexOf('</main>');
+  const main = (a >= 0 && b > a ? html.slice(a, b) : html)
+    .replace(/"pr":\d+,"pd":"[^"]*"/g, '')
+    .replace(/<p class="updated"[\s\S]*?<\/p>/g, '')
+    // 가격 기록에서 나오는 부분(판단 문구·그래프·통계·가격 하락 목록)은 가격만 바뀌어도 달라지므로 뺀다
+    .replace(/<!--phist-->[\s\S]*?<!--\/phist-->/g, '')
+    // 쿠팡 이동 주소(직접 링크·/go/ 추적 링크)는 같은 것으로 본다
+    .replace(/href="(?:\/go\/[^"]*|https:\/\/link\.coupang\.com\/[^"]*)"/g, 'href="#out"')
+    // 가격 표시 요소는 통째로 뺀다 (14일이 지나 가격을 숨겨도 콘텐츠 날짜가 바뀌지 않게)
+    .replace(/<p class="(?:price-line|pt-won|pd-won|cc-won)[^"]*">[\s\S]*?<\/p>/g, '')
+    .replace(/<span class="pshort[^"]*">[\s\S]*?<\/small><\/span>/g, '')
+    .replace(/<span class="sb-t">[\s\S]*?<\/span>(?=<a)/g, '')
+    .replace(/<p class="verdict[\s\S]*?<\/p>/g, '')
+    .replace(/<svg class="chart"[\s\S]*?<\/svg>/g, '')
+    .replace(/<section class="stats">[\s\S]*?<\/section>/g, '')
+    .replace(/<section class="block drops">[\s\S]*?<\/section>/g, '')
+    .replace(/\(\d+일 기록/g, '(# 기록')
+    .replace(/[+-]?\d+(?:\.\d+)?%/g, '#%')
+    .replace(/[\d,]+원/g, '#원')
+    .replace(/\d+월 \d+일/g, '#')
+    .replace(/\d+\.\d+ 확인/g, '# 확인')
+    .replace(/ stale/g, '')
+    .replace(/ · 오래된 가격/g, '');
+  return createHash('sha1').update(main).digest('hex').slice(0, 16);
+}
+function writeText(path, text) {
+  if (!path.endsWith('.html') || DEMO) return rawWrite(path, text);
+  const canon = (text.match(/<link rel="canonical" href="([^"]*)">/) ?? [])[1];
+  const url = canon?.startsWith(SITE_URL) ? canon.slice(SITE_URL.length) || '/' : null;
+  if (!url || /<meta name="robots" content="noindex">/.test(text)) return rawWrite(path, text.replaceAll('%%UPD%%', TODAY).replaceAll('%%UPDL%%', TODAY.replaceAll('-', '.')));
+  const h = contentKey(text);
+  const old = prevState?.pages?.[url];
+  const seed = (text.match(/data-seed="(\d{4}-\d\d-\d\d)"/) ?? [])[1];
+  let d;
+  if (old && old.h === h) d = old.d;
+  else if (SEEDING) d = seed ?? TODAY;
+  else {
+    d = TODAY;
+    state.pending.push({ url, kind: old ? 'updated' : 'new', d });
+  }
+  state.pages[url] = { h, d };
+  pageDates[url] = d;
+  rawWrite(path, text.replaceAll('%%UPD%%', d).replaceAll('%%UPDL%%', d.replaceAll('-', '.')));
+}
 
 const config = loadConfig();
 const links = loadLinks();
 const picks = readJson(join(ROOT, 'config', 'picks.json'), {});
+// 초보 기준에 맞는 옵션으로 바꿀 쿠팡 상품 (config/variants.json): link 를 채우면 기존 링크·상품 정보를 대신한다
+const variants = readJson(join(ROOT, 'config', 'variants.json'), {});
+for (const [id, v] of Object.entries(variants)) {
+  if (!v?.link) continue;
+  links[id] = v.link;
+  picks[id] = { ...picks[id], title: v.title ?? picks[id]?.title, price: v.price ?? null, image: v.image ?? picks[id]?.image, rocket: !!v.rocket, checked: v.checked ?? picks[id]?.checked };
+}
 const siteConf = readJson(join(ROOT, 'config', 'site.json'), {});
 const VERIFY = [
   siteConf.googleVerification && `<meta name="google-site-verification" content="${siteConf.googleVerification}">`,
@@ -146,8 +220,8 @@ ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표�
 </div></nav>`;
 }
 
-function layout({ title, desc, path, body, recent, ld = [] }) {
-  const full = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
+function layout({ title, desc, path, body, recent, ld = [], raw = false }) {
+  const full = raw || title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
   return `<!doctype html>
 <html lang="ko">
 <head>
@@ -195,7 +269,8 @@ const listLd = (name, ids) => ({
   itemListElement: ids.map((id, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE_URL}/p/${id}`, name: config.products.find((p) => p.id === id)?.name })),
 });
 const ymd = (d) => (d ? d.replaceAll('-', '.') : '');
-const updatedTag = (d) => (d ? `<p class="updated">마지막 업데이트 <time datetime="${d}">${ymd(d)}</time></p>` : '');
+// 날짜는 페이지를 쓸 때 본문 지문으로 정한다 (d 는 처음 기록할 때의 씨앗)
+const updatedTag = (d) => `<p class="updated"${d ? ` data-seed="${d}"` : ''}>마지막 업데이트 <time datetime="%%UPD%%">%%UPDL%%</time></p>`;
 const max2 = (...ds) => ds.filter(Boolean).sort().at(-1);
 const imageOf = (id, hist) => hist?.latest?.image ?? picks[id]?.image;
 // 확인일 기준 쿠팡 판매가 (API 가격 기록이 있으면 그 값을 우선)
@@ -203,26 +278,33 @@ const PRICE_DATE = SITE.priceCheckedAt ?? '';
 const priceDateLabel = PRICE_DATE ? `${+PRICE_DATE.slice(5, 7)}.${+PRICE_DATE.slice(8, 10)}` : '';
 const pickPrice = (id) => picks[id]?.price ?? null;
 const BUILD_DAY = todayKst();
-const PRICE_STALE_DAYS = 14; // 이보다 오래된 가격은 흐리게 '오래된 가격'으로 표시
+const PRICE_STALE_DAYS = NOTICES.priceStaleDays ?? 14; // 확인한 지 이보다 오래된 가격은 숨기고 '현재 가격 보기' 버튼만 보여 준다
 const dayLabel = (d) => `${+d.slice(5, 7)}월 ${+d.slice(8, 10)}일`;
 const daysAgo = (d) => Math.round((Date.parse(BUILD_DAY) - Date.parse(d)) / 864e5);
-// 보여 줄 가격: API 일별 기록이 있으면 최근 최저가, 없으면 링크 생성 때 확인한 쿠팡 판매가
+// 보여 줄 가격: 가격 이력(data/history: 직접 입력·API)과 링크 생성 때 확인한 판매가 중 가장 최근 것
+const SRC_LABEL = { api: '최근 최저가', manual: '쿠팡 판매가', link: '쿠팡 판매가' };
 function shownPrice(id) {
-  const a = entryById[id]?.a;
-  if (a) return { won: a.cur, d: a.last.d, kind: 'api', allMin: a.allMin };
+  if (!links[id] && !entryById[id]?.hist?.latest?.link) return null;
+  const last = entryById[id]?.hist?.points?.at(-1);
   const pk = picks[id];
-  if (!pk?.price || !links[id]) return null;
-  return { won: pk.price, d: pk.checked ?? PRICE_DATE, kind: 'snap' };
+  const snap = pk?.price ? { won: pk.price, d: pk.checked ?? PRICE_DATE, kind: 'link' } : null;
+  const hist = last ? { won: last.low, d: last.d, kind: last.src ?? 'api', allMin: entryById[id]?.a?.allMin } : null;
+  if (hist && (!snap || hist.d >= snap.d)) return hist;
+  return snap;
 }
-function priceLine(id, cls = 'price-line') {
+// 화면에 보여도 되는 가격 (확인한 지 PRICE_STALE_DAYS 이내)
+const freshPrice = (id) => {
   const sp = shownPrice(id);
-  if (!sp) return extOf(id) ? `<p class="${cls} none"><small>쿠팡 판매처 없음 · 가격 정보 없음</small></p>` : '';
-  const stale = daysAgo(sp.d) > PRICE_STALE_DAYS;
-  return `<p class="${cls}${stale ? ' stale' : ''}"><b>${won(sp.won)}</b><small>${sp.kind === 'api' ? '최근 최저가' : '쿠팡 판매가'} · ${dayLabel(sp.d)} 확인${stale ? ' · 오래된 가격' : ''} · 현재 가격과 다를 수 있음</small></p>`;
+  return sp && daysAgo(sp.d) <= PRICE_STALE_DAYS ? sp : null;
+};
+function priceLine(id, cls = 'price-line') {
+  const sp = freshPrice(id);
+  if (!sp) return !shownPrice(id) && extOf(id) ? `<p class="${cls} none"><small>쿠팡 판매처 없음 · 가격 정보 없음</small></p>` : '';
+  return `<p class="${cls}"><b>${won(sp.won)}</b><small>${SRC_LABEL[sp.kind] ?? '쿠팡 판매가'} · ${dayLabel(sp.d)} 확인 · 현재 가격과 다를 수 있음</small></p>`;
 }
 const priceShort = (id) => {
-  const sp = shownPrice(id);
-  return sp ? `<span class="pshort${daysAgo(sp.d) > PRICE_STALE_DAYS ? ' stale' : ''}">${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small></span>` : '';
+  const sp = freshPrice(id);
+  return sp ? `<span class="pshort">${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small></span>` : '';
 };
 // 가격 단계: 아이템(카테고리)별 가격 구간(priceBands) 기준 저가·중가·고가·프리미엄 (숫자 가격은 표시하지 않음)
 const LEVELS = ['', '저가', '중가', '고가', '프리미엄'];
@@ -252,10 +334,14 @@ const levelBadge = (id) => {
 };
 // 가격 수준 + 쿠팡 링크
 // 쿠팡에 없는 상품: 공식몰 등 다른 판매처 일반 링크(제휴 아님)
+// 쿠팡으로 나가는 주소: 클릭 추적(config/site.json clickTracking)을 켜면 /go/{상품ID} 를 거친다 (Pages Functions 가 클릭 수만 세고 302 이동)
+const CLICK_TRACKING = SITE.clickTracking === true && !process.argv.includes('--demo');
+const rawLink = (id) => links[id] ?? entryById[id]?.hist?.latest?.link ?? null;
+const outHref = (id) => (rawLink(id) ? (CLICK_TRACKING ? `/go/${encodeURIComponent(id)}` : rawLink(id)) : null);
 const extOf = (id) => config.products.find((x) => x.id === id)?.external ?? null;
 function levelLink(id, hist, extra = '쿠팡에서 가격 보기 ›') {
   const lv = priceLevel(id);
-  const link = links[id] ?? hist?.latest?.link;
+  const link = outHref(id);
   const ext = extOf(id);
   if (!link && ext) {
     return `<a class="lvl-link" href="${esc(ext.url)}" target="_blank" rel="nofollow noopener"><span class="lvl lvl-0">${lv ? `<i>${lv.marks}</i>${lv.label}` : '공식몰 확인'}</span><small>${esc(ext.store)} ›</small></a>`;
@@ -292,7 +378,7 @@ function figure(category) {
 }
 
 function buyButton(id, hist) {
-  const link = links[id] ?? hist?.latest?.link;
+  const link = outHref(id);
   const ext = extOf(id);
   if (!link && ext) {
     return `<p class="linked">판매처: ${esc(ext.store)} (쿠팡에 국내 정품 판매가 없어 다른 판매처로 연결합니다)</p>
@@ -303,7 +389,7 @@ function buyButton(id, hist) {
   const linked = links[id] ? picks[id]?.title : hist?.latest?.title;
   return `${linked ? `<p class="linked">연결 상품: ${esc(linked)}</p>` : ''}
 <a class="btn" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 현재 가격 보기</a>
-<p class="note">위 버튼은 쿠팡 파트너스 링크입니다. ${DISCLOSURE}</p>`;
+<p class="note">위 버튼은 쿠팡 파트너스 링크입니다.</p>`;
 }
 
 function card({ p, hist, a }) {
@@ -360,8 +446,17 @@ writeText(join(OUT, 'assets', 'logo.svg'), readFileSync(join(ROOT, 'src', 'figur
 
 // ---------- 비교·추천 가이드 데이터와 타일 ----------
 const guides = readJson(join(ROOT, 'config', 'guides.json'), { guides: [] }).guides;
+for (const g of guides) for (const pk of g.picks) if (variants[pk.id]?.link && variants[pk.id].specs) pk.specs = variants[pk.id].specs;
+// 출시 칸 형식 검사: 'YYYY년' 또는 빈 값 (모르는 연도는 지어내지 않고 비워 둔다)
+{
+  const bad = guides.flatMap((g) => releaseIssues(g).map((r) => `  ${g.slug} · ${r.id}: "${r.value}"`));
+  if (bad.length) {
+    console.error(`출시 칸은 "YYYY년" 형식이거나 비워 두어야 합니다:\n${bad.join('\n')}`);
+    process.exit(1);
+  }
+}
 const byId = Object.fromEntries(entries.map((e) => [e.p.id, e]));
-const SCORE_NOTE = '점수는 제조사 공개 정보, 보도된 투어 소식, 일반적인 사용자 평가와 현재 판매가를 바탕으로 이 사이트가 매긴 주관적인 참고 점수입니다. 직접 측정한 시험 결과나 공식 평가가 아니며, 개인의 체형·스윙에 따라 체감은 다를 수 있습니다.';
+const SCORE_NOTE = NOTICES.score;
 const avg = (xs) => xs.reduce((s, x) => s + x, 0) / xs.length;
 const dots = (n) => `<span class="dots" aria-label="5점 중 ${n}점">${'●'.repeat(n)}<i>${'●'.repeat(5 - n)}</i></span>`;
 function guideTile(g) {
@@ -402,7 +497,20 @@ const CUR_YEAR = +todayKst().slice(0, 4);
 const scoreOf = {};
 for (const g of guides) for (const pk of g.picks) if (pk.scores?.length) scoreOf[pk.id] = Math.max(scoreOf[pk.id] ?? 0, avg(pk.scores));
 // 가이드 안 상품을 종합 점수 순으로
-const rankedPicks = (g) => g.picks.filter((pk) => byId[pk.id] && sellable(pk.id)).sort((x, y) => totalScore(y) - totalScore(x));
+// 동점이면 첫 비교 항목 점수가 높은 제품, 그래도 같으면 쿠팡 판매가가 낮은 제품을 앞에 둔다
+const rankedPicks = (g) =>
+  g.picks
+    .filter((pk) => byId[pk.id] && sellable(pk.id))
+    .sort((x, y) => totalScore(y) - totalScore(x) || (y.scores?.[tieIdx(g)] ?? 0) - (x.scores?.[tieIdx(g)] ?? 0) || (pickPrice(x.id) ?? 9e9) - (pickPrice(y.id) ?? 9e9));
+// 동점 기준 항목: 쉬움 계열 항목(쉬움·초보 적합·관용성·정렬·가벼움)이 있으면 그것, 없으면 첫 항목
+function tieIdx(g) {
+  const c = g.criteria ?? [];
+  for (const re of [/쉬움|초보 적합/, /관용성|정렬|방향/, /가벼움/]) {
+    const i = c.findIndex((x) => re.test(x));
+    if (i >= 0) return i;
+  }
+  return 0;
+}
 // 표 안 정렬: 실력 단계 순 → 단계 안 점수 순
 const stagedPicks = (g) => [...rankedPicks(g)].sort((x, y) => skillIdx(x) - skillIdx(y) || totalScore(y) - totalScore(x));
 // 실력 단계별 대표(1위): 남녀 공용으로 끌어온 모델보다 해당 가이드 전용 모델을 우선
@@ -444,13 +552,14 @@ ${ps.some((pk) => pk.dist) ? row('', '비거리', (pk) => (pk.dist ? `<b class="
 ${row('', '편집 점수', (pk) => (pk.scores ? `<b class="ig-total">${avg(pk.scores).toFixed(1)}</b><span class="bar"><i style="width:${(avg(pk.scores) / 5) * 100}%"></i></span>` : '-'), 'r-total')}
 ${row('', '실력·가격대', (pk) => `<span class="tierline">${pk.skill ? `<span class="skill sk-${SKILLS.indexOf(pk.skill) + 1}">${pk.skill}</span>` : skillBadge(pk.id)}${levelBadge(pk.id)}</span>`)}
 ${row('', '한마디', (pk) => `<b class="ig-short">${esc(pk.short ?? pk.role)}</b>`)}
-${(g.specRows ?? []).map((label, si) => row('', esc(label.replace('연결 상품 ', '')), (pk) => `<span class="ig-spec">${esc(pk.specs?.[si] ?? '-')}</span>`)).join('')}
+${(g.specRows ?? []).map((label, si) => row('', esc(label.replace('연결 상품 ', '')), (pk) => `<span class="ig-spec">${esc(pk.specs?.[si] || '-')}</span>`)).join('')}
+${ps.some((pk) => issuesOf(g, pk).length) ? row('', '확인할 점', (pk) => issuesOf(g, pk).map((x) => `<span class="tag warn">${esc(x.msg)}</span>`).join('') || '-') : ''}
 ${row('', '강점', (pk) => `<span class="ig-plus">${esc(pk.plus ?? pk.pros?.[0] ?? '-')}</span>`)}
 ${row('', '약점', (pk) => `<span class="ig-minus">${esc(pk.minus ?? pk.cons?.[0] ?? '-')}</span>`)}
 ${crit.length ? row('', '항목별', (pk) => (pk.scores ? `<span class="ig-crits">${crit.map((c, i) => `<span><em>${esc(c.split('·')[0])}</em>${dots(pk.scores[i])}</span>`).join('')}</span>` : '-')) : ''}
-${row('', '가격', (pk) => `${levelLink(pk.id, byId[pk.id].hist, '쿠팡 ›')}${priceShort(pk.id)}`, 'r-price')}
+${row('', '가격', (pk) => `${levelBadge(pk.id)}${priceShort(pk.id)}${buyBtn(pk.id, 'btn xs')}`, 'r-price')}
 </tbody></table></div>
-${reps ? `<p class="ig-more">${skillGroups(g).map((x) => `<a href="${skillPath(g, x.skill)}"><span class="skill sk-${SKILLS.indexOf(x.skill) + 1}">${x.skill}</span> ${x.ids.length}종 전체 비교 ›</a>`).join('')}</p>` : ''}${reps ? oldModelNote(g, reps) : ''}<p class="note">점수는 주관적 참고 점수(공식 평가 아님) · 순위는 같은 실력 단계 안에서만 매깁니다 · 가격은 링크 생성 시 확인한 쿠팡 판매가로 현재 가격과 다를 수 있음 · 가격을 누르면 쿠팡(파트너스 링크)으로 이동</p></div>`;
+${reps ? `<p class="ig-more">${skillGroups(g).map((x) => `<a href="${skillPath(g, x.skill)}"><span class="skill sk-${SKILLS.indexOf(x.skill) + 1}">${x.skill}</span> ${x.ids.length}종 전체 비교 ›</a>`).join('')}</p>` : ''}${reps ? oldModelNote(g, reps) : ''}<p class="note">점수는 주관적 참고 점수(공식 평가 아님) · 순위는 같은 실력 단계 안에서만 매깁니다 · 가격은 링크 생성 시 확인한 쿠팡 판매가로 현재 가격과 다를 수 있음 · 버튼은 쿠팡 파트너스 링크</p></div>`;
 }
 // 수준별 비교: 실력(초심자·중급·고급·프로) / 가격(저가·중가·고가·프리미엄) 탭으로 나눠 비교
 let tierSeq = 0;
@@ -535,7 +644,81 @@ function criteriaBox(g) {
   const crit = g.criteria ?? [];
   if (!crit.length) return '';
   const w = Math.round(100 / crit.length);
-  return `<aside class="crit-box"><b>점수 기준</b><p>${crit.map((c) => `${esc(c)} ${w}%`).join(' · ')}를 각 5점 만점으로 매긴 뒤 평균한 <b>주관적 편집 점수</b>입니다.${g.picks.some((pk) => pk.skill) ? ' 실력 단계마다 기대하는 성능이 달라, <b>순위는 같은 실력 단계 안에서만</b> 매깁니다.' : ''} <a href="/about#score">점수 매기는 방법</a></p></aside>`;
+  return `<aside class="crit-box"><b>점수 기준</b><p>${crit.map((c) => `${esc(c)} ${w}%`).join(' · ')}를 각 5점 만점으로 매긴 뒤 평균한 <b>주관적 편집 점수</b>입니다.${g.picks.some((pk) => pk.skill) ? ' 실력 단계마다 기대하는 성능이 달라, <b>순위는 같은 실력 단계 안에서만</b> 매깁니다.' : ''} 편집 점수가 같으면 ${esc(crit[tieIdx(g)])} 점수가 높은 제품, 그래도 같으면 쿠팡 판매가가 낮은 제품을 앞 순위로 둡니다. <a href="/about#score">점수 매기는 방법</a></p></aside>`;
+}
+// 초보 기준(로프트·샤프트) 점검 결과
+const issuesOf = (g, pk) => beginnerIssues(g, pk, byId[pk.id]?.p.category, picks);
+// 구매 버튼: 쿠팡(파트너스) 또는 공식몰(제휴 아님)
+function buyBtn(id, cls = 'btn sm', label = '쿠팡에서 현재 가격 보기') {
+  const link = outHref(id);
+  if (link) return `<a class="${cls}" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">${esc(label)}</a>`;
+  const ext = extOf(id);
+  return ext ? `<a class="${cls} ext" href="${esc(ext.url)}" target="_blank" rel="nofollow noopener">${esc(ext.store)}에서 보기</a>` : '';
+}
+// 제목용 가격 표기: 정확한 금액 대신 'N만원대' (기준가 기준이라 매일 바뀌지 않는다)
+const manwonBand = (n) => (n >= 1e6 ? `${Math.floor(n / 1e5) * 10}만원대` : `${Math.floor(n / 1e4)}만원대`);
+function baseMin(ids) {
+  const xs = ids.map((id) => pickPrice(id)).filter(Boolean);
+  return xs.length ? Math.min(...xs) : null;
+}
+function priceRange(ids) {
+  const xs = ids.map((id) => freshPrice(id)).filter(Boolean);
+  if (!xs.length) return null;
+  const w = xs.map((x) => x.won);
+  return { min: Math.min(...w), max: Math.max(...w), d: xs.map((x) => x.d).sort().at(-1) };
+}
+// 검색에서 많이 쓰는 실력 표현
+const SKILL_WORD = { 초심자: '초보', 중급: '중급자', 고급: '상급자', 프로: '프로' };
+// 아이템×성별×실력별 '고르는 법'·FAQ·한 줄 결론 수동 지정 (config/howto.json, 키: 카테고리|성별|실력)
+const howto = readJson(join(ROOT, 'config', 'howto.json'), {});
+const howtoOf = (g, skill) => howto[`${guideCat(g)?.id}|${g.gender ?? '공용'}|${skill ?? '전체'}`];
+const faqLd = (faq) => ({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) });
+function howtoBlock(h) {
+  if (!h) return '';
+  return `${h.sections?.length ? `<section id="howto" class="prose howto"><h2>${esc(h.title ?? '고르는 법')}</h2>${h.sections.map((x) => `<h3>${esc(x.h)}</h3>${String(x.p).split('\n').map((t) => `<p>${esc(t)}</p>`).join('')}`).join('')}</section>` : ''}
+${h.faq?.length ? `<section id="faq" class="prose"><h2>자주 묻는 질문</h2>${h.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>` : ''}`;
+}
+// '쉬움'에 해당하는 비교 항목 위치
+const easyIdx = (g) => {
+  const c = g.criteria ?? [];
+  for (const re of [/쉬움|초보 적합/, /관용성|정렬|방향/, /가벼움/]) {
+    const i = c.findIndex((x) => re.test(x));
+    if (i >= 0) return i;
+  }
+  return -1;
+};
+// 한 줄 결론: 예산 기준 1개 + 쉬움(초보·중급) 또는 성능(상급·프로) 기준 1개. howto.json 의 conclusion 으로 수동 지정 가능
+function conclusionBox(g, ps, skill) {
+  if (ps.length < 2) return '';
+  const man = howtoOf(g, skill)?.conclusion ?? {};
+  const pick = (id) => ps.find((pk) => pk.id === id);
+  // 초보 기준(로프트·샤프트)에 맞지 않는 연결 상품은 결론 후보에서 뒤로 미룬다
+  const ok = ps.filter((pk) => !issuesOf(g, pk).length);
+  const pool = ok.length >= 2 ? ok : ps;
+  const sc = pool.map(totalScore).sort((a, b) => b - a);
+  const median = sc[Math.floor((sc.length - 1) / 2)];
+  const budget = pick(man.budget) ?? [...pool].filter((pk) => totalScore(pk) >= median && pickPrice(pk.id)).sort((a, b) => pickPrice(a.id) - pickPrice(b.id))[0];
+  const hard = skill === '고급' || skill === '프로';
+  const ei = easyIdx(g);
+  const order = hard || ei < 0 ? pool : [...pool].sort((a, b) => (b.scores?.[ei] ?? 0) - (a.scores?.[ei] ?? 0) || totalScore(b) - totalScore(a));
+  const second = pick(man.easy) ?? order.find((pk) => pk.id !== budget?.id);
+  const card = (label, why, pk) => {
+    if (!pk) return '';
+    const p = byId[pk.id].p;
+    const image = imageOf(p.id, byId[pk.id].hist);
+    return `<div class="cc"><span class="cc-l">${esc(label)}</span><a class="cc-p" href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="" width="64" height="64" loading="lazy" decoding="async">` : ''}<span><b>${esc(p.name)}</b><small>${esc(why)}</small></span></a>${priceLine(p.id, 'cc-won')}${buyBtn(p.id, 'btn sm')}</div>`;
+  };
+  return `<section class="conclusion" aria-label="한 줄 결론"><h2>한 줄 결론</h2><div class="cc-grid">
+${card('예산 기준 추천', man.budget ? '편집자 지정' : '편집 점수 상위 절반 중 쿠팡 판매가가 가장 낮은 모델', budget)}
+${card(hard || ei < 0 ? '성능 기준 추천' : '쉬움 기준 추천', man.easy ? '편집자 지정' : hard || ei < 0 ? '이 단계 편집 점수 1위' : `${(g.criteria ?? [])[ei]} 점수가 가장 높은 모델`, second)}
+</div></section>`;
+}
+// 모바일 하단 고정: 1위 상품 가격 보기
+function stickyBuy(pk) {
+  if (!pk) return '';
+  const p = byId[pk.id].p;
+  const sp = freshPrice(p.id);
+  return `<div class="stickybuy" role="complementary" aria-label="1위 상품 바로가기"><span class="sb-t"><b>1위</b> ${esc(p.name)}${sp ? ` · ${won(sp.won)}` : ''}</span>${buyBtn(p.id, 'btn sm', '1위 상품 가격 보기')}</div>`;
 }
 // 구형 모델이 실력별 1위일 때 이유와 최신 모델 1위
 function oldModelNote(g, reps) {
@@ -634,24 +817,25 @@ ${sellable(p.id) ? infographic(g, p.id) : ''}
 // 가격 기록 영역: API 일별 기록이 있으면 추이 그래프(30일·90일)와 역대 최저가 대비 현재가, 없으면 수집 예정 안내
 function priceHistory(p, hist, a) {
   if (!sellable(p.id)) return '';
-  if (!a) return `<section class="phist empty"><h2>가격 추이</h2><p>아직 일별 가격 기록이 없습니다. 쿠팡 파트너스 API 승인 뒤 하루 한 번 최저가를 기록해 최근 30일·90일 추이와 역대 최저가를 이곳에 보여 드립니다.</p><p class="note">${PRICE_NOTE}</p></section>`;
+  // 가격 기록 영역은 가격만 바뀌어도 내용이 달라지므로 <!--phist--> 표시 사이를 콘텐츠 지문에서 뺀다
+  if (!a || !freshPrice(p.id)) return `<!--phist--><section class="phist empty"><h2>가격 추이</h2><p>${a ? `최근 확인한 가격이 ${PRICE_STALE_DAYS}일을 넘어 가격 정보를 숨겼습니다. 쿠팡에서 현재 가격을 확인하세요.` : '아직 가격 기록이 충분하지 않습니다. 기록이 쌓이면 최근 30일·90일 추이와 역대 최저가를 이곳에 보여 드립니다.'}</p><p class="note">${PRICE_NOTE}</p></section><!--/phist-->`;
   const vsMin = pct(a.cur, a.allMin);
   const panel = (days, on) => {
     const from = addDays(a.last.d, -days);
     const pts = hist.points.filter((pt) => pt.d >= from);
     return `<div class="tabpanel${on ? ' on' : ''}" data-panel="ph${days}">${pts.length > 1 ? chart(pts, a.allMin) : '<p class="note">기록이 더 쌓이면 그래프가 표시됩니다.</p>'}</div>`;
   };
-  return `<section class="phist tabs-wrap"><h2>가격 추이 <small>(${a.days}일 기록 · ${dayLabel(a.last.d)} 기준)</small></h2>
+  return `<!--phist--><section class="phist tabs-wrap"><h2>가격 추이 <small>(${a.days}일 기록 · ${dayLabel(a.last.d)} 기준)</small></h2>
 <p class="verdict ${a.verdict.cls}"><b>${a.verdict.label}</b> · ${esc(a.verdict.text)}</p>
 <section class="stats">
-<div><span>최근 최저가</span><b>${won(a.cur)}</b></div>
+<div><span>${PRICE_MODE === 'api' ? '최근 최저가' : '최근 확인가'}</span><b>${won(a.cur)}</b></div>
 <div><span>역대 최저가</span><b>${won(a.allMin)}</b></div>
 <div><span>역대 최저 대비</span><b class="${vsMin > 0 ? 'up' : ''}">${vsMin > 0.05 ? `+${vsMin.toFixed(1)}%` : '최저가'}</b></div>
 <div><span>30일 평균</span><b>${won(a.avg30)}</b></div>
 </section>
 <div class="tabs" role="tablist"><button type="button" class="tab on" data-tab="ph30">최근 30일</button><button type="button" class="tab" data-tab="ph90">최근 90일</button></div>
 ${panel(30, true)}${panel(90, false)}
-<p class="note">${PRICE_NOTE}</p></section>`;
+<p class="note">${PRICE_NOTE}</p></section><!--/phist-->`;
 }
 
 // ---------- 상품 페이지 ----------
@@ -663,7 +847,7 @@ for (const { p, hist, a } of entries) {
   let body, title, desc;
 
   {
-    title = `${p.name} 특징·비교${shownPrice(p.id) ? '·쿠팡 판매가' : ''}`;
+    title = `${p.name} 가격·스펙·추천 대상`;
     desc = `${p.name}: ${p.summary}`;
     const sc = scoreOf[p.id];
     const top = guidesOf(p.id).filter((g) => !g.mergeInto).map((g) => ({ g, sr: stageRank(g, p.id) }));
@@ -673,7 +857,7 @@ ${gallery(p, hist)}
 <div class="pd-info">
 <span class="pt-cat">${esc(cat.name)}</span>
 <h1>${esc(p.name)}</h1>
-${updatedTag(max2(p.updated, a?.last.d))}
+${updatedTag(p.updated)}
 <div class="pt-badges">${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, sr }) => (sr ? `<span class="tag rank">${esc(guideName(g).replace(' 비교 및 선택 가이드', ''))} ${esc(sr.label)}</span>` : '')).join('')}${sellable(p.id) ? '' : '<span class="tag none">쿠팡 판매처 없음</span>'}</div>
 <div class="pd-price">${priceLine(p.id, 'pd-won')}${priceLevel(p.id) ? `<span>가격대 <small>(${esc(cat.name)} 비교 기준)</small></span>${levelLink(p.id, hist, '쿠팡에서 현재 가격 보기 ›')}` : ''}</div>
 <p class="pd-sum">${esc(p.summary)}</p>
@@ -715,6 +899,26 @@ ${related.map((g) => `<section id="g-${g.slug}" class="cat-cmp">${related.length
 }
 
 // ---------- 비교·추천 가이드 페이지 ----------
+// 제목: "[성별] [아이템] 추천 N종 비교 (연도) | 최저가원부터" — 최저가는 페이지 상품의 쿠팡 판매가에서 계산
+function guideTitle(g, skill) {
+  const c = guideCat(g);
+  const who = g.gender && g.gender !== '공용' ? `${g.gender} ` : '';
+  const ids = skill ? skillGroups(g).find((x) => x.skill === skill)?.ids ?? [] : rankedPicks(g).map((pk) => pk.id);
+  const bm = baseMin(ids);
+  return `${who}${skill ? `${SKILL_WORD[skill]} ` : ''}${c?.name ?? ''} 추천 ${ids.length}종 비교 (${CUR_YEAR})${bm ? ` | ${manwonBand(bm)}부터` : ''}`;
+}
+// 메타 설명: 가격 범위 + 핵심 추천 대상
+function guideDesc(g, skill) {
+  const c = guideCat(g);
+  const who = g.gender && g.gender !== '공용' ? `${g.gender} ` : '';
+  const ps = skill ? rankedPicks(g).filter((pk) => pk.skill === skill) : rankedPicks(g);
+  const pr = priceRange(ps.map((pk) => pk.id));
+  const top = ps[0];
+  const head = `${who}${skill ? `${SKILL_WORD[skill]} ` : ''}${c?.name ?? ''} ${ps.length}종 비교`;
+  const price = pr ? ` 쿠팡 판매가 ${won(pr.min)}~${won(pr.max)}(${dayLabel(pr.d)} 확인).` : '';
+  const target = skill && top ? ` ${top.forWhom}께 맞춘 추천으로, 1위는 ${byId[top.id].p.name}.` : ` ${g.desc}`;
+  return `${head}:${price}${target}`.slice(0, 160);
+}
 for (const g of pageGuides) {
   const picksIn = stagedPicks(g);
   const crit = g.criteria ?? [];
@@ -724,7 +928,7 @@ for (const g of pageGuides) {
     .map((pk) => {
       const { p, hist } = byId[pk.id];
       const image = imageOf(p.id, hist);
-      const link = links[p.id] ?? hist?.latest?.link;
+      const link = outHref(p.id);
       const total = totalOf(pk);
       return `<tr>
 <td class="pcell">${image ? `<img src="${esc(image)}" alt="" loading="lazy" width="48" height="48">` : ''}<a href="/p/${p.id}">${esc(p.name)}</a><br>${pk.skill ? `<span class="skill sk-${SKILLS.indexOf(pk.skill) + 1}">${pk.skill}</span> ` : ''}<span class="badge mid">${esc(pk.role)}</span></td>
@@ -755,17 +959,20 @@ ${crit.map((_, i) => `<td class="sc">${pk.scores ? dots(pk.scores[i]) : '-'}</td
   writeText(
     join(OUT, 'g', `${g.slug}.html`),
     layout({
-      title: `${guideName(g)}${g.title.includes(':') ? `: ${g.title.split(':').slice(1).join(':').trim()}` : ''}`,
-      desc: g.desc,
+      title: guideTitle(g),
+      raw: true,
+      desc: guideDesc(g),
       path: `/g/${g.slug}`,
       ld: [
         crumbLd([['홈', '/'], [guideCat(g)?.name ?? '', `/c/${guideCat(g)?.id}`], [guideName(g), `/g/${g.slug}`]]),
         listLd(g.title, stagedPicks(g).map((pk) => pk.id)),
+        ...(g.faq?.length ? [faqLd(g.faq)] : []),
       ],
       body: `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${guideCat(g)?.id}">${esc(guideCat(g)?.name ?? '')}</a>${g.gender && g.gender !== '공용' ? ` › ${esc(g.gender)}` : ''}</nav>
 <p class="g-kicker">${g.gender ? `<span class="gender g-${esc(g.gender)}">${esc(g.gender === '공용' ? '남녀공용' : g.gender)}</span>` : ''}${esc(guideName(g))}</p>
 <h1>${esc(g.title)}</h1>
 ${updatedTag(g.updated)}
+${skillGroups(g).length ? '' : conclusionBox(g, rankedPicks(g), null)}
 <section class="prose"><p>${esc(g.intro)}</p></section>
 ${criteriaBox(g)}
 <nav class="toc">${mergedInto(g).some((m) => m.grinds) ? '<a href="#vokey">보키 그라인드 비교</a>' : ''}<a href="#cmp">비교표</a><a href="#tiers">수준별 비교</a>${g.picks.some((pk) => pk.dist) ? '<a href="#dist">비거리 비교</a>' : ''}<a href="#scores">항목별 점수</a><a href="#models">모델별 분석</a><a href="#choose">선택 가이드</a><a href="#faq">자주 묻는 질문</a></nav>
@@ -774,7 +981,7 @@ ${skillNav(g)}<div id="tiers">${tierCompare(g)}</div>
 <div id="dist">${distCompare(g)}</div>
 <section id="scores"><h2>한눈에 비교: 항목별 점수</h2><div class="tablewrap"><table class="scores"><thead><tr><th>모델</th>${crit.map((c) => `<th>${esc(c)}</th>`).join('')}<th>종합</th><th></th></tr></thead><tbody>${scoreRows}</tbody></table></div>
 <p class="note score-note">※ ${SCORE_NOTE}</p>
-<p class="note">${DISCLOSURE}</p></section>
+</section>
 <div id="models">${cards}</div>
 <section id="choose" class="choose"><h2>선택 가이드: 이렇게 고르세요</h2>
 <div class="choose-pick">${stagedPicks(g)
@@ -786,7 +993,8 @@ ${mergedInto(g)
   .map((m) => `<section id="vokey" class="merged"><h2>${esc(m.menuName ?? shortTitle(m.title))}</h2><p class="prose">${esc(m.intro)}</p>${grindCompare(m)}<div class="prose">${m.sections.map((x) => `<h3>${esc(x.h)}</h3><p>${esc(x.p)}</p>`).join('')}</div><div class="prose">${m.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</div></section>`)
   .join('')}
 <section id="faq" class="prose"><h2>자주 묻는 질문</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>
-<section><h2>다른 비교·추천 가이드</h2>${guideGrid(pageGuides.filter((o) => o.slug !== g.slug))}</section>`,
+<section><h2>다른 비교·추천 가이드</h2>${guideGrid(pageGuides.filter((o) => o.slug !== g.slug))}</section>
+${skillGroups(g).length ? '' : stickyBuy(rankedPicks(g)[0])}`,
     }),
   );
 }
@@ -799,38 +1007,43 @@ function skillNav(g, active) {
     .map((x) => `<a href="${skillPath(g, x.skill)}"${x.skill === active ? ' class="on"' : ''}><span class="skill sk-${SKILLS.indexOf(x.skill) + 1}">${x.skill}</span> ${x.ids.length}종</a>`)
     .join('')}</nav>`;
 }
-// 실력 단계별 비교 페이지: 해당 실력대 상품을 저가→프리미엄 순으로
+// 실력 단계별 비교 페이지: 해당 실력대 상품을 순위 순으로
 for (const g of pageGuides) {
   const c = guideCat(g);
   const who = g.gender && g.gender !== '공용' ? `${g.gender} ` : '';
   for (const { skill, ids } of skillGroups(g)) {
     const ps = rankedPicks(g).filter((pk) => ids.includes(pk.id));
     const levels = LEVELS.filter((l) => l && ps.some((pk) => priceLevel(pk.id)?.label === l));
-    const name = `${who}${skill}용 ${c?.name ?? ''}`;
+    const name = `${who}${SKILL_WORD[skill]} ${c?.name ?? ''}`;
+    const h = howtoOf(g, skill);
     writeText(
       join(OUT, 'g', `${g.slug}-${SKILL_EN[skill]}.html`),
       layout({
-        title: `${name} 비교 추천 ${ps.length}종`,
-        desc: `${name} ${ps.length}종을 ${levels.join('·')} 가격대별로 비교했습니다. 장단점과 주관적 편집 점수${ps.some((pk) => pk.dist) ? ', 비거리 참고 점수' : ''}, 확인 날짜를 적은 쿠팡 판매가를 함께 정리했습니다.`,
+        title: guideTitle(g, skill),
+        raw: true,
+        desc: guideDesc(g, skill),
         path: skillPath(g, skill),
         ld: [
-          crumbLd([['홈', '/'], [c?.name ?? '', `/c/${c?.id}`], [guideName(g), `/g/${g.slug}`], [`${skill}용`, skillPath(g, skill)]]),
-          listLd(`${name} 비교`, ps.map((pk) => pk.id)),
+          crumbLd([['홈', '/'], [c?.name ?? '', `/c/${c?.id}`], [guideName(g), `/g/${g.slug}`], [`${SKILL_WORD[skill]}`, skillPath(g, skill)]]),
+          listLd(`${name} 추천`, ps.map((pk) => pk.id)),
+          ...(h?.faq?.length ? [faqLd(h.faq)] : []),
         ],
-        body: `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${c?.id}">${esc(c?.name ?? '')}</a>${who ? ` › <a href="/g/${g.slug}">${esc(g.gender)}</a>` : ''} › ${esc(skill)}</nav>
+        body: `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${c?.id}">${esc(c?.name ?? '')}</a>${who ? ` › <a href="/g/${g.slug}">${esc(g.gender)}</a>` : ''} › ${esc(SKILL_WORD[skill])}</nav>
 <p class="g-kicker"><span class="skill sk-${SKILLS.indexOf(skill) + 1}">${skill}</span>${esc(guideName(g))}</p>
-<h1>${esc(name)} 비교 추천 <small>${ps.length}종 · ${esc(levels.join('·'))}</small></h1>
-${updatedTag(g.updated)}
+<h1>${esc(name)} 추천 비교 <small>${ps.length}종 · ${esc(levels.join('·'))}</small></h1>
+${updatedTag(max2(g.updated, h?.updated))}
+${conclusionBox(g, ps, skill)}
 ${criteriaBox(g)}
 ${skillNav(g, skill)}
-<section>${infographic(g, null, { ids, byPrice: true, title: `${name}` })}</section>
+<section id="cmp">${infographic(g, null, { ids, title: `${name} 순위` })}</section>
+${howtoBlock(h)}
 ${distCompare(g, ids)}
-<section class="choose"><h2>${esc(skill)}에게 맞는 선택</h2><div class="choose-pick">${ps
-          .map((pk) => `<a href="/p/${pk.id}"><span class="tierline">${levelBadge(pk.id)}<span class="badge mid">${esc(pk.role)}</span>${unisexBadge(pk)}</span><b>${esc(byId[pk.id].p.name)}</b><small>${esc(pk.forWhom)}</small><small class="vd">${esc(pk.verdict ?? '')}</small></a>`)
+<section class="choose"><h2>${esc(SKILL_WORD[skill])}에게 맞는 선택</h2><div class="choose-pick">${ps
+          .map((pk) => `<a href="/p/${pk.id}"><span class="tierline"><span class="badge good">${esc(stageRank(g, pk.id)?.label ?? '')}</span>${levelBadge(pk.id)}<span class="badge mid">${esc(pk.role)}</span>${unisexBadge(pk)}</span><b>${esc(byId[pk.id].p.name)}</b><small>${esc(pk.forWhom)}</small><small class="vd">${esc(pk.verdict ?? '')}</small></a>`)
           .join('')}</div></section>
 <p class="note score-note">※ ${SCORE_NOTE}</p>
-<p class="note">${DISCLOSURE}</p>
-<a class="more-link" href="/g/${g.slug}">${esc(guideName(g))} 전체 보기 ›</a>`,
+<a class="more-link" href="/g/${g.slug}">${esc(guideName(g))} 전체 보기 ›</a>
+${stickyBuy(ps[0])}`,
       }),
     );
   }
@@ -888,7 +1101,7 @@ const finderData = {
   items: pageGuides.flatMap((g) =>
     rankedPicks(g).map((pk) => {
       const { p, hist } = byId[pk.id];
-      const sp = shownPrice(p.id);
+      const sp = freshPrice(p.id);
       return { c: p.category, g: g.gender ?? '공용', s: pk.skill ?? '', lv: priceLevel(p.id)?.n ?? 0, n: p.name, i: imageOf(p.id, hist) ?? '', u: `/p/${p.id}`, r: pk.role, sc: +totalScore(pk).toFixed(1), pr: sp?.won ?? 0, pd: sp ? dayLabel(sp.d) : '', x: pk.unisex ? 1 : 0 };
     }),
   ),
@@ -929,9 +1142,9 @@ writeText(
 <section class="block" id="guides"><div class="block-h"><h2>대표 비교 가이드</h2><span>실력 단계별 5종씩 비교</span></div>${guideGrid(featured)}
 <details class="allguides"><summary>모든 비교 가이드 보기 (${pageGuides.length}개)</summary><ul>${pageGuides.map((g) => `<li><a href="/g/${g.slug}">${esc(guideName(g))}</a> <small>${rankedPicks(g).length}종</small></li>`).join('')}</ul></details></section>
 
-${drops.length ? `<section class="block"><div class="block-h"><h2>최근 가격 하락</h2><span>7일 전 기록보다 내린 상품</span></div>${prow(drops)}</section>` : ''}
+${drops.length ? `<section class="block drops"><div class="block-h"><h2>최근 가격 하락</h2><span>7일 전 기록보다 내린 상품</span></div>${prow(drops)}</section>` : ''}
 
-<section class="hnote"><p>${DISCLOSURE}</p><p>※ ${SCORE_NOTE}</p><p>※ ${PRICE_NOTE}</p></section>`,
+<section class="hnote"><p>※ ${SCORE_NOTE}</p><p>※ ${PRICE_NOTE}</p></section>`,
   }),
 );
 
@@ -949,7 +1162,7 @@ writeText(
       d: e.p.summary,
       s: scoreOf[e.p.id] ? +scoreOf[e.p.id].toFixed(1) : null,
       r: !!picks[e.p.id]?.rocket,
-      l: links[e.p.id] ?? e.hist?.latest?.link ?? e.p.external?.url ?? '',
+      l: outHref(e.p.id) ?? e.p.external?.url ?? '',
       st: links[e.p.id] ? '쿠팡' : e.p.external?.store ?? '',
       pr: null,
       lv: priceLevel(e.p.id)?.label ?? '',
@@ -1009,8 +1222,7 @@ ${ABOUT.operator ? `<section class="prose" id="operator"><h2>운영자 소개</h
 <h2>가격 수집 방법</h2>
 <p>${PRICE_NOTE}</p>
 <ul>
-<li><b>지금 표시되는 가격</b>: 쿠팡 파트너스 사이트에서 상품 링크를 만들 때 확인한 판매가입니다. 가격 옆에 확인 날짜를 적고, ${PRICE_STALE_DAYS}일이 지나면 흐리게 '오래된 가격'으로 표시합니다.</li>
-<li><b>자동 기록(예정)</b>: 쿠팡 파트너스 API 승인 뒤 매시간 일부 상품씩 나눠 하루 한 번 전 상품의 최저가를 기록합니다. 기록이 쌓이면 상품 페이지에 최근 30일·90일 추이와 역대 최저가 대비 현재가, 홈에 '최근 가격 하락'이 표시됩니다.</li>
+${(NOTICES.priceDetails?.[PRICE_MODE] ?? []).map((t) => `<li>${esc(t)}</li>`).join('')}
 <li>"사기 좋은 때" 판단: 역대 최저가와 2% 이내면 '역대 최저가 근처', 최근 30일 평균보다 5% 이상 낮으면 '평소보다 저렴', 5% 이상 높으면 '평소보다 비쌈', 기록이 7일 미만이면 '데이터 수집 중'입니다.</li>
 <li>해외직구·구매대행·병행수입 상품은 비교와 가격 기록에서 뺍니다.</li>
 </ul>
@@ -1019,7 +1231,8 @@ ${ABOUT.operator ? `<section class="prose" id="operator"><h2>운영자 소개</h
 <h2>업데이트 주기</h2>
 <ul>
 <li>가이드와 상품 정보: 신모델 출시나 판매처 변경이 있을 때 고치며, 각 페이지 상단에 '마지막 업데이트' 날짜를 적습니다.</li>
-<li>가격: API 승인 뒤 매일 자동 기록, 사이트는 하루 한 번 다시 만들어집니다.</li>
+<li>가격: API 승인 뒤 매일 자동 기록, 사이트는 하루 한 번 다시 만들어집니다. 가격만 바뀐 경우에는 '마지막 업데이트' 날짜를 바꾸지 않습니다.</li>
+<li>가격대 단계와 동점 순위에 쓰는 기준가는 가격이 10% 이상 변했을 때나 주 1회 정기 재계산 때만 바뀌어, 순위가 매일 흔들리지 않습니다.</li>
 </ul>
 </section>
 <section class="prose" id="ad">
@@ -1036,9 +1249,7 @@ const REDIRECTS = [
   ...pageGuides.flatMap((g) => SKILLS.filter((sk) => g.picks.some((pk) => pk.skill === sk) && !skillGroups(g).some((x) => x.skill === sk)).map((sk) => `${skillPath(g, sk)} /g/${g.slug} 301`)),
   ...guides.filter((g) => g.mergeInto).map((g) => `/g/${g.slug} /g/${g.mergeInto}#vokey 301`),
 ];
-writeText(
-  join(OUT, '_redirects'),
-  [
+const STATIC_REDIRECTS = [
     '/c/set / 301',
     '/g/beginner-full-set / 301',
     '/g/budget-golf-ball /c/ball 301',
@@ -1054,26 +1265,59 @@ writeText(
     '/p/nike-infinity-g-shoes /c/shoes 301',
     '/p/voicecaddie-laser-fit2 /c/rangefinder 301',
     '/p/scotty-cameron-phantom-putter /c/putter 301',
-    ...REDIRECTS,
-  ].join('\n') + '\n',
-);
+];
+rawWrite(join(OUT, '_redirects'), [...STATIC_REDIRECTS, ...REDIRECTS].join('\n') + '\n');
 
 // ---------- 검색엔진용 파일 ----------
-const gMax = max2(...pageGuides.map((g) => g.updated));
+// 사이트맵 lastmod = 콘텐츠 업데이트일 (가격만 바뀐 날은 반영하지 않는다)
 const urls = [
-  ['/', max2(gMax, updated)],
-  ['/about', BUILD_DAY],
-  ...pageGuides.map((g) => [`/g/${g.slug}`, g.updated]),
-  ...pageGuides.flatMap((g) => skillGroups(g).map((x) => [skillPath(g, x.skill), g.updated])),
-  ...cats.map((c) => [`/c/${c.id}`, max2(...guidesFor(c.id).map((g) => g.updated))]),
-  ...entries.map((e) => [`/p/${e.p.id}`, max2(e.p.updated, e.a?.last.d)]),
-];
-writeText(
+  '/',
+  '/about',
+  ...pageGuides.map((g) => `/g/${g.slug}`),
+  ...pageGuides.flatMap((g) => skillGroups(g).map((x) => skillPath(g, x.skill))),
+  ...cats.map((c) => `/c/${c.id}`),
+  ...entries.map((e) => `/p/${e.p.id}`),
+].map((u) => [u, pageDates[u] ?? TODAY]);
+
+// URL 보호: 한 번 공개한 주소(config/url-manifest.json)가 사라지면 경고하고, _redirects 에 301 이 없으면 빌드를 멈춘다
+if (!DEMO) {
+  const MANIFEST = join(ROOT, 'config', 'url-manifest.json');
+  const known = readJson(MANIFEST, null);
+  const now = new Set(urls.map(([u]) => u));
+  const redirectFrom = new Map([...STATIC_REDIRECTS, ...REDIRECTS].map((l) => l.split(/\s+/)).map(([f, t, c]) => [f, { t, c }]));
+  // 한 번이라도 공개한 주소 중 지금 없는 것은 모두 301 이 있어야 한다. 경고는 직전 빌드 이후 새로 사라진 주소만
+  const gone = (known?.urls ?? []).filter((u) => !now.has(u));
+  const missing = gone.filter((u) => redirectFrom.get(u)?.c !== '301');
+  const newlyGone = (known?.live ?? []).filter((u) => !now.has(u));
+  if (newlyGone.length) console.warn(`경고: 직전 빌드에 있던 주소 ${newlyGone.length}개가 사라졌습니다.\n${newlyGone.map((u) => `  ${u} → ${redirectFrom.get(u)?.t ?? '(리다이렉트 없음)'}`).join('\n')}`);
+  if (missing.length) {
+    console.error(`빌드 중단: 사라진 주소에 301 리다이렉트가 없습니다. _redirects 규칙을 추가하세요.\n${missing.map((u) => '  ' + u).join('\n')}`);
+    process.exit(1);
+  }
+  // 삭제된 페이지도 IndexNow 로 알린다
+  for (const u of Object.keys(prevState?.pages ?? {})) if (!state.pages[u] && !SEEDING) state.pending.push({ url: u, kind: 'removed', d: TODAY });
+  const all = [...new Set([...(known?.urls ?? []), ...now, ...(known ? [] : [...redirectFrom.keys()])])].sort();
+  writeFileSync(MANIFEST, JSON.stringify({ _설명: 'build.mjs 가 관리. urls: 한 번이라도 공개한 주소(사라지면 _redirects 에 301 이 있어야 빌드 통과), live: 직전 빌드의 주소(새로 사라진 주소 경고용).', urls: all, live: [...now].sort() }, null, 2) + '\n');
+  // 같은 주소가 여러 번 쌓이지 않게 정리
+  const seen = new Set();
+  state.pending = state.pending.reverse().filter((x) => !seen.has(x.url) && seen.add(x.url)).reverse();
+  writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n');
+  if (state.pending.length) console.log(`IndexNow 대기열: ${state.pending.length}개 (node src/indexnow.mjs 로 전송)`);
+}
+// 클릭 추적용 이동 표 (functions/go/[id].js 가 읽는다)
+rawWrite(join(OUT, 'assets', 'go.json'), JSON.stringify(Object.fromEntries(config.products.map((p) => [p.id, rawLink(p.id)]).filter(([, v]) => v))));
+// IndexNow 키 파일
+if (SITE.indexNowKey && !DEMO) rawWrite(join(OUT, `${SITE.indexNowKey}.txt`), SITE.indexNowKey);
+rawWrite(
   join(OUT, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
-    .map(([u, d]) => `<url><loc>${SITE_URL}${u}</loc><lastmod>${d ?? updated}</lastmod></url>`)
+    .map(([u, d]) => `<url><loc>${SITE_URL}${u}</loc><lastmod>${d}</lastmod></url>`)
     .join('\n')}\n</urlset>\n`,
 );
-writeText(join(OUT, 'robots.txt'), DEMO ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+writeText(join(OUT, 'robots.txt'), DEMO ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nDisallow: /go/\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
+{
+  const n = pageGuides.reduce((s2, g) => s2 + g.picks.filter((pk) => byId[pk.id] && issuesOf(g, pk).length).length, 0);
+  if (n) console.log(`참고: 초보 기준(로프트·샤프트)에 맞지 않는 연결 상품 ${n}개 — node src/audit.mjs 로 목록 확인, config/variants.json 으로 교체`);
+}
 console.log(`사이트 생성 완료: 상품 ${entries.length}개 (가격 기록 ${tracked.length}개, 가이드 ${entries.length - tracked.length}개) → site/${DEMO ? ' (샘플 데이터)' : ''}`);

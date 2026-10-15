@@ -1,7 +1,6 @@
 // git 기록으로 날짜를 찍는다 (node src/stamp-dates.mjs). 커밋한 뒤 실행하고, 바뀐 config 를 다시 커밋한다.
 // - picks.json  checked: 그 상품의 쿠팡 판매가를 처음 확인(링크 생성)한 날 — 판매가가 바뀌면 그 날로 갱신
-// - guides.json updated: 가이드 내용이 마지막으로 바뀐 날
-// - products.json updated: 상품 정보·판매가·링크·가이드 속 평가가 마지막으로 바뀐 날
+// (콘텐츠 업데이트일은 build.mjs 가 본문 지문으로 config/content-state.json 에 관리한다. guides·products 의 updated 는 처음 기록할 때의 씨앗으로만 쓰인다)
 import { execFileSync } from 'node:child_process';
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';

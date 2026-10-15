@@ -690,3 +690,36 @@ table.grind-t tbody th { background: #1c2b3a; color: #fff; }
 /* 마지막 업데이트, 이미지 비율 유지 */
 .updated { margin: 2px 0 10px; font-size: 12px; color: var(--muted); }
 :where(img[width][height]) { height: auto; }
+
+/* 한 줄 결론 */
+.conclusion { margin: 14px 0; padding: 14px 16px; border: 2px solid var(--accent); border-radius: 14px; background: var(--surface); }
+.conclusion h2 { margin: 0 0 10px; font-size: 17px; }
+.cc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.cc { display: flex; flex-direction: column; gap: 6px; padding: 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); }
+.cc-l { font-size: 12px; font-weight: 800; color: var(--accent); }
+.cc-p { display: flex; gap: 10px; align-items: center; text-decoration: none; }
+.cc-p img { width: 64px; height: 64px; object-fit: contain; background: #fff; border-radius: 8px; flex: 0 0 64px; }
+.cc-p span { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.cc-p b { font-size: 15px; line-height: 1.35; }
+.cc-p small { font-size: 12px; color: var(--muted); }
+.cc-won { margin: 0; display: flex; flex-direction: column; }
+.cc-won b { font-size: 17px; font-weight: 800; }
+.cc-won small { font-size: 11px; color: var(--muted); }
+.cc .btn { max-width: none; }
+@media (max-width: 640px) { .cc-grid { grid-template-columns: 1fr; } }
+/* 비교표 가격 칸 버튼 */
+.btn.xs { display: inline-block; margin-top: 6px; padding: 6px 8px; font-size: 12px; line-height: 1.3; max-width: 130px; border-radius: 8px; }
+/* 초보 기준 안내 태그 */
+.tag.warn { display: inline-block; background: #fff4e0; color: #9a5b00; font-weight: 700; line-height: 1.4; margin: 2px 0; white-space: normal; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tag.warn { background: #3a2d14; color: #f3c27a; } }
+/* 모바일 하단 고정 1위 버튼 */
+.stickybuy { display: none; }
+@media (max-width: 767px) {
+  .stickybuy { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; align-items: center; gap: 10px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -4px 14px rgba(0,0,0,.08); }
+  .sb-t { flex: 1; min-width: 0; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .stickybuy .btn { flex: 0 0 auto; }
+  body:has(.stickybuy) { padding-bottom: 76px; }
+  /* 상단 고지 문구는 모바일에서도 잘리지 않게 */
+  .util-in span { white-space: normal; overflow: visible; line-height: 1.4; padding: 4px 0; }
+}
+.howto h3 { margin-top: 18px; }

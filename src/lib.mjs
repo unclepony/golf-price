@@ -36,6 +36,8 @@ export function historyDir(demo) {
 
 // 한국 시간 기준 날짜 (YYYY-MM-DD)
 export function todayKst(offsetDays = 0) {
+  // 시험용: TODAY_OVERRIDE=YYYY-MM-DD 로 오늘 날짜를 바꿔 빌드할 수 있다
+  if (process.env.TODAY_OVERRIDE) return new Date(Date.parse(process.env.TODAY_OVERRIDE) + offsetDays * 86400e3).toISOString().slice(0, 10);
   return new Date(Date.now() + 9 * 3600e3 + offsetDays * 86400e3).toISOString().slice(0, 10);
 }
 

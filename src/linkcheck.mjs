@@ -21,6 +21,7 @@ const exists = (path) => {
   return existsSync(join(SITE, p + '.html'));
 };
 const bad = new Map();
+const goTable = existsSync(join(SITE, 'assets', 'go.json')) ? JSON.parse(readFileSync(join(SITE, 'assets', 'go.json'), 'utf8')) : {};
 const ids = new Map(); // 페이지별 id (앵커 검사)
 for (const f of files.filter((f) => f.endsWith('.html'))) {
   const html = readFileSync(f, 'utf8');
@@ -29,6 +30,11 @@ for (const f of files.filter((f) => f.endsWith('.html'))) {
   for (const m of html.matchAll(/\s(?:href|src)="(\/[^"]*)"/g)) {
     const url = m[1];
     if (url.startsWith('//')) continue;
+    // 클릭 추적 이동 주소: 이동 표(assets/go.json)에 상품이 있어야 한다
+    if (url.startsWith('/go/')) {
+      if (!goTable[decodeURIComponent(url.slice(4).split(/[?#]/)[0])]) bad.set(url, [...(bad.get(url) ?? []), page]);
+      continue;
+    }
     const path = url.split('#')[0].split('?')[0];
     if (!exists(path) && !redirects.has(path)) bad.set(url, [...(bad.get(url) ?? []), page]);
   }
