@@ -1,1323 +1,1543 @@
 {
-  "_설명": "links.json 의 링크가 연결된 쿠팡 상품 정보 (2026-10-15~16 파트너스 사이트에서 선택). 해외직구(로켓직구)·구매대행 상품은 쓰지 않는다. image 는 사이트 썸네일로 쓰인다. 가격은 기록용이며 사이트에 표시하지 않는다.",
+  "_설명": "links.json 의 링크가 연결된 쿠팡 상품 정보 (파트너스 사이트에서 선택). 해외직구(로켓직구)·구매대행·병행 상품은 쓰지 않는다. image 는 사이트 썸네일, price 는 링크를 만들 때 확인한 쿠팡 판매가(checked 날짜와 함께 사이트에 표시), checked 는 src/stamp-dates.mjs 가 git 기록으로 채운다.",
   "taylormade-qi35-driver": {
     "title": "테일러메이드 남성용 Qi35 드라이버 DIA BLUE TM50, SR, 10.5도",
     "price": 515110,
     "rocket": true,
-    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/28/16/7/f67f13fa-0d2b-4fb1-a85e-365bef065ace.jpg"
+    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/28/16/7/f67f13fa-0d2b-4fb1-a85e-365bef065ace.jpg",
+    "checked": "2026-10-15"
   },
   "callaway-elyte-driver": {
     "title": "캘러웨이 남성용 2025 엘리트 드라이버 ELYTE, 10.5도, SR",
     "price": 432520,
     "rocket": true,
-    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/22/12/7/3f819ae8-229b-4711-bb8c-34bfa6d67020.jpg"
+    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/22/12/7/3f819ae8-229b-4711-bb8c-34bfa6d67020.jpg",
+    "checked": "2026-10-15"
   },
   "ping-g440-driver": {
     "title": "핑 G440 드라이버 MAX 2026년 삼양인터내셔날, G440 MAX 10.5도 (SR) 삼양정품",
     "price": 690000,
     "rocket": false,
-    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/77be/fefcd351b76da6c44c37ecfe5079054d03a4641ecad21c7725ba4e6ce4d2.jpg"
+    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/77be/fefcd351b76da6c44c37ecfe5079054d03a4641ecad21c7725ba4e6ce4d2.jpg",
+    "checked": "2026-10-15"
   },
   "titleist-gt2-driver": {
     "title": "타이틀리스트 GT2 드라이버 Tour AD Black 6S, S, 10도",
     "price": 899000,
     "rocket": true,
-    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/301488873253989-43d9d8b8-086c-4de8-bf77-9624931e3b47.jpg"
+    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/301488873253989-43d9d8b8-086c-4de8-bf77-9624931e3b47.jpg",
+    "checked": "2026-10-15"
   },
   "taylormade-p790-iron": {
     "title": "테일러메이드코리아 정품 P790 4세대 스틸 7아이언(4~P) NS PRO Modus105, 30도, S",
     "price": 1240000,
     "rocket": false,
-    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/7bd9/1b820bce79d6560446f76a6ad12337d783eeb324f3e6db259b6ea1ba1594.jpg"
+    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/7bd9/1b820bce79d6560446f76a6ad12337d783eeb324f3e6db259b6ea1ba1594.jpg",
+    "checked": "2026-10-15"
   },
   "ping-g440-iron": {
     "title": "핑 G440 아이언 7개세트 2026년 삼양인터내셔날, 스틸 S 7개 세트 삼양정품",
     "price": 1360000,
     "rocket": false,
-    "image": "https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3563/b6780d79b864a911c5c6290dc95d73e28ea8ce3800240324f5c78449f398.jpg"
+    "image": "https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3563/b6780d79b864a911c5c6290dc95d73e28ea8ce3800240324f5c78449f398.jpg",
+    "checked": "2026-10-15"
   },
   "odyssey-ai-one-putter": {
     "title": "한국캘러웨이정품 (오디세이) Ai-ONE 퍼터, (DW DB) 83.82cm(33인치)",
     "price": 215000,
     "rocket": false,
-    "image": "https://t4c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/a991/39a2d6eeaf227f2125464b1c3811850e06179dc38d2a009e302b64782bfa.jpg"
+    "image": "https://t4c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/a991/39a2d6eeaf227f2125464b1c3811850e06179dc38d2a009e302b64782bfa.jpg",
+    "checked": "2026-10-15"
   },
   "ping-anser-2-putter": {
     "title": "삼양정품 핑 2024년 ANSER 2 퍼터 블레이드, 33인치 [사은품 포함]",
     "price": 295000,
     "rocket": false,
-    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/b59d/1a7e664b38ebc5b8320accdbb9b653136a8b1508ec1a7be6038cfa30582b.jpg"
+    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/b59d/1a7e664b38ebc5b8320accdbb9b653136a8b1508ec1a7be6038cfa30582b.jpg",
+    "checked": "2026-10-16"
   },
   "titleist-pro-v1": {
     "title": "타이틀리스트 26년 PRO V1 더즌 골프공, 1개, 12개입, 화이트",
     "price": 73000,
     "rocket": false,
-    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/cce0/114b5219cdc0afcf55271557abbac249f6f45268370811a99d0c9d765156.jpg"
+    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/cce0/114b5219cdc0afcf55271557abbac249f6f45268370811a99d0c9d765156.jpg",
+    "checked": "2026-10-15"
   },
   "srixon-z-star": {
     "title": "스릭슨 던롭 골프공 3피스 Z-STAR9 디바이드, 화이트+옐로우, 1개, 12개입",
     "price": 38250,
     "rocket": true,
-    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/04/30/15/8/0b4137fa-0cab-48c8-a55d-b7697a9e7098.jpg"
+    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/04/30/15/8/0b4137fa-0cab-48c8-a55d-b7697a9e7098.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-chrome-soft": {
     "title": "캘러웨이 크롬소프트 360 트리플트랙 골프공 3피스, 옐로우, 12개입, 1개",
     "price": 50440,
     "rocket": true,
-    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/08/11/17/9/7999cc3a-fca2-4a18-98d6-290d52b048f2.png"
+    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/08/11/17/9/7999cc3a-fca2-4a18-98d6-290d52b048f2.png",
+    "checked": "2026-10-16"
   },
   "bushnell-pro-x3": {
     "title": "부쉬넬 신형 PRO X3 레이저형 거리측정기 카네 as가능 사은품4종 증정",
     "price": 720000,
     "rocket": false,
-    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/08da/1225ee20fc174a116e9e1cc1ebc486d23afc333d5a081b93fed53bb2421b.jpg"
+    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/08da/1225ee20fc174a116e9e1cc1ebc486d23afc333d5a081b93fed53bb2421b.jpg",
+    "checked": "2026-10-15"
   },
   "voicecaddie-sl3": {
     "title": "보이스캐디 골프 거리측정기, SL3, 그린",
     "price": 598000,
     "rocket": true,
-    "image": "https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/94193389710582-4d957688-ad1d-4c36-bb28-d96341641b13.jpg"
+    "image": "https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/94193389710582-4d957688-ad1d-4c36-bb28-d96341641b13.jpg",
+    "checked": "2026-10-15"
   },
   "ping-gle4-women-driver": {
     "title": "[삼양인터내셔날] 핑 GLE4 여성용 드라이버, A, 11.5도",
     "price": 860000,
     "rocket": false,
-    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/b709/a07ad9556f582b718cb7df3ccd88cea6a024620d25c2ba963c299f725818.png"
+    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/b709/a07ad9556f582b718cb7df3ccd88cea6a024620d25c2ba963c299f725818.png",
+    "checked": "2026-10-16"
   },
   "xxio14-women-driver": {
     "title": "젝시오 여성용 던롭코리아 14 드라이버 화이트, 11.5도, L",
     "price": 719000,
     "rocket": false,
-    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0d80/b06c343672b319b80559be1b67f73174f2a7cd2c9b0dc1dd84074c8c7259.jpg"
+    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0d80/b06c343672b319b80559be1b67f73174f2a7cd2c9b0dc1dd84074c8c7259.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-spider-tour-x-putter": {
     "title": "(테일러메이드코리아정품) 스파이더 투어 X 퍼터, (DB) 83.82cm(33인치)",
     "price": 380000,
     "rocket": false,
-    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/2220/4ff5e66558aa5fd492eecdf581e31468c9cffc679a7c00616417b35fe611.jpg"
+    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/2220/4ff5e66558aa5fd492eecdf581e31468c9cffc679a7c00616417b35fe611.jpg",
+    "checked": "2026-10-16"
   },
   "ecco-biom-c4-shoes": {
     "title": "에코 남성 골프화 바이옴 C4 보아 고어텍스 130424",
     "price": 139800,
     "rocket": false,
-    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4fe2/7aa23031ccd23451c5f4cbdf306cb40c5a594cf67dec6cf71cc8d87eb17e.jpg"
+    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4fe2/7aa23031ccd23451c5f4cbdf306cb40c5a594cf67dec6cf71cc8d87eb17e.jpg",
+    "checked": "2026-10-16"
   },
   "adidas-codechaos-shoes": {
     "title": "아디다스 남성 골프화 코드케이오스 보아 스파이크리스 발편한 방수 필드화",
     "price": 189000,
     "rocket": false,
-    "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/8fd6/8e911c4a91567c92bee5103386b06db9af14acaa05a957c5f5a26ddf2a92.png"
+    "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/8fd6/8e911c4a91567c92bee5103386b06db9af14acaa05a957c5f5a26ddf2a92.png",
+    "checked": "2026-10-16"
   },
   "callaway-elyte-maxfast-women-driver": {
     "title": "캘러웨이 여성용 2025 엘리트 맥스 패스트 드라이버, 여성 12도 (L), L, 12도",
     "price": 406050,
     "rocket": true,
-    "image": "https://thumbnail4.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/18/16/9/1366164e-ba9d-492c-8223-3770fac8b664.jpg"
+    "image": "https://thumbnail4.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/18/16/9/1366164e-ba9d-492c-8223-3770fac8b664.jpg",
+    "checked": "2026-10-16"
   },
   "ping-fetch-putter": {
     "title": "삼양정품 핑 2024년 FETCH 퍼터 말렛타입, 34인치 [사은품 포함], R, 3도",
     "price": 255000,
     "rocket": false,
-    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/242a/9944b5b4cd422855da6ce77493cca6b2e3da7c6ab71b583c39d2fad6cc0d.jpg"
+    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/242a/9944b5b4cd422855da6ce77493cca6b2e3da7c6ab71b583c39d2fad6cc0d.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-tp5-ball": {
     "title": "테일러메이드 TP5 골프공 5피스, 화이트, 12개입, 1개",
     "price": 51400,
     "rocket": true,
-    "image": "https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/02/21/10/5/02b9ef7d-854e-4ef2-8b25-3425b2f6dadd.jpg"
+    "image": "https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/02/21/10/5/02b9ef7d-854e-4ef2-8b25-3425b2f6dadd.jpg",
+    "checked": "2026-10-16"
   },
   "nikon-coolshot-pro3": {
     "title": "니콘 쿨샷 프로3 스태빌라이즈드 레이저 골프거리측정기, 화이트",
     "price": 580000,
     "rocket": true,
-    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/04/22/11/4/fdd4a4e3-c82e-48cf-8eb6-6823c74b06f7.jpg"
+    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/04/22/11/4/fdd4a4e3-c82e-48cf-8eb6-6823c74b06f7.jpg",
+    "checked": "2026-10-16"
   },
   "footjoy-pro-sl": {
     "title": "[아쿠쉬네트코리아] 2026 풋조이 PRO SL 남성 골프화 골프신발, 화이트/블랙/틸 (56956)",
     "price": 232000,
     "rocket": false,
-    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/5f6c/396366bcdba9b00b2df346c7aecdb9a4e07f36fce2eba1c3e16753b9be5e.png"
+    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/5f6c/396366bcdba9b00b2df346c7aecdb9a4e07f36fce2eba1c3e16753b9be5e.png",
+    "checked": "2026-10-15"
   },
   "taylormade-qi35-maxlite-women-driver": {
     "title": "테일러메이드 여성용 Qi35 MAX Lite 드라이버, 12도, L",
     "price": 494360,
     "rocket": true,
-    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/28/16/7/25a907cd-bee1-40dd-83ff-ee9bdcdd4654.jpg"
+    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/28/16/7/25a907cd-bee1-40dd-83ff-ee9bdcdd4654.jpg",
+    "checked": "2026-10-16"
   },
   "bushnell-tour-v6-shift": {
     "title": "[카네정품]2023 부쉬넬 투어 V6 쉬프트(TOUR V6 SHIFT) 레이저형 거리측정기[6배율방수손떨림&거리보정], 거리측정기, WHITE&BLACK, TOUR V6 SHIFT",
     "price": 540000,
     "rocket": false,
-    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d846/4549b25ebd18946c3fcde415dd55cc02fb5c19de67ce0495a0abaaa9925c.jpg"
+    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d846/4549b25ebd18946c3fcde415dd55cc02fb5c19de67ce0495a0abaaa9925c.jpg",
+    "checked": "2026-10-16"
   },
   "footjoy-premiere-packard-shoes": {
     "title": "[백화점정품] 풋조이 골프화 남성 프리미어 패커드 골프화53909 경량 266055",
     "price": 203300,
     "rocket": false,
-    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1cf4/3f094bf437359a41cf10d556a8d09a70d8f4dbe37b86468e2ef5039f3f2e.jpg"
+    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1cf4/3f094bf437359a41cf10d556a8d09a70d8f4dbe37b86468e2ef5039f3f2e.jpg",
+    "checked": "2026-10-16"
   },
   "titleist-t100-iron": {
     "title": "타이틀리스트 T100 아이언 6개 세트 (5-9.P) AMT WHITE S 2025년, 33도",
     "price": 1590000,
     "rocket": false,
-    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/8e26/fcae09dc4c2abab5a651386c02b75e08dec8cc9554e85757395ed63d0a23.jpg"
+    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/8e26/fcae09dc4c2abab5a651386c02b75e08dec8cc9554e85757395ed63d0a23.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-jpx925-forged-iron": {
     "title": "한국미즈노정품 미즈노 JPX925 포지드 8개세트 아이언 사은품증정, NS PRO 950GH S",
     "price": 990000,
     "rocket": false,
-    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/afae/98e55b90c72b131c9251e157fa42bda306efd729db51f1a529e0c623ee77.jpg"
+    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/afae/98e55b90c72b131c9251e157fa42bda306efd729db51f1a529e0c623ee77.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-elyte-iron": {
     "title": "[캘러웨이코리아정품] 엘리트 경량스틸 아이언 7개, S(NS PRO 950GH NEO)",
     "price": 1012000,
     "rocket": false,
-    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4413/44b0c58981b77d53e64a64b53443e34fc40ec854037204b53fdde5e04c17.jpg"
+    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4413/44b0c58981b77d53e64a64b53443e34fc40ec854037204b53fdde5e04c17.jpg",
+    "checked": "2026-10-16"
   },
   "cleveland-rtz-wedge": {
     "title": "클리브랜드 RTZ 웨지 투어사틴 던롭코리아 정품 DYNAMIC GOLD S200 샤프트, 60도",
     "price": 175000,
     "rocket": false,
-    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/eecf/4ae17da0041e3901f77a9cee4f0aa88147e18d8861182bf7c6ae77858a7e.jpg"
+    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/eecf/4ae17da0041e3901f77a9cee4f0aa88147e18d8861182bf7c6ae77858a7e.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-opus-sp-wedge": {
     "title": "[캘러웨이코리아정품] 오퍼스 SP 크롬웨지(NS950S 경량스틸), (크롬) 경량스틸 56도, 56도, S",
     "price": 181350,
     "rocket": false,
-    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0066/94b31b3b1d4dee47db16c08633c5fbff33def9eddbb66240d82f9eb37bf5.jpg"
+    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0066/94b31b3b1d4dee47db16c08633c5fbff33def9eddbb66240d82f9eb37bf5.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-mg4-wedge": {
     "title": "[테일러메이드코리아] MG4 크롬 52.09 / 56.12 DG TI EX S200 다이나믹골드 투어이슈 밀드그라인드4, S, 52도",
     "price": 149000,
     "rocket": false,
-    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0ccf/e55d82d12212d0a931366758280fdb466eb9009e6ba4c4c57c77147bb36f.jpg"
+    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0ccf/e55d82d12212d0a931366758280fdb466eb9009e6ba4c4c57c77147bb36f.jpg",
+    "checked": "2026-10-16"
   },
   "ping-s259-wedge": {
     "title": "[삼양인터내셔날 정품] 2026년 핑 S259 웨지, 46도",
     "price": 230000,
     "rocket": false,
-    "image": "https://t4c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/40cc/1ec7e051cf095e641be4d4973f2befe32ef2832cf8e0562188a06481c8c7.jpeg"
+    "image": "https://t4c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/40cc/1ec7e051cf095e641be4d4973f2befe32ef2832cf8e0562188a06481c8c7.jpeg",
+    "checked": "2026-10-16"
   },
   "ping-g440-max-fairway": {
     "title": "핑 G440 MAX 페어웨이우드 2026년 (주)삼양인터내셔날정식, 3번(15도) S",
     "price": 390000,
     "rocket": false,
-    "image": "https://thumbnail4.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/6875/34571983b9abd87339c308faa2813a0bb44a602398d52851fe61c538e19d.jpg"
+    "image": "https://thumbnail4.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/6875/34571983b9abd87339c308faa2813a0bb44a602398d52851fe61c538e19d.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi35-fairway": {
     "title": "테일러메이드 남성용 Qi35 페어웨이우드 3번 DIA BLUE TM50, S, 15도",
     "price": 336350,
     "rocket": true,
-    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/28/16/1/9271bd6c-a711-4762-bfb5-badbfaa3631d.jpg"
+    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/28/16/1/9271bd6c-a711-4762-bfb5-badbfaa3631d.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-elyte-fairway": {
     "title": "캘러웨이 남성용 2025 엘리트 페어웨이우드, 15도, S",
     "price": 267720,
     "rocket": true,
-    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/18/16/0/9ceaf723-e1b3-41fa-b0e3-22edf4c8904f.jpg"
+    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/18/16/0/9ceaf723-e1b3-41fa-b0e3-22edf4c8904f.jpg",
+    "checked": "2026-10-16"
   },
   "cobra-optm-x-fairway": {
     "title": "코브라정품 OPTM X 페어웨이우드 2026년 코브라푸마골프코리아, SPEEDER NX 5번 18도 [S]",
     "price": 335000,
     "rocket": false,
-    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4e17/b88c2d15e9eee5aff8408dbc08c6b33dab97989c5c6845543501d2699fd0.jpg"
+    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4e17/b88c2d15e9eee5aff8408dbc08c6b33dab97989c5c6845543501d2699fd0.jpg",
+    "checked": "2026-10-16"
   },
   "ping-g440-hybrid": {
     "title": "핑 G440 하이브리드 유틸리티 2026년 (주)삼양인터내셔날정식, 3번 20도 R",
     "price": 351500,
     "rocket": false,
-    "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/5ac6/b770e48d5fa5261c416ecca55f717c031dea03d6d9780bf6342942d029ac.jpg"
+    "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/5ac6/b770e48d5fa5261c416ecca55f717c031dea03d6d9780bf6342942d029ac.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi35-rescue": {
     "title": "테일러메이드 남성용 Qi35 유틸리티우드 4번 DIA BLUE TM60, S, 22도",
     "price": 291000,
     "rocket": true,
-    "image": "https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/28/16/3/6ba112ce-32ec-4e5a-8cb8-680c17ec92ca.jpg"
+    "image": "https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/28/16/3/6ba112ce-32ec-4e5a-8cb8-680c17ec92ca.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-elyte-hybrid": {
     "title": "캘러웨이 남성용 2025년 엘리트 하이브리드, 19도, SR",
     "price": 275000,
     "rocket": false,
-    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/ba8d/3c0e694d0a2241a98c1604e86f98e344d4ceb14e671b4fe9f5a3388ae5f4.jpg"
+    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/ba8d/3c0e694d0a2241a98c1604e86f98e344d4ceb14e671b4fe9f5a3388ae5f4.jpg",
+    "checked": "2026-10-16"
   },
   "cobra-optm-hybrid": {
     "title": "코브라정품 OPTM 유틸리티 2026년 코브라푸마골프코리아, SPEEDER NX 4번 21도 [S]",
     "price": 285000,
     "rocket": false,
-    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/6b32/0a83d7f315a9d64df74c179c2b39fd4d8de351156c38ddb0f6b92fc3ece3.jpg"
+    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/6b32/0a83d7f315a9d64df74c179c2b39fd4d8de351156c38ddb0f6b92fc3ece3.jpg",
+    "checked": "2026-10-16"
   },
   "garmin-approach-s70": {
     "title": "가민 어프로치 S70 GC 47mm 골프 스마트워치, 블랙, GPS",
     "price": 1040000,
     "rocket": true,
-    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2024/08/06/10/5/242bdb12-6c95-488d-8757-b917323302ee.jpg"
+    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2024/08/06/10/5/242bdb12-6c95-488d-8757-b917323302ee.jpg",
+    "checked": "2026-10-16"
   },
   "garmin-approach-s50": {
     "title": "가민 어프로치 골프 GPS 스마트워치 S50, 블랙, 30.4mm, GPS + 블루투스",
     "price": 399000,
     "rocket": true,
-    "image": "https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/05/09/11/7/7ab5890a-c3a7-4dda-a4fe-72e53cda87c4.jpg"
+    "image": "https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/05/09/11/7/7ab5890a-c3a7-4dda-a4fe-72e53cda87c4.jpg",
+    "checked": "2026-10-16"
   },
   "voicecaddie-t13-pro": {
     "title": "보이스캐디 시계형 골프거리측정기, T13 PRO, 블랙",
     "price": 455220,
     "rocket": true,
-    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/02/23/16/2/64ad28ec-38e0-496f-8e87-b79ac7712a45.png"
+    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/02/23/16/2/64ad28ec-38e0-496f-8e87-b79ac7712a45.png",
+    "checked": "2026-10-16"
   },
   "golfbuddy-aim-w12": {
     "title": "골프버디 aim W12 GPS 시계형 스마트 거리측정기, aim_W12, aim_W12",
     "price": 194770,
     "rocket": false,
-    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/815d/f07b31e87f27384565f72e13c3f4cb0056bf28c6aceb6ad21a2af67f9c5e.jpeg"
+    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/815d/f07b31e87f27384565f72e13c3f4cb0056bf28c6aceb6ad21a2af67f9c5e.jpeg",
+    "checked": "2026-10-16"
   },
   "garmin-approach-r10": {
     "title": "가민 Approach R10 휴대용 골프 런치모니터, 블랙",
     "price": 875000,
     "rocket": false,
-    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/335f3b40822045ef6f9328b0b4ea30fea8210e18be78cced440b7b7316fb_1775195060765.jpg"
+    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/335f3b40822045ef6f9328b0b4ea30fea8210e18be78cced440b7b7316fb_1775195060765.jpg",
+    "checked": "2026-10-16"
   },
   "voicecaddie-sc4-pro": {
     "title": "보이스캐디 론치 모니터, SC4 PRO, 블랙",
     "price": 590870,
     "rocket": false,
-    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/e6c2/e86810435a7377aeacbf909f3c4fc43fce1689ef34d520113544ac409bd7.jpg"
+    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/e6c2/e86810435a7377aeacbf909f3c4fc43fce1689ef34d520113544ac409bd7.jpg",
+    "checked": "2026-10-16"
   },
   "blacktee-shot5": {
     "title": "블랙티 런치모니터 SHOT5 스윙분석기, 블랙, 1개",
     "price": 349000,
     "rocket": true,
-    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/08/20/14/6/20a46c39-6a07-4da2-b4ee-527dc05aa793.png"
+    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/08/20/14/6/20a46c39-6a07-4da2-b4ee-527dc05aa793.png",
+    "checked": "2026-10-16"
   },
   "rapsodo-mlm2pro": {
     "title": "랩소도 런치 모니터 모바일 골프 모니터 MLM2PRO, 1개",
     "price": 1529580,
     "rocket": false,
-    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4c78/ab7d07a729a89f8fe3cf8923bdd907a25c3702c1e7411e29abb7ad1af351.png"
+    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4c78/ab7d07a729a89f8fe3cf8923bdd907a25c3702c1e7411e29abb7ad1af351.png",
+    "checked": "2026-10-16"
   },
   "titleist-players5-carbon-stand": {
     "title": "타이틀리스트 플레이어스 5 카본 스탠드백 TB25SX5A 초경량, 블랙",
     "price": 380000,
     "rocket": false,
-    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9ef7/e7870f7f5cccc0d612a68110a2fdb2fc8f00c59fe49729baee2ad179b790.jpg"
+    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9ef7/e7870f7f5cccc0d612a68110a2fdb2fc8f00c59fe49729baee2ad179b790.jpg",
+    "checked": "2026-10-16"
   },
   "sunmountain-h2no-stand": {
     "title": "썬마운틴 H2NO 워터프루프 방수 스탠드백 캐디백, 코발트블랙",
     "price": 239000,
     "rocket": false,
-    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/prod/8d97ccf7-dbe0-40fc-8d7e-a6e9483c1d62_fixing_v2.png"
+    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/prod/8d97ccf7-dbe0-40fc-8d7e-a6e9483c1d62_fixing_v2.png",
+    "checked": "2026-10-16"
   },
   "titleist-cart14-bag": {
     "title": "타이틀리스트 카트 14 캐디백 TB22CT6 / 신상품, 차콜/블랙/블랙",
     "price": 459000,
     "rocket": false,
-    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9f4a/5e6d4967460dde352fb9b07586b21e0910c3714b20f67a4a711f986ee52f.jpg"
+    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9f4a/5e6d4967460dde352fb9b07586b21e0910c3714b20f67a4a711f986ee52f.jpg",
+    "checked": "2026-10-16"
   },
   "ping-sporty-lt-bag": {
     "title": "핑 스포티 LT 경량 캐디백 8인치 삼양인터내셔날정품 2026년, 라이트그레이(LIGHT GRAY)",
     "price": 274890,
     "rocket": false,
-    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/f2f4/90f8fca76d95e35a1bd00e7a861261c62f1dbb7cddabf8c16094e035d3cc.jpg"
+    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/f2f4/90f8fca76d95e35a1bd00e7a861261c62f1dbb7cddabf8c16094e035d3cc.jpg",
+    "checked": "2026-10-16"
   },
   "footjoy-pure-touch-glove": {
     "title": "풋조이 남성용 양피 퓨어 터치 골프장갑 왼손용, 화이트, 1개",
     "price": 27390,
     "rocket": true,
-    "image": "https://thumbnail5.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2024/03/22/11/9/4815c2e4-0982-46da-b69c-aa39e8520fc5.jpg"
+    "image": "https://thumbnail5.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2024/03/22/11/9/4815c2e4-0982-46da-b69c-aa39e8520fc5.jpg",
+    "checked": "2026-10-16"
   },
   "footjoy-stasof-glove": {
     "title": "풋조이 남성용 양피 뉴 스테이소프 골프장갑 왼손용, 화이트, 1개",
     "price": 27880,
     "rocket": true,
-    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/rs_quotation_api/me2syzr6/1eb646b184494fe68712733ab933ad2d.jpg"
+    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/rs_quotation_api/me2syzr6/1eb646b184494fe68712733ab933ad2d.jpg",
+    "checked": "2026-10-16"
   },
   "titleist-players-glove": {
     "title": "타이틀리스트 남성용 플레이어스 양피 장갑 왼손, 화이트",
     "price": 34900,
     "rocket": false,
-    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/a53b/68afef647965a7ebc11118ae3d34ec4b1ec56c29936125db78a8178cade1.jpg"
+    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/a53b/68afef647965a7ebc11118ae3d34ec4b1ec56c29936125db78a8178cade1.jpg",
+    "checked": "2026-10-16"
   },
   "titleist-permasoft-glove": {
     "title": "타이틀리스트 남성용 퍼마소프트 양피 장갑 왼손, 화이트, 1개",
     "price": 27200,
     "rocket": false,
-    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/e434/443c8925122f6e08f702a3cc8d4dee64cbbfbf17ca3ea8d69dd1c85f84f2.jpg"
+    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/e434/443c8925122f6e08f702a3cc8d4dee64cbbfbf17ca3ea8d69dd1c85f84f2.jpg",
+    "checked": "2026-10-16"
   },
   "orange-whip-trainer": {
     "title": "골프 스윙 트레이너 오렌지윕 비거리 향상 연습기, 풀 사이즈, 1개",
     "price": 203740,
     "rocket": false,
-    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/089e/5502a5557a201207c37a8e6d0fe1de5d414ee70b60fd283ac111af75a6ae.jpg"
+    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/089e/5502a5557a201207c37a8e6d0fe1de5d414ee70b60fd283ac111af75a6ae.jpg",
+    "checked": "2026-10-16"
   },
   "zeroputt-digital-putting": {
     "title": "제로펏 최대 20M 자동리턴 디지털 퍼팅연습 골프 퍼터 퍼팅연습기, 검정색, 제로펏 롤링매트 세트",
     "price": 235600,
     "rocket": false,
-    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/86b1/6a98c6bcefd596c7e8e8e3d2ef6ce94881ab01a8a2e4a62e3d7e391884d0.jpg"
+    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/86b1/6a98c6bcefd596c7e8e8e3d2ef6ce94881ab01a8a2e4a62e3d7e391884d0.jpg",
+    "checked": "2026-10-16"
   },
   "swingimpact-swingcaddie": {
     "title": "[공식몰] 스윙임팩트 스윙캐디 스윙연습기, 1개",
     "price": 270000,
     "rocket": false,
-    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/operator/891185008/b6eb4427-4a52-6ab3-4525-3b8a2b95a224.jpg"
+    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/operator/891185008/b6eb4427-4a52-6ab3-4525-3b8a2b95a224.jpg",
+    "checked": "2026-10-16"
   },
   "pistop-topswing-trainer": {
     "title": "피스탑 탑스윙 골프스윙연습기, 블랙, 1개",
     "price": 23980,
     "rocket": false,
-    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/6c22/d851c429d1392f81b5a32ab3edf7b93960b7e4dcb48d8b403efb44ba9964.jpg"
+    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/6c22/d851c429d1392f81b5a32ab3edf7b93960b7e4dcb48d8b403efb44ba9964.jpg",
+    "checked": "2026-10-16"
   },
   "xxio14-women-iron": {
     "title": "젝시오 여성용 던롭코리아 14 아이언 7i 화이트, 30도, L",
     "price": 1580000,
     "rocket": true,
-    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/08/13/9/1/8371e372-997f-4406-81d1-130f6165c410.jpg"
+    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/08/13/9/1/8371e372-997f-4406-81d1-130f6165c410.jpg",
+    "checked": "2026-10-16"
   },
   "ping-gle4-women-iron": {
     "title": "핑 GLE4 아이언세트 여성용 7개+5번 유틸리티, (삼양정품)5번유틸+7개세트 L 여성용",
     "price": 1790000,
     "rocket": false,
-    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/90d6/325d4b38e39fdda6dceac033a749e0786f2666350d5920e16aaaaf69e30b.jpg"
+    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/90d6/325d4b38e39fdda6dceac033a749e0786f2666350d5920e16aaaaf69e30b.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-elyte-maxfast-women-iron": {
     "title": "캘러웨이 (25)엘리트 맥스 패스트 여성 아이언 7i, (UST LINQ GREEN 여성 L), L",
     "price": 1012000,
     "rocket": false,
-    "image": "https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1c26/55c60b18bbf4bd0b2257f9401b6186ccdb5501e7d74312c511e1e0abf482.jpg"
+    "image": "https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1c26/55c60b18bbf4bd0b2257f9401b6186ccdb5501e7d74312c511e1e0abf482.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi-maxlite-women-iron": {
     "title": "테일러메이드 여성용 Qi MAX Lite 카본 7아이언, L, 26.5도",
     "price": 799000,
     "rocket": true,
-    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/06/08/10/9/98d79f28-c087-4269-b02a-b6e9648979f5.jpg"
+    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/06/08/10/9/98d79f28-c087-4269-b02a-b6e9648979f5.jpg",
+    "checked": "2026-10-16"
   },
   "footjoy-pulse-boa-women-shoes": {
     "title": "풋조이 정품 FJ 펄스 보아 스파이크리스 여성 방수 골프화 경량 발편한 파크 겸용 골프신발",
     "price": 197000,
     "rocket": false,
-    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/7252/d64586e3c27210ac663355219e26fd3e25c6df09a8c396618ab513950129.png"
+    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/7252/d64586e3c27210ac663355219e26fd3e25c6df09a8c396618ab513950129.png",
+    "checked": "2026-10-16"
   },
   "footjoy-flow2-boa-women-shoes": {
     "title": "풋조이 여성용 플로우 2.0 보아 W형 골프화 90929",
     "price": 176000,
     "rocket": false,
-    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/01ba/d170bf10ecc6cfee48104303aed75fcd155edd2bd411e921c26539ec4017.jpg"
+    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/01ba/d170bf10ecc6cfee48104303aed75fcd155edd2bd411e921c26539ec4017.jpg",
+    "checked": "2026-10-16"
   },
   "ecco-goretex-women-shoes": {
     "title": "에코 골프화 신발 운동화 여성 고어텍스 102903 59044",
     "price": 128000,
     "rocket": false,
-    "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d7b8/0de9e5ec142e7d0b81d8d7e38f8331e9ee327db8e8ea54f85be4243b9893.jpg"
+    "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d7b8/0de9e5ec142e7d0b81d8d7e38f8331e9ee327db8e8ea54f85be4243b9893.jpg",
+    "checked": "2026-10-16"
   },
   "adidas-adipower-sl-women-shoes": {
     "title": "아디다스 여성 아디파워 SL 보아 스파이크리스 골프화",
     "price": 119000,
     "rocket": false,
-    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/c089e74c3f810140ba75b4d1010d9468fa7236599785b2252da6b1b9c8d7_1790835233225.png"
+    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/c089e74c3f810140ba75b4d1010d9468fa7236599785b2252da6b1b9c8d7_1790835233225.png",
+    "checked": "2026-10-16"
   },
   "taylormade-sim2max-driver": {
     "title": "테일러메이드 SIM2 MAX 드라이버 VENTUS BLUE, 9도, S",
     "price": 334310,
     "rocket": true,
-    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/1709659644751111-eedd5131-2def-4d3e-bcc5-c9bdd6d9cb4c.jpg"
+    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/1709659644751111-eedd5131-2def-4d3e-bcc5-c9bdd6d9cb4c.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi10max-driver": {
     "title": "테일러메이드코리아 Qi10 MAX 드라이버(남여), TM50 10.5도 S, S, 10.5",
     "price": 499000,
     "rocket": false,
-    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/098b/e44aa93fb5cf428dd43b25c775fb20fc79caa95fab1f69bce8838af3faa1.jpg"
+    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/098b/e44aa93fb5cf428dd43b25c775fb20fc79caa95fab1f69bce8838af3faa1.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi35max-driver": {
     "title": "테일러메이드 남성용 Qi35 MAX 드라이버 DIA BLUE TM50, 9도, S",
     "price": 546200,
     "rocket": false,
-    "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1ffc/007b49de0fa7cd8dc18d00f541673e2b3651523d05fd0655de5ac8394cc0.jpg"
+    "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1ffc/007b49de0fa7cd8dc18d00f541673e2b3651523d05fd0655de5ac8394cc0.jpg",
+    "checked": "2026-10-16"
   },
   "majesty-prestigio13-driver": {
     "title": "[마제스티골프코리아 정품] 마제스티 프레스티지오 13 골드 남성 드라이버, (남성) 10.5도 (R)",
     "price": 1330000,
     "rocket": false,
-    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/249b/214c73a90a9051b87c17c5c33eedad15fd64fb61fe37bfef5a0de12a4039.jpg"
+    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/249b/214c73a90a9051b87c17c5c33eedad15fd64fb61fe37bfef5a0de12a4039.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-paradym-driver": {
     "title": "캘러웨이 남성용 2025년 패러다임 Global 스펙 HZRDUS 드라이버, S, 9도",
     "price": 305160,
     "rocket": true,
-    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/07/11/7/0a912827-c7fb-40be-929d-94f755747427.jpg"
+    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/07/11/7/0a912827-c7fb-40be-929d-94f755747427.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-quantum-tdmax-driver": {
     "title": "캘러웨이 남성용 퀀텀 트리플 다이아몬드 TD 맥스 드라이버 TENSEI 60, S, 9도",
     "price": 689980,
     "rocket": false,
-    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3eb0/9df330a630ea78c4426d9d4a4dc510ff64ed88c88550b98741dab09428e6.jpg"
+    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3eb0/9df330a630ea78c4426d9d4a4dc510ff64ed88c88550b98741dab09428e6.jpg",
+    "checked": "2026-10-16"
   },
   "xxio14plus-driver": {
     "title": "던롭코리아정품 26년 신상품 젝시오14 플러스 남성 드라이버, PLUS 9도_S, S, 9도",
     "price": 704000,
     "rocket": false,
-    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/edfb/cc180eb9089d75fbb9441f6cfeda7bda5b830d95742812a8caa87074f9d7.jpg"
+    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/edfb/cc180eb9089d75fbb9441f6cfeda7bda5b830d95742812a8caa87074f9d7.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi35ls-driver": {
     "title": "테일러메이드 남성용 Qi35 LS 드라이버 DIA SILVER TM55, 10.5도, SR",
     "price": 509000,
     "rocket": true,
-    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/28/16/6/c89c679a-10a2-424b-94e1-36f1f4eb9bdd.jpg"
+    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/28/16/6/c89c679a-10a2-424b-94e1-36f1f4eb9bdd.jpg",
+    "checked": "2026-10-16"
   },
   "ping-g440lst-driver": {
     "title": "[삼양인터내셔날 정품] 핑 G440 LST 남성 드라이버 [ALTA J CB BLUE], 10.5도, ALTA J CB BLUE R",
     "price": 649000,
     "rocket": false,
-    "image": "https://thumbnail4.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/ef71/7802164408626a858b7a8399e0429cb1f8f535ec7e25c7b019fb0cd2d399.jpg"
+    "image": "https://thumbnail4.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/ef71/7802164408626a858b7a8399e0429cb1f8f535ec7e25c7b019fb0cd2d399.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi4d-driver": {
     "title": "[테일러메이드코리아정품] QI4D 드라이버, 9도, S",
     "price": 880000,
     "rocket": false,
-    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3913/a2eba3b9401f00ad942f3dece352e61de7b128968b68de53d32bbcff1227.jpg"
+    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3913/a2eba3b9401f00ad942f3dece352e61de7b128968b68de53d32bbcff1227.jpg",
+    "checked": "2026-10-16"
   },
   "titleist-gt3-driver": {
     "title": "타이틀리스트 GT3 드라이버 TourAD Black 6S, S, 9도",
     "price": 899000,
     "rocket": true,
-    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/374972264071527-96335426-9604-466c-9186-83ece23c294d.jpg"
+    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/374972264071527-96335426-9604-466c-9186-83ece23c294d.jpg",
+    "checked": "2026-10-16"
   },
   "titleist-gts3-driver": {
     "title": "타이틀리스트 GTS3 드라이버 TourAD Black 6S, 9도, S",
     "price": 990000,
     "rocket": true,
-    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/1247801531642363-0c479224-577f-4e4f-bced-dfe29cd53ac2.jpg"
+    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/1247801531642363-0c479224-577f-4e4f-bced-dfe29cd53ac2.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-quantum-td-driver": {
     "title": "캘러웨이 남성용 2026년 Global 스펙 퀀텀 트리플 다이아몬드 맥스 드라이버 DENALI SILVER + 헤드커버 세트, 9도 (S)",
     "price": 652370,
     "rocket": true,
-    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/09/12/7/b686762f-4a3b-4a53-b554-ef9513cde492.jpg"
+    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/09/12/7/b686762f-4a3b-4a53-b554-ef9513cde492.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi4dls-driver": {
     "title": "테일러메이드 Qi4D LS 드라이버 VENTUS BLUE PLUS 9도, 6S",
     "price": 1230000,
     "rocket": false,
-    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/b62b/11489d3e70d120a87294a6967e1f72ca00b5cd17dad15992e1e766dd1d7a.jpg"
+    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/b62b/11489d3e70d120a87294a6967e1f72ca00b5cd17dad15992e1e766dd1d7a.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi10ls-driver": {
     "title": "테일러메이드 Qi10 LS 커스텀샤프트 남성 드라이버, 9도 TOUR AD VF 5S, S, 9도",
     "price": 645000,
     "rocket": false,
-    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1c86/e7ef3b1ed02ff11217bbd06fa3283989d9cac9b91943d33fdc96244aa7ce.jpg"
+    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1c86/e7ef3b1ed02ff11217bbd06fa3283989d9cac9b91943d33fdc96244aa7ce.jpg",
+    "checked": "2026-10-16"
   },
   "prgr-sweep-women-driver": {
     "title": "프로기아 여성용 골프 드라이버 SWEEP M-15 PINK, L, 11.5도",
     "price": 188780,
     "rocket": false,
-    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3da4/58882438fb1ca5e7dced6bbe87eadd90af7763ea2de783768cc107a94f8b.jpg"
+    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3da4/58882438fb1ca5e7dced6bbe87eadd90af7763ea2de783768cc107a94f8b.jpg",
+    "checked": "2026-10-16"
   },
   "honma-nx-women-driver": {
     "title": "혼마 베레스 NX 여성용 드라이버 11.5도 L",
     "price": 229000,
     "rocket": false,
-    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/2159/e589374c04d575df2dabb8ac5064d8353dfaa1f7b405690d3a53ad5771ba.jpg"
+    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/2159/e589374c04d575df2dabb8ac5064d8353dfaa1f7b405690d3a53ad5771ba.jpg",
+    "checked": "2026-10-16"
   },
   "majesty-shuttle-women-driver": {
     "title": "마제스티 셔틀 골드 플러스 445 여성 드라이버, 11.5도 L",
     "price": 456570,
     "rocket": false,
-    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/68285bd4f2201e798821d70378171dd8838f310ef08cbcead0c330301246_1774405756016.jpg"
+    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/68285bd4f2201e798821d70378171dd8838f310ef08cbcead0c330301246_1774405756016.jpg",
+    "checked": "2026-10-16"
   },
   "ping-g440hl-women-driver": {
     "title": "핑 G440 HL MAX 드라이버 삼양인터내셔날 여성용, SPEEDER NX GREY 40",
     "price": 690000,
     "rocket": false,
-    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/da3d/6ec3fefec0e3d590f26a11a71bb72022ed476b471aba27f997d30d736964.jpg"
+    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/da3d/6ec3fefec0e3d590f26a11a71bb72022ed476b471aba27f997d30d736964.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-sim2max-women-driver": {
     "title": "테일러메이드 여성용 심2 맥스 드라이버, L, 10.5도",
     "price": 339000,
     "rocket": true,
-    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2024/04/16/11/0/9eb659f6-ad00-468a-9414-cd907832a1fe.jpg"
+    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2024/04/16/11/0/9eb659f6-ad00-468a-9414-cd907832a1fe.jpg",
+    "checked": "2026-10-16"
   },
   "ping-gle3-women-driver": {
     "title": "핑 GLe3 드라이버 여성용 삼양인터내셔날 2024년, L, 11.5도",
     "price": 560000,
     "rocket": false,
-    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/b5fa/400056b126f08ff5df1e8e3ea47cb1ba5b2739f47a1e56a18be17ff7bdb1.png"
+    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/b5fa/400056b126f08ff5df1e8e3ea47cb1ba5b2739f47a1e56a18be17ff7bdb1.png",
+    "checked": "2026-10-16"
   },
   "onoff-lp425-women-driver": {
     "title": "다이와 온오프 (2025년) LP425 여성용 드라이버 11.5도 L",
     "price": 649000,
     "rocket": false,
-    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c54d/03b5347d78e60cdbd23421adc271eebabb324f7a33b14efd767a1f56047d.jpg"
+    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c54d/03b5347d78e60cdbd23421adc271eebabb324f7a33b14efd767a1f56047d.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-roguest-women-driver": {
     "title": "캘러웨이 여성용 22 로그ST MAX FAST 드라이버, L, 11.5도",
     "price": 359000,
     "rocket": true,
-    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/rs_quotation_api/qd2i65my/a3093a1964924242bf03fead45f2e9a0.jpg"
+    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/rs_quotation_api/qd2i65my/a3093a1964924242bf03fead45f2e9a0.jpg",
+    "checked": "2026-10-16"
   },
   "honma-aizu-women-driver": {
     "title": "혼마 BERES AIZU 2스타 여성 드라이버",
     "price": 544000,
     "rocket": false,
-    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/a426/ef60b1f7aa805900ce37f2fa4c9ce8f00fded84c8489091b5e737a252af6.jpg"
+    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/a426/ef60b1f7aa805900ce37f2fa4c9ce8f00fded84c8489091b5e737a252af6.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-quantum-maxfast-women-driver": {
     "title": "[캘러웨이코리아정품] 2026 퀀텀 MAX FAST 여성용 드라이버 Speedstar, 12도",
     "price": 720000,
     "rocket": false,
-    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/bc63/23092845af2806c2cc5982c39488c120664c7419fd7c800a0f8b9efefcd9.jpg"
+    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/bc63/23092845af2806c2cc5982c39488c120664c7419fd7c800a0f8b9efefcd9.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi4d-maxlite-women-driver": {
     "title": "테일러메이드 QI4D 맥스 라이트 여성 드라이버, 10.5도",
     "price": 880000,
     "rocket": false,
-    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0611/022278b7cba561e70fa38c9522812bec0579b76e6bb3e9940e79e7d4c226.jpg"
+    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0611/022278b7cba561e70fa38c9522812bec0579b76e6bb3e9940e79e7d4c226.jpg",
+    "checked": "2026-10-16"
   },
   "ping-g440max-women-driver": {
     "title": "삼양 핑 G440 MAX 여성 드라이버 ALTA J LE, 9도, L",
     "price": 700000,
     "rocket": false,
-    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/de3d/8d3982ed5f3f80d1aa1cfe0082c8627ac1ea82e8977e4df67b38a0764601.jpg"
+    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/de3d/8d3982ed5f3f80d1aa1cfe0082c8627ac1ea82e8977e4df67b38a0764601.jpg",
+    "checked": "2026-10-16"
   },
   "titleist-tsi1-driver": {
     "title": "타이틀리스트 TSi1 드라이버 S (K19)",
     "price": 477540,
     "rocket": false,
-    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/f937/c5eb7551493d78fa0a232ef1df8c177cf3e6de152ad76ab045c11e36f5bf.jpg"
+    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/f937/c5eb7551493d78fa0a232ef1df8c177cf3e6de152ad76ab045c11e36f5bf.jpg",
+    "checked": "2026-10-16"
   },
   "titleist-vokey-sm8": {
     "title": "타이틀리스트 SM8 보키 웨지 투어크롬 58도, [투어크롬] 58도 12D NSPRO, S",
     "price": 275100,
     "rocket": false,
-    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/8561/14345a2e85a47da6e66bd78998c7cb367d2757b66326ee27eb38ffa992c1.jpg"
+    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/8561/14345a2e85a47da6e66bd78998c7cb367d2757b66326ee27eb38ffa992c1.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-sim2max-iron": {
     "title": "테일러메이드 2024년 SIM2 MAX 경량스틸 아이언 8종 세트 KBS MT 85, R",
     "price": 624190,
     "rocket": true,
-    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/05/18/10/7/24e58967-a6a9-481b-921f-eeded1ad4643.jpg"
+    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/05/18/10/7/24e58967-a6a9-481b-921f-eeded1ad4643.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi-iron": {
     "title": "테일러메이드 Qi 경량스틸 아이언 8종, S, 21도",
     "price": 699000,
     "rocket": true,
-    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/05/01/17/3/12fa26e4-89a7-43c1-b8f7-f04fdeca0c27.jpg"
+    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/05/01/17/3/12fa26e4-89a7-43c1-b8f7-f04fdeca0c27.jpg",
+    "checked": "2026-10-16"
   },
   "ping-g430-iron": {
     "title": "핑 삼양정품 G430 경량스틸 9아이언 AWT2 LITE, 22도, R",
     "price": 1051550,
     "rocket": true,
-    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/01/13/13/9/77b68576-b442-4b85-a590-e938522e1503.jpg"
+    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/01/13/13/9/77b68576-b442-4b85-a590-e938522e1503.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-jpx925-hmpro-iron": {
     "title": "미즈노 JPX925 핫메탈 프로 아이언 (8I) NS950 S 미즈노코리아 정품, S, 28도",
     "price": 919000,
     "rocket": false,
-    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4c7f/aef9850111229034bb5761aba0e08b1638f480ce16194d43fd97bf150af0.jpg"
+    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4c7f/aef9850111229034bb5761aba0e08b1638f480ce16194d43fd97bf150af0.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-xforged-starplus-iron": {
     "title": "(캘러웨이코리아정품) 2024년 X 포지드 스타 PLUS 경량스틸 6아이언(5~9P), NSPRO 950 Neo (R), R, 30도",
     "price": 749000,
     "rocket": false,
-    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0a72/b26953c68fb240bab0a67976e45e4876fceca4a588f6080297015ae6faae.jpg"
+    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0a72/b26953c68fb240bab0a67976e45e4876fceca4a588f6080297015ae6faae.jpg",
+    "checked": "2026-10-16"
   },
   "bridgestone-v300-iron": {
     "title": "브리지스톤골프 남성용 V300 9세대 경량 스틸 아이언 8종 세트 NSPRO 950GH NEO, R",
     "price": 1039990,
     "rocket": true,
-    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/15/10/8/984cee6e-e437-4776-bcaf-95fdd51cfb6b.jpg"
+    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/15/10/8/984cee6e-e437-4776-bcaf-95fdd51cfb6b.jpg",
+    "checked": "2026-10-16"
   },
   "xxio13-iron": {
     "title": "젝시오 남성용 던롭코리아 젝시오 13 카본 8 아이언 세트, R, 22도",
     "price": 1289990,
     "rocket": true,
-    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/02/10/17/8/cba8509c-ae38-4e6f-bfe0-8f106b756cd7.jpg"
+    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/02/10/17/8/cba8509c-ae38-4e6f-bfe0-8f106b756cd7.jpg",
+    "checked": "2026-10-16"
   },
   "ping-i525-iron": {
     "title": "핑 i525 카본 단조 7아이언세트 삼양인터내셔날, 카본R",
     "price": 890000,
     "rocket": false,
-    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/b0bd5a9e6336e036495aee2fd8f185fb33cfe4b5a6996736fdaec4c9c131_1783496709696.jpg"
+    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/b0bd5a9e6336e036495aee2fd8f185fb33cfe4b5a6996736fdaec4c9c131_1783496709696.jpg",
+    "checked": "2026-10-16"
   },
   "srixon-zxi5-iron": {
     "title": "(던롭코리아정품) 2025년 스릭슨 ZXi5 스틸 7아이언(4~9P), DG S200",
     "price": 986000,
     "rocket": false,
-    "image": "https://thumbnail5.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/94eb/d49e92130f5ff3219e90acda2380b4c8dcac1955d3c4529777dfd21d8a8e.jpg"
+    "image": "https://thumbnail5.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/94eb/d49e92130f5ff3219e90acda2380b4c8dcac1955d3c4529777dfd21d8a8e.jpg",
+    "checked": "2026-10-16"
   },
   "titleist-t250-iron": {
     "title": "타이틀리스트 T250 아이언 6개 세트(AMC880S_5~P) 2025년 AS보증, 30.5도, S",
     "price": 1590000,
     "rocket": false,
-    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4a1b/9737155d34419fa546985d6af279cd79324313d6282d3d9ea29a1a84ba45.jpg"
+    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4a1b/9737155d34419fa546985d6af279cd79324313d6282d3d9ea29a1a84ba45.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-xforged-max-iron": {
     "title": "캘러웨이 X포지드 맥스 스틸 6아이언 세트, 6i/5-9.P/NS950S, R",
     "price": 1250000,
     "rocket": false,
-    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d318/4ce5b2a104732cc50c562b02fd06519feda13181e2deff6ff92c60447d21.jpg"
+    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d318/4ce5b2a104732cc50c562b02fd06519feda13181e2deff6ff92c60447d21.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-pro-s1-iron": {
     "title": "미즈노 프로 S-1 아이언 7개 세트 2025년 DG120_(S200), S, 24도",
     "price": 1300000,
     "rocket": false,
-    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1b89/07b855c8785d36e0b85accfd8878008f7c37b1e5a25772e0c0a905fb5f8d.jpg"
+    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1b89/07b855c8785d36e0b85accfd8878008f7c37b1e5a25772e0c0a905fb5f8d.jpg",
+    "checked": "2026-10-16"
   },
   "srixon-zxi7-iron": {
     "title": "(던롭코리아정품) 2025년 스릭슨 ZXi7 스틸 7아이언(4~9P), DG S200",
     "price": 986000,
     "rocket": false,
-    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/a9d0/abba5c5b9d607dd2e91b99626a3f43c06ffd2e3bce7fa606a78623f29c9a.jpg"
+    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/a9d0/abba5c5b9d607dd2e91b99626a3f43c06ffd2e3bce7fa606a78623f29c9a.jpg",
+    "checked": "2026-10-16"
   },
   "bridgestone-242cb-iron": {
     "title": "석교 정품 브리지스톤 242CB+ 아이언 6개세트, NS PRO 950 S",
     "price": 1190000,
     "rocket": false,
-    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3018/b12477fcd4ab9aac794a109796801f51c297b86079db60970583e5e92627.jpg"
+    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3018/b12477fcd4ab9aac794a109796801f51c297b86079db60970583e5e92627.jpg",
+    "checked": "2026-10-16"
   },
   "missile-axg-women-iron": {
     "title": "미사일 여성용 AXG 아이언 8종세트 카본 8i, L",
     "price": 443430,
     "rocket": true,
-    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/04/04/11/6/3c3aa8c2-b294-4731-a0ee-1d5233a69280.jpg"
+    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/04/04/11/6/3c3aa8c2-b294-4731-a0ee-1d5233a69280.jpg",
+    "checked": "2026-10-16"
   },
   "prgr-sweep-women-iron": {
     "title": "PRGR 여성용 SWEEP 골프 아이언 PINK, M-15, 1세트, L, 32도",
     "price": 319000,
     "rocket": false,
-    "image": "https://thumbnail4.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/664b/3d387cc67268970b5f635d0ac1dc32be3ca23a1ecc8ac6709cb8738413fe.jpeg"
+    "image": "https://thumbnail4.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/664b/3d387cc67268970b5f635d0ac1dc32be3ca23a1ecc8ac6709cb8738413fe.jpeg",
+    "checked": "2026-10-16"
   },
   "callaway-roguest-women-iron": {
     "title": "캘러웨이 여성용 로그 ST MAX FAST 아이언 7종 세트, L, 30도",
     "price": 613490,
     "rocket": true,
-    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/12/02/11/5/f81da30b-b2fb-4fad-8a08-d0be79359dff.jpg"
+    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/12/02/11/5/f81da30b-b2fb-4fad-8a08-d0be79359dff.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-sim2max-women-iron": {
     "title": "테일러메이드 여성용 2024년 SIM2 MAX 아이언 8종 세트, (5~9PAS) 여성 (L), L",
     "price": 717050,
     "rocket": true,
-    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/05/18/10/7/24e58967-a6a9-481b-921f-eeded1ad4643.jpg"
+    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/05/18/10/7/24e58967-a6a9-481b-921f-eeded1ad4643.jpg",
+    "checked": "2026-10-16"
   },
   "majesty-shuttle-women-iron": {
     "title": "마제스티 셔틀 골드 플러스 365 여성 7개 (6~SW) 카본 아이언세트",
     "price": 938180,
     "rocket": false,
-    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1444/72bb04c9289580f1c730746ebb914f7c6081b49fe891b25961c327066a83.png"
+    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1444/72bb04c9289580f1c730746ebb914f7c6081b49fe891b25961c327066a83.png",
+    "checked": "2026-10-16"
   },
   "mizuno-jpxq-women-iron": {
     "title": "미즈노골프 여성용 JPX Q 아이언 7종 세트 7i(6~P.G.S), L, 27도",
     "price": 696080,
     "rocket": true,
-    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/03/24/9/0/a424d38b-34ba-4831-beb4-5476ec144fa8.jpg"
+    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/03/24/9/0/a424d38b-34ba-4831-beb4-5476ec144fa8.jpg",
+    "checked": "2026-10-16"
   },
   "ping-gle3-women-iron": {
     "title": "삼양정품 핑 GLE3 아이언 7개세트 여성, ULT 250J 카본아이언 A",
     "price": 970000,
     "rocket": false,
-    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/595c/d2af23ee87b30ff87f48ab3c75256ea6768f06a460c88a4eefa17b918670.jpg"
+    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/595c/d2af23ee87b30ff87f48ab3c75256ea6768f06a460c88a4eefa17b918670.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-jpxs30-women-iron": {
     "title": "미즈노골프 여성용 JPX S30 단조 카본 8아이언, L, 22도",
     "price": 999000,
     "rocket": true,
-    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/801444683176415-4094a77c-f84b-40a4-a049-df34b0473ac7.jpg"
+    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/801444683176415-4094a77c-f84b-40a4-a049-df34b0473ac7.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-jpx925f-women-iron": {
     "title": "미즈노 JPX925 포지드 여성용 8아이언세트 (5-S) [정품] 2024, L, 30도",
     "price": 1195000,
     "rocket": false,
-    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/5626/82f9e789b6077516c227cff70b47deb9e4040df5ac03405d3466dd514fc0.jpg"
+    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/5626/82f9e789b6077516c227cff70b47deb9e4040df5ac03405d3466dd514fc0.jpg",
+    "checked": "2026-10-16"
   },
   "bridgestone-v300-women-iron": {
     "title": "브리지스톤 V300 9세대 아이언 카본 7개 여성용, 7개세트 L",
     "price": 1390000,
     "rocket": false,
-    "image": "https://thumbnail4.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0687/efb0c128c65823dfb99116fd90b49c6b3c9a4a5e682c30c512caa8dc88c5.jpg"
+    "image": "https://thumbnail4.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0687/efb0c128c65823dfb99116fd90b49c6b3c9a4a5e682c30c512caa8dc88c5.jpg",
+    "checked": "2026-10-16"
   },
   "honma-aizu-women-iron": {
     "title": "혼마 베레스 아이주 2스타 여성용 8아이언세트 (5~S), 아마크 MX 2S (L)",
     "price": 1454960,
     "rocket": false,
-    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/f65e/a7af586485b51f7b5941c8ce75f4eb1477b9efda19ed9d23560113bd75d8.jpg"
+    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/f65e/a7af586485b51f7b5941c8ce75f4eb1477b9efda19ed9d23560113bd75d8.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-p790-women-iron": {
     "title": "테일러메이드 P790 아이언 세트 2025년 여성용 7개(6-P.50.56) L(50g)",
     "price": 1575000,
     "rocket": false,
-    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9343/0184cd02bda86493320b1835c29fcd0c655e06287f0a23e419e72234042f.jpg"
+    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9343/0184cd02bda86493320b1835c29fcd0c655e06287f0a23e419e72234042f.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-p8cb-women-iron": {
     "title": "(테일러메이드정품) 2025년 P8CB 여성 7아이언(6~9P.50.56)(DIAMANA TM 50), L",
     "price": 1370000,
     "rocket": false,
-    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/8ee6/6da8ffd7c6bd506a2cbc67f86081e8544cdb4c71883dfb31e5c4183bccde.jpg"
+    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/8ee6/6da8ffd7c6bd506a2cbc67f86081e8544cdb4c71883dfb31e5c4183bccde.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-jpxs40-women-iron": {
     "title": "한국미즈노 JPX S40 포지드 여성 아이언 8개구성 2026년, MFUSION I LADY 카본 [L]",
     "price": 1589000,
     "rocket": false,
-    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4efc/83640bd8ed479fe24edd258a2cebc197c98cfd9b4e19ea973c2d6a3f796a.jpg"
+    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4efc/83640bd8ed479fe24edd258a2cebc197c98cfd9b4e19ea973c2d6a3f796a.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-sim2max-fairway": {
     "title": "테일러메이드 남성용 SIM2 MAX 페어웨이우드, R, 15도",
     "price": 199000,
     "rocket": true,
-    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/113940085508762-11b5a685-2663-4866-89c1-b2a36b1f0d7d.jpg"
+    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/113940085508762-11b5a685-2663-4866-89c1-b2a36b1f0d7d.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-stmax230-fairway": {
     "title": "[미즈노코리아 정품] ST-MAX 230 남성 페어웨이우드, 5번 18도 SR",
     "price": 220000,
     "rocket": false,
-    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c182/5d62027857caab0cdb3e5359601bd2833c0a1a79a3b1dd5d0ea7e02e408d.jpg"
+    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c182/5d62027857caab0cdb3e5359601bd2833c0a1a79a3b1dd5d0ea7e02e408d.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi10-fairway": {
     "title": "(본사정품) 테일러메이드코리아 Qi10 페어웨이우드, 3번 SR, 15도",
     "price": 309000,
     "rocket": false,
-    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/prod/609d6ee7-0304-4324-88e1-b9c5d3d01cc9_fixing_v2.png"
+    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/prod/609d6ee7-0304-4324-88e1-b9c5d3d01cc9_fixing_v2.png",
+    "checked": "2026-10-16"
   },
   "majesty-royalgold-fairway": {
     "title": "마제스티 로얄 골드 페어웨이우드 남성용, 19도, R",
     "price": 368900,
     "rocket": false,
-    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/faee/11c2d98c91ac34a2d33819a151235f6938b80d2608c9ff19306c3a7cedf5.jpg"
+    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/faee/11c2d98c91ac34a2d33819a151235f6938b80d2608c9ff19306c3a7cedf5.jpg",
+    "checked": "2026-10-16"
   },
   "xxio12-fairway": {
     "title": "던롭 젝시오12 남성 페어웨이우드 MP1200 카본샤프트 R 23도(9번)",
     "price": 237600,
     "rocket": false,
-    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4ef1/c099855968a5289b24ff8e4fbfddabd4111e4353c9c74c021d393540550e.jpg"
+    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4ef1/c099855968a5289b24ff8e4fbfddabd4111e4353c9c74c021d393540550e.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-jpxone-fairway": {
     "title": "한국미즈노 JPX ONE 페어웨이우드 남성 2026년 미즈노정품, VENTUS BLUE FM 5번 18도 SR",
     "price": 310000,
     "rocket": false,
-    "image": "https://t4c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/34b4/baf032f021b19ca0ac317d78846b9203a3d10263d5af5dd83d2cae0fe3eb.jpg"
+    "image": "https://t4c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/34b4/baf032f021b19ca0ac317d78846b9203a3d10263d5af5dd83d2cae0fe3eb.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-quantummax-fairway": {
     "title": "캘러웨이 남성용 2026 퀀텀 맥스 페어웨이우드 Global 스펙 DENALI SILVER 60 5번, S, 18도",
     "price": 400000,
     "rocket": true,
-    "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/09/12/0/a2f8356f-b0e5-41dd-8172-64a766317807.jpg"
+    "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/09/12/0/a2f8356f-b0e5-41dd-8172-64a766317807.jpg",
+    "checked": "2026-10-16"
   },
   "xxio14-fairway": {
     "title": "젝시오14 남성 페어웨이 우드 던롭스포츠코리아100%, 5번(18도) R",
     "price": 600000,
     "rocket": false,
-    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0ac6/fdcc309308606477f213958e3c920d8b83b4ec169405d167e789813ec1ec.png"
+    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0ac6/fdcc309308606477f213958e3c920d8b83b4ec169405d167e789813ec1ec.png",
+    "checked": "2026-10-16"
   },
   "taylormade-qi4dmax-fairway": {
     "title": "[테일러메이드코리아정품] QI4D MAX 페어웨이, REAX55 3번(S), 15도",
     "price": 443000,
     "rocket": false,
-    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/139a/9b0e88b1330ba71764385b89811af0d299bfa6bfec15c756d26516fca480.jpg"
+    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/139a/9b0e88b1330ba71764385b89811af0d299bfa6bfec15c756d26516fca480.jpg",
+    "checked": "2026-10-16"
   },
   "srixon-zxi-fairway": {
     "title": "던롭코리아 정품 스릭슨 ZXi 우드 VENTUS ZXi 샤프트 2025년, 5번 벤투스 ZXi 6 S",
     "price": 255000,
     "rocket": false,
-    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/46eb/d4423f3428fd987f981cecf39a54224c3e4645b715e465325682e65aa1a9.jpg"
+    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/46eb/d4423f3428fd987f981cecf39a54224c3e4645b715e465325682e65aa1a9.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-roguest-fairway": {
     "title": "캘러웨이 로그ST 맥스 페어웨이 TourAD Tensei 남성, 3번 S",
     "price": 250000,
     "rocket": false,
-    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/df1a/b2f314a90089ec3ba235aa63617181d693fcbfd64e565d65f56d6953d29e.jpg"
+    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/df1a/b2f314a90089ec3ba235aa63617181d693fcbfd64e565d65f56d6953d29e.jpg",
+    "checked": "2026-10-16"
   },
   "ping-g430lst-fairway": {
     "title": "핑 G430 LST 페어웨이우드 ALTA J CB BLACK 3번 SR, 15도",
     "price": 370300,
     "rocket": true,
-    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/01/09/11/6/1dead81a-a98e-4528-b7a1-86946c193afc.jpg"
+    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/01/09/11/6/1dead81a-a98e-4528-b7a1-86946c193afc.jpg",
+    "checked": "2026-10-16"
   },
   "honma-tw757-fairway": {
     "title": "혼마 컨트롤 TW757 VIZARD 남성 페어웨이 우드, 5번 18도 R",
     "price": 283720,
     "rocket": false,
-    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d0a9/7d00e2f6ee2628a121ad984fc5b02176c6bc1b487da45023855f109556cf.jpg"
+    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d0a9/7d00e2f6ee2628a121ad984fc5b02176c6bc1b487da45023855f109556cf.jpg",
+    "checked": "2026-10-16"
   },
   "srixon-zxmk2-fairway": {
     "title": "스릭슨 ZX MK2 페어웨이우드, 5번 Tour AD ZX 5 R",
     "price": 210000,
     "rocket": false,
-    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/prod/743b8688-d25d-4071-b0ed-349f587808f8_fixing_v2.png"
+    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/prod/743b8688-d25d-4071-b0ed-349f587808f8_fixing_v2.png",
+    "checked": "2026-10-16"
   },
   "mizuno-stz230-fairway": {
     "title": "[미즈노코리아 정품] ST-Z 230 남성 페어웨이우드 [VENTUS TITANIUM BLACK], 5번, SR, 18도",
     "price": 185000,
     "rocket": false,
-    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9cc1/d6d7ec43f44cb3e700bc23b4273083afe40595e3b3d4ac51b0260e1d3731.jpg"
+    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9cc1/d6d7ec43f44cb3e700bc23b4273083afe40595e3b3d4ac51b0260e1d3731.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-roguest-hybrid": {
     "title": "(한국캘러웨이) 2022년 로그 ST MAX 유틸리티우드(남성), R, 18도",
     "price": 200000,
     "rocket": false,
-    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/b7f6/1927882cd5175cf8567cd16f8fb41097f0a261f54468752a67c93f39077b.jpg"
+    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/b7f6/1927882cd5175cf8567cd16f8fb41097f0a261f54468752a67c93f39077b.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-stmax230-hybrid": {
     "title": "[미즈노코리아 정품] 2024년형 ST-MAX 230 남성 유틸리티우드, 4번 22도 SR",
     "price": 190000,
     "rocket": false,
-    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/cf59/795fa140ff74aae46a25834d7d8f2f2e8c577d6ec9f4d0447c5d5b9cc5d9.jpg"
+    "image": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/cf59/795fa140ff74aae46a25834d7d8f2f2e8c577d6ec9f4d0447c5d5b9cc5d9.jpg",
+    "checked": "2026-10-16"
   },
   "majesty-royalgold-hybrid": {
     "title": "마제스티 23 로얄 골드 남성 하이브리드 유틸리티 LV550, 4번유틸 20도, SR",
     "price": 310960,
     "rocket": false,
-    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9d4e/f406cb8221a97c81c203e6f9fb9679dfbb623d5c13915fb18b1755a3020e.jpg"
+    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9d4e/f406cb8221a97c81c203e6f9fb9679dfbb623d5c13915fb18b1755a3020e.jpg",
+    "checked": "2026-10-16"
   },
   "ping-g430-hybrid": {
     "title": "핑 하이브리드 3번 G430 ALTA J CB BLACK, R, 19도",
     "price": 340000,
     "rocket": true,
-    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/01/12/14/3/76975a1b-85dc-43b3-9492-10a38e462432.jpg"
+    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/01/12/14/3/76975a1b-85dc-43b3-9492-10a38e462432.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi10-rescue": {
     "title": "테일러메이드코리아 Qi10 레스큐 유틸리티, 3번 SR, 19도",
     "price": 269000,
     "rocket": false,
-    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/21ac/951ac98235d5d392e89bbf1e3b22b6ff4bd32832da7bb5dd5238fb48ee45.jpg"
+    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/21ac/951ac98235d5d392e89bbf1e3b22b6ff4bd32832da7bb5dd5238fb48ee45.jpg",
+    "checked": "2026-10-16"
   },
   "honma-beres-hybrid": {
     "title": "혼마 뉴베레스 2스타 남성용 19도 유틸리티, 아마크47 SR",
     "price": 206960,
     "rocket": false,
-    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/advertiser/1780649163430/f1da68c8-2299-480f-b9da-d9c1b7e725cb.jpg"
+    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/advertiser/1780649163430/f1da68c8-2299-480f-b9da-d9c1b7e725cb.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-jpxone-hybrid": {
     "title": "한국미즈노 JPX ONE 유틸리티 남성 2026년 미즈노정품, VENTUS BLUE FM 4번 22도 SR",
     "price": 260000,
     "rocket": false,
-    "image": "https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/7797/977aed05d7fe134467cb7ef4ab397340cac0e731feabee01b74e0d89693e.jpg"
+    "image": "https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/7797/977aed05d7fe134467cb7ef4ab397340cac0e731feabee01b74e0d89693e.jpg",
+    "checked": "2026-10-16"
   },
   "xxio14-hybrid": {
     "title": "(던롭코리아정품) 2026년 젝시오 14 유틸리티(남성), 5번 25도 R",
     "price": 370000,
     "rocket": false,
-    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4ce0/d6b7f9f71873980d525c3bcb077f74de99217ae9a2f9322d3361ca221587.jpg"
+    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/4ce0/d6b7f9f71873980d525c3bcb077f74de99217ae9a2f9322d3361ca221587.jpg",
+    "checked": "2026-10-16"
   },
   "srixon-zxi-hybrid": {
     "title": "(던롭코리아정품) 2025년 스릭슨 ZXi 하이브리드(VENTUS ZXi 7) 4번 S, 19도",
     "price": 248000,
     "rocket": false,
-    "image": "https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/dce8/eccb9c2f410339136817192161011c3a2e4d65d8ef652fa6ee64dc831107.jpg"
+    "image": "https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/dce8/eccb9c2f410339136817192161011c3a2e4d65d8ef652fa6ee64dc831107.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-quantummax-hybrid": {
     "title": "캘러웨이 남성용 2026 퀀텀 맥스 하이브리드 Global 스펙 DENALI SILVER 70, 21도, S",
     "price": 320000,
     "rocket": true,
-    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/09/11/4/35523122-4c8f-4a38-83e0-81727bc2dd08.jpg"
+    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/09/11/4/35523122-4c8f-4a38-83e0-81727bc2dd08.jpg",
+    "checked": "2026-10-16"
   },
   "xxio13x-hybrid": {
     "title": "젝시오 남성용 던롭코리아 젝시오13X 하이브리드 유틸 3번, 18도, SR",
     "price": 280000,
     "rocket": false,
-    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d656/688e7d58914238c4e1e4fa5ae02b35256ba3de1461a3d38276541aa8efea.jpg"
+    "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d656/688e7d58914238c4e1e4fa5ae02b35256ba3de1461a3d38276541aa8efea.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-stz230-hybrid": {
     "title": "[미즈노코리아 정품] ST-Z 230 남성 유틸리티우드 [VENTUS TITANIUM BLACK], 4번, SR, 22도",
     "price": 168000,
     "rocket": false,
-    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/b7cf/15378c8e72b7420f8d37c776b126bfded600484de6ed9eb34de31c296a50.jpg"
+    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/b7cf/15378c8e72b7420f8d37c776b126bfded600484de6ed9eb34de31c296a50.jpg",
+    "checked": "2026-10-16"
   },
   "srixon-zxhmk2-hybrid": {
     "title": "스릭슨 ZXH MK2 하이브리드, 4번 Tour AD ZX 7 R",
     "price": 200000,
     "rocket": false,
-    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/1fa6bf3444a0502e1eaab25e57da0bb97e97c2c8f94786f3ce23e7a59153_1762925072123.png"
+    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/1fa6bf3444a0502e1eaab25e57da0bb97e97c2c8f94786f3ce23e7a59153_1762925072123.png",
+    "checked": "2026-10-16"
   },
   "honma-tw757-hybrid": {
     "title": "혼마 투어월드 TW757 남성 유틸리티, 4번유틸 21도, 비자드 TW757 50 S",
     "price": 179000,
     "rocket": false,
-    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/02ae/d22d0355056710994f2471c83b0eae66a40c575e7971162c56f55ec7bead.jpg"
+    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/02ae/d22d0355056710994f2471c83b0eae66a40c575e7971162c56f55ec7bead.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-epic-superhybrid": {
     "title": "캘러웨이 에픽 슈퍼 하이브리드 티타늄 유틸리티 남성, 21도, S",
     "price": 354720,
     "rocket": false,
-    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c375/67224f6eb554c2f6a2596e6d5bbee99c0f826ab430d20f5c43ed26d64985.png"
+    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c375/67224f6eb554c2f6a2596e6d5bbee99c0f826ab430d20f5c43ed26d64985.png",
+    "checked": "2026-10-16"
   },
   "mizuno-jpxq-women-fairway": {
     "title": "미즈노 여성용 JPX Q 페어웨이우드 3번, L, 16도",
     "price": 182100,
     "rocket": true,
-    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/03/27/11/1/0a13d9c0-55f7-490e-8fbc-abd3bdba40fc.jpg"
+    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/03/27/11/1/0a13d9c0-55f7-490e-8fbc-abd3bdba40fc.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-sim2maxd-women-fairway": {
     "title": "테일러메이드 여성용 심2 맥스D 페어웨이우드, L, 16도",
     "price": 199000,
     "rocket": true,
-    "image": "https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2024/04/16/11/1/d71a902a-b0bf-4ee4-b390-86507f69ded1.jpg"
+    "image": "https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2024/04/16/11/1/d71a902a-b0bf-4ee4-b390-86507f69ded1.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-roguest-women-fairway": {
     "title": "캘러웨이 여성용 로그 ST MAX D 페어웨이, L, 16도",
     "price": 220000,
     "rocket": true,
-    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/12/02/11/7/bfb2914b-99d5-4e1e-ad85-a7f9897a6c29.jpg"
+    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/12/02/11/7/bfb2914b-99d5-4e1e-ad85-a7f9897a6c29.jpg",
+    "checked": "2026-10-16"
   },
   "xxio13-women-fairway": {
     "title": "젝시오 여성용 던롭코리아 젝시오13 페어웨이우드 4번 블루, 18도, L",
     "price": 284970,
     "rocket": true,
-    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/02/10/17/6/78a2bdcd-c399-4244-9b4d-5df83c8b00f0.jpg"
+    "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/02/10/17/6/78a2bdcd-c399-4244-9b4d-5df83c8b00f0.jpg",
+    "checked": "2026-10-16"
   },
   "majesty-royal-women-fairway": {
     "title": "마제스티 로얄 페어웨이우드 2025년 여성용 20도 L",
     "price": 509000,
     "rocket": false,
-    "image": "https://t4c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c194/34bd4a2fc6c189285ebb785ae29ae6b9f3c3c71de14f39ee76654eff50a3.jpg"
+    "image": "https://t4c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c194/34bd4a2fc6c189285ebb785ae29ae6b9f3c3c71de14f39ee76654eff50a3.jpg",
+    "checked": "2026-10-16"
   },
   "honma-nx-women-fairway": {
     "title": "혼마 베레스 NX 여성용 페어웨이우드 5번 L, 19도",
     "price": 109000,
     "rocket": false,
-    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/44f2/2dd42c8eaf8f40a033709ba0523c955fdd5fa17324948a2202b1a99ebede.jpg"
+    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/44f2/2dd42c8eaf8f40a033709ba0523c955fdd5fa17324948a2202b1a99ebede.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi35maxlite-women-fairway": {
     "title": "테일러메이드 여성용 Qi35 MAX Lite 페어웨이우드 3번, 15.5도, L",
     "price": 338530,
     "rocket": true,
-    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/28/16/4/27779606-dba8-409b-81d5-69fb7b4d2163.jpg"
+    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/28/16/4/27779606-dba8-409b-81d5-69fb7b4d2163.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-elyte-women-fairway": {
     "title": "캘러웨이 여성용 2025 엘리트 맥스 패스트 페어웨이우드, 19도, L",
     "price": 319000,
     "rocket": false,
-    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0814/b9fc55caeb4e194b14b12f53c20735be68cf568de7df374a4c06a2de5cc3.jpg"
+    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/0814/b9fc55caeb4e194b14b12f53c20735be68cf568de7df374a4c06a2de5cc3.jpg",
+    "checked": "2026-10-16"
   },
   "honma-aizu-women-fairway": {
     "title": "혼마 베레스 아이주 AIZU 2스타 여성용 페어웨이우드, 3번우드 16도, L",
     "price": 361000,
     "rocket": false,
-    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c72f/841861cfaf204c56f1c75ea2bf15e74d2772ae1e1bdfdeb58c7bd1b72201.jpg"
+    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c72f/841861cfaf204c56f1c75ea2bf15e74d2772ae1e1bdfdeb58c7bd1b72201.jpg",
+    "checked": "2026-10-16"
   },
   "ping-gle3-women-fairway": {
     "title": "핑 GLe3 페어웨이우드 여성용 삼양인터내셔날 2023년, L, 21도",
     "price": 350000,
     "rocket": false,
-    "image": "https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/910d/786c8ef8c9cca46a52b8943aba9ac2c8cedeba14a2ccf68e91197f7f03fd.jpg"
+    "image": "https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/910d/786c8ef8c9cca46a52b8943aba9ac2c8cedeba14a2ccf68e91197f7f03fd.jpg",
+    "checked": "2026-10-16"
   },
   "honma-kiwami6-women-fairway": {
     "title": "혼마 여성용 베레스 키와미 6 3번 페어웨이우드 2스타 레드, 16도, L",
     "price": 315000,
     "rocket": true,
-    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/07/29/15/2/1cebe0fe-af74-4963-986d-c33ddbcba7ef.jpg"
+    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/07/29/15/2/1cebe0fe-af74-4963-986d-c33ddbcba7ef.jpg",
+    "checked": "2026-10-16"
   },
   "ping-gle4-women-fairway": {
     "title": "핑 GLE4 페어웨이우드 여성 삼양인터내셔날 2026, 18도, L",
     "price": 460000,
     "rocket": false,
-    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/98bb/98e8dff5fbeea103c2514ecd88082a517110626b5c518a90b8040d9b2b99.png"
+    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/98bb/98e8dff5fbeea103c2514ecd88082a517110626b5c518a90b8040d9b2b99.png",
+    "checked": "2026-10-16"
   },
   "mizuno-jpxq2-women-fairway": {
     "title": "한국미즈노 JPX Q2 페어웨이우드 여성 2026년, 미즈노정품 LADY 5번 20도 L",
     "price": 302660,
     "rocket": false,
-    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c98d/0ad9f438a87a11bc64f124c96a8e2167c954bb75312f778137ad0833a923.jpg"
+    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c98d/0ad9f438a87a11bc64f124c96a8e2167c954bb75312f778137ad0833a923.jpg",
+    "checked": "2026-10-16"
   },
   "xxio14-women-fairway": {
     "title": "던롭 젝시오 14 페어웨이우드 2026년 여성용 화이트 5번 20도 L",
     "price": 474000,
     "rocket": false,
-    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1bd6/7bcb061976390139c1b373c90c11b9e490f0d1e642354fab511c1c19ab2f.jpg"
+    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1bd6/7bcb061976390139c1b373c90c11b9e490f0d1e642354fab511c1c19ab2f.jpg",
+    "checked": "2026-10-16"
   },
   "onoff-lp423-women-fairway": {
     "title": "다이와 온오프 LP423 여성 페어웨이우드, 7번 22도 L",
     "price": 400000,
     "rocket": false,
-    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/ff82/ce3835b7aacd4bdb700d382e47264a58ab210cef32dc96b0b9006a1625d7.jpg"
+    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/ff82/ce3835b7aacd4bdb700d382e47264a58ab210cef32dc96b0b9006a1625d7.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi4d-women-fairway": {
     "title": "테일러메이드 Qi4D 여성 페어웨이우드 QI4D 맥스 라이트 2026년, 15도, L",
     "price": 468120,
     "rocket": false,
-    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/737e/38e5ccec789b83e5c93c4b05a6e467240d1d1f16c904148ad08a05866846.png"
+    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/737e/38e5ccec789b83e5c93c4b05a6e467240d1d1f16c904148ad08a05866846.png",
+    "checked": "2026-10-16"
   },
   "callaway-gbb-women-fairway": {
     "title": "캘러웨이 여성용 그레이트 빅버사 페어웨이우드, L, 16.5도",
     "price": 487860,
     "rocket": true,
-    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2024/02/22/17/2/212b97ea-7ba0-460b-a9d4-9388b2ffbe70.jpg"
+    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2024/02/22/17/2/212b97ea-7ba0-460b-a9d4-9388b2ffbe70.jpg",
+    "checked": "2026-10-16"
   },
   "missile-axg-women-hybrid": {
     "title": "미사일 여성용 AXG 유틸리티우드 카본 7번, 21도, L",
     "price": 99000,
     "rocket": true,
-    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/04/10/9/5/f62b4755-1d55-4738-b491-4ed4267131fd.jpg"
+    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/04/10/9/5/f62b4755-1d55-4738-b491-4ed4267131fd.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-jpxq-women-hybrid": {
     "title": "미즈노 여성용 JPX Q 유틸리티 4번, 22도, L",
     "price": 185020,
     "rocket": true,
-    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/03/27/11/3/24bf2e3f-100d-46ce-8604-2f0ccf424afe.jpg"
+    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/03/27/11/3/24bf2e3f-100d-46ce-8604-2f0ccf424afe.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-roguest-women-hybrid": {
     "title": "[캘러웨이코리아정품] 로그ST MAX FAST 여성용 유틸리티 샤프트 L, 24도",
     "price": 199000,
     "rocket": false,
-    "image": "https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/0b7a9efbab2675bd2081eda82c3034f0cb6d82131d6d3ebfc4fe6f918bb2_1782983712739.jpg"
+    "image": "https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/0b7a9efbab2675bd2081eda82c3034f0cb6d82131d6d3ebfc4fe6f918bb2_1782983712739.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-qi35maxlite-women-hybrid": {
     "title": "테일러메이드 여성용 Qi35 MAX Lite 유틸리티우드 5번, L, 27도",
     "price": 299000,
     "rocket": true,
-    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/28/16/9/2bea8248-c7e1-41be-8185-24d079c44b7d.jpg"
+    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/04/28/16/9/2bea8248-c7e1-41be-8185-24d079c44b7d.jpg",
+    "checked": "2026-10-16"
   },
   "majesty-sterna-women-hybrid": {
     "title": "마제스티 스터나 여성 하이브리드 유틸리티 (레드), 4번유틸 22도 L",
     "price": 179000,
     "rocket": false,
-    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/a5a1/bc6788b60edc4dca493113dedbb92b77bf6441c83899767bae1483a294af.jpg"
+    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/a5a1/bc6788b60edc4dca493113dedbb92b77bf6441c83899767bae1483a294af.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-elyte-women-hybrid": {
     "title": "캘러웨이 여성용 2025년 엘리트 맥스 패스트 하이브리드, 19도, L",
     "price": 249000,
     "rocket": true,
-    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/23/11/6/5b44e1b1-3545-46c6-bd58-0e3219690d85.jpg"
+    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/09/23/11/6/5b44e1b1-3545-46c6-bd58-0e3219690d85.jpg",
+    "checked": "2026-10-16"
   },
   "honma-aizu-women-hybrid": {
     "title": "혼마 베레스 아이주 2스타 여성 유틸리티, 5번유틸 25도, ARMRQ MX 2S L",
     "price": 290160,
     "rocket": false,
-    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/f9a4/fc12fc99adbdc7ff9f5b3481fa85ebcdcee699cb8e6e6a813c882d691c26.jpg"
+    "image": "https://thumbnail2.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/f9a4/fc12fc99adbdc7ff9f5b3481fa85ebcdcee699cb8e6e6a813c882d691c26.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-jpxq2-women-hybrid": {
     "title": "한국미즈노 JPX Q2 유틸리티 여성 2026년, 미즈노정품 LADY 4번 22도 L",
     "price": 278730,
     "rocket": false,
-    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/aca6/dd043c0203f6678258ff9ec6bbaa1141a3f65a93e447024704088f38e3a2.jpg"
+    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/aca6/dd043c0203f6678258ff9ec6bbaa1141a3f65a93e447024704088f38e3a2.jpg",
+    "checked": "2026-10-16"
   },
   "ping-gle4-women-hybrid": {
     "title": "핑 GLE4 유틸리티 여성 삼양인터내셔날 정품 2026년, 8번 36도 L",
     "price": 360000,
     "rocket": false,
-    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9ecb/2099c170a32f8bc02817fe90c52eeee5e497f6c56a0f46effc0a66f63c62.jpg"
+    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9ecb/2099c170a32f8bc02817fe90c52eeee5e497f6c56a0f46effc0a66f63c62.jpg",
+    "checked": "2026-10-16"
   },
   "xxio13-women-hybrid": {
     "title": "젝시오 여성용 던롭코리아 젝시오13 하이브리드 5번 펄 화이트, L, 25도",
     "price": 279990,
     "rocket": true,
-    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/02/10/17/4/87c9b14e-27fa-48fd-abf5-c3b525c2f717.jpg"
+    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2026/02/10/17/4/87c9b14e-27fa-48fd-abf5-c3b525c2f717.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-quantum-women-hybrid": {
     "title": "캘러웨이 여성용 퀀텀 MAX FAST 유틸리티우드 4번, 22도, L",
     "price": 333620,
     "rocket": false,
-    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/cb0f/1bb4379c474ff6bb367c59b46d88ae5cbe54d47a7333f5c36306921edcce.jpg"
+    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/cb0f/1bb4379c474ff6bb367c59b46d88ae5cbe54d47a7333f5c36306921edcce.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-gloire-women-rescue": {
     "title": "테일러메이드 25 올 뉴 글로리 여성 레스큐, 4번 22도 L",
     "price": 330000,
     "rocket": false,
-    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c366/71a9d40ab26183ddab31df4be4253be027fd00bc74b8bd8272538b7f8716.jpg"
+    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c366/71a9d40ab26183ddab31df4be4253be027fd00bc74b8bd8272538b7f8716.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-stealth-women-rescue": {
     "title": "(여성)테일러메이드 Stealth 스텔스 레스큐 여성유틸리티",
     "price": 221070,
     "rocket": false,
-    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/150d/d361d8847f67dcbde634c6e7eeb70428540ccda83326ab84a123ba613d91.jpg"
+    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/150d/d361d8847f67dcbde634c6e7eeb70428540ccda83326ab84a123ba613d91.jpg",
+    "checked": "2026-10-16"
   },
   "xxio14-women-hybrid": {
     "title": "2026년 젝시오14 여성용 하이브리드 유틸리티 MP1400L 레이디스 화이트, 5번 L",
     "price": 439000,
     "rocket": false,
-    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/5270/17f01bde858b3a94f6441696ef9e914d12a45c9a2ec52da3e9279ada9eb3.jpg"
+    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/5270/17f01bde858b3a94f6441696ef9e914d12a45c9a2ec52da3e9279ada9eb3.jpg",
+    "checked": "2026-10-16"
   },
   "honma-bezeal3-women-hybrid": {
     "title": "[혼마코리아정품]24년 HONMA 비즐3 유틸리티 우드(여성), U25 25도 L",
     "price": 360000,
     "rocket": false,
-    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/35ae/daec3ae0ef158f37d98ff73eafde88dd416a2058cb7cf600f2ce37814bc8.jpg"
+    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/35ae/daec3ae0ef158f37d98ff73eafde88dd416a2058cb7cf600f2ce37814bc8.jpg",
+    "checked": "2026-10-16"
   },
   "ping-g440-women-hybrid": {
     "title": "핑 G440 여성 유틸리티 하이브리드 삼양정품, 2번, A (Alta J LE)",
     "price": 390000,
     "rocket": false,
-    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c9e7/f8a07006bb5829c73079f884595f7344669790e52ee904995fc48473e8a5.jpg"
+    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/c9e7/f8a07006bb5829c73079f884595f7344669790e52ee904995fc48473e8a5.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-jpx923-wedge": {
     "title": "미즈노골프 JPX923 단조 경량스틸 샌드웨지 NSPRO950, S, 55도",
     "price": 95060,
     "rocket": true,
-    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/11/03/15/5/5b19f647-82ad-4d39-ac35-9486b9d0954a.jpg"
+    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/11/03/15/5/5b19f647-82ad-4d39-ac35-9486b9d0954a.jpg",
+    "checked": "2026-10-16"
   },
   "cleveland-cgone-wedge": {
     "title": "클리브랜드 CG ONE 웨지 남성 트렉션 스틸 던롭코리아 정품, 54도, S",
     "price": 144500,
     "rocket": false,
-    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/33ef/0fece7a1b76ecc20f9f2de3a2d0fb195b314a473006bcc38a055be00a8a5.jpg"
+    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/33ef/0fece7a1b76ecc20f9f2de3a2d0fb195b314a473006bcc38a055be00a8a5.jpg",
+    "checked": "2026-10-16"
   },
   "david-woody2-wedge": {
     "title": "데이비드골프 우디 웨지2 다이나믹 골드 S200, 58도, S",
     "price": 169000,
     "rocket": false,
-    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d9fc/5f2a507bbd8fec45b87471b3eac54b7f7ce8bb05537baa77a53d834d7e86.jpg"
+    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d9fc/5f2a507bbd8fec45b87471b3eac54b7f7ce8bb05537baa77a53d834d7e86.jpg",
+    "checked": "2026-10-16"
   },
   "cleveland-smartsole-chipper": {
     "title": "[던롭코리아정품] 24년 클리브랜드 스마트솔 풀페이스 C42 치퍼, 카본 여성용",
     "price": 180000,
     "rocket": false,
-    "image": "https://thumbnail5.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3296/30593e1efe2f894c15120c214347eb8cd9fe7a6858c6ff4debfee0cf9057.jpg"
+    "image": "https://thumbnail5.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3296/30593e1efe2f894c15120c214347eb8cd9fe7a6858c6ff4debfee0cf9057.jpg",
+    "checked": "2026-10-16"
   },
   "ping-bunker-wedge": {
     "title": "핑 벙커 웨지 2026년 삼양인터내셔날, 64도",
     "price": 208000,
     "rocket": false,
-    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/46c3/3b87dfe73c60c49aa8bfb6b1de9ec392c6ffba1137f18a9bc9f73f9d1e4c.jpg"
+    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/46c3/3b87dfe73c60c49aa8bfb6b1de9ec392c6ffba1137f18a9bc9f73f9d1e4c.jpg",
+    "checked": "2026-10-16"
   },
   "ping-chip-wedge": {
     "title": "핑 삼양정품 칩 W 웨지 Chip, 스틸, 우타",
     "price": 216400,
     "rocket": false,
-    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/b8e9/d7cca8a5d81f54c75dff2f53415351a032e70f7c4006972820d58e786ec3.jpg"
+    "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/b8e9/d7cca8a5d81f54c75dff2f53415351a032e70f7c4006972820d58e786ec3.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-jaws-forged-wedge": {
     "title": "캘러웨이 스틸 웨지 죠스 포지드 23 크롬, S, 56도",
     "price": 112310,
     "rocket": true,
-    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2024/06/07/16/4/ebc900db-19f8-44ce-9846-235a10abb69b.jpg"
+    "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2024/06/07/16/4/ebc900db-19f8-44ce-9846-235a10abb69b.jpg",
+    "checked": "2026-10-16"
   },
   "cleveland-rtx6-wedge": {
     "title": "(던롭/클리브랜드정품) 2023년 RTX 6 ZIPCORE 웨지, 투어사틴 DG S200 56도(MID)",
     "price": 149000,
     "rocket": false,
-    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/30bb/eaa03b47517dd7959c295031202271abf85cd3872bb5230ca0fdeb4d1e98.jpg"
+    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/30bb/eaa03b47517dd7959c295031202271abf85cd3872bb5230ca0fdeb4d1e98.jpg",
+    "checked": "2026-10-16"
   },
   "honma-tww5-wedge": {
     "title": "혼마 투어월드 TW-W5 남성용 크롬 웨지, 56-12, DG S200",
     "price": 165360,
     "rocket": false,
-    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/7123/b4b76536e7e6f694655f6fb9a8004ab70d29d92860356536fa0528df3427.jpg"
+    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/7123/b4b76536e7e6f694655f6fb9a8004ab70d29d92860356536fa0528df3427.jpg",
+    "checked": "2026-10-16"
   },
   "ping-glide4-wedge": {
     "title": "핑 GLIDE 4.0 스틸웨지 S그라인드 Dynamic Gold S200, 52도",
     "price": 190000,
     "rocket": false,
-    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3673/2ffc015bc852d7e219e433dcd47d521b512a837a5e3655504fcb273851b3.jpg"
+    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3673/2ffc015bc852d7e219e433dcd47d521b512a837a5e3655504fcb273851b3.jpg",
+    "checked": "2026-10-16"
   },
   "fourteen-rm4-wedge": {
     "title": "성화정품 포틴 ALL NEW RM4 단조 웨지, 크롬 DG 52",
     "price": 139000,
     "rocket": false,
-    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1da7/49b23d07069575ad1ec6213a6a6a3038cc03398ed9d033ac5a1d8ec10808.jpg"
+    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1da7/49b23d07069575ad1ec6213a6a6a3038cc03398ed9d033ac5a1d8ec10808.jpg",
+    "checked": "2026-10-16"
   },
   "taylormade-hitoe5-wedge": {
     "title": "테일러메이드 하이토우 5 웨지 Hi-Toe 5 DG S200, 58도",
     "price": 220000,
     "rocket": false,
-    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3ebd/6773bcfec62154da5df543693013eb5b721e048ac5a25f4202d557b76d1c.jpg"
+    "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3ebd/6773bcfec62154da5df543693013eb5b721e048ac5a25f4202d557b76d1c.jpg",
+    "checked": "2026-10-16"
   },
   "ping-s159-wedge": {
     "title": "핑 S159 웨지 삼양인터내셔날, 60도 다골 S200 삼양정품",
     "price": 249270,
     "rocket": false,
-    "image": "https://thumbnail4.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/427b/b81c8bb22a70232fc168b6c9415228daaebccecdb6ecda1b1231fbccd684.jpg"
+    "image": "https://thumbnail4.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/427b/b81c8bb22a70232fc168b6c9415228daaebccecdb6ecda1b1231fbccd684.jpg",
+    "checked": "2026-10-16"
   },
   "pxg-0311-3x-wedge": {
     "title": "피엑스지 카네 0311 3X 포지드 웨지 크롬, S, 50도",
     "price": 248000,
     "rocket": false,
-    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/e59c/5417d4ee77320cb0a721ec4590f035dda2095d2affe197a4416ab4624d47.jpeg"
+    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/e59c/5417d4ee77320cb0a721ec4590f035dda2095d2affe197a4416ab4624d47.jpeg",
+    "checked": "2026-10-16"
   },
   "fourteen-frz-wedge": {
     "title": "포틴 FRZ 웨지 성화스포츠 DG S200 크롬, 60도, S",
     "price": 310000,
     "rocket": false,
-    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/2669/d242d3d19df54edc4cbc7d9cad2845f67193971d019a3e055363477747b7.jpg"
+    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/2669/d242d3d19df54edc4cbc7d9cad2845f67193971d019a3e055363477747b7.jpg",
+    "checked": "2026-10-16"
   },
   "mizuno-pro-t1-wedge": {
     "title": "미즈노정품 프로 T1 웨지 데님코퍼, 48도",
     "price": 152500,
     "rocket": false,
-    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/7731/b070d5b07bbeee829aa8b87a5cd2cf89227ddc945abff9751e702d8e9f32.jpg"
+    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/7731/b070d5b07bbeee829aa8b87a5cd2cf89227ddc945abff9751e702d8e9f32.jpg",
+    "checked": "2026-10-16"
   },
   "callaway-twoball-ten-putter": {
     "title": "캘러웨이 투볼 텐 S 퍼터 33인치, 3도",
     "price": 190000,
     "rocket": true,
-    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/12/02/11/8/7e5355a1-6219-45c4-af68-ad9fc8bef837.jpg"
+    "image": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/12/02/11/8/7e5355a1-6219-45c4-af68-ad9fc8bef837.jpg",
+    "checked": "2026-10-16"
   },
   "cleveland-hbsoft2-putter": {
     "title": "정품 클리브랜드 HB 소프트 2 퍼터 11번, 34인치",
     "price": 129000,
     "rocket": false,
-    "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/65c45011-3df0-490b-80e4-d93eddce132a_1755663371698.jpeg"
+    "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/65c45011-3df0-490b-80e4-d93eddce132a_1755663371698.jpeg",
+    "checked": "2026-10-16"
   },
   "odyssey-aione-twoball-putter": {
     "title": "오딧세이 Ai-ONE 퍼터 투볼 CH, 33인치, 3도",
     "price": 240000,
     "rocket": false,
-    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/f1b6/04d200c83fdc07193df22e7e04767034597da3a659b02299ca82ac3d566a.jpg"
+    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/f1b6/04d200c83fdc07193df22e7e04767034597da3a659b02299ca82ac3d566a.jpg",
+    "checked": "2026-10-16"
   },
   "odyssey-aidual-s2s-putter": {
     "title": "(오디세이) 2026년 Ai 듀얼 스퀘어 2 스퀘어(Ai-DUAL S2S) 퍼터, 7번 33인치",
     "price": 320000,
     "rocket": false,
-    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/ea99/2aa736c797d88c2b214af09a19d1bd8fba37e0cd3623723eb490350c11fb.jpg"
+    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/ea99/2aa736c797d88c2b214af09a19d1bd8fba37e0cd3623723eb490350c11fb.jpg",
+    "checked": "2026-10-16"
   },
   "ping-mundy-putter": {
     "title": "삼양정품 핑 MUNDY 말렛타입 퍼터, 34인치, 핑 2023 퍼터",
     "price": 249000,
     "rocket": false,
-    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/01d0/1361464dcbdc84149b9a598cdb39ef59bdfda6c2f93c6b7e4ce9fa142beb.jpg"
+    "image": "https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/01d0/1361464dcbdc84149b9a598cdb39ef59bdfda6c2f93c6b7e4ce9fa142beb.jpg",
+    "checked": "2026-10-16"
   },
   "ping-shea-putter": {
     "title": "삼양정품 핑 SHEA 미드말렛 퍼터, 34인치, 핑 2023 퍼터",
     "price": 274010,
     "rocket": false,
-    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9f2c/5b8b31294788f3828fba60416c27d9f2d395c10cbad866e014e8be78cb83.jpg"
+    "image": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9f2c/5b8b31294788f3828fba60416c27d9f2d395c10cbad866e014e8be78cb83.jpg",
+    "checked": "2026-10-16"
   },
   "honma-tw747-putter": {
     "title": "혼마 코오롱정품 TW747 퍼터 ST-01, 3도",
     "price": 200000,
     "rocket": false,
-    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/33b5/76864606adfd808ad2b03002146ecdb9c393402e505dac4663965eefde83.jpg"
+    "image": "https://thumbnail8.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/33b5/76864606adfd808ad2b03002146ecdb9c393402e505dac4663965eefde83.jpg",
+    "checked": "2026-10-16"
   },
   "odyssey-aione-tripletrack-putter": {
     "title": "오딧세이 (25)Ai-ONE 트리플트랙 퍼터 7 DB, 33인치, 3도",
     "price": 304550,
     "rocket": false,
-    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9510/93f67923a84febf9895527af4a6515d6c3212b80f2c8aacfa5d7b8da205a.jpg"
+    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/9510/93f67923a84febf9895527af4a6515d6c3212b80f2c8aacfa5d7b8da205a.jpg",
+    "checked": "2026-10-16"
   },
   "ping-anserd-putter": {
     "title": "삼양정품 핑 2024년 ANSER D 퍼터 미드블레이드, 34인치",
     "price": 275000,
     "rocket": false,
-    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/8864/f4823b1bb0d106feac9bc24c8e1c5258b1fe1ae0ce572d7ff58e2d6c4009.png"
+    "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/8864/f4823b1bb0d106feac9bc24c8e1c5258b1fe1ae0ce572d7ff58e2d6c4009.png",
+    "checked": "2026-10-16"
   },
   "mizuno-mcraft-omoi6-putter": {
     "title": "미즈노 M CRAFT OMOI 6 퍼터, 3도",
     "price": 279000,
     "rocket": false,
-    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/5ee7/c724845916c83f6c71bf505c900a7e39b8187d19b9b78721da5712c20382.jpg"
+    "image": "https://t1c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/5ee7/c724845916c83f6c71bf505c900a7e39b8187d19b9b78721da5712c20382.jpg",
+    "checked": "2026-10-16"
   },
   "evnroll-er22-putter": {
     "title": "이븐롤 네오클래식 ER2.2 퍼터 플럼버넥 실버",
     "price": 359000,
     "rocket": false,
-    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/8246/9bc236a03d6e2b0916aa7f07befcf729cabc141f59556cee3e449e1f5967.jpg"
+    "image": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/8246/9bc236a03d6e2b0916aa7f07befcf729cabc141f59556cee3e449e1f5967.jpg",
+    "checked": "2026-10-16"
   },
   "lab-mezz1-putter": {
     "title": "랩골프 LAB MEZZ.1 블랙 말렛 제로토크 골프 퍼터",
     "price": 449000,
     "rocket": false,
-    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/prod/912389a1-b909-4e49-83f8-cee18a682d99_fixing_v2.png"
+    "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/prod/912389a1-b909-4e49-83f8-cee18a682d99_fixing_v2.png",
+    "checked": "2026-10-16"
   },
   "ping-scottsdale-anser4-putter": {
     "title": "2025년 핑 스캇데일 앤서4 2D 퍼터, 33인치",
     "price": 358000,
     "rocket": false,
-    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/aebc/b29a5ca789140b9217957813288e64ec0fb68c32f842b0a2a061681eaef3.jpg"
+    "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/aebc/b29a5ca789140b9217957813288e64ec0fb68c32f842b0a2a061681eaef3.jpg",
+    "checked": "2026-10-16"
   },
   "evnroll-z5s-putter": {
     "title": "EVNROLL 이븐롤 제로토크 Z5S 퍼터 (이븐롤코리아 정품), 33, 2도",
     "price": 770000,
     "rocket": false,
-    "image": "https://t4c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/2155/7e432d31c7d1caf640491c73fecc2c8f78d36feb7e6393c9fd4ead95b1de.jpg"
+    "image": "https://t4c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/2155/7e432d31c7d1caf640491c73fecc2c8f78d36feb7e6393c9fd4ead95b1de.jpg",
+    "checked": "2026-10-16"
   },
   "pxg-hellcat-putter": {
     "title": "카네 정품 PXG 제로토크 퍼터 HELLCAT, 33인치",
     "price": 350000,
     "rocket": false,
-    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d639/4200ab0bafa054a7f8064406ecc873189ea869da0d34fc4f1de2c5d90240.jpg"
+    "image": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d639/4200ab0bafa054a7f8064406ecc873189ea869da0d34fc4f1de2c5d90240.jpg",
+    "checked": "2026-10-16"
   }
 }

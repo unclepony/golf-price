@@ -13,7 +13,7 @@ const SITE_NAME = SITE.name || 'ATL골프기어';
 const LOGO_SVG = readFileSync(join(ROOT, 'src', 'figures', 'logo.svg'), 'utf8').replace(/role="img" aria-label="[^"]*"/, 'aria-hidden="true"');
 const OUT = join(ROOT, 'site');
 const DISCLOSURE = '이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.';
-const PRICE_NOTE = '가격은 쿠팡 상품 검색 결과 중 조건에 맞는 새 상품의 최저가를 하루 한 번 기록한 값으로, 옵션(샤프트, 사이즈 등)과 시점에 따라 실제 판매가와 다를 수 있습니다.';
+const PRICE_NOTE = '표시 가격은 쿠팡 파트너스 링크를 만들 때 확인한 쿠팡 판매가이며 확인 날짜를 함께 적었습니다. 옵션(샤프트, 사이즈 등)과 시점에 따라 현재 판매가와 다를 수 있습니다. 쿠팡 파트너스 API 승인 뒤에는 하루 한 번 최저가를 자동 기록해 가격 추이와 역대 최저가를 보여 드립니다.';
 
 const config = loadConfig();
 const links = loadLinks();
@@ -185,6 +185,28 @@ const imageOf = (id, hist) => hist?.latest?.image ?? picks[id]?.image;
 const PRICE_DATE = SITE.priceCheckedAt ?? '';
 const priceDateLabel = PRICE_DATE ? `${+PRICE_DATE.slice(5, 7)}.${+PRICE_DATE.slice(8, 10)}` : '';
 const pickPrice = (id) => picks[id]?.price ?? null;
+const BUILD_DAY = todayKst();
+const PRICE_STALE_DAYS = 14; // 이보다 오래된 가격은 흐리게 '오래된 가격'으로 표시
+const dayLabel = (d) => `${+d.slice(5, 7)}월 ${+d.slice(8, 10)}일`;
+const daysAgo = (d) => Math.round((Date.parse(BUILD_DAY) - Date.parse(d)) / 864e5);
+// 보여 줄 가격: API 일별 기록이 있으면 최근 최저가, 없으면 링크 생성 때 확인한 쿠팡 판매가
+function shownPrice(id) {
+  const a = entryById[id]?.a;
+  if (a) return { won: a.cur, d: a.last.d, kind: 'api', allMin: a.allMin };
+  const pk = picks[id];
+  if (!pk?.price || !links[id]) return null;
+  return { won: pk.price, d: pk.checked ?? PRICE_DATE, kind: 'snap' };
+}
+function priceLine(id, cls = 'price-line') {
+  const sp = shownPrice(id);
+  if (!sp) return extOf(id) ? `<p class="${cls} none"><small>쿠팡 판매처 없음 · 가격 정보 없음</small></p>` : '';
+  const stale = daysAgo(sp.d) > PRICE_STALE_DAYS;
+  return `<p class="${cls}${stale ? ' stale' : ''}"><b>${won(sp.won)}</b><small>${sp.kind === 'api' ? '최근 최저가' : '쿠팡 판매가'} · ${dayLabel(sp.d)} 확인${stale ? ' · 오래된 가격' : ''} · 현재 가격과 다를 수 있음</small></p>`;
+}
+const priceShort = (id) => {
+  const sp = shownPrice(id);
+  return sp ? `<span class="pshort${daysAgo(sp.d) > PRICE_STALE_DAYS ? ' stale' : ''}">${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small></span>` : '';
+};
 // 가격 단계: 아이템(카테고리)별 가격 구간(priceBands) 기준 저가·중가·고가·프리미엄 (숫자 가격은 표시하지 않음)
 const LEVELS = ['', '저가', '중가', '고가', '프리미엄'];
 const SKILLS = ['초심자', '중급', '고급', '프로'];
@@ -311,6 +333,7 @@ const entries = config.products.map((p) => {
   return { p, hist, a: hist?.points?.length ? analyze(hist.points) : null };
 });
 const tracked = entries.filter((e) => e.a);
+const entryById = Object.fromEntries(entries.map((e) => [e.p.id, e]));
 const updated = tracked.map((e) => e.a.last.d).sort().at(-1) ?? todayKst();
 
 rmSync(OUT, { recursive: true, force: true });
@@ -325,10 +348,10 @@ const SCORE_NOTE = '점수는 제조사 공개 정보, 보도된 투어 소식, 
 const avg = (xs) => xs.reduce((s, x) => s + x, 0) / xs.length;
 const dots = (n) => `<span class="dots" aria-label="5점 중 ${n}점">${'●'.repeat(n)}<i>${'●'.repeat(5 - n)}</i></span>`;
 function guideTile(g) {
-  const imgs = g.picks.map((pk) => byId[pk.id] && imageOf(pk.id, byId[pk.id].hist)).filter(Boolean).slice(0, 4);
+  const imgs = rankedPicks(g).map((pk) => imageOf(pk.id, byId[pk.id].hist)).filter(Boolean).slice(0, 4);
   return `<a class="gcard" href="/g/${g.slug}">
 <div class="gthumb">${imgs.map((src) => `<img src="${esc(src)}" alt="" loading="lazy">`).join('')}</div>
-<div class="ginfo"><span class="badge good">${g.picks.length}개 비교</span><h3>${esc(g.title)}</h3><p>${esc(g.desc)}</p></div>
+<div class="ginfo"><span class="badge good">${rankedPicks(g).length}종 비교</span><h3>${esc(g.title)}</h3><p>${esc(g.desc)}</p></div>
 </a>`;
 }
 const guideGrid = (list) => `<div class="ggrid">${list.map(guideTile).join('')}</div>`;
@@ -408,7 +431,7 @@ ${(g.specRows ?? []).map((label, si) => row('', esc(label.replace('연결 상품
 ${row('', '강점', (pk) => `<span class="ig-plus">${esc(pk.plus ?? pk.pros?.[0] ?? '-')}</span>`)}
 ${row('', '약점', (pk) => `<span class="ig-minus">${esc(pk.minus ?? pk.cons?.[0] ?? '-')}</span>`)}
 ${crit.length ? row('', '항목별', (pk) => (pk.scores ? `<span class="ig-crits">${crit.map((c, i) => `<span><em>${esc(c.split('·')[0])}</em>${dots(pk.scores[i])}</span>`).join('')}</span>` : '-')) : ''}
-${row('', '가격', (pk) => levelLink(pk.id, byId[pk.id].hist, '쿠팡 ›'), 'r-price')}
+${row('', '가격', (pk) => `${levelLink(pk.id, byId[pk.id].hist, '쿠팡 ›')}${priceShort(pk.id)}`, 'r-price')}
 </tbody></table></div>
 ${reps ? `<p class="ig-more">${skillGroups(g).map((x) => `<a href="${skillPath(g, x.skill)}"><span class="skill sk-${SKILLS.indexOf(x.skill) + 1}">${x.skill}</span> ${x.ids.length}종 전체 비교 ›</a>`).join('')}</p>` : ''}${reps ? oldModelNote(g, reps) : ''}<p class="note">점수는 주관적 참고 점수(공식 평가 아님) · 순위는 같은 실력 단계 안에서만 매깁니다 · 가격은 링크 생성 시 확인한 쿠팡 판매가로 현재 가격과 다를 수 있음 · 가격을 누르면 쿠팡(파트너스 링크)으로 이동</p></div>`;
 }
@@ -591,6 +614,29 @@ ${sellable(p.id) ? infographic(g, p.id) : ''}
     .join('');
 }
 
+// 가격 기록 영역: API 일별 기록이 있으면 추이 그래프(30일·90일)와 역대 최저가 대비 현재가, 없으면 수집 예정 안내
+function priceHistory(p, hist, a) {
+  if (!sellable(p.id)) return '';
+  if (!a) return `<section class="phist empty"><h2>가격 추이</h2><p>아직 일별 가격 기록이 없습니다. 쿠팡 파트너스 API 승인 뒤 하루 한 번 최저가를 기록해 최근 30일·90일 추이와 역대 최저가를 이곳에 보여 드립니다.</p><p class="note">${PRICE_NOTE}</p></section>`;
+  const vsMin = pct(a.cur, a.allMin);
+  const panel = (days, on) => {
+    const from = addDays(a.last.d, -days);
+    const pts = hist.points.filter((pt) => pt.d >= from);
+    return `<div class="tabpanel${on ? ' on' : ''}" data-panel="ph${days}">${pts.length > 1 ? chart(pts, a.allMin) : '<p class="note">기록이 더 쌓이면 그래프가 표시됩니다.</p>'}</div>`;
+  };
+  return `<section class="phist tabs-wrap"><h2>가격 추이 <small>(${a.days}일 기록 · ${dayLabel(a.last.d)} 기준)</small></h2>
+<p class="verdict ${a.verdict.cls}"><b>${a.verdict.label}</b> · ${esc(a.verdict.text)}</p>
+<section class="stats">
+<div><span>최근 최저가</span><b>${won(a.cur)}</b></div>
+<div><span>역대 최저가</span><b>${won(a.allMin)}</b></div>
+<div><span>역대 최저 대비</span><b class="${vsMin > 0 ? 'up' : ''}">${vsMin > 0.05 ? `+${vsMin.toFixed(1)}%` : '최저가'}</b></div>
+<div><span>30일 평균</span><b>${won(a.avg30)}</b></div>
+</section>
+<div class="tabs" role="tablist"><button type="button" class="tab on" data-tab="ph30">최근 30일</button><button type="button" class="tab" data-tab="ph90">최근 90일</button></div>
+${panel(30, true)}${panel(90, false)}
+<p class="note">${PRICE_NOTE}</p></section>`;
+}
+
 // ---------- 상품 페이지 ----------
 for (const { p, hist, a } of entries) {
   const cat = cats.find((c) => c.id === p.category);
@@ -599,33 +645,8 @@ for (const { p, hist, a } of entries) {
   const guideLink = `<p class="more"><a href="/c/${p.category}">${esc(cat.name)} 고르는 법 보기 →</a></p>`;
   let body, title, desc;
 
-  if (a) {
-    title = `${p.name} 최저가·가격 추이`;
-    desc = `${p.name} 오늘 최저가 ${won(a.cur)}. 역대 최저 ${won(a.allMin)}, 30일 평균 ${won(a.avg30)}. ${a.verdict.label}.`;
-    body = `${crumb}
-<h1>${esc(p.name)} 가격 추이</h1>
-<section class="hero">
-<p class="label">오늘 최저가 <small>(${md(a.last.d)} 기준)</small></p>
-<p class="big">${won(a.cur)}</p>
-<p class="verdict ${a.verdict.cls}"><b>${a.verdict.label}</b> · ${esc(a.verdict.text)}</p>
-${buyButton(p.id, hist)}
-</section>
-<section class="stats">
-<div><span>30일 평균</span><b>${won(a.avg30)}</b></div>
-<div><span>30일 최저</span><b>${won(a.min30)}</b></div>
-<div><span>역대 최저</span><b>${won(a.allMin)}</b></div>
-<div><span>7일 변화</span><b class="${a.change7 < 0 ? 'down' : a.change7 > 0 ? 'up' : ''}">${a.change7 == null ? '-' : (a.change7 > 0 ? '+' : '') + won(a.change7)}</b></div>
-</section>
-<section>
-<h2>최저가 추이 <small>(${a.days}일 기록)</small></h2>
-${chart(hist.points, a.allMin)}
-</section>
-<section><h2>이런 분께 맞아요</h2><p>${esc(p.summary)}</p>${points}${guideLink}</section>
-${analysis(p)}
-${newsBlock(p.id)}
-<p class="note">${PRICE_NOTE}</p>`;
-  } else {
-    title = `${p.name} 특징과 구매 전 확인할 점`;
+  {
+    title = `${p.name} 특징·비교${shownPrice(p.id) ? '·쿠팡 판매가' : ''}`;
     desc = `${p.name}: ${p.summary}`;
     const sc = scoreOf[p.id];
     const top = guidesOf(p.id).filter((g) => !g.mergeInto).map((g) => ({ g, sr: stageRank(g, p.id) }));
@@ -636,7 +657,7 @@ ${gallery(p, hist)}
 <span class="pt-cat">${esc(cat.name)}</span>
 <h1>${esc(p.name)}</h1>
 <div class="pt-badges">${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, sr }) => (sr ? `<span class="tag rank">${esc(guideName(g).replace(' 비교 및 선택 가이드', ''))} ${esc(sr.label)}</span>` : '')).join('')}${sellable(p.id) ? '' : '<span class="tag none">쿠팡 판매처 없음</span>'}</div>
-${priceLevel(p.id) ? `<div class="pd-price"><span>가격대 <small>(${esc(cat.name)} 비교 기준)</small></span>${levelLink(p.id, hist, '쿠팡에서 현재 가격 확인 ›')}</div>` : ''}
+<div class="pd-price">${priceLine(p.id, 'pd-won')}${priceLevel(p.id) ? `<span>가격대 <small>(${esc(cat.name)} 비교 기준)</small></span>${levelLink(p.id, hist, '쿠팡에서 현재 가격 보기 ›')}` : ''}</div>
 <p class="pd-sum">${esc(p.summary)}</p>
 ${points ? `<h2 class="sub">구매 전 확인할 점</h2>${points}` : ''}
 ${buyButton(p.id, hist)}
@@ -645,7 +666,7 @@ ${buyButton(p.id, hist)}
 ${analysis(p)}
 ${newsBlock(p.id)}
 <section class="prose"><h2>${esc(cat.name)} 고르는 법</h2><p>${esc(cat.intro)}</p>${figure(p.category)}<ul>${cat.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
-<p class="note">가격 추이 기록은 준비 중입니다. 가격은 판매 페이지에서 확인하세요.</p>`;
+${priceHistory(p, hist, a)}`;
   }
   writeText(
     join(OUT, 'p', `${p.id}.html`),
@@ -797,7 +818,7 @@ function ptile({ p, hist, a }) {
 <div class="pt-img">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : `<span class="ph">${esc(catName[p.category]?.slice(0, 1) ?? '')}</span>`}</div>
 <div class="pt-body"><span class="pt-cat">${esc(catName[p.category])}</span><h3>${esc(p.name)}</h3>
 <div class="pt-badges">${rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}</div>
-${priceTag(p.id, a)}<p class="pt-cta">특징·비교 보기 ›</p></div>
+${priceTag(p.id, a)}${priceLine(p.id, 'pt-won')}<p class="pt-cta">특징·비교 보기 ›</p></div>
 </a>`;
 }
 function prow(items) { return `<div class="prow">${items.map(ptile).join('')}</div>`; }
@@ -827,69 +848,59 @@ ${top?.scores ? `<p class="sl-top">종합 1위 <b>${esc(byId[top.id].p.name)}</b
 </a>`;
 }
 
-const sideCats = cats
-  .map((c) => `<a href="/c/${c.id}"><span class="ci">${catIcon(c)}</span>${esc(c.name)}</a>`)
+// 홈: ① 한 문장 소개 + 카테고리 바로가기 ② 내 실력에 맞는 장비 찾기 ③ 대표 가이드 ④ 최근 가격 하락(기록이 있을 때) ⑤ 고지
+const homeCats = cats
+  .map((c) => `<a href="/c/${c.id}"><span class="ci">${catIcon(c)}</span><span>${esc(c.name)}</span></a>`)
   .join('');
-const rocketItems = entries.filter((e) => picks[e.p.id]?.rocket);
-const suggestItems = entries.filter((e) => scoreOf[e.p.id]).sort((x, y) => scoreOf[y.p.id] - scoreOf[x.p.id]).slice(0, 12);
-const tabs = cats
-  .map((c, i) => `<button type="button" role="tab" class="tab${i === 0 ? ' on' : ''}" data-tab="${c.id}" aria-selected="${i === 0}">${esc(c.name)}</button>`)
-  .join('');
-const panels = cats
-  .map((c, i) => `<div class="tabpanel${i === 0 ? ' on' : ''}" data-panel="${c.id}">${prow(entries.filter((e) => e.p.category === c.id))}<a class="more-link" href="/c/${c.id}">${esc(c.name)} 고르는 법과 전체 보기 ›</a></div>`)
-  .join('');
+// 장비 찾기 데이터: 가이드 속 판매처 있는 상품 (아이템·성별·실력·가격대)
+const finderData = {
+  items: pageGuides.flatMap((g) =>
+    rankedPicks(g).map((pk) => {
+      const { p, hist } = byId[pk.id];
+      const sp = shownPrice(p.id);
+      return { c: p.category, g: g.gender ?? '공용', s: pk.skill ?? '', lv: priceLevel(p.id)?.n ?? 0, n: p.name, i: imageOf(p.id, hist) ?? '', u: `/p/${p.id}`, r: pk.role, sc: +totalScore(pk).toFixed(1), pr: sp?.won ?? 0, pd: sp ? dayLabel(sp.d) : '', x: pk.unisex ? 1 : 0 };
+    }),
+  ),
+  pages: pageGuides.map((g) => ({ c: guideCat(g)?.id, g: g.gender ?? '공용', u: `/g/${g.slug}`, sk: Object.fromEntries(skillGroups(g).map((x) => [x.skill, skillPath(g, x.skill)])) })),
+};
+const finderCats = cats.filter((c) => pageGuides.some((g) => guideCat(g)?.id === c.id));
+const FEATURED = ['driver-recommend-2026', 'womens-driver-recommend', 'iron-recommend', 'womens-iron-recommend', 'putter-recommend', 'wedge-recommend'];
+const featured = FEATURED.map((slug) => pageGuides.find((g) => g.slug === slug)).filter(Boolean);
+// 최근 가격 하락: API 기록이 7일 이상 쌓인 상품 중 7일 전보다 3% 이상 내린 것
+const drops = tracked
+  .filter((e) => e.a.change7 != null && e.a.change7 < 0 && Math.abs(e.a.change7) / (e.a.cur - e.a.change7) >= 0.03 && sellable(e.p.id))
+  .sort((x, y) => x.a.change7 / (x.a.cur - x.a.change7) - y.a.change7 / (y.a.cur - y.a.change7))
+  .slice(0, 8);
 
 writeText(
   join(OUT, 'index.html'),
   layout({
     title: SITE_NAME,
-    desc: '골프용품을 꼼꼼히 비교해 나에게 맞는 최고의 제품을 찾아 드립니다. 드라이버, 퍼터, 골프공, 거리측정기, 골프화, 풀세트 비교·추천과 장단점, 점수 비교.',
+    desc: `드라이버·우드·유틸리티·아이언·웨지·퍼터부터 골프공·거리측정기·골프화까지 ${cats.length}개 골프용품을 실력(초심자~프로)·성별·가격대별로 비교합니다. 장단점과 주관적 편집 점수, 쿠팡 판매가를 함께 정리했습니다.`,
     path: '/',
-    body: `<h1 class="sr-only">${SITE_NAME}: 골프용품 비교·추천</h1>
-<div class="home-top">
-<aside class="side" aria-label="골프 카테고리"><p class="side-h">골프 카테고리</p>${sideCats}<a href="/#guides" class="side-guide">📊 비교·추천 가이드</a></aside>
-<div class="mhero">
-<div class="slides" id="slides">${guides.map(banner).join('')}</div>
-<div class="sl-ctrl"><button type="button" class="sl-prev" aria-label="이전 배너">‹</button><span class="sl-dots">${guides.map((_, i) => `<button type="button" class="dot${i === 0 ? ' on' : ''}" aria-label="${i + 1}번째 배너"></button>`).join('')}</span><button type="button" class="sl-next" aria-label="다음 배너">›</button></div>
-</div>
-</div>
-
-<section class="mission">
-<div><b>${esc(SITE.tagline ?? '골프용품, 꼼꼼히 비교하고 고르세요')}</b>
-<p>인기 골프용품을 4개 이상씩 묶어 장단점과 항목별 점수로 비교하고, 나에게 맞는 최고의 제품을 찾아 드립니다.${tracked.length ? ' 가격은 매일 기록해 지금이 살 때인지도 알려드려요.' : ' 고른 제품은 쿠팡에서 바로 가격을 확인할 수 있어요.'}</p></div>
-<ul><li><b>${guides.length}</b>개 비교 가이드</li><li><b>${entries.length}</b>개 상품</li><li><b>${cats.length}</b>개 카테고리</li></ul>
+    body: `<section class="hhero">
+<h1>골프용품을 <em>실력·성별·가격대</em>별로 비교해, 나에게 맞는 모델과 쿠팡 판매가를 한 번에 보여 드립니다.</h1>
+<p>${pageGuides.length}개 비교 가이드 · ${entries.filter((e) => sellable(e.p.id)).length}개 상품 · 점수는 주관적 참고 점수이며 순위는 같은 실력 단계 안에서만 매깁니다.</p>
+<nav class="hcats" aria-label="카테고리 바로가기">${homeCats}</nav>
 </section>
 
-${deals.length ? `<section class="block"><div class="block-h"><h2>🔥 지금 사기 좋은 상품</h2></div>${prow(deals)}</section>` : ''}
+<section class="finder" id="finder"><h2>내 실력에 맞는 장비 찾기</h2>
+<form class="finder-f" onsubmit="return false">
+<label>아이템<select name="c">${finderCats.map((c) => `<option value="${c.id}">${esc(c.name)}</option>`).join('')}</select></label>
+<label>성별<select name="g"><option value="">전체</option><option>남성</option><option>여성</option></select></label>
+<label>실력<select name="s"><option value="">전체</option>${SKILLS.map((x) => `<option>${x}</option>`).join('')}</select></label>
+<label>예산<select name="lv"><option value="0">전체</option>${LEVELS.slice(1).map((l, i) => `<option value="${i + 1}">${l}</option>`).join('')}</select></label>
+</form>
+<div class="finder-r" id="finderR"></div>
+<script type="application/json" id="finderData">${JSON.stringify(finderData).replace(/</g, '\\u003c')}</script>
+</section>
 
-<section class="block"><div class="block-h"><h2>이런 상품 어때요?</h2><span>비교 가이드 편집 점수가 높은 순</span></div>${prow(suggestItems)}</section>
+<section class="block" id="guides"><div class="block-h"><h2>대표 비교 가이드</h2><span>실력 단계별 5종씩 비교</span></div>${guideGrid(featured)}
+<details class="allguides"><summary>모든 비교 가이드 보기 (${pageGuides.length}개)</summary><ul>${pageGuides.map((g) => `<li><a href="/g/${g.slug}">${esc(guideName(g))}</a> <small>${rankedPicks(g).length}종</small></li>`).join('')}</ul></details></section>
 
-${rocketItems.length ? `<section class="block"><div class="block-h"><h2>🚀 로켓배송으로 빨리 받는 상품</h2></div><div class="hscroll">${prow(rocketItems)}</div></section>` : ''}
+${drops.length ? `<section class="block"><div class="block-h"><h2>최근 가격 하락</h2><span>7일 전 기록보다 내린 상품</span></div>${prow(drops)}</section>` : ''}
 
-<section class="block" id="cats"><div class="block-h"><h2>카테고리별 상품</h2></div>
-<div class="tabs" role="tablist">${tabs}</div>${panels}</section>
-
-<section class="block" id="guides"><div class="block-h"><h2>비교·추천 가이드</h2><span>4개 이상 제품을 장단점과 점수로 비교</span></div>${guideGrid(guides)}</section>
-
-<section class="block today"><div class="block-h"><h2>⭐ 오늘의 추천 상품</h2><span>비교 가이드에서 종합 1위를 차지한 제품</span></div>
-<div class="today-grid">${guides
-      .map((g) => {
-        const top = rankedPicks(g)[0];
-        if (!top) return '';
-        const { p, hist } = byId[top.id];
-        const image = galleryOf(p, hist)[0] ?? imageOf(p.id, hist);
-        return `<a class="tcard" href="/p/${p.id}">
-<div class="tc-img">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : ''}<span class="tc-ribbon">${esc(shortTitle(g.title))} 1위</span></div>
-<div class="tc-body"><span class="pt-cat">${esc(catName[p.category])}</span><h3>${esc(p.name)}</h3>
-${priceTag(p.id, byId[top.id].a, 'tc-price')}
-<p class="tc-score"><b>${top.scores ? avg(top.scores).toFixed(1) : '-'}</b><small>/5 편집 점수</small></p>
-${top.verdict ? `<p class="tc-verdict">${esc(top.verdict)}</p>` : ''}
-<span class="pt-cta">상세 비교 보기 ›</span></div>
-</a>`;
-      })
-      .join('')}</div></section>
-
-<p class="note score-note">※ ${SCORE_NOTE}</p>`,
+<section class="hnote"><p>${DISCLOSURE}</p><p>※ ${SCORE_NOTE}</p><p>※ ${PRICE_NOTE}</p></section>`,
   }),
 );
 

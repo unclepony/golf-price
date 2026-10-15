@@ -171,4 +171,35 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
       $$('.tabpanel', scope).forEach((p) => p.classList.toggle('on', p.dataset.panel === b.dataset.tab));
     }),
   );
+
+  // 홈: 내 실력에 맞는 장비 찾기 (아이템·성별·실력·예산으로 걸러 점수 순 6개, 전체 비교 페이지로 연결)
+  const fd = $('#finderData');
+  const ff = $('.finder-f');
+  if (fd && ff) {
+    const data = JSON.parse(fd.textContent);
+    const LV = ['', '저가', '중가', '고가', '프리미엄'];
+    const won = (n) => `${Math.round(n).toLocaleString('ko-KR')}원`;
+    const render = () => {
+      const c = ff.c.value, g = ff.g.value, s = ff.s.value, lv = +ff.lv.value;
+      const hasGender = data.pages.some((p) => p.c === c && p.g !== '공용');
+      ff.g.disabled = !hasGender;
+      const gg = hasGender ? g : '';
+      const items = data.items
+        .filter((x) => x.c === c && (!gg || x.g === gg) && (!s || x.s === s) && (!lv || x.lv === lv))
+        .filter((x, i, a) => a.findIndex((y) => y.u === x.u) === i)
+        .sort((x, y) => x.x - y.x || y.sc - x.sc)
+        .slice(0, 6);
+      const page = data.pages.find((p) => p.c === c && (!gg || p.g === gg || p.g === '공용')) ?? data.pages.find((p) => p.c === c);
+      const more = page ? (s && page.sk[s] ? page.sk[s] : page.u) : '';
+      $('#finderR').innerHTML = items.length
+        ? `<div class="finder-list">${items
+            .map(
+              (x) => `<a class="fitem" href="${x.u}">${x.i ? `<img src="${esc(x.i)}" alt="" loading="lazy" width="72" height="72">` : '<span class="fimg"></span>'}<span class="fbody"><span class="tierline">${x.s ? `<span class="skill sk-${['초심자', '중급', '고급', '프로'].indexOf(x.s) + 1}">${esc(x.s)}</span>` : ''}${x.lv ? `<span class="lvl lvl-${x.lv}">${LV[x.lv]}</span>` : ''}${x.x ? '<span class="tag unisex">남녀 공용</span>' : ''}</span><b>${esc(x.n)}</b><small>${esc(x.r)} · 편집 점수 ${x.sc}</small>${x.pr ? `<span class="fprice">${won(x.pr)} <small>${esc(x.pd)} 확인 · 현재 가격과 다를 수 있음</small></span>` : ''}</span></a>`,
+            )
+            .join('')}</div>${more ? `<a class="more-link" href="${more}">이 조건의 전체 비교 보기 ›</a>` : ''}`
+        : `<p class="note">조건에 맞는 상품이 아직 없습니다. 예산이나 실력 조건을 넓혀 보세요.${more ? ` <a href="${more}">전체 비교 보기 ›</a>` : ''}</p>`;
+    };
+    ff.addEventListener('change', render);
+    render();
+  }
 })();
