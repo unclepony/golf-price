@@ -598,3 +598,22 @@ h1 small { font-size: .55em; color: var(--muted); font-weight: 600; margin-left:
 .ig-more { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px 20px 4px; margin: 0; }
 .ig-more a { display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; text-decoration: none; background: var(--surface); }
 .ig-more a:hover { border-color: var(--accent); color: var(--accent); }
+
+/* 점수 기준·구형 모델 안내·판매처 없는 모델 */
+.crit-box { margin: 14px 0; padding: 12px 16px; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; background: var(--surface); font-size: 14px; }
+.crit-box > b { display: block; margin-bottom: 4px; }
+.crit-box p { margin: 0; color: var(--muted); line-height: 1.6; }
+.crit-box p b { color: var(--text); }
+.old-note { margin: 10px 20px 0; padding: 10px 14px 10px 30px; background: var(--bg); border-radius: 10px; font-size: 13px; line-height: 1.6; }
+.offerless { margin: 14px 0; padding: 12px 16px; border: 1px dashed var(--line); border-radius: 12px; }
+.offerless h3 { margin: 0 0 6px; font-size: 15px; }
+.offerless h3 small { font-weight: 500; color: var(--muted); font-size: 12px; margin-left: 4px; }
+.offerless ul { margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; }
+.offerless small { color: var(--muted); }
+.tag.none { background: #eceff3; color: #5b6573; }
+.tag.unisex { background: #e8f0fe; color: #2459c6; }
+table.ig thead .tag.unisex { margin-top: 2px; font-size: 11px; }
+.ana-kicker .tag { margin-left: 6px; }
+.ana-head h2 small { font-size: 13px; color: var(--muted); font-weight: 500; }
+.merged { margin-top: 32px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tag.none { background: #2a3038; color: #b8c0cc; } :root:not([data-theme="light"]) .tag.unisex { background: #1d2b45; color: #9cc0ff; } }

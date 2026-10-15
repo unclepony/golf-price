@@ -2415,7 +2415,8 @@
             "2024년"
           ],
           "verdict": "샤프트만 맞으면 여성 프로급에 좋은 선택",
-          "skill": "프로"
+          "skill": "프로",
+          "unisex": true
         },
         {
           "id": "srixon-zxi-fairway",
@@ -2444,7 +2445,8 @@
             "2025년"
           ],
           "verdict": "빠른 여성 상급자의 가성비 선택",
-          "skill": "프로"
+          "skill": "프로",
+          "unisex": true
         },
         {
           "id": "taylormade-sim2max-fairway",
@@ -2473,7 +2475,8 @@
             "2021년"
           ],
           "verdict": "가장 싸게 표준 헤드를 쓰는 방법",
-          "skill": "프로"
+          "skill": "프로",
+          "unisex": true
         }
       ],
       "sections": [
@@ -3634,7 +3637,8 @@
             "2025년"
           ],
           "verdict": "빠른 여성 상급자의 가성비 선택",
-          "skill": "프로"
+          "skill": "프로",
+          "unisex": true
         },
         {
           "id": "taylormade-qi10-rescue",
@@ -3663,7 +3667,8 @@
             "2024년"
           ],
           "verdict": "여성 프로급이 무난하게 쓰는 표준형",
-          "skill": "프로"
+          "skill": "프로",
+          "unisex": true
         },
         {
           "id": "mizuno-stz230-hybrid",
@@ -3692,7 +3697,8 @@
             "2023년"
           ],
           "verdict": "샤프트 사양 대비 가격이 좋은 선택",
-          "skill": "프로"
+          "skill": "프로",
+          "unisex": true
         },
         {
           "id": "cobra-optm-hybrid",
@@ -3721,7 +3727,8 @@
             "2026년"
           ],
           "verdict": "여성 상급자가 최신 표준 헤드로 가는 선택",
-          "skill": "프로"
+          "skill": "프로",
+          "unisex": true
         }
       ],
       "sections": [
@@ -4674,7 +4681,8 @@
           "q": "구형 SM8과 최신 SM11 차이가 큰가요?",
           "a": "세대가 올라가며 무게중심·그루브·그라인드 구성이 조정됐습니다. 아마추어에게는 세대보다 맞는 그라인드·바운스를 고르는 것이 체감 차이가 더 큽니다."
         }
-      ]
+      ],
+      "mergeInto": "wedge-recommend"
     },
     {
       "slug": "golf-ball-compare",
@@ -5510,7 +5518,8 @@
           ],
           "verdict": "여성 상급자가 경량 표준 헤드로 넘어가기 좋은 중가 선택",
           "skill": "프로",
-          "dist": 8
+          "dist": 8,
+          "unisex": true
         },
         {
           "id": "taylormade-qi10max-driver",
@@ -5540,7 +5549,8 @@
           ],
           "verdict": "여성 프로급이 중가대로 고를 수 있는 고관용 표준 헤드",
           "skill": "프로",
-          "dist": 8
+          "dist": 8,
+          "unisex": true
         },
         {
           "id": "callaway-elyte-driver",
@@ -5570,7 +5580,8 @@
           ],
           "verdict": "여성 상급자가 표준 헤드로 가성비를 챙기는 선택",
           "skill": "프로",
-          "dist": 8
+          "dist": 8,
+          "unisex": true
         },
         {
           "id": "callaway-paradym-driver",
@@ -5600,7 +5611,8 @@
           ],
           "verdict": "샤프트만 맞추면 비용 대비 효과가 큰 선택",
           "skill": "프로",
-          "dist": 7
+          "dist": 7,
+          "unisex": true
         }
       ],
       "sections": [
@@ -7723,7 +7735,8 @@
             "X"
           ],
           "verdict": "빠른 여성 상급자가 저가로 단조를 쓰는 선택",
-          "skill": "고급"
+          "skill": "고급",
+          "unisex": true
         },
         {
           "id": "mizuno-jpx925-hmpro-iron",
@@ -7752,7 +7765,8 @@
             "X"
           ],
           "verdict": "샤프트만 맞추면 여성 프로급에게 좋은 거리형",
-          "skill": "프로"
+          "skill": "프로",
+          "unisex": true
         },
         {
           "id": "callaway-xforged-starplus-iron",
@@ -7781,7 +7795,8 @@
             "X"
           ],
           "verdict": "여성 프로급이 저가로 고를 수 있는 단조",
-          "skill": "프로"
+          "skill": "프로",
+          "unisex": true
         }
       ],
       "sections": [
