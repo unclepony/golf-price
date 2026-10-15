@@ -90,6 +90,10 @@ h2 small, .label small { color: var(--muted); font-weight: 400; font-size: 13px;
 .verdict { display: inline-block; margin: 0 0 14px; padding: 8px 12px; border-radius: 10px; font-size: 14px; }
 .btn { display: block; text-align: center; background: var(--accent); color: var(--accent-ink); font-weight: 700; padding: 13px 16px; border-radius: 10px; text-decoration: none; max-width: 360px; }
 .btn:hover { filter: brightness(1.08); }
+.hero.with-img { display: flex; gap: 20px; align-items: flex-start; }
+.hero-img { flex: 0 0 180px; width: 180px; height: 180px; object-fit: contain; background: #fff; border-radius: 12px; border: 1px solid var(--line); }
+@media (max-width: 640px) { .hero.with-img { flex-direction: column; } .hero-img { width: 140px; height: 140px; flex-basis: auto; } }
+.linked { font-size: 13px; color: var(--muted); margin: 12px 0 8px; }
 .note { font-size: 12px; color: var(--muted); margin: 8px 0 0; }
 
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 12px; }

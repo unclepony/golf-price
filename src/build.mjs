@@ -15,6 +15,7 @@ const PRICE_NOTE = '가격은 쿠팡 상품 검색 결과 중 조건에 맞는 �
 
 const config = loadConfig();
 const links = loadLinks();
+const picks = readJson(join(ROOT, 'config', 'picks.json'), {});
 const cats = config.categories;
 const catName = Object.fromEntries(cats.map((c) => [c.id, c.name]));
 
@@ -120,16 +121,21 @@ ${body}
 `;
 }
 
+const imageOf = (id, hist) => hist?.latest?.image ?? picks[id]?.image;
+
 function buyButton(id, hist) {
   const link = links[id] ?? hist?.latest?.link;
   if (!link) return '';
-  return `<a class="btn" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 가격 확인하기</a>
+  const linked = links[id] ? picks[id]?.title : hist?.latest?.title;
+  return `${linked ? `<p class="linked">연결 상품: ${esc(linked)}</p>` : ''}
+<a class="btn" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 가격 확인하기</a>
 <p class="note">위 버튼은 쿠팡 파트너스 링크입니다. ${DISCLOSURE}</p>`;
 }
 
 function card({ p, hist, a }) {
-  const img = hist?.latest?.image
-    ? `<img src="${esc(hist.latest.image)}" alt="" loading="lazy">`
+  const image = imageOf(p.id, hist);
+  const img = image
+    ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">`
     : `<span class="ph">${esc(catName[p.category]?.slice(0, 1) ?? '⛳')}</span>`;
   let info;
   if (a) {
@@ -197,12 +203,16 @@ ${chart(hist.points, a.allMin)}
   } else {
     title = `${p.name} 특징과 구매 전 확인할 점`;
     desc = `${p.name}: ${p.summary}`;
+    const image = imageOf(p.id, hist);
     body = `${crumb}
 <h1>${esc(p.name)}</h1>
-<section class="hero">
+<section class="hero${image ? ' with-img' : ''}">
+${image ? `<img class="hero-img" src="${esc(image)}" alt="${esc(p.name)}">` : ''}
+<div>
 <p>${esc(p.summary)}</p>
 ${points ? `<h2 class="sub">구매 전 확인할 점</h2>${points}` : ''}
 ${buyButton(p.id, hist)}
+</div>
 </section>
 <section class="prose"><h2>${esc(cat.name)} 고르는 법</h2><p>${esc(cat.intro)}</p><ul>${cat.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
 <p class="note">가격 추이 기록은 준비 중입니다. 가격은 판매 페이지에서 확인하세요.</p>`;
