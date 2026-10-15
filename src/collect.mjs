@@ -1,6 +1,8 @@
 // 쿠팡 파트너스 상품 검색 API로 상품별 최저가를 수집해 data/history/{id}.json 에 하루 1건씩 기록한다.
 // API 키는 쿠팡 파트너스 최종 승인 후 발급된다. 키가 없으면 아무것도 하지 않고 끝난다(가이드 모드).
 // 호출 한도를 넘지 않도록 한 번 실행에 COUPANG_MAX_PER_RUN 개까지만 수집하고, 오늘 이미 수집한 상품은 건너뛴다.
+// 매시간 실행(.github/workflows/daily.yml)하며, 가장 오래 기록되지 않은 상품부터 수집해 하루 안에 전 상품을 한 바퀴 돈다.
+// 한도는 쿠팡 파트너스 API 승인 후 안내되는 실제 한도에 맞춰 COUPANG_MAX_PER_RUN 으로 조정한다.
 import { createHmac } from 'node:crypto';
 import { join } from 'node:path';
 import { loadConfig, historyDir, readJson, writeJson, todayKst, normalize } from './lib.mjs';
@@ -8,7 +10,7 @@ import { loadConfig, historyDir, readJson, writeJson, todayKst, normalize } from
 const HOST = 'https://api-gateway.coupang.com';
 const SEARCH_PATH = '/v2/providers/affiliate_open_api/apis/openapi/products/search';
 const { COUPANG_ACCESS_KEY, COUPANG_SECRET_KEY } = process.env;
-const MAX_PER_RUN = Number(process.env.COUPANG_MAX_PER_RUN) || 8;
+const MAX_PER_RUN = Number(process.env.COUPANG_MAX_PER_RUN) || 9;
 const DELAY_MS = (Number(process.env.COUPANG_DELAY_SEC) || 5) * 1000;
 
 if (!COUPANG_ACCESS_KEY || !COUPANG_SECRET_KEY) {
@@ -49,7 +51,10 @@ function matches(item, product, globalExclude) {
 const config = loadConfig();
 const dir = historyDir(false);
 const today = todayKst();
-const todo = config.products.filter((p) => !p.external && !readJson(join(dir, `${p.id}.json`))?.points?.some((pt) => pt.d === today));
+const lastDay = (p) => readJson(join(dir, `${p.id}.json`))?.points?.at(-1)?.d ?? '';
+const todo = config.products
+  .filter((p) => !p.external && lastDay(p) !== today)
+  .sort((a, b) => lastDay(a).localeCompare(lastDay(b))); // 기록이 없거나 오래된 상품부터
 let ok = 0;
 
 for (const product of todo.slice(0, MAX_PER_RUN)) {

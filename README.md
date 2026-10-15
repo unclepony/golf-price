@@ -63,3 +63,12 @@ Actions 탭 → daily-collect → Run workflow 로 첫 수집을 돌려봅니다
 - 쿠팡 페이지를 크롤링하지 않습니다. 가격은 공식 파트너스 API로만 가져옵니다.
 - 승인 후 API 키를 받을 때 파트너스 API 이용 약관(호출 한도, 데이터 보관·표시 조건)을 확인하세요.
   호출 한도에 맞춰 `COUPANG_MAX_PER_RUN`, `COUPANG_DELAY_SEC` 값과 수집 시간표(daily.yml)를 조정합니다.
+
+## 점검·관리 스크립트
+
+- `node src/build.mjs` — 사이트 생성 (`site/`)
+- `node src/linkcheck.mjs` — 내부 링크·리다이렉트·사이트맵 검사 (배포 전 실행)
+- `node src/stamp-dates.mjs` — git 기록으로 판매가 확인일(`picks.json checked`)과 마지막 업데이트일(`updated`)을 채움. 데이터를 커밋한 뒤 실행하고 다시 커밋
+- `node src/tiercheck.mjs` — 가이드별 실력·가격 단계 분포 검사
+- 상품이 3종 미만인 실력 단계는 실력별 페이지를 만들지 않고 `_redirects` 로 상위 가이드에 301 연결된다
+- 가격 수집(`src/collect.mjs`)은 쿠팡 파트너스 API 키가 있을 때만 동작한다. 매시간 일부씩 수집하고 하루 한 번 사이트를 다시 만든다 (`.github/workflows/daily.yml`)

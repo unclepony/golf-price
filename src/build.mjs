@@ -100,7 +100,7 @@ const SEARCH_ICON = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden
 function catIcon(c) {
   const e = entries.find((x) => x.p.category === c.id);
   const src = e && imageOf(e.p.id, e.hist);
-  return src ? `<img src="${esc(src)}" alt="" loading="lazy">` : `<span>${esc(c.name.slice(0, 1))}</span>`;
+  return src ? `<img src="${esc(src)}" alt="" loading="lazy" decoding="async" width="212" height="212">` : `<span>${esc(c.name.slice(0, 1))}</span>`;
 }
 function header() {
   const catLinks = cats
@@ -146,7 +146,7 @@ ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표�
 </div></nav>`;
 }
 
-function layout({ title, desc, path, body, recent }) {
+function layout({ title, desc, path, body, recent, ld = [] }) {
   const full = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
   return `<!doctype html>
 <html lang="ko">
@@ -163,6 +163,7 @@ function layout({ title, desc, path, body, recent }) {
 ${DEMO ? '<meta name="robots" content="noindex">' : path === '/' ? VERIFY : ''}
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x).replace(/</g, '\\u003c')}</script>`).join('\n')}
 </head>
 <body>
 ${header()}
@@ -180,6 +181,22 @@ ${body}
 `;
 }
 
+// 구조화 데이터 (리뷰·평점 스키마는 직접 사용 리뷰가 아니므로 넣지 않는다)
+const crumbLd = (items) => ({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: items.map(([name, path], i) => ({ '@type': 'ListItem', position: i + 1, name, item: `${SITE_URL}${path}` })),
+});
+const listLd = (name, ids) => ({
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name,
+  numberOfItems: ids.length,
+  itemListElement: ids.map((id, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE_URL}/p/${id}`, name: config.products.find((p) => p.id === id)?.name })),
+});
+const ymd = (d) => (d ? d.replaceAll('-', '.') : '');
+const updatedTag = (d) => (d ? `<p class="updated">마지막 업데이트 <time datetime="${d}">${ymd(d)}</time></p>` : '');
+const max2 = (...ds) => ds.filter(Boolean).sort().at(-1);
 const imageOf = (id, hist) => hist?.latest?.image ?? picks[id]?.image;
 // 확인일 기준 쿠팡 판매가 (API 가격 기록이 있으면 그 값을 우선)
 const PRICE_DATE = SITE.priceCheckedAt ?? '';
@@ -292,7 +309,7 @@ function buyButton(id, hist) {
 function card({ p, hist, a }) {
   const image = imageOf(p.id, hist);
   const img = image
-    ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">`
+    ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy" decoding="async" width="212" height="212">`
     : `<span class="ph">${esc(catName[p.category]?.slice(0, 1) ?? '⛳')}</span>`;
   let info;
   if (a) {
@@ -350,7 +367,7 @@ const dots = (n) => `<span class="dots" aria-label="5점 중 ${n}점">${'●'.re
 function guideTile(g) {
   const imgs = rankedPicks(g).map((pk) => imageOf(pk.id, byId[pk.id].hist)).filter(Boolean).slice(0, 4);
   return `<a class="gcard" href="/g/${g.slug}">
-<div class="gthumb">${imgs.map((src) => `<img src="${esc(src)}" alt="" loading="lazy">`).join('')}</div>
+<div class="gthumb">${imgs.map((src) => `<img src="${esc(src)}" alt="" loading="lazy" decoding="async" width="212" height="212">`).join('')}</div>
 <div class="ginfo"><span class="badge good">${rankedPicks(g).length}종 비교</span><h3>${esc(g.title)}</h3><p>${esc(g.desc)}</p></div>
 </a>`;
 }
@@ -417,7 +434,7 @@ function infographic(g, highlight, opts = {}) {
   const col = (pk, i) => {
     const { p, hist } = byId[pk.id];
     const image = imageOf(p.id, hist);
-    return `<th class="${pk.id === highlight ? 'hl' : ''}"><a href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : `<span class="noimg">${esc(catName[p.category] ?? '')}<small>${esc(extOf(p.id)?.store ?? '')}</small></span>`}<span class="ig-rank">${esc(stageRank(g, pk.id)?.label ?? '')}</span><b>${esc(p.name)}</b><span class="ig-role">${esc(pk.role)}</span>${unisexBadge(pk)}</a></th>`;
+    return `<th class="${pk.id === highlight ? 'hl' : ''}"><a href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy" decoding="async" width="212" height="212">` : `<span class="noimg">${esc(catName[p.category] ?? '')}<small>${esc(extOf(p.id)?.store ?? '')}</small></span>`}<span class="ig-rank">${esc(stageRank(g, pk.id)?.label ?? '')}</span><b>${esc(p.name)}</b><span class="ig-role">${esc(pk.role)}</span>${unisexBadge(pk)}</a></th>`;
   };
   const row = (icon, label, cell, cls = '') =>
     `<tr class="${cls}"><th scope="row">${label}</th>${ps.map((pk) => `<td class="${pk.id === highlight ? 'hl' : ''}">${cell(pk)}</td>`).join('')}</tr>`;
@@ -560,14 +577,14 @@ ${tops.length ? `<div class="dist-top">${tops
     .map(({ s, pk }) => {
       const { p, hist } = byId[pk.id];
       const image = imageOf(p.id, hist);
-      return `<a href="/p/${p.id}">${sk(s)}<span class="dist-tl">${esc(s)} 비거리 추천</span>${image ? `<img src="${esc(image)}" alt="" loading="lazy">` : ''}<b>${esc(p.name)}</b><span class="dist-n">${pk.dist}<small>/10</small></span>${levelBadge(p.id)}</a>`;
+      return `<a href="/p/${p.id}">${sk(s)}<span class="dist-tl">${esc(s)} 비거리 추천</span>${image ? `<img src="${esc(image)}" alt="" loading="lazy" decoding="async" width="212" height="212">` : ''}<b>${esc(p.name)}</b><span class="dist-n">${pk.dist}<small>/10</small></span>${levelBadge(p.id)}</a>`;
     })
     .join('')}</div>` : ''}
 <ol class="dist-list">${sorted
     .map((pk) => {
       const { p, hist } = byId[pk.id];
       const image = imageOf(p.id, hist);
-      return `<li><a href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="" loading="lazy">` : '<span class="dimg"></span>'}<span class="dname"><b>${esc(p.name)}</b><span class="tierline">${pk.skill ? sk(pk.skill) : ''}${levelBadge(p.id)}</span></span><span class="bar dist"><i style="width:${pk.dist * 10}%"></i></span><b class="dnum">${pk.dist}</b></a></li>`;
+      return `<li><a href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="" loading="lazy" decoding="async" width="212" height="212">` : '<span class="dimg"></span>'}<span class="dname"><b>${esc(p.name)}</b><span class="tierline">${pk.skill ? sk(pk.skill) : ''}${levelBadge(p.id)}</span></span><span class="bar dist"><i style="width:${pk.dist * 10}%"></i></span><b class="dnum">${pk.dist}</b></a></li>`;
     })
     .join('')}</ol>
 <p class="note">※ ${DIST_NOTE}</p></section>`;
@@ -585,8 +602,8 @@ function gallery(p, hist) {
   const imgs = galleryOf(p, hist);
   if (!imgs.length) return '';
   return `<div class="gal">
-<div class="gal-main"><img id="galMain" src="${esc(imgs[0])}" alt="${esc(p.name)}"></div>
-${imgs.length > 1 ? `<div class="gal-thumbs">${imgs.map((src, i) => `<button type="button" class="gal-t${i === 0 ? ' on' : ''}" data-src="${esc(src)}" aria-label="사진 ${i + 1}"><img src="${esc(src)}" alt="" loading="lazy"></button>`).join('')}</div>` : ''}
+<div class="gal-main"><img id="galMain" src="${esc(imgs[0])}" alt="${esc(p.name)}" width="492" height="492" fetchpriority="high"></div>
+${imgs.length > 1 ? `<div class="gal-thumbs">${imgs.map((src, i) => `<button type="button" class="gal-t${i === 0 ? ' on' : ''}" data-src="${esc(src)}" aria-label="사진 ${i + 1}"><img src="${esc(src)}" alt="" loading="lazy" decoding="async" width="212" height="212"></button>`).join('')}</div>` : ''}
 <p class="gal-note">쿠팡 판매 상품 사진 · 판매처마다 옵션 구성이 다를 수 있습니다</p>
 </div>`;
 }
@@ -656,6 +673,7 @@ ${gallery(p, hist)}
 <div class="pd-info">
 <span class="pt-cat">${esc(cat.name)}</span>
 <h1>${esc(p.name)}</h1>
+${updatedTag(max2(p.updated, a?.last.d))}
 <div class="pt-badges">${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, sr }) => (sr ? `<span class="tag rank">${esc(guideName(g).replace(' 비교 및 선택 가이드', ''))} ${esc(sr.label)}</span>` : '')).join('')}${sellable(p.id) ? '' : '<span class="tag none">쿠팡 판매처 없음</span>'}</div>
 <div class="pd-price">${priceLine(p.id, 'pd-won')}${priceLevel(p.id) ? `<span>가격대 <small>(${esc(cat.name)} 비교 기준)</small></span>${levelLink(p.id, hist, '쿠팡에서 현재 가격 보기 ›')}` : ''}</div>
 <p class="pd-sum">${esc(p.summary)}</p>
@@ -670,7 +688,7 @@ ${priceHistory(p, hist, a)}`;
   }
   writeText(
     join(OUT, 'p', `${p.id}.html`),
-    layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' } }),
+    layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' }, ld: [crumbLd([['홈', '/'], [cat.name, `/c/${p.category}`], [p.name, `/p/${p.id}`]])] }),
   );
 }
 
@@ -682,10 +700,12 @@ for (const c of cats) {
     join(OUT, 'c', `${c.id}.html`),
     layout({
       title: `${c.name} 비교: 브랜드별 상위 모델 점수·장단점`,
-      desc: `${c.name} 상위 모델을 점수와 장단점으로 비교했습니다. ${items.map((e) => e.p.name).join(', ')}`,
+      desc: `${c.name} ${items.filter((e) => sellable(e.p.id)).length}종을 실력 단계·가격대별로 비교하고 장단점과 주관적 편집 점수, 쿠팡 판매가를 정리했습니다. ${items.slice(0, 6).map((e) => e.p.name).join(', ')} 등.`.slice(0, 160),
       path: `/c/${c.id}`,
+      ld: [crumbLd([['홈', '/'], [c.name, `/c/${c.id}`]])],
       body: `<nav class="crumb"><a href="/">홈</a> › ${esc(c.name)}</nav>
 <h1>${esc(c.name)} 비교</h1>
+${updatedTag(max2(...related.map((g) => g.updated)))}
 ${related.length > 1 ? `<nav class="gtabs">${related.map((g) => `<a href="#g-${g.slug}">${esc(genderLabel(g, c))}</a>`).join('')}</nav>` : ''}
 ${related.map((g) => `<section id="g-${g.slug}" class="cat-cmp">${related.length > 1 ? `<h2 class="cat-cmp-h"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender ?? '공용')}</span>${esc(c.name)} 비교</h2>` : ''}${infographic(g)}${tierCompare(g)}<a class="more-link" href="/g/${g.slug}">장단점·고르는 법 전체 보기 ›</a></section>`).join('')}
 <section><h2>${esc(c.name)} 전체 상품</h2>${prow(items)}</section>
@@ -728,7 +748,7 @@ ${crit.map((_, i) => `<td class="sc">${pk.scores ? dots(pk.scores[i]) : '-'}</td
       const image = imageOf(p.id, hist);
       const total = totalOf(pk);
       return `<section class="pick"><h2>${esc(p.name)} <small>${esc(pk.role)}</small>${total ? ` <span class="badge good">${total.toFixed(1)}/5</span>` : ''}${unisexBadge(pk)}</h2>
-<div class="pick-body">${image ? `<img class="pick-img" src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : ''}<div>
+<div class="pick-body">${image ? `<img class="pick-img" src="${esc(image)}" alt="${esc(p.name)}" loading="lazy" decoding="async" width="212" height="212">` : ''}<div>
 <p>${esc(p.summary)}</p><p><b>이런 분께:</b> ${esc(pk.forWhom)}</p>${newsBlock(p.id, 'h3')}${buyButton(p.id, hist)}</div></div></section>`;
     })
     .join('');
@@ -738,9 +758,14 @@ ${crit.map((_, i) => `<td class="sc">${pk.scores ? dots(pk.scores[i]) : '-'}</td
       title: `${guideName(g)}${g.title.includes(':') ? `: ${g.title.split(':').slice(1).join(':').trim()}` : ''}`,
       desc: g.desc,
       path: `/g/${g.slug}`,
+      ld: [
+        crumbLd([['홈', '/'], [guideCat(g)?.name ?? '', `/c/${guideCat(g)?.id}`], [guideName(g), `/g/${g.slug}`]]),
+        listLd(g.title, stagedPicks(g).map((pk) => pk.id)),
+      ],
       body: `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${guideCat(g)?.id}">${esc(guideCat(g)?.name ?? '')}</a>${g.gender && g.gender !== '공용' ? ` › ${esc(g.gender)}` : ''}</nav>
 <p class="g-kicker">${g.gender ? `<span class="gender g-${esc(g.gender)}">${esc(g.gender === '공용' ? '남녀공용' : g.gender)}</span>` : ''}${esc(guideName(g))}</p>
 <h1>${esc(g.title)}</h1>
+${updatedTag(g.updated)}
 <section class="prose"><p>${esc(g.intro)}</p></section>
 ${criteriaBox(g)}
 <nav class="toc">${mergedInto(g).some((m) => m.grinds) ? '<a href="#vokey">보키 그라인드 비교</a>' : ''}<a href="#cmp">비교표</a><a href="#tiers">수준별 비교</a>${g.picks.some((pk) => pk.dist) ? '<a href="#dist">비거리 비교</a>' : ''}<a href="#scores">항목별 점수</a><a href="#models">모델별 분석</a><a href="#choose">선택 가이드</a><a href="#faq">자주 묻는 질문</a></nav>
@@ -786,11 +811,17 @@ for (const g of pageGuides) {
       join(OUT, 'g', `${g.slug}-${SKILL_EN[skill]}.html`),
       layout({
         title: `${name} 비교 추천 ${ps.length}종`,
-        desc: `${name} ${ps.length}종을 ${levels.join('·')} 가격대별로 비교했습니다. 장단점, 주관적 점수, 비거리 참고 점수와 쿠팡 가격 확인 링크를 함께 정리했습니다.`,
+        desc: `${name} ${ps.length}종을 ${levels.join('·')} 가격대별로 비교했습니다. 장단점과 주관적 편집 점수${ps.some((pk) => pk.dist) ? ', 비거리 참고 점수' : ''}, 확인 날짜를 적은 쿠팡 판매가를 함께 정리했습니다.`,
         path: skillPath(g, skill),
+        ld: [
+          crumbLd([['홈', '/'], [c?.name ?? '', `/c/${c?.id}`], [guideName(g), `/g/${g.slug}`], [`${skill}용`, skillPath(g, skill)]]),
+          listLd(`${name} 비교`, ps.map((pk) => pk.id)),
+        ],
         body: `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${c?.id}">${esc(c?.name ?? '')}</a>${who ? ` › <a href="/g/${g.slug}">${esc(g.gender)}</a>` : ''} › ${esc(skill)}</nav>
 <p class="g-kicker"><span class="skill sk-${SKILLS.indexOf(skill) + 1}">${skill}</span>${esc(guideName(g))}</p>
 <h1>${esc(name)} 비교 추천 <small>${ps.length}종 · ${esc(levels.join('·'))}</small></h1>
+${updatedTag(g.updated)}
+${criteriaBox(g)}
 ${skillNav(g, skill)}
 <section>${infographic(g, null, { ids, byPrice: true, title: `${name}` })}</section>
 ${distCompare(g, ids)}
@@ -815,7 +846,7 @@ function ptile({ p, hist, a }) {
   const sc = scoreOf[p.id];
   const rocket = picks[p.id]?.rocket;
   return `<a class="ptile" href="/p/${p.id}">
-<div class="pt-img">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : `<span class="ph">${esc(catName[p.category]?.slice(0, 1) ?? '')}</span>`}</div>
+<div class="pt-img">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy" decoding="async" width="212" height="212">` : `<span class="ph">${esc(catName[p.category]?.slice(0, 1) ?? '')}</span>`}</div>
 <div class="pt-body"><span class="pt-cat">${esc(catName[p.category])}</span><h3>${esc(p.name)}</h3>
 <div class="pt-badges">${rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}</div>
 ${priceTag(p.id, a)}${priceLine(p.id, 'pt-won')}<p class="pt-cta">특징·비교 보기 ›</p></div>
@@ -946,27 +977,55 @@ writeText(
 );
 
 // ---------- 운영 안내 ----------
+// 운영자 소개·문의는 config/site.json 의 about.operator / about.contact 를 채우면 표시된다 (비어 있으면 숨김)
+const ABOUT = SITE.about ?? {};
 writeText(
   join(OUT, 'about.html'),
   layout({
-    title: '운영 안내',
-    desc: `${SITE_NAME}의 가격 기록 방법과 제휴 안내`,
+    title: '운영 안내: 점수·가격 수집·업데이트 방법',
+    desc: `${SITE_NAME}가 골프용품 점수를 매기는 방법, 쿠팡 판매가를 확인·기록하는 방법, 업데이트 주기와 제휴 안내입니다.`,
     path: '/about',
+    ld: [crumbLd([['홈', '/'], ['운영 안내', '/about']])],
     body: `<h1>운영 안내</h1>
-<section class="prose">
+<nav class="toc"><a href="#what">사이트 소개</a>${ABOUT.operator ? '<a href="#operator">운영자</a>' : ''}<a href="#score">점수 매기는 방법</a><a href="#price">가격 수집 방법</a><a href="#update">업데이트 주기</a><a href="#ad">제휴 안내</a></nav>
+<section class="prose" id="what">
 <h2>무엇을 하는 사이트인가요?</h2>
-<p>인기 골프용품의 특징과 고르는 법을 정리하고, 가격을 매일 기록해 지금이 살 때인지 알려드립니다.</p>
-<h2>가격은 어떻게 기록하나요?</h2>
-<p>${PRICE_NOTE}</p>
-<h2>"사기 좋은 때"는 어떻게 판단하나요?</h2>
+<p>드라이버부터 골프공·거리측정기까지 ${cats.length}개 골프용품을 실력 단계(초심자·중급·고급·프로)와 성별, 가격대로 나눠 비교합니다. 제조사 공개 정보와 보도된 투어 소식, 일반적인 사용자 평가를 모아 정리한 <b>비교 정보</b>이며, 이 사이트가 제품을 직접 시타·측정한 결과는 아닙니다.</p>
+</section>
+${ABOUT.operator ? `<section class="prose" id="operator"><h2>운영자 소개</h2>${String(ABOUT.operator).split('\n').map((t) => `<p>${esc(t)}</p>`).join('')}${ABOUT.contact ? `<p>문의: ${esc(ABOUT.contact)}</p>` : ''}</section>` : ''}
+<section class="prose" id="score">
+<h2>점수 매기는 방법</h2>
 <ul>
-<li><b>역대 최저가 근처</b>: 기록된 최저가와 2% 이내</li>
-<li><b>평소보다 저렴</b>: 최근 30일 평균보다 5% 이상 낮음</li>
-<li><b>평소보다 비쌈</b>: 최근 30일 평균보다 5% 이상 높음</li>
-<li><b>데이터 수집 중</b>: 기록이 7일 미만</li>
+<li>가이드마다 4개 비교 항목(예: 드라이버는 관용성·타구감·초보 적합·가성비)을 정하고, 각 항목을 5점 만점으로 매깁니다.</li>
+<li>편집 점수는 4개 항목 점수를 <b>같은 비중(각 25%)으로 평균</b>한 값입니다.</li>
+<li>실력 단계마다 기대하는 성능이 달라(예: 초심자는 관용성, 프로는 조작성), <b>순위는 같은 실력 단계 안에서만</b> 매깁니다. 단계가 다른 제품을 한 줄로 세운 '종합 순위'는 두지 않습니다.</li>
+<li>점수 근거: 제조사 공개 사양, 보도된 투어 사용 소식(출처 표기), 일반적인 사용자 평가, 확인 시점의 판매가. 직접 측정한 시험 결과가 아니며 개인의 체형·스윙에 따라 체감은 다릅니다.</li>
+<li>비거리 점수(드라이버)는 헤드 설계로 본 거리 잠재력에 대한 주관적 참고값(10점 만점)입니다.</li>
+<li>쿠팡에 국내 정품 판매처가 없는 모델은 가격을 확인할 수 없어 순위에서 빼고 '판매처 없음'으로 따로 표시합니다.</li>
 </ul>
+<p class="note">※ ${SCORE_NOTE}</p>
+</section>
+<section class="prose" id="price">
+<h2>가격 수집 방법</h2>
+<p>${PRICE_NOTE}</p>
+<ul>
+<li><b>지금 표시되는 가격</b>: 쿠팡 파트너스 사이트에서 상품 링크를 만들 때 확인한 판매가입니다. 가격 옆에 확인 날짜를 적고, ${PRICE_STALE_DAYS}일이 지나면 흐리게 '오래된 가격'으로 표시합니다.</li>
+<li><b>자동 기록(예정)</b>: 쿠팡 파트너스 API 승인 뒤 매시간 일부 상품씩 나눠 하루 한 번 전 상품의 최저가를 기록합니다. 기록이 쌓이면 상품 페이지에 최근 30일·90일 추이와 역대 최저가 대비 현재가, 홈에 '최근 가격 하락'이 표시됩니다.</li>
+<li>"사기 좋은 때" 판단: 역대 최저가와 2% 이내면 '역대 최저가 근처', 최근 30일 평균보다 5% 이상 낮으면 '평소보다 저렴', 5% 이상 높으면 '평소보다 비쌈', 기록이 7일 미만이면 '데이터 수집 중'입니다.</li>
+<li>해외직구·구매대행·병행수입 상품은 비교와 가격 기록에서 뺍니다.</li>
+</ul>
+</section>
+<section class="prose" id="update">
+<h2>업데이트 주기</h2>
+<ul>
+<li>가이드와 상품 정보: 신모델 출시나 판매처 변경이 있을 때 고치며, 각 페이지 상단에 '마지막 업데이트' 날짜를 적습니다.</li>
+<li>가격: API 승인 뒤 매일 자동 기록, 사이트는 하루 한 번 다시 만들어집니다.</li>
+</ul>
+</section>
+<section class="prose" id="ad">
 <h2>제휴 안내</h2>
-<p>${DISCLOSURE} 링크를 통해 구매하셔도 구매자에게 추가 비용은 없습니다.</p>
+<p>${DISCLOSURE} 링크를 통해 구매하셔도 구매자에게 추가 비용은 없습니다. 쿠팡 외 판매처(공식몰) 링크는 제휴 링크가 아니며 수수료를 받지 않습니다.</p>
+<p>상품 이미지는 쿠팡 파트너스가 제공하는 이미지이며, 설명 그림은 이 사이트가 직접 그린 개념도입니다.</p>
 </section>`,
   }),
 );
@@ -1000,11 +1059,19 @@ writeText(
 );
 
 // ---------- 검색엔진용 파일 ----------
-const urls = ['/', '/about', ...pageGuides.map((g) => `/g/${g.slug}`), ...pageGuides.flatMap((g) => skillGroups(g).map((x) => skillPath(g, x.skill))), ...cats.map((c) => `/c/${c.id}`), ...entries.map((e) => `/p/${e.p.id}`)];
+const gMax = max2(...pageGuides.map((g) => g.updated));
+const urls = [
+  ['/', max2(gMax, updated)],
+  ['/about', BUILD_DAY],
+  ...pageGuides.map((g) => [`/g/${g.slug}`, g.updated]),
+  ...pageGuides.flatMap((g) => skillGroups(g).map((x) => [skillPath(g, x.skill), g.updated])),
+  ...cats.map((c) => [`/c/${c.id}`, max2(...guidesFor(c.id).map((g) => g.updated))]),
+  ...entries.map((e) => [`/p/${e.p.id}`, max2(e.p.updated, e.a?.last.d)]),
+];
 writeText(
   join(OUT, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
-    .map((u) => `<url><loc>${SITE_URL}${u}</loc><lastmod>${updated}</lastmod></url>`)
+    .map(([u, d]) => `<url><loc>${SITE_URL}${u}</loc><lastmod>${d ?? updated}</lastmod></url>`)
     .join('\n')}\n</urlset>\n`,
 );
 writeText(join(OUT, 'robots.txt'), DEMO ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
