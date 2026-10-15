@@ -251,9 +251,26 @@ ${newsBlock(p.id)}
   writeText(join(OUT, 'p', `${p.id}.html`), layout({ title, desc, path: `/p/${p.id}`, body }));
 }
 
+// ---------- 비교·추천 가이드 데이터와 타일 ----------
+const guides = readJson(join(ROOT, 'config', 'guides.json'), { guides: [] }).guides;
+const byId = Object.fromEntries(entries.map((e) => [e.p.id, e]));
+const SCORE_NOTE = '점수는 제조사 공개 정보, 보도된 투어 소식, 일반적인 사용자 평가와 현재 판매가를 바탕으로 이 사이트가 매긴 주관적인 참고 점수입니다. 직접 측정한 시험 결과나 공식 평가가 아니며, 개인의 체형·스윙에 따라 체감은 다를 수 있습니다.';
+const avg = (xs) => xs.reduce((s, x) => s + x, 0) / xs.length;
+const dots = (n) => `<span class="dots" aria-label="5점 중 ${n}점">${'●'.repeat(n)}<i>${'●'.repeat(5 - n)}</i></span>`;
+function guideTile(g) {
+  const imgs = g.picks.map((pk) => byId[pk.id] && imageOf(pk.id, byId[pk.id].hist)).filter(Boolean).slice(0, 4);
+  return `<a class="gcard" href="/g/${g.slug}">
+<div class="gthumb">${imgs.map((src) => `<img src="${esc(src)}" alt="" loading="lazy">`).join('')}</div>
+<div class="ginfo"><span class="badge good">${g.picks.length}개 비교</span><h3>${esc(g.title)}</h3><p>${esc(g.desc)}</p></div>
+</a>`;
+}
+const guideGrid = (list) => `<div class="ggrid">${list.map(guideTile).join('')}</div>`;
+const guidesFor = (catId) => guides.filter((g) => g.picks.some((pk) => byId[pk.id]?.p.category === catId));
+
 // ---------- 분류 페이지 ----------
 for (const c of cats) {
   const items = entries.filter((e) => e.p.category === c.id);
+  const related = guidesFor(c.id);
   writeText(
     join(OUT, 'c', `${c.id}.html`),
     layout({
@@ -263,35 +280,46 @@ for (const c of cats) {
       body: `<nav class="crumb"><a href="/">홈</a></nav>
 <h1>${esc(c.name)} 고르는 법</h1>
 <section class="prose"><p>${esc(c.intro)}</p>${figure(c.id)}<ul>${c.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
-<section><h2>추천 ${esc(c.name)}</h2>${grid(items)}</section>`,
+<section><h2>추천 ${esc(c.name)}</h2>${grid(items)}</section>
+${related.length ? `<section><h2>${esc(c.name)} 비교·추천 가이드</h2>${guideGrid(related)}</section>` : ''}`,
     }),
   );
 }
 
-// ---------- 비교·추천 가이드 ----------
-const guides = readJson(join(ROOT, 'config', 'guides.json'), { guides: [] }).guides;
-const byId = Object.fromEntries(entries.map((e) => [e.p.id, e]));
+// ---------- 비교·추천 가이드 페이지 ----------
 for (const g of guides) {
-  const rows = g.picks
-    .filter((pk) => byId[pk.id])
-    .map((pk) => {
-      const { p, hist, a } = byId[pk.id];
-      const image = imageOf(p.id, hist);
-      const link = links[p.id] ?? hist?.latest?.link;
-      return `<tr>
-<td class="pcell">${image ? `<img src="${esc(image)}" alt="" loading="lazy">` : ''}<a href="/p/${p.id}">${esc(p.name)}</a></td>
-<td><span class="badge mid">${esc(pk.role)}</span></td>
-<td class="t">${esc(pk.forWhom)}</td>
-<td>${a ? `<b>${won(a.cur)}</b><br>` : ''}${link ? `<a class="btn sm" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">쿠팡 보기</a>` : ''}</td>
-</tr>`;
-    })
-    .join('');
-  const cards = g.picks
-    .filter((pk) => byId[pk.id])
+  const picksIn = g.picks.filter((pk) => byId[pk.id]);
+  const crit = g.criteria ?? [];
+  const totalOf = (pk) => (pk.scores?.length ? avg(pk.scores) : null);
+  const best = Math.max(...picksIn.map((pk) => totalOf(pk) ?? 0));
+  const scoreRows = picksIn
     .map((pk) => {
       const { p, hist } = byId[pk.id];
       const image = imageOf(p.id, hist);
-      return `<section class="pick"><h2>${esc(p.name)} <small>${esc(pk.role)}</small></h2>
+      const link = links[p.id] ?? hist?.latest?.link;
+      const total = totalOf(pk);
+      return `<tr>
+<td class="pcell">${image ? `<img src="${esc(image)}" alt="" loading="lazy">` : ''}<a href="/p/${p.id}">${esc(p.name)}</a><br><span class="badge mid">${esc(pk.role)}</span></td>
+${crit.map((_, i) => `<td class="sc">${pk.scores ? dots(pk.scores[i]) : '-'}</td>`).join('')}
+<td class="total">${total ? `<b>${total.toFixed(1)}</b><small>/5</small>${total === best ? '<br><span class="badge good">종합 1위</span>' : ''}` : '-'}</td>
+<td>${link ? `<a class="btn sm" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">쿠팡 보기</a>` : ''}</td>
+</tr>`;
+    })
+    .join('');
+  const proRows = picksIn
+    .map((pk) => {
+      const { p } = byId[pk.id];
+      return `<tr><td class="pname"><a href="/p/${p.id}">${esc(p.name)}</a></td>
+<td class="t pro"><ul>${(pk.pros ?? []).map((t) => `<li>${esc(t)}</li>`).join('')}</ul></td>
+<td class="t con"><ul>${(pk.cons ?? []).map((t) => `<li>${esc(t)}</li>`).join('')}</ul></td></tr>`;
+    })
+    .join('');
+  const cards = picksIn
+    .map((pk) => {
+      const { p, hist } = byId[pk.id];
+      const image = imageOf(p.id, hist);
+      const total = totalOf(pk);
+      return `<section class="pick"><h2>${esc(p.name)} <small>${esc(pk.role)}</small>${total ? ` <span class="badge good">${total.toFixed(1)}/5</span>` : ''}</h2>
 <div class="pick-body">${image ? `<img class="pick-img" src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : ''}<div>
 <p>${esc(p.summary)}</p><p><b>이런 분께:</b> ${esc(pk.forWhom)}</p>${newsBlock(p.id, 'h3')}${buyButton(p.id, hist)}</div></div></section>`;
     })
@@ -305,15 +333,14 @@ for (const g of guides) {
       body: `<nav class="crumb"><a href="/">홈</a> › 비교·추천</nav>
 <h1>${esc(g.title)}</h1>
 <section class="prose"><p>${esc(g.intro)}</p>${figure(byId[g.picks[0]?.id]?.p.category)}</section>
-<section><h2>한눈에 비교</h2><div class="tablewrap"><table><thead><tr><th>모델</th><th>성격</th><th>이런 분께</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>
+<section><h2>한눈에 비교: 항목별 점수</h2><div class="tablewrap"><table class="scores"><thead><tr><th>모델</th>${crit.map((c) => `<th>${esc(c)}</th>`).join('')}<th>종합</th><th></th></tr></thead><tbody>${scoreRows}</tbody></table></div>
+<p class="note score-note">※ ${SCORE_NOTE}</p>
 <p class="note">${DISCLOSURE}</p></section>
+<section><h2>장단점 비교</h2><div class="tablewrap"><table class="proscons"><thead><tr><th>모델</th><th>장점</th><th>단점</th></tr></thead><tbody>${proRows}</tbody></table></div></section>
 ${cards}
 <section class="prose">${g.sections.map((s) => `<h2>${esc(s.h)}</h2><p>${esc(s.p)}</p>`).join('')}</section>
 <section class="prose"><h2>자주 묻는 질문</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>
-<section><h2>다른 비교·추천 가이드</h2><ul class="guides">${guides
-        .filter((o) => o.slug !== g.slug)
-        .map((o) => `<li><a href="/g/${o.slug}"><b>${esc(o.title)}</b></a></li>`)
-        .join('')}</ul></section>`,
+<section><h2>다른 비교·추천 가이드</h2>${guideGrid(guides.filter((o) => o.slug !== g.slug))}</section>`,
     }),
   );
 }
@@ -338,7 +365,7 @@ writeText(
 <nav class="chips">${cats.map((c) => `<a href="/c/${c.id}">${esc(c.name)}</a>`).join('')}</nav>
 </section>
 ${deals.length ? `<section><h2>🔥 지금 사기 좋은 상품</h2>${grid(deals)}</section>` : ''}
-${guides.length ? `<section><h2>비교·추천 가이드</h2><ul class="guides">${guides.map((g) => `<li><a href="/g/${g.slug}"><b>${esc(g.title)}</b><span>${esc(g.desc)}</span></a></li>`).join('')}</ul></section>` : ''}
+${guides.length ? `<section><h2>비교·추천 가이드</h2>${guideGrid(guides)}</section>` : ''}
 ${sections}`,
   }),
 );
