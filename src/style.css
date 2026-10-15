@@ -420,6 +420,29 @@ table.ig .bar i { display: block; height: 100%; background: var(--accent); }
 .choose-pick a { display: flex; flex-direction: column; gap: 4px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; background: var(--bg); }
 .choose-pick a:hover { border-color: var(--accent); }
 .choose-pick small { color: var(--muted); font-size: 12px; }
+.quick { align-items: center; }
+.lvl { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; font-weight: 800; padding: 3px 10px; border-radius: 99px; white-space: nowrap; }
+.lvl i { font-style: normal; letter-spacing: 1px; font-size: 11px; opacity: .8; }
+.lvl-1 { color: #1f7a4d; background: #e3f3ea; }
+.lvl-2 { color: #2f6fb5; background: #e4eefa; }
+.lvl-3 { color: #a8641a; background: #fbefdc; }
+.lvl-4 { color: #b4372f; background: #fbe7e5; }
+.lvl-link { display: inline-flex; flex-direction: column; align-items: center; gap: 4px; text-decoration: none; }
+.lvl-link small { font-size: 11px; color: var(--accent); font-weight: 700; }
+.lvl-link:hover .lvl { box-shadow: 0 0 0 2px currentColor; }
+.pd-price .lvl-link { flex-direction: row; gap: 10px; }
+.pd-price .lvl { font-size: 16px; padding: 5px 14px; }
+.pd-price .lvl-link small { font-size: 13px; }
+.pdate { display: block; font-size: 11px; font-weight: 500; color: var(--muted); }
+.pt-price { margin-top: auto; }
+.pt-price + .pt-cta { margin-top: 2px; }
+.ig-won { font-size: 14px; }
+table.ig tbody th small { display: block; font-weight: 400; opacity: .7; font-size: 11px; margin-left: 32px; }
+.pd-price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px; margin: 10px 0 6px; padding: 12px 14px; background: var(--bg); border-radius: 10px; }
+.pd-price span { font-size: 13px; color: var(--muted); }
+.pd-price b { font-size: 26px; letter-spacing: -0.5px; }
+.pd-price small { flex-basis: 100%; font-size: 12px; color: var(--muted); }
+.tc-price { margin: 0; font-size: 18px; font-weight: 800; }
 .linked { font-size: 13px; color: var(--muted); margin: 12px 0 8px; }
 .note { font-size: 12px; color: var(--muted); margin: 8px 0 0; }
 

@@ -174,6 +174,38 @@ ${body}
 }
 
 const imageOf = (id, hist) => hist?.latest?.image ?? picks[id]?.image;
+// 확인일 기준 쿠팡 판매가 (API 가격 기록이 있으면 그 값을 우선)
+const PRICE_DATE = SITE.priceCheckedAt ?? '';
+const priceDateLabel = PRICE_DATE ? `${+PRICE_DATE.slice(5, 7)}.${+PRICE_DATE.slice(8, 10)}` : '';
+const pickPrice = (id) => picks[id]?.price ?? null;
+// 가격 수준: 같은 비교 안에서 가장 싼 상품 대비 상대 단계 (숫자 가격은 표시하지 않음)
+const LEVELS = ['', '합리적', '중가', '고가', '최고가'];
+function priceLevel(id) {
+  const g = guides.find((x) => x.picks.some((pk) => pk.id === id));
+  if (!g) return null;
+  const prices = g.picks.map((pk) => pickPrice(pk.id)).filter(Boolean);
+  const p = pickPrice(id);
+  if (!p || !prices.length) return null;
+  const r = p / Math.min(...prices);
+  const n = r <= 1.3 ? 1 : r <= 2 ? 2 : r <= 3 ? 3 : 4;
+  return { n, label: LEVELS[n], marks: '₩'.repeat(n) };
+}
+const levelBadge = (id) => {
+  const lv = priceLevel(id);
+  return lv ? `<span class="lvl lvl-${lv.n}"><i>${lv.marks}</i>${lv.label}</span>` : '';
+};
+// 가격 수준 + 쿠팡 링크
+function levelLink(id, hist, extra = '쿠팡에서 가격 보기 ›') {
+  const lv = priceLevel(id);
+  const link = links[id] ?? hist?.latest?.link;
+  if (!lv) return '';
+  const inner = `<span class="lvl lvl-${lv.n}"><i>${lv.marks}</i>${lv.label}</span>${link ? `<small>${extra}</small>` : ''}`;
+  return link ? `<a class="lvl-link" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">${inner}</a>` : `<span class="lvl-link">${inner}</span>`;
+}
+function priceTag(id, a, cls = 'pt-price') {
+  const b = levelBadge(id);
+  return b ? `<p class="${cls}">${b}</p>` : '';
+}
 
 // ---------- 투어·뉴스 소식, 설명 그림 ----------
 const news = readJson(join(ROOT, 'config', 'news.json'), {});
@@ -292,7 +324,7 @@ ${row('🔍', '한 줄 평', (pk) => (pk.verdict ? `<span class="ig-verdict">${e
 ${(g.specRows ?? []).map((label, si) => row('📐', esc(label), (pk) => `<span class="ig-spec">${esc(pk.specs?.[si] ?? '-')}</span>`)).join('')}
 ${row('🎯', '성격', (pk) => esc(pk.role))}
 ${row('👤', '이런 분께', (pk) => esc(pk.forWhom))}
-${row('💰', '가격대', (pk) => `<span class="ig-price">${priceTier(g, pk.id)}</span>`)}
+${row('💰', '가격대', (pk) => levelLink(pk.id, byId[pk.id].hist))}
 ${row('✅', '강점', (pk) => (pk.pros ?? []).map(esc).join('<br>'))}
 ${row('⚠️', '고려할 점', (pk) => (pk.cons ?? []).map(esc).join('<br>'))}
 ${crit.length ? row('📊', '항목별 점수', (pk) => (pk.scores ? crit.map((c, i) => `<span class="ig-crit">${esc(c)} ${dots(pk.scores[i])}</span>`).join('') : '-')) : ''}
@@ -301,7 +333,7 @@ ${row('🛒', '가격 확인', (pk) => {
     return link ? `<a class="btn sm" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">쿠팡 보기</a>` : '';
   })}
 </tbody></table></div>
-<p class="note">가격대(₩~₩₩₩₩)는 2026년 10월 쿠팡 판매가를 기준으로 이 비교 안에서의 상대적인 수준입니다. 점수는 공식 평가가 아닌 주관적 참고 점수입니다. 쿠팡 보기 버튼은 쿠팡 파트너스 링크입니다.</p></div>`;
+<p class="note">가격대(합리적·중가·고가·최고가)는 이 비교 안에서의 상대적인 가격 수준이며, 누르면 쿠팡에서 현재 가격을 확인할 수 있습니다. 점수는 공식 평가가 아닌 주관적 참고 점수입니다. 쿠팡 보기 버튼은 쿠팡 파트너스 링크입니다.</p></div>`;
 }
 const guidesFor = (catId) => guides.filter((g) => g.picks.some((pk) => byId[pk.id]?.p.category === catId));
 const genderLabel = (g, c) => (g.gender && g.gender !== '공용' ? `${g.gender} ${c.name} 비교` : `${c.name} 비교`);
@@ -398,6 +430,7 @@ ${gallery(p, hist)}
 <span class="pt-cat">${esc(cat.name)}</span>
 <h1>${esc(p.name)}</h1>
 <div class="pt-badges">${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, r }) => `<span class="tag rank">${esc(shortTitle(g.title))} ${r}위</span>`).join('')}</div>
+${priceLevel(p.id) ? `<div class="pd-price"><span>가격대 <small>(${esc(cat.name)} 비교 기준)</small></span>${levelLink(p.id, hist, '쿠팡에서 현재 가격 확인 ›')}</div>` : ''}
 <p class="pd-sum">${esc(p.summary)}</p>
 ${points ? `<h2 class="sub">구매 전 확인할 점</h2>${points}` : ''}
 ${buyButton(p.id, hist)}
@@ -513,7 +546,7 @@ function ptile({ p, hist, a }) {
 <div class="pt-img">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : '<span class="ph">⛳</span>'}</div>
 <div class="pt-body"><span class="pt-cat">${esc(catName[p.category])}</span><h3>${esc(p.name)}</h3>
 <div class="pt-badges">${rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}</div>
-${a ? `<p class="pt-price">${won(a.cur)}</p>` : '<p class="pt-cta">특징·비교 보기 ›</p>'}</div>
+${priceTag(p.id, a)}<p class="pt-cta">특징·비교 보기 ›</p></div>
 </a>`;
 }
 function prow(items) { return `<div class="prow">${items.map(ptile).join('')}</div>`; }
@@ -597,6 +630,7 @@ ${rocketItems.length ? `<section class="block"><div class="block-h"><h2>🚀 로
         return `<a class="tcard" href="/p/${p.id}">
 <div class="tc-img">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" loading="lazy">` : ''}<span class="tc-ribbon">${esc(shortTitle(g.title))} 1위</span></div>
 <div class="tc-body"><span class="pt-cat">${esc(catName[p.category])}</span><h3>${esc(p.name)}</h3>
+${priceTag(p.id, byId[top.id].a, 'tc-price')}
 <p class="tc-score"><b>${top.scores ? avg(top.scores).toFixed(1) : '-'}</b><small>/5 편집 점수</small></p>
 ${top.verdict ? `<p class="tc-verdict">${esc(top.verdict)}</p>` : ''}
 <span class="pt-cta">상세 비교 보기 ›</span></div>
@@ -623,7 +657,9 @@ writeText(
       s: scoreOf[e.p.id] ? +scoreOf[e.p.id].toFixed(1) : null,
       r: !!picks[e.p.id]?.rocket,
       l: links[e.p.id] ?? e.hist?.latest?.link ?? '',
-      pr: e.a ? e.a.cur : null,
+      pr: null,
+      lv: priceLevel(e.p.id)?.label ?? '',
+      lvn: priceLevel(e.p.id)?.n ?? 0,
     })),
     guides: guides.map((g) => ({
       t: g.title,

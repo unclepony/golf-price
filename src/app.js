@@ -79,7 +79,7 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
 <div class="sprod-body"><span class="pt-cat">${esc(p.c)}</span><a href="${p.u}"><h3>${esc(p.n)}</h3></a>
 <div class="pt-badges">${p.r ? '<span class="tag rocket">로켓배송</span>' : ''}${p.s ? `<span class="tag score">편집 점수 ${p.s.toFixed(1)}</span>` : ''}</div>
 <p>${esc(p.d)}</p></div>
-<div class="sprod-act">${p.pr ? `<b class="pt-price">${p.pr.toLocaleString('ko-KR')}원</b>` : ''}<a class="btn sm" href="${p.u}">상세·비교 보기</a>${p.l ? `<a class="btn sm ghost" href="${esc(p.l)}" target="_blank" rel="sponsored nofollow noopener">쿠팡 가격 확인</a>` : ''}</div>
+<div class="sprod-act">${p.lv ? `<span class="lvl lvl-${p.lvn}"><i>${'₩'.repeat(p.lvn)}</i>${esc(p.lv)}</span>` : ''}<a class="btn sm" href="${p.u}">상세·비교 보기</a>${p.l ? `<a class="btn sm ghost" href="${esc(p.l)}" target="_blank" rel="sponsored nofollow noopener">쿠팡 가격 확인</a>` : ''}</div>
 </article>`,
           )
           .join('');
