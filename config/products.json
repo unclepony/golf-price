@@ -3265,6 +3265,1456 @@
         "미즈노 정품"
       ],
       "ref": 1589000
+    },
+    {
+      "id": "taylormade-sim2max-fairway",
+      "category": "wood",
+      "name": "테일러메이드 SIM2 MAX 페어웨이 우드",
+      "query": "테일러메이드 SIM2 MAX 페어웨이 우드",
+      "must": [
+        "sim2",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 120000,
+      "max": 360000,
+      "summary": "SIM2 MAX 페어웨이 우드입니다. 구형이 되며 가격이 많이 내려와 로켓배송으로 저렴하게 살 수 있습니다.",
+      "points": [
+        "가격 부담 적음",
+        "3번 15° · R · 2021년"
+      ],
+      "ref": 199000
+    },
+    {
+      "id": "mizuno-stmax230-fairway",
+      "category": "wood",
+      "name": "미즈노 ST-MAX 230 페어웨이 우드",
+      "query": "미즈노 ST-MAX 230 페어웨이 우드",
+      "must": [
+        "st-max",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 130000,
+      "max": 400000,
+      "summary": "미즈노 ST-MAX 230 페어웨이 우드입니다. 관용성을 높인 MAX 설계입니다.",
+      "points": [
+        "띄우기 쉬움",
+        "5번 18° · SR · 2023년"
+      ],
+      "ref": 220000
+    },
+    {
+      "id": "taylormade-qi10-fairway",
+      "category": "wood",
+      "name": "테일러메이드 Qi10 페어웨이 우드",
+      "query": "테일러메이드 Qi10 페어웨이 우드",
+      "must": [
+        "qi10",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 190000,
+      "max": 560000,
+      "summary": "테일러메이드 Qi10 페어웨이 우드입니다. 관성모멘트를 높인 Qi10 시리즈의 우드입니다.",
+      "points": [
+        "관용성",
+        "3번 15° · SR · 2024년"
+      ],
+      "ref": 309000
+    },
+    {
+      "id": "majesty-royalgold-fairway",
+      "category": "wood",
+      "name": "마제스티 로얄 골드 페어웨이 우드",
+      "query": "마제스티 로얄 골드 페어웨이 우드",
+      "must": [
+        "로얄 골드",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 220000,
+      "max": 660000,
+      "summary": "마제스티 로얄 골드 남성 페어웨이 우드입니다. 경량 설계로 느린 스윙의 탄도를 돕습니다.",
+      "points": [
+        "가벼운 스윙",
+        "19° · R · 마제스티 로얄"
+      ],
+      "ref": 368900
+    },
+    {
+      "id": "xxio12-fairway",
+      "category": "wood",
+      "name": "젝시오 12 페어웨이 우드 (9번)",
+      "query": "젝시오 12 페어웨이 우드 (9번)",
+      "must": [
+        "젝시오12",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 140000,
+      "max": 430000,
+      "summary": "던롭 젝시오 12 페어웨이 우드(9번 23도)입니다.",
+      "points": [
+        "쉬운 탄도",
+        "9번 23° · 카본 R · 2022년"
+      ],
+      "ref": 237600
+    },
+    {
+      "id": "mizuno-jpxone-fairway",
+      "category": "wood",
+      "name": "미즈노 JPX ONE 페어웨이 우드",
+      "query": "미즈노 JPX ONE 페어웨이 우드",
+      "must": [
+        "jpx one",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 190000,
+      "max": 560000,
+      "summary": "미즈노 JPX ONE 페어웨이 우드(2026년)입니다.",
+      "points": [
+        "최신 모델",
+        "5번 18° · VENTUS BLUE SR · 2026년"
+      ],
+      "ref": 310000
+    },
+    {
+      "id": "callaway-quantummax-fairway",
+      "category": "wood",
+      "name": "캘러웨이 퀀텀 MAX 페어웨이 우드",
+      "query": "캘러웨이 퀀텀 MAX 페어웨이 우드",
+      "must": [
+        "퀀텀",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 240000,
+      "max": 720000,
+      "summary": "캘러웨이 2026 퀀텀 MAX 페어웨이 우드(Global 스펙)입니다.",
+      "points": [
+        "최신 기술",
+        "5번 18° · DENALI 60 S · 2026년"
+      ],
+      "ref": 400000
+    },
+    {
+      "id": "xxio14-fairway",
+      "category": "wood",
+      "name": "젝시오 14 페어웨이 우드",
+      "query": "젝시오 14 페어웨이 우드",
+      "must": [
+        "젝시오14",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 360000,
+      "max": 1080000,
+      "summary": "던롭 젝시오 14 남성 페어웨이 우드입니다.",
+      "points": [
+        "쉬운 비거리",
+        "5번 18° · R · 2026년"
+      ],
+      "ref": 600000
+    },
+    {
+      "id": "taylormade-qi4dmax-fairway",
+      "category": "wood",
+      "name": "테일러메이드 Qi4D MAX 페어웨이 우드",
+      "query": "테일러메이드 Qi4D MAX 페어웨이 우드",
+      "must": [
+        "qi4d",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 270000,
+      "max": 800000,
+      "summary": "테일러메이드 Qi4D MAX 페어웨이 우드입니다.",
+      "points": [
+        "최신 기술",
+        "3번 15° · REAX55 S · 2026년"
+      ],
+      "ref": 443000
+    },
+    {
+      "id": "srixon-zxi-fairway",
+      "category": "wood",
+      "name": "스릭슨 ZXi 페어웨이 우드",
+      "query": "스릭슨 ZXi 페어웨이 우드",
+      "must": [
+        "zxi",
+        "우드"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 150000,
+      "max": 460000,
+      "summary": "스릭슨 ZXi 페어웨이 우드(2025년)입니다.",
+      "points": [
+        "가성비",
+        "5번 18° · VENTUS ZXi 6 S · 2025년"
+      ],
+      "ref": 255000
+    },
+    {
+      "id": "callaway-roguest-fairway",
+      "category": "wood",
+      "name": "캘러웨이 로그 ST MAX 페어웨이 우드",
+      "query": "캘러웨이 로그 ST MAX 페어웨이 우드",
+      "must": [
+        "로그st",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 150000,
+      "max": 450000,
+      "summary": "캘러웨이 로그 ST MAX 페어웨이 우드(TourAD 샤프트)입니다.",
+      "points": [
+        "가성비",
+        "3번 · TourAD S · 2022년"
+      ],
+      "ref": 250000
+    },
+    {
+      "id": "ping-g430lst-fairway",
+      "category": "wood",
+      "name": "핑 G430 LST 페어웨이 우드",
+      "query": "핑 G430 LST 페어웨이 우드",
+      "must": [
+        "g430",
+        "lst"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 220000,
+      "max": 670000,
+      "summary": "핑 G430 LST 페어웨이 우드입니다. 스핀을 줄인 저스핀 모델입니다.",
+      "points": [
+        "관통력",
+        "3번 15° · ALTA J CB SR · 2023년"
+      ],
+      "ref": 370300
+    },
+    {
+      "id": "honma-tw757-fairway",
+      "category": "wood",
+      "name": "혼마 투어월드 TW757 페어웨이 우드",
+      "query": "혼마 투어월드 TW757 페어웨이 우드",
+      "must": [
+        "tw757",
+        "우드"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 170000,
+      "max": 510000,
+      "summary": "혼마 투어월드 TW757 페어웨이 우드입니다.",
+      "points": [
+        "조작성",
+        "5번 18° · VIZARD R · 2022년"
+      ],
+      "ref": 283720
+    },
+    {
+      "id": "srixon-zxmk2-fairway",
+      "category": "wood",
+      "name": "스릭슨 ZX MK2 페어웨이 우드",
+      "query": "스릭슨 ZX MK2 페어웨이 우드",
+      "must": [
+        "zx mk2",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 130000,
+      "max": 380000,
+      "summary": "스릭슨 ZX MK2 페어웨이 우드입니다.",
+      "points": [
+        "가격",
+        "5번 · Tour AD R · 2023년"
+      ],
+      "ref": 210000
+    },
+    {
+      "id": "mizuno-stz230-fairway",
+      "category": "wood",
+      "name": "미즈노 ST-Z 230 페어웨이 우드",
+      "query": "미즈노 ST-Z 230 페어웨이 우드",
+      "must": [
+        "st-z",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 110000,
+      "max": 330000,
+      "summary": "미즈노 ST-Z 230 페어웨이 우드입니다.",
+      "points": [
+        "가격",
+        "5번 18° · VENTUS SR · 2023년"
+      ],
+      "ref": 185000
+    },
+    {
+      "id": "callaway-roguest-hybrid",
+      "category": "utility",
+      "name": "캘러웨이 로그 ST MAX 유틸리티",
+      "query": "캘러웨이 로그 ST MAX 유틸리티",
+      "must": [
+        "로그 st",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 120000,
+      "max": 360000,
+      "summary": "캘러웨이 로그 ST MAX 유틸리티 우드(한국캘러웨이)입니다.",
+      "points": [
+        "가격",
+        "18° · R · 2022년"
+      ],
+      "ref": 200000
+    },
+    {
+      "id": "mizuno-stmax230-hybrid",
+      "category": "utility",
+      "name": "미즈노 ST-MAX 230 유틸리티",
+      "query": "미즈노 ST-MAX 230 유틸리티",
+      "must": [
+        "st-max",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 110000,
+      "max": 340000,
+      "summary": "미즈노 ST-MAX 230 유틸리티 우드입니다.",
+      "points": [
+        "띄우기 쉬움",
+        "4번 22° · SR · 2024년"
+      ],
+      "ref": 190000
+    },
+    {
+      "id": "majesty-royalgold-hybrid",
+      "category": "utility",
+      "name": "마제스티 로얄 골드 유틸리티",
+      "query": "마제스티 로얄 골드 유틸리티",
+      "must": [
+        "로얄 골드",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 190000,
+      "max": 560000,
+      "summary": "마제스티 23 로얄 골드 남성 하이브리드 유틸리티입니다.",
+      "points": [
+        "가벼운 스윙",
+        "4번 20° · LV-550 SR · 2023년"
+      ],
+      "ref": 310960
+    },
+    {
+      "id": "ping-g430-hybrid",
+      "category": "utility",
+      "name": "핑 G430 하이브리드",
+      "query": "핑 G430 하이브리드",
+      "must": [
+        "g430",
+        "하이브리드"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 200000,
+      "max": 610000,
+      "summary": "핑 G430 하이브리드입니다.",
+      "points": [
+        "관용성",
+        "3번 19° · ALTA J CB R · 2023년"
+      ],
+      "ref": 340000
+    },
+    {
+      "id": "taylormade-qi10-rescue",
+      "category": "utility",
+      "name": "테일러메이드 Qi10 레스큐",
+      "query": "테일러메이드 Qi10 레스큐",
+      "must": [
+        "qi10",
+        "레스큐"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 160000,
+      "max": 480000,
+      "summary": "테일러메이드 Qi10 레스큐 유틸리티입니다.",
+      "points": [
+        "균형",
+        "3번 19° · SR · 2024년"
+      ],
+      "ref": 269000
+    },
+    {
+      "id": "honma-beres-hybrid",
+      "category": "utility",
+      "name": "혼마 뉴베레스 2스타 유틸리티",
+      "query": "혼마 뉴베레스 2스타 유틸리티",
+      "must": [
+        "베레스",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 120000,
+      "max": 370000,
+      "summary": "혼마 뉴베레스 2스타 남성 유틸리티입니다.",
+      "points": [
+        "타구감",
+        "19° · 아마크47 SR · 혼마 베레스"
+      ],
+      "ref": 206960
+    },
+    {
+      "id": "mizuno-jpxone-hybrid",
+      "category": "utility",
+      "name": "미즈노 JPX ONE 유틸리티",
+      "query": "미즈노 JPX ONE 유틸리티",
+      "must": [
+        "jpx one",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 160000,
+      "max": 470000,
+      "summary": "미즈노 JPX ONE 유틸리티(2026년)입니다.",
+      "points": [
+        "최신",
+        "4번 22° · VENTUS BLUE SR · 2026년"
+      ],
+      "ref": 260000
+    },
+    {
+      "id": "xxio14-hybrid",
+      "category": "utility",
+      "name": "젝시오 14 유틸리티 (남성)",
+      "query": "젝시오 14 유틸리티 (남성)",
+      "must": [
+        "젝시오 14",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 220000,
+      "max": 670000,
+      "summary": "던롭 젝시오 14 남성 유틸리티(2026년)입니다.",
+      "points": [
+        "쉬운 비거리",
+        "5번 25° · R · 2026년"
+      ],
+      "ref": 370000
+    },
+    {
+      "id": "srixon-zxi-hybrid",
+      "category": "utility",
+      "name": "스릭슨 ZXi 하이브리드",
+      "query": "스릭슨 ZXi 하이브리드",
+      "must": [
+        "zxi",
+        "하이브리드"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 150000,
+      "max": 450000,
+      "summary": "스릭슨 ZXi 하이브리드(2025년)입니다.",
+      "points": [
+        "가성비",
+        "4번 19° · VENTUS ZXi 7 S · 2025년"
+      ],
+      "ref": 248000
+    },
+    {
+      "id": "callaway-quantummax-hybrid",
+      "category": "utility",
+      "name": "캘러웨이 퀀텀 MAX 하이브리드",
+      "query": "캘러웨이 퀀텀 MAX 하이브리드",
+      "must": [
+        "퀀텀",
+        "하이브리드"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 190000,
+      "max": 580000,
+      "summary": "캘러웨이 2026 퀀텀 MAX 하이브리드(Global 스펙)입니다.",
+      "points": [
+        "최신 기술",
+        "21° · DENALI 70 S · 2026년"
+      ],
+      "ref": 320000
+    },
+    {
+      "id": "xxio13x-hybrid",
+      "category": "utility",
+      "name": "젝시오 13X 하이브리드",
+      "query": "젝시오 13X 하이브리드",
+      "must": [
+        "젝시오13x",
+        "하이브리드"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 170000,
+      "max": 500000,
+      "summary": "젝시오 13X 남성 하이브리드입니다. 기본 젝시오보다 단단한 X 라인입니다.",
+      "points": [
+        "경량+관통력",
+        "3번 18° · SR · 2024년"
+      ],
+      "ref": 280000
+    },
+    {
+      "id": "mizuno-stz230-hybrid",
+      "category": "utility",
+      "name": "미즈노 ST-Z 230 유틸리티",
+      "query": "미즈노 ST-Z 230 유틸리티",
+      "must": [
+        "st-z",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 100000,
+      "max": 300000,
+      "summary": "미즈노 ST-Z 230 유틸리티 우드입니다.",
+      "points": [
+        "가격",
+        "4번 22° · VENTUS SR · 2023년"
+      ],
+      "ref": 168000
+    },
+    {
+      "id": "srixon-zxhmk2-hybrid",
+      "category": "utility",
+      "name": "스릭슨 ZXH MK2 하이브리드",
+      "query": "스릭슨 ZXH MK2 하이브리드",
+      "must": [
+        "zxh",
+        "하이브리드"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 120000,
+      "max": 360000,
+      "summary": "스릭슨 ZXH MK2 하이브리드입니다.",
+      "points": [
+        "조작성",
+        "4번 · Tour AD R · 2023년"
+      ],
+      "ref": 200000
+    },
+    {
+      "id": "honma-tw757-hybrid",
+      "category": "utility",
+      "name": "혼마 투어월드 TW757 유틸리티",
+      "query": "혼마 투어월드 TW757 유틸리티",
+      "must": [
+        "tw757",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 110000,
+      "max": 320000,
+      "summary": "혼마 투어월드 TW757 남성 유틸리티입니다.",
+      "points": [
+        "조작성",
+        "4번 21° · VIZARD 50 S · 2022년"
+      ],
+      "ref": 179000
+    },
+    {
+      "id": "callaway-epic-superhybrid",
+      "category": "utility",
+      "name": "캘러웨이 에픽 슈퍼 하이브리드",
+      "query": "캘러웨이 에픽 슈퍼 하이브리드",
+      "must": [
+        "에픽 슈퍼",
+        "하이브리드"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 210000,
+      "max": 640000,
+      "summary": "캘러웨이 에픽 슈퍼 하이브리드입니다. 우드에 가까운 거리를 내는 하이브리드입니다.",
+      "points": [
+        "비거리",
+        "21° · S · 2021년"
+      ],
+      "ref": 354720
+    },
+    {
+      "id": "mizuno-jpxq-women-fairway",
+      "category": "wood",
+      "name": "미즈노 JPX Q 여성 페어웨이 우드",
+      "query": "미즈노 JPX Q 여성 페어웨이 우드",
+      "must": [
+        "jpx q",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 110000,
+      "max": 330000,
+      "summary": "미즈노 JPX Q 여성용 페어웨이 우드입니다.",
+      "points": [
+        "가격",
+        "3번 16° · L · 2022년"
+      ],
+      "ref": 182100
+    },
+    {
+      "id": "taylormade-sim2maxd-women-fairway",
+      "category": "wood",
+      "name": "테일러메이드 SIM2 MAX-D 여성 페어웨이 우드",
+      "query": "테일러메이드 SIM2 MAX-D 여성 페어웨이 우드",
+      "must": [
+        "심2",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 120000,
+      "max": 360000,
+      "summary": "테일러메이드 SIM2 MAX-D 여성 페어웨이 우드입니다.",
+      "points": [
+        "슬라이스 완화",
+        "16° · L · 2021년"
+      ],
+      "ref": 199000
+    },
+    {
+      "id": "callaway-roguest-women-fairway",
+      "category": "wood",
+      "name": "캘러웨이 로그 ST MAX D 여성 페어웨이 우드",
+      "query": "캘러웨이 로그 ST MAX D 여성 페어웨이 우드",
+      "must": [
+        "로그 st",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 130000,
+      "max": 400000,
+      "summary": "캘러웨이 로그 ST MAX D 여성 페어웨이 우드입니다.",
+      "points": [
+        "슬라이스 완화",
+        "16° · L · 2022년"
+      ],
+      "ref": 220000
+    },
+    {
+      "id": "xxio13-women-fairway",
+      "category": "wood",
+      "name": "젝시오 13 여성 페어웨이 우드",
+      "query": "젝시오 13 여성 페어웨이 우드",
+      "must": [
+        "젝시오13",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 170000,
+      "max": 510000,
+      "summary": "젝시오 13 여성용 페어웨이 우드입니다.",
+      "points": [
+        "쉬운 탄도",
+        "4번 18° · L · 2024년"
+      ],
+      "ref": 284970
+    },
+    {
+      "id": "majesty-royal-women-fairway",
+      "category": "wood",
+      "name": "마제스티 로얄 여성 페어웨이 우드",
+      "query": "마제스티 로얄 여성 페어웨이 우드",
+      "must": [
+        "로얄",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 310000,
+      "max": 920000,
+      "summary": "마제스티 로얄 여성용 페어웨이 우드(2025년)입니다.",
+      "points": [
+        "경량",
+        "20° · L · 2025년"
+      ],
+      "ref": 509000
+    },
+    {
+      "id": "honma-nx-women-fairway",
+      "category": "wood",
+      "name": "혼마 베레스 NX 여성 페어웨이 우드",
+      "query": "혼마 베레스 NX 여성 페어웨이 우드",
+      "must": [
+        "nx",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 70000,
+      "max": 200000,
+      "summary": "혼마 베레스 NX 여성용 페어웨이 우드(5번)입니다.",
+      "points": [
+        "가격",
+        "5번 19° · L · 혼마 NX"
+      ],
+      "ref": 109000
+    },
+    {
+      "id": "taylormade-qi35maxlite-women-fairway",
+      "category": "wood",
+      "name": "테일러메이드 Qi35 MAX Lite 여성 페어웨이 우드",
+      "query": "테일러메이드 Qi35 MAX Lite 여성 페어웨이 우드",
+      "must": [
+        "qi35",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 200000,
+      "max": 610000,
+      "summary": "테일러메이드 Qi35 MAX Lite 여성 페어웨이 우드입니다.",
+      "points": [
+        "최신",
+        "3번 15.5° · L · 2025년"
+      ],
+      "ref": 338530
+    },
+    {
+      "id": "callaway-elyte-women-fairway",
+      "category": "wood",
+      "name": "캘러웨이 엘리트 맥스 패스트 여성 페어웨이 우드",
+      "query": "캘러웨이 엘리트 맥스 패스트 여성 페어웨이 우드",
+      "must": [
+        "엘리트",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 190000,
+      "max": 570000,
+      "summary": "캘러웨이 엘리트 맥스 패스트 여성용 페어웨이 우드입니다.",
+      "points": [
+        "균형",
+        "19° · L · 2025년"
+      ],
+      "ref": 319000
+    },
+    {
+      "id": "honma-aizu-women-fairway",
+      "category": "wood",
+      "name": "혼마 베레스 아이주 여성 페어웨이 우드",
+      "query": "혼마 베레스 아이주 여성 페어웨이 우드",
+      "must": [
+        "아이주",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 220000,
+      "max": 650000,
+      "summary": "혼마 베레스 아이주 2스타 여성용 페어웨이 우드입니다.",
+      "points": [
+        "타구감",
+        "3번 16° · L · 혼마 아이주"
+      ],
+      "ref": 361000
+    },
+    {
+      "id": "ping-gle3-women-fairway",
+      "category": "wood",
+      "name": "핑 GLe3 여성 페어웨이 우드",
+      "query": "핑 GLe3 여성 페어웨이 우드",
+      "must": [
+        "gle3",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 210000,
+      "max": 630000,
+      "summary": "핑 GLe3 여성용 페어웨이 우드입니다.",
+      "points": [
+        "관용성",
+        "21° · L · 2023년"
+      ],
+      "ref": 350000
+    },
+    {
+      "id": "honma-kiwami6-women-fairway",
+      "category": "wood",
+      "name": "혼마 베레스 키와미 6 여성 페어웨이 우드",
+      "query": "혼마 베레스 키와미 6 여성 페어웨이 우드",
+      "must": [
+        "키와미",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 190000,
+      "max": 570000,
+      "summary": "혼마 베레스 키와미 6 여성용 페어웨이 우드입니다.",
+      "points": [
+        "타구감",
+        "3번 16° · L · 혼마 키와미"
+      ],
+      "ref": 315000
+    },
+    {
+      "id": "ping-gle4-women-fairway",
+      "category": "wood",
+      "name": "핑 GLE4 여성 페어웨이 우드",
+      "query": "핑 GLE4 여성 페어웨이 우드",
+      "must": [
+        "gle4",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 280000,
+      "max": 830000,
+      "summary": "핑 GLE4 여성 페어웨이 우드(2026년)입니다.",
+      "points": [
+        "관용성",
+        "18° · L · 2026년"
+      ],
+      "ref": 460000
+    },
+    {
+      "id": "mizuno-jpxq2-women-fairway",
+      "category": "wood",
+      "name": "미즈노 JPX Q2 여성 페어웨이 우드",
+      "query": "미즈노 JPX Q2 여성 페어웨이 우드",
+      "must": [
+        "jpx q2",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 180000,
+      "max": 540000,
+      "summary": "미즈노 JPX Q2 여성 페어웨이 우드(2026년)입니다.",
+      "points": [
+        "가성비",
+        "5번 20° · L · 2026년"
+      ],
+      "ref": 302660
+    },
+    {
+      "id": "xxio14-women-fairway",
+      "category": "wood",
+      "name": "젝시오 14 여성 페어웨이 우드",
+      "query": "젝시오 14 여성 페어웨이 우드",
+      "must": [
+        "젝시오 14",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 280000,
+      "max": 850000,
+      "summary": "던롭 젝시오 14 여성용 페어웨이 우드(2026년)입니다.",
+      "points": [
+        "경량+거리",
+        "5번 20° · L · 2026년"
+      ],
+      "ref": 474000
+    },
+    {
+      "id": "onoff-lp423-women-fairway",
+      "category": "wood",
+      "name": "다이와 온오프 LP423 여성 페어웨이 우드",
+      "query": "다이와 온오프 LP423 여성 페어웨이 우드",
+      "must": [
+        "lp423",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 240000,
+      "max": 720000,
+      "summary": "다이와 온오프 LP423 여성 페어웨이 우드입니다.",
+      "points": [
+        "디자인",
+        "7번 22° · L · 온오프"
+      ],
+      "ref": 400000
+    },
+    {
+      "id": "taylormade-qi4d-women-fairway",
+      "category": "wood",
+      "name": "테일러메이드 Qi4D MAX LITE 여성 페어웨이 우드",
+      "query": "테일러메이드 Qi4D MAX LITE 여성 페어웨이 우드",
+      "must": [
+        "qi4d",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 280000,
+      "max": 840000,
+      "summary": "테일러메이드 Qi4D MAX LITE 여성 페어웨이 우드(2026년)입니다.",
+      "points": [
+        "최신 기술",
+        "3번 15° · L · 2026년"
+      ],
+      "ref": 468120
+    },
+    {
+      "id": "callaway-gbb-women-fairway",
+      "category": "wood",
+      "name": "캘러웨이 그레이트 빅버사 여성 페어웨이 우드",
+      "query": "캘러웨이 그레이트 빅버사 여성 페어웨이 우드",
+      "must": [
+        "빅버사",
+        "페어웨이"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 290000,
+      "max": 880000,
+      "summary": "캘러웨이 그레이트 빅버사 여성용 페어웨이 우드입니다.",
+      "points": [
+        "고급 소재",
+        "16.5° · L · 그레이트 빅버사"
+      ],
+      "ref": 487860
+    },
+    {
+      "id": "missile-axg-women-hybrid",
+      "category": "utility",
+      "name": "미사일 AXG 여성 유틸리티",
+      "query": "미사일 AXG 여성 유틸리티",
+      "must": [
+        "axg",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 60000,
+      "max": 180000,
+      "summary": "미사일 AXG 여성용 유틸리티 우드입니다.",
+      "points": [
+        "가격",
+        "7번 21° · L · 미사일"
+      ],
+      "ref": 99000
+    },
+    {
+      "id": "mizuno-jpxq-women-hybrid",
+      "category": "utility",
+      "name": "미즈노 JPX Q 여성 유틸리티",
+      "query": "미즈노 JPX Q 여성 유틸리티",
+      "must": [
+        "jpx q",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 110000,
+      "max": 330000,
+      "summary": "미즈노 JPX Q 여성용 유틸리티입니다.",
+      "points": [
+        "가격",
+        "4번 22° · L · 2022년"
+      ],
+      "ref": 185020
+    },
+    {
+      "id": "callaway-roguest-women-hybrid",
+      "category": "utility",
+      "name": "캘러웨이 로그 ST MAX FAST 여성 유틸리티",
+      "query": "캘러웨이 로그 ST MAX FAST 여성 유틸리티",
+      "must": [
+        "로그st",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 120000,
+      "max": 360000,
+      "summary": "캘러웨이 로그 ST MAX FAST 여성용 유틸리티입니다.",
+      "points": [
+        "가성비",
+        "24° · L · 2022년"
+      ],
+      "ref": 199000
+    },
+    {
+      "id": "taylormade-qi35maxlite-women-hybrid",
+      "category": "utility",
+      "name": "테일러메이드 Qi35 MAX Lite 여성 유틸리티",
+      "query": "테일러메이드 Qi35 MAX Lite 여성 유틸리티",
+      "must": [
+        "qi35",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 180000,
+      "max": 540000,
+      "summary": "테일러메이드 Qi35 MAX Lite 여성 유틸리티입니다.",
+      "points": [
+        "최신",
+        "5번 27° · L · 2025년"
+      ],
+      "ref": 299000
+    },
+    {
+      "id": "majesty-sterna-women-hybrid",
+      "category": "utility",
+      "name": "마제스티 스터나 여성 유틸리티",
+      "query": "마제스티 스터나 여성 유틸리티",
+      "must": [
+        "스터나",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 110000,
+      "max": 320000,
+      "summary": "마제스티 스터나 여성 하이브리드 유틸리티입니다.",
+      "points": [
+        "디자인·경량",
+        "4번 22° · L · 마제스티 스터나"
+      ],
+      "ref": 179000
+    },
+    {
+      "id": "callaway-elyte-women-hybrid",
+      "category": "utility",
+      "name": "캘러웨이 엘리트 맥스 패스트 여성 유틸리티",
+      "query": "캘러웨이 엘리트 맥스 패스트 여성 유틸리티",
+      "must": [
+        "엘리트",
+        "하이브리드"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 150000,
+      "max": 450000,
+      "summary": "캘러웨이 엘리트 맥스 패스트 여성용 하이브리드입니다.",
+      "points": [
+        "가성비",
+        "19° · L · 2025년"
+      ],
+      "ref": 249000
+    },
+    {
+      "id": "honma-aizu-women-hybrid",
+      "category": "utility",
+      "name": "혼마 베레스 아이주 여성 유틸리티",
+      "query": "혼마 베레스 아이주 여성 유틸리티",
+      "must": [
+        "아이주",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 170000,
+      "max": 520000,
+      "summary": "혼마 베레스 아이주 2스타 여성 유틸리티입니다.",
+      "points": [
+        "타구감",
+        "5번 25° · ARMRQ MX L · 혼마 아이주"
+      ],
+      "ref": 290160
+    },
+    {
+      "id": "mizuno-jpxq2-women-hybrid",
+      "category": "utility",
+      "name": "미즈노 JPX Q2 여성 유틸리티",
+      "query": "미즈노 JPX Q2 여성 유틸리티",
+      "must": [
+        "jpx q2",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 170000,
+      "max": 500000,
+      "summary": "미즈노 JPX Q2 여성 유틸리티(2026년)입니다.",
+      "points": [
+        "최신",
+        "4번 22° · L · 2026년"
+      ],
+      "ref": 278730
+    },
+    {
+      "id": "ping-gle4-women-hybrid",
+      "category": "utility",
+      "name": "핑 GLE4 여성 유틸리티",
+      "query": "핑 GLE4 여성 유틸리티",
+      "must": [
+        "gle4",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 220000,
+      "max": 650000,
+      "summary": "핑 GLE4 여성 유틸리티(2026년)입니다.",
+      "points": [
+        "관용성",
+        "8번 36° · L · 2026년"
+      ],
+      "ref": 360000
+    },
+    {
+      "id": "xxio13-women-hybrid",
+      "category": "utility",
+      "name": "젝시오 13 여성 유틸리티",
+      "query": "젝시오 13 여성 유틸리티",
+      "must": [
+        "젝시오13",
+        "하이브리드"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 170000,
+      "max": 500000,
+      "summary": "젝시오 13 여성용 하이브리드입니다.",
+      "points": [
+        "쉬운 탄도",
+        "5번 25° · L · 2024년"
+      ],
+      "ref": 279990
+    },
+    {
+      "id": "callaway-quantum-women-hybrid",
+      "category": "utility",
+      "name": "캘러웨이 퀀텀 MAX FAST 여성 유틸리티",
+      "query": "캘러웨이 퀀텀 MAX FAST 여성 유틸리티",
+      "must": [
+        "퀀텀",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 200000,
+      "max": 600000,
+      "summary": "캘러웨이 퀀텀 MAX FAST 여성용 유틸리티입니다.",
+      "points": [
+        "최신 기술",
+        "4번 22° · L · 2026년"
+      ],
+      "ref": 333620
+    },
+    {
+      "id": "taylormade-gloire-women-rescue",
+      "category": "utility",
+      "name": "테일러메이드 글로리 여성 레스큐",
+      "query": "테일러메이드 글로리 여성 레스큐",
+      "must": [
+        "글로리",
+        "레스큐"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 200000,
+      "max": 590000,
+      "summary": "테일러메이드 올 뉴 글로리 여성 레스큐(2025년)입니다.",
+      "points": [
+        "고급 경량",
+        "4번 22° · L · 2025년"
+      ],
+      "ref": 330000
+    },
+    {
+      "id": "taylormade-stealth-women-rescue",
+      "category": "utility",
+      "name": "테일러메이드 스텔스 여성 레스큐",
+      "query": "테일러메이드 스텔스 여성 레스큐",
+      "must": [
+        "스텔스",
+        "레스큐"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 130000,
+      "max": 400000,
+      "summary": "테일러메이드 스텔스 여성용 레스큐입니다.",
+      "points": [
+        "가격",
+        "판매처 확인 · L · 2022년"
+      ],
+      "ref": 221070
+    },
+    {
+      "id": "xxio14-women-hybrid",
+      "category": "utility",
+      "name": "젝시오 14 여성 유틸리티",
+      "query": "젝시오 14 여성 유틸리티",
+      "must": [
+        "젝시오14",
+        "하이브리드"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 260000,
+      "max": 790000,
+      "summary": "젝시오 14 여성용 하이브리드 유틸리티(2026년)입니다.",
+      "points": [
+        "경량+거리",
+        "5번 · L · 2026년"
+      ],
+      "ref": 439000
+    },
+    {
+      "id": "honma-bezeal3-women-hybrid",
+      "category": "utility",
+      "name": "혼마 비즐3 여성 유틸리티",
+      "query": "혼마 비즐3 여성 유틸리티",
+      "must": [
+        "비즐",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 220000,
+      "max": 650000,
+      "summary": "혼마 비즐3 여성용 유틸리티 우드입니다.",
+      "points": [
+        "경량",
+        "U25 25° · L · 2024년"
+      ],
+      "ref": 360000
+    },
+    {
+      "id": "ping-g440-women-hybrid",
+      "category": "utility",
+      "name": "핑 G440 여성 유틸리티",
+      "query": "핑 G440 여성 유틸리티",
+      "must": [
+        "g440",
+        "여성",
+        "유틸리티"
+      ],
+      "exclude": [
+        "중고",
+        "헤드만",
+        "시타"
+      ],
+      "min": 230000,
+      "max": 700000,
+      "summary": "핑 G440 여성 유틸리티 하이브리드입니다.",
+      "points": [
+        "관용성+표준 헤드",
+        "2번 · Alta J LE A · 2025년"
+      ],
+      "ref": 390000
     }
   ]
 }
