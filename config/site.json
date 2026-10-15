@@ -1,9 +1,10 @@
 {
   "_설명": "사이트 이름·로고 문구와 검색엔진 소유 확인 코드. logoBefore + logoAccent(강조) + logoAfter 가 로고가 된다. 검증 코드는 HTML 태그의 content 값만 넣는다.",
-  "name": "월드베스트골프기어",
-  "logoBefore": "월드",
-  "logoAccent": "베스트",
+  "name": "ATL골프기어",
+  "logoBefore": "",
+  "logoAccent": "ATL",
   "logoAfter": "골프기어",
+  "logoSub": "ALL-TIME LEGEND GEAR",
   "priceCheckedAt": "2026-10-16",
   "tagline": "골프용품, 꼼꼼히 비교하고 고르세요",
   "googleVerification": "kXR_Tj5AFFkfpWaWDAZuxNZClW4tFVKZBaUDRZpcJQo",

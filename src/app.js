@@ -1,4 +1,4 @@
-﻿// 월드베스트골프기어 화면 동작: 검색(자동완성·결과), 골프 카테고리 메뉴, 최근 본 상품, 움직이는 배너, 탭
+﻿// ATL골프기어 화면 동작: 검색(자동완성·결과), 골프 카테고리 메뉴, 최근 본 상품, 움직이는 배너, 탭
 (() => {
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];

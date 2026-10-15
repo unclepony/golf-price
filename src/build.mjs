@@ -9,7 +9,8 @@ import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText, todayKst 
 const DEMO = process.argv.includes('--demo');
 const SITE_URL = (process.env.SITE_URL || 'https://golf-price.pages.dev').replace(/\/$/, '');
 const SITE = readJson(join(ROOT, 'config', 'site.json'), {});
-const SITE_NAME = SITE.name || '골프비교노트';
+const SITE_NAME = SITE.name || 'ATL골프기어';
+const LOGO_SVG = readFileSync(join(ROOT, 'src', 'figures', 'logo.svg'), 'utf8').replace(/role="img" aria-label="[^"]*"/, 'aria-hidden="true"');
 const OUT = join(ROOT, 'site');
 const DISCLOSURE = '이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.';
 const PRICE_NOTE = '가격은 쿠팡 상품 검색 결과 중 조건에 맞는 새 상품의 최저가를 하루 한 번 기록한 값으로, 옵션(샤프트, 사이즈 등)과 시점에 따라 실제 판매가와 다를 수 있습니다.';
@@ -108,7 +109,7 @@ function header() {
   return `<div class="util"><div class="wrap util-in"><span>${DISCLOSURE}</span><nav><a href="/about">운영 안내</a></nav></div></div>
 ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표시된 가격은 실제 가격이 아닙니다.</p>' : ''}
 <header class="hd"><div class="wrap hd-in">
-<a class="logo" href="/"><span class="logo-mark">⛳</span><span class="logo-txt">${esc(SITE.logoBefore ?? '')}<b>${esc(SITE.logoAccent ?? SITE_NAME)}</b>${esc(SITE.logoAfter ?? '')}</span></a>
+<a class="logo" href="/" aria-label="${esc(SITE_NAME)} 홈"><span class="logo-emb">${LOGO_SVG}</span><span class="logo-txt"><span class="logo-name">${esc(SITE.logoBefore ?? '')}<b>${esc(SITE.logoAccent ?? SITE_NAME)}</b>${esc(SITE.logoAfter ?? '')}</span>${SITE.logoSub ? `<small class="logo-sub">${esc(SITE.logoSub)}</small>` : ''}</span></a>
 <form class="search" action="/search" role="search" autocomplete="off">
 <input type="search" name="q" id="q" placeholder="찾는 골프용품을 검색해 보세요 (예: 드라이버, 프로V1)" aria-label="골프용품 검색">
 <button type="submit" aria-label="검색">${SEARCH_ICON}</button>
@@ -155,7 +156,7 @@ function layout({ title, desc, path, body, recent }) {
 <meta property="og:url" content="${SITE_URL}${path}">
 ${DEMO ? '<meta name="robots" content="noindex">' : path === '/' ? VERIFY : ''}
 <link rel="stylesheet" href="/assets/style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛳</text></svg>">
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
 </head>
 <body>
 ${header()}
@@ -275,6 +276,7 @@ const updated = tracked.map((e) => e.a.last.d).sort().at(-1) ?? todayKst();
 rmSync(OUT, { recursive: true, force: true });
 writeText(join(OUT, 'assets', 'style.css'), readFileSync(join(ROOT, 'src', 'style.css'), 'utf8'));
 writeText(join(OUT, 'assets', 'app.js'), readFileSync(join(ROOT, 'src', 'app.js'), 'utf8'));
+writeText(join(OUT, 'assets', 'logo.svg'), readFileSync(join(ROOT, 'src', 'figures', 'logo.svg'), 'utf8'));
 
 // ---------- 비교·추천 가이드 데이터와 타일 ----------
 const guides = readJson(join(ROOT, 'config', 'guides.json'), { guides: [] }).guides;
