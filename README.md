@@ -25,7 +25,7 @@
 | 워크플로 | 언제 | 하는 일 | AI |
 |---|---|---|---|
 | `daily.yml` (daily-check) | 매일 23:05 KST | 데이터 점검 → 'daily-check' 이슈 하나에 덮어쓰기, 기준가 재계산(월요일 주간), 빌드(콘텐츠 날짜·사이트맵·URL 보호), 배포, IndexNow | 없음 |
-| `weekly.yml` (weekly-analysis) | 월 09:00 KST | 서치콘솔·클릭 자료 수집, 가격 확인 목록, Claude Code 로 title/description 개선안·본문/FAQ 초안(최대 2페이지) → 검토용 PR (자동 병합 없음) | Claude Code (API 키) |
+| `weekly.yml` (weekly-analysis) | 월 09:00 KST | 서치콘솔·클릭 자료 수집, 가격 확인 목록, Claude Code 로 title/description 개선안·본문/FAQ 초안(최대 2페이지) → 빌드·링크 검사 통과 시 main 에 바로 반영 (실패하면 검토용 PR) | Claude Code (API 키) |
 
 ## 클릭 추적 (선택)
 
