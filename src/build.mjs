@@ -1446,6 +1446,37 @@ if (!DEMO) {
 }
 // 클릭 추적용 이동 표 (functions/go/[id].js 가 읽는다)
 rawWrite(join(OUT, 'assets', 'go.json'), JSON.stringify(Object.fromEntries(config.products.map((p) => [p.id, rawLink(p.id)]).filter(([, v]) => v))));
+// AI 검색·도우미용 안내 (llms.txt): 사이트가 무엇이고 어떤 페이지가 있는지 AI 가 읽기 쉬운 형태로
+if (!DEMO) {
+  const line = (g) => {
+    const ps = rankedPicks(g);
+    const pr = priceRange(ps.map((pk) => pk.id));
+    return `- [${guideName(g)}](${SITE_URL}/g/${g.slug}): ${ps.length}종${pr ? `, 쿠팡 판매가 ${won(pr.min)}~${won(pr.max)}` : ''}. ${g.desc}`;
+  };
+  const skillLines = pageGuides.flatMap((g) => skillGroups(g).map((x) => `- [${guideName(g).replace(' 비교 및 선택 가이드', '')} ${SKILL_WORD[x.skill]}](${SITE_URL}${skillPath(g, x.skill)}): ${x.ids.length}종`));
+  rawWrite(
+    join(OUT, 'llms.txt'),
+    `# ${SITE_NAME}
+
+> 골프용품(드라이버·우드·유틸리티·아이언·웨지·퍼터·골프공·거리측정기·GPS 시계·스윙 분석기·골프화·골프백·장갑·연습용품)을 실력 단계(초보·중급자·상급자·프로)와 성별, 가격대(저가~프리미엄)별로 비교하는 한국어 사이트입니다.
+
+- 점수: ${SCORE_NOTE}
+- 순위: 실력 단계가 다른 제품끼리는 순위를 매기지 않고, 같은 실력 단계 안에서만 매깁니다. 초보 기준(로프트·샤프트)에 맞지 않는 연결 상품은 '옵션 확인 필요'로 표시하고 순위에서 뺍니다.
+- 가격: ${PRICE_NOTE}
+- 제휴: ${DISCLOSURE} 상품 링크는 쿠팡 파트너스 링크입니다.
+- 운영 안내(점수·가격 수집 방법): ${SITE_URL}/about
+
+## 비교 가이드
+${pageGuides.map(line).join('\n')}
+
+## 실력별 비교
+${skillLines.join('\n')}
+
+## 카테고리
+${cats.map((c) => `- [${c.name}](${SITE_URL}/c/${c.id})`).join('\n')}
+`,
+  );
+}
 // 빌드 버전 파일
 rawWrite(join(OUT, 'version.json'), JSON.stringify({ commit: BUILD_COMMIT, builtAt: `${BUILD_AT} KST` }));
 // IndexNow 키 파일
