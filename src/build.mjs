@@ -231,8 +231,23 @@ ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표�
 </div></nav>`;
 }
 
+// 공유 미리보기 이미지(카카오톡·커뮤니티·SNS): 쿠팡 썸네일을 큰 크기(492)로
+const bigImage = (src) => (src ? src.replace('/212x212ex/', '/492x492ex/') : '');
+function ogImageFor(path) {
+  const m = path.match(/^\/p\/(.+)$/);
+  if (m) return bigImage(imageOf(m[1], entryById[m[1]]?.hist));
+  const g = pageGuides.find((x) => path === `/g/${x.slug}` || path.startsWith(`/g/${x.slug}-`));
+  const skill = g && Object.entries(SKILL_EN).find(([, en]) => path === `/g/${g.slug}-${en}`)?.[0];
+  const top = g ? (skill ? rankedPicks(g).find((pk) => pk.skill === skill) : rankedPicks(g)[0]) : null;
+  if (top) return bigImage(imageOf(top.id, byId[top.id]?.hist));
+  const c = cats.find((x) => path === `/c/${x.id}`);
+  const first = c ? pageGuides.find((x) => guideCat(x)?.id === c.id) : pageGuides[0];
+  const pk = first && rankedPicks(first)[0];
+  return pk ? bigImage(imageOf(pk.id, byId[pk.id]?.hist)) : '';
+}
 function layout({ title, desc, path, body, recent, ld = [], raw = false }) {
   const full = raw || title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
+  const ogImg = ogImageFor(path);
   return `<!doctype html>
 <html lang="ko">
 <head>
@@ -246,6 +261,9 @@ function layout({ title, desc, path, body, recent, ld = [], raw = false }) {
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${SITE_URL}${path}">
+<meta property="og:site_name" content="${esc(SITE_NAME)}">
+<meta property="og:locale" content="ko_KR">
+${ogImg ? `<meta property="og:image" content="${esc(ogImg)}">\n<meta property="og:image:width" content="492">\n<meta property="og:image:height" content="492">\n<meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">'}
 ${DEMO ? '<meta name="robots" content="noindex">' : path === '/' ? VERIFY : ''}
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
@@ -1224,7 +1242,7 @@ const finderData = {
     rankedPicks(g).map((pk) => {
       const { p, hist } = byId[pk.id];
       const sp = freshPrice(p.id);
-      return { c: p.category, g: g.gender ?? '공용', s: pk.skill ?? '', lv: priceLevel(p.id)?.n ?? 0, n: p.name, i: imageOf(p.id, hist) ?? '', u: `/p/${p.id}`, r: pk.role, sc: +totalScore(pk).toFixed(1), pr: sp?.won ?? 0, pd: sp ? dayLabel(sp.d) : '', x: pk.unisex ? 1 : 0 };
+      return { c: p.category, g: g.gender ?? '공용', s: pk.skill ?? '', lv: priceLevel(p.id)?.n ?? 0, n: p.name, i: imageOf(p.id, hist) ?? '', u: `/p/${p.id}`, r: pk.role, sc: +totalScore(pk).toFixed(1), pr: sp?.won ?? 0, pd: sp ? dayLabel(sp.d) : '', x: pk.unisex ? 1 : 0, l: outHref(p.id) ?? '', w: warned(g, pk) ? 1 : 0 };
     }),
   ),
   pages: pageGuides.map((g) => ({ c: guideCat(g)?.id, g: g.gender ?? '공용', u: `/g/${g.slug}`, sk: Object.fromEntries(skillGroups(g).map((x) => [x.skill, skillPath(g, x.skill)])) })),

@@ -724,3 +724,7 @@ table.grind-t tbody th { background: #1c2b3a; color: #fff; }
 }
 .howto h3 { margin-top: 18px; }
 .foot .build { margin-top: 6px; font-size: 11px; color: var(--muted); }
+/* 장비 찾기 결과: 상세 링크 + 쿠팡 버튼 */
+.fitem { flex-direction: column; gap: 8px; }
+.fmain { display: flex; gap: 12px; text-decoration: none; color: inherit; }
+.fbuy { align-self: stretch; max-width: none; text-align: center; }
