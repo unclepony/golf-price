@@ -728,3 +728,24 @@ table.grind-t tbody th { background: #1c2b3a; color: #fff; }
 .fitem { flex-direction: column; gap: 8px; }
 .fmain { display: flex; gap: 12px; text-decoration: none; color: inherit; }
 .fbuy { align-self: stretch; max-width: none; text-align: center; }
+
+/* 모바일 머리글 줄이기: 로고·아이콘 한 줄, 아이콘 글자 숨김(읽기 도구용 이름은 유지), 여백 축소 */
+@media (max-width: 640px) {
+  .util { font-size: 11px; }
+  .util-in { min-height: 0; }
+  .util-in span { padding: 3px 0; line-height: 1.35; }
+  .hd-in { flex-wrap: wrap; gap: 6px 8px; padding-top: 8px; padding-bottom: 8px; }
+  .logo-emb { width: 30px; height: 30px; flex-basis: 30px; }
+  .logo-name { font-size: 18px; }
+  .logo-sub { display: none; }
+  .hd-icons { margin-left: auto; gap: 2px; }
+  .hd-ico { font-size: 0; padding: 6px; }
+  .hd-ico-i { font-size: 20px; }
+  .hd-ico b { font-size: 10px; top: 1px; right: 1px; }
+  .search input { padding: 8px 14px; font-size: 14px; }
+  .search button { padding: 0 12px; }
+  .gnb-in { height: 42px; gap: 14px; }
+  #catBtn { font-size: 14px; }
+}
+/* 장비 찾기 결과의 쿠팡 버튼을 카드 너비로 */
+.fitem .fbuy { max-width: none; width: 100%; padding: 9px 10px; font-size: 13px; }
