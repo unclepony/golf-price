@@ -2,3 +2,8 @@
 node_modules/
 site/
 data-demo/
+
+# 서치콘솔 서비스 계정 키 파일은 절대 올리지 않는다 (GitHub Secrets 에만)
+*service-account*.json
+*gsc-key*.json
+golf-price-*.json

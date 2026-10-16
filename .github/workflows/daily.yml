@@ -65,9 +65,15 @@ jobs:
           git pull --rebase
           git push
 
-      - name: IndexNow 전송 (콘텐츠가 바뀐·새·삭제된 페이지만, 배포 5분 뒤)
+      - name: IndexNow·구글 사이트맵 알림 (콘텐츠가 바뀐·새·삭제된 페이지가 있을 때만, 배포 5분 뒤)
+        env:
+          GSC_SERVICE_ACCOUNT: ${{ secrets.GSC_SERVICE_ACCOUNT }}
+          GSC_SITE: ${{ secrets.GSC_SITE }}
         run: |
           sleep 300
+          if [ "$(node -e 'console.log((require("./config/content-state.json").pending||[]).length)')" != "0" ]; then
+            node src/gsc-sitemap.mjs || echo "구글 사이트맵 제출 실패 (배포에는 영향 없음)"
+          fi
           node src/indexnow.mjs
           git add config/content-state.json
           git diff --cached --quiet || git commit -m "IndexNow 전송 $(TZ=Asia/Seoul date +%F) [skip ci]"
