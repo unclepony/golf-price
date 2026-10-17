@@ -1,5 +1,5 @@
 // 서치콘솔에 사이트맵 제출 + 주요 페이지 색인 상태 확인 (node src/gsc-sitemap.mjs [--inspect N])
-// 서비스 계정으로 동작한다(src/gsc-auth.mjs). 필요: GSC_SERVICE_ACCOUNT, GSC_SITE (예: https://golf-price.pages.dev/)
+// 서비스 계정으로 동작한다(src/gsc-auth.mjs). 필요: GSC_SERVICE_ACCOUNT, GSC_SITE (예: https://golfprice.unclepony.com/)
 // 서비스 계정은 서치콘솔 설정 → 사용자 및 권한에서 '전체' 권한으로 추가해야 사이트맵을 제출할 수 있다(읽기만 하려면 '제한').
 // 참고: 구글은 일반 사이트의 '색인 생성 요청'을 API 로 제공하지 않는다. 여기서는 사이트맵 제출과 색인 상태 확인만 한다.
 import { join } from 'node:path';
@@ -12,7 +12,7 @@ if (!sa) {
   process.exit(0);
 }
 const SITE = process.env.GSC_SITE;
-const SITE_URL = (process.env.SITE_URL || 'https://golf-price.pages.dev').replace(/\/$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://golfprice.unclepony.com').replace(/\/$/, '');
 const at = await accessToken(sa, FULL);
 const api = (path, init = {}) => fetch(`https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(SITE)}${path}`, { ...init, headers: { Authorization: `Bearer ${at}`, ...(init.headers ?? {}) } });
 

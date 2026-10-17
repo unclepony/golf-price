@@ -10,7 +10,7 @@ import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText as rawWrit
 import { beginnerIssues, releaseIssues } from './rules.mjs';
 
 const DEMO = process.argv.includes('--demo');
-const SITE_URL = (process.env.SITE_URL || 'https://golf-price.pages.dev').replace(/\/$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://golfprice.unclepony.com').replace(/\/$/, '');
 const SITE = readJson(join(ROOT, 'config', 'site.json'), {});
 const SITE_NAME = SITE.name || 'ATL골프기어';
 const LOGO_SVG = readFileSync(join(ROOT, 'src', 'figures', 'logo.svg'), 'utf8').replace(/role="img" aria-label="[^"]*"/, 'aria-hidden="true"');

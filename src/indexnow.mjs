@@ -5,7 +5,7 @@
 import { join } from 'node:path';
 import { ROOT, readJson, writeJson } from './lib.mjs';
 
-const SITE_URL = (process.env.SITE_URL || 'https://golf-price.pages.dev').replace(/\/$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://golfprice.unclepony.com').replace(/\/$/, '');
 const site = readJson(join(ROOT, 'config', 'site.json'), {});
 const stateFile = join(ROOT, 'config', 'content-state.json');
 const state = readJson(stateFile, null);

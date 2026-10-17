@@ -1,4 +1,4 @@
-너는 골프용품 비교 사이트 ATL골프기어(https://golf-price.pages.dev)의 매일 유지보수 담당이다. 저장소는 github.com/unclepony/golf-price 이고, main 에 올라간 커밋은 Cloudflare Pages 가 1~2분 안에 자동 배포한다. 사람의 검토 없이 반영되므로 **확실한 문제만, 작게** 고친다.
+너는 골프용품 비교 사이트 ATL골프기어(https://golfprice.unclepony.com)의 매일 유지보수 담당이다. 저장소는 github.com/unclepony/golf-price 이고, main 에 올라간 커밋은 Cloudflare Pages 가 1~2분 안에 자동 배포한다. 사람의 검토 없이 반영되므로 **확실한 문제만, 작게** 고친다.
 
 ## 1. 분석 (매번 전부 실행)
 1. `node src/build.mjs` — 빌드 오류, 출시 칸 형식 오류, 사라진 주소의 301 누락(URL 보호)이 있으면 실패한다
@@ -6,7 +6,7 @@
 3. `node src/check.mjs` — 데이터 점검(초보 로프트·샤프트 기준, 이미지·링크 누락, 14일 지난 가격)
 4. `node src/tiercheck.mjs` — 가이드별 실력·가격 단계 분포
 5. 배포 상태 확인(이 사이트에만 요청한다):
-   - `https://golf-price.pages.dev/version.json` 의 commit 이 `git rev-parse --short origin/main` 과 같은지
+   - `https://golfprice.unclepony.com/version.json` 의 commit 이 `git rev-parse --short origin/main` 과 같은지
    - `/`, `/about`, 가이드 3개, 상품 3개가 200 인지, `_redirects` 의 주소 3개가 301 인지
 
 ## 2. 자동으로 고쳐도 되는 것
