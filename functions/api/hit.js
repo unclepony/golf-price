@@ -18,18 +18,45 @@ async function tables(env, url) {
 const norm = (p) => (p.length > 1 ? p.replace(/\/+$/, '').replace(/\.html$/, '') : p) || '/';
 const day = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10); // 한국 시간 날짜
 
-function source(ref, host) {
-  if (!ref) return '직접·북마크';
-  let h;
-  try { h = new URL(ref).hostname.replace(/^www\.|^m\./, ''); } catch { return '기타'; }
-  if (h === host) return '';
-  const known = [
-    [/(^|\.)google\./, '구글'], [/naver\.com$/, '네이버'], [/(daum\.net|kakao\.com)$/, '다음·카카오'], [/bing\.com$/, '빙'],
-    [/(chatgpt\.com|openai\.com)$/, 'ChatGPT'], [/perplexity\.ai$/, 'Perplexity'], [/(claude\.ai)$/, 'Claude'], [/gemini\.google\.com$/, 'Gemini'],
-    [/(youtube\.com|youtu\.be)$/, '유튜브'], [/(instagram\.com|facebook\.com|threads\.net|x\.com|t\.co)$/, 'SNS'], [/duckduckgo\.com$/, 'DuckDuckGo'], [/yahoo\./, '야후'],
-  ];
-  for (const [re, name] of known) if (re.test(h)) return name;
-  return h.slice(0, 60);
+// 유입 경로 판정 → { src: 큰 분류, kw: 검색어(넘어올 때만), url: 들어온 외부 페이지(호스트+경로) }
+// - 브라우저는 보통 다른 사이트 주소를 '도메인까지만' 넘기므로 url 은 도메인만 남는 경우가 많다. 구글은 검색어를 넘기지 않는다(서치콘솔에서 확인)
+// - 카카오톡·네이버 앱·인스타그램 등 앱 안 브라우저는 출처를 안 넘기는 경우가 많아, 출처가 없으면 브라우저 정보로 앱을 알아본다
+// - 주소에 utm_source 가 있으면(직접 만든 공유 링크) 그것을 우선한다
+const ENGINES = [
+  [/gemini\.google\.com$/, 'Gemini'], [/(^|\.)google\./, '구글', 'q'], [/naver\.com$/, '네이버', 'query'], [/(daum\.net|kakao\.com)$/, '다음·카카오', 'q'],
+  [/bing\.com$/, '빙', 'q'], [/(chatgpt\.com|openai\.com)$/, 'ChatGPT'], [/perplexity\.ai$/, 'Perplexity'], [/claude\.ai$/, 'Claude'],
+  [/(youtube\.com|youtu\.be)$/, '유튜브'], [/(instagram\.com)$/, '인스타그램'], [/(facebook\.com|fb\.com)$/, '페이스북'], [/threads\.(net|com)$/, '스레드'],
+  [/(x\.com|t\.co|twitter\.com)$/, 'X(트위터)'], [/duckduckgo\.com$/, 'DuckDuckGo', 'q'], [/yahoo\./, '야후', 'p'], [/zum\.com$/, '줌', 'query'],
+];
+const APPS = [ // 출처가 비었을 때 브라우저 정보로 판정
+  [/KAKAOTALK/i, '카카오톡'], [/NAVER\(inapp|NAVER\//, '네이버 앱'], [/DaumApps/i, '다음 앱'], [/Instagram/i, '인스타그램'],
+  [/FBAN|FBAV/i, '페이스북'], [/Line\//, '라인'], [/Band\//i, '밴드'], [/GSA\//, '구글 앱'],
+];
+const ANDROID_APPS = { 'com.google.android.googlequicksearchbox': '구글 앱', 'com.google.android.gm': 'Gmail', 'com.kakao.talk': '카카오톡', 'com.nhn.android.search': '네이버 앱', 'com.instagram.android': '인스타그램' };
+
+function source(ref, host, ua, qs) {
+  const utm = new URLSearchParams(qs || '');
+  if (utm.get('utm_source')) {
+    const camp = ['utm_source', 'utm_medium', 'utm_campaign'].map((k) => utm.get(k)).filter(Boolean).join(' / ').slice(0, 80);
+    return { src: `캠페인: ${utm.get('utm_source').slice(0, 30)}`, url: camp };
+  }
+  if (!ref) {
+    for (const [re, name] of APPS) if (re.test(ua)) return { src: name };
+    return { src: '직접·북마크' };
+  }
+  let u;
+  try { u = new URL(ref); } catch { return { src: '기타' }; }
+  if (u.protocol === 'android-app:') return { src: ANDROID_APPS[u.hostname] ?? `앱: ${u.hostname.slice(0, 40)}` };
+  const h = u.hostname.replace(/^(www|m)\./, '');
+  if (h === host) return { src: '' };
+  const url = (h + (u.pathname.length > 1 ? u.pathname : '')).slice(0, 120);
+  for (const [re, name, qk] of ENGINES) {
+    if (re.test(h)) {
+      const kw = qk ? (u.searchParams.get(qk) ?? '').trim().slice(0, 60) : '';
+      return { src: name, kw, url: qk ? '' : url };
+    }
+  }
+  return { src: h.slice(0, 60), url };
 }
 function device(ua) {
   if (/iPad|Tablet|(Android(?!.*Mobile))/i.test(ua)) return '태블릿';
@@ -42,28 +69,34 @@ export async function onRequestPost({ request, env, waitUntil }) {
   if (!env.CLICKS) return done;
   const url = new URL(request.url);
   const h = request.headers;
+  const ua = h.get('user-agent') ?? '';
   const origin = h.get('origin');
-  if ((origin && new URL(origin).host !== url.host) || BOT.test(h.get('user-agent') ?? '')) return done;
+  if ((origin && new URL(origin).host !== url.host) || BOT.test(ua)) return done;
   const raw = await request.text();
-  if (raw.length > 2000) return done;
+  if (raw.length > 3000) return done;
   let b;
   try { b = JSON.parse(raw); } catch { return done; }
   await tables(env, url);
   const path = norm(String(b.p ?? '').slice(0, 200));
   if (!PATHS.has(path)) return done;
 
+  const host = url.hostname.replace(/^www\./, '');
+  // 이 방문의 유입 경로: 첫 페이지의 출처·주소 조건을 브라우저 탭이 기억했다가 매 신호에 함께 보낸다(sessionStorage, 서버에 사용자 ID 없음)
+  const s = source(String(b.r ?? ''), host, ua, String(b.q ?? '').slice(0, 300));
+  const src = s.src || '직접·북마크';
   const d = day();
   const rows = [];
   if (b.t === 'pv') {
     rows.push(['pv', path]);
     if (b.v) {
-      const src = source(String(b.r ?? ''), url.hostname.replace(/^www\./, ''));
-      rows.push(['visit', path], ['ref', src || '직접·북마크'], ['dev', device(h.get('user-agent') ?? '')], ['cty', String(request.cf?.country ?? '??').slice(0, 4)]);
+      rows.push(['visit', path], ['ref', src], ['refland', `${src}|${path}`], ['dev', device(ua)], ['cty', String(request.cf?.country ?? '??').slice(0, 4)]);
+      if (s.kw) rows.push(['kw', `${src}|${s.kw}`]);
+      if (s.url) rows.push(['refurl', s.url]);
     }
   } else if (b.t === 'out') {
     const href = String(b.h ?? '');
     const id = HREF2ID.get(href) ?? /^\/go\/([\w-]+)/.exec(href)?.[1] ?? '(알 수 없음)';
-    rows.push(['out', `${path}|${id}`], ['pos', String(b.w ?? '기타').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20) || '기타']);
+    rows.push(['out', `${path}|${id}`], ['outref', src], ['pos', String(b.w ?? '기타').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20) || '기타']);
   } else return done;
 
   const sql = 'INSERT INTO stats (day, kind, k, n) VALUES (?1, ?2, ?3, 1) ON CONFLICT(day, kind, k) DO UPDATE SET n = n + 1';

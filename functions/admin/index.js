@@ -67,8 +67,13 @@ label.me{display:flex;gap:6px;align-items:center;color:var(--sub);font-size:13px
   <div class="card"><h2>쿠팡 클릭 많은 상품</h2><div class="tw" id="prods"></div></div>
   <div class="card"><h2>클릭한 버튼 위치</h2><div class="tw" id="pos"></div></div>
 </div>
-<div class="grid3 rowgap">
-  <div class="card"><h2>유입 경로</h2><div id="ref"></div></div>
+<div class="card"><h2>유입 경로 — 어디서 들어와서 얼마나 쿠팡으로 갔나</h2><div class="tw" id="ref"></div></div>
+<div class="grid2 rowgap">
+  <div class="card"><h2>들어온 외부 페이지</h2><div class="tw" id="refurl"></div><p class="note">다른 사이트는 보통 도메인까지만 알려 줍니다. 캠페인(utm) 링크는 출처 / 매체 / 캠페인으로 보입니다.</p></div>
+  <div class="card"><h2>검색어</h2><div class="tw" id="kw"></div><p class="note">네이버·다음·빙 등이 검색어를 넘길 때만 보입니다. 구글은 검색어를 넘기지 않으니 구글 서치콘솔에서 확인하세요.</p></div>
+</div>
+<div class="card"><h2>유입 경로별 첫 페이지</h2><div class="tw" id="refland"></div></div>
+<div class="grid2 rowgap">
   <div class="card"><h2>기기</h2><div id="dev"></div></div>
   <div class="card"><h2>국가</h2><div id="cty"></div></div>
 </div>
@@ -170,7 +175,22 @@ label.me{display:flex;gap:6px;align-items:center;color:var(--sub);font-size:13px
       return [(j.products[id] ? '<a href="/p/' + esc(id) + '" target="_blank" rel="noopener">' + esc(j.products[id]) + '</a>' : esc(id)), num(prods[id]), pct(prods[id], out)];
     }), '아직 쿠팡 클릭이 없습니다');
     $('#pos').innerHTML = table(['위치', '클릭', '비율'], (by.pos || []).map(function (x) { return [esc(x.k), num(x.n), pct(x.n, out)]; }), '아직 쿠팡 클릭이 없습니다');
-    $('#ref').innerHTML = shares(by.ref || []);
+    var outref = {}; (by.outref || []).forEach(function (r) { outref[r.k] = r.n; });
+    var refs = by.ref || [];
+    Object.keys(outref).forEach(function (k) { if (!refs.some(function (r) { return r.k === k; })) refs.push({ k: k, n: 0 }); });
+    $('#ref').innerHTML = table(['유입 경로', '방문', '비율', '쿠팡 클릭', '방문당 클릭률'], refs.map(function (x) {
+      return [esc(x.k), num(x.n), pct(x.n, vi) + '<span class="mini" style="width:' + Math.round(vi ? x.n / vi * 60 : 0) + 'px"></span>', num(outref[x.k] || 0), pct(outref[x.k] || 0, x.n)];
+    }));
+    $('#refurl').innerHTML = table(['외부 페이지', '방문'], (by.refurl || []).slice(0, 30).map(function (x) {
+      return [x.k.indexOf(' / ') >= 0 ?esc(x.k) : '<a href="https://' + esc(x.k) + '" target="_blank" rel="noopener noreferrer">' + esc(x.k) + '</a>', num(x.n)];
+    }), '아직 외부 사이트에서 들어온 방문이 없습니다');
+    $('#kw').innerHTML = table(['검색어', '검색엔진', '방문'], (by.kw || []).slice(0, 30).map(function (x) {
+      var i = x.k.indexOf('|'); return [esc(x.k.slice(i + 1)), esc(x.k.slice(0, i)), num(x.n)];
+    }), '아직 넘어온 검색어가 없습니다');
+    $('#refland').innerHTML = table(['유입 경로', '첫 페이지', '방문'], (by.refland || []).slice(0, 40).map(function (x) {
+      var i = x.k.indexOf('|'), p = x.k.slice(i + 1);
+      return [esc(x.k.slice(0, i)), '<a href="' + esc(p) + '" target="_blank" rel="noopener">' + esc(j.pages[p] || p) + '</a>', num(x.n)];
+    }));
     $('#dev').innerHTML = shares(by.dev || []);
     $('#cty').innerHTML = shares(by.cty || []);
   }

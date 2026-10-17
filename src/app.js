@@ -8,20 +8,24 @@
   // ---------- 방문·쿠팡 클릭 집계 (/api/hit → 운영자 모니터링 /admin) ----------
   // 하루 합계만 센다(IP·쿠키·사용자 ID 없음). 쿠팡 링크는 바꾸지 않고, 클릭할 때 이 사이트에 신호만 보낸다.
   // 운영자는 /admin 의 '이 브라우저의 방문은 세지 않기'로 자기 방문을 뺄 수 있다.
-  const beacon = (o) => {
-    try {
-      if (localStorage.getItem('gp_nostat') === '1' || navigator.webdriver) return;
-      navigator.sendBeacon?.('/api/hit', JSON.stringify({ p: location.pathname, ...o }));
-    } catch {}
-  };
+  // 유입 경로(첫 페이지의 출처·utm 주소 조건)는 이 탭에만 기억해 매 신호에 함께 보낸다 → 유입 경로별 쿠팡 클릭률
   let fresh = false;
+  let from = { r: document.referrer, q: location.search };
   try {
-    fresh = !sessionStorage.getItem('gp_s');
-    sessionStorage.setItem('gp_s', '1');
+    const saved = sessionStorage.getItem('gp_s');
+    fresh = !saved;
+    if (saved && saved !== '1') from = JSON.parse(saved);
+    else sessionStorage.setItem('gp_s', JSON.stringify(from));
   } catch {
     fresh = !document.referrer.startsWith(location.origin);
   }
-  beacon({ t: 'pv', v: fresh ? 1 : 0, r: fresh ? document.referrer : '' });
+  const beacon = (o) => {
+    try {
+      if (localStorage.getItem('gp_nostat') === '1' || navigator.webdriver) return;
+      navigator.sendBeacon?.('/api/hit', JSON.stringify({ p: location.pathname, ...from, ...o }));
+    } catch {}
+  };
+  beacon({ t: 'pv', v: fresh ? 1 : 0 });
   const where = (a) =>
     a.closest('.stickybuy') ? '하단 고정 버튼'
     : a.closest('.fitem') ? '장비 찾기'
