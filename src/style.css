@@ -413,7 +413,7 @@ table.ig .bar i { display: block; height: 100%; background: var(--accent); }
 .toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 4px; position: sticky; top: 49px; z-index: 10; background: var(--bg); padding: 8px 0; }
 .toc a { padding: 6px 14px; border-radius: 99px; border: 1px solid var(--line); background: var(--surface); text-decoration: none; font-size: 13px; font-weight: 600; }
 .toc a:hover { border-color: var(--accent); color: var(--accent); }
-#cmp, #scores, #models, #choose, #faq { scroll-margin-top: 110px; }
+#cmp, #scores, #models, #choose, #faq, #videos { scroll-margin-top: 110px; }
 .choose { margin-top: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
 .choose h2 { margin-top: 0; }
 .choose-pick { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
@@ -749,3 +749,19 @@ table.grind-t tbody th { background: #1c2b3a; color: #fff; }
 }
 /* 장비 찾기 결과의 쿠팡 버튼을 카드 너비로 */
 .fitem .fbuy { max-width: none; width: 100%; padding: 9px 10px; font-size: 13px; }
+
+/* 관련 영상 (유튜브): 썸네일만 먼저, 누르면 그 자리에서 플레이어를 불러온다 */
+.vgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 12px; }
+.vgrid-s { grid-template-columns: repeat(auto-fill, minmax(150px, 180px)); margin-top: 12px; }
+.vcard { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.vplay { position: relative; display: block; aspect-ratio: 16 / 9; background: #000; }
+.vshort .vplay { aspect-ratio: 9 / 16; }
+.vplay img, .vplay iframe { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border: 0; }
+.vbtn { position: absolute; left: 50%; top: 50%; width: 64px; height: 44px; margin: -22px 0 0 -32px; border-radius: 12px; background: rgba(0, 0, 0, 0.72); transition: background 0.15s; }
+.vbtn::after { content: ''; position: absolute; left: 26px; top: 13px; border-style: solid; border-width: 9px 0 9px 15px; border-color: transparent transparent transparent #fff; }
+.vplay:hover .vbtn, .vplay:focus-visible .vbtn { background: #e62117; }
+.vtag { position: absolute; left: 8px; top: 8px; padding: 2px 8px; border-radius: 99px; background: rgba(0, 0, 0, 0.72); color: #fff; font-size: 12px; font-weight: 700; }
+.vcard figcaption { padding: 10px 12px 12px; font-size: 14px; line-height: 1.45; }
+.vcard figcaption a { color: var(--text); text-decoration: none; font-weight: 600; }
+.vcard figcaption a:hover { color: var(--accent); }
+.vshort figcaption { font-size: 13px; }

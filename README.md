@@ -61,13 +61,14 @@ Node.js 22.9 이상이 필요합니다.
 
 - `node src/build.mjs` — 사이트 생성 (`site/`). 콘텐츠 지문으로 '마지막 업데이트'·sitemap lastmod 결정, 사라진 주소에 301 이 없으면 실패
 - `node src/linkcheck.mjs` — 내부 링크·리다이렉트·사이트맵·`/go/` 이동 표 검사 (배포 전 실행)
-- `node src/check.mjs` — 매일 점검(출시 형식, 초보 로프트·샤프트 기준, 이미지·링크 누락, 14일 지난 가격)
+- `node src/check.mjs` — 매일 점검(출시 형식, 초보 로프트·샤프트 기준, 이미지·링크 누락, 14일 지난 가격, 관련 영상 목록 형식)
 - `node src/audit.mjs` — 초보 기준 위반·출시 형식 상세 목록
 - `node src/rebaseline.mjs [--weekly]` — 기준가 재계산 (10% 이상 변동만, `--weekly` 는 정기 재계산)
 - `node src/indexnow.mjs` — IndexNow 대기열 전송 (콘텐츠가 바뀐·새·삭제된 페이지만)
 - `node src/gsc-fetch.mjs`, `node src/weekly-report.mjs` — 주간 분석 자료
 - `node src/stamp-dates.mjs` — git 기록으로 링크 생성 때 판매가 확인일(`picks.json checked`) 채우기
 - `node src/tiercheck.mjs` — 가이드별 실력·가격 단계 분포 검사
+- `node src/videos-sync.mjs [원본 경로]` — golfvideo 의 `data/videos.json` 을 `config/videos.json` 으로 복사(형식 오류가 있으면 반영 안 함)
 
 ## 데이터 파일
 
@@ -75,9 +76,20 @@ Node.js 22.9 이상이 필요합니다.
 - `config/notices.json` — 고지·점수·가격 안내 문구 (사이트 전체에서 이 파일 한 곳만 씀)
 - `config/rules.json` 초보 기준 · `config/variants.json` 초보 기준에 맞는 옵션으로 바꿀 쿠팡 상품 자리
 - `config/howto.json` 아이템×성별×실력별 '고르는 법'·FAQ·한 줄 결론 수동 지정
+- `config/videos.json` — 가이드 slug → 유튜브 관련 영상 목록. 아래 '관련 영상' 참고
 - `config/content-state.json`, `config/url-manifest.json` — 빌드가 관리 (직접 고치지 않음)
 - 출시 칸은 `YYYY년` 또는 빈 값만 허용(빌드 검사). 모르는 연도는 비워 둔다
 - 상품이 3종 미만인 실력 단계는 실력별 페이지를 만들지 않고 `_redirects` 로 상위 가이드에 301
+
+## 관련 영상 (유튜브)
+
+가이드 페이지(`/g/{slug}`) 자주 묻는 질문 아래에 ATL골프기어 유튜브 채널의 관련 영상을 보여 줍니다. 영상이 없는 가이드는 블록이 없습니다.
+
+- 원본: golfvideo 프로젝트의 `data/videos.json` (golfvideo 매일 작업이 갱신). GitHub Actions 에는 golfvideo 폴더가 없으므로 `node src/videos-sync.mjs` 로 `config/videos.json` 에 복사해 커밋합니다. 빌드는 이 복사본만 읽습니다.
+- 형식: `{ "가이드 slug": [{ "id": "유튜브 영상 id(11자)", "format": "long|shorts", "title": "...", "publishAt": "ISO 시각 또는 null" }] }`. `format` 이 없으면 제목의 `#shorts` 로 판단합니다.
+- `publishAt` 이 빌드 시각보다 미래인 영상(예약 공개 전)은 보이지 않습니다. 매일 23:05 빌드 때 그날 공개된 영상이 붙습니다.
+- 처음에는 썸네일(`i.ytimg.com`)만 보이고, 누르면 그 자리에서 `youtube-nocookie.com` 플레이어를 불러옵니다(그 전에는 유튜브에 요청 없음). 링크에 utm 은 붙이지 않습니다.
+- 채널 주소는 `config/site.json` 의 `youtube` ('유튜브 채널에서 더 보기' 링크).
 
 ## 검색 순위 보호 원칙
 

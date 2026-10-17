@@ -8,6 +8,7 @@ import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
 import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText as rawWrite, todayKst } from './lib.mjs';
 import { beginnerIssues, releaseIssues } from './rules.mjs';
+import { publicVideos, isShorts, isVideoId, videoIssues } from './videos.mjs';
 
 const DEMO = process.argv.includes('--demo');
 const SITE_URL = (process.env.SITE_URL || 'https://golfprice.unclepony.com').replace(/\/$/, '');
@@ -504,6 +505,24 @@ const shortTitle = (t) => t.split(':')[0].trim();
 const sellable = (id) => !!(links[id] ?? byId[id]?.hist?.latest?.link);
 // 다른 가이드에 합쳐진 가이드(mergeInto)는 따로 페이지를 만들지 않는다
 const pageGuides = guides.filter((g) => !g.mergeInto);
+// 유튜브 관련 영상 (config/videos.json ← node src/videos-sync.mjs): 공개된 영상만, 클릭하면 그때 유튜브 플레이어를 불러온다
+const VIDEOS = readJson(join(ROOT, 'config', 'videos.json'), {});
+{
+  const bad = videoIssues(VIDEOS, new Set(pageGuides.map((g) => g.slug)));
+  if (bad.length) console.warn(`경고: config/videos.json 형식 문제 ${bad.length}건 (해당 영상은 그대로 두고 빌드 계속)\n${bad.map((x) => `  ${x}`).join('\n')}`);
+}
+function videoBlock(g) {
+  const list = publicVideos(VIDEOS[g.slug]).filter((v) => isVideoId(v.id) && v.title);
+  if (!list.length) return '';
+  const card = (v) => {
+    const sh = isShorts(v);
+    const url = sh ? `https://www.youtube.com/shorts/${v.id}` : `https://www.youtube.com/watch?v=${v.id}`;
+    return `<figure class="vcard${sh ? ' vshort' : ''}"><a class="vplay" href="${url}" data-yt="${esc(v.id)}" target="_blank" rel="noopener" aria-label="${esc(v.title)} 영상 재생"><img src="https://i.ytimg.com/vi/${esc(v.id)}/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><span class="vbtn" aria-hidden="true"></span>${sh ? '<span class="vtag">쇼츠</span>' : ''}</a><figcaption><a href="${url}" target="_blank" rel="noopener">${esc(v.title)}</a></figcaption></figure>`;
+  };
+  const long = list.filter((v) => !isShorts(v));
+  const shorts = list.filter(isShorts);
+  return `<section id="videos" class="videos"><h2>관련 영상 <small>ATL골프기어 유튜브</small></h2>${long.length ? `<div class="vgrid">${long.map(card).join('')}</div>` : ''}${shorts.length ? `<div class="vgrid vgrid-s">${shorts.map(card).join('')}</div>` : ''}${SITE.youtube ? `<a class="more-link" href="${esc(SITE.youtube)}" target="_blank" rel="noopener">유튜브 채널에서 더 보기 ›</a>` : ''}</section>`;
+}
 const mergedInto = (g) => guides.filter((m) => m.mergeInto === g.slug);
 // 실력 단계가 다른 제품끼리는 한 줄로 세우지 않는다: 같은 단계 안에서의 순위만 쓴다
 const skillIdx = (pk) => (pk.skill ? SKILLS.indexOf(pk.skill) : 9);
@@ -1133,6 +1152,7 @@ ${mergedInto(g)
   .map((m) => `<section id="vokey" class="merged"><h2>${esc(m.menuName ?? shortTitle(m.title))}</h2><p class="prose">${esc(m.intro)}</p>${grindCompare(m)}<div class="prose">${m.sections.map((x) => `<h3>${esc(x.h)}</h3><p>${esc(x.p)}</p>`).join('')}</div><div class="prose">${m.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</div></section>`)
   .join('')}
 <section id="faq" class="prose"><h2>자주 묻는 질문</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>
+${videoBlock(g)}
 <section><h2>다른 비교·추천 가이드</h2>${guideGrid(pageGuides.filter((o) => o.slug !== g.slug))}</section>
 ${skillGroups(g).length ? '' : stickyBuy(rankedPicks(g)[0])}`,
     }),

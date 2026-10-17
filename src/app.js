@@ -212,6 +212,22 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
     }),
   );
 
+  // 가이드 관련 영상: 썸네일을 누르면 그 자리에서 유튜브 플레이어를 불러온다 (그 전에는 유튜브에 아무 요청도 하지 않음)
+  $$('.vplay[data-yt]').forEach((a) =>
+    a.addEventListener('click', (e) => {
+      if (e.ctrlKey || e.metaKey || e.shiftKey) return;
+      e.preventDefault();
+      const f = document.createElement('iframe');
+      f.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(a.dataset.yt)}?autoplay=1&rel=0`;
+      f.title = a.getAttribute('aria-label') || '유튜브 영상';
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      f.allowFullscreen = true;
+      const box = Object.assign(document.createElement('div'), { className: 'vplay' });
+      box.append(f);
+      a.replaceWith(box);
+    }),
+  );
+
   // 홈: 내 실력에 맞는 장비 찾기 (아이템·성별·실력·예산으로 걸러 점수 순 6개, 전체 비교 페이지로 연결)
   const fd = $('#finderData');
   const ff = $('.finder-f');

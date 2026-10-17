@@ -1,10 +1,11 @@
 // 매일 데이터 점검 (node src/check.mjs [--out 파일.md]): 네트워크 요청 없이 저장소 데이터만 본다.
-// 점검: 출시 연도 형식, 초보 가이드 상품의 로프트·샤프트 기준, 이미지·링크 누락, 확인한 지 14일 지난 가격
+// 점검: 출시 연도 형식, 초보 가이드 상품의 로프트·샤프트 기준, 이미지·링크 누락, 확인한 지 14일 지난 가격, 관련 영상 목록 형식
 // 결과는 마크다운으로 출력하고(GitHub Issue 본문용), 문제가 있어도 실패 코드로 끝내지 않는다(배포를 막지 않는 알림).
 import { join } from 'node:path';
 import { writeFileSync } from 'node:fs';
 import { ROOT, readJson, loadLinks, historyDir, todayKst } from './lib.mjs';
 import { beginnerIssues, releaseIssues } from './rules.mjs';
+import { videoIssues } from './videos.mjs';
 
 const out = process.argv.includes('--out') ? process.argv[process.argv.indexOf('--out') + 1] : null;
 const products = readJson(join(ROOT, 'config', 'products.json')).products;
@@ -46,6 +47,12 @@ add(
   stale.slice(0, 30).map((x) => `${x.p.name} (\`${x.p.id}\`): ${x.d ? `${x.d} 확인, ${days(x.d)}일 전` : '확인 기록 없음'}`).concat(stale.length > 30 ? [`… 외 ${stale.length - 30}개`] : []),
   '`node src/prices/template.mjs` 로 prices.csv 에 확인할 상품 줄을 만들고, 쿠팡 파트너스 사이트에서 가격을 확인해 채운 뒤 `node src/prices/import.mjs` 를 실행하세요.',
   stale.length,
+);
+
+add(
+  '관련 영상 목록(config/videos.json) 형식 오류',
+  videoIssues(readJson(join(ROOT, 'config', 'videos.json'), {}), new Set(guides.map((g) => g.slug))),
+  '`node src/videos-sync.mjs` 로 golfvideo 의 data/videos.json 을 다시 가져오거나, 없는 가이드 slug·영상 id 를 고치세요.',
 );
 
 const total = sections.reduce((s, x) => s + x.count, 0);
