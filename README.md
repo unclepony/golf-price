@@ -35,6 +35,20 @@ Cloudflare Pages Functions(`functions/go/[id].js`)가 Cloudflare D1 에 '날짜�
 
 D1 준비(한 번): Cloudflare 대시보드 → Storage & Databases → D1 → 데이터베이스 만들기(예: `golf-clicks`) → Console 에서 `migrations/0001_clicks.sql` 실행 → Workers & Pages → golf-price → Settings → Bindings → D1 database 추가(변수 이름 `CLICKS`).
 
+## 운영자 모니터링 (/admin)
+
+`https://golf-price.pages.dev/admin` — 운영자만 보는 페이지. 페이지별 페이지뷰·방문, 유입 경로(구글·네이버·ChatGPT 등)·기기·국가, 쿠팡 클릭(상품별·버튼 위치별)과 **쿠팡 클릭률**(쿠팡 클릭 ÷ 페이지뷰, 방문당 클릭률 = 쿠팡 클릭 ÷ 방문)을 오늘·7일·30일·90일로 보여 줍니다(앞 기간 대비 증감 포함).
+
+- 수집: `assets/app.js` 가 페이지를 열 때와 쿠팡 링크를 누를 때 `/api/hit`(`functions/api/hit.js`)로 신호를 보냅니다. **쿠팡 링크는 바꾸지 않습니다**(사용자는 파트너스 링크로 바로 이동). 쿠팡에 어떤 요청도 보내지 않습니다.
+- 저장: D1 `stats` 표에 하루 합계만(`migrations/0002_stats.sql`). IP·쿠키·사용자 ID 저장 없음. 검색 로봇·다른 사이트발 요청·사이트맵에 없는 경로는 세지 않습니다.
+- 잠금: HTTP Basic 인증(`functions/admin/_middleware.js`). 비밀번호는 Cloudflare 환경변수 `ADMIN_PASS` 에만 둡니다. 없으면 /admin 은 404. 검색엔진 차단(noindex, robots.txt).
+- 내 방문 빼기: /admin 의 '이 브라우저의 방문은 세지 않기'를 켜 두세요(휴대폰 등 기기마다 한 번).
+
+준비(한 번):
+1. 위 '클릭 추적'의 D1 준비(데이터베이스 + 바인딩 `CLICKS`)를 하고, D1 Console 에서 `migrations/0002_stats.sql` 도 실행
+2. Workers & Pages → golf-price → Settings → Variables and Secrets → 추가: 이름 `ADMIN_PASS`, 유형 **Secret**, 값은 16자 이상 긴 비밀번호(다른 곳에서 쓰지 않는 것)
+3. 다시 배포(Deployments → 최근 배포 → Retry deployment) 후 /admin 접속 → 사용자 이름은 아무거나, 비밀번호는 `ADMIN_PASS`
+
 ## 내 PC에서 실행
 
 Node.js 22.9 이상이 필요합니다.

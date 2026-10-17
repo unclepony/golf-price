@@ -1487,7 +1487,7 @@ rawWrite(
     .map(([u, d]) => `<url><loc>${SITE_URL}${u}</loc><lastmod>${d}</lastmod></url>`)
     .join('\n')}\n</urlset>\n`,
 );
-writeText(join(OUT, 'robots.txt'), DEMO ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nDisallow: /go/\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+writeText(join(OUT, 'robots.txt'), DEMO ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nDisallow: /go/\nDisallow: /admin\nDisallow: /api/\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
 {
   const n = pageGuides.reduce((s2, g) => s2 + g.picks.filter((pk) => byId[pk.id] && issuesOf(g, pk).length).length, 0);

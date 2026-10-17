@@ -7,3 +7,4 @@ data-demo/
 *service-account*.json
 *gsc-key*.json
 golf-price-*.json
+.wrangler/

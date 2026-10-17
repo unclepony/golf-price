@@ -5,6 +5,42 @@
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
   const norm = (s) => String(s ?? '').toLowerCase().replace(/[\s\-_·.()]/g, '');
 
+  // ---------- 방문·쿠팡 클릭 집계 (/api/hit → 운영자 모니터링 /admin) ----------
+  // 하루 합계만 센다(IP·쿠키·사용자 ID 없음). 쿠팡 링크는 바꾸지 않고, 클릭할 때 이 사이트에 신호만 보낸다.
+  // 운영자는 /admin 의 '이 브라우저의 방문은 세지 않기'로 자기 방문을 뺄 수 있다.
+  const beacon = (o) => {
+    try {
+      if (localStorage.getItem('gp_nostat') === '1' || navigator.webdriver) return;
+      navigator.sendBeacon?.('/api/hit', JSON.stringify({ p: location.pathname, ...o }));
+    } catch {}
+  };
+  let fresh = false;
+  try {
+    fresh = !sessionStorage.getItem('gp_s');
+    sessionStorage.setItem('gp_s', '1');
+  } catch {
+    fresh = !document.referrer.startsWith(location.origin);
+  }
+  beacon({ t: 'pv', v: fresh ? 1 : 0, r: fresh ? document.referrer : '' });
+  const where = (a) =>
+    a.closest('.stickybuy') ? '하단 고정 버튼'
+    : a.closest('.fitem') ? '장비 찾기'
+    : a.closest('.conclusion') ? '한 줄 결론'
+    : a.closest('table.scores') ? '점수표'
+    : a.closest('table') ? '비교표'
+    : a.classList.contains('lvl-link') ? '단계 카드'
+    : a.closest('.pick') ? '상품 소개'
+    : location.pathname.startsWith('/p/') ? '상품 페이지'
+    : '기타';
+  const onOut = (e) => {
+    const a = e.target.closest?.('a[href]');
+    if (!a || !(/(^|\.)coupang\.com$/.test(a.hostname) || a.pathname.startsWith('/go/'))) return;
+    if (e.type === 'auxclick' && e.button !== 1) return;
+    beacon({ t: 'out', h: a.getAttribute('href'), w: where(a) });
+  };
+  document.addEventListener('click', onOut, true);
+  document.addEventListener('auxclick', onOut, true);
+
   // ---------- 검색 데이터 ----------
   let dataP;
   const loadData = () => (dataP ??= fetch('/assets/search.json').then((r) => r.json()));
