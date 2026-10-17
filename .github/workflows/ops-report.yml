@@ -1,0 +1,45 @@
+# 운영 보고 페이지(ops.unclepony.com)로 보고: 매일·주간 자동 작업이 끝나면 결과를, 사람이 올린 코드 변경은 '업데이트'로
+# GitHub Secrets: OPS_URL, OPS_KEY (unclepony-ops 저장소 README 참고). 사이트 동작에는 영향 없음.
+name: ops-report
+
+on:
+  workflow_run:
+    workflows: [daily-check, weekly-analysis]
+    types: [completed]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    # 매일 갱신 봇 커밋은 daily-check 결과로 보고하므로 push 보고에서 뺀다
+    if: github.event_name == 'workflow_run' || github.actor != 'github-actions[bot]'
+    steps:
+      - name: 보고 보내기
+        env:
+          OPS_URL: ${{ secrets.OPS_URL }}
+          OPS_KEY: ${{ secrets.OPS_KEY }}
+          EVENT: ${{ github.event_name }}
+          WF_NAME: ${{ github.event.workflow_run.name }}
+          WF_RESULT: ${{ github.event.workflow_run.conclusion }}
+          WF_URL: ${{ github.event.workflow_run.html_url }}
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+          COMMIT_URL: ${{ github.event.head_commit.url }}
+        run: |
+          [ -z "$OPS_URL" ] && exit 0
+          if [ "$EVENT" = "workflow_run" ]; then
+            case "$WF_NAME" in daily-check) label="매일 점검·갱신";; weekly-analysis) label="주간 분석·개선";; *) label="$WF_NAME";; esac
+            if [ "$WF_RESULT" = "success" ]; then
+              kind=update; [ "$WF_NAME" = "weekly-analysis" ] && kind=improve
+              title="$label 완료 $(TZ=Asia/Seoul date +%F)"; body="자동 작업이 정상으로 끝났습니다."
+            else
+              kind=error; title="$label 실패 $(TZ=Asia/Seoul date +%F)"; body="자동 작업 결과: $WF_RESULT. 관련 링크에서 로그를 확인하세요."
+            fi
+            link="$WF_URL"
+          else
+            kind=update; title="$(printf '%s' "$COMMIT_MSG" | head -n 1 | cut -c1-200)"; body="$(printf '%s' "$COMMIT_MSG" | tail -n +2 | head -c 3000)"; link="$COMMIT_URL"
+          fi
+          node -e 'fetch(process.env.OPS_URL,{method:"POST",headers:{"content-type":"application/json","x-ops-key":process.env.OPS_KEY},body:JSON.stringify({site:"golf-price",kind:process.argv[1],title:process.argv[2],body:process.argv[3],link:process.argv[4],source:"GitHub "+(process.env.WF_NAME||"push")})}).then(r=>{console.log("보고",r.status);if(!r.ok)process.exit(1)})' "$kind" "$title" "$body" "$link"
