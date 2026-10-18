@@ -765,3 +765,7 @@ table.grind-t tbody th { background: #1c2b3a; color: #fff; }
 .vcard figcaption a { color: var(--text); text-decoration: none; font-weight: 600; }
 .vcard figcaption a:hover { color: var(--accent); }
 .vshort figcaption { font-size: 13px; }
+
+/* 함께 운영하는 사이트 */
+.foot .family { margin-top: 8px; }
+.foot .family a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
