@@ -5,9 +5,12 @@ export async function onRequestGet({ request, env }) {
   const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { 'Content-Type': 'application/json; charset=utf-8' } });
   if (!env.CLICKS) return json({ error: 'D1 바인딩 CLICKS 가 없습니다. README 의 D1 준비를 먼저 하세요.' }, 503);
   const url = new URL(request.url);
-  const days = Math.min(Math.max(parseInt(url.searchParams.get('days') ?? '7', 10) || 7, 1), 365);
-  const from = kst(-(days - 1)), to = kst();
-  const prevFrom = kst(-(2 * days - 1)), prevTo = kst(-days);
+  // ?day=YYYY-MM-DD 이면 그 하루만 (매일 분석 자료 저장용: src/stats-save.mjs)
+  const one = /^\d{4}-\d{2}-\d{2}$/.test(url.searchParams.get('day') ?? '') ? url.searchParams.get('day') : null;
+  const days = one ? 1 : Math.min(Math.max(parseInt(url.searchParams.get('days') ?? '7', 10) || 7, 1), 365);
+  const from = one ?? kst(-(days - 1)), to = one ?? kst();
+  const shift = (d, n) => new Date(Date.parse(d) + n * 864e5).toISOString().slice(0, 10);
+  const prevFrom = shift(from, -days), prevTo = shift(from, -1);
   const all = async (sql, ...p) => (await env.CLICKS.prepare(sql).bind(...p).all()).results;
   try {
     const [daily, rows, prev] = await Promise.all([

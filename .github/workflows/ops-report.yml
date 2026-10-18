@@ -18,6 +18,10 @@ jobs:
     # 매일 갱신 봇 커밋은 daily-check 결과로 보고하므로 push 보고에서 뺀다
     if: github.event_name == 'workflow_run' || github.actor != 'github-actions[bot]'
     steps:
+      - uses: actions/checkout@v4
+        if: github.event_name == 'push'
+        with:
+          fetch-depth: 2
       - name: 보고 보내기
         env:
           OPS_URL: ${{ secrets.OPS_URL }}
@@ -39,6 +43,10 @@ jobs:
               kind=error; title="$label 실패 $(TZ=Asia/Seoul date +%F)"; body="자동 작업 결과: $WF_RESULT. 관련 링크에서 로그를 확인하세요."
             fi
             link="$WF_URL"
+          elif [ -n "$(git diff --name-only HEAD~1 HEAD -- reports/daily 2>/dev/null | head -n 1)" ]; then
+            # 셀프 개선 보고서(reports/daily/YYYY-MM-DD.md)가 올라오면 그 내용을 '개선'으로 보낸다
+            f="$(git diff --name-only HEAD~1 HEAD -- reports/daily | head -n 1)"
+            kind=improve; title="$(head -n 1 "$f" | sed 's/^# *//' | cut -c1-200)"; body="$(tail -n +2 "$f" | head -c 6000)"; link="https://github.com/${{ github.repository }}/blob/main/$f"
           else
             kind=update; title="$(printf '%s' "$COMMIT_MSG" | head -n 1 | cut -c1-200)"; body="$(printf '%s' "$COMMIT_MSG" | tail -n +2 | head -c 3000)"; link="$COMMIT_URL"
           fi

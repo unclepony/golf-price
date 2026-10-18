@@ -52,6 +52,12 @@ jobs:
         run: |
           if [ "$(TZ=Asia/Seoul date +%u)" = "1" ]; then node src/rebaseline.mjs --weekly; else node src/rebaseline.mjs; fi
 
+      - name: 방문·유입·쿠팡 클릭 통계 저장 (셀프 개선 분석 자료, ADMIN_PASS 없으면 건너뜀)
+        continue-on-error: true
+        env:
+          ADMIN_PASS: ${{ secrets.ADMIN_PASS }}
+        run: node src/stats-save.mjs
+
       - name: 빌드 (콘텐츠 날짜·사이트맵·URL 301 보호 검사)
         run: node src/build.mjs
 
