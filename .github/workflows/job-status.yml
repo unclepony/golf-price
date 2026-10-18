@@ -1,0 +1,29 @@
+# 자동 작업이 끝날 때마다 결과(성공·실패)를 운영 보고 페이지의 '매일 돌아가는 일'(ops.unclepony.com/jobs)로 보낸다.
+# GitHub Secrets: OPS_URL(…/api/report), OPS_KEY. 보내기에 실패해도 이 저장소에는 영향 없음.
+name: job-status
+
+on:
+  workflow_run:
+    workflows: [daily-check, weekly-analysis]
+    types: [completed]
+
+permissions: {}
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    continue-on-error: true
+    steps:
+      - name: 결과 보내기
+        env:
+          OPS_URL: ${{ secrets.OPS_URL }}
+          OPS_KEY: ${{ secrets.OPS_KEY }}
+          JOB: ${{ github.event.workflow_run.name }}
+          STATUS: ${{ github.event.workflow_run.conclusion }}
+          RUN_URL: ${{ github.event.workflow_run.html_url }}
+          EVENT: ${{ github.event.workflow_run.event }}
+        run: |
+          [ -z "$OPS_URL" ] && exit 0
+          body=$(jq -nc --arg job "$JOB" --arg status "$STATUS" --arg url "$RUN_URL" --arg note "$EVENT" '{project:"golf-price",job:$job,status:$status,url:$url,note:$note}')
+          curl -s -m 20 -o /dev/null -w '%{http_code}\n' -X POST "${OPS_URL%/report}/jobrun" -H "x-ops-key: $OPS_KEY" -H 'content-type: application/json' -d "$body" || true
