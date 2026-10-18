@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-18",
+  "by": {
+    "cty": {
+      "AR": 1,
+      "CA": 1,
+      "IN": 1,
+      "KR": 4,
+      "PE": 1,
+      "PK": 2,
+      "TH": 1,
+      "US": 6,
+      "VN": 1,
+      "XK": 1
+    },
+    "dev": {
+      "PC": 13,
+      "모바일": 6
+    },
+    "pv": {
+      "/": 10,
+      "/c/driver": 2,
+      "/c/gps": 1,
+      "/c/iron": 1,
+      "/g/driver-recommend-2026": 4,
+      "/g/fairway-wood-recommend": 2,
+      "/g/iron-recommend": 2,
+      "/g/wedge-recommend": 2
+    },
+    "ref": {
+      "직접·북마크": 7,
+      "캠페인: youtube": 10,
+      "페이스북": 2
+    },
+    "refland": {
+      "직접·북마크|/": 7,
+      "캠페인: youtube|/g/driver-recommend-2026": 4,
+      "캠페인: youtube|/g/fairway-wood-recommend": 2,
+      "캠페인: youtube|/g/iron-recommend": 2,
+      "캠페인: youtube|/g/wedge-recommend": 2,
+      "페이스북|/": 2
+    },
+    "refurl": {
+      "facebook.com": 2,
+      "youtube / video / c-iron-recommend-beginner": 2,
+      "youtube / video / t-fairway-wood-recommend-0": 2,
+      "youtube / video / t-wedge-recommend-0": 2,
+      "youtube / video / test1": 2,
+      "youtube / video / test2": 2
+    },
+    "visit": {
+      "/": 9,
+      "/g/driver-recommend-2026": 4,
+      "/g/fairway-wood-recommend": 2,
+      "/g/iron-recommend": 2,
+      "/g/wedge-recommend": 2
+    }
+  }
+}
