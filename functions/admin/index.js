@@ -158,18 +158,19 @@ label.me{display:flex;gap:6px;align-items:center;color:var(--sub);font-size:13px
     $('#chart').innerHTML = pv || out ? chart(Object.keys(days).sort().map(function (k) { return days[k]; })) : '<div class="empty">아직 데이터가 없습니다</div>';
 
     var pages = {};
-    var P = function (p) { return pages[p] = pages[p] || { p: p, pv: 0, visit: 0, out: 0 }; };
+    var P = function (p) { return pages[p] = pages[p] || { p: p, pv: 0, visit: 0, seen: 0, out: 0 }; };
     (by.pv || []).forEach(function (r) { P(r.k).pv = r.n; });
     (by.visit || []).forEach(function (r) { P(r.k).visit = r.n; });
+    (by.seen || []).forEach(function (r) { P(r.k).seen = r.n; });
     var prods = {};
     (by.out || []).forEach(function (r) {
       var i = r.k.lastIndexOf('|'), p = r.k.slice(0, i), id = r.k.slice(i + 1);
       P(p).out += r.n; prods[id] = (prods[id] || 0) + r.n;
     });
     var plist = Object.keys(pages).map(function (k) { return pages[k]; }).sort(function (a, b) { return b.pv - a.pv || b.out - a.out; });
-    $('#pages').innerHTML = table(['페이지', '페이지뷰', '방문 시작', '쿠팡 클릭', '클릭률'], plist.slice(0, 60).map(function (x) {
+    $('#pages').innerHTML = table(['페이지', '페이지뷰', '방문 시작', '쿠팡 버튼 봄', '쿠팡 클릭', '클릭률', '버튼 본 뒤 클릭률'], plist.slice(0, 60).map(function (x) {
       var title = j.pages[x.p];
-      return ['<a href="' + esc(x.p) + '" target="_blank" rel="noopener">' + esc(title || x.p) + '</a>' + (title ? '<small>' + esc(x.p) + '</small>' : ''), num(x.pv), num(x.visit), num(x.out), pct(x.out, x.pv)];
+      return ['<a href="' + esc(x.p) + '" target="_blank" rel="noopener">' + esc(title || x.p) + '</a>' + (title ? '<small>' + esc(x.p) + '</small>' : ''), num(x.pv), num(x.visit), num(x.seen), num(x.out), pct(x.out, x.pv), x.seen ? pct(x.out, x.seen) : '-'];
     }));
     $('#prods').innerHTML = table(['상품', '클릭', '비율'], Object.keys(prods).sort(function (a, b) { return prods[b] - prods[a]; }).slice(0, 30).map(function (id) {
       return [(j.products[id] ? '<a href="/p/' + esc(id) + '" target="_blank" rel="noopener">' + esc(j.products[id]) + '</a>' : esc(id)), num(prods[id]), pct(prods[id], out)];

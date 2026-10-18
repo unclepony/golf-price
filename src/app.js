@@ -44,6 +44,18 @@
   };
   document.addEventListener('click', onOut, true);
   document.addEventListener('auxclick', onOut, true);
+  // 쿠팡 버튼이 화면에 처음 보였을 때 한 번만 신호(페이지뷰당 1회) → '버튼까지 본 페이지뷰' 대비 클릭률로 버튼 위치 문제와 상품·가격 문제를 나눠 본다
+  const isOut = (a) => /(^|\.)coupang\.com$/.test(a.hostname) || a.pathname.startsWith('/go/');
+  const outs = $$('a[href]').filter(isOut);
+  if (outs.length && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((es) => {
+      const e = es.find((x) => x.isIntersecting);
+      if (!e) return;
+      io.disconnect();
+      beacon({ t: 'seen', w: where(e.target) });
+    }, { threshold: 0.5 });
+    outs.forEach((a) => io.observe(a));
+  }
 
   // ---------- 검색 데이터 ----------
   let dataP;
