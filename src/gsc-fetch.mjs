@@ -14,6 +14,7 @@ if (!sa) {
   process.exit(0);
 }
 const GSC_SITE = process.env.GSC_SITE;
+const HOST = new URL(process.env.SITE_URL || 'https://golfprice.unclepony.com').host;
 
 const endDate = todayKst(-3);
 const startDate = todayKst(-9);
@@ -22,7 +23,8 @@ async function query(dimensions, rowLimit) {
   const res = await fetch(`https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(GSC_SITE)}/searchAnalytics/query`, {
     method: 'POST',
     headers: { Authorization: `Bearer ${at}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ startDate, endDate, dimensions, rowLimit }),
+    // 도메인 속성(sc-domain:unclepony.com)은 모든 서브도메인을 담으므로 이 사이트 주소만 거른다
+    body: JSON.stringify({ startDate, endDate, dimensions, rowLimit, ...(GSC_SITE.startsWith('sc-domain:') && { dimensionFilterGroups: [{ filters: [{ dimension: 'page', operator: 'contains', expression: HOST }] }] }) }),
   });
   const body = await res.json();
   if (!res.ok) throw new Error(`서치콘솔 조회 실패 ${res.status}: ${JSON.stringify(body.error ?? body)}`);

@@ -6,15 +6,24 @@ import { createSign } from 'node:crypto';
 export const READONLY = 'https://www.googleapis.com/auth/webmasters.readonly';
 export const FULL = 'https://www.googleapis.com/auth/webmasters';
 
+// 서비스 계정이 없으면 OAuth 열쇠(GSC_REFRESH_TOKEN + GSC_OAUTH_CLIENT_ID·SECRET)로 대신한다.
+// 이 열쇠는 golfpricedev@gmail.com 계정 것으로, sc-domain:unclepony.com 소유자다 (2026-10-18 DNS 인증).
 export function serviceAccount() {
   const raw = process.env.GSC_SERVICE_ACCOUNT;
-  if (!raw || !process.env.GSC_SITE) return null;
+  if (!process.env.GSC_SITE) return null;
+  if (!raw) return process.env.GSC_REFRESH_TOKEN && process.env.GSC_OAUTH_CLIENT_ID ? { refresh: true } : null;
   const sa = JSON.parse(raw);
   if (!sa.client_email || !sa.private_key) throw new Error('GSC_SERVICE_ACCOUNT 에 client_email·private_key 가 없습니다');
   return sa;
 }
 
 export async function accessToken(sa, scope = READONLY) {
+  if (sa.refresh) {
+    const res = await fetch('https://oauth2.googleapis.com/token', { method: 'POST', body: new URLSearchParams({ client_id: process.env.GSC_OAUTH_CLIENT_ID, client_secret: process.env.GSC_OAUTH_CLIENT_SECRET, refresh_token: process.env.GSC_REFRESH_TOKEN, grant_type: 'refresh_token' }) });
+    const body = await res.json();
+    if (!body.access_token) throw new Error(`서치콘솔 인증 실패: ${body.error ?? res.status}`);
+    return body.access_token;
+  }
   const b64 = (x) => Buffer.from(typeof x === 'string' ? x : JSON.stringify(x)).toString('base64url');
   const now = Math.floor(Date.now() / 1000);
   const head = b64({ alg: 'RS256', typ: 'JWT' });

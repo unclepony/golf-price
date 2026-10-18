@@ -75,6 +75,9 @@ jobs:
         env:
           GSC_SERVICE_ACCOUNT: ${{ secrets.GSC_SERVICE_ACCOUNT }}
           GSC_SITE: ${{ secrets.GSC_SITE }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+          GSC_OAUTH_CLIENT_ID: ${{ secrets.GSC_OAUTH_CLIENT_ID }}
+          GSC_OAUTH_CLIENT_SECRET: ${{ secrets.GSC_OAUTH_CLIENT_SECRET }}
         run: |
           sleep 300
           if [ "$(node -e 'console.log((require("./config/content-state.json").pending||[]).length)')" != "0" ]; then
