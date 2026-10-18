@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-18",
+  "sources": {
+    "gsc": null,
+    "clicks": null
+  },
+  "gscRange": null,
+  "clicksTotal": null,
+  "priceChecks": [
+    {
+      "id": "taylormade-qi35-driver",
+      "name": "테일러메이드 Qi35 드라이버",
+      "coupangTitle": "테일러메이드 남성용 Qi35 드라이버 DIA BLUE TM50, SR, 10.5도",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "callaway-elyte-driver",
+      "name": "캘러웨이 엘리트(ELYTE) 드라이버",
+      "coupangTitle": "캘러웨이 남성용 2025 엘리트 드라이버 ELYTE, 10.5도, SR",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "ping-g440-driver",
+      "name": "핑 G440 드라이버",
+      "coupangTitle": "핑 G440 드라이버 MAX 2026년 삼양인터내셔날, G440 MAX 10.5도 (SR) 삼양정품",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "titleist-gt2-driver",
+      "name": "타이틀리스트 GT2 드라이버",
+      "coupangTitle": "타이틀리스트 GT2 드라이버 Tour AD Black 6S, S, 10도",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "taylormade-p790-iron",
+      "name": "테일러메이드 P790 아이언 세트",
+      "coupangTitle": "테일러메이드코리아 정품 P790 4세대 스틸 7아이언(4~P) NS PRO Modus105, 30도, S",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "ping-g440-iron",
+      "name": "핑 G440 아이언 세트",
+      "coupangTitle": "핑 G440 아이언 7개세트 2026년 삼양인터내셔날, 스틸 S 7개 세트 삼양정품",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "odyssey-ai-one-putter",
+      "name": "오디세이 Ai-ONE 퍼터",
+      "coupangTitle": "한국캘러웨이정품 (오디세이) Ai-ONE 퍼터, (DW DB) 83.82cm(33인치)",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "titleist-pro-v1",
+      "name": "타이틀리스트 Pro V1 골프공 (1더즌)",
+      "coupangTitle": "타이틀리스트 26년 PRO V1 더즌 골프공, 1개, 12개입, 화이트",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "bushnell-pro-x3",
+      "name": "부쉬넬 프로 X3 거리측정기",
+      "coupangTitle": "부쉬넬 신형 PRO X3 레이저형 거리측정기 카네 as가능 사은품4종 증정",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "voicecaddie-sl3",
+      "name": "보이스캐디 SL3 거리측정기",
+      "coupangTitle": "보이스캐디 골프 거리측정기, SL3, 그린",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "footjoy-pro-sl",
+      "name": "풋조이 프로 SL 골프화",
+      "coupangTitle": "[아쿠쉬네트코리아] 2026 풋조이 PRO SL 남성 골프화 골프신발, 화이트/블랙/틸 (56956)",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "ping-anser-2-putter",
+      "name": "핑 앤서 2 퍼터 (2024)",
+      "coupangTitle": "삼양정품 핑 2024년 ANSER 2 퍼터 블레이드, 33인치 [사은품 포함]",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "srixon-z-star",
+      "name": "스릭슨 Z-STAR 골프공 (1더즌)",
+      "coupangTitle": "스릭슨 던롭 골프공 3피스 Z-STAR9 디바이드, 화이트+옐로우, 1개, 12개입",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "callaway-chrome-soft",
+      "name": "캘러웨이 크롬소프트 골프공 (1더즌)",
+      "coupangTitle": "캘러웨이 크롬소프트 360 트리플트랙 골프공 3피스, 옐로우, 12개입, 1개",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "ping-gle4-women-driver",
+      "name": "핑 GLE4 여성용 드라이버",
+      "coupangTitle": "[삼양인터내셔날] 핑 GLE4 여성용 드라이버, A, 11.5도",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "xxio14-women-driver",
+      "name": "젝시오 14 여성용 드라이버",
+      "coupangTitle": "젝시오 여성용 던롭코리아 14 드라이버 화이트, 11.5도, L",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "taylormade-spider-tour-x-putter",
+      "name": "테일러메이드 스파이더 투어 X 퍼터",
+      "coupangTitle": "(테일러메이드코리아정품) 스파이더 투어 X 퍼터, (DB) 83.82cm(33인치)",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "ecco-biom-c4-shoes",
+      "name": "에코 바이옴 C4 보아 골프화",
+      "coupangTitle": "에코 남성 골프화 바이옴 C4 보아 고어텍스 130424",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "adidas-codechaos-shoes",
+      "name": "아디다스 코드케이오스 보아 골프화",
+      "coupangTitle": "아디다스 남성 골프화 코드케이오스 보아 스파이크리스 발편한 방수 필드화",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "callaway-elyte-maxfast-women-driver",
+      "name": "캘러웨이 엘리트 맥스 패스트 여성용 드라이버",
+      "coupangTitle": "캘러웨이 여성용 2025 엘리트 맥스 패스트 드라이버, 여성 12도 (L), L, 12도",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    }
+  ],
+  "lowCtr": [],
+  "contentCandidates": []
+}
