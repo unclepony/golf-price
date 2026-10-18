@@ -92,6 +92,7 @@ const BUILD_COMMIT = (process.env.CF_PAGES_COMMIT_SHA || (() => {
     return '';
   }
 })()).slice(0, 7);
+const ASSET_V = createHash('md5').update(readFileSync(join(ROOT, 'src', 'style.css')) + readFileSync(join(ROOT, 'src', 'app.js'))).digest('hex').slice(0, 8); // CSS·JS 내용이 바뀌면 주소도 바뀐다(브라우저 캐시로 옛 CSS 를 쓰지 않게)
 const BUILD_AT = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 16).replace('T', ' ');
 
 const config = loadConfig();
@@ -266,7 +267,7 @@ function layout({ title, desc, path, body, recent, ld = [], raw = false }) {
 <meta property="og:locale" content="ko_KR">
 ${ogImg ? `<meta property="og:image" content="${esc(ogImg)}">\n<meta property="og:image:width" content="492">\n<meta property="og:image:height" content="492">\n<meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">'}
 ${DEMO ? '<meta name="robots" content="noindex">' : path === '/' ? VERIFY : ''}
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css?v=${ASSET_V}">
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
 ${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x).replace(/</g, '\\u003c')}</script>`).join('\n')}
 </head>
@@ -282,7 +283,7 @@ ${body}
 <p class="family">함께 운영하는 사이트: <a href="https://techprice.unclepony.com/">ATL테크기어 — 전자기기 비교</a> · <a href="https://youtubeking.unclepony.com/">유튜브킹 — 유튜브 조회수 순위</a></p>
 <p class="build">사이트 버전 ${BUILD_AT} (KST) · ${BUILD_COMMIT || 'local'}</p>
 </footer>
-<script src="/assets/app.js" defer></script>
+<script src="/assets/app.js?v=${ASSET_V}" defer></script>
 </body>
 </html>
 `;
