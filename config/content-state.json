@@ -966,8 +966,8 @@
       "d": "2026-10-19"
     },
     "/g/fairway-wood-recommend": {
-      "h": "649c0ab72c00741f",
-      "d": "2026-10-19"
+      "h": "658ecc77d24a0cde",
+      "d": "2026-10-20"
     },
     "/g/utility-recommend": {
       "h": "70e6613ed2d83c47",
@@ -1818,24 +1818,24 @@
       "d": "2026-10-19"
     },
     "/jp/xxio14-driver": {
-      "h": "0084ad3437ae7348",
-      "d": "2026-10-19"
+      "h": "a33270d6c61ce7a4",
+      "d": "2026-10-20"
     },
     "/jp/srixon-zxi-rkt-driver": {
-      "h": "fddef0073101dabd",
-      "d": "2026-10-19"
+      "h": "e0914b942e6e1201",
+      "d": "2026-10-20"
     },
     "/jp/mizuno-jpx-one-driver": {
-      "h": "c1bfeb862a40342b",
-      "d": "2026-10-19"
+      "h": "5e545828f58c4e9d",
+      "d": "2026-10-20"
     },
     "/jp/prgr-super-egg-2026-driver": {
-      "h": "5f342a179377f563",
-      "d": "2026-10-19"
+      "h": "ba93aab4475adc1c",
+      "d": "2026-10-20"
     },
     "/jp/honma-beres-2026-3s-driver": {
-      "h": "85d1dd98794f8617",
-      "d": "2026-10-19"
+      "h": "a85d2ed3ac870893",
+      "d": "2026-10-20"
     },
     "/jp/customs": {
       "h": "c0b09f9799118a27",
@@ -1845,11 +1845,6 @@
   "pending": [
     {
       "url": "/g/driver-recommend-2026",
-      "kind": "updated",
-      "d": "2026-10-19"
-    },
-    {
-      "url": "/g/fairway-wood-recommend",
       "kind": "updated",
       "d": "2026-10-19"
     },
@@ -1959,29 +1954,34 @@
       "d": "2026-10-19"
     },
     {
+      "url": "/g/fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-20"
+    },
+    {
       "url": "/jp/xxio14-driver",
       "kind": "updated",
-      "d": "2026-10-19"
+      "d": "2026-10-20"
     },
     {
       "url": "/jp/srixon-zxi-rkt-driver",
       "kind": "updated",
-      "d": "2026-10-19"
+      "d": "2026-10-20"
     },
     {
       "url": "/jp/mizuno-jpx-one-driver",
       "kind": "updated",
-      "d": "2026-10-19"
+      "d": "2026-10-20"
     },
     {
       "url": "/jp/prgr-super-egg-2026-driver",
       "kind": "updated",
-      "d": "2026-10-19"
+      "d": "2026-10-20"
     },
     {
       "url": "/jp/honma-beres-2026-3s-driver",
       "kind": "updated",
-      "d": "2026-10-19"
+      "d": "2026-10-20"
     }
   ]
 }
