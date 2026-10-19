@@ -874,3 +874,14 @@ table.vs-table ul { margin: 0; padding-left: 16px; }
   table.vs-table tbody th, table.vs-table thead th:first-child { width: 72px; }
   table.vs-table ul { padding-left: 13px; }
 }
+
+/* /jp 일본 골프채 정가 비교 */
+table.jp-t td { white-space: normal; }
+table.jp-t th[scope="row"] { width: 90px; }
+.jp-warn { margin: 20px 0; border-color: var(--bad); }
+.jp-warn ul { margin: 0; padding-left: 20px; }
+.jp-warn li { margin: 4px 0; font-size: 14px; }
+.jp-calc { display: grid; gap: 10px; max-width: 420px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.jp-calc label { display: grid; gap: 4px; font-size: 14px; color: var(--muted); }
+.jp-calc input { font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg, #fff); color: inherit; }
+.jp-sum { margin: 4px 0 0; font-size: 16px; }

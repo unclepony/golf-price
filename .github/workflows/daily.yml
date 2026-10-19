@@ -58,6 +58,10 @@ jobs:
           ADMIN_PASS: ${{ secrets.ADMIN_PASS }}
         run: node src/stats-save.mjs
 
+      - name: 원/엔 환율 갱신 (/jp 섹션, ECB 기준환율 — 실패하면 기존 값으로 빌드)
+        continue-on-error: true
+        run: node src/jp-fx.mjs
+
       - name: 빌드 (콘텐츠 날짜·사이트맵·URL 301 보호 검사)
         run: node src/build.mjs
 

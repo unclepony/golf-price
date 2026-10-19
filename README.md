@@ -78,6 +78,7 @@ Node.js 22.9 이상이 필요합니다.
 - `config/howto.json` 아이템×성별×실력별 '고르는 법'·FAQ·한 줄 결론 수동 지정
 - `config/videos.json` — 가이드 slug → 유튜브 관련 영상 목록. 아래 '관련 영상' 참고
 - `config/content-state.json`, `config/url-manifest.json` — 빌드가 관리 (직접 고치지 않음)
+- `config/jp-models.json` — `/jp` 일본 골프채 정가 비교(일본 제조사 정가·한국 공식 정가·출처 URL, 월 1회 사람이 확인. 라쿠텐·판매점 가격 금지) · `config/jp-fx.json` — `node src/jp-fx.mjs` 가 매일 ECB 기준환율로 갱신. 페이지 생성은 `src/jp.mjs`, 기획은 `docs/proposal-japan-price.md`
 - 출시 칸은 `YYYY년` 또는 빈 값만 허용(빌드 검사). 모르는 연도는 비워 둔다
 - 상품이 3종 미만인 실력 단계는 실력별 페이지를 만들지 않고 `_redirects` 로 상위 가이드에 301
 

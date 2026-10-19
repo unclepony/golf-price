@@ -10,6 +10,7 @@ import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText as rawWrit
 import { beginnerIssues, releaseIssues } from './rules.mjs';
 import { loadQa, qaRelatedBlock, writeQaPages } from './qa.mjs';
 import { publicVideos, isShorts, isVideoId, videoIssues } from './videos.mjs';
+import { writeJpPages } from './jp.mjs';
 
 const DEMO = process.argv.includes('--demo');
 const SITE_URL = (process.env.SITE_URL || 'https://golfprice.unclepony.com').replace(/\/$/, '');
@@ -237,6 +238,7 @@ ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표�
 // 공유 미리보기 이미지(카카오톡·커뮤니티·SNS): 쿠팡 썸네일을 큰 크기(492)로
 const bigImage = (src) => (src ? src.replace('/212x212ex/', '/492x492ex/') : '');
 function ogImageFor(path) {
+  if (path === '/jp' || path.startsWith('/jp/')) return ''; // 일본 정가 비교: 특정 상품 사진을 쓰지 않는다
   if (VS_OG[path]) return bigImage(imageOf(VS_OG[path], entryById[VS_OG[path]]?.hist));
   const m = path.match(/^\/p\/(.+)$/);
   if (m) return bigImage(imageOf(m[1], entryById[m[1]]?.hist));
@@ -1716,6 +1718,8 @@ rawWrite(join(OUT, '_redirects'), [...STATIC_REDIRECTS, ...REDIRECTS].join('\n')
 const QA_URLS = DEMO ? [] : writeQaPages({ list: QA.list, layout, writeText, esc, OUT, crumbLd, faqLd, updatedTag, guideName, guideBySlug: (s) => pageGuides.find((g) => g.slug === s), siteUrl: SITE_URL, siteName: SITE_NAME });
 // A vs B 비교 페이지
 writeVsPages();
+// 일본 골프채 정가 비교 (/jp, 새 섹션)
+const JP_URLS = DEMO ? [] : writeJpPages({ layout, writeText, esc, won, OUT, crumbLd, updatedTag, hasProduct: (id) => !!entryById[id], productName: (id) => entryById[id]?.p.name ?? id });
 const urls = [
   '/',
   '/about',
@@ -1725,6 +1729,7 @@ const urls = [
   ...cats.map((c) => `/c/${c.id}`),
   ...entries.map((e) => `/p/${e.p.id}`),
   ...VS_PAIRS.map((v) => v.path),
+  ...JP_URLS,
 ].map((u) => [u, pageDates[u] ?? TODAY]);
 
 // URL 보호: 한 번 공개한 주소(config/url-manifest.json)가 사라지면 경고하고, _redirects 에 301 이 없으면 빌드를 멈춘다
@@ -1785,6 +1790,10 @@ ${QA.list.map((a) => `- [${a.title}](${SITE_URL}/qa/${a.slug}): ${a.desc}`).join
 
 ` : ''}## 1:1 비교 (A vs B)
 ${VS_PAIRS.map((v) => `- [${vsName(v.a)} vs ${vsName(v.b)}](${SITE_URL}${v.path})`).join('\n')}
+
+## 일본 골프채 정가 비교
+${JP_URLS.length ? `- [일본 골프채 가격 비교: 일본 정가 vs 한국 정가](${SITE_URL}/jp): 일본 제조사 정가와 한국 공식 정가를 환율로 비교, 직구 세금은 관세청 안내 링크
+- [일본 골프채 직구 세금·통관 안내](${SITE_URL}/jp/customs)` : ''}
 
 ## 카테고리
 ${cats.map((c) => `- [${c.name}](${SITE_URL}/c/${c.id})`).join('\n')}
