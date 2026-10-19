@@ -962,31 +962,31 @@
       "d": "2026-10-16"
     },
     "/g/driver-recommend-2026": {
-      "h": "eb9996ce54da2441",
+      "h": "0e45c736a0c67a62",
       "d": "2026-10-19"
     },
     "/g/fairway-wood-recommend": {
-      "h": "8c7ea7ae1a47e1ef",
+      "h": "67c0d28db634b264",
       "d": "2026-10-19"
     },
     "/g/utility-recommend": {
-      "h": "ae4051f0ae2f8c87",
+      "h": "852c1118edd63b91",
       "d": "2026-10-19"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "0aef64beb61f0c45",
+      "h": "343d5c97e794b96d",
       "d": "2026-10-19"
     },
     "/g/iron-recommend": {
-      "h": "46d72023f7da37c0",
+      "h": "c79cdb53e75d62c4",
       "d": "2026-10-19"
     },
     "/g/womens-utility-recommend": {
-      "h": "628459b080ad73b9",
+      "h": "daa863d596ec6281",
       "d": "2026-10-19"
     },
     "/g/wedge-recommend": {
-      "h": "16ce2154b5060393",
+      "h": "2beab1dde1cbac5c",
       "d": "2026-10-19"
     },
     "/g/golf-ball-compare": {
@@ -998,11 +998,11 @@
       "d": "2026-10-19"
     },
     "/g/womens-driver-recommend": {
-      "h": "87b28ba05613724f",
+      "h": "10b4fd715b37f26a",
       "d": "2026-10-19"
     },
     "/g/putter-recommend": {
-      "h": "e3d09f9c3119a22c",
+      "h": "3318b8d5a87c17ad",
       "d": "2026-10-19"
     },
     "/g/golf-shoes-recommend": {
@@ -1030,7 +1030,7 @@
       "d": "2026-10-19"
     },
     "/g/womens-iron-recommend": {
-      "h": "0d51860d374f794e",
+      "h": "56fdc015b108b38e",
       "d": "2026-10-19"
     },
     "/g/womens-shoes-recommend": {
@@ -1806,5 +1806,56 @@
       "d": "2026-10-19"
     }
   },
-  "pending": []
+  "pending": [
+    {
+      "url": "/g/driver-recommend-2026",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/womens-utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/wedge-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/womens-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/putter-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/womens-iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    }
+  ]
 }

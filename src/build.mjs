@@ -772,11 +772,11 @@ ${card(hard || ei < 0 ? '성능 기준 추천' : '쉬움 기준 추천', man.eas
 </div></section>`;
 }
 // 모바일 하단 고정: 1위 상품 가격 보기
-function stickyBuy(pk) {
+function stickyBuy(pk, label = '1위') {
   if (!pk) return '';
   const p = byId[pk.id].p;
   const sp = freshPrice(p.id);
-  return `<div class="stickybuy" role="complementary" aria-label="1위 상품 바로가기"><span class="sb-t"><b>1위</b> ${esc(p.name)}${sp ? ` · ${won(sp.won)}` : ''}</span>${buyBtn(p.id, 'btn sm', '1위 상품 가격 보기')}</div>`;
+  return `<div class="stickybuy" role="complementary" aria-label="1위 상품 바로가기"><span class="sb-t"><b>${esc(label)}</b> ${esc(p.name)}${sp ? ` · ${won(sp.won)}` : ''}</span>${buyBtn(p.id, 'btn sm', '1위 상품 가격 보기')}</div>`;
 }
 // 구형 모델이 실력별 1위일 때 이유와 최신 모델 1위
 function oldModelNote(g, reps) {
@@ -1428,7 +1428,7 @@ ${vsGuideBlock(g)}
 <section id="faq" class="prose"><h2>자주 묻는 질문</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>
 ${videoBlock(g)}
 <section><h2>다른 비교·추천 가이드</h2>${guideGrid(pageGuides.filter((o) => o.slug !== g.slug))}</section>
-${skillGroups(g).length ? '' : stickyBuy(rankedPicks(g)[0])}`,
+${skillGroups(g).length ? stickyBuy(rankedPicks(g).find((pk) => pk.skill === SKILLS[0]), `${SKILLS[0]} 1위`) : stickyBuy(rankedPicks(g)[0])}`,
     }),
   );
 }
