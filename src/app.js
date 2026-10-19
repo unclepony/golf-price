@@ -25,7 +25,10 @@
       navigator.sendBeacon?.('/api/hit', JSON.stringify({ p: location.pathname, ...from, ...o }));
     } catch {}
   };
-  beacon({ t: 'pv', v: fresh ? 1 : 0 });
+  // 사이트 안에서 넘어온 페이지뷰는 바로 앞 페이지 경로도 보낸다 → '어느 페이지에서 어디로 갔나'(첫 페이지만 보고 나가는지, 쿠팡 버튼 있는 페이지로 가는지)
+  let prev = '';
+  try { const u = new URL(document.referrer); if (!fresh && u.origin === location.origin) prev = u.pathname; } catch {}
+  beacon({ t: 'pv', v: fresh ? 1 : 0, ...(prev && { f: prev }) });
   const where = (a) =>
     a.closest('.stickybuy') ? '하단 고정 버튼'
     : a.closest('.fitem') ? '장비 찾기'

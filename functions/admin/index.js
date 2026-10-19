@@ -74,6 +74,7 @@ label.me{display:flex;gap:6px;align-items:center;color:var(--sub);font-size:13px
   <div class="card"><h2>검색어</h2><div class="tw" id="kw"></div><p class="note">네이버·다음·빙 등이 검색어를 넘길 때만 보입니다. 구글은 검색어를 넘기지 않으니 구글 서치콘솔에서 확인하세요.</p></div>
 </div>
 <div class="card"><h2>유입 경로별 첫 페이지</h2><div class="tw" id="refland"></div></div>
+<div class="card"><h2>사이트 안 이동 — 어느 페이지에서 어디로 갔나</h2><div class="tw" id="nav"></div><p class="note">첫 페이지만 보고 나가는지, 쿠팡 버튼이 있는 비교 페이지로 넘어가는지 봅니다.</p></div>
 <div class="grid2 rowgap">
   <div class="card"><h2>기기</h2><div id="dev"></div></div>
   <div class="card"><h2>국가</h2><div id="cty"></div></div>
@@ -197,6 +198,10 @@ label.me{display:flex;gap:6px;align-items:center;color:var(--sub);font-size:13px
       var i = x.k.indexOf('|'), p = x.k.slice(i + 1);
       return [esc(x.k.slice(0, i)), '<a href="' + esc(p) + '" target="_blank" rel="noopener">' + esc(j.pages[p] || p) + '</a>', num(x.n)];
     }));
+    $('#nav').innerHTML = table(['앞 페이지', '다음 페이지', '이동'], (by.nav || []).slice(0, 40).map(function (x) {
+      var i = x.k.indexOf('|'), a = x.k.slice(0, i), b = x.k.slice(i + 1);
+      return ['<a href="' + esc(a) + '" target="_blank" rel="noopener">' + esc(j.pages[a] || a) + '</a>', '<a href="' + esc(b) + '" target="_blank" rel="noopener">' + esc(j.pages[b] || b) + '</a>', num(x.n)];
+    }), '아직 사이트 안 이동이 없습니다');
     $('#dev').innerHTML = shares(by.dev || []);
     $('#cty').innerHTML = shares(by.cty || []);
   }

@@ -110,6 +110,10 @@ export async function onRequestPost({ request, env, waitUntil }) {
       rows.push(['visit', path], ['ref', src], ['refland', `${src}|${path}`], ['dev', device(ua)], ['cty', String(request.cf?.country ?? '??').slice(0, 4)]);
       if (s.kw) rows.push(['kw', `${src}|${s.kw}`]);
       if (s.url) rows.push(['refurl', s.url]);
+    } else if (b.f) {
+      // 사이트 안 이동: 앞 페이지|이 페이지 (둘 다 사이트맵 경로일 때만)
+      const prev = norm(String(b.f).slice(0, 200));
+      if (PATHS.has(prev) && prev !== path) rows.push(['nav', `${prev}|${path}`]);
     }
   } else if (b.t === 'out') {
     const href = String(b.h ?? '');
