@@ -291,6 +291,16 @@ table.proscons .pname a { text-decoration: none; }
 .tabpanel { display: none; }
 .tabpanel.on { display: block; }
 .more-link { display: inline-block; margin-top: 12px; color: var(--accent); font-weight: 600; text-decoration: none; font-size: 14px; }
+/* 초보 Q&A 글 (/qa) */
+.qa-body h2 { margin-top: 36px; }
+.qa-body b { color: var(--text); }
+.qa-fig { margin: 20px 0; }
+.qa-fig img { display: block; width: 100%; max-width: 540px; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+.qa-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; max-width: 760px; }
+.qa-list a { display: block; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); text-decoration: none; color: var(--text); }
+.qa-list a:hover { border-color: var(--accent); }
+.qa-list b { display: block; font-size: 15px; }
+.qa-list small { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; line-height: 1.5; }
 
 /* ---------- 검색 결과 ---------- */
 .s-h { font-size: 19px; margin: 24px 0 10px; }

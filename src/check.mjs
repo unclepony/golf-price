@@ -6,6 +6,7 @@ import { writeFileSync } from 'node:fs';
 import { ROOT, readJson, loadLinks, historyDir, todayKst } from './lib.mjs';
 import { beginnerIssues, releaseIssues } from './rules.mjs';
 import { videoIssues } from './videos.mjs';
+import { loadQa } from './qa.mjs';
 
 const out = process.argv.includes('--out') ? process.argv[process.argv.indexOf('--out') + 1] : null;
 const products = readJson(join(ROOT, 'config', 'products.json')).products;
@@ -54,6 +55,8 @@ add(
   videoIssues(readJson(join(ROOT, 'config', 'videos.json'), {}), new Set(guides.map((g) => g.slug))),
   '`node src/videos-sync.mjs` 로 golfvideo 의 data/videos.json 을 다시 가져오거나, 없는 가이드 slug·영상 id 를 고치세요.',
 );
+
+add('게시하지 못한 초보 Q&A 글 (content/qa, 검사 불통과)', loadQa(new Set(guides.map((g) => g.slug))).bad, '글을 고치면 다음 빌드에 게시됩니다. 기준은 README `초보 Q&A`.');
 
 const total = sections.reduce((s, x) => s + x.count, 0);
 const md = [

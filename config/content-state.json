@@ -962,79 +962,79 @@
       "d": "2026-10-16"
     },
     "/g/driver-recommend-2026": {
-      "h": "0e45c736a0c67a62",
+      "h": "0a3dc04558565b44",
       "d": "2026-10-19"
     },
     "/g/fairway-wood-recommend": {
-      "h": "67c0d28db634b264",
+      "h": "649c0ab72c00741f",
       "d": "2026-10-19"
     },
     "/g/utility-recommend": {
-      "h": "852c1118edd63b91",
+      "h": "70e6613ed2d83c47",
       "d": "2026-10-19"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "343d5c97e794b96d",
+      "h": "2a19eaa7f408164a",
       "d": "2026-10-19"
     },
     "/g/iron-recommend": {
-      "h": "c79cdb53e75d62c4",
+      "h": "38f651b4fdcc8e89",
       "d": "2026-10-19"
     },
     "/g/womens-utility-recommend": {
-      "h": "daa863d596ec6281",
+      "h": "cbce1d4e6fb8ce86",
       "d": "2026-10-19"
     },
     "/g/wedge-recommend": {
-      "h": "2beab1dde1cbac5c",
+      "h": "78d5425874a09659",
       "d": "2026-10-19"
     },
     "/g/golf-ball-compare": {
-      "h": "bcbbe59f2dc8dc65",
+      "h": "5efa99e986c7dfb8",
       "d": "2026-10-19"
     },
     "/g/rangefinder-recommend": {
-      "h": "78ce1a5f2c4e22b8",
+      "h": "8b1dc98a337ca352",
       "d": "2026-10-19"
     },
     "/g/womens-driver-recommend": {
-      "h": "10b4fd715b37f26a",
+      "h": "942c165b780fe3d7",
       "d": "2026-10-19"
     },
     "/g/putter-recommend": {
-      "h": "3318b8d5a87c17ad",
+      "h": "156f885e57ff7661",
       "d": "2026-10-19"
     },
     "/g/golf-shoes-recommend": {
-      "h": "8bfcd5183e7a0839",
+      "h": "d3534dbff00241c2",
       "d": "2026-10-19"
     },
     "/g/golf-watch-recommend": {
-      "h": "4b10fce24db7045c",
+      "h": "9d8b733d18bddda6",
       "d": "2026-10-19"
     },
     "/g/launch-monitor-recommend": {
-      "h": "f6e344973f272471",
+      "h": "0566b7adfa397bec",
       "d": "2026-10-19"
     },
     "/g/golf-bag-recommend": {
-      "h": "1a7944688843ffd7",
+      "h": "81471f29c6699408",
       "d": "2026-10-19"
     },
     "/g/golf-glove-recommend": {
-      "h": "d7fb3d8c2b604082",
+      "h": "cd4edd0334df63ff",
       "d": "2026-10-19"
     },
     "/g/practice-gear-recommend": {
-      "h": "c284c80827bc1840",
+      "h": "43cec75236b5ce70",
       "d": "2026-10-19"
     },
     "/g/womens-iron-recommend": {
-      "h": "56fdc015b108b38e",
+      "h": "f6c39003766df0d7",
       "d": "2026-10-19"
     },
     "/g/womens-shoes-recommend": {
-      "h": "a0e9d454ffad61cb",
+      "h": "0ef22f81c1f070fd",
       "d": "2026-10-19"
     },
     "/g/driver-recommend-2026-beginner": {
@@ -1204,6 +1204,14 @@
     "/about": {
       "h": "062d2326b8040ec7",
       "d": "2026-10-16"
+    },
+    "/qa/beginner-golf-club-set": {
+      "h": "10ba30710a0a5d49",
+      "d": "2026-10-19"
+    },
+    "/qa": {
+      "h": "9cbbb3419ea7dd95",
+      "d": "2026-10-19"
     },
     "/vs/adidas-adipower-sl-women-shoes-vs-footjoy-pulse-boa-women-shoes": {
       "h": "0dfc0548de87175d",
@@ -1843,6 +1851,16 @@
       "d": "2026-10-19"
     },
     {
+      "url": "/g/golf-ball-compare",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
       "url": "/g/womens-driver-recommend",
       "kind": "updated",
       "d": "2026-10-19"
@@ -1853,8 +1871,53 @@
       "d": "2026-10-19"
     },
     {
+      "url": "/g/golf-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/golf-watch-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/launch-monitor-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/golf-bag-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/golf-glove-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/practice-gear-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
       "url": "/g/womens-iron-recommend",
       "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/g/womens-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "new",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/qa",
+      "kind": "new",
       "d": "2026-10-19"
     }
   ]

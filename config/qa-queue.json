@@ -1,0 +1,7 @@
+{
+  "_설명": "초보 Q&A(/qa) 진행 상태. 글감 순서는 naver-blog/keywords.json 의 items 순서(no)를 따른다. 사이트에 올린 글만 여기에 적는다(no·검색어·주소·파일·게시일). 매일 작업이 다음 no 를 골라 content/qa/NNN-slug.md 를 쓰고 여기에 한 줄 추가한다.",
+  "source": "../naver-blog/keywords.json",
+  "items": [
+    { "no": 1, "kw": "초보 골프채 추천", "slug": "beginner-golf-club-set", "file": "content/qa/001-beginner-golf-club-set.md", "date": "2026-10-19" }
+  ]
+}

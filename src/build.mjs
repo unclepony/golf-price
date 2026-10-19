@@ -8,6 +8,7 @@ import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
 import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText as rawWrite, todayKst } from './lib.mjs';
 import { beginnerIssues, releaseIssues } from './rules.mjs';
+import { loadQa, qaRelatedBlock, writeQaPages } from './qa.mjs';
 import { publicVideos, isShorts, isVideoId, videoIssues } from './videos.mjs';
 
 const DEMO = process.argv.includes('--demo');
@@ -243,6 +244,7 @@ function ogImageFor(path) {
   const skill = g && Object.entries(SKILL_EN).find(([, en]) => path === `/g/${g.slug}-${en}`)?.[0];
   const top = g ? (skill ? rankedPicks(g).find((pk) => pk.skill === skill) : rankedPicks(g)[0]) : null;
   if (top) return bigImage(imageOf(top.id, byId[top.id]?.hist));
+  if (path === '/qa' || path.startsWith('/qa/')) return ''; // 초보 Q&A: 특정 상품 사진을 쓰지 않는다
   const c = cats.find((x) => path === `/c/${x.id}`);
   const first = c ? pageGuides.find((x) => guideCat(x)?.id === c.id) : pageGuides[0];
   const pk = first && rankedPicks(first)[0];
@@ -281,7 +283,7 @@ ${body}
 <p>${DISCLOSURE}</p>
 <p>${PRICE_NOTE} 구매 전 판매 페이지에서 가격과 옵션을 꼭 확인하세요.</p>
 <p>점수는 이 사이트의 주관적인 참고 점수이며 공식 평가가 아닙니다. 상품 이미지는 쿠팡 파트너스가 제공하는 이미지입니다.</p>
-<p class="family">함께 운영하는 사이트: <a href="https://techprice.unclepony.com/">ATL테크기어 — 전자기기 비교</a> · <a href="https://youtubeking.unclepony.com/">유튜브킹 — 유튜브 조회수 순위</a> · <a href="https://homeprice.unclepony.com/">ATL홈기어 — 생활가전 비교</a></p>
+<p class="family"><a href="/qa">골프 초보 Q&amp;A</a> · 함께 운영하는 사이트: <a href="https://techprice.unclepony.com/">ATL테크기어 — 전자기기 비교</a> · <a href="https://youtubeking.unclepony.com/">유튜브킹 — 유튜브 조회수 순위</a> · <a href="https://homeprice.unclepony.com/">ATL홈기어 — 생활가전 비교</a></p>
 <p class="build">사이트 버전 ${BUILD_AT} (KST) · ${BUILD_COMMIT || 'local'}</p>
 </footer>
 <script src="/assets/app.js?v=${ASSET_V}" defer></script>
@@ -508,6 +510,9 @@ const shortTitle = (t) => t.split(':')[0].trim();
 const sellable = (id) => !!(links[id] ?? byId[id]?.hist?.latest?.link);
 // 다른 가이드에 합쳐진 가이드(mergeInto)는 따로 페이지를 만들지 않는다
 const pageGuides = guides.filter((g) => !g.mergeInto);
+// 초보 Q&A 글 (content/qa, src/qa.mjs): 검사를 통과한 글만 게시하고, 관련 가이드 페이지에서 연결한다
+const QA = loadQa(new Set(pageGuides.map((g) => g.slug)));
+if (QA.bad.length) console.warn(`경고: 게시하지 않은 초보 Q&A 글 ${QA.bad.length}편\n${QA.bad.map((x) => `  ${x}`).join('\n')}`);
 // 유튜브 관련 영상 (config/videos.json ← node src/videos-sync.mjs): 공개된 영상만, 클릭하면 그때 유튜브 플레이어를 불러온다
 const VIDEOS = readJson(join(ROOT, 'config', 'videos.json'), {});
 {
@@ -1427,6 +1432,7 @@ ${mergedInto(g)
 ${vsGuideBlock(g)}
 <section id="faq" class="prose"><h2>자주 묻는 질문</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>
 ${videoBlock(g)}
+${qaRelatedBlock(QA.list, g.slug, esc)}
 <section><h2>다른 비교·추천 가이드</h2>${guideGrid(pageGuides.filter((o) => o.slug !== g.slug))}</section>
 ${skillGroups(g).length ? stickyBuy(rankedPicks(g).find((pk) => pk.skill === SKILLS[0]), `${SKILLS[0]} 1위`) : stickyBuy(rankedPicks(g)[0])}`,
     }),
@@ -1706,11 +1712,14 @@ rawWrite(join(OUT, '_redirects'), [...STATIC_REDIRECTS, ...REDIRECTS].join('\n')
 
 // ---------- 검색엔진용 파일 ----------
 // 사이트맵 lastmod = 콘텐츠 업데이트일 (가격만 바뀐 날은 반영하지 않는다)
+// 초보 Q&A 글 (/qa)
+const QA_URLS = DEMO ? [] : writeQaPages({ list: QA.list, layout, writeText, esc, OUT, crumbLd, faqLd, updatedTag, guideName, guideBySlug: (s) => pageGuides.find((g) => g.slug === s), siteUrl: SITE_URL, siteName: SITE_NAME });
 // A vs B 비교 페이지
 writeVsPages();
 const urls = [
   '/',
   '/about',
+  ...QA_URLS,
   ...pageGuides.map((g) => `/g/${g.slug}`),
   ...pageGuides.flatMap((g) => skillGroups(g).map((x) => skillPath(g, x.skill))),
   ...cats.map((c) => `/c/${c.id}`),
@@ -1771,7 +1780,10 @@ ${pageGuides.map(line).join('\n')}
 ## 실력별 비교
 ${skillLines.join('\n')}
 
-## 1:1 비교 (A vs B)
+${QA.list.length ? `## 초보 Q&A
+${QA.list.map((a) => `- [${a.title}](${SITE_URL}/qa/${a.slug}): ${a.desc}`).join('\n')}
+
+` : ''}## 1:1 비교 (A vs B)
 ${VS_PAIRS.map((v) => `- [${vsName(v.a)} vs ${vsName(v.b)}](${SITE_URL}${v.path})`).join('\n')}
 
 ## 카테고리
