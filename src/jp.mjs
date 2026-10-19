@@ -12,6 +12,22 @@ const CUSTOMS = {
   simple: ['관세청 간이 통관절차 안내', 'https://www.customs.go.kr/kcs/cm/cntnts/cntntsView.do?mi=8457&cntntsId=2807'],
 };
 
+// 일본 숙소 비교(링크프라이스 → 아고다 도시 페이지). 2026-10-19 사장님 승인. 도시 주소는 실제로 열리는 것만 쓴다(없는 도시는 아고다가 302 로 돌려보냄).
+// 규칙: 링크프라이스 광고 문구를 맨 위에 두고, 할인·가격 같은 혜택 문구는 쓰지 않으며, 아고다 쿠폰·특가 페이지로 연결하지 않는다
+const LP = (url) => `https://lpweb.kr/click.php?m=agoda&a=A100708940&l=9999&l_cd1=3&l_cd2=0&tu=${encodeURIComponent(url)}`;
+const STAY_CITIES = [
+  ['tokyo', '도쿄', 'https://www.agoda.com/ko-kr/city/tokyo-jp.html'],
+  ['osaka', '오사카', 'https://www.agoda.com/ko-kr/city/osaka-jp.html'],
+  ['fukuoka', '후쿠오카', 'https://www.agoda.com/ko-kr/city/fukuoka-jp.html'],
+  ['okinawa', '오키나와 본섬', 'https://www.agoda.com/ko-kr/city/okinawa-main-island-jp.html'],
+  ['miyazaki', '미야자키', 'https://www.agoda.com/ko-kr/city/miyazaki-jp.html'],
+];
+const stayBlock = () => `<section class="jp-stay"><p class="jp-ad">이 포스팅은 제휴마케팅이 포함된 광고로 커미션을 지급 받습니다.</p>
+<h2>일본에서 직접 보고 사려면: 숙소 비교</h2>
+<p>매장에서 직접 쳐 보고 사거나 일본 골프 여행을 함께 계획한다면, 도시별 숙소를 아고다에서 비교·예약할 수 있습니다. 들여올 때의 세금은 <a href="/jp/customs">직구 세금 안내</a>를 참고하세요.</p>
+<p class="jp-cities">${STAY_CITIES.map(([k, name, url]) => `<a class="btn sm ghost" href="${LP(url)}" rel="sponsored nofollow noopener" target="_blank" data-out="agoda-${k}">${name} 숙소</a>`).join('')}</p>
+</section>`;
+
 // 환율·환산 값은 매일 바뀌므로 콘텐츠 지문에서 빼도록 표시한다(가격만 바뀐 날 '마지막 업데이트'가 바뀌지 않게)
 const vol = (s) => `<!--phist-->${s}<!--/phist-->`;
 
@@ -61,6 +77,7 @@ ${rateLine}
 <h2>정가 차이 = 직구로 아끼는 돈이 아닙니다</h2>
 <p>일본 정가가 싸 보여도 직구하면 <b>국제 배송비</b>와 <b>관세·부가세</b>가 더해지고, 국내 A/S를 받지 못할 수 있습니다. 차이가 작은 모델은 국내 정식 제품이 오히려 나을 수 있습니다. 모델 페이지에서 배송비와 세금을 넣어 총비용을 직접 계산해 보세요.</p>
 ${warn}
+${stayBlock()}
 <h2>더 보기</h2>
 <ul class="guides"><li><a href="/jp/customs"><b>일본 골프채 직구 세금·통관 안내</b><span>관세청 공식 안내 모음</span></a></li><li><a href="/c/driver"><b>국내 드라이버 전체 비교</b><span>실력·가격대별 비교</span></a></li></ul>`,
     }),
@@ -92,6 +109,7 @@ ${updatedTag('2026-10-19')}
 </form>
 <p class="note">세금은 이 사이트가 계산하지 않습니다. ${ext(CUSTOMS.calc[0], CUSTOMS.calc[1])}에서 확인해 넣으세요. 배송비는 업체·무게마다 달라 비워 두었습니다.</p>
 ${warn}
+${stayBlock()}
 ${rel.length ? `<h2>국내 정식 판매 제품 비교</h2><ul class="guides">${rel.map((id) => `<li><a href="/p/${id}"><b>${esc(productName(id))}</b><span>국내 판매가·특징 보기</span></a></li>`).join('')}</ul>` : ''}
 <h2>더 보기</h2>
 <ul class="guides"><li><a href="/jp"><b>일본 골프채 정가 비교 전체</b><span>드라이버 ${models.length}종</span></a></li><li><a href="/jp/customs"><b>직구 세금·통관 안내</b><span>관세청 공식 안내 모음</span></a></li><li><a href="/c/driver"><b>국내 드라이버 전체 비교</b><span>실력·가격대별 비교</span></a></li></ul>

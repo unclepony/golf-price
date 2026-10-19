@@ -116,6 +116,11 @@ export async function onRequestPost({ request, env, waitUntil }) {
     const id = HREF2ID.get(href) ?? /^\/go\/([\w-]+)/.exec(href)?.[1] ?? '(알 수 없음)';
     if (s.url && src.startsWith('캠페인')) rows.push(['outcamp', `${s.url}|${id}`.slice(0, 160)]); // 영상(utm_campaign)별 쿠팡 클릭
     rows.push(['out', `${path}|${id}`], ['outref', src], ['pos', String(b.w ?? '기타').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20) || '기타']);
+  } else if (b.t === 'aff') {
+    // 쿠팡 외 제휴 링크 클릭(예: agoda-tokyo) — 쿠팡 클릭(out)과 따로 센다
+    const k = String(b.k ?? '').replace(/[^\w-]/g, '').slice(0, 40);
+    if (!k) return done;
+    rows.push(['aff', `${path}|${k}`], ['affref', src]);
   } else if (b.t === 'seen') {
     // 쿠팡 버튼이 화면에 처음 보인 페이지뷰(페이지당 1회) — 키: 페이지, 그리고 처음 보인 버튼 위치
     rows.push(['seen', path], ['seenpos', String(b.w ?? '기타').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20) || '기타']);

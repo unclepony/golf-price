@@ -66,6 +66,7 @@ label.me{display:flex;gap:6px;align-items:center;color:var(--sub);font-size:13px
 <div class="grid2 rowgap">
   <div class="card"><h2>쿠팡 클릭 많은 상품</h2><div class="tw" id="prods"></div></div>
   <div class="card"><h2>클릭한 버튼 위치</h2><div class="tw" id="pos"></div></div>
+  <div class="card"><h2>쿠팡 외 제휴 클릭 (아고다 등)</h2><div class="tw" id="aff"></div></div>
 </div>
 <div class="card"><h2>유입 경로 — 어디서 들어와서 얼마나 쿠팡으로 갔나</h2><div class="tw" id="ref"></div></div>
 <div class="grid2 rowgap">
@@ -176,6 +177,10 @@ label.me{display:flex;gap:6px;align-items:center;color:var(--sub);font-size:13px
       return [(j.products[id] ? '<a href="/p/' + esc(id) + '" target="_blank" rel="noopener">' + esc(j.products[id]) + '</a>' : esc(id)), num(prods[id]), pct(prods[id], out)];
     }), '아직 쿠팡 클릭이 없습니다');
     $('#pos').innerHTML = table(['위치', '클릭', '비율'], (by.pos || []).map(function (x) { return [esc(x.k), num(x.n), pct(x.n, out)]; }), '아직 쿠팡 클릭이 없습니다');
+    $('#aff').innerHTML = table(['페이지', '링크', '클릭'], (by.aff || []).slice(0, 30).map(function (x) {
+      var i = x.k.lastIndexOf('|'), p = x.k.slice(0, i);
+      return ['<a href="' + esc(p) + '" target="_blank" rel="noopener">' + esc(j.pages[p] || p) + '</a>', esc(x.k.slice(i + 1)), num(x.n)];
+    }), '아직 제휴 클릭이 없습니다');
     var outref = {}; (by.outref || []).forEach(function (r) { outref[r.k] = r.n; });
     var refs = by.ref || [];
     Object.keys(outref).forEach(function (k) { if (!refs.some(function (r) { return r.k === k; })) refs.push({ k: k, n: 0 }); });

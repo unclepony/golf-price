@@ -38,6 +38,10 @@
     : '기타';
   const onOut = (e) => {
     const a = e.target.closest?.('a[href]');
+    if (a?.dataset.out) { // 쿠팡 외 제휴 링크(아고다 등): 쿠팡 클릭률에 섞지 않고 따로 센다
+      if (e.type !== 'auxclick' || e.button === 1) beacon({ t: 'aff', k: a.dataset.out });
+      return;
+    }
     if (!a || !(/(^|\.)coupang\.com$/.test(a.hostname) || a.pathname.startsWith('/go/'))) return;
     if (e.type === 'auxclick' && e.button !== 1) return;
     beacon({ t: 'out', h: a.getAttribute('href'), w: where(a) });

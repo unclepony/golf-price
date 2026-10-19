@@ -1814,27 +1814,27 @@
       "d": "2026-10-19"
     },
     "/jp": {
-      "h": "0b36b588f0a13e99",
+      "h": "ea96b159bd75c906",
       "d": "2026-10-19"
     },
     "/jp/xxio14-driver": {
-      "h": "38e3b3b76aecbbb3",
+      "h": "4d4160601c307c6c",
       "d": "2026-10-19"
     },
     "/jp/srixon-zxi-rkt-driver": {
-      "h": "f1e9fbad18b45d3c",
+      "h": "5bb073240ad2f934",
       "d": "2026-10-19"
     },
     "/jp/mizuno-jpx-one-driver": {
-      "h": "bc5b31fd8f2df2b7",
+      "h": "1fe85aae2408c434",
       "d": "2026-10-19"
     },
     "/jp/prgr-super-egg-2026-driver": {
-      "h": "c16b86cb83e1bbbc",
+      "h": "0d061741535652ff",
       "d": "2026-10-19"
     },
     "/jp/honma-beres-2026-3s-driver": {
-      "h": "89420d1acd30b46c",
+      "h": "ac1231659fad4cdc",
       "d": "2026-10-19"
     },
     "/jp/customs": {
@@ -1949,38 +1949,38 @@
       "d": "2026-10-19"
     },
     {
-      "url": "/jp",
+      "url": "/jp/customs",
       "kind": "new",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/jp",
+      "kind": "updated",
       "d": "2026-10-19"
     },
     {
       "url": "/jp/xxio14-driver",
-      "kind": "new",
+      "kind": "updated",
       "d": "2026-10-19"
     },
     {
       "url": "/jp/srixon-zxi-rkt-driver",
-      "kind": "new",
+      "kind": "updated",
       "d": "2026-10-19"
     },
     {
       "url": "/jp/mizuno-jpx-one-driver",
-      "kind": "new",
+      "kind": "updated",
       "d": "2026-10-19"
     },
     {
       "url": "/jp/prgr-super-egg-2026-driver",
-      "kind": "new",
+      "kind": "updated",
       "d": "2026-10-19"
     },
     {
       "url": "/jp/honma-beres-2026-3s-driver",
-      "kind": "new",
-      "d": "2026-10-19"
-    },
-    {
-      "url": "/jp/customs",
-      "kind": "new",
+      "kind": "updated",
       "d": "2026-10-19"
     }
   ]
