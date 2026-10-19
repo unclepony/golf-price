@@ -236,6 +236,7 @@ ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표�
 // 공유 미리보기 이미지(카카오톡·커뮤니티·SNS): 쿠팡 썸네일을 큰 크기(492)로
 const bigImage = (src) => (src ? src.replace('/212x212ex/', '/492x492ex/') : '');
 function ogImageFor(path) {
+  if (VS_OG[path]) return bigImage(imageOf(VS_OG[path], entryById[VS_OG[path]]?.hist));
   const m = path.match(/^\/p\/(.+)$/);
   if (m) return bigImage(imageOf(m[1], entryById[m[1]]?.hist));
   const g = pageGuides.find((x) => path === `/g/${x.slug}` || path.startsWith(`/g/${x.slug}-`));
@@ -1003,6 +1004,275 @@ function buyChecks(p) {
   return [...new Set(out)];
 }
 
+// ---------- A vs B 1:1 비교 페이지 (/vs/{A}-vs-{B}) ----------
+// 구매 직전에 "A vs B"로 찾는 사람을 위한 페이지. 대량 생성을 막기 위해 '실제로 함께 비교되는' 두 모델만 만든다:
+//  - 같은 가이드(같은 카테고리) 안의 두 모델, 판매처가 있고(링크 준비 중 포함) 옵션 경고·남녀 공용으로 끌어온 모델이 아닌 것
+//  - 추천 단계가 같거나 바로 옆 단계, 또는 같은 시리즈(두 단계 차이까지). 이름의 종류 표시(게이밍·기계식 등)가 같아야 함
+//  - 데이터가 실제로 달라야 함: 항목 점수가 1개 이상 다르고, 점수·주요 사양 차이가 합쳐서 2개 이상
+//  - 사이트 전체 VS_MAX 개, 상품 하나당 VS_PER_PRODUCT 개까지. 쿠팡 링크가 있는 상품·같은 단계·높은 단계를 먼저, 가이드마다 돌아가며 고른다
+// 문장은 모두 데이터(단계·항목 점수·사양·장단점·추천 대상)에서 조합하고, 사실이나 가격을 지어내지 않는다.
+const VS_MAX = 150;
+const VS_PER_PRODUCT = 3;
+// 두 상품 모두 쿠팡 링크가 있을 때만 만든다(2026-10-19 관제탑)
+const vsListed = (id) => sellable(id);
+const VS_STRIP = null; // 제목용 짧은 이름: 끝에 붙은 일반 명사(무선·이어폰 등)를 뗀다 (모델명에 숫자·영문 코드가 남을 때만)
+// 받침 여부 (조사 고르기): 한글은 받침, 숫자·영문은 읽는 소리 기준
+function hasBatchim(word) {
+  const w = String(word).replace(/\s*\([^)]*\)\s*$/, '').trim();
+  const ch = w.at(-1) ?? '';
+  const code = ch.charCodeAt(0);
+  if (code >= 0xac00 && code <= 0xd7a3) return (code - 0xac00) % 28 !== 0;
+  if (/[0-9]/.test(ch)) return '013678'.includes(ch);
+  if (/[a-z]/i.test(ch)) return /[lmnr]/i.test(ch);
+  return false;
+}
+const josa = (w, withB, without) => `${w}${hasBatchim(w) ? withB : without}`;
+function vsShort(full) {
+  const name = full.replace(/\s*\(\d+(?:더즌|개입|구)\)$/, ''); // 수량 표기(1더즌 등)는 제목에서 뺀다
+  if (!VS_STRIP) return name;
+  let base = name;
+  let code = '';
+  const m = base.match(/^(.*?)\s*(\([A-Z-]*[0-9][A-Z0-9-]*\))$/); // 숫자가 든 모델 코드만 (예: HT08, A1289)
+  if (m) [base, code] = [m[1], ` ${m[2]}`];
+  let out = base;
+  while (VS_STRIP.test(out)) out = out.replace(VS_STRIP, '');
+  // 남은 이름에 숫자·영문 모델 코드가 없으면(예: 애플 매직 마우스) 원래 이름을 쓴다
+  if (out === base || !/[0-9A-Za-z]/.test(out.split(/\s+/).slice(1).join(' ') + code)) return name;
+  return `${out}${code}`;
+}
+const brandOf = (id) => byId[id].p.name.split(/\s+/)[0];
+// 같은 시리즈(브랜드 + 다음 낱말, 예: 애플 에어팟·로지텍 MX)는 두 단계 차이까지 비교한다
+const seriesOf = (id) => byId[id].p.name.split(/\s+/).slice(0, 2).join(' ');
+// 이름에 든 종류 표시가 서로 다르면(예: 게이밍 마우스 vs 사무용 마우스) 함께 비교하지 않는다
+const VS_TYPES = [/여성/];
+const sameType = (x, y) => VS_TYPES.every((re) => re.test(byId[x].p.name) === re.test(byId[y].p.name));
+const vsSpecOk = (v) => !!v && v !== '-' && !/확인/.test(String(v));
+const vsLabel = (l) => l.replace('연결 상품 ', '');
+// 두 모델의 차이: 항목 점수(1점 이상)와 주요 사양('연결 상품' 칸은 판매 옵션이라 차이 계산에서 뺀다)
+function vsDiff(g, x, y) {
+  const crit = (g.criteria ?? []).map((c, i) => ({ c, i, a: x.scores?.[i], b: y.scores?.[i] })).filter((r) => r.a != null && r.b != null && r.a !== r.b);
+  const spec = (g.specRows ?? [])
+    .map((label, i) => ({ label: vsLabel(label), raw: label, i, a: String(x.specs?.[i] ?? ''), b: String(y.specs?.[i] ?? '') }))
+    .filter((r) => !/^연결 상품/.test(r.raw) && vsSpecOk(r.a) && vsSpecOk(r.b) && r.a !== r.b);
+  return { crit, spec };
+}
+const vsTierIdx = (pk) => (pk.skill ? SKILLS.indexOf(pk.skill) : -1);
+// 한 번 공개한 비교 주소(config/url-manifest.json)는 데이터가 바뀌어도 유지한다: 두 상품이 아직 같은 가이드에 있으면 계속 만들고,
+// 상품이 빠져 만들 수 없게 되면 남은 상품 페이지(없으면 홈)로 301 (VS_GONE → _redirects)
+const VS_KNOWN = DEMO ? [] : (readJson(join(ROOT, 'config', 'url-manifest.json'), {}).urls ?? []).filter((u) => u.startsWith('/vs/'));
+const vsIdsOf = (path) => {
+  const m = path.match(/^\/vs\/(.+?)-vs-(.+)$/);
+  return m ? [m[1], m[2]] : [];
+};
+const VS_PAIRS = (() => {
+  const pinned = [];
+  for (const path of VS_KNOWN) {
+    const [ia, ib] = vsIdsOf(path);
+    const g = pageGuides.find((x) => [ia, ib].every((id) => byId[id] && vsListed(id) && x.picks.some((pk) => pk.id === id && pk.scores?.length)));
+    if (!g) continue;
+    const a = g.picks.find((pk) => pk.id === ia), b = g.picks.find((pk) => pk.id === ib);
+    pinned.push({ g, a, b, gap: Math.abs(vsTierIdx(a) - vsTierIdx(b)), sameBrand: brandOf(ia) === brandOf(ib), d: vsDiff(g, a, b), key: [ia, ib].sort().join('|'), path });
+  }
+  const perGuide = pageGuides.map((g) => {
+    const n = (g.criteria ?? []).length;
+    const kindRow = (g.specRows ?? []).findIndex((r) => /^종류$/.test(r));
+    const ps = rankedPicks(g).filter((pk) => vsListed(pk.id) && !warned(g, pk) && !pk.unisex && n && pk.scores?.length === n);
+    const cands = [];
+    for (let i = 0; i < ps.length; i++)
+      for (let j = i + 1; j < ps.length; j++) {
+        const x = ps[i], y = ps[j];
+        const tx = vsTierIdx(x), ty = vsTierIdx(y);
+        const gap = tx < 0 || ty < 0 ? (tx === ty ? 0 : 9) : Math.abs(tx - ty);
+        const sameBrand = brandOf(x.id) === brandOf(y.id);
+        if (!(gap <= 1 || (seriesOf(x.id) === seriesOf(y.id) && gap <= 2)) || !sameType(x.id, y.id)) continue;
+        if (kindRow >= 0 && vsSpecOk(x.specs?.[kindRow]) && vsSpecOk(y.specs?.[kindRow]) && x.specs[kindRow] !== y.specs[kindRow]) continue; // 종류가 다른 연습기 등은 비교하지 않는다
+        const d = vsDiff(g, x, y);
+        if (!d.crit.length || d.crit.length + d.spec.length < 2) continue;
+        // 높은 단계(같으면 편집 점수가 높은 모델)를 앞에 둔다
+        const [a, b] = ty > tx || (ty === tx && totalScore(y) > totalScore(x)) ? [y, x] : [x, y];
+        const linkN = (sellable(a.id) ? 1 : 0) + (sellable(b.id) ? 1 : 0);
+        const pri = linkN * 1000 + (gap === 0 ? 300 : sameBrand ? 200 : 100) + Math.max(tx, ty, 0) * 20 + Math.min(d.crit.length + d.spec.length, 6) * 5 + totalScore(a) + totalScore(b);
+        cands.push({ g, a, b, gap, sameBrand, d: vsDiff(g, a, b), pri, grp: [a.skill ?? '', b.skill ?? ''].sort().join('|'), key: [a.id, b.id].sort().join('|') });
+      }
+    // 단계 조합(예: 초심자끼리, 중급-고급)마다 돌아가며 넣어 한 단계에만 몰리지 않게 한다 (높은 단계 조합이 먼저)
+    cands.sort((p, q) => q.pri - p.pri);
+    const groups = [...new Set(cands.map((v) => v.grp))].sort((x, y) => {
+      const t = (k) => Math.max(...k.split('|').map((n) => SKILLS.indexOf(n)));
+      return t(y) - t(x) || cands.findIndex((v) => v.grp === x) - cands.findIndex((v) => v.grp === y);
+    });
+    const byGrp = groups.map((k) => cands.filter((v) => v.grp === k));
+    const mixed = [];
+    for (let r = 0; byGrp.some((xs) => xs.length > r); r++) for (const xs of byGrp) if (xs[r]) mixed.push(xs[r]);
+    return mixed;
+  });
+  const out = [...pinned];
+  const used = new Set(pinned.map((v) => v.key));
+  const per = {};
+  for (const v of pinned) for (const id of [v.a.id, v.b.id]) per[id] = (per[id] ?? 0) + 1;
+  let moved = true;
+  while (out.length < VS_MAX && moved) {
+    moved = false;
+    for (const cands of perGuide) {
+      if (out.length >= VS_MAX) break;
+      const k = cands.findIndex((v) => !used.has(v.key) && (per[v.a.id] ?? 0) < VS_PER_PRODUCT && (per[v.b.id] ?? 0) < VS_PER_PRODUCT);
+      if (k < 0) continue;
+      const v = cands.splice(k, 1)[0];
+      used.add(v.key);
+      per[v.a.id] = (per[v.a.id] ?? 0) + 1;
+      per[v.b.id] = (per[v.b.id] ?? 0) + 1;
+      out.push({ ...v, path: `/vs/${v.a.id}-vs-${v.b.id}` });
+      moved = true;
+    }
+  }
+  return out;
+})();
+const VS_OG = Object.fromEntries(VS_PAIRS.map((v) => [v.path, v.a.id]));
+const VS_GONE = VS_KNOWN.filter((u) => !VS_OG[u]).map((u) => `${u} ${vsIdsOf(u).find((id) => byId[id]) ? `/p/${vsIdsOf(u).find((id) => byId[id])}` : '/'} 301`);
+const vsOf = (id) => VS_PAIRS.filter((v) => v.a.id === id || v.b.id === id);
+const vsName = (pk) => vsShort(byId[pk.id].p.name);
+// 추천 대상 문구: '…분, …면 ○○ 버전'처럼 덧붙인 설명은 앞부분만 쓴다
+function vsWho(pk) {
+  const t = String(pk.forWhom ?? '').trim();
+  const m = t.match(/^(.*?분)[,.]\s/);
+  const w = m ? m[1] : t;
+  return `${w}${w.endsWith('분') ? '께' : w.endsWith('환경') ? '에' : '에게'}`;
+}
+// 결론·FAQ 문장 (모두 데이터에서)
+function vsText(v) {
+  const { g, a, b, d } = v;
+  const A = vsName(a), B = vsName(b);
+  let tier;
+  if (a.skill && b.skill && a.skill === b.skill) {
+    const ra = stageRank(g, a.id)?.r, rb = stageRank(g, b.id)?.r;
+    tier = `두 모델 모두 ${SKILL_WORD[a.skill]} 단계로 분류했고${ra && rb ? `, 같은 단계 안 순위는 ${A} ${ra}위, ${B} ${rb}위입니다` : ''}.`;
+  } else if (a.skill && b.skill) {
+    tier = `${josa(A, '은', '는')} ${SKILL_WORD[a.skill]} 단계, ${josa(B, '은', '는')} ${SKILL_WORD[b.skill]} 단계 모델입니다.${v.sameBrand ? ` 같은 ${brandOf(a.id)} 제품 가운데 단계가 다른 두 모델입니다.` : ''}`;
+  } else {
+    tier = `두 모델 모두 ${guideCat(g)?.name ?? ''} 비교에 넣은 모델이며, 편집 점수는 ${A} ${totalScore(a).toFixed(1)}점, ${B} ${totalScore(b).toFixed(1)}점입니다.`;
+  }
+  const ups = d.crit.filter((r) => r.a > r.b).map((r) => r.c);
+  const downs = d.crit.filter((r) => r.b > r.a).map((r) => r.c);
+  let score;
+  if (ups.length && downs.length) score = `항목 점수로는 ${josa(A, '이', '가')} ${ups.join('·')}에서, ${josa(B, '이', '가')} ${downs.join('·')}에서 앞섭니다.`;
+  else {
+    const [W, xs] = ups.length ? [A, ups] : [B, downs];
+    score = `항목 점수로는 ${josa(W, '이', '가')} ${xs.join('·')}에서 앞서고, 나머지 항목은 점수가 같습니다.`;
+  }
+  const who = `${josa(A, '은', '는')} ${vsWho(a)}, ${josa(B, '은', '는')} ${vsWho(b)} 맞습니다.`;
+  const specs = d.spec.slice(0, 3).map((r) => `${josa(r.label, '은', '는')} ${A} ${r.a}, ${B} ${r.b}입니다.`);
+  const specLine = specs.length ? `사양을 보면 ${specs.join(' ')}` : `점수 차이는 ${d.crit.map((r) => `${r.c} ${A} ${r.a}점·${B} ${r.b}점`).join(', ')}입니다.`;
+  const faq = [
+    { q: `${josa(A, '과', '와')} ${B} 중 무엇을 사야 하나요?`, a: `${who} ${score}` },
+    { q: `${josa(A, '과', '와')} ${B}의 가장 큰 차이는 무엇인가요?`, a: `${tier} ${specLine}` },
+  ];
+  if (a.cons?.length && b.cons?.length) faq.push({ q: `${josa(A, '과', '와')} ${B}의 단점은 무엇인가요?`, a: `${A}: ${a.cons.join(', ')}. ${B}: ${b.cons.join(', ')}.` });
+  return { A, B, tier, score, who, faq };
+}
+// 상품·가이드 페이지의 '자주 비교하는 모델' 목록
+function vsLinkList(list, self) {
+  if (!list.length) return '';
+  const img = (id) => {
+    const src = imageOf(id, byId[id].hist);
+    return src ? `<img src="${esc(src)}" alt="" loading="lazy" decoding="async" width="48" height="48">` : `<span class="vs-ph">${esc(catName[byId[id].p.category]?.slice(0, 1) ?? '·')}</span>`;
+  };
+  return `<ul class="vs-list">${list
+    .map((v) => {
+      const other = self ? (v.a.id === self ? v.b : v.a) : null;
+      const sub = other ? `${other.skill ? `${other.skill} · ` : ''}${esc(other.role ?? '')}` : `${v.a.skill && v.b.skill ? (v.a.skill === v.b.skill ? `${esc(v.a.skill)} 단계 맞대결` : `${esc(v.a.skill)} vs ${esc(v.b.skill)}`) : esc(`${v.a.role} vs ${v.b.role}`)}`;
+      return `<li><a href="${v.path}"><span class="vs-imgs">${img(v.a.id)}${img(v.b.id)}</span><span class="vs-lt"><b>${esc(vsName(v.a))} <i>vs</i> ${esc(vsName(v.b))}</b><small>${sub}</small></span></a></li>`;
+    })
+    .join('')}</ul>`;
+}
+function vsProductBlock(id) {
+  const list = vsOf(id);
+  if (!list.length) return '';
+  return `<section class="vs-links" id="vs"><h2>자주 비교하는 모델 <small>1:1 비교</small></h2>${vsLinkList(list, id)}</section>`;
+}
+function vsTierBlock(g, skill) {
+  const list = VS_PAIRS.filter((v) => v.g.slug === g.slug && (v.a.skill === skill || v.b.skill === skill));
+  if (!list.length) return '';
+  return `<section class="vs-links" id="vs"><h2>${esc(SKILL_WORD[skill])} 모델 1:1 비교 <small>${list.length}개</small></h2>${vsLinkList(list)}</section>`;
+}
+function vsGuideBlock(g) {
+  const list = VS_PAIRS.filter((v) => v.g.slug === g.slug);
+  if (!list.length) return '';
+  return `<section class="vs-links" id="vs"><h2>자주 비교하는 모델 <small>${list.length}개 1:1 비교</small></h2>${vsLinkList(list)}</section>`;
+}
+function writeVsPages() {
+  for (const v of VS_PAIRS) {
+    const { g, a, b, d } = v;
+    const t = vsText(v);
+    const c = guideCat(g);
+    const pa = byId[a.id].p, pb = byId[b.id].p;
+    const crit = g.criteria ?? [];
+    const title = `${t.A} vs ${t.B}: 무엇을 살까 (${CUR_YEAR})`;
+    const side = (pk, cls) => {
+      const p = byId[pk.id].p;
+      const image = imageOf(p.id, byId[pk.id].hist);
+      const sr = stageRank(g, pk.id);
+      return `<div class="vs-side ${cls}"><a class="vs-img" href="/p/${p.id}">${image ? `<img src="${esc(image)}" alt="${esc(p.name)}" width="212" height="212" decoding="async">` : `<span class="vs-ph">${esc(c?.name?.slice(0, 1) ?? '·')}</span>`}</a>
+<p class="vs-tags">${pk.skill ? `<span class="skill sk-${SKILLS.indexOf(pk.skill) + 1}">${esc(pk.skill)}</span>` : ''}${levelBadge(p.id)}</p>
+<h2><a href="/p/${p.id}">${esc(p.name)}</a></h2>
+<p class="vs-role">${esc(pk.short ?? pk.role)}${sr?.label ? ` · ${esc(sr.label)}` : ''}</p>
+<p class="vs-total"><b>${totalScore(pk).toFixed(1)}</b><small>/5 편집 점수</small></p>
+${priceLine(p.id, 'price-line vs-price')}
+<div class="vs-btn">${buyBtn(p.id, 'btn sm', '쿠팡 가격 보기') || ''}</div></div>`;
+    };
+    const bar = (n) => `<span class="vs-bar"><i style="width:${(n ?? 0) * 20}%"></i></span><b>${n ?? '-'}</b>`;
+    const scoreRows = crit
+      .map((cn, i) => {
+        const x = a.scores[i], y = b.scores[i];
+        const win = x > y ? `<em class="a">${esc(t.A)} 우세</em>` : y > x ? `<em class="b">${esc(t.B)} 우세</em>` : '<em>같음</em>';
+        return `<div class="vs-crit"><p class="vs-cn">${esc(cn)} ${win}</p><div class="vs-line a"><span>${esc(t.A)}</span>${bar(x)}</div><div class="vs-line b"><span>${esc(t.B)}</span>${bar(y)}</div></div>`;
+      })
+      .join('');
+    const specRow = (label, va, vb, raw = false) => `<tr${!raw && va !== vb ? ' class="diff"' : ''}><th scope="row">${esc(label)}</th><td>${raw ? va : esc(va || '-')}</td><td>${raw ? vb : esc(vb || '-')}</td></tr>`;
+    const list = (xs) => (xs?.length ? `<ul>${xs.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : '-');
+    const tierCell = (pk) => (pk.skill ? `<span class="skill sk-${SKILLS.indexOf(pk.skill) + 1}">${esc(pk.skill)}</span> ${esc(stageRank(g, pk.id)?.label ?? '')}` : esc(stageRank(g, pk.id)?.label ?? '-'));
+    const specTable = `<div class="tablewrap"><table class="vs-table"><thead><tr><th></th><th><a href="/p/${a.id}">${esc(t.A)}</a></th><th><a href="/p/${b.id}">${esc(t.B)}</a></th></tr></thead><tbody>
+${specRow('추천 단계·순위', tierCell(a), tierCell(b), true)}
+${specRow('편집 점수', `${totalScore(a).toFixed(1)} / 5`, `${totalScore(b).toFixed(1)} / 5`)}
+${levelBadge(a.id) || levelBadge(b.id) ? specRow('가격대', levelBadge(a.id) || '-', levelBadge(b.id) || '-', true) : ''}
+${specRow('한마디', a.short ?? a.role, b.short ?? b.role)}
+${(g.specRows ?? []).map((label, i) => specRow(vsLabel(label), String(a.specs?.[i] ?? ''), String(b.specs?.[i] ?? ''))).join('')}
+${specRow('장점', list(a.pros), list(b.pros), true)}
+${specRow('단점', list(a.cons), list(b.cons), true)}
+</tbody></table></div>`;
+    const whoCard = (pk, other, cls, nm) => {
+      const wins = d.crit.filter((r) => (pk === a ? r.a > r.b : r.b > r.a)).map((r) => `<li><b>${esc(r.c)}</b> ${pk === a ? r.a : r.b}점 <small>(${esc(vsName(other))} ${pk === a ? r.b : r.a}점)</small></li>`);
+      return `<div class="vs-who-c ${cls}"><p class="vs-who-k">이런 분은</p><h3><a href="/p/${pk.id}">${esc(nm)}</a></h3><p class="vs-fw">${esc(pk.forWhom)}</p>
+${wins.length ? `<p class="vs-sub">더 높게 매긴 항목</p><ul class="vs-why">${wins.join('')}</ul>` : ''}
+${pk.pros?.length ? `<p class="vs-sub">장점</p><ul class="vs-pro">${pk.pros.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+${pk.cons?.length ? `<p class="vs-sub">감안할 점</p><ul class="vs-con">${pk.cons.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+${pk.verdict ? `<p class="vs-vd">“${esc(pk.verdict)}”</p>` : ''}</div>`;
+    };
+    const more = VS_PAIRS.filter((x) => x !== v && (x.a.id === a.id || x.b.id === a.id || x.a.id === b.id || x.b.id === b.id)).slice(0, 6);
+    const desc = `${t.A} vs ${t.B} 비교: ${t.who} ${t.score}`.slice(0, 160);
+    const body = `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${c?.id}">${esc(c?.name ?? '')}</a> › <a href="/g/${g.slug}">${esc(guideName(g))}</a> › 1:1 비교</nav>
+<p class="g-kicker">${esc(c?.name ?? '')} 1:1 비교</p>
+<h1>${esc(t.A)} <span class="vs-x">vs</span> ${esc(t.B)} <small>무엇을 살까</small></h1>
+${updatedTag(max2(g.updated, pa.updated, pb.updated))}
+<section class="vs-hero">${side(a, 'a')}<span class="vs-mid" aria-hidden="true">VS</span>${side(b, 'b')}</section>
+<section class="vs-verdict" aria-label="결론"><h2>결론부터</h2><p><b>${esc(t.who)}</b></p><p>${esc(t.score)} ${esc(t.tier)}</p></section>
+<section class="vs-who"><h2>이런 분은 ${esc(t.A)}, 이런 분은 ${esc(t.B)}</h2><div class="vs-who-g">${whoCard(a, b, 'a', t.A)}${whoCard(b, a, 'b', t.B)}</div></section>
+<section class="vs-scores"><h2>항목별 점수 비교 <small>5점 만점</small></h2><p class="vs-legend"><span class="a">${esc(t.A)}</span><span class="b">${esc(t.B)}</span></p><div class="vs-crits">${scoreRows}</div><p class="note">※ ${SCORE_NOTE}</p></section>
+<section class="vs-spec"><h2>사양·특징 비교</h2>${specTable}<p class="note">색이 칠해진 줄은 두 모델이 다른 항목입니다. 사양은 ${esc(guideName(g))}의 비교표와 같은 자료입니다.</p></section>
+<section class="vs-buy"><h2>판매처에서 확인하기</h2><div class="vs-buy-g">${[a, b].map((pk) => `<div><b>${esc(byId[pk.id].p.name)}</b>${priceLine(pk.id, 'price-line vs-price')}${buyBtn(pk.id, 'btn') || ''}</div>`).join('')}</div>${sellable(a.id) || sellable(b.id) ? '<p class="note">쿠팡 버튼은 쿠팡 파트너스 링크입니다. 가격과 옵션은 판매 페이지에서 확인하세요.</p>' : ''}</section>
+<section id="faq" class="prose"><h2>자주 묻는 질문</h2>${t.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>
+<section class="vs-links"><h2>더 보기</h2><ul class="vs-go"><li><a href="/g/${g.slug}">${esc(guideName(g))} — ${rankedPicks(g).length}종 전체 비교 ›</a></li><li><a href="/p/${a.id}">${esc(pa.name)} 자세히 보기 ›</a></li><li><a href="/p/${b.id}">${esc(pb.name)} 자세히 보기 ›</a></li></ul>${more.length ? `<h3>함께 많이 보는 비교</h3>${vsLinkList(more)}` : ''}</section>`;
+    writeText(
+      join(OUT, 'vs', `${a.id}-vs-${b.id}.html`),
+      layout({
+        title,
+        desc,
+        path: v.path,
+        body,
+        ld: [crumbLd([['홈', '/'], [c?.name ?? '', `/c/${c?.id}`], [guideName(g), `/g/${g.slug}`], [`${t.A} vs ${t.B}`, v.path]]), faqLd(t.faq)],
+      }),
+    );
+  }
+}
+
 // ---------- 상품 페이지 ----------
 for (const { p, hist, a } of entries) {
   const cat = cats.find((c) => c.id === p.category);
@@ -1027,6 +1297,7 @@ ${buyButton(p.id, hist)}
 </div>
 </section>
 ${productStory(p)}
+${vsProductBlock(p.id)}
 ${analysis(p)}
 ${newsBlock(p.id)}
 <section class="prose"><h2>${esc(cat.name)} 고르는 법</h2><p>${esc(cat.intro)}</p>${figure(p.category)}<ul>${cat.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
@@ -1153,6 +1424,7 @@ ${figure(guideCat(g)?.id)}
 ${mergedInto(g)
   .map((m) => `<section id="vokey" class="merged"><h2>${esc(m.menuName ?? shortTitle(m.title))}</h2><p class="prose">${esc(m.intro)}</p>${grindCompare(m)}<div class="prose">${m.sections.map((x) => `<h3>${esc(x.h)}</h3><p>${esc(x.p)}</p>`).join('')}</div><div class="prose">${m.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</div></section>`)
   .join('')}
+${vsGuideBlock(g)}
 <section id="faq" class="prose"><h2>자주 묻는 질문</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>
 ${videoBlock(g)}
 <section><h2>다른 비교·추천 가이드</h2>${guideGrid(pageGuides.filter((o) => o.slug !== g.slug))}</section>
@@ -1204,6 +1476,7 @@ ${distCompare(g, ids)}
           .map((pk) => `<a href="/p/${pk.id}"><span class="tierline"><span class="badge good">${esc(stageRank(g, pk.id)?.label ?? '')}</span>${levelBadge(pk.id)}<span class="badge mid">${esc(pk.role)}</span>${unisexBadge(pk)}</span><b>${esc(byId[pk.id].p.name)}</b><small>${esc(pk.forWhom)}</small><small class="vd">${esc(pk.verdict ?? '')}</small></a>`)
           .join('')}</div></section>
 <p class="note score-note">※ ${SCORE_NOTE}</p>
+${vsTierBlock(g, skill)}
 <a class="more-link" href="/g/${g.slug}">${esc(guideName(g))} 전체 보기 ›</a>
 ${stickyBuy(ps[0])}`,
       }),
@@ -1410,6 +1683,7 @@ ${(NOTICES.priceDetails?.[PRICE_MODE] ?? []).map((t) => `<li>${esc(t)}</li>`).jo
 const REDIRECTS = [
   ...pageGuides.flatMap((g) => SKILLS.filter((sk) => g.picks.some((pk) => pk.skill === sk) && !skillGroups(g).some((x) => x.skill === sk)).map((sk) => `${skillPath(g, sk)} /g/${g.slug} 301`)),
   ...guides.filter((g) => g.mergeInto).map((g) => `/g/${g.slug} /g/${g.mergeInto}#vokey 301`),
+  ...VS_GONE,
 ];
 const STATIC_REDIRECTS = [
     '/c/set / 301',
@@ -1432,6 +1706,8 @@ rawWrite(join(OUT, '_redirects'), [...STATIC_REDIRECTS, ...REDIRECTS].join('\n')
 
 // ---------- 검색엔진용 파일 ----------
 // 사이트맵 lastmod = 콘텐츠 업데이트일 (가격만 바뀐 날은 반영하지 않는다)
+// A vs B 비교 페이지
+writeVsPages();
 const urls = [
   '/',
   '/about',
@@ -1439,6 +1715,7 @@ const urls = [
   ...pageGuides.flatMap((g) => skillGroups(g).map((x) => skillPath(g, x.skill))),
   ...cats.map((c) => `/c/${c.id}`),
   ...entries.map((e) => `/p/${e.p.id}`),
+  ...VS_PAIRS.map((v) => v.path),
 ].map((u) => [u, pageDates[u] ?? TODAY]);
 
 // URL 보호: 한 번 공개한 주소(config/url-manifest.json)가 사라지면 경고하고, _redirects 에 301 이 없으면 빌드를 멈춘다
@@ -1493,6 +1770,9 @@ ${pageGuides.map(line).join('\n')}
 
 ## 실력별 비교
 ${skillLines.join('\n')}
+
+## 1:1 비교 (A vs B)
+${VS_PAIRS.map((v) => `- [${vsName(v.a)} vs ${vsName(v.b)}](${SITE_URL}${v.path})`).join('\n')}
 
 ## 카테고리
 ${cats.map((c) => `- [${c.name}](${SITE_URL}/c/${c.id})`).join('\n')}
