@@ -12,15 +12,15 @@ const CUSTOMS = {
   simple: ['관세청 간이 통관절차 안내', 'https://www.customs.go.kr/kcs/cm/cntnts/cntntsView.do?mi=8457&cntntsId=2807'],
 };
 
-// 일본 숙소 비교(링크프라이스 → 아고다 도시 페이지). 2026-10-19 사장님 승인. 도시 주소는 실제로 열리는 것만 쓴다(없는 도시는 아고다가 302 로 돌려보냄).
+// 일본 숙소 비교(링크프라이스 → 아고다 도시 검색). 2026-10-19 사장님 요청: 누르면 아고다 검색창에 그 지역이 채워진 결과가 뜨게 — 링크프라이스 안내 형식 partnersearch.aspx?pcs=1&cid=1729890 + city=<아고다 도시 ID>. 2026-10-19 사장님 승인. 도시 주소는 실제로 열리는 것만 쓴다(없는 도시는 아고다가 302 로 돌려보냄).
 // 규칙: 링크프라이스 광고 문구를 맨 위에 두고, 할인·가격 같은 혜택 문구는 쓰지 않으며, 아고다 쿠폰·특가 페이지로 연결하지 않는다
 const LP = (url) => `https://lpweb.kr/click.php?m=agoda&a=A100708940&l=9999&l_cd1=3&l_cd2=0&tu=${encodeURIComponent(url)}`;
 const STAY_CITIES = [
-  ['tokyo', '도쿄', 'https://www.agoda.com/ko-kr/city/tokyo-jp.html'],
-  ['osaka', '오사카', 'https://www.agoda.com/ko-kr/city/osaka-jp.html'],
-  ['fukuoka', '후쿠오카', 'https://www.agoda.com/ko-kr/city/fukuoka-jp.html'],
-  ['okinawa', '오키나와 본섬', 'https://www.agoda.com/ko-kr/city/okinawa-main-island-jp.html'],
-  ['miyazaki', '미야자키', 'https://www.agoda.com/ko-kr/city/miyazaki-jp.html'],
+  ['tokyo', '도쿄', 'https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1729890&city=5085'],
+  ['osaka', '오사카', 'https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1729890&city=9590'],
+  ['fukuoka', '후쿠오카', 'https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1729890&city=16527'],
+  ['okinawa', '오키나와 본섬', 'https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1729890&city=717899'],
+  ['miyazaki', '미야자키', 'https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1729890&city=13561'],
 ];
 const stayBlock = () => `<section class="jp-stay"><p class="jp-ad">이 포스팅은 제휴마케팅이 포함된 광고로 커미션을 지급 받습니다.</p>
 <h2>일본에서 직접 보고 사려면: 숙소 비교</h2>
