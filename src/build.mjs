@@ -281,7 +281,7 @@ ${body}
 <p>${DISCLOSURE}</p>
 <p>${PRICE_NOTE} 구매 전 판매 페이지에서 가격과 옵션을 꼭 확인하세요.</p>
 <p>점수는 이 사이트의 주관적인 참고 점수이며 공식 평가가 아닙니다. 상품 이미지는 쿠팡 파트너스가 제공하는 이미지입니다.</p>
-<p class="family">함께 운영하는 사이트: <a href="https://techprice.unclepony.com/">ATL테크기어 — 전자기기 비교</a> · <a href="https://youtubeking.unclepony.com/">유튜브킹 — 유튜브 조회수 순위</a></p>
+<p class="family">함께 운영하는 사이트: <a href="https://techprice.unclepony.com/">ATL테크기어 — 전자기기 비교</a> · <a href="https://youtubeking.unclepony.com/">유튜브킹 — 유튜브 조회수 순위</a> · <a href="https://homeprice.unclepony.com/">ATL홈기어 — 생활가전 비교</a></p>
 <p class="build">사이트 버전 ${BUILD_AT} (KST) · ${BUILD_COMMIT || 'local'}</p>
 </footer>
 <script src="/assets/app.js?v=${ASSET_V}" defer></script>
