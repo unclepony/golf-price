@@ -70,7 +70,7 @@ function device(ua) {
 // - 내부 방문: /admin 에 로그인한 브라우저에 붙는 쿠키(upi_internal=1)가 있으면 사장님·관리자 방문
 const DC_ASN = new Set([15169, 396982, 19527, 36040, 16509, 14618, 8075, 8068, 14061, 16276, 24940, 63949, 45102, 37963, 132203, 31898, 20473, 9009, 51167, 60781, 16265, 32934, 54113, 202425, 212238, 46606, 40021, 35916, 62567, 136907, 55990, 45090]);
 function skipReason(request) {
-  if (/(?:^|;s*)upi_internal=1/.test(request.headers.get('cookie') ?? '')) return '내부(관리자 브라우저)';
+  if (/(?:^|;\s*)upi_internal=1(?:;|$)/.test(request.headers.get('cookie') ?? '')) return '내부(관리자 브라우저)';
   const asn = request.cf?.asn;
   if (asn && DC_ASN.has(asn)) return `데이터센터 AS${asn} ${String(request.cf?.asOrganization ?? '').slice(0, 30)}`.trim();
   return '';
