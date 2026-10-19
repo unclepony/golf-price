@@ -1812,6 +1812,34 @@
     "/vs/xxio14-women-hybrid-vs-xxio13-women-hybrid": {
       "h": "8ce17e0ae16f6dca",
       "d": "2026-10-19"
+    },
+    "/jp": {
+      "h": "0b36b588f0a13e99",
+      "d": "2026-10-19"
+    },
+    "/jp/xxio14-driver": {
+      "h": "38e3b3b76aecbbb3",
+      "d": "2026-10-19"
+    },
+    "/jp/srixon-zxi-rkt-driver": {
+      "h": "f1e9fbad18b45d3c",
+      "d": "2026-10-19"
+    },
+    "/jp/mizuno-jpx-one-driver": {
+      "h": "bc5b31fd8f2df2b7",
+      "d": "2026-10-19"
+    },
+    "/jp/prgr-super-egg-2026-driver": {
+      "h": "c16b86cb83e1bbbc",
+      "d": "2026-10-19"
+    },
+    "/jp/honma-beres-2026-3s-driver": {
+      "h": "89420d1acd30b46c",
+      "d": "2026-10-19"
+    },
+    "/jp/customs": {
+      "h": "c0b09f9799118a27",
+      "d": "2026-10-19"
     }
   },
   "pending": [
@@ -1917,6 +1945,41 @@
     },
     {
       "url": "/qa",
+      "kind": "new",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/jp",
+      "kind": "new",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/jp/xxio14-driver",
+      "kind": "new",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/jp/srixon-zxi-rkt-driver",
+      "kind": "new",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/jp/mizuno-jpx-one-driver",
+      "kind": "new",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/jp/prgr-super-egg-2026-driver",
+      "kind": "new",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/jp/honma-beres-2026-3s-driver",
+      "kind": "new",
+      "d": "2026-10-19"
+    },
+    {
+      "url": "/jp/customs",
       "kind": "new",
       "d": "2026-10-19"
     }
