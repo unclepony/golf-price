@@ -64,6 +64,18 @@ function device(ua) {
   return 'PC';
 }
 
+// 사람이 아닌 방문·우리 방문은 통계에서 빼고 'skip'(이유별)으로만 센다.
+// 2026-10-19: 유튜브·구글 링크 검사기가 영상·프로필 링크마다 2번씩 들어와 유입을 부풀린 것을 확인(비공개 영상 링크도 2번).
+// - 데이터센터(클라우드) 망에서 온 방문: 링크 검사기·크롤러·서버 — 사람은 집·회사·휴대폰 망에서 온다
+// - 내부 방문: /admin 에 로그인한 브라우저에 붙는 쿠키(upi_internal=1)가 있으면 사장님·관리자 방문
+const DC_ASN = new Set([15169, 396982, 19527, 36040, 16509, 14618, 8075, 8068, 14061, 16276, 24940, 63949, 45102, 37963, 132203, 31898, 20473, 9009, 51167, 60781, 16265, 32934, 54113, 202425, 212238, 46606, 40021, 35916, 62567, 136907, 55990, 45090]);
+function skipReason(request) {
+  if (/(?:^|;s*)upi_internal=1/.test(request.headers.get('cookie') ?? '')) return '내부(관리자 브라우저)';
+  const asn = request.cf?.asn;
+  if (asn && DC_ASN.has(asn)) return `데이터센터 AS${asn} ${String(request.cf?.asOrganization ?? '').slice(0, 30)}`.trim();
+  return '';
+}
+
 export async function onRequestPost({ request, env, waitUntil }) {
   const done = new Response(null, { status: 204, headers: { 'Cache-Control': 'no-store' } });
   if (!env.CLICKS) return done;
@@ -72,6 +84,12 @@ export async function onRequestPost({ request, env, waitUntil }) {
   const ua = h.get('user-agent') ?? '';
   const origin = h.get('origin');
   if ((origin && new URL(origin).host !== url.host) || BOT.test(ua)) return done;
+  const skip = skipReason(request);
+  if (skip) {
+    const sb = await request.json().catch(() => null);
+    if (sb?.t === 'pv' && sb.v) waitUntil(env.CLICKS.prepare('INSERT INTO stats (day, kind, k, n) VALUES (?1, ?2, ?3, 1) ON CONFLICT(day, kind, k) DO UPDATE SET n = n + 1').bind(day(), 'skip', skip).run().catch(() => {}));
+    return done;
+  }
   const raw = await request.text();
   if (raw.length > 3000) return done;
   let b;

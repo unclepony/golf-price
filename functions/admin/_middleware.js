@@ -25,6 +25,8 @@ export async function onRequest({ request, env, next }) {
   const res = await next();
   const out = new Response(res.body, res);
   out.headers.set('Cache-Control', 'no-store');
+  // 관리자로 로그인한 브라우저 표시 — 사이트 통계(/api/hit)가 이 브라우저의 방문을 '내부'로 빼고 센다(값은 1 뿐, 개인 정보 없음)
+  out.headers.append('Set-Cookie', 'upi_internal=1; Path=/; Max-Age=31536000; Secure; SameSite=Lax');
   out.headers.set('X-Robots-Tag', 'noindex, nofollow');
   out.headers.set('X-Frame-Options', 'DENY');
   out.headers.set('Referrer-Policy', 'no-referrer');
