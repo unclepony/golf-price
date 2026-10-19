@@ -889,3 +889,15 @@ table.jp-t th[scope="row"] { width: 90px; }
 .jp-stay h2 { margin-top: 4px; }
 .jp-ad { margin: 0; font-size: 12px; color: var(--muted); }
 .jp-cities { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* ── 제휴 구매 버튼 강조 (2026-10-19 사장님 요청: 쿠팡·아고다 버튼이 눈에 잘 들어오게, 촌스럽지 않게) ──
+   rel="sponsored" 가 붙은 버튼(쿠팡·아고다 등 제휴 링크)만 사이트 기본색과 대비되는 색으로. 문구는 그대로(클릭 유도 문구 금지). */
+a.btn[rel~="sponsored"] { background: linear-gradient(180deg, #ff8a3d, #ea5a12); color: #fff; border: 0; font-weight: 800; white-space: nowrap;
+  box-shadow: 0 1px 0 rgba(255,255,255,.25) inset, 0 2px 0 #b9440a, 0 8px 18px -8px rgba(234,90,18,.55); transition: transform .12s ease, box-shadow .12s ease, filter .12s ease; }
+a.btn[rel~="sponsored"]::after { content: ""; display: inline-block; width: .72em; height: .72em; margin-left: .38em; vertical-align: -.04em; background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M5 3h8v8h-2V6.4l-6.3 6.3-1.4-1.4L9.6 5H5z'/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M5 3h8v8h-2V6.4l-6.3 6.3-1.4-1.4L9.6 5H5z'/%3E%3C/svg%3E") center / contain no-repeat; opacity: .9; }
+a.btn[rel~="sponsored"]:hover { transform: translateY(-1px); filter: brightness(1.05); box-shadow: 0 1px 0 rgba(255,255,255,.25) inset, 0 3px 0 #b9440a, 0 12px 22px -8px rgba(234,90,18,.55); }
+a.btn[rel~="sponsored"]:active { transform: translateY(1px); box-shadow: 0 1px 0 #b9440a; }
+a.btn[rel~="sponsored"]:focus-visible { outline: 3px solid rgba(234,90,18,.55); outline-offset: 2px; }
+a.btn.xs[rel~="sponsored"], a.btn.sm[rel~="sponsored"] { max-width: none; }
+@media (prefers-reduced-motion: reduce) { a.btn[rel~="sponsored"] { transition: none; } a.btn[rel~="sponsored"]:hover { transform: none; } }
