@@ -128,6 +128,12 @@ export async function onRequestPost({ request, env, waitUntil }) {
   } else if (b.t === 'seen') {
     // 쿠팡 버튼이 화면에 처음 보인 페이지뷰(페이지당 1회) — 키: 페이지, 그리고 처음 보인 버튼 위치
     rows.push(['seen', path], ['seenpos', String(b.w ?? '기타').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20) || '기타']);
+  } else if (b.t === 'eng') {
+    // 페이지를 떠날 때 한 번: 내려간 깊이·머문 시간 구간(정해진 이름만) — 키: 페이지|구간
+    const D = ['첫 화면', '25%', '50%', '75%', '끝까지'], S = ['10초 미만', '10~30초', '30초~1분', '1~3분', '3분 이상'];
+    if (D.includes(b.d)) rows.push(['depth', `${path}|${b.d}`]);
+    if (S.includes(b.s)) rows.push(['stay', `${path}|${b.s}`]);
+    if (!rows.length) return done;
   } else return done;
 
   const sql = 'INSERT INTO stats (day, kind, k, n) VALUES (?1, ?2, ?3, 1) ON CONFLICT(day, kind, k) DO UPDATE SET n = n + 1';

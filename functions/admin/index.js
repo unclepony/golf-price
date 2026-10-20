@@ -75,6 +75,7 @@ label.me{display:flex;gap:6px;align-items:center;color:var(--sub);font-size:13px
 </div>
 <div class="card"><h2>유입 경로별 첫 페이지</h2><div class="tw" id="refland"></div></div>
 <div class="card"><h2>사이트 안 이동 — 어느 페이지에서 어디로 갔나</h2><div class="tw" id="nav"></div><p class="note">첫 페이지만 보고 나가는지, 쿠팡 버튼이 있는 비교 페이지로 넘어가는지 봅니다.</p></div>
+<div class="card"><h2>페이지를 떠날 때 — 얼마나 내려 보고, 얼마나 머물렀나</h2><div class="tw" id="eng"></div><p class="note">'첫 화면'은 아래로 거의 안 내린 것, '끝까지'는 95% 이상 내린 것. 탭을 숨기거나 닫을 때 한 번 셉니다.</p></div>
 <div class="grid2 rowgap">
   <div class="card"><h2>기기</h2><div id="dev"></div></div>
   <div class="card"><h2>국가</h2><div id="cty"></div></div>
@@ -202,6 +203,13 @@ label.me{display:flex;gap:6px;align-items:center;color:var(--sub);font-size:13px
       var i = x.k.indexOf('|'), a = x.k.slice(0, i), b = x.k.slice(i + 1);
       return ['<a href="' + esc(a) + '" target="_blank" rel="noopener">' + esc(j.pages[a] || a) + '</a>', '<a href="' + esc(b) + '" target="_blank" rel="noopener">' + esc(j.pages[b] || b) + '</a>', num(x.n)];
     }), '아직 사이트 안 이동이 없습니다');
+    var eng = {}, DS = ['첫 화면', '25%', '50%', '75%', '끝까지'];
+    var E = function (p) { return eng[p] = eng[p] || { p: p, n: 0, d: {}, quick: 0 }; };
+    (by.depth || []).forEach(function (r) { var i = r.k.lastIndexOf('|'), e = E(r.k.slice(0, i)); e.n += r.n; e.d[r.k.slice(i + 1)] = r.n; });
+    (by.stay || []).forEach(function (r) { var i = r.k.lastIndexOf('|'); if (r.k.slice(i + 1) === '10초 미만') E(r.k.slice(0, i)).quick += r.n; });
+    $('#eng').innerHTML = table(['페이지', '떠난 페이지뷰'].concat(DS, ['10초 안에 떠남']), Object.keys(eng).map(function (k) { return eng[k]; }).sort(function (a, b) { return b.n - a.n; }).slice(0, 40).map(function (x) {
+      return ['<a href="' + esc(x.p) + '" target="_blank" rel="noopener">' + esc(j.pages[x.p] || x.p) + '</a>', num(x.n)].concat(DS.map(function (d) { return pct(x.d[d] || 0, x.n); }), [pct(x.quick, x.n)]);
+    }), '아직 자료가 없습니다');
     $('#dev').innerHTML = shares(by.dev || []);
     $('#cty').innerHTML = shares(by.cty || []);
   }

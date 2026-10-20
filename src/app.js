@@ -64,6 +64,20 @@
     }, { threshold: 0.5 });
     outs.forEach((a) => io.observe(a));
   }
+  // 페이지를 떠날 때(탭 숨김·닫기) 한 번만: 얼마나 아래까지 내렸나·얼마나 머물렀나(구간만) → 첫 페이지만 보고 나가는 방문이 '바로 나감'인지 '다 읽고 나감'인지 나눠 본다
+  const t0 = Date.now();
+  let depth = 0, sentEng = false;
+  const measure = () => { const h = document.documentElement.scrollHeight; depth = Math.max(depth, h ? (scrollY + innerHeight) / h : 1); };
+  measure();
+  addEventListener('scroll', measure, { passive: true });
+  const sendEng = () => {
+    if (sentEng) return;
+    sentEng = true;
+    const sec = (Date.now() - t0) / 1000;
+    beacon({ t: 'eng', d: depth >= 0.95 ? '끝까지' : depth >= 0.75 ? '75%' : depth >= 0.5 ? '50%' : depth >= 0.25 ? '25%' : '첫 화면', s: sec < 10 ? '10초 미만' : sec < 30 ? '10~30초' : sec < 60 ? '30초~1분' : sec < 180 ? '1~3분' : '3분 이상' });
+  };
+  addEventListener('pagehide', sendEng);
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') sendEng(); });
 
   // ---------- 검색 데이터 ----------
   let dataP;
