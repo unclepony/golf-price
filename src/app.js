@@ -274,6 +274,7 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
             .join('')}</div>${more ? `<a class="more-link" href="${more}">이 조건의 전체 비교 보기 ›</a>` : ''}`
         : `<p class="note">조건에 맞는 상품이 아직 없습니다. 예산이나 실력 조건을 넓혀 보세요.${more ? ` <a href="${more}">전체 비교 보기 ›</a>` : ''}</p>`;
     };
+    ff.s.value = '초심자'; ff.g.value = '남성'; // 유튜브·Q&A 영상이 초보 남성 기준 — 처음 보이는 6개를 초심자·남성으로(전체는 선택지에 그대로)
     ff.addEventListener('change', render);
     render();
   }
