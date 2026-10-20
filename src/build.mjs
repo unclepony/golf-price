@@ -1354,7 +1354,10 @@ function guideTitle(g, skill) {
   const who = g.gender && g.gender !== '공용' ? `${g.gender} ` : '';
   const ids = skill ? skillGroups(g).find((x) => x.skill === skill)?.ids ?? [] : rankedPicks(g).map((pk) => pk.id);
   const bm = baseMin(ids);
-  return `${who}${skill ? `${SKILL_WORD[skill]} ` : ''}${c?.name ?? ''} 추천 ${ids.length}종 비교 (${CUR_YEAR})${bm ? ` | ${manwonBand(bm)}부터` : ''}`;
+  const band = bm ? ` | ${manwonBand(bm)}부터` : '';
+  // 실력 단계로 나눈 대표 페이지: 검색어('○○ 추천 2026', '○○ 순위', '초보 ○○')에 맞춘다. 단계별 1위가 있어 '순위'는 실제 내용과 같다
+  if (!skill && skillGroups(g).length) return `${who}${c?.name ?? ''} 추천 ${CUR_YEAR} 순위: 초보~프로 ${ids.length}종 비교${band}`;
+  return `${who}${skill ? `${SKILL_WORD[skill]} ` : ''}${c?.name ?? ''} 추천 ${ids.length}종 비교 (${CUR_YEAR})${band}`;
 }
 // 메타 설명: 가격 범위 + 핵심 추천 대상
 function guideDesc(g, skill) {
