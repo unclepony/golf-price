@@ -1,0 +1,7 @@
+{
+  "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → 쿠팡 API 로 마지막 시도한 날(찾음/못 찾음 모두). 순번용.",
+  "bushnell-pro-x3": "2026-10-21",
+  "callaway-elyte-driver": "2026-10-21",
+  "footjoy-pro-sl": "2026-10-21",
+  "odyssey-ai-one-putter": "2026-10-21"
+}

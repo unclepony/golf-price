@@ -12,6 +12,7 @@
 | 표시 | 확인 날짜와 함께 표시, 14일 지나면 숨기고 '쿠팡에서 현재 가격 보기'만 | 같음 + 가격 추이·역대 최저가 |
 
 - 가격 공급자 인터페이스: `src/prices/providers/*.mjs` — `csv`(지금), `coupang-api`(빈 껍데기·TODO, 승인 후 공식 문서를 보고 작성)
+- 쿠팡 파트너스 공식 API 갱신(2026-10-21~): `node --env-file=<.env> src/prices/coupang-refresh.mjs [--max 17] [--gap 65]` — 링크가 있는 상품을 마지막 확인·시도일이 오래된 순으로 하루 17개(14일 안에 한 바퀴) 검색 API로 찾아, 상품명 단어가 연결 상품명과 완전히 같고 로켓 여부·가격 범위(0.5~2배)가 맞을 때만 `config/picks.json` 의 판매가·확인일을 갱신(사진은 비어 있을 때만 채움). 애매하면 기존 값 유지, 시도일은 `config/coupang-refresh.json`. 키: 환경 변수 `COUPANG_PT_API_KEY`·`COUPANG_PT_API_SECRET_KEY`(GitHub Secrets). `daily.yml` 빌드 전 단계(continue-on-error).
 - 쿠팡 페이지 크롤링·스크래핑, `link.coupang.com` 자동 요청은 하지 않습니다(파트너스 약관). 링크 점검도 자동으로 하지 않습니다.
 
 ### 가격 넣는 법 (주 1회 권장)

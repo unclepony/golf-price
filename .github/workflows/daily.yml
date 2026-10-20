@@ -1,7 +1,7 @@
 # 매일 한국 시간 23시: 데이터 점검 → 점검 이슈 갱신 → 기준가 재계산 → 빌드(콘텐츠 날짜·사이트맵·URL 보호) → 배포 → IndexNow
 # - AI 를 쓰지 않는다. 쿠팡 페이지·링크(link.coupang.com)에 요청을 보내지 않는다.
 # - 점검 결과는 'daily-check' 라벨의 이슈 하나에 매일 덮어쓴다(새 이슈를 만들지 않음). 점검 문제는 배포를 막지 않는다.
-# - 가격은 prices.csv → node src/prices/import.mjs 로 직접 넣는다. 쿠팡 파트너스 API 승인 후 src/prices/providers/coupang-api.mjs 를 구현하면 '가격 자동 수집' 단계가 동작한다.
+# - 쿠팡 링크가 있는 상품의 판매가·확인일은 쿠팡 파트너스 공식 API(src/prices/coupang-refresh.mjs)로 매일 17개씩 순번대로 갱신한다(config/picks.json, 같은 상품으로 확신할 때만). 그 밖의 가격은 prices.csv → node src/prices/import.mjs.
 # - 매일 빈 커밋을 올려 사이트를 다시 만든다(확인한 지 14일 지난 가격 숨기기 반영). 가격만 바뀐 페이지는 '마지막 업데이트'·lastmod·IndexNow 대상이 아니다.
 name: daily-check
 
@@ -30,11 +30,13 @@ jobs:
         with:
           node-version: 22
 
-      - name: 가격 자동 수집 (API 승인 전에는 아무것도 하지 않음)
+      - name: 쿠팡 파트너스 API로 판매가·확인일 갱신 (하루 17개 순번, 호출 간격 65초, 실패해도 배포 계속)
+        continue-on-error: true
+        timeout-minutes: 40
         env:
-          COUPANG_ACCESS_KEY: ${{ secrets.COUPANG_ACCESS_KEY }}
-          COUPANG_SECRET_KEY: ${{ secrets.COUPANG_SECRET_KEY }}
-        run: node src/prices/collect.mjs
+          COUPANG_PT_API_KEY: ${{ secrets.COUPANG_PT_API_KEY }}
+          COUPANG_PT_API_SECRET_KEY: ${{ secrets.COUPANG_PT_API_SECRET_KEY }}
+        run: node src/prices/coupang-refresh.mjs --max 17 --gap 65
 
       - name: 데이터 점검 → 이슈 하나에 갱신
         continue-on-error: true
