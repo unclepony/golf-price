@@ -1355,7 +1355,9 @@ function guideDesc(g, skill) {
   const top = ps[0];
   const head = `${who}${skill ? `${SKILL_WORD[skill]} ` : ''}${c?.name ?? ''} ${ps.length}종 비교`;
   const price = pr ? ` 쿠팡 판매가 ${won(pr.min)}~${won(pr.max)}(${dayLabel(pr.d)} 확인).` : '';
-  const target = skill && top ? ` ${top.forWhom}께 맞춘 추천으로, 1위는 ${byId[top.id].p.name}.` : ` ${g.desc}`;
+  // 실력 구분 없는 대표 페이지: 검색어('초보 ○○ 추천')에 맞게 초보 1위를 앞에 둔다(없으면 기존 설명)
+  const beg = !skill ? ps.find((pk) => pk.skill === '초심자') : null;
+  const target = skill && top ? ` ${top.forWhom}께 맞춘 추천으로, 1위는 ${byId[top.id].p.name}.` : beg ? ` 처음 사는 초보라면 1순위는 ${byId[beg.id].p.name}, 중급·고급·프로 추천도 함께.` : ` ${g.desc}`;
   return `${head}:${price}${target}`.slice(0, 160);
 }
 for (const g of pageGuides) {
