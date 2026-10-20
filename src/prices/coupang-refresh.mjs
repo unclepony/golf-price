@@ -1,7 +1,10 @@
 // 쿠팡 링크가 있는 상품의 썸네일·판매가·확인일을 쿠팡 파트너스 공식 Open API(검색)로 갱신한다 → config/picks.json (image·price·rocket·checked)
 // - 사진은 비어 있을 때만 API 이미지로 채운다(기존 쿠팡 썸네일 유지). 사이트가 이미 쓰는 자리(picks.json)만 바꾼다. 디자인·가격 표시 방식(확인일 표시, 14일 지나면 숨김)은 그대로.
 // - config/links.json 에 링크가 있는 상품만. 쿠팡 쇼핑몰 페이지·link.coupang.com 에는 요청하지 않는다(공식 API 만).
-// - 같은 상품 판단(엄격): 검색 결과 상품명의 단어 묶음이 picks.json 의 연결 상품명(title)과 '완전히 같을' 때만,
+// - 같은 상품 판단: picks.json 에 productId(쿠팡 상품 번호)가 있으면 검색 결과의 productId 가 같을 때만 쓴다.
+//   productId 는 파트너스 사이트에서 링크를 만들 때 사람이 적거나, 아래 엄격 규칙으로 한 번 찾았을 때 저장된다.
+//   link.coupang.com 리다이렉트로 알아내지 않는다(자동 요청 금지 — 우리 링크 클릭으로 잡힘).
+// - productId 가 없을 때(엄격): 검색 결과 상품명의 단어 묶음이 picks.json 의 연결 상품명(title)과 '완전히 같을' 때만,
 //   로켓배송 여부도 같고, 가격이 기존의 0.5~2배 안일 때만 쓴다. 애매하면 건너뛰고 기존 값을 둔다(추측 안 함).
 // - 순번: 마지막으로 시도한 날(config/coupang-refresh.json) 또는 확인일 중 늦은 날이 오래된 상품부터 하루 --max 개(기본 17)
 //   → 226개 미만이면 14일 안에 모두 한 번씩 시도. 못 찾은 상품도 시도일을 남겨 다음 상품으로 넘어간다.
@@ -51,9 +54,13 @@ for (const [i, id] of targets.entries()) {
   try { rows = await search(pk.title.replace(/\s+/g, ' ').trim().slice(0, 50), 10); } catch (e) { console.log(`오류로 멈춤 (${id}): ${e.message}`); break; }
   tried[id] = today;
   const want = words(pk.title);
-  const hit = rows.find((r) => words(r.name) === want && r.price > 0 && (pk.rocket === undefined || !!pk.rocket === r.rocket) && (!pk.price || (r.price >= pk.price * 0.5 && r.price <= pk.price * 2)));
+  const sane = (r) => r.price > 0 && (!pk.price || (r.price >= pk.price * 0.5 && r.price <= pk.price * 2));
+  // productId 가 있으면 그것으로만(정확히 같은 상품), 없으면 상품명 단어 완전 일치 + 로켓 여부
+  const hit = pk.productId
+    ? rows.find((r) => r.id === String(pk.productId) && sane(r))
+    : rows.find((r) => words(r.name) === want && sane(r) && (pk.rocket === undefined || !!pk.rocket === r.rocket));
   if (!hit) { miss++; console.log(`건너뜀: ${id} (검색 ${rows.length}건 중 같은 상품으로 확신할 결과 없음 — 기존 값 유지)`); save(); continue; }
-  picks[id] = { ...pk, price: hit.price, image: pk.image || hit.image, rocket: hit.rocket, checked: today };
+  picks[id] = { ...pk, productId: String(hit.id), price: hit.price, image: pk.image || hit.image, rocket: hit.rocket, checked: today };
   ok++;
   console.log(`갱신: ${id} ${hit.price.toLocaleString()}원`);
   save();
