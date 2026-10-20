@@ -986,7 +986,7 @@
       "d": "2026-10-21"
     },
     "/g/wedge-recommend": {
-      "h": "f3242ab1d0bd58b0",
+      "h": "205fb82402f34cf3",
       "d": "2026-10-21"
     },
     "/g/golf-ball-compare": {
@@ -1209,17 +1209,21 @@
       "h": "062d2326b8040ec7",
       "d": "2026-10-16"
     },
+    "/qa/wedge-recommend-loft": {
+      "h": "3d0e63da1f74ad04",
+      "d": "2026-10-21"
+    },
     "/qa/beginner-driver-recommend": {
-      "h": "4f9ac4628f02970d",
-      "d": "2026-10-20"
+      "h": "230708ca82e9e348",
+      "d": "2026-10-21"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "a70aec786ee0b6e1",
-      "d": "2026-10-20"
+      "h": "35b03db5bc4b34b8",
+      "d": "2026-10-21"
     },
     "/qa": {
-      "h": "0bff4f09ae5cf70c",
-      "d": "2026-10-20"
+      "h": "f6d0a06248078e04",
+      "d": "2026-10-21"
     },
     "/vs/adidas-adipower-sl-women-shoes-vs-footjoy-pulse-boa-women-shoes": {
       "h": "0dfc0548de87175d",
@@ -1882,11 +1886,6 @@
       "d": "2026-10-21"
     },
     {
-      "url": "/g/wedge-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
       "url": "/g/golf-ball-compare",
       "kind": "updated",
       "d": "2026-10-21"
@@ -1953,6 +1952,31 @@
     },
     {
       "url": "/",
+      "kind": "updated",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/g/wedge-recommend",
+      "kind": "updated",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/qa/wedge-recommend-loft",
+      "kind": "new",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/qa/beginner-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/qa",
       "kind": "updated",
       "d": "2026-10-21"
     }

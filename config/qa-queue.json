@@ -15,6 +15,13 @@
       "slug": "beginner-driver-recommend",
       "file": "content/qa/002-beginner-driver-recommend.md",
       "date": "2026-10-20"
+    },
+    {
+      "no": 3,
+      "kw": "웨지 추천 각도",
+      "slug": "wedge-recommend-loft",
+      "file": "content/qa/003-wedge-recommend-loft.md",
+      "date": "2026-10-21"
     }
   ]
 }
