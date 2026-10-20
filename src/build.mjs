@@ -246,6 +246,8 @@ function ogImageFor(path) {
   const skill = g && Object.entries(SKILL_EN).find(([, en]) => path === `/g/${g.slug}-${en}`)?.[0];
   const top = g ? (skill ? rankedPicks(g).find((pk) => pk.skill === skill) : rankedPicks(g)[0]) : null;
   if (top) return bigImage(imageOf(top.id, byId[top.id]?.hist));
+  const gift = GIFT_PAGES.find((x) => path === `/g/${x.slug}`)?.items[0];
+  if (gift) return bigImage(imageOf(gift.id, byId[gift.id]?.hist));
   if (path === '/qa' || path.startsWith('/qa/')) return ''; // 초보 Q&A: 특정 상품 사진을 쓰지 않는다
   const c = cats.find((x) => path === `/c/${x.id}`);
   const first = c ? pageGuides.find((x) => guideCat(x)?.id === c.id) : pageGuides[0];
@@ -512,6 +514,14 @@ const shortTitle = (t) => t.split(':')[0].trim();
 const sellable = (id) => !!(links[id] ?? byId[id]?.hist?.latest?.link);
 // 다른 가이드에 합쳐진 가이드(mergeInto)는 따로 페이지를 만들지 않는다
 const pageGuides = guides.filter((g) => !g.mergeInto);
+// 시즌 선물 가이드 (config/gifts.json): 이미 가이드에 있고 쿠팡 링크가 있는 상품만, 예산 구간은 확인한 쿠팡 판매가로 빌드 때 나눈다
+const GIFT_PAGES = DEMO
+  ? []
+  : (readJson(join(ROOT, 'config', 'gifts.json'), { pages: [] }).pages ?? []).map((gp) => {
+      const items = gp.items.filter((it) => byId[it.id] && sellable(it.id) && guides.some((g) => g.slug === it.guide && g.picks.some((pk) => pk.id === it.id)));
+      const n = String(items.length);
+      return { ...gp, items, title: gp.title.replace('{n}', n), desc: gp.desc.replace('{n}', n) };
+    });
 // 초보 Q&A 글 (content/qa, src/qa.mjs): 검사를 통과한 글만 게시하고, 관련 가이드 페이지에서 연결한다
 const QA = loadQa(new Set(pageGuides.map((g) => g.slug)));
 if (QA.bad.length) console.warn(`경고: 게시하지 않은 초보 Q&A 글 ${QA.bad.length}편\n${QA.bad.map((x) => `  ${x}`).join('\n')}`);
@@ -1443,6 +1453,51 @@ ${skillGroups(g).length ? stickyBuy(rankedPicks(g).find((pk) => pk.skill === SKI
   );
 }
 
+// 시즌 선물 가이드 페이지 (/g/{slug}): 예산 구간별로 상품을 묶고, 각 상품은 원래 비교 가이드로 연결한다
+for (const gp of GIFT_PAGES) {
+  const priceOf = (id) => shownPrice(id)?.won ?? pickPrice(id);
+  const bandOf = (id) => gp.bands.findIndex((b) => b.max == null || (priceOf(id) ?? Infinity) < b.max);
+  const guideOfItem = (it) => pageGuides.find((g) => g.slug === it.guide) ?? pageGuides.find((g) => guides.find((x) => x.slug === it.guide)?.mergeInto === g.slug);
+  const pkOf = (it) => guides.find((g) => g.slug === it.guide)?.picks.find((pk) => pk.id === it.id);
+  const groups = gp.bands
+    .map((b, i) => ({ b, i, items: gp.items.filter((it) => bandOf(it.id) === i).sort((x, y) => (priceOf(x.id) ?? 0) - (priceOf(y.id) ?? 0)) }))
+    .filter((x) => x.items.length);
+  const itemHtml = (it) => {
+    const { p, hist } = byId[it.id];
+    const pk = pkOf(it);
+    const g = guideOfItem(it);
+    const image = imageOf(p.id, hist);
+    return `<section class="pick"><h3>${esc(p.name)} <small>${esc(catName[p.category] ?? '')}</small></h3>
+<p class="tierline">${skillBadge(p.id)}${levelBadge(p.id)}</p>
+<div class="pick-body">${image ? `<img class="pick-img" src="${esc(image)}" alt="${esc(p.name)}" loading="lazy" decoding="async" width="212" height="212">` : ''}<div>
+<p>${esc(p.summary)}</p>${pk?.forWhom ? `<p><b>이런 분께:</b> ${esc(pk.forWhom)}</p>` : ''}${it.note ? `<p><b>선물 포인트:</b> ${esc(it.note)}</p>` : ''}
+${priceLine(p.id)}${buyButton(p.id, hist)}
+${g ? `<a class="more-link" href="/g/${g.slug}">${esc(guideName(g))}에서 비교해 보기 ›</a>` : ''} <a class="more-link" href="/p/${p.id}">상품 자세히 보기 ›</a></div></div></section>`;
+  };
+  const related = [...new Set(gp.items.map((it) => guideOfItem(it)).filter(Boolean))];
+  const path = `/g/${gp.slug}`;
+  writeText(
+    join(OUT, 'g', `${gp.slug}.html`),
+    layout({
+      title: gp.title,
+      raw: true,
+      desc: gp.desc,
+      path,
+      ld: [crumbLd([['홈', '/'], [gp.h1, path]]), listLd(gp.h1, groups.flatMap((x) => x.items.map((it) => it.id))), ...(gp.faq?.length ? [faqLd(gp.faq)] : [])],
+      body: `<nav class="crumb"><a href="/">홈</a> › ${esc(gp.h1)}</nav>
+<h1>${esc(gp.title)}</h1>
+${updatedTag(gp.updated)}
+<section class="prose">${gp.intro.map((t) => `<p>${esc(t)}</p>`).join('')}</section>
+<nav class="toc">${groups.map((x) => `<a href="#budget-${x.i + 1}">${esc(x.b.h.split(':')[0])}</a>`).join('')}<a href="#tips">고르는 법</a><a href="#faq">자주 묻는 질문</a></nav>
+<p class="note">예산 구간은 확인한 날짜의 쿠팡 판매가로 나눴습니다. 가격은 옵션과 시점에 따라 달라질 수 있으니 구매 전 판매 페이지에서 확인하세요. 실력 단계와 가격대 표시는 각 상품을 비교한 가이드 기준입니다.</p>
+${groups.map((x) => `<section id="budget-${x.i + 1}"><h2>${esc(x.b.h)}</h2><p>${esc(x.b.p)}</p>${x.items.map(itemHtml).join('')}</section>`).join('\n')}
+<section id="tips" class="prose"><h2>골프 선물 고르는 법</h2>${gp.tips.map((t) => `<h3>${esc(t.h)}</h3><p>${esc(t.p)}</p>`).join('')}</section>
+<section id="faq" class="prose"><h2>자주 묻는 질문</h2>${gp.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>
+<section><h2>관련 비교 가이드</h2>${guideGrid(related)}</section>`,
+    }),
+  );
+}
+
 // 실력 단계 바로가기 칩
 function skillNav(g, active) {
   const gs = skillGroups(g);
@@ -1585,7 +1640,7 @@ writeText(
 </section>
 
 <section class="block" id="guides"><div class="block-h"><h2>대표 비교 가이드</h2><span>실력 단계별 5종씩 비교</span></div>${guideGrid(featured)}
-<details class="allguides"><summary>모든 비교 가이드 보기 (${pageGuides.length}개)</summary><ul>${pageGuides.map((g) => `<li><a href="/g/${g.slug}">${esc(guideName(g))}</a> <small>${rankedPicks(g).length}종</small></li>`).join('')}</ul></details></section>
+<details class="allguides"><summary>모든 비교 가이드 보기 (${pageGuides.length}개)</summary><ul>${pageGuides.map((g) => `<li><a href="/g/${g.slug}">${esc(guideName(g))}</a> <small>${rankedPicks(g).length}종</small></li>`).join('')}</ul></details>${GIFT_PAGES.map((gp) => `<a class="more-link" href="/g/${gp.slug}">${esc(gp.h1)}: 예산별 골퍼 선물 추천 ›</a>`).join(' ')}</section>
 
 ${drops.length ? `<section class="block drops"><div class="block-h"><h2>최근 가격 하락</h2><span>7일 전 기록보다 내린 상품</span></div>${prow(drops)}</section>` : ''}
 
@@ -1727,6 +1782,7 @@ const urls = [
   '/about',
   ...QA_URLS,
   ...pageGuides.map((g) => `/g/${g.slug}`),
+  ...GIFT_PAGES.map((gp) => `/g/${gp.slug}`),
   ...pageGuides.flatMap((g) => skillGroups(g).map((x) => skillPath(g, x.skill))),
   ...cats.map((c) => `/c/${c.id}`),
   ...entries.map((e) => `/p/${e.p.id}`),
@@ -1784,7 +1840,10 @@ if (!DEMO) {
 ## 비교 가이드
 ${pageGuides.map(line).join('\n')}
 
-## 실력별 비교
+${GIFT_PAGES.length ? `## 시즌 선물 가이드
+${GIFT_PAGES.map((gp) => `- [${gp.title}](${SITE_URL}/g/${gp.slug}): ${gp.desc}`).join('\n')}
+
+` : ''}## 실력별 비교
 ${skillLines.join('\n')}
 
 ${QA.list.length ? `## 초보 Q&A

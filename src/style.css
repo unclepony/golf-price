@@ -98,7 +98,7 @@ h2 small, .label small { color: var(--muted); font-weight: 400; font-size: 13px;
 .pcell img { width: 48px; height: 48px; object-fit: contain; background: #fff; border-radius: 6px; vertical-align: middle; margin-right: 8px; }
 .pcell a { font-weight: 600; text-decoration: none; }
 .pick { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 4px 20px 20px; margin-top: 16px; }
-.pick h2 small { margin-left: 6px; }
+.pick h2 small, .pick h3 small { margin-left: 6px; }
 .guides { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
 .guides a { display: block; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; text-decoration: none; }
 .guides a:hover { border-color: var(--accent); }
