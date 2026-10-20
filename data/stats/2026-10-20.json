@@ -2,22 +2,98 @@
   "date": "2026-10-20",
   "by": {
     "cty": {
+      "KR": 16,
       "US": 2
     },
     "dev": {
-      "PC": 2
+      "PC": 16,
+      "모바일": 2
+    },
+    "nav": {
+      "/c/driver|/p/callaway-elyte-driver": 1,
+      "/p/callaway-elyte-driver|/": 1,
+      "/p/taylormade-qi35-rescue|/": 1,
+      "/|/c/driver": 1
+    },
+    "out": {
+      "/g/wedge-recommend|callaway-jaws-forged-wedge": 1,
+      "/p/ping-s259-wedge|ping-s259-wedge": 1
+    },
+    "outref": {
+      "구글": 1,
+      "카카오톡": 1
+    },
+    "pos": {
+      "상품 페이지": 1,
+      "점수표": 1
     },
     "pv": {
-      "/": 2
+      "/": 6,
+      "/c/driver": 1,
+      "/c/wedge": 1,
+      "/g/driver-recommend-2026": 3,
+      "/g/fairway-wood-recommend": 2,
+      "/g/iron-recommend": 4,
+      "/g/iron-recommend-beginner": 1,
+      "/g/wedge-recommend": 1,
+      "/g/womens-fairway-wood-recommend": 2,
+      "/p/callaway-elyte-driver": 1,
+      "/p/ping-s259-wedge": 1,
+      "/p/taylormade-qi35-rescue": 1
     },
     "ref": {
-      "직접·북마크": 2
+      "구글": 2,
+      "직접·북마크": 4,
+      "카카오톡": 1,
+      "캠페인: youtube": 11
     },
     "refland": {
-      "직접·북마크|/": 2
+      "구글|/g/iron-recommend-beginner": 1,
+      "구글|/g/wedge-recommend": 1,
+      "직접·북마크|/": 3,
+      "직접·북마크|/p/taylormade-qi35-rescue": 1,
+      "카카오톡|/": 1,
+      "캠페인: youtube|/g/driver-recommend-2026": 3,
+      "캠페인: youtube|/g/fairway-wood-recommend": 2,
+      "캠페인: youtube|/g/iron-recommend": 4,
+      "캠페인: youtube|/g/womens-fairway-wood-recommend": 2
+    },
+    "refurl": {
+      "youtube / comment / c-fairway-wood-recommend-beginner": 2,
+      "youtube / comment / c-iron-recommend-beginner": 2,
+      "youtube / comment / test2": 1,
+      "youtube / video / t-driver-recommend-2026-1": 2,
+      "youtube / video / t-iron-recommend-0": 2,
+      "youtube / video / t-womens-fairway-wood-recommend-0": 2
+    },
+    "seen": {
+      "/g/driver-recommend-2026": 2,
+      "/g/fairway-wood-recommend": 1,
+      "/g/iron-recommend": 2,
+      "/g/iron-recommend-beginner": 1,
+      "/g/wedge-recommend": 1,
+      "/g/womens-fairway-wood-recommend": 1,
+      "/p/callaway-elyte-driver": 1,
+      "/p/ping-s259-wedge": 1,
+      "/p/taylormade-qi35-rescue": 1
+    },
+    "seenpos": {
+      "단계 카드": 3,
+      "비교표": 7,
+      "하단 고정 버튼": 1
+    },
+    "skip": {
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 2
     },
     "visit": {
-      "/": 2
+      "/": 4,
+      "/g/driver-recommend-2026": 3,
+      "/g/fairway-wood-recommend": 2,
+      "/g/iron-recommend": 4,
+      "/g/iron-recommend-beginner": 1,
+      "/g/wedge-recommend": 1,
+      "/g/womens-fairway-wood-recommend": 2,
+      "/p/taylormade-qi35-rescue": 1
     }
   }
 }

@@ -962,8 +962,8 @@
       "d": "2026-10-16"
     },
     "/g/driver-recommend-2026": {
-      "h": "8019d88bd58cb34c",
-      "d": "2026-10-20"
+      "h": "caba355380504cb7",
+      "d": "2026-10-21"
     },
     "/g/fairway-wood-recommend": {
       "h": "658ecc77d24a0cde",
@@ -974,12 +974,12 @@
       "d": "2026-10-19"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "2a19eaa7f408164a",
-      "d": "2026-10-19"
+      "h": "c487cc1848036138",
+      "d": "2026-10-21"
     },
     "/g/iron-recommend": {
-      "h": "38f651b4fdcc8e89",
-      "d": "2026-10-19"
+      "h": "d12d878eb96f0123",
+      "d": "2026-10-21"
     },
     "/g/womens-utility-recommend": {
       "h": "cbce1d4e6fb8ce86",
@@ -1036,6 +1036,10 @@
     "/g/womens-shoes-recommend": {
       "h": "0ef22f81c1f070fd",
       "d": "2026-10-19"
+    },
+    "/g/golf-gift-guide-2026": {
+      "h": "910c293e4fa0f602",
+      "d": "2026-10-21"
     },
     "/g/driver-recommend-2026-beginner": {
       "h": "748194026f8faa8b",
@@ -1198,8 +1202,8 @@
       "d": "2026-10-19"
     },
     "/": {
-      "h": "e1899a8b85237086",
-      "d": "2026-10-16"
+      "h": "3a7311e6a29f4f4d",
+      "d": "2026-10-21"
     },
     "/about": {
       "h": "062d2326b8040ec7",
@@ -1822,24 +1826,24 @@
       "d": "2026-10-19"
     },
     "/jp/xxio14-driver": {
-      "h": "a33270d6c61ce7a4",
-      "d": "2026-10-20"
+      "h": "0b0a91f6a6e11f81",
+      "d": "2026-10-21"
     },
     "/jp/srixon-zxi-rkt-driver": {
-      "h": "e0914b942e6e1201",
-      "d": "2026-10-20"
+      "h": "29ad39cb9fc70cc7",
+      "d": "2026-10-21"
     },
     "/jp/mizuno-jpx-one-driver": {
-      "h": "5e545828f58c4e9d",
-      "d": "2026-10-20"
+      "h": "b4a4e999e1773b29",
+      "d": "2026-10-21"
     },
     "/jp/prgr-super-egg-2026-driver": {
-      "h": "ba93aab4475adc1c",
-      "d": "2026-10-20"
+      "h": "eab0036d6c6cc82a",
+      "d": "2026-10-21"
     },
     "/jp/honma-beres-2026-3s-driver": {
-      "h": "a85d2ed3ac870893",
-      "d": "2026-10-20"
+      "h": "04a7b9e6f14912c7",
+      "d": "2026-10-21"
     },
     "/jp/customs": {
       "h": "c0b09f9799118a27",
@@ -1847,11 +1851,6 @@
     }
   },
   "pending": [
-    {
-      "url": "/g/driver-recommend-2026",
-      "kind": "updated",
-      "d": "2026-10-20"
-    },
     {
       "url": "/qa/beginner-driver-recommend",
       "kind": "new",
@@ -1866,6 +1865,56 @@
       "url": "/qa",
       "kind": "updated",
       "d": "2026-10-20"
+    },
+    {
+      "url": "/g/driver-recommend-2026",
+      "kind": "updated",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/g/iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/g/golf-gift-guide-2026",
+      "kind": "new",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/jp/xxio14-driver",
+      "kind": "updated",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/jp/srixon-zxi-rkt-driver",
+      "kind": "updated",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/jp/mizuno-jpx-one-driver",
+      "kind": "updated",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/jp/prgr-super-egg-2026-driver",
+      "kind": "updated",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/jp/honma-beres-2026-3s-driver",
+      "kind": "updated",
+      "d": "2026-10-21"
     }
   ]
 }
