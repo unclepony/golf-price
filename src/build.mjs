@@ -1669,7 +1669,8 @@ const HERO = heroIds.map((id) => {
 writeText(
   join(OUT, 'index.html'),
   layout({
-    title: SITE_NAME,
+    title: `${SITE_NAME} | 골프용품 추천·비교·가격 ${CUR_YEAR}`,
+    raw: true,
     desc: `드라이버·우드·유틸리티·아이언·웨지·퍼터부터 골프공·거리측정기·골프화까지 ${cats.length}개 골프용품을 실력(초심자~프로)·성별·가격대별로 비교합니다. 장단점과 주관적 편집 점수, 쿠팡 판매가를 함께 정리했습니다.`,
     path: '/',
     body: `${homeHero(rctx(), HERO)}
