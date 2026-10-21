@@ -1,4 +1,81 @@
 {
   "date": "2026-10-21",
-  "by": {}
+  "by": {
+    "cty": {
+      "KR": 6,
+      "NL": 2,
+      "US": 1
+    },
+    "depth": {
+      "/c/bag|끝까지": 1,
+      "/g/putter-recommend-beginner|50%": 1,
+      "/p/ping-g440-driver|50%": 1,
+      "/|25%": 1,
+      "/|끝까지": 1
+    },
+    "dev": {
+      "PC": 7,
+      "모바일": 2
+    },
+    "kw": {
+      "다음·카카오|용품": 1
+    },
+    "nav": {
+      "/|/p/ping-g440-driver": 1
+    },
+    "pv": {
+      "/": 6,
+      "/c/bag": 1,
+      "/g/putter-recommend-beginner": 1,
+      "/g/utility-recommend": 2,
+      "/p/ping-g440-driver": 1
+    },
+    "ref": {
+      "구글": 2,
+      "다음·카카오": 1,
+      "빙": 1,
+      "직접·북마크": 3,
+      "캠페인: youtube": 2
+    },
+    "refland": {
+      "구글|/c/bag": 1,
+      "구글|/g/putter-recommend-beginner": 1,
+      "다음·카카오|/": 1,
+      "빙|/": 1,
+      "직접·북마크|/": 3,
+      "캠페인: youtube|/g/utility-recommend": 2
+    },
+    "refurl": {
+      "youtube / video / c-utility-recommend-beginner": 2
+    },
+    "seen": {
+      "/c/bag": 1,
+      "/g/putter-recommend-beginner": 1,
+      "/g/utility-recommend": 1,
+      "/p/ping-g440-driver": 1
+    },
+    "seenpos": {
+      "단계 카드": 1,
+      "비교표": 2,
+      "한 줄 결론": 1
+    },
+    "skip": {
+      "내부(관리자 브라우저)": 1,
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 2,
+      "데이터센터 AS396982 Google LLC": 1
+    },
+    "stay": {
+      "/c/bag|10~30초": 1,
+      "/g/putter-recommend-beginner|10~30초": 1,
+      "/p/ping-g440-driver|10초 미만": 1,
+      "/|10초 미만": 1,
+      "/|3분 이상": 1
+    },
+    "visit": {
+      "/": 5,
+      "/c/bag": 1,
+      "/g/putter-recommend-beginner": 1,
+      "/g/utility-recommend": 2
+    }
+  }
 }

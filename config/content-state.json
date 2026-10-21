@@ -10,7 +10,7 @@
       "d": "2026-10-22"
     },
     "/p/ping-g440-driver": {
-      "h": "09f38053190b6560",
+      "h": "4a75eeae05e22529",
       "d": "2026-10-22"
     },
     "/p/titleist-gt2-driver": {
@@ -302,19 +302,19 @@
       "d": "2026-10-22"
     },
     "/p/taylormade-sim2max-driver": {
-      "h": "49782074832761b7",
+      "h": "c6fc55b8ba86ee18",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi10max-driver": {
-      "h": "bd3f627633de9a13",
+      "h": "9ddcb8b6432939ba",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi35max-driver": {
-      "h": "825b178b58a0bc35",
+      "h": "724c8b52fdb467a1",
       "d": "2026-10-22"
     },
     "/p/majesty-prestigio13-driver": {
-      "h": "5296ea005ab35b18",
+      "h": "6327520a33b86a96",
       "d": "2026-10-22"
     },
     "/p/callaway-paradym-driver": {
@@ -906,7 +906,7 @@
       "d": "2026-10-22"
     },
     "/p/cobra-ds-adapt-maxk-driver": {
-      "h": "344a5ef40b10b64e",
+      "h": "e6ff931eee278702",
       "d": "2026-10-22"
     },
     "/p/callaway-quantum-max-driver": {
@@ -978,7 +978,7 @@
       "d": "2026-10-22"
     },
     "/p/mizuno-jpx925-hotmetal-iron": {
-      "h": "004523694221a28f",
+      "h": "82df07673b3eb6f1",
       "d": "2026-10-22"
     },
     "/p/xxio14-iron": {
@@ -998,7 +998,7 @@
       "d": "2026-10-22"
     },
     "/p/ping-i240-iron": {
-      "h": "a582be178b539ca6",
+      "h": "6d4dd3645f0363bb",
       "d": "2026-10-22"
     },
     "/p/titleist-t150-iron": {
@@ -1086,7 +1086,7 @@
       "d": "2026-10-22"
     },
     "/p/nikon-coolshot-pro2-stabilized": {
-      "h": "aacb49a8337ce52b",
+      "h": "b9a6c1853fb82550",
       "d": "2026-10-22"
     },
     "/p/bushnell-tour-v7-shift": {
@@ -1206,7 +1206,7 @@
       "d": "2026-10-22"
     },
     "/p/footjoy-weathersof-glove": {
-      "h": "49e5fcc4a9650b6c",
+      "h": "97bbef38ca704e7d",
       "d": "2026-10-22"
     },
     "/p/footjoy-cabrettasof-glove": {
@@ -1274,20 +1274,20 @@
       "d": "2026-10-22"
     },
     "/c/driver": {
-      "h": "b465925a281ec3c8",
-      "d": "2026-10-21"
+      "h": "26d8cb6c474ad119",
+      "d": "2026-10-22"
     },
     "/c/wood": {
-      "h": "b0ca359d2ec8de22",
-      "d": "2026-10-21"
+      "h": "7cf5cc7b42eaeece",
+      "d": "2026-10-22"
     },
     "/c/utility": {
       "h": "ccb2c1cd48f2e4dd",
       "d": "2026-10-21"
     },
     "/c/iron": {
-      "h": "89ee07a692bbe92a",
-      "d": "2026-10-21"
+      "h": "bae8a4a0c28655e5",
+      "d": "2026-10-22"
     },
     "/c/wedge": {
       "h": "24d1132bb5800eaf",
@@ -1298,39 +1298,39 @@
       "d": "2026-10-21"
     },
     "/c/ball": {
-      "h": "66e61cf91253d7ab",
-      "d": "2026-10-21"
+      "h": "5179aceb498dd79d",
+      "d": "2026-10-22"
     },
     "/c/rangefinder": {
-      "h": "cf82f2c0059fc7b2",
-      "d": "2026-10-21"
+      "h": "51edfaf8aa1a4892",
+      "d": "2026-10-22"
     },
     "/c/gps": {
       "h": "d9e9b76324199c1f",
       "d": "2026-10-21"
     },
     "/c/launch": {
-      "h": "cdb02eb2ed0f341f",
-      "d": "2026-10-21"
+      "h": "75e059ded5079065",
+      "d": "2026-10-22"
     },
     "/c/shoes": {
-      "h": "bad7f6d80bdd994f",
-      "d": "2026-10-21"
+      "h": "7b303b3254993eb9",
+      "d": "2026-10-22"
     },
     "/c/bag": {
       "h": "f9570af355d57fdf",
       "d": "2026-10-21"
     },
     "/c/glove": {
-      "h": "ff8580bda4c4c09f",
-      "d": "2026-10-21"
+      "h": "1e3209061eec9731",
+      "d": "2026-10-22"
     },
     "/c/practice": {
       "h": "a93a33a2e26a8903",
       "d": "2026-10-21"
     },
     "/g/driver-recommend-2026": {
-      "h": "ec5bf02e90afba4f",
+      "h": "8ea8067784b9d545",
       "d": "2026-10-22"
     },
     "/g/fairway-wood-recommend": {
@@ -1390,7 +1390,7 @@
       "d": "2026-10-22"
     },
     "/g/golf-glove-recommend": {
-      "h": "6274340b48d976d6",
+      "h": "c435dc1fdd3c474c",
       "d": "2026-10-22"
     },
     "/g/practice-gear-recommend": {
@@ -1410,8 +1410,8 @@
       "d": "2026-10-21"
     },
     "/g/driver-recommend-2026-beginner": {
-      "h": "a08d1424a2048106",
-      "d": "2026-10-21"
+      "h": "bcfa13d930bb9473",
+      "d": "2026-10-22"
     },
     "/g/driver-recommend-2026-intermediate": {
       "h": "74abc7d30c2ac2fd",
@@ -1430,8 +1430,8 @@
       "d": "2026-10-21"
     },
     "/g/fairway-wood-recommend-intermediate": {
-      "h": "4dd71b87a5f7957c",
-      "d": "2026-10-21"
+      "h": "896db69971520a93",
+      "d": "2026-10-22"
     },
     "/g/fairway-wood-recommend-advanced": {
       "h": "3080596ae6f8f64b",
@@ -1602,7 +1602,7 @@
       "d": "2026-10-21"
     },
     "/": {
-      "h": "a685b5e8f60d01d4",
+      "h": "fcf74c5200cb70e5",
       "d": "2026-10-22"
     },
     "/about": {
@@ -2230,24 +2230,24 @@
       "d": "2026-10-19"
     },
     "/jp/xxio14-driver": {
-      "h": "0b0a91f6a6e11f81",
-      "d": "2026-10-21"
+      "h": "d5620d98624eb388",
+      "d": "2026-10-22"
     },
     "/jp/srixon-zxi-rkt-driver": {
-      "h": "29ad39cb9fc70cc7",
-      "d": "2026-10-21"
+      "h": "252f5e0cee1a06d9",
+      "d": "2026-10-22"
     },
     "/jp/mizuno-jpx-one-driver": {
-      "h": "b4a4e999e1773b29",
-      "d": "2026-10-21"
+      "h": "b6a64acd9195fe8b",
+      "d": "2026-10-22"
     },
     "/jp/prgr-super-egg-2026-driver": {
-      "h": "eab0036d6c6cc82a",
-      "d": "2026-10-21"
+      "h": "86fe93e6bc89e3df",
+      "d": "2026-10-22"
     },
     "/jp/honma-beres-2026-3s-driver": {
-      "h": "04a7b9e6f14912c7",
-      "d": "2026-10-21"
+      "h": "db36bb9c6007650e",
+      "d": "2026-10-22"
     },
     "/jp/customs": {
       "h": "c0b09f9799118a27",
@@ -2262,11 +2262,6 @@
     },
     {
       "url": "/qa/beginner-driver-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/driver-recommend-2026-beginner",
       "kind": "updated",
       "d": "2026-10-21"
     },
@@ -2287,11 +2282,6 @@
     },
     {
       "url": "/g/fairway-wood-recommend-beginner",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/fairway-wood-recommend-intermediate",
       "kind": "updated",
       "d": "2026-10-21"
     },
@@ -3136,22 +3126,7 @@
       "d": "2026-10-21"
     },
     {
-      "url": "/c/driver",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/c/wood",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
       "url": "/c/utility",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/c/iron",
       "kind": "updated",
       "d": "2026-10-21"
     },
@@ -3161,22 +3136,7 @@
       "d": "2026-10-21"
     },
     {
-      "url": "/c/rangefinder",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
       "url": "/c/gps",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/c/launch",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/c/shoes",
       "kind": "updated",
       "d": "2026-10-21"
     },
@@ -3186,17 +3146,7 @@
       "d": "2026-10-21"
     },
     {
-      "url": "/c/glove",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
       "url": "/c/practice",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/c/ball",
       "kind": "updated",
       "d": "2026-10-21"
     },
@@ -3257,11 +3207,6 @@
     },
     {
       "url": "/p/callaway-elyte-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-g440-driver",
       "kind": "updated",
       "d": "2026-10-22"
     },
@@ -3607,26 +3552,6 @@
     },
     {
       "url": "/p/scotty-cameron-phantom-2026",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-sim2max-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi10max-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi35max-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/majesty-prestigio13-driver",
       "kind": "updated",
       "d": "2026-10-22"
     },
@@ -4321,11 +4246,6 @@
       "d": "2026-10-22"
     },
     {
-      "url": "/p/cobra-ds-adapt-maxk-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
       "url": "/p/callaway-quantum-max-driver",
       "kind": "updated",
       "d": "2026-10-22"
@@ -4411,11 +4331,6 @@
       "d": "2026-10-22"
     },
     {
-      "url": "/p/mizuno-jpx925-hotmetal-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
       "url": "/p/xxio14-iron",
       "kind": "updated",
       "d": "2026-10-22"
@@ -4432,11 +4347,6 @@
     },
     {
       "url": "/p/taylormade-p770-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-i240-iron",
       "kind": "updated",
       "d": "2026-10-22"
     },
@@ -4542,11 +4452,6 @@
     },
     {
       "url": "/p/caddytalk-minion2",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/nikon-coolshot-pro2-stabilized",
       "kind": "updated",
       "d": "2026-10-22"
     },
@@ -4696,11 +4601,6 @@
       "d": "2026-10-22"
     },
     {
-      "url": "/p/footjoy-weathersof-glove",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
       "url": "/p/footjoy-cabrettasof-glove",
       "kind": "updated",
       "d": "2026-10-22"
@@ -4831,11 +4731,6 @@
       "d": "2026-10-22"
     },
     {
-      "url": "/g/driver-recommend-2026",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
       "url": "/g/fairway-wood-recommend",
       "kind": "updated",
       "d": "2026-10-22"
@@ -4906,11 +4801,6 @@
       "d": "2026-10-22"
     },
     {
-      "url": "/g/golf-glove-recommend",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
       "url": "/g/practice-gear-recommend",
       "kind": "updated",
       "d": "2026-10-22"
@@ -4942,11 +4832,6 @@
     },
     {
       "url": "/g/wedge-recommend-pro",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/",
       "kind": "updated",
       "d": "2026-10-22"
     },
@@ -5027,6 +4912,146 @@
     },
     {
       "url": "/p/mizuno-t24-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-g440-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-sim2max-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi10max-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi35max-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/majesty-prestigio13-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cobra-ds-adapt-maxk-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-jpx925-hotmetal-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-i240-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/nikon-coolshot-pro2-stabilized",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/footjoy-weathersof-glove",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/c/driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/c/wood",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/c/iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/c/ball",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/c/rangefinder",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/c/launch",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/c/shoes",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/c/glove",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/driver-recommend-2026",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/golf-glove-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/driver-recommend-2026-beginner",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/fairway-wood-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/jp/xxio14-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/jp/srixon-zxi-rkt-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/jp/mizuno-jpx-one-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/jp/prgr-super-egg-2026-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/jp/honma-beres-2026-3s-driver",
       "kind": "updated",
       "d": "2026-10-22"
     }
