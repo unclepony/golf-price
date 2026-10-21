@@ -67,6 +67,19 @@ jobs:
       - name: 빌드 (콘텐츠 날짜·사이트맵·URL 301 보호 검사)
         run: node src/build.mjs
 
+      - name: 화면 점검 (PC·휴대폰 폭 가로 스크롤·깨진 이미지·글자 넘침·빈 본문·스크립트 오류) → 문제가 있으면 운영 보고 페이지에 오류로 보고
+        continue-on-error: true
+        env:
+          OPS_URL: ${{ secrets.OPS_URL }}
+          OPS_KEY: ${{ secrets.OPS_KEY }}
+        run: |
+          CHROME=$(command -v google-chrome || command -v chromium) node src/qa-visual.mjs --out qa-visual.md
+          n=$(grep -c '^- ' qa-visual.md || true)
+          if [ "$n" != "0" ] && [ -n "$OPS_URL" ]; then
+            node -e "fetch(process.env.OPS_URL,{method:'POST',headers:{'content-type':'application/json','x-ops-key':process.env.OPS_KEY},body:JSON.stringify({site:'golf-price',kind:'error',title:'화면 점검 문제 '+process.argv[1]+'건',body:require('fs').readFileSync('qa-visual.md','utf8').slice(0,6000),source:'daily-check 화면 점검'})}).then(r=>console.log('ops',r.status))" "$n"
+          fi
+          rm -f qa-visual.md
+
       - name: 커밋·배포
         run: |
           git config user.name "golf-price-bot"
