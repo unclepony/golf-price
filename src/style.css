@@ -1095,3 +1095,11 @@ table.ig.grind-t { min-width: 720px !important; }
 .logo-sub { font-size: 9.5px; font-weight: 700; letter-spacing: 2.6px; color: #a8801f; margin-top: 3px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo-name { color: #f1ede2; } :root:not([data-theme="light"]) .logo-name b { background: linear-gradient(135deg, #f3dc8f, #d4a83c); -webkit-background-clip: text; background-clip: text; } }
 @media (max-width: 560px) { .logo-emb { width: 38px; height: 42px; flex-basis: 38px; } .logo-name { font-size: 20px; } .logo-name b { font-size: 22px; } }
+/* 가격대 표시(2026-10): 지도·리뷰 사이트 방식 — ₩ 네 칸, 해당 칸만 진하게. 색 배경·글자 라벨 없이 담백하게(라벨은 툴팁·화면 읽기용) */
+.lvl, .lvl-1, .lvl-2, .lvl-3, .lvl-4 { display: inline-flex; align-items: baseline; gap: 0; padding: 0; background: none !important; color: var(--text) !important; font-size: 13px; font-weight: 700; letter-spacing: 1.5px; border-radius: 0; white-space: nowrap; font-family: 'Segoe UI', Arial, sans-serif; }
+.lvl i { font-style: normal; opacity: 1; font-size: inherit; letter-spacing: inherit; color: var(--text); }
+.lvl s { text-decoration: none; color: var(--line); font-weight: 700; }
+.lvl em { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.lvl-link:hover .lvl { box-shadow: none; }
+.lvl-link:hover .lvl i { color: var(--accent); }
+.tierline .lvl { margin-left: 2px; }

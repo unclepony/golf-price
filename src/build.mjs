@@ -348,9 +348,11 @@ const skillBadge = (id) => {
   const s = skillOf(id);
   return s ? `<span class="skill sk-${SKILLS.indexOf(s) + 1}">${s}</span>` : '';
 };
+// 가격대 표시: 지도·리뷰 사이트처럼 ₩ 네 칸 중 채운 칸만 진하게(글자 라벨은 화면 읽기·툴팁으로)
+const lvlHtml = (n, label) => `<span class="lvl lvl-${n}" title="가격대: ${label}"><i>${'₩'.repeat(n)}</i><s>${'₩'.repeat(4 - n)}</s><em>${label}</em></span>`;
 const levelBadge = (id) => {
   const lv = priceLevel(id);
-  return lv ? `<span class="lvl lvl-${lv.n}"><i>${lv.marks}</i>${lv.label}</span>` : '';
+  return lv ? lvlHtml(lv.n, lv.label) : '';
 };
 // 가격 수준 + 쿠팡 링크
 // 쿠팡에 없는 상품: 공식몰 등 다른 판매처 일반 링크(제휴 아님)
@@ -364,10 +366,10 @@ function levelLink(id, hist, extra = '쿠팡에서 가격 보기 ›') {
   const link = outHref(id);
   const ext = extOf(id);
   if (!link && ext) {
-    return `<a class="lvl-link" href="${esc(ext.url)}" target="_blank" rel="nofollow noopener"><span class="lvl lvl-0">${lv ? `<i>${lv.marks}</i>${lv.label}` : '공식몰 확인'}</span><small>${esc(ext.store)} ›</small></a>`;
+    return `<a class="lvl-link" href="${esc(ext.url)}" target="_blank" rel="nofollow noopener"><span class="lvl lvl-0">${lv ? `<i>${lv.marks}</i><em>${lv.label}</em>` : '공식몰 확인'}</span><small>${esc(ext.store)} ›</small></a>`;
   }
   if (!lv) return '';
-  const inner = `<span class="lvl lvl-${lv.n}"><i>${lv.marks}</i>${lv.label}</span>${link ? `<small>${extra}</small>` : ''}`;
+  const inner = `${lvlHtml(lv.n, lv.label)}${link ? `<small>${extra}</small>` : ''}`;
   return link ? `<a class="lvl-link" href="${esc(link)}" target="_blank" rel="sponsored nofollow noopener">${inner}</a>` : `<span class="lvl-link">${inner}</span>`;
 }
 function priceTag(id, a, cls = 'pt-price') {

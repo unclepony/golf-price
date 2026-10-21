@@ -97,7 +97,7 @@ const SK = ['초심자', '중급', '고급', '프로'];
 export function productCard(ctx, it) {
   const { esc, won } = ctx;
   const sk = it.skill ? `<span class="skill sk-${SK.indexOf(it.skill) + 1}">${esc(it.skill)}</span>` : '';
-  const lv = it.lvl ? `<span class="lvl lvl-${it.lvl}"><i>${'₩'.repeat(it.lvl)}</i>${LV[it.lvl]}</span>` : '';
+  const lv = it.lvl ? `<span class="lvl lvl-${it.lvl}" title="가격대: ${LV[it.lvl]}"><i>${'₩'.repeat(it.lvl)}</i><s>${'₩'.repeat(4 - it.lvl)}</s><em>${LV[it.lvl]}</em></span>` : '';
   return `<a class="pc" href="/p/${esc(it.id)}" data-brand="${esc(it.brand)}" data-skill="${esc(it.skill)}" data-gender="${esc(it.gender.join(' '))}" data-lvl="${it.lvl}" data-price="${it.price}" data-score="${it.score.toFixed(2)}" data-rocket="${it.rocket ? 1 : 0}" data-name="${esc(it.name)}">
 <span class="pc-img">${it.image ? `<img src="${esc(it.image)}" alt="" loading="lazy" decoding="async" width="212" height="212">` : ''}${it.rocket ? '<span class="pc-rocket">로켓배송</span>' : ''}</span>
 <span class="pc-brand">${esc(it.brand)}</span>
