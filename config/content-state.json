@@ -1590,8 +1590,8 @@
       "d": "2026-10-21"
     },
     "/": {
-      "h": "3f0efe3b96255a43",
-      "d": "2026-10-22"
+      "h": "37c7cf2b6d3cece0",
+      "d": "2026-10-21"
     },
     "/about": {
       "h": "062d2326b8040ec7",
@@ -4974,6 +4974,11 @@
       "d": "2026-10-21"
     },
     {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-21"
+    },
+    {
       "url": "/vs/srixon-z-star-vs-callaway-chrome-soft",
       "kind": "updated",
       "d": "2026-10-21"
@@ -4997,11 +5002,6 @@
       "url": "/vs/titleist-pro-v1-vs-taylormade-tp5-ball",
       "kind": "updated",
       "d": "2026-10-21"
-    },
-    {
-      "url": "/",
-      "kind": "updated",
-      "d": "2026-10-22"
     }
   ]
 }
