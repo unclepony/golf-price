@@ -193,16 +193,6 @@ export function homeHero(ctx, items) {
 </section>`;
 }
 
-export function homeQuick(ctx) {
-  const { esc, cats, entries } = ctx;
-  return `<nav class="hquick" aria-label="분류 바로가기">${cats
-    .map((c) => {
-      const e = entries.find((x) => x.p.category === c.id && ctx.imageOf(x.p.id, x.hist));
-      return `<a href="/c/${c.id}"><span>${e ? `<img src="${esc(ctx.imageOf(e.p.id, e.hist))}" alt="" loading="lazy" decoding="async" width="64" height="64">` : ''}</span>${esc(c.name)}</a>`;
-    })
-    .join('')}</nav>`;
-}
-
 export function homeBest(ctx, ranked, all) {
   const { esc } = ctx;
   const tabs = [['all', '전체'], ...MENU.filter((m) => m.cats).map((m) => [m.key, m.name])];

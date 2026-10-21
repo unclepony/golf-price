@@ -9,7 +9,7 @@ import { join } from 'node:path';
 import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText as rawWrite, todayKst } from './lib.mjs';
 import { beginnerIssues, releaseIssues } from './rules.mjs';
 import { loadQa, qaRelatedBlock, writeQaPages } from './qa.mjs';
-import { megaNav, listBlock, buyBox, infoTable, pdTabs, itemInfo, homeHero, homeQuick, homeBest } from './renew.mjs';
+import { megaNav, listBlock, buyBox, infoTable, pdTabs, itemInfo, homeHero, homeBest } from './renew.mjs';
 import { publicVideos, isShorts, isVideoId, videoIssues } from './videos.mjs';
 import { writeJpPages } from './jp.mjs';
 
@@ -1681,7 +1681,6 @@ writeText(
     desc: `드라이버·우드·유틸리티·아이언·웨지·퍼터부터 골프공·거리측정기·골프화까지 ${cats.length}개 골프용품을 실력(초심자~프로)·성별·가격대별로 비교합니다. 장단점과 주관적 편집 점수, 쿠팡 판매가를 함께 정리했습니다.`,
     path: '/',
     body: `${homeHero(rctx(), HERO)}
-${homeQuick(rctx())}
 ${homeBest(rctx(), HOME_RANKED, HOME_ALL)}
 <section class="hhero">
 <h1>골프용품을 <em>실력·성별·가격대</em>별로 비교해, 나에게 맞는 모델과 쿠팡 판매가를 한 번에 보여 드립니다.</h1>
