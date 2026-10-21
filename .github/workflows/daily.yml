@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: 쿠팡 파트너스 API로 판매가·확인일 갱신 (하루 17개 순번, 호출 간격 65초, 실패해도 배포 계속)
+      - name: 쿠팡 파트너스 API로 판매가·확인일 갱신 (매일 전 상품, 호출 간격 4초, 실패해도 배포 계속)
         continue-on-error: true
         timeout-minutes: 60
         env:
