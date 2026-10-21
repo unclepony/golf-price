@@ -8,3 +8,5 @@ data-demo/
 *gsc-key*.json
 golf-price-*.json
 .wrangler/
+.detail/
+.expand/

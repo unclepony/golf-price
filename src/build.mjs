@@ -2,13 +2,14 @@
 // 가격 기록이 없는 상품은 구매 가이드 페이지로, 있는 상품은 가격 추이 페이지로 만든다.
 // 사용: node src/build.mjs        → 실제 데이터 (data/)
 //       node src/build.mjs --demo → 샘플 데이터 (data-demo/)
-import { rmSync, readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
+import { rmSync, readFileSync, writeFileSync, existsSync, readdirSync, copyFileSync, mkdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
 import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText as rawWrite, todayKst } from './lib.mjs';
 import { beginnerIssues, releaseIssues } from './rules.mjs';
 import { loadQa, qaRelatedBlock, writeQaPages } from './qa.mjs';
+import { megaNav, listBlock, buyBox, infoTable, pdTabs } from './renew.mjs';
 import { publicVideos, isShorts, isVideoId, videoIssues } from './videos.mjs';
 import { writeJpPages } from './jp.mjs';
 
@@ -210,29 +211,7 @@ ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표�
 <div class="recent-panel" id="recentPanel" hidden></div>
 </div>
 </div></header>
-<nav class="gnb"><div class="wrap gnb-in">
-<div class="allcat"><button type="button" id="catBtn" aria-expanded="false">☰ 골프 카테고리</button><div class="catmenu" id="catMenu" hidden>${catLinks}</div></div>
-<div class="quick">${cats
-    .map((c) => {
-      const rel = guidesFor(c.id);
-      const sub = rel.length
-        ? `<div class="qsub">${rel
-            .map(
-              (g) =>
-                `<div class="qg"><a href="/g/${g.slug}"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender && g.gender !== '공용' ? g.gender : '남녀공용')}</span><span class="qsub-t"><b>${esc(g.menuName ?? (g.gender && g.gender !== '공용' ? `${g.gender} ${c.name}` : c.name))}</b><small>${g.menuName ? '종류별 선택 비교법' : '비교 및 선택 가이드'}</small></span>${skillGroups(g).length ? '<i class="qarr">›</i>' : ''}</a>${
-                  skillGroups(g).length
-                    ? `<div class="qsub2"><p class="qsub2-h">${esc(g.gender && g.gender !== '공용' ? `${g.gender} ${c.name}` : c.name)} 실력별 비교</p>${skillGroups(g)
-                        .map((s) => `<a href="${skillPath(g, s.skill)}"><span class="skill sk-${SKILLS.indexOf(s.skill) + 1}">${s.skill}</span><span class="qsub-t"><b>${s.skill}용 ${esc(c.name)}</b><small>${s.ids.length}종${levelRange(s.ids) ? ` · ${levelRange(s.ids)}` : ''}</small></span></a>`)
-                        .join('')}${g.picks.some((pk) => pk.dist) ? `<a href="/g/${g.slug}#dist"><span class="skill sk-dist">비거리</span><span class="qsub-t"><b>비거리 비교 추천</b><small>실력별 비거리 순위</small></span></a>` : ''}</div>`
-                    : ''
-                }</div>`,
-            )
-            .join('')}<a href="/c/${c.id}" class="qsub-all">${esc(c.name)} 전체 비교 ›</a></div>`
-        : '';
-      return `<div class="qitem"><a href="/c/${c.id}">${esc(c.name)}</a>${sub}</div>`;
-    })
-    .join('')}</div>
-</div></nav>`;
+${megaNav(rctx())}`;
 }
 
 // 공유 미리보기 이미지(카카오톡·커뮤니티·SNS): 쿠팡 썸네일을 큰 크기(492)로
@@ -541,7 +520,7 @@ function videoBlock(g) {
   };
   const long = list.filter((v) => !isShorts(v));
   const shorts = list.filter(isShorts);
-  return `<section id="videos" class="videos"><h2>관련 영상 <small>ATL골프기어 유튜브</small></h2>${long.length ? `<div class="vgrid">${long.map(card).join('')}</div>` : ''}${shorts.length ? `<div class="vgrid vgrid-s">${shorts.map(card).join('')}</div>` : ''}${SITE.youtube ? `<a class="more-link" href="${esc(SITE.youtube)}" target="_blank" rel="noopener">유튜브 채널에서 더 보기 ›</a>` : ''}</section>`;
+  return `<section id="videos" class="videos"><h2>관련 영상 <small>ATL골프기어 유튜브</small></h2><div class="vrow">${[...long, ...shorts].map(card).join('')}</div>${SITE.youtube ? `<a class="more-link" href="${esc(SITE.youtube)}" target="_blank" rel="noopener">유튜브 채널에서 더 보기 ›</a>` : ''}</section>`;
 }
 const mergedInto = (g) => guides.filter((m) => m.mergeInto === g.slug);
 // 실력 단계가 다른 제품끼리는 한 줄로 세우지 않는다: 같은 단계 안에서의 순위만 쓴다
@@ -1290,8 +1269,33 @@ ${updatedTag(max2(g.updated, pa.updated, pb.updated))}
   }
 }
 
+// ---------- 리뉴얼 화면 재료 (src/renew.mjs) ----------
+let RCTX;
+const rctx = () =>
+  (RCTX ??= {
+    esc, won, cats, entries, picks, scoreOf, pageGuides, imageOf, freshPrice, skillOf, priceLevel, sellable, outHref,
+    guidesFor, guideCat, guideName, rankedPicks, skillGroups, skillPath, mainPick,
+    catName: (id) => cats.find((c) => c.id === id)?.name ?? '',
+    qa: QA.list,
+    hasJp: existsSync(join(ROOT, 'config', 'jp-models.json')),
+  });
+
 // ---------- 상품 페이지 ----------
+// 상세 이미지 재료(DETAIL_DUMP=1 node src/build.mjs → .detail/data.json → node src/detail-render.mjs)
+const DETAIL_DATA = [];
+const detailImg = (id) => (existsSync(join(ROOT, 'content', 'detail', `${id}.webp`)) ? `/detail/${id}.webp` : null);
 for (const { p, hist, a } of entries) {
+  {
+    const m = mainPick(p.id);
+    const sr = m && stageRank(m.g, p.id);
+    DETAIL_DATA.push({
+      id: p.id, name: p.name, brand: p.name.split(/\s+/)[0], short: m?.pk.short ?? m?.pk.role ?? '', skill: m?.pk.skill ?? '', rank: sr && !sr.warn ? sr.label : '',
+      level: priceLevel(p.id) ? `${priceLevel(p.id).label} 가격대` : '', image: bigImage(imageOf(p.id, hist)) || '', forWhom: m?.pk.forWhom ?? '', guide: m ? guideName(m.g) : '',
+      criteria: m?.g.criteria ?? [], scores: m?.pk.scores ?? [], total: m?.pk.scores?.length ? avg(m.pk.scores) : 0,
+      specs: m ? (m.g.specRows ?? []).map((k, i) => [k, String(m.pk.specs?.[i] ?? '')]) : [], pros: m?.pk.pros ?? [], cons: m?.pk.cons ?? [], verdict: m?.pk.verdict ?? '',
+      checks: buyChecks(p), date: (m?.g.updated ?? p.updated ?? '').replaceAll('-', '.'),
+    });
+  }
   const cat = cats.find((c) => c.id === p.category);
   const crumb = `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${p.category}">${esc(cat.name)}</a></nav>`;
   const checks = buyChecks(p);
@@ -1299,6 +1303,7 @@ for (const { p, hist, a } of entries) {
   const desc = productDesc(p);
   const sc = scoreOf[p.id];
   const top = guidesOf(p.id).filter((g) => !g.mergeInto).map((g) => ({ g, sr: stageRank(g, p.id) }));
+  const pdVideo = guidesOf(p.id).map((g) => videoBlock(g)).find(Boolean)?.replace('<section id="videos" class="videos">', '<section id="videos" class="videos">') ?? '';
   const body = `${crumb}
 <section class="pd">
 ${gallery(p, hist)}
@@ -1307,23 +1312,37 @@ ${gallery(p, hist)}
 <h1>${esc(p.name)}</h1>
 ${updatedTag(p.updated)}
 <div class="pt-badges">${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, sr }) => (sr ? `<span class="tag ${sr.warn ? 'warn' : 'rank'}">${esc(guideName(g).replace(' 비교 및 선택 가이드', ''))} ${esc(sr.label)}</span>` : '')).join('')}${sellable(p.id) ? '' : '<span class="tag none">쿠팡 판매처 없음</span>'}</div>
-<div class="pd-price">${priceLine(p.id, 'pd-won')}${priceLevel(p.id) ? `<span>가격대 <small>(${esc(cat.name)} 비교 기준)</small></span>${levelLink(p.id, hist, '쿠팡에서 현재 가격 보기 ›')}` : ''}</div>
+${buyBox(rctx(), p) || `<div class="pd-price">${buyButton(p.id, hist)}</div>`}
+${links[p.id] && picks[p.id]?.title ? `<p class="linked">연결 상품: ${esc(picks[p.id].title)}</p>` : ''}
+${infoTable(rctx(), p)}
 <p class="pd-sum">${esc(p.summary)}</p>
-${checks.length ? `<h2 class="sub">구매 전 확인할 점</h2><ul class="checks">${checks.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
-${buyButton(p.id, hist)}
 </div>
 </section>
+${pdTabs([['info', '상세 정보'], ...(pdVideo ? [['videos', '영상']] : []), ['history', '가격 기록']])}
+<section id="info" class="pd-detail">
+${detailImg(p.id) ? `<img class="pd-dimg" src="${detailImg(p.id)}" alt="${esc(p.name)} 상세 정보: 추천 대상, 항목별 편집 점수, 핵심 사양, 강점과 감안할 점, 구매 전 확인" loading="lazy" decoding="async" width="860">` : ''}
+${mainPick(p.id) ? `<a class="pd-cmp" href="/g/${mainPick(p.id).g.slug}"><span>${esc(guideName(mainPick(p.id).g))}</span><b>실력별 비교 보기 ›</b></a>` : ''}
+<details class="pd-more"${detailImg(p.id) ? '' : ' open'}><summary>상세 설명을 글로 보기</summary>
+${checks.length ? `<section><h2>구매 전 확인할 점</h2><ul class="checks">${checks.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>` : ''}
 ${productStory(p)}
-${vsProductBlock(p.id)}
 ${analysis(p)}
+${vsProductBlock(p.id)}
 ${newsBlock(p.id)}
 <section class="prose"><h2>${esc(cat.name)} 고르는 법</h2><p>${esc(cat.intro)}</p>${figure(p.category)}<ul>${cat.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
-${priceHistory(p, hist, a)}`;
+</details>
+</section>
+${pdVideo}
+<div id="history">${priceHistory(p, hist, a)}</div>`;
   writeText(
     join(OUT, 'p', `${p.id}.html`),
     layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' }, ld: [crumbLd([['홈', '/'], [cat.name, `/c/${p.category}`], [p.name, `/p/${p.id}`]])] }),
   );
 }
+
+if (process.env.DETAIL_DUMP) rawWrite(join(ROOT, '.detail', 'data.json'), JSON.stringify(DETAIL_DATA));
+// 상세 이미지 파일 복사 (content/detail → site/detail)
+if (existsSync(join(ROOT, 'content', 'detail'))) mkdirSync(join(OUT, 'detail'), { recursive: true });
+if (existsSync(join(ROOT, 'content', 'detail'))) for (const f of readdirSync(join(ROOT, 'content', 'detail'))) if (f.endsWith('.webp')) copyFileSync(join(ROOT, 'content', 'detail', f), join(OUT, 'detail', f));
 
 // ---------- 분류 페이지 ----------
 for (const c of cats) {
@@ -1337,11 +1356,13 @@ for (const c of cats) {
       path: `/c/${c.id}`,
       ld: [crumbLd([['홈', '/'], [c.name, `/c/${c.id}`]])],
       body: `<nav class="crumb"><a href="/">홈</a> › ${esc(c.name)}</nav>
-<h1>${esc(c.name)} 비교</h1>
+<h1>${esc(c.name)}</h1>
 ${updatedTag(max2(...related.map((g) => g.updated)))}
+<p class="plp-intro">${esc(c.intro)}</p>
+${listBlock(rctx(), c, items)}
+${related.length ? `<h2 class="plp-h2">${esc(c.name)} 실력별 비교 가이드</h2>` : ''}
 ${related.length > 1 ? `<nav class="gtabs">${related.map((g) => `<a href="#g-${g.slug}">${esc(genderLabel(g, c))}</a>`).join('')}</nav>` : ''}
 ${related.map((g) => `<section id="g-${g.slug}" class="cat-cmp">${related.length > 1 ? `<h2 class="cat-cmp-h"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender ?? '공용')}</span>${esc(c.name)} 비교</h2>` : ''}${infographic(g)}${tierCompare(g)}<a class="more-link" href="/g/${g.slug}">장단점·고르는 법 전체 보기 ›</a></section>`).join('')}
-<section><h2>${esc(c.name)} 전체 상품</h2>${prow(items)}</section>
 <section class="prose"><h2>${esc(c.name)} 고르는 법</h2><p>${esc(c.intro)}</p>${figure(c.id)}<ul>${c.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>`,
     }),
   );

@@ -293,4 +293,77 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
     ff.addEventListener('change', render);
     render();
   }
+
+  // ---------- 2026-10 리뉴얼: 큰 메뉴(휴대폰에서는 펼치기), 분류 목록 필터·정렬, 상세 탭 표시 ----------
+  const mega = $('.mega');
+  if (mega) {
+    $('#mgBurger')?.addEventListener('click', (e) => {
+      const open = mega.classList.toggle('open');
+      e.currentTarget.setAttribute('aria-expanded', String(open));
+    });
+    $$('.mg-open', mega).forEach((b) =>
+      b.addEventListener('click', () => {
+        const li = b.closest('.mg-item');
+        const open = li.classList.toggle('open');
+        b.setAttribute('aria-expanded', String(open));
+      }),
+    );
+  }
+  const plp = $('[data-plp]');
+  if (plp) {
+    const grid = $('#plpGrid', plp);
+    const cards = $$('.pc', grid);
+    const boxes = $$('.plp-f input', plp);
+    const sortSel = $('#plpSort', plp);
+    const empty = Object.assign(document.createElement('p'), { className: 'plp-empty', textContent: '조건에 맞는 상품이 없습니다. 필터를 줄여 보세요.', hidden: true });
+    grid.append(empty);
+    const apply = () => {
+      const want = {};
+      for (const b of boxes) if (b.checked) (want[b.name] ??= []).push(b.value);
+      let n = 0;
+      for (const c of cards) {
+        const d = c.dataset;
+        const ok =
+          (!want.brand || want.brand.includes(d.brand)) &&
+          (!want.skill || want.skill.includes(d.skill)) &&
+          (!want.lvl || want.lvl.includes(d.lvl)) &&
+          (!want.gender || want.gender.some((g) => d.gender.split(' ').includes(g))) &&
+          (!want.rocket || d.rocket === '1');
+        c.hidden = !ok;
+        if (ok) n++;
+      }
+      empty.hidden = n > 0;
+      $('#plpN', plp).textContent = String(n);
+      const k = sortSel.value;
+      const price = (c) => +c.dataset.price || (k === 'low' ? 1e12 : -1);
+      const sorted = [...cards].sort((x, y) =>
+        k === 'low' ? price(x) - price(y) : k === 'high' ? price(y) - price(x) : k === 'name' ? x.dataset.name.localeCompare(y.dataset.name, 'ko') : +y.dataset.score - +x.dataset.score,
+      );
+      grid.prepend(...sorted);
+      // 주소에 조건을 남겨 공유·뒤로 가기에 쓰게 한다
+      const q = new URLSearchParams();
+      for (const [key, vals] of Object.entries(want)) for (const v of vals) q.append(key, v);
+      if (k !== 'score') q.set('sort', k);
+      history.replaceState(null, '', `${location.pathname}${q.toString() ? `?${q}` : ''}${location.hash}`);
+    };
+    // 들어올 때 주소의 조건(예: 메뉴의 ?brand=핑)을 반영
+    const init = new URLSearchParams(location.search);
+    for (const b of boxes) if (init.getAll(b.name).includes(b.value)) b.checked = true;
+    if (init.get('sort')) sortSel.value = init.get('sort');
+    boxes.forEach((b) => b.addEventListener('change', apply));
+    sortSel.addEventListener('change', apply);
+    $('#plpReset', plp)?.addEventListener('click', () => { boxes.forEach((b) => (b.checked = false)); apply(); });
+    $('#plpFt', plp)?.addEventListener('click', (e) => {
+      const open = plp.classList.toggle('fopen');
+      e.currentTarget.setAttribute('aria-expanded', String(open));
+    });
+    if (init.toString()) apply();
+  }
+  const tabs = $$('.pd-tabs a');
+  if (tabs.length && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((es) => {
+      for (const e of es) if (e.isIntersecting) tabs.forEach((a) => a.classList.toggle('on', a.hash === `#${e.target.id}`));
+    }, { rootMargin: '-120px 0px -60% 0px' });
+    tabs.forEach((a) => { const t = document.getElementById(a.hash.slice(1)); if (t) io.observe(t); });
+  }
 })();
