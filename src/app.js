@@ -366,4 +366,58 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
     }, { rootMargin: '-120px 0px -60% 0px' });
     tabs.forEach((a) => { const t = document.getElementById(a.hash.slice(1)); if (t) io.observe(t); });
   }
+
+  // ---------- 홈: 순환 배너(자동 넘김·화살표·멈춤) ----------
+  const hero = $('[data-hero]');
+  if (hero) {
+    const track = $('#hsTrack', hero);
+    const slides = $$('.hs', track);
+    let i = 0, timer = null, paused = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const per = () => (innerWidth <= 560 ? 1 : innerWidth <= 860 ? 2 : 3);
+    const go = (n) => {
+      const max = Math.max(0, slides.length - per());
+      i = n > max ? 0 : n < 0 ? max : n;
+      const w = slides[0].getBoundingClientRect().width + 12;
+      track.style.transform = `translateX(${-i * w}px)`;
+      $('#hsN', hero).textContent = String(i + 1);
+    };
+    const play = () => { clearInterval(timer); if (!paused) timer = setInterval(() => go(i + 1), 4500); };
+    $('#hsPrev', hero)?.addEventListener('click', () => { go(i - 1); play(); });
+    $('#hsNext', hero)?.addEventListener('click', () => { go(i + 1); play(); });
+    $('#hsPause', hero)?.addEventListener('click', (e) => { paused = !paused; e.currentTarget.textContent = paused ? '▶' : '❚❚'; play(); });
+    hero.addEventListener('mouseenter', () => clearInterval(timer));
+    hero.addEventListener('mouseleave', play);
+    let sx = null;
+    track.addEventListener('touchstart', (e) => { sx = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', (e) => { if (sx == null) return; const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 40) { go(i + (dx < 0 ? 1 : -1)); play(); } sx = null; });
+    addEventListener('resize', () => go(i));
+    play();
+  }
+
+  // ---------- 홈: 실시간 베스트(오늘 방문수 순위, /api/best) + 분야 탭 ----------
+  const best = $('[data-best]');
+  if (best) {
+    const grid = $('#bestGrid', best);
+    const data = JSON.parse($('#bestData', best).textContent);
+    const tabs = $$('.hbest-tabs button', best);
+    const LVN = ['', '저가', '중가', '고가', '프리미엄'];
+    const SKN = ['초심자', '중급', '고급', '프로'];
+    const MENU = { clubs: ['driver', 'wood', 'utility', 'iron', 'wedge', 'putter'], shoes: ['shoes'], ball: ['ball'], bag: ['bag'], gps: ['rangefinder', 'gps', 'launch'], acc: ['glove', 'practice'] };
+    const mOf = (cat) => Object.keys(MENU).find((k) => MENU[k].includes(cat)) ?? 'acc';
+    let order = $$('.pc', grid).map((a) => a.getAttribute('href').slice(3));
+    const card = (it, r) => `<a class="pc" href="/p/${esc(it.id)}" data-m="${mOf(it.cat)}"><span class="pc-img"><span class="pc-rank">${r}</span>${it.image ? `<img src="${esc(it.image)}" alt="" loading="lazy" decoding="async" width="212" height="212">` : ''}${it.rocket ? '<span class="pc-rocket">로켓배송</span>' : ''}</span><span class="pc-brand">${esc(it.brand)}</span><b class="pc-name">${esc(it.name)}</b><span class="pc-tags tierline">${it.skill ? `<span class="skill sk-${SKN.indexOf(it.skill) + 1}">${esc(it.skill)}</span>` : ''}${it.lvl ? `<span class="lvl lvl-${it.lvl}"><i>${'₩'.repeat(it.lvl)}</i>${LVN[it.lvl]}</span>` : ''}</span>${it.score ? `<span class="pc-score">편집 점수 ${it.score.toFixed(1)}</span>` : ''}${it.price ? `<span class="pc-price"><b>${it.price.toLocaleString('ko-KR')}원</b><small>쿠팡 · ${+it.priceD.slice(5, 7)}.${+it.priceD.slice(8, 10)} 확인</small></span>` : '<span class="pc-price none">쿠팡에서 가격 확인</span>'}</a>`;
+    let key = 'all';
+    const render = () => {
+      const ids = [...order, ...Object.keys(data).filter((id) => !order.includes(id))].filter((id) => data[id] && (key === 'all' || mOf(data[id].cat) === key)).slice(0, 20);
+      grid.innerHTML = ids.map((id, i) => card(data[id], i + 1)).join('');
+    };
+    tabs.forEach((b) => b.addEventListener('click', () => { tabs.forEach((x) => { x.classList.toggle('on', x === b); x.setAttribute('aria-selected', String(x === b)); }); key = b.dataset.k; render(); }));
+    fetch('/api/best').then((r) => (r.ok ? r.json() : null)).then((j) => {
+      if (!j?.items?.length) return;
+      const live = j.items.map((x) => x.id).filter((id) => data[id]);
+      order = [...live, ...order.filter((id) => !live.includes(id))];
+      $('#bestSpan', best).textContent = j.span === 'today' ? '오늘 방문 많은 순 · 실시간' : '최근 3일 방문 많은 순';
+      render();
+    }).catch(() => {});
+  }
 })();

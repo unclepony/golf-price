@@ -9,7 +9,7 @@ import { join } from 'node:path';
 import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText as rawWrite, todayKst } from './lib.mjs';
 import { beginnerIssues, releaseIssues } from './rules.mjs';
 import { loadQa, qaRelatedBlock, writeQaPages } from './qa.mjs';
-import { megaNav, listBlock, buyBox, infoTable, pdTabs } from './renew.mjs';
+import { megaNav, listBlock, buyBox, infoTable, pdTabs, itemInfo, homeHero, homeQuick, homeBest } from './renew.mjs';
 import { publicVideos, isShorts, isVideoId, videoIssues } from './videos.mjs';
 import { writeJpPages } from './jp.mjs';
 
@@ -1647,13 +1647,33 @@ const drops = tracked
   .sort((x, y) => x.a.change7 / (x.a.cur - x.a.change7) - y.a.change7 / (y.a.cur - y.a.change7))
   .slice(0, 8);
 
+// 홈 배너·베스트: 최근 7일 상품 페이지 방문수(data/stats, 매일 저장) 순. 방문 자료가 모자라면 가이드 실력별 1위로 채운다
+const VIEWS = {};
+{
+  const dir = join(ROOT, 'data', 'stats');
+  if (existsSync(dir))
+    for (const f of readdirSync(dir).filter((x) => x.endsWith('.json')).sort().slice(-7))
+      for (const [k, n] of Object.entries(readJson(join(dir, f), {}).by?.pv ?? {})) if (k.startsWith('/p/')) VIEWS[k.slice(3)] = (VIEWS[k.slice(3)] ?? 0) + n;
+}
+const HOME_ALL = entries.filter((e) => sellable(e.p.id)).map((e) => itemInfo(rctx(), e));
+const HOME_RANKED = [...HOME_ALL].sort((x, y) => (VIEWS[y.id] ?? 0) - (VIEWS[x.id] ?? 0) || y.score - x.score);
+const heroIds = [...new Set([...HOME_RANKED.filter((x) => VIEWS[x.id] && x.image).slice(0, 8).map((x) => x.id), ...pageGuides.filter((g) => !g.gender || g.gender !== '여성').flatMap((g) => SKILLS.map((s) => stageTop(g, s)?.id).filter(Boolean).slice(0, 1))])].slice(0, 9);
+const HERO = heroIds.map((id) => {
+  const it = HOME_ALL.find((x) => x.id === id);
+  const m = mainPick(id);
+  const sr = m && stageRank(m.g, id);
+  return it && { ...it, kicker: `${catName[it.cat] ?? ''}${sr && !sr.warn ? ` · ${sr.label}` : ''}`, sub: m?.pk.short ?? m?.pk.role ?? '' };
+}).filter(Boolean);
 writeText(
   join(OUT, 'index.html'),
   layout({
     title: SITE_NAME,
     desc: `드라이버·우드·유틸리티·아이언·웨지·퍼터부터 골프공·거리측정기·골프화까지 ${cats.length}개 골프용품을 실력(초심자~프로)·성별·가격대별로 비교합니다. 장단점과 주관적 편집 점수, 쿠팡 판매가를 함께 정리했습니다.`,
     path: '/',
-    body: `<section class="hhero">
+    body: `${homeHero(rctx(), HERO)}
+${homeQuick(rctx())}
+${homeBest(rctx(), HOME_RANKED, HOME_ALL)}
+<section class="hhero">
 <h1>골프용품을 <em>실력·성별·가격대</em>별로 비교해, 나에게 맞는 모델과 쿠팡 판매가를 한 번에 보여 드립니다.</h1>
 <p>${pageGuides.length}개 비교 가이드 · ${entries.filter((e) => sellable(e.p.id)).length}개 상품 · 점수는 주관적 참고 점수이며 순위는 같은 실력 단계 안에서만 매깁니다.</p>
 <nav class="hcats" aria-label="카테고리 바로가기">${homeCats}</nav>

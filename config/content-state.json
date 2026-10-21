@@ -1590,7 +1590,7 @@
       "d": "2026-10-21"
     },
     "/": {
-      "h": "643c6d378e9d82f2",
+      "h": "1c0c5bc47c749caa",
       "d": "2026-10-21"
     },
     "/about": {
@@ -4654,17 +4654,17 @@
       "d": "2026-10-21"
     },
     {
-      "url": "/",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
       "url": "/qa/beginner-driver-recommend",
       "kind": "updated",
       "d": "2026-10-21"
     },
     {
       "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-10-21"
+    },
+    {
+      "url": "/",
       "kind": "updated",
       "d": "2026-10-21"
     }

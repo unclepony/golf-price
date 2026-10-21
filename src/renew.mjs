@@ -36,6 +36,7 @@ export function itemInfo(ctx, e) {
     rocket: !!ctx.picks[p.id]?.rocket,
     sellable: ctx.sellable(p.id),
     year: p.year ?? '',
+    cat: p.category,
   };
 }
 
@@ -168,3 +169,48 @@ export function infoTable(ctx, p) {
 
 // 상세 화면 탭(같은 페이지 안 이동)
 export const pdTabs = (tabs) => `<nav class="pd-tabs" aria-label="상품 정보 메뉴">${tabs.map(([id, t]) => `<a href="#${id}">${t}</a>`).join('')}</nav>`;
+
+// ---------- 홈: 순환 배너(많이 본 상품) + 실시간 베스트(방문수 순위) ----------
+const TONE = { driver: ['#0e2a1d', '#1f6b45'], wood: ['#10233a', '#22557f'], utility: ['#1f1b33', '#4b3f7a'], iron: ['#232323', '#5a5a5a'], wedge: ['#2c2014', '#7a5a2e'], putter: ['#0f2b2e', '#1f6a70'], ball: ['#2a1630', '#6a2f73'], rangefinder: ['#14202c', '#2f5576'], gps: ['#1c1c1c', '#3d4b5c'], launch: ['#1d1f2b', '#3f4e8a'], shoes: ['#2b1d16', '#7a4a2e'], bag: ['#132a22', '#2f6a55'], glove: ['#2a2a1a', '#6a6a33'], practice: ['#1a2a14', '#3f6a2e'] };
+const menuOf = (cat) => MENU.find((m) => m.cats?.includes(cat))?.key ?? 'acc';
+
+export function homeHero(ctx, items) {
+  const { esc, won } = ctx;
+  const slides = items
+    .map((it, i) => {
+      const [a, b] = TONE[it.cat] ?? TONE.driver;
+      return `<a class="hs" href="/p/${esc(it.id)}" style="--a:${a};--b:${b}" aria-label="${esc(it.name)}"${i > 2 ? ' data-lazy="1"' : ''}>
+<span class="hs-img">${it.image ? `<img src="${esc(it.image)}" alt="" ${i < 3 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" width="512" height="512">` : ''}</span>
+<span class="hs-txt"><small>${esc(it.kicker)}</small><b>${esc(it.name)}</b><span>${esc(it.sub)}</span>${it.price ? `<em><!--phist-->${won(it.price)}<!--/phist--> <i>쿠팡 판매가</i></em>` : ''}</span></a>`;
+    })
+    .join('');
+  return `<section class="hhero2" aria-label="많이 본 상품" data-hero>
+<div class="hs-track" id="hsTrack">${slides}</div>
+<button type="button" class="hs-nav prev" id="hsPrev" aria-label="이전">‹</button><button type="button" class="hs-nav next" id="hsNext" aria-label="다음">›</button>
+<p class="hs-count"><button type="button" id="hsPause" aria-label="자동 넘김 멈춤">❚❚</button> <span id="hsN">1</span> / ${items.length}</p>
+</section>`;
+}
+
+export function homeQuick(ctx) {
+  const { esc, cats, entries } = ctx;
+  return `<nav class="hquick" aria-label="분류 바로가기">${cats
+    .map((c) => {
+      const e = entries.find((x) => x.p.category === c.id && ctx.imageOf(x.p.id, x.hist));
+      return `<a href="/c/${c.id}"><span>${e ? `<img src="${esc(ctx.imageOf(e.p.id, e.hist))}" alt="" loading="lazy" decoding="async" width="64" height="64">` : ''}</span>${esc(c.name)}</a>`;
+    })
+    .join('')}</nav>`;
+}
+
+export function homeBest(ctx, ranked, all) {
+  const { esc } = ctx;
+  const tabs = [['all', '전체'], ...MENU.filter((m) => m.cats).map((m) => [m.key, m.name])];
+  const data = Object.fromEntries(all.map((it) => [it.id, it]));
+  const cards = ranked.slice(0, 20).map((it, i) => productCard(ctx, it).replace('<a class="pc"', `<a class="pc" data-m="${menuOf(it.cat)}"`).replace('<span class="pc-img">', `<span class="pc-img"><span class="pc-rank">${i + 1}</span>`)).join('');
+  return `<section class="hbest" id="best" data-best>
+<div class="block-h"><h2>실시간 베스트</h2><span id="bestSpan">최근 방문 많은 순</span></div>
+<nav class="hbest-tabs" role="tablist">${tabs.map(([k, t], i) => `<button type="button" role="tab" data-k="${k}"${i === 0 ? ' class="on" aria-selected="true"' : ''}>${esc(t)}</button>`).join('')}</nav>
+<div class="plp-grid hbest-grid" id="bestGrid">${cards}</div>
+<p class="note">사람들이 이 사이트에서 많이 본 상품 순서입니다(개인 정보 없이 페이지 방문 합계만 사용). 가격은 쿠팡 판매가를 확인한 날짜 기준입니다.</p>
+<script type="application/json" id="bestData">${JSON.stringify(data).replace(/</g, '\u003c')}</script>
+</section>`;
+}
