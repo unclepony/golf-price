@@ -216,3 +216,13 @@ export function homeBest(ctx, ranked, all) {
 <script type="application/json" id="bestData">${JSON.stringify(data).replace(/</g, '\u003c')}</script>
 </section>`;
 }
+
+// 상세 이미지 끝 구매 상자: 상세 설명을 다 본 자리에 사진·이름·가격·큰 버튼(네이버쇼핑·무신사 상세 끝 구매 상자 방식)
+export function endBuy(ctx, p, hist) {
+  const { esc, won } = ctx;
+  const href = ctx.outHref(p.id);
+  if (!href) return '';
+  const sp = ctx.freshPrice(p.id);
+  const img = ctx.imageOf(p.id, hist);
+  return `<div class="ebuy">${img ? `<img src="${esc(img)}" alt="" loading="lazy" decoding="async" width="96" height="96">` : ''}<div class="ebuy-t"><b>${esc(p.name)}</b><!--phist-->${sp ? `<span><em>${won(sp.won)}</em> 쿠팡 ${sp.kind === 'api' ? '최저가' : '판매가'} · ${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</span>` : '<span>쿠팡에서 현재 가격을 확인하세요</span>'}<!--/phist--></div><a class="btn ebuy-btn" href="${esc(href)}" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 이 가격 보기</a></div>`;
+}

@@ -9,7 +9,7 @@ import { join } from 'node:path';
 import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText as rawWrite, todayKst } from './lib.mjs';
 import { beginnerIssues, releaseIssues } from './rules.mjs';
 import { loadQa, qaRelatedBlock, writeQaPages } from './qa.mjs';
-import { megaNav, listBlock, buyBox, infoTable, pdTabs, itemInfo, homeHero, homeQuick, homeBest } from './renew.mjs';
+import { megaNav, listBlock, buyBox, infoTable, pdTabs, itemInfo, homeHero, homeQuick, homeBest, endBuy } from './renew.mjs';
 import { publicVideos, isShorts, isVideoId, videoIssues } from './videos.mjs';
 import { writeJpPages } from './jp.mjs';
 
@@ -1337,6 +1337,7 @@ ${infoTable(rctx(), p)}
 ${pdTabs([['info', '상세 정보'], ...(pdVideo ? [['videos', '영상']] : []), ['history', '가격 기록']])}
 <section id="info" class="pd-detail">
 ${detailImg(p.id) ? `<img class="pd-dimg" src="${detailImg(p.id)}" alt="${esc(p.name)} 상세 정보: 추천 대상, 항목별 편집 점수, 핵심 사양, 강점과 감안할 점, 구매 전 확인" loading="lazy" decoding="async" width="860">` : ''}
+${endBuy(rctx(), p, hist)}
 ${mainPick(p.id) ? `<a class="pd-cmp" href="/g/${mainPick(p.id).g.slug}"><span>${esc(guideName(mainPick(p.id).g))}</span><b>실력별 비교 보기 ›</b></a>` : ''}
 <details class="pd-more"${detailImg(p.id) ? '' : ' open'}><summary>상세 설명을 글로 보기</summary>
 ${checks.length ? `<section><h2>구매 전 확인할 점</h2><ul class="checks">${checks.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>` : ''}
