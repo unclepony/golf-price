@@ -1,5 +1,5 @@
 // 후보(acc/*.json) → 쿠팡 파트너스 공식 검색 API 로 같은 모델을 찾는다 (unclepony-ops/scripts/coupang-pick.mjs 규칙과 같음)
-// node --env-file=<unclepony-ops/.env> pick.mjs <결과.json> <후보.json...>   호출 간격 65초, 오류 시 10분 쉬고 다시. 이미 결과가 있는 id 는 건너뜀.
+// node --env-file=<unclepony-ops/.env> pick.mjs <결과.json> <후보.json...>   호출 간격 4초(문서상 한도 분당 50번의 30%), 오류 시 10분 쉬고 다시. 이미 결과가 있는 id 는 건너뜀.
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { search } from '../prices/coupang-client.mjs';
 
@@ -15,7 +15,7 @@ const today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
 let n = 0;
 for (const it of items) {
   if (res[it.id]) continue;
-  if (n++) await sleep(65);
+  if (n++) await sleep(4);
   let list;
   for (let t = 0; ; t++) {
     try { list = await search(it.query, 10); break; }

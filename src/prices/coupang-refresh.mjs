@@ -6,11 +6,11 @@
 //   link.coupang.com 리다이렉트로 알아내지 않는다(자동 요청 금지 — 우리 링크 클릭으로 잡힘).
 // - productId 가 없을 때(엄격): 검색 결과 상품명의 단어 묶음이 picks.json 의 연결 상품명(title)과 '완전히 같을' 때만,
 //   로켓배송 여부도 같고, 가격이 기존의 0.5~2배 안일 때만 쓴다. 애매하면 건너뛰고 기존 값을 둔다(추측 안 함).
-// - 순번: 마지막으로 시도한 날(config/coupang-refresh.json) 또는 확인일 중 늦은 날이 오래된 상품부터 하루 --max 개(기본 17)
-//   → 226개 미만이면 14일 안에 모두 한 번씩 시도. 못 찾은 상품도 시도일을 남겨 다음 상품으로 넘어간다.
-// - 호출 사이 --gap 초(기본 65, 최소 65) 쉰다. API 오류가 나면 거기서 멈추고 그때까지 찾은 것만 저장한다. 키가 없으면 건너뛴다.
+// - 순번: 마지막으로 시도한 날(config/coupang-refresh.json) 또는 확인일 중 늦은 날이 오래된 상품부터 하루 --max 개(기본 전부)
+//   → 기본은 매일 전 상품. 못 찾은 상품도 시도일을 남겨 다음 상품으로 넘어간다.
+// - 호출 사이 --gap 초(기본 4, 최소 3) 쉰다. 쿠팡 파트너스 API 문서: 검색은 1분당 최대 50번, 한도에 닿으면 24시간 사용 제한 → 4초 간격(분당 15번)으로 넉넉히 둔다. API 오류가 나면 거기서 멈추고 그때까지 찾은 것만 저장한다. 키가 없으면 건너뛴다.
 // - 가격이 바뀌어도 콘텐츠 업데이트일은 바뀌지 않는다(build.mjs 가 가격 요소를 지문에서 뺀다).
-// 실행: node --env-file=<.env> src/prices/coupang-refresh.mjs [--max 17] [--gap 65]   (키 값은 화면·로그에 쓰지 않는다)
+// 실행: node --env-file=<.env> src/prices/coupang-refresh.mjs [--max N] [--gap 4]   (키 값은 화면·로그에 쓰지 않는다)
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -18,8 +18,8 @@ import { search, hasKeys } from './coupang-client.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const arg = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? Number(process.argv[i + 1]) : d; };
-const MAX = arg('--max', 17);
-const GAP = Math.max(65, arg('--gap', 65)) * 1000;
+const MAX = arg('--max', 100000);
+const GAP = Math.max(3, arg('--gap', 4)) * 1000;
 const today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
 
 if (!hasKeys()) { console.log('쿠팡 API 키 없음 — 건너뜀'); process.exit(0); }

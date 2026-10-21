@@ -16,10 +16,11 @@ function auth(method, path, query) {
   return `CEA algorithm=HmacSHA256, access-key=${AK}, signed-date=${d}, signature=${sig}`;
 }
 
-// 상품 검색 (limit 최대 10): [{ id, name, price, rocket, image, url }]
-export async function search(keyword, limit = 10) {
+// 상품 검색 (limit 최대 10, 사진 크기 imageSize 기본 512x512): [{ id, name, price, rocket, image, url }]
+// 문서상 한도: 1분당 최대 50번(넘으면 24시간 제한) — 호출하는 쪽에서 4초 간격을 둔다.
+export async function search(keyword, limit = 10, imageSize = '512x512') {
   const path = `${BASE}/products/search`;
-  const query = new URLSearchParams({ keyword, limit: String(Math.min(limit, 10)) }).toString();
+  const query = new URLSearchParams({ keyword, limit: String(Math.min(limit, 10)), imageSize }).toString();
   const r = await fetch(`${HOST}${path}?${query}`, { headers: { Authorization: auth('GET', path, query), 'Content-Type': 'application/json;charset=UTF-8' } });
   const j = await r.json().catch(() => ({}));
   if (!r.ok || (j.rCode && j.rCode !== '0')) throw new Error(`쿠팡 API ${r.status} ${j.rCode ?? ''} ${j.rMessage ?? j.message ?? ''}`.trim());
