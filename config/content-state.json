@@ -118,7 +118,7 @@
       "d": "2026-10-22"
     },
     "/p/cleveland-rtz-wedge": {
-      "h": "55b1e6dab126ac45",
+      "h": "bd0f551dd81c1334",
       "d": "2026-10-22"
     },
     "/p/callaway-opus-sp-wedge": {
@@ -126,11 +126,11 @@
       "d": "2026-10-22"
     },
     "/p/taylormade-mg4-wedge": {
-      "h": "fee068e381c23544",
+      "h": "6c7c8b9c596a7a2f",
       "d": "2026-10-22"
     },
     "/p/ping-s259-wedge": {
-      "h": "56da2caadf39cd2a",
+      "h": "1ddb8e5b14ccffad",
       "d": "2026-10-22"
     },
     "/p/ping-g440-max-fairway": {
@@ -782,27 +782,27 @@
       "d": "2026-10-22"
     },
     "/p/mizuno-jpx923-wedge": {
-      "h": "e9cb92fe97c1bad8",
+      "h": "acff18e22ed61c02",
       "d": "2026-10-22"
     },
     "/p/cleveland-cgone-wedge": {
-      "h": "0501c659d12c44b3",
+      "h": "5aa7dab530306017",
       "d": "2026-10-22"
     },
     "/p/david-woody2-wedge": {
-      "h": "803fb1d019f132bb",
+      "h": "84b117919758c20c",
       "d": "2026-10-22"
     },
     "/p/cleveland-smartsole-chipper": {
-      "h": "dfa2f7276c5991c1",
+      "h": "dc1641dfc5fe4ac6",
       "d": "2026-10-22"
     },
     "/p/ping-bunker-wedge": {
-      "h": "fdad7b55c23c3d33",
+      "h": "ceb37264f0a9b788",
       "d": "2026-10-22"
     },
     "/p/ping-chip-wedge": {
-      "h": "bf371c0f050e1637",
+      "h": "50452687b068e6e1",
       "d": "2026-10-22"
     },
     "/p/callaway-jaws-forged-wedge": {
@@ -822,15 +822,15 @@
       "d": "2026-10-22"
     },
     "/p/fourteen-rm4-wedge": {
-      "h": "ff9d7b3fd219b0c6",
+      "h": "df0ffc1536d6467f",
       "d": "2026-10-22"
     },
     "/p/taylormade-hitoe5-wedge": {
-      "h": "59d4002a590237c8",
+      "h": "8db7b0d216f9526d",
       "d": "2026-10-22"
     },
     "/p/ping-s159-wedge": {
-      "h": "d53e237d9679714d",
+      "h": "468e203e5860558b",
       "d": "2026-10-22"
     },
     "/p/pxg-0311-3x-wedge": {
@@ -1261,6 +1261,18 @@
       "h": "1f1366a4d677bf67",
       "d": "2026-10-22"
     },
+    "/p/callaway-cb12-wedge": {
+      "h": "8485637578b79c21",
+      "d": "2026-10-22"
+    },
+    "/p/pxg-stickem-wedge": {
+      "h": "aa4f82b17119ae62",
+      "d": "2026-10-22"
+    },
+    "/p/mizuno-t24-wedge": {
+      "h": "e90ff5cbfbbdc83f",
+      "d": "2026-10-22"
+    },
     "/c/driver": {
       "h": "b465925a281ec3c8",
       "d": "2026-10-21"
@@ -1278,8 +1290,8 @@
       "d": "2026-10-21"
     },
     "/c/wedge": {
-      "h": "0d139c1362629130",
-      "d": "2026-10-21"
+      "h": "24d1132bb5800eaf",
+      "d": "2026-10-22"
     },
     "/c/putter": {
       "h": "1a48354564303483",
@@ -1318,80 +1330,80 @@
       "d": "2026-10-21"
     },
     "/g/driver-recommend-2026": {
-      "h": "32d8525a7ae05fe1",
-      "d": "2026-10-21"
+      "h": "ec5bf02e90afba4f",
+      "d": "2026-10-22"
     },
     "/g/fairway-wood-recommend": {
-      "h": "4b2e573862bafac6",
-      "d": "2026-10-21"
+      "h": "268075dd3558bc6c",
+      "d": "2026-10-22"
     },
     "/g/utility-recommend": {
-      "h": "82b2c386a43fbc15",
-      "d": "2026-10-21"
+      "h": "fd4053b13b08b4fb",
+      "d": "2026-10-22"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "9c6deb51e66ae198",
-      "d": "2026-10-21"
+      "h": "0cc82d2966f7a0e5",
+      "d": "2026-10-22"
     },
     "/g/iron-recommend": {
-      "h": "ca2113f7542b6adf",
-      "d": "2026-10-21"
+      "h": "bb3e5673a684f0ab",
+      "d": "2026-10-22"
     },
     "/g/womens-utility-recommend": {
-      "h": "ea4e2e9517d8c9fb",
-      "d": "2026-10-21"
+      "h": "c018e45d8e6856a6",
+      "d": "2026-10-22"
     },
     "/g/wedge-recommend": {
-      "h": "8d90c64f93635b60",
-      "d": "2026-10-21"
+      "h": "df72866caa840594",
+      "d": "2026-10-22"
     },
     "/g/golf-ball-compare": {
-      "h": "19ab1c70b0be9875",
-      "d": "2026-10-21"
+      "h": "1fcbd3bf75acbd39",
+      "d": "2026-10-22"
     },
     "/g/rangefinder-recommend": {
-      "h": "f58646708b86cef0",
-      "d": "2026-10-21"
+      "h": "518042737011794b",
+      "d": "2026-10-22"
     },
     "/g/womens-driver-recommend": {
-      "h": "f2d1a03a17232e7a",
-      "d": "2026-10-21"
+      "h": "16cd2b8a907e8c4d",
+      "d": "2026-10-22"
     },
     "/g/putter-recommend": {
-      "h": "7aac94ab5b50456a",
-      "d": "2026-10-21"
+      "h": "44e09a49717478e0",
+      "d": "2026-10-22"
     },
     "/g/golf-shoes-recommend": {
-      "h": "7d776765cbb4cdca",
-      "d": "2026-10-21"
+      "h": "2f2c159d179cf4f7",
+      "d": "2026-10-22"
     },
     "/g/golf-watch-recommend": {
-      "h": "8f6f638b48ef9a46",
-      "d": "2026-10-21"
+      "h": "58fd1a3d601d82eb",
+      "d": "2026-10-22"
     },
     "/g/launch-monitor-recommend": {
-      "h": "157cd5342e732dbf",
-      "d": "2026-10-21"
+      "h": "e8e6749ffc295047",
+      "d": "2026-10-22"
     },
     "/g/golf-bag-recommend": {
-      "h": "2e33570773bb860c",
-      "d": "2026-10-21"
+      "h": "ccc6b06b1a7cc9f7",
+      "d": "2026-10-22"
     },
     "/g/golf-glove-recommend": {
-      "h": "bd1efd07d7b7d72f",
-      "d": "2026-10-21"
+      "h": "6274340b48d976d6",
+      "d": "2026-10-22"
     },
     "/g/practice-gear-recommend": {
-      "h": "5f9bd7daf57b8c6e",
-      "d": "2026-10-21"
+      "h": "c86be09850a06c91",
+      "d": "2026-10-22"
     },
     "/g/womens-iron-recommend": {
-      "h": "cdda09656d6f8bff",
-      "d": "2026-10-21"
+      "h": "19a81bff05a8e20f",
+      "d": "2026-10-22"
     },
     "/g/womens-shoes-recommend": {
-      "h": "8955e48827f17c31",
-      "d": "2026-10-21"
+      "h": "0c3cd8b9837ad1a8",
+      "d": "2026-10-22"
     },
     "/g/golf-gift-guide-2026": {
       "h": "8b614a39d1ea194d",
@@ -1494,20 +1506,20 @@
       "d": "2026-10-21"
     },
     "/g/wedge-recommend-beginner": {
-      "h": "ef3993092eb6c15e",
-      "d": "2026-10-21"
+      "h": "752250880b92aa8f",
+      "d": "2026-10-22"
     },
     "/g/wedge-recommend-intermediate": {
-      "h": "0c28c8ca948e9359",
-      "d": "2026-10-21"
+      "h": "67813f3eaa6ec5e5",
+      "d": "2026-10-22"
     },
     "/g/wedge-recommend-advanced": {
-      "h": "5a7a7e967f7bebe3",
-      "d": "2026-10-21"
+      "h": "c817d204d7380a80",
+      "d": "2026-10-22"
     },
     "/g/wedge-recommend-pro": {
-      "h": "b2a8017ff41b1bac",
-      "d": "2026-10-21"
+      "h": "13b71cfe4168f2ad",
+      "d": "2026-10-22"
     },
     "/g/golf-ball-compare-beginner": {
       "h": "7cbc334f11be32d9",
@@ -1590,24 +1602,24 @@
       "d": "2026-10-21"
     },
     "/": {
-      "h": "37c7cf2b6d3cece0",
-      "d": "2026-10-21"
+      "h": "a685b5e8f60d01d4",
+      "d": "2026-10-22"
     },
     "/about": {
       "h": "062d2326b8040ec7",
       "d": "2026-10-16"
     },
     "/qa/wedge-recommend-loft": {
-      "h": "3d0e63da1f74ad04",
-      "d": "2026-10-21"
+      "h": "f03b433b1ab58581",
+      "d": "2026-10-22"
     },
     "/qa/beginner-driver-recommend": {
       "h": "ec8305107ead8d0a",
       "d": "2026-10-21"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "34db0b744aac33e3",
-      "d": "2026-10-21"
+      "h": "6437f13a3e369847",
+      "d": "2026-10-22"
     },
     "/qa": {
       "h": "f6d0a06248078e04",
@@ -1738,20 +1750,20 @@
       "d": "2026-10-21"
     },
     "/vs/cleveland-rtx6-wedge-vs-callaway-opus-sp-wedge": {
-      "h": "780d9393f566d15a",
-      "d": "2026-10-21"
+      "h": "4cf9e3d8fc140363",
+      "d": "2026-10-22"
     },
     "/vs/cleveland-rtx6-wedge-vs-cleveland-smartsole-chipper": {
-      "h": "1a09591ce97d7c78",
-      "d": "2026-10-21"
+      "h": "cd50b79c78851cff",
+      "d": "2026-10-22"
     },
     "/vs/cleveland-rtz-wedge-vs-cleveland-rtx6-wedge": {
-      "h": "c6596c6c866a4421",
-      "d": "2026-10-21"
+      "h": "481b05f34db803f6",
+      "d": "2026-10-22"
     },
     "/vs/cleveland-rtz-wedge-vs-taylormade-mg4-wedge": {
-      "h": "3241b3bd1a1e1267",
-      "d": "2026-10-21"
+      "h": "14e46d5583a79244",
+      "d": "2026-10-22"
     },
     "/vs/ecco-biom-c4-shoes-vs-adidas-codechaos-shoes": {
       "h": "7696a42ce4893c83",
@@ -1802,12 +1814,12 @@
       "d": "2026-10-21"
     },
     "/vs/fourteen-frz-wedge-vs-fourteen-rm4-wedge": {
-      "h": "5b90bca6ce4571ed",
-      "d": "2026-10-21"
+      "h": "3955505e4648b34f",
+      "d": "2026-10-22"
     },
     "/vs/fourteen-rm4-wedge-vs-ping-s159-wedge": {
-      "h": "7067623928d95904",
-      "d": "2026-10-21"
+      "h": "7045a2536474abf8",
+      "d": "2026-10-22"
     },
     "/vs/garmin-approach-r10-vs-voicecaddie-sc4-pro": {
       "h": "c970a53545c2ba08",
@@ -1982,12 +1994,12 @@
       "d": "2026-10-21"
     },
     "/vs/ping-s159-wedge-vs-ping-glide4-wedge": {
-      "h": "ad783668ca6daf99",
-      "d": "2026-10-21"
+      "h": "ef77fb969f264c92",
+      "d": "2026-10-22"
     },
     "/vs/ping-s259-wedge-vs-cleveland-smartsole-chipper": {
-      "h": "a05d3d18232d2002",
-      "d": "2026-10-21"
+      "h": "80b3250f2bd0aef9",
+      "d": "2026-10-22"
     },
     "/vs/ping-sporty-lt-bag-vs-titleist-cart14-bag": {
       "h": "44d40f2af3d04f2e",
@@ -2158,16 +2170,16 @@
       "d": "2026-10-21"
     },
     "/vs/titleist-vokey-sm8-vs-fourteen-frz-wedge": {
-      "h": "d3aeb1c96ea326d1",
-      "d": "2026-10-21"
+      "h": "3f4abeee96f83e69",
+      "d": "2026-10-22"
     },
     "/vs/titleist-vokey-sm8-vs-mizuno-pro-t1-wedge": {
-      "h": "81f91b45870db3ab",
-      "d": "2026-10-21"
+      "h": "be308bf7ac35dc3c",
+      "d": "2026-10-22"
     },
     "/vs/titleist-vokey-sm8-vs-taylormade-mg4-wedge": {
-      "h": "23c4e14c838de5ea",
-      "d": "2026-10-21"
+      "h": "09ed47548323a265",
+      "d": "2026-10-22"
     },
     "/vs/voicecaddie-sc4-pro-vs-blacktee-shot5": {
       "h": "fa2b8860e0372a21",
@@ -2244,22 +2256,12 @@
   },
   "pending": [
     {
-      "url": "/qa/wedge-recommend-loft",
-      "kind": "new",
-      "d": "2026-10-21"
-    },
-    {
       "url": "/qa",
       "kind": "updated",
       "d": "2026-10-21"
     },
     {
       "url": "/qa/beginner-driver-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/qa/beginner-golf-club-set",
       "kind": "updated",
       "d": "2026-10-21"
     },
@@ -2380,26 +2382,6 @@
     },
     {
       "url": "/g/womens-utility-recommend-pro",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/wedge-recommend-beginner",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/wedge-recommend-intermediate",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/wedge-recommend-advanced",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/wedge-recommend-pro",
       "kind": "updated",
       "d": "2026-10-21"
     },
@@ -2639,26 +2621,6 @@
       "d": "2026-10-21"
     },
     {
-      "url": "/vs/cleveland-rtx6-wedge-vs-callaway-opus-sp-wedge",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/vs/cleveland-rtx6-wedge-vs-cleveland-smartsole-chipper",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/vs/cleveland-rtz-wedge-vs-cleveland-rtx6-wedge",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/vs/cleveland-rtz-wedge-vs-taylormade-mg4-wedge",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
       "url": "/vs/ecco-biom-c4-shoes-vs-adidas-codechaos-shoes",
       "kind": "updated",
       "d": "2026-10-21"
@@ -2715,16 +2677,6 @@
     },
     {
       "url": "/vs/footjoy-stasof-glove-vs-titleist-players-glove",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/vs/fourteen-frz-wedge-vs-fourteen-rm4-wedge",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/vs/fourteen-rm4-wedge-vs-ping-s159-wedge",
       "kind": "updated",
       "d": "2026-10-21"
     },
@@ -2944,16 +2896,6 @@
       "d": "2026-10-21"
     },
     {
-      "url": "/vs/ping-s159-wedge-vs-ping-glide4-wedge",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/vs/ping-s259-wedge-vs-cleveland-smartsole-chipper",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
       "url": "/vs/ping-sporty-lt-bag-vs-titleist-cart14-bag",
       "kind": "updated",
       "d": "2026-10-21"
@@ -3139,21 +3081,6 @@
       "d": "2026-10-21"
     },
     {
-      "url": "/vs/titleist-vokey-sm8-vs-fourteen-frz-wedge",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/vs/titleist-vokey-sm8-vs-mizuno-pro-t1-wedge",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/vs/titleist-vokey-sm8-vs-taylormade-mg4-wedge",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
       "url": "/vs/voicecaddie-sc4-pro-vs-blacktee-shot5",
       "kind": "updated",
       "d": "2026-10-21"
@@ -3229,11 +3156,6 @@
       "d": "2026-10-21"
     },
     {
-      "url": "/c/wedge",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
       "url": "/c/putter",
       "kind": "updated",
       "d": "2026-10-21"
@@ -3279,101 +3201,6 @@
       "d": "2026-10-21"
     },
     {
-      "url": "/g/driver-recommend-2026",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/fairway-wood-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/utility-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/womens-fairway-wood-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/iron-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/womens-utility-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/wedge-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/golf-ball-compare",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/rangefinder-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/womens-driver-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/putter-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/golf-shoes-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/golf-watch-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/launch-monitor-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/golf-bag-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/golf-glove-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/practice-gear-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/womens-iron-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/g/womens-shoes-recommend",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
       "url": "/g/golf-gift-guide-2026",
       "kind": "updated",
       "d": "2026-10-21"
@@ -3395,11 +3222,6 @@
     },
     {
       "url": "/g/golf-ball-compare-pro",
-      "kind": "updated",
-      "d": "2026-10-21"
-    },
-    {
-      "url": "/",
       "kind": "updated",
       "d": "2026-10-21"
     },
@@ -3574,22 +3396,7 @@
       "d": "2026-10-22"
     },
     {
-      "url": "/p/cleveland-rtz-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
       "url": "/p/callaway-opus-sp-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-mg4-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-s259-wedge",
       "kind": "updated",
       "d": "2026-10-22"
     },
@@ -4404,36 +4211,6 @@
       "d": "2026-10-22"
     },
     {
-      "url": "/p/mizuno-jpx923-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/cleveland-cgone-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/david-woody2-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/cleveland-smartsole-chipper",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-bunker-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-chip-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
       "url": "/p/callaway-jaws-forged-wedge",
       "kind": "updated",
       "d": "2026-10-22"
@@ -4450,21 +4227,6 @@
     },
     {
       "url": "/p/ping-glide4-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/fourteen-rm4-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-hitoe5-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-s159-wedge",
       "kind": "updated",
       "d": "2026-10-22"
     },
@@ -5000,6 +4762,271 @@
     },
     {
       "url": "/p/superspeed-speed-sticks-pro",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cleveland-rtz-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-mg4-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-s259-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-jpx923-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cleveland-cgone-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/david-woody2-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cleveland-smartsole-chipper",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-bunker-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-chip-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/fourteen-rm4-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-hitoe5-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-s159-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/c/wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/driver-recommend-2026",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/womens-utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/wedge-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/golf-ball-compare",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/womens-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/putter-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/golf-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/golf-watch-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/launch-monitor-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/golf-bag-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/golf-glove-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/practice-gear-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/womens-iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/womens-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/wedge-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/wedge-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/wedge-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/wedge-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/qa/wedge-recommend-loft",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/vs/cleveland-rtx6-wedge-vs-callaway-opus-sp-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/vs/cleveland-rtx6-wedge-vs-cleveland-smartsole-chipper",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/vs/cleveland-rtz-wedge-vs-cleveland-rtx6-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/vs/cleveland-rtz-wedge-vs-taylormade-mg4-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/vs/fourteen-frz-wedge-vs-fourteen-rm4-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/vs/fourteen-rm4-wedge-vs-ping-s159-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/vs/ping-s159-wedge-vs-ping-glide4-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/vs/ping-s259-wedge-vs-cleveland-smartsole-chipper",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/vs/titleist-vokey-sm8-vs-fourteen-frz-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/vs/titleist-vokey-sm8-vs-mizuno-pro-t1-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/vs/titleist-vokey-sm8-vs-taylormade-mg4-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-cb12-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/pxg-stickem-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-t24-wedge",
       "kind": "updated",
       "d": "2026-10-22"
     }
