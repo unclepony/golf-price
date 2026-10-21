@@ -101,6 +101,12 @@ const BUILD_AT = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 16).re
 const config = loadConfig();
 const links = loadLinks();
 const picks = readJson(join(ROOT, 'config', 'picks.json'), {});
+// 판매 종료 추정(쿠팡 API 에서 5일 연속 못 찾음 → picks.json gone, src/prices/coupang-refresh.mjs): 쿠팡 링크를 숨겨 순위·목록·홈·비교에서 빠지게 한다. 상품 주소는 그대로 둔다(검색 순위 보호)
+const GONE = Object.fromEntries(Object.entries(picks).filter(([, v]) => v?.gone).map(([id, v]) => [id, v.gone]));
+for (const id of Object.keys(GONE)) delete links[id];
+// 새 상품 표시: 추가한 날(products.json added)부터 NEW_DAYS 일 동안 'NEW'
+const NEW_DAYS = 30;
+const isNew = (p) => !!p?.added && (Date.parse(todayKst()) - Date.parse(p.added)) / 864e5 < NEW_DAYS;
 // 초보 기준에 맞는 옵션으로 바꿀 쿠팡 상품 (config/variants.json): link 를 채우면 기존 링크·상품 정보를 대신한다
 const variants = readJson(join(ROOT, 'config', 'variants.json'), {});
 for (const [id, v] of Object.entries(variants)) {
@@ -1285,6 +1291,7 @@ const rctx = () =>
     esc, won, cats, entries, picks, scoreOf, pageGuides, imageOf, freshPrice, skillOf, priceLevel, sellable, outHref,
     guidesFor, guideCat, guideName, rankedPicks, skillGroups, skillPath, mainPick,
     catName: (id) => cats.find((c) => c.id === id)?.name ?? '',
+    isNew,
     qa: QA.list,
     hasJp: existsSync(join(ROOT, 'config', 'jp-models.json')),
   });
@@ -1320,7 +1327,7 @@ ${gallery(p, hist)}
 <span class="pt-cat">${esc(cat.name)}</span>
 <h1>${esc(p.name)}</h1>
 ${updatedTag(p.updated)}
-<div class="pt-badges">${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, sr }) => (sr ? `<span class="tag ${sr.warn ? 'warn' : 'rank'}">${esc(guideName(g).replace(' 비교 및 선택 가이드', ''))} ${esc(sr.label)}</span>` : '')).join('')}${sellable(p.id) ? '' : '<span class="tag none">쿠팡 판매처 없음</span>'}</div>
+<div class="pt-badges">${isNew(p) ? '<span class="new-mark">NEW</span>' : ''}${GONE[p.id] ? `<span class="tag none">판매 종료·품절 추정 (${ymd(GONE[p.id])} 이후 쿠팡에서 찾을 수 없음)</span>` : ''}${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, sr }) => (sr ? `<span class="tag ${sr.warn ? 'warn' : 'rank'}">${esc(guideName(g).replace(' 비교 및 선택 가이드', ''))} ${esc(sr.label)}</span>` : '')).join('')}${sellable(p.id) ? '' : '<span class="tag none">쿠팡 판매처 없음</span>'}</div>
 ${buyBox(rctx(), p) || `<div class="pd-price">${buyButton(p.id, hist)}</div>`}
 ${links[p.id] && picks[p.id]?.title ? `<p class="linked">연결 상품: ${esc(picks[p.id].title)}</p>` : ''}
 ${infoTable(rctx(), p)}
@@ -1355,7 +1362,7 @@ if (existsSync(join(ROOT, 'content', 'detail'))) for (const f of readdirSync(joi
 
 // ---------- 분류 페이지 ----------
 for (const c of cats) {
-  const items = entries.filter((e) => e.p.category === c.id);
+  const items = entries.filter((e) => e.p.category === c.id && !GONE[e.p.id]);
   const related = guidesFor(c.id);
   writeText(
     join(OUT, 'c', `${c.id}.html`),

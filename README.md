@@ -118,6 +118,8 @@ Node.js 22.9 이상이 필요합니다.
 - 쿠팡 찾기: `node --env-file=<unclepony-ops/.env> src/expand/pick.mjs .expand/res-<분야>.json .expand/<분야>.json` — 쿠팡 파트너스 공식 검색 API, 호출 간격 65초, 같은 모델 확인(must/mustAny/exclude, 한글·영문 표기 맞춤), 직구·병행·중고 제외, 로켓배송 우선.
 - 넣기: `node src/expand/merge.mjs . .expand/<분야>.json .expand/res-<분야>.json <가이드 slug>` → products·links·picks(productId 포함)·guides. 연결 상품 사양(로프트·샤프트)은 쿠팡 상품명에 적힌 경우만, 아니면 '판매처 확인'.
 - 매일 예약 작업이 분야를 하나씩 돌아가며 위 과정을 하고 빌드·검사 → 배포 → ops 보고.
+- 새 상품 표시: products.json `added`(merge.mjs 가 넣음)부터 30일 동안 상품명 위에 작은 주황 글자 'NEW'(애플·나이키 목록 방식). 분류 목록 정렬에 '최근 추가 순'.
+- 판매 종료 처리: 매일 가격 갱신(src/prices/coupang-refresh.mjs)이 같은 상품을 5일 연속 못 찾으면 picks.json `gone` → 빌드가 쿠팡 링크를 숨기고 순위·목록·홈에서 뺀다. 상품 주소는 유지하고 '판매 종료·품절 추정' 표시. 다시 찾으면 자동으로 되살린다(연속 일수: config/coupang-missing.json). 분야별 예약 작업이 같은 모델의 다른 판매글로 다시 잇기를 먼저 시도한다.
 
 ## 검색 순위 보호 원칙
 

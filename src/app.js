@@ -337,7 +337,7 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
       const k = sortSel.value;
       const price = (c) => +c.dataset.price || (k === 'low' ? 1e12 : -1);
       const sorted = [...cards].sort((x, y) =>
-        k === 'low' ? price(x) - price(y) : k === 'high' ? price(y) - price(x) : k === 'name' ? x.dataset.name.localeCompare(y.dataset.name, 'ko') : +y.dataset.score - +x.dataset.score,
+        k === 'low' ? price(x) - price(y) : k === 'high' ? price(y) - price(x) : k === 'name' ? x.dataset.name.localeCompare(y.dataset.name, 'ko') : k === 'new' ? (y.dataset.added || '').localeCompare(x.dataset.added || '') || +y.dataset.score - +x.dataset.score : +y.dataset.score - +x.dataset.score,
       );
       grid.prepend(...sorted);
       // 주소에 조건을 남겨 공유·뒤로 가기에 쓰게 한다
@@ -405,7 +405,7 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
     const MENU = { clubs: ['driver', 'wood', 'utility', 'iron', 'wedge', 'putter'], shoes: ['shoes'], ball: ['ball'], bag: ['bag'], gps: ['rangefinder', 'gps', 'launch'], acc: ['glove', 'practice'] };
     const mOf = (cat) => Object.keys(MENU).find((k) => MENU[k].includes(cat)) ?? 'acc';
     let order = $$('.pc', grid).map((a) => a.getAttribute('href').slice(3));
-    const card = (it, r) => `<a class="pc" href="/p/${esc(it.id)}" data-m="${mOf(it.cat)}"><span class="pc-img"><span class="pc-rank">${r}</span>${it.image ? `<img src="${esc(it.image)}" alt="" loading="lazy" decoding="async" width="212" height="212">` : ''}${it.rocket ? '<span class="pc-rocket">로켓배송</span>' : ''}</span><span class="pc-brand">${esc(it.brand)}</span><b class="pc-name">${esc(it.name)}</b><span class="pc-tags tierline">${it.skill ? `<span class="skill sk-${SKN.indexOf(it.skill) + 1}">${esc(it.skill)}</span>` : ''}${it.lvl ? `<span class="lvl lvl-${it.lvl}" title="가격대: ${LVN[it.lvl]}"><i>${'₩'.repeat(it.lvl)}</i><s>${'₩'.repeat(4 - it.lvl)}</s><em>${LVN[it.lvl]}</em></span>` : ''}</span>${it.score ? `<span class="pc-score">편집 점수 ${it.score.toFixed(1)}</span>` : ''}${it.price ? `<span class="pc-price"><b>${it.price.toLocaleString('ko-KR')}원</b><small>쿠팡 · ${+it.priceD.slice(5, 7)}.${+it.priceD.slice(8, 10)} 확인</small></span>` : '<span class="pc-price none">쿠팡에서 가격 확인</span>'}</a>`;
+    const card = (it, r) => `<a class="pc" href="/p/${esc(it.id)}" data-m="${mOf(it.cat)}"><span class="pc-img"><span class="pc-rank">${r}</span>${it.image ? `<img src="${esc(it.image)}" alt="" loading="lazy" decoding="async" width="212" height="212">` : ''}${it.rocket ? '<span class="pc-rocket">로켓배송</span>' : ''}</span><span class="pc-brand">${it.isNew ? '<span class="new-mark">NEW</span>' : ''}${esc(it.brand)}</span><b class="pc-name">${esc(it.name)}</b><span class="pc-tags tierline">${it.skill ? `<span class="skill sk-${SKN.indexOf(it.skill) + 1}">${esc(it.skill)}</span>` : ''}${it.lvl ? `<span class="lvl lvl-${it.lvl}" title="가격대: ${LVN[it.lvl]}"><i>${'₩'.repeat(it.lvl)}</i><s>${'₩'.repeat(4 - it.lvl)}</s><em>${LVN[it.lvl]}</em></span>` : ''}</span>${it.score ? `<span class="pc-score">편집 점수 ${it.score.toFixed(1)}</span>` : ''}${it.price ? `<span class="pc-price"><b>${it.price.toLocaleString('ko-KR')}원</b><small>쿠팡 · ${+it.priceD.slice(5, 7)}.${+it.priceD.slice(8, 10)} 확인</small></span>` : '<span class="pc-price none">쿠팡에서 가격 확인</span>'}</a>`;
     let key = 'all';
     const render = () => {
       const ids = [...order, ...Object.keys(data).filter((id) => !order.includes(id))].filter((id) => data[id] && (key === 'all' || mOf(data[id].cat) === key)).slice(0, 20);

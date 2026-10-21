@@ -58,7 +58,13 @@ add(
 
 add('게시하지 못한 초보 Q&A 글 (content/qa, 검사 불통과)', loadQa(new Set(guides.map((g) => g.slug))).bad, '글을 고치면 다음 빌드에 게시됩니다. 기준은 README `초보 Q&A`.');
 
-const total = sections.reduce((s, x) => s + x.count, 0);
+add(
+  '판매 종료·품절 추정 상품 (쿠팡 API 에서 5일 연속 못 찾음 → 사이트에서 링크 숨김)',
+  Object.entries(picks).filter(([, v]) => v?.gone).map(([id, v]) => `${name(id)} (\`${id}\`): ${v.gone} 부터`),
+  '같은 모델의 다른 쿠팡 판매글이 있으면 src/expand 로 찾아 링크를 바꾸고(gone 지움), 단종이면 그대로 둔다(주소 유지).',
+);
+
+const total =sections.reduce((s, x) => s + x.count, 0);
 const md = [
   `## 데이터 점검 ${today}`,
   '',

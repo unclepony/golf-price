@@ -37,6 +37,8 @@ export function itemInfo(ctx, e) {
     sellable: ctx.sellable(p.id),
     year: p.year ?? '',
     cat: p.category,
+    isNew: ctx.isNew?.(p) ?? false,
+    added: p.added ?? '',
   };
 }
 
@@ -98,9 +100,9 @@ export function productCard(ctx, it) {
   const { esc, won } = ctx;
   const sk = it.skill ? `<span class="skill sk-${SK.indexOf(it.skill) + 1}">${esc(it.skill)}</span>` : '';
   const lv = it.lvl ? `<span class="lvl lvl-${it.lvl}" title="가격대: ${LV[it.lvl]}"><i>${'₩'.repeat(it.lvl)}</i><s>${'₩'.repeat(4 - it.lvl)}</s><em>${LV[it.lvl]}</em></span>` : '';
-  return `<a class="pc" href="/p/${esc(it.id)}" data-brand="${esc(it.brand)}" data-skill="${esc(it.skill)}" data-gender="${esc(it.gender.join(' '))}" data-lvl="${it.lvl}" data-price="${it.price}" data-score="${it.score.toFixed(2)}" data-rocket="${it.rocket ? 1 : 0}" data-name="${esc(it.name)}">
+  return `<a class="pc" href="/p/${esc(it.id)}" data-brand="${esc(it.brand)}" data-skill="${esc(it.skill)}" data-gender="${esc(it.gender.join(' '))}" data-lvl="${it.lvl}" data-price="${it.price}" data-score="${it.score.toFixed(2)}" data-rocket="${it.rocket ? 1 : 0}" data-name="${esc(it.name)}" data-added="${esc(it.added)}">
 <span class="pc-img">${it.image ? `<img src="${esc(it.image)}" alt="" loading="lazy" decoding="async" width="212" height="212">` : ''}${it.rocket ? '<span class="pc-rocket">로켓배송</span>' : ''}</span>
-<span class="pc-brand">${esc(it.brand)}</span>
+<span class="pc-brand">${it.isNew ? '<span class="new-mark">NEW</span>' : ''}${esc(it.brand)}</span>
 <b class="pc-name">${esc(it.name)}</b>
 <span class="pc-tags tierline">${sk}${lv}</span>
 ${it.score ? `<span class="pc-score"><i style="--w:${(it.score / 5) * 100}%"></i>편집 점수 ${it.score.toFixed(1)}</span>` : ''}
@@ -130,7 +132,7 @@ export function listBlock(ctx, c, items) {
   return `<section class="plp" id="list" data-plp>
 <div class="plp-bar"><p class="plp-n"><b id="plpN">${infos.length}</b>개 상품</p>
 <button type="button" class="plp-ftoggle" id="plpFt" aria-expanded="false" aria-controls="plpF">필터</button>
-<label class="plp-sort">정렬 <select id="plpSort"><option value="score">편집 점수 높은 순</option><option value="low">낮은 가격 순</option><option value="high">높은 가격 순</option><option value="name">이름 순</option></select></label></div>
+<label class="plp-sort">정렬 <select id="plpSort"><option value="score">편집 점수 높은 순</option><option value="low">낮은 가격 순</option><option value="high">높은 가격 순</option><option value="new">최근 추가 순</option><option value="name">이름 순</option></select></label></div>
 <div class="plp-body">
 <aside class="plp-f" id="plpF" aria-label="필터"><div class="plp-fh"><b>필터</b><button type="button" id="plpReset">초기화</button></div>${filters}</aside>
 <div class="plp-grid" id="plpGrid">${infos.map((it) => productCard(ctx, it)).join('')}</div>

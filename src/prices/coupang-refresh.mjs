@@ -10,6 +10,8 @@
 //   → 기본은 매일 전 상품. 못 찾은 상품도 시도일을 남겨 다음 상품으로 넘어간다.
 // - 호출 사이 --gap 초(기본 4, 최소 3) 쉰다. 쿠팡 파트너스 API 문서: 검색은 1분당 최대 50번, 한도에 닿으면 24시간 사용 제한 → 4초 간격(분당 15번)으로 넉넉히 둔다. API 오류가 나면 거기서 멈추고 그때까지 찾은 것만 저장한다. 키가 없으면 건너뛴다.
 // - 가격이 바뀌어도 콘텐츠 업데이트일은 바뀌지 않는다(build.mjs 가 가격 요소를 지문에서 뺀다).
+// - 판매 종료 처리: 같은 상품을 연속 5일(날짜 기준) 못 찾으면 picks.json 에 gone(날짜)을 적는다 → 빌드가 쿠팡 링크를 숨기고 순위·목록·홈에서 뺀다(주소는 유지, '판매 종료·품절 추정' 표시).
+//   API 는 호출 시점에 품절된 상품을 돌려주지 않으므로 일시 품절도 포함된다. 다시 찾으면 gone 을 지우고 되살린다. 연속 일수는 config/coupang-missing.json.
 // 실행: node --env-file=<.env> src/prices/coupang-refresh.mjs [--max N] [--gap 4]   (키 값은 화면·로그에 쓰지 않는다)
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -29,6 +31,9 @@ const read = (f) => JSON.parse(readFileSync(C(f), 'utf8'));
 const links = read('links.json');
 const picks = read('picks.json');
 const triedFile = C('coupang-refresh.json');
+const missFile = C('coupang-missing.json');
+const missing = existsSync(missFile) ? JSON.parse(readFileSync(missFile, 'utf8')) : { _설명: 'src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { since: 처음 못 찾은 날, days: 연속으로 못 찾은 날 수, last: 마지막으로 못 찾은 날 }. 5일이면 picks.json gone.' };
+const GONE_DAYS = 5;
 const tried = existsSync(triedFile) ? JSON.parse(readFileSync(triedFile, 'utf8')) : { _설명: 'src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → 쿠팡 API 로 마지막 시도한 날(찾음/못 찾음 모두). 순번용.' };
 
 // 단어 묶음: 소문자, 괄호·쉼표·슬래시·가운뎃점 등을 띄어쓰기로, '10.5도'·'10.5' 같은 단위 차이는 그대로 둔다(엄격)
@@ -45,6 +50,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const save = () => {
   writeFileSync(C('picks.json'), JSON.stringify(picks, null, 2) + '\n');
   writeFileSync(triedFile, JSON.stringify(tried, null, 2) + '\n');
+  writeFileSync(missFile, JSON.stringify(missing, null, 2) + '\n');
 };
 let ok = 0, miss = 0;
 for (const [i, id] of targets.entries()) {
@@ -59,8 +65,18 @@ for (const [i, id] of targets.entries()) {
   const hit = pk.productId
     ? rows.find((r) => r.id === String(pk.productId) && sane(r))
     : rows.find((r) => words(r.name) === want && sane(r) && (pk.rocket === undefined || !!pk.rocket === r.rocket));
-  if (!hit) { miss++; console.log(`건너뜀: ${id} (검색 ${rows.length}건 중 같은 상품으로 확신할 결과 없음 — 기존 값 유지)`); save(); continue; }
+  if (!hit) {
+    miss++;
+    const m = (missing[id] ??= { since: today, days: 0, last: '' });
+    if (m.last !== today) { m.days++; m.last = today; }
+    if (m.days >= GONE_DAYS && !pk.gone) { picks[id] = { ...pk, gone: today }; console.log(`판매 종료 추정: ${id} (${m.days}일 연속 못 찾음, ${m.since}부터)`); }
+    else console.log(`건너뜀: ${id} (검색 ${rows.length}건 중 같은 상품으로 확신할 결과 없음 — 기존 값 유지, 연속 ${m.days}일)`);
+    save();
+    continue;
+  }
+  delete missing[id];
   picks[id] = { ...pk, productId: String(hit.id), price: hit.price, image: pk.image || hit.image, rocket: hit.rocket, checked: today };
+  if (pk.gone) { delete picks[id].gone; console.log(`다시 판매: ${id}`); }
   ok++;
   console.log(`갱신: ${id} ${hit.price.toLocaleString()}원`);
   save();

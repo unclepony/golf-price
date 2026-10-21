@@ -29,7 +29,7 @@ for (const c of cands) {
   const slug = guideArg === 'auto' ? (c.gender === '여성' ? 'womens-shoes-recommend' : 'golf-shoes-recommend') : guideArg;
   const g = guides.guides.find((x) => x.slug === slug);
   if (!g) throw new Error(`가이드 없음 ${slug}`);
-  products.products.push({ id: c.id, category: c.category, name: c.name, query: c.query, ...(c.must ? { must: c.must } : {}), ...(c.mustAny ? { mustAny: c.mustAny } : {}), exclude: c.exclude ?? [], summary: c.summary, points: c.points ?? [], ref: r.price, updated: today });
+  products.products.push({ id: c.id, category: c.category, name: c.name, query: c.query, ...(c.must ? { must: c.must } : {}), ...(c.mustAny ? { mustAny: c.mustAny } : {}), exclude: c.exclude ?? [], summary: c.summary, points: c.points ?? [], ref: r.price, updated: today, added: today });
   links[c.id] = r.link;
   picks[c.id] = { title: r.title, price: r.price, rocket: !!r.rocket, image: r.image, checked: r.checked, productId: r.productId };
   const pk = { id: c.id, ...c.guidePick };
