@@ -1020,3 +1020,28 @@ a.btn.xs[rel~="sponsored"], a.btn.sm[rel~="sponsored"] { max-width: none; }
 .vrow .vplay { width: 100%; height: 270px; aspect-ratio: auto; }
 .vrow .vcard figcaption { flex: 1; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; height: 3.9em; padding: 10px 12px 0; box-sizing: content-box; margin-bottom: 12px; }
 @media (max-width: 760px) { .vrow .vcard { width: 300px; } .vrow .vcard.vshort { width: 113px; } .vrow .vplay { height: 169px; } .vrow .vshort figcaption { font-size: 12px; } }
+
+/* 비교표: 좌우 스크롤 없이 한 화면에(최대 4종, 휴대폰은 상위 2종) */
+.ig-scroll { overflow: visible; }
+table.ig { min-width: 0 !important; width: 100%; table-layout: fixed; }
+table.ig col.ig-lab { width: 104px; }
+table.ig tbody th { width: auto; writing-mode: horizontal-tb; word-break: keep-all; white-space: normal; font-size: 13px; line-height: 1.35; padding: 10px 12px; }
+table.ig .ig-corner { width: auto; }
+table.ig thead img { width: min(110px, 100%); height: auto; aspect-ratio: 1; }
+table.ig td, table.ig th { overflow-wrap: anywhere; }
+@media (max-width: 640px) {
+  table.ig col.ig-lab { width: 64px; }
+  table.ig .c3, table.ig .c4 { display: none; }
+  table.ig tbody th { font-size: 11px; padding: 8px 6px; }
+  table.ig th, table.ig td { padding: 8px 6px; font-size: 12px; }
+}
+/* 비교표 가격 줄: 좁은 칸에서 배지·가격·버튼이 줄바꿈되게 */
+table.ig .r-price td { white-space: normal; }
+table.ig .r-price td > * { max-width: 100%; }
+table.ig .r-price .lvl { display: inline-flex; flex-wrap: wrap; justify-content: center; }
+table.ig .r-price .pshort { display: block; margin: 4px 0; white-space: normal; }
+table.ig .r-price .btn { display: block; max-width: 100%; white-space: normal; box-sizing: border-box; }
+@media (max-width: 640px) { table.ig .r-price .btn { font-size: 11px; padding: 6px 4px; } table.ig .r-price .lvl i { display: none; } }
+/* 그라인드 비교(6종 개념표)는 칸이 많아 표 안에서만 옆으로 넘긴다 */
+.grind .ig-scroll { overflow-x: auto; }
+table.ig.grind-t { min-width: 720px !important; }
