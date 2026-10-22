@@ -1765,6 +1765,29 @@ writeText(
   }).replace('<meta name="description"', '<meta name="robots" content="noindex">\n<meta name="description"'),
 );
 
+// ---------- 없는 주소 (404) ----------
+// Cloudflare Pages 는 404.html 이 없으면 모든 없는 주소에 홈 내용을 200 으로 돌려준다(검색엔진에 '내용 없는 중복 페이지'로 보임).
+// 이 파일이 있으면 없는 주소는 404 상태로 이 화면을 보여 준다. canonical 은 넣지 않는다.
+writeText(
+  join(OUT, '404.html'),
+  layout({
+    title: '페이지를 찾을 수 없습니다',
+    desc: `${SITE_NAME}에 없는 주소입니다.`,
+    path: '/404',
+    body: `<h1>페이지를 찾을 수 없습니다</h1>
+<section class="prose">
+<p>주소가 바뀌었거나 없어진 페이지입니다. 아래에서 찾는 분야를 골라 주세요.</p>
+<ul>${cats.map((c) => `<li><a href="/c/${c.id}">${esc(c.name)}</a></li>`).join('')}</ul>
+<p><a href="/">홈으로 가기</a> · <a href="/search">검색</a></p>
+</section>`,
+  })
+    .replace('<meta name="description"', '<meta name="robots" content="noindex">\n<meta name="description"')
+    .replace(/<link rel="canonical" href="[^"]*">\n/, '')
+    .replace(/<meta property="og:url" content="[^"]*">\n/, '')
+    .replace(/<meta property="og:image[^"]*" content="[^"]*">\n/g, '')
+    .replace(/<meta name="twitter:card" content="[^"]*">/, '<meta name="twitter:card" content="summary">'),
+);
+
 // ---------- 운영 안내 ----------
 // 운영자 소개·문의는 config/site.json 의 about.operator / about.contact 를 채우면 표시된다 (비어 있으면 숨김)
 const ABOUT = SITE.about ?? {};
