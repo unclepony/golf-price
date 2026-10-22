@@ -77,8 +77,8 @@ ${d.short ? `<p class="tag">${esc(d.short)}</p>` : ''}
 <div class="chips">${d.skill ? `<span class="chip">${esc(d.skill)} 추천</span>` : ''}${d.rank ? `<span class="chip">${esc(d.rank)}</span>` : ''}${d.level ? `<span class="chip">${esc(d.level)}</span>` : ''}</div>
 ${d.image ? `<div class="ph"><img src="${esc(d.image)}"></div>` : '<div style="height:40px"></div>'}
 </section>
-${d.forWhom ? `<section class="sec who"><p class="k">WHO IS IT FOR</p><h2>이런 분께 맞습니다</h2><p class="quote">${esc(d.forWhom)}</p>${d.skill ? `<div class="ladder">${ladder}</div><p class="note">ATL골프기어가 ${esc(d.guide)}에서 분류한 실력 단계입니다.</p>` : ''}</section>` : ''}
-${bars ? `<section class="sec"><p class="k">EDITOR SCORE</p><h2>항목별 편집 점수</h2><div class="score-big"><b>${d.total.toFixed(1)}</b><span>/ 5 종합</span></div>${bars}<p class="note">편집 점수는 ATL골프기어의 주관적인 참고 점수이며 공식 평가가 아닙니다.</p></section>` : ''}
+${d.forWhom ? `<section class="sec who"><p class="k">WHO IS IT FOR</p><h2>이런 분께 맞습니다</h2><p class="quote">${esc(d.forWhom)}</p>${d.skill ? `<div class="ladder">${ladder}</div><p class="note">${esc(d.site)}가 ${esc(d.guide)}에서 분류한 실력 단계입니다.</p>` : ''}</section>` : ''}
+${bars ? `<section class="sec"><p class="k">EDITOR SCORE</p><h2>항목별 편집 점수</h2><div class="score-big"><b>${d.total.toFixed(1)}</b><span>/ 5 종합</span></div>${bars}<p class="note">편집 점수는 ${esc(d.site)}의 주관적인 참고 점수이며 공식 평가가 아닙니다.</p></section>` : ''}
 ${specs.length ? `<section class="sec spec"><p class="k">SPEC</p><h2>핵심 사양</h2><div class="tbl">${specs.map(([k, v]) => `<div class="row"><span>${esc(k)}</span><b>${esc(v)}</b></div>`).join('')}</div><p class="note" style="color:#9fd8b8">'연결 상품' 항목은 이 사이트가 연결한 쿠팡 판매 상품 기준입니다.</p></section>` : ''}
 ${d.pros?.length || d.cons?.length ? `<section class="sec"><p class="k">PROS &amp; CONS</p><h2>강점과 감안할 점</h2><div class="pc">
 <div class="card plus"><h3><i>+</i>강점</h3><ul>${(d.pros ?? []).map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>

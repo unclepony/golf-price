@@ -2,27 +2,27 @@
   "_설명": "build.mjs 가 관리한다. pages: 주소별 본문 지문(h)과 콘텐츠 업데이트일(d). pending: IndexNow 로 보낼 주소(콘텐츠가 바뀐·새로 생긴·삭제된 페이지). 직접 고치지 않는다.",
   "pages": {
     "/p/taylormade-qi35-driver": {
-      "h": "5012984a128332bb",
+      "h": "a9e4d42397e2a876",
       "d": "2026-10-22"
     },
     "/p/callaway-elyte-driver": {
-      "h": "0e1067db72e57f33",
+      "h": "79b4256f52d13f89",
       "d": "2026-10-22"
     },
     "/p/ping-g440-driver": {
-      "h": "eef3610990e37e32",
+      "h": "21c83ce864bcb325",
       "d": "2026-10-22"
     },
     "/p/titleist-gt2-driver": {
-      "h": "602677f77dbc64d0",
+      "h": "d28b40045c22e805",
       "d": "2026-10-22"
     },
     "/p/taylormade-p790-iron": {
-      "h": "bc2891083bd55c2c",
+      "h": "ab068f832c8bebfd",
       "d": "2026-10-22"
     },
     "/p/ping-g440-iron": {
-      "h": "579b95ce626b26f0",
+      "h": "786c4b5a5449a0aa",
       "d": "2026-10-22"
     },
     "/p/odyssey-ai-one-putter": {
@@ -106,63 +106,63 @@
       "d": "2026-10-22"
     },
     "/p/titleist-t100-iron": {
-      "h": "143f97591e16db6d",
+      "h": "ec429c329da2e3ab",
       "d": "2026-10-22"
     },
     "/p/mizuno-jpx925-forged-iron": {
-      "h": "2ec9f6ffc36fab12",
+      "h": "1dd8ead9522c7817",
       "d": "2026-10-22"
     },
     "/p/callaway-elyte-iron": {
-      "h": "7c0667920703f3e1",
+      "h": "1760852c4cc09884",
       "d": "2026-10-22"
     },
     "/p/cleveland-rtz-wedge": {
-      "h": "d4ce6a3cccb3a701",
+      "h": "d934eb19a6c6056d",
       "d": "2026-10-22"
     },
     "/p/callaway-opus-sp-wedge": {
-      "h": "a1d9598db1e2ca2d",
+      "h": "8893684e27b4a214",
       "d": "2026-10-22"
     },
     "/p/taylormade-mg4-wedge": {
-      "h": "274251ef81bc80ac",
+      "h": "95592ad89fbe0dc0",
       "d": "2026-10-22"
     },
     "/p/ping-s259-wedge": {
-      "h": "1b6f39c238b52067",
+      "h": "fc86e6c3d68d2c1a",
       "d": "2026-10-22"
     },
     "/p/ping-g440-max-fairway": {
-      "h": "5f8c90ede1adc5f2",
+      "h": "bfe89c1318b55e3d",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi35-fairway": {
-      "h": "1ac1e6cf87eef8b3",
+      "h": "84218ae22355aef1",
       "d": "2026-10-22"
     },
     "/p/callaway-elyte-fairway": {
-      "h": "3c272f9360db15fb",
+      "h": "96856f888159f733",
       "d": "2026-10-22"
     },
     "/p/cobra-optm-x-fairway": {
-      "h": "1140ca6033d11eb4",
+      "h": "8961edf56cf69961",
       "d": "2026-10-22"
     },
     "/p/ping-g440-hybrid": {
-      "h": "01f16c66de3784b9",
+      "h": "7ff15d4a91eb6f2c",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi35-rescue": {
-      "h": "3d0cd17183b04d29",
+      "h": "bbe936c742163ddf",
       "d": "2026-10-22"
     },
     "/p/callaway-elyte-hybrid": {
-      "h": "5705ed4883e0f60b",
+      "h": "f8a27706f24d4c18",
       "d": "2026-10-22"
     },
     "/p/cobra-optm-hybrid": {
-      "h": "6dcb1bb08b2d3886",
+      "h": "e72c11af8cbb38d2",
       "d": "2026-10-22"
     },
     "/p/garmin-approach-s70": {
@@ -278,23 +278,23 @@
       "d": "2026-10-22"
     },
     "/p/titleist-gts2-driver": {
-      "h": "d9902c60492d68de",
+      "h": "320f1e3ad07eec0a",
       "d": "2026-10-22"
     },
     "/p/titleist-gts2-fairway": {
-      "h": "7dbe61cd20e406f9",
+      "h": "31816dfc11d4d560",
       "d": "2026-10-22"
     },
     "/p/titleist-gt2-hybrid": {
-      "h": "f6ba34e1340216c2",
+      "h": "a2ba65c5e5e4409b",
       "d": "2026-10-22"
     },
     "/p/titleist-620mb-iron": {
-      "h": "c2b0bdeac9c56004",
+      "h": "9c036646ad751594",
       "d": "2026-10-22"
     },
     "/p/titleist-vokey-sm11": {
-      "h": "97d75791f88c2170",
+      "h": "a8aac22805b2349e",
       "d": "2026-10-22"
     },
     "/p/scotty-cameron-phantom-2026": {
@@ -302,63 +302,63 @@
       "d": "2026-10-22"
     },
     "/p/taylormade-sim2max-driver": {
-      "h": "e60b80ce870efa4e",
+      "h": "86547c44e2aada2f",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi10max-driver": {
-      "h": "2ce57802c6c5fe9a",
+      "h": "9397cf4fb2aac8f8",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi35max-driver": {
-      "h": "65990f0be80e75eb",
+      "h": "c6485c094fd6da00",
       "d": "2026-10-22"
     },
     "/p/majesty-prestigio13-driver": {
-      "h": "f0fac07a51402626",
+      "h": "0bece184f992f074",
       "d": "2026-10-22"
     },
     "/p/callaway-paradym-driver": {
-      "h": "6758dadb22c311ed",
+      "h": "1522c59ebfbeb69f",
       "d": "2026-10-22"
     },
     "/p/callaway-quantum-tdmax-driver": {
-      "h": "ffc219ccd07781f2",
+      "h": "6fe81e4830ea481a",
       "d": "2026-10-22"
     },
     "/p/xxio14plus-driver": {
-      "h": "8af8980a2ffd276b",
+      "h": "f55f2f48637537cb",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi35ls-driver": {
-      "h": "a38d7cc92c3a1b63",
+      "h": "9115ce80215c6d67",
       "d": "2026-10-22"
     },
     "/p/ping-g440lst-driver": {
-      "h": "b774ee83190fa446",
+      "h": "9d9c7b3b43c3b569",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi4d-driver": {
-      "h": "349697dfc7e8e165",
+      "h": "31cdb73046b39e4d",
       "d": "2026-10-22"
     },
     "/p/titleist-gt3-driver": {
-      "h": "5754796218b687ee",
+      "h": "f14ce62f23a3d13e",
       "d": "2026-10-22"
     },
     "/p/titleist-gts3-driver": {
-      "h": "1038d6c32275e104",
+      "h": "1f836bad38457623",
       "d": "2026-10-22"
     },
     "/p/callaway-quantum-td-driver": {
-      "h": "ff407ee3c52b61f5",
+      "h": "e050c34dc2055d2e",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi4dls-driver": {
-      "h": "1f63c103f9145428",
+      "h": "ba82ffbc459bfce8",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi10ls-driver": {
-      "h": "b1e6bdb756167625",
+      "h": "60a8405206cb1584",
       "d": "2026-10-22"
     },
     "/p/prgr-sweep-women-driver": {
@@ -414,63 +414,63 @@
       "d": "2026-10-22"
     },
     "/p/titleist-vokey-sm8": {
-      "h": "ee548ac0a0796c95",
+      "h": "d4d0f0f4b8ba401b",
       "d": "2026-10-22"
     },
     "/p/taylormade-sim2max-iron": {
-      "h": "b909e5d79b2179fd",
+      "h": "1746a6d53e76df93",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi-iron": {
-      "h": "c9895ea3c5882564",
+      "h": "0a747d7e9b9bcaad",
       "d": "2026-10-22"
     },
     "/p/ping-g430-iron": {
-      "h": "24e443d1232d60c2",
+      "h": "c8be4239802d67a9",
       "d": "2026-10-22"
     },
     "/p/mizuno-jpx925-hmpro-iron": {
-      "h": "c742bb25185cb649",
+      "h": "3668ca4bb503c059",
       "d": "2026-10-22"
     },
     "/p/callaway-xforged-starplus-iron": {
-      "h": "b412e2a355e08fe3",
+      "h": "1a587d33125b3730",
       "d": "2026-10-22"
     },
     "/p/bridgestone-v300-iron": {
-      "h": "b6f2975704e19357",
+      "h": "151d5d74318010c3",
       "d": "2026-10-22"
     },
     "/p/xxio13-iron": {
-      "h": "cb65f2381379a7ec",
+      "h": "8931bca7d777ebde",
       "d": "2026-10-22"
     },
     "/p/ping-i525-iron": {
-      "h": "739940b69773fe0f",
+      "h": "3c6792ae3d750a57",
       "d": "2026-10-22"
     },
     "/p/srixon-zxi5-iron": {
-      "h": "78f914e4df051f6b",
+      "h": "6badff8be26b283e",
       "d": "2026-10-22"
     },
     "/p/titleist-t250-iron": {
-      "h": "2bfee2e22bbfc61f",
+      "h": "ffa552887224e6d6",
       "d": "2026-10-22"
     },
     "/p/callaway-xforged-max-iron": {
-      "h": "c11855f2026f715c",
+      "h": "f65460a7ebac9d82",
       "d": "2026-10-22"
     },
     "/p/mizuno-pro-s1-iron": {
-      "h": "aa9c4dd927ce3577",
+      "h": "5005529eaa15b171",
       "d": "2026-10-22"
     },
     "/p/srixon-zxi7-iron": {
-      "h": "8304ae236924b500",
+      "h": "def91c8e307a6105",
       "d": "2026-10-22"
     },
     "/p/bridgestone-242cb-iron": {
-      "h": "435f1c2717220924",
+      "h": "fb6fdb53bb08e9f2",
       "d": "2026-10-22"
     },
     "/p/missile-axg-women-iron": {
@@ -530,191 +530,191 @@
       "d": "2026-10-22"
     },
     "/p/taylormade-sim2max-fairway": {
-      "h": "a37f30d0aefa665a",
+      "h": "02122009d03dc307",
       "d": "2026-10-22"
     },
     "/p/mizuno-stmax230-fairway": {
-      "h": "3db04e21a86e95ea",
+      "h": "183825ca6c3db2f7",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi10-fairway": {
-      "h": "e726799c5382874e",
+      "h": "c90119e6f6777a81",
       "d": "2026-10-22"
     },
     "/p/majesty-royalgold-fairway": {
-      "h": "be4e9ad0411455a9",
+      "h": "7008485051282e10",
       "d": "2026-10-22"
     },
     "/p/xxio12-fairway": {
-      "h": "7c4e0462bc00c712",
+      "h": "333d597db5566726",
       "d": "2026-10-22"
     },
     "/p/mizuno-jpxone-fairway": {
-      "h": "7e00c61066ff3bcd",
+      "h": "bb6141a51eb698ff",
       "d": "2026-10-22"
     },
     "/p/callaway-quantummax-fairway": {
-      "h": "f8644d3d879a657a",
+      "h": "fcd7cefc23ebc936",
       "d": "2026-10-22"
     },
     "/p/xxio14-fairway": {
-      "h": "6e826cdbb4ec86a7",
+      "h": "3face0cf56cc9482",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi4dmax-fairway": {
-      "h": "9c19bcac88d9a82c",
+      "h": "02a75ce63c2c9471",
       "d": "2026-10-22"
     },
     "/p/srixon-zxi-fairway": {
-      "h": "3225506178800811",
+      "h": "8f304d09349a7808",
       "d": "2026-10-22"
     },
     "/p/callaway-roguest-fairway": {
-      "h": "824dd8e67e90b310",
+      "h": "272b0943d139306b",
       "d": "2026-10-22"
     },
     "/p/ping-g430lst-fairway": {
-      "h": "22d78d500ea31f6a",
+      "h": "124b555b0d057188",
       "d": "2026-10-22"
     },
     "/p/honma-tw757-fairway": {
-      "h": "29a89a3362a4c1c6",
+      "h": "bfcaca34f87c21d7",
       "d": "2026-10-22"
     },
     "/p/srixon-zxmk2-fairway": {
-      "h": "96e622a737d7842d",
+      "h": "c5f392772b5b2149",
       "d": "2026-10-22"
     },
     "/p/mizuno-stz230-fairway": {
-      "h": "c2091b0cf04c2d22",
+      "h": "5a29d666cf65806b",
       "d": "2026-10-22"
     },
     "/p/callaway-roguest-hybrid": {
-      "h": "568d8ce2b1daf825",
+      "h": "31b39171c414b602",
       "d": "2026-10-22"
     },
     "/p/mizuno-stmax230-hybrid": {
-      "h": "0b44b87c62fd1657",
+      "h": "1621ce2c2645e14b",
       "d": "2026-10-22"
     },
     "/p/majesty-royalgold-hybrid": {
-      "h": "beed0eade07db76b",
+      "h": "a9d87be704e6a7fd",
       "d": "2026-10-22"
     },
     "/p/ping-g430-hybrid": {
-      "h": "1d05e29254eef781",
+      "h": "32f75317028386c5",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi10-rescue": {
-      "h": "c4b36d00cac8b6ef",
+      "h": "ff6c0e9a857840a0",
       "d": "2026-10-22"
     },
     "/p/honma-beres-hybrid": {
-      "h": "bc94b40a811c89b5",
+      "h": "d40d2c063766422e",
       "d": "2026-10-22"
     },
     "/p/mizuno-jpxone-hybrid": {
-      "h": "b5eaeaad6a805ef6",
+      "h": "f30258d3ad146e88",
       "d": "2026-10-22"
     },
     "/p/xxio14-hybrid": {
-      "h": "057f7bd767192a32",
+      "h": "e7d9c0989b2538d1",
       "d": "2026-10-22"
     },
     "/p/srixon-zxi-hybrid": {
-      "h": "f03a203cadc13e12",
+      "h": "7d5315b5e2de5cf1",
       "d": "2026-10-22"
     },
     "/p/callaway-quantummax-hybrid": {
-      "h": "5730dda121d08773",
+      "h": "fb2b14de3b7d0558",
       "d": "2026-10-22"
     },
     "/p/xxio13x-hybrid": {
-      "h": "04ec4e8380c93939",
+      "h": "c81a174c3da405e9",
       "d": "2026-10-22"
     },
     "/p/mizuno-stz230-hybrid": {
-      "h": "4afd3e66b7b7fc65",
+      "h": "3482c25913a7ee1f",
       "d": "2026-10-22"
     },
     "/p/srixon-zxhmk2-hybrid": {
-      "h": "10e88fa5dc5903ef",
+      "h": "cb270dbeb93e2a71",
       "d": "2026-10-22"
     },
     "/p/honma-tw757-hybrid": {
-      "h": "9a9609f842e4a33f",
+      "h": "0b329ec99c6f0b3a",
       "d": "2026-10-22"
     },
     "/p/callaway-epic-superhybrid": {
-      "h": "989529fa43baf6a8",
+      "h": "e195e860db37f397",
       "d": "2026-10-22"
     },
     "/p/mizuno-jpxq-women-fairway": {
-      "h": "4b4e96ea7b257991",
+      "h": "22e900c3d500cc4b",
       "d": "2026-10-22"
     },
     "/p/taylormade-sim2maxd-women-fairway": {
-      "h": "675b9276327f9559",
+      "h": "ca7454252721a004",
       "d": "2026-10-22"
     },
     "/p/callaway-roguest-women-fairway": {
-      "h": "e1faef2c9e019459",
+      "h": "d23774c232b7e513",
       "d": "2026-10-22"
     },
     "/p/xxio13-women-fairway": {
-      "h": "92639995281b1e92",
+      "h": "cb97f8c46dc8fa71",
       "d": "2026-10-22"
     },
     "/p/majesty-royal-women-fairway": {
-      "h": "693a66943f2326ca",
+      "h": "20af9a2ab9364c39",
       "d": "2026-10-22"
     },
     "/p/honma-nx-women-fairway": {
-      "h": "bc03ffaeca5c00b6",
+      "h": "a7332f2c5fc8dd02",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi35maxlite-women-fairway": {
-      "h": "bb81d2606e6bfddf",
+      "h": "3736777bf331292d",
       "d": "2026-10-22"
     },
     "/p/callaway-elyte-women-fairway": {
-      "h": "320118ddac4ff433",
+      "h": "23e85e36cff1def9",
       "d": "2026-10-22"
     },
     "/p/honma-aizu-women-fairway": {
-      "h": "2e275ff0f7dc8443",
+      "h": "41614baf34bd0cc5",
       "d": "2026-10-22"
     },
     "/p/ping-gle3-women-fairway": {
-      "h": "1abb25fa99be2733",
+      "h": "fc84b76e10574983",
       "d": "2026-10-22"
     },
     "/p/honma-kiwami6-women-fairway": {
-      "h": "8eb0488aac68d6fa",
+      "h": "6045744cb91611bc",
       "d": "2026-10-22"
     },
     "/p/ping-gle4-women-fairway": {
-      "h": "6b83f01a0d075c84",
+      "h": "39227f3070fe5006",
       "d": "2026-10-22"
     },
     "/p/mizuno-jpxq2-women-fairway": {
-      "h": "9cc9cdea2b90f77e",
+      "h": "7b941c71960d00d1",
       "d": "2026-10-22"
     },
     "/p/xxio14-women-fairway": {
-      "h": "5baf4d901d4c776b",
+      "h": "d054a023a30c8c57",
       "d": "2026-10-22"
     },
     "/p/onoff-lp423-women-fairway": {
-      "h": "ad35b028890b2e7c",
+      "h": "f2094592b50a5ce4",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi4d-women-fairway": {
-      "h": "c45b8013d1f07e84",
+      "h": "efb437eb8cad93a5",
       "d": "2026-10-22"
     },
     "/p/callaway-gbb-women-fairway": {
-      "h": "0ad3e4b050db3018",
+      "h": "69bca8e91c246783",
       "d": "2026-10-22"
     },
     "/p/missile-axg-women-hybrid": {
@@ -782,67 +782,67 @@
       "d": "2026-10-22"
     },
     "/p/mizuno-jpx923-wedge": {
-      "h": "441936e479454501",
+      "h": "46a458e8a9e5fb3d",
       "d": "2026-10-22"
     },
     "/p/cleveland-cgone-wedge": {
-      "h": "2102299ad4f9ad81",
+      "h": "4ecb48fb2c72295e",
       "d": "2026-10-22"
     },
     "/p/david-woody2-wedge": {
-      "h": "89cb853dc7e42924",
+      "h": "4558f97ff698e188",
       "d": "2026-10-22"
     },
     "/p/cleveland-smartsole-chipper": {
-      "h": "e83d681f5d52ff58",
+      "h": "40708403b71dbd35",
       "d": "2026-10-22"
     },
     "/p/ping-bunker-wedge": {
-      "h": "1eba80e488a9668a",
+      "h": "51cba9cbe2346244",
       "d": "2026-10-22"
     },
     "/p/ping-chip-wedge": {
-      "h": "725a4ceeae8bd2bc",
+      "h": "ef20b4629f9cdeab",
       "d": "2026-10-22"
     },
     "/p/callaway-jaws-forged-wedge": {
-      "h": "f0176e290ef5b100",
+      "h": "c86d3762a64a61d1",
       "d": "2026-10-22"
     },
     "/p/cleveland-rtx6-wedge": {
-      "h": "f5d72f6e5ea9985b",
+      "h": "68bbdf3d198be691",
       "d": "2026-10-22"
     },
     "/p/honma-tww5-wedge": {
-      "h": "86e0849923005617",
+      "h": "783870203d368f4a",
       "d": "2026-10-22"
     },
     "/p/ping-glide4-wedge": {
-      "h": "ac8d56e1fdda85c6",
+      "h": "b6536cdc19314de6",
       "d": "2026-10-22"
     },
     "/p/fourteen-rm4-wedge": {
-      "h": "6e82ab4bb1780409",
+      "h": "33be2a62262bdb36",
       "d": "2026-10-22"
     },
     "/p/taylormade-hitoe5-wedge": {
-      "h": "9540c1e2149bca2f",
+      "h": "1f7c9af5ee83a94e",
       "d": "2026-10-22"
     },
     "/p/ping-s159-wedge": {
-      "h": "8b4f2d9e1444de24",
+      "h": "13a6f632f6787f6b",
       "d": "2026-10-22"
     },
     "/p/pxg-0311-3x-wedge": {
-      "h": "5384aac397218e1d",
+      "h": "af381dfcc4da4848",
       "d": "2026-10-22"
     },
     "/p/fourteen-frz-wedge": {
-      "h": "4085afc38abdc035",
+      "h": "d95a2523b853e111",
       "d": "2026-10-22"
     },
     "/p/mizuno-pro-t1-wedge": {
-      "h": "17d50e4a588af7f7",
+      "h": "72a69b2fc85de8b1",
       "d": "2026-10-22"
     },
     "/p/callaway-twoball-ten-putter": {
@@ -906,127 +906,127 @@
       "d": "2026-10-22"
     },
     "/p/cobra-ds-adapt-maxk-driver": {
-      "h": "aac7ec9fcb2cb573",
+      "h": "c00a0fabc536274b",
       "d": "2026-10-22"
     },
     "/p/callaway-quantum-max-driver": {
-      "h": "9b15c77ac19cb4d1",
+      "h": "de9942ab0fe21cff",
       "d": "2026-10-22"
     },
     "/p/yamaha-rmx-vdm-driver": {
-      "h": "e75287b51e4ebc9a",
+      "h": "7260f1ca066dc807",
       "d": "2026-10-22"
     },
     "/p/srixon-zxi-rkt-driver": {
-      "h": "049681a603952c48",
+      "h": "27c4a4d323cdc4be",
       "d": "2026-10-22"
     },
     "/p/cobra-ds-adapt-x-driver": {
-      "h": "172041760386b17e",
+      "h": "bc64642666342a6d",
       "d": "2026-10-22"
     },
     "/p/pxg-0311-blackops-driver": {
-      "h": "2110e5f25d27e296",
+      "h": "41e4568841e096f6",
       "d": "2026-10-22"
     },
     "/p/callaway-elyte-td-driver": {
-      "h": "f6c8e2509dc16211",
+      "h": "3f737eb9c0b155c4",
       "d": "2026-10-22"
     },
     "/p/srixon-zxi-rkt-ls-driver": {
-      "h": "fb921681d5298d5e",
+      "h": "91b82af1efe784af",
       "d": "2026-10-22"
     },
     "/p/cobra-ds-adapt-ls-driver": {
-      "h": "c7e23d4f04f7060e",
+      "h": "4c95e9f3f7fe753a",
       "d": "2026-10-22"
     },
     "/p/ping-g440-sft-fairway": {
-      "h": "198a52e0d17d6ea7",
+      "h": "cb50add8d9ead550",
       "d": "2026-10-22"
     },
     "/p/callaway-elyte-x-fairway": {
-      "h": "5590c38462b21a45",
+      "h": "dfdb79ff5a118ac0",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi4d-fairway": {
-      "h": "bd29294b252dbcf0",
+      "h": "48a86319cddd43e8",
       "d": "2026-10-22"
     },
     "/p/cobra-ds-adapt-x-fairway": {
-      "h": "a359191cd360a8a8",
+      "h": "a3941f42854c7cf7",
       "d": "2026-10-22"
     },
     "/p/ping-g440-lst-fairway": {
-      "h": "8e9c9e30c60c1760",
+      "h": "5cfc8c5be3a3062e",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi35-tour-fairway": {
-      "h": "66976fa849b40f2e",
+      "h": "047b2ddd64d6df15",
       "d": "2026-10-22"
     },
     "/p/srixon-zxi-rkt-fairway": {
-      "h": "9e1228954217f442",
+      "h": "8ab14992d6808d57",
       "d": "2026-10-22"
     },
     "/p/callaway-quantum-td-fairway": {
-      "h": "85224251a7aea1c9",
+      "h": "a682c62bd3ddc498",
       "d": "2026-10-22"
     },
     "/p/callaway-quantum-max-iron": {
-      "h": "da79109108dddf30",
+      "h": "6396aa4f3ce53adf",
       "d": "2026-10-22"
     },
     "/p/mizuno-jpx925-hotmetal-iron": {
-      "h": "002150087b472884",
+      "h": "01127b4d8fa50d02",
       "d": "2026-10-22"
     },
     "/p/xxio14-iron": {
-      "h": "4170715722e25eea",
+      "h": "130f6c6b6e119165",
       "d": "2026-10-22"
     },
     "/p/titleist-t350-iron": {
-      "h": "84596e730021fc58",
+      "h": "33ee682f202ea365",
       "d": "2026-10-22"
     },
     "/p/taylormade-p8cb-iron": {
-      "h": "89c5254d547f22a6",
+      "h": "3306d0e8f70cc2cc",
       "d": "2026-10-22"
     },
     "/p/taylormade-p770-iron": {
-      "h": "8e33542ecb4e3df6",
+      "h": "fcdc284723469653",
       "d": "2026-10-22"
     },
     "/p/ping-i240-iron": {
-      "h": "33a04430620d86ed",
+      "h": "c17c38e3bf9222f5",
       "d": "2026-10-22"
     },
     "/p/titleist-t150-iron": {
-      "h": "abf3d4b931c4c428",
+      "h": "9918cc1946b354c3",
       "d": "2026-10-22"
     },
     "/p/taylormade-p7cb-iron": {
-      "h": "f9a9bf189a9fdd34",
+      "h": "c5ca7bbbdf7327a7",
       "d": "2026-10-22"
     },
     "/p/ping-blueprint-t-iron": {
-      "h": "53a9143aa44b97c6",
+      "h": "c5e69323f027eb2e",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi4dmax-hybrid": {
-      "h": "a90ff44ff66b26fe",
+      "h": "b8b6ff442f15daf0",
       "d": "2026-10-22"
     },
     "/p/callaway-elytex-hybrid": {
-      "h": "9a702386bfe7c484",
+      "h": "5e8c415b733ce16a",
       "d": "2026-10-22"
     },
     "/p/cobra-dsadapt-hybrid": {
-      "h": "259fd593889eb4ae",
+      "h": "3495d4e4dec10a22",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi4d-hybrid": {
-      "h": "4a2269036b854793",
+      "h": "045f477098424afc",
       "d": "2026-10-22"
     },
     "/p/titleist-pro-v1x": {
@@ -1262,15 +1262,15 @@
       "d": "2026-10-22"
     },
     "/p/callaway-cb12-wedge": {
-      "h": "4b5796ce53f3c94b",
+      "h": "03ac943f23ffaa6d",
       "d": "2026-10-22"
     },
     "/p/pxg-stickem-wedge": {
-      "h": "dbe865f39ef4b526",
+      "h": "11296ad2cfd68a71",
       "d": "2026-10-22"
     },
     "/p/mizuno-t24-wedge": {
-      "h": "fa12d304bebc11f7",
+      "h": "4399593adfeddef1",
       "d": "2026-10-22"
     },
     "/p/taylormade-glory-women-driver": {
@@ -1334,23 +1334,23 @@
       "d": "2026-10-22"
     },
     "/g/driver-recommend-2026": {
-      "h": "d1cabf17deda6d64",
+      "h": "bb26db331e25c9df",
       "d": "2026-10-22"
     },
     "/g/fairway-wood-recommend": {
-      "h": "d87332617c702444",
+      "h": "2a5e53debb020f2b",
       "d": "2026-10-22"
     },
     "/g/utility-recommend": {
-      "h": "97f3466739cb4ad1",
+      "h": "988418e0bb9387c9",
       "d": "2026-10-22"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "20cbebc090f13fb7",
+      "h": "9c16e11050754211",
       "d": "2026-10-22"
     },
     "/g/iron-recommend": {
-      "h": "ef28bb78f862bc03",
+      "h": "1d66b210fa7bee6f",
       "d": "2026-10-22"
     },
     "/g/womens-utility-recommend": {
@@ -1358,7 +1358,7 @@
       "d": "2026-10-22"
     },
     "/g/wedge-recommend": {
-      "h": "d3a29bc9825b7d1d",
+      "h": "8f5207080c23a2c9",
       "d": "2026-10-22"
     },
     "/g/golf-ball-compare": {
@@ -2349,36 +2349,6 @@
       "d": "2026-10-22"
     },
     {
-      "url": "/p/taylormade-qi35-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-elyte-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-g440-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/titleist-gt2-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-p790-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-g440-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
       "url": "/p/odyssey-ai-one-putter",
       "kind": "updated",
       "d": "2026-10-22"
@@ -2475,81 +2445,6 @@
     },
     {
       "url": "/p/footjoy-premiere-packard-shoes",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/titleist-t100-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/mizuno-jpx925-forged-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-elyte-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/cleveland-rtz-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-opus-sp-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-mg4-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-s259-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-g440-max-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi35-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-elyte-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/cobra-optm-x-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-g440-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi35-rescue",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-elyte-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/cobra-optm-hybrid",
       "kind": "updated",
       "d": "2026-10-22"
     },
@@ -2694,81 +2589,6 @@
       "d": "2026-10-22"
     },
     {
-      "url": "/p/taylormade-sim2max-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi10max-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi35max-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/majesty-prestigio13-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-paradym-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-quantum-tdmax-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/xxio14plus-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi35ls-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-g440lst-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi4d-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/titleist-gt3-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/titleist-gts3-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-quantum-td-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi4dls-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi10ls-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
       "url": "/p/prgr-sweep-women-driver",
       "kind": "updated",
       "d": "2026-10-22"
@@ -2830,81 +2650,6 @@
     },
     {
       "url": "/p/titleist-tsi1-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/titleist-vokey-sm8",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-sim2max-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-g430-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/mizuno-jpx925-hmpro-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-xforged-starplus-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/bridgestone-v300-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/xxio13-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-i525-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/srixon-zxi5-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/titleist-t250-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-xforged-max-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/mizuno-pro-s1-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/srixon-zxi7-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/bridgestone-242cb-iron",
       "kind": "updated",
       "d": "2026-10-22"
     },
@@ -2975,241 +2720,6 @@
     },
     {
       "url": "/p/mizuno-jpxs40-women-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-sim2max-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/mizuno-stmax230-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi10-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/majesty-royalgold-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/xxio12-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/mizuno-jpxone-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-quantummax-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/xxio14-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi4dmax-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/srixon-zxi-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-roguest-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-g430lst-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/honma-tw757-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/srixon-zxmk2-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/mizuno-stz230-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-roguest-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/mizuno-stmax230-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/majesty-royalgold-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-g430-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi10-rescue",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/honma-beres-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/mizuno-jpxone-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/xxio14-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/srixon-zxi-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-quantummax-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/xxio13x-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/mizuno-stz230-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/srixon-zxhmk2-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/honma-tw757-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-epic-superhybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/mizuno-jpxq-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-sim2maxd-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-roguest-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/xxio13-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/majesty-royal-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/honma-nx-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi35maxlite-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-elyte-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/honma-aizu-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-gle3-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/honma-kiwami6-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-gle4-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/mizuno-jpxq2-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/xxio14-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/onoff-lp423-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi4d-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-gbb-women-fairway",
       "kind": "updated",
       "d": "2026-10-22"
     },
@@ -3294,86 +2804,6 @@
       "d": "2026-10-22"
     },
     {
-      "url": "/p/mizuno-jpx923-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/cleveland-cgone-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/david-woody2-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/cleveland-smartsole-chipper",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-bunker-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-chip-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-jaws-forged-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/cleveland-rtx6-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/honma-tww5-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-glide4-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/fourteen-rm4-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-hitoe5-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-s159-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/pxg-0311-3x-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/fourteen-frz-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/mizuno-pro-t1-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
       "url": "/p/callaway-twoball-ten-putter",
       "kind": "updated",
       "d": "2026-10-22"
@@ -3445,161 +2875,6 @@
     },
     {
       "url": "/p/pxg-hellcat-putter",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/cobra-ds-adapt-maxk-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-quantum-max-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/yamaha-rmx-vdm-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/srixon-zxi-rkt-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/cobra-ds-adapt-x-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/pxg-0311-blackops-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-elyte-td-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/srixon-zxi-rkt-ls-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/cobra-ds-adapt-ls-driver",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-g440-sft-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-elyte-x-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi4d-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/cobra-ds-adapt-x-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-g440-lst-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi35-tour-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/srixon-zxi-rkt-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-quantum-td-fairway",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-quantum-max-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/mizuno-jpx925-hotmetal-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/xxio14-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/titleist-t350-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-p8cb-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-p770-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-i240-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/titleist-t150-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-p7cb-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/ping-blueprint-t-iron",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi4dmax-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/callaway-elytex-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/cobra-dsadapt-hybrid",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/taylormade-qi4d-hybrid",
       "kind": "updated",
       "d": "2026-10-22"
     },
@@ -3894,21 +3169,6 @@
       "d": "2026-10-22"
     },
     {
-      "url": "/p/callaway-cb12-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/pxg-stickem-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/p/mizuno-t24-wedge",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
       "url": "/p/taylormade-glory-women-driver",
       "kind": "updated",
       "d": "2026-10-22"
@@ -3984,37 +3244,7 @@
       "d": "2026-10-22"
     },
     {
-      "url": "/g/driver-recommend-2026",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/g/fairway-wood-recommend",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/g/utility-recommend",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/g/womens-fairway-wood-recommend",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/g/iron-recommend",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
       "url": "/g/womens-utility-recommend",
-      "kind": "updated",
-      "d": "2026-10-22"
-    },
-    {
-      "url": "/g/wedge-recommend",
       "kind": "updated",
       "d": "2026-10-22"
     },
@@ -4315,6 +3545,801 @@
     },
     {
       "url": "/g/womens-iron-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi35-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-elyte-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-g440-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/titleist-gt2-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-p790-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-g440-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/titleist-t100-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-jpx925-forged-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-elyte-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cleveland-rtz-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-opus-sp-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-mg4-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-s259-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-g440-max-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi35-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-elyte-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cobra-optm-x-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-g440-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi35-rescue",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-elyte-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cobra-optm-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/titleist-gts2-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/titleist-gts2-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/titleist-gt2-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/titleist-620mb-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/titleist-vokey-sm11",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-sim2max-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi10max-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi35max-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/majesty-prestigio13-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-paradym-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-quantum-tdmax-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/xxio14plus-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi35ls-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-g440lst-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi4d-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/titleist-gt3-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/titleist-gts3-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-quantum-td-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi4dls-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi10ls-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/titleist-vokey-sm8",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-sim2max-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-g430-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-jpx925-hmpro-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-xforged-starplus-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/bridgestone-v300-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/xxio13-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-i525-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/srixon-zxi5-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/titleist-t250-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-xforged-max-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-pro-s1-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/srixon-zxi7-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/bridgestone-242cb-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-sim2max-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-stmax230-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi10-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/majesty-royalgold-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/xxio12-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-jpxone-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-quantummax-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/xxio14-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi4dmax-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/srixon-zxi-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-roguest-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-g430lst-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/honma-tw757-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/srixon-zxmk2-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-stz230-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-roguest-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-stmax230-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/majesty-royalgold-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-g430-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi10-rescue",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/honma-beres-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-jpxone-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/xxio14-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/srixon-zxi-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-quantummax-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/xxio13x-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-stz230-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/srixon-zxhmk2-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/honma-tw757-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-epic-superhybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-jpxq-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-sim2maxd-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-roguest-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/xxio13-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/majesty-royal-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/honma-nx-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi35maxlite-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-elyte-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/honma-aizu-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-gle3-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/honma-kiwami6-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-gle4-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-jpxq2-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/xxio14-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/onoff-lp423-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi4d-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-gbb-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-jpx923-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cleveland-cgone-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/david-woody2-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cleveland-smartsole-chipper",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-bunker-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-chip-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-jaws-forged-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cleveland-rtx6-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/honma-tww5-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-glide4-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/fourteen-rm4-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-hitoe5-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-s159-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/pxg-0311-3x-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/fourteen-frz-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-pro-t1-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cobra-ds-adapt-maxk-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-quantum-max-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/yamaha-rmx-vdm-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/srixon-zxi-rkt-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cobra-ds-adapt-x-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/pxg-0311-blackops-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-elyte-td-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/srixon-zxi-rkt-ls-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cobra-ds-adapt-ls-driver",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-g440-sft-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-elyte-x-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi4d-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cobra-ds-adapt-x-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-g440-lst-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi35-tour-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/srixon-zxi-rkt-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-quantum-td-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-quantum-max-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-jpx925-hotmetal-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/xxio14-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/titleist-t350-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-p8cb-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-p770-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-i240-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/titleist-t150-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-p7cb-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-blueprint-t-iron",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi4dmax-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-elytex-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/cobra-dsadapt-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi4d-hybrid",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-cb12-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/pxg-stickem-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-t24-wedge",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/driver-recommend-2026",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/wedge-recommend",
       "kind": "updated",
       "d": "2026-10-22"
     }
