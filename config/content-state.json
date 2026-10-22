@@ -1414,31 +1414,31 @@
       "d": "2026-10-23"
     },
     "/p/taylormade-spider-zt-putter": {
-      "h": "2cd89137907074a1",
+      "h": "b978243187b11f3d",
       "d": "2026-10-23"
     },
     "/p/taylormade-spider-zt-max-putter": {
-      "h": "ee7262eed830acda",
+      "h": "41cfa6daf8dda5d2",
       "d": "2026-10-23"
     },
     "/p/lab-df3-putter": {
-      "h": "f31978df862a00d1",
+      "h": "34e6372318f59a3d",
       "d": "2026-10-23"
     },
     "/p/ping-tyne-g-putter": {
-      "h": "02a5bd571df1097f",
+      "h": "75aab3962a92bc6f",
       "d": "2026-10-23"
     },
     "/p/ping-ds72-putter": {
-      "h": "eb1bd06915594cc0",
+      "h": "284f119d7ecf3e5a",
       "d": "2026-10-23"
     },
     "/p/odyssey-white-hot-og-2ball-putter": {
-      "h": "4ecf264158378f27",
+      "h": "15425a6b3efbabb0",
       "d": "2026-10-23"
     },
     "/p/odyssey-tri-hot-5k-putter": {
-      "h": "47e0caf868ced9d7",
+      "h": "0add3c75af5c6b3d",
       "d": "2026-10-23"
     },
     "/c/driver": {
@@ -1538,7 +1538,7 @@
       "d": "2026-10-23"
     },
     "/g/putter-recommend": {
-      "h": "804ccf8dbf03a264",
+      "h": "a2aba6e5763d3743",
       "d": "2026-10-23"
     },
     "/g/golf-shoes-recommend": {
@@ -1777,25 +1777,29 @@
       "h": "062d2326b8040ec7",
       "d": "2026-10-16"
     },
+    "/qa/zero-torque-putter": {
+      "h": "fed0c740b436a800",
+      "d": "2026-10-23"
+    },
     "/qa/womens-golf-club-recommend": {
-      "h": "86e9595c9c8cb1c3",
-      "d": "2026-10-22"
+      "h": "5407246666d46651",
+      "d": "2026-10-23"
     },
     "/qa/wedge-recommend-loft": {
-      "h": "cfc5e31c90231f2c",
-      "d": "2026-10-22"
+      "h": "2de1fbc7c414a10b",
+      "d": "2026-10-23"
     },
     "/qa/beginner-driver-recommend": {
-      "h": "c3c52e923b7b5df7",
-      "d": "2026-10-22"
+      "h": "5dab19cf67e1a868",
+      "d": "2026-10-23"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "aa31578232a9d064",
+      "h": "05b65117d6776f8e",
       "d": "2026-10-23"
     },
     "/qa": {
-      "h": "c4e561048761306b",
-      "d": "2026-10-22"
+      "h": "9b3e5b4df1bc2ccb",
+      "d": "2026-10-23"
     },
     "/vs/adidas-adipower-sl-women-shoes-vs-footjoy-pulse-boa-women-shoes": {
       "h": "9965a8b8d233eb83",
@@ -2503,41 +2507,6 @@
       "d": "2026-10-23"
     },
     {
-      "url": "/p/taylormade-spider-zt-putter",
-      "kind": "new",
-      "d": "2026-10-23"
-    },
-    {
-      "url": "/p/taylormade-spider-zt-max-putter",
-      "kind": "new",
-      "d": "2026-10-23"
-    },
-    {
-      "url": "/p/lab-df3-putter",
-      "kind": "new",
-      "d": "2026-10-23"
-    },
-    {
-      "url": "/p/ping-tyne-g-putter",
-      "kind": "new",
-      "d": "2026-10-23"
-    },
-    {
-      "url": "/p/ping-ds72-putter",
-      "kind": "new",
-      "d": "2026-10-23"
-    },
-    {
-      "url": "/p/odyssey-white-hot-og-2ball-putter",
-      "kind": "new",
-      "d": "2026-10-23"
-    },
-    {
-      "url": "/p/odyssey-tri-hot-5k-putter",
-      "kind": "new",
-      "d": "2026-10-23"
-    },
-    {
       "url": "/c/putter",
       "kind": "updated",
       "d": "2026-10-23"
@@ -2589,11 +2558,6 @@
     },
     {
       "url": "/g/womens-driver-recommend",
-      "kind": "updated",
-      "d": "2026-10-23"
-    },
-    {
-      "url": "/g/putter-recommend",
       "kind": "updated",
       "d": "2026-10-23"
     },
@@ -2668,11 +2632,6 @@
       "d": "2026-10-23"
     },
     {
-      "url": "/qa/beginner-golf-club-set",
-      "kind": "updated",
-      "d": "2026-10-23"
-    },
-    {
       "url": "/vs/callaway-twoball-ten-putter-vs-cleveland-hbsoft2-putter",
       "kind": "updated",
       "d": "2026-10-23"
@@ -2724,6 +2683,76 @@
     },
     {
       "url": "/vs/taylormade-spider-tour-x-putter-vs-mizuno-mcraft-omoi6-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/taylormade-spider-zt-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/taylormade-spider-zt-max-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/lab-df3-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/ping-tyne-g-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/ping-ds72-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/odyssey-white-hot-og-2ball-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/odyssey-tri-hot-5k-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/putter-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/qa/zero-torque-putter",
+      "kind": "new",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/qa/womens-golf-club-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/qa/wedge-recommend-loft",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/qa/beginner-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/qa",
       "kind": "updated",
       "d": "2026-10-23"
     }
