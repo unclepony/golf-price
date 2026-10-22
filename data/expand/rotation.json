@@ -1,0 +1,11 @@
+{
+  "_설명": "클라우드 루틴 '상품 늘리기' 분야 순번. last 가 가장 오래된(없는) 분야부터. 2026-10-22 클라우드 첫 실행 때 git 기록(분야별 추가 커밋)으로 새로 만듦.",
+  "order": ["driver","wood","utility","iron","wedge","putter","ball","rangefinder","gps","launch","shoes","bag","glove","practice","womens-driver","womens-wood","womens-utility","womens-iron"],
+  "last": {
+    "driver": "2026-10-21",
+    "wedge": "2026-10-22",
+    "womens-driver": "2026-10-22",
+    "ball": "2026-10-22",
+    "wood": "2026-10-22"
+  }
+}

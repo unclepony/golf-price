@@ -1,0 +1,22 @@
+[
+ {"id":"taylormade-qi10max-fairway","category":"wood","name":"테일러메이드 Qi10 MAX 페어웨이 우드","query":"테일러메이드 Qi10 MAX 페어웨이우드","must":["qi10","max"],"mustAny":["우드","페어웨이"],"exclude":["lite","라이트","tour","투어","여성","레이디","헤드만","중고","병행","헤드커버","드라이버","레스큐","하이브리드","유틸"],
+  "summary":"테일러메이드 2024년 Qi10 시리즈 가운데 관용성에 맞춘 페어웨이 우드입니다. 200cc 큰 헤드에 무게를 뒤쪽 낮은 곳에 두어 쉽게 뜨고 빗맞아도 덜 휘도록 만들었습니다.",
+  "points":["초보는 5번(18°) 이상과 R·SR 샤프트 권장","Qi10(기본형)·Qi10 투어와 구분","테일러메이드코리아 정품 여부 확인"],
+  "guidePick":{"role":"관용성 중심","forWhom":"우드가 잘 안 맞아 큰 헤드가 필요한 분","short":"큰 헤드 Qi10","plus":"관용성·띄우기","minus":"직전 세대","pros":["200cc 큰 헤드로 빗맞아도 안정적","뒤쪽 낮은 무게로 쉽게 뜸"],"cons":["2025·2026년 신모델보다 한 세대 앞선 모델","강한 스윙엔 탄도가 높을 수 있음"],"scores":[3,5,5,4],"specs":["TBD","TBD","2024년"],"verdict":"신모델보다 낮은 가격으로 쉬운 우드를 찾는 초보에게 맞는 선택","skill":"초심자","dist":6},
+  "sources":["https://www.golfretailing.com/news/taylormade-golf-introduces-the-all-new-qi10-fairway-and-qi10-rescue-family/","https://www.dailian.co.kr/news/view/1316086/"]},
+ {"id":"callaway-paradym-aismoke-max-fairway","category":"wood","name":"캘러웨이 패러다임 Ai 스모크 MAX 페어웨이 우드","query":"캘러웨이 패러다임 Ai 스모크 MAX 페어웨이우드","must":["패러다임","스모크","max"],"mustAny":["우드","페어웨이"],"exclude":["fast","패스트","maxd","맥스d","여성","레이디","헤드만","중고","병행","헤드커버","드라이버","하이브리드","유틸"],
+  "summary":"캘러웨이 2024년 패러다임 Ai 스모크 시리즈의 기본 페어웨이 우드입니다. 페이스 전체에 반발 구간을 나눠 둔 Ai 스마트 페이스와 낮고 앞쪽에 둔 텅스텐 무게로 일정한 발사각과 곧은 구질을 노렸습니다.",
+  "points":["3번(15°)·3HL(16.5°)만 로프트 조절, 5번부터는 고정","MAX D·MAX 패스트와 구분","캘러웨이골프코리아 정품 여부 확인"],
+  "guidePick":{"role":"균형형","forWhom":"거리와 관용성을 고르게 원하는 분","short":"Ai 스마트 페이스 우드","plus":"고른 반발","minus":"가격 높음","pros":["페이스 여러 곳에서 고른 반발","3번~11번까지 로프트가 다양함"],"cons":["직전 세대인데도 가격이 높은 편","슬라이스가 심하면 MAX D 쪽이 맞음"],"scores":[4,4,4,2],"specs":["TBD","TBD","2024년"],"verdict":"엘리트 이전 세대지만 거리와 관용성이 고른 우드","skill":"중급","dist":7},
+  "sources":["https://golfbusinessnews.com/news/new-products/callaway-launches-paradym-ai-smoke-woods-and-irons/","https://nbcsports.com/golf/news/callaway-golf-announces-new-paradym-ai-smoke-family-of-woods-and-irons"]},
+ {"id":"xxio13-fairway","category":"wood","name":"젝시오 13 페어웨이 우드","query":"젝시오13 남성 페어웨이우드 던롭코리아 정품","must":["젝시오13"],"mustAny":["우드","페어웨이"],"exclude":["ladies","mp1300l","lh","여성","레이디","헤드만","중고","병행","헤드커버","드라이버","하이브리드","유틸","좌타","왼손"],
+  "summary":"던롭 젝시오 13(2024년 국내 출시)의 남성 페어웨이 우드입니다. 반발력을 높인 바이플렉스 페이스와 정타를 돕는 뉴 액티브윙을 넣은 가벼운 우드로, 스윙이 빠르지 않은 골퍼를 위한 모델입니다.",
+  "points":["남성용 MP1300K 샤프트(여성용 MP1300L 과 구분)","왼손 전용 판매글 주의","던롭스포츠코리아 정품 여부 확인"],
+  "guidePick":{"role":"경량·쉬움","forWhom":"스윙 속도가 빠르지 않은 분","short":"가벼운 젝시오","plus":"가벼움·반발","minus":"직전 세대","pros":["가벼워 휘두르기 쉬움","반발력을 높인 바이플렉스 페이스"],"cons":["젝시오 14가 나온 직전 세대","빠른 스윙엔 가볍게 느껴짐"],"scores":[4,4,4,3],"specs":["TBD","TBD","2024년"],"verdict":"젝시오 14보다 낮은 가격의 가벼운 우드를 찾는 분께 맞는 선택","skill":"초심자","dist":6},
+  "sources":["https://m.seoul.co.kr/news/2024/01/16/20240116500144"]},
+ {"id":"honma-tw767-fairway","category":"wood","name":"혼마 투어월드 TW767 페어웨이 우드","query":"혼마 투어월드 TW767 페어웨이우드","must":["tw767"],"mustAny":["우드","페어웨이"],"exclude":["여성","레이디","헤드만","중고","병행","헤드커버","드라이버","하이브리드","유틸","좌타","왼손"],
+  "summary":"혼마골프가 2025년 1월 내놓은 투어월드 TW767 시리즈의 페어웨이 우드입니다. 이전보다 크고 얕은 헤드와 관용성을 높인 솔로 여러 라이에서 세컨드 샷을 쉽게 하도록 만들었고, 여러 소재를 섞어 높은 탄도를 노렸습니다.",
+  "points":["TW757(직전 세대)과 구분","혼마골프 정품 여부 확인"],
+  "guidePick":{"role":"투어형 관용성","forWhom":"투어 감성에 쉬움도 원하는 분","short":"쉬워진 투어월드","plus":"관용성·탄도","minus":"가격 높음","pros":["크고 얕은 헤드로 지면에서 치기 쉬움","관용성을 높인 솔"],"cons":["가격대가 높은 편","샤프트 선택지가 판매글마다 다름"],"scores":[4,4,4,2],"specs":["TBD","TBD","2025년"],"verdict":"투어월드 계열을 쉽게 쓰고 싶은 중급자에게 맞는 선택","skill":"중급","dist":7},
+  "sources":["https://sports.khan.co.kr/article/202501061602013","https://www.firstcallgolf.com/industry-news/release/2025-02-05/honma-golf-launches-tour-world-767-collection"]}
+]
