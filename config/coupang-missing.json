@@ -2,1137 +2,1187 @@
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { since: 처음 못 찾은 날, days: 연속으로 못 찾은 날 수, last: 마지막으로 못 찾은 날 }. 5일이면 picks.json gone.",
   "ping-g440-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-g440-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-p790-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi35-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "titleist-gt2-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "titleist-pro-v1": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "voicecaddie-sl3": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "adidas-adipower-sl-women-shoes": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "blacktee-shot5": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "bridgestone-242cb-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "bridgestone-v300-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "bridgestone-v300-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-chrome-soft": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-elyte-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-elyte-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-elyte-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-elyte-maxfast-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-elyte-maxfast-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-elyte-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-elyte-women-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-epic-superhybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-gbb-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-jaws-forged-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-opus-sp-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-paradym-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-quantum-maxfast-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-quantum-td-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-quantum-tdmax-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-quantum-women-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-quantummax-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-quantummax-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-roguest-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-roguest-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-roguest-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-roguest-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-roguest-women-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-roguest-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-twoball-ten-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-xforged-max-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-xforged-starplus-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "cleveland-cgone-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "cleveland-hbsoft2-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "cleveland-rtx6-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "cleveland-rtz-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "cleveland-smartsole-chipper": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "cobra-optm-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "cobra-optm-x-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "david-woody2-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ecco-biom-c4-shoes": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "evnroll-er22-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "evnroll-z5s-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "footjoy-pulse-boa-women-shoes": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "footjoy-pure-touch-glove": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "footjoy-stasof-glove": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "fourteen-frz-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "fourteen-rm4-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "garmin-approach-r10": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "garmin-approach-s50": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "garmin-approach-s70": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "golfbuddy-aim-w12": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "honma-aizu-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "honma-aizu-women-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "honma-aizu-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "honma-beres-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "honma-bezeal3-women-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "honma-kiwami6-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "honma-nx-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "honma-nx-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "honma-tw747-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "honma-tw757-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "honma-tw757-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "honma-tww5-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "majesty-prestigio13-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "majesty-royal-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "majesty-royalgold-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "majesty-royalgold-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "majesty-shuttle-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "majesty-shuttle-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "majesty-sterna-women-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "missile-axg-women-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-jpx923-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-jpx925-forged-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-jpx925-hmpro-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-jpx925f-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-jpxone-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-jpxone-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-jpxq-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-jpxq-women-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-jpxq-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-jpxq2-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-jpxq2-women-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-jpxs30-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-jpxs40-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-mcraft-omoi6-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-pro-s1-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-pro-t1-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-stmax230-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-stmax230-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-stz230-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "mizuno-stz230-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "nikon-coolshot-pro3": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "odyssey-aidual-s2s-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "odyssey-aione-tripletrack-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "odyssey-aione-twoball-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "onoff-lp423-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "onoff-lp425-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "orange-whip-trainer": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-anser-2-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-anserd-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-bunker-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-chip-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-fetch-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-g430-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-g430-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-g430lst-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-g440-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-g440-max-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-g440-women-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-g440hl-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-g440lst-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-g440max-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-gle3-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-gle3-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-gle3-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-gle4-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-gle4-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-gle4-women-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-gle4-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-glide4-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-i525-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-mundy-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-s159-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-s259-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-scottsdale-anser4-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-shea-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-sporty-lt-bag": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "pistop-topswing-trainer": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "prgr-sweep-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "prgr-sweep-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "pxg-0311-3x-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "pxg-hellcat-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "rapsodo-mlm2pro": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "srixon-z-star": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "srixon-zxhmk2-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "srixon-zxi-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "srixon-zxi-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "srixon-zxi5-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "srixon-zxi7-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "srixon-zxmk2-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "sunmountain-h2no-stand": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "swingimpact-swingcaddie": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-gloire-women-rescue": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-hitoe5-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-mg4-wedge": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-p790-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-p8cb-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi-maxlite-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi10-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi10-rescue": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi10ls-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi10max-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi35-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi35-maxlite-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi35-rescue": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi35ls-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi35max-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi35maxlite-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi35maxlite-women-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi4d-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi4d-maxlite-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi4d-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi4dls-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi4dmax-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-sim2max-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-sim2max-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-sim2max-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-sim2max-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-sim2max-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-sim2maxd-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-spider-tour-x-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-stealth-women-rescue": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-tp5-ball": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "titleist-cart14-bag": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "titleist-gt3-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "titleist-gts3-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "titleist-permasoft-glove": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "titleist-players-glove": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "titleist-players5-carbon-stand": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "titleist-t100-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "titleist-t250-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "titleist-vokey-sm8": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "voicecaddie-sc4-pro": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
-  },
-  "voicecaddie-t13-pro": {
-    "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "xxio12-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "xxio13-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "xxio13-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "xxio13-women-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "xxio13x-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "xxio14-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "xxio14-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "xxio14-women-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "xxio14-women-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "xxio14-women-hybrid": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "xxio14-women-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "xxio14plus-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "zeroputt-digital-putting": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "bushnell-tour-v7-shift": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-elyte-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "callaway-quantum-max-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ecco-biom-h5-women-shoes": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ecco-lt1-boa-women-shoes": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ecco-street-720-goretex-women-shoes": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "footjoy-pro-sl": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "garmin-approach-z82": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "garmin-fenix-8-amoled": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "odyssey-ai-one-putter": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-blueprint-t-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-g440-lst-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ping-g440-sft-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "pxg-0311-blackops-driver": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "pxg-xtreme-hybrid-stand": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-distance-plus": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-qi4d-fairway": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "taylormade-tp5x": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "titleist-t150-iron": {
     "since": "2026-10-22",
-    "days": 1,
-    "last": "2026-10-22"
+    "days": 2,
+    "last": "2026-10-23"
   },
   "ua-phantom-fore-boa-shoes": {
     "since": "2026-10-22",
+    "days": 2,
+    "last": "2026-10-23"
+  },
+  "bridgestone-tour-b-xs": {
+    "since": "2026-10-23",
     "days": 1,
-    "last": "2026-10-22"
+    "last": "2026-10-23"
+  },
+  "callaway-chrome-tour-triple-diamond": {
+    "since": "2026-10-23",
+    "days": 1,
+    "last": "2026-10-23"
+  },
+  "cobra-darkspeed-hybrid": {
+    "since": "2026-10-23",
+    "days": 1,
+    "last": "2026-10-23"
+  },
+  "ecco-street-720-goretex-shoes": {
+    "since": "2026-10-23",
+    "days": 1,
+    "last": "2026-10-23"
+  },
+  "honma-beres09-hybrid": {
+    "since": "2026-10-23",
+    "days": 1,
+    "last": "2026-10-23"
+  },
+  "honma-tw767-hybrid": {
+    "since": "2026-10-23",
+    "days": 1,
+    "last": "2026-10-23"
+  },
+  "titleist-trufeel": {
+    "since": "2026-10-23",
+    "days": 1,
+    "last": "2026-10-23"
+  },
+  "volvik-axia-iv": {
+    "since": "2026-10-23",
+    "days": 1,
+    "last": "2026-10-23"
+  },
+  "xxio13-fairway": {
+    "since": "2026-10-23",
+    "days": 1,
+    "last": "2026-10-23"
+  },
+  "callaway-apex-ai200-iron": {
+    "since": "2026-10-23",
+    "days": 1,
+    "last": "2026-10-23"
+  },
+  "mizuno-pro-243-iron": {
+    "since": "2026-10-23",
+    "days": 1,
+    "last": "2026-10-23"
   }
 }
