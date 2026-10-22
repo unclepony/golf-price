@@ -134,7 +134,7 @@
  "taylormade-sim2max-fairway": "a19409988937",
  "mizuno-stmax230-fairway": "28e500cfd87e",
  "taylormade-qi10-fairway": "95ff453f2fc1",
- "majesty-royalgold-fairway": "5c49573486fe",
+ "majesty-royalgold-fairway": "c8a63b263d0e",
  "xxio12-fairway": "ff5340b96620",
  "mizuno-jpxone-fairway": "53385fb4da62",
  "callaway-quantummax-fairway": "a1bbdb6faab6",
@@ -234,9 +234,9 @@
  "callaway-elyte-td-driver": "c920ba56f3cb",
  "srixon-zxi-rkt-ls-driver": "ee293e72f685",
  "cobra-ds-adapt-ls-driver": "dc0b846d7e34",
- "ping-g440-sft-fairway": "0823534972ed",
+ "ping-g440-sft-fairway": "8ef3831692b4",
  "callaway-elyte-x-fairway": "8326fd238ec2",
- "taylormade-qi4d-fairway": "b133522cd912",
+ "taylormade-qi4d-fairway": "7657565a8de0",
  "cobra-ds-adapt-x-fairway": "18022484403d",
  "ping-g440-lst-fairway": "7ae792dd468c",
  "taylormade-qi35-tour-fairway": "7dc9dd303228",
@@ -327,5 +327,9 @@
  "volvik-condor-x": "646dfcbe8d4e",
  "volvik-condor-s4": "5aecc7e31395",
  "volvik-vivid": "0604ab1ba68b",
- "volvik-axia-iv": "4d2de652e8ad"
+ "volvik-axia-iv": "4d2de652e8ad",
+ "taylormade-qi10max-fairway": "8fc14ab850dd",
+ "callaway-paradym-aismoke-max-fairway": "92d0b65f7fce",
+ "xxio13-fairway": "e14ed67f9839",
+ "honma-tw767-fairway": "9529dda6045d"
 }
