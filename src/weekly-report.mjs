@@ -8,7 +8,7 @@ import { existsSync, readdirSync, readFileSync, writeFileSync, mkdirSync } from 
 import { ROOT, readJson, loadLinks, historyDir, todayKst } from './lib.mjs';
 
 const today = todayKst();
-const SITE_URL = (process.env.SITE_URL || 'https://golfprice.unclepony.com').replace(/\/$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://choicegolf.unclepony.com').replace(/\/$/, '');
 const latest = (dir) => (existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith('.json')).sort().at(-1) : null);
 const gscFile = latest(join(ROOT, 'reports', 'gsc'));
 const clickFile = latest(join(ROOT, 'reports', 'clicks'));

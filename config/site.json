@@ -22,5 +22,10 @@
   "formerNames": [
     "ATL골프기어"
   ],
-  "youtubeName": "ATL골프기어 유튜브"
+  "youtubeName": "ATL골프기어 유튜브",
+  "url": "https://choicegolf.unclepony.com",
+  "formerHosts": [
+    "golfprice.unclepony.com",
+    "golf-price.pages.dev"
+  ]
 }

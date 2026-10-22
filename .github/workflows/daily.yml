@@ -22,7 +22,7 @@ jobs:
   daily:
     runs-on: ubuntu-latest
     env:
-      SITE_URL: https://golfprice.unclepony.com
+      SITE_URL: https://choicegolf.unclepony.com
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4

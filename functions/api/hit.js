@@ -15,6 +15,7 @@ async function tables(env, url) {
     HREF2ID = new Map(Object.entries(go).map(([id, href]) => [href, id]));
   }
 }
+const OLD_SITE_HOSTS = new Set(['golfprice.unclepony.com', 'golf-price.pages.dev']); // 이전한 옛 주소(2026-10-22)
 const norm = (p) => (p.length > 1 ? p.replace(/\/+$/, '').replace(/\.html$/, '') : p) || '/';
 const day = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10); // 한국 시간 날짜
 
@@ -48,7 +49,7 @@ function source(ref, host, ua, qs) {
   try { u = new URL(ref); } catch { return { src: '기타' }; }
   if (u.protocol === 'android-app:') return { src: ANDROID_APPS[u.hostname] ?? `앱: ${u.hostname.slice(0, 40)}` };
   const h = u.hostname.replace(/^(www|m)\./, '');
-  if (h === host) return { src: '' };
+  if (h === host || OLD_SITE_HOSTS.has(h)) return { src: '' }; // 옛 주소에서 301 로 넘어온 경우도 사이트 안 이동
   const url = (h + (u.pathname.length > 1 ? u.pathname : '')).slice(0, 120);
   for (const [re, name, qk] of ENGINES) {
     if (re.test(h)) {

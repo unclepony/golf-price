@@ -14,8 +14,9 @@ import { publicVideos, isShorts, isVideoId, videoIssues } from './videos.mjs';
 import { writeJpPages } from './jp.mjs';
 
 const DEMO = process.argv.includes('--demo');
-const SITE_URL = (process.env.SITE_URL || 'https://golfprice.unclepony.com').replace(/\/$/, '');
 const SITE = readJson(join(ROOT, 'config', 'site.json'), {});
+// 사이트 주소: config/site.json url 이 먼저(2026-10-22 choicegolf.unclepony.com 으로 이전), 없으면 환경 변수 SITE_URL
+const SITE_URL = (SITE.url || process.env.SITE_URL || 'https://choicegolf.unclepony.com').replace(/\/$/, '');
 const SITE_NAME = SITE.name || '초이스골프';
 const LOGO_SVG = readFileSync(join(ROOT, 'src', 'figures', 'logo.svg'), 'utf8').replace(/role="img" aria-label="[^"]*"/, 'aria-hidden="true"');
 const OUT = join(ROOT, 'site');
@@ -1308,6 +1309,7 @@ for (const { p, hist, a } of entries) {
     const sr = m && stageRank(m.g, p.id);
     DETAIL_DATA.push({
       site: SITE_NAME,
+      host: new URL(SITE_URL).host,
       id: p.id, name: p.name, brand: p.name.split(/\s+/)[0], short: m?.pk.short ?? m?.pk.role ?? '', skill: m?.pk.skill ?? '', rank: sr && !sr.warn ? sr.label : '',
       level: priceLevel(p.id) ? `${priceLevel(p.id).label} 가격대` : '', image: bigImage(imageOf(p.id, hist)) || '', forWhom: m?.pk.forWhom ?? '', guide: m ? guideName(m.g) : '',
       criteria: m?.g.criteria ?? [], scores: m?.pk.scores ?? [], total: m?.pk.scores?.length ? avg(m.pk.scores) : 0,

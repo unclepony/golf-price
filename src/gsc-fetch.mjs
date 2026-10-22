@@ -1,7 +1,7 @@
 // Google Search Console 지난 7일 데이터 (node src/gsc-fetch.mjs)
 // 서비스 계정으로 Search Analytics API 를 읽는다(읽기 전용). 필요한 환경변수(.env 또는 GitHub Secrets):
 //   GSC_SERVICE_ACCOUNT  서비스 계정 JSON 키 전체(문자열)
-//   GSC_SITE             서치콘솔 속성 주소 (예: https://golfprice.unclepony.com/  또는  sc-domain:example.com)
+//   GSC_SITE             서치콘솔 속성 주소 (예: https://choicegolf.unclepony.com/  또는  sc-domain:example.com)
 // 서치콘솔 데이터는 2~3일 늦게 집계되므로 '3일 전까지의 7일'을 가져온다.
 // 결과: reports/gsc/{오늘}.json  { range, pages: [...], queries: [...] }
 import { join } from 'node:path';
@@ -14,7 +14,7 @@ if (!sa) {
   process.exit(0);
 }
 const GSC_SITE = process.env.GSC_SITE;
-const HOST = new URL(process.env.SITE_URL || 'https://golfprice.unclepony.com').host;
+const HOST = new URL(process.env.SITE_URL || 'https://choicegolf.unclepony.com').host;
 
 const endDate = todayKst(-3);
 const startDate = todayKst(-9);

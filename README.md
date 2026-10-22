@@ -38,7 +38,7 @@ D1 준비(한 번): Cloudflare 대시보드 → Storage & Databases → D1 → �
 
 ## 운영자 모니터링 (/admin)
 
-`https://golfprice.unclepony.com/admin` — 운영자만 보는 페이지. 페이지별 페이지뷰·방문, 유입 경로(구글·네이버·ChatGPT·카카오톡 등 앱·캠페인 utm 링크)와 유입별 쿠팡 클릭률, 들어온 외부 페이지, 검색어(넘어올 때만), 유입별 첫 페이지, 기기·국가, 쿠팡 클릭(상품별·버튼 위치별)과 **쿠팡 클릭률**(쿠팡 클릭 ÷ 페이지뷰, 방문당 클릭률 = 쿠팡 클릭 ÷ 방문)을 오늘·7일·30일·90일로 보여 줍니다(앞 기간 대비 증감 포함).
+`https://choicegolf.unclepony.com/admin` — 운영자만 보는 페이지. 페이지별 페이지뷰·방문, 유입 경로(구글·네이버·ChatGPT·카카오톡 등 앱·캠페인 utm 링크)와 유입별 쿠팡 클릭률, 들어온 외부 페이지, 검색어(넘어올 때만), 유입별 첫 페이지, 기기·국가, 쿠팡 클릭(상품별·버튼 위치별)과 **쿠팡 클릭률**(쿠팡 클릭 ÷ 페이지뷰, 방문당 클릭률 = 쿠팡 클릭 ÷ 방문)을 오늘·7일·30일·90일로 보여 줍니다(앞 기간 대비 증감 포함).
 
 - 수집: `assets/app.js` 가 페이지를 열 때와 쿠팡 링크를 누를 때 `/api/hit`(`functions/api/hit.js`)로 신호를 보냅니다. **쿠팡 링크는 바꾸지 않습니다**(사용자는 파트너스 링크로 바로 이동). 쿠팡에 어떤 요청도 보내지 않습니다.
 - 저장: D1 `stats` 표에 하루 합계만(`migrations/0002_stats.sql`). IP·쿠키·사용자 ID 저장 없음. 검색 로봇·다른 사이트발 요청·사이트맵에 없는 경로는 세지 않습니다.
@@ -127,8 +127,8 @@ Node.js 22.9 이상이 필요합니다.
 
 ## 배포 설정
 
-Cloudflare Pages: Build command `node src/build.mjs`, Output `site`, 환경 변수 `NODE_VERSION=22`, `SITE_URL=https://golfprice.unclepony.com`.
-주소: `https://golfprice.unclepony.com` (Pages 사용자 지정 도메인, 2026-10-17 이전). 옛 주소 `golf-price.pages.dev` 는 `functions/_middleware.js` 가 같은 경로로 301 이동시킨다(지우지 말 것).
+Cloudflare Pages: Build command `node src/build.mjs`, Output `site`, 환경 변수 `NODE_VERSION=22`, `SITE_URL=https://choicegolf.unclepony.com`.
+주소: `https://choicegolf.unclepony.com` (Pages 사용자 지정 도메인, 2026-10-17 이전). 옛 주소 `golf-price.pages.dev` 는 `functions/_middleware.js` 가 같은 경로로 301 이동시킨다(지우지 말 것).
 
 ## 지켜야 할 것
 

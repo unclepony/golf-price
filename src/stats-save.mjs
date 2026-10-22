@@ -5,7 +5,7 @@
 import { join } from 'node:path';
 import { ROOT, writeJson, todayKst } from './lib.mjs';
 
-const SITE_URL = (process.env.SITE_URL || 'https://golfprice.unclepony.com').replace(/\/$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://choicegolf.unclepony.com').replace(/\/$/, '');
 const pass = process.env.ADMIN_PASS;
 if (!pass) {
   console.log('방문 통계 저장 건너뜀: ADMIN_PASS 가 없습니다 (GitHub Secrets 에 추가).');
