@@ -138,6 +138,9 @@ export async function onRequestPost({ request, env, waitUntil }) {
     if (D.includes(b.d)) rows.push(['depth', `${path}|${b.d}`]);
     if (S.includes(b.s)) rows.push(['stay', `${path}|${b.s}`]);
     if (!rows.length) return done;
+  } else if (b.t === 'act') {
+    // 페이지뷰에서 사람이 처음 조작했을 때 한 번(2026-10-23) — 키: 유입 경로|페이지. 같은 키의 pv 와 견주면 '조작 없이 열기만 한' 비율이 나온다
+    rows.push(['act', `${src}|${path}`]);
   } else return done;
 
   const sql = 'INSERT INTO stats (day, kind, k, n) VALUES (?1, ?2, ?3, 1) ON CONFLICT(day, kind, k) DO UPDATE SET n = n + 1';

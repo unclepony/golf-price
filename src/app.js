@@ -79,6 +79,11 @@
   };
   addEventListener('pagehide', sendEng);
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') sendEng(); });
+  // 사람이 처음 손댔을 때(마우스 움직임·누름·터치·휠·키) 페이지뷰당 한 번 → 열기만 하고 아무 조작 없는 방문(링크 검사기 등)과 실제 방문을 나눠 본다
+  // 2026-10-23: 유튜브 링크마다 정확히 2번씩, 떠날 때 기록 없이 들어오는 방문이 데이터센터 밖에서도 이어져 사람인지 가릴 신호가 필요
+  const ACT = ['pointermove', 'pointerdown', 'touchstart', 'wheel', 'keydown'];
+  const onAct = () => { ACT.forEach((t) => removeEventListener(t, onAct, true)); beacon({ t: 'act' }); };
+  ACT.forEach((t) => addEventListener(t, onAct, { capture: true, passive: true }));
 
   // ---------- 검색 데이터 ----------
   let dataP;
