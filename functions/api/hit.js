@@ -103,10 +103,13 @@ export async function onRequestPost({ request, env, waitUntil }) {
   // 이 방문의 유입 경로: 첫 페이지의 출처·주소 조건을 브라우저 탭이 기억했다가 매 신호에 함께 보낸다(sessionStorage, 서버에 사용자 ID 없음)
   const s = source(String(b.r ?? ''), host, ua, String(b.q ?? '').slice(0, 300));
   const src = s.src || '직접·북마크';
+  // 외부 유입 여부(2026-10-22 사장님: 실제 외부 유입만 보고 싶다) — 직접·북마크·카카오톡(지인)·제휴사 관리 화면·운영 페이지에서 온 것은 외부가 아님
+  const ext = !/^(직접·북마크|카카오톡)$/.test(src) && !/linkprice.com|ops.unclepony.com/.test(src);
   const d = day();
   const rows = [];
   if (b.t === 'pv') {
     rows.push(['pv', path]);
+    if (ext) rows.push(['xpv', path]); // 외부 유입 페이지뷰
     if (b.v) {
       rows.push(['visit', path], ['ref', src], ['refland', `${src}|${path}`], ['dev', device(ua)], ['cty', String(request.cf?.country ?? '??').slice(0, 4)]);
       if (s.kw) rows.push(['kw', `${src}|${s.kw}`]);
