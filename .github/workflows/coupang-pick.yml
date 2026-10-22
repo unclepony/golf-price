@@ -1,0 +1,41 @@
+name: coupang-pick
+# 쿠팡 검색 대행 — 클라우드 루틴(상품 늘리기)은 쿠팡 열쇠가 없어서, 후보 파일을 푸시하면 여기서 공식 검색 API 로 찾아 결과를 커밋한다 (2026-10-22)
+#   요청: data/expand/req/<이름>.json = src/expand/pick.mjs 의 후보 파일과 같은 형식(배열)
+#   결과: data/expand/out/<이름>.json (pick.mjs 결과 형식). 요청 파일은 지운다. 루틴은 git pull 로 결과가 생길 때까지 기다린다.
+# 호출 간격·차단 규칙은 pick.mjs 그대로(4초 간격, 분당 50번 한도의 30%). 쿠팡 쇼핑몰 페이지·link.coupang.com 은 열지 않는다.
+on:
+  push:
+    branches: [main]
+    paths: ['data/expand/req/**']
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: coupang-pick
+  cancel-in-progress: false
+jobs:
+  pick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 쿠팡 공식 검색
+        env:
+          COUPANG_PT_API_KEY: ${{ secrets.COUPANG_PT_API_KEY }}
+          COUPANG_PT_API_SECRET_KEY: ${{ secrets.COUPANG_PT_API_SECRET_KEY }}
+        run: |
+          shopt -s nullglob
+          mkdir -p data/expand/out
+          for f in data/expand/req/*.json; do
+            n=$(basename "$f")
+            node src/expand/pick.mjs "data/expand/out/$n" "$f" && git rm -q "$f" || echo "실패: $n"
+          done
+      - name: 결과 올리기
+        run: |
+          git config user.name unclepony; git config user.email unclepony77@gmail.com
+          git add data/expand/out
+          git diff --cached --quiet || git commit -q -m "쿠팡 검색 결과 (상품 늘리기 대행) [skip ci]"
+          git pull -q --rebase && git push -q
