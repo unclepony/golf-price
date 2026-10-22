@@ -85,6 +85,6 @@ ${d.pros?.length || d.cons?.length ? `<section class="sec"><p class="k">PROS &am
 <div class="card minus"><h3><i>−</i>감안할 점</h3><ul>${(d.cons ?? []).map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div></div>
 ${d.verdict ? `<p class="verdict"><small>한 줄 결론</small>${esc(d.verdict)}</p>` : ''}</section>` : ''}
 ${d.checks?.length ? `<section class="sec chk"><p class="k">CHECK POINT</p><h2>구매 전 꼭 확인하세요</h2><ol>${d.checks.slice(0, 5).map((x) => `<li>${esc(x)}</li>`).join('')}</ol></section>` : ''}
-<div class="foot"><span><b>ATL골프기어</b><br>golfprice.unclepony.com</span><span style="text-align:right">기준일 ${esc(d.date)}<br>사진: 쿠팡 판매 상품 이미지</span></div>
+<div class="foot"><span><b>${esc(d.site || '초이스골프')}</b><br>golfprice.unclepony.com</span><span style="text-align:right">기준일 ${esc(d.date)}<br>사진: 쿠팡 판매 상품 이미지</span></div>
 </body></html>`;
 }

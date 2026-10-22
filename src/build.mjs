@@ -16,7 +16,7 @@ import { writeJpPages } from './jp.mjs';
 const DEMO = process.argv.includes('--demo');
 const SITE_URL = (process.env.SITE_URL || 'https://golfprice.unclepony.com').replace(/\/$/, '');
 const SITE = readJson(join(ROOT, 'config', 'site.json'), {});
-const SITE_NAME = SITE.name || 'ATL골프기어';
+const SITE_NAME = SITE.name || '초이스골프';
 const LOGO_SVG = readFileSync(join(ROOT, 'src', 'figures', 'logo.svg'), 'utf8').replace(/role="img" aria-label="[^"]*"/, 'aria-hidden="true"');
 const OUT = join(ROOT, 'site');
 // 안내 문구는 config/notices.json 한 곳에서 관리한다 (고지·점수·가격 안내)
@@ -471,6 +471,8 @@ rmSync(OUT, { recursive: true, force: true });
 writeText(join(OUT, 'assets', 'style.css'), readFileSync(join(ROOT, 'src', 'style.css'), 'utf8'));
 writeText(join(OUT, 'assets', 'app.js'), readFileSync(join(ROOT, 'src', 'app.js'), 'utf8'));
 writeText(join(OUT, 'assets', 'logo.svg'), readFileSync(join(ROOT, 'src', 'figures', 'logo.svg'), 'utf8'));
+// 검색엔진용 로고 그림(구조화 데이터 Organization.logo 는 PNG 를 권장): src/figures/logo-512.png
+if (existsSync(join(ROOT, 'src', 'figures', 'logo-512.png'))) copyFileSync(join(ROOT, 'src', 'figures', 'logo-512.png'), join(OUT, 'assets', 'logo.png'));
 
 // ---------- 비교·추천 가이드 데이터와 타일 ----------
 const guides = readJson(join(ROOT, 'config', 'guides.json'), { guides: [] }).guides;
@@ -528,7 +530,7 @@ function videoBlock(g) {
   };
   const long = list.filter((v) => !isShorts(v));
   const shorts = list.filter(isShorts);
-  return `<section id="videos" class="videos"><h2>관련 영상 <small>ATL골프기어 유튜브</small></h2><div class="vrow">${[...long, ...shorts].map(card).join('')}</div>${SITE.youtube ? `<a class="more-link" href="${esc(SITE.youtube)}" target="_blank" rel="noopener">유튜브 채널에서 더 보기 ›</a>` : ''}</section>`;
+  return `<section id="videos" class="videos"><h2>관련 영상 <small>${esc(SITE.youtubeName ?? `${SITE_NAME} 유튜브`)}</small></h2><div class="vrow">${[...long, ...shorts].map(card).join('')}</div>${SITE.youtube ? `<a class="more-link" href="${esc(SITE.youtube)}" target="_blank" rel="noopener">유튜브 채널에서 더 보기 ›</a>` : ''}</section>`;
 }
 const mergedInto = (g) => guides.filter((m) => m.mergeInto === g.slug);
 // 실력 단계가 다른 제품끼리는 한 줄로 세우지 않는다: 같은 단계 안에서의 순위만 쓴다
@@ -1305,6 +1307,7 @@ for (const { p, hist, a } of entries) {
     const m = mainPick(p.id);
     const sr = m && stageRank(m.g, p.id);
     DETAIL_DATA.push({
+      site: SITE_NAME,
       id: p.id, name: p.name, brand: p.name.split(/\s+/)[0], short: m?.pk.short ?? m?.pk.role ?? '', skill: m?.pk.skill ?? '', rank: sr && !sr.warn ? sr.label : '',
       level: priceLevel(p.id) ? `${priceLevel(p.id).label} 가격대` : '', image: bigImage(imageOf(p.id, hist)) || '', forWhom: m?.pk.forWhom ?? '', guide: m ? guideName(m.g) : '',
       criteria: m?.g.criteria ?? [], scores: m?.pk.scores ?? [], total: m?.pk.scores?.length ? avg(m.pk.scores) : 0,
@@ -1681,6 +1684,10 @@ writeText(
   join(OUT, 'index.html'),
   layout({
     title: `${SITE_NAME} | 골프용품 추천·비교·가격 ${CUR_YEAR}`,
+    ld: [
+      { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE_NAME, alternateName: [SITE.nameEn, ...(SITE.formerNames ?? [])].filter(Boolean), url: `${SITE_URL}/`, potentialAction: { '@type': 'SearchAction', target: `${SITE_URL}/search?q={search_term_string}`, 'query-input': 'required name=search_term_string' } },
+      { '@context': 'https://schema.org', '@type': 'Organization', name: SITE_NAME, alternateName: [SITE.nameEn, ...(SITE.formerNames ?? [])].filter(Boolean), url: `${SITE_URL}/`, logo: `${SITE_URL}/assets/logo.png` },
+    ],
     raw: true,
     desc: `드라이버·우드·유틸리티·아이언·웨지·퍼터부터 골프공·거리측정기·골프화까지 ${cats.length}개 골프용품을 실력(초심자~프로)·성별·가격대별로 비교합니다. 장단점과 주관적 편집 점수, 쿠팡 판매가를 함께 정리했습니다.`,
     path: '/',

@@ -1,12 +1,12 @@
 {
   "_설명": "사이트 이름·로고 문구와 검색엔진 소유 확인 코드. logoBefore + logoAccent(강조) + logoAfter 가 로고가 된다. 검증 코드는 HTML 태그의 content 값만 넣는다.",
-  "name": "ATL골프기어",
+  "name": "초이스골프",
   "logoBefore": "",
-  "logoAccent": "ATL",
-  "logoAfter": "골프기어",
-  "logoSub": "GOLF GEAR · PRICE COMPARE",
+  "logoAccent": "초이스",
+  "logoAfter": "골프",
+  "logoSub": "CHOICE GOLF · 실력별 추천 · 가격 비교",
   "priceCheckedAt": "2026-10-16",
-  "tagline": "골프용품, 꼼꼼히 비교하고 고르세요",
+  "tagline": "골프용품, 실력에 맞게 고르고 가격까지 비교하세요",
   "youtube": "https://www.youtube.com/channel/UCgrjeFQhHczJavafHLqywCA",
   "googleVerification": "kXR_Tj5AFFkfpWaWDAZuxNZClW4tFVKZBaUDRZpcJQo",
   "naverVerification": "3bce11718d742cc1284ca7e772ebbf6af908605c",
@@ -17,5 +17,10 @@
   },
   "indexNowKey": "36b2cd2193416b8382bf8da8bc2a5adc",
   "clickTracking": false,
-  "_clickTracking": "true 로 바꾸면 쿠팡 링크가 /go/{상품ID} (Cloudflare Pages Functions)를 거쳐 클릭 수가 D1 에 기록된다. Cloudflare 에 D1 데이터베이스와 CLICKS 바인딩을 먼저 만들 것 (README 참고)."
+  "_clickTracking": "true 로 바꾸면 쿠팡 링크가 /go/{상품ID} (Cloudflare Pages Functions)를 거쳐 클릭 수가 D1 에 기록된다. Cloudflare 에 D1 데이터베이스와 CLICKS 바인딩을 먼저 만들 것 (README 참고).",
+  "nameEn": "Choice Golf",
+  "formerNames": [
+    "ATL골프기어"
+  ],
+  "youtubeName": "ATL골프기어 유튜브"
 }

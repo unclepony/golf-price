@@ -1118,3 +1118,11 @@ table.ig.grind-t { min-width: 720px !important; }
 .ebuy-t em { font-style: normal; font-size: 18px; font-weight: 800; color: var(--text); margin-right: 4px; }
 .ebuy-btn { white-space: nowrap; padding: 14px 22px; font-size: 16px; }
 @media (max-width: 640px) { .ebuy { grid-template-columns: auto 1fr; } .ebuy img { width: 60px; height: 60px; } .ebuy-btn { grid-column: 1 / -1; text-align: center; } }
+
+/* 로고(2026-10-22 초이스골프): 남색 둥근 사각 배지 + 골프공 + 금색 체크(선택) / 글자: '초이스' 남색 + '골프' 금색 */
+.logo-emb { width: 44px; height: 44px; flex: 0 0 44px; }
+.logo-name { font-size: 23px; font-weight: 900; letter-spacing: -0.6px; color: #b8902a; gap: 0; }
+.logo-name b { font-family: inherit; font-weight: 900; font-size: 23px; letter-spacing: -0.6px; background: none; -webkit-background-clip: border-box; background-clip: border-box; color: #0b1f3a; margin-right: 0; }
+.logo-sub { font-size: 9px; letter-spacing: 1.4px; color: #8a7a52; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo-name { color: #e2b84a; } :root:not([data-theme="light"]) .logo-name b { color: #f1ede2; background: none; } }
+@media (max-width: 560px) { .logo-emb { width: 38px; height: 38px; flex-basis: 38px; } .logo-name, .logo-name b { font-size: 20px; } .logo-sub { display: none; } }
