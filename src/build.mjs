@@ -1368,7 +1368,7 @@ for (const c of cats) {
   writeText(
     join(OUT, 'c', `${c.id}.html`),
     layout({
-      title: `${c.name} 비교: 브랜드별 상위 모델 점수·장단점`,
+      title: `${c.name} 추천 순위·비교 (2026): 브랜드별 상위 모델 점수·장단점`,
       desc: `${c.name} ${items.filter((e) => sellable(e.p.id)).length}종을 실력 단계·가격대별로 비교하고 장단점과 주관적 편집 점수, 쿠팡 판매가를 정리했습니다. ${items.slice(0, 6).map((e) => e.p.name).join(', ')} 등.`.slice(0, 160),
       path: `/c/${c.id}`,
       ld: [crumbLd([['홈', '/'], [c.name, `/c/${c.id}`]])],
