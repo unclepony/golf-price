@@ -26,8 +26,8 @@
       "d": "2026-10-23"
     },
     "/p/odyssey-ai-one-putter": {
-      "h": "2af634195c461f37",
-      "d": "2026-10-22"
+      "h": "e231521cbd1dcbd8",
+      "d": "2026-10-23"
     },
     "/p/ping-anser-2-putter": {
       "h": "4d8796221cd61f97",
@@ -66,8 +66,8 @@
       "d": "2026-10-22"
     },
     "/p/taylormade-spider-tour-x-putter": {
-      "h": "b33c93a257ec8fa0",
-      "d": "2026-10-22"
+      "h": "b3b89bd321775e9b",
+      "d": "2026-10-23"
     },
     "/p/ecco-biom-c4-shoes": {
       "h": "cd28fff152954d3b",
@@ -82,8 +82,8 @@
       "d": "2026-10-22"
     },
     "/p/ping-fetch-putter": {
-      "h": "b6f2e6520e24b05d",
-      "d": "2026-10-22"
+      "h": "858fa9345de0e699",
+      "d": "2026-10-23"
     },
     "/p/taylormade-tp5-ball": {
       "h": "f0cdf08425f1e977",
@@ -846,52 +846,52 @@
       "d": "2026-10-22"
     },
     "/p/callaway-twoball-ten-putter": {
-      "h": "b202f988cf113504",
-      "d": "2026-10-22"
+      "h": "12d00465fb46aaaa",
+      "d": "2026-10-23"
     },
     "/p/cleveland-hbsoft2-putter": {
-      "h": "9dec1074e4b9f606",
-      "d": "2026-10-22"
+      "h": "bda0adf917bd30d2",
+      "d": "2026-10-23"
     },
     "/p/odyssey-aione-twoball-putter": {
-      "h": "75d46a1ea69d88f1",
-      "d": "2026-10-22"
+      "h": "ad74ad103e707508",
+      "d": "2026-10-23"
     },
     "/p/odyssey-aidual-s2s-putter": {
-      "h": "e36af73a835e0508",
-      "d": "2026-10-22"
+      "h": "0a6c674d0f0ad44e",
+      "d": "2026-10-23"
     },
     "/p/ping-mundy-putter": {
-      "h": "7d27666d917ba572",
-      "d": "2026-10-22"
+      "h": "e1a12fc2c0f9bc02",
+      "d": "2026-10-23"
     },
     "/p/ping-shea-putter": {
-      "h": "e2d359d9bf5ef1b8",
-      "d": "2026-10-22"
+      "h": "c06c9f55745ff966",
+      "d": "2026-10-23"
     },
     "/p/honma-tw747-putter": {
-      "h": "7608627ac5b11166",
-      "d": "2026-10-22"
+      "h": "e5338803aef9aceb",
+      "d": "2026-10-23"
     },
     "/p/odyssey-aione-tripletrack-putter": {
-      "h": "1581f12703b6ada6",
-      "d": "2026-10-22"
+      "h": "d3af4cc335255b78",
+      "d": "2026-10-23"
     },
     "/p/ping-anserd-putter": {
-      "h": "f700951c323f20e2",
-      "d": "2026-10-22"
+      "h": "3f7efd163235a144",
+      "d": "2026-10-23"
     },
     "/p/mizuno-mcraft-omoi6-putter": {
-      "h": "ff818681b88517c5",
-      "d": "2026-10-22"
+      "h": "feb2a546c0ccff4f",
+      "d": "2026-10-23"
     },
     "/p/evnroll-er22-putter": {
-      "h": "2a631fc5071018e8",
-      "d": "2026-10-22"
+      "h": "cb29614b2a348cd2",
+      "d": "2026-10-23"
     },
     "/p/lab-mezz1-putter": {
-      "h": "a178861f0e591897",
-      "d": "2026-10-22"
+      "h": "be3d1093f77a07fa",
+      "d": "2026-10-23"
     },
     "/p/ping-scottsdale-anser4-putter": {
       "h": "ca5adeb77e73de3f",
@@ -1413,6 +1413,34 @@
       "h": "00340293e7ad8f46",
       "d": "2026-10-23"
     },
+    "/p/taylormade-spider-zt-putter": {
+      "h": "2cd89137907074a1",
+      "d": "2026-10-23"
+    },
+    "/p/taylormade-spider-zt-max-putter": {
+      "h": "ee7262eed830acda",
+      "d": "2026-10-23"
+    },
+    "/p/lab-df3-putter": {
+      "h": "f31978df862a00d1",
+      "d": "2026-10-23"
+    },
+    "/p/ping-tyne-g-putter": {
+      "h": "02a5bd571df1097f",
+      "d": "2026-10-23"
+    },
+    "/p/ping-ds72-putter": {
+      "h": "eb1bd06915594cc0",
+      "d": "2026-10-23"
+    },
+    "/p/odyssey-white-hot-og-2ball-putter": {
+      "h": "4ecf264158378f27",
+      "d": "2026-10-23"
+    },
+    "/p/odyssey-tri-hot-5k-putter": {
+      "h": "47e0caf868ced9d7",
+      "d": "2026-10-23"
+    },
     "/c/driver": {
       "h": "010720a68c6712a4",
       "d": "2026-10-23"
@@ -1434,8 +1462,8 @@
       "d": "2026-10-22"
     },
     "/c/putter": {
-      "h": "3da6e74c14df930a",
-      "d": "2026-10-22"
+      "h": "c4803d78ed7a0310",
+      "d": "2026-10-23"
     },
     "/c/ball": {
       "h": "bf8af63adb605f2c",
@@ -1470,84 +1498,84 @@
       "d": "2026-10-22"
     },
     "/g/driver-recommend-2026": {
-      "h": "51e55a3f7660646d",
+      "h": "a5c2996ecd210e93",
       "d": "2026-10-23"
     },
     "/g/fairway-wood-recommend": {
-      "h": "05d4c5417c6ab735",
+      "h": "c9565f11a020db4f",
       "d": "2026-10-23"
     },
     "/g/utility-recommend": {
-      "h": "93384b81bb6c608a",
+      "h": "4e37d17902c2b05f",
       "d": "2026-10-23"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "c6d4a4d589f25dbc",
+      "h": "6ff41c277e7ec4b3",
       "d": "2026-10-23"
     },
     "/g/iron-recommend": {
-      "h": "411fceb92376dad6",
+      "h": "6455b6da146ef7a0",
       "d": "2026-10-23"
     },
     "/g/womens-utility-recommend": {
-      "h": "b3f8adce9fe275d8",
+      "h": "478ee883dca72697",
       "d": "2026-10-23"
     },
     "/g/wedge-recommend": {
-      "h": "5bba167bdce38341",
+      "h": "43de6a4394b9d682",
       "d": "2026-10-23"
     },
     "/g/golf-ball-compare": {
-      "h": "64d741618820d962",
+      "h": "073c6e284349bef0",
       "d": "2026-10-23"
     },
     "/g/rangefinder-recommend": {
-      "h": "1f7a57aa8a72851b",
+      "h": "1f1ec253d72201f8",
       "d": "2026-10-23"
     },
     "/g/womens-driver-recommend": {
-      "h": "8190a152e629941e",
+      "h": "8cc4ba2064c4aabc",
       "d": "2026-10-23"
     },
     "/g/putter-recommend": {
-      "h": "833d9ada66413e1c",
+      "h": "804ccf8dbf03a264",
       "d": "2026-10-23"
     },
     "/g/golf-shoes-recommend": {
-      "h": "90bde1c75eb7a21f",
+      "h": "3b2bb36f2d6c9aaa",
       "d": "2026-10-23"
     },
     "/g/golf-watch-recommend": {
-      "h": "1a5704fef03bc17c",
+      "h": "d400622153db094d",
       "d": "2026-10-23"
     },
     "/g/launch-monitor-recommend": {
-      "h": "626547dfbd7626b2",
+      "h": "a82628c83aece485",
       "d": "2026-10-23"
     },
     "/g/golf-bag-recommend": {
-      "h": "77136120a6dc7cc7",
+      "h": "026493ab96b6d34b",
       "d": "2026-10-23"
     },
     "/g/golf-glove-recommend": {
-      "h": "1f03165a5204fd97",
+      "h": "63eda3aca44ddf25",
       "d": "2026-10-23"
     },
     "/g/practice-gear-recommend": {
-      "h": "5fb26320c95239dd",
+      "h": "b7fb46cd09a07deb",
       "d": "2026-10-23"
     },
     "/g/womens-iron-recommend": {
-      "h": "606e301807cdeaef",
+      "h": "f2725831b47ca425",
       "d": "2026-10-23"
     },
     "/g/womens-shoes-recommend": {
-      "h": "2d5d044569bfff43",
+      "h": "5c6b8b3183645f19",
       "d": "2026-10-23"
     },
     "/g/golf-gift-guide-2026": {
-      "h": "01cacea02fdcede8",
-      "d": "2026-10-22"
+      "h": "43ece061fd43fdb8",
+      "d": "2026-10-23"
     },
     "/g/driver-recommend-2026-beginner": {
       "h": "9d1c2526a18f8e3f",
@@ -1702,20 +1730,20 @@
       "d": "2026-10-22"
     },
     "/g/putter-recommend-beginner": {
-      "h": "ea2d8502daffdda5",
-      "d": "2026-10-22"
+      "h": "acf9438eb424d6ab",
+      "d": "2026-10-23"
     },
     "/g/putter-recommend-intermediate": {
-      "h": "e606a0299e5a550a",
-      "d": "2026-10-22"
+      "h": "bece31728d8111d7",
+      "d": "2026-10-23"
     },
     "/g/putter-recommend-advanced": {
-      "h": "ddbd5d0dabdbbf3b",
-      "d": "2026-10-22"
+      "h": "8ccbc44333383faf",
+      "d": "2026-10-23"
     },
     "/g/putter-recommend-pro": {
-      "h": "2bd13c8195ae9785",
-      "d": "2026-10-22"
+      "h": "348ae3e0a4abdd96",
+      "d": "2026-10-23"
     },
     "/g/golf-watch-recommend-pro": {
       "h": "48a0eada31a9036a",
@@ -1742,7 +1770,7 @@
       "d": "2026-10-22"
     },
     "/": {
-      "h": "5ca4fe524464bb73",
+      "h": "bafebcf92169b407",
       "d": "2026-10-23"
     },
     "/about": {
@@ -1762,7 +1790,7 @@
       "d": "2026-10-22"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "3cd3d04c8db3fa2a",
+      "h": "aa31578232a9d064",
       "d": "2026-10-23"
     },
     "/qa": {
@@ -1878,8 +1906,8 @@
       "d": "2026-10-21"
     },
     "/vs/callaway-twoball-ten-putter-vs-cleveland-hbsoft2-putter": {
-      "h": "1618c1defe0270b5",
-      "d": "2026-10-21"
+      "h": "88a767629f302a8c",
+      "d": "2026-10-23"
     },
     "/vs/callaway-xforged-max-iron-vs-callaway-xforged-starplus-iron": {
       "h": "7f890c81573daf7d",
@@ -1934,8 +1962,8 @@
       "d": "2026-10-21"
     },
     "/vs/evnroll-z5s-putter-vs-ping-anser-2-putter": {
-      "h": "06c714dd67974125",
-      "d": "2026-10-21"
+      "h": "1c72fd92d3f125de",
+      "d": "2026-10-23"
     },
     "/vs/footjoy-pulse-boa-women-shoes-vs-footjoy-flow2-boa-women-shoes": {
       "h": "d10107006c41d74a",
@@ -2058,32 +2086,32 @@
       "d": "2026-10-21"
     },
     "/vs/odyssey-ai-one-putter-vs-odyssey-aidual-s2s-putter": {
-      "h": "77f7fcb60d0be785",
-      "d": "2026-10-21"
+      "h": "8aa2e9ed25eeae80",
+      "d": "2026-10-23"
     },
     "/vs/odyssey-ai-one-putter-vs-odyssey-aione-twoball-putter": {
-      "h": "d40dfd0c97480946",
-      "d": "2026-10-21"
+      "h": "e4f70977703e7e70",
+      "d": "2026-10-23"
     },
     "/vs/odyssey-aione-tripletrack-putter-vs-odyssey-ai-one-putter": {
-      "h": "576f1360d6474812",
-      "d": "2026-10-21"
+      "h": "71814d0542b1a36a",
+      "d": "2026-10-23"
     },
     "/vs/odyssey-aione-tripletrack-putter-vs-ping-shea-putter": {
-      "h": "88da71942002f7ac",
-      "d": "2026-10-21"
+      "h": "b16cce4959cf1c9d",
+      "d": "2026-10-23"
     },
     "/vs/ping-anser-2-putter-vs-ping-anserd-putter": {
-      "h": "076d79bd05fbd8f0",
-      "d": "2026-10-21"
+      "h": "90d15686c4f47b8e",
+      "d": "2026-10-23"
     },
     "/vs/ping-anserd-putter-vs-ping-mundy-putter": {
-      "h": "e55852c0591786ce",
-      "d": "2026-10-21"
+      "h": "bdd8f4f4e33cbe4b",
+      "d": "2026-10-23"
     },
     "/vs/ping-anserd-putter-vs-taylormade-spider-tour-x-putter": {
-      "h": "ebce8fe21c7d8551",
-      "d": "2026-10-21"
+      "h": "f6e1d336b43b18e1",
+      "d": "2026-10-23"
     },
     "/vs/ping-g440-driver-vs-majesty-prestigio13-driver": {
       "h": "5746465d62a0aed2",
@@ -2162,8 +2190,8 @@
       "d": "2026-10-22"
     },
     "/vs/pxg-hellcat-putter-vs-ping-anser-2-putter": {
-      "h": "7d0675f3c3d0de4d",
-      "d": "2026-10-21"
+      "h": "4ac9bddff23aeaeb",
+      "d": "2026-10-23"
     },
     "/vs/rapsodo-mlm2pro-vs-garmin-approach-r10": {
       "h": "2855401c51bf2bfb",
@@ -2262,8 +2290,8 @@
       "d": "2026-10-22"
     },
     "/vs/taylormade-spider-tour-x-putter-vs-mizuno-mcraft-omoi6-putter": {
-      "h": "fbc2d85566595232",
-      "d": "2026-10-21"
+      "h": "26572ae12ffa7e6e",
+      "d": "2026-10-23"
     },
     "/vs/taylormade-stealth-women-rescue-vs-xxio14-women-hybrid": {
       "h": "600596e6115403de",
@@ -2398,5 +2426,306 @@
       "d": "2026-10-19"
     }
   },
-  "pending": []
+  "pending": [
+    {
+      "url": "/p/odyssey-ai-one-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/taylormade-spider-tour-x-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/ping-fetch-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/callaway-twoball-ten-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/cleveland-hbsoft2-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/odyssey-aione-twoball-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/odyssey-aidual-s2s-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/ping-mundy-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/ping-shea-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/honma-tw747-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/odyssey-aione-tripletrack-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/ping-anserd-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/mizuno-mcraft-omoi6-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/evnroll-er22-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/lab-mezz1-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/taylormade-spider-zt-putter",
+      "kind": "new",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/taylormade-spider-zt-max-putter",
+      "kind": "new",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/lab-df3-putter",
+      "kind": "new",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/ping-tyne-g-putter",
+      "kind": "new",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/ping-ds72-putter",
+      "kind": "new",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/odyssey-white-hot-og-2ball-putter",
+      "kind": "new",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/odyssey-tri-hot-5k-putter",
+      "kind": "new",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/c/putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/driver-recommend-2026",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/womens-utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/wedge-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/golf-ball-compare",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/womens-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/putter-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/golf-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/golf-watch-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/launch-monitor-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/golf-bag-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/golf-glove-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/practice-gear-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/womens-iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/womens-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/golf-gift-guide-2026",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/putter-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/putter-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/putter-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/g/putter-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/vs/callaway-twoball-ten-putter-vs-cleveland-hbsoft2-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/vs/evnroll-z5s-putter-vs-ping-anser-2-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/vs/odyssey-ai-one-putter-vs-odyssey-aidual-s2s-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/vs/odyssey-ai-one-putter-vs-odyssey-aione-twoball-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/vs/odyssey-aione-tripletrack-putter-vs-odyssey-ai-one-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/vs/odyssey-aione-tripletrack-putter-vs-ping-shea-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/vs/ping-anser-2-putter-vs-ping-anserd-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/vs/ping-anserd-putter-vs-ping-mundy-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/vs/ping-anserd-putter-vs-taylormade-spider-tour-x-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/vs/pxg-hellcat-putter-vs-ping-anser-2-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/vs/taylormade-spider-tour-x-putter-vs-mizuno-mcraft-omoi6-putter",
+      "kind": "updated",
+      "d": "2026-10-23"
+    }
+  ]
 }

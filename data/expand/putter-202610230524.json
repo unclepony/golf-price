@@ -1,57 +1,672 @@
 [
- {"category":"putter","id":"taylormade-spider-zt-putter","name":"테일러메이드 스파이더 ZT 퍼터","query":"테일러메이드 스파이더 ZT 퍼터","must":["스파이더","zt","퍼터"],"exclude":["max","롱","long","카운터","중고","헤드만","시타","커버","그립","여성"],
-  "summary":"테일러메이드가 2025년에 내놓은 제로토크(토업 밸런스) 말렛 퍼터입니다. 샤프트를 무게중심과 일직선으로 꽂아 스트로크 중 페이스가 덜 돌아가게 설계했습니다.",
-  "points":["2025년 출시, 토업(face-forward) 밸런스","303 스테인리스 페이스 + 6061 알루미늄 바디, TSS 무게추 3개","테일러메이드코리아 정품 여부 확인"],
-  "guidePick":{"role":"제로토크 말렛","forWhom":"손목으로 페이스를 돌리는 습관을 줄이고 싶은 골퍼","short":"페이스가 덜 도는 말렛","plus":"방향 안정","minus":"손맛 단단","pros":["무게중심과 샤프트 축을 맞춘 토업 밸런스","공 폭만큼 밀링한 정렬선"],"cons":["기존 페이스밸런스 퍼터와 감이 달라 적응 필요","타감이 단단한 편"],"scores":[5,3,4,3],"specs":["말렛(제로토크)","TBD","토업 밸런스 · 303SS 페이스"],"verdict":"페이스 회전을 줄이고 싶다면 먼저 굴려 볼 제로토크 말렛","skill":"고급"},
-  "sources":["https://www.taylormadegolf.com/Spider-ZT/DW-TE614.html?lang=en_US","https://www.taylormadegolf.com/clubhouse/1018253-spider-zt-press-release.html?lang=en_US"]},
- {"category":"putter","id":"taylormade-spider-zt-max-putter","name":"테일러메이드 스파이더 ZT 맥스 퍼터","query":"테일러메이드 스파이더 ZT 맥스 퍼터","must":["스파이더","zt","max","퍼터"],"exclude":["롱","long","카운터","중고","헤드만","시타","커버","그립","여성"],
-  "summary":"스파이더 ZT의 헤드를 더 크게 만든 2026년 제로토크 말렛입니다. 몸체가 커져 헤드 무게가 늘었고 관용성을 높였습니다.",
-  "points":["2026년 6월 출시","스파이더 ZT보다 큰 헤드(제조사 기준 379g)","테일러메이드코리아 정품 여부 확인"],
-  "guidePick":{"role":"큰 제로토크 말렛","forWhom":"제로토크를 쓰고 싶지만 더 크고 안정적인 헤드를 원하는 골퍼","short":"더 큰 제로토크","plus":"관용성","minus":"헤드 크기 호불호","pros":["큰 헤드로 빗맞아도 방향 유지","토업 밸런스로 페이스 회전 억제"],"cons":["헤드가 커 블레이드 사용자에겐 부담","출시 초기라 판매처 재고 확인"],"scores":[5,3,5,3],"specs":["대형 말렛(제로토크)","TBD","토업 밸런스 · 379g 헤드"],"verdict":"제로토크에 큰 헤드 안정감까지 더하고 싶을 때","skill":"중급"},
-  "sources":["https://www.taylormadegolf.com/clubhouse/1488445-spider-zt-max-press-release.html?lang=en_US","https://www.taylormadegolf.com/clubhouse/1478925-spider-zt-max.html?lang=en_US"]},
- {"category":"putter","id":"scotty-cameron-studio-style-newport2-putter","name":"스카티카메론 스튜디오 스타일 뉴포트 2 퍼터 (2025)","query":"스카티카메론 스튜디오 스타일 뉴포트2 퍼터","must":["퍼터"],"mustAny":["스튜디오스타일","studiostyle"],"exclude":["플러스","plus","팬텀","phantom","중고","헤드만","시타","커버","그립"],
-  "summary":"스카티카메론이 2025년 3월에 새로 낸 스튜디오 스타일 라인의 대표 블레이드입니다. 303 스테인리스를 미국에서 밀링했고 스튜디오 카본 스틸 페이스 인서트를 넣었습니다.",
-  "points":["2025년 출시, 스튜디오 카본 스틸(SCS) 페이스 인서트","체인링크 페이스 밀링 · 조금 두꺼워진 탑라인","아쿠쉬네트코리아 정품 여부 확인"],
-  "guidePick":{"role":"정통 블레이드","forWhom":"아크형 스트로크로 손맛과 거리감을 중시하는 상급 골퍼","short":"정통 뉴포트 2","plus":"손맛·거리감","minus":"관용성 낮음","pros":["밀링 303 스테인리스와 SCS 인서트의 부드러운 타감","교체 가능한 텅스텐 솔 무게추"],"cons":["블레이드라 빗맞음에 관대하지 않음","가격대가 높음"],"scores":[3,5,3,2],"specs":["블레이드","TBD","SCS 인서트 · 텅스텐 솔 무게추"],"verdict":"뉴포트 2의 정통 모양에 부드러운 인서트를 더한 2025 블레이드","skill":"프로"},
-  "sources":["https://www.scottycameron.com/putters/studio-style/newport-2/","https://www.scottycameron.com/articles/introducing-new-studio-style-putters/"]},
- {"category":"putter","id":"odyssey-s2s-jailbird-putter","name":"오디세이 Ai-ONE 스퀘어 투 스퀘어 제일버드 퍼터","query":"오디세이 스퀘어 투 스퀘어 제일버드 퍼터","must":["퍼터"],"mustAny":["제일버드","jailbird","잴버드"],"exclude":["크루저","cruiser","브룸","broom","중고","헤드만","시타","커버","그립","여성"],
-  "summary":"오디세이가 2025년에 낸 센터 샤프트 토업 밸런스 말렛입니다. 샤프트를 무게중심 축에 맞춰 스트로크 내내 페이스를 스퀘어로 유지하게 했고 Ai-ONE 인서트를 씁니다.",
-  "points":["2025년 스퀘어 투 스퀘어 시리즈","센터 샤프트 · 토업 밸런스 · 포워드 샤프트 린 내장","캘러웨이골프코리아 정품 여부 확인"],
-  "guidePick":{"role":"제로토크 입문","forWhom":"제로토크 퍼터를 합리적인 가격에 써 보고 싶은 골퍼","short":"센터샤프트 토업 말렛","plus":"방향 안정","minus":"적응 필요","pros":["Ai-ONE 인서트(알루미늄 백커 + 화이트 핫 우레탄)","흰·남색 줄무늬 Versa 정렬"],"cons":["센터 샤프트 모양이 낯설 수 있음","크루저·브룸스틱 등 변형과 구분해서 구매"],"scores":[5,4,5,4],"specs":["말렛(센터 샤프트)","TBD","토업 밸런스 · Ai-ONE 인서트"],"verdict":"제로토크 계열을 처음 써 본다면 부담이 적은 선택","skill":"중급"},
-  "sources":["https://odyssey.callawaygolf.com/square2square","https://au.callawaygolf.com/golf-clubs/putters/putters-2025-square-to-square-jailbird.html"]},
- {"category":"putter","id":"lab-df3-putter","name":"LAB 골프 DF3 퍼터","query":"LAB 골프 DF3 퍼터","must":["df3","퍼터"],"exclude":["df3i","중고","헤드만","시타","커버","그립"],
-  "summary":"L.A.B. 골프의 인서트 없는 말렛 퍼터입니다. 특허 기술 Lie Angle Balance로 스트로크 중 토크를 없애 반복 가능한 스트로크를 돕고, 헤드는 6061 알루미늄을 CNC 밀링했습니다.",
-  "points":["Lie Angle Balance(제로토크)","6061 알루미늄 CNC 밀링 헤드 · 유효 로프트 3도","국내 정식 판매처 확인"],
-  "guidePick":{"role":"제로토크 말렛","forWhom":"짧은 퍼트에서 당기거나 미는 실수가 잦은 골퍼","short":"LAB 대표 말렛","plus":"방향 안정","minus":"외모 호불호","pros":["라이각 밸런스로 페이스가 스스로 스퀘어 유지","관용성을 위한 말렛 모양"],"cons":["독특한 모양과 감이 낯설 수 있음","라이각 피팅이 중요"],"scores":[5,3,4,3],"specs":["말렛(제로토크)","TBD","Lie Angle Balance · 인서트 없음"],"verdict":"제로토크 원조 브랜드의 대표 말렛","skill":"고급"},
-  "sources":["https://labgolf.com/pages/df3-putter","https://labgolf.com/products/df3-stock"]},
- {"category":"putter","id":"ping-tyne-g-putter","name":"핑 타인 G 퍼터","query":"핑 타인 G 퍼터","must":["퍼터"],"mustAny":["tyneg","타인g"],"exclude":["시그마","sigma","프로디","prodi","중고","헤드만","시타","커버","그립"],
-  "summary":"핑 2023 퍼터 라인의 말렛 모델입니다. 흰 정렬선 3줄과 공 폭 캐비티 바닥, 공을 집는 가운데 홈이 특징이며 PEBAX 인서트를 넣은 얕은 밀링 페이스를 씁니다.",
-  "points":["핑 2023 퍼터 라인(본사 재고 한정)","말렛 · 360g 헤드 · 약간 아크/직선 스트로크","삼양인터내셔날 정품 여부 확인"],
-  "guidePick":{"role":"정렬형 말렛","forWhom":"정렬선이 많은 말렛으로 방향을 잡고 싶은 골퍼","short":"흰 선 3줄 정렬","plus":"정렬 편의","minus":"구형 재고","pros":["흰 정렬선 3줄과 공 폭 캐비티","공 집기 홈으로 편의성"],"cons":["2023 모델이라 재고 확인 필요","인서트 타감이 부드러워 거리감 적응 필요"],"scores":[4,3,5,4],"specs":["말렛","TBD","흰 정렬선 3줄 · PEBAX 인서트"],"verdict":"선 맞추기가 쉬운 핑 말렛","skill":"중급"},
-  "sources":["https://ping.com/en-us/golf-clubs/putters/2024-2023-tyne-g-putter"]},
- {"category":"putter","id":"ping-ds72-putter","name":"핑 DS72 퍼터","query":"핑 DS72 퍼터","must":["ds72","퍼터"],"exclude":["pld","암락","armlock","중고","헤드만","시타","커버","그립"],
-  "summary":"핑 2023 퍼터 라인의 미드말렛입니다. 365g 헤드에 더블벤드 샤프트, PEBAX 인서트를 넣은 얕은 밀링 페이스를 쓰며 약간 아크형 스트로크에 맞춥니다.",
-  "points":["핑 2023 퍼터 라인(본사 재고 한정)","미드말렛 · 365g · 304 스테인리스","삼양인터내셔날 정품 여부 확인"],
-  "guidePick":{"role":"미드말렛 균형형","forWhom":"블레이드의 손맛과 말렛의 안정감 사이를 원하는 골퍼","short":"작고 단정한 말렛","plus":"균형","minus":"구형 재고","pros":["블레이드처럼 작은 미드말렛 모양","더블벤드 샤프트로 약간 아크 스트로크 대응"],"cons":["2023 모델이라 재고 확인 필요","큰 말렛보다 관용성 낮음"],"scores":[4,4,4,4],"specs":["미드말렛","TBD","더블벤드 · PEBAX 인서트"],"verdict":"작은 헤드로 손맛과 안정감을 같이 챙기는 핑 미드말렛","skill":"고급"},
-  "sources":["https://ping.com/en-us/golf-clubs/putters/2024-2023-ds72-putter"]},
- {"category":"putter","id":"odyssey-white-hot-og-2ball-putter","name":"오디세이 화이트 핫 OG 투볼 퍼터","query":"오디세이 화이트핫 OG 투볼 퍼터","must":["og","퍼터"],"mustAny":["투볼","2볼","2ball","2-ball","twoball"],"exclude":["여성","레이디","중고","헤드만","시타","커버","그립"],
-  "summary":"오디세이의 원조 화이트 핫 인서트를 되살린 화이트 핫 OG 라인의 투볼 말렛입니다. 더블벤드 페이스밸런스로 아크가 적은 직선형 스트로크에 맞습니다.",
-  "points":["화이트 핫 OG 라인 · 투볼 정렬","더블벤드 페이스밸런스","캘러웨이골프코리아 정품 여부 확인"],
-  "guidePick":{"role":"가성비 투볼","forWhom":"처음 퍼터를 바꾸며 정렬 쉬운 말렛을 찾는 골퍼","short":"클래식 투볼","plus":"정렬·가격","minus":"구성 단순","pros":["투볼 정렬로 공 맞추기 쉬움","부드러운 화이트 핫 인서트"],"cons":["최신 Ai-ONE 인서트 대비 기술은 단순","남녀 모델 길이 구분해서 구매"],"scores":[4,4,5,5],"specs":["말렛(투볼)","TBD","화이트 핫 인서트 · 페이스밸런스"],"verdict":"정렬 쉬운 투볼을 부담 없는 가격에","skill":"초심자"},
-  "sources":["https://callawaygolf.com/clubs/putters/white-hot-og","https://in.callawaygolf.com/golf-clubs/odyssey-putters/white-hot-og/putters-2023-wh-og-2-ball-db.html"]},
- {"category":"putter","id":"cleveland-frontline-elevado-putter","name":"클리브랜드 프론트라인 엘레바도 퍼터","query":"클리브랜드 프론트라인 엘레바도 퍼터","must":["퍼터"],"mustAny":["엘레바도","elevado"],"exclude":["중고","헤드만","시타","커버","그립","여성"],
-  "summary":"클리브랜드 프론트라인 라인의 대표 말렛입니다. 텅스텐을 낮고 앞쪽에 둔 전방 무게 설계와 양쪽 안정 날개, 2135 정렬, 스피드 최적화 페이스를 갖췄습니다.",
-  "points":["텅스텐 전방 무게(Frontline)","말렛 · 370g(싱글벤드 기준) · 3도 로프트","던롭스포츠코리아 정품 여부 확인"],
-  "guidePick":{"role":"가성비 고관용 말렛","forWhom":"빗맞은 퍼트도 방향이 덜 흔들리길 원하는 입문 골퍼","short":"전방 무게 말렛","plus":"관용성·가격","minus":"타감 단단","pros":["전방 텅스텐으로 빗맞아도 방향 유지","2135 정렬로 공 높이에 맞춘 정렬선"],"cons":["넥 종류(싱글벤드·플러머·슬랜트) 구분해서 구매","타감이 단단한 편"],"scores":[4,3,4,5],"specs":["말렛","TBD","텅스텐 전방 무게 · 2135 정렬"],"verdict":"가격 대비 안정감이 좋은 입문용 말렛","skill":"초심자"},
-  "sources":["https://clevelandgolf.com/us/putters-/frontline-elevado-single-bend-putter/11191817.html","https://clevelandgolf.com/en/putters-/frontline-elevado-plumbers-neck-putter/EPN.html"]},
- {"category":"putter","id":"bettinardi-queen-b-6-putter","name":"베티나르디 퀸비 6 퍼터","query":"베티나르디 퀸비 6 퍼터","must":["퍼터"],"mustAny":["퀸비6","queenb6","qb6","퀸b6"],"exclude":["슬롯백","slotback","중고","헤드만","시타","커버","그립"],
-  "summary":"베티나르디 퀸비 시리즈의 와이드 블레이드입니다. 303 스테인리스를 통째로 밀링했고 미니 허니콤 페이스 밀링을 쓰며, 2025 시리즈는 362g 헤드에 무게중심 위치를 다시 잡았습니다.",
-  "points":["303 스테인리스 원피스 밀링","미니 허니콤 페이스 밀링 · 362g 헤드","국내 정식 판매처 확인"],
-  "guidePick":{"role":"밀링 와이드 블레이드","forWhom":"밀링 퍼터의 손맛을 원하지만 블레이드보다 약간 안정감을 원하는 골퍼","short":"블레이드와 말렛 사이","plus":"손맛","minus":"가격","pros":["원피스 밀링 303 스테인리스의 손맛","와이드 바디로 블레이드보다 안정적"],"cons":["가격대가 높음","연식(2023·2025)별 마감 차이 확인"],"scores":[4,5,3,2],"specs":["와이드 블레이드","TBD","원피스 밀링 · 허니콤 페이스"],"verdict":"밀링 손맛과 안정감을 함께 원하는 상급자의 블레이드","skill":"프로"},
-  "sources":["https://bettinardi.com/pages/2025-queen-b-series","https://bettinardi.com/products/queen-b-6-putter-1"]},
- {"category":"putter","id":"odyssey-tri-hot-5k-putter","name":"오디세이 트라이핫 5K 퍼터","query":"오디세이 트라이핫 5K 퍼터","must":["5k","퍼터"],"mustAny":["트라이핫","trihot","tri-hot"],"exclude":["중고","헤드만","시타","커버","그립","여성"],
-  "summary":"오디세이의 고관성 프리미엄 라인입니다. 페이스 뒤 토·힐에 텅스텐을 넣어 관성모멘트를 5,000 이상으로 높이고 무게중심을 앞으로 옮겼습니다.",
-  "points":["텅스텐 토·힐 무게 · 관성모멘트 5,000 이상","블레이드·와이드·말렛 등 여러 헤드(구매 전 모델명 확인)","캘러웨이골프코리아 정품 여부 확인"],
-  "guidePick":{"role":"고관성 프리미엄","forWhom":"블레이드 모양을 좋아하지만 관용성도 놓치기 싫은 골퍼","short":"블레이드 모양 고관성","plus":"안정·손맛","minus":"가격","pros":["관성모멘트 5,000 이상으로 빗맞음에 강함","교체형 전면 무게추"],"cons":["헤드 종류가 많아 모델명 확인 필요","가격대가 높음"],"scores":[4,4,4,3],"specs":["블레이드·말렛(모델별)","TBD","텅스텐 고관성 5K"],"verdict":"블레이드 손맛에 관용성을 더한 오디세이 프리미엄","skill":"고급"},
-  "sources":["https://www.callawaygolf.com/newtrihot5k","https://www.callawaygolf.com/clubs/odyssey-putters/tri-hot-5k/putters-2022-tri-hot-5k-one.html"]}
+ {
+  "category": "putter",
+  "id": "taylormade-spider-zt-putter",
+  "name": "테일러메이드 스파이더 ZT 퍼터",
+  "query": "테일러메이드 스파이더 ZT 퍼터",
+  "must": [
+   "스파이더",
+   "zt",
+   "퍼터"
+  ],
+  "exclude": [
+   "max",
+   "롱",
+   "long",
+   "카운터",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립",
+   "여성"
+  ],
+  "summary": "테일러메이드가 2025년에 내놓은 제로토크(토업 밸런스) 말렛 퍼터입니다. 샤프트를 무게중심과 일직선으로 꽂아 스트로크 중 페이스가 덜 돌아가게 설계했습니다.",
+  "points": [
+   "2025년 출시, 토업(face-forward) 밸런스",
+   "303 스테인리스 페이스 + 6061 알루미늄 바디, TSS 무게추 3개",
+   "테일러메이드코리아 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "제로토크 말렛",
+   "forWhom": "손목으로 페이스를 돌리는 습관을 줄이고 싶은 골퍼",
+   "short": "페이스가 덜 도는 말렛",
+   "plus": "방향 안정",
+   "minus": "손맛 단단",
+   "pros": [
+    "무게중심과 샤프트 축을 맞춘 토업 밸런스",
+    "공 폭만큼 밀링한 정렬선"
+   ],
+   "cons": [
+    "기존 페이스밸런스 퍼터와 감이 달라 적응 필요",
+    "타감이 단단한 편"
+   ],
+   "scores": [
+    5,
+    3,
+    4,
+    3
+   ],
+   "specs": [
+    "말렛(제로토크)",
+    "TBD",
+    "토업 밸런스 · 303SS 페이스"
+   ],
+   "verdict": "페이스 회전을 줄이고 싶다면 먼저 굴려 볼 제로토크 말렛",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://www.taylormadegolf.com/Spider-ZT/DW-TE614.html?lang=en_US",
+   "https://www.taylormadegolf.com/clubhouse/1018253-spider-zt-press-release.html?lang=en_US"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "taylormade-spider-zt-max-putter",
+  "name": "테일러메이드 스파이더 ZT 맥스 퍼터",
+  "query": "테일러메이드 스파이더 ZT 맥스 퍼터",
+  "must": [
+   "스파이더",
+   "zt",
+   "max",
+   "퍼터"
+  ],
+  "exclude": [
+   "롱",
+   "long",
+   "카운터",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립",
+   "여성"
+  ],
+  "summary": "스파이더 ZT의 헤드를 더 크게 만든 2026년 제로토크 말렛입니다. 몸체가 커져 헤드 무게가 늘었고 관용성을 높였습니다.",
+  "points": [
+   "2026년 6월 출시",
+   "스파이더 ZT보다 큰 헤드(제조사 기준 379g)",
+   "테일러메이드코리아 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "큰 제로토크 말렛",
+   "forWhom": "제로토크를 쓰고 싶지만 더 크고 안정적인 헤드를 원하는 골퍼",
+   "short": "더 큰 제로토크",
+   "plus": "관용성",
+   "minus": "헤드 크기 호불호",
+   "pros": [
+    "큰 헤드로 빗맞아도 방향 유지",
+    "토업 밸런스로 페이스 회전 억제"
+   ],
+   "cons": [
+    "헤드가 커 블레이드 사용자에겐 부담",
+    "출시 초기라 판매처 재고 확인"
+   ],
+   "scores": [
+    5,
+    3,
+    5,
+    3
+   ],
+   "specs": [
+    "대형 말렛(제로토크)",
+    "TBD",
+    "토업 밸런스 · 379g 헤드"
+   ],
+   "verdict": "제로토크에 큰 헤드 안정감까지 더하고 싶을 때",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://www.taylormadegolf.com/clubhouse/1488445-spider-zt-max-press-release.html?lang=en_US",
+   "https://www.taylormadegolf.com/clubhouse/1478925-spider-zt-max.html?lang=en_US"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "scotty-cameron-studio-style-newport2-putter",
+  "name": "스카티카메론 스튜디오 스타일 뉴포트 2 퍼터 (2025)",
+  "query": "스카티카메론 스튜디오 스타일 뉴포트2 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "스튜디오스타일",
+   "studiostyle"
+  ],
+  "exclude": [
+   "플러스",
+   "plus",
+   "팬텀",
+   "phantom",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립"
+  ],
+  "summary": "스카티카메론이 2025년 3월에 새로 낸 스튜디오 스타일 라인의 대표 블레이드입니다. 303 스테인리스를 미국에서 밀링했고 스튜디오 카본 스틸 페이스 인서트를 넣었습니다.",
+  "points": [
+   "2025년 출시, 스튜디오 카본 스틸(SCS) 페이스 인서트",
+   "체인링크 페이스 밀링 · 조금 두꺼워진 탑라인",
+   "아쿠쉬네트코리아 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "정통 블레이드",
+   "forWhom": "아크형 스트로크로 손맛과 거리감을 중시하는 상급 골퍼",
+   "short": "정통 뉴포트 2",
+   "plus": "손맛·거리감",
+   "minus": "관용성 낮음",
+   "pros": [
+    "밀링 303 스테인리스와 SCS 인서트의 부드러운 타감",
+    "교체 가능한 텅스텐 솔 무게추"
+   ],
+   "cons": [
+    "블레이드라 빗맞음에 관대하지 않음",
+    "가격대가 높음"
+   ],
+   "scores": [
+    3,
+    5,
+    3,
+    2
+   ],
+   "specs": [
+    "블레이드",
+    "TBD",
+    "SCS 인서트 · 텅스텐 솔 무게추"
+   ],
+   "verdict": "뉴포트 2의 정통 모양에 부드러운 인서트를 더한 2025 블레이드",
+   "skill": "프로"
+  },
+  "sources": [
+   "https://www.scottycameron.com/putters/studio-style/newport-2/",
+   "https://www.scottycameron.com/articles/introducing-new-studio-style-putters/"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "odyssey-s2s-jailbird-putter",
+  "name": "오디세이 Ai-ONE 스퀘어 투 스퀘어 제일버드 퍼터",
+  "query": "오디세이 스퀘어 투 스퀘어 제일버드 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "제일버드",
+   "jailbird",
+   "잴버드"
+  ],
+  "exclude": [
+   "크루저",
+   "cruiser",
+   "브룸",
+   "broom",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립",
+   "여성"
+  ],
+  "summary": "오디세이가 2025년에 낸 센터 샤프트 토업 밸런스 말렛입니다. 샤프트를 무게중심 축에 맞춰 스트로크 내내 페이스를 스퀘어로 유지하게 했고 Ai-ONE 인서트를 씁니다.",
+  "points": [
+   "2025년 스퀘어 투 스퀘어 시리즈",
+   "센터 샤프트 · 토업 밸런스 · 포워드 샤프트 린 내장",
+   "캘러웨이골프코리아 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "제로토크 입문",
+   "forWhom": "제로토크 퍼터를 합리적인 가격에 써 보고 싶은 골퍼",
+   "short": "센터샤프트 토업 말렛",
+   "plus": "방향 안정",
+   "minus": "적응 필요",
+   "pros": [
+    "Ai-ONE 인서트(알루미늄 백커 + 화이트 핫 우레탄)",
+    "흰·남색 줄무늬 Versa 정렬"
+   ],
+   "cons": [
+    "센터 샤프트 모양이 낯설 수 있음",
+    "크루저·브룸스틱 등 변형과 구분해서 구매"
+   ],
+   "scores": [
+    5,
+    4,
+    5,
+    4
+   ],
+   "specs": [
+    "말렛(센터 샤프트)",
+    "TBD",
+    "토업 밸런스 · Ai-ONE 인서트"
+   ],
+   "verdict": "제로토크 계열을 처음 써 본다면 부담이 적은 선택",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://odyssey.callawaygolf.com/square2square",
+   "https://au.callawaygolf.com/golf-clubs/putters/putters-2025-square-to-square-jailbird.html"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "lab-df3-putter",
+  "name": "LAB 골프 DF3 퍼터",
+  "query": "LAB 골프 DF3 퍼터",
+  "must": [
+   "df3",
+   "퍼터"
+  ],
+  "exclude": [
+   "df3i",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립"
+  ],
+  "summary": "L.A.B. 골프의 인서트 없는 말렛 퍼터입니다. 특허 기술 Lie Angle Balance로 스트로크 중 토크를 없애 반복 가능한 스트로크를 돕고, 헤드는 6061 알루미늄을 CNC 밀링했습니다.",
+  "points": [
+   "Lie Angle Balance(제로토크)",
+   "6061 알루미늄 CNC 밀링 헤드 · 유효 로프트 3도",
+   "국내 정식 판매처 확인"
+  ],
+  "guidePick": {
+   "role": "제로토크 말렛",
+   "forWhom": "짧은 퍼트에서 당기거나 미는 실수가 잦은 골퍼",
+   "short": "LAB 대표 말렛",
+   "plus": "방향 안정",
+   "minus": "외모 호불호",
+   "pros": [
+    "라이각 밸런스로 페이스가 스스로 스퀘어 유지",
+    "관용성을 위한 말렛 모양"
+   ],
+   "cons": [
+    "독특한 모양과 감이 낯설 수 있음",
+    "라이각 피팅이 중요"
+   ],
+   "scores": [
+    5,
+    3,
+    4,
+    3
+   ],
+   "specs": [
+    "말렛(제로토크)",
+    "TBD",
+    "Lie Angle Balance · 인서트 없음"
+   ],
+   "verdict": "제로토크 원조 브랜드의 대표 말렛",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://labgolf.com/pages/df3-putter",
+   "https://labgolf.com/products/df3-stock"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "ping-tyne-g-putter",
+  "name": "핑 타인 G 퍼터",
+  "query": "핑 2023 타인 G 퍼터 오른손",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "tyneg",
+   "타인g"
+  ],
+  "exclude": [
+   "시그마",
+   "sigma",
+   "프로디",
+   "prodi",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립",
+   "왼손",
+   "좌타"
+  ],
+  "summary": "핑 2023 퍼터 라인의 말렛 모델입니다. 흰 정렬선 3줄과 공 폭 캐비티 바닥, 공을 집는 가운데 홈이 특징이며 PEBAX 인서트를 넣은 얕은 밀링 페이스를 씁니다.",
+  "points": [
+   "핑 2023 퍼터 라인(본사 재고 한정)",
+   "말렛 · 360g 헤드 · 약간 아크/직선 스트로크",
+   "삼양인터내셔날 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "정렬형 말렛",
+   "forWhom": "정렬선이 많은 말렛으로 방향을 잡고 싶은 골퍼",
+   "short": "흰 선 3줄 정렬",
+   "plus": "정렬 편의",
+   "minus": "구형 재고",
+   "pros": [
+    "흰 정렬선 3줄과 공 폭 캐비티",
+    "공 집기 홈으로 편의성"
+   ],
+   "cons": [
+    "2023 모델이라 재고 확인 필요",
+    "인서트 타감이 부드러워 거리감 적응 필요"
+   ],
+   "scores": [
+    4,
+    3,
+    5,
+    4
+   ],
+   "specs": [
+    "말렛",
+    "TBD",
+    "흰 정렬선 3줄 · PEBAX 인서트"
+   ],
+   "verdict": "선 맞추기가 쉬운 핑 말렛",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://ping.com/en-us/golf-clubs/putters/2024-2023-tyne-g-putter"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "ping-ds72-putter",
+  "name": "핑 DS72 퍼터",
+  "query": "핑 DS72 퍼터",
+  "must": [
+   "ds72",
+   "퍼터"
+  ],
+  "exclude": [
+   "pld",
+   "암락",
+   "armlock",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립"
+  ],
+  "summary": "핑 2023 퍼터 라인의 미드말렛입니다. 365g 헤드에 더블벤드 샤프트, PEBAX 인서트를 넣은 얕은 밀링 페이스를 쓰며 약간 아크형 스트로크에 맞춥니다.",
+  "points": [
+   "핑 2023 퍼터 라인(본사 재고 한정)",
+   "미드말렛 · 365g · 304 스테인리스",
+   "삼양인터내셔날 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "미드말렛 균형형",
+   "forWhom": "블레이드의 손맛과 말렛의 안정감 사이를 원하는 골퍼",
+   "short": "작고 단정한 말렛",
+   "plus": "균형",
+   "minus": "구형 재고",
+   "pros": [
+    "블레이드처럼 작은 미드말렛 모양",
+    "더블벤드 샤프트로 약간 아크 스트로크 대응"
+   ],
+   "cons": [
+    "2023 모델이라 재고 확인 필요",
+    "큰 말렛보다 관용성 낮음"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    4
+   ],
+   "specs": [
+    "미드말렛",
+    "TBD",
+    "더블벤드 · PEBAX 인서트"
+   ],
+   "verdict": "작은 헤드로 손맛과 안정감을 같이 챙기는 핑 미드말렛",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://ping.com/en-us/golf-clubs/putters/2024-2023-ds72-putter"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "odyssey-white-hot-og-2ball-putter",
+  "name": "오디세이 화이트 핫 OG 투볼 퍼터",
+  "query": "오디세이 화이트 핫 OG 2볼 퍼터",
+  "must": [
+   "og",
+   "퍼터"
+  ],
+  "mustAny": [
+   "투볼",
+   "2볼",
+   "2ball",
+   "2-ball",
+   "twoball"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립"
+  ],
+  "summary": "오디세이의 원조 화이트 핫 인서트를 되살린 화이트 핫 OG 라인의 투볼 말렛입니다. 더블벤드 페이스밸런스로 아크가 적은 직선형 스트로크에 맞습니다.",
+  "points": [
+   "화이트 핫 OG 라인 · 투볼 정렬",
+   "더블벤드 페이스밸런스",
+   "캘러웨이골프코리아 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "가성비 투볼",
+   "forWhom": "처음 퍼터를 바꾸며 정렬 쉬운 말렛을 찾는 골퍼",
+   "short": "클래식 투볼",
+   "plus": "정렬·가격",
+   "minus": "구성 단순",
+   "pros": [
+    "투볼 정렬로 공 맞추기 쉬움",
+    "부드러운 화이트 핫 인서트"
+   ],
+   "cons": [
+    "최신 Ai-ONE 인서트 대비 기술은 단순",
+    "남녀 모델 길이 구분해서 구매"
+   ],
+   "scores": [
+    4,
+    4,
+    5,
+    5
+   ],
+   "specs": [
+    "말렛(투볼)",
+    "TBD",
+    "화이트 핫 인서트 · 페이스밸런스"
+   ],
+   "verdict": "정렬 쉬운 투볼을 부담 없는 가격에",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://callawaygolf.com/clubs/putters/white-hot-og",
+   "https://in.callawaygolf.com/golf-clubs/odyssey-putters/white-hot-og/putters-2023-wh-og-2-ball-db.html"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "cleveland-frontline-elevado-putter",
+  "name": "클리브랜드 프론트라인 엘레바도 퍼터",
+  "query": "클리브랜드 프론트라인 엘레바도 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "엘레바도",
+   "elevado"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립",
+   "여성"
+  ],
+  "summary": "클리브랜드 프론트라인 라인의 대표 말렛입니다. 텅스텐을 낮고 앞쪽에 둔 전방 무게 설계와 양쪽 안정 날개, 2135 정렬, 스피드 최적화 페이스를 갖췄습니다.",
+  "points": [
+   "텅스텐 전방 무게(Frontline)",
+   "말렛 · 370g(싱글벤드 기준) · 3도 로프트",
+   "던롭스포츠코리아 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "가성비 고관용 말렛",
+   "forWhom": "빗맞은 퍼트도 방향이 덜 흔들리길 원하는 입문 골퍼",
+   "short": "전방 무게 말렛",
+   "plus": "관용성·가격",
+   "minus": "타감 단단",
+   "pros": [
+    "전방 텅스텐으로 빗맞아도 방향 유지",
+    "2135 정렬로 공 높이에 맞춘 정렬선"
+   ],
+   "cons": [
+    "넥 종류(싱글벤드·플러머·슬랜트) 구분해서 구매",
+    "타감이 단단한 편"
+   ],
+   "scores": [
+    4,
+    3,
+    4,
+    5
+   ],
+   "specs": [
+    "말렛",
+    "TBD",
+    "텅스텐 전방 무게 · 2135 정렬"
+   ],
+   "verdict": "가격 대비 안정감이 좋은 입문용 말렛",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://clevelandgolf.com/us/putters-/frontline-elevado-single-bend-putter/11191817.html",
+   "https://clevelandgolf.com/en/putters-/frontline-elevado-plumbers-neck-putter/EPN.html"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "bettinardi-queen-b-6-putter",
+  "name": "베티나르디 퀸비 6 퍼터",
+  "query": "베티나르디 퀸비 6 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "퀸비6",
+   "queenb6",
+   "qb6",
+   "퀸b6"
+  ],
+  "exclude": [
+   "슬롯백",
+   "slotback",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립"
+  ],
+  "summary": "베티나르디 퀸비 시리즈의 와이드 블레이드입니다. 303 스테인리스를 통째로 밀링했고 미니 허니콤 페이스 밀링을 쓰며, 2025 시리즈는 362g 헤드에 무게중심 위치를 다시 잡았습니다.",
+  "points": [
+   "303 스테인리스 원피스 밀링",
+   "미니 허니콤 페이스 밀링 · 362g 헤드",
+   "국내 정식 판매처 확인"
+  ],
+  "guidePick": {
+   "role": "밀링 와이드 블레이드",
+   "forWhom": "밀링 퍼터의 손맛을 원하지만 블레이드보다 약간 안정감을 원하는 골퍼",
+   "short": "블레이드와 말렛 사이",
+   "plus": "손맛",
+   "minus": "가격",
+   "pros": [
+    "원피스 밀링 303 스테인리스의 손맛",
+    "와이드 바디로 블레이드보다 안정적"
+   ],
+   "cons": [
+    "가격대가 높음",
+    "연식(2023·2025)별 마감 차이 확인"
+   ],
+   "scores": [
+    4,
+    5,
+    3,
+    2
+   ],
+   "specs": [
+    "와이드 블레이드",
+    "TBD",
+    "원피스 밀링 · 허니콤 페이스"
+   ],
+   "verdict": "밀링 손맛과 안정감을 함께 원하는 상급자의 블레이드",
+   "skill": "프로"
+  },
+  "sources": [
+   "https://bettinardi.com/pages/2025-queen-b-series",
+   "https://bettinardi.com/products/queen-b-6-putter-1"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "odyssey-tri-hot-5k-putter",
+  "name": "오디세이 트라이핫 5K 퍼터",
+  "query": "오디세이 트라이핫 5K 퍼터",
+  "must": [
+   "5k",
+   "퍼터"
+  ],
+  "mustAny": [
+   "트라이핫",
+   "trihot",
+   "tri-hot"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립",
+   "여성"
+  ],
+  "summary": "오디세이의 고관성 프리미엄 라인입니다. 페이스 뒤 토·힐에 텅스텐을 넣어 관성모멘트를 5,000 이상으로 높이고 무게중심을 앞으로 옮겼습니다.",
+  "points": [
+   "텅스텐 토·힐 무게 · 관성모멘트 5,000 이상",
+   "블레이드·와이드·말렛 등 여러 헤드(구매 전 모델명 확인)",
+   "캘러웨이골프코리아 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "고관성 프리미엄",
+   "forWhom": "블레이드 모양을 좋아하지만 관용성도 놓치기 싫은 골퍼",
+   "short": "블레이드 모양 고관성",
+   "plus": "안정·손맛",
+   "minus": "가격",
+   "pros": [
+    "관성모멘트 5,000 이상으로 빗맞음에 강함",
+    "교체형 전면 무게추"
+   ],
+   "cons": [
+    "헤드 종류가 많아 모델명 확인 필요",
+    "가격대가 높음"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    3
+   ],
+   "specs": [
+    "블레이드·말렛(모델별)",
+    "TBD",
+    "텅스텐 고관성 5K"
+   ],
+   "verdict": "블레이드 손맛에 관용성을 더한 오디세이 프리미엄",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://www.callawaygolf.com/newtrihot5k",
+   "https://www.callawaygolf.com/clubs/odyssey-putters/tri-hot-5k/putters-2022-tri-hot-5k-one.html"
+  ]
+ }
 ]
