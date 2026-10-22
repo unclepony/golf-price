@@ -1,0 +1,603 @@
+[
+ {
+  "id": "cobra-darkspeed-hybrid",
+  "query": "코브라 다크스피드 하이브리드",
+  "must": [
+   "다크스피드"
+  ],
+  "mustAny": [
+   "유틸",
+   "하이브리드",
+   "레스큐"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "중고",
+   "헤드커버",
+   "드라이버",
+   "페어웨이",
+   "시타",
+   "샤프트만",
+   "아이언세트",
+   "one",
+   "원렝스"
+  ],
+  "category": "utility",
+  "name": "코브라 다크스피드 유틸리티(하이브리드)",
+  "summary": "코브라 2024년 다크스피드 시리즈 하이브리드입니다. 무게를 바닥 낮은 곳에 두어 공을 높이 띄우고, 같은 해 드라이버와 같은 계열 기술을 썼습니다.",
+  "points": [
+   "2026년 OPTM·DS-ADAPT보다 한 세대 앞선 모델",
+   "원렝스(ONE) 모델과 구분",
+   "코브라푸마골프코리아 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "직전 세대 비거리형",
+   "forWhom": "신모델보다 낮은 가격에 비거리형 유틸리티를 원하는 분",
+   "short": "다크스피드 비거리형",
+   "plus": "비거리",
+   "minus": "직전 세대",
+   "pros": [
+    "2024 다크스피드 시리즈",
+    "낮은 무게중심으로 높은 탄도"
+   ],
+   "cons": [
+    "2026 신모델보다 한 세대 앞섬",
+    "런이 많아 그린 공략은 다소 어려울 수 있음"
+   ],
+   "scores": [
+    5,
+    4,
+    4,
+    4
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2024년"
+   ],
+   "verdict": "신모델보다 부담 적은 가격의 비거리형 하이브리드",
+   "skill": "중급",
+   "dist": 6
+  },
+  "sources": [
+   "https://www.amateurgolf.com/golf-equipment-reviews/drivers-fairways-hybrids/new-for-2024-cobra-darkspeed-fairways-and-hybrids-30926",
+   "https://www.golfmagic.com/equipment/hybrids/cobra-darkspeed-hybrid-review"
+  ]
+ },
+ {
+  "id": "honma-tw767-hybrid",
+  "query": "혼마 투어월드 TW767 유틸리티",
+  "must": [
+   "tw767"
+  ],
+  "mustAny": [
+   "유틸",
+   "하이브리드",
+   "레스큐"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "중고",
+   "헤드커버",
+   "드라이버",
+   "페어웨이",
+   "시타",
+   "샤프트만",
+   "아이언세트"
+  ],
+  "category": "utility",
+  "name": "혼마 투어월드 TW767 유틸리티",
+  "summary": "혼마 2025년 투어월드 TW767 시리즈 유틸리티입니다. 여러 소재를 섞은 헤드로 높은 탄도와 긴 캐리를 노렸습니다.",
+  "points": [
+   "앞 세대 TW757과 구분",
+   "로프트 조절 기능 없음",
+   "혼마골프 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "투어월드 최신형",
+   "forWhom": "혼마 투어월드 라인으로 맞추고 싶은 상급자",
+   "short": "TW757 후속",
+   "plus": "손맛·브랜드",
+   "minus": "조절 기능 없음",
+   "pros": [
+    "2025 투어월드 TW767",
+    "여러 소재 헤드로 높은 탄도"
+   ],
+   "cons": [
+    "로프트 조절 기능 없음",
+    "정보가 적은 편"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    4
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2025년"
+   ],
+   "verdict": "투어월드 백을 최신형으로 맞추는 골퍼에게",
+   "skill": "고급",
+   "dist": 6
+  },
+  "sources": [
+   "https://www.firstcallgolf.com/industry-news/release/2025-02-05/honma-golf-launches-tour-world-767-collection",
+   "https://pargolf.my/honma-golf-launches-t-world-767-collection-for-malaysia-and-indonesia/"
+  ]
+ },
+ {
+  "id": "honma-beres09-hybrid",
+  "query": "혼마 베레스 09 유틸리티",
+  "must": [
+   "beres",
+   "09"
+  ],
+  "mustAny": [
+   "유틸",
+   "하이브리드",
+   "레스큐"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "중고",
+   "헤드커버",
+   "드라이버",
+   "페어웨이",
+   "시타",
+   "샤프트만",
+   "아이언세트"
+  ],
+  "category": "utility",
+  "name": "혼마 베레스 09 유틸리티",
+  "summary": "혼마 2024년 베레스 09 시리즈의 고급형 유틸리티입니다. 텅스텐 니켈 무게추를 뒤쪽 힐에 두어 공이 잡히기 쉽게 했고, 로프트(19·22·25도)마다 바닥과 무게중심을 따로 설계했습니다.",
+  "points": [
+   "별(스타) 등급마다 샤프트·가격이 다름",
+   "뉴베레스와 구분",
+   "혼마골프 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "프리미엄 편안함",
+   "forWhom": "가볍고 편한 고급 유틸리티를 원하는 시니어",
+   "short": "베레스 고급형",
+   "plus": "편안한 스윙",
+   "minus": "가격 매우 높음",
+   "pros": [
+    "2024 베레스 09",
+    "로프트별 따로 설계한 헤드"
+   ],
+   "cons": [
+    "가격이 매우 높음",
+    "스타 등급별 가격 차이 큼"
+   ],
+   "scores": [
+    3,
+    4,
+    5,
+    2
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2024년"
+   ],
+   "verdict": "가격보다 편안함과 고급감을 우선하는 골퍼에게",
+   "skill": "중급",
+   "dist": 6
+  },
+  "sources": [
+   "https://newswire.ca/news-releases/honma-golf-redefines-luxury-with-beres-09-collection-886587837.html",
+   "https://pluggedingolf.com/golf-news-january-18-2024/"
+  ]
+ },
+ {
+  "id": "majesty-conquest-hybrid",
+  "query": "마제스티 컨퀘스트 유틸리티",
+  "must": [
+   "마제스티",
+   "컨퀘스트"
+  ],
+  "mustAny": [
+   "유틸",
+   "하이브리드",
+   "레스큐"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "중고",
+   "헤드커버",
+   "드라이버",
+   "페어웨이",
+   "시타",
+   "샤프트만",
+   "아이언세트"
+  ],
+  "category": "utility",
+  "name": "마제스티 컨퀘스트 유틸리티",
+  "summary": "마제스티골프(옛 마루망) 컨퀘스트 라인의 남성 하이브리드입니다. 같은 라인 페어웨이 우드와 함께 고를 수 있습니다.",
+  "points": [
+   "2022년 모델",
+   "프레스티지오와 구분",
+   "마제스티골프코리아 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "마제스티 입문형",
+   "forWhom": "마제스티 브랜드를 부담 적게 시작하는 분",
+   "short": "저가 마제스티",
+   "plus": "가격",
+   "minus": "구형",
+   "pros": [
+    "마제스티 라인 중 낮은 가격대",
+    "같은 라인 우드와 맞추기 쉬움"
+   ],
+   "cons": [
+    "2022년 모델",
+    "정보가 적은 편"
+   ],
+   "scores": [
+    3,
+    4,
+    4,
+    5
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2022년"
+   ],
+   "verdict": "마제스티를 낮은 가격에 써 보고 싶은 골퍼에게",
+   "skill": "초심자",
+   "dist": 6
+  },
+  "sources": [
+   "https://auctions.yahoo.co.jp/jp/auction/j1237776733"
+  ]
+ },
+ {
+  "id": "majesty-prestigio13-hybrid",
+  "query": "마제스티 프레스티지오 13 유틸리티",
+  "must": [
+   "프레스티지오"
+  ],
+  "mustAny": [
+   "유틸",
+   "하이브리드",
+   "레스큐"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "중고",
+   "헤드커버",
+   "드라이버",
+   "페어웨이",
+   "시타",
+   "샤프트만",
+   "아이언세트"
+  ],
+  "category": "utility",
+  "name": "마제스티 프레스티지오 13 유틸리티",
+  "summary": "마제스티골프 대표 라인 프레스티지오 13의 하이브리드입니다. 사이클론 페이스와 텅스텐 바닥으로 쉽게 높이 띄우도록 만들었습니다.",
+  "points": [
+   "프레스티지오 12 등 이전 세대와 구분",
+   "가격이 매우 높음",
+   "마제스티골프코리아 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "최고급 관용형",
+   "forWhom": "가격보다 고급감과 쉬운 탄도를 원하는 시니어",
+   "short": "프레스티지오 13",
+   "plus": "띄우기 쉬움",
+   "minus": "가격 매우 높음",
+   "pros": [
+    "프레스티지오 13 시리즈",
+    "텅스텐 바닥으로 높은 탄도"
+   ],
+   "cons": [
+    "가격이 매우 높음",
+    "비거리 정보는 판매처 확인"
+   ],
+   "scores": [
+    3,
+    4,
+    5,
+    1
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2024년"
+   ],
+   "verdict": "최고급 시니어 유틸리티를 찾는 골퍼에게",
+   "skill": "중급",
+   "dist": 6
+  },
+  "sources": [
+   "https://pargolf.my/?p=40806",
+   "https://www.dailian.co.kr/news/view/1509448/"
+  ]
+ },
+ {
+  "id": "kasco-ufo-hybrid",
+  "query": "카스코 UFO 유틸리티",
+  "must": [
+   "카스코",
+   "ufo"
+  ],
+  "mustAny": [
+   "유틸",
+   "하이브리드",
+   "레스큐"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "중고",
+   "헤드커버",
+   "드라이버",
+   "페어웨이",
+   "시타",
+   "샤프트만",
+   "아이언세트"
+  ],
+  "category": "utility",
+  "name": "카스코 UFO AIR 유틸리티",
+  "summary": "카스코 2024년 UFO AIR 유틸리티(파워 토네이도)입니다. 납작하고 큰 헤드로 러프·디봇에서도 쉽게 띄우도록 만든 입문·시니어용 클럽입니다.",
+  "points": [
+   "UFO AIR DD(드라이버)와 구분",
+   "UFO Speed 등 다른 UFO 모델과 구분",
+   "카스코코리아 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "쉽게 띄우는 특수형",
+   "forWhom": "롱아이언·우드가 어려운 입문자·시니어",
+   "short": "UFO 쉬운 탈출",
+   "plus": "띄우기 쉬움",
+   "minus": "모양 호불호",
+   "pros": [
+    "넓고 납작한 UFO 헤드",
+    "러프에서 쉽게 띄움"
+   ],
+   "cons": [
+    "독특한 모양이라 호불호",
+    "비거리보다 쉬움 위주"
+   ],
+   "scores": [
+    3,
+    5,
+    5,
+    4
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2024년"
+   ],
+   "verdict": "다른 유틸리티가 어렵다면 시도해 볼 만한 쉬운 클럽",
+   "skill": "초심자",
+   "dist": 6
+  },
+  "sources": [
+   "https://www.yodobashi.com/community/product/100000001008635430/question.html",
+   "https://kakaku.com/item/K0001726064/"
+  ]
+ },
+ {
+  "id": "taylormade-qi35max-rescue",
+  "query": "테일러메이드 Qi35 MAX 레스큐",
+  "must": [
+   "qi35",
+   "max"
+  ],
+  "mustAny": [
+   "유틸",
+   "하이브리드",
+   "레스큐"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "중고",
+   "헤드커버",
+   "드라이버",
+   "페어웨이",
+   "시타",
+   "샤프트만",
+   "아이언세트",
+   "lite",
+   "라이트",
+   "투어",
+   "tour"
+  ],
+  "category": "utility",
+  "name": "테일러메이드 Qi35 MAX 레스큐(유틸리티)",
+  "summary": "테일러메이드 2025년 Qi35 시리즈 가운데 관용성에 맞춘 레스큐입니다. 조절 기능 없는 우드형 헤드로 핸디캡이 높은 골퍼에게 맞췄습니다.",
+  "points": [
+   "Qi35(기본형)·Qi35 MAX LITE와 구분",
+   "로프트 조절 기능 없음",
+   "테일러메이드코리아 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "Qi35 관용형",
+   "forWhom": "Qi35 기본형이 어렵게 느껴지는 분",
+   "short": "쉬운 Qi35",
+   "plus": "관용성",
+   "minus": "조절 불가",
+   "pros": [
+    "우드형 헤드로 쉽게 뜸",
+    "로켓배송"
+   ],
+   "cons": [
+    "로프트 조절 기능 없음",
+    "2026 Qi4D 출시로 직전 세대"
+   ],
+   "scores": [
+    4,
+    5,
+    5,
+    4
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2025년"
+   ],
+   "verdict": "Qi35 계열에서 가장 쉬운 레스큐",
+   "skill": "초심자",
+   "dist": 6
+  },
+  "sources": [
+   "https://irishgolfer.ie/gear/2025/01/07/first-look-at-taylormade-qi35-qi35-max-and-qi35-max-lite-rescues/",
+   "https://ca.sports.yahoo.com/news/taylormade-qi35-qi35-max-rescue-135838583.html"
+  ]
+ },
+ {
+  "id": "ping-g430hl-hybrid",
+  "query": "핑 G430 HL 하이브리드",
+  "must": [
+   "g430",
+   "hl"
+  ],
+  "mustAny": [
+   "유틸",
+   "하이브리드",
+   "레스큐"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "중고",
+   "헤드커버",
+   "드라이버",
+   "페어웨이",
+   "시타",
+   "샤프트만",
+   "아이언세트"
+  ],
+  "category": "utility",
+  "name": "핑 G430 HL 하이브리드",
+  "summary": "핑 G430 하이브리드의 가벼운 고탄도(HL) 버전입니다. 카본 크라운과 가벼운 샤프트·그립으로 기본형보다 약 15% 가벼워 스윙이 느린 골퍼에게 맞췄습니다.",
+  "points": [
+   "G430 기본형·G440 HL과 구분",
+   "호젤로 로프트 ±1.5° 조절",
+   "삼양인터내셔날 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "가벼운 관용형",
+   "forWhom": "스윙 스피드가 느린 시니어·입문자",
+   "short": "가벼운 G430",
+   "plus": "가벼움·탄도",
+   "minus": "비거리 한계",
+   "pros": [
+    "기본형보다 약 15% 가벼움",
+    "카본 크라운으로 낮은 무게중심"
+   ],
+   "cons": [
+    "힘이 좋은 골퍼에겐 너무 가벼움",
+    "G440 출시로 직전 세대"
+   ],
+   "scores": [
+    3,
+    5,
+    5,
+    4
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2023년"
+   ],
+   "verdict": "스윙이 느린 골퍼의 쉬운 하이브리드",
+   "skill": "초심자",
+   "dist": 6
+  },
+  "sources": [
+   "https://golfbox.com.au/clubs/ping-g430-hl-hybrid",
+   "https://www.carlsgolfland.com/ping-g430-hl-hybrids"
+  ]
+ },
+ {
+  "id": "taylormade-qi10max-rescue",
+  "query": "테일러메이드 Qi10 MAX 레스큐",
+  "must": [
+   "qi10",
+   "max"
+  ],
+  "mustAny": [
+   "유틸",
+   "하이브리드",
+   "레스큐"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "중고",
+   "헤드커버",
+   "드라이버",
+   "페어웨이",
+   "시타",
+   "샤프트만",
+   "아이언세트",
+   "lite",
+   "라이트",
+   "슬리브",
+   "투어",
+   "tour"
+  ],
+  "category": "utility",
+  "name": "테일러메이드 Qi10 MAX 레스큐(유틸리티)",
+  "summary": "테일러메이드 2024년 Qi10 레스큐 3종 중 가장 크고 관용성이 높은 모델입니다. 넓은 카본 크라운으로 무게를 낮추고 얕은 페이스로 쉽게 띄우게 했습니다.",
+  "points": [
+   "Qi10 기본형·Qi10 투어와 구분",
+   "남녀 공용 판매글은 샤프트 옵션 확인",
+   "테일러메이드코리아 정품 여부 확인"
+  ],
+  "guidePick": {
+   "role": "직전 세대 관용형",
+   "forWhom": "낮은 가격에 쉬운 레스큐를 찾는 분",
+   "short": "큰 헤드 Qi10",
+   "plus": "관용성",
+   "minus": "직전 세대",
+   "pros": [
+    "Qi10 레스큐 중 가장 큰 헤드",
+    "얕은 페이스로 쉽게 뜸"
+   ],
+   "cons": [
+    "2025·2026 신모델보다 앞선 세대",
+    "남녀 공용 판매글"
+   ],
+   "scores": [
+    3,
+    5,
+    5,
+    5
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2024년"
+   ],
+   "verdict": "신모델보다 싸게 쉬운 레스큐를 찾는 초보에게",
+   "skill": "초심자",
+   "dist": 6
+  },
+  "sources": [
+   "https://irishgolfer.ie/gear/2024/01/09/taylormade-qi10-rescue-family/",
+   "https://golfalot.com/equipment-review/taylormade-qi10-max-rescue-review"
+  ]
+ }
+]
