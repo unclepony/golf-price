@@ -119,6 +119,7 @@ const siteConf = readJson(join(ROOT, 'config', 'site.json'), {});
 const VERIFY = [
   siteConf.googleVerification && `<meta name="google-site-verification" content="${siteConf.googleVerification}">`,
   siteConf.naverVerification && `<meta name="naver-site-verification" content="${siteConf.naverVerification}">`,
+  `<link rel="alternate" type="application/rss+xml" title="${SITE.name ?? ''}" href="${SITE_URL}/rss.xml">`,
 ]
   .filter(Boolean)
   .join('\n');
@@ -1945,6 +1946,23 @@ rawWrite(
     .map(([u, d]) => `<url><loc>${SITE_URL}${u}</loc><lastmod>${d}</lastmod></url>`)
     .join('\n')}\n</urlset>\n`,
 );
+// RSS(네이버 서치어드바이저 'RSS 제출'용): 초보 Q&A 글 + 새로 넣은 상품(added), 최근 50개
+if (!DEMO) {
+  const xml = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  const rfc = (d) => new Date(`${d}T09:00:00+09:00`).toUTCString();
+  const items = [
+    ...QA.list.filter((a) => a.date).map((a) => ({ title: a.title, link: `/qa/${a.slug}`, desc: a.desc, date: a.date })),
+    ...config.products.filter((p) => p.added && !GONE[p.id]).map((p) => ({ title: p.name, link: `/p/${p.id}`, desc: p.summary, date: p.added })),
+  ]
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 50);
+  rawWrite(
+    join(OUT, 'rss.xml'),
+    `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n<title>${xml(SITE_NAME)}</title>\n<link>${SITE_URL}/</link>\n<description>${xml(SITE.tagline || SITE_NAME)}</description>\n<language>ko</language>\n${items
+      .map((it) => `<item><title>${xml(it.title)}</title><link>${SITE_URL}${it.link}</link><guid>${SITE_URL}${it.link}</guid><description>${xml(it.desc)}</description><pubDate>${rfc(it.date)}</pubDate></item>`)
+      .join('\n')}\n</channel></rss>\n`,
+  );
+}
 writeText(join(OUT, 'robots.txt'), DEMO ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nDisallow: /go/\nDisallow: /admin\nDisallow: /api/\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
 {
