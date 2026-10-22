@@ -85,7 +85,7 @@ Node.js 22.9 이상이 필요합니다.
 
 ## 관련 영상 (유튜브)
 
-가이드 페이지(`/g/{slug}`) 자주 묻는 질문 아래에 ATL골프기어 유튜브 채널의 관련 영상을 보여 줍니다. 영상이 없는 가이드는 블록이 없습니다.
+가이드 페이지(`/g/{slug}`) 자주 묻는 질문 아래에 초이스골프 유튜브 채널(@choicegolf)의 관련 영상을 보여 줍니다. 영상이 없는 가이드는 블록이 없습니다.
 
 - 원본: golfvideo 프로젝트의 `data/videos.json` (golfvideo 매일 작업이 갱신). GitHub Actions 에는 golfvideo 폴더가 없으므로 `node src/videos-sync.mjs` 로 `config/videos.json` 에 복사해 커밋합니다. 빌드는 이 복사본만 읽습니다.
 - 형식: `{ "가이드 slug": [{ "id": "유튜브 영상 id(11자)", "format": "long|shorts", "title": "...", "publishAt": "ISO 시각 또는 null" }] }`. `format` 이 없으면 제목의 `#shorts` 로 판단합니다.
