@@ -650,71 +650,71 @@
       "d": "2026-10-22"
     },
     "/p/mizuno-jpxq-women-fairway": {
-      "h": "7c86c2cc25a8ca62",
+      "h": "77ddb982366db4d1",
       "d": "2026-10-22"
     },
     "/p/taylormade-sim2maxd-women-fairway": {
-      "h": "aa26ecff4c92da74",
+      "h": "37f47e9d5a166f29",
       "d": "2026-10-22"
     },
     "/p/callaway-roguest-women-fairway": {
-      "h": "f65420b62a8d66ec",
+      "h": "a008eb8b3e3886a6",
       "d": "2026-10-22"
     },
     "/p/xxio13-women-fairway": {
-      "h": "dd537a6c88089cda",
+      "h": "f7e981fec5279367",
       "d": "2026-10-22"
     },
     "/p/majesty-royal-women-fairway": {
-      "h": "43586fa08310c56c",
+      "h": "01d45af1fc060dc5",
       "d": "2026-10-22"
     },
     "/p/honma-nx-women-fairway": {
-      "h": "25e6fbfb7e6c7959",
+      "h": "f7a088623fd5ff76",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi35maxlite-women-fairway": {
-      "h": "3b854efed6db7f85",
+      "h": "92b15d249b57ef46",
       "d": "2026-10-22"
     },
     "/p/callaway-elyte-women-fairway": {
-      "h": "21b0dbd7edbad365",
+      "h": "6f1884bbe8705a29",
       "d": "2026-10-22"
     },
     "/p/honma-aizu-women-fairway": {
-      "h": "f3e2aee8248dacbc",
+      "h": "a077e4bb4f800e0b",
       "d": "2026-10-22"
     },
     "/p/ping-gle3-women-fairway": {
-      "h": "d1da4cda6eb71577",
+      "h": "d96cc46b9750802d",
       "d": "2026-10-22"
     },
     "/p/honma-kiwami6-women-fairway": {
-      "h": "ab876969799720ca",
+      "h": "30acf191b9b4bd51",
       "d": "2026-10-22"
     },
     "/p/ping-gle4-women-fairway": {
-      "h": "42dee3f4ca44fc2b",
+      "h": "a079b88614ffaddc",
       "d": "2026-10-22"
     },
     "/p/mizuno-jpxq2-women-fairway": {
-      "h": "e40e928ca8f1d3e8",
+      "h": "70c4115b70f370b0",
       "d": "2026-10-22"
     },
     "/p/xxio14-women-fairway": {
-      "h": "6785e26de221ed8f",
+      "h": "614fdb374ec57517",
       "d": "2026-10-22"
     },
     "/p/onoff-lp423-women-fairway": {
-      "h": "3d9f439662c46d2f",
+      "h": "48dc9853d2be4d35",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi4d-women-fairway": {
-      "h": "21b2cafacafc791b",
+      "h": "cf5e4d76a79eda65",
       "d": "2026-10-22"
     },
     "/p/callaway-gbb-women-fairway": {
-      "h": "6c9e19857282fa0b",
+      "h": "9c9644f4ebc39af5",
       "d": "2026-10-22"
     },
     "/p/missile-axg-women-hybrid": {
@@ -1342,7 +1342,7 @@
       "d": "2026-10-22"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "0cc82d2966f7a0e5",
+      "h": "d1b7c0e27fbb1923",
       "d": "2026-10-22"
     },
     "/g/iron-recommend": {
@@ -1366,7 +1366,7 @@
       "d": "2026-10-22"
     },
     "/g/womens-driver-recommend": {
-      "h": "16cd2b8a907e8c4d",
+      "h": "5314de4af4745166",
       "d": "2026-10-22"
     },
     "/g/putter-recommend": {
@@ -1398,7 +1398,7 @@
       "d": "2026-10-22"
     },
     "/g/womens-iron-recommend": {
-      "h": "19a81bff05a8e20f",
+      "h": "ab9e582995d914ed",
       "d": "2026-10-22"
     },
     "/g/womens-shoes-recommend": {
@@ -1609,21 +1609,25 @@
       "h": "062d2326b8040ec7",
       "d": "2026-10-16"
     },
+    "/qa/womens-golf-club-recommend": {
+      "h": "a552db07aa4ee996",
+      "d": "2026-10-22"
+    },
     "/qa/wedge-recommend-loft": {
-      "h": "f03b433b1ab58581",
+      "h": "cfc5e31c90231f2c",
       "d": "2026-10-22"
     },
     "/qa/beginner-driver-recommend": {
-      "h": "ec8305107ead8d0a",
-      "d": "2026-10-21"
+      "h": "c3c52e923b7b5df7",
+      "d": "2026-10-22"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "6437f13a3e369847",
+      "h": "ab01620d0d7dfb14",
       "d": "2026-10-22"
     },
     "/qa": {
-      "h": "f6d0a06248078e04",
-      "d": "2026-10-21"
+      "h": "c4e561048761306b",
+      "d": "2026-10-22"
     },
     "/vs/adidas-adipower-sl-women-shoes-vs-footjoy-pulse-boa-women-shoes": {
       "h": "9965a8b8d233eb83",
@@ -2254,5 +2258,131 @@
       "d": "2026-10-19"
     }
   },
-  "pending": []
+  "pending": [
+    {
+      "url": "/p/mizuno-jpxq-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-sim2maxd-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-roguest-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/xxio13-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/majesty-royal-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/honma-nx-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi35maxlite-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-elyte-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/honma-aizu-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-gle3-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/honma-kiwami6-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/ping-gle4-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/mizuno-jpxq2-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/xxio14-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/onoff-lp423-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/taylormade-qi4d-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/p/callaway-gbb-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/womens-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/g/womens-iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/qa/womens-golf-club-recommend",
+      "kind": "new",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/qa/wedge-recommend-loft",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/qa/beginner-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-10-22"
+    },
+    {
+      "url": "/qa",
+      "kind": "updated",
+      "d": "2026-10-22"
+    }
+  ]
 }
