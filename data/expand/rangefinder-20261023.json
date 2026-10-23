@@ -1,47 +1,574 @@
 [
- {"category":"rangefinder","id":"garmin-approach-z30","name":"가민 어프로치 Z30 거리측정기","query":"가민 어프로치 Z30 거리측정기","must":["z30"],"mustAny":["가민","garmin"],"exclude":["케이스","중고","배터리","필름","z82"],
-  "summary":"가민이 2024년에 내놓은 레이저 거리측정기입니다. 오르막·내리막을 반영한 플레이스라이크 거리와, 잰 거리를 가민 골프 시계·앱으로 보내는 기능을 갖췄습니다.",
-  "points":["2024년 출시, 핀까지 최대 400야드 측정·6배율","경사 보정(대회 모드 표시등)·핀 잠금 진동·자석 카트 마운트","IPX7 방수, CR2 배터리(최대 1년)"],
-  "guidePick":{"role":"가민 실속 레이저","forWhom":"가민 골프 시계를 이미 쓰거나, 방수가 좋은 레이저를 찾는 분","short":"시계와 연동되는 레이저","plus":"가민 연동","minus":"GPS 없음","pros":["잰 거리를 가민 시계·앱으로 전송","IPX7 방수와 자석 카트 마운트"],"cons":["Z82와 달리 GPS·코스 지도는 없음","시계 연동은 가민 기기가 있어야 의미"],"scores":[4,4,3,3],"specs":["레이저","경사 보정·핀 잠금 진동·자석 마운트·IPX7","판매처 확인"],"verdict":"가민 시계 사용자라면 가장 자연스럽게 짝이 되는 레이저","skill":"중급"},
-  "sources":["https://www.garmin.com/en-US/p/1411809/","https://www.garmin.com/en-US/newsroom/press-release/outdoor/garmin-unveils-the-approach-z30-smart-laser-range-finder-with-unparalleled-integration-to-the-garmin-golf-lineup/"]},
- {"category":"rangefinder","id":"nikon-coolshot-50i-gii","name":"니콘 쿨샷 50i GII 거리측정기","query":"니콘 쿨샷 50i GII 거리측정기","must":["니콘","50i"],"exclude":["케이스","중고","배터리","프로","pro"],
-  "summary":"니콘이 2025년 1월 발표한 중급형 레이저 거리측정기입니다. 몸체에 자석을 넣어 카트·클럽에 붙일 수 있고, 핀을 잡으면 빨간 표시와 진동으로 알려 줍니다.",
-  "points":["2025년 발표, 6~1,200야드 측정","경사 보정 골프 모드 + 대회용 실제 거리 모드","자석 내장, 핀 측정 시 LOCKED ON 표시·진동"],
-  "guidePick":{"role":"니콘 중급형","forWhom":"손떨림 보정까지는 필요 없고 니콘 광학과 자석 부착을 원하는 분","short":"자석 달린 니콘","plus":"자석 내장","minus":"손떨림 보정 없음","pros":["핀 측정을 빨간 표시와 진동으로 이중 확인","카트·클럽에 붙는 자석 내장"],"cons":["프로 라인의 손떨림 보정은 없음","국내 AS는 판매처마다 다름"],"scores":[4,4,3,4],"specs":["레이저","경사 보정·핀 잠금 표시·진동·자석 내장","판매처 확인"],"verdict":"니콘 광학을 합리적인 값에 쓰고 싶을 때 고를 중간 모델","skill":"중급"},
-  "sources":["https://www.nikon.com/company/news/2025/0122_coolshot_50i_gii_02/","https://imaging.nikon.com/sport-optics/lineup/laser/coolshot50igii/"]},
- {"category":"rangefinder","id":"nikon-coolshot-20i-giii","name":"니콘 쿨샷 20i GIII 거리측정기","query":"니콘 쿨샷 20i GIII 거리측정기","must":["니콘","20i"],"exclude":["케이스","중고","배터리","프로","pro"],
-  "summary":"니콘 쿨샷 시리즈에서 가장 작고 가벼운 기본형으로 2024년에 나왔습니다. 핀을 잡으면 짧은 진동으로 알려 줍니다.",
-  "points":["2024년 출시, 쿨샷 시리즈 소형·경량 모델","경사 보정 골프 모드 + 대회용 실제 거리 모드","핀 측정 시 진동(LOCKED ON QUAKE)"],
-  "guidePick":{"role":"니콘 입문형","forWhom":"작고 가벼운 첫 레이저를 찾는 초심자","short":"가장 작은 니콘","plus":"작고 가벼움","minus":"핀 측정 거리 짧음","pros":["주머니에 들어가는 작은 크기","경사 보정과 대회 모드 전환"],"cons":["핀 측정 거리가 상위 모델보다 짧음(300야드)","자석·손떨림 보정 없음"],"scores":[4,3,3,4],"specs":["레이저","경사 보정·핀 측정 진동","판매처 확인"],"verdict":"기능보다 휴대성을 먼저 보는 입문자용 니콘","skill":"초심자"},
-  "sources":["https://www.nikon.com/company/news/2024/0327_coolshot20i_giii_01/","https://nij.nikon.com/cms/sp/coolshot/products/"]},
- {"category":"rangefinder","id":"nikon-coolshot-lite-stabilized","name":"니콘 쿨샷 라이트 스태빌라이즈드 거리측정기","query":"니콘 쿨샷 라이트 스태빌라이즈드","must":["니콘"],"mustAny":["라이트","lite"],"exclude":["케이스","중고","배터리","프로","pro"],
-  "summary":"니콘의 손떨림 보정(STABILIZED) 기능을 담은 보급형 레이저 거리측정기입니다. 뷰파인더 속 흔들림을 1/5 이하로 줄여 핀을 잡기 쉽게 했습니다.",
-  "points":["손떨림 보정: 화면 흔들림 1/5 이하","8~1,200야드 측정, 약 0.3초 표시","경사 보정 골프 모드 + 대회용 실제 거리 모드"],
-  "guidePick":{"role":"보급형 손떨림 보정","forWhom":"손이 떨려 핀 잡기가 어려운데 프로 라인은 부담스러운 분","short":"값을 낮춘 손떨림 보정","plus":"손떨림 보정","minus":"자석 없음","pros":["상위 모델과 같은 계열의 손떨림 보정","핀 측정 거리 500야드"],"cons":["자석 마운트 없음","국내 AS는 판매처마다 다름"],"scores":[5,3,3,4],"specs":["레이저","손떨림 보정·경사 보정","판매처 확인"],"verdict":"손떨림 보정을 가장 낮은 값에 원할 때의 선택","skill":"중급"},
-  "sources":["https://imaging.nikon.com/sport-optics/lineup/laser/coolshot_lite_stabilized/","https://nij.nikon.com/cms/sp/coolshot/products/"]},
- {"category":"rangefinder","id":"bushnell-tour-v6","name":"부쉬넬 투어 V6 거리측정기","query":"부쉬넬 투어 V6 거리측정기","must":["부쉬넬","v6"],"exclude":["쉬프트","시프트","shift","케이스","중고","배터리","파우치"],
-  "summary":"부쉬넬 투어 V6 의 경사 보정이 없는 기본형입니다. 경사 기능이 없어 그대로 대회에 쓸 수 있고, 핀을 잡으면 화면 표시와 진동(JOLT)으로 알려 줍니다.",
-  "points":["경사 보정 없는 대회용 기본형(시프트와 다름)","핀시커 + 비주얼 졸트, 6배율","자석 카트 마운트, IPX6 생활 방수, CR2 배터리"],
-  "guidePick":{"role":"대회용 기본형","forWhom":"대회·공식 라운드 위주로 쓰고 경사 보정이 필요 없는 분","short":"경사 없는 부쉬넬","plus":"대회 그대로 사용","minus":"경사 보정 없음","pros":["경사 기능이 없어 대회 규정 걱정이 없음","부쉬넬 핀시커·진동 확인"],"cons":["연습 라운드에서 오르막·내리막 보정이 없음","시프트 모델과 이름이 비슷해 구분 필요"],"scores":[4,3,4,4],"specs":["레이저","핀 잠금 진동·자석 마운트(경사 보정 없음)","판매처 확인"],"verdict":"경사 보정이 필요 없다면 부쉬넬을 가장 싸게 쓰는 방법","skill":"고급"},
-  "sources":["https://www.bushnellgolf.com/products/laser-rangefinders/tour-v6/","https://www.bushnellgolf.com/pages/support-product-lrf-tour-v6"]},
- {"category":"rangefinder","id":"voicecaddie-l6","name":"보이스캐디 L6 거리측정기","query":"보이스캐디 L6 거리측정기","must":["보이스캐디","l6"],"exclude":["케이스","중고","배터리","sl3","sl2"],
-  "summary":"보이스캐디의 레이저형 거리측정기 L6 입니다. 국내 제조사 제품이라 보이스캐디 고객센터에서 AS를 받습니다.",
-  "points":["보이스캐디 레이저 라인업(공식 몰 판매)","레이저 거리측정기는 일체형이라 결함 시 동일 제품 교환","세부 기능은 판매처 확인"],
-  "guidePick":{"role":"국산 중간형","forWhom":"SL3까지는 부담스럽고 국내 AS가 되는 레이저를 원하는 분","short":"보이스캐디 중간형","plus":"국내 AS","minus":"기능 정보 적음","pros":["국내 제조사 고객센터 AS","SL3보다 낮은 가격대"],"cons":["GPS 결합 기능은 SL3 쪽","세부 기능은 판매처에서 확인 필요"],"scores":[4,3,5,4],"specs":["레이저","판매처 확인","국내 제조사"],"verdict":"국산 AS를 우선하면서 값을 낮추고 싶을 때","skill":"초심자"},
-  "sources":["https://voicecaddie.co.kr/product/detail/109756779","https://voicecaddie.co.kr/support/service-center"]},
- {"category":"rangefinder","id":"voicecaddie-el1","name":"보이스캐디 EL1 거리측정기","query":"보이스캐디 EL1 거리측정기","must":["보이스캐디","el1"],"exclude":["케이스","중고","배터리"],
-  "summary":"보이스캐디가 다시 내놓은(재출시) 보급형 레이저 거리측정기입니다. 보이스캐디 레이저 중 가장 낮은 가격대입니다.",
-  "points":["보이스캐디 재출시 보급형 레이저","국내 제조사 고객센터 AS","세부 기능은 판매처 확인"],
-  "guidePick":{"role":"국산 보급형","forWhom":"첫 거리측정기를 가장 낮은 값에, 국내 AS와 함께 사고 싶은 초심자","short":"가장 싼 보이스캐디","plus":"낮은 가격","minus":"기능 단순","pros":["국내 AS 되는 보급형","보이스캐디 레이저 중 최저 가격대"],"cons":["상위 모델의 핀트레이서 등 기능 여부는 판매처 확인","재출시 모델이라 최신 기능은 적음"],"scores":[3,2,5,5],"specs":["레이저","판매처 확인","국내 제조사"],"verdict":"값과 AS만 보고 고르는 첫 거리측정기","skill":"초심자"},
-  "sources":["https://voicecaddie.co.kr/product/detail/109754359","https://voicecaddie.co.kr/support/service-center"]},
- {"category":"rangefinder","id":"golfbuddy-aim-l12","name":"골프버디 aim L12 거리측정기","query":"골프버디 aim L12 거리측정기","must":["골프버디","l12"],"exclude":["케이스","중고","배터리"],
-  "summary":"골프버디(골프존) 프리미엄 aim 라인의 레이저 거리측정기입니다. 0.15초 측정, 6배율을 내세웁니다.",
-  "points":["골프버디 aim 프리미엄 라인","2~880야드, ±1야드, 6배율","측정 0.15초(제로 세컨드)"],
-  "guidePick":{"role":"국산 빠른 측정","forWhom":"측정 속도를 중시하고 국산 AS를 원하는 분","short":"0.15초 측정","plus":"빠른 측정","minus":"측정 거리 짧음","pros":["0.15초 빠른 측정","국내 제조사(골프존) AS"],"cons":["최대 880야드로 상위 모델보다 짧음","세부 기능 구성은 판매처 확인"],"scores":[4,3,4,4],"specs":["레이저","빠른 측정(0.15초)·6배율","국내 제조사(골프존)"],"verdict":"아톰보다 한 단계 위, 빠른 측정을 원하는 국산 선택","skill":"중급"},
-  "sources":["https://en.golfbuddy.com/products/L12.asp","https://help.golfbuddy.com/pInfo.asp?searchproduct=59"]},
- {"category":"rangefinder","id":"golfbuddy-gb-laser-lite","name":"골프버디 GB 레이저 라이트 거리측정기","query":"골프버디 GB 레이저 라이트 거리측정기","must":["골프버디"],"mustAny":["라이트","lite"],"exclude":["케이스","중고","배터리","아톰","atom"],
-  "summary":"골프버디 보급형 GB 라인의 경사 보정 레이저 거리측정기입니다.",
-  "points":["골프버디 보급형 GB 라인","경사 보정 기능","국내 제조사(골프존) AS"],
-  "guidePick":{"role":"국산 보급형 경사","forWhom":"경사 보정이 되는 국산 보급형을 찾는 초심자","short":"국산 보급형","plus":"낮은 가격","minus":"기능 단순","pros":["경사 보정이 되는 보급형","국내 제조사 AS"],"cons":["상위 aim 라인보다 기능 단순","세부 사양은 판매처 확인"],"scores":[3,3,4,5],"specs":["레이저","경사 보정","국내 제조사(골프존)"],"verdict":"값을 아끼면서 경사 보정은 갖고 싶은 첫 거리측정기","skill":"초심자"},
-  "sources":["https://en.golfbuddy.com/products/GB_LASER_lite.asp?pType=0"]}
+ {
+  "category": "rangefinder",
+  "id": "garmin-approach-z30",
+  "name": "가민 어프로치 Z30 거리측정기",
+  "query": "가민 어프로치 Z30 거리측정기",
+  "must": [
+   "z30"
+  ],
+  "mustAny": [
+   "가민",
+   "garmin"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리",
+   "필름",
+   "z82",
+   "일본",
+   "직구",
+   "병행",
+   "해외"
+  ],
+  "summary": "가민이 2024년에 내놓은 레이저 거리측정기입니다. 오르막·내리막을 반영한 플레이스라이크 거리와, 잰 거리를 가민 골프 시계·앱으로 보내는 기능을 갖췄습니다.",
+  "points": [
+   "2024년 출시, 핀까지 최대 400야드 측정·6배율",
+   "경사 보정(대회 모드 표시등)·핀 잠금 진동·자석 카트 마운트",
+   "IPX7 방수, CR2 배터리(최대 1년)"
+  ],
+  "guidePick": {
+   "role": "가민 실속 레이저",
+   "forWhom": "가민 골프 시계를 이미 쓰거나, 방수가 좋은 레이저를 찾는 분",
+   "short": "시계와 연동되는 레이저",
+   "plus": "가민 연동",
+   "minus": "GPS 없음",
+   "pros": [
+    "잰 거리를 가민 시계·앱으로 전송",
+    "IPX7 방수와 자석 카트 마운트"
+   ],
+   "cons": [
+    "Z82와 달리 GPS·코스 지도는 없음",
+    "시계 연동은 가민 기기가 있어야 의미"
+   ],
+   "scores": [
+    4,
+    4,
+    3,
+    3
+   ],
+   "specs": [
+    "레이저",
+    "경사 보정·핀 잠금 진동·자석 마운트·IPX7",
+    "판매처 확인"
+   ],
+   "verdict": "가민 시계 사용자라면 가장 자연스럽게 짝이 되는 레이저",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://www.garmin.com/en-US/p/1411809/",
+   "https://www.garmin.com/en-US/newsroom/press-release/outdoor/garmin-unveils-the-approach-z30-smart-laser-range-finder-with-unparalleled-integration-to-the-garmin-golf-lineup/"
+  ]
+ },
+ {
+  "category": "rangefinder",
+  "id": "nikon-coolshot-50i-gii",
+  "name": "니콘 쿨샷 50i GII 거리측정기",
+  "query": "니콘 쿨샷 50i GII 거리측정기",
+  "must": [
+   "니콘",
+   "50i",
+   "거리"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리",
+   "프로",
+   "pro",
+   "z50",
+   "바디",
+   "body",
+   "카메라"
+  ],
+  "summary": "니콘이 2025년 1월 발표한 중급형 레이저 거리측정기입니다. 몸체에 자석을 넣어 카트·클럽에 붙일 수 있고, 핀을 잡으면 빨간 표시와 진동으로 알려 줍니다.",
+  "points": [
+   "2025년 발표, 6~1,200야드 측정",
+   "경사 보정 골프 모드 + 대회용 실제 거리 모드",
+   "자석 내장, 핀 측정 시 LOCKED ON 표시·진동"
+  ],
+  "guidePick": {
+   "role": "니콘 중급형",
+   "forWhom": "손떨림 보정까지는 필요 없고 니콘 광학과 자석 부착을 원하는 분",
+   "short": "자석 달린 니콘",
+   "plus": "자석 내장",
+   "minus": "손떨림 보정 없음",
+   "pros": [
+    "핀 측정을 빨간 표시와 진동으로 이중 확인",
+    "카트·클럽에 붙는 자석 내장"
+   ],
+   "cons": [
+    "프로 라인의 손떨림 보정은 없음",
+    "국내 AS는 판매처마다 다름"
+   ],
+   "scores": [
+    4,
+    4,
+    3,
+    4
+   ],
+   "specs": [
+    "레이저",
+    "경사 보정·핀 잠금 표시·진동·자석 내장",
+    "판매처 확인"
+   ],
+   "verdict": "니콘 광학을 합리적인 값에 쓰고 싶을 때 고를 중간 모델",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://www.nikon.com/company/news/2025/0122_coolshot_50i_gii_02/",
+   "https://imaging.nikon.com/sport-optics/lineup/laser/coolshot50igii/"
+  ]
+ },
+ {
+  "category": "rangefinder",
+  "id": "nikon-coolshot-20i-giii",
+  "name": "니콘 쿨샷 20i GIII 거리측정기",
+  "query": "니콘 쿨샷 20i GIII 거리측정기",
+  "must": [
+   "니콘",
+   "20i"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리",
+   "프로",
+   "pro"
+  ],
+  "summary": "니콘 쿨샷 시리즈에서 가장 작고 가벼운 기본형으로 2024년에 나왔습니다. 핀을 잡으면 짧은 진동으로 알려 줍니다.",
+  "points": [
+   "2024년 출시, 쿨샷 시리즈 소형·경량 모델",
+   "경사 보정 골프 모드 + 대회용 실제 거리 모드",
+   "핀 측정 시 진동(LOCKED ON QUAKE)"
+  ],
+  "guidePick": {
+   "role": "니콘 입문형",
+   "forWhom": "작고 가벼운 첫 레이저를 찾는 초심자",
+   "short": "가장 작은 니콘",
+   "plus": "작고 가벼움",
+   "minus": "핀 측정 거리 짧음",
+   "pros": [
+    "주머니에 들어가는 작은 크기",
+    "경사 보정과 대회 모드 전환"
+   ],
+   "cons": [
+    "핀 측정 거리가 상위 모델보다 짧음(300야드)",
+    "자석·손떨림 보정 없음"
+   ],
+   "scores": [
+    4,
+    3,
+    3,
+    4
+   ],
+   "specs": [
+    "레이저",
+    "경사 보정·핀 측정 진동",
+    "판매처 확인"
+   ],
+   "verdict": "기능보다 휴대성을 먼저 보는 입문자용 니콘",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://www.nikon.com/company/news/2024/0327_coolshot20i_giii_01/",
+   "https://nij.nikon.com/cms/sp/coolshot/products/"
+  ]
+ },
+ {
+  "category": "rangefinder",
+  "id": "nikon-coolshot-lite-stabilized",
+  "name": "니콘 쿨샷 라이트 스태빌라이즈드 거리측정기",
+  "query": "니콘 쿨샷 라이트 스태빌라이즈드",
+  "must": [
+   "니콘"
+  ],
+  "mustAny": [
+   "라이트",
+   "lite"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리",
+   "프로",
+   "pro"
+  ],
+  "summary": "니콘의 손떨림 보정(STABILIZED) 기능을 담은 보급형 레이저 거리측정기입니다. 뷰파인더 속 흔들림을 1/5 이하로 줄여 핀을 잡기 쉽게 했습니다.",
+  "points": [
+   "손떨림 보정: 화면 흔들림 1/5 이하",
+   "8~1,200야드 측정, 약 0.3초 표시",
+   "경사 보정 골프 모드 + 대회용 실제 거리 모드"
+  ],
+  "guidePick": {
+   "role": "보급형 손떨림 보정",
+   "forWhom": "손이 떨려 핀 잡기가 어려운데 프로 라인은 부담스러운 분",
+   "short": "값을 낮춘 손떨림 보정",
+   "plus": "손떨림 보정",
+   "minus": "자석 없음",
+   "pros": [
+    "상위 모델과 같은 계열의 손떨림 보정",
+    "핀 측정 거리 500야드"
+   ],
+   "cons": [
+    "자석 마운트 없음",
+    "국내 AS는 판매처마다 다름"
+   ],
+   "scores": [
+    5,
+    3,
+    3,
+    4
+   ],
+   "specs": [
+    "레이저",
+    "손떨림 보정·경사 보정",
+    "판매처 확인"
+   ],
+   "verdict": "손떨림 보정을 가장 낮은 값에 원할 때의 선택",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://imaging.nikon.com/sport-optics/lineup/laser/coolshot_lite_stabilized/",
+   "https://nij.nikon.com/cms/sp/coolshot/products/"
+  ]
+ },
+ {
+  "category": "rangefinder",
+  "id": "bushnell-tour-v6",
+  "name": "부쉬넬 투어 V6 거리측정기",
+  "query": "부쉬넬 투어 V6 거리측정기",
+  "must": [
+   "부쉬넬",
+   "v6"
+  ],
+  "exclude": [
+   "쉬프트",
+   "시프트",
+   "shift",
+   "케이스",
+   "중고",
+   "배터리",
+   "파우치"
+  ],
+  "summary": "부쉬넬 투어 V6 의 경사 보정이 없는 기본형입니다. 경사 기능이 없어 그대로 대회에 쓸 수 있고, 핀을 잡으면 화면 표시와 진동(JOLT)으로 알려 줍니다.",
+  "points": [
+   "경사 보정 없는 대회용 기본형(시프트와 다름)",
+   "핀시커 + 비주얼 졸트, 6배율",
+   "자석 카트 마운트, IPX6 생활 방수, CR2 배터리"
+  ],
+  "guidePick": {
+   "role": "대회용 기본형",
+   "forWhom": "대회·공식 라운드 위주로 쓰고 경사 보정이 필요 없는 분",
+   "short": "경사 없는 부쉬넬",
+   "plus": "대회 그대로 사용",
+   "minus": "경사 보정 없음",
+   "pros": [
+    "경사 기능이 없어 대회 규정 걱정이 없음",
+    "부쉬넬 핀시커·진동 확인"
+   ],
+   "cons": [
+    "연습 라운드에서 오르막·내리막 보정이 없음",
+    "시프트 모델과 이름이 비슷해 구분 필요"
+   ],
+   "scores": [
+    4,
+    3,
+    4,
+    4
+   ],
+   "specs": [
+    "레이저",
+    "핀 잠금 진동·자석 마운트(경사 보정 없음)",
+    "판매처 확인"
+   ],
+   "verdict": "경사 보정이 필요 없다면 부쉬넬을 가장 싸게 쓰는 방법",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://www.bushnellgolf.com/products/laser-rangefinders/tour-v6/",
+   "https://www.bushnellgolf.com/pages/support-product-lrf-tour-v6"
+  ]
+ },
+ {
+  "category": "rangefinder",
+  "id": "voicecaddie-l6",
+  "name": "보이스캐디 L6 거리측정기",
+  "query": "보이스캐디 L6 거리측정기",
+  "must": [
+   "보이스캐디",
+   "l6"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리",
+   "sl3",
+   "sl2",
+   "플러스",
+   "plus",
+   "l6+"
+  ],
+  "summary": "보이스캐디의 풀 기능 레이저 거리측정기 L6 입니다. 빨간 숫자의 OLED 화면, 경사 보정, 핀 주변을 훑어 깃대를 잡는 핀트레이서를 갖췄습니다.",
+  "points": [
+   "OLED 화면(빨간 숫자)",
+   "경사 보정·핀트레이서",
+   "국내 제조사, 결함 시 동일 제품 교환"
+  ],
+  "guidePick": {
+   "role": "국산 중간형",
+   "forWhom": "SL3까지는 부담스럽고 국내 AS가 되는 레이저를 원하는 분",
+   "short": "보이스캐디 중간형",
+   "plus": "국내 AS",
+   "minus": "SL3보다 기능 적음",
+   "pros": [
+    "국내 제조사 고객센터 AS",
+    "SL3보다 낮은 가격대"
+   ],
+   "cons": [
+    "GPS 결합 기능은 SL3 쪽",
+    "충전·배터리 방식은 판매처 확인"
+   ],
+   "scores": [
+    4,
+    4,
+    5,
+    4
+   ],
+   "specs": [
+    "레이저",
+    "OLED·경사 보정·핀트레이서",
+    "국내 제조사"
+   ],
+   "verdict": "국산 AS를 우선하면서 값을 낮추고 싶을 때",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://voicecaddie.co.kr/product/detail/109756779",
+   "https://voicecaddie.co.kr/support/service-center",
+   "https://voicecaddie.com/product/l6"
+  ]
+ },
+ {
+  "category": "rangefinder",
+  "id": "voicecaddie-el1",
+  "name": "보이스캐디 EL1 거리측정기",
+  "query": "보이스캐디 EL1 거리측정기",
+  "must": [
+   "보이스캐디",
+   "el1"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리"
+  ],
+  "summary": "보이스캐디가 다시 내놓은(재출시) 보급형 레이저 거리측정기입니다. 보이스캐디 레이저 중 가장 낮은 가격대입니다.",
+  "points": [
+   "보이스캐디 재출시 보급형 레이저",
+   "국내 제조사 고객센터 AS",
+   "세부 기능은 판매처 확인"
+  ],
+  "guidePick": {
+   "role": "국산 보급형",
+   "forWhom": "첫 거리측정기를 가장 낮은 값에, 국내 AS와 함께 사고 싶은 초심자",
+   "short": "가장 싼 보이스캐디",
+   "plus": "낮은 가격",
+   "minus": "기능 단순",
+   "pros": [
+    "국내 AS 되는 보급형",
+    "보이스캐디 레이저 중 최저 가격대"
+   ],
+   "cons": [
+    "상위 모델의 핀트레이서 등 기능 여부는 판매처 확인",
+    "재출시 모델이라 최신 기능은 적음"
+   ],
+   "scores": [
+    3,
+    2,
+    5,
+    5
+   ],
+   "specs": [
+    "레이저",
+    "판매처 확인",
+    "국내 제조사"
+   ],
+   "verdict": "값과 AS만 보고 고르는 첫 거리측정기",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://voicecaddie.co.kr/product/detail/109754359",
+   "https://voicecaddie.co.kr/support/service-center"
+  ]
+ },
+ {
+  "category": "rangefinder",
+  "id": "golfbuddy-aim-l12",
+  "name": "골프버디 aim L12 거리측정기",
+  "query": "골프버디 aim L12 거리측정기",
+  "must": [
+   "골프버디",
+   "l12"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리"
+  ],
+  "summary": "골프버디(골프존) 프리미엄 aim 라인의 레이저 거리측정기입니다. 0.15초 측정, 6배율을 내세웁니다.",
+  "points": [
+   "골프버디 aim 프리미엄 라인",
+   "2~880야드, ±1야드, 6배율",
+   "측정 0.15초(제로 세컨드)"
+  ],
+  "guidePick": {
+   "role": "국산 빠른 측정",
+   "forWhom": "측정 속도를 중시하고 국산 AS를 원하는 분",
+   "short": "0.15초 측정",
+   "plus": "빠른 측정",
+   "minus": "측정 거리 짧음",
+   "pros": [
+    "0.15초 빠른 측정",
+    "국내 제조사(골프존) AS"
+   ],
+   "cons": [
+    "최대 880야드로 상위 모델보다 짧음",
+    "세부 기능 구성은 판매처 확인"
+   ],
+   "scores": [
+    4,
+    3,
+    4,
+    4
+   ],
+   "specs": [
+    "레이저",
+    "빠른 측정(0.15초)·6배율",
+    "국내 제조사(골프존)"
+   ],
+   "verdict": "아톰보다 한 단계 위, 빠른 측정을 원하는 국산 선택",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://en.golfbuddy.com/products/L12.asp",
+   "https://help.golfbuddy.com/pInfo.asp?searchproduct=59"
+  ]
+ },
+ {
+  "category": "rangefinder",
+  "id": "golfbuddy-gb-laser-lite",
+  "name": "골프버디 GB 레이저 라이트 거리측정기",
+  "query": "골프버디 GB 레이저 라이트 거리측정기",
+  "must": [
+   "골프버디"
+  ],
+  "mustAny": [
+   "라이트",
+   "lite"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리",
+   "아톰",
+   "atom"
+  ],
+  "summary": "골프버디 보급형 GB 라인의 경사 보정 레이저 거리측정기입니다.",
+  "points": [
+   "골프버디 보급형 GB 라인",
+   "경사 보정 기능",
+   "국내 제조사(골프존) AS"
+  ],
+  "guidePick": {
+   "role": "국산 보급형 경사",
+   "forWhom": "경사 보정이 되는 국산 보급형을 찾는 초심자",
+   "short": "국산 보급형",
+   "plus": "낮은 가격",
+   "minus": "기능 단순",
+   "pros": [
+    "경사 보정이 되는 보급형",
+    "국내 제조사 AS"
+   ],
+   "cons": [
+    "상위 aim 라인보다 기능 단순",
+    "세부 사양은 판매처 확인"
+   ],
+   "scores": [
+    3,
+    3,
+    4,
+    5
+   ],
+   "specs": [
+    "레이저",
+    "경사 보정",
+    "국내 제조사(골프존)"
+   ],
+   "verdict": "값을 아끼면서 경사 보정은 갖고 싶은 첫 거리측정기",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://en.golfbuddy.com/products/GB_LASER_lite.asp?pType=0"
+  ]
+ },
+ {
+  "category": "rangefinder",
+  "id": "voicecaddie-laser-fit",
+  "name": "보이스캐디 레이저핏 거리측정기",
+  "query": "보이스캐디 레이저핏 거리측정기",
+  "must": [
+   "보이스캐디"
+  ],
+  "mustAny": [
+   "레이저핏",
+   "레이저 핏",
+   "laser fit",
+   "laser-fit"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리"
+  ],
+  "summary": "보이스캐디의 소형·보급형 레이저 거리측정기입니다. 약 113g(4oz)으로 가볍고 충전식 배터리를 씁니다.",
+  "points": [
+   "5~800야드, ±1야드, 6배율",
+   "핀트레이서(깃대 주변 최대 3초 스캔)·0.1초 스팟 측정",
+   "충전식 500mAh 배터리, 약 113g"
+  ],
+  "guidePick": {
+   "role": "국산 소형 보급형",
+   "forWhom": "가볍고 충전식인 첫 레이저를 국내 AS와 함께 원하는 초심자",
+   "short": "가벼운 보이스캐디",
+   "plus": "가볍고 충전식",
+   "minus": "측정 거리 짧음",
+   "pros": [
+    "주머니에 넣기 좋은 무게",
+    "핀트레이서로 깃대 잡기 쉬움"
+   ],
+   "cons": [
+    "최대 800야드로 상위 모델보다 짧음",
+    "퍼트뷰·GPS 핀 어시스트 등 SL3 기능은 없음"
+   ],
+   "scores": [
+    4,
+    3,
+    5,
+    5
+   ],
+   "specs": [
+    "레이저",
+    "핀트레이서·충전식",
+    "국내 제조사"
+   ],
+   "verdict": "국산 AS와 가벼움을 함께 원하는 입문자의 첫 레이저",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://voicecaddie.com/products/laser-fit",
+   "https://voicecaddie.com/pages/compare-laser-rangefinders"
+  ]
+ }
 ]
