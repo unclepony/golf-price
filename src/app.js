@@ -48,7 +48,7 @@
     }
     if (!a || !(/(^|\.)coupang\.com$/.test(a.hostname) || a.pathname.startsWith('/go/'))) return;
     if (e.type === 'auxclick' && e.button !== 1) return;
-    beacon({ t: 'out', h: a.getAttribute('href'), w: where(a) });
+    beacon({ t: 'out', h: a.getAttribute('href'), w: where(a), a: acted ? 1 : 0 });
   };
   document.addEventListener('click', onOut, true);
   document.addEventListener('auxclick', onOut, true);
@@ -82,7 +82,10 @@
   // 사람이 처음 손댔을 때(마우스 움직임·누름·터치·휠·키) 페이지뷰당 한 번 → 열기만 하고 아무 조작 없는 방문(링크 검사기 등)과 실제 방문을 나눠 본다
   // 2026-10-23: 유튜브 링크마다 정확히 2번씩, 떠날 때 기록 없이 들어오는 방문이 데이터센터 밖에서도 이어져 사람인지 가릴 신호가 필요
   const ACT = ['pointermove', 'pointerdown', 'touchstart', 'wheel', 'keydown'];
-  const onAct = () => { ACT.forEach((t) => removeEventListener(t, onAct, true)); beacon({ t: 'act' }); };
+  // 2026-10-24: 쿠팡 클릭 신호에도 '그 전에 사람 조작이 있었나'를 붙인다(10-23 ChatGPT 유입 쿠팡 클릭 6건인데 같은 유입 조작은 1건 → 프로그램이 누른 클릭인지 가린다)
+  let acted = false;
+  // 화면 왼쪽 위 (0,0) 의 pointermove 는 브라우저가 화면이 바뀔 때 스스로 내는 가짜 움직임(자동화 브라우저에서 확인)이라 세지 않는다
+  const onAct = (e) => { if (e.type === 'pointermove' && !e.clientX && !e.clientY) return; acted = true; ACT.forEach((t) => removeEventListener(t, onAct, true)); beacon({ t: 'act' }); };
   ACT.forEach((t) => addEventListener(t, onAct, { capture: true, passive: true }));
 
   // ---------- 검색 데이터 ----------
