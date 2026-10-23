@@ -1598,7 +1598,7 @@
       "d": "2026-10-24"
     },
     "/g/golf-ball-compare": {
-      "h": "e91d0933c40e2bae",
+      "h": "e6234b6db5e898d7",
       "d": "2026-10-24"
     },
     "/g/rangefinder-recommend": {
@@ -1874,8 +1874,8 @@
       "d": "2026-10-23"
     },
     "/qa": {
-      "h": "9b3e5b4df1bc2ccb",
-      "d": "2026-10-23"
+      "h": "3f76e04f91e5fbf8",
+      "d": "2026-10-24"
     },
     "/vs/adidas-adipower-sl-women-shoes-vs-footjoy-pulse-boa-women-shoes": {
       "h": "9937907b228b8246",
@@ -2504,6 +2504,10 @@
     "/jp/customs": {
       "h": "c0b09f9799118a27",
       "d": "2026-10-19"
+    },
+    "/qa/golf-ball-recommend": {
+      "h": "1ec65176787d8f81",
+      "d": "2026-10-24"
     }
   },
   "pending": [
@@ -2734,6 +2738,16 @@
     },
     {
       "url": "/vs/titleist-permasoft-glove-vs-titleist-players-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/qa/golf-ball-recommend",
+      "kind": "new",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/qa",
       "kind": "updated",
       "d": "2026-10-24"
     }
