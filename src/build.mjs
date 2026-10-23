@@ -763,6 +763,36 @@ const easyIdx = (g) => {
   }
   return -1;
 };
+// AI 답변·검색 요약용 '바로 답'(2026-10-24 gp-1024-2, 사장님 10/23 규칙): howto.json 의 answerFirst 가 켜진 실력별 페이지에만
+// 첫 문단(1위·용도별 1순위·가격 범위와 확인일) + 짧은 결론 표. 값은 모두 기존 데이터(편집 점수·판매가·확인일)에서 계산하고, 표에는 쿠팡 버튼을 넣지 않는다(상품 상세 내부 링크만)
+function answerBlock(g, ps, skill) {
+  const rows = ps.filter((pk) => stageRank(g, pk.id)?.r);
+  if (rows.length < 2) return '';
+  const nm = (pk) => byId[pk.id].p.name;
+  const top = rows[0];
+  const ei = easyIdx(g);
+  const easy = ei >= 0 ? [...rows].sort((a, b) => (b.scores?.[ei] ?? 0) - (a.scores?.[ei] ?? 0) || totalScore(b) - totalScore(a))[0] : null;
+  const priced = rows.map((pk) => ({ pk, sp: freshPrice(pk.id) })).filter((x) => x.sp);
+  const cheap = [...priced].sort((a, b) => a.sp.won - b.sp.won)[0];
+  const ds = priced.map((x) => x.sp.d).sort();
+  const dRange = ds.length ? (ds[0] === ds.at(-1) ? dayLabel(ds[0]) : `${dayLabel(ds[0])}~${dayLabel(ds.at(-1))}`) : '';
+  const ws = priced.map((x) => x.sp.won);
+  const topSp = freshPrice(top.id);
+  const crit = g.criteria ?? [];
+  const word = `${SKILL_WORD[skill]} ${catWord(guideCat(g))}`;
+  const parts = [];
+  if (easy && easy.id !== top.id) parts.push(`${esc(crit[ei])}을 가장 중요하게 보면 <a href="/p/${easy.id}">${esc(nm(easy))}</a>`);
+  if (cheap && cheap.pk.id !== top.id) parts.push(`가장 싸게 시작하려면 <a href="/p/${cheap.pk.id}">${esc(nm(cheap.pk))}</a>(${won(cheap.sp.won)})`);
+  const lead = `<p class="answer-lead"><b>결론:</b> ${esc(word)} ${rows.length}종 중 1위는 <a href="/p/${top.id}"><b>${esc(nm(top))}</b></a>입니다(편집 점수 ${totalScore(top).toFixed(1)}/5${topSp ? `, 쿠팡 판매가 ${won(topSp.won)}` : ''}).${parts.length ? ` ${parts.join(', ')}가 맞습니다.` : ''}${ws.length ? ` ${rows.length}종의 쿠팡 판매가는 ${won(Math.min(...ws))}~${won(Math.max(...ws))}(${dRange} 확인, 현재 가격과 다를 수 있음)입니다.` : ''}</p>`;
+  const tr = rows
+    .map((pk) => {
+      const sp = freshPrice(pk.id);
+      return `<tr><td class="ar">${stageRank(g, pk.id).r}위</td><td><a href="/p/${pk.id}">${esc(nm(pk))}</a><small>${esc(pk.short ?? pk.role ?? '')}</small></td><td class="as">${totalScore(pk).toFixed(1)}</td><td class="aw">${sp ? `${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small>` : '<small>판매처에서 확인</small>'}</td></tr>`;
+    })
+    .join('');
+  return `<section class="answer" aria-label="바로 답">${lead}
+<div class="tablewrap"><table class="answer-t"><caption>${esc(word)} 결론 표 · 순위는 주관적 편집 점수(5점 만점)</caption><thead><tr><th>순위</th><th>모델 · 특징</th><th>점수</th><th>쿠팡 판매가</th></tr></thead><tbody>${tr}</tbody></table></div></section>`;
+}
 // 한 줄 결론: 예산 기준 1개 + 쉬움(초보·중급) 또는 성능(상급·프로) 기준 1개. howto.json 의 conclusion 으로 수동 지정 가능
 function conclusionBox(g, ps, skill) {
   if (ps.length < 2) return '';
@@ -1584,6 +1614,7 @@ for (const g of pageGuides) {
 <p class="g-kicker"><span class="skill sk-${SKILLS.indexOf(skill) + 1}">${skill}</span>${esc(guideName(g))}</p>
 <h1>${esc(name)} 추천 비교 <small>${ps.length}종 · ${esc(levels.join('·'))}</small></h1>
 ${updatedTag(max2(g.updated, h?.updated))}
+${h?.answerFirst ? answerBlock(g, ps, skill) : ''}
 ${conclusionBox(g, ps, skill)}
 ${criteriaBox(g)}
 ${skillNav(g, skill)}

@@ -701,6 +701,19 @@ table.grind-t tbody th { background: #1c2b3a; color: #fff; }
 .updated { margin: 2px 0 10px; font-size: 12px; color: var(--muted); }
 :where(img[width][height]) { height: auto; }
 
+/* 바로 답: 첫 문단 + 짧은 결론 표 (howto answerFirst 페이지) */
+.answer { margin: 10px 0 14px; }
+.answer-lead { margin: 0 0 10px; font-size: 15px; line-height: 1.65; }
+.answer-lead a { text-decoration: underline; text-underline-offset: 2px; }
+table.answer-t { width: 100%; border-collapse: collapse; font-size: 14px; }
+table.answer-t caption { caption-side: bottom; text-align: left; font-size: 12px; color: var(--muted); padding-top: 6px; }
+table.answer-t th, table.answer-t td { padding: 7px 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+table.answer-t th { font-size: 12px; color: var(--muted); font-weight: 700; }
+table.answer-t td small { display: block; font-size: 12px; color: var(--muted); }
+table.answer-t td.ar, table.answer-t td.as { white-space: nowrap; font-weight: 700; }
+table.answer-t td.aw { white-space: nowrap; }
+table.answer-t td a { font-weight: 600; }
+@media (max-width: 600px) { table.answer-t { font-size: 13px; } table.answer-t th, table.answer-t td { padding: 6px 5px; } table.answer-t td.ar, table.answer-t td.as { padding-right: 2px; } }
 /* 한 줄 결론 */
 .conclusion { margin: 14px 0; padding: 14px 16px; border: 2px solid var(--accent); border-radius: 14px; background: var(--surface); }
 .conclusion h2 { margin: 0 0 10px; font-size: 17px; }
