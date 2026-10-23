@@ -1,0 +1,144 @@
+[
+ {
+  "id": "garmin-approach-z30",
+  "query": "가민 어프로치 Z30 거리측정기",
+  "must": [
+   "z30"
+  ],
+  "mustAny": [
+   "가민",
+   "garmin"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리",
+   "필름",
+   "z82"
+  ]
+ },
+ {
+  "id": "nikon-coolshot-50i-gii",
+  "query": "니콘 쿨샷 50i GII 거리측정기",
+  "must": [
+   "니콘",
+   "50i"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리",
+   "프로",
+   "pro"
+  ]
+ },
+ {
+  "id": "nikon-coolshot-20i-giii",
+  "query": "니콘 쿨샷 20i GIII 거리측정기",
+  "must": [
+   "니콘",
+   "20i"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리",
+   "프로",
+   "pro"
+  ]
+ },
+ {
+  "id": "nikon-coolshot-lite-stabilized",
+  "query": "니콘 쿨샷 라이트 스태빌라이즈드",
+  "must": [
+   "니콘"
+  ],
+  "mustAny": [
+   "라이트",
+   "lite"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리",
+   "프로",
+   "pro"
+  ]
+ },
+ {
+  "id": "bushnell-tour-v6",
+  "query": "부쉬넬 투어 V6 거리측정기",
+  "must": [
+   "부쉬넬",
+   "v6"
+  ],
+  "exclude": [
+   "쉬프트",
+   "시프트",
+   "shift",
+   "케이스",
+   "중고",
+   "배터리",
+   "파우치"
+  ]
+ },
+ {
+  "id": "voicecaddie-l6",
+  "query": "보이스캐디 L6 거리측정기",
+  "must": [
+   "보이스캐디",
+   "l6"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리",
+   "sl3",
+   "sl2"
+  ]
+ },
+ {
+  "id": "voicecaddie-el1",
+  "query": "보이스캐디 EL1 거리측정기",
+  "must": [
+   "보이스캐디",
+   "el1"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리"
+  ]
+ },
+ {
+  "id": "golfbuddy-aim-l12",
+  "query": "골프버디 aim L12 거리측정기",
+  "must": [
+   "골프버디",
+   "l12"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리"
+  ]
+ },
+ {
+  "id": "golfbuddy-gb-laser-lite",
+  "query": "골프버디 GB 레이저 라이트 거리측정기",
+  "must": [
+   "골프버디"
+  ],
+  "mustAny": [
+   "라이트",
+   "lite"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리",
+   "아톰",
+   "atom"
+  ]
+ }
+]
