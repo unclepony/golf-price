@@ -1,8 +1,0 @@
-[
- {"id":"titleist-players-flex-glove","query":"타이틀리스트 플렉스 골프장갑","must":["타이틀리스트","플렉스"],"mustAny":["장갑","글러브"],"exclude":["여성","레이디","중고","골프공","세트","골프백"]},
- {"id":"footjoy-wintersof-pair-glove","query":"풋조이 윈터소프 남성용 겨울 골프장갑 양손","must":["풋조이","윈터소프"],"mustAny":["남성","남자"],"exclude":["여성","레이디","남/여","남녀","주니어","중고","골프공","세트","스테이소프","넥워머","귀마개"]},
- {"id":"callaway-tour-authentic-glove","query":"캘러웨이 투어어센틱 골프장갑","must":["캘러웨이"],"mustAny":["오센틱","어센틱","authentic","오쎈틱","투어어센틱"],"exclude":["여성","레이디","트리플","다이아몬드","중고","골프공","세트","골프백"]},
- {"id":"callaway-weather-spann-glove","query":"캘러웨이 웨더스판 남성 장갑","must":["캘러웨이"],"mustAny":["웨더스판","웨더스팬","weatherspann","스판"],"exclude":["여성","레이디","우먼스","주니어","중고","골프공","세트","골프백"]},
- {"id":"ping-tour-glove","query":"PING 핑 투어 장갑","must":["핑","투어"],"mustAny":["장갑","글러브"],"exclude":["여성","레이디","센서","스포츠","중고","골프공","세트","골프백","핑크","커버"]},
- {"id":"srixon-cabretta-leather-glove","query":"스릭슨 카브레타 골프장갑","must":["스릭슨"],"mustAny":["양피","카브레타"],"exclude":["여성","레이디","올웨더","합피","중고","골프공","세트","골프백"]}
-]
