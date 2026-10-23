@@ -1,0 +1,41 @@
+[
+ {
+  "id": "voicecaddie-sc300i",
+  "category": "launch",
+  "name": "보이스캐디 스윙캐디 SC300i 런치 모니터",
+  "query": "보이스캐디 SC300i 론치모니터",
+  "must": ["sc300"],
+  "mustAny": ["보이스캐디", "스윙캐디", "voicecaddie"],
+  "exclude": ["sc200", "sc4", "중고", "케이스", "거치대", "매트", "스티커", "파우치", "필름", "충전기", "리모컨", "직구", "병행", "해외", "일본", "정규품", "미국"],
+  "summary": "보이스캐디의 충전식 도플러 레이더 런치 모니터입니다. 본체 화면으로 거리와 스피드를 보고, 앱을 연결하면 스핀까지 확인합니다.",
+  "points": [
+   "제조사 기준 도플러 레이더와 기압 센서로 캐리·토탈 거리, 볼·스윙 스피드, 발사각, 최고 높이, 스매시 팩터를 측정하고 스핀은 MySwingCaddie 앱에서만 보여줍니다.",
+   "제조사 기준 충전식 리튬폴리머 배터리로 최대 약 20시간 쓰고, 연습·연습 스윙·타깃 모드를 지원합니다."
+  ],
+  "guidePick": {
+   "role": "충전식 중간형",
+   "forWhom": "SC200보다 데이터는 더 보고 싶지만 상위 모델 가격은 부담인 분",
+   "short": "앱 연동 충전식 중간형",
+   "plus": "발사각·충전식",
+   "minus": "스핀은 앱에서만",
+   "pros": [
+    "발사각·최고 높이까지 본체와 앱으로 확인",
+    "충전식 배터리로 한 번 충전에 오래 씀(제조사 최대 약 20시간)"
+   ],
+   "cons": [
+    "스핀 데이터는 앱에서만 표시",
+    "방향·스핀축 같은 상위 데이터는 SC4 PRO보다 적음"
+   ],
+   "scores": [3, 5, 3, 4],
+   "specs": ["도플러 레이더", "보이스캐디(국내)", "확인 필요"],
+   "verdict": "거리·스피드에 발사각까지 보고 싶은 중급자의 무난한 다음 단계",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://voicecaddie.com/products/swing-caddie-sc300i",
+   "https://voicecaddie.com/pages/compare-launch-monitors",
+   "https://voicecaddie.com/pages/faq",
+   "https://voicecaddie.com/blogs/news/voice-caddie-introduces-the-new-sc300i-portable-launch-monitor"
+  ]
+ }
+]
