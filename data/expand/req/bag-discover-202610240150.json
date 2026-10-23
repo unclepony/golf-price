@@ -1,0 +1,122 @@
+[
+ {
+  "id": "d0",
+  "query": "타이틀리스트 캐디백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d1",
+  "query": "타이틀리스트 스탠드백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d2",
+  "query": "캘러웨이 캐디백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d3",
+  "query": "캘러웨이 스탠드백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d4",
+  "query": "테일러메이드 캐디백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d5",
+  "query": "테일러메이드 스탠드백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d6",
+  "query": "핑 캐디백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d7",
+  "query": "핑 스탠드백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d8",
+  "query": "썬마운틴 스탠드백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d9",
+  "query": "썬마운틴 카트백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d10",
+  "query": "미즈노 캐디백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d11",
+  "query": "젝시오 캐디백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d12",
+  "query": "혼마 캐디백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d13",
+  "query": "코브라 캐디백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d14",
+  "query": "클리브랜드 캐디백",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ }
+]
