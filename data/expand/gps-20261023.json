@@ -1,99 +1,388 @@
 [
  {
-  "category": "gps", "id": "garmin-approach-s12", "name": "가민 어프로치 S12 골프 시계",
-  "query": "가민 어프로치 S12 골프 시계", "must": ["s12"], "mustAny": ["가민", "garmin"],
-  "exclude": ["중고", "스트랩", "필름", "케이스", "충전", "밴드", "직구", "병행", "해외"],
+  "category": "gps",
+  "id": "garmin-approach-s12",
+  "name": "가민 어프로치 S12 골프 시계",
+  "query": "가민 어프로치 S12 골프 시계",
+  "must": [
+   "s12"
+  ],
+  "mustAny": [
+   "가민",
+   "garmin"
+  ],
+  "exclude": [
+   "중고",
+   "스트랩",
+   "필름",
+   "케이스",
+   "충전",
+   "밴드",
+   "직구",
+   "병행",
+   "해외",
+   "일본",
+   "정규품",
+   "jp"
+  ],
   "summary": "가민 골프 시계 중 가장 값이 낮은 입문형입니다. 흑백 화면에 버튼 조작으로 단순하고, 한 번 충전으로 오래 씁니다.",
-  "points": ["골프 GPS 모드 최대 30시간, 시계 모드 최대 10주(제조사 설명서)", "그린 앞·중앙·뒤 거리와 디지털 스코어 기록", "내장 리튬이온 배터리 충전식"],
+  "points": [
+   "골프 GPS 모드 최대 30시간, 시계 모드 최대 10주(제조사 설명서)",
+   "그린 앞·중앙·뒤 거리와 디지털 스코어 기록",
+   "내장 리튬이온 배터리 충전식"
+  ],
   "guidePick": {
-    "role": "가민 입문형", "forWhom": "처음 골프 시계를 사는 분, 충전을 자주 하기 싫은 분",
-    "short": "오래가는 가민 입문 시계", "plus": "배터리 30시간", "minus": "흑백 화면",
-    "pros": ["가민 골프 시계 중 가장 저렴한 축", "GPS 모드 최대 30시간으로 충전 부담이 적음"],
-    "cons": ["흑백 화면이라 코스 지도 보기는 컬러 모델보다 불편", "심박·일상 스마트 기능은 적음"],
-    "scores": [3, 3, 3, 5], "specs": ["흑백 화면 · GPS 30시간", "가민", "확인 필요"],
-    "verdict": "거리만 손목에서 빨리 보고 싶은 입문자에게 가장 무난한 가민", "skill": "초심자"
+   "role": "가민 입문형",
+   "forWhom": "처음 골프 시계를 사는 분, 충전을 자주 하기 싫은 분",
+   "short": "오래가는 가민 입문 시계",
+   "plus": "배터리 30시간",
+   "minus": "흑백 화면",
+   "pros": [
+    "가민 골프 시계 중 가장 저렴한 축",
+    "GPS 모드 최대 30시간으로 충전 부담이 적음"
+   ],
+   "cons": [
+    "흑백 화면이라 코스 지도 보기는 컬러 모델보다 불편",
+    "심박·일상 스마트 기능은 적음"
+   ],
+   "scores": [
+    3,
+    3,
+    3,
+    5
+   ],
+   "specs": [
+    "흑백 화면 · GPS 30시간",
+    "가민",
+    "확인 필요"
+   ],
+   "verdict": "거리만 손목에서 빨리 보고 싶은 입문자에게 가장 무난한 가민",
+   "skill": "초심자"
   },
-  "sources": ["https://www.garmin.com/en-US/p/721216/", "https://www8.garmin.com/manuals/webhelp/GUID-20B1A0A2-73B9-4655-8848-D21854EFD433/EN-US/GUID-03D49EDC-F46E-4333-BDB1-BB4F18609397.html"]
+  "sources": [
+   "https://www.garmin.com/en-US/p/721216/",
+   "https://www8.garmin.com/manuals/webhelp/GUID-20B1A0A2-73B9-4655-8848-D21854EFD433/EN-US/GUID-03D49EDC-F46E-4333-BDB1-BB4F18609397.html"
+  ]
  },
  {
-  "category": "gps", "id": "garmin-approach-s44", "name": "가민 어프로치 S44 골프 시계",
-  "query": "가민 어프로치 S44 골프 스마트워치", "must": ["s44"], "mustAny": ["가민", "garmin"],
-  "exclude": ["중고", "스트랩", "필름", "케이스", "충전", "밴드", "직구", "병행", "해외"],
+  "category": "gps",
+  "id": "garmin-approach-s44",
+  "name": "가민 어프로치 S44 골프 시계",
+  "query": "가민 어프로치 S44 골프 스마트워치",
+  "must": [
+   "s44"
+  ],
+  "mustAny": [
+   "가민",
+   "garmin"
+  ],
+  "exclude": [
+   "중고",
+   "스트랩",
+   "필름",
+   "케이스",
+   "충전",
+   "밴드",
+   "직구",
+   "병행",
+   "해외",
+   "번들",
+   "기프트"
+  ],
   "summary": "가민이 2025년 1월 S50과 함께 내놓은 43mm 컬러 AMOLED 골프 시계입니다. 샷이 떨어진 곳을 자동으로 기록하는 오토샷을 갖췄습니다.",
-  "points": ["2025년 1월 발표, 43mm · 1.2인치 컬러 AMOLED 터치스크린", "골프 GPS 최대 15시간, 스마트워치 모드 최대 10일, 5ATM 방수(제조사 설명서)", "코스 4만3천여 곳 내장, 그린 앞·중앙·뒤 거리, 오토샷 기록"],
+  "points": [
+   "2025년 1월 발표, 43mm · 1.2인치 컬러 AMOLED 터치스크린",
+   "골프 GPS 최대 15시간, 스마트워치 모드 최대 10일, 5ATM 방수(제조사 설명서)",
+   "코스 4만3천여 곳 내장, 그린 앞·중앙·뒤 거리, 오토샷 기록"
+  ],
   "guidePick": {
-    "role": "가민 컬러 입문형", "forWhom": "컬러 화면 가민 시계를 S50보다 낮은 값에 원하는 분",
-    "short": "컬러 화면 실속 가민", "plus": "AMOLED 컬러", "minus": "배터리 15시간",
-    "pros": ["컬러 AMOLED 터치 화면으로 코스·그린 보기가 편함", "오토샷으로 샷 위치 자동 기록"],
-    "cons": ["골프 GPS 배터리는 S12보다 짧은 최대 15시간", "심박·결제 등 일상 기능은 S50보다 적음"],
-    "scores": [4, 4, 3, 4], "specs": ["43mm · AMOLED", "가민", "확인 필요"],
-    "verdict": "흑백은 아쉽고 S50은 부담스러울 때 고르는 가민 컬러 시계", "skill": "초심자"
+   "role": "가민 컬러 입문형",
+   "forWhom": "컬러 화면 가민 시계를 S50보다 낮은 값에 원하는 분",
+   "short": "컬러 화면 실속 가민",
+   "plus": "AMOLED 컬러",
+   "minus": "배터리 15시간",
+   "pros": [
+    "컬러 AMOLED 터치 화면으로 코스·그린 보기가 편함",
+    "오토샷으로 샷 위치 자동 기록"
+   ],
+   "cons": [
+    "골프 GPS 배터리는 S12보다 짧은 최대 15시간",
+    "심박·결제 등 일상 기능은 S50보다 적음"
+   ],
+   "scores": [
+    4,
+    4,
+    3,
+    4
+   ],
+   "specs": [
+    "43mm · AMOLED",
+    "가민",
+    "확인 필요"
+   ],
+   "verdict": "흑백은 아쉽고 S50은 부담스러울 때 고르는 가민 컬러 시계",
+   "skill": "초심자"
   },
-  "sources": ["https://www.garmin.com/en-US/p/1604358/", "https://www.garmin.com/en-US/newsroom/press-release/outdoor/level-up-your-golf-game-with-vibrant-new-approach-s44-and-s50-smartwatches-from-garmin/", "https://www8.garmin.com/manuals/webhelp/GUID-14344AFC-1A32-40CD-B46D-5B98A32929B6/EN-US/GUID-EF6FE444-6C42-47D9-BF25-903C57A0AFCD.html"]
+  "sources": [
+   "https://www.garmin.com/en-US/p/1604358/",
+   "https://www.garmin.com/en-US/newsroom/press-release/outdoor/level-up-your-golf-game-with-vibrant-new-approach-s44-and-s50-smartwatches-from-garmin/",
+   "https://www8.garmin.com/manuals/webhelp/GUID-14344AFC-1A32-40CD-B46D-5B98A32929B6/EN-US/GUID-EF6FE444-6C42-47D9-BF25-903C57A0AFCD.html"
+  ]
  },
  {
-  "category": "gps", "id": "garmin-approach-s72", "name": "가민 어프로치 S72 골프 시계",
-  "query": "가민 어프로치 S72 골프 스마트워치", "must": ["s72"], "mustAny": ["가민", "garmin"],
-  "exclude": ["중고", "스트랩", "필름", "케이스", "충전", "밴드", "직구", "병행", "해외"],
+  "category": "gps",
+  "id": "garmin-approach-s72",
+  "name": "가민 어프로치 S72 골프 시계",
+  "query": "가민 어프로치 S72 골프 스마트워치",
+  "must": [
+   "s72"
+  ],
+  "mustAny": [
+   "가민",
+   "garmin"
+  ],
+  "exclude": [
+   "중고",
+   "스트랩",
+   "필름",
+   "케이스",
+   "충전",
+   "밴드",
+   "직구",
+   "병행",
+   "해외"
+  ],
   "summary": "가민이 2026년 10월 S70 후속으로 내놓은 플래그십 골프 시계입니다. 43mm·47mm 두 크기, AMOLED 화면에 티타늄 베젤과 사파이어 렌즈를 썼습니다.",
-  "points": ["2026년 10월 발표, 43mm·47mm AMOLED, 티타늄 베젤·사파이어 렌즈", "스윙·퍼팅 분석, 연습장 기록, 그린 읽기(가민 골프 멤버십·일부 코스)", "47mm 골프 GPS 최대 20시간, 스피커·마이크로 음성 통화, 손전등"],
+  "points": [
+   "2026년 10월 발표, 43mm·47mm AMOLED, 티타늄 베젤·사파이어 렌즈",
+   "스윙·퍼팅 분석, 연습장 기록, 그린 읽기(가민 골프 멤버십·일부 코스)",
+   "47mm 골프 GPS 최대 20시간, 스피커·마이크로 음성 통화, 손전등"
+  ],
   "guidePick": {
-    "role": "가민 최신 플래그십", "forWhom": "스윙·퍼팅 분석까지 한 시계로 원하는 상급자",
-    "short": "가민 최신 최상급", "plus": "분석 기능 최다", "minus": "가격 높음",
-    "pros": ["스윙·퍼팅 분석과 연습장 기록까지 지원", "사파이어 렌즈·티타늄 베젤로 마감이 고급"],
-    "cons": ["국내 권장가가 높은 편", "그린 읽기는 유료 멤버십과 일부 코스에서만"],
-    "scores": [5, 5, 5, 3], "specs": ["43·47mm · AMOLED", "가민", "확인 필요"],
-    "verdict": "골프 시계 하나로 라운드 분석까지 끝내고 싶다면", "skill": "프로"
+   "role": "가민 최신 플래그십",
+   "forWhom": "스윙·퍼팅 분석까지 한 시계로 원하는 상급자",
+   "short": "가민 최신 최상급",
+   "plus": "분석 기능 최다",
+   "minus": "가격 높음",
+   "pros": [
+    "스윙·퍼팅 분석과 연습장 기록까지 지원",
+    "사파이어 렌즈·티타늄 베젤로 마감이 고급"
+   ],
+   "cons": [
+    "국내 권장가가 높은 편",
+    "그린 읽기는 유료 멤버십과 일부 코스에서만"
+   ],
+   "scores": [
+    5,
+    5,
+    5,
+    3
+   ],
+   "specs": [
+    "43·47mm · AMOLED",
+    "가민",
+    "확인 필요"
+   ],
+   "verdict": "골프 시계 하나로 라운드 분석까지 끝내고 싶다면",
+   "skill": "프로"
   },
-  "sources": ["https://www.garmin.com/en-US/newsroom/press-release/outdoor/meet-approach-s72-garmins-ultimate-golf-smartwatch/", "https://www.garmin.com/en-US/p/1937117/", "https://www.garmin.com/en-US/p/1937140/"]
+  "sources": [
+   "https://www.garmin.com/en-US/newsroom/press-release/outdoor/meet-approach-s72-garmins-ultimate-golf-smartwatch/",
+   "https://www.garmin.com/en-US/p/1937117/",
+   "https://www.garmin.com/en-US/p/1937140/"
+  ]
  },
  {
-  "category": "gps", "id": "voicecaddie-t12-pro", "name": "보이스캐디 T12 PRO 골프 시계",
-  "query": "보이스캐디 T12 PRO 시계형 거리측정기", "must": ["t12"], "mustAny": ["보이스캐디", "voicecaddie", "voice caddie"],
-  "exclude": ["중고", "스트랩", "필름", "케이스", "충전", "밴드", "t13", "직구", "병행", "해외"],
+  "category": "gps",
+  "id": "voicecaddie-t12-pro",
+  "name": "보이스캐디 T12 PRO 골프 시계",
+  "query": "보이스캐디 T12 PRO 시계형 거리측정기",
+  "must": [
+   "t12"
+  ],
+  "mustAny": [
+   "보이스캐디",
+   "voicecaddie",
+   "voice caddie"
+  ],
+  "exclude": [
+   "중고",
+   "스트랩",
+   "필름",
+   "케이스",
+   "충전",
+   "밴드",
+   "t13",
+   "직구",
+   "병행",
+   "해외",
+   "t11",
+   "t9",
+   "울트라",
+   "ultra"
+  ],
   "summary": "보이스캐디의 12번째 골프 시계(2025년)로, 현재 T13 PRO의 직전 모델입니다. 실시간 핀 위치 거리 안내(오토핀)와 샷 기록을 지원합니다.",
-  "points": ["2025년 출시, T 시리즈 12번째 시계(T13 PRO 직전 모델)", "실시간 핀 위치 기반 거리 안내(오토핀 APL), 샷 트래킹", "마이보이스캐디 앱: 실내 빠른 골프장 검색(Quick GPS+)·기기 설정"],
+  "points": [
+   "2025년 출시, T 시리즈 12번째 시계(T13 PRO 직전 모델)",
+   "실시간 핀 위치 기반 거리 안내(오토핀 APL), 샷 트래킹",
+   "마이보이스캐디 앱: 실내 빠른 골프장 검색(Quick GPS+)·기기 설정"
+  ],
   "guidePick": {
-    "role": "국산 직전 프리미엄", "forWhom": "보이스캐디 프리미엄 기능을 T13 PRO보다 낮은 값에 원하는 분",
-    "short": "T13 PRO 직전 모델", "plus": "오토핀 거리", "minus": "구형",
-    "pros": ["국내 코스에서 실시간 핀 위치 거리 안내", "샷 기록과 앱 연동"],
-    "cons": ["최신 T13 PRO보다 본체가 두껍고 화면이 작음", "직전 모델이라 재고에 따라 판매처가 줄 수 있음"],
-    "scores": [4, 4, 3, 4], "specs": ["판매처 확인", "보이스캐디(국내)", "확인 필요"],
-    "verdict": "최신이 아니어도 국내 코스 핀 거리를 정확히 받고 싶다면", "skill": "고급"
+   "role": "국산 직전 프리미엄",
+   "forWhom": "보이스캐디 프리미엄 기능을 T13 PRO보다 낮은 값에 원하는 분",
+   "short": "T13 PRO 직전 모델",
+   "plus": "오토핀 거리",
+   "minus": "구형",
+   "pros": [
+    "국내 코스에서 실시간 핀 위치 거리 안내",
+    "샷 기록과 앱 연동"
+   ],
+   "cons": [
+    "최신 T13 PRO보다 본체가 두껍고 화면이 작음",
+    "직전 모델이라 재고에 따라 판매처가 줄 수 있음"
+   ],
+   "scores": [
+    4,
+    4,
+    3,
+    4
+   ],
+   "specs": [
+    "판매처 확인",
+    "보이스캐디(국내)",
+    "확인 필요"
+   ],
+   "verdict": "최신이 아니어도 국내 코스 핀 거리를 정확히 받고 싶다면",
+   "skill": "고급"
   },
-  "sources": ["https://voicecaddie.com/pages/product-updates", "https://voicecaddie.co.kr/etc"]
+  "sources": [
+   "https://voicecaddie.com/pages/product-updates",
+   "https://voicecaddie.co.kr/etc"
+  ]
  },
  {
-  "category": "gps", "id": "voicecaddie-t-ultra", "name": "보이스캐디 T-ULTRA 골프 시계",
-  "query": "보이스캐디 T울트라 시계형 거리측정기", "mustAny": ["울트라", "ultra"],
-  "must": ["보이스캐디"],
-  "exclude": ["중고", "스트랩", "필름", "케이스", "충전", "밴드", "t12", "t13", "직구", "병행", "해외"],
+  "category": "gps",
+  "id": "voicecaddie-t-ultra",
+  "name": "보이스캐디 T-ULTRA 골프 시계",
+  "query": "보이스캐디 T울트라 시계형 거리측정기",
+  "mustAny": [
+   "울트라",
+   "ultra"
+  ],
+  "must": [
+   "보이스캐디"
+  ],
+  "exclude": [
+   "중고",
+   "스트랩",
+   "필름",
+   "케이스",
+   "충전",
+   "밴드",
+   "t12",
+   "t13",
+   "직구",
+   "병행",
+   "해외"
+  ],
   "summary": "보이스캐디가 2023년에 내놓은 10번째 골프 시계로, 이전 모델보다 화면을 키운 것이 특징입니다. 지난 라운드 기록을 보여 주는 플래시백 기능이 있습니다.",
-  "points": ["2023년 출시, 보이스캐디 10번째 골프 시계", "이전 모델보다 큰 화면으로 코스뷰·그린뷰", "오토핀(APL) 실시간 핀 거리, 플래시백(지난 라운드 기록)"],
+  "points": [
+   "2023년 출시, 보이스캐디 10번째 골프 시계",
+   "이전 모델보다 큰 화면으로 코스뷰·그린뷰",
+   "오토핀(APL) 실시간 핀 거리, 플래시백(지난 라운드 기록)"
+  ],
   "guidePick": {
-    "role": "국산 큰 화면", "forWhom": "큰 화면의 국산 골프 시계를 찾는 분",
-    "short": "큰 화면 보이스캐디", "plus": "큰 화면", "minus": "구형",
-    "pros": ["큰 화면으로 코스·그린 보기가 편함", "지난 라운드를 보여 주는 플래시백"],
-    "cons": ["2023년 모델이라 최신 기능은 T12·T13보다 적음", "손목이 가는 분에겐 클 수 있음"],
-    "scores": [4, 4, 3, 4], "specs": ["판매처 확인", "보이스캐디(국내)", "확인 필요"],
-    "verdict": "화면 크기를 가장 중요하게 본다면", "skill": "중급"
+   "role": "국산 큰 화면",
+   "forWhom": "큰 화면의 국산 골프 시계를 찾는 분",
+   "short": "큰 화면 보이스캐디",
+   "plus": "큰 화면",
+   "minus": "구형",
+   "pros": [
+    "큰 화면으로 코스·그린 보기가 편함",
+    "지난 라운드를 보여 주는 플래시백"
+   ],
+   "cons": [
+    "2023년 모델이라 최신 기능은 T12·T13보다 적음",
+    "손목이 가는 분에겐 클 수 있음"
+   ],
+   "scores": [
+    4,
+    4,
+    3,
+    4
+   ],
+   "specs": [
+    "판매처 확인",
+    "보이스캐디(국내)",
+    "확인 필요"
+   ],
+   "verdict": "화면 크기를 가장 중요하게 본다면",
+   "skill": "중급"
   },
-  "sources": ["https://voicecaddie.co.kr/etc"]
+  "sources": [
+   "https://voicecaddie.co.kr/etc"
+  ]
  },
  {
-  "category": "gps", "id": "golfbuddy-aim-w11", "name": "골프버디 aim W11 골프 시계",
-  "query": "골프버디 aim W11 시계형 거리측정기", "must": ["w11"], "mustAny": ["골프버디", "golfbuddy"],
-  "exclude": ["중고", "스트랩", "필름", "케이스", "충전", "밴드", "w12", "직구", "병행", "해외"],
+  "category": "gps",
+  "id": "golfbuddy-aim-w11",
+  "name": "골프버디 aim W11 골프 시계",
+  "query": "골프버디 aim W11 시계형 거리측정기",
+  "must": [
+   "w11"
+  ],
+  "mustAny": [
+   "골프버디",
+   "golfbuddy"
+  ],
+  "exclude": [
+   "중고",
+   "스트랩",
+   "필름",
+   "케이스",
+   "충전",
+   "밴드",
+   "w12",
+   "직구",
+   "병행",
+   "해외"
+  ],
   "summary": "골프존데카가 2021년에 내놓은 골프버디 시계형 거리측정기로, 현재 W12의 직전 모델입니다. 고저차 보정과 그린 언듈레이션 보기를 지원합니다.",
-  "points": ["2021년 출시, 골프버디 aim W12 직전 모델", "스마트홀 뷰·그린 언듈레이션 뷰·고저차 보정", "원터치 퀵 플레이, 샷 거리 측정"],
+  "points": [
+   "2021년 출시, 골프버디 aim W12 직전 모델",
+   "스마트홀 뷰·그린 언듈레이션 뷰·고저차 보정",
+   "원터치 퀵 플레이, 샷 거리 측정"
+  ],
   "guidePick": {
-    "role": "국산 입문 실속", "forWhom": "고저차 보정 되는 국산 시계를 낮은 값에 원하는 입문자",
-    "short": "고저차 되는 실속 시계", "plus": "고저차 보정", "minus": "구형",
-    "pros": ["국내 코스 고저차 보정·그린 언듈레이션 보기", "원터치로 바로 라운드 시작"],
-    "cons": ["2021년 모델이라 화면·속도는 최신보다 떨어짐", "일상 스마트워치 기능은 적음"],
-    "scores": [3, 3, 3, 4], "specs": ["판매처 확인", "골프버디(국내)", "확인 필요"],
-    "verdict": "값을 아끼면서 국내 코스 고저차를 보고 싶다면", "skill": "초심자"
+   "role": "국산 입문 실속",
+   "forWhom": "고저차 보정 되는 국산 시계를 낮은 값에 원하는 입문자",
+   "short": "고저차 되는 실속 시계",
+   "plus": "고저차 보정",
+   "minus": "구형",
+   "pros": [
+    "국내 코스 고저차 보정·그린 언듈레이션 보기",
+    "원터치로 바로 라운드 시작"
+   ],
+   "cons": [
+    "2021년 모델이라 화면·속도는 최신보다 떨어짐",
+    "일상 스마트워치 기능은 적음"
+   ],
+   "scores": [
+    3,
+    3,
+    3,
+    4
+   ],
+   "specs": [
+    "판매처 확인",
+    "골프버디(국내)",
+    "확인 필요"
+   ],
+   "verdict": "값을 아끼면서 국내 코스 고저차를 보고 싶다면",
+   "skill": "초심자"
   },
-  "sources": ["https://help.golfbuddyglobal.com/sList.asp?searchcategory=3&searchproduct=5&seq=1523"]
+  "sources": [
+   "https://help.golfbuddyglobal.com/sList.asp?searchcategory=3&searchproduct=5&seq=1523"
+  ]
  }
 ]
