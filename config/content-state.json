@@ -1458,31 +1458,31 @@
       "d": "2026-10-23"
     },
     "/p/footjoy-quantum-shoes": {
-      "h": "058c663482cc531a",
+      "h": "b00f58e16e67858b",
       "d": "2026-10-23"
     },
     "/p/adidas-s2g-shoes": {
-      "h": "770fef75c0f3e8e0",
+      "h": "6d880cd2657e5329",
       "d": "2026-10-23"
     },
     "/p/skechers-go-golf-elite-6-shoes": {
-      "h": "44e8bd6afda7fcf7",
+      "h": "93bbd1f2c25b706b",
       "d": "2026-10-23"
     },
     "/p/ecco-lt1-boa-shoes": {
-      "h": "583b6fc6dbdf9b67",
+      "h": "4e5ada1d45bc054b",
       "d": "2026-10-23"
     },
     "/p/nike-victory-pro-3-shoes": {
-      "h": "d43efdb5b25ed22f",
+      "h": "96ad4705c3badb97",
       "d": "2026-10-23"
     },
     "/p/ecco-biom-c4-women-shoes": {
-      "h": "520355e8396049b4",
+      "h": "5d96af69ec49fcd2",
       "d": "2026-10-23"
     },
     "/p/footjoy-quantum-women-shoes": {
-      "h": "d5c12e06781331fd",
+      "h": "16b4587072b69f45",
       "d": "2026-10-23"
     },
     "/c/driver": {
@@ -3235,41 +3235,6 @@
       "d": "2026-10-23"
     },
     {
-      "url": "/p/footjoy-quantum-shoes",
-      "kind": "new",
-      "d": "2026-10-23"
-    },
-    {
-      "url": "/p/adidas-s2g-shoes",
-      "kind": "new",
-      "d": "2026-10-23"
-    },
-    {
-      "url": "/p/skechers-go-golf-elite-6-shoes",
-      "kind": "new",
-      "d": "2026-10-23"
-    },
-    {
-      "url": "/p/ecco-lt1-boa-shoes",
-      "kind": "new",
-      "d": "2026-10-23"
-    },
-    {
-      "url": "/p/nike-victory-pro-3-shoes",
-      "kind": "new",
-      "d": "2026-10-23"
-    },
-    {
-      "url": "/p/ecco-biom-c4-women-shoes",
-      "kind": "new",
-      "d": "2026-10-23"
-    },
-    {
-      "url": "/p/footjoy-quantum-women-shoes",
-      "kind": "new",
-      "d": "2026-10-23"
-    },
-    {
       "url": "/c/shoes",
       "kind": "updated",
       "d": "2026-10-23"
@@ -3416,6 +3381,41 @@
     },
     {
       "url": "/vs/footjoy-pulse-boa-women-shoes-vs-footjoy-flow2-boa-women-shoes",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/footjoy-quantum-shoes",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/adidas-s2g-shoes",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/skechers-go-golf-elite-6-shoes",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/ecco-lt1-boa-shoes",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/nike-victory-pro-3-shoes",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/ecco-biom-c4-women-shoes",
+      "kind": "updated",
+      "d": "2026-10-23"
+    },
+    {
+      "url": "/p/footjoy-quantum-women-shoes",
       "kind": "updated",
       "d": "2026-10-23"
     }
