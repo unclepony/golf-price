@@ -1,0 +1,8 @@
+[
+ {"id":"footjoy-hyperflex-boa-shoes","query":"풋조이 하이퍼플렉스 보아 남성 골프화 정품","must":["풋조이"],"mustAny":["하이퍼플렉스","hyperflex"],"exclude":["카본","carbon","부츠","여성","중고","깔창","징","스파이크교체","일본","직수입","55493j","3e"]},
+ {"id":"footjoy-quantum-shoes","query":"풋조이 퀀텀 남성 골프화 정품","must":["풋조이","퀀텀"],"exclude":["보아","boa","여성","중고","깔창","징","스파이크교체","일본","직수입"]},
+ {"id":"adidas-tour360-24-shoes","query":"아디다스 투어360 골프화","must":["아디다스","투어360"],"exclude":["22","키즈","주니어","여성","중고","깔창","징","스파이크교체","일본","직수입"]},
+ {"id":"puma-phantomcat-nitro-shoes","query":"푸마 팬텀캣 골프화","must":["푸마"],"mustAny":["팬텀캣","phantomcat"],"exclude":["여성","중고","깔창","징","스파이크교체","일본","직수입"]},
+ {"id":"nike-victory-pro-3-shoes","query":"나이키 빅토리 프로 3 남성 골프화","must":["나이키","빅토리"],"mustAny":["프로3","pro3"],"exclude":["프로4","pro4","투어","여성","우먼","중고","깔창","징","스파이크교체","일본","직수입"]},
+ {"id":"footjoy-fuel-women-shoes","query":"풋조이 퓨얼 여성 골프화 정품","must":["풋조이"],"mustAny":["퓨얼","fuel"],"exclude":["남성","스포츠","중고","깔창","징","스파이크교체","일본","직수입"]}
+]
