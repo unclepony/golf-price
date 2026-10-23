@@ -1,23 +1,194 @@
 {
   "date": "2026-10-23",
   "by": {
+    "act": {
+      "구글|/c/putter": 1,
+      "카카오톡|/": 8,
+      "카카오톡|/c/bag": 1,
+      "카카오톡|/p/callaway-elyte-driver": 1,
+      "카카오톡|/p/titleist-pro-v1": 1,
+      "캠페인: chatgpt.com|/g/rangefinder-recommend": 1
+    },
+    "asn": {
+      "AS10036 DLIVE Cable TV": 1,
+      "AS17858 LG POWERCOMM": 1,
+      "AS18779 EGIHosting": 1,
+      "AS3559 Korea Telecom": 2,
+      "AS4766 Korea Telecom": 3,
+      "AS9318 SK Broadband Co Ltd": 6,
+      "AS9644 SK Telecom": 2
+    },
     "cty": {
-      "US": 1
+      "KR": 23,
+      "US": 2
+    },
+    "depth": {
+      "/c/bag|50%": 1,
+      "/c/driver|첫 화면": 1,
+      "/c/putter|25%": 1,
+      "/c/rangefinder|25%": 1,
+      "/c/rangefinder|50%": 1,
+      "/g/golf-ball-compare|첫 화면": 1,
+      "/g/rangefinder-recommend|첫 화면": 2,
+      "/p/caddytalk-minion2|50%": 1,
+      "/p/callaway-elyte-driver|25%": 1,
+      "/p/golfbuddy-atom|50%": 1,
+      "/p/nikon-coolshot-pro2-stabilized|50%": 1,
+      "/p/titleist-pro-v1|50%": 1,
+      "/|25%": 2,
+      "/|75%": 1,
+      "/|첫 화면": 14
     },
     "dev": {
-      "PC": 1
+      "PC": 10,
+      "모바일": 14,
+      "태블릿": 1
+    },
+    "hour": {
+      "15": 2,
+      "17": 1,
+      "18": 2,
+      "20": 7,
+      "21": 4
+    },
+    "nav": {
+      "/c/rangefinder|/p/caddytalk-minion2": 1,
+      "/c/rangefinder|/p/nikon-coolshot-pro2-stabilized": 1,
+      "/g/rangefinder-recommend|/p/golfbuddy-atom": 1,
+      "/|/c/bag": 1,
+      "/|/c/driver": 1,
+      "/|/p/callaway-elyte-driver": 1,
+      "/|/p/titleist-pro-v1": 1
+    },
+    "out": {
+      "/c/bag|sunmountain-h2no-stand": 1,
+      "/g/golf-ball-compare|srixon-z-star": 1,
+      "/g/golf-ball-compare|taylormade-tp5-ball": 1,
+      "/g/golf-ball-compare|titleist-pro-v1": 1,
+      "/p/caddytalk-minion2|caddytalk-minion2": 1,
+      "/p/callaway-elyte-driver|callaway-elyte-driver": 1,
+      "/p/golfbuddy-atom|golfbuddy-atom": 1,
+      "/p/nikon-coolshot-pro2-stabilized|nikon-coolshot-pro2-stabilized": 1
+    },
+    "outcamp": {
+      "chatgpt.com|caddytalk-minion2": 1,
+      "chatgpt.com|golfbuddy-atom": 1,
+      "chatgpt.com|nikon-coolshot-pro2-stabilized": 1,
+      "chatgpt.com|srixon-z-star": 1,
+      "chatgpt.com|taylormade-tp5-ball": 1,
+      "chatgpt.com|titleist-pro-v1": 1
+    },
+    "outref": {
+      "카카오톡": 2,
+      "캠페인: chatgpt.com": 6
+    },
+    "pos": {
+      "비교표": 1,
+      "상세 끝 구매 상자": 1,
+      "상품 페이지": 3,
+      "점수표": 3
     },
     "pv": {
-      "/": 1
+      "/": 19,
+      "/c/bag": 1,
+      "/c/driver": 1,
+      "/c/putter": 1,
+      "/c/rangefinder": 2,
+      "/g/golf-ball-compare": 1,
+      "/g/rangefinder-recommend": 2,
+      "/g/wedge-recommend": 2,
+      "/g/womens-utility-recommend": 2,
+      "/p/caddytalk-minion2": 1,
+      "/p/callaway-elyte-driver": 1,
+      "/p/golfbuddy-atom": 1,
+      "/p/nikon-coolshot-pro2-stabilized": 1,
+      "/p/titleist-pro-v1": 1
     },
     "ref": {
-      "직접·북마크": 1
+      "구글": 1,
+      "직접·북마크": 3,
+      "카카오톡": 10,
+      "캠페인: chatgpt.com": 6,
+      "캠페인: ig": 1,
+      "캠페인: youtube": 4
     },
     "refland": {
-      "직접·북마크|/": 1
+      "구글|/c/putter": 1,
+      "직접·북마크|/": 3,
+      "카카오톡|/": 10,
+      "캠페인: chatgpt.com|/": 1,
+      "캠페인: chatgpt.com|/c/rangefinder": 2,
+      "캠페인: chatgpt.com|/g/golf-ball-compare": 1,
+      "캠페인: chatgpt.com|/g/rangefinder-recommend": 2,
+      "캠페인: ig|/": 1,
+      "캠페인: youtube|/g/wedge-recommend": 2,
+      "캠페인: youtube|/g/womens-utility-recommend": 2
+    },
+    "refurl": {
+      "chatgpt.com": 6,
+      "ig / social": 1,
+      "youtube / video / c-wedge-recommend-beginner": 2,
+      "youtube / video / t-womens-utility-recommend-0": 2
+    },
+    "seen": {
+      "/c/bag": 1,
+      "/g/golf-ball-compare": 1,
+      "/g/rangefinder-recommend": 1,
+      "/g/wedge-recommend": 1,
+      "/g/womens-utility-recommend": 1,
+      "/p/caddytalk-minion2": 1,
+      "/p/callaway-elyte-driver": 1,
+      "/p/golfbuddy-atom": 1,
+      "/p/nikon-coolshot-pro2-stabilized": 1,
+      "/p/titleist-pro-v1": 1
+    },
+    "seenpos": {
+      "비교표": 5,
+      "상품 페이지": 5
+    },
+    "skip": {
+      "내부(관리자 브라우저)": 4,
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 4,
+      "데이터센터 AS212238 UAB code200": 1
+    },
+    "stay": {
+      "/c/bag|30초~1분": 1,
+      "/c/driver|30초~1분": 1,
+      "/c/putter|10~30초": 1,
+      "/c/rangefinder|10~30초": 2,
+      "/g/golf-ball-compare|3분 이상": 1,
+      "/g/rangefinder-recommend|10초 미만": 1,
+      "/g/rangefinder-recommend|1~3분": 1,
+      "/p/caddytalk-minion2|10초 미만": 1,
+      "/p/callaway-elyte-driver|10초 미만": 1,
+      "/p/golfbuddy-atom|10초 미만": 1,
+      "/p/nikon-coolshot-pro2-stabilized|10초 미만": 1,
+      "/p/titleist-pro-v1|10~30초": 1,
+      "/|10~30초": 4,
+      "/|10초 미만": 12,
+      "/|3분 이상": 1
     },
     "visit": {
-      "/": 1
+      "/": 15,
+      "/c/putter": 1,
+      "/c/rangefinder": 2,
+      "/g/golf-ball-compare": 1,
+      "/g/rangefinder-recommend": 2,
+      "/g/wedge-recommend": 2,
+      "/g/womens-utility-recommend": 2
+    },
+    "xpv": {
+      "/": 3,
+      "/c/driver": 1,
+      "/c/putter": 1,
+      "/c/rangefinder": 2,
+      "/g/golf-ball-compare": 1,
+      "/g/rangefinder-recommend": 2,
+      "/g/wedge-recommend": 2,
+      "/g/womens-utility-recommend": 2,
+      "/p/caddytalk-minion2": 1,
+      "/p/golfbuddy-atom": 1,
+      "/p/nikon-coolshot-pro2-stabilized": 1
     }
   }
 }

@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-24",
+  "by": {
+    "act": {
+      "캠페인: chatgpt.com|/c/bag": 1
+    },
+    "asn": {
+      "AS4766 KT": 1
+    },
+    "cty": {
+      "KR": 1
+    },
+    "depth": {
+      "/c/bag|끝까지": 1
+    },
+    "dev": {
+      "모바일": 1
+    },
+    "hour": {
+      "01": 1
+    },
+    "pv": {
+      "/c/bag": 1
+    },
+    "ref": {
+      "캠페인: chatgpt.com": 1
+    },
+    "refland": {
+      "캠페인: chatgpt.com|/c/bag": 1
+    },
+    "refurl": {
+      "chatgpt.com": 1
+    },
+    "seen": {
+      "/c/bag": 1
+    },
+    "seenpos": {
+      "비교표": 1
+    },
+    "stay": {
+      "/c/bag|30초~1분": 1
+    },
+    "visit": {
+      "/c/bag": 1
+    },
+    "xpv": {
+      "/c/bag": 1
+    }
+  }
+}
