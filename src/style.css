@@ -1126,3 +1126,12 @@ table.ig.grind-t { min-width: 720px !important; }
 .logo-sub { font-size: 9px; letter-spacing: 1.4px; color: #8a7a52; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo-name { color: #e2b84a; } :root:not([data-theme="light"]) .logo-name b { color: #f1ede2; background: none; } }
 @media (max-width: 560px) { .logo-emb { width: 38px; height: 38px; flex-basis: 38px; } .logo-name, .logo-name b { font-size: 20px; } .logo-sub { display: none; } }
+/* 로고(2026-10-23 사장님 그림): 조랑말+골프클럽 선 그림(남색) + 워드마크는 그림의 'CHOICE GOLF' 처럼 굵은/보통 산세리프 한 가지 색 */
+.logo-emb { width: 48px; height: 48px; flex: 0 0 48px; }
+.logo-emb img { width: 100%; height: 100%; display: block; }
+.logo-emb svg { filter: none; }
+.logo-name { color: #1d3354; font-weight: 500; letter-spacing: -0.3px; gap: 1px; }
+.logo-name b { font-family: inherit; font-weight: 800; font-size: inherit; letter-spacing: -0.3px; background: none; -webkit-background-clip: border-box; background-clip: border-box; color: #1d3354; margin-right: 0; }
+.logo-sub { color: #5b6b82; letter-spacing: 2.4px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo-emb img { filter: brightness(0) invert(1); opacity: .92; } :root:not([data-theme="light"]) .logo-name, :root:not([data-theme="light"]) .logo-name b { color: #f1ede2; background: none; } :root:not([data-theme="light"]) .logo-sub { color: #a9b4c4; } }
+@media (max-width: 560px) { .logo-emb { width: 40px; height: 40px; flex-basis: 40px; } .logo-name b { font-size: inherit; } }

@@ -18,7 +18,6 @@ const SITE = readJson(join(ROOT, 'config', 'site.json'), {});
 // 사이트 주소: config/site.json url 이 먼저(2026-10-22 choicegolf.unclepony.com 으로 이전), 없으면 환경 변수 SITE_URL
 const SITE_URL = (SITE.url || process.env.SITE_URL || 'https://choicegolf.unclepony.com').replace(/\/$/, '');
 const SITE_NAME = SITE.name || '초이스골프';
-const LOGO_SVG = readFileSync(join(ROOT, 'src', 'figures', 'logo.svg'), 'utf8').replace(/role="img" aria-label="[^"]*"/, 'aria-hidden="true"');
 const OUT = join(ROOT, 'site');
 // 안내 문구는 config/notices.json 한 곳에서 관리한다 (고지·점수·가격 안내)
 const NOTICES = readJson(join(ROOT, 'config', 'notices.json'), {});
@@ -207,7 +206,7 @@ function header() {
   return `<div class="util"><div class="wrap util-in"><span>${DISCLOSURE}</span><nav><a href="/about">운영 안내</a></nav></div></div>
 ${DEMO ? '<p class="demo">샘플 데이터로 만든 미리보기입니다. 표시된 가격은 실제 가격이 아닙니다.</p>' : ''}
 <header class="hd"><div class="wrap hd-in">
-<a class="logo" href="/" aria-label="${esc(SITE_NAME)} 홈"><span class="logo-emb">${LOGO_SVG}</span><span class="logo-txt"><span class="logo-name">${esc(SITE.logoBefore ?? '')}<b>${esc(SITE.logoAccent ?? SITE_NAME)}</b>${esc(SITE.logoAfter ?? '')}</span>${SITE.logoSub ? `<small class="logo-sub">${esc(SITE.logoSub)}</small>` : ''}</span></a>
+<a class="logo" href="/" aria-label="${esc(SITE_NAME)} 홈"><span class="logo-emb"><img src="/assets/logo-mark.png" width="48" height="48" alt=""></span><span class="logo-txt"><span class="logo-name">${esc(SITE.logoBefore ?? '')}<b>${esc(SITE.logoAccent ?? SITE_NAME)}</b>${esc(SITE.logoAfter ?? '')}</span>${SITE.logoSub ? `<small class="logo-sub">${esc(SITE.logoSub)}</small>` : ''}</span></a>
 <form class="search" action="/search" role="search" autocomplete="off">
 <input type="search" name="q" id="q" placeholder="찾는 골프용품을 검색해 보세요 (예: 드라이버, 프로V1)" aria-label="골프용품 검색">
 <button type="submit" aria-label="검색">${SEARCH_ICON}</button>
@@ -224,8 +223,9 @@ ${megaNav(rctx())}`;
 
 // 공유 미리보기 이미지(카카오톡·커뮤니티·SNS): 쿠팡 썸네일을 큰 크기(492)로
 const bigImage = (src) => (src ? src.replace('/212x212ex/', '/492x492ex/') : '');
+const BRAND_OG = `${SITE_URL}/assets/og.png`; // 1200×630
 function ogImageFor(path) {
-  if (path === '/jp' || path.startsWith('/jp/')) return ''; // 일본 정가 비교: 특정 상품 사진을 쓰지 않는다
+  if (path === '/' || path === '/jp' || path.startsWith('/jp/') || path === '/qa' || path.startsWith('/qa/')) return BRAND_OG; // 첫 화면·일본 정가 비교·초보 Q&A: 상품 사진 대신 로고 공유 이미지
   if (VS_OG[path]) return bigImage(imageOf(VS_OG[path], entryById[VS_OG[path]]?.hist));
   const m = path.match(/^\/p\/(.+)$/);
   if (m) return bigImage(imageOf(m[1], entryById[m[1]]?.hist));
@@ -235,7 +235,6 @@ function ogImageFor(path) {
   if (top) return bigImage(imageOf(top.id, byId[top.id]?.hist));
   const gift = GIFT_PAGES.find((x) => path === `/g/${x.slug}`)?.items[0];
   if (gift) return bigImage(imageOf(gift.id, byId[gift.id]?.hist));
-  if (path === '/qa' || path.startsWith('/qa/')) return ''; // 초보 Q&A: 특정 상품 사진을 쓰지 않는다
   const c = cats.find((x) => path === `/c/${x.id}`);
   const first = c ? pageGuides.find((x) => guideCat(x)?.id === c.id) : pageGuides[0];
   const pk = first && rankedPicks(first)[0];
@@ -259,10 +258,11 @@ function layout({ title, desc, path, body, recent, ld = [], raw = false }) {
 <meta property="og:url" content="${SITE_URL}${path}">
 <meta property="og:site_name" content="${esc(SITE_NAME)}">
 <meta property="og:locale" content="ko_KR">
-${ogImg ? `<meta property="og:image" content="${esc(ogImg)}">\n<meta property="og:image:width" content="492">\n<meta property="og:image:height" content="492">\n<meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">'}
+${ogImg ? `<meta property="og:image" content="${esc(ogImg)}">\n<meta property="og:image:width" content="${ogImg === BRAND_OG ? 1200 : 492}">\n<meta property="og:image:height" content="${ogImg === BRAND_OG ? 630 : 492}">\n<meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">'}
 ${DEMO ? '<meta name="robots" content="noindex">' : path === '/' ? VERIFY : ''}
 <link rel="stylesheet" href="/assets/style.css?v=${ASSET_V}">
-<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/icon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
 ${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x).replace(/</g, '\\u003c')}</script>`).join('\n')}
 </head>
 <body>
@@ -473,7 +473,9 @@ const updated = tracked.map((e) => e.a.last.d).sort().at(-1) ?? todayKst();
 rmSync(OUT, { recursive: true, force: true });
 writeText(join(OUT, 'assets', 'style.css'), readFileSync(join(ROOT, 'src', 'style.css'), 'utf8'));
 writeText(join(OUT, 'assets', 'app.js'), readFileSync(join(ROOT, 'src', 'app.js'), 'utf8'));
-writeText(join(OUT, 'assets', 'logo.svg'), readFileSync(join(ROOT, 'src', 'figures', 'logo.svg'), 'utf8'));
+// 로고(2026-10-23 사장님 그림: 조랑말+골프클럽, 'CHOICE GOLF'): 머리글 그림·아이콘(탭·홈 화면)·공유 이미지. 만든 방법: README '로고'
+for (const f of ['logo-mark.png', 'icon-48.png', 'icon-180.png', 'icon-512.png', 'og.png']) copyFileSync(join(ROOT, 'src', 'figures', f), join(OUT, 'assets', f));
+copyFileSync(join(ROOT, 'src', 'figures', 'icon-48.png'), join(OUT, 'favicon.ico')); // /favicon.ico 를 바로 찾는 브라우저·검색엔진용(PNG 내용, 대부분 읽음)
 // 검색엔진용 로고 그림(구조화 데이터 Organization.logo 는 PNG 를 권장): src/figures/logo-512.png
 if (existsSync(join(ROOT, 'src', 'figures', 'logo-512.png'))) copyFileSync(join(ROOT, 'src', 'figures', 'logo-512.png'), join(OUT, 'assets', 'logo.png'));
 
