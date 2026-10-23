@@ -214,20 +214,20 @@
       "d": "2026-10-24"
     },
     "/p/footjoy-pure-touch-glove": {
-      "h": "3d95dd2ad69865ec",
-      "d": "2026-10-23"
+      "h": "d7aec2247604eb24",
+      "d": "2026-10-24"
     },
     "/p/footjoy-stasof-glove": {
-      "h": "268383ee0ce192d4",
-      "d": "2026-10-23"
+      "h": "04a9b83891ad4ea4",
+      "d": "2026-10-24"
     },
     "/p/titleist-players-glove": {
-      "h": "0db5fde88d127862",
+      "h": "2578d899e6d48d01",
       "d": "2026-10-24"
     },
     "/p/titleist-permasoft-glove": {
-      "h": "2babfd2eb449f95c",
-      "d": "2026-10-23"
+      "h": "e56f9e83dec4be8b",
+      "d": "2026-10-24"
     },
     "/p/orange-whip-trainer": {
       "h": "49d43aa920639fff",
@@ -1206,40 +1206,40 @@
       "d": "2026-10-24"
     },
     "/p/footjoy-weathersof-glove": {
-      "h": "87bd3ead1920f9d2",
-      "d": "2026-10-22"
+      "h": "bf20a430603735de",
+      "d": "2026-10-24"
     },
     "/p/footjoy-cabrettasof-glove": {
-      "h": "2781cd864834f0a1",
+      "h": "6940ad2282532076",
       "d": "2026-10-24"
     },
     "/p/footjoy-raingrip-pair-glove": {
-      "h": "110fd18e21242faa",
-      "d": "2026-10-22"
+      "h": "63918e2f8fba1ab6",
+      "d": "2026-10-24"
     },
     "/p/footjoy-raingrip-women-pair-glove": {
-      "h": "412d8c40ebef0880",
-      "d": "2026-10-22"
+      "h": "8ffb8de985d6ebc4",
+      "d": "2026-10-24"
     },
     "/p/footjoy-lady-ecomfort-pair-glove": {
-      "h": "e860c793a4539f72",
-      "d": "2026-10-22"
+      "h": "5251dfa0262db246",
+      "d": "2026-10-24"
     },
     "/p/titleist-permasoft-womens-glove": {
-      "h": "8e685a90e9bd085c",
-      "d": "2026-10-22"
+      "h": "9ba160a46ab705f5",
+      "d": "2026-10-24"
     },
     "/p/taylormade-tp-genuine-leather-glove": {
-      "h": "55446f1fdab2c380",
+      "h": "0617c48c5da6ae7d",
       "d": "2026-10-24"
     },
     "/p/taylormade-players-glove": {
-      "h": "4383818224b7ca07",
+      "h": "c06c1669913b7d4e",
       "d": "2026-10-24"
     },
     "/p/taylormade-durable-grip-glove": {
-      "h": "cace56d462fc635b",
-      "d": "2026-10-23"
+      "h": "5bf946bd3f7f252d",
+      "d": "2026-10-24"
     },
     "/p/sklz-smash-bag": {
       "h": "de1deb6e77f2890b",
@@ -1489,6 +1489,30 @@
       "h": "9b605a1657e339fb",
       "d": "2026-10-24"
     },
+    "/p/titleist-players-womens-glove": {
+      "h": "6715c0b4edda0c58",
+      "d": "2026-10-24"
+    },
+    "/p/footjoy-wintersof-women-pair-glove": {
+      "h": "112ec60a0e114303",
+      "d": "2026-10-24"
+    },
+    "/p/footjoy-gtxtreme-glove": {
+      "h": "e899fe50e03f3b16",
+      "d": "2026-10-24"
+    },
+    "/p/footjoy-stasof-women-glove": {
+      "h": "ee97698e5298706b",
+      "d": "2026-10-24"
+    },
+    "/p/callaway-tour-authentic-glove": {
+      "h": "27ca108fa13ab117",
+      "d": "2026-10-24"
+    },
+    "/p/srixon-all-weather-glove": {
+      "h": "41cdfdd8cc4ed603",
+      "d": "2026-10-24"
+    },
     "/c/driver": {
       "h": "010720a68c6712a4",
       "d": "2026-10-23"
@@ -1538,7 +1562,7 @@
       "d": "2026-10-24"
     },
     "/c/glove": {
-      "h": "a01fa81a3c4c3641",
+      "h": "14ee030d7e2d4274",
       "d": "2026-10-24"
     },
     "/c/practice": {
@@ -1546,83 +1570,83 @@
       "d": "2026-10-24"
     },
     "/g/driver-recommend-2026": {
-      "h": "8f89de9249211666",
+      "h": "0d91496c81da6166",
       "d": "2026-10-24"
     },
     "/g/fairway-wood-recommend": {
-      "h": "71f1dc827dd36578",
+      "h": "cdecaf3600816c1f",
       "d": "2026-10-24"
     },
     "/g/utility-recommend": {
-      "h": "dcd9571102c8e315",
+      "h": "e5425c9fe7c1b79a",
       "d": "2026-10-24"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "838e94d4523a33cb",
+      "h": "1b7a31f77722c919",
       "d": "2026-10-24"
     },
     "/g/iron-recommend": {
-      "h": "d83dcf2e93878995",
+      "h": "b526c717be07c6e9",
       "d": "2026-10-24"
     },
     "/g/womens-utility-recommend": {
-      "h": "8ac73c73832cd4d7",
+      "h": "b943edc9d59c5da4",
       "d": "2026-10-24"
     },
     "/g/wedge-recommend": {
-      "h": "3ae5f1719bc95c7c",
+      "h": "f5da9400205493ed",
       "d": "2026-10-24"
     },
     "/g/golf-ball-compare": {
-      "h": "16458fedae22ce99",
+      "h": "e91d0933c40e2bae",
       "d": "2026-10-24"
     },
     "/g/rangefinder-recommend": {
-      "h": "28f2212f690c67fe",
+      "h": "821415b4b26d1920",
       "d": "2026-10-24"
     },
     "/g/womens-driver-recommend": {
-      "h": "91429f37a3eba7c7",
+      "h": "267e8f6e6a9eac9a",
       "d": "2026-10-24"
     },
     "/g/putter-recommend": {
-      "h": "532e1530d91664ea",
+      "h": "abefc5f8eb8ca341",
       "d": "2026-10-24"
     },
     "/g/golf-shoes-recommend": {
-      "h": "6b3b1c129f8264ed",
+      "h": "a474d966aac8b967",
       "d": "2026-10-24"
     },
     "/g/golf-watch-recommend": {
-      "h": "55a71aa72e36fb94",
+      "h": "d3f109455f69056f",
       "d": "2026-10-24"
     },
     "/g/launch-monitor-recommend": {
-      "h": "0f4ed91547c40f6a",
+      "h": "a56f781474a910be",
       "d": "2026-10-24"
     },
     "/g/golf-bag-recommend": {
-      "h": "6113d29bbee55991",
+      "h": "259e9ebe83961680",
       "d": "2026-10-24"
     },
     "/g/golf-glove-recommend": {
-      "h": "95ff2d182fec6ba6",
+      "h": "4f5fa43e3bf082d4",
       "d": "2026-10-24"
     },
     "/g/practice-gear-recommend": {
-      "h": "7bd0bb6ce4dcc08d",
+      "h": "4559bdd2fbb98cd0",
       "d": "2026-10-24"
     },
     "/g/womens-iron-recommend": {
-      "h": "02159321475c29c6",
+      "h": "3bfc88407daf6367",
       "d": "2026-10-24"
     },
     "/g/womens-shoes-recommend": {
-      "h": "c9c3ee9f58f00e5a",
+      "h": "6e8a30c283294e50",
       "d": "2026-10-24"
     },
     "/g/golf-gift-guide-2026": {
-      "h": "f67f5ccc33113863",
+      "h": "fbf7049bf744f92c",
       "d": "2026-10-24"
     },
     "/g/driver-recommend-2026-beginner": {
@@ -1822,7 +1846,7 @@
       "d": "2026-10-22"
     },
     "/": {
-      "h": "c6c0dc1bd37b3f65",
+      "h": "db50290bf32d1100",
       "d": "2026-10-24"
     },
     "/about": {
@@ -2026,19 +2050,19 @@
       "d": "2026-10-23"
     },
     "/vs/footjoy-pure-touch-glove-vs-titleist-permasoft-glove": {
-      "h": "4a167473c43b9f3b",
-      "d": "2026-10-21"
+      "h": "412b2d66b9a8597f",
+      "d": "2026-10-24"
     },
     "/vs/footjoy-pure-touch-glove-vs-titleist-players-glove": {
-      "h": "47ff25c5565459e3",
+      "h": "1f3cd88308b95eda",
       "d": "2026-10-24"
     },
     "/vs/footjoy-stasof-glove-vs-titleist-permasoft-glove": {
-      "h": "8ed4cb13d9aefbe0",
-      "d": "2026-10-21"
+      "h": "56df3fe5b9f59346",
+      "d": "2026-10-24"
     },
     "/vs/footjoy-stasof-glove-vs-titleist-players-glove": {
-      "h": "54306883a74ace31",
+      "h": "75e9057dc37267c8",
       "d": "2026-10-24"
     },
     "/vs/fourteen-frz-wedge-vs-fourteen-rm4-wedge": {
@@ -2366,7 +2390,7 @@
       "d": "2026-10-21"
     },
     "/vs/titleist-permasoft-glove-vs-titleist-players-glove": {
-      "h": "dc1630f5ed57c08f",
+      "h": "daa33e4960344d90",
       "d": "2026-10-24"
     },
     "/vs/titleist-players5-carbon-stand-vs-titleist-cart14-bag": {
@@ -2482,5 +2506,236 @@
       "d": "2026-10-19"
     }
   },
-  "pending": []
+  "pending": [
+    {
+      "url": "/p/footjoy-pure-touch-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/footjoy-stasof-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/titleist-players-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/titleist-permasoft-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/footjoy-weathersof-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/footjoy-cabrettasof-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/footjoy-raingrip-pair-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/footjoy-raingrip-women-pair-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/footjoy-lady-ecomfort-pair-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/titleist-permasoft-womens-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/taylormade-tp-genuine-leather-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/taylormade-players-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/taylormade-durable-grip-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/titleist-players-womens-glove",
+      "kind": "new",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/footjoy-wintersof-women-pair-glove",
+      "kind": "new",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/footjoy-gtxtreme-glove",
+      "kind": "new",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/footjoy-stasof-women-glove",
+      "kind": "new",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/callaway-tour-authentic-glove",
+      "kind": "new",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/srixon-all-weather-glove",
+      "kind": "new",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/c/glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/driver-recommend-2026",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/wedge-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/golf-ball-compare",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/putter-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/golf-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/golf-watch-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/launch-monitor-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/golf-bag-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/golf-glove-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/practice-gear-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/golf-gift-guide-2026",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/vs/footjoy-pure-touch-glove-vs-titleist-permasoft-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/vs/footjoy-pure-touch-glove-vs-titleist-players-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/vs/footjoy-stasof-glove-vs-titleist-permasoft-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/vs/footjoy-stasof-glove-vs-titleist-players-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/vs/titleist-permasoft-glove-vs-titleist-players-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    }
+  ]
 }
