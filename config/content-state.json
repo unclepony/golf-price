@@ -230,20 +230,20 @@
       "d": "2026-10-24"
     },
     "/p/orange-whip-trainer": {
-      "h": "49d43aa920639fff",
-      "d": "2026-10-22"
+      "h": "f3e37af81c073fe9",
+      "d": "2026-10-24"
     },
     "/p/zeroputt-digital-putting": {
-      "h": "597812a146c12e13",
-      "d": "2026-10-22"
+      "h": "a53451174d5c98e4",
+      "d": "2026-10-24"
     },
     "/p/swingimpact-swingcaddie": {
-      "h": "4f030f201cdf8732",
-      "d": "2026-10-22"
+      "h": "8bff6a43ec75b228",
+      "d": "2026-10-24"
     },
     "/p/pistop-topswing-trainer": {
-      "h": "c45f912ec729d273",
-      "d": "2026-10-22"
+      "h": "8870bb6c1b5a0ed3",
+      "d": "2026-10-24"
     },
     "/p/xxio14-women-iron": {
       "h": "aaeecaaccd10c9cf",
@@ -1242,24 +1242,24 @@
       "d": "2026-10-24"
     },
     "/p/sklz-smash-bag": {
-      "h": "de1deb6e77f2890b",
-      "d": "2026-10-22"
+      "h": "7df97574fec7919f",
+      "d": "2026-10-24"
     },
     "/p/sklz-gold-flex-trainer": {
-      "h": "c0017486ab0c57cf",
-      "d": "2026-10-22"
+      "h": "c4e390495400bc01",
+      "d": "2026-10-24"
     },
     "/p/sklz-home-driving-range-kit": {
-      "h": "7fe2f04e6ac7a344",
-      "d": "2026-10-22"
+      "h": "838406341e494c93",
+      "d": "2026-10-24"
     },
     "/p/lag-shot-7iron-trainer": {
-      "h": "ca60132183e60edf",
-      "d": "2026-10-22"
+      "h": "baa62fcbb80252b1",
+      "d": "2026-10-24"
     },
     "/p/superspeed-speed-sticks-pro": {
-      "h": "6e8067611db97612",
-      "d": "2026-10-22"
+      "h": "676e594647c3ec9a",
+      "d": "2026-10-24"
     },
     "/p/callaway-cb12-wedge": {
       "h": "553445bee7e1f2bb",
@@ -1490,27 +1490,35 @@
       "d": "2026-10-24"
     },
     "/p/titleist-players-womens-glove": {
-      "h": "6715c0b4edda0c58",
+      "h": "6031c3ba8c94cf9c",
       "d": "2026-10-24"
     },
     "/p/footjoy-wintersof-women-pair-glove": {
-      "h": "112ec60a0e114303",
+      "h": "9b4ec5acb8a8a6ed",
       "d": "2026-10-24"
     },
     "/p/footjoy-gtxtreme-glove": {
-      "h": "e899fe50e03f3b16",
+      "h": "3cb394f53682db22",
       "d": "2026-10-24"
     },
     "/p/footjoy-stasof-women-glove": {
-      "h": "ee97698e5298706b",
+      "h": "c40184dbcc471458",
       "d": "2026-10-24"
     },
     "/p/callaway-tour-authentic-glove": {
-      "h": "27ca108fa13ab117",
+      "h": "0b644f5a849a694d",
       "d": "2026-10-24"
     },
     "/p/srixon-all-weather-glove": {
-      "h": "41cdfdd8cc4ed603",
+      "h": "4de144466ecbb162",
+      "d": "2026-10-24"
+    },
+    "/p/lag-shot-driver-trainer": {
+      "h": "431738f96d858303",
+      "d": "2026-10-24"
+    },
+    "/p/sklz-quickster-chipping-net": {
+      "h": "e0f60e88c2d0e120",
       "d": "2026-10-24"
     },
     "/c/driver": {
@@ -1566,312 +1574,320 @@
       "d": "2026-10-24"
     },
     "/c/practice": {
-      "h": "19d034ee12a24a12",
+      "h": "94542c2bc53e4fc6",
       "d": "2026-10-24"
     },
     "/g/driver-recommend-2026": {
-      "h": "0d91496c81da6166",
+      "h": "1487156ef83c97d2",
       "d": "2026-10-24"
     },
     "/g/fairway-wood-recommend": {
-      "h": "cdecaf3600816c1f",
+      "h": "7473380dec9699ef",
       "d": "2026-10-24"
     },
     "/g/utility-recommend": {
-      "h": "e5425c9fe7c1b79a",
+      "h": "06e186f1d97642e9",
       "d": "2026-10-24"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "1b7a31f77722c919",
+      "h": "8be2b0aa8747b1a1",
       "d": "2026-10-24"
     },
     "/g/iron-recommend": {
-      "h": "b526c717be07c6e9",
+      "h": "39caf4ca05e4ead8",
       "d": "2026-10-24"
     },
     "/g/womens-utility-recommend": {
-      "h": "b943edc9d59c5da4",
+      "h": "55db6844408d6526",
       "d": "2026-10-24"
     },
     "/g/wedge-recommend": {
-      "h": "f5da9400205493ed",
+      "h": "6655a203bbe9e99a",
       "d": "2026-10-24"
     },
     "/g/golf-ball-compare": {
-      "h": "e6234b6db5e898d7",
+      "h": "8320df96d042b119",
       "d": "2026-10-24"
     },
     "/g/rangefinder-recommend": {
-      "h": "821415b4b26d1920",
+      "h": "0ec859cb6a4f4fbe",
       "d": "2026-10-24"
     },
     "/g/womens-driver-recommend": {
-      "h": "267e8f6e6a9eac9a",
+      "h": "7db9a1bbbc3f2622",
       "d": "2026-10-24"
     },
     "/g/putter-recommend": {
-      "h": "abefc5f8eb8ca341",
+      "h": "34783df825acfbc8",
       "d": "2026-10-24"
     },
     "/g/golf-shoes-recommend": {
-      "h": "a474d966aac8b967",
+      "h": "e83f3caeb5222d6b",
       "d": "2026-10-24"
     },
     "/g/golf-watch-recommend": {
-      "h": "d3f109455f69056f",
+      "h": "08f6cb69f19ef007",
       "d": "2026-10-24"
     },
     "/g/launch-monitor-recommend": {
-      "h": "a56f781474a910be",
+      "h": "2b48fde8e63c23b0",
       "d": "2026-10-24"
     },
     "/g/golf-bag-recommend": {
-      "h": "259e9ebe83961680",
+      "h": "9e5d88fe00ce5502",
       "d": "2026-10-24"
     },
     "/g/golf-glove-recommend": {
-      "h": "4f5fa43e3bf082d4",
+      "h": "9922a3090e433139",
       "d": "2026-10-24"
     },
     "/g/practice-gear-recommend": {
-      "h": "4559bdd2fbb98cd0",
+      "h": "6c0a5ee2edd934bb",
       "d": "2026-10-24"
     },
     "/g/womens-iron-recommend": {
-      "h": "3bfc88407daf6367",
+      "h": "6d011af7f7f230a7",
       "d": "2026-10-24"
     },
     "/g/womens-shoes-recommend": {
-      "h": "6e8a30c283294e50",
+      "h": "1836b25a06376cf6",
       "d": "2026-10-24"
     },
     "/g/golf-gift-guide-2026": {
-      "h": "fbf7049bf744f92c",
+      "h": "c119db180b585bca",
       "d": "2026-10-24"
     },
     "/g/driver-recommend-2026-beginner": {
-      "h": "9d1c2526a18f8e3f",
-      "d": "2026-10-23"
+      "h": "d4de19cae3b69d10",
+      "d": "2026-10-24"
     },
     "/g/driver-recommend-2026-intermediate": {
-      "h": "c79c3dc57cb662bc",
-      "d": "2026-10-22"
+      "h": "0e505f2ffdf0d7b2",
+      "d": "2026-10-24"
     },
     "/g/driver-recommend-2026-advanced": {
-      "h": "32a19364b3d42a09",
-      "d": "2026-10-22"
+      "h": "c7d49765c803fca3",
+      "d": "2026-10-24"
     },
     "/g/driver-recommend-2026-pro": {
-      "h": "da93a8d2c81ca990",
-      "d": "2026-10-22"
+      "h": "3a2bc46253bc29c0",
+      "d": "2026-10-24"
     },
     "/g/fairway-wood-recommend-beginner": {
-      "h": "f668ee802a458df7",
-      "d": "2026-10-22"
+      "h": "a26478bc08267224",
+      "d": "2026-10-24"
     },
     "/g/fairway-wood-recommend-intermediate": {
-      "h": "fc59e30b4b58bf49",
+      "h": "fb46b286a40f6d45",
       "d": "2026-10-24"
     },
     "/g/fairway-wood-recommend-advanced": {
-      "h": "e09a563834f1f6ad",
-      "d": "2026-10-22"
+      "h": "3bd7a5d14b246abe",
+      "d": "2026-10-24"
     },
     "/g/fairway-wood-recommend-pro": {
-      "h": "74e32d6e2cf9bde8",
-      "d": "2026-10-22"
+      "h": "0d6268c1d0d9e63b",
+      "d": "2026-10-24"
     },
     "/g/utility-recommend-beginner": {
-      "h": "9d878447d6b268b2",
-      "d": "2026-10-23"
+      "h": "6b09013bd0c2f0a3",
+      "d": "2026-10-24"
     },
     "/g/utility-recommend-intermediate": {
-      "h": "c58f1e0f96ade550",
-      "d": "2026-10-22"
+      "h": "64aac2527d328a83",
+      "d": "2026-10-24"
     },
     "/g/utility-recommend-advanced": {
-      "h": "74e33821778975b6",
-      "d": "2026-10-22"
+      "h": "e25daf4b7e900766",
+      "d": "2026-10-24"
     },
     "/g/utility-recommend-pro": {
-      "h": "7c2f954aabbf1cf7",
-      "d": "2026-10-22"
+      "h": "9280f70c75f9e487",
+      "d": "2026-10-24"
     },
     "/g/womens-fairway-wood-recommend-beginner": {
-      "h": "922ed0aff1a5ebf4",
-      "d": "2026-10-22"
+      "h": "6f8aa28c43a07108",
+      "d": "2026-10-24"
     },
     "/g/womens-fairway-wood-recommend-intermediate": {
-      "h": "5d83b7a4d58d0bfe",
-      "d": "2026-10-22"
+      "h": "094b1456046bac28",
+      "d": "2026-10-24"
     },
     "/g/womens-fairway-wood-recommend-advanced": {
-      "h": "2606559f548cc7fb",
-      "d": "2026-10-22"
+      "h": "95d0c4a71180b42d",
+      "d": "2026-10-24"
     },
     "/g/womens-fairway-wood-recommend-pro": {
-      "h": "8d49132ca4fab238",
-      "d": "2026-10-22"
+      "h": "0406b688becb7625",
+      "d": "2026-10-24"
     },
     "/g/iron-recommend-beginner": {
-      "h": "93efe4dd98012368",
-      "d": "2026-10-23"
+      "h": "410bb1d192598445",
+      "d": "2026-10-24"
     },
     "/g/iron-recommend-intermediate": {
-      "h": "0fb13888425f5739",
-      "d": "2026-10-23"
+      "h": "43530990a383d9d3",
+      "d": "2026-10-24"
     },
     "/g/iron-recommend-advanced": {
-      "h": "8ccb6b544357a7e7",
-      "d": "2026-10-23"
+      "h": "1e99927299487b3b",
+      "d": "2026-10-24"
     },
     "/g/iron-recommend-pro": {
-      "h": "68ed4cbde34fd03c",
-      "d": "2026-10-23"
+      "h": "7d50f5ea49043d25",
+      "d": "2026-10-24"
     },
     "/g/womens-utility-recommend-beginner": {
-      "h": "2e33af31efe2d0ec",
-      "d": "2026-10-22"
+      "h": "97fcb34359573ce0",
+      "d": "2026-10-24"
     },
     "/g/womens-utility-recommend-intermediate": {
-      "h": "98d3e90dd444bea0",
-      "d": "2026-10-22"
+      "h": "19c4df3d3216e469",
+      "d": "2026-10-24"
     },
     "/g/womens-utility-recommend-advanced": {
-      "h": "f891d59e09171c2b",
-      "d": "2026-10-22"
+      "h": "fde9598d3cb7c37c",
+      "d": "2026-10-24"
     },
     "/g/womens-utility-recommend-pro": {
-      "h": "2320d5d696b6b002",
-      "d": "2026-10-22"
+      "h": "184c82d035d5b8c3",
+      "d": "2026-10-24"
     },
     "/g/wedge-recommend-beginner": {
-      "h": "7afaaa7eca162c2c",
-      "d": "2026-10-22"
+      "h": "31aa2da774a6f013",
+      "d": "2026-10-24"
     },
     "/g/wedge-recommend-intermediate": {
-      "h": "8b773371b40a697d",
-      "d": "2026-10-22"
+      "h": "7c5e09abe560ffb2",
+      "d": "2026-10-24"
     },
     "/g/wedge-recommend-advanced": {
-      "h": "ca7a4f8a14522336",
-      "d": "2026-10-22"
+      "h": "f993ce6ef4e1fea9",
+      "d": "2026-10-24"
     },
     "/g/wedge-recommend-pro": {
-      "h": "80bc3dfb1fd46951",
-      "d": "2026-10-22"
+      "h": "ce17c18c8a52bfa7",
+      "d": "2026-10-24"
     },
     "/g/golf-ball-compare-beginner": {
-      "h": "0d0486b3605156fa",
-      "d": "2026-10-22"
+      "h": "506ccb648955e7b7",
+      "d": "2026-10-24"
     },
     "/g/golf-ball-compare-intermediate": {
-      "h": "f90aa7bddeee26e8",
-      "d": "2026-10-22"
+      "h": "e30850233a43745b",
+      "d": "2026-10-24"
     },
     "/g/golf-ball-compare-advanced": {
-      "h": "080d297bb7b6b950",
-      "d": "2026-10-23"
+      "h": "d044f2181be5f603",
+      "d": "2026-10-24"
     },
     "/g/golf-ball-compare-pro": {
-      "h": "8e2df779ff6a4c7e",
-      "d": "2026-10-22"
+      "h": "a6b51d4684d592b3",
+      "d": "2026-10-24"
     },
     "/g/rangefinder-recommend-beginner": {
-      "h": "1ee9bcf60c533f9f",
-      "d": "2026-10-23"
+      "h": "0a2d31935b3109f7",
+      "d": "2026-10-24"
     },
     "/g/rangefinder-recommend-advanced": {
-      "h": "ceaf619299f08f35",
-      "d": "2026-10-23"
+      "h": "423aeab1170d9d04",
+      "d": "2026-10-24"
     },
     "/g/rangefinder-recommend-pro": {
-      "h": "d3f587abed3ebce7",
-      "d": "2026-10-23"
+      "h": "8b9605e8f3fc3433",
+      "d": "2026-10-24"
     },
     "/g/womens-driver-recommend-beginner": {
-      "h": "1581e3c359378db5",
-      "d": "2026-10-22"
+      "h": "97fb3539d76c221f",
+      "d": "2026-10-24"
     },
     "/g/womens-driver-recommend-intermediate": {
-      "h": "8b6d49a02c26345c",
-      "d": "2026-10-22"
+      "h": "4db8bd7ebb05eccc",
+      "d": "2026-10-24"
     },
     "/g/womens-driver-recommend-advanced": {
-      "h": "5a24cd343dfeb82d",
-      "d": "2026-10-22"
+      "h": "66467030d08e7cb9",
+      "d": "2026-10-24"
     },
     "/g/womens-driver-recommend-pro": {
-      "h": "2f2ba1b9a11b5c1f",
-      "d": "2026-10-22"
+      "h": "b74997d0c6102d5b",
+      "d": "2026-10-24"
     },
     "/g/putter-recommend-beginner": {
-      "h": "acf9438eb424d6ab",
-      "d": "2026-10-23"
+      "h": "fb5ba381fb2109b4",
+      "d": "2026-10-24"
     },
     "/g/putter-recommend-intermediate": {
-      "h": "bece31728d8111d7",
-      "d": "2026-10-23"
+      "h": "368b2f611ccc1914",
+      "d": "2026-10-24"
     },
     "/g/putter-recommend-advanced": {
-      "h": "8ccbc44333383faf",
-      "d": "2026-10-23"
+      "h": "ad63b357172addad",
+      "d": "2026-10-24"
     },
     "/g/putter-recommend-pro": {
-      "h": "348ae3e0a4abdd96",
-      "d": "2026-10-23"
+      "h": "6b19432c842a76b6",
+      "d": "2026-10-24"
     },
     "/g/golf-watch-recommend-pro": {
-      "h": "55315e033d85cbda",
-      "d": "2026-10-23"
+      "h": "2a885559662cfa22",
+      "d": "2026-10-24"
     },
     "/g/launch-monitor-recommend-beginner": {
-      "h": "ef0de302790a53bd",
-      "d": "2026-10-23"
+      "h": "b7259657193e9a31",
+      "d": "2026-10-24"
+    },
+    "/g/practice-gear-recommend-intermediate": {
+      "h": "fed9f9598aed9fc8",
+      "d": "2026-10-24"
     },
     "/g/womens-iron-recommend-beginner": {
-      "h": "0b3c137cb9f6414c",
-      "d": "2026-10-22"
+      "h": "600f7304b3d4e6fe",
+      "d": "2026-10-24"
     },
     "/g/womens-iron-recommend-intermediate": {
-      "h": "2e48ed2c8b7729e5",
-      "d": "2026-10-22"
+      "h": "f00c954b7e53150b",
+      "d": "2026-10-24"
     },
     "/g/womens-iron-recommend-advanced": {
-      "h": "1b5a2a0a41d82e26",
-      "d": "2026-10-22"
+      "h": "eb58b70d1e180bad",
+      "d": "2026-10-24"
     },
     "/g/womens-iron-recommend-pro": {
-      "h": "30970302d7c25496",
-      "d": "2026-10-22"
+      "h": "a06a8c1218d19431",
+      "d": "2026-10-24"
     },
     "/": {
-      "h": "db50290bf32d1100",
+      "h": "2f3d546dc7d09949",
       "d": "2026-10-24"
     },
     "/about": {
       "h": "062d2326b8040ec7",
       "d": "2026-10-16"
     },
+    "/qa/golf-ball-recommend": {
+      "h": "1ec65176787d8f81",
+      "d": "2026-10-24"
+    },
     "/qa/zero-torque-putter": {
-      "h": "fed0c740b436a800",
-      "d": "2026-10-23"
+      "h": "40c4d2e45fc34e80",
+      "d": "2026-10-24"
     },
     "/qa/womens-golf-club-recommend": {
-      "h": "5407246666d46651",
-      "d": "2026-10-23"
+      "h": "41395cccbc761c1a",
+      "d": "2026-10-24"
     },
     "/qa/wedge-recommend-loft": {
-      "h": "2de1fbc7c414a10b",
-      "d": "2026-10-23"
+      "h": "a606c89d2040f68f",
+      "d": "2026-10-24"
     },
     "/qa/beginner-driver-recommend": {
-      "h": "5dab19cf67e1a868",
-      "d": "2026-10-23"
+      "h": "9301e1feb65949c3",
+      "d": "2026-10-24"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "05b65117d6776f8e",
-      "d": "2026-10-23"
+      "h": "bc3d3e2124b93d47",
+      "d": "2026-10-24"
     },
     "/qa": {
       "h": "3f76e04f91e5fbf8",
@@ -2262,8 +2278,8 @@
       "d": "2026-10-24"
     },
     "/vs/pistop-topswing-trainer-vs-swingimpact-swingcaddie": {
-      "h": "b0dd9d5b4f974aef",
-      "d": "2026-10-21"
+      "h": "a3a54250ce639e6c",
+      "d": "2026-10-24"
     },
     "/vs/prgr-sweep-women-driver-vs-taylormade-qi35-maxlite-women-driver": {
       "h": "1f3a3aac9c2a355e",
@@ -2504,10 +2520,6 @@
     "/jp/customs": {
       "h": "c0b09f9799118a27",
       "d": "2026-10-19"
-    },
-    "/qa/golf-ball-recommend": {
-      "h": "1ec65176787d8f81",
-      "d": "2026-10-24"
     }
   },
   "pending": [
@@ -2577,37 +2589,132 @@
       "d": "2026-10-24"
     },
     {
-      "url": "/p/titleist-players-womens-glove",
+      "url": "/c/glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/vs/footjoy-pure-touch-glove-vs-titleist-permasoft-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/vs/footjoy-pure-touch-glove-vs-titleist-players-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/vs/footjoy-stasof-glove-vs-titleist-permasoft-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/vs/footjoy-stasof-glove-vs-titleist-players-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/vs/titleist-permasoft-glove-vs-titleist-players-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/qa/golf-ball-recommend",
       "kind": "new",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/qa",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/orange-whip-trainer",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/zeroputt-digital-putting",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/swingimpact-swingcaddie",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/pistop-topswing-trainer",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/sklz-smash-bag",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/sklz-gold-flex-trainer",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/sklz-home-driving-range-kit",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/lag-shot-7iron-trainer",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/superspeed-speed-sticks-pro",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/titleist-players-womens-glove",
+      "kind": "updated",
       "d": "2026-10-24"
     },
     {
       "url": "/p/footjoy-wintersof-women-pair-glove",
-      "kind": "new",
+      "kind": "updated",
       "d": "2026-10-24"
     },
     {
       "url": "/p/footjoy-gtxtreme-glove",
-      "kind": "new",
+      "kind": "updated",
       "d": "2026-10-24"
     },
     {
       "url": "/p/footjoy-stasof-women-glove",
-      "kind": "new",
+      "kind": "updated",
       "d": "2026-10-24"
     },
     {
       "url": "/p/callaway-tour-authentic-glove",
-      "kind": "new",
+      "kind": "updated",
       "d": "2026-10-24"
     },
     {
       "url": "/p/srixon-all-weather-glove",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/p/lag-shot-driver-trainer",
       "kind": "new",
       "d": "2026-10-24"
     },
     {
-      "url": "/c/glove",
+      "url": "/p/sklz-quickster-chipping-net",
+      "kind": "new",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/c/practice",
       "kind": "updated",
       "d": "2026-10-24"
     },
@@ -2712,42 +2819,287 @@
       "d": "2026-10-24"
     },
     {
+      "url": "/g/driver-recommend-2026-beginner",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/driver-recommend-2026-intermediate",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/driver-recommend-2026-advanced",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/driver-recommend-2026-pro",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/fairway-wood-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/fairway-wood-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/fairway-wood-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/fairway-wood-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/utility-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/utility-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/utility-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/utility-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/iron-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/iron-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/iron-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/iron-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-utility-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-utility-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-utility-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-utility-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/wedge-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/wedge-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/wedge-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/wedge-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/golf-ball-compare-beginner",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/golf-ball-compare-intermediate",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/golf-ball-compare-advanced",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/golf-ball-compare-pro",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/rangefinder-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/rangefinder-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/rangefinder-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-driver-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-driver-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-driver-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-driver-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/putter-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/putter-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/putter-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/putter-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/golf-watch-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/launch-monitor-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/practice-gear-recommend-intermediate",
+      "kind": "new",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-iron-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-iron-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-iron-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
+      "url": "/g/womens-iron-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-24"
+    },
+    {
       "url": "/",
       "kind": "updated",
       "d": "2026-10-24"
     },
     {
-      "url": "/vs/footjoy-pure-touch-glove-vs-titleist-permasoft-glove",
+      "url": "/qa/zero-torque-putter",
       "kind": "updated",
       "d": "2026-10-24"
     },
     {
-      "url": "/vs/footjoy-pure-touch-glove-vs-titleist-players-glove",
+      "url": "/qa/womens-golf-club-recommend",
       "kind": "updated",
       "d": "2026-10-24"
     },
     {
-      "url": "/vs/footjoy-stasof-glove-vs-titleist-permasoft-glove",
+      "url": "/qa/wedge-recommend-loft",
       "kind": "updated",
       "d": "2026-10-24"
     },
     {
-      "url": "/vs/footjoy-stasof-glove-vs-titleist-players-glove",
+      "url": "/qa/beginner-driver-recommend",
       "kind": "updated",
       "d": "2026-10-24"
     },
     {
-      "url": "/vs/titleist-permasoft-glove-vs-titleist-players-glove",
+      "url": "/qa/beginner-golf-club-set",
       "kind": "updated",
       "d": "2026-10-24"
     },
     {
-      "url": "/qa/golf-ball-recommend",
-      "kind": "new",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/qa",
+      "url": "/vs/pistop-topswing-trainer-vs-swingimpact-swingcaddie",
       "kind": "updated",
       "d": "2026-10-24"
     }
