@@ -654,17 +654,17 @@
  {
   "category": "wood",
   "id": "prgr-superegg-women-fairway",
-  "name": "PRGR 슈퍼에그 여성 페어웨이 우드",
+  "name": "PRGR 슈퍼에그 에볼루션 여성 페어웨이 우드",
   "query": "PRGR 슈퍼에그 여성 페어웨이우드",
   "must": [
    "에그",
    "페어웨이"
   ],
-  "summary": "PRGR 2026년 슈퍼에그 고반발 페어웨이 우드의 여성용 모델입니다. 얕은 헤드와 낮고 깊은 무게중심으로 잘 뜨게 했고, 제조사는 헤드 스피드 37m/s 이하 여성에게 권합니다. R&A·USGA 규정에 맞지 않는 고반발 모델이라 공식 대회에서는 쓸 수 없습니다.",
+  "summary": "PRGR 2024년 슈퍼에그 에볼루션 고반발 페어웨이 우드의 여성용 전용 설계 모델입니다. 크고 얕은 헤드와 CFRP 복합 구조의 낮고 깊은 무게중심으로 잘 뜨게 했습니다. R&A·USGA 규정(SLE)에 맞지 않는 고반발 모델이라 공식 대회에서는 쓸 수 없고, 제조사는 헤드 스피드 37m/s 이상이면 사용을 피하라고 안내합니다.",
   "points": [
    "공식 대회 사용 불가(고반발 비공인)",
-   "헤드 스피드 37m/s 이하 권장",
-   "PRGR 정품 여부 확인"
+   "헤드 스피드 37m/s 미만 여성용",
+   "2026년 신형 슈퍼에그와 구분"
   ],
   "guidePick": {
    "role": "고반발 비거리",
@@ -674,7 +674,7 @@
    "minus": "대회 사용 불가",
    "pros": [
     "고반발 페이스로 거리 보완",
-    "얕은 헤드와 낮고 깊은 무게중심으로 잘 뜸"
+    "크고 얕은 헤드와 낮고 깊은 무게중심으로 잘 뜸"
    ],
    "cons": [
     "R&A·USGA 비공인이라 대회에서 쓸 수 없음",
@@ -689,14 +689,13 @@
    "specs": [
     "TBD",
     "TBD",
-    "2026년"
+    "2024년"
    ],
    "verdict": "친선 라운드에서 거리가 부족한 여성 골퍼에게 맞는 고반발 선택",
    "skill": "초심자"
   },
   "sources": [
-   "https://www.prgr-golf.com/information/news/260209-2.html",
-   "https://www.prgr-golf.com/product/fairwaywood/26-super-egg-fw.html"
+   "https://www.prgr-golf.com/information/news/240213-2.html"
   ],
   "mustAny": [
    "여성",
