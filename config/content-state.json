@@ -1667,8 +1667,8 @@
       "d": "2026-10-25"
     },
     "/c/bag": {
-      "h": "0d08911786942019",
-      "d": "2026-10-24"
+      "h": "c732f82091d98dae",
+      "d": "2026-10-25"
     },
     "/c/glove": {
       "h": "56cd51ffe06dff15",
@@ -1735,7 +1735,7 @@
       "d": "2026-10-25"
     },
     "/g/golf-bag-recommend": {
-      "h": "9cb97f6f88e00061",
+      "h": "7039fb2dbe532842",
       "d": "2026-10-25"
     },
     "/g/golf-glove-recommend": {
@@ -2739,11 +2739,6 @@
       "d": "2026-10-25"
     },
     {
-      "url": "/g/golf-bag-recommend",
-      "kind": "updated",
-      "d": "2026-10-25"
-    },
-    {
       "url": "/g/golf-glove-recommend",
       "kind": "updated",
       "d": "2026-10-25"
@@ -2915,6 +2910,16 @@
     },
     {
       "url": "/qa",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/c/bag",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/golf-bag-recommend",
       "kind": "updated",
       "d": "2026-10-25"
     }

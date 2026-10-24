@@ -815,7 +815,11 @@ function answerBlock(g, ps, skill) {
 // 실력 단계별 1위 + 판매가 범위·확인일 + 짧은 결론 표. 값은 answerBlock 과 같은 기존 데이터(편집 점수·판매가·확인일)
 function stageAnswer(g) {
   if (!g.answerFirst) return '';
-  const tops = SKILLS.map((s) => ({ s, pk: stageTop(g, s) })).filter((x) => x.pk && stageRank(g, x.pk.id)?.r);
+  // 실력 단계가 없는 가이드(골프백 등, 2026-10-25 gp-1025-2 이어서)는 종합 편집 점수 상위 3개
+  const noSkill = !g.picks.some((pk) => pk.skill);
+  const tops = noSkill
+    ? rankedPicks(g).filter((pk) => stageRank(g, pk.id)?.r).slice(0, 3).map((pk, i) => ({ s: `${i + 1}위`, pk }))
+    : SKILLS.map((s) => ({ s, pk: stageTop(g, s) })).filter((x) => x.pk && stageRank(g, x.pk.id)?.r);
   if (tops.length < 2) return '';
   const all = rankedPicks(g).filter((pk) => stageRank(g, pk.id)?.r);
   const nm = (pk) => byId[pk.id].p.name;
@@ -825,15 +829,16 @@ function stageAnswer(g) {
   const ds = priced.map((sp) => sp.d).sort();
   const dRange = ds.length ? (ds[0] === ds.at(-1) ? dayLabel(ds[0]) : `${dayLabel(ds[0])}~${dayLabel(ds.at(-1))}`) : '';
   const word = guideCat(g)?.name ?? ''; // 분류 페이지가 catWord 정의보다 먼저 만들어지므로 분류명을 그대로 쓴다
-  const lead = `<p class="answer-lead"><b>결론:</b> ${esc(word)} ${all.length}종을 실력 단계별로 비교하면 ${tops.map((x) => `${esc(SKILL_WORD[x.s])}는 <a href="/p/${x.pk.id}"><b>${esc(nm(x.pk))}</b></a>`).join(', ')}가 1위입니다(주관적 편집 점수 기준).${ws.length ? ph(` ${all.length}종의 쿠팡 판매가는 ${won(Math.min(...ws))}~${won(Math.max(...ws))}(${dRange} 확인, 현재 가격과 다를 수 있음)입니다.`) : ''}</p>`;
+  const topLink = (x) => `<a href="/p/${x.pk.id}"><b>${esc(nm(x.pk))}</b></a>`;
+  const lead = `<p class="answer-lead"><b>결론:</b> ${esc(word)} ${all.length}종을 ${noSkill ? `비교하면 ${topLink(tops[0])}${hasBatchim(nm(tops[0].pk)) ? '이' : '가'} 1위, 그다음은 ${tops.slice(1).map(topLink).join(', ')} 순입니다(주관적 편집 점수 기준).` : `실력 단계별로 비교하면 ${tops.map((x) => `${esc(SKILL_WORD[x.s])}는 ${topLink(x)}`).join(', ')}가 1위입니다(주관적 편집 점수 기준).`}${ws.length ? ph(` ${all.length}종의 쿠팡 판매가는 ${won(Math.min(...ws))}~${won(Math.max(...ws))}(${dRange} 확인, 현재 가격과 다를 수 있음)입니다.`) : ''}</p>`;
   const tr = tops
     .map(({ s, pk }) => {
       const sp = freshPrice(pk.id);
-      return `<tr><td class="ar"><span class="skill sk-${SKILLS.indexOf(s) + 1}">${s}</span></td><td><a href="/p/${pk.id}">${esc(nm(pk))}</a><small>${esc(pk.short ?? pk.role ?? '')}</small></td><td class="as">${totalScore(pk).toFixed(1)}</td><td class="aw">${ph(sp ? `${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small>` : '<small>판매처에서 확인</small>')}</td></tr>`;
+      return `<tr><td class="ar">${noSkill ? s : `<span class="skill sk-${SKILLS.indexOf(s) + 1}">${s}</span>`}</td><td><a href="/p/${pk.id}">${esc(nm(pk))}</a><small>${esc(pk.short ?? pk.role ?? '')}</small></td><td class="as">${totalScore(pk).toFixed(1)}</td><td class="aw">${ph(sp ? `${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small>` : '<small>판매처에서 확인</small>')}</td></tr>`;
     })
     .join('');
   return `<section class="answer" aria-label="바로 답">${lead}
-<div class="tablewrap"><table class="answer-t"><caption>${esc(word)} 실력별 1위 결론 표 · 순위는 같은 실력 단계 안의 주관적 편집 점수(5점 만점)</caption><thead><tr><th>실력</th><th>1위 모델 · 특징</th><th>점수</th><th>쿠팡 판매가</th></tr></thead><tbody>${tr}</tbody></table></div></section>`;
+<div class="tablewrap"><table class="answer-t"><caption>${esc(word)} ${noSkill ? '상위 3개 결론 표 · 순위는 주관적 편집 점수(5점 만점)' : '실력별 1위 결론 표 · 순위는 같은 실력 단계 안의 주관적 편집 점수(5점 만점)'}</caption><thead><tr><th>${noSkill ? '순위' : '실력'}</th><th>${noSkill ? '모델' : '1위 모델'} · 특징</th><th>점수</th><th>쿠팡 판매가</th></tr></thead><tbody>${tr}</tbody></table></div></section>`;
 }
 // 한 줄 결론: 예산 기준 1개 + 쉬움(초보·중급) 또는 성능(상급·프로) 기준 1개. howto.json 의 conclusion 으로 수동 지정 가능
 function conclusionBox(g, ps, skill) {
