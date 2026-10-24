@@ -1,0 +1,194 @@
+[
+ {
+  "id": "e0",
+  "query": "캘러웨이 여성 아이언세트",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e1",
+  "query": "테일러메이드 여성 아이언세트",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e2",
+  "query": "핑 여성 아이언세트",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e3",
+  "query": "혼마 여성 아이언세트",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e4",
+  "query": "젝시오 여성 아이언세트",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e5",
+  "query": "마제스티 여성 아이언세트",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e6",
+  "query": "마루망 여성 아이언세트",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e7",
+  "query": "PRGR 여성 아이언",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e8",
+  "query": "브리지스톤 여성 아이언",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e9",
+  "query": "야마하 여성 아이언세트",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e10",
+  "query": "미즈노 여성 아이언",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e11",
+  "query": "타이틀리스트 여성 아이언",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e12",
+  "query": "스릭슨 여성 아이언세트",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e13",
+  "query": "혼마 베레스 여성 아이언",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e14",
+  "query": "혼마 투어월드 여성 아이언",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e15",
+  "query": "테일러메이드 스텔스2 여성 아이언",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e16",
+  "query": "캘러웨이 엘리트 여성 아이언 세트",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e17",
+  "query": "던롭 젝시오 13 여성 아이언 세트",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e18",
+  "query": "핑 G Le3 여성 아이언 세트",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e19",
+  "query": "캘러웨이 패러다임 여성 아이언 세트",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e20",
+  "query": "마제스티 스터나 여성 아이언",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e21",
+  "query": "젝시오 로얄에디션 여성 아이언",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e22",
+  "query": "미즈노 JPX Q2 여성 아이언",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e23",
+  "query": "브리지스톤 V300 여성 아이언 10세대",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ }
+]
