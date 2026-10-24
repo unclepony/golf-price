@@ -61,6 +61,13 @@
       "slug": "golf-ball-recommend",
       "file": "content/qa/006-golf-ball-recommend.md",
       "date": "2026-10-24"
+    },
+    {
+      "no": 7,
+      "kw": "골프거리측정기 추천",
+      "slug": "golf-rangefinder-recommend",
+      "file": "content/qa/007-golf-rangefinder-recommend.md",
+      "date": "2026-10-25"
     }
   ]
 }

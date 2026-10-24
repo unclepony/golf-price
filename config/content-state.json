@@ -1711,7 +1711,7 @@
       "d": "2026-10-25"
     },
     "/g/rangefinder-recommend": {
-      "h": "d2f2d137ca8a69c1",
+      "h": "e7037b9d21cd8e15",
       "d": "2026-10-25"
     },
     "/g/womens-driver-recommend": {
@@ -1727,7 +1727,7 @@
       "d": "2026-10-25"
     },
     "/g/golf-watch-recommend": {
-      "h": "989fe4ecc0bcbffb",
+      "h": "de2edf05e0ee24c1",
       "d": "2026-10-25"
     },
     "/g/launch-monitor-recommend": {
@@ -1966,33 +1966,37 @@
       "h": "062d2326b8040ec7",
       "d": "2026-10-16"
     },
+    "/qa/golf-rangefinder-recommend": {
+      "h": "f6fbbb9e5638cc84",
+      "d": "2026-10-25"
+    },
     "/qa/golf-ball-recommend": {
-      "h": "b3508b64a57e6dd4",
-      "d": "2026-10-24"
+      "h": "2f5961660c7d1261",
+      "d": "2026-10-25"
     },
     "/qa/zero-torque-putter": {
-      "h": "860c524dc8f82f94",
-      "d": "2026-10-24"
+      "h": "136f6971d016bd30",
+      "d": "2026-10-25"
     },
     "/qa/womens-golf-club-recommend": {
-      "h": "eac30db835e3ccbc",
-      "d": "2026-10-24"
+      "h": "929727fbbddbc41e",
+      "d": "2026-10-25"
     },
     "/qa/wedge-recommend-loft": {
-      "h": "78b9fccbbde5c129",
-      "d": "2026-10-24"
+      "h": "84090ea05965c131",
+      "d": "2026-10-25"
     },
     "/qa/beginner-driver-recommend": {
-      "h": "7a3608d070efbf29",
+      "h": "952cfea2d35ca643",
       "d": "2026-10-25"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "e860123914c3f085",
+      "h": "e15869f52483309b",
       "d": "2026-10-25"
     },
     "/qa": {
-      "h": "da646d4c79d94f46",
-      "d": "2026-10-24"
+      "h": "5671be1a011e56a1",
+      "d": "2026-10-25"
     },
     "/vs/adidas-adipower-sl-women-shoes-vs-footjoy-pulse-boa-women-shoes": {
       "h": "0392a482dc9ca21c",
@@ -2730,11 +2734,6 @@
       "d": "2026-10-25"
     },
     {
-      "url": "/g/golf-watch-recommend",
-      "kind": "updated",
-      "d": "2026-10-25"
-    },
-    {
       "url": "/g/launch-monitor-recommend",
       "kind": "updated",
       "d": "2026-10-25"
@@ -2786,11 +2785,6 @@
     },
     {
       "url": "/",
-      "kind": "updated",
-      "d": "2026-10-25"
-    },
-    {
-      "url": "/qa/beginner-golf-club-set",
       "kind": "updated",
       "d": "2026-10-25"
     },
@@ -2876,6 +2870,51 @@
     },
     {
       "url": "/g/rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/golf-watch-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/qa/golf-rangefinder-recommend",
+      "kind": "new",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/qa/golf-ball-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/qa/zero-torque-putter",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/qa/womens-golf-club-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/qa/wedge-recommend-loft",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/qa/beginner-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/qa",
       "kind": "updated",
       "d": "2026-10-25"
     }
