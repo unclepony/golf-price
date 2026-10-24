@@ -37,13 +37,17 @@ const PRICE_NOTE = NOTICES.price?.[PRICE_MODE];
 const STATE_FILE = join(ROOT, 'config', 'content-state.json');
 const prevState = readJson(STATE_FILE, null);
 const SEEDING = !prevState; // 처음 만들 때는 기존 updated 값을 씨앗으로 쓰고 전송 대기열은 비워 둔다
-const state = { _설명: 'build.mjs 가 관리한다. pages: 주소별 본문 지문(h)과 콘텐츠 업데이트일(d). pending: IndexNow 로 보낼 주소(콘텐츠가 바뀐·새로 생긴·삭제된 페이지). 직접 고치지 않는다.', pages: {}, pending: prevState?.pending ?? [] };
+// 지문 계산 방식 판(KEY_V). 방식을 바꾼 첫 빌드에서는 예전 방식(prevState.keyV)으로도 계산해 같으면 날짜를 그대로 두고 새 지문만 저장한다
+// (방식만 바뀌어 모든 페이지 날짜가 한꺼번에 바뀌지 않게). v2(2026-10-25): 상품 수·다른 가이드 썸네일·가격대 칸·로켓배송 표시 제외
+const KEY_V = 2;
+const PREV_KEY_V = prevState?.keyV ?? 1;
+const state = { _설명: 'build.mjs 가 관리한다. pages: 주소별 본문 지문(h)과 콘텐츠 업데이트일(d). pending: IndexNow 로 보낼 주소(콘텐츠가 바뀐·새로 생긴·삭제된 페이지). 직접 고치지 않는다.', keyV: KEY_V, pages: {}, pending: prevState?.pending ?? [] };
 const pageDates = {};
 const TODAY = todayKst();
-function contentKey(html) {
+function contentKey(html, v = KEY_V) {
   const a = html.indexOf('<main');
   const b = html.indexOf('</main>');
-  const main = (a >= 0 && b > a ? html.slice(a, b) : html)
+  let main = (a >= 0 && b > a ? html.slice(a, b) : html)
     .replace(/"pr":\d+,"pd":"[^"]*"/g, '')
     .replace(/<p class="updated"[\s\S]*?<\/p>/g, '')
     // 가격 기록에서 나오는 부분(판단 문구·그래프·통계·가격 하락 목록)은 가격만 바뀌어도 달라지므로 뺀다
@@ -65,6 +69,19 @@ function contentKey(html) {
     .replace(/\d+\.\d+ 확인/g, '# 확인')
     .replace(/ stale/g, '')
     .replace(/ · 오래된 가격/g, '');
+  if (v >= 2)
+    main = main
+      // 현재 가격에서 나오는 가격대 칸(₩ 저가~프리미엄)과 정렬용 data-price 도 뺀다 (매일 가격 갱신만으로 날짜가 바뀌지 않게)
+      .replace(/<span class="lvl lvl-\d"[^>]*>[\s\S]*?<\/em><\/span>/g, '')
+      .replace(/ data-(?:price|lvl|rocket)="\d*"/g, '')
+      // 로켓배송 표시는 쿠팡 API 가 매일 주는 배송 정보라 뺀다
+      .replace(/<p class="bbox-r">[\s\S]*?<\/p>/g, '')
+      .replace(/<span class="tag rocket">로켓배송<\/span>/g, '')
+      // 다른 가이드 카드의 썸네일(그 가이드 1위들의 사진)과 상품 수(예: '32종 비교', '399개 상품')는 어느 분류에 상품을 하나 더해도
+      // 모든 페이지에서 바뀌므로 같은 것으로 본다. 상품을 더한 분류 페이지·가이드는 목록 줄이 늘어서 지문이 그대로 바뀐다
+      .replace(/<div class="gthumb">[\s\S]*?<\/div>/g, '')
+      .replace(/\d+(?:~\d+)?종/g, '#종')
+      .replace(/\d+개 (상품|비교 가이드)/g, '#개 $1');
   return createHash('sha1').update(main).digest('hex').slice(0, 16);
 }
 function writeText(path, text) {
@@ -76,7 +93,7 @@ function writeText(path, text) {
   const old = prevState?.pages?.[url];
   const seed = (text.match(/data-seed="(\d{4}-\d\d-\d\d)"/) ?? [])[1];
   let d;
-  if (old && old.h === h) d = old.d;
+  if (old && (old.h === h || (PREV_KEY_V !== KEY_V && old.h === contentKey(text, PREV_KEY_V)))) d = old.d;
   else if (SEEDING) d = seed ?? TODAY;
   else {
     d = TODAY;
