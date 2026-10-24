@@ -1,0 +1,162 @@
+[
+ {
+  "id": "e0",
+  "query": "마제스티 로얄 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e1",
+  "query": "무쯔미혼마 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e2",
+  "query": "혼마 베레스 09 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e3",
+  "query": "캘러웨이 패러다임 맥스 패스트 여성 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e4",
+  "query": "캘러웨이 스모크 맥스 패스트 여성 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e5",
+  "query": "테일러메이드 스텔스2 HD 여성 레스큐",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e6",
+  "query": "테일러메이드 Qi10 MAX 여성 레스큐",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e7",
+  "query": "코브라 DS-ADAPT 여성 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e8",
+  "query": "코브라 에어X 여성 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e9",
+  "query": "야마하 인프레스 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e10",
+  "query": "브리지스톤 B-LD 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e11",
+  "query": "PRGR 스테디 레드 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e12",
+  "query": "윌슨 파이브리드 여성",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e13",
+  "query": "타이틀리스트 GT1 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e14",
+  "query": "캘러웨이 빅버사 레바 여성 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e15",
+  "query": "마루망 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e16",
+  "query": "카스코 UFO 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e17",
+  "query": "혼마 비즐 535 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e18",
+  "query": "미즈노 ST MAX 230 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "e19",
+  "query": "캘러웨이 엘리트 여성 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ }
+]
