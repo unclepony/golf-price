@@ -1,0 +1,146 @@
+[
+ {
+  "id": "d0",
+  "query": "캘러웨이 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d1",
+  "query": "캘러웨이 패러다임 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d2",
+  "query": "캘러웨이 빅버사 여성 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d3",
+  "query": "테일러메이드 여성 레스큐",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d4",
+  "query": "테일러메이드 칼레아 여성 레스큐",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d5",
+  "query": "핑 G430 여성 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d6",
+  "query": "핑 G Le3 여성 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d7",
+  "query": "코브라 여성 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d8",
+  "query": "젝시오 12 여성 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d9",
+  "query": "혼마 베레스 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d10",
+  "query": "마제스티 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d11",
+  "query": "브리지스톤 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d12",
+  "query": "야마하 인프레스 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d13",
+  "query": "PRGR 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d14",
+  "query": "스릭슨 여성 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d15",
+  "query": "타이틀리스트 여성 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d16",
+  "query": "미즈노 여성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d17",
+  "query": "던롭 젝시오 엑스 여성 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ }
+]
