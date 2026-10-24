@@ -82,7 +82,7 @@
     "price": 720000,
     "rocket": false,
     "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/08da/1225ee20fc174a116e9e1cc1ebc486d23afc333d5a081b93fed53bb2421b.jpg",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "6778999250"
   },
   "voicecaddie-sl3": {
@@ -126,7 +126,7 @@
     "price": 189000,
     "rocket": false,
     "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/8fd6/8e911c4a91567c92bee5103386b06db9af14acaa05a957c5f5a26ddf2a92.png",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9745865675"
   },
   "callaway-elyte-maxfast-women-driver": {
@@ -176,7 +176,7 @@
     "price": 540000,
     "rocket": false,
     "image": "https://t5a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d846/4549b25ebd18946c3fcde415dd55cc02fb5c19de67ce0495a0abaaa9925c.jpg",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7617795752"
   },
   "footjoy-premiere-packard-shoes": {
@@ -184,7 +184,7 @@
     "price": 203300,
     "rocket": false,
     "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/1cf4/3f094bf437359a41cf10d556a8d09a70d8f4dbe37b86468e2ef5039f3f2e.jpg",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9656875698"
   },
   "titleist-t100-iron": {
@@ -463,17 +463,18 @@
   },
   "footjoy-pulse-boa-women-shoes": {
     "title": "풋조이 정품 FJ 펄스 보아 스파이크리스 여성 방수 골프화 경량 발편한 파크 겸용 골프신발",
-    "price": 197000,
+    "price": 203100,
     "rocket": false,
     "image": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/7252/d64586e3c27210ac663355219e26fd3e25c6df09a8c396618ab513950129.png",
-    "checked": "2026-10-16"
+    "checked": "2026-10-25",
+    "productId": "9444513128"
   },
   "footjoy-flow2-boa-women-shoes": {
     "title": "풋조이 여성용 플로우 2.0 보아 W형 골프화 90929",
     "price": 176000,
     "rocket": false,
     "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/01ba/d170bf10ecc6cfee48104303aed75fcd155edd2bd411e921c26539ec4017.jpg",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8695455213"
   },
   "ecco-goretex-women-shoes": {
@@ -481,15 +482,15 @@
     "price": 108000,
     "rocket": false,
     "image": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d7b8/0de9e5ec142e7d0b81d8d7e38f8331e9ee327db8e8ea54f85be4243b9893.jpg",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9628181220"
   },
   "adidas-adipower-sl-women-shoes": {
     "title": "아디다스 여성 아디파워 SL 보아 스파이크리스 골프화",
-    "price": 119000,
-    "rocket": false,
+    "price": 107100,
+    "rocket": true,
     "image": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/stage/manual/c089e74c3f810140ba75b4d1010d9468fa7236599785b2252da6b1b9c8d7_1790835233225.png",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9731885023"
   },
   "taylormade-sim2max-driver": {
@@ -658,7 +659,7 @@
     "price": 544000,
     "rocket": false,
     "image": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/a426/ef60b1f7aa805900ce37f2fa4c9ce8f00fded84c8489091b5e737a252af6.jpg",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9752369108"
   },
   "callaway-quantum-maxfast-women-driver": {
@@ -687,7 +688,7 @@
     "price": 477540,
     "rocket": false,
     "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/f937/c5eb7551493d78fa0a232ef1df8c177cf3e6de152ad76ab045c11e36f5bf.jpg",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8248486015"
   },
   "titleist-vokey-sm8": {
@@ -800,7 +801,7 @@
     "price": 443430,
     "rocket": true,
     "image": "https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2025/04/04/11/6/3c3aa8c2-b294-4731-a0ee-1d5233a69280.jpg",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8699110471"
   },
   "prgr-sweep-women-iron": {
@@ -1529,7 +1530,7 @@
     "price": 449000,
     "rocket": false,
     "image": "https://thumbnail7.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/prod/912389a1-b909-4e49-83f8-cee18a682d99_fixing_v2.png",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9060992095"
   },
   "ping-scottsdale-anser4-putter": {
@@ -1555,10 +1556,10 @@
   },
   "cobra-ds-adapt-maxk-driver": {
     "title": "코브라골프 2025 드라이버 DS-ADAPT MAX-K",
-    "price": 379000,
-    "rocket": true,
+    "price": 730000,
+    "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/7UNhphrewTTCkhgM7aFqo4yeVEGOS4LWT5_UU9e_7t4T1bgMv1tF2BU-8fE4ofU3hvTVCUMyClwtA_UMPIbxtAxrgBjW4IsWwCgDT7ORzbqFwn8dR-C7mwkwFA_n1BNGAhrM207PercMXvq66B1_Fpbx_R9x7eaSz3TE0IeAzBlspK3izYmU2EpRCU3Krqtsz2u0InIafx7xQ_otW3yZFGcPmP7RNdl0BQXUmR1OSexfZ80Y7snqBC03hmenXIWxhHTKWnaEqMnrH4f2qfX3ShMop6Kd0fcKWU_nZAmieyWpf3gTewtBPs1gF_-FvOy5A0HTfMqiAnoe6vUHRYiCpVmc-cYU0A09-KUjxTr2WBZTjainoetorN7MfcQgjCSBfvlacwZVhHmF-kWvOw5CPH4mPXlVbk0xgff_IEfSUygXi3uRkj8gXj-XvgaW3F339bRwJSoDg1mMYuEfRxv_AI_G6vjpWDBkEjVZOxg35V-L3Vx8_L2eBWtpXksgZZK0X0fbwyymcJmoXXyh53jKuiQH0ao=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9396092007"
   },
   "callaway-quantum-max-driver": {
@@ -1566,7 +1567,7 @@
     "price": 704540,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/EPlDSU_dDtnv2e_nEBYTLQjX3lPIDhTO7JvYGrF6hDYpTatJhVy_zXV3gBFivgbIe6PqADxo2N_me1aCumwf3YMQx55dqUtdz6Yer6C1js5aK2_VC1E2W2pGAI0zzFHcOK79oaL3Gy0tD27h5W-9Ha704Te1SjevxA6AX8Ww7DXpbdd9mi7ua8iZLDsZukY_uxwVuhqh9nFTnhjyIVT3KZ4PClE-iibeFcD3-zvb0wss22ngLEbB04aYOVLFpws5Rb7r91X7-TKYcA01Qz9niwjtQoJyKirqmVJMshF_mCcShmgviZYH0S0qRHUMZTjtVU3cjmqcSEQlZ_sBxnk4w1zjb0FKqxnDyCSPrShNOozWsD_Z5Ij6hmY4j-U0PzDVC-1-mIaazvQswMACFcWHeGX6LbLdjca837dFe234Sp5BiPlsqnRheRVAIko1aNrKfY6M_DXKPOsQFa4RGe0ENaem00MGEJM0TVQeQk_x_ocZriSUZrghaiMhD_jiByB59jA68Chs0al1sYitsW8bRJ2exF4=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9586702665"
   },
   "yamaha-rmx-vdm-driver": {
@@ -1574,7 +1575,7 @@
     "price": 620000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/RngCzqJHkw6k4hNWRhi67hhBChpFDgQdmCubYpKXcY4BZM_IuwYbUwW3SbdUU3PHAeeThStwdms1pBbuZlWoMJp-HHSoUOZCgE5-ZTPA5pdZOqi_jobRXiCvL2VavFAB8VdpG9WjUUfk0vJ6QoJobi9N0d6J9GXpOqftKfNxMjnxS99t7v28NwvmO6TMbeylxfEo0Xo2uuepYHpO1SA-3pfv2TrjFHmHAuj0AwqCowIxc1MUjr39sH1Lu8e6usMsTQ6SamF0ArrynbXuimQfSImKCka933NB6uOQvVfpjPWVhvKiN5KCoRlngST_tDhwssHi0GH8WT0bcW1ZLv5AfRa5xWfzhmqQOgGg5PMo1uZIyvZoPTjoS0smD-V5-q72WCPk2sTo2cKdoiJ32REdFMznM4lsiIP5xLDtCv3uGA4uEHkCB3WE7F9pVxA3oeWi9cE3iFOity9XQ7EJe7aVYnI7p67L7-wC-8U1UwqHW6KByvoBQBqw6RCSJ4Mlj_hvUnBju9SBa1tO1UErVLM6SrPGWHxQItjNiYZFPJgBg6Dfgw==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7699776581"
   },
   "srixon-zxi-rkt-driver": {
@@ -1582,7 +1583,7 @@
     "price": 820000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/SBvT47jjwjhv-9KASAIGd6jWU80P3UkR_U9JqGy9-DrTortoe5M5_1ReO3YEHEut_1rwUfQrJ92-u0Rqliy1lviS3HZqspbDKPVMhe-_wk3E1SD4IrPNLSgI4iJHc6gxLQWqhRrL7_UgFBWYudi2x_LdB_ELOo_1QycpVNoiGnk0cekG_qbQLBvqQGhVn4cRgwTZ9Wfef9sC0e9WdHizFJX8aVVivY9PeTsAOk3zuxaV9Aw4DcOXldk7ZFeXyzCDAPMNLD0Fg6N6m_Mv9bACIolT-_6cerCranrR6J7V1-1dazcXc0--qLkzzgxTQ4dmHwwMMFiSVXLOBOlF-Pk9ab9q8OJAE1RNIYZBXbGgzRGSKlT03zcqP5_n5se25Ayf2U5sfdp6N1t9vFYD2iC5Sr9KjU4n_7AoyxqaNlTQZJX-8_Qs__S8uHgcRIge-rYrZo9IchrUWhL7bTtmmt6qBg4odibFki0U7ODdWZhzngqqeary9ntC6Z4VmTO6MAXP9_yzuY5QbUyhn9yLs6R34srwlSu_tCH-BqPMiuZn3XJ5yf-I",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9754223241"
   },
   "cobra-ds-adapt-x-driver": {
@@ -1590,7 +1591,7 @@
     "price": 990000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/anJR5S_YrwKigoVVaiRDg6KNv-CuThBfiGNk-Wuji4M9Bce42bS9xBHtbyrpTdA7mNdmQwIdYSiDfiigRN6fMp_FQRrwdYFep9TLvlGHjHLXDP38bg3HKUD-UTbn0KRXFNoZCenZNm_5KD3aXjZalcSMx_cge6crTcs7jer_IOkb5RHqFOa6trcWNpdBIEvwhYpPJoYwrtfqkoC3sZzGjKLnYZyBy3FELUk2OcbrhHX9GAepKVwjIaQgj9lyFHwocfzGSZLeA3_D8CRrC_7FVHZOsTsrjhm6fqiZJv0mLRYjDncVFyrJlGpNukUve3Z8ePGKqt59zaeatIA1Arno4yIyaQ5U4YScA2gEWtvfx3HK2atlMR0gf-dYjeMA8ZMQd3QuzVk-SqZoDm0NAql8WMcUkuED_LUTfAKuWqf9e7y8xc2YgmJEVSm_UfmdFIorexCLCuWvLWc7vrPtyvJ54RUf4dXvVp0TyXxG8iTJAtauC4mxNml465AznHngORYqOarHretv-lHgOG1qVMcvrBjT2BqnIIfrBnUbVmUrreX14Q8=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8605840276"
   },
   "pxg-0311-blackops-driver": {
@@ -1606,7 +1607,7 @@
     "price": 469000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/FqiyGlYkZX1bBVDOFruUg81ZN56ggBil_T3i17U5SWTMnGw1Er-fC5K9F-JIG89C_R0QKboxugOIOYwB0A1jL7xy4htxXOj4r5Y3nMNIbIpa4WllEDeg1XWgreXUJKwO14KQr2ZqHWtSL0mDebQKoPsPlw4oUvaUJCRpHWGGIlpUNZLl32SJgkNHdJ-nPSMhNT_YCJ55kEuy-pov63JzyMPOK8bsrkQXatkalWUZEx4FYU2LX5qu_Gs07ud97VaF9bybOULCgss14Lm8Ofw3P02CA21nsyY9A6S53vn_cBPpoGHx-QwpgrREIODWSLLuL65-vvSL-2ijADJJvV30Xv6Zv2bPTVl9ySYu3_yCrvN_pw87seGdM7LRbm63K6Fwk6vtlSQ3FRcpYjSWemq5eHP2deaFGAnfSkJtvqw8qmn4r36IPtlV-D6TJFWWMye7QRJDER4pvfOODacO31i_mNzJKxdl-pD6TdRxhSl4J4q321bRTMXyJtplKybdroa6uAulfH-qE9ty4MSf3SKLYvpc",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8796156624"
   },
   "srixon-zxi-rkt-ls-driver": {
@@ -1614,7 +1615,7 @@
     "price": 820000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/TKEL0wTXJUu1gMEhTH8ufSOLvsuAURMN6bnikpDPMiQ0XIcjo226EY6VJyHnV2GsIGWe-K9kB7TIWa60E1RV2nJ2a5FDFASKlHcWeYaa3YH4B-ESHPvrkbXdW1hnd8PBYvZ9ZccDWusBmszVnv_VPicGWjB0wbBj81PI3sMxEqUb8vOfMxgT-P_c7NFfRQcqWtV05749LiELMNR_yJp8Sm5damsiLu8WcEGF3MVpXmwswcbwb74CHY8TrVCJoKGLo9WYqj7b0lVVNlmzgPx1WnuIEVSc9sMuZ8IQHhzXlEiXGwESJbFhDTBNDtYrFaw-h6dQ4rp_eqpa3660cpxUbAUzQhwA8jU8A_UmUDsNhU7ueix9VSfPaWJ7V0jyorYduslE9QFFGHVQ-zpxEoH5hYpp-VhSF0uxwAZVspkgDzss8y8IzaWkKFUjvAMItCKw_3f2BK3f4CLyHB-_lJzshl3AnYy3QLQ_EVfOX1a8mPTs6EeWnB51zmg1EGECs6V9AxTgBBNCAYFiYyB3TmyNsQxSOneNbpHXXz1LKWqM1nZPySw=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9735745786"
   },
   "cobra-ds-adapt-ls-driver": {
@@ -1622,7 +1623,7 @@
     "price": 816000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/t5VHJLHzKGpyqkOet-xuAX1mo7ddz9HIugwiwz7FjgApwTxGFdEyXbP4JlgKuFX5nL9Bqg7c-oWj-i6esBIGD-Q98w2PQdO0pYPKtouseRhMEA2SlS-Zs5YownxmPuQtb200lKq9IGDTbO3EVy_qGvy9FluFml8v5255FaWx_2bARPQEGQjNOCRHScFdOohRHUY4AunXyXJ9G2d0wVOE4S4zv8BsdryOdi0nLhZ6SVDik9wTcSN4sYIeVz8O2LivFCkpiZV92V_tBPASIv_A2HjJsSnLEDkzfH6Xz1qvqTZPsZrGcCNQe5URmSMvWgjF2QSh6b-xV4DW5hsX5Di-EJkdY8bMlr2_qBu7K3O7q6vCobPADhkZzud0GdKal55lsELYB60txoAWQRcIUgxQ-Zb1z0nSCE49WjHVY79-eu7vuDIRFkzSvxYgoab_nTIukOa_jZ2bez5mFtcg8ZI2LceQdLa3YKtaJYPk70YUMji1q-We-8kmxt37hThtEa3ZnbWYx2i7r9W--TocXKoX41MEGPWKebs6QvGRQBik1QnilA==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8678456578"
   },
   "ping-g440-sft-fairway": {
@@ -1638,7 +1639,7 @@
     "price": 319000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/C3bLAOlh6TqAst5EC7qpIpn1fEovVUMcZPY7dNkIVATj7hmgq1gK9TjEqJIOfUEfZSonqSRWUejbX6MnXL8vyasR5zsS5_ojlcly1of8mpQo6z18Fvuy3Bvs1H4hwL1xgwCpvle5K683Cnrk29Iu6ID6MiuUbIlfj9kvcBOD4mrhLKRuxsSE2ASXYTgES4gNwmRjIuQ1LEhML1mY9d_jyDZNB7gxppy9myFx4hYX1ftXyLpsRXdyYk3YYpJNHZscFoiqlXEAOokGjVzGGKkEitpk8TgaY6DNdwV0JgmW2gwDl8ncV0qhARJAquQU2K2e2QBRzc8_Lic7MBxc6aFoNtHtoRH-9hLLRXUbobDn27sTgLQtxtrTIMbN06wIV13WB2lsiLgxEchqk92JVuy-xrRgkb2IXj5r8JnYoGpm3sctec0WpNACs44MUhQv9gCeuePYt6vEpnrIvc-N6Lom2480MnYvnAlZt12ozt3lBOYdRrZ_Or6puk_MW9hzl9qBUWpZZp86OD2b7zIolbDpotb0HqZHq6n_OETkjT5Ei5LEjuY=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9702184403"
   },
   "taylormade-qi4d-fairway": {
@@ -1654,7 +1655,7 @@
     "price": 241530,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/hc-50gFjbLpkCnqjhe-ZXChC1_L-WwxXinivqVp1ABfhwZv1GqaLpQUnCHFqczKwU2SoRM_4Zt5gQRyfDpOYFzt1uvtLGfYb3hx1OukKfy85FNBSSKY7ZLFtHXdDqQA5_e9X5V7sv4JOlf5o5TVGyCzTY35MJgnEXRtIAxLBAK4VYnyjyaAlLj6Y-8Ltw4YaSX_Jue_CPvIXCOUl1fbIGJWITHow8FVHokuq1C_B53vi3QAvvIMlDDjYSijerbkyQqCn41-gGS1vuU-sJrWWmLpuCaYfcuJ4j9i6U8t95icCEkxSiRGAAV3cbI1QFHMrBuZEHNTvroZ82L9BzjwEUYz7fvWkR1aD5ys27DJNatEmutw7226RqNNlARa7UhgB2fFboZ5txuCxmW_06AWZuBhfy6hUWLT4AN81bNG0sr6VrpSAK-QJCG17IucZAOCZRlc8mBkU3JilLLHlkG2qq6F8m140jummAUd03cdYjsWyzER2X83kqKnPJ9Q5diCz0Iod-xjtnXpwePOhu11PA2E5joA=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9396092021"
   },
   "ping-g440-lst-fairway": {
@@ -1670,7 +1671,7 @@
     "price": 249000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/cKJ_GoXLVhnFJQrNcPp-zwAx4z3MwxAHHbOijIO2dg9uZp8EHuSrJuYjBkOm1YpT1FDG-HM5_aDM17IJg2GUHVOE82D5uRNUTbQSRo8WklCdYZ5YUUlSPVCVammnyzVdPRRb4O7ALRN6q0Ytelejx0WtQ2ZLh-pIFtBmi88AH6h7OhZp-2s9XItehvDWDNYMD5A7e--SaJX6iC5HGdsKUttsFD-7YuZK8OY9H-GCVxK3yKQNkaxAmPRNqGgQZzDSV15OV61b5lxJfU33zgxBOv7mb-gOhqYIDSVSO4ye5Bhb4Bax4ec-MQdcfW6I2SqSNMj_VmXSg2bepYH0dSqIAOOBTngjr8ivwIpE-It12s47ds_bmUvgtCZS5hgHXW3bJBm2ZF1gyzLVgIka3Y7xS7TXEHBUar60FPAQsZQwueoMLAak43k3Vn2Lb45l8unwBFtMlJqSexIWxvePiKGzpIbDFTGPJ1i0-YVPY7x-frh3miTbQLo9NGZSxIm3anM-B6rGZcobMXdS3RVYGGvv",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9520234997"
   },
   "srixon-zxi-rkt-fairway": {
@@ -1678,7 +1679,7 @@
     "price": 450000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/GWA8g6sUFx1_bAuPGcB3FyuRlpGioruPAF5Xf6gMTdacKwIVn3pw104fe0Gba_UYgWIqR_m6xjrC4SG__a8c2rbbQ0pCrO15WFsJD95KONWjx0_tChAtuSSAHMKNq7xGfbOPJMeYMa9l3ih1Gkmpe-Bwfv5qyWsWF5G5bLv_-50e53hkE_M0IsSzSrl31JdY11dbIcHe-_MrHe_JVtLMqMJC704sx0gPEhroLdRNR0-2k9FNjwj86MgSPLbAyn1BzXsFUOnDY7i3YVNRF_kj4omRTomsP1gj1FdPSZXGv6MGXsANAuSV7yywWVJ4mpwBydf5hZLEznNhACses0-wsrab-VPOcK0_qozEJWm8HXaDtiPZ_18xw_g9ZboFqZggkj3lMONeW71B7mJeRcbVUPZskUBJMp7YJDGvK9KTMPBJ05OijDUjUBbSXBZZG5KqYUxfYfOcWIPtIVpRbq1956CwVecM6tkYooPqP8GuuA14StVxH1-cjidtOkL-IsuEEALQc8VLZnOzBz-6qUaDouuM7KV7t78Qmy4eQRcn1g==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9769346398"
   },
   "callaway-quantum-td-fairway": {
@@ -1686,7 +1687,7 @@
     "price": 418500,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/muFxu1Dw8fnP7wBsmkkkS4PR53OpaQ9_3Vr2HGgE_Wgs7rZYlpYUEdncJMz3wtdaONxc6lzOaJbUe_WU1vhvltO_spxe-5g1BxUAFFKL990N8GcF9tr-cDQ4S18R4-Xm1_FbEL7leytOmLtbi-x06z7R_rGllKMz-9E7UkNpD1hr7TE7YrMQBFbnW6z2vcYqkNk1JkNCe-2JGd4bucVWvvuZKimJqLEwzmzYM6_jeDJdcKXf4QJq01aARz4yewjsk_UPcs6HWvDKP1ZAngIyYnk59UCGbPBEPOXWv10tu2lF0eRydZnYO7QpJAXxVs_TYUILShSCBZKV6YGVOvj06ap_JjB2-8LxjOq8gq1s7xfFnhZm0BRKvf6wQg2bQ3dgnI92OlxpUMQ6fE2tBdCPXCAUaVzAP1_3AqE-Gtf7mfwjVUkt3MFBg7P4vRP0WKWdTtR5oi4vpZA-R8lrJH7PgqrxxhgUayWu6dUKvkvvFOmwiuFLjXda1w-YLPXaH1lw91vAlkJtVtdhy7VhMNu7Syc=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9710381353"
   },
   "callaway-quantum-max-iron": {
@@ -1699,10 +1700,10 @@
   },
   "mizuno-jpx925-hotmetal-iron": {
     "title": "미즈노 JPX925 핫메탈 아이언 (8I) NS950 S",
-    "price": 1182140,
+    "price": 997500,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/x7g9W730DHDtsBWxx219fiJQKsgV0RTecCA7IGJQC77sGuJyAXvNAxFCPtbfgvrCYtghvCqyDoaPWQou7jlj1K9A3PfZBBI0haUkQNcqLFP5exm6osYKF2UInM5LI4D7DTGtau4eXdLehz-7HfPpFPbn9H-MHat4uzKhXaW2lCVct2UP0hWvb50i7m2gEhqaDGc-BIFKd2v5U6M7iQZIQoENkN-QpbFQ338GK-yqe3AC-B0uTOQqe_3T_SjqnmNSNV4muuuOIjZ-5TcxMmIuw2Tva8x4xR_sqHcsRXGH6QYcq34e071j1CcNrJXamUogipxJChurYsPqkkrymWWW2GsBFSnYsd8_ZTCyF9nM1l15d3ENqD9t9stOPBNNBR5yJPxVHan-OsTQ27zevXCCZSQspJ730FuaJzCMC74f3WUDYui281HDyWA6d2LjIvEsFUJT2pgS9D3hQdLYvKU49VP60iYSiqNk9A4GwomUgjAhFie4kW2YH26SDbcg1h6NhQ-6Bkcb1dKE5p-CSda18BhUv8Te4k-ZcnLI1ltQ8fcM",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9200546573"
   },
   "xxio14-iron": {
@@ -1710,7 +1711,7 @@
     "price": 1230000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/8FxE_rPS8hNZVMsE8LfEZ73WnKLTy7QhIX84tyHYnf9h3wk2tgqa_boEdhWbszX5mfFoBHqOEawD_bNuWprqxe9_FRzStC0K6-HNZNNCS4nH1BpnjLa_Yu2dDF3_Km0dwJ7djeoPag41nFYbUgWRZSdGTPhmZgLeFRpB-j1rboG9kIBpBiRtTbtjuHcaZZ0A-Q7h-hcmyB5g3-M4uvfPiGWYRAY2UA-aLSc_c8CT4-8k8a2ager0I05C0ZQnyoWJ3bgwUC41wUlPlG1KEvxEtmucN8VWg5Jf2hOuINGmdV5ppOYVrQnb56ts26SejSlnb4aVhQkYRRJCc05fHajxhVTMvvxZmLuwe74z4_UAnxVB8S2oU8QVT3A294EDJF_iu3AyZljYg20N-hIX_HqMd60GgQKyxs88-qPIav6r50de9rmNUJ7g-h83ddQ9HrQJxbGUKYIww6qo71godFlD6J6g1S1UTVqivZBGAurf5MLJZ4G_LjDHnl63MvWaGVQH50XyigghTm9_swnbjJ26KzljoAtH0bWR6Si_e5F7iKxFDw==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9724835214"
   },
   "titleist-t350-iron": {
@@ -1718,7 +1719,7 @@
     "price": 1920000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/FF0yW97xHbfl200lFGR5n_HxocAJu7aftIEWgCjriVg9fug4REA3bdEZfgaATL6_HKSl3RHxuY7RXl0aNXudyqBT2eH-Au9eQSAhvFDnkBEL_JYR2O51HgP8Q1XVWIOYzV83o2SdP6AwtNFa6VnrHa8YXdo3M_32Fxn1DHI9SmNL92ddQCUomkmCz3Z8zGzqGxDI0tuo2nyg1v45WkTWMOH7DyJhdHlqopENRjrFklRv-BcBpcDK2Yffu-eg7fVBVkV9hX7K1KabjeQT-9vXy6tD-zIdiqgQHlcro5GFWGNUP73F3TXTEVSU6TS8dXD4kr8IhYLxjf_pFAs6nQUxkNQWuJtTu3MhgE6tAJXCal9ToXBVYlnkJ5fme5LePkEfLSulYQV075ML4zdI61v_9Eq4INQmcU9r8_vzRnzpZXUZUOLUhzLan4cbXUQZyjQDRb6-T5fJwrYblYKIwb7Vr9_D8NemFsnjna2rSFNkdOm_MNp-VbanOAHuVLyJqemM79jHmDtCKTkbfM_Gm8JBcYUj7yuo16CUZUnt47oEmgKilw==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9249772865"
   },
   "taylormade-p8cb-iron": {
@@ -1726,7 +1727,7 @@
     "price": 1370000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/_sfb0_G39ug444Fk_vkU1h9hmyD--6KAuSKdpMtDPN-eWWxyqiNLUcjVSArS_-sHJ905mb9oDY-m30K5e-x9frV3GgoJt10yE9cQjxZlkrVTI2gtbGJFNK4wIeOKe0tJ9F-aRoOPRiFBW3e7dhBHpbO8YJYaxkDImzpndV1obgpI9nJ2_ddCKfZo-bXaTUh_mNJyvcHJrjsVRGzk3JiF5G1AnUxh0lrOdc-3XKPna-dIGwkii65gbhpUqTxFDzc_12bhfxBgT-WN1wL6YleY2yhuV9_KAFyqGTOkMxvDvH6gm1UoYuMu0GAqyqAjSiX8ixvTokORXpVP5MPUjcCJW8Mpdk5WwDZQbTeUA3wWHzAPhZfPsi-79b7phCMFUqd9OBWwXZ4W3e5CWt1ZFvj-w2TmmOSz5DH1dpW65tqf_deHTSHPEXGUIbWI7QWbz1zvroJ4xI6HyEx7DeVkf27EDNDusU2qxVciNsOqK06CBQjR5R5z7Nn0oACrkSybI856Zus58qQ-YpDAKw9szRlKwIgqpzsvYBT00MYN_r2kHmw=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9210760843"
   },
   "taylormade-p770-iron": {
@@ -1734,7 +1735,7 @@
     "price": 1290000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/fdpgQe1x7vGcEykkfSH6RYKziGRRcL1DSqEpyFCkF-GF_EpL3vUOQOde89cBniXUkFIlTUQju3JLJ4Uf2x5jWtcjqLv_1XMHjxPmDu083HL606o_NfvbqBMcXhFN8dM1KHuSuDLDZLiimChBU1IpN46f8c7l1zGPaask1EwiKDlwAZfl_9HpO2US7I1RT6sK48VwcmkIoZaMsGJMmYuNh8ED-gHU_m-2GVR81pTbH0Bb3GMYYmR-4Xl4vA16ItmmQsC2_3TuCYJ-oUzl7vXJk9G696PyayHVsvOgjBy_ad0phGjrsJ1lMJjd0b2bQaoaBNP7RfscRx40HoVxQUNk-jImxnxxRRK0IWVPYFT12fDx5NEdTHhXKgQ0JXtEtYfniG9uzyGD2Oag8aUzHAVEvyiugCswSJVPcoRlutHskaEdMN0LByQ9V1qVK6JaAA1Mf4bm1ZERNU9pz9JtaYIuDTJ07RUT98vJPg4tkFBFN6NK2RnljmULoqTPDc5v1M1m1vvVuaCLQmiqr0a8kUpaxijZjc15Bs6n1UpJkq8DdozWLzA=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8620789711"
   },
   "ping-i240-iron": {
@@ -1742,7 +1743,7 @@
     "price": 1620000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/ypZ_07HcyPvf5FDUyqvV5VsYN-wHRQTgeyyin97_YAJ4WkN0HvhZYA76Q8VmtteW0q2Jvt6ktVj0_AuJVIucYRJvAi-N5QE7qPhsfXWMzjvocfEDrRHctGpbWfeA0nOTRJwNZmv70BQhvlqVhqDQfBrM6CB5yJ3jLGLtFzNKojYtXC6M4PiZzCASgCJAxqKxuIQ4_keDocxyububbZGy7GWJb07jh8d0HojgeqFRhNnVg1TX-7A4_FEhcE87Sn9jm9AW4hPrB2Gzue99T8opO_rAf3IAa8KHbPMcztUpRLyvWjTGj-0ShXo5YKX-cK54aqTD74X3Gs6dZPcmCvwiEKcLe_n9wXAV4qBK_Lp1xkxWwgSn9KmSmq3YJb7F1lHkQ0qh9C7b4Ql9qB7xd7qAenr_nt1uin-KVtq84i3zG6m0HDsCKB8VVnJyjmuLfyohZSwZ_LvUeAli0a4MzvJLAqpxKwonNEZ7nEfXCyxB34BRJZLaVAaHDENT2svSYbXMAKvAffrxidQmFe4Dxs4S03wvftb2aZnnerLndSmzTsE=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8992220135"
   },
   "titleist-t150-iron": {
@@ -1758,7 +1759,7 @@
     "price": 1650000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/K3QDRzG3rUdArNZVK4omX2w7STkdBJkHhIEnVsdLME8ZZJWATLIO7-cxRytdgP1yo2H_f5LWt1umBgH8t9YXPyuqmA4b42vng7Vs4Iem51AFrMsyzT-RsaUpnUStuSh0qUOVRIDArnNHsqeCVBVpwXCrM8tmso3YFzjV-ezuz22BnJ6B0ICVeywTXKo_h7mbVdXr2JUW2LPPLN9DXY_78118A_S20duAyGTCG5rkCpthHemAJ87WEeWyNMFfTKILjvhjSfw7WhgVzP1eO4Sr_3tCE1EMr1C3-AF8en1b8FlRmJAra9-1LhSwZeAMELtu60EnI5OVKp-OaHuh9zicF8vNBsB3gin0tMJzitaQ_s-VCKQasOsjHQ5ebURQ7YH10aW1geO9HhEgDLisHZrA8IapbWk51RNKuSdwPCUA8GGX8L0y5yhQNcx24MXPM4EVxb71YrTnpVvpGf9dICxwsd6HSayM-YltT1wcySF5ln3-2oOzH5Cvulrj6czWwXdO6U597E_zxmoTW8fEFHtbPHkLz98EiRoC3S7eix5duDdv",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9769541564"
   },
   "ping-blueprint-t-iron": {
@@ -1774,7 +1775,7 @@
     "price": 400000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/YAQ5g9tlPAL0mTbBYNNooigBstF525B6t6H7xRESGxnfgqbbXuqTkpnuZnDuGnBTG4dIQpyjDtiK417myGBTDu93kuV1MsGmX204TABafOtd-4dVw5VKY9dcWxwhgLI8HTI3GT2YMA4k3TgS-uHypS-V_Pork_Mq7BIpXV6n3mmOooRi2Yl16770NIMZJUwu9XE3oV4bHyG2M3aELc3402okdDf1Hi8Qlq5e4HuGqvh7Z4e0BgzGjx1SZbqRksdz0pAagGSsMJb2VYmqrUIpoebsdkxSn2_FeAVBe164ng6tqwSH_OylTmwhc4kdvNTm0AcJG-N6Z-1oQfmLXdFEQHfmQrHSjvB16O5F9k05ydhfNCtLaxB7xM40G7Guw24jCUp-q49UUioircLhucVn6fb0AbBuyitqheEQQTEX0_PECSSh-MT1j-eOsQVmYbJFN2RRguW0NMoDtzASwOP6ASnjlpEd6ogbvHehJzzVH2WLkorboEy0qkVUhSVU4t07lx7T2jYKmhP1RXW0pRUsUNXZnI7RijN5fMiD-eE0NZuL75zo",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9483477431"
   },
   "callaway-elytex-hybrid": {
@@ -1782,7 +1783,7 @@
     "price": 275000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/_Q6qEaa0n4NJaF6n_Zi6Hw5oPA4WEavpNg2pa7Rl7ZvZfx3vaa4V_OBCJoHEiwf8xttGOhTRj8Qa-oETmpsCs4qHosRzQLwmlgSmlG2Yd1wC1wL5RLThGb_smm6FKaUZyjjOUGhA7QUuRVSUKRivjS7AswD2j90w8YesxCKBUjfyvd9IMKZf1-aAFa--VIQfC8h7hFSCfp0yKnrFGHiiVUayDJHwm2vGllzjN-grfjSaKCIk-YNISFFUMV8Q0ncp791K7ZI8lAJL5YVNd05QiMSs2k28-cGU1uqkqc4pYlEmHemEaZjvMneAdcIU4UuGoRF8vVQc2TGCyyzStxzTS2pIgx-GRrf0aFclszCL-hCKJjsbgIh54gGAsrIlgM0aJWezWCdO0TD1qGpu70oEZQnrhxr16HBhe6VzdIj5nNkq9BSlfnWzENbgSdjBEPKr6xmGsmT_X5zDaL6SBYgG0XhPtBXlmLGJLPQjjA8fTNOXVnSehjYVUczN_pjqhucYA6WX4W4hYAeO6DPg6Ic9HeT8s5JsEF0r6bEmskDAwvvnVR4=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8560904429"
   },
   "cobra-dsadapt-hybrid": {
@@ -1790,7 +1791,7 @@
     "price": 540000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/koU-hfhcafulfKECkqE_iTtMkJvo5nQTBoBUWGuJ7f0mW_zH4b9_CQwVhrGzyRE6cD3znVQapPWfa1RFFa8cLiaAlaEtJWIBO60m8SVvSMuSxzSiDN4oHRJLjwK7LJrGALnrnq7tAwQbLsevqNJITzYjxRQpxlYDodtG9d_lN0n_xuunC1X5z_ozIwfDL_pSiBhonTwaEQk5FOon61wzBU-qgXmCaNJ6JKzJZ-F95EOxS-ZmgdQ95qkbw0wonK5abef9DJ6IKN_hUnKz0GBwX_Qsss2LPH0N7-hAK21m6pN6FEmUNyXcrnHIYEzzJhyv12oHxnQ2FBPISSB9B_67XOmBHATe6btH43VyCy4j04PfvUSCghA8CIkAJpluUSaEZqeYT4QrRtzTRZTxb9D1A5nTOPRczJwqkPl_SjPgyxxIYwgftzO77SRsIDYj4O6NwAZ1c0ywa5jFa3vBu6H8UrJ7CX7kkfaQGw6dhxlLd3DqBRqkPUW2XIpQob_nocivBoBoyUSPpgdMBik7RqNex8MzHolDqyrygyNWOMEGli4-lzMM",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8901149949"
   },
   "taylormade-qi4d-hybrid": {
@@ -1798,15 +1799,15 @@
     "price": 400000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/qmzOH9rMbV57h6AFqqjTbb2i7skp3QutSA71okFcbx3zuQxCbnK8GpSIs_YUGf8QqXf0uxG75Ga-0mwqLOY9aYh47KAKs3vDKFRpz9qfbdOm3RtYx_b-dDPVem3naBJal6qy2YtjhSg8mXXv4Jzitd97R9B3hPaxPWjYAPQT7aAveFhNZhuOlJ7E3YHT4_F8J0BMJNCqYIlPGDVBhieRPMNIA-mMlRtRVNZAX35_Wfapw_eFLmHl9sfCrFOxJFelZuReIb9dJBl48M3pS_QayIuhmCS-O-Twzbkrm1eS2KRWk2vc6kQLzwRp9EGl2dfnb-lcdeKblBzwp8xBGTC5-L95g9V7r7r5hXItUEpPlPaam4zQzXqMogTtr5WV5iiGTNA-meecmXXtYvxPUzHKZoafXAO7dCohZC1yXLFB1v0kZXqYrQFg5DwYzxRxXZ4zJ3V9unzWMyjCVWrV7fpO-rSlCHVhCI9tWfUILcIKZuveAwD6SFPOFBm6TYgxMrhwHXfKHndhh6ehL463fgOqG-SXUfSTBpuY5Fa0mUBXIk_JWOw=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9483477525"
   },
   "titleist-pro-v1x": {
     "title": "타이틀리스트 2025 더즌 골프공 4피스 PRO V1X",
-    "price": 136430,
-    "rocket": true,
+    "price": 73000,
+    "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/XOXmRt0OMINHI0HvXPggnu34Rm1SOokrFQqWMDEIw0mZiAak2Ll6200KYUlWCD2ev6Nm46QdZ65en046VVU3VbzqjsjX7uyz7yC1XNekGPwUOsxfUBVH8a7xXu5T7aHU8KtrBoJtG73Nv5LbHvAaPf7UCroS-SYzh4SwPDwAdKF9JzEBS5NKW_juJsHibt8h5VTLAz1Hin4cwCW6zD5kCc647uOMf3qljxTc9x1e4lmyV29lU_Z99mMrJcZeEiWufGonvoRwLN2Oiy8yOz2mxbLGKvfMohB3Pu2Td7L0hqYPDn2KFEd3Ao73MFbqU6XxmxKh8k3jK0LCRUdlyVCFFn_heoEvfK04Kx2ql2kNoqgNWH5s5scTlWzpS2HFw_PtJ3FNkf234BJgPD6RC3UbREdKgdj7MZ9xKukut59f6_peQmRZGlOF7tgADCx8GlXm5UhVHYq52mgPEC_32QWKTb6M5oaDzFfklQY6BBwDIr5_3k-PTw5EAg37wn5DLOrKF4--VSUUHglbQSA7NSBidsJA7MyjGQ==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8657048538"
   },
   "callaway-chrome-tour": {
@@ -1814,7 +1815,7 @@
     "price": 65870,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/S7vykI3-wnQUnifaS86pYAa7qyI08mdiTw-CZUFV1kdDESeCB9cfA8B08XwOkog5TjUjusDhi2-RbwHpw0zJitfi0SHPhSGqfzZwSZHgVOyQBWvN8fHddOX1mc3_G0UlKFnw6apb_BVYbK91Z9hQaFzPmAUYwXH_fVywGm0jJ39rWp8eoFOzYXbRF084QAIeFd-i3glCTiT3kdgYoHvVXKhRbljtTA5b1YKHKevrhKJfJGsHQdtwzVgySEl1MtOvb31fVxWzIArXt-pHmRgwt-pNVltKDeuL_avh4CMo8uyOFa8Yj8wdsamVH2ARrWo1nbKEhOW-UoIo7s2KlAjsuUYwrPBBRgZQOaUEuh4ojunA3FUgKUktua3kdEVUAaYa5fI1hBDtcmCEH-FdGYYxhW6GA9v1R92aPu5J4xI2mQ_K4FUIPBpyFVjfhkPg6w9bX2gwmG_LY530jOv3k4rVZodpVtqlR-J0bVS9YvRLw17FXgmBkLRvERA5trtkUpPcFV7iY4Wz6Aj3BEAzmZ3HbtlqhKSnrllHOegvS6_OD1xCtA==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9768753497"
   },
   "taylormade-tp5x": {
@@ -1830,7 +1831,7 @@
     "price": 50000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/3BJO4UjWhcUkj4Kq3NmJtCtJWAfTCsRgqjW4fjcAcdqVqdTEvLbh_CJGDxYnTp4pDubnwWgfo4Z7Fr7C3Z88H1nz_0R5qLEaLrrp9YXGEaB2Q06r9i0oSmGgfN2cIgqss2OTbMeWVdOfwv2gqy30JI8IbJzxrwD2-t_yb0ITnlvOfZm1lLLDOKMI5Gq-RCBPmkV61aaRLkcutyKZMah9gF3e2KIw480P5bajz7Jv5AxIvEG3lJpHx0dgPtluXWy5iyXvX39WGkwX1Qe7jd1xRB-vfo-NtIBkhzi5P1TCe6gGjh8yYL_0Ismo6xFbwS5ns2OZOTG8L6H7SJRyRSeCoFwMg73lxZPUbTyb2Y52VCH4MYXOmkAyHwj6Saip7qSa3a1ixMiWswuodZ-5iPVBF7KiQ993dkEj4vkz7HEFibKe9Bmd8b5cWIAafwnjU03diIJsx2U6_sA1mSR0xB_7_WwFojUqs39NdWRvRRFA8jr0rP8FQSilJLAxDqdO6ZBWPs7lYBwx3TxLS18NSD34xkDry3a4Uh_DPUMFObPa1Q84KuA=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7608500400"
   },
   "srixon-z-star-xv": {
@@ -1838,7 +1839,7 @@
     "price": 76000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/SEjp-jiC7QH57Qo1SJpE_uWzbzDgkuhBVtabJAqskzx4PaNkhwUwIDdhpYEjUsaICZQoAPZLN6UVD2NhZTJoKEE_KV7BCzDq-TWZJWTDKst02muRVokN70KC-VwUQxjBRYz9sobuU4Z7IvnRqdjR0jZIr-P0fFePyfQdHFa-SWaLTLTWyhBuAOk9ST8VKsHUqHadH8WsZJBp63y08B_RphybN_mUMenAmxO_0vxZbD9XsUhJlk-HT_n4ePQdvBRui0X3mEYenuV7vrxKmhcR-JucMpRuB2wJfRJ1UAkIQZbg_sMvwIIb1O8teSeAH1DK8TAP3UwTb1hvX63JzSwXXVGlWCdVzRRaGEM1o_I49EKCdzvkVWScZhWWEt7qnvyqeMc-LVIMAgjCPx2n6lm6yzi5-jxRMxwaDC8Ey2Y3QFKvJ3Cjj4TcWuTQ8tAm4EX3XOdGmmTZsq_HNYEh_gnTi6RCAbvWwg6SMtlivleqy5GbHv22aHxS8XMLeYjKYn1i5lQA0XoU4vFHekV5NYY6H53JyyndkZaYdqOWnREDPQ==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9768750931"
   },
   "titleist-avx": {
@@ -1846,7 +1847,7 @@
     "price": 65000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/k_AMuniDm477mHEtkyb_rO8zYUjMYOwMAjoOWF0B0_oGvOlfEkFh99bLIzHragBEWV3TLuzI8UfRMu3pO317g15_MsqlPuCaYAhGa4nxFYZqRrcKMi8VL8CrNItNdHKMzYG-p4pGNoSPSIFUFWrm6yhDEo6HOpiG4WZNpXlOjo5WDHuFCM3Gay7tGpYz0KMUgaHg2aj1sNXXsvAd92jp2k9Ht8rYqLrJhqtyVHhTLE-o3Gk0WfdYGpESXnk_KZ1eH-nEp9aYhKmMBlDMQ9nQaT0Jz25VTS3C-929wIN3o3AZudZy77V9aC_ReksXoBZLR4dqANTHzASaGGcBn0qtULME2uPA4VW0tgH3vmrTmpn1dMZ_ALFaDyk62EikYr-qRXipXF59coDzYLpEM7Lr28h9REcid7N_QTVXF6jADoeWf6O1Wh-IkDq2MqDxecda7oBn1L68zJRFMi2q2jSZzx085GKfdyTkb9qF0BugBK1Lqb0Mvi5WlajWQ1zrYDtuOfOp5Z5R_kRzyEtnJKPwb5p3cGwln6opvrKwmmLe5M6i5iwBCkgI1PIkS3Sh58bH5smOst7txn-tF9E8DzLefybfUNo=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8522266333"
   },
   "titleist-tour-soft": {
@@ -1862,7 +1863,7 @@
     "price": 96000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/wkv3CZZY-ramNTxqwp1JFJYsBLjGvDV8Ag1WV9SHFknC7omjecjzTFo963HPNi2OVKInD_Mfpba2xSaASrIlb2YSgcT8fjQXqkFULAABiJmwqWFvqDNyRKjaz32GaRn1_4KOWahtu6xfHEltfGyGFYvxftUK8js4GwJW7Rd0HvV3eB-CCNGLv3Cg4z7LOrJ0oWQRRMrsel-CNNPRFKqZs0dxlxpnDiM5r0sZY3eXIrA8AqwMCotOE1oUAzt0_H7NKZh1r4rNNIjg9o5xcOqHSwsrxYggnezTq0fB1K895x_i90St_wSY1pNcwR5rRw3pbZBe05RYnwaCSCMn-lZXNTD1nziju4wZSPuViyAQBb5NJsnZDaUXTG1jkK7M7NKmlSpMVqfDFsPRYb3qS-Xv0aWQSFEUJk-Iaau30ajO89KD7766TW4_Tt2zT_iXYQoCTiOJ7SjoeqIFChFvt63Yc_eSVnO8PQaZVtL9qF30An_Cck8QA_287y9tcwU64cqQrYJ0unCMxKqvJGZHC7xH_Llm1_9yy6BALkOA-qYh-Sr7Vb2Fkc1NcXe3Xze5cIcnImM35tj5spgdPONH57KMEk8g",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8719397392"
   },
   "titleist-velocity": {
@@ -1870,7 +1871,7 @@
     "price": 32900,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/ahGaBxgIOp0Yqe1Eag5dNytCl4AKcyUgY_whpkaRh9lOU-CeJNwYm9_9sNwmIpkXzsdA6LyFM59NdQ62DYF7Cc-KvrVdY9c3kOsshzkK1wjFAp_AwFrxBaNn5TQTD34HbGCSqQzH4w1yNEa8NjdqUBxa503duQRNddGTvhkcZ1p0LIXl-66-q7BR92iWRcCYE-E5rjV5zJCSxDdHIZgCUg419k3ZKs6TrUxn1GIecPp7KdKPYQ6h6hX_vW9UqdtpbkNqTgZqZTVhwgvOQQnqMhEqAUL7dkp4716ead_BWvj8SC5-lKP7wIihomK1vrN2WNoH2eTyLl4Qff4iT-YZoksfwc3-Nrui7XyBwX4O4OSU4p9VzFsze3hdbW7yauMRu27OENrKtWI4H1KyV-nRa4ZeyncMWtOvuHxPzowOKwZts9iT2yd-LpqVtbvULVb_gfv7nWSNDUhEzq-ux7VstgypeOVtXbyfD7zmtgOFrqAdxgG4PiGgehEOg6LxSl5JbzEy7VlmHl-JoonDgCauXGEz0JhFANmdDZgm7zkn42o=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7942087858"
   },
   "callaway-supersoft": {
@@ -1878,7 +1879,7 @@
     "price": 43800,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/9JjRc8Rb47whQTFR9NkOc0vEbLxeqg78C4Sl1W71oJR42Gfv6LfFbpuojClysm17LfIUGQ7WRZxDgbAadACreU_P7k362aY0TCdIwYHKWllE3LKB2psX72G3fZ6Rc2O0JsTEz2wdBjC9Y3xOCd4p9c8h7_eeTg1f_Zc5Gx9NiBv7n7JWJ-Kv7auzSj2lSq8tilH_7whU62CrVTaxTB0RBNUPPWhjDUQmaYq-_XXhgD_7XVuNPQtun9QRqRqRFieYY0B8RZ9JkeuXZhAa9KSUBS2j3F0TD5JZD-LQHau-EKqXI8qzLfOWQFpKRHq05jvNGtv10JG6T9nJyn9ZGCLjjkTgXIW3x9tL4N5Nob4KxCtY8CzfW02X8XidmEWit4okUnLEgxkHWIUGcuqdeZPfiUSuPvhzS7wK40qySDnjkyrkZYCU0LpB8VjDJAyZ_AY3Y2A164-kJHgcgWXxmSMADtBWvvo08Dc_PhwJ-SWI_HJvEsLtlGnySCFKMk7TxwXprIOflO1rJLqISly5IY747HkLvsmZfwDFdjc4GWxAWJQ=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9768538136"
   },
   "taylormade-distance-plus": {
@@ -1894,15 +1895,15 @@
     "price": 297000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/fT2z_BNEepjFKUN8fTw5fdV4GU6J08GgJ9uhRFnuiZeLK6pa38uxB3UjX-225fEXDa3rTc0iGURh0gmrW_pd8YLZ_c6pfdveW_xl2sIWeVBtzAx9jTuRBxmsZ2KfKFxhy4sDW1R2sGae8PKUXIr_M6nK4MzUIU-76Bua4D55yo1iFfOnfs8Hvo8X6TtYIyUQjrX9AxNpndMzCFwREiBgJR-D3o8fqDEskS3XOCDdfnuw492306uT2XP9cUuorbfNlnDJsGfML7x_Wwwbb_EjhvFx4O2gGCLH-aYZHIHkZURMOEG0oCqudaT-DIwvYUFjzy1mRUyp73N1p0CXpHudRv-wFaHPFiOaU6pEctqmoa6NGS4Zxo6dNpE5g1DrbXeql-45XQmDjZK-fOt5_uCk8Xc39haQkcVuC-haWLg-OuN4AWnA4xCPmD2HpZlTYzNQRwOw0T-YbUHeIDsSbs7_MjBw4vSPPX1vM3iIbt7Btl4dyl4fmfvyTYT6g1YxGcgA4gOFkfgy2xmZf70cdkaGjmEILYPTpzkf63tHIDHEHp40WHus",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9766715299"
   },
   "golfbuddy-atom": {
     "title": "골프버디 GB LASER atom 초소형 레이저 골프 거리측정기 아톰",
-    "price": 140380,
+    "price": 152800,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/-U7kHstPeCpaqXTo-VEQhHEFJq-J_g8U5ojmzWfaYKuqPbZWSYjBm2ZUFrAHD7DwZ1R6UqE_fny3x84uvaDV-Nl0vOEctB3KKpLx3cyt1J6eiWSNJQEraAYoYsAtSi9oAZmwLP_1fohVeM2jY28YhWsotuCGR2Lp2TAEfaMb8o_2XQIiLMjTrKqdyrHDF2kRbAHhDVwNHrkdYk6OzsfRji1CKBk4-lSTGM30v_THtHUF0BVkf7EIsY2WdMFbvQGWKRz22JJJ3-rnSEIFhJIPvKnJGK3FJEqaX7YwLrzFypxWm5RPXnfNxIkpKqvI7mlwoHnUp_nLfh4AZW_TVhFPTM-JIpQkV_rC6oQ4vU2a_qAEH-JWSg_SdxAgu7KHHJO8W8I-4MxwcPkwdBpManmQEOvv8o3yv_LiTOUBAgcbSfqcXF95sh7KFt9usPiq7gTNX4pv4mn9VwupyJkpj53e2SBxn5FXD0KziVJAZ17YzjgFwXT8mkLp7qG20mqGSaYixnL5kDx1dZgYjoTMHMx9h1lbIOEhYFgshuAKXtLx4BkQWPmxeKTWxgKQV2sKvUgm4QJGcQXn5yE8cBsx",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9457319538"
   },
   "caddytalk-minion2": {
@@ -1910,7 +1911,7 @@
     "price": 189000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/oOa7rUvNMEVl6L6foGpcghBeme_UOypUjU1V0rQm0DBDxq7fcBh4xKXDLVGeTE-Q7g63lgDmuEE0kx8zbIWN_LY16wxtDcE1JA2wrmekmU0Z2ed7XkEiABt2XOgtA4kxuh7rczNWA-uzAclJe7sMQo81Gp6hxls3EH98psBgVpsgIx0bDRF29Ktdvm6kH7LR6EcQG_gXfPQSMI3zMdmJSXGh7fnfpVP5vuq8o5NmmYgh7rhZfX87Hb3q0Fdt9x2immdidEJoctRl3EcvlqAJFMEEfA4ARRxJF1Xn1MSHLLSmekjIW73uA8C8frJWVobExW_SP1CsqZ_dUk3eXoSka-p742cab55nlvY4ovgbfrbw0WExTqlGq1PnF_P0fgddIDV_3qIlnrD1clwMvG0TMM9XvxWv3hiQ-_4xHW58QOjqQwDwb1Ecnta--zxqBAvjgUur-vTk3jHSo78SYRn-ExKSbzyCuDijZ7Ez8rEe_wjOp8FRh9X19T3SySElFjdkf8OQRdE3gz_yvKJElMLhFu1B0wFXYt9QXDGPY0snQpNbRwQlvtT0MMqjtK__xJ1OCjRIDg==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9479076109"
   },
   "nikon-coolshot-pro2-stabilized": {
@@ -1918,7 +1919,7 @@
     "price": 376500,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/UiGvivEXF9OgbswfUi1g5VctczTqKbXoTkqvYmSe4DgFkXvr63km1SceL9oUwT_b2GA6K7V0wbZfzOrrQtLbkX0PYT_7n7K6yC1OUwVo9x-CwAbMAPewv462_wY7Br6vh72WtJjxi5ln7wYociDlVqcOd32BzlgDzVvJvJ-itX1r_99a7Regx-CwUJ_HnUzK2EbwOcO3b3WO-WdIPq0Ee4ElioNLEmOcSZanQFfsjA2T01eq10mnypBHn_a1C51cxtjmRI3W4Xp5ycb11bMqBJB8d1hE12ql9YPVOyC-9F1W-QpAAnT-rwHd6gHOZr8MdV7Bp2-zWo_2_zw6ZuuGkHTqLqmYPS5HXDn-phtgQke8JVSaJSGPvUSr9PivHLi_J-h10Go3lNZkRZqQg_eDZI-MOWA5JjgxONrANqg3BjLX4TTjS3Nh_T2nA58DkxbygvgI9Dt30sFMCTaOkd0lCjOodiUsthnOEPt-Xh1G6YyZYK_lXwUaeSkRk8aqFxt6Wm_0Zwe_c7jvut8MNjiMnauk71m7dJBVpe-JCQ0qijYtKkaEH3exd50hYltFjgtnXUQ0iOGTHoh8RjHr4Lftkg8=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7262770551"
   },
   "bushnell-tour-v7-shift": {
@@ -1942,7 +1943,7 @@
     "price": 660000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/BzVB6-OYqhEFXyumB3o4kzHZhXughJeGcZWtJ6ePjPakcS8sYKEDSIr01JeO6EXHKJ96QCZpio1dBd5zRZxTkQhswrMM3LZWWErwYkeWGfqqYmoGaiPny8KYqBUIINArQEJLh6CPc7IoxyslABNX-2ms81p_-Vuww-SeiCicptjugBi-FnmJAHZ30IglrUAEz4rdhjkVQczE8yNqRsQgvWpqu6tn_aNX4cDHFq4glLPPFXwrL-h4i0Raxc5LYRhRIECabCWN2miaR72YHHkldXECrEsidv4_mU2FFbNeUD8ahkeyQbbEsgmm7uMg7u99hGEJEOB6OjUReDWdh8lwKauiigIdltYIBBKlBFsjaia8nv3b1NFodDKyjnw3Mj8JTeHxeuk9jw8HsWahPfRjOac_UOTNgPsqsxehiMtIKHoPXpPDrKpzqNpJU2slDa9Mcf0q3uwTV5gy9bhilOCCNv82lzoYD-2Im76Xmf-AT4kIlTQYm5oacd_cmJAWGUuwj9rzyzg2ZU43-gE1bfhoHFnGz35eKyNsdYfVpYuVodrSYi3RgqsZJIsBCpiIVnc4",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9181672040"
   },
   "garmin-marq-golfer-gen2": {
@@ -1950,7 +1951,7 @@
     "price": 3548910,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/spAEPOBXq-UHqCVCssrQzNNJHq7Xf42DtjQ-5VxeYUOTMms8leTB2SGYm_w4h00H-E2EJE7AfxIEozBN_OjCCUs2yRrKj9wyZNi4HZ2ijusjMLmRIVXt9LU2m_rGiPvxAwdsRZLXLPG2k5Ox7M1yt6fuWoJ5l3aUZue_aV8FSUm-t6zvT2zwBqXGmmDrTTLkS8hDJarhreKVyAne-CRorKk9Z1z78_FxudGraTo8m6Dy_pUjfaRcLQGh3E20UUm_g539ZPJ6d_8kEHgP6V4nyWBB-W57Oc8MVIS2Xkx0jqDDN44BQ6_orDbCTMPr-akfo2t-Lq4P6ToxhkVgjTvL_ze-K29gEpUomPZVwo4shjBNvS9XcJieytkMhMrcucjyzVZ0I7iObVV9xjTjRZ4Cs25bm-K1ySBsKVJ4r9eCdWgB2YasoBw0wWpl16RCb160gtH71oWPlvlF72DD289_tDaP964Qirm4jiVWVjFF6BSI_Y-2mUl-aoEdf1yN1GJBdgaKqUl7NqRGgZUJDCqN2Sn2nIJAhVdpiQClFPpDDOgKHEYWzwviFxFCFwgKEYxG_EyihmQwXUvJ",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8344414400"
   },
   "garmin-fenix-8-amoled": {
@@ -1966,7 +1967,7 @@
     "price": 199000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/rEoj4jfKASkDZ4FJrG8twtiomJveh6zBHa3720W-HGyqRIPpdE-aBk48nOzm9uPelyl5tuSG9w9EghTA1h36epO7oNEr8dl1pPlTpRwjpqwVBNRpnFgHqeP3WofescTP--1oQZjWO1N1EaE-NfnTEtIA_zuSO3Zi9fzapeRQf4NzyzWB5o3fSRlnnANOlqGrabD-mMlUeYIt6zPH-fMc99sJw5s7nX-mdwp16YSPYrxd_Kpn8Y-9fmu3krahTJVRsTA0-7Sxazkq5jbZLiFacKoOR4XIcLJDzgdqUdPdmzoQwzcEbnUGWvjf2sX_KBb8tCfCXgjGxrSMTuo9LBNvUdWOpuFJVboFB5SNLvPTCobemxMtjEUABPq4dRtKAT5pk9F2NCBE5hXqomhYRT_VB6Nq8k9aK3AN2BkpV_4V_TF1cxSx4uNF7IexC5vXhN6UuHdm63LYT1VctJ1p-KoVU0dJs_vm3tPwJyVXZjBSd-DCNSm0IsEeX4spYfuQXde3fAGj1LjN09rvr1R8W0bBEfcWPQRYjvtZ2ZXOaDF9hH4PVCM=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "267228126"
   },
   "phigolf-2": {
@@ -1974,7 +1975,7 @@
     "price": 269000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/b7OdpWllvDNf05Vub7WHrLsETsGlgFjMohw6GIDjDv177taam0eJIQrOCkMXt9XN24kMFs8opZSnIBOywOfTWMbArLcy2UQ2oZH_DJo0po0pg6ifntHSRjBBSfidADcuTSXxdLz0qvy1-bp4JCf5MjcWaOdDYSJKA403dRmCKDiEnU7jFgOoQYelS0JPjxPKedaA_-DABAQqvzcGm08w0wwK0xs-XEvknnVMFMJncI7Z6kE0X2gqokm2EhKfhFqm4VG-1BchbWxX8ULN6-pHmCW-OJNoCiRvl9FwoR7bAnu5DkcqGyptKs0jr93GzCif65tNWiNmWtWel6If9Sccni_FzdGdwVdGrlHqbhUehi0bUplZCOZv7Rt0Um1I9PLXapqqSpJLfSK5ywVRb570Ug8FFaeaHmgQ0QkTF6PvIQ-E_OfB6Nwa0uZeQ9uhYaawKfBRoqW6_DSdboJu3MvT2tXikZ5j7Gv7MpDCQJp6ySQlZ-dUyK00vRcMDHtps0sdrdOEWZVS-3mQHhJj8IdCHssrHbNId7xc0S08fr9pWMYXUYVD",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7088199283"
   },
   "rapsodo-mlm": {
@@ -1982,7 +1983,7 @@
     "price": 369800,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/vmdll-3exN-cdC7JvtZ5lX_6AmYfziZvTKMg0a4pbXvMReUM8eGwcsM3vq3hB6O5zi67DK5TufjeB1EaegGFviiB8q_bRVwZzL6qV1-lTCle-YL1c-4OrvpV7TqagRasLg-hMx634NrRsonINr7bxGAT7Sb7vQQ7W3picCPrWHx37K-1GdgHIMRxMhbdSs8i7HssTq9H76OlAVUbwHPHE0gcTJxFWH86NFypTpzBzq1YRQONoZswFw8FrpRNluoel-KYawSY7BTvWOpqrWH5YkAlNdj8nOzeOLirzGNvD-_xUv_KP78zRc3n2aHA_ay6GIYC_OZfNwjOsDerxEQ9U3vBSuXar5Z9VmhEdDNfFsIDuhFxfqbRbCMk5ji8G0YYPAc4s9pVQeVR_HD_qY6aOO0DQZkk9dhmMD0iiNSTS9ycPZtACmFWQulfseK9rquyL79Ew5b0tIPO89ThH8dgvcVJ4KK8ocRaiGsExIt0oLK_rgf2GzLjhj9rR8zNuu8V_eV9eKZdpt56RcAMk5APw8dXufFKzqXAHIIao3qzGOGJC3s=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8843138648"
   },
   "garmin-approach-r50": {
@@ -1990,7 +1991,7 @@
     "price": 7399000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/gcK5VBQc7nDe5pRmgVjGDuOoQNOSPTY2Zg1fRLwJBs9_CFjf-2Own2_I17gFgBDNwnz-OE5VECy_d0BZAiPi0RPzO8XMAJtIf1Gr9ApF2Ylmhs-4IZcZBUhYrXQY9-V6864Dtj2r9l_UKdYoHtVYGwUc-SqZezBFl-JaEskv6166Lb5X7ED9SNqkpTTwE10OKGlFNqvecShBGzyiqBLeGqyevbThU-0kveYo4iWffNdieu7Wnz3iXGQHj__Y0XDpegXFpT63tvLFlKROszLlO5Fut-Tu3HQJ7hWAcki_EXgaFMWqECq_bhqdqDrQLOQ0hV2tyP1SXbWmC3K61-TSg8Re8EJdmCqi9GBQXgEcM2NQyEXpbQpImNn9gQqmzJS77FTN2wEVVduQ9T63AlZyfR05OrGhRv7vkk_NOEXtVqkBwq1yRoHnBL-KKT-6ZkeIMuU5FKVTk5CNTlce7WCZ_SMv5emfOMWGG2VDYa7UyTmsjhpiZ1-Q3WJWr8N52H4YWW7msRNdgy9Q2tIbiRwn2hghxEWCZpc_7ZLKwTbUnC5zVE8=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8610415152"
   },
   "nike-air-max-90-g-shoes": {
@@ -1998,7 +1999,7 @@
     "price": 142900,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/udm60g3x3oOhQeU_uVCPbVbjRhZkAmZ8jIC2TCBKvRJtceDDcyOpeY9T7oHVAmTQWR67AGMUdYFeygqThBd5sU6UgpVrck2rbulB877KtmoeIaOswAte1t0S2Snku4a2VF9YXTtjfn6Fn_vuaS04BkGLU6AEip3ZtSiyIUbZiM3zGhgFoMhQFX2lKz2hKRVI9Kf5NaLwO9BBoTZlgjirDWoJeVa5ZhAv8u-qD4EwWULnsWuwSKFCVrHqCmlcx6Aj3D3cp3xbJnmDV_n0VcNYfzVINFwFyy_W4_gXEstQugFn3yL-xXNc2y_L-CS_vBmI5Q6XcuGHSy_7EYUEd9aSIHQjBJM6OSXhZMiW4kGURtHOEM0p2B0HA5U6M5H9j8GSkhDHw6RkLoG9pCLrYqPVUotLEzIoVX2UCZ8CK5n8vzVMukB86BoDrYylakXH3Ka2TUxaFU8TZDXHoOPY1ii4DYPOQMF1mTcXHr5taSBlbl9c-RnbSD0A8SB-YLf-QftQFTUbNRAmS_43YxLEJLAvMm9wkUOvL_0o6CbwuTWe8-G_5pz8d8XYEU1QK6DJPfL8XygSI2gQfVRy",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8664258514"
   },
   "nike-infinity-g-nn-shoes": {
@@ -2006,7 +2007,7 @@
     "price": 72900,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/tQeYQm-LAPWcFK7ytePjBpk6hVMUUG1qsvzi_iRDcdP4iUXpTyDfZVzJgWWdGLuuU6iwLSqmOG1cVCLaDVAMRfftnSleaQYkeSpjEjOCYus78Wy2sSC1wBstOhDIXDd9qMMgIIbN-anJWh1Dmcs6t49PhOdNf9ZIw0yvvqmDL7a4GhIRWHYpY3zWXEwvDvfmF6yd8bttvvsCNJmOBC4ie9J5-uMM4HMilRz5lK7b5BLpjOyuQNK2D94YaqlMRW_Kq9Vi8Vyx_L08tyT4zXYvkRYq7vdsh7iTRNkC--9fuiaa_Oq0--Bf0oNC-vWg7xinqPLjAStheGSczffiKejpPfjWehfyDZ_ZL_taibGGvDrIhwH9e0dI2TDhXghxwFXQ8bZS4tjrvW9b5KhfWP-dG6csl5amK35_0_o_INYmP8rFufVHMgNOfOfvsufAEIpl1K6yUc_GqTJYRqovqvSYp8E96ka0U-mGbgM2KzlOMm4xKEbwDhYscKec6t24HOPbqtm4ETbIW_xSYU-szmaB7OiA4YAHxkvmq5LU9PwWE5zw4-GV1Zr1ICBkLh45YulzL3P9hUn3NC5HS4BNvsq4Vw==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8099119862"
   },
   "air-jordan-1-low-g-shoes": {
@@ -2014,7 +2015,7 @@
     "price": 189000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/mJIbAWiRPAnAazs4mIkEwZa07mMiMSXxCNwv8XJL_9QM1fw9sscob91dRg6qh7qkOgPnAJKbdRuHmbUR92U4M9JKJN4FHBg3o-r7BsLMqKud3aGwxsOcVKSjkkneXXtE_K8RynKiYg09NFcuskdpvWzE96G3HjoMMQxIWV5f1odToedGzk9Cy5EQlJgMYxqJaovRcbLS7mC1ty-7UlYJMgLym6NKBEZPgHEKfu9PANAcgj_1nEKzE88da0n2eHHxK58K0F9inJE_7bLBPePQfk2ntd-BObTUaX-SMABLZmrJKZkwVKBEFH5APUCf6Nl1IcfoB9XXzXGSrmDuIJFoZUTZBO2g3S6zagObxuNenVXmbYyyya0JhXMX-xBmssnunZjdEemchjVMlQISmYVdJ281ZspBL5H7-_5mtGna6PlVM4ZbDJOk76YulOGafx9oL0FUUsq8z3traYPcuzmmUzX_FS2VHZiomnhhDz14ZjnjCKw36UYULDcQnOYGC05QYsvDj7AFru-rUkbnXJuH5qwIQyQSjaawfBEXiovHeJMNNTByL_QNh62j10SMnpc6DwRMIRI4JqDu",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9753828354"
   },
   "nike-roshe-g-shoes": {
@@ -2022,15 +2023,15 @@
     "price": 149000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/X9Sb0gjs_1QDaEX3X-DPAEJUaLBPlF7GBB6TbirXg1wdXbh_dpDyv6XeuzzkD3XTz28umEx3OvLS5-WWLPK97fCAPmXJgkoU_FkSoCFFKYXSkako60dG-NrLVmYLIaTixtIhRc8O9gN7EWOi9b4aN1aLyy1F1BvIP91kvjmsQQrel9fvRjrEXFoOtJhb18E-9P_wXVawnMfHTudvZqy_5Z7CcoffPl96nijKtnv6rRBYXa537Gi9f19L67nKC7OEdFNcb7UMzcogqlCL2O2xkXIvzM_HZ2ZVMeuuWxeeEAmIpIT8bGjuWs7ipDXz4o44RgjZbIKCvIn9gEOXwgHIGzjgeuppafbTRATu6m2504J68KIrgh9ZJR-LbpYUHxr6-eLXby-LpflfNCFqqLso0H7Tl_rn46w-dgWCzyJRcLjynCF9rdwoO4Gea9VAdNuTbkCb-g0-R4RIq0aCjCNp-NkLgCuArreOr6bB7kXNDPScDNvl0cjjZGad7uzwvYoF26nbnDtTJ7X8H3mYpPwnliwkL3cJtm9Y4JtWuF8DmHTVXA5bIYSuPrcNPLSIXrcVUkguUJkvdBVY",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9720076381"
   },
   "ecco-biom-h5-shoes": {
     "title": "에코 (25)바이옴 BIOM H5 남성 골프화 138014",
-    "price": 340000,
+    "price": 296000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/oroK9bVwkyGSid7aop3TuMiboDz-o9hCj2p3CJL_heb1BQqvVckz2gga7gucUNVMM31AQA3Etb4hKrgQKT62o2saVK-rbOhG9tZCRCwOrisl-SKFMxmsK5E2KZE1LUIVliOHItz6busnMq-I3hMuywr1AT6Bzd-7T4_3_pvmgfuIIFQl0LWinBKqLx2HXhVCOr6g3oPrkriI9kQC-qP-CbFH58_XfpmQlXvri_ZLLo5H0Gi4VXWo3zyvzK1WdFqif05HJFPwi5n2bgUGCiZvIg8iYpkXTcRLVQ8FbelEg80P6iwJFvmmOAEbtk9lpqcyr5wVy9yCJ9-sBde4nQhWNLEvwBZWt2HCdkNo-RhbwbNge-f2V_KDQoW-YrfotdTYu0k0tkub2wmoeJa6U_aqeDHC9uPDqOxvBdZtnTOzDIuqjM-fJyny6ygeHfNoS8uq_NhHQaH7912OLoqCKes_-ChYcMT1fpKFQaVUvGTkMOwA1Dz-yFpNWOxMBlGKmSUqsSDG0EWMAGVd3MAGeh6AhOMpqj9CcLYVEmtOyxfg4XMCuawQ-IJg7ZyQZNb9hw2SVa2RNV_BZl5eZnHRkmT5ExHA2mnJgnh_m8dxfkM2sJu8bKD9qC_Oiz-IZ4veVC_-gs4=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8685906484"
   },
   "ecco-street-720-goretex-shoes": {
@@ -2046,7 +2047,7 @@
     "price": 138400,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/7GQmAVLjH-2EYKGZ7NApAddCQnnR6_XCau61qA0t12hqWQ7EQTzn1bnKPo6rZNkgUg91HVntGDGVTj_kPJDsZSZGDDkjQgChKR76Fcdye7JT-abPUITdWEnHAmJ4dIUIiGwz5kVANb6nlbkXog1gMI81_sHb-7L1LoFC65M8jjA9nXBPz8qNwe8EshMO71M1hl3hVtBcea11YC7PUlKAsJvAMDKFLSFvKSiJtanoou8xuU3B81stEISNMauv6mvAj-Er5cRJYX-SO60Rid8lynbom91lVgFy2gekYfrKwNtlbaVf99AFizZ3xLVr0xJtxDmvcda1YZkq2fLbLLpuLKxFkfoIXaMjNrZLm_-LIglgwsZISMkLVp_izdTzCEfB-UW5XNhS_hJVx1vvLnhTzikm_xYf8zi14lcvpdj08ydVjTLluKs39p9ZtWyHH8pYa681rLXy1vOSkQWdpXuWxbNwmpAXL_graBjtjrAexUU9KVyLtKG43KjVRmygxXq_4ctJDrnAE6Ai-TNMnJogu3_0NI9Gn892tHms2YdJee63UlygbHrZ8YxlUge-pbB0",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9480908731"
   },
   "ua-phantom-fore-boa-shoes": {
@@ -2062,7 +2063,7 @@
     "price": 189000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/Yxaobx3A6qIlibtbY_J3MYe3EuTewl9JuHpII4XXB5XFmxkWF0bzy3ho5hVHI9ryb6_pIYI--tc8F4mEitKs6fsjpYgB41hXv5vfRO69lnNtNHgNt7VnrcZnO2OrV_J-dwRZhCoPdGz53Uq2R1EIUlgmMOa-0vUtfeTsP2B9QpESHnklp1MspJ7l8OAj5snJ4e0GBHzB3Br-U1yjDY19GgneuSUxOJfHtFOKjBpLIjDSB8F6cA94K8wrz4txnJofzfSKUI4cXK_hz5G4SC0A_KNvOGEKsaEFZtzlgp6rYk8apxKmur1LjSmcjLlqMu-OR4ZuWccBJPGRXJFIz78akeoG2RewGbAu0YUz6j6HNixIuhFmb7BxuxCS0MZOSFNYnJ_b0W9jFRtRfNVsSHFbKQkfrH9SSn_D2yWm0DkQ7Qf-tMp1zj0RKvLkiDMtN3UOSUoaniIHVwG22oN_ctK0kfFq24naNQsbUIArIRPMwo8OFRLjRcSWIIyoQKqaIpCPtL9VkOWQsdhzX2cislYOGHdDOAhSXuY0ZYOrTCUS5cFQsSh9kfyL5Pe-eHKnG0Yt_j-OPZOq6wNr9eITbf_b1UfRC_LZEWd_O0UyN2jdyn1uvWqQu0GqIZ6Q8A==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9468516431"
   },
   "ecco-lt1-boa-women-shoes": {
@@ -2094,7 +2095,7 @@
     "price": 118150,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/yGW5vHklgAGd-t90yNk_1-huey4Lb1tpTGSxIbSb1e6aIjShabHijXaYfqHuPS3IjmJOGHxzcyaToRW6xufQYQWhzktjkrzj77c7JcYVUp9R5sMIRleKvA4SJcItjFp_JxfYKoVc6x63YPtqZYrXlTcug1LgeDiEiKfWxRw3qoOW1GXFPwhyDNpqMph-n1EWx2Ui1piSSojMmYLv4NtRLFMCkkBi-jN6sTptnEI0zIH4HfFdjeMa0aPL43cveuiibwLpwZR2bdfGI9-xy-kp49eOMAai1Fr88g7Jg0JFu3DBXvKq1FSdJaccO5kNwl4I0YqbpNiiahHQ0zgkpiLPeaDcLWtsnsWeHL2Ye_3DoG8PfkHNnv2uIx-jtUNfnWrT38r9YYqIC8jWh8_i0DH0cs8aLFTGv8VIcX5xG52pLeG2faq_KdCr31IIVNHyTVFpq2rVkA7ZBD6JRR6sfhIMkx_qMYArjxwVfIWY3EDLyMqzTXkw1K7QTgEPIlo3ZrDPTmj_8uBxjsMiq0YnPCdoa2ZxKWuD7KkcB8ytohCvaEpRoC78D4-IxQ==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9341602156"
   },
   "nike-air-max-90-g-women-shoes": {
@@ -2102,7 +2103,7 @@
     "price": 178000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/J7V5JSnQAFwCVfuOJ0busO8VL2VBnjM05V6w6QMxDf5rCu10XEKUDrKbloy_Je7xfgSRH7csJqTBzUxvEnoB0HE_aDRG3kuzj6gvohcfb7j3RGeRRALm6SiQQt0zA9pX-D-K2_f0vxlK_Z3-mtJ7Kyn6WXQ0GXacV00bKIR1ZEZ7JczbuNDtdmP1IwFGdz0CVAFEGgk51hRoFAHdC9h_EtwQJW9-i9gtI1wKpd6pkdcd66xn7gE6iDIrGzA1iprmHJThvPbeGmxjMH2KGbtFrWz-qBr3i4GZCyKR7tc5mYTP-j8n8GE9mMjsnuQdvOEFc15NbCsV9W5net9HzqTZvHC5ViGnDDiBJ4Kua6x7ZCst8LqsmKKEl6Tl5DFcibmUZ8Wa3604gsKqhCFWTRvZLD6s8Pg8DnLXtQuGN9Pb3zwIaW40syNPQ7bP3KSt9T-6iAosMJhShFsndAp4JMmSSr5Q4eukCeIB0DJK3bD34K50klTPTqQPRnIT84CR18ke4WaDNXkH4hJdDpHGCPUAlYBVA55cxj7oBocrMChDq15fbfFcgbdLHgLIdzNL9vB4iwuRdPKp_cHTD2bnX5QBq-w=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8664231811"
   },
   "ping-hoofer-stand": {
@@ -2110,7 +2111,7 @@
     "price": 316000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/ZU5oW4l1-DMU2ciIZTVuC8g-tw_RpT2CbZ6iadoYQ0mD441nAM14kvvn2uGpsrCQD_9KWC6mrkIQmGoxzwMghLI-yPE_pygPg3UOdRPTQHi8T0qPWbV_kAyCaBKkE6bUSmwgoh-WyNavA7PmOlVk4W2VU9CKLhhL6QbnIEZZ7lWRiWKhrYkcRmmAvewZ2Cme2fRiHZ7EEADCATmKavf1ofZlxs60EeBK8F78Lb8q3lGWs7uOnyMpVqzvlS11d4fjGr-16MlFbzDOme-_HYEVRaAqLEfYaWflYVXLF15CRRhgk897CGtZJfztCQgJhMl_37AB04PZmZOvWQYCx3WN0FJ9VFsj6tgxdygXywBvxxFt8xK83v6s4bvSKPll7Y4Az8cqVpsZXKAQFxAtRoGHoNuQMnkauJIAiPUPZ9PhKfamcDB2lNdgq9MP4tqYUGOdz82mdazaLuO7UHgwBLBzqVcdU5JtbjEIEJfn5yZIY6Po8xJgt_-LcJxXQt4TcAsFDnBLbynDqtTDvjPKeLtJwKq5y5GYu5kvLKD9Pj252obt5FnFxJa09xamX454zFfCgFivdI4vDKhAFeAx",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9066039683"
   },
   "titleist-players4-stand": {
@@ -2118,7 +2119,7 @@
     "price": 329900,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/Y5H2eoSdDfTCtlpLY7CENXfvQ2ykbws8P_Y4Lo19D7qnWkMgBgrzoL2CGp-zjOvXnMT9FFTgkjSOXdBHKtpIUPqIFkcccLGFaJIHzhep0iXd4lqB7Qrh17gDVxJR5G563l6kZdH5sm7QpQCANMhAViscYGrfD_LO2zs1x_L4RHSzBajf-Gme46uy8b1u9OowcGTwxwsmfBNxJSq7i3lD0-HNrAL4DwFVM3c5swYJs9HIL7-32AW3ynsALfNgbdUO0fk0khSF2Nrz1lknI3X5GJb1ESJaGSwa-a1ODXIgpsUUV5_2HVVX-gCcslmwEWRH0dBgyQ-US28-ahaSTxtL6Dcd8Qzy4uhibrfVu_uPuKIA-1tcbuAMsQKRgD7YMGPBWatTSDqIZ33YoyEjwxZhszODXQAq1SDub6Rx4uvFBV2wi5xBaXMW6aeZH4yyGBJBDNF5p9VHGxxL8Xt5TloPF0rRizkcZtD_fuupTtxqhMHaEX3pT4Cs-68s_m3_1shOQxYTplf-khQp64j-kIIMSQaT_UBwoWAJJgXdfNtn2kSCZd-DA_hjB9p2fQBpXyathzzSsun6Ql-l3l2gaOzOEmxZaA==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9554135146"
   },
   "titleist-hybrid14-stand": {
@@ -2126,7 +2127,7 @@
     "price": 390000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/VWWhEq4kmi_IsY6GVSTO-IqxpKU34WTSJtXv4qgGLewr5WprF4rkqZFklp5vExZbVX12YoyuQ4K47aqgM7zaNOyOdnwRx_dgEqdapDBpjSEWkstbSjS3fjcJLzeK_6usio646qJzsbJSD_304vQgAUB301JnqDLam5iZYmH_N4o3tVDJeRfKB43ottMqdLLQb_M9Ux02pNfTMigROjgB8D_SyztvETHZhLm-XuYZhKd5nlA9N20EraZ1t1U2pKU3TIuSc4NYjKnaG4IcIG6fxyovriQN9ivbC0TM18jhuKpxEm1OzpimfO_jgLe-GThvLNXReQzV8p0Wjg0MesFtNvkvEUk8JI3ydfxA_FEJy-BNrmReEN6yFMxgHcyJuj6g8TwRPs4NIcZCNdqpfkrylt3EUCcq5RnOTDGAxX6b7UhHjxNbU6IqxJP7SOHtBNOX5kwwd3kRweubrRVrE1rFMJ-qTzhMyDAG1scVt6vMfmfv26_VVOXGmAs-EnUAsM0kvMmS6clQrRbEJmxfsiqDoUnbSGj53A8tNNbtuloFYCipH2uBFU1GNPp5WzvFu8I4bqucI2QK_-PetMC7OQy9-HsU5yE=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9482821790"
   },
   "cobra-ultralight-pro-stand": {
@@ -2134,7 +2135,7 @@
     "price": 599000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/_59iYWQvu9QUemXy_-P97GUUV8Fm99CuddBvr9Bb7NcTdCSbs9wvqC0diipxYIOIPs9TEF62cik9AGITwAe5KcDNrQ8c3p_aGqb5xEROPcGMiD-ZN8NPNf7sZHeICm83Z3l41rpN9DSvLdZ7KY_5JumVDqZ45WjHTM4ObPwBpHWA_ucmwsGqtsqqS9jdnXEHU1T48H8GMhZyc0bhOVy8W_nla0Rcitfy-ARC5VM23hdOIWeyn_uN_Bq50VaZ-9Pgz-_b6iDIEud5KDlJipKFlIces6jw4RBnTm2QuWnAZItX5SHZePYitA3hr1TPLZohoco2gHcLhHyk2pSBvv6oU7zKnPEbmaF77tFeEMEUrEEBB2ZB6Xk_9umiXjiAHVJIxT7gKZkzIY_yIZrO-wIOG2MUe9NK3cNEVH4A93q82rgqZ6sDVTEbGY_Hyrc8QjWe_DflYpra0wPGqVes094pC9-7gPtSIwIyDep63qZQOgGY8_X1Cft-PBiOW2fhAc-PB65idb3SSuryFO3bvlH_qLLkGQy42IU0ptq2Gce2Eo2uS7-sg7LLObGHuewi9rEIZBbUdhpAjTLndoNLOzGf0DI=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8701870130"
   },
   "pxg-xtreme-hybrid-stand": {
@@ -2150,7 +2151,7 @@
     "price": 753400,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/hMq-gw9UH_TkwAFshLy2FVQzm6esKRliPlXuQleD-yBoa2IEW22pMpCr5uoB2O3C-oL7c_5hN0Py6d3D5Wtfe2ypGQvC-nBk3_v1jCY3wdsqILgY8rl4mEikngiZ_iUaRzQsLi8BPsJHCG95yTW0JmQjMbHXsopg5zDdo3nwGMsFR4qu6XxvUoaGLquoWjGXrGNsM4nHurFjXVFu2b4CjZpdkqy7tVb9rVpv_7S0U1ZJM5-Ld3BECIeHg-Gq6utXpE1xIYwLmpQkIqtc3DsEmX3wKmNYocMNyss9fCMM-r-21qy84RoPCIAeJU9Psjv0pFrorpZPB-2ZlOerVEGqbDuf5fIIxYhYoBfFEaqvPryE4aZ2333yUvYLqxheNZPf9rgI0XorQxKmNlrBQQcgn5tOTWL8SK0dNqvy7JAd6zHmu7dkzr5dyd7fJKuVD4uSQfzq_EOWPfjvCb2UUn1_hf2_fIX-IKOxWa2Kq4um-4ztzxkGJz3CvHDzlNlYzDBhF93KdnABrFG9dcdSs4-ERx-FANeNC6qk_DGtCHPGafqYc6DwU748t8ZcRMcPVqM3FLJHbIxVytubviQ7",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9326485039"
   },
   "footjoy-weathersof-glove": {
@@ -2158,15 +2159,15 @@
     "price": 48470,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/3mjz70kwAN8QFJpQ3hDzev7j0QQCx67XZq9ZDH4DF-1GlRRMI7e9nQRFgXdHfarDIIftdxBHR-EJ4zxJz619dkWex9noHiAWJdAeKxyV6HP1rigCSY_5y-s8IwjvFteKGJfObMz6Zx-npY9ZgJiOCwf8Ex1CfsaQ4hTiwnXBI5oA9ClXoR1M5_4LWroVvgo6v0_-Emm4EXtyibZL2WGtcq8KBYCfKhho4urYZtAyS8p5HaXqwifnn9v3fUbaRFPFL6cbJnYqqEaajxSDxkFMyErBmL9ixoIQe6kxUKTs8JGUqd_FANtD570T8DTy-274P_9zdaun9dztZ7afuT4_pjImEEqr04ZqsfWAy4_3O9dvWDxUjzDJoarCtSSZf_pvpGsOldWjjyG0WMtpbAd-wDEsyCaeEAv_jfC3RGYKPW22WENZaufsy0JXGykcKHaLLkiWMWwaNwriWLlbZ0vZrXfno-KK1vq6M3a39s1z1d6NCGNBlsuDYGoW0scytr6GO2n2KxOIvfGt1nTVssr0mAAEWXQo-M_i_QjCwigQSP7NQ1eRsoTnEsua4L28xgXSv6lYDm9lPg2N8pPf8DPahyUkPJmFHDY0MJfq9MujPklNdeQ7Wf8Sg_EAVv-TL0UVaOdZkKY=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8161744391"
   },
   "footjoy-cabrettasof-glove": {
     "title": "풋조이 남성용 카브레타소프 양피 골프장갑 왼손용",
-    "price": 42900,
+    "price": 28090,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/594g-SLOtTo3HRt2583xb4ENpzzIBvhXpz90_kvYVtNjFTJ8hJEhxsmtxLtTau0iFcGK_qcfDc12xfQ19xgqVYnOwTO-CCBYqm-aFaTQDVA06ihKSEbWixFSX1u2AMdu83mUKImfGY6Hb9yapHMiMoOwX94Wz2MOghOALgrqP7Xkeze4jBO6hToFoE89PTVIh9UTF3JGMFJoSGa5pVg67ccGvZI8H2W0PGlVPYX41ch24jbnNLL4FFwsiZvjdoc4lOq1MFxqb57PN4vYztvdKzhhNF2HFpuUan-FdDV3g0vZ4F_aioi21f5uVKmm9ez74fQH2g1bX12GE9DoZddbIU8ybJdNnkgp4EnxLQSnkMv8kcvS0eUc0XO6Je9c4PbdVDnwxoqOJfC1GpaIXptubS_ODZEoRQABnNhxIL-Opi_gU7neoBSqCfcpxcRvyYcmMtEIuuHgEqHqhRwWahRgeHx0lM7X5gsS5MZ72u7S8r3UaOo-ZcoBdasLISDtxD0t8464Y33rN-L8ioaIWhVH7V1IUGNz-vF9saNzkWxrR2SQc8ra_QWIHl1-95Kl",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7415889539"
   },
   "footjoy-raingrip-pair-glove": {
@@ -2174,7 +2175,7 @@
     "price": 30000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/X21PqSbGRsybl34fX2CvNPpjAxEPCYhtaNCylbqUhRe_ZGYUkCAuE7yzbR9MvdPp3QJVrvKXUftYcx74ZpOOPsD2QONXcdXlngbmVJLGSlK5399Q8pQwBkm-93n4Z_s6x6JjUrQo702s9LYy8Smt6IzgPD2514Kca4Gj5atLWIcamb_9vBtB_12USnlpdynolPLeUFFMuMlBkMblPetasHqqSEA0th4DuyM6OOlTc0WvuP7lK5p6jQwfYQglbWdb9P9H1NtomS3sKuRW8HfW7HtFJJT1kQzkB0MMdSJhA4qVSFm83tYQNcx6VuES8WveUSyKBb5cBh0nzXicJYpSF9bf3b-dSqvU1wPtqFvIsZOdxjmwvNS9G1T9WHbcxlAHyVYkKCsdru651Lt3TpXj44owuCj4_Eo3xCmH7P6h_NnYq5qy_FVaF2k03iYuVVY2V8JeBTcMQ6IkjtHhRdHQ_ZtWPcYGqASxun0bMy7BaEhReycmM2-cO52k5nV7-Oxgi7Q3SpD4DwHt2zM5m4h5jemgVpwl6MgRhNxpiAhi7sWe0GphZzT9IV0We7Zg_42vD8OPIrMF2GXIVCXpibITUP8UAyGVzLogqJZJJLZEEJSNfF6EI_S3xnBU46hmAi-2QCewFwI=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9574767368"
   },
   "footjoy-raingrip-women-pair-glove": {
@@ -2187,10 +2188,10 @@
   },
   "footjoy-lady-ecomfort-pair-glove": {
     "title": "풋 조이 골프 장갑 22 레이디 이컴포트 여성 블랙/핑크 18cm 양손용",
-    "price": 30510,
+    "price": 30680,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/jweIkYVHSc8uXJ5Nj5n1MVzfiJDPNFczNfQkm3j0gSn9ADQFZzRAFQBfFel9jj0IydiMNSSdzE7kGGLK-vvqYsPEkjDyHPAXMvjy2wW00-7tmnLBclsSmkLBhulwkvZUGHVxAB3moeRMfbhZym-qmc21lYKQqNo6Z7MLYbG038B3GFjDyY3tsZf11g4g-8dDGOZmNz57NCQjq4_nEv8AMkYp_5Z4fU6JaRt0orYl09FTh66LB97tDEpJ7uG8B9rotJlOiE7VCgA-1H6KklqnDz1DlyQIQjzHaTXmvnj9eGOdGopULeeuJqLw_L4zbNGE2mDtGXLgq5SnY4AcZNO4lMePvmY3lZ4eOCp9TjtTVvigI5TmcsaUi9tUv90yiJA2TNz7PCdQ3uuO-nvaGwWgh_PONR0WcJKjHq_k3Y23JWWlowg9I6HLxScUHNQN2LyeOblVqdgdWs_LkopVGSq40z-vdgRelRkpGhvYjZ0U2ch60uesuYf1cVDn7aNtNY2tpDhowD2OYLmI8zlyug1mdp-ir24RgsAWbEBKVmWBUzflT6RdlHyBERW3ln2q0osiEowukB3OTPBa6qWNe6SZcV934w==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9781720358"
   },
   "titleist-permasoft-womens-glove": {
@@ -2198,7 +2199,7 @@
     "price": 39000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/gnTApv1rXHJ40ssJgl2qbIFiXJW0B_vhAN2npWXY3Ysjt4kOD6_JgSLoH2TIfIxJUctWYREkF6mfaPczKND3F_Cp32XjIz0lDIzhDMbCfMs9sZL-yeNXD2fR3_em7qHEotzfTqbJyxUdq7fnBzFY5sTbscOanYPcLoAQq1TLfTonF23vLMxztm8tZltRq5Ks6d9_4aj-ptaMzJAG8Xm5rksMyE2-ueZlGpb1zBMYp1No1AjDw4FLLGAWkhea7SXdh6GNJtT93k5To1xdqbbNtADGE28DDlie40pjOK8kdMfEIjufqriVcsss5kUnEbHf6WOEaZdRulhLVvN61Rw27qZE-drmNtn9Xo-IEFyHWC_JcCaMvZ6osljrV-nrxWW7JIwOlttBEOkBK3MReOHQJz0w7Kg3RhCGDZf0tcyBmFnJDESH1uspeSWfLAcm0tRYjbZqDFKRLDFG7OGLyEcMSMJ4JneuGhvHH5l4oy3w1xRVtwBjXaK3pTTtUGJW5ajwc4dxw_2ClF8kNgoJTc5nh8t3HEBldkRcGv8jT-Ag8AABjolwL_pXNFTL1pnkVRz1BlrRJvxn-G7uYOx5",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8527142463"
   },
   "taylormade-tp-genuine-leather-glove": {
@@ -2206,7 +2207,7 @@
     "price": 42000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/Jwpm8Jrw1WmxeM3SJ-XLw5FoWUZ1KuqPpTjO65MsL1wl8hi0h_BghCyJsffMnclSqZ2YLRhFHOIYIhq-6njNiasPDJuzaSQgjkkSMSyOpLxagJSEihKZkwM3oiA44HJJhyqCNZmSaEkFmaHaZl7i4zQ7hENoO-pJIX8Ovo6VyMtZcszoxSBufJvdfxCE3zs-GB96snflwd7Rckj1X10UReyYBwRbe6WERM6gxtOJNkX-lDfUj7rdAozL03_CwK2LCe9NoOXsGFCPfLMGKTBbXGL-jrMiRohtCxiaX3zCjV-o5rdR8WaoHm4ZhqPDs3v23VG5i0DEJVxTii-cAQBHDz-v6h-2FzQBf6ptm8CytkwGKS4GZiRj6V7-jaZp6gb4F5pXkjI2EZeaLLH7VRYb2BUU2eEtolf_gT_HiPjrU7g8LHDqorZVOZY8Ezrvd8qKW-WOYRMeEXne0qLXNXYzBml1OCNC2CZHCuCDayDBPXkThq0wRcU9jybZaaEGzhMEKG6gXmluEQCqHQdqN4b64x-nuAN32Ok4JwR9ysJobIO9_6wZhXu_79dqBWjakrW43Cfsf8jJnA==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9366608968"
   },
   "taylormade-players-glove": {
@@ -2214,7 +2215,7 @@
     "price": 14440,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/NSm3bCO7oyl47oS2NbqCPVwmSO_-e9EUVjJiBj76sSQ6A6btwStMuddVaySJZrvcfx0JUhCthLeH2F5hF1nVzGpSqhBDnfi7GOM4RvchqJ_KvNmS65k7pCQe0XBQi70rPaUI53JA58-601cka47v22COXZm3-58UKERLQZqHNOekQKMekJDAbQM6mD4PXBeQyh0szoZBj35_0IBeieKw1OEIz_vu21vxp1b86rpWqlBQWLjPE3JkFejskbuB9AOtF8DUnmIMg-Vj_RudGHHhS_LCeoyQGYv4ozVMEfN6C5V_qk39EwGdNfQps_bMysQX1VHoqKHQ9OA6u9qReatr18_0yrwOvJCD0UwTPDNzp79DSxCzDOHvCj_VvdUmxJL9kUJbtXRT_UX53pOlKD2LyUG1UppHXqQntAFv99ePf7HVh98-Zub2cqvG0lf5F9fitRzwhhUyUXtI8qKswH6Ny8x1kJWfE7h6sMgu_UWGnQT1_DHXCE2AcBXw-9CZ7wF9Akb0HmgGOt5kTYIVJAtfnL2I81BqUwmbFTKNQLNnGxT_svAWCdAxG8yXXs3mUxqy",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8691264382"
   },
   "taylormade-durable-grip-glove": {
@@ -2230,7 +2231,7 @@
     "price": 70420,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/-MgJ44BuTgmuy9lM-Ilkcm402JRT1DTaImd5zolovneZjVAQ-WKPLz8j8ccZn-1PpIkfE_DO7hW_HEoCLfF1xg6ogHe8Lr6AANcUsdFuF31PI-djBJSyNM9jOSkNaT5GmGO0IwUqVNqmLng1SSG191Tn7MWwiaMJssr2oi2Tep3jlVG1qQ2qf1nw7mOsdLZtJNIg6Y9Rf1mW_0Jl6o3tNvLCzF_hpkgfbt9_2dN9hWF9B-VZHkHB_XRB1Hd3ez-WAJgttvBM-zUFnqRnGfhWsQPvR0iDoUxVpCL-jyj23D7QtaAZK3iJGn9EQgneMJXCd5W7EV8p7fGpPhB5SyoL7hXiuxazOqEVqnd6HsLT8bpA6Jp4oS06AaGdhZ5_95ILgUaKym4-QyvIWc71tbDE2pf0YnyS-wFhEiJ-fT06z0LB7J2Pwl_tn-_B-2H4ldh3bN-Zx-PVTXuABh_tEyhSJYdff-8t0pfeoUritO9CYkdGKnyE04RV5duxitbAPtQexHxKjMW03Ba1x0e9Ii2d3SW2d5glyPVLy4RwT2zVxWgyc7c7HecKbIQjgHf25bybLRUj54K8819MenldOaYDlA==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9618008864"
   },
   "sklz-gold-flex-trainer": {
@@ -2246,7 +2247,7 @@
     "price": 237220,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/b19SJtETd2WE2qzwb2zCxZ-eajKkzimvOtdRUvqUyBBMyfggwP7Vpe_qHYlgDnDO_bI6cKBZ-8bkB48DvcorynMsd3IN7rk6jKuDgnEF4ALnOrQ49sc81WLc3Zgd8oSZ1TfiaXt3R82E0oz1NyKdwavK5qLKOpA8SbpEiisaJkQ-iWbcJVeUaqWekyWzRlCNb58q731FxxqxdMiO5H2KpH3wVAQ4sHu3eqnnfD7nhDiuZGHvLAUDizVlboXY3baLu5UXenVm6SbnbcoStP5sjSrcVP7vhjnIvS0NPy8a2p9oBI_4qp3JeovSATguHOWG25n6a-O9TbfTc2n3SedMiEN88mxXmn2FM1Sow2VSWfvERgkBd9FNgciRTvGit6xEYggQIjZlNpUc4IXXpZ-oRbGEvI9JCXkUkFLiv_E9wA50NOhdYFokGrZTj0XeasRfNwtj8YI4fmzuhmhR4so2-mpFqoa5Jb1iVpje1uVm0APpR6lGG-ZSJHTRGvOCdj0XNkRlgAySe_nvzbUii63GFozevSyRItH_YdUux9aU3uX1eusWFLI11SudMRjEDnO9WVysFc0M2-nXZI_-wnYVfoz41Q==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9772037204"
   },
   "lag-shot-7iron-trainer": {
@@ -2254,7 +2255,7 @@
     "price": 162000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/ozp-ZgIK8SAlxrUQo-6E6CgBHDxgFPWEL4sFQxXq6L3okZziDmL2MdRN2YijdPIAL1oF8KuymFUojzqn-sptcQSJY-v4WeDg1805hVFJcNFazBi85Knyv4kZPciutuN_Y-OWRz4599dAnxCoiQMZoMIreA790kGyxeUjLJcZIBLBlKy3MZVB505xyBE2OyWZr0WCiy-gfTMX_nkaUc5oWyVu4vujfiwor5Z4p-gR4p9DC__JuQylxZ-Fpui8Pv7H8qoabjVdsmKaYaHBkL-Va5_ai-ZgP7CuTZxwX62b0u06rG1q8lQjWGrNgZY_4jDS3ez9jnUkUK86s6Pvvgfu5napfpzSVGd0F3IZ6t1xgRQb5lxFbV9XKCWPm-lXAoPMBkChzfFMvPwNXV6mDC_f3KQsBMkAJCJ-7Z4lMn51w3RICTDl7Xmpk4CVwyK-Soi3-2dDlQlFRp7vpY2R2V846rNBsyD92E2xzN8vMka676n-Frxwp_baKq2C6htNg8kU-zIsL6Y5U2ZMXvd-DTaiqcObo8rpBgu6BJukOJZ6sGRBlScR1GmCJhf0_L9h94fWDWxEPgpWlCwLHsA1oXiH_i1SUw==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8882829663"
   },
   "superspeed-speed-sticks-pro": {
@@ -2262,7 +2263,7 @@
     "price": 420000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/WVjSOjBgIJ1jktK7Wc3ajQ-kuKMSyW5kRVSA31BzjEVdWi13H41lMtuj4oBUpSCwYoRQZepjpDWA5Fxrd2LurFbfvf4UYN-96SubFtbUqBXip6UT4LuhoITJgpyBeBb8iQvNEjDr7wIePLERfeEp2CYRlnBEjjnddu3wf9U6rk804j-HB4ZjKvuqHcSekNIXqJ_xBcYz_XBg0WCl2ffjJFHDIaHAzdSioQ-ySH4-HgwpmYDA7W3BuarBKXxwhe6xxclMz3MHhBHPMI3Oe0pexgvDkHwJHMN7UHtBK0_szBH4Q5tB1obYtQACgDlyYfYFymCwODqhuGFlDcKHV0xU2R4Bl9LsGMrwUpkXKNNtYfDbFWgz5gWvydjPDMkn8HzBAu8mrk2mstwlD5JmdqWR_VnZQbaxyqebxSYiguYBJbb05xR3CFAUgjQ5vQ6VDu7sR2I55i4VkPJQQC-RvvAdHdogCQyhkk7F-PxVQDMBLxuT_h2Nd9Hd1NUXtbE97DfWOZgnVm1JYNvpYvfbiVh9JLLMTjizVFcwP7jDylZbIALsp6IwNLofocBzMELC4r2lyF-QVS2PSJPNAAVnxPsZ-prdrOw=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8522475106"
   },
   "callaway-cb12-wedge": {
@@ -2270,7 +2271,7 @@
     "price": 165000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/P-U8_5_NL_SHm-vFPx3UM66rpY3zjUUErEfHEcET4b6XmGQINwz4YpxorFRmT04dkVllXWPWzCC5ScIKAqJpxEVqSZowg7j5bgRuhP2cHiRY5zOZn5EEKq0ilndE_8_iw4hkzSWxH5n9oVw-nHjYgQDKug9A1Op_K7dcyT8jfmF3jvZZQSsyzlr81TarXuO_bPpEduJ7VM_Z7cFefX3PNbKY-NKV3m3-ht4UKMGisi4t--WXMZPySjUkvNJpTDPK-rJmZFKxYE99fdNbJtiqoPX9s8p-vhQzpt9YxFSeL-WTrxxSNhYr5H9ebxMarp_Os0nztPQzLGlOTsabSjKlfKmAMzb14jQAKGH28UVofGlAX4IT_WOghqN0ttcMJPkpWK20M-7-HEa054AFTCIt0_gDdnCk-EHxHTnYM80sEiO_GlihFIeVoiyepEZmcsB9qa0mO1xIYnhK_N6XIZeHBIU4zrL8gow70b0prHJwewfZVv3hPualtcpr0Y8bte57ly7SK5PmcDC2v_ubHVi3_1I4DDPPf8YwKAI5mwit7zIRr6zK2AX5kCsPpSKxhoB9yBf_kvIIF5TX_wFOlA==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8933887933"
   },
   "pxg-stickem-wedge": {
@@ -2278,7 +2279,7 @@
     "price": 270000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/gVQM5D8pDwNfDMPoga8Mt-JLYKD_aDBMdkTrA8xzuK-9Eqw3qesHEfGLHcgX2yE6QxkUC6HwNgMd-EEgOZUjQLO0kwrqnV6l5DPi7h-cnrwQxF4v5t9X5xXPTakC3Ppu0OpbRtSu2Jy9BXphcF3OYL3t2_7XE4MZJK-CL5RsM2tRLaNPtgSGtq1hPCpWFFzLf3NAQPIFqezRTuwJ8z_zugow2dc7EifXEDKnnuSsbm7xCQYdLjsA7dJqQ4RbEUECs1YKyYFugKhU8TTMII3d_M6M0f6yu4N1Nt7SavoZl8fBnvRrIR17tXVs-36AYPIKKNbHedKYLhX8lc_-zEO5LFyRQgS84ozWjO-zyK_obN2ho5-jPIoRMrLlFUdtf2JFMQbWwfZIzrYZ-RRUiT3HJv6gr_V9rlRGkZI7kPbOuIBgS5X6bozHXghes7RCN5tugzOHeJpKLSKExDmHjhvv6UsO8DuyquJ72xwwtZvYB8wrOFYWq_WPGO-AY_pUjIumtpa6NOCtHhlQFfaWbZMZTX8WUAFIqKdf9-A0KuLR6u2iv7cLsBC_pd-LDvfS1scdWW5pZ_-_hY4pzH2gLOSHF2zhGA==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9452164414"
   },
   "mizuno-t24-wedge": {
@@ -2286,7 +2287,7 @@
     "price": 211050,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/xgPTLK1z4mKePG5ZxqLWAV3iujdFEUB1EkzSdeeo8i1inDkfxBzP031_0Po3V4OUDsipvRoO2vstrMDjPKZjlIRNhoBCLJ1lyAMiUp3VQTwzEvZC3lS6lcd2Lb6vrCA9ycrdaUd5nxBrI0kpLNR4qgMajHUZB5RMV2mvNYTk_OgwHjbWjLUL_pm-yjp4tCmSRGD-nRne5spNe-mrvuEOoNH-Bsi89Um4WihMeFU7MaJc3CnHAE2q4bj235oh4EF6-yZkYsWP_LxUz7LdxgV3m5OmWA0Mg3ZAwXpQt8Qb5tyy1dTlVCFzogLK6xtxaFp-Zh9RF_HjWe_-1DWmCE2WXl8yzZu_hv5emxjo8HRcNg2V8YcS1eplH5b4d9vulJZItBK4-DTkPjEIKTi8rWhDbXQG8_c9ohgHHTiUOIbiXVcs9pUt3ivCY34TtFoF1V0t-1FlJjJ743d9_L4oFGuLShpm4_idoU4hGRqcqcY1yGob7qerua8eFxdjMdbGHYM56GB3XZTytjzCRsLioosv17UWq2bBUwjOYMdT4blGCNhig-wcSuMRUN8Qy5Gx1j_k_fda-A==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7670730132"
   },
   "taylormade-glory-women-driver": {
@@ -2294,7 +2295,7 @@
     "price": 727800,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/DCTkChz8f5J-kaueDGBZzBUS95FABHbBixzn3un_zA_xXinIZpAwO1IpEMtdSpUZToheqbL20PbI_eE5B8ANgANcFmdwHC13-QUN_4eVnYXVtz5zTLXskzYCUAk9pFppIeY_G-atLsry_puNuR45JxxLupkISeOVKRA_OyfSEt8Fv-7tOEMWJT54mnlrVScWNbVC7ePYY6pIoSAwdALBZAPBDemk8VXEAOocNXqzjEenG7xBMFEoY7JtoJDCZZ4ulCIf-14aB0UiUq6V0RLybx9GGQ3YXazvz18yzymlfPc5U-jXzdmg0xdJNqzx71Zi1oMReAPc3UJvjcnMxCbyslJlt-xpd2rVXvb8FTFZ_XV82jZ-WFLniEcwIerNF3kAAnVAydnxBgc53PKB0VMJ26Gb4bcY0d3x5JYakpOGzB00opp01StA4aGoR_qFAcesT9RMiJIos1uTWaXVhiXpO90ewX_rQhHCyp5-bLmCHl67RH-IpUKQCRlcVNoT3fhdgd7kVKhKXlQTpV6sBf02HkVupPsyN0P8pAsKr7FI4rcnmDrLZo6ckiO9l0ZLyU_t7VasPE0quC0hzIEyl6SvRS0vBx4yQRBcMuClnrWJ4bCl59xVArSUJMeT25mVVJxe3N5GeKK4",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9568717857"
   },
   "titleist-trufeel": {
@@ -2310,7 +2311,7 @@
     "price": 73000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/pYTQ2TrL4u9RlhorpQRs0KfxJEwYVzMCDdC3SYAnuGQcQMuk9t03ZtvwrpcPl9vG8ax8RmlRRHpc-FQO87izzLvluRiL61IEhkPkwUHW-nXe6G8dKAtLKzQ9IuYXlfLxSz4od8ssjX-4bHg2EGoodz4iVjBZAPFbAPxjGEaG1wLdxO9ThXiVNBLM0jajN5Kc6ZjDkK0qjyqGsCAGKcWzYJTA3ULZAiVQf7uWefudsmsJi69q-i3JbZFNaboHan7Xb4BJmjX-tU4iwAyzSCnvAomMIJQiY8rdqgsx429ARxHCFhudh2AxgEbfoca7GSlETQ_HdBFp8O2K9TS4IrCoria7KonnUot1FFyovNcS0EBhAQf41pARhyng7bk5ZAv1DBblqc1lCA6YjBRh-6a739SYhAt_wh8eJha6iim0fHR9M0rBExWW2eYB-u5DgLuqyMMwqUeVCBCjoyIP-0mopiUaCaLb6Ewactw0AEXG0Z_1Irs9mrXymNEwYLAoFmSCNOg5GCrOw59kmhNMXqHqMUmiSJAegJpkeQd9mYu1YzauOgyEZ7v0u7T8r5RAUIS5r3CMBihQkSmGLExkjLoenytXN0pEOp_UnJ_6-rZuG2TARADmoTRv2v0K1g7cuxm21tYs7nn4",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9332920319"
   },
   "callaway-chrome-tour-x": {
@@ -2318,7 +2319,7 @@
     "price": 64800,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/S7bPcc4X_1YI4wDnS5YEhVWIVDerBupTSJ7H4LbZhw9nWfMc_dBAhV_WX95TGgXtq8GB-lDa7rRp2HZtHBJQ_lrxUuiDBN4gh6EovhYPTa13HuVb7_vMjZW7zpxPdBxZ4Ukc6kqLKTd1HzS2iFwAVi1reXDluUgnbeMnTE0KMJwyTeWDsh3OuZjjMIMHLQVdQXbCxndiGbw6G_YBR3IMj5TvlLjMj2Vr8N2J8vSoCcsthpeM4Mot8vtLipIBVYfocUrptdoSq9yU-u1na3C8qhpdnN6-CaSZHFM_IlrZqlG7to5vLFVNE0t0dQNNNv7ybEQnusmQrF46H47e3-sFb45akow1M7VXQWebnZYXT-mldg6zV296_0XREVcV_ly2V2aRgSjDXwd0DopGZ7u_9kL-5XbhcSK39IlBaXZeGEF8dtsnVe8AoSB8whkODIB38CW48vL68GDIG0lXn90fjpRwGMbfy4mWI_1WC-LYcnI2AHP0GK1Z4U7YjwDbXNRTx_9fqY9Xq_OMxFofFjhxiFXwRH3MW_1DvUmo2EFdJr8FGdZNAvxq2QLRDtRDzvpcgl0clJA7fReardumq_l2zLgLWw==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9768512994"
   },
   "callaway-chrome-tour-triple-diamond": {
@@ -2342,7 +2343,7 @@
     "price": 14890,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/TCluJh4WBMbPnXfOTOLUixngCQfLJn1ovpJsquJjKfGuxeFA9h8lwMP-kYq_p01U-qtdialIU1knCf0L5rVuJXOgHbOsJWT2O1NqB3DV0xYoL4A38pdAb_0EUCW2u8S5LjFoUFPqG_C1p1GNQUZvwg-j_4TVuAJnpF0cqMcT5lg3UKEqV-vU-H2hBAihjxmCLzp0rE7rGG9cYWT1Jo3TnASCQ9tkKiilaK8AVFxcV334_ukJfKjvWIijAOUTDbbKGlqLXE4LkN5B9rYtX31PgjJZLjz_svEPB7UR5ZWYUeIDm_QbfEGnTeTh5cAmHfe5eY7_Pf43NySJdSSLxvfVmP10QiolLSRUXjHnFUXS4BkkbgTN4iqbSfGeI-8JsFm81L-kfqb1i-FGvtADRbt-Fo0qZS_qIjYbnT5szfzAH0OntFKSVgbRs2t8RIuuZn-yjkbulqn91mjO1f6oFnd2KAPRB0GAF9BxEDoWYSzIkMHwPwyIqJyDXgPVkgochUScWjtUwXC09Di13NNy2jkSyJ_bDBgzBtOHn71UWtiISkiNS4FsbPXL_d0SetcNqLiWf80-RGEScc6wvW0tkQnpxoPdMsk=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8653533339"
   },
   "volvik-condor-x": {
@@ -2350,23 +2351,23 @@
     "price": 49630,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/jugtErpB5iZqT_idjlZ2gAus93xwCoSDnotJMT0u_RniV88ZQQeYI_rFai_WFzPQi2KfA7oa8z-KKT_9QYL_2P6Me-D07ZVzx6ID3jTK2yEmTWVpCw16ovaRJpVOKYlEW8etfqUEnycEeIdmAvOr50Nf3hy9Rbb-qb4tKhFfZgJADcRMWIF2hj8-xEUNkOdB1ecxX9yH7nU43yn9KbydSmctDqN-FR3qDTEGMw2ioJe_tdgdbzBQZR8ApY8SUB1V_n0MFDaTRMXuhdkWyYWHl40rZprCqy__Oym5KRJxv6gOjZQBHZZ-0UIDHQ_abaz0M_aqOTVCyV6mvjlTjGGnb88pKNCSbqCrJ379B3Q2PVQ_3L60uRXvyb-HEmIC6qlEaKNPGatME4wl1zJPCjWCBwslFlhwQyWpbiAjljTAsy_IABDFwTdbc-CsQgwOcckOVYWwzVnFjZ5_2rcnWjqYieJXihg3vcE5JWznHuv0zTDcttInolgAJ4n6gc9LP2JMyP83ptv0bqeyZ09CceTwTfuP4cuzm-mt-u9CB2h-OQOBvFndT7tIww==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7568392468"
   },
   "volvik-condor-s4": {
     "title": "볼빅 정품 콘도르 골프공 2026년, CONDOR S4 화이트(WHITE), 1개, 12개입",
-    "price": 44990,
-    "rocket": true,
+    "price": 42700,
+    "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/CKqf4oClCYLqp7W0CD8sp4kHtHRq2M5Ai9K2nroTSgzAS18IDWxtyLG1eIx16bkZgjIh5gXry5cOEbW96H9ZfYQD0FL_QTUiWnUD0WyIIGps5B46ITPz48mmJsdn-LZAWHLh9UNk76ZIJBxiY_iglm_OT9epoMb0qvA0fSGh2020TEC9n_A2XaubFAmrl5cUw9HdanI6i2rAOmky4ZyZAtIsz3jCggUP1vWZXiy6lqweRgcXQhVc3zFwtkQWXw_zcTAOWAKBCIvywL6o-d7qQBunCjjyP344uz8EnlslqALVFkXpOcgMJmxOUy2HH2oqkRAzlaCTj7l05L4XSvJKstzKHgqByIHAeuRSI4Q7L5WqefE8qUQN55k4clxulmB6hR6M_u51f6dq0bwFUByOs92UTpEmZm7kjT2VffQTXnZ82mshKRSLxmgC1Ys66lQ-D0wEuOrndlsIP2ty0Zr5bQnEd3BdLnX0ysSGXQvjDTx7tB4WKQj7tTtU-khUe7zn7P59cs0YnuOVJYJCQ2OLoPZXMN5GkBuSrXYCoJi6t8wyU9flMZjnuI05yj4udS86QkBfH5B4tYi5",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9479017482"
   },
   "volvik-vivid": {
     "title": "볼빅 NEW VIVID 3피스 골프공 3피스 4종 x 3p 세트, 그린, 레드, 오렌지, 옐로우, 1세트, 12개입",
-    "price": 37050,
+    "price": 37150,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/t9JNhZlqvGyBSJTat05CRX0gtX6SYt0pxVUjppPU0_xqZzrDP7PmDXbATaU6tCV3ttB0aTq6oz_dstCBgcuOXq6-WaFzogI1_CylMtCoDBQNBqT3GyYXt_7WDKGJadWOVbEKB4qbTFJyVOIowFApVJ4iQ5eBpShu6_11XFVHn7bdVvXdTMImI9MsbNS9MnQUP4RanQLlxXj5LsZ60bRJt2vrXiicbcZkP4U0oYTHL7o0hAjN-aDf-TG9kVJqVXpJ9b33yM2CViMEz5jqd5wcXNsKg4aJISUReSq0LQScgOx20muLnxwK-mOdQLaR4tRDQpz7i6F6CxJKdBmTZETpQEDIf8MuGjlQuvYub8jYRndrAmlDRu9WIqg547O393bSVWluQ6wPvVBWuifiROpai4nopHhLct4Zxjf0Vf_OlMAwqNNQF3g50st5woX_d6BckDAKQ4MnFzRj9D-WUazKBYbPAM6fkRKG6x8SNDIVr5DKqBW7XbDSSGUGXCi4F1S1qy1cuwI7QjO8SCKiflEEJ-gAuFAJHPKMXUg8prq7bCeZ8EcJL_LHew==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9609931709"
   },
   "volvik-axia-iv": {
@@ -2382,7 +2383,7 @@
     "price": 269000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/tG0x24unJXvV_CUftMRApRyw5PHgu-7qKOer_TVU_Sc6ZeW_ds-j8VME9Z1AnUQf4y76OV6jkRN7pRMDfRU6TObyClPw3c8tGaKuQHbN_tQbPTist-P6KhE32CFpAs-CFn2xTFnLQ9urtnzSeq96eA7ODB9UmMb3u8Ei_XwdhIephFEbVsFKr9HZez2v-lOgubFyYZPrrYIhZXYCzcIr8rOKxrAkHP5WZ2DWwKQcMB5_t7TTXoORrpJUMoBfV1SW0Twkb37py9Sqsw_Veh0npzqVTRykHFtiJ_gasONChXyOQUWo2Ck1PU6AW1NMwcWpV03VKokj1hlhmKZPIEmqSW9F-SsVCyY7DUJaj4oTBdStGrcsOz1VGbzDY0jd61OwBirOkdQHjPhfOORDJrik8xD5I-ed9sVfdBznmSIn-uMK5M1KEQ8CUvyak9JxbXZnH_rHJFKRpgmckSOL9IIV-ie_qfDLRNkqaZrWgclmnKbTpr4WaGwM2zf0mUMHRGNDDbyVj2jxwY1zCJEzFbT8c_9O6sL-vWxzgUZup1hMJHeyUQm8zQxkk_aFzjnm2kA0VjxxHpUpwK8hxiSmfG_W0KGKuKU=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8555024546"
   },
   "callaway-paradym-aismoke-max-fairway": {
@@ -2390,7 +2391,7 @@
     "price": 700000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/8oaIiHVhRhkPvz0L8ripivPZB5IkofY5WYjWWDqJIcMJXNaVmsw306AvLRARzRvgEtiNMGkpQ5Umf1C-5qmXTuenezQN6U6utgt5AslCTa_ZAdyouQS2YwEETTq9OWnc1hqj8xAGP6ILTtXpr8teiHyE0ggIiDdzRkWbY5qex8KAa91k0EV5aVMuD0SkFWd08b1yE_cTAxWtpjF_PR1-RBNV7xBOvWckEaYZIbbZ0b6e3AsqHa6H-XFMIAgiDtuEJyHLpOdbz06GaVNqLReXHyueibfiiQHlmEdd9siLICdrHVbPTAmNu0iTc6KL8H7mdmbgsBJf8xr6RLD73A317Rea38mPJih4HfrF6HdVkI3Dc9p2l6Z-GzGGVCpu62pCZuTLDVUTrkVvC4A5RIw5XhhX6CGYdWIKJHDC6BfJ6PQAMrxlsEJu3ZkFrMxjZ78RtP7XUdBz10GhYdxNIRXurZaQnU8AQ-MSt7aDrjFuiBfo7tirYZAWg2hPXitZ-IlfaB8B8wpCDgFB1cwNlzOwCynDmRK0cZvSYJwXXsEmjQU7VJTCiDpYF6xLkusRqSr2H1I0keIV3GTagxSmQ9qSp_SK1Jc=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8410983802"
   },
   "xxio13-fairway": {
@@ -2406,7 +2407,7 @@
     "price": 319000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/DxK5TOCUoPwvuKQDD3wNMZ7K-Q4p921uct8hI2lwG33R7HdChKDkXXaM9Le44LWT17Ql_ONmeBKzvKDF_tXmnDNByFeAJDeeeryIJCgyGK43y8ByeYxK78QZuK6iZeGtHZI25MvWGWxGvsatxSfe_ExHXWgkBYKU2htTWJTgXoJz8f_DXNckr436GkP50yqbodG-b-Z77b59Cr2tk2KOO3BaHAEqL8xMCvYLJrCL0wSBhQ-wFcB8YlsatDLOjzUt4PAWK6upBMmG4Jarn0gV1DSIgUU91u0e4Vn6F7Qo5RoHl735CoLRrM3aoQGvHNq32NqJ9-F0G_EB-bwsBo1cUo2bDVd5AmgrIp5Um5IaKWakuSqW-MhMmKNSjFnPncNYePjexctYTXStgyvnXQbhD3Jh5BhYUgSSBi7tJiEgVaXVRmd2GYFsf015EwkqzpFmAy90MHSPun5KZM9Hlvmr1bY6whUj9qb9KOGJTMoOBACC6vfXNgmgeIix5vL_cR2EZl4jXbe0SnXo726ktwG7tjNw0TcaxLIHR6R2Pyo6sKJA1yNWkWWBaG8gA8lzemvvbyZ_q6iWHb4ZZrxNgWI8fmmZrg==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9287178997"
   },
   "cobra-darkspeed-hybrid": {
@@ -2438,7 +2439,7 @@
     "price": 209000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/z8kE6WKtAdpEWlqzz6Lfnph3Fg276eTkYXeKLI_88F6TJTuyNVuE4qZnYNiUr18Ww3McsGsxy0QeYYgZmPcBR8k3vGx4Uu0e9nj-4Y19ewGbP9OtSiL4mNNormMdgpzNdIi2ihPzUNhm7RHNQB2VgWimHqcqVx-vWm7S7wopNncSL0URv_64g-sAiJbMRERccRcFxt8nGI0kAx-ezyuWSCJDV38tmrkeeky5X2C7sGPgsD32St_rr0weiAPmCZhU1z7zVNbBUDsSmckRQ6hcDSg1T9pucK1lLvFc3gowBMZIosBpYoeqO1--nMwCcAfiKf7VzuR5Q3tvpkJjDLiKeWylBzhF8nplgxi9G5g61dwY5y6bwObhTPYTXSHKs4vRM2W7_HfOsHG5y74wD59rZFxgUHsfemYeryyDbVW_qywtJEns_myp_fMD9aa7-clG8Y0Klu3Dx80pd5Z3rWkewrMbp7fTTp9-2nMG-VBbORVMHuWxfTuIUk4kRtsXy9Y58oqyu64VBt0CQWJh66C_jdLRQ4wW5Ocxc5ppfQ1K0_Dhah98kRNGY-Os5g6ywQSOBXIKt0uA5F3HcBXB3Sv0qhBBSQ==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8918872669"
   },
   "majesty-prestigio13-hybrid": {
@@ -2446,7 +2447,7 @@
     "price": 640000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/ruFUf21nZxYmyxpHruz4E-UeOiXsLA2V67_mexIdPggUWviCJa1LT_ApR8ew4rqS0o41MF2GrIrDSOLE6UncmiEOl7qkuAF0DBf_ZdUcxqjKgX5y2wk-TaTQj_OqT1cYNFLwzZzlRIjY7dzpzZe6yoAtje10gw2VCyT-Q2dNjPC5fdhoPIyFM6NgW5CvUH8MuQQdnMe_4CaN8mXibEls1YR0lsHW-VDa5jXM8CnTXIW-0nqTicspZqRssyqFugszBg0T9O7UWWey8ayF9i3hjlX0iyVoSPN1KSxkZJyin0C0GHrVFkD9zfLaJ-tYXgfXe4kZnk_5oR7J6xxBsydqNbyU5PvELtv2u0CMBKGnvIATpTsgQfzErYbm5PX5BeEZNMYOmtMupRJqJg6tQRpctFVpbpno7lBDeG_JPSmuQt9O81CuJqlWIfoNMjQCWosFuIvIvRM30LL1f_XUfq7VGbLGr_QxATAQJcO3jRwihodZMYaP9-UeNvYAB8UGmcNXB14-BFy2n9eLy7xOcCwcy2o2EB19dYKielpWvU60TEA5X8CjKhy2LVQ5MdXfbpLVN0juXTbfhuGfwPQu",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9724406673"
   },
   "kasco-ufo-hybrid": {
@@ -2454,7 +2455,7 @@
     "price": 340000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/bdOZbfvp-P2QN_CEbc0D71TevpYlpkkh8R7xrwy81nP8xFV1DMa5UxWgsLZ-94EtZUHcx9Z48AsToH2EggMDjT7zyY8CW2O0INhe4Sn2jRKw4FQIxQylFABg7xsQDurF_1M2lKTpvG4kLR3xk9m80nuDGfWfK9GCba5DLuIMN4asSTLQ3vHQ_jfoYEb1eudIXJjGID3cPAOmZWH4vaS8JS-QcpZexd1RuBsJYwRso_DKQYEPBtcO9C7YKfoVJdFTom7kOsdisPR48duw4ss8d8WNRyZZWOhFbCrLlwvej5Df_A_QcNnRdtI6QJNxYQqhTumRh4vh5PHsUM0Cqwu1RhsmaBzsUETDK80pR1oxbouBMIFZIidt0nDQFirMaWpoNyhYoWjKU7eX7gLIvzBH5eEAcS8X8eFT9W1kdY6_-0HNL6IPa63Vd0X-J8EBkVtNURSrJ1A32WkypwR5_eDsoAAyNQP0XX53VFose8i8qBLcqp6ET30TBDN-Sagx7hbKWWle4yjpPTDewQ_5_oaVLLmZjrmrkNIKW2WI1HvkXR8Em-U72ajc0igJZGdf5t-x2aOfBW7YB2XIHhhTjsIssUBq8A==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8376924377"
   },
   "taylormade-qi35max-rescue": {
@@ -2462,7 +2463,7 @@
     "price": 268000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/EqaAbDCMb1VWOXdrEu-RBA7Ym3qeW3pOeCGpU50UJAcFHAf_-2FuRodV9FawIa1jvqjQM1Gd-lmdaPIL3Bn1FhU8PiFupDwBOUXn9W5OmlCeT-cGnxyrRs50fHsfJFZKXce-DTY65wP5U_7J2PZ71BlQkcXHNG2NRT8_1BrAmHjNq-4v3Qh2Acdp_GdxpQtGHUNuV-3U4gcBjqajaMIecFV9OSX5TWWO2pw8xtiaLZwJd6-qdYH8v9Z7OsYUAXEl50Qq9i3F7votxjftrNUvJQmhMFCF0lVo0ESSdKUqR86XivJsCObOEeHsw2W_up8UR6SNaEryQl5PXotnkzdzTbEEOPLxnkhSkynL8UtrjfEb6DpJAHd_BSHhat2eh0OF8Y4004UNWC-DkeV2kkmdkmFV9KJqcdw4HK5vDA3Q2fTVOHEs30EggFiliv2PLLxeMy9b_mXsDIiityxG1_3YFnRg3A_4Ec8tiQxJTc1mZE5aO4kfxgozz-upaSJQIXR2IbbczHvFP_r7hE1ZVqfnNiWox_yKKz12pbwXTEg8EGdKnv8MI9W7kUs=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9520235328"
   },
   "ping-g430hl-hybrid": {
@@ -2470,7 +2471,7 @@
     "price": 362180,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/kw-2nfNrqIRgGW6jk9-pPyflP1SN6m4i1Le-k44ulP6BoxgUH6KLrzMkt1HO6VxBslW8ljHs2wCY9WCvX5RMMWOB8Mh6MTMHQVz6MfHNvkC1RLwJDd5pX07MTly2aPHc3M_ljMu37T57Xw2FDlmuXEHvqAWy0AY3zNKuHCumcsc0IfRd-pg-EmKcotTFgaSvgyigsKV2K4vdavyeT7x5IvxX-3wquwUZzievq1g0ET7ckZ9tfs4cLElYGVZnHEZNEl0rD4JVCH6waj7fwkqqsAhgDtH2urwQboSkMyETgwUOZK0HMZVaFGTTJ4tppHaA76AwcNJQREtdPpKylqwhlGHlF881dLFz1Ab3CDaLEll-AXGfOTE8h10XdxAIXhfm4sLRi0R_x49U3q-DyjRUgYcmO3gXccPASW_jo_KcJPT652H6N09hjlaEnQWEiH4J_GttN6S-JrYVexQLQ2zX4vGT66iTEKHRi9mvwvPy12k0OwdeDvBm8hfZGxTEZNsPaTH8tTLcPzOs4GEpU26rgp_Mc_iWx-T72mzophUnPwEG7QtZrmY2QetagIw=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8724088064"
   },
   "taylormade-qi10max-rescue": {
@@ -2478,7 +2479,7 @@
     "price": 229000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/UdSAl0uY9oFWKD0KUV23r9g1evQyo6qxeWOqgDDMd6ykDcbN5zTyyxlVH2jIxQ00KeRKGF6gkssdG-4cxPzXN5VIWKo7eCPfRqoJez0ZJU6NIuwOHYxaFyAtQcrFfEHKh1rlRoxxr_V2gCUplH-iI4Wpki1S3Rfjs9ASeyG3fm2xb8DGMiZOVGTjxG8kwLwhz134MfpzCCKkwlXmVbW31itx32S3dy-vNpYyj1Dnt3v4VV4-8BGOc0TWBL3oATnd0eyFH9nLC06On1JYaKmBhIoMXm671HIhGTQldlupENau-kQ7CeUB-k8go2WACvMkykDPpoMtKFJxSerZzt20GdoYCXQsw35XjQJ_8I6wvCbr3wgl7UXg1gmV733H1bq14OSr2qggxYs5G0WNxyqaS1wwET9eO45jJDyDQmAW15xTHINUalE6U9d3RR80qI_3_7Iygj8TkbUzH-RrdY7LSBIr4h-SxWEavosG45twvkmfw2S8Bhxug7xSTSpbmxG3yaN3MLJUh7XWLyGhVlk0XA47qYdLP8SEAZ_TfJdSlNLn3NEExaW0yn_Aaxd1PdmbIpRa7GXCTHTh8QQfgboX-XG9DxGCEt5Rtm6-YsvOL7MI5IYxYgzVD3LAk8pqdEQm7lhHycA=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8562185940"
   },
   "ping-g730-iron": {
@@ -2486,7 +2487,7 @@
     "price": 1300000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/yfwGp4b6591adh0fyb77B3ltA8N6_q0WOVqthL7yuuA7vx7PclTL0V1vR9YeSGaFVI4orn20ROpzcHlY5ZtaSprX20BfF2LZzV8OS5Orrb1ZGuzoH4zYSs2xiY4RhAlEuZzjtUCNpMH-iiOdxTVz7qTjopNE_wjo9kDJlqmrqIVXSkwl5rpvxtdhG2kQtIWY12Gu83WgzfhSMhkZPYxFTS93qAgr9hv3MWG_pVrAA4LtaCSCUwmCdg6um22C7r25q08Hkfk_zNSqLHto_Z8M98uI_Ste2RKsFMXXzLfHIDBFLs9csI9FtJ2YdtzanCjtv_0NB8GE6UfJf9LCUUxYksRj9crDOFW0SY9B47S6QEfSmIY_zlxHZy9fICE6iq6RqfhcsN5ElF57dvPCeBtGA3qzKmDn8xdzPdybxWcy0qyuUQVpYfFoQBOztO_F8FSuGpGMls6u7Kmei2VGqlnHJosVfrgF0Nm1uy6zidsJpx8KYyPTQyjukCUzHDGyDklknu4vOYJzVpgxowUrfjileiwAtiYQnE_iEWVv5t3e4woR4dITItKmh8i0QvOzlQ_I04r2ACTuReLQdFTw09ccuu3DCgY=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7978274736"
   },
   "ping-i530-iron": {
@@ -2494,7 +2495,7 @@
     "price": 1520000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/4_s3j59Dbvz1ENj546kbvIcF1CzDK_UiWLuQMt3Q7Vmeu-D9-VaAM-R26J0dlevKBzJOYoUlcbWZzKuulkmnIO_TyZjvhsI43p0YS4F0JisCaTMYehqs_CUkPm5EWXNR78O5pDg6r0O2sLLYpUMrRn6fHj9ybxP92DSSyjRbh0lPGVt0tWPjAtLa3f4jDGCd2vJflNiTS5TfOfIB1aO8BM4vxY1mSIfpoPLMl-6cJ825i7jE4VyU1YTXJdt6WTAfhp9mYY2VUZrSduYvaqoctHxnPZKW9bjrajdYI7p1eWHyfbiYhFmlrChilbYMP50FXDSesawlAMnicGevohxLLx-rtDaPEq6vYBhNOv-lrTn4KylNxCWalCere-47J9khZxjihgJDJo51a-Hae8_3SsSahifC8KMPfloR4J3DFdFLW3WXzPN8-iq9N9iZNuqfs3lQyeYTRTQ6IPZ6D-S2sLjLKQR21XKefmQBNA8YCCY8KyIXQg-Ydmp07C3txzbmFXUILGxa6bImup5dk_JWkwhhViBGkWWG7SAR-yhe0pC504iBFVv0Mv27DDhi5q3g40Z5u-m8vfdWF1Mw",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9111621749"
   },
   "ping-i230-iron": {
@@ -2502,7 +2503,7 @@
     "price": 790000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/Qlnm-9NEOhTB-BiWQpLAkVUI6RPv0LRfbA7kR4QjRgw-qD28dUToCj37FPMHcKyUPBUVVLiwpzt7Vnje1VlhCtntUdVK8TnQ0J8HkfONs8QBqfvhcZjJU0oKB-a5gRsqXbjuoiOoe-4yEUQ3uz4-fE4Ux8hndRsQqijt288v4sfbRZT4cel-DwN-yhkALYIIA1Eea4Rdi9F5IAXRkQ8viH5f4MoVNELXqrm_bqXphNKxd9ueh3YpjZDmkAybxLVchu4IeehOC-ImW_yHBPBMES0Mrv8YItCJQQibRpOU8qhqHX_gH-Z_ViO9LuMELlvuRWcJHVOrOcH_w4-Gpw-TViOVI9ejW_2l_oyFBjEI-phXwRwsKh0lJCR4l0k6d6d0zR0QDAZ-aGyV-hKf_mPqg68m-8OW-iiL5D_dEv2FqJWOYffuMhGTQRrZbUbFOkmourwjakP4UtCxnDykYmUy86916OVK9HLE3JOE54cktXJQ65AxbOMCXigSBj3vANXp-4AUY4ilfterrjhm7CLlc7n24dn3pP7FCRhe1Qi0IxUGhRaB5eadOR3T2OMcsC36TKgY26vTtSQnH0rv",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9111604218"
   },
   "ping-blueprint-s-iron": {
@@ -2531,18 +2532,18 @@
   },
   "mizuno-pro-245-iron": {
     "title": "미즈노 프로 245 포지드 연철 단조 7아이언세트",
-    "price": 1550000,
+    "price": 1700000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/8CN77B2bJ84yVURw8BCM8Vy_M8vd-DIlQwF4lBLAKkyQWuYQgeSDFyAaiQBOAbJjbig5wFChSLizA8TRbx4J_C7OpPdA5HwQc33opLyG0HTbcfp0XLZnqCNbTXq9sSOM3MpPo1d_cLz6m78WJEMexBBWcsP7d88wku6p7OHdOQElOVg63bYSaexJpM_qdNcoKBzBLG-sg-GpXjk6DTpkpiEBJVyDe0ikYpE073aOORwPDGkNllRbjX1CWDxt9ZKW-KwNSkUPHF9pCYve3OZsHlEthhd3E5zHWHCuDHph-jyVnUoZ351rNqYfrdCSkffJn_uAgHHaa1jMpUWH9pn9S4l11Bwl1-b-l16CuflusW4d567JA_4A5dfSGDVOL5aGZz1mahsjJr1FfAVIOltqRcW6r2eASO4uDDg7W4b3jdW3P5tPP_s1N4qYDi5d_hDewzkDh0RjfcM1keZm08pkPLbMHtIU9Q093TcjpNIzYUml6l301KbALXNGFLh0kW7sJn4AB1vAdu5x6DASI7XZFvrNpI2bKEBdPBAwwIO42h4mSjv8ujXNfgbi-7MwZ3Qns_prcOkgbdqm769Nq5Hf8qdvvw==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8498675650"
   },
   "srixon-zxi4-iron": {
     "title": "던롭(DUNLOP) 스릭슨 ZXi4 아이언 세트 5개",
-    "price": 874770,
+    "price": 994370,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/hByXHmIsJrDWptuyhLrvcC7WC1k0waNSjlO3ZJJG2TfYN2p1jOktGBVscW1a5dm8meudrLb2U51Im8JwGxhAwDHkbtfaevB-y0I0akBfy6oyYIybWEm_xUVebw-d8sEBv-jeiM2KOaaTJvOPE1EkNRG1loxXL2kkaNaqKCBuDmjOnqwfiJUsDXXHpbCOIwviCgDiyX9PHaTZEhczk3iDiAXqs30Ok46gAYV1PbfIzo5MxZfyHkPSOS9OkeoiDvduH3TJ3hMxp3oNivjCo9n21Bjq2kb5dOfWzo8CSF_2EptxhULr1GbGkMV5k2b9TbOFV2_tAG3xN16DydWuhjVvwkeFz405jesH5tJqB_xh9IJ9rH_4bMarh7dlLmDHrol9OnCRm28dCg71Eaom2Lr_DpN0zzJ-dHHAfXSC6ugrWKUnjM6lNkvJKEJTTrKWc_w1Whla9Olywbgk8X-eiIZrNJDLhys7ghU5nhO3gTJbWn-2GGxzfAru7-OZJULRUg8A6mMWxeJ0dGW1coBU7JObf8ZBiIRfo7HSxGKKEVvpKw9IImIlm9vRt_TQQfuDMqSU9lG9-eWdmOE2gcSw",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8850047014"
   },
   "cobra-dsadapt-iron": {
@@ -2550,7 +2551,7 @@
     "price": 1120000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/kyHKPfij7d2FsngckyTfG48XYZcdtJDfLZ1DUt0H6z3RYocONyfIZbcwQZTU4-73B0DBocbWo480lEahAQY1yUQMZzh2brC33bWfyEA2DjQTiLIQm6sYFntUNRWSK4k7ic3LDUFWKqXuiSCP9AAeyHKFx53TcS0mRZZ_rHU2w2gzA9CH6i78ta-rSEdD79ABE8Yy8VSURQpoZJO0crBEMmbQotBV0lEIlzDmRBVcvKKO3w_tGvrD3A8dfGhwHcUvrACuJCKb9IhJkf_PQ_VJ4gZWRM9iAKpeCOkGgUXczhrnXY-1MWbp2lbpnMrCBZzvsYAN941vg8o1MZkGBgAzJCKKqm9gnSZse63iSfdsU0WX1bjixxwVS_h9JoMqSKoQFuAUC4m3ki0HHiaFPUEPLaNjvsimv2srAX-luh8viETHql48CiMi75mSQ3L2ymhAJTzYCpeg62n9-KlaDh2YPeT8kWgEkpGjhv15HVi_uUGWbA4IkFb4MHJLOIaDdzm8QuYS3Rd5NwDTUxqda5pZhyCcUEKoFFqyTdvrqoFioKriEsV01wkfdYa1q0yuMojUad1M0KB-VLOjAsILAZOVdRFeGhY=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8617216208"
   },
   "honma-tw767hx-iron": {
@@ -2558,7 +2559,7 @@
     "price": 780000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/Heu0yBZuC1hvRsO_HVRbuXMIYKwJud00ElLfOf-OtkiIj7KtfXCThBqI9pNA-isR9zOxwSLdTsOE-BBE8D18IzZDJuO8e3xdko9vxPVBi7kgVu4UgaBY5SQ_3G5Yyo7vfD2XNTY5H7hh3Xdf--nYbdotx578KZAq3pRrDDZ2uH_W4pj07XFO8GzcKjhOVI2BfsK-1i3oYLlVsyk47uBFdSgCB3fa3_WBkOxdIwg5nodBbeHXmgoC_POpMtsQrUYhDnf7bFhBDzb7mMTD-9vDfmJGrINDw46jae7T2oegwt0PacYYNZzgiHO5UtMxokL5c4FbxoDml3cRiAiBbuEFCN8XHvyI4LHvWP5YbPYugIgyGJ8cB9liprPRqcqcYRXWTtWYcYyaNZKW7prLpp-VRYAiUzf0HretWl8dm_tSOum4Q0JD0V_MP_935Nj5A4Gmskp6FxDBAapW47IAOw_LKPnFqu815iIygV4g_fJaw6qB66mXIT95urBvZa6q1uINn_gjO86z9HCjGApP0Oz-gu_lZWIWrGugocKQUXBX8YHygkmiCH7kU0O6QDmeuZhn2A==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9352374801"
   },
   "honma-beres09-iron": {
@@ -2566,7 +2567,7 @@
     "price": 10790000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/1FHYB44pbejP596R1BhfMyNsMaLYr-7vWXbb630veKwhzX43nGlw6lmIVCyHyaOqOQxQ8OOIXYChbutaENdXldoZEkzU0ghgSJLNABoMnoRAsScJyqVeEbI0jX0LN-9reZfDYnLDvy_VokyYBDSy0zRR4uSUEwu31M43a9JcJFtHUQmjpFnzQq6eHEgScbXxLCEvRaQ9-a5AGT44fC08UuiL6FmkqwcDGtRf6HJUD4b-EFizTcMnP8bX4UsUlbxFzz4Rp_Alh4MXN5GoTdSl0qYp7fbLq-Y2M9ngH8pFDYAhtVvKBZ-yO60VVEhFxZ5SnKq6VE88u28jiaQlMXphxpzfP9R-UHrCpk-arHrbNOdba16YE_4J_Q09mXHX_ia2RpC29C3Mmfsn03Tq1Eca37C_TViPuoSIr_afF96bBypoba_-lDHfPJ_jKdLqMUV1Fx56d-qahyqxE0TH429Tx1WbWN2xSmQkbktTAh-JBBjGlZNVjX1_ZPdTK-68k_GmHp4qXXn-mAAPjVBzwbnfX2k2acAmdtvHJtfcc4nPsl4S5Rx3MfhAmAKX-TAK2JDn3VeJ0ioZYHiZv5KlPtJu_flSWcw=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9731942264"
   },
   "taylormade-spider-zt-putter": {
@@ -2582,7 +2583,7 @@
     "price": 671000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/z2mZvuD3EqQpQhFsz-7e2m7Dlloq6cJLWnYaaW9-Yv0cpHDLFAFsNMf2AX61Q8JTbWHdNtGyX053OOD4U6F89pbduws0lGy1GMoV6L1YLXNDHNkOVc8YxFq-rS8BGFBrv_Hy-DTVuvaSt8PobZKxLs0purhS5fZSfZQQ9-WySYCcUEdvBh69zaSqTbztJHREVUpEHXYwhR-zInRO1aYn-a3J1PTPITNqF_U0sfK2K8H8yfbA_hxLDng82BaTcTJsp92GQ03-RgjqbfvJtsVb-ENruZz9SVxAwm9WFkt8eIOE9XO4ENfJZpiuIUgZtMsl-avwZ9yQUJn3lkjb2F1ICRb5DPR-1WHJYlBCKS5uF59eg2bVwJxWBJck3G7AkrlY-0Ny4spHjARDIF209nCRxezbERZyNqjhvLvbOdZFxm4WYZg6RTdjoSnujHhSIvRZqhtsLjj33QWdtNwF8hDiA_IQiSsXjBPDneqsTlBfHuqfPXtTILvD_P7Calld2ss_MRkPj1YH4DWAroMiPnbIeYbkhJgwvH_T5wXcu9o1CM0zQ5tqlX04Z3T9y9d8a4uKJnlh-fT3llM7hYUf",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9689598372"
   },
   "lab-df3-putter": {
@@ -2590,7 +2591,7 @@
     "price": 900000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/GuGTNMi8_BJ0t-RzGmtq6g3Z5efOXpsDPAixZaEhzQdkC9BcTiYJkq_n8U6yXaKMOeVfHakfbjDNBXvOzvjfVpzh6gbwLCrZHhy6hHTx2-fRoyOhpj30v96_KPedXYyqC6t9o9WGuVpgN9mK2f878fpybGv0b_zxhPUVWksvoNksTcYQMjY3ck8erBDIGlVIAcpbmmi9UiaMj8llhpkeFgP9Eyz6ShgOBhUKTG_uahFDbYelApbM-cCjWKxaj_twexWW0HsSQtM5U9jHxLlc0eP4RFu_bZ-CtBq0m8gMavO6cWI7Jvt9n2G2V59GxvY22e0Z_m6XxGDKYvxOABJk-AfnRiDcxplGsJ3yiN-ar4Jml55apXQ-L32GRqmFJWCv8ZrSJ6Qu7seNJ0gOlQKT6RzyL9AqUMyg9Q8dyD9i5bkhJd3zSFf67-Swcd7SJVeCfS6cknHZyxYoT55xh1flHLXj3aAv3z8dH08BCLZgq2f8faDBYACNM1WISNH53YcMjpIdL0rJKRu8z6LoPC7CB_uBAuqwKLGHbEyYqdlXwBn9Y0wHi-3nEOvjjrFsc7OfgPmce2mGRFzCAE4Seh8KUKUGyQ==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9671654964"
   },
   "ping-tyne-g-putter": {
@@ -2598,15 +2599,15 @@
     "price": 245000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/suUMnbpOJ9W3OHgOsueLAxxBVOrheBAtmwSRrZCG_IAtXWPjToWJOcIt7j8iNgxtNv8ZACYM17sizCBK__oUxQR-7uIfYF78Ni-8l-KingNGBH2bs-6d88KRp8IpQht3jWXaWm8W--odHcPd9iG0Vo_72-5lOeooe_AF6BsLOI9_c5aOf67bDt0lJY1h3H7BF_FLLsLkKHyB4pBx6l8wxw33WfM3jBxuHwwEdW7ZrAavfwE-hQUJO7zaAPLPGYN2E2hxDTMrQn_rLHQ9nXFRdVCfhL9AF_j0s6r82cNfSiJOgzIc1sDgO1DC5bpq9fpS3yUU79EqUWIMaESzqrBggaYMuhszwq4q-mW4TKVHifB55cDdiZONdhRFw74VGl3-joKHU-rDHwZHhTTJBbjdPML8VWtVpBtN987crG5rd6yGzc_M7_qUCzfraac6vgeMqNff-9RgP6o6uAmkQ5t8rhkqOePs_IPSjs8mGMe8LT-uTLA0IA6vcaxY_XKKd7WXiQkV0sWLlVb3ruucnza-XDwak0mMJIDHwGJZRX-Ot-VterzYEHpcbWkD57Y-81K9Ocw9dEqR89bUOT1NxNHL2MYWxA0=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7287742413"
   },
   "ping-ds72-putter": {
     "title": "핑 2023 DS72 퍼터 미드말렛 삼양인터내셔날",
-    "price": 260000,
+    "price": 252500,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/GliISgWL0NpRUe3_Gkda4UJAxF1xZXeWVRCQl21akTHnjsSsrNF6U4AhRhyNZdyjXxteN2Vwm8gJv5px0Z6liUh7rNq-Yeqzu1mtP6vfGbMADWK9TZftnX_i0FLBkzbyZgUC-ql0HjfE-2AzyptkE0TD6nzWLPeU9YcFdqVD1uqZREcjScNU_lzgL-TaHdvp9bSu6LZ-BnPkOfV71J54POMz1izFKHTl4kpwS3XM-m55URY830VEKA_WYUpuuwexPlC4jo8lITilTQBgjGadWVn2kYJiWlmiMByzWRb14b1zX2F9Hd6kTBVT2K_TTPWjrFZUYm-ZMFIW2QBiCxbJsw_st2FsnLQRDTlbAtM7FJUaGa5JtDSAtBdI9R8q5jsPLssJwzJR3YyDl36ADToIcITXpO1ldB7fXIWn1toeo9xZmlr5oyGvYGKqpnrU35YSoznLm_DKgBveLfoazOTi92SqG_YpyXnpXcp8-MkV6v_JD8lzdfI_f6ZjUDIr5NR6O0K-ehaOxn7p5JoTPwEdRZStyahxhw67BTcd_72w9SDy6VrmjFouDgGcfASCVv0Vw4awDhaxONlG3GFokiz00X04xkDg",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "6822095078"
   },
   "odyssey-white-hot-og-2ball-putter": {
@@ -2614,7 +2615,7 @@
     "price": 352000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/IkBfjarmQD5e2tVxIruXlEwQtACXFiHjZJXpzUuZDpEOdb9AgvUdiZO7JsBB1TtADkcyBio-rWb9kdHMUP2EieWZ2jUn_2KB2z9IwBrt86sliUHlxI10B_Pq8hnkRu7ceJHKEEpsyXxX7Lqixjx1_X3zTFO5JMhQjaaMLxSLOJjFjCArmJd4YHNzxJIy6SfDWzW5oQdbgXX08y2xBUIn6mChuihxllfbGNlGeGwMqZDa77PGQKCDcZQVo2qE9XG_9cEr_Mg9MyCBG4zrteAJzKX8CjfTHpkxaNJzGIuHtHCeOBSrdeOFaOJ7uRzXrMjmt9976ptumofVK7kaeYm5WqavYcAMkN2NivImg-RThTfcZAZC-ZE7UUZXCQVgGWc57i_axz-IJUpU4Z5usud7DzeKVcfDQQhSj0rASZ3KzNslcbMKQ9wLkmG4MqA6T9DVWDTG2YpqyFzk2GH9o2vefVPJ-iLOGts7mPmBSyYGBhzoY14Ez7oPCuD5u3FF9mdhELlvi5FKd4bgHBV6DQi8WNs4NnELABsHAVj8ah0ghapBd-89E3qCKnqa8nJWJZAj6Q0BsRDHdWim_Let",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7487498919"
   },
   "odyssey-tri-hot-5k-putter": {
@@ -2622,7 +2623,7 @@
     "price": 249000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/AaU3kiak1fvMCK9kAQYj5atc_1nWQF4F-Dl6CwVebw8yKkLL9iWI2f8rTW9PDCLG5bfXp9gM_km0e5Tq6-dInXnlydlNBLIKnqkvxbmua0EFAx_frQU7dVmzdoxGZvRehP0vTYpQblQ0n7-c_AAjT-kEUtaLI5wZbCop68EMBud8mKSon6LqF8mvmNHBIZWr-rMmfJmiSCDXpRSaIO5pZBH52Z6XZdCU6WJrJubWLvewCNcZuJcmtE1HV6aK4mVUcN8X8AvcEHTEOyJuSfQ8wqfr1B_WW5dMqyqsAwhMDf9KE416rwczCGnhzhhO7JhLILHUAwBgc6XfI5g1T1Acp67gsFPBsIQrma9ahJP2Iph8rVBga63Ke0nBbSGFXMY7-wUhbRKVHMnfhitqaMzEpKS3gHOsGr_OCuUJv9BY3U1iIKkoDxA67l7J8YknolZgu61iWMljKYj0xTYMUfPM0qrO1Z3A1SxcLMOMM2tAHjJBcGu4MIfzog3aKCYXVE8LYWr2BYiD10V6sP-ltWazML_hqscNIEfqsvJAflN4gwBhoSpUrY6P9Ntcgqlm7ju3JH-ihWhrWOiX6ngL",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9627891806"
   },
   "bushnell-tour-v6": {
@@ -2630,15 +2631,15 @@
     "price": 470000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/h3EwdECUa0lvhvLEh3d3kBtv3qJTNh4SmPlldaMLmiGrfB90JB-xuK3AesZ3CtTuU0d-Oe11DBEskj1WiRGWszDNGc61rDOZQ0U5873COqO9fFjpLY7Y3oozEqUlDZ8X5y2fuTJlhtJFmr8lJJPYveX4bqLuMNy4M2eEsw-i-kNqQE-HxMBhhwYMmuvucdzraNRNXOWGr6vxK3OK4UQR8DR8tAGFfNUbhSwHP3uvbMJEgUvsD_BgIOW5MFKkWcPFsaqn36scLM0XxQTACC6JRMF1s9TaxFkLstMu10_xaNg5TPvxmgRWasM_NXcutOZQhOJ6scEq3l9q-FO6WqvuTFBqGp3_rjKZCmhDIwoPpHDzllgXYvrBovxAuOqVmRPc1qS4SvoZ3hFwvcpMID9oBovSgW5AhbD31HzWHAL-S7dU-oknnI0hXu5ZDBdM6uP66_3_gVonIzzg3xvZmkG5MKjAmdMIBVNbau3acH9la7BclyVO88SZ9JtKSqAFGbGRIe_mlewEtG9Vccnxk0Y6qCU2piTYAxmaYLaHXNHqpbw8NIeYLNIy8e2qC7w0RbKKeoPRehNSd5gDe19xNGHnTYd1Oec=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7544751413"
   },
   "voicecaddie-laser-fit": {
     "title": "보이스캐디 레이저 핏 골프 거리 측정기",
-    "price": 184650,
+    "price": 184570,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/DF8H4b3tvwhv6dhjDOFB0v6FwhZQwv_a8wuSia4VxjfQ9yZBJHKe6EWi5jXzNvLx0-agEBjmpl348Ft5qVFLncSgF0PAm3eKcqMlNKyiheLL9LfHeU7pdavEIKxWlk_-uaIeUI45sdUvAUu_Sj424HTzkmePdy0jj_BmM597eBHdW0REIxfGGg1tOGmxiEIlDjtUX051qkP0_pJGpi7mpVvmRUfoct-xCgjjjgbUgrWcb5DHKFm78SG4A65-JlqkmzlrmgkEeCbQVBzQk7PeOmj9iptQrYZbFdeoZt6mUJKRXJ1NBjQ131bB_z6u2A8nfDZGK1C78xAxGw0aJkkhP2WilElSr0irETzYv0W2Zdg-R3QNDAakwGdZciYUOPYV6T5cUWNiRDRkMBX_7c6GmesD-kvQBd8EIm7czdkz8SHAphofaJxj0-9c7atKUKPxm6dOzzoogtHYXxL7ZY-qsX1iyYPRIZYLA94Ttuxx0zkJGb_XLbnnqj23gydUqgHeF8NjvR2nmVj_1jH8mw8aBmiK7ROwVYnYrgYXWh58FSVcgE8LGCDJmGYgD7gqCdo7_-e2",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7909852869"
   },
   "voicecaddie-t-ultra": {
@@ -2646,7 +2647,7 @@
     "price": 275000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/maevmDTfDXdqX5XImUfge_-cVjSh4Btndgq32iYnm5EihOYkUM4KGourjARWD7_RJjDv20uiNmpHPalWUsIbz2wg1Qq9vhTvosdSUZ69NNSghXBuz_FsxLPrk4Jb_H2kxfnPItOnK1Ml5opg2URMdkixjG1JbaUAx5wfY4EBhYHhTQsTF5v_W4Xt8jpHcR3mfY4YG1lubAx-yIBH6hJ6wBUAArCtmTMcqIe_Fl2AkI551zlXE8MuxmUHAAL9c3CXWouz4szp6V-Y90DOli3TZmv5ePsbwGZcujEEPPvFEa1Wf5mbmK5aLzroZuFDqSqoE-ECOxsdLoc_IGHkLyKQ6H32Q8FJr0NxefGLyRQNrq6ZOU0r25UKJlgXlM1jYEXs6zdX5dfCWCvOMNEnFuvK88wamCEZYBA3LKaY3lDfjxNHgDgd29hSrv0hrKq0Sdfw6_rbl-o7aufBiobdWcPiVgWcRedeyxQvI2PpZZwz8CdBXjmVNesU11N0H5B8GlggWmDsS3E8YHyhiBFgRFC0mSC5OPZkqSNgYenteWzbUcfC-ILl7k5HIzrWcFYewEZk9LWgkAngNdGXMuLV",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9787536128"
   },
   "voicecaddie-sc300i": {
@@ -2654,15 +2655,15 @@
     "price": 399000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/d7Io_qBXN7l7qJxEd1-J2OX2Nu4rCyQgFCEYRvZxvT0t56KmGnSPNDWcQbnHCTAAfSlQszueIL2zKUriOjeXhzqlDbe9Rl3lNMk1XrQSx9URoqzv9cX-U1QbBNPHzKmsl780rCiUxpyYR9dBScbSiBZhizQ4Zb2ILkcf7cfJ8IbUp7BymLEjfKYX6f1dSxI2rl8hkgOoOHWNnIAGOcnbv5wrL0uBIi1pELZI5sktUjWhDsRF7Z0YogrebUdx4IzSyKq8tPIyf4XGMbnzcyNO8r9FTPDGkWJyqKR8p59FTpqkwrYVm3YYwcRjqQpQ8Uz2J9pxWc027jOodMnjZy0y7Qq83XvZ3hxHlIaSPuhi7NJINVvQl_q5C56eLFvVCPOFfk1MUbAcpl275CAy8KNskgx_k1m7qACPs0vSw43hmY_NfBYL8753m3Ahsg4bibTUWACaC7GewhBg3zwA-z_H_VDyGLgrP7DdjLagF3LJ6QP3dZT_2a_szFcAXemKPGV9G57yRWPbcc6QKQbfjKekzXZIghGZwoNqOmlrsxc2OiKYZq1VW_Z4shr0DpLDry94RTYOAzpsSVycAT2O",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9779712620"
   },
   "footjoy-quantum-shoes": {
     "title": "2026 풋조이정품 FJ  퀀텀 남성골프화 57057/57058/57060",
-    "price": 225000,
+    "price": 250000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/C85nSFUCvdGHuecnC-NVToMjcvtbNbY8hvS2mcgJ7H64k4YNQUzrbtorJjkHniUQqHV-OfAndxI38OIBESm-2Zs2ymY2zlpUUo39BgcW6_y4yxTrLcwCRfsq0AfJyfrjGk5ID2fBHy0Smq3z053-nq7fu2b7HRrvh50732-01o-PgE6eOQnd79Hfy_QBTslWsM7gw0GcLffjzwN3lMsFbggM3I0yarHvzgFOa635A2AlfnlzSfgX15tFGuIYVeSZGZ0Fd86lU1BZnpp0mTrSlb4d8qhxEY6sKV-cM5rRYFobbXhFGYlPF4yRTGukFwVn20Me9uCnV3oCyDf_t8zIa9vREgoP2DN7y1IpiOFxd0VqHVSxmSVXm66JXK52Vz_5QIUdxR1VTmyD7H3ehjemwZ5dGQ8fiFsOQlZCx3pfdx2QxhnpmWSaQeICS89TcTWdB2K19Flx319Yifxlv2FFhXMIRn3BH0QJgWDxMvUre-yKNkbW5tROCS4tMYOw_xE21jnzObF-ZNl3AeFfWhnJvMVyKnrXDX3KSA1MXBfV1XXtofQFyyZm-y_0xyg3fPHKM1zfNRL9ITER5xCr",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9398432551"
   },
   "adidas-s2g-shoes": {
@@ -2678,7 +2679,7 @@
     "price": 152150,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/LTucg0UIrjsHp8VpLf1uT-pJYPuIWghuah17CyULvNMHfx9i_oDPoA1nqUBq01wJNeKl6YxPuJSKBEPQYiYo-lPzcTAhq1DTIBxOeMmEFv3qjsg7B9d0zCCwZPYG-OiM-svMTlACtaq6vB-DIm3StepBy6F7xJ07QbeihWiobqjMvSti0AWZphs-7bcz6SZuyjAsdpjbxix0fBRwqB7SBKf8XzREAmnh5EWfXwKAL6Ls5IwtdzeIowLDiAz7g-laLwRUkH1MJ4ZjOxuFBbT6m1-82An4FhDF2Hk6jZQQ9ECuv3ESb8q8y58KvjG6qH4DVKr1qmrdc5frRSW1VypTgswz-8-xDpMCMp132To_MSeXgYLmOv1VDSgIZUBUQ_KnB-VxkPOW4ID0ZgknvAORGhzvJO_RfB_Xm0glo_S0XBLthrwrnFtS-I7WRu8fWIYW0F8E_fE3vRCK3iHCPoYgq7sxsjg8YYGzX3-mWOluw3DmzTX96o-W9_VEWVqAZJWU31hFomqhsSmr1W5nlOFUfy2WdajY-98WkH-o3B1SZ1STHtkehIHxjodYMA==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9341602120"
   },
   "ecco-lt1-boa-shoes": {
@@ -2686,7 +2687,7 @@
     "price": 310000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/QXrIhocAZUYYgRqHQZh8iho1TcgHEaTd5SCL5HoVVEU4_jBUolaDTuhhfeNLkpgMFpBx9nT49_yZHJsqDorkTzw5WQxVwQBLaAHQ2_uX9ia_zwTXmHUpjq9YsFLjYUQV0f9kYFZ6ROV9nj-5viVv2mKbf5rWt_1O-M7dIGax4wiorJu9C_kF_Mgjkn-OB7OuwKjycNgrJCUmcyUER8A5QqttPfwZzJYgwTEMJThinI8NA4CyV3OqMLrNQLasOnyWWuk6AIO9-mJrNFuVQnd0-hzwmVzVoY5WQLMp6hh_nupWVMC_aVyfh0MER3KNbZZ-ljO25LeTK9mJ4CRt7AU782kq4df_Sr87Yp1bL8PO0IUsMFC5GEWdbvHyV1R1t0eon7SFy_uolInN629HGFBjF7T0eZyGCPjConNwrCwFnN5EGWj0deh7_S0TaalRVzZqNOih-zweBGB8qAnj0Fvwux7T4JmAVGOnJgrzV-wadHxM6a98vpBr-W8pht6-7iehnzYeG8JBelZpfmDZB8MxI5Z_ktEQe162WtVJ6NLdh7udb_KQkx2Bg1e-lrnoPK4HfyEhIjEiV11iMQdBdO1muTlx2A==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7935011078"
   },
   "nike-victory-pro-3-shoes": {
@@ -2694,7 +2695,7 @@
     "price": 201400,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/cyWYruZLQ4TU7TZkc6A5Yn0uf6wc4GkVIRUGyLT5p4GaTyHK0eWNl9xFWSry5gc7lEO9fVSbhqoIJqkB9x05h6jLMvWLZBvjtNSqMpZ-46Y3F94yXi5WW3F7D4Cp-go7LPsm04NWy2ba6kOI2ZQcYTHSslLhletqIMlD_8vpfP7TClJSCOSufPzRup8gax4szLrb-nU8O0eO-pKASC5CvFPmvHbBINt9tselktewIT6kNa1QQSKWTYZ7-G5h-HRCQlXPBkgMBzA-6AX2-refGe7JR-lyjxYdciAackTLdo7soEsxZt46X0PQARgL62ZTMpJbkS_QviL2eTGFCBPYF6X8U4CrbfWzcbwY87ACcXkdXCQCTV3jxpCSST01K858bgis46O6pdcRmnna3xdOGbMQ3lRKtfXgyujPe3iJoxEqgziGQkU05qUB42BMHtsUa1hCPOSHcgmWmcezKdIoNbLK4IaatMeKCE6-S_JrW3yEv8Vwix84Oij68gqSp9EUmYwo4KcLhZFIgpZXBuBp7M5O75JhDZDKJS8MM6oQeNpNJtOffKxhVLzpXmcjnHpYj2KVQHmZPPw3jHhIInRJAXa4t3g=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7684624137"
   },
   "ecco-biom-c4-women-shoes": {
@@ -2702,7 +2703,7 @@
     "price": 139990,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/IyHdQcRMfUl9cgHGI8-TOD3gkRA0y24ysDKltSH_f1NL2UMsEjsxzIZCFtJbLFsj_blx1buCoJdwkl4ek425tGRPAQgVxch_6GGdddJBqbgqA9MwMrugxTxIrepfTqr-unIVoiYv5fTDL3DWBiDC7x6GD3UGeaPXgYJndT00wzlZSCCYNoNNoQ-5u77_2a_nDP3zwMOKkJHl-vKp2itfnOJCiOzSRRHCc7XhjuGIxooF2JPii9sg9LXRBfkxLIRbXbEMCBKbu6BbHeb9KQdQSWF2p6xozpUDWBHTBeGQ_MlUWd_AJNhgN8IRBRPlLaTJ9Ye14vKagGCGiNyxIRidJKwvjUkGwM3MC555ClY0Zk3fVgfgipklkdWB10N-naAK6Ym9rGu9lxMfMAB0hCdJoJZSsGuZSSrTEYdMv79_2fjJLIPapvg2rEDSFaca5oGPrCWxcvIkn1JGd3FLR85Pqc6VfV8lDDted5GOnQjpeuwuao2u3vfi7cavI9cD2nOkDFkU5eKpM27g0dXFGfEFTNkqIhuHL-enUoefBJfeGnYjTjBl-Rvdjp1kqfWLgc4vz10iwsxV3PZDKZmqmimbZkf7Aw==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9623706871"
   },
   "footjoy-quantum-women-shoes": {
@@ -2710,7 +2711,7 @@
     "price": 225000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/HHLevGhb_JMvITmJHG8w5InaY0aPUQX-v4lDzLpW9tTrfw0pT_2CF71-FRW2R38NmgbAloBYjNvPoHwpXJbhSEJ2ZxPXRUmQhh1JligPd7aY5MXFdw9QKrgNXG6w6g4NIapzdFqsdXi3IblmCRzFH30k0MsSMWUfglo1FLJhFHQb9BPuJ5JxZdGIGw4z2JN26HnAzftJ3FgBgvZ2epcyDnutpGvsClDHPZJUCWsa8syx777m6CvsZZH_NQaUysnHd_zSafWuzqYAG3Gw2X74fkVUuTNQlj7VcL71pKjXg0AI0euqnj3BGp_oK2I8VqQ3KNNXSDXMtyOfommmvq1NdTrn2TxmNPmM6g57GCeX5KVK8wBNR2VACNIz_Jfumw7NE5TF22EIjqK48h9OTZtUOBw3b2fs3T7iEkxHM9L2iO4Zvmn_Gr9sKykbscqwubRyoNxLI4ODIDfPDMzBlFjmfK4FiU0oY8x25S7LjdI_xEBfS8r3huUuvaKcyxLtM8I-AtXdOKwK4S4zF5rilqXEUSQnDxIf-f6dn3-awdZ4drXOrOV2a1yyKTsR0DMNq8PGD1tn7o6sj9e9Dh7Vpo0c-LKwmw==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9398448252"
   },
   "titleist-players-s5-stand": {
@@ -2718,7 +2719,7 @@
     "price": 389000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/2nQBSoM5WQvbswf82vRJ42T95f5u4yywPG1lkGbnW8WCYWyethpMpBCH-Pq4dMwB36r6BjXOJ2OP78MtLIF4b2n-pFAcpS2GLjRVoQ2v5Y9WEW3eArXYD482xXjHlt7zX5qWPt8juxYdQscsZQpzUhkjhEMMyIuhA8Sc5vT7AmvI4_ZIIK1gMIRtOwAvH0yX7i5ogNrltMao54Kg26LWFL_QOeUcLq8VdWw3wp2nQTFe5STGBWP-nJFKl5dXX5jvzCupIy8Bfp_Ff1gO0YVIOtGaNT5kFidjStISKamGJVi89rnkkmIYP0Ang-2doxkqaXP6itj-qdTSngsPgkDrEXjm0g3rfgpCB0z_ewXf2yuUEp4klczERNo94vi4uUZO3JJzahUbu3ttFUWLW0qaJtRwhhQq9e8zPPu1hVnfwv1L-Fl87OV4T8lQRmE3sMaiRYdeAJm42TNARd7Us6_8ZNAn5x8tiJq9D4GRPR9HzdqiKTw34pQNGerSw38908TW6rnMhSfBzTcCffUv5Wj3vLND0Qp0YOT6jGRixOU6MhA7-VB4BSQWIpAQFEjGWS_pm8oOti0b_6JUNTnGiApQ02rUgA==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9487108022"
   },
   "titleist-players-womens-glove": {
@@ -2726,7 +2727,7 @@
     "price": 34500,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/SqmtS4A0ljttrSORSgsOydvyqIcY7A0z1In5PWeFScLEFl4gQxrvFot_vKYpdExAjR9SAqZAoO0NCbhvGFvSNODaBio4mPSm6n_jWaQC_ZwxfXO3ejV95U1dRwzjQlNlwrY6HBikC9wiv0NdZpFJG5D7g0aXWrKRlPrHOZDvr-ii-FBG8mAXFaIqTwKre01JV0dxe8HLDAR0KJ_t-PPfGwZlnMi6V3w1-hrmeDDs4aqB4P0cOryzjjF_j4e4o-nESZFI_dpbeDX9kpZ8G_emPv_cKPwDZw_LBY6EeAk1atj8fnmgzPddGCdNneUkU6xmYNzvcFkqf2S_wGR1vAlcLEIhd7U4F2Y57dIJ6t1dLLIRsf48N_wGMu7hvRayTrOoPlq1vYlfK9lHy99xKzPU66u1y26m7FLHlzgGxXxtEpop3ytHkPGIhzko85DUsUuQrhhu0VtnLOnoU_p4QwAhIZ9QXQPXUZX2x6hleKTmAryYGN-B2mabVIHVlpambkPktxxJVpJ-T_ghdOH5aHKD4kOB5LVqN8QI09XgPlbDTesS1nQpwN2WCB46V8gH3f2G1LwLKeWQUIAbRslOAPEm-1IQboXY_dx3Wn8kFr3g_z_AgE5gx90BSenb1lzpaA==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9585591849"
   },
   "footjoy-wintersof-women-pair-glove": {
@@ -2742,7 +2743,7 @@
     "price": 23400,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/BZbyccucu_gXBgPSBff2WLbdn3ewmo1dHgkZDTlpQ3_Pj_3n4BYNjwdhrGf5dOmT-RQSxNPP9Ez57rAtlpfBFgLkHFAYL9Pl3D_TDYHLczN87BNk6cYyIbxra0l2vR2gwsy_IOgl44SV5lxZdqXVWaNLrusI0EVqXa1P13mzcbxA0fBV6T1EfgZqc7As_Sjk_g5Epx25ZIaG1R8WsL-qeQVqPOfxIj_3zu2mmlupDtv49rb4wJf1c5PD08Et1_Andeq1U3wocqxHXtI-UYJDAdl_nPCFwSzcFWMCpYxuGs4pPRTcmB5smmBlad2y5P_IbS9qvT_8-uPjVkhIQJxu7e4WuXnF5bfXZL28XFLEK73aqM7KgPbtuqb-2whyqaXL6wZY2KNoUI_JV-A7wqbTrho4jwDg28Pz-5maWAM1a_ipr1zN3n8rJ9HXdmKXnt2oS1Xl27RlDPA2LbkQ8nXeh3k467BY7yWET1f10HiwOnREJ3raJUs-bcte8MqwFedifR1eVceqewQns3nTqj2tDlvJpGmhcywTSFaRSUex97XnF0wUj4l9",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9393118388"
   },
   "footjoy-stasof-women-glove": {
@@ -2750,7 +2751,7 @@
     "price": 34700,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/XH8cGC9-xOu0TJ7-XJLQuWySB6DaubhBWOSWT-OQVbfCwDn1DNABWuuZt2Rekmcnc8AJD_KULueyiLRTNj2eMlNRc3yrZUTTPeEkJYqsiG6kosvKrlc0Bpi1aB3qOYPRbikknJNvaYNZKlpluoMh0Ct9QqOTA11qvFQsohnjCcNqn59NDFJJwlVMXEstwYUegLEmoviT_6ljhmmp7e_qcQXzfxL03H_Fp9BqGZGDZOOZmVSE-VbDfsvyy-qbhW4NsdAxUxmimSjgm0qzlYLLDjHWl9jqTkvdzbRhLofjf4wKU1D4rpzGlPe8YQh0Vyk1QaUSrJ984EL0YyM3qavfqO405oY-Arnezp9BDDcZ9vyrJkwWiuEUwXDnJYNaIsN6q-y6hqww0ShJVLnFUzNTCOGMc9awc6xnlXpfiy9vXWMTRBy1Hv3ijjwtbzJT_c_ynIUvQ-K-yuw4tP7DomT7hW-FC326-Oz0xTcuHDxYqYmQga9nmT3h-id-BKURD6QiRMKU5BxNg3RTwd1kYpqZvb32O2cagfoFNkbR3C6AVx1_yC-6msb39o4-p18qVYQDXmMf830Jr0_-DYscoLlblOU_tNM=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9387962168"
   },
   "callaway-tour-authentic-glove": {
@@ -2758,7 +2759,7 @@
     "price": 19200,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/gRqTLWU-jAge99cAgYoJhW_bgzH90KPMk1n26cqH1KO8WNoSxfwyHLyMPWrZHY6bFghhF_r3Bn5tx1CIElkuxITVL77-PHx2bpRjBSWtLkiLSqkmL9BcoDXr4x5PrKtCjnHNgx2TdJtEZWdAXLQMe85-mbJq7zCpq4KLdwN7PVA9FN39J95VnQsN6p1gr1So2jsAJhOkyVVFpohOBSqCM1Jc4GyK87B42ZBokSNOl6whoqbxOiZx5x6qCakerOmI_G7yeBNTOrA0BVpbZVTo9zxMbwVa-f5QCCvE0C54B4rpievNREeF3zyY92bUfe8zwHQrGJbZeQ2K2oBK15S4DcjnZNY7opdYdrWm2P1AmNqDD1Vlt3VO7pBIdRAobBBO72nE04rlyMB34CYYuGUTOU74jkgsHrof47eAbwIsBAuRJCOcgvDHe4lzc2-3DfG6zx7OZuqJlzL0WbglkVMgN7_4U2kqFeQ6hPQlsykAsx6x95LFhAHUnc91TuJjVTY50SBzFmhdxWQh9gHCmb_aGFi9Zr-b4PNkitdb_wyBvai0k45IVf1BdsGOE-FXPCMjwHe07xWtmsyNUxFE",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9776907646"
   },
   "srixon-all-weather-glove": {
@@ -2766,7 +2767,7 @@
     "price": 31210,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/VCK9Ub34Tl_959zXVHQy0tbaNnvHUBuWobcBM_h5F_BVkgEGTpTnBuDDkT11oxtlJZMyB3AGtYvrDtdEkZcy1dmcDuf2kVE8RS1Fmfn-ox6qPd_u6Bd8kHRaWpQQ3EYL0Z1cPQrNsjBPpQtC2ya8w_-x53Uy2xVHjF5K0v4ClfDY1aLKUUEGyv8nyIue19ZNOL_pB3jHyPXlNc6hcE31cKbgmQjwnK6AAfc57A-G3tIbYzFl90Hq8oRZ8jPBQBMHe2CHFtSQIRosjdwCDPdXCB9yJk7s_fXASpeelmzZWZH1_hziZ_o24SPI3uxK47gDvNnWnzyJiGZcFz62CytOtHOQyZGJQHpQIU9-bB0kZ3ftn_w-BmlVbpMexjOsm4QIhiIJvuAq2rmdG0QjulmVShSzr-cT4guaeKG493VVnIONXR2Nhe1d1pVUoIX1kDdad__tNomQXsB_BOAJxs5zui2FHatJrjZg2kgrORP2oHRFEoO2h-zWfGYe99JZLFFJQf8ufcjGSjD-LdNBn0S9-8F3VqYGDXOnhGleSvI7k1l0lPHApZBPigdLrzub9el8lm0jH0GZujn1Z53-",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9713529625"
   },
   "lag-shot-driver-trainer": {
@@ -2774,7 +2775,7 @@
     "price": 240000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/kVLskY-LEJRyZzQ9kSnWG18f7rEW-Alv2kMx6jRwxDphzMPJSE_zglki4PGJSiPb5373JDlriVQTxm3BhOtmlsK5SlwRMVY6CP71z-gzndZ5eHQfiSjv-8TJHhNAGWR0kYX00iIpe7emLxyBTfB5ICNboOxu72xYOL4fdp3C-22ij8GodsREhsV-YQ8L6bLfE_pCBS5Vqfz73n3pKjOjfuE4oKFn-ps-Nw-O1K2thMLCNR1koxw99LzOzB55KT3T-2iGW2F4zM1aTNIKarKCGm_JQifLNFrbbo86g2RTezZYGNws0SBIxgE94XnOUtZLps66ZNoYwDRX8gwnqque3PbEPiPrpM5-zJLb7_hVbnWCg2fcL7-2Awwyb_XGNyVSOlBvN_XMRx9vaQttA4bXEuCVuj6yOYLP2kjf0KfIu5W54zrgqXKPlX4mVHChc29jEZWruM9QWZY2cnCwNOOVs03ABgwT8IqoQh0uwdJDZ_0z_hbufFS_tkibRZAq4QbLtpcmCBegN5h-2EyDxEuRpg9R0FIiuvYUFhGJZX_c_e98X82f5Mt7OIEDnOLsd69wcR2w02OTv4o6jVpUJAmaVlO2Dg==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8882902172"
   },
   "sklz-quickster-chipping-net": {
@@ -2782,7 +2783,7 @@
     "price": 90440,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/LjhX9nyfe14TWmhCLmLc2XiUGC4nPX8oZSJCG1HXwuRv0rMWKWPU8hsNMwJRzQ6h6C2hwUwVEi-Es9M8klKPjlQKhtkigoTSJId0ggysdMYDhpj0iuWU9WLR_sXNVJcg_CBCofZ7Us_vyLJWwkSvjmE9oBzEoYNzR9fgoXMzlPb4h4vFd3MFAAAGb_qZYnw3xQxrJWSDfBEMqzPPbNev_i4equwrvPF-E2LIf6--bcuzubDN9HbF1eAsxhSwbzpX6fmtgN3B0GtE7CdDCL9eC-5jbeGssetWKvRlFt62yRtPYo-uejkvyf_aWsIr3jKxRBBFSEOolM3ujTjVR32SFA9fMnMH_UQvZq8__sgEyspGUh7C5s_c7n8N-XMoTT8WI-zSYZ7BZKaTRU4-qTqhDtXRiES_2zG72N5cNTRu4L8mr4hPzFErztZeibP1nQgixWdtI5tbJhh4PqCWiQtKDKOzWWoBXPEyRhK-mGJT_W-RY3thPXWiauuCfUvEFZVsZu7H_eqQtWQ5T140mTAznbTmQkLfy8CS_wSsOIX8DRLUaWhu5irpN7iR22y1mVSVlrIbsmIEBbaUP3L7w5rSdvob9Q==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9670485059"
   },
   "callaway-quantummaxfast-women-fairway": {
@@ -2790,7 +2791,7 @@
     "price": 480000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/pFV9CBlnS0FkxVRNpJrgt-lXjWq6gK55R3obvdd_eAZd0qf0Bqd8MMqj0qupF7q6L5xYWynnRQpWMGk4miVMYKWFcjvzr0ZOispYbrl61kzxVSNLRdjYM_UZETBka467YjUHvxUlUX8ZV9Kblt-AClQtJesNvovj8nS3HqS-kRN0iR69mGP1FoFLXW2SdZS7sMIQ-vUxsCx0YLexuFbkTZCaIURRl-s2mDfwPekzPWbEY2j63uKfkZKjp7hsDJ8ODwEVJTn5FEKWPHgkrQU_3kM6lzhSU9wIkJDwYLof0L5sxV6AWpTDZ5VKk5Rd0ayrkuBeyFfQgmkIdJGhbcUdAzW3ACGX4nVAbJjXGxjzGzzYUhORKFXeQ88K5PvsumwT58VNTj4ytNWvr2v7GF21CTl2nX4Nf-0y92FN2mrmKRwbu9yM8eZiE7Y61jRJiGaB4Ew4h28whMWqdVj2NJkQr2SuAuNrBSZvGODQeeEc0HX1qRmrmefBSY83InANDxyKX3hcZlDNTz5y9j3oWQrmtB_5T_a7SAqg9Ldx0LYgKkalpAoX8z3VzOEPhq7CRd_QPz4-OqsfNd32qywK",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9699651028"
   },
   "callaway-quantummax-women-fairway": {
@@ -2798,7 +2799,7 @@
     "price": 420000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/2Xp5HjXMMiXRhFmc2dwANfAqH4Sl2NVQrZRNwj2_v90NU8mKoDQRo2eq9i_EKx72nvKIiAcHhwRkQcXf-H56JZpYPLFHDT-BfetAwL6jj2p8w3ZomejaNABKedU5emG26OgoQKdOxL6483GSdAnnyaiKF1zVMailw5z5sgZfJn_btZAtLfZWg6ZNQso9fTlkmZ2CJmbA5yhIQoV7CGnUK0dFFvDIZLSDdFW3twcB9hZTZIryw5V5_OHIshKp5lH7D8wOQeEWLWYto8m96XkhDm0cmNSxYKDeKke67RyvtgVy04LBFK3wht7NEQoSrNyI2PCiXx5SjEWNfjlE_tMughbls14zZyhWDKd6lmqGKoIYwqxWDzDyh6Fm_ThlV0JEI17dZMNimgqVE1IcZxinDWBb1WdUp43vo17F6GMcWnY2mFNZ9TMsDoy6Wn4t6pRPwSvPsTg_zCgtM1t5_ZprorJ_my-XObi6a298YiERIC_cBQAhreaZm7j1RaZ3rX1fJ19pITe7GdnLnwkevYI85WNwE98t708m7asbnFdS4BvEDR41y2jA56ptMP3NUj9D9jv_wLoXKAcW89pa",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9328659325"
   },
   "cobra-dsadaptmax-women-fairway": {
@@ -2806,7 +2807,7 @@
     "price": 479400,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/RzDThmw41Vgig-bVRwR8xD8w2b0nyD_VqHYO9rv-Ch_qgtRJ-PzN3GuqyIA-eabPAEUkV0RpneeLOTy40HiqYP1F4qZ-1NzCRWUS22C_gOav2t3HkGzAEdvtoivSnfBeR30nLHriJZDF--Vo7XSqYiitAJmYFJM62vLHV6xiv9czWpochnzDF3HwAvWIS89YUjglNFpx6L4DDvhAMj-gciWZ_mTRyfY8aC4Cd7AD7EKR_Wi_c18cS8TRVZMMCoQndyyCDOkdIQhFdzNLSJtTruGTjuvKnPB6nE6MzpkvadG2yRrLx31lxGFtPwvDmVWhVwKXQUjZHFNU6bqiAPsKd85B-TORnCsxF5IniUctiZGztYHqFtwezjwLLQpzf_BI9Gw19RmO_tVFSkWRH-JT4YQHn7FfB4Ntu8rmXmk6MAsZNN2LsK6rKyGM9h6YNtutdjv4e3LJtv6_lvhpQiJYw-_IS2c1_KIwiYagdrW0C6rJLQhxrrqFoUUl87vt_UODYQPam-JxlsVZyJ_0TeX503YrIQeW_SFn4I9_GCTM_UP206b4dP2xPvXRDqa994TNSqpMJm86WvZMFge0swPx3UsxIQ==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9396092000"
   },
   "cobra-darkspeedmax-women-fairway": {
@@ -2814,7 +2815,7 @@
     "price": 430000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/2rLSl8v5JImW4XE42vnmG_hrQXcxdKHZ1PpXA4V8yJzyZAz0E1pIs9uzrggVLC_zrZsjFY6h9lXP0UkMq_cBI7VXCIBJE5rpiIRI0uP3hENqa-Pv9VUktC74VdR30a5SlkmqHqd-KL6jmBNuyfF5KsLY0oDs2J6qdwSkqkKnpX8-VWCDlBlCzb0eOVhECEqUxl8Hzll8rnyOYxirZoBT9idSuzc791oEjDDu_GVR7-ufZARgORVPuKZaj5ljC5XFfnm4CfpnM98nOWTyVsLqTGq12ZXptuot7L68cWQUF29ksBjGy89_eV2NepAV1MKnTeFP16QkWczn4WwtGfhatoxsYhY_c8kJmYNxwk2aRpZy3gkGUZGW9Fhc2itvUCCAnESc1lcMK5WGG_EurUcCsobCAlKf6JAlOYlG-0H7v40XMgEa513A1z2HZq0cH5OwQixHAMTGNtyeiDNnTwX8XmgHSHQxNvXpCEbOFJvQcOwgPME_UDrqnKp1ouXhMhKZ1ZLAQeeGq6MLIQ2_Q7cVdNeggJRoMWV19ki0yhlajAJS1mTSTxtap361m5xz4YN0Mn0V590m-jVW1fZrcVFxhzsb7g==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8401432856"
   },
   "prgr-superegg-women-fairway": {
@@ -2822,7 +2823,7 @@
     "price": 350000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/JZuFTHYe4H1YS7zrJUIsbKv_EEGIIizxYGuYR0drZrVRkkLjvfTnehwEDSPFaXYWBaiBBOc9T6Es7HFAgx_mktKW30xBQ71NXTCBwdpmrwdxHHT8ItYhyevr3JNdptzoUDV-3l_wlymF0mRwhSTm01SPHG38h-Fi-RrGBxrkURjBN2HmPPAJS7gjgxcSeVILpd8q3nn39y5rg3veKxYhIxMnVHzWQt7-FpTBCo3iU9MO84zJRVH8f1KioN3X_3vbMr7VgabwJeEsERp_jk0pnDLTg3pl2haxmmJwp8-T8A0qJHK9gtpUiPFxS2cjgyZyVLu6T_75jCdMjcpCqighf-wLaKhZXp3vrFQCDcp_r9sffcQJZqFawCZDbGmQPKtDsbVnzBYoMDusXSq36ErgQAlT_46yPyN1UJZoczBmSyho7SJNiBAGTDp2qZYnoe9-iXxwjkLarSROVOok3-CSWVdPIcpFLDOEyf9_l_RivzdoP-p9sRElZcC7kPpor1T6s6vOiTJKIsxQlqqM2k1X6PFHyMPVrjNrXMF6OjLWPQAlmLgCYOlz0aLM0fKi6Zmi4uXttWFF8wkXVXgxEkMfQtvcxA==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9787515317"
   },
   "prgr-superegg-women-utility": {
@@ -2830,7 +2831,7 @@
     "price": 550000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/kOCjnnS9HMde0_p-kNhnpUs2bPskh4vUOExPzXXa8Zu1Ofll5adqhn9fJxU_5dTu-kISYJn-lzPCKqXlOymrrP3ory5iq4VbpZd9BI4VHGlErXIIEMKUP9eZr0nC2dHL94l-T-lCXHDlmZb4SAMq1IqRZc_iE3KSWRVgoBZ6SEX2b_33M3PvtURUZoktD_Kpkbc2yEt2noIfq_05SrnfRNvHKuqoe06KYTIHRaL2SJM9eNMc_9Mpn6WZdRvoz-z4Ok2QcCZhNWF-t0oTTp2JGv6AlizfSlh9mJWuoMMsALTS2hLfozCv0E0Mt-RBa8zaRgpfqXvaVXuqaGBT1j6pUBGEYtDx1HQQ06JLCia63-rF2gufPN6XsRi1mHffDLfpmF5I_OwJebHuh1KFhxvEoyBbhXEbA08KMzd9NsFarMEQ1Ox71o7oeEVHYA2EucG5XzE1DPTGFshr9Pfer9ybaaksbNAbI8q2A0NYigORAle11cSgKN4WjXZZ4Ly7eDpt0q8o3m8qT4xjOINF2k7jXIEFI5Ys1HSFWXtv7J-NpAk18Wu9b4BRasuqumjE2Mm6UdFUXEeq6E8=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9350249874"
   },
   "majesty-royale-women-hybrid": {
@@ -2838,7 +2839,7 @@
     "price": 419000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/ny_pIgWV4cEo_d9nn3y2jc6ZXF7j4T7krL2JiMr_HBGUhVlCy608wieqGzSh3SHwmok_6YpPy5aW9wy8HDnxuedIJnsITHlJ622fRlee9IyoTN9CNlfIHfdMaSsH1b8DHX8iNGd4B_eTRSnxCw_7tOLScBn7h7SUYLmagVkz8BjBtgGajSeWyu5us2xANftxi-ziQoiFihLHqmZ4iUBMC5-YASNxM7IBI8_QIyygrKtckc9OAbxU0cPrQc-fl-hiG0zahDLmPK6g48EFfhXmzdwK79Kh8700HoUhcrdmoDnzkJj6dp8m7v1Y_H7kvxdkcJv-ce8xvjwCkzCZOEZ38G-JEos9zo2iDjxNqU5oJPAQcWBANrefQghwyUEl6-EKWuvFxT4A5HzosvL034P6a0HDZAZ--RCoCto9ZGYj4AwlrMGxYIgEH_8FlQRbaGY2qaU6pxjtxUdovUBxnSQrICrNOdjclSrDUNHk4FaQj8DbNPUZ4x_wQcyBtbjktWjKW2RhoZvIkJ0saq0uuSH1WJv_7JE-9s7geey0NCby08og9_tP25VtPme40h_cfDw5YePuncekqY9tGxqY24CcSFcA9_U=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9716346926"
   },
   "cobra-darkspeed-women-hybrid": {
@@ -2846,7 +2847,7 @@
     "price": 330000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/CGOL00YMzzngy0X5CNXduqCh0Q7MECXR0JNIkQsz8KTFkxKiAF7WPaU2LDF0i_ld2MmTBDykOtsaTbgSPf6FDvJINeqdoFT1kPEBvRXD25I0PqUIKqPSwfkaHNQPfrL2OIkmX19I_8pvIeAsA5qUXPbizgLYPuHYtzIfN2LrYTtqkluZI277TVfpscoP72oc-m14aNQkf_pqtG1ug5IT9smnQhounHKmyGW1zP64k4FNOdELrWbAJANs7ddlrL3MUZH1f8ZAIZUPTEEfE4zEi7T8boO-o5fxLN-YPMe6srjrs2egMNvUo7MUa2_AT1uGQ2T-kv6AG3DpC3G6uxvvM9C9JUQmT5onJZQFw5jWZ1bSxoICgrsEcgbMOV1L27bo1CfwaG5vOvk3tgVFR4gumrHNy61JJAbx_hb9kTRwVlPotwsIeZl9gW_Qy7rOTCz4j_ZAwmvNHLKVnF9PcBYSUxYoy4UH3IgXm7SCXAQbmk0Ei9YZpbxnYHvjL1P09V4slWEGH2PX-92PqKsjtr-WwfsQuhNt2o92ucadx0dRzCbZFWaHzGX98Z1oKE2A4gCFf0k94XcDrIs_uutKRxqttr98S_RT",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "8232249608"
   },
   "mizuno-jpxq2-women-iron": {
@@ -2854,7 +2855,7 @@
     "price": 1450000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/O1hPiAYi6sF6O3ilO7Y4zsi1IAizQqmdDHdLacze5s8lA5AoBYNRE0nkjSP-w-aygQ5iiVSsXZxH0Arm5Hu42JiGi_1S0AeLAI1fhWUS5Pz19ebYLaz8sVMxMVOF4MDBgGgZIWcVkmOEBHvY7eev37BsTPfPzzFNexNa2KYgkhkzP7H0C61BkjepbOp-goGOzBBDtJWVvuGzfsaIRVeq368yVXKPu0EzCflvjoS1_NSnZV77WRs92_NKPOrTO8N66SkOdhcAeT9babVT1lai-Lf4DgqojWS5PAmcOoNKV5zxux7yqXO7McmZ7Cu4P4TpQxgEj7LM2WV7EdgQRBRFGT4DkhEe-Zjo3Eo7y-6UAvXnqVagIhLLQMNt198dEIEaTlE556EErv_wyrz_vq8Jo13y4H9GugI2s1BEp2IRCPe0Ddk2Uoe7WoT2G5yjop4q12fu1fXLsHN1nmYtV9vV-PNUruoEY0aAWMknNwvzNHTcIe25cU_E9P-vCoROnn4lc2oEmrG101kDJeX-QSM-IMKiTYd7bzdjB9xUgS2ZCeAKQbrztYqxp33qBljsjTyTGg==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9414633274"
   },
   "majesty-sterna-women-iron": {
@@ -2862,7 +2863,7 @@
     "price": 809000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/ejsvuJQzukJkLEuhel71E_Yf3-RRf0tkDEzkQjDhiwPbJyFT_xBiGGr_eYiMD77XMrog2kuWq7RCSZc6zqUd-W_auHDdGCWHoU8zSOMSDb01VmJL_xUJlnYcAmYkgHXzahuIuCseuh8HanHSnE2NKnF4kYwSS98RxDiG1kqJdnDTatOABVX6wpLyfPj56aROv0VqI9ZsPOY8aTIKxW6o6WL7FMPaQF0sbIqcNGRAXR62zRY7teeA8UYrjY73oLjJScdrnOrzwMIU-zlhS63pOHd2s0QXru41enJjcAl15lUbCaWUqOoGgLl9BvzC3B-7f9NO0YnLKeK9ccBmK0TPTTw1pGdpjRxP1hI0dCm5wpSbIAIUrEkepv2_2b5DYWt8lCOiV0upGudpm2P0FYuvbO0G7O3BkiE7mBdIMJUo5tlV8SLewYTwLoc6FR8QfVeeM1_ZOKXdWwwkqxy9e1xv5rJviL9LTqikBihC1pOh4Xvg-N7CCvPoI62eZxc3hAjpe15FSqNmAU-SgI8zI-mPVo1iA6Rh36vxOq2VTIO8r9zp1ZpTGS05oHjrafucLX42yA==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9570793996"
   },
   "xxio-primeroyal6-women-iron": {
@@ -2870,7 +2871,7 @@
     "price": 2750000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/_HqPqGaJQgW_iu0s_GRoQ-QhkwC1eBXcQeONv5NkpAbHp9XLmlMZjAsOmnsm0w_yNhDbev-hkv_zRn4E8Ec0RK02xVEVEI45siYyfAUuYzvYoYU5yhjDrZ8Ws4o-W8iRjeH7xT4UIwCgt9Y5qE7VMx7SISuHVlIazXU7OJRe1biGMvGVbguLlXCrmfgR8UmvRgtoh6wvr52sWgqG-E92dqiqiaMm8Y8GNW3frsPYu1ywR0Vrih4eUrQiuIJwZIJfJOcMNijkn59lt39tmX1U1tswMLwKtL6sNTPiHiOPSrf6zqSGpQ-F4ZruYxZzXTsvqzOgH8TL7tH0JgO8T3ZFgSujHGXjbky14WLHSD8kXjAznVwgKf4ZJCZh9kVwt8osHzCYNG-cb2VVoILGM3tbiK72QMfC941Rsd3Ty16UrQxqglGZ1bL7uHoNMvvPJUsZ381edor3gzl22Fh5fR2Bj5dMJl_SkSElotmTICvp85hquNzIbAZ9T14wzgfarufJUrF19y5kv0z416yfQGumbS1FTi083ZO5xMqdNhOizL5NALcocc6RzfN0t4gjQMLoiIO6AiHp-fMO25FEG8VON3nMrw==",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9618491402"
   },
   "callaway-quantum-maxfast-women-iron": {
@@ -2878,7 +2879,7 @@
     "price": 1400000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/2ahvdG3jxt6j5Zou2bR0i78VlN-c6ayjatslXx9v3D9u6kXIcHCcL9Bgdd6PIxOxHYqykVuOa5PrW_Om4DoQUPb30JTA57usJve6IdQqrw0TElWGsgEpCxiL5mV08iGHAa1dAaNynA1qhihbfKziFoOTcD8lFRarQ0fkDB5NnsKgH7WbljJ35_DjUQtC6FHRwbCXFfmbJ_AHwOPUL2J87EUuClGREbDY6GEP5ceQzy7qqplZ5ekX2E_3eVcBLuhxxnj_S48XDV4LiqasKfzTgh186ODmDCZ4KzDq2AdKmKKGmjn3pTMxCOGjfcUdLQdbGuoQv-V5z-cMLEw_k6OX140OXHdSZdilc9m_H12uW0hJn79CtgCvg8mhNe2Q-0PHcz-qT-T4CtMUnpSK39dEYdGex9M0XQiabBP4MmaqF67FeFOQTizyy1h75QYiVRx49uYQc9Z-czlkfMIoOFi_Ld4uDCY5fMS8kzCZrYoGW1XunNcNMDvyuJmIkvDpExGV9-L1mqVtDnErc6c3QWxEPWGcZQHKI-r3o9_A9aeIQiaO9-kxdAJAl9FLjhjxx48elnS2zRzpschSqzpyAQSZpat8970=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "9334870191"
   },
   "callaway-roguest-maxos-women-iron": {
@@ -2886,7 +2887,7 @@
     "price": 609000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/Mcmn0wdjCrTsdLsmMQiorAdUAnXVLfiOuOKD--9rwqBSaMs-D0pgklZs0H-7ZGmvvMcUyvk0GlwNjkCI9Us1zkiD6e1O-vXVuI7V_y-1B-PKYnyh4lrjcwCm35bOfdvP7u_AtvT-ySqcvZyFLkZSIe2eC_MnV0QlYtcKYXVTYYDesf0nox8gsDN8Yt10HaRFhpWpR9LoSKW7ScreVl7QrYHnvuZlJl34GCg7VeHKvYeNCUyZtUDVCSBTcejF78u2PzTgmOoRUxZC5qU2oSrmh5oF-azkXknNVubQjWRRtN0092_vYC2DANc--QfltNlwQuFzHdRwUkGxH1TBjOd98hmWLLb3Yw7iOSYIlMeLk90TzHIpKq1XJ6bnLwcbdIxJ1dolElRbOlO3_zY5BudyZvOwh8CHnQrd01luAg10rmA2xulCkOwaONO_3SgTbTkASyu_zvb2K4l6ZFTieBmndW57_yGE-VYQ0HNKf28B7gGeycTrYCqQ3CVh68DY_ejB75nZFsZpxyKSNLG8-FPvuI10te1VF3RIO1y4xRBAtUfjZ4tPVDT7H4aVXSwZR6IjGOyJNf8OEDeHhD6ZrHFRQyzU-M6m78s=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7582098704"
   },
   "taylormade-stealth-women-iron": {
@@ -2894,7 +2895,7 @@
     "price": 690000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/bEpas4JsdHNBvcKpbJ364DyJWEaqPtwQb7DAV0FBG0tD6YucCFPLjnI3m7Piam54hghm3MQi1u2svTSa9Nf9u0R_pD9146Ft1QF1KsuADMM1DESCg6PRV1HpV6UF-7Mc1i3fSVIY0fo-P_milearIU7sQ7ixZ5z_LbiCMBrr8fUttXKIhfd1qfOt0q80DdfXfA6Zy-q8D8JEEJ93Wj-Fv81eqQL71DOmDy6hM1MHG89pHo5d_CXxF2cQRTTQcRog_mGS1R2pSfmRDIatsyLg07NJX8JipB7CNRHhonMlOaMIkedg2JP2qMU5Eu63B1SjSrmE4m0cAQXzeACwa78g6rI_kgNapZkBLGloZXeO1yxq3xGUzqdBLHXFH99O8ymJ-RwEhm4Yk9Zq9aKf6F8Pi5paAVNs9G_2qSzfXPB3K2syXqxM1bSuu-ktAniDL6DS2g4hdJZ4PFjiYBaN2zKbHD7WdNKcK91kf-PoaawMiDsLg8RLPqZqFPpVIRgl7LOQ_5LMg1Qty4GQNdGyXNvFBaVH8JoiKdt382gUVfwPF6rSgrDADlYY60xOr7jMiUb51yDF-Kmo3OHDW2TJ1SNsNB4=",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "productId": "7702080747"
   },
   "ping-g440sft-driver": {
@@ -2923,7 +2924,7 @@
   },
   "cobra-optm-maxk-driver": {
     "title": "코브라정품 OPTM MAX-K 드라이버 2026년 코브라푸마골프코리아, SPEEDER NX 10.5도 [SR]",
-    "price": 760000,
+    "price": 650000,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/NoFgT0ZMBo6IbDIHNlAt6R4VlgoPTkPXzbZiDDyRY2mxPZZHSjtVoqWCEX7Y4LHmZ_0vQSezX3oAgc3cv2wDap6yQrAzZxmGtz1HvZW6J3kwLFV2a7yHWx1p1_rLYUK9_iDhW69g54_uS5wwqyfkGkQ_cyh1Zp6Qs9RNSkR3r7vdg59EupRUN3IH7KeuOEftowuMb6UvyeGAzrEglSOv53q1Q93cqXwS1tR-sC1Dc5cNFybc1OgFlOPxT2O1XGhnyxu4aKtxFNJEd37RqITUQFGTbilnCDH5yAh5wHPSppUIqtV1HN0cDwEbowt0usW_JvtDfTkfog3mtGg6lpSzCwBGgTXKJC9ykiuqIYABpHrzxbIa0l0hd0Qrew2Uu8giLu47ZU_cM9nfJOwuttdxKm-yN5WQ_NW2cT4Hy04yNtYphCy-hqhJSDUu09gUH7Dg4MDKbkD--3A0gN7CzvEeoFgWAYniPOIPsZoOv7eQ2Ax5P2f5WHu2wII7sloaz0t7lDEsei06-dJczEpmi_SOePoUFty5bw6ozDXEvVNiBW5gXeeP0Y5WbU-E0Xdf9c635vFxdqJm02s=",
     "checked": "2026-10-25",
@@ -2971,7 +2972,7 @@
   },
   "srixon-zxi-driver": {
     "title": "던롭스포츠코리아 스릭슨 ZXi 드라이버 남성용 VENTUS BLUE + VELOCOREE, 9, 6S",
-    "price": 550000,
+    "price": 450000,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/BJinO0uXvyDBJ2hUBKrT_ozY4ygB9tgFCwz5LlqdMEO2VM5axviVQ05wrXYjTIrJdsLWnpG56ibuC-rf1n4IaL6MNxtCv9Sp95TCHSbHXnVeOeTpicyHE4BZGTleYIdCKVj6CNWAKfnULMNyncdnkbKDTcPqS99GRFyQ9YjoBXjWFl7Copfjrv80VIK5VtaRI5p5hDawQ8Kd0gEeBgB_cHQFv_n3Ybq1XbsxHkFLxEgjG9zQjsoEZjWiocIKpjLwbhhkc_EmvXjr7hzyl2OIRDjb36dUH-OMgdbdKXeRrmdtWbyq-WaD7sHN7fbmBCplW2KfdrdZQLVVmJ-ZnwQav1UoS56VyT4eSliRTBOiubMmZ-YfX_5ADR9LtPUQ3Ebipy7r1_L_q6Vz1DuTUMTim1Gs3EG5YDM_QQcxGineURyHIqW9HFdknJbYTPzIYNN-h9Cx2uOAcOizfrWz6QwHZVllgcW-0yUjBQiZ3d9Vhvwry77EDJ4EUKYgeLsUhP4nVoy2e4K4lwI2d6ZdY81KXHijN06jvm0mRgezntKUWW9jcB6Yydl93TpRjlenmjRLYA==",
     "checked": "2026-10-25",

@@ -2,49 +2,197 @@
   "date": "2026-10-24",
   "by": {
     "act": {
-      "캠페인: chatgpt.com|/c/bag": 1
+      "구글|/": 1,
+      "구글|/c/bag": 1,
+      "구글|/g/iron-recommend-pro": 1,
+      "구글|/g/putter-recommend-beginner": 1,
+      "구글|/p/callaway-twoball-ten-putter": 1,
+      "캠페인: chatgpt.com|/c/bag": 1,
+      "캠페인: chatgpt.com|/c/rangefinder": 1,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 4,
+      "캠페인: chatgpt.com|/g/golf-glove-recommend": 1,
+      "캠페인: chatgpt.com|/p/caddytalk-minion2": 1,
+      "캠페인: chatgpt.com|/p/ping-hoofer-stand": 1,
+      "캠페인: chatgpt.com|/p/titleist-players5-carbon-stand": 1
     },
     "asn": {
-      "AS4766 KT": 1
+      "AS2572 University of Missouri - dba t": 1,
+      "AS3559 Korea Telecom": 1,
+      "AS4766 KT": 1,
+      "AS4766 Korea Telecom": 2,
+      "AS7018 AT&T Enterprises, LLC": 1,
+      "AS9318 SK Broadband Co Ltd": 3,
+      "AS9644 SK Telecom": 6
     },
     "cty": {
-      "KR": 1
+      "KR": 13,
+      "US": 2
     },
     "depth": {
-      "/c/bag|끝까지": 1
+      "/c/bag|끝까지": 1,
+      "/c/bag|첫 화면": 1,
+      "/c/rangefinder|첫 화면": 1,
+      "/g/golf-bag-recommend|25%": 1,
+      "/g/golf-bag-recommend|첫 화면": 3,
+      "/g/golf-glove-recommend|첫 화면": 1,
+      "/g/iron-recommend-pro|75%": 1,
+      "/g/iron-recommend|첫 화면": 1,
+      "/g/putter-recommend-beginner|25%": 1,
+      "/p/caddytalk-minion2|75%": 1,
+      "/p/callaway-twoball-ten-putter|25%": 1,
+      "/p/ping-hoofer-stand|75%": 1,
+      "/p/titleist-players5-carbon-stand|25%": 1,
+      "/|첫 화면": 1
     },
     "dev": {
-      "모바일": 1
+      "PC": 4,
+      "모바일": 11
     },
     "hour": {
-      "01": 1
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "18": 2,
+      "19": 1,
+      "21": 2,
+      "23": 1,
+      "01": 1,
+      "03": 2,
+      "04": 2,
+      "07": 1
+    },
+    "nav": {
+      "/c/rangefinder|/p/caddytalk-minion2": 1,
+      "/g/golf-bag-recommend|/p/ping-hoofer-stand": 1,
+      "/g/golf-bag-recommend|/p/titleist-players5-carbon-stand": 1,
+      "/g/putter-recommend-beginner|/p/callaway-twoball-ten-putter": 1
+    },
+    "out": {
+      "/g/golf-bag-recommend|ping-hoofer-stand": 2,
+      "/g/golf-bag-recommend|sunmountain-h2no-stand": 1,
+      "/g/putter-recommend-beginner|callaway-twoball-ten-putter": 1,
+      "/p/ping-hoofer-stand|ping-hoofer-stand": 1,
+      "/p/titleist-players5-carbon-stand|titleist-players5-carbon-stand": 1
+    },
+    "outact": {
+      "조작 후|구글": 1
+    },
+    "outcamp": {
+      "chatgpt.com|ping-hoofer-stand": 3,
+      "chatgpt.com|sunmountain-h2no-stand": 1,
+      "chatgpt.com|titleist-players5-carbon-stand": 1
+    },
+    "outref": {
+      "구글": 1,
+      "캠페인: chatgpt.com": 5
+    },
+    "pos": {
+      "비교표": 1,
+      "상세 끝 구매 상자": 1,
+      "상품 페이지": 1,
+      "한 줄 결론": 3
     },
     "pv": {
-      "/c/bag": 1
+      "/": 1,
+      "/c/bag": 2,
+      "/c/rangefinder": 1,
+      "/g/golf-bag-recommend": 5,
+      "/g/golf-glove-recommend": 1,
+      "/g/iron-recommend": 3,
+      "/g/iron-recommend-pro": 1,
+      "/g/practice-gear-recommend": 1,
+      "/g/putter-recommend-beginner": 1,
+      "/p/caddytalk-minion2": 1,
+      "/p/callaway-twoball-ten-putter": 1,
+      "/p/ping-hoofer-stand": 1,
+      "/p/titleist-players5-carbon-stand": 1
     },
     "ref": {
-      "캠페인: chatgpt.com": 1
+      "구글": 5,
+      "캠페인: chatgpt.com": 7,
+      "캠페인: youtube": 3
     },
     "refland": {
-      "캠페인: chatgpt.com|/c/bag": 1
+      "구글|/": 1,
+      "구글|/c/bag": 1,
+      "구글|/g/iron-recommend": 1,
+      "구글|/g/iron-recommend-pro": 1,
+      "구글|/g/putter-recommend-beginner": 1,
+      "캠페인: chatgpt.com|/c/bag": 1,
+      "캠페인: chatgpt.com|/c/rangefinder": 1,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 4,
+      "캠페인: chatgpt.com|/g/golf-glove-recommend": 1,
+      "캠페인: youtube|/g/iron-recommend": 2,
+      "캠페인: youtube|/g/practice-gear-recommend": 1
     },
     "refurl": {
-      "chatgpt.com": 1
+      "chatgpt.com": 7,
+      "youtube / video / lesson-weight-shift": 1,
+      "youtube / video / t-iron-recommend-1": 2
     },
     "seen": {
-      "/c/bag": 1
+      "/c/bag": 1,
+      "/g/golf-bag-recommend": 4,
+      "/g/golf-glove-recommend": 1,
+      "/g/iron-recommend": 1,
+      "/g/iron-recommend-pro": 1,
+      "/g/practice-gear-recommend": 1,
+      "/g/putter-recommend-beginner": 1,
+      "/p/caddytalk-minion2": 1,
+      "/p/ping-hoofer-stand": 1,
+      "/p/titleist-players5-carbon-stand": 1
     },
     "seenpos": {
-      "비교표": 1
+      "비교표": 2,
+      "상품 페이지": 3,
+      "한 줄 결론": 8
+    },
+    "skip": {
+      "내부(관리자 브라우저)": 1,
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3,
+      "데이터센터 AS36040 YouTube, LLC": 1
     },
     "stay": {
-      "/c/bag|30초~1분": 1
+      "/c/bag|30초~1분": 2,
+      "/c/rangefinder|10~30초": 1,
+      "/g/golf-bag-recommend|10초 미만": 2,
+      "/g/golf-bag-recommend|1~3분": 1,
+      "/g/golf-bag-recommend|30초~1분": 1,
+      "/g/golf-glove-recommend|10초 미만": 1,
+      "/g/iron-recommend-pro|30초~1분": 1,
+      "/g/iron-recommend|10초 미만": 1,
+      "/g/putter-recommend-beginner|30초~1분": 1,
+      "/p/caddytalk-minion2|10~30초": 1,
+      "/p/callaway-twoball-ten-putter|10초 미만": 1,
+      "/p/ping-hoofer-stand|10~30초": 1,
+      "/p/titleist-players5-carbon-stand|10초 미만": 1,
+      "/|10~30초": 1
     },
     "visit": {
-      "/c/bag": 1
+      "/": 1,
+      "/c/bag": 2,
+      "/c/rangefinder": 1,
+      "/g/golf-bag-recommend": 4,
+      "/g/golf-glove-recommend": 1,
+      "/g/iron-recommend": 3,
+      "/g/iron-recommend-pro": 1,
+      "/g/practice-gear-recommend": 1,
+      "/g/putter-recommend-beginner": 1
     },
     "xpv": {
-      "/c/bag": 1
+      "/": 1,
+      "/c/bag": 2,
+      "/c/rangefinder": 1,
+      "/g/golf-bag-recommend": 5,
+      "/g/golf-glove-recommend": 1,
+      "/g/iron-recommend": 3,
+      "/g/iron-recommend-pro": 1,
+      "/g/practice-gear-recommend": 1,
+      "/g/putter-recommend-beginner": 1,
+      "/p/caddytalk-minion2": 1,
+      "/p/callaway-twoball-ten-putter": 1,
+      "/p/ping-hoofer-stand": 1,
+      "/p/titleist-players5-carbon-stand": 1
     }
   }
 }
