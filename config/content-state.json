@@ -2,20 +2,20 @@
   "_설명": "build.mjs 가 관리한다. pages: 주소별 본문 지문(h)과 콘텐츠 업데이트일(d). pending: IndexNow 로 보낼 주소(콘텐츠가 바뀐·새로 생긴·삭제된 페이지). 직접 고치지 않는다.",
   "pages": {
     "/p/taylormade-qi35-driver": {
-      "h": "a9e4d42397e2a876",
-      "d": "2026-10-22"
+      "h": "d8a618ef283e5b40",
+      "d": "2026-10-25"
     },
     "/p/callaway-elyte-driver": {
-      "h": "79b4256f52d13f89",
-      "d": "2026-10-22"
+      "h": "6482b4618dd50943",
+      "d": "2026-10-25"
     },
     "/p/ping-g440-driver": {
-      "h": "d9447a7b2290d11d",
-      "d": "2026-10-23"
+      "h": "5a98a51230be505b",
+      "d": "2026-10-25"
     },
     "/p/titleist-gt2-driver": {
-      "h": "d28b40045c22e805",
-      "d": "2026-10-22"
+      "h": "6c5607c801692295",
+      "d": "2026-10-25"
     },
     "/p/taylormade-p790-iron": {
       "h": "1e233460b5e4ded2",
@@ -302,48 +302,48 @@
       "d": "2026-10-22"
     },
     "/p/taylormade-sim2max-driver": {
-      "h": "ea1e52cc1f88da4f",
-      "d": "2026-10-23"
+      "h": "ab6cf1f2098d194b",
+      "d": "2026-10-25"
     },
     "/p/taylormade-qi10max-driver": {
-      "h": "0a7efe3ccc4b95eb",
-      "d": "2026-10-23"
+      "h": "5b3a4f9ab4a95b76",
+      "d": "2026-10-25"
     },
     "/p/taylormade-qi35max-driver": {
-      "h": "d326d7e1f63743c6",
-      "d": "2026-10-23"
+      "h": "24121c4c3ca060b3",
+      "d": "2026-10-25"
     },
     "/p/majesty-prestigio13-driver": {
-      "h": "3a9231013a84ef5a",
-      "d": "2026-10-23"
+      "h": "6c6f920a9eac389d",
+      "d": "2026-10-25"
     },
     "/p/callaway-paradym-driver": {
-      "h": "1522c59ebfbeb69f",
-      "d": "2026-10-22"
+      "h": "3fe716495200b337",
+      "d": "2026-10-25"
     },
     "/p/callaway-quantum-tdmax-driver": {
-      "h": "6fe81e4830ea481a",
-      "d": "2026-10-22"
+      "h": "9e269a36a1ba5c10",
+      "d": "2026-10-25"
     },
     "/p/xxio14plus-driver": {
-      "h": "f55f2f48637537cb",
-      "d": "2026-10-22"
+      "h": "d2b87dbf5238a751",
+      "d": "2026-10-25"
     },
     "/p/taylormade-qi35ls-driver": {
-      "h": "9115ce80215c6d67",
-      "d": "2026-10-22"
+      "h": "4d36d26db78cd8f6",
+      "d": "2026-10-25"
     },
     "/p/ping-g440lst-driver": {
-      "h": "9d9c7b3b43c3b569",
-      "d": "2026-10-22"
+      "h": "2a9aa83e3a62efd0",
+      "d": "2026-10-25"
     },
     "/p/taylormade-qi4d-driver": {
-      "h": "31cdb73046b39e4d",
-      "d": "2026-10-22"
+      "h": "c5313aca0d532619",
+      "d": "2026-10-25"
     },
     "/p/titleist-gt3-driver": {
-      "h": "f14ce62f23a3d13e",
-      "d": "2026-10-22"
+      "h": "1e79983a346146ef",
+      "d": "2026-10-25"
     },
     "/p/titleist-gts3-driver": {
       "h": "1f836bad38457623",
@@ -906,28 +906,28 @@
       "d": "2026-10-22"
     },
     "/p/cobra-ds-adapt-maxk-driver": {
-      "h": "e52ee578a49f0762",
-      "d": "2026-10-23"
+      "h": "b52d3d34e0a067db",
+      "d": "2026-10-25"
     },
     "/p/callaway-quantum-max-driver": {
-      "h": "de9942ab0fe21cff",
-      "d": "2026-10-22"
+      "h": "d9e700c169333ca5",
+      "d": "2026-10-25"
     },
     "/p/yamaha-rmx-vdm-driver": {
-      "h": "7260f1ca066dc807",
-      "d": "2026-10-22"
+      "h": "5afe0ddfbfa6a293",
+      "d": "2026-10-25"
     },
     "/p/srixon-zxi-rkt-driver": {
-      "h": "27c4a4d323cdc4be",
-      "d": "2026-10-22"
+      "h": "5ebad8862c8025eb",
+      "d": "2026-10-25"
     },
     "/p/cobra-ds-adapt-x-driver": {
-      "h": "bc64642666342a6d",
-      "d": "2026-10-22"
+      "h": "1bc6a0aecf81f212",
+      "d": "2026-10-25"
     },
     "/p/pxg-0311-blackops-driver": {
-      "h": "41e4568841e096f6",
-      "d": "2026-10-22"
+      "h": "5d034452795f7230",
+      "d": "2026-10-25"
     },
     "/p/callaway-elyte-td-driver": {
       "h": "3f737eb9c0b155c4",
@@ -1554,32 +1554,72 @@
       "d": "2026-10-24"
     },
     "/p/mizuno-jpxq2-women-iron": {
-      "h": "4dc4bdc2a36531b1",
-      "d": "2026-10-24"
+      "h": "8d9dfd84891c0f32",
+      "d": "2026-10-25"
     },
     "/p/majesty-sterna-women-iron": {
-      "h": "c72ce00fb20dbb58",
-      "d": "2026-10-24"
+      "h": "f6da3be343027a4e",
+      "d": "2026-10-25"
     },
     "/p/xxio-primeroyal6-women-iron": {
-      "h": "e7209088bd637a8a",
-      "d": "2026-10-24"
+      "h": "16e79bc17d272bd7",
+      "d": "2026-10-25"
     },
     "/p/callaway-quantum-maxfast-women-iron": {
-      "h": "4c5daa0afc165e82",
-      "d": "2026-10-24"
+      "h": "569a0c584bfc9ec8",
+      "d": "2026-10-25"
     },
     "/p/callaway-roguest-maxos-women-iron": {
-      "h": "4d6be8732f4bf2cb",
-      "d": "2026-10-24"
+      "h": "2849db5d30343ef6",
+      "d": "2026-10-25"
     },
     "/p/taylormade-stealth-women-iron": {
-      "h": "4bdbde6246f44c19",
-      "d": "2026-10-24"
+      "h": "765d008f6b40bcab",
+      "d": "2026-10-25"
+    },
+    "/p/ping-g440sft-driver": {
+      "h": "950384d929b63b02",
+      "d": "2026-10-25"
+    },
+    "/p/ping-g440k-driver": {
+      "h": "39cff1f391dfeb69",
+      "d": "2026-10-25"
+    },
+    "/p/ping-g430max10k-driver": {
+      "h": "1cae62d77a1d1804",
+      "d": "2026-10-25"
+    },
+    "/p/cobra-optm-maxk-driver": {
+      "h": "0c26aefb0e06821f",
+      "d": "2026-10-25"
+    },
+    "/p/cobra-optm-x-driver": {
+      "h": "72de427c55124b7c",
+      "d": "2026-10-25"
+    },
+    "/p/xxio14-driver": {
+      "h": "6cf984b2fcd3fa56",
+      "d": "2026-10-25"
+    },
+    "/p/mizuno-stmax230-driver": {
+      "h": "1488af356788a2ee",
+      "d": "2026-10-25"
+    },
+    "/p/mizuno-jpxone-driver": {
+      "h": "8bd0ebd650426f1a",
+      "d": "2026-10-25"
+    },
+    "/p/honma-tw767max-driver": {
+      "h": "8836efe703fffe2f",
+      "d": "2026-10-25"
+    },
+    "/p/srixon-zxi-driver": {
+      "h": "f76626e0025aa385",
+      "d": "2026-10-25"
     },
     "/c/driver": {
-      "h": "010720a68c6712a4",
-      "d": "2026-10-23"
+      "h": "8afd737e75667f97",
+      "d": "2026-10-25"
     },
     "/c/wood": {
       "h": "dc6b5ebd3f7915d3",
@@ -1634,100 +1674,100 @@
       "d": "2026-10-24"
     },
     "/g/driver-recommend-2026": {
-      "h": "4f2ade82bf5bb1bc",
-      "d": "2026-10-24"
+      "h": "0e09784a4851e464",
+      "d": "2026-10-25"
     },
     "/g/fairway-wood-recommend": {
-      "h": "d93abfd25b779721",
-      "d": "2026-10-24"
+      "h": "e61a58654127b2e3",
+      "d": "2026-10-25"
     },
     "/g/utility-recommend": {
-      "h": "b26859b144f589a4",
-      "d": "2026-10-24"
+      "h": "5590bdc4990dd9ea",
+      "d": "2026-10-25"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "44bab0a6ea5fd32e",
-      "d": "2026-10-24"
+      "h": "934ea5dc59acce5a",
+      "d": "2026-10-25"
     },
     "/g/iron-recommend": {
-      "h": "3e58e3f1c1aa2b7c",
-      "d": "2026-10-24"
+      "h": "6179b143ed6066e1",
+      "d": "2026-10-25"
     },
     "/g/womens-utility-recommend": {
-      "h": "8d449b447ab706b0",
-      "d": "2026-10-24"
+      "h": "0842849a8309ae51",
+      "d": "2026-10-25"
     },
     "/g/wedge-recommend": {
-      "h": "950b56cf32dd3f8e",
-      "d": "2026-10-24"
+      "h": "6f3ce950f04d7bfb",
+      "d": "2026-10-25"
     },
     "/g/golf-ball-compare": {
-      "h": "528f91d3728a123a",
-      "d": "2026-10-24"
+      "h": "f53adac57ad1e4fe",
+      "d": "2026-10-25"
     },
     "/g/rangefinder-recommend": {
-      "h": "d924360d67dca37b",
-      "d": "2026-10-24"
+      "h": "3b762faa9e9625b1",
+      "d": "2026-10-25"
     },
     "/g/womens-driver-recommend": {
-      "h": "841a28194ec54138",
-      "d": "2026-10-24"
+      "h": "d0908ab6127fb7c4",
+      "d": "2026-10-25"
     },
     "/g/putter-recommend": {
-      "h": "0f5b95a31723321c",
-      "d": "2026-10-24"
+      "h": "372d2f5b7fa215d3",
+      "d": "2026-10-25"
     },
     "/g/golf-shoes-recommend": {
-      "h": "00dc35cd0ec46abc",
-      "d": "2026-10-24"
+      "h": "40009e6934fc92d8",
+      "d": "2026-10-25"
     },
     "/g/golf-watch-recommend": {
-      "h": "301439592386aabe",
-      "d": "2026-10-24"
+      "h": "94c473f1eac0ad1f",
+      "d": "2026-10-25"
     },
     "/g/launch-monitor-recommend": {
-      "h": "d5d45112a7b2b037",
-      "d": "2026-10-24"
+      "h": "de9099922a3b6bd1",
+      "d": "2026-10-25"
     },
     "/g/golf-bag-recommend": {
-      "h": "c6d77eef06665eaa",
-      "d": "2026-10-24"
+      "h": "549ef76ec21393c5",
+      "d": "2026-10-25"
     },
     "/g/golf-glove-recommend": {
-      "h": "03df6ded63830401",
-      "d": "2026-10-24"
+      "h": "126bec70dd96896d",
+      "d": "2026-10-25"
     },
     "/g/practice-gear-recommend": {
-      "h": "448f232bc15349a7",
-      "d": "2026-10-24"
+      "h": "25811481f39b0d87",
+      "d": "2026-10-25"
     },
     "/g/womens-iron-recommend": {
-      "h": "36d373e5b584232a",
-      "d": "2026-10-24"
+      "h": "9cbbef1aefc84917",
+      "d": "2026-10-25"
     },
     "/g/womens-shoes-recommend": {
-      "h": "91997562093b8290",
-      "d": "2026-10-24"
+      "h": "c457a18e62b89f1d",
+      "d": "2026-10-25"
     },
     "/g/golf-gift-guide-2026": {
       "h": "c119db180b585bca",
       "d": "2026-10-24"
     },
     "/g/driver-recommend-2026-beginner": {
-      "h": "d4de19cae3b69d10",
-      "d": "2026-10-24"
+      "h": "1a32405d557d0e22",
+      "d": "2026-10-25"
     },
     "/g/driver-recommend-2026-intermediate": {
-      "h": "0e505f2ffdf0d7b2",
-      "d": "2026-10-24"
+      "h": "f6f2ba6cdebf7f79",
+      "d": "2026-10-25"
     },
     "/g/driver-recommend-2026-advanced": {
-      "h": "c7d49765c803fca3",
-      "d": "2026-10-24"
+      "h": "e7eb5e984eaf4c20",
+      "d": "2026-10-25"
     },
     "/g/driver-recommend-2026-pro": {
-      "h": "3a2bc46253bc29c0",
-      "d": "2026-10-24"
+      "h": "a71d3235e9e09e71",
+      "d": "2026-10-25"
     },
     "/g/fairway-wood-recommend-beginner": {
       "h": "a26478bc08267224",
@@ -1914,8 +1954,8 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "7a63483a0678dd5b",
-      "d": "2026-10-24"
+      "h": "2c8e95f348db7f1d",
+      "d": "2026-10-25"
     },
     "/about": {
       "h": "062d2326b8040ec7",
@@ -1938,12 +1978,12 @@
       "d": "2026-10-24"
     },
     "/qa/beginner-driver-recommend": {
-      "h": "9301e1feb65949c3",
-      "d": "2026-10-24"
+      "h": "1a58289db9c37a44",
+      "d": "2026-10-25"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "bc3d3e2124b93d47",
-      "d": "2026-10-24"
+      "h": "fc383e24b607e54a",
+      "d": "2026-10-25"
     },
     "/qa": {
       "h": "3f76e04f91e5fbf8",
@@ -1962,8 +2002,8 @@
       "d": "2026-10-23"
     },
     "/vs/callaway-elyte-driver-vs-callaway-quantum-tdmax-driver": {
-      "h": "bbfedb39ece90e11",
-      "d": "2026-10-21"
+      "h": "40e6b49a12724f48",
+      "d": "2026-10-25"
     },
     "/vs/callaway-elyte-hybrid-vs-xxio14-hybrid": {
       "h": "e9a4735b42658f53",
@@ -2018,12 +2058,12 @@
       "d": "2026-10-24"
     },
     "/vs/callaway-paradym-driver-vs-ping-g440-driver": {
-      "h": "d4ed6728e6b835f9",
-      "d": "2026-10-21"
+      "h": "e64da89691e8db8c",
+      "d": "2026-10-25"
     },
     "/vs/callaway-quantum-td-driver-vs-callaway-quantum-tdmax-driver": {
-      "h": "34e0f819df04ce06",
-      "d": "2026-10-21"
+      "h": "1ffcc982c2cb42d5",
+      "d": "2026-10-25"
     },
     "/vs/callaway-quantum-women-hybrid-vs-callaway-elyte-women-hybrid": {
       "h": "59b5bc61871e0d8a",
@@ -2266,8 +2306,8 @@
       "d": "2026-10-23"
     },
     "/vs/ping-g440-driver-vs-majesty-prestigio13-driver": {
-      "h": "5746465d62a0aed2",
-      "d": "2026-10-21"
+      "h": "0662efcec106b372",
+      "d": "2026-10-25"
     },
     "/vs/ping-g440-women-hybrid-vs-taylormade-stealth-women-rescue": {
       "h": "10b4bdbfc2ae1e89",
@@ -2278,12 +2318,12 @@
       "d": "2026-10-24"
     },
     "/vs/ping-g440lst-driver-vs-ping-g440-driver": {
-      "h": "851a1bfbc2516bff",
-      "d": "2026-10-21"
+      "h": "c444344b9732f857",
+      "d": "2026-10-25"
     },
     "/vs/ping-g440lst-driver-vs-titleist-gt3-driver": {
-      "h": "885df683d817b550",
-      "d": "2026-10-21"
+      "h": "36343af678841b63",
+      "d": "2026-10-25"
     },
     "/vs/ping-g440max-women-driver-vs-callaway-quantum-maxfast-women-driver": {
       "h": "162f36e3b760ee55",
@@ -2402,16 +2442,16 @@
       "d": "2026-10-22"
     },
     "/vs/taylormade-qi10ls-driver-vs-taylormade-qi4d-driver": {
-      "h": "05c214b6bf27b346",
-      "d": "2026-10-21"
+      "h": "b48660ea5e072586",
+      "d": "2026-10-25"
     },
     "/vs/taylormade-qi10ls-driver-vs-taylormade-qi4dls-driver": {
-      "h": "15d19d2cad55706d",
-      "d": "2026-10-21"
+      "h": "71388a90224c594b",
+      "d": "2026-10-25"
     },
     "/vs/taylormade-qi10ls-driver-vs-titleist-gts3-driver": {
-      "h": "bc71dbe46ec9f9e6",
-      "d": "2026-10-21"
+      "h": "3980230bbb7a07bb",
+      "d": "2026-10-25"
     },
     "/vs/taylormade-qi35-fairway-vs-taylormade-qi4dmax-fairway": {
       "h": "080c0589d06c5c49",
@@ -2426,16 +2466,16 @@
       "d": "2026-10-22"
     },
     "/vs/taylormade-qi4d-driver-vs-taylormade-qi35-driver": {
-      "h": "c65b50709cf878b3",
-      "d": "2026-10-21"
+      "h": "025c217ff7290be5",
+      "d": "2026-10-25"
     },
     "/vs/taylormade-qi4d-maxlite-women-driver-vs-taylormade-sim2max-women-driver": {
       "h": "68cea5ae34420d1a",
       "d": "2026-10-22"
     },
     "/vs/taylormade-qi4dls-driver-vs-taylormade-qi35ls-driver": {
-      "h": "cb4d7770711afbbd",
-      "d": "2026-10-21"
+      "h": "2dddf198539962f0",
+      "d": "2026-10-25"
     },
     "/vs/taylormade-sim2max-women-driver-vs-taylormade-qi35-maxlite-women-driver": {
       "h": "2c2db788c592dc57",
@@ -2458,8 +2498,8 @@
       "d": "2026-10-22"
     },
     "/vs/titleist-gt2-driver-vs-taylormade-qi35ls-driver": {
-      "h": "d1bd2393a769df95",
-      "d": "2026-10-21"
+      "h": "d7e14f317169dda9",
+      "d": "2026-10-25"
     },
     "/vs/titleist-permasoft-glove-vs-titleist-players-glove": {
       "h": "daa33e4960344d90",
@@ -2770,26 +2810,6 @@
       "d": "2026-10-24"
     },
     {
-      "url": "/g/driver-recommend-2026-beginner",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/driver-recommend-2026-intermediate",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/driver-recommend-2026-advanced",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/driver-recommend-2026-pro",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
       "url": "/g/fairway-wood-recommend-beginner",
       "kind": "updated",
       "d": "2026-10-24"
@@ -2966,16 +2986,6 @@
     },
     {
       "url": "/qa/wedge-recommend-loft",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/qa/beginner-driver-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/qa/beginner-golf-club-set",
       "kind": "updated",
       "d": "2026-10-24"
     },
@@ -3585,132 +3595,7 @@
       "d": "2026-10-24"
     },
     {
-      "url": "/p/mizuno-jpxq2-women-iron",
-      "kind": "new",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/p/majesty-sterna-women-iron",
-      "kind": "new",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/p/xxio-primeroyal6-women-iron",
-      "kind": "new",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/p/callaway-quantum-maxfast-women-iron",
-      "kind": "new",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/p/callaway-roguest-maxos-women-iron",
-      "kind": "new",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/p/taylormade-stealth-women-iron",
-      "kind": "new",
-      "d": "2026-10-24"
-    },
-    {
       "url": "/c/iron",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/driver-recommend-2026",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/fairway-wood-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/utility-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/womens-fairway-wood-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/iron-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/womens-utility-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/wedge-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/golf-ball-compare",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/rangefinder-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/womens-driver-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/putter-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/golf-shoes-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/golf-watch-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/launch-monitor-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/golf-bag-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/golf-glove-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/practice-gear-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/womens-iron-recommend",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/g/womens-shoes-recommend",
       "kind": "updated",
       "d": "2026-10-24"
     },
@@ -3731,11 +3616,6 @@
     },
     {
       "url": "/g/womens-iron-recommend-pro",
-      "kind": "updated",
-      "d": "2026-10-24"
-    },
-    {
-      "url": "/",
       "kind": "updated",
       "d": "2026-10-24"
     },
@@ -3798,6 +3678,386 @@
       "url": "/vs/taylormade-qi-maxlite-women-iron-vs-taylormade-sim2max-women-iron",
       "kind": "updated",
       "d": "2026-10-24"
+    },
+    {
+      "url": "/p/taylormade-qi35-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/callaway-elyte-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/ping-g440-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/titleist-gt2-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/taylormade-sim2max-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/taylormade-qi10max-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/taylormade-qi35max-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/majesty-prestigio13-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/callaway-paradym-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/callaway-quantum-tdmax-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/xxio14plus-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/taylormade-qi35ls-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/ping-g440lst-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/taylormade-qi4d-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/titleist-gt3-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/cobra-ds-adapt-maxk-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/callaway-quantum-max-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/yamaha-rmx-vdm-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/srixon-zxi-rkt-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/cobra-ds-adapt-x-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/pxg-0311-blackops-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/mizuno-jpxq2-women-iron",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/majesty-sterna-women-iron",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/xxio-primeroyal6-women-iron",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/callaway-quantum-maxfast-women-iron",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/callaway-roguest-maxos-women-iron",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/taylormade-stealth-women-iron",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/ping-g440sft-driver",
+      "kind": "new",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/ping-g440k-driver",
+      "kind": "new",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/ping-g430max10k-driver",
+      "kind": "new",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/cobra-optm-maxk-driver",
+      "kind": "new",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/cobra-optm-x-driver",
+      "kind": "new",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/xxio14-driver",
+      "kind": "new",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/mizuno-stmax230-driver",
+      "kind": "new",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/mizuno-jpxone-driver",
+      "kind": "new",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/honma-tw767max-driver",
+      "kind": "new",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/srixon-zxi-driver",
+      "kind": "new",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/c/driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/driver-recommend-2026",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/womens-utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/wedge-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/golf-ball-compare",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/womens-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/putter-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/golf-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/golf-watch-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/launch-monitor-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/golf-bag-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/golf-glove-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/practice-gear-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/womens-iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/womens-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/driver-recommend-2026-beginner",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/driver-recommend-2026-intermediate",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/driver-recommend-2026-advanced",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/driver-recommend-2026-pro",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/qa/beginner-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/callaway-elyte-driver-vs-callaway-quantum-tdmax-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/callaway-paradym-driver-vs-ping-g440-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/callaway-quantum-td-driver-vs-callaway-quantum-tdmax-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/ping-g440-driver-vs-majesty-prestigio13-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/ping-g440lst-driver-vs-ping-g440-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/ping-g440lst-driver-vs-titleist-gt3-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/taylormade-qi10ls-driver-vs-taylormade-qi4d-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/taylormade-qi10ls-driver-vs-taylormade-qi4dls-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/taylormade-qi10ls-driver-vs-titleist-gts3-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/taylormade-qi4d-driver-vs-taylormade-qi35-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/taylormade-qi4dls-driver-vs-taylormade-qi35ls-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/titleist-gt2-driver-vs-taylormade-qi35ls-driver",
+      "kind": "updated",
+      "d": "2026-10-25"
     }
   ]
 }
