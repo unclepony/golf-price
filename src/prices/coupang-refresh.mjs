@@ -10,7 +10,7 @@
 //   → 기본은 매일 전 상품. 못 찾은 상품도 시도일을 남겨 다음 상품으로 넘어간다.
 // - 호출 사이 --gap 초(기본 4, 최소 3) 쉰다. 쿠팡 파트너스 API 문서: 검색은 1분당 최대 50번, 한도에 닿으면 24시간 사용 제한 → 4초 간격(분당 15번)으로 넉넉히 둔다. API 오류가 나면 거기서 멈추고 그때까지 찾은 것만 저장한다. 키가 없으면 건너뛴다.
 // - 가격이 바뀌어도 콘텐츠 업데이트일은 바뀌지 않는다(build.mjs 가 가격 요소를 지문에서 뺀다).
-// - 판매 종료 처리: 같은 상품을 연속 5일(날짜 기준) 못 찾으면 picks.json 에 gone(날짜)을 적는다 → 빌드가 쿠팡 링크를 숨기고 순위·목록·홈에서 뺀다(주소는 유지, '판매 종료·품절 추정' 표시).
+// - 판매 종료 처리: productId 가 있는 상품만. 같은 상품을 연속 5일(날짜 기준) 못 찾으면 picks.json 에 gone(날짜)을 적는다 → 빌드가 쿠팡 링크를 숨기고 순위·목록·홈에서 뺀다(주소는 유지, '판매 종료·품절 추정' 표시).
 //   API 는 호출 시점에 품절된 상품을 돌려주지 않으므로 일시 품절도 포함된다. 다시 찾으면 gone 을 지우고 되살린다. 연속 일수는 config/coupang-missing.json.
 // 실행: node --env-file=<.env> src/prices/coupang-refresh.mjs [--max N] [--gap 4]   (키 값은 화면·로그에 쓰지 않는다)
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
@@ -30,6 +30,7 @@ const C = (f) => join(ROOT, 'config', f);
 const read = (f) => JSON.parse(readFileSync(C(f), 'utf8'));
 const links = read('links.json');
 const picks = read('picks.json');
+const prods = Object.fromEntries((read('products.json').products ?? []).map((p) => [p.id, p]));
 const triedFile = C('coupang-refresh.json');
 const missFile = C('coupang-missing.json');
 const missing = existsSync(missFile) ? JSON.parse(readFileSync(missFile, 'utf8')) : { _설명: 'src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { since: 처음 못 찾은 날, days: 연속으로 못 찾은 날 수, last: 마지막으로 못 찾은 날 }. 5일이면 picks.json gone.' };
@@ -62,11 +63,26 @@ for (const [i, id] of targets.entries()) {
   const want = words(pk.title);
   const sane = (r) => r.price > 0 && (!pk.price || (r.price >= pk.price * 0.5 && r.price <= pk.price * 2));
   // productId 가 있으면 그것으로만(정확히 같은 상품), 없으면 상품명 단어 완전 일치 + 로켓 여부
-  const hit = pk.productId
+  let hit = pk.productId
     ? rows.find((r) => r.id === String(pk.productId) && sane(r))
     : rows.find((r) => words(r.name) === want && sane(r) && (pk.rocket === undefined || !!pk.rocket === r.rocket));
+  // 상품 번호가 있는데 상품명 검색 10건에 없으면, 상품을 처음 찾을 때 쓴 검색어(products.json query)로 한 번 더 본다(같은 번호만 인정)
+  const q2 = prods[id]?.query;
+  if (!hit && pk.productId && q2 && q2.trim() !== pk.title.trim()) {
+    await sleep(GAP);
+    try { rows = await search(q2.replace(/\s+/g, ' ').trim().slice(0, 50), 10); } catch (e) { console.log(`오류로 멈춤 (${id}): ${e.message}`); break; }
+    hit = rows.find((r) => r.id === String(pk.productId) && sane(r));
+  }
   if (!hit) {
     miss++;
+    // productId 가 없으면 '상품명 완전 일치'를 못 한 것일 뿐 판매 종료 근거가 아니다 → 연속 일수를 세지 않는다
+    // (2026-10-25: 10-15·16 에 옵션 글자까지 넣은 연결 상품명이 검색 결과 이름과 달라 206개가 한꺼번에 판매 종료로 갈 뻔함)
+    if (!pk.productId) {
+      delete missing[id];
+      console.log(`건너뜀: ${id} (검색 ${rows.length}건 중 같은 상품명 없음 — 상품 번호가 없어 판매 종료 판단 안 함, 기존 값 유지)`);
+      save();
+      continue;
+    }
     const m = (missing[id] ??= { since: today, days: 0, last: '' });
     if (m.last !== today) { m.days++; m.last = today; }
     if (m.days >= GONE_DAYS && !pk.gone) { picks[id] = { ...pk, gone: today }; console.log(`판매 종료 추정: ${id} (${m.days}일 연속 못 찾음, ${m.since}부터)`); }
