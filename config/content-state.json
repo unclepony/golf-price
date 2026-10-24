@@ -142,8 +142,8 @@
       "d": "2026-10-22"
     },
     "/p/callaway-elyte-fairway": {
-      "h": "7c875c3cd9500b18",
-      "d": "2026-10-22"
+      "h": "5215ab490c9c3a59",
+      "d": "2026-10-25"
     },
     "/p/cobra-optm-x-fairway": {
       "h": "8961edf56cf69961",
@@ -546,20 +546,20 @@
       "d": "2026-10-22"
     },
     "/p/xxio12-fairway": {
-      "h": "436010921e38ce81",
-      "d": "2026-10-22"
+      "h": "84a87eb35b6e7ecc",
+      "d": "2026-10-25"
     },
     "/p/mizuno-jpxone-fairway": {
-      "h": "1b24e7bb6fd57933",
-      "d": "2026-10-22"
+      "h": "16c6e8200830119a",
+      "d": "2026-10-25"
     },
     "/p/callaway-quantummax-fairway": {
-      "h": "2ea97e40d751941f",
-      "d": "2026-10-22"
+      "h": "bf09bfffdb44458d",
+      "d": "2026-10-25"
     },
     "/p/xxio14-fairway": {
-      "h": "9bf690721ba5f5d5",
-      "d": "2026-10-22"
+      "h": "e7023da5a3e14ab6",
+      "d": "2026-10-25"
     },
     "/p/taylormade-qi4dmax-fairway": {
       "h": "02a75ce63c2c9471",
@@ -950,12 +950,12 @@
       "d": "2026-10-22"
     },
     "/p/taylormade-qi4d-fairway": {
-      "h": "e91d3809d3fb5569",
-      "d": "2026-10-22"
+      "h": "3776b5ac76ecdc2d",
+      "d": "2026-10-25"
     },
     "/p/cobra-ds-adapt-x-fairway": {
-      "h": "48d55332947b854a",
-      "d": "2026-10-22"
+      "h": "503e5922ed87b270",
+      "d": "2026-10-25"
     },
     "/p/ping-g440-lst-fairway": {
       "h": "5cfc8c5be3a3062e",
@@ -1322,16 +1322,16 @@
       "d": "2026-10-22"
     },
     "/p/callaway-paradym-aismoke-max-fairway": {
-      "h": "5354f97218e348d9",
-      "d": "2026-10-22"
+      "h": "0c44a10ee3604de2",
+      "d": "2026-10-25"
     },
     "/p/xxio13-fairway": {
-      "h": "187577183b5d990c",
-      "d": "2026-10-22"
+      "h": "5f259fc133050db6",
+      "d": "2026-10-25"
     },
     "/p/honma-tw767-fairway": {
-      "h": "9572eeca53a100e7",
-      "d": "2026-10-22"
+      "h": "734fdaad02daf9d2",
+      "d": "2026-10-25"
     },
     "/p/cobra-darkspeed-hybrid": {
       "h": "ece964ff6a470302",
@@ -1617,13 +1617,17 @@
       "h": "a5b470944c92a3a4",
       "d": "2026-10-25"
     },
+    "/p/xxio-prime-royal6-fairway": {
+      "h": "b7c05f13dc490e57",
+      "d": "2026-10-25"
+    },
     "/c/driver": {
       "h": "c7a9cfcd2a47b09f",
       "d": "2026-10-25"
     },
     "/c/wood": {
-      "h": "dc6b5ebd3f7915d3",
-      "d": "2026-10-24"
+      "h": "005edaadb11264cf",
+      "d": "2026-10-25"
     },
     "/c/utility": {
       "h": "5b33b62226d1af88",
@@ -1674,79 +1678,79 @@
       "d": "2026-10-24"
     },
     "/g/driver-recommend-2026": {
-      "h": "5084f39d4c914836",
+      "h": "cacf8266c31bcae7",
       "d": "2026-10-25"
     },
     "/g/fairway-wood-recommend": {
-      "h": "808218d2fc976157",
+      "h": "c4e4f6d36b66c49c",
       "d": "2026-10-25"
     },
     "/g/utility-recommend": {
-      "h": "5b0cf67cb3fbc654",
+      "h": "44793210c7b76c97",
       "d": "2026-10-25"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "aa596cfe1f744485",
+      "h": "c32e78e3f0cb10af",
       "d": "2026-10-25"
     },
     "/g/iron-recommend": {
-      "h": "cf904bed41f40271",
+      "h": "8dbd1fce9cfa110d",
       "d": "2026-10-25"
     },
     "/g/womens-utility-recommend": {
-      "h": "0c142122ab77025c",
+      "h": "54edf306a2fafa18",
       "d": "2026-10-25"
     },
     "/g/wedge-recommend": {
-      "h": "a2be4f62967d1fc5",
+      "h": "39eae2eefa5b91d3",
       "d": "2026-10-25"
     },
     "/g/golf-ball-compare": {
-      "h": "f1fc73e20faca5f4",
+      "h": "4abf2339d5a415e6",
       "d": "2026-10-25"
     },
     "/g/rangefinder-recommend": {
-      "h": "9ae232efb5a9f215",
+      "h": "c8b185516af3aa8f",
       "d": "2026-10-25"
     },
     "/g/womens-driver-recommend": {
-      "h": "6a86889d867c64c2",
+      "h": "57bc40e8b62ddb4e",
       "d": "2026-10-25"
     },
     "/g/putter-recommend": {
-      "h": "08d4d9415e8d14d4",
+      "h": "8b055b084151d733",
       "d": "2026-10-25"
     },
     "/g/golf-shoes-recommend": {
-      "h": "dd4ddeca10de047d",
+      "h": "0ecf0aced42c25d1",
       "d": "2026-10-25"
     },
     "/g/golf-watch-recommend": {
-      "h": "af1f484d575681ae",
+      "h": "0da52fdd92493c90",
       "d": "2026-10-25"
     },
     "/g/launch-monitor-recommend": {
-      "h": "208efb5c93894b99",
+      "h": "860ab246ab096d84",
       "d": "2026-10-25"
     },
     "/g/golf-bag-recommend": {
-      "h": "7a24b8152502d7ae",
+      "h": "023bdc1e170a663c",
       "d": "2026-10-25"
     },
     "/g/golf-glove-recommend": {
-      "h": "0a43984705a8df75",
+      "h": "a4134b85cee8d034",
       "d": "2026-10-25"
     },
     "/g/practice-gear-recommend": {
-      "h": "6e89df12c3a843ce",
+      "h": "d3d067de14ba85b3",
       "d": "2026-10-25"
     },
     "/g/womens-iron-recommend": {
-      "h": "184776a03ec7902f",
+      "h": "d1b17e175176aa39",
       "d": "2026-10-25"
     },
     "/g/womens-shoes-recommend": {
-      "h": "b69ee6c73fa195c9",
+      "h": "6e43e268ee0bafbe",
       "d": "2026-10-25"
     },
     "/g/golf-gift-guide-2026": {
@@ -1770,20 +1774,20 @@
       "d": "2026-10-25"
     },
     "/g/fairway-wood-recommend-beginner": {
-      "h": "a26478bc08267224",
-      "d": "2026-10-24"
+      "h": "5c4aa571aa42cbb3",
+      "d": "2026-10-25"
     },
     "/g/fairway-wood-recommend-intermediate": {
-      "h": "fb46b286a40f6d45",
-      "d": "2026-10-24"
+      "h": "3aefa5daa8a970cf",
+      "d": "2026-10-25"
     },
     "/g/fairway-wood-recommend-advanced": {
-      "h": "3bd7a5d14b246abe",
-      "d": "2026-10-24"
+      "h": "c19f3fb93c24529d",
+      "d": "2026-10-25"
     },
     "/g/fairway-wood-recommend-pro": {
-      "h": "0d6268c1d0d9e63b",
-      "d": "2026-10-24"
+      "h": "e8b5596c1bd14670",
+      "d": "2026-10-25"
     },
     "/g/utility-recommend-beginner": {
       "h": "6b09013bd0c2f0a3",
@@ -1954,7 +1958,7 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "30e23a75d7d8a578",
+      "h": "5e8dc173d1b0f7a3",
       "d": "2026-10-25"
     },
     "/about": {
@@ -1982,7 +1986,7 @@
       "d": "2026-10-25"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "fc383e24b607e54a",
+      "h": "c85d0d6e4c4f1ac7",
       "d": "2026-10-25"
     },
     "/qa": {
@@ -2074,12 +2078,12 @@
       "d": "2026-10-22"
     },
     "/vs/callaway-roguest-fairway-vs-callaway-elyte-fairway": {
-      "h": "bae5f6d948710f2e",
-      "d": "2026-10-22"
+      "h": "95ef221c22c78180",
+      "d": "2026-10-25"
     },
     "/vs/callaway-roguest-fairway-vs-callaway-quantummax-fairway": {
-      "h": "5f5f66ee5d20bbaa",
-      "d": "2026-10-22"
+      "h": "6687ef6a4754457b",
+      "d": "2026-10-25"
     },
     "/vs/callaway-roguest-women-driver-vs-callaway-elyte-maxfast-women-driver": {
       "h": "b46e3ff3f891884f",
@@ -2222,8 +2226,8 @@
       "d": "2026-10-24"
     },
     "/vs/mizuno-jpxone-fairway-vs-mizuno-stmax230-fairway": {
-      "h": "520097233c373bd5",
-      "d": "2026-10-22"
+      "h": "8d7a5f69df9204f6",
+      "d": "2026-10-25"
     },
     "/vs/mizuno-jpxone-hybrid-vs-mizuno-stmax230-hybrid": {
       "h": "a2189751a3b690a5",
@@ -2258,20 +2262,20 @@
       "d": "2026-10-24"
     },
     "/vs/mizuno-stmax230-fairway-vs-majesty-royalgold-fairway": {
-      "h": "dbdc1c8956df739b",
-      "d": "2026-10-22"
+      "h": "2941bd40ece93b76",
+      "d": "2026-10-25"
     },
     "/vs/mizuno-stmax230-hybrid-vs-majesty-royalgold-hybrid": {
       "h": "2ca8c28f1affbd74",
       "d": "2026-10-22"
     },
     "/vs/mizuno-stz230-fairway-vs-ping-g430lst-fairway": {
-      "h": "96a51e75d2c707d4",
-      "d": "2026-10-22"
+      "h": "f95ee99a5f79469b",
+      "d": "2026-10-25"
     },
     "/vs/mizuno-stz230-fairway-vs-taylormade-qi35-fairway": {
-      "h": "8c7055c1c4c5f5ac",
-      "d": "2026-10-22"
+      "h": "39943b65a00e50d7",
+      "d": "2026-10-25"
     },
     "/vs/nikon-coolshot-pro3-vs-voicecaddie-sl3": {
       "h": "e8570eabcdc448f0",
@@ -2398,20 +2402,20 @@
       "d": "2026-10-22"
     },
     "/vs/srixon-zxi-fairway-vs-taylormade-qi4dmax-fairway": {
-      "h": "d8566ae42b8c60aa",
-      "d": "2026-10-22"
+      "h": "32b1313bf6ad8cad",
+      "d": "2026-10-25"
     },
     "/vs/srixon-zxi7-iron-vs-srixon-zxi5-iron": {
       "h": "00eca624e57bb46a",
       "d": "2026-10-23"
     },
     "/vs/srixon-zxmk2-fairway-vs-ping-g430lst-fairway": {
-      "h": "900200b5aa1e1e04",
-      "d": "2026-10-22"
+      "h": "934db4bbad43fbb2",
+      "d": "2026-10-25"
     },
     "/vs/srixon-zxmk2-fairway-vs-srixon-zxi-fairway": {
-      "h": "2aad74983b9c44c9",
-      "d": "2026-10-22"
+      "h": "e388604c6b431abd",
+      "d": "2026-10-25"
     },
     "/vs/sunmountain-h2no-stand-vs-ping-sporty-lt-bag": {
       "h": "a75f39b2a406f47b",
@@ -2454,8 +2458,8 @@
       "d": "2026-10-25"
     },
     "/vs/taylormade-qi35-fairway-vs-taylormade-qi4dmax-fairway": {
-      "h": "080c0589d06c5c49",
-      "d": "2026-10-22"
+      "h": "314323b20df101ec",
+      "d": "2026-10-25"
     },
     "/vs/taylormade-qi35-rescue-vs-callaway-quantummax-hybrid": {
       "h": "2ae67ba35871978c",
@@ -2558,12 +2562,12 @@
       "d": "2026-10-23"
     },
     "/vs/xxio12-fairway-vs-callaway-elyte-fairway": {
-      "h": "0893d87b12c5ae75",
-      "d": "2026-10-22"
+      "h": "4902757bf908643b",
+      "d": "2026-10-25"
     },
     "/vs/xxio12-fairway-vs-mizuno-jpxone-fairway": {
-      "h": "cd553ae3fdfc0295",
-      "d": "2026-10-22"
+      "h": "cd63a9df73ec1905",
+      "d": "2026-10-25"
     },
     "/vs/xxio13-iron-vs-bridgestone-v300-iron": {
       "h": "cba21e1e55195516",
@@ -2618,5 +2622,251 @@
       "d": "2026-10-19"
     }
   },
-  "pending": []
+  "pending": [
+    {
+      "url": "/p/callaway-elyte-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/xxio12-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/mizuno-jpxone-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/callaway-quantummax-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/xxio14-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/taylormade-qi4d-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/cobra-ds-adapt-x-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/callaway-paradym-aismoke-max-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/xxio13-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/honma-tw767-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/p/xxio-prime-royal6-fairway",
+      "kind": "new",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/c/wood",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/driver-recommend-2026",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/womens-utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/wedge-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/golf-ball-compare",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/womens-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/putter-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/golf-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/golf-watch-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/launch-monitor-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/golf-bag-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/golf-glove-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/practice-gear-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/womens-iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/womens-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/fairway-wood-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/fairway-wood-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/fairway-wood-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/fairway-wood-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/callaway-roguest-fairway-vs-callaway-elyte-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/callaway-roguest-fairway-vs-callaway-quantummax-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/mizuno-jpxone-fairway-vs-mizuno-stmax230-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/mizuno-stmax230-fairway-vs-majesty-royalgold-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/mizuno-stz230-fairway-vs-ping-g430lst-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/mizuno-stz230-fairway-vs-taylormade-qi35-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/srixon-zxi-fairway-vs-taylormade-qi4dmax-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/srixon-zxmk2-fairway-vs-ping-g430lst-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/srixon-zxmk2-fairway-vs-srixon-zxi-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/taylormade-qi35-fairway-vs-taylormade-qi4dmax-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/xxio12-fairway-vs-callaway-elyte-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/vs/xxio12-fairway-vs-mizuno-jpxone-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    }
+  ]
 }
