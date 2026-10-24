@@ -221,7 +221,7 @@
  {
   "id": "callaway-quantum-maxfast-women-iron",
   "name": "캘러웨이 퀀텀 맥스 패스트 여성 아이언",
-  "query": "캘러웨이 퀀텀 맥스 패스트 여성 아이언",
+  "query": "캘러웨이 퀀텀 맥스 패스트 아이언 7개세트 여성용",
   "must": [
    "퀀텀",
    "max",
@@ -451,7 +451,7 @@
  {
   "id": "taylormade-stealth-women-iron",
   "name": "테일러메이드 스텔스 여성 아이언 (2022)",
-  "query": "테일러메이드 2022 스텔스 여성 아이언",
+  "query": "테일러메이드 2022년 스텔스 여성 8아이언",
   "must": [
    "스텔스",
    "아이언"
