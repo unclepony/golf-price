@@ -1,0 +1,529 @@
+[
+ {
+  "id": "mizuno-jpxq2-women-iron",
+  "name": "미즈노 JPX Q2 여성 아이언 (2026)",
+  "query": "미즈노 JPX Q2 여성 아이언",
+  "must": [
+   "jpx q2",
+   "아이언"
+  ],
+  "mustAny": [
+   "여성",
+   "레이디",
+   "우먼",
+   "women",
+   "ladies",
+   "lady"
+  ],
+  "exclude": [
+   "중고",
+   "시타",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "풀세트",
+   "골프백",
+   "남성",
+   "드라이버",
+   "페어웨이",
+   "하이브리드",
+   "유틸",
+   "병행",
+   "직수입",
+   "단품"
+  ],
+  "summary": "한국미즈노가 2026년 내놓은 여성 전용 JPX Q II 시리즈의 아이언입니다. 한국 여성 골퍼의 체형과 스윙 데이터로 설계한 JPX Q 의 후속으로, 크로몰리 소재 멀티 두께 페이스와 이음매 없는 컵 페이스로 얇은 페이스 영역을 넓혔고 토·힐 무게 배분으로 방향성을 챙겼습니다. 전 라인업에 NEW M FUSION 레이디스 샤프트가 들어갑니다.",
+  "points": [
+   "2026년 신제품(JPX Q 후속)",
+   "크로몰리 멀티 두께·심리스 컵 페이스",
+   "JPX Q(1세대)와 구분"
+  ],
+  "guidePick": {
+   "role": "최신 여성 전용",
+   "forWhom": "가볍고 쉬운 최신 세트를 찾는 여성 중급자",
+   "short": "JPX Q 후속 2026년형",
+   "plus": "최신·경량",
+   "minus": "신제품이라 가격대 높음",
+   "pros": [
+    "2026년 최신 모델",
+    "컵 페이스로 반발 영역 확대"
+   ],
+   "cons": [
+    "1세대 JPX Q보다 비쌈",
+    "7개 구성 위주"
+   ],
+   "scores": [
+    4,
+    5,
+    4,
+    3
+   ],
+   "specs": [
+    "판매처 확인",
+    "TBD",
+    "확인 필요"
+   ],
+   "verdict": "JPX Q 를 쓰던 여성 골퍼가 같은 방향의 최신형으로 바꾸기 좋은 선택",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://www.heraldk.com/article/2026030218052827003"
+  ],
+  "category": "iron"
+ },
+ {
+  "id": "majesty-sterna-women-iron",
+  "name": "마제스티 스터나 여성 아이언",
+  "query": "마제스티 스터나 여성 아이언세트",
+  "must": [
+   "스터나",
+   "아이언"
+  ],
+  "mustAny": [
+   "여성",
+   "레이디",
+   "우먼",
+   "women",
+   "ladies",
+   "lady"
+  ],
+  "exclude": [
+   "중고",
+   "시타",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "풀세트",
+   "골프백",
+   "남성",
+   "드라이버",
+   "페어웨이",
+   "하이브리드",
+   "유틸",
+   "병행",
+   "직수입",
+   "단품"
+  ],
+  "summary": "마제스티골프가 2023년 6월 내놓은 여성 골퍼 전용 라인 스터나(STERNA)의 아이언 세트입니다. 북극 제비갈매기 학명에서 이름을 땄고, 파스텔톤 세레니티 그린과 선셋 레드 두 색으로 나옵니다. 마제스티 기술을 적용해 가볍고 반발력이 높다고 소개됩니다.",
+  "points": [
+   "2023년 6월 출시 여성 전용 라인",
+   "그린·레드 두 색",
+   "마제스티 셔틀·로얄과 다른 라인"
+  ],
+  "guidePick": {
+   "role": "색상 고르는 입문",
+   "forWhom": "가볍고 예쁜 세트로 시작하려는 여성 입문자",
+   "short": "그린·레드 파스텔 여성 전용",
+   "plus": "가벼움·디자인",
+   "minus": "상세 사양 공개 적음",
+   "pros": [
+    "여성 전용 경량 설계",
+    "색상 두 가지"
+   ],
+   "cons": [
+    "2023년 모델",
+    "헤드 구조 등 상세 사양은 판매처 확인"
+   ],
+   "scores": [
+    4,
+    5,
+    4,
+    3
+   ],
+   "specs": [
+    "판매처 확인",
+    "TBD",
+    "확인 필요"
+   ],
+   "verdict": "디자인과 가벼움을 함께 보는 여성 입문자의 첫 세트 후보",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://sports.khan.co.kr/article/202305301601003"
+  ],
+  "category": "iron"
+ },
+ {
+  "id": "xxio-primeroyal6-women-iron",
+  "name": "젝시오 프라임 로얄에디션 여성 아이언 (6세대)",
+  "query": "젝시오 프라임 로얄에디션6 여성 아이언",
+  "must": [
+   "젝시오",
+   "로얄",
+   "아이언"
+  ],
+  "mustAny": [
+   "에디션6",
+   "에디션 6",
+   "edition6",
+   "edition 6"
+  ],
+  "exclude": [
+   "중고",
+   "시타",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "풀세트",
+   "골프백",
+   "남성",
+   "드라이버",
+   "페어웨이",
+   "하이브리드",
+   "유틸",
+   "병행",
+   "직수입",
+   "에디션5",
+   "에디션4",
+   "단품"
+  ],
+  "summary": "던롭 젝시오의 최상위 경량 라인 프라임 로얄에디션 6세대(2025년 발표) 여성 아이언입니다. 티타늄 페이스를 쓴 4피스 구조와 리바운드 프레임으로 무게중심을 낮췄고, 37g대 초경량 SP-1300KL 카본 샤프트를 씁니다(던롭 공식 사양). 스윙이 느린 여성·시니어를 위한 프리미엄 세트입니다.",
+  "points": [
+   "2025년 발표 6세대",
+   "티타늄 페이스 4피스·초경량 37g 샤프트",
+   "젝시오 14 여성·로얄에디션5와 구분"
+  ],
+  "guidePick": {
+   "role": "초경량 최고급",
+   "forWhom": "힘을 덜 들이고 멀리 보내고 싶은 여성 골퍼(가격보다 편안함)",
+   "short": "젝시오 최상위 초경량",
+   "plus": "초경량·티타늄 페이스",
+   "minus": "가격 최상위",
+   "pros": [
+    "37g 초경량 샤프트",
+    "티타늄 페이스로 반발"
+   ],
+   "cons": [
+    "가격이 가장 높은 축",
+    "스윙이 빠르면 너무 가벼움"
+   ],
+   "scores": [
+    4,
+    5,
+    5,
+    2
+   ],
+   "specs": [
+    "판매처 확인",
+    "TBD",
+    "확인 필요"
+   ],
+   "verdict": "헤드스피드가 느린 여성 골퍼가 가장 가볍고 편한 세트를 원할 때",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://us.dunlopsports.com/xxio/ladies/ladies-club-sets/xxio-prime-royal-edition-ladies-10-piece-package-set/11243122.html",
+   "https://eu.dunlopsports.com/xxio/clubs/women's-golf-clubs/xxio-prime-royal-edition-ladies/xxio-prime-royal-edition-ladies-irons/MXXIORE6L-EA.html",
+   "https://news.dunlopsports.com/news/shine-above-the-rest-with-xxio-prime-royal-edition/s/8c2cad25-2625-422f-9d48-edb648225a5e"
+  ],
+  "category": "iron"
+ },
+ {
+  "id": "callaway-quantum-maxfast-women-iron",
+  "name": "캘러웨이 퀀텀 맥스 패스트 여성 아이언",
+  "query": "캘러웨이 퀀텀 맥스 패스트 여성 아이언",
+  "must": [
+   "퀀텀",
+   "max",
+   "패스트",
+   "아이언"
+  ],
+  "mustAny": [
+   "여성",
+   "레이디",
+   "우먼",
+   "women",
+   "ladies",
+   "lady"
+  ],
+  "exclude": [
+   "중고",
+   "시타",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "풀세트",
+   "골프백",
+   "남성",
+   "드라이버",
+   "페어웨이",
+   "하이브리드",
+   "유틸",
+   "병행",
+   "직수입",
+   "maxos",
+   "트리플",
+   "단품"
+  ],
+  "summary": "캘러웨이 2026년 퀀텀(Quantum) 라인의 여성용 MAX FAST 아이언입니다. 중간 스윙 속도를 위한 경량 모델로, 360° 언더컷 캐비티와 투피스 헤드, AI 최적화 페이스, 트라이 솔(Progressive Tri-Sole), 진동을 줄이는 우레탄 마이크로스피어를 썼습니다(캘러웨이 공식).",
+  "points": [
+   "2026년 퀀텀 라인",
+   "경량 MAX FAST(가장 관용적인 MAX OS 의 한 단계 아래)",
+   "퀀텀 MAX(남성)와 구분"
+  ],
+  "guidePick": {
+   "role": "최신 경량 균형형",
+   "forWhom": "가볍고 높게 띄우는 최신 세트를 원하는 여성 중급자",
+   "short": "캘러웨이 2026 여성 경량",
+   "plus": "최신·높은 탄도",
+   "minus": "가격대 높음",
+   "pros": [
+    "2026년 최신 기술",
+    "경량으로 높은 탄도"
+   ],
+   "cons": [
+    "최신이라 할인 적음",
+    "가장 관용적인 모델은 MAX OS"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    3
+   ],
+   "specs": [
+    "판매처 확인",
+    "TBD",
+    "확인 필요"
+   ],
+   "verdict": "엘리트 맥스 패스트 다음 세대를 원하는 여성 중급자에게",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://www.callawaygolf.com/golf-clubs/irons/irons-2026-quantum-max-fast-womens.html",
+   "https://www.callawaygolf.com/quantum-womens"
+  ],
+  "category": "iron"
+ },
+ {
+  "id": "callaway-quantum-maxos-women-iron",
+  "name": "캘러웨이 퀀텀 맥스 OS 여성 아이언",
+  "query": "캘러웨이 퀀텀 맥스 OS 여성 아이언",
+  "must": [
+   "퀀텀",
+   "maxos",
+   "아이언"
+  ],
+  "mustAny": [
+   "여성",
+   "레이디",
+   "우먼",
+   "women",
+   "ladies",
+   "lady"
+  ],
+  "exclude": [
+   "중고",
+   "시타",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "풀세트",
+   "골프백",
+   "남성",
+   "드라이버",
+   "페어웨이",
+   "하이브리드",
+   "유틸",
+   "병행",
+   "직수입",
+   "패스트",
+   "fast",
+   "트리플",
+   "단품"
+  ],
+  "summary": "캘러웨이 2026년 퀀텀 라인에서 가장 관용성이 큰 여성용 MAX OS 아이언입니다(캘러웨이 공식 퀀텀 안내).",
+  "points": [
+   "2026년 퀀텀 라인 최대 관용성",
+   "MAX FAST 와 구분"
+  ],
+  "guidePick": {
+   "role": "최대 관용 최신",
+   "forWhom": "미스 샷을 가장 줄이고 싶은 여성 입문자",
+   "short": "퀀텀 중 가장 쉬운 모델",
+   "plus": "관용성",
+   "minus": "헤드가 큼",
+   "pros": [
+    "퀀텀 라인 최대 관용성",
+    "2026년 최신"
+   ],
+   "cons": [
+    "큰 헤드",
+    "가격대 높음"
+   ],
+   "scores": [
+    5,
+    4,
+    5,
+    3
+   ],
+   "specs": [
+    "판매처 확인",
+    "TBD",
+    "확인 필요"
+   ],
+   "verdict": "최신 모델로 가장 쉽게 시작하려는 여성 입문자에게",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://www.callawaygolf.com/golf-clubs/irons/irons-2026-quantum-max-os-womens.html",
+   "https://www.callawaygolf.com/quantum-irons"
+  ],
+  "category": "iron"
+ },
+ {
+  "id": "callaway-roguest-maxos-women-iron",
+  "name": "캘러웨이 로그 ST 맥스 OS 여성 아이언",
+  "query": "캘러웨이 로그ST 맥스 OS 여성 아이언",
+  "must": [
+   "로그",
+   "st",
+   "maxos",
+   "아이언"
+  ],
+  "mustAny": [
+   "여성",
+   "레이디",
+   "우먼",
+   "women",
+   "ladies",
+   "lady"
+  ],
+  "exclude": [
+   "중고",
+   "시타",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "풀세트",
+   "골프백",
+   "남성",
+   "드라이버",
+   "페어웨이",
+   "하이브리드",
+   "유틸",
+   "병행",
+   "직수입",
+   "패스트",
+   "fast",
+   "단품"
+  ],
+  "summary": "캘러웨이 2022년 로그 ST 라인 중 가장 쉽게 치도록 만든 MAX OS 계열의 여성 아이언입니다. 넓은 솔·큰 오프셋, 450 스틸 페이스 컵, AI 설계 페이스, 최대 46g 텅스텐 무게를 썼습니다(캘러웨이 공식).",
+  "points": [
+   "2022년 로그 ST 라인",
+   "넓은 솔·큰 오프셋",
+   "로그 ST MAX FAST 여성과 구분"
+  ],
+  "guidePick": {
+   "role": "넓은 솔 관용형",
+   "forWhom": "뒤땅·슬라이스가 잦은 여성 입문자",
+   "short": "로그 ST 중 가장 쉬운 헤드",
+   "plus": "관용성·오프셋",
+   "minus": "2022년 모델",
+   "pros": [
+    "넓은 솔과 큰 오프셋",
+    "텅스텐 무게로 높은 탄도"
+   ],
+   "cons": [
+    "2022년 모델",
+    "헤드가 커 보임"
+   ],
+   "scores": [
+    5,
+    4,
+    5,
+    4
+   ],
+   "specs": [
+    "판매처 확인",
+    "TBD",
+    "확인 필요"
+   ],
+   "verdict": "직전 세대 가격으로 관용성을 최대로 챙기는 입문 세트",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://www.callawaygolf.com/golf-clubs/irons/irons-2022-rogue-st-max-os-lite.html",
+   "https://odyssey.callawaygolf.com/golf-clubs/irons/irons-2022-rogue-st-max-os-lite-womens.html"
+  ],
+  "category": "iron"
+ },
+ {
+  "id": "taylormade-stealth-women-iron",
+  "name": "테일러메이드 스텔스 여성 아이언 (2022)",
+  "query": "테일러메이드 2022 스텔스 여성 아이언",
+  "must": [
+   "스텔스",
+   "아이언"
+  ],
+  "mustAny": [
+   "여성",
+   "레이디",
+   "우먼",
+   "women",
+   "ladies",
+   "lady"
+  ],
+  "exclude": [
+   "중고",
+   "시타",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "풀세트",
+   "골프백",
+   "남성",
+   "드라이버",
+   "페어웨이",
+   "하이브리드",
+   "유틸",
+   "병행",
+   "직수입",
+   "스텔스2",
+   "스텔스 2",
+   "글로리",
+   "gloire",
+   "hd",
+   "단품"
+  ],
+  "summary": "테일러메이드 2022년 스텔스 아이언의 여성용입니다. 캡 백(Cap Back) 설계에 토 랩(Toe Wrap) 구조를 더해 토 쪽 무게를 솔로 옮기고 무게중심을 최대 0.8mm 낮췄습니다. 여성용에는 알딜라 어센트 레이디스 샤프트가 들어갑니다(테일러메이드 공식).",
+  "points": [
+   "2022년 모델",
+   "캡 백·토 랩 구조",
+   "스텔스 글로리·스텔스2 와 구분"
+  ],
+  "guidePick": {
+   "role": "직전 세대 가성비",
+   "forWhom": "유명 브랜드 여성 세트를 낮은 가격에 찾는 여성 중급자",
+   "short": "캡 백 구조 2022년형",
+   "plus": "구조·브랜드",
+   "minus": "2022년 모델",
+   "pros": [
+    "캡 백·토 랩으로 낮은 무게중심",
+    "직전 세대라 가격 부담 적음"
+   ],
+   "cons": [
+    "2022년 모델",
+    "재고가 줄어드는 중"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    4
+   ],
+   "specs": [
+    "판매처 확인",
+    "TBD",
+    "확인 필요"
+   ],
+   "verdict": "SIM2 MAX 보다 한 세대 새 구조를 저렴하게 원할 때",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://www.taylormadegolf.com/Stealth-Women's-Irons/DW-TA207.html?lang=en_US",
+   "https://news.taylormadegolf.com/en-US/news/taylormade-golf-company-announces-stealth--irons-with-next-generation-cap-back--design-and-innovativ/s/208d8ed4-51e9-40e3-9023-04fe16a7e9c6"
+  ],
+  "category": "iron"
+ }
+]
