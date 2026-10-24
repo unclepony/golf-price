@@ -1,5 +1,0 @@
-[
- {"id":"tour-striker-7-iron","query":"투어스트라이커 골프 연습","must":["투어스트라이커"],"mustAny":["7번","7아이언","7i","아이언"],"exclude":["스마트볼","슬리브","웨지","주니어","레이디","중고"]},
- {"id":"orange-whip-lightspeed","query":"오렌지윕 골프 스피드 트레이너","must":["오렌지윕"],"mustAny":["라이트스피드","lightspeed"],"exclude":["중고"]},
- {"id":"eyeline-classic-putting-mirror","query":"EyeLine Golf 퍼팅 미러","must":["미러"],"mustAny":["아이라인골프","eyelinegolf"],"exclude":["숄더","레일","스몰","중고"]}
-]
