@@ -1,0 +1,54 @@
+[
+ {
+  "id": "xxio-prime-royal6-fairway",
+  "category": "wood",
+  "name": "젝시오 프라임 로얄에디션 6 페어웨이 우드",
+  "query": "젝시오 프라임 로얄에디션6 남성 페어웨이 우드",
+  "must": ["프라임", "로얄", "페어웨이"],
+  "mustAny": ["로얄에디션6", "에디션6", "로얄에디션 6"],
+  "exclude": ["여성", "레이디", "ladies", "왼손", "좌타", "헤드만", "헤드커버", "중고", "시타", "드라이버", "아이언", "유틸", "하이브리드", "풀세트"],
+  "summary": "던롭 젝시오의 최상위 경량 라인 프라임 로얄에디션 6세대(2025년) 남성 페어웨이 우드입니다. 바이플렉스 페이스와 솔에 무게 패드를 단 캐논 솔 설계, 아주 가벼운 SP-1300K 카본 샤프트를 써서 스윙 속도가 느린 숙련 골퍼가 덜 힘들이고 멀리, 똑바로 보내도록 만든 모델입니다.",
+  "points": ["젝시오 14·13 보다 더 가벼운 최상위 라인", "남성용 SP-1300K 샤프트(여성용과 구분)", "던롭스포츠코리아 정품 여부 확인"],
+  "sources": [
+   "https://eu.dunlopsports.com/xxio/clubs/men%27s-golf-clubs/xxio-prime-royal-edition-fairway-woods/MXXIORE6FWY.html",
+   "https://us.dunlopsports.com/xxio/clubs/fairway-woods/xxio-prime-royal-edition-fairway-woods/xxio-prime-royal-edition-fairway-woods/MXXIORE6FWY.html"
+  ],
+  "guidePick": {
+   "role": "초경량 프리미엄",
+   "forWhom": "스윙 속도가 느린 시니어·숙련 골퍼",
+   "short": "가장 가볍게 멀리",
+   "plus": "아주 가벼운 무게",
+   "minus": "가격이 가장 높은 축",
+   "pros": ["초경량 헤드·샤프트", "높은 탄도로 쉽게 뜸"],
+   "cons": ["스윙이 빠르면 탄도·스핀 과다", "프리미엄 가격"],
+   "scores": [4, 5, 5, 1],
+   "specs": ["TBD", "TBD", "2025년"],
+   "verdict": "젝시오 14 도 무겁게 느끼는 느린 스윙 골퍼를 위한 최상위 경량 우드",
+   "skill": "중급"
+  }
+ },
+ {
+  "id": "prgr-superegg-fairway",
+  "category": "wood",
+  "name": "PRGR 슈퍼에그 페어웨이 우드 (남성, 고반발)",
+  "query": "PRGR 슈퍼에그 페어웨이우드 남성",
+  "must": ["에그", "페어웨이"],
+  "exclude": ["여성", "레이디", "ladies", "lady", "우먼", "중고", "헤드만", "시타", "헤드커버", "드라이버", "하이브리드", "유틸", "레스큐", "아이언", "풀세트"],
+  "summary": "PRGR(프로기어)의 고반발 페어웨이 우드 슈퍼에그(2024년) 남성용입니다. 마레이징강 컵 페이스로 드라이버급 반발력을 내도록 만든 비공인(SLE 룰 부적합) 모델이라 공식 대회에서는 쓸 수 없고, 제조사는 헤드 스피드 43m/s 이상에서는 쓰지 말라고 안내합니다.",
+  "points": ["고반발 비공인 클럽(공식 대회 사용 불가)", "헤드 스피드 43m/s 미만 골퍼용", "여성용·이전 세대 판매글과 구분"],
+  "sources": ["https://prgr-golf.com/en/product/fairwaywood/24-super-egg-fw.html", "https://prgr-golf.com/en/superegg2024"],
+  "guidePick": {
+   "role": "고반발 비공인",
+   "forWhom": "대회에 안 나가는 스윙 속도 느린 골퍼",
+   "short": "반발력으로 거리 보충",
+   "plus": "고반발 페이스",
+   "minus": "공식 대회 사용 불가",
+   "pros": ["드라이버급 고반발 페이스", "낮고 깊은 무게중심으로 잘 뜸"],
+   "cons": ["비공인(SLE 룰 부적합)", "헤드 스피드 43m/s 이상은 비권장"],
+   "scores": [5, 4, 4, 3],
+   "specs": ["TBD", "TBD", "2024년"],
+   "verdict": "룰보다 거리가 급한 느린 스윙 골퍼의 고반발 선택지",
+   "skill": "중급"
+  }
+ }
+]
