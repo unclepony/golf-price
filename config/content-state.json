@@ -1647,11 +1647,11 @@
       "d": "2026-10-25"
     },
     "/c/ball": {
-      "h": "26c603d7886e0e5f",
+      "h": "c14f8f2e33a9c7c3",
       "d": "2026-10-25"
     },
     "/c/rangefinder": {
-      "h": "df17dfd007139a2c",
+      "h": "41f0c4041e978b54",
       "d": "2026-10-25"
     },
     "/c/gps": {
@@ -1707,11 +1707,11 @@
       "d": "2026-10-25"
     },
     "/g/golf-ball-compare": {
-      "h": "2d5fa5a2bb006166",
+      "h": "d0be801162e755c5",
       "d": "2026-10-25"
     },
     "/g/rangefinder-recommend": {
-      "h": "c2cffc52a42e0cde",
+      "h": "d2f2d137ca8a69c1",
       "d": "2026-10-25"
     },
     "/g/womens-driver-recommend": {
@@ -2715,16 +2715,6 @@
       "d": "2026-10-25"
     },
     {
-      "url": "/g/golf-ball-compare",
-      "kind": "updated",
-      "d": "2026-10-25"
-    },
-    {
-      "url": "/g/rangefinder-recommend",
-      "kind": "updated",
-      "d": "2026-10-25"
-    },
-    {
       "url": "/g/womens-driver-recommend",
       "kind": "updated",
       "d": "2026-10-25"
@@ -2866,6 +2856,26 @@
     },
     {
       "url": "/p/xxio-prime-royal6-fairway",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/c/ball",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/c/rangefinder",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/golf-ball-compare",
+      "kind": "updated",
+      "d": "2026-10-25"
+    },
+    {
+      "url": "/g/rangefinder-recommend",
       "kind": "updated",
       "d": "2026-10-25"
     }
