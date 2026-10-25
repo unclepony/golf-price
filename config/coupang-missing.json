@@ -1,198 +1,73 @@
 {
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { since: 처음 못 찾은 날, days: 연속으로 못 찾은 날 수, last: 마지막으로 못 찾은 날 }. 5일이면 picks.json gone.",
-  "bushnell-tour-v7-shift": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
   "callaway-quantum-max-iron": {
     "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "ecco-biom-h5-women-shoes": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "ecco-lt1-boa-women-shoes": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "ecco-street-720-goretex-women-shoes": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "garmin-approach-z82": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "garmin-fenix-8-amoled": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "ping-blueprint-t-iron": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
+    "days": 5,
+    "last": "2026-10-26"
   },
   "ping-g440-lst-fairway": {
     "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "ping-g440-sft-fairway": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "pxg-0311-blackops-driver": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "pxg-xtreme-hybrid-stand": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "taylormade-distance-plus": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "taylormade-qi4d-fairway": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "taylormade-tp5x": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "titleist-t150-iron": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "ua-phantom-fore-boa-shoes": {
-    "since": "2026-10-22",
-    "days": 4,
-    "last": "2026-10-25"
-  },
-  "bridgestone-tour-b-xs": {
-    "since": "2026-10-23",
-    "days": 3,
-    "last": "2026-10-25"
-  },
-  "callaway-chrome-tour-triple-diamond": {
-    "since": "2026-10-23",
-    "days": 3,
-    "last": "2026-10-25"
+    "days": 5,
+    "last": "2026-10-26"
   },
   "cobra-darkspeed-hybrid": {
     "since": "2026-10-23",
-    "days": 3,
-    "last": "2026-10-25"
-  },
-  "ecco-street-720-goretex-shoes": {
-    "since": "2026-10-23",
-    "days": 3,
-    "last": "2026-10-25"
-  },
-  "honma-beres09-hybrid": {
-    "since": "2026-10-23",
-    "days": 3,
-    "last": "2026-10-25"
-  },
-  "honma-tw767-hybrid": {
-    "since": "2026-10-23",
-    "days": 3,
-    "last": "2026-10-25"
-  },
-  "titleist-trufeel": {
-    "since": "2026-10-23",
-    "days": 3,
-    "last": "2026-10-25"
+    "days": 4,
+    "last": "2026-10-26"
   },
   "volvik-axia-iv": {
     "since": "2026-10-23",
-    "days": 3,
-    "last": "2026-10-25"
-  },
-  "xxio13-fairway": {
-    "since": "2026-10-23",
-    "days": 3,
-    "last": "2026-10-25"
-  },
-  "callaway-apex-ai200-iron": {
-    "since": "2026-10-23",
-    "days": 3,
-    "last": "2026-10-25"
-  },
-  "mizuno-pro-243-iron": {
-    "since": "2026-10-23",
-    "days": 3,
-    "last": "2026-10-25"
-  },
-  "adidas-s2g-shoes": {
-    "since": "2026-10-24",
-    "days": 2,
-    "last": "2026-10-25"
+    "days": 4,
+    "last": "2026-10-26"
   },
   "ping-blueprint-s-iron": {
     "since": "2026-10-24",
-    "days": 2,
-    "last": "2026-10-25"
+    "days": 3,
+    "last": "2026-10-26"
   },
   "sklz-gold-flex-trainer": {
     "since": "2026-10-24",
-    "days": 2,
-    "last": "2026-10-25"
+    "days": 3,
+    "last": "2026-10-26"
   },
   "taylormade-durable-grip-glove": {
     "since": "2026-10-24",
-    "days": 2,
-    "last": "2026-10-25"
-  },
-  "taylormade-spider-zt-putter": {
-    "since": "2026-10-24",
-    "days": 2,
-    "last": "2026-10-25"
+    "days": 3,
+    "last": "2026-10-26"
   },
   "titleist-tour-soft": {
     "since": "2026-10-24",
-    "days": 2,
-    "last": "2026-10-25"
+    "days": 3,
+    "last": "2026-10-26"
   },
   "voicecaddie-t13-pro": {
     "since": "2026-10-24",
-    "days": 2,
-    "last": "2026-10-25"
+    "days": 3,
+    "last": "2026-10-26"
   },
   "ecco-biom-c4-shoes": {
     "since": "2026-10-25",
-    "days": 1,
-    "last": "2026-10-25"
+    "days": 2,
+    "last": "2026-10-26"
   },
-  "footjoy-raingrip-women-pair-glove": {
-    "since": "2026-10-25",
+  "callaway-erc-soft": {
+    "since": "2026-10-26",
     "days": 1,
-    "last": "2026-10-25"
+    "last": "2026-10-26"
   },
-  "footjoy-wintersof-women-pair-glove": {
-    "since": "2026-10-25",
+  "callaway-supersoft": {
+    "since": "2026-10-26",
     "days": 1,
-    "last": "2026-10-25"
+    "last": "2026-10-26"
   },
-  "ping-g430max10k-driver": {
-    "since": "2026-10-25",
+  "ping-glide-forged-pro-wedge": {
+    "since": "2026-10-26",
     "days": 1,
-    "last": "2026-10-25"
+    "last": "2026-10-26"
+  },
+  "xxio-x-iron": {
+    "since": "2026-10-26",
+    "days": 1,
+    "last": "2026-10-26"
   }
 }

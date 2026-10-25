@@ -1,8 +1,162 @@
 {
   "date": "2026-10-25",
   "by": {
+    "act": {
+      "카카오톡|/": 5,
+      "카카오톡|/p/callaway-elyte-driver": 1,
+      "캠페인: chatgpt.com|/c/practice": 1,
+      "캠페인: chatgpt.com|/c/rangefinder": 1,
+      "캠페인: chatgpt.com|/g/golf-glove-recommend": 1,
+      "캠페인: chatgpt.com|/p/footjoy-pure-touch-glove": 1,
+      "캠페인: chatgpt.com|/p/phigolf-2": 1,
+      "캠페인: youtube|/": 1,
+      "캠페인: youtube|/c/iron": 1
+    },
+    "asn": {
+      "AS17858 LG POWERCOMM": 2,
+      "AS3559 Korea Telecom": 1,
+      "AS4766 KT": 1,
+      "AS9318 SK Broadband Co Ltd": 4,
+      "AS9644 SK Telecom": 6
+    },
+    "cty": {
+      "KR": 14
+    },
+    "depth": {
+      "/c/iron|첫 화면": 1,
+      "/c/rangefinder|끝까지": 1,
+      "/g/golf-glove-recommend|첫 화면": 1,
+      "/p/callaway-elyte-driver|첫 화면": 1,
+      "/p/footjoy-pure-touch-glove|25%": 1,
+      "/p/prgr-sweep-women-iron|25%": 1,
+      "/|25%": 1,
+      "/|50%": 1,
+      "/|끝까지": 1,
+      "/|첫 화면": 3
+    },
+    "dev": {
+      "PC": 4,
+      "모바일": 10
+    },
+    "hour": {
+      "15": 2,
+      "16": 1,
+      "18": 3,
+      "20": 4,
+      "07": 2,
+      "08": 1,
+      "09": 1
+    },
+    "nav": {
+      "/c/iron|/p/prgr-sweep-women-iron": 1,
+      "/g/golf-glove-recommend|/p/footjoy-pure-touch-glove": 1,
+      "/|/c/iron": 1,
+      "/|/p/callaway-elyte-driver": 1
+    },
+    "out": {
+      "/p/callaway-elyte-driver|callaway-elyte-driver": 1,
+      "/p/footjoy-pure-touch-glove|footjoy-pure-touch-glove": 1
+    },
+    "outact": {
+      "조작 후|카카오톡": 1,
+      "조작 후|캠페인: chatgpt.com": 1
+    },
+    "outcamp": {
+      "chatgpt.com|footjoy-pure-touch-glove": 1
+    },
+    "outref": {
+      "카카오톡": 1,
+      "캠페인: chatgpt.com": 1
+    },
+    "pos": {
+      "상품 페이지": 2
+    },
+    "pv": {
+      "/": 7,
+      "/c/iron": 1,
+      "/c/practice": 1,
+      "/c/rangefinder": 1,
+      "/g/golf-glove-recommend": 1,
+      "/g/practice-gear-recommend": 2,
+      "/g/wedge-recommend": 2,
+      "/p/callaway-elyte-driver": 1,
+      "/p/footjoy-pure-touch-glove": 1,
+      "/p/phigolf-2": 1,
+      "/p/prgr-sweep-women-iron": 1
+    },
+    "ref": {
+      "카카오톡": 5,
+      "캠페인: chatgpt.com": 4,
+      "캠페인: youtube": 5
+    },
+    "refland": {
+      "카카오톡|/": 5,
+      "캠페인: chatgpt.com|/c/practice": 1,
+      "캠페인: chatgpt.com|/c/rangefinder": 1,
+      "캠페인: chatgpt.com|/g/golf-glove-recommend": 1,
+      "캠페인: chatgpt.com|/p/phigolf-2": 1,
+      "캠페인: youtube|/": 1,
+      "캠페인: youtube|/g/practice-gear-recommend": 2,
+      "캠페인: youtube|/g/wedge-recommend": 2
+    },
+    "refurl": {
+      "chatgpt.com": 4,
+      "youtube / comment / c-wedge-recommend-beginner": 2,
+      "youtube / profile / choicegolf": 1,
+      "youtube / video / lesson-downswing-sequence": 2
+    },
+    "seen": {
+      "/c/iron": 1,
+      "/c/rangefinder": 1,
+      "/g/golf-glove-recommend": 1,
+      "/g/practice-gear-recommend": 1,
+      "/g/wedge-recommend": 1,
+      "/p/callaway-elyte-driver": 1,
+      "/p/footjoy-pure-touch-glove": 1,
+      "/p/phigolf-2": 1
+    },
+    "seenpos": {
+      "비교표": 4,
+      "상품 페이지": 3,
+      "한 줄 결론": 1
+    },
     "skip": {
+      "내부(관리자 브라우저)": 2,
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3,
+      "데이터센터 AS8075 Microsoft Corporation": 1,
       "데이터센터 AS9009 M247 LTD Quebec Infrastructure": 1
+    },
+    "stay": {
+      "/c/iron|10초 미만": 1,
+      "/c/rangefinder|1~3분": 1,
+      "/g/golf-glove-recommend|10~30초": 1,
+      "/p/callaway-elyte-driver|10초 미만": 1,
+      "/p/footjoy-pure-touch-glove|10초 미만": 1,
+      "/p/prgr-sweep-women-iron|10초 미만": 1,
+      "/|10~30초": 1,
+      "/|10초 미만": 4,
+      "/|30초~1분": 1
+    },
+    "visit": {
+      "/": 6,
+      "/c/practice": 1,
+      "/c/rangefinder": 1,
+      "/g/golf-glove-recommend": 1,
+      "/g/practice-gear-recommend": 2,
+      "/g/wedge-recommend": 2,
+      "/p/phigolf-2": 1
+    },
+    "xpv": {
+      "/": 1,
+      "/c/iron": 1,
+      "/c/practice": 1,
+      "/c/rangefinder": 1,
+      "/g/golf-glove-recommend": 1,
+      "/g/practice-gear-recommend": 2,
+      "/g/wedge-recommend": 2,
+      "/p/footjoy-pure-touch-glove": 1,
+      "/p/phigolf-2": 1,
+      "/p/prgr-sweep-women-iron": 1
     }
   }
 }
