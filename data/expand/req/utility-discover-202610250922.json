@@ -1,0 +1,162 @@
+[
+ {
+  "id": "u0",
+  "query": "클리블랜드 런처 헤일로 XL 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u1",
+  "query": "PRGR 슈퍼에그 하이브리드 남성",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u2",
+  "query": "야마하 인프레스 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u3",
+  "query": "야마하 RMX VD 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u4",
+  "query": "브리지스톤 B2HT 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u5",
+  "query": "미사일 AXG 남성 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u6",
+  "query": "지브이투어 유틸리티 남성",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u7",
+  "query": "요넥스 이존 GT 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u8",
+  "query": "타이틀리스트 GT3 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u9",
+  "query": "타이틀리스트 TSR2 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u10",
+  "query": "마제스티 로얄 유틸리티 남성",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u11",
+  "query": "젝시오 13 유틸리티 남성",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u12",
+  "query": "혼마 베레스 아이주 유틸리티 남성",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u13",
+  "query": "캘러웨이 엘리트 맥스 패스트 하이브리드 남성",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u14",
+  "query": "온오프 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u15",
+  "query": "혼마 투어월드 GS 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u16",
+  "query": "카스코 파워토네이도 유틸리티",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u17",
+  "query": "핑 G425 하이브리드",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u18",
+  "query": "미즈노 JPX Q 유틸리티 남성",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "u19",
+  "query": "테일러메이드 스텔스2 레스큐",
+  "must": [
+   "zzzz없음"
+  ],
+  "exclude": []
+ }
+]
