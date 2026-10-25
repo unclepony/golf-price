@@ -39,7 +39,10 @@ const prevState = readJson(STATE_FILE, null);
 const SEEDING = !prevState; // 처음 만들 때는 기존 updated 값을 씨앗으로 쓰고 전송 대기열은 비워 둔다
 // 지문 계산 방식 판(KEY_V). 방식을 바꾼 첫 빌드에서는 예전 방식(prevState.keyV)으로도 계산해 같으면 날짜를 그대로 두고 새 지문만 저장한다
 // (방식만 바뀌어 모든 페이지 날짜가 한꺼번에 바뀌지 않게). v2(2026-10-25): 상품 수·다른 가이드 썸네일·가격대 칸·로켓배송 표시 제외
-const KEY_V = 2;
+// v3(2026-10-26 gp-1026-1): 현재 판매가로 정해지는 문장·묶음(<!--pdep--> 표시: '가격별' 탭, '예산을 줄이고 싶다면', '가격대는 ○○') 제외.
+// 판매가 때문에 순위·판매 가능 여부가 바뀐 것은 그대로 날짜를 바꾼다
+const KEY_V = 3;
+const pdep = (t) => (t ? `<!--pdep-->${t}<!--/pdep-->` : '');
 const PREV_KEY_V = prevState?.keyV ?? 1;
 const state = { _설명: 'build.mjs 가 관리한다. pages: 주소별 본문 지문(h)과 콘텐츠 업데이트일(d). pending: IndexNow 로 보낼 주소(콘텐츠가 바뀐·새로 생긴·삭제된 페이지). 직접 고치지 않는다.', keyV: KEY_V, pages: {}, pending: prevState?.pending ?? [] };
 const pageDates = {};
@@ -69,6 +72,17 @@ function contentKey(html, v = KEY_V) {
     .replace(/\d+\.\d+ 확인/g, '# 확인')
     .replace(/ stale/g, '')
     .replace(/ · 오래된 가격/g, '');
+  // v3 표시(<!--pdep-->)는 v2 이하로 계산할 때 표시만 지운다(판 바뀐 첫 빌드에서 예전 지문과 같게)
+  main =
+    v >= 3
+      ? main
+          .replace(/ ?<!--pdep-->[\s\S]*?<!--\/pdep-->/g, '')
+          // 상품 정보 표의 가격대 줄, 분류 목록 카드의 로켓배송 표시와 '로켓배송만' 개수도 매일 판매가·배송 정보로 바뀐다
+          .replace(/<tr><th scope="row">가격대<\/th><td>[^<]*<\/td><\/tr>/g, '')
+          .replace(/<span class="pc-rocket">로켓배송<\/span>/g, '')
+          // 분류 목록 필터의 가격대·배송 묶음(항목과 개수가 현재 판매가·로켓배송으로 정해짐)
+          .replace(/<fieldset class="plp-g"><legend>(?:가격대|배송)<\/legend>[\s\S]*?<\/fieldset>/g, '')
+      : main.replace(/<!--\/?pdep-->/g, '');
   if (v >= 2)
     main = main
       // 현재 가격에서 나오는 가격대 칸(₩ 저가~프리미엄)과 정렬용 data-price 도 뺀다 (매일 가격 갱신만으로 날짜가 바뀌지 않게)
@@ -668,10 +682,10 @@ function tierCompare(g) {
     return `<button type="button" class="tab${it === first ? ' on' : ''}" data-tab="${esc(id)}"${it.ids.length ? '' : ' disabled'}>${esc(it.label)} <small>${it.ids.length}</small></button>`;
   };
   return `<section class="tiers tabs-wrap"><h2>수준별 비교 <small>실력과 가격대로 나눠 보기</small></h2>
-${groups.map((gr) => `<div class="tier-row"><span class="tier-gname">${gr.name}</span><div class="tabs" role="tablist">${gr.items.map((it) => btn(all.find((a) => a.group === gr.name && a.label === it.label))).join('')}</div></div>`).join('')}
+${groups.map((gr) => { const r = `<div class="tier-row"><span class="tier-gname">${gr.name}</span><div class="tabs" role="tablist">${gr.items.map((it) => btn(all.find((a) => a.group === gr.name && a.label === it.label))).join('')}</div></div>`; return gr.name === '가격별' ? pdep(r) : r; }).join('')}
 ${all
   .filter((it) => it.ids.length)
-  .map((it) => `<div class="tabpanel${it === first ? ' on' : ''}" data-panel="${esc(`${key}-${it.group}-${it.label}`)}">${infographic(g, null, { ids: it.ids, title: `${it.label} ${short}` })}</div>`)
+  .map((it) => { const t = `<div class="tabpanel${it === first ? ' on' : ''}" data-panel="${esc(`${key}-${it.group}-${it.label}`)}">${infographic(g, null, { ids: it.ids, title: `${it.label} ${short}` })}</div>`; return it.group === '가격별' ? pdep(t) : t; })
   .join('')}
 </section>`;
 }
@@ -1043,7 +1057,7 @@ function productStory(p) {
   const cheaper = rankedPicks(g)
     .filter((x) => x.id !== pk.id && (x.skill ?? null) === (pk.skill ?? null) && !warned(g, x) && pickPrice(x.id) && pickPrice(pk.id) && priceLevel(x.id)?.n < priceLevel(pk.id)?.n)
     .sort((x, y) => totalScore(y) - totalScore(x))[0];
-  if (cheaper) others.push(`예산을 줄이고 싶다면 같은 단계의 ${link(cheaper.id)}(${esc(priceLevel(cheaper.id).label)})가 있습니다.`);
+  if (cheaper) others.push(pdep(`예산을 줄이고 싶다면 같은 단계의 ${link(cheaper.id)}(${esc(priceLevel(cheaper.id).label)})가 있습니다.`));
   const si = pk.skill ? SKILLS.indexOf(pk.skill) : -1;
   if (si > 0) {
     const easier = rankedPicks(g).find((x) => x.skill === SKILLS[si - 1] && !warned(g, x));
@@ -1059,7 +1073,7 @@ function productStory(p) {
         if (d >= 1) up.push(c);
         if (d <= -1) down.push(c);
       });
-      const lv = priceLevel(pk.id)?.label && priceLevel(x.id)?.label ? ` 가격대는 ${esc(priceLevel(pk.id).label)}, ${esc(name(x.id))}는 ${esc(priceLevel(x.id).label)}입니다.` : '';
+      const lv = priceLevel(pk.id)?.label && priceLevel(x.id)?.label ? pdep(` 가격대는 ${esc(priceLevel(pk.id).label)}, ${esc(name(x.id))}는 ${esc(priceLevel(x.id).label)}입니다.`) : '';
       if (!up.length && !down.length) return `<li>${link(x.id)}와는 항목별 점수가 비슷합니다.${lv}</li>`;
       return `<li>${link(x.id)}보다 ${up.length ? `${esc(up.join('·'))} 점수는 높게` : ''}${up.length && down.length ? ', ' : ''}${down.length ? `${esc(down.join('·'))} 점수는 낮게` : ''} 매겼습니다.${lv}</li>`;
     })
@@ -1662,7 +1676,7 @@ for (const g of pageGuides) {
         ],
         body: `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${c?.id}">${esc(c?.name ?? '')}</a>${who ? ` › <a href="/g/${g.slug}">${esc(g.gender)}</a>` : ''} › ${esc(SKILL_WORD[skill])}</nav>
 <p class="g-kicker"><span class="skill sk-${SKILLS.indexOf(skill) + 1}">${skill}</span>${esc(guideName(g))}</p>
-<h1>${esc(name)} 추천 비교 <small>${ps.length}종 · ${esc(levels.join('·'))}</small></h1>
+<h1>${esc(name)} 추천 비교 <small>${ps.length}종${pdep(` · ${esc(levels.join('·'))}`)}</small></h1>
 ${updatedTag(max2(g.updated, h?.updated))}
 ${h?.answerFirst ? answerBlock(g, ps, skill) : ''}
 ${conclusionBox(g, ps, skill)}
