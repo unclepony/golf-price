@@ -68,6 +68,13 @@
       "slug": "golf-rangefinder-recommend",
       "file": "content/qa/007-golf-rangefinder-recommend.md",
       "date": "2026-10-25"
+    },
+    {
+      "no": 8,
+      "kw": "유틸리티 추천 4번",
+      "slug": "utility-4-recommend",
+      "file": "content/qa/008-utility-4-recommend.md",
+      "date": "2026-10-26"
     }
   ]
 }
