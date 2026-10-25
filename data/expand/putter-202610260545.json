@@ -1,42 +1,498 @@
 [
- {"id":"odyssey-aione-milled-seven-t-putter","category":"putter","name":"오디세이 Ai-ONE 밀드 세븐 T DB 퍼터","query":"오디세이 AI ONE 밀드 7T DB 퍼터","must":["퍼터","aione"],"mustAny":["밀드","milled"],"exclude":["실버","silver","제일버드","jailbird","무게추","중고","헤드만","시타","커버","그립만","여성"],
-  "summary":"오디세이가 2023년 11월 내놓은 Ai-ONE 밀드 라인의 세븐(7번) 말렛입니다. 스테인리스 헤드와 티타늄 인서트를 모두 깎아 만들었고, 인서트 뒷면 굴곡을 AI로 설계해 빗맞아도 공 속도가 덜 줄게 했습니다.",
-  "points":["100% 밀링 스테인리스 헤드 + 100% 밀링 티타늄 인서트","더블벤드(DB) 페이스밸런스, 로프트 3°·헤드 360g","교체형 앞쪽 무게추(5·10·15·20g)"],
-  "guidePick":{"role":"밀링 프리미엄 말렛","forWhom":"말렛의 방향 안정감에 깎아 만든 단단한 손맛을 원하는 상급자","short":"깎아 만든 7번 말렛","plus":"방향+손맛","minus":"고가","pros":["헤드·인서트 모두 밀링한 프리미엄 구성","페이스밸런스로 직선형 스트로크에 맞음"],"cons":["40만원대 고가","인서트 타감이 단단한 편"],"scores":[5,4,4,3],"specs":["말렛(세븐 T DB)","판매처 확인","밀링 티타늄 Ai 인서트"],"verdict":"Ai-ONE 말렛을 더 단단한 손맛으로 쓰고 싶은 상급자용","skill":"고급"},
-  "sources":["https://odysseyeu.callawaygolf.com/en/gb/odyssey/odyssey-putters/ai-one-milled/putters-2024-ai-one-milled-seven-t-db.html","https://ir.callawaygolf.com/news-releases/news-release-details/odyssey-golf-announces-new-ai-one-and-ai-one-milled-putters"]},
- {"id":"odyssey-aione-jailbird-mini-putter","category":"putter","name":"오디세이 Ai-ONE 제일버드 미니 퍼터","query":"오디세이 Ai-ONE 제일버드 미니 퍼터","must":["퍼터","제일버드","미니"],"exclude":["밀드","milled","무게추","2볼","투볼","2ball","버사","versa","중고","헤드만","시타","커버","그립만","여성"],
-  "summary":"오디세이 Ai-ONE 라인의 작은 제일버드 말렛입니다. 화이트 핫 우레탄과 AI로 설계한 알루미늄 뒷판을 합친 Ai-ONE 인서트를 넣었고, 머리 뒤 창으로 인서트 굴곡이 보입니다.",
-  "points":["Ai-ONE 인서트(화이트 핫 우레탄 + AI 설계 알루미늄 뒷판)","제일버드보다 작은 크기의 말렛","교체형 앞쪽 무게추(5·10·15·20g)"],
-  "guidePick":{"role":"작은 고관용 말렛","forWhom":"큰 말렛은 부담스럽지만 방향 안정감을 원하는 중급자","short":"작아진 제일버드","plus":"안정+작은 크기","minus":"판매자 배송 상품","pros":["말렛 안정감을 작은 헤드로","부드러운 화이트 핫 계열 인서트"],"cons":["쿠팡 직매입이 아닌 판매자 배송 상품","넥(DB·CH) 구성은 판매처 확인"],"scores":[4,4,4,4],"specs":["말렛(제일버드 미니)","판매처 확인","Ai-ONE 인서트"],"verdict":"제일버드의 안정감을 덜 부담스러운 크기로 원하는 중급자용","skill":"중급"},
-  "sources":["https://odysseyeu.callawaygolf.com/en/gb/odyssey/odyssey-putters/ai-one/putters-2024-ai-one-jailbird-mini-db.html","https://odysseyeu.callawaygolf.com/fr/fr/odyssey-putters/ai-one/putters-2024-ai-one-jailbird-mini-ch.html"]},
- {"id":"taylormade-tp-reserve-b11-putter","category":"putter","name":"테일러메이드 TP 리저브 B11 퍼터","query":"테일러메이드 TP 리저브 B11 퍼터","must":["퍼터","b11"],"mustAny":["리저브","reserve"],"exclude":["중고","헤드만","시타","커버","그립만","여성","왼손"],
-  "summary":"테일러메이드의 프리미엄 밀링 퍼터 TP 리저브 라인의 클래식 블레이드입니다. 303 스테인리스를 깎아 만들고 페이스에 홈을 밀링해 부드러운 타감을 냈습니다.",
-  "points":["303 스테인리스 밀링 헤드, 페이스 밀링 홈","L넥, 토행 38°(중간 아크 스트로크)","로프트 3°·라이 70°"],
-  "guidePick":{"role":"밀링 클래식 블레이드","forWhom":"아크형 스트로크로 손맛과 거리감을 중시하는 프로·상급자","short":"L넥 정통 블레이드","plus":"손맛·거리감","minus":"관용성 낮음","pros":["303 스테인리스 통 밀링","얇은 톱라인의 깔끔한 블레이드"],"cons":["관용성은 말렛보다 낮음","톱라인 정렬선이 없음"],"scores":[3,5,2,3],"specs":["블레이드(L넥)","판매처 확인","303SS 밀링 · 토행 38°"],"verdict":"블레이드 손맛을 최우선으로 하는 프로·상급자용","skill":"프로"},
-  "sources":["https://www.taylormadegolf.com/TP-Reserve-B11/N7501427.html"]},
- {"id":"ping-scottsdale-prime-tyne4-putter","category":"putter","name":"핑 스캇데일 프라임 타인 4 퍼터","query":"핑 스캇데일 프라임 타인 4 퍼터","must":["퍼터","스캇데일"],"mustAny":["프라임타인4","primetyne4"],"exclude":["pld","중고","헤드만","시타","커버","그립만","여성","왼손","좌타"],
-  "summary":"핑이 2025년 내놓은 스캇데일 퍼터 9종 가운데 강한 아크 스트로크용 말렛입니다. 한 조각 PEBAX 페이스 인서트로 가벼워진 무게를 헤드 주변에 다시 배치해 관성모멘트를 높였습니다.",
-  "points":["2025 스캇데일 라인, 강한 아크(Strong arc) 스트로크용","한 조각 PEBAX 페이스 인서트","헤드 365g, 로프트 3°"],
-  "guidePick":{"role":"아크형 말렛","forWhom":"말렛이 좋지만 스트로크가 호를 크게 그리는 중급자","short":"아크 스트로크용 말렛","plus":"안정+아크 대응","minus":"판매자 배송 상품","pros":["말렛인데도 강한 아크 스트로크에 맞춘 설계","부드러운 PEBAX 인서트"],"cons":["쿠팡 직매입이 아닌 판매자 배송 상품","직선형 스트로크에는 덜 맞음"],"scores":[4,4,4,4],"specs":["말렛","판매처 확인","2025 스캇데일 · PEBAX 인서트"],"verdict":"아크형 스트로크를 하면서 말렛 안정감을 원하는 중급자용","skill":"중급"},
-  "sources":["https://ping.com/en-us/golf-clubs/putters/scottsdale-prime-tyne-4-putter","https://ping.com/en-us/discover-ping/news/new-scottsdale-putters-offer-feel-forgiveness-custom-fitting"]},
- {"id":"cleveland-frontline-elite-putter","category":"putter","name":"클리브랜드 프론트라인 엘리트 퍼터","query":"클리브랜드 프론트라인 엘리트 퍼터","must":["퍼터"],"mustAny":["frontlineelite","프론트라인엘리트"],"exclude":["여성","레이디","중고","헤드만","시타","커버","그립만"],
-  "summary":"클리브랜드가 2023년 내놓은 퍼터 8종 라인입니다. 페이스에 30g 넘는 텅스텐을 넣어 무게중심을 앞으로 옮겨, 빗맞아도 페이스가 덜 돌아가게 설계했습니다.",
-  "points":["페이스 텅스텐 30g 이상(앞쪽 무게중심)","SOFT 밀링 홈으로 빗맞을 때 공 속도 편차 줄임","블레이드 2종 + 말렛 6종(ELEVADO·CERO·RHO)"],
-  "guidePick":{"role":"앞무게 가성비","forWhom":"빗맞으면 방향이 크게 틀어지는 입문·초급 골퍼","short":"페이스가 덜 도는 가성비","plus":"방향 안정·가격","minus":"모델 선택 필요","pros":["앞쪽 무게중심으로 빗맞음에 강함","20만원 아래 가격대"],"cons":["한 링크에 여러 모양(옵션 선택 필요)","쿠팡 직매입이 아닌 판매자 배송 상품"],"scores":[4,3,4,5],"specs":["블레이드·말렛(모델별)","판매처 확인","텅스텐 페이스 · 앞무게"],"verdict":"싸게 방향 안정성을 챙기고 싶은 입문자용","skill":"초심자"},
-  "sources":["https://news.dunlopsports.com/news/cleveland-golf-announces-new-frontline-elite-putters-with-one-of-a-kind-tungsten-face/s/f9d43812-220a-4b16-b6f0-8e79e0f62a94","https://eu.dunlopsports.com/cleveland-golf/clubs/putters/frontline-elite-rho-single-bend-putter/MFERSB-23.html"]},
- {"id":"cleveland-hb-soft-milled-putter","category":"putter","name":"클리브랜드 HB 소프트 밀드 퍼터","query":"클리브랜드 HB 소프트 밀드 퍼터","must":["퍼터","hb","소프트"],"mustAny":["밀드","milled"],"exclude":["소프트2","soft2","여성","레이디","중고","헤드만","시타","커버","그립만"],
-  "summary":"클리브랜드가 2022년 11월 내놓은(2023 시즌) 헤드를 주조한 뒤 페이스와 뒷면을 CNC로 깎은 퍼터 라인입니다. 모델마다 다른 SOFT 밀링으로 페이스 전체의 공 속도를 고르게 했습니다.",
-  "points":["주조 후 페이스·뒷면 CNC 밀링","SOFT(모델별 밀링 홈)","던롭코리아 정품 판매"],
-  "guidePick":{"role":"저가 밀링","forWhom":"첫 퍼터를 싸게 사면서도 깎은 페이스를 원하는 입문자","short":"10만원대 밀링 퍼터","plus":"가격","minus":"구형","pros":["10만원대 정품 밀링 페이스","블레이드·말렛 모양 선택 가능"],"cons":["2023 시즌 모델","한 링크에 여러 모양(옵션 선택 필요)"],"scores":[3,4,3,5],"specs":["블레이드·말렛(모델별)","판매처 확인","CNC 밀링 페이스 · SOFT"],"verdict":"가장 싸게 밀링 퍼터를 써 보고 싶은 입문자용","skill":"초심자"},
-  "sources":["https://www.clevelandgolf.com/en/putters-","https://golf.com/?p=15495724"]},
- {"id":"bettinardi-queen-b-putter","category":"putter","name":"베티나르디 퀸비 퍼터","query":"베티나르디 퀸비 퍼터","must":["퍼터"],"mustAny":["퀸비","queenb"],"exclude":["중고","헤드만","시타","커버","그립만","여성"],
-  "summary":"베티나르디의 오랜 밀링 퍼터 라인 퀸비입니다. 미국 일리노이 공장에서 303 스테인리스 한 덩어리를 깎아 만들고, 작은 벌집(Mini Honeycomb) 페이스 밀링으로 부드러운 타감을 냅니다.",
-  "points":["303 스테인리스 한 조각 밀링, 미국 생산","미니 허니콤 페이스 밀링","연식(2023·2025)·모양은 판매처 확인"],
-  "guidePick":{"role":"미국산 밀링 블레이드","forWhom":"정통 밀링 퍼터의 손맛을 원하는 프로·상급자","short":"통 밀링 블레이드·말렛","plus":"손맛·완성도","minus":"가장 비싼 축","pros":["303 스테인리스 한 조각 밀링","부드러운 허니콤 페이스"],"cons":["50만원대 고가","한 링크에 여러 모양(옵션 선택 필요)"],"scores":[3,5,3,2],"specs":["블레이드·미드말렛(모델별)","판매처 확인","303SS 통 밀링 · 허니콤 페이스"],"verdict":"손맛과 완성도에 돈을 쓰는 프로·상급자용","skill":"프로"},
-  "sources":["https://bettinardi.com/pages/2025-queen-b-series","https://bettinardi.com/pages/2023-2024-queen-b-putters"]},
- {"id":"evnroll-er5-putter","category":"putter","name":"이븐롤 네오클래식 ER5 퍼터","query":"이븐롤 네오클래식 ER5 퍼터","must":["퍼터","er5"],"exclude":["여성","레이디","중고","헤드만","시타","커버","그립만","38"],
-  "summary":"이븐롤의 2024 네오클래식 라인 말렛입니다. 원래 ER5의 송곳니 모양을 더 날렵하게 다듬었고, 폭이 다른 홈(스위트페이스)으로 빗맞은 퍼트도 목표선 가까이 보냅니다.",
-  "points":["303 스테인리스 헤드, 폴리머 뒷판 알루미늄 인서트","스위트페이스 홈(빗맞음 보정)","싱글벤드, 토행 15°·로프트 2°"],
-  "guidePick":{"role":"거리감 말렛","forWhom":"말렛을 쓰면서 거리 편차를 줄이고 싶은 상급자","short":"빗맞아도 거리 일정한 말렛","plus":"거리감+안정","minus":"고가","pros":["스위트페이스로 빗맞음 거리 편차 적음","약한 아크 스트로크에 맞는 토행"],"cons":["30만원대 고가","쿠팡 직매입이 아닌 판매자 배송 상품"],"scores":[4,5,4,3],"specs":["말렛","판매처 확인","스위트페이스 · 토행 15°"],"verdict":"말렛 안정감과 이븐롤 거리감을 함께 원하는 상급자용","skill":"고급"},
-  "sources":["https://www.evnroll.com/products/nc5-mallet-putter-black","https://www.evnroll.com/blogs/straight-talk/evnroll-presents-a-fresh-take-on-award-winning-classic-putter-line"]}
+ {
+  "id": "odyssey-aione-milled-seven-t-putter",
+  "category": "putter",
+  "name": "오디세이 Ai-ONE 밀드 세븐 T DB 퍼터",
+  "query": "오디세이 AI ONE 밀드 7T DB 퍼터",
+  "must": [
+   "퍼터",
+   "aione"
+  ],
+  "mustAny": [
+   "밀드",
+   "milled"
+  ],
+  "exclude": [
+   "실버",
+   "silver",
+   "제일버드",
+   "jailbird",
+   "무게추",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "여성"
+  ],
+  "summary": "오디세이가 2023년 11월 내놓은 Ai-ONE 밀드 라인의 세븐(7번) 말렛입니다. 스테인리스 헤드와 티타늄 인서트를 모두 깎아 만들었고, 인서트 뒷면 굴곡을 AI로 설계해 빗맞아도 공 속도가 덜 줄게 했습니다.",
+  "points": [
+   "100% 밀링 스테인리스 헤드 + 100% 밀링 티타늄 인서트",
+   "더블벤드(DB) 페이스밸런스, 로프트 3°·헤드 360g",
+   "교체형 앞쪽 무게추(5·10·15·20g)"
+  ],
+  "guidePick": {
+   "role": "밀링 프리미엄 말렛",
+   "forWhom": "말렛의 방향 안정감에 깎아 만든 단단한 손맛을 원하는 상급자",
+   "short": "깎아 만든 7번 말렛",
+   "plus": "방향+손맛",
+   "minus": "고가",
+   "pros": [
+    "헤드·인서트 모두 밀링한 프리미엄 구성",
+    "페이스밸런스로 직선형 스트로크에 맞음"
+   ],
+   "cons": [
+    "40만원대 고가",
+    "인서트 타감이 단단한 편"
+   ],
+   "scores": [
+    5,
+    4,
+    4,
+    3
+   ],
+   "specs": [
+    "말렛(세븐 T DB)",
+    "판매처 확인",
+    "밀링 티타늄 Ai 인서트"
+   ],
+   "verdict": "Ai-ONE 말렛을 더 단단한 손맛으로 쓰고 싶은 상급자용",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://odysseyeu.callawaygolf.com/en/gb/odyssey/odyssey-putters/ai-one-milled/putters-2024-ai-one-milled-seven-t-db.html",
+   "https://ir.callawaygolf.com/news-releases/news-release-details/odyssey-golf-announces-new-ai-one-and-ai-one-milled-putters"
+  ]
+ },
+ {
+  "id": "odyssey-aione-jailbird-mini-putter",
+  "category": "putter",
+  "name": "오디세이 Ai-ONE 제일버드 미니 퍼터",
+  "query": "오디세이 Ai-ONE 제일버드 미니 퍼터",
+  "must": [
+   "퍼터",
+   "제일버드",
+   "미니"
+  ],
+  "exclude": [
+   "밀드",
+   "milled",
+   "무게추",
+   "2볼",
+   "투볼",
+   "2ball",
+   "버사",
+   "versa",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "여성"
+  ],
+  "summary": "오디세이 Ai-ONE 라인의 작은 제일버드 말렛입니다. 화이트 핫 우레탄과 AI로 설계한 알루미늄 뒷판을 합친 Ai-ONE 인서트를 넣었고, 머리 뒤 창으로 인서트 굴곡이 보입니다.",
+  "points": [
+   "Ai-ONE 인서트(화이트 핫 우레탄 + AI 설계 알루미늄 뒷판)",
+   "제일버드보다 작은 크기의 말렛",
+   "교체형 앞쪽 무게추(5·10·15·20g)"
+  ],
+  "guidePick": {
+   "role": "작은 고관용 말렛",
+   "forWhom": "큰 말렛은 부담스럽지만 방향 안정감을 원하는 중급자",
+   "short": "작아진 제일버드",
+   "plus": "안정+작은 크기",
+   "minus": "판매자 배송 상품",
+   "pros": [
+    "말렛 안정감을 작은 헤드로",
+    "부드러운 화이트 핫 계열 인서트"
+   ],
+   "cons": [
+    "쿠팡 직매입이 아닌 판매자 배송 상품",
+    "넥(DB·CH) 구성은 판매처 확인"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    4
+   ],
+   "specs": [
+    "말렛(제일버드 미니)",
+    "판매처 확인",
+    "Ai-ONE 인서트"
+   ],
+   "verdict": "제일버드의 안정감을 덜 부담스러운 크기로 원하는 중급자용",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://odysseyeu.callawaygolf.com/en/gb/odyssey/odyssey-putters/ai-one/putters-2024-ai-one-jailbird-mini-db.html",
+   "https://odysseyeu.callawaygolf.com/fr/fr/odyssey-putters/ai-one/putters-2024-ai-one-jailbird-mini-ch.html"
+  ]
+ },
+ {
+  "id": "taylormade-tp-reserve-b11-putter",
+  "category": "putter",
+  "name": "테일러메이드 TP 리저브 B11 퍼터",
+  "query": "테일러메이드 TP 리저브 B11 퍼터",
+  "must": [
+   "퍼터",
+   "b11"
+  ],
+  "mustAny": [
+   "리저브",
+   "reserve"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "여성",
+   "왼손"
+  ],
+  "summary": "테일러메이드의 프리미엄 밀링 퍼터 TP 리저브 라인의 클래식 블레이드입니다. 303 스테인리스를 깎아 만들고 페이스에 홈을 밀링해 부드러운 타감을 냈습니다.",
+  "points": [
+   "303 스테인리스 밀링 헤드, 페이스 밀링 홈",
+   "L넥, 토행 38°(중간 아크 스트로크)",
+   "로프트 3°·라이 70°"
+  ],
+  "guidePick": {
+   "role": "밀링 클래식 블레이드",
+   "forWhom": "아크형 스트로크로 손맛과 거리감을 중시하는 프로·상급자",
+   "short": "L넥 정통 블레이드",
+   "plus": "손맛·거리감",
+   "minus": "관용성 낮음",
+   "pros": [
+    "303 스테인리스 통 밀링",
+    "얇은 톱라인의 깔끔한 블레이드"
+   ],
+   "cons": [
+    "관용성은 말렛보다 낮음",
+    "톱라인 정렬선이 없음"
+   ],
+   "scores": [
+    3,
+    5,
+    2,
+    3
+   ],
+   "specs": [
+    "블레이드(L넥)",
+    "판매처 확인",
+    "303SS 밀링 · 토행 38°"
+   ],
+   "verdict": "블레이드 손맛을 최우선으로 하는 프로·상급자용",
+   "skill": "프로"
+  },
+  "sources": [
+   "https://www.taylormadegolf.com/TP-Reserve-B11/N7501427.html"
+  ]
+ },
+ {
+  "id": "ping-scottsdale-prime-tyne4-putter",
+  "category": "putter",
+  "name": "핑 스캇데일 프라임 타인 4 퍼터",
+  "query": "핑 스캇데일 프라임 타인 4 퍼터",
+  "must": [
+   "퍼터",
+   "스캇데일"
+  ],
+  "mustAny": [
+   "프라임타인4",
+   "primetyne4"
+  ],
+  "exclude": [
+   "pld",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "여성",
+   "왼손",
+   "좌타"
+  ],
+  "summary": "핑이 2025년 내놓은 스캇데일 퍼터 9종 가운데 강한 아크 스트로크용 말렛입니다. 한 조각 PEBAX 페이스 인서트로 가벼워진 무게를 헤드 주변에 다시 배치해 관성모멘트를 높였습니다.",
+  "points": [
+   "2025 스캇데일 라인, 강한 아크(Strong arc) 스트로크용",
+   "한 조각 PEBAX 페이스 인서트",
+   "헤드 365g, 로프트 3°"
+  ],
+  "guidePick": {
+   "role": "아크형 말렛",
+   "forWhom": "말렛이 좋지만 스트로크가 호를 크게 그리는 중급자",
+   "short": "아크 스트로크용 말렛",
+   "plus": "안정+아크 대응",
+   "minus": "판매자 배송 상품",
+   "pros": [
+    "말렛인데도 강한 아크 스트로크에 맞춘 설계",
+    "부드러운 PEBAX 인서트"
+   ],
+   "cons": [
+    "쿠팡 직매입이 아닌 판매자 배송 상품",
+    "직선형 스트로크에는 덜 맞음"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    4
+   ],
+   "specs": [
+    "말렛",
+    "판매처 확인",
+    "2025 스캇데일 · PEBAX 인서트"
+   ],
+   "verdict": "아크형 스트로크를 하면서 말렛 안정감을 원하는 중급자용",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://ping.com/en-us/golf-clubs/putters/scottsdale-prime-tyne-4-putter",
+   "https://ping.com/en-us/discover-ping/news/new-scottsdale-putters-offer-feel-forgiveness-custom-fitting"
+  ]
+ },
+ {
+  "id": "cleveland-frontline-elite-putter",
+  "category": "putter",
+  "name": "클리브랜드 프론트라인 엘리트 퍼터",
+  "query": "클리브랜드 프론트라인 엘리트 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "frontlineelite",
+   "프론트라인엘리트"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만"
+  ],
+  "summary": "클리브랜드가 2023년 내놓은 퍼터 8종 라인입니다. 페이스에 30g 넘는 텅스텐을 넣어 무게중심을 앞으로 옮겨, 빗맞아도 페이스가 덜 돌아가게 설계했습니다.",
+  "points": [
+   "페이스 텅스텐 30g 이상(앞쪽 무게중심)",
+   "SOFT 밀링 홈으로 빗맞을 때 공 속도 편차 줄임",
+   "블레이드 2종 + 말렛 6종(ELEVADO·CERO·RHO)"
+  ],
+  "guidePick": {
+   "role": "앞무게 가성비",
+   "forWhom": "빗맞으면 방향이 크게 틀어지는 입문·초급 골퍼",
+   "short": "페이스가 덜 도는 가성비",
+   "plus": "방향 안정·가격",
+   "minus": "모델 선택 필요",
+   "pros": [
+    "앞쪽 무게중심으로 빗맞음에 강함",
+    "20만원 아래 가격대"
+   ],
+   "cons": [
+    "한 링크에 여러 모양(옵션 선택 필요)",
+    "쿠팡 직매입이 아닌 판매자 배송 상품"
+   ],
+   "scores": [
+    4,
+    3,
+    4,
+    5
+   ],
+   "specs": [
+    "블레이드·말렛(모델별)",
+    "판매처 확인",
+    "텅스텐 페이스 · 앞무게"
+   ],
+   "verdict": "싸게 방향 안정성을 챙기고 싶은 입문자용",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://news.dunlopsports.com/news/cleveland-golf-announces-new-frontline-elite-putters-with-one-of-a-kind-tungsten-face/s/f9d43812-220a-4b16-b6f0-8e79e0f62a94",
+   "https://eu.dunlopsports.com/cleveland-golf/clubs/putters/frontline-elite-rho-single-bend-putter/MFERSB-23.html"
+  ]
+ },
+ {
+  "id": "cleveland-hb-soft-milled-putter",
+  "category": "putter",
+  "name": "클리브랜드 HB 소프트 밀드 퍼터",
+  "query": "클리브랜드 HB 소프트 밀드 퍼터",
+  "must": [
+   "퍼터",
+   "hb",
+   "소프트"
+  ],
+  "mustAny": [
+   "밀드",
+   "milled"
+  ],
+  "exclude": [
+   "소프트2",
+   "soft2",
+   "여성",
+   "레이디",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만"
+  ],
+  "summary": "클리브랜드가 2022년 11월 내놓은(2023 시즌) 헤드를 주조한 뒤 페이스와 뒷면을 CNC로 깎은 퍼터 라인입니다. 모델마다 다른 SOFT 밀링으로 페이스 전체의 공 속도를 고르게 했습니다.",
+  "points": [
+   "주조 후 페이스·뒷면 CNC 밀링",
+   "SOFT(모델별 밀링 홈)",
+   "던롭코리아 정품 판매"
+  ],
+  "guidePick": {
+   "role": "저가 밀링",
+   "forWhom": "첫 퍼터를 싸게 사면서도 깎은 페이스를 원하는 입문자",
+   "short": "10만원대 밀링 퍼터",
+   "plus": "가격",
+   "minus": "구형",
+   "pros": [
+    "10만원대 정품 밀링 페이스",
+    "블레이드·말렛 모양 선택 가능"
+   ],
+   "cons": [
+    "2023 시즌 모델",
+    "한 링크에 여러 모양(옵션 선택 필요)"
+   ],
+   "scores": [
+    3,
+    4,
+    3,
+    5
+   ],
+   "specs": [
+    "블레이드·말렛(모델별)",
+    "판매처 확인",
+    "CNC 밀링 페이스 · SOFT"
+   ],
+   "verdict": "가장 싸게 밀링 퍼터를 써 보고 싶은 입문자용",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://www.clevelandgolf.com/en/putters-",
+   "https://golf.com/?p=15495724"
+  ]
+ },
+ {
+  "id": "bettinardi-queen-b-putter",
+  "category": "putter",
+  "name": "베티나르디 퀸비 퍼터",
+  "query": "베티나르디 퀸비 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "퀸비",
+   "queenb"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "여성"
+  ],
+  "summary": "베티나르디의 오랜 밀링 퍼터 라인 퀸비입니다. 미국 일리노이 공장에서 303 스테인리스 한 덩어리를 깎아 만들고, 작은 벌집(Mini Honeycomb) 페이스 밀링으로 부드러운 타감을 냅니다.",
+  "points": [
+   "303 스테인리스 한 조각 밀링, 미국 생산",
+   "미니 허니콤 페이스 밀링",
+   "연식(2023·2025)·모양은 판매처 확인"
+  ],
+  "guidePick": {
+   "role": "미국산 밀링 블레이드",
+   "forWhom": "정통 밀링 퍼터의 손맛을 원하는 프로·상급자",
+   "short": "통 밀링 블레이드·말렛",
+   "plus": "손맛·완성도",
+   "minus": "가장 비싼 축",
+   "pros": [
+    "303 스테인리스 한 조각 밀링",
+    "부드러운 허니콤 페이스"
+   ],
+   "cons": [
+    "50만원대 고가",
+    "한 링크에 여러 모양(옵션 선택 필요)"
+   ],
+   "scores": [
+    3,
+    5,
+    3,
+    2
+   ],
+   "specs": [
+    "블레이드·미드말렛(모델별)",
+    "판매처 확인",
+    "303SS 통 밀링 · 허니콤 페이스"
+   ],
+   "verdict": "손맛과 완성도에 돈을 쓰는 프로·상급자용",
+   "skill": "프로"
+  },
+  "sources": [
+   "https://bettinardi.com/pages/2025-queen-b-series",
+   "https://bettinardi.com/pages/2023-2024-queen-b-putters"
+  ]
+ },
+ {
+  "id": "evnroll-er5-putter",
+  "category": "putter",
+  "name": "이븐롤 네오클래식 ER5 퍼터",
+  "query": "이븐롤 네오클래식 ER5 퍼터",
+  "must": [
+   "퍼터",
+   "er5"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "38",
+   "직수입",
+   "수입"
+  ],
+  "summary": "이븐롤의 2024 네오클래식 라인 말렛입니다. 원래 ER5의 송곳니 모양을 더 날렵하게 다듬었고, 폭이 다른 홈(스위트페이스)으로 빗맞은 퍼트도 목표선 가까이 보냅니다.",
+  "points": [
+   "303 스테인리스 헤드, 폴리머 뒷판 알루미늄 인서트",
+   "스위트페이스 홈(빗맞음 보정)",
+   "싱글벤드, 토행 15°·로프트 2°"
+  ],
+  "guidePick": {
+   "role": "거리감 말렛",
+   "forWhom": "말렛을 쓰면서 거리 편차를 줄이고 싶은 상급자",
+   "short": "빗맞아도 거리 일정한 말렛",
+   "plus": "거리감+안정",
+   "minus": "고가",
+   "pros": [
+    "스위트페이스로 빗맞음 거리 편차 적음",
+    "약한 아크 스트로크에 맞는 토행"
+   ],
+   "cons": [
+    "30만원대 고가",
+    "쿠팡 직매입이 아닌 판매자 배송 상품"
+   ],
+   "scores": [
+    4,
+    5,
+    4,
+    3
+   ],
+   "specs": [
+    "말렛",
+    "판매처 확인",
+    "스위트페이스 · 토행 15°"
+   ],
+   "verdict": "말렛 안정감과 이븐롤 거리감을 함께 원하는 상급자용",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://www.evnroll.com/products/nc5-mallet-putter-black",
+   "https://www.evnroll.com/blogs/straight-talk/evnroll-presents-a-fresh-take-on-award-winning-classic-putter-line"
+  ]
+ }
 ]
