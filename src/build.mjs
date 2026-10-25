@@ -830,7 +830,10 @@ function stageAnswer(g) {
   const dRange = ds.length ? (ds[0] === ds.at(-1) ? dayLabel(ds[0]) : `${dayLabel(ds[0])}~${dayLabel(ds.at(-1))}`) : '';
   const word = guideCat(g)?.name ?? ''; // 분류 페이지가 catWord 정의보다 먼저 만들어지므로 분류명을 그대로 쓴다
   const topLink = (x) => `<a href="/p/${x.pk.id}"><b>${esc(nm(x.pk))}</b></a>`;
-  const lead = `<p class="answer-lead"><b>결론:</b> ${esc(word)} ${all.length}종을 ${noSkill ? `비교하면 ${topLink(tops[0])}${hasBatchim(nm(tops[0].pk)) ? '이' : '가'} 1위, 그다음은 ${tops.slice(1).map(topLink).join(', ')} 순입니다(주관적 편집 점수 기준).` : `실력 단계별로 비교하면 ${tops.map((x) => `${esc(SKILL_WORD[x.s])}는 ${topLink(x)}`).join(', ')}가 1위입니다(주관적 편집 점수 기준).`}${ws.length ? ph(` ${all.length}종의 쿠팡 판매가는 ${won(Math.min(...ws))}~${won(Math.max(...ws))}(${dRange} 확인, 현재 가격과 다를 수 있음)입니다.`) : ''}</p>`;
+  // 제목의 종 수(전체)와 결론의 종 수(순위에 든 모델)가 다르면 왜 다른지 밝힌다(2026-10-26 gp-1026-2: 아이언 제목 56종·결론 50종)
+  const total = g.picks.filter((pk) => byId[pk.id]).length;
+  const cnt = total > all.length ? `${all.length}종(전체 ${total}종 중 쿠팡 판매처가 있고 옵션 확인이 끝난 모델)` : `${all.length}종`;
+  const lead = `<p class="answer-lead"><b>결론:</b> ${esc(word)} ${cnt}을 ${noSkill ? `비교하면 ${topLink(tops[0])}${hasBatchim(nm(tops[0].pk)) ? '이' : '가'} 1위, 그다음은 ${tops.slice(1).map(topLink).join(', ')} 순입니다(주관적 편집 점수 기준).` : `실력 단계별로 비교하면 ${tops.map((x) => `${esc(SKILL_WORD[x.s])}는 ${topLink(x)}`).join(', ')}가 1위입니다(주관적 편집 점수 기준).`}${ws.length ? ph(` ${all.length}종의 쿠팡 판매가는 ${won(Math.min(...ws))}~${won(Math.max(...ws))}(${dRange} 확인, 현재 가격과 다를 수 있음)입니다.`) : ''}</p>`;
   const tr = tops
     .map(({ s, pk }) => {
       const sp = freshPrice(pk.id);
