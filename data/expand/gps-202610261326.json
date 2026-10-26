@@ -1,0 +1,17 @@
+[
+ {"category":"gps","id":"mycaddie-gps-m2","name":"마이캐디 GPS M2 골프 시계","query":"마이캐디 GPS M2 골프 거리 시계형 측정기","must":["마이캐디","m2"],"exclude":["중고","스트랩","필름","케이스","밴드","충전기만","m1"],
+  "summary":"국내 브랜드 마이캐디(현 엠지캐디)가 2022년 내놓은 시계형 GPS 골프 거리측정기입니다. 풀컬러 터치스크린에 에이밍(방향 안내)·오토슬로프·좌우 그린 표시·비거리 측정을 넣었습니다.",
+  "points":["블루투스로 스마트폰과 연결해 골프장 정보를 업데이트","충전 크래들 없이 본체에 케이블을 바로 꽂아 충전","배터리 사용 시간·방수 등급은 판매처 확인"],
+  "guidePick":{"role":"국산 입문 시계","forWhom":"20만원대에서 첫 골프 시계를 찾는 초심자, 방향 안내까지 원하는 분","short":"에이밍 되는 국산 입문형","plus":"에이밍·오토슬로프","minus":"일상 스마트 기능 적음","pros":["에이밍으로 겨냥 방향을 함께 안내","오토슬로프·좌우 그린 표시 등 코스 기능이 값에 비해 많음"],"cons":["2022년 모델이라 화면·속도는 최신 모델보다 낮을 수 있음","배터리 시간 등 세부 사양은 공식 자료에서 확인되지 않음"],"scores":[4,3,2,5],"specs":["풀컬러 터치 · 에이밍","마이캐디(국내)","확인 필요"],"verdict":"20만원대에 방향 안내까지 되는 국산 골프 시계를 원하는 입문자에게 맞습니다.","skill":"초심자"},
+  "sources":["https://mycaddy.co.kr/","https://www.seoul.co.kr/news/economy/business-news/2022/09/19/20220919500126","https://www.seoul.co.kr/news/economy/business-news/2022/12/29/20221229500013"]},
+ {"category":"gps","id":"galaxy-watch8-golf","name":"삼성 갤럭시 워치8 골프 에디션 44mm","query":"갤럭시 워치8 골프 스마트캐디","must":["워치8","골프"],"exclude":["중고","스트랩","필름","케이스","밴드","충전","거치대","클래식"],
+  "summary":"삼성 갤럭시 워치8(2025년 7월 출시)에 골프 앱 '스마트캐디' 3년 이용권을 묶은 골프 에디션입니다. 평소엔 스마트워치로, 라운드에선 스마트캐디 앱으로 남은 거리와 코스를 봅니다.",
+  "points":["최대 3,000니트 밝기 화면(삼성전자 발표)","44mm 배터리 435mAh(삼성닷컴)","스마트캐디 '스마트뷰'로 핀 거리와 코스를 한 화면에"],
+  "guidePick":{"role":"일상 겸용 스마트워치","forWhom":"갤럭시 휴대폰을 쓰며 평소에도 찰 스마트워치에 골프 기능을 더하고 싶은 분","short":"평소에도 쓰는 골프 워치","plus":"일상 기능·밝은 화면","minus":"배터리 짧음","pros":["알림·건강 기능 등 일상 스마트워치로 그대로 사용","스마트캐디 3년 이용권 포함"],"cons":["골프 전용 시계보다 배터리가 짧아 하루 충전 필요","갤럭시(안드로이드) 휴대폰에서만 쓰기 좋음"],"scores":[4,5,5,3],"specs":["44mm · 스마트캐디 3년","삼성전자","확인 필요"],"verdict":"골프 전용 시계 대신 매일 찰 스마트워치 하나로 해결하고 싶은 갤럭시 사용자에게 맞습니다.","skill":"중급"},
+  "sources":["https://www.samsung.com/sec/watches/galaxy-watch/galaxy-watch8/","https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-%EC%9B%8C%EC%B9%988%C2%B7%EC%9B%8C%EC%B9%988-%ED%81%B4%EB%9E%98%EC%8B%9D-%EA%B3%B5%EA%B0%9C","https://market.golping.com/redirect/product/detail/M01110008180?cateId=300274","https://news.mtn.co.kr/news-detail/2024022809344039051"]},
+ {"category":"gps","id":"galaxy-watch8-classic-golf","name":"삼성 갤럭시 워치8 클래식 골프 에디션 46mm","query":"갤럭시 워치8 클래식 골프 스마트캐디","must":["워치8","클래식","골프"],"exclude":["중고","스트랩","필름","케이스","밴드","충전","거치대"],
+  "summary":"삼성 갤럭시 워치8 클래식 46mm(2025년 7월 출시)에 골프 앱 '스마트캐디' 3년 이용권을 묶은 골프 에디션입니다. 워치8보다 큰 46mm 본체에 클래식 시계 디자인입니다.",
+  "points":["46mm 배터리 445mAh, AOD 끄면 최대 40시간(삼성 사양표)","스마트캐디 3년 이용권 포함","스마트캐디 '스마트뷰'로 핀 거리와 코스를 한 화면에"],
+  "guidePick":{"role":"시계 디자인 갤럭시","forWhom":"정장에도 어울리는 시계 모양에 골프·일상 기능을 함께 원하는 갤럭시 사용자","short":"클래식 디자인 골프 워치","plus":"큰 화면·시계 디자인","minus":"무겁고 비쌈","pros":["워치8보다 큰 배터리(445mAh)","시계 같은 디자인이라 평소 착용에 어울림"],"cons":["골프 전용 시계보다 배터리가 짧음","워치8 골프 에디션보다 비싸고 무거움"],"scores":[4,5,5,3],"specs":["46mm · 스마트캐디 3년","삼성전자","확인 필요"],"verdict":"시계 디자인과 스마트워치 기능을 모두 원하는 갤럭시 사용자의 골프 선택지입니다.","skill":"고급"},
+  "sources":["https://www.samsung.com/sec/watches/galaxy-watch/galaxy-watch8-classic/","https://www.samsung.com/sec/watches/galaxy-watch/galaxy-watch8-classic/compare/","https://gp.golping.com/redirect/product/detail/S00103213825?cateId=300049"]}
+]

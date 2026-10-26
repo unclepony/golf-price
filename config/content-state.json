@@ -167,20 +167,20 @@
       "d": "2026-10-22"
     },
     "/p/garmin-approach-s70": {
-      "h": "79ef85f654c581a5",
-      "d": "2026-10-23"
+      "h": "d0fcb0c0b4d68d69",
+      "d": "2026-10-26"
     },
     "/p/garmin-approach-s50": {
-      "h": "5b91c09757c1c830",
-      "d": "2026-10-23"
+      "h": "b6c718342e68fce2",
+      "d": "2026-10-26"
     },
     "/p/voicecaddie-t13-pro": {
-      "h": "d2c74ea815c7631f",
-      "d": "2026-10-23"
+      "h": "cdb12bf67de3af10",
+      "d": "2026-10-26"
     },
     "/p/golfbuddy-aim-w12": {
-      "h": "ab46ecb02932f236",
-      "d": "2026-10-23"
+      "h": "e31697c02a1df07c",
+      "d": "2026-10-26"
     },
     "/p/garmin-approach-r10": {
       "h": "68d88f057c5c683d",
@@ -1103,12 +1103,12 @@
       "d": "2026-10-26"
     },
     "/p/garmin-marq-golfer-gen2": {
-      "h": "148fabae1cd9e3a0",
-      "d": "2026-10-23"
+      "h": "b07768720ccbaa0e",
+      "d": "2026-10-26"
     },
     "/p/garmin-fenix-8-amoled": {
-      "h": "e572ce1641e89157",
-      "d": "2026-10-23"
+      "h": "d6eac75d2b48af40",
+      "d": "2026-10-26"
     },
     "/p/voicecaddie-sc200-plus": {
       "h": "6c5644616a35ec7e",
@@ -1451,8 +1451,8 @@
       "d": "2026-10-26"
     },
     "/p/voicecaddie-t-ultra": {
-      "h": "b0862baaa79f1f3b",
-      "d": "2026-10-23"
+      "h": "42b6cdcc01397788",
+      "d": "2026-10-26"
     },
     "/p/voicecaddie-sc300i": {
       "h": "b4b3f452e76f8f30",
@@ -1819,19 +1819,31 @@
       "d": "2026-10-26"
     },
     "/p/caddytalk-mini-pro": {
-      "h": "3009704c46c341f2",
+      "h": "9c082e9c0eb2af4c",
       "d": "2026-10-26"
     },
     "/p/r2g-mate-mini": {
-      "h": "62edca7f52dd6ecd",
+      "h": "a136a3d49b6d1b0b",
       "d": "2026-10-26"
     },
     "/p/r2g-mate-hybrid": {
-      "h": "e8e881d34f8bc230",
+      "h": "bfd87fd35e67f680",
       "d": "2026-10-26"
     },
     "/p/mycaddie-mini-mg3": {
-      "h": "a75dd7d6fcd5eb67",
+      "h": "d1f816c4f4d904ed",
+      "d": "2026-10-26"
+    },
+    "/p/mycaddie-gps-m2": {
+      "h": "8587ccd01456298c",
+      "d": "2026-10-26"
+    },
+    "/p/galaxy-watch8-golf": {
+      "h": "df9b43668b333647",
+      "d": "2026-10-26"
+    },
+    "/p/galaxy-watch8-classic-golf": {
+      "h": "c4b151b3066e67fd",
       "d": "2026-10-26"
     },
     "/c/driver": {
@@ -1867,8 +1879,8 @@
       "d": "2026-10-26"
     },
     "/c/gps": {
-      "h": "a97ce768f264760e",
-      "d": "2026-10-24"
+      "h": "e5381e2f9bd1e93b",
+      "d": "2026-10-26"
     },
     "/c/launch": {
       "h": "31d8b9b8bd17d74a",
@@ -1891,84 +1903,84 @@
       "d": "2026-10-24"
     },
     "/g/driver-recommend-2026": {
-      "h": "ec3557351ae46090",
+      "h": "17af68cdc5daabb0",
       "d": "2026-10-26"
     },
     "/g/fairway-wood-recommend": {
-      "h": "9885600f9637a21f",
+      "h": "042452ef5421a801",
       "d": "2026-10-26"
     },
     "/g/utility-recommend": {
-      "h": "d9c7b4812d14f502",
+      "h": "834b12e69d62ca12",
       "d": "2026-10-26"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "66a634b33aac7288",
-      "d": "2026-10-25"
+      "h": "2aead4d252c495bb",
+      "d": "2026-10-26"
     },
     "/g/iron-recommend": {
-      "h": "ec936d7728ec8e9e",
+      "h": "26d2e417e2546a79",
       "d": "2026-10-26"
     },
     "/g/womens-utility-recommend": {
-      "h": "7450a2913cae8017",
+      "h": "6aecd2e3a532f360",
       "d": "2026-10-26"
     },
     "/g/wedge-recommend": {
-      "h": "20852a5de658b5d4",
+      "h": "9a7ea27db29f5dca",
       "d": "2026-10-26"
     },
     "/g/golf-ball-compare": {
-      "h": "8cc0410139e9f117",
+      "h": "489962f34df7777f",
       "d": "2026-10-26"
     },
     "/g/rangefinder-recommend": {
-      "h": "7c79db772b561641",
+      "h": "42d0d9bcaa752f2b",
       "d": "2026-10-26"
     },
     "/g/womens-driver-recommend": {
-      "h": "d43f3018321f65bf",
-      "d": "2026-10-25"
+      "h": "e9e528eb049043d9",
+      "d": "2026-10-26"
     },
     "/g/putter-recommend": {
-      "h": "737387aaf5929a8a",
+      "h": "68028a21e0c47f81",
       "d": "2026-10-26"
     },
     "/g/golf-shoes-recommend": {
-      "h": "0d2a200e878d327b",
-      "d": "2026-10-25"
+      "h": "ef2470036e9f2256",
+      "d": "2026-10-26"
     },
     "/g/golf-watch-recommend": {
-      "h": "3ec7a992a93e52ad",
-      "d": "2026-10-25"
+      "h": "404d1073704ea955",
+      "d": "2026-10-26"
     },
     "/g/launch-monitor-recommend": {
-      "h": "3b68d4f4d132fe51",
-      "d": "2026-10-25"
+      "h": "d4b77eee1976d20a",
+      "d": "2026-10-26"
     },
     "/g/golf-bag-recommend": {
-      "h": "438f40e831d6207e",
-      "d": "2026-10-25"
+      "h": "1b14d50c32bb1363",
+      "d": "2026-10-26"
     },
     "/g/golf-glove-recommend": {
-      "h": "ddc1a07fba845b3b",
-      "d": "2026-10-25"
+      "h": "849891471119ab74",
+      "d": "2026-10-26"
     },
     "/g/practice-gear-recommend": {
-      "h": "7903ade3f87a3ff8",
+      "h": "5271ccce849db094",
       "d": "2026-10-26"
     },
     "/g/womens-iron-recommend": {
-      "h": "5a12dae805769d4c",
-      "d": "2026-10-25"
+      "h": "7abd26d18027071a",
+      "d": "2026-10-26"
     },
     "/g/womens-shoes-recommend": {
-      "h": "7be6414ec5588e76",
-      "d": "2026-10-25"
+      "h": "076d880c848a531c",
+      "d": "2026-10-26"
     },
     "/g/golf-gift-guide-2026": {
-      "h": "f0645fd159452e7c",
-      "d": "2026-10-24"
+      "h": "ebb2cf59cd8a3cb0",
+      "d": "2026-10-26"
     },
     "/g/driver-recommend-2026-beginner": {
       "h": "bb57a313c84e4be1",
@@ -2142,9 +2154,13 @@
       "h": "c6f0c8ab5abf95ab",
       "d": "2026-10-26"
     },
+    "/g/golf-watch-recommend-intermediate": {
+      "h": "97189e35f71f57d1",
+      "d": "2026-10-26"
+    },
     "/g/golf-watch-recommend-pro": {
-      "h": "d782678a0c478ebb",
-      "d": "2026-10-24"
+      "h": "41e5ff12ee542b15",
+      "d": "2026-10-26"
     },
     "/g/launch-monitor-recommend-beginner": {
       "h": "78704ff937601fd1",
@@ -2171,7 +2187,7 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "5a3714721124d802",
+      "h": "fa7c42c3bfc1460f",
       "d": "2026-10-26"
     },
     "/about": {
@@ -2415,16 +2431,16 @@
       "d": "2026-10-23"
     },
     "/vs/garmin-approach-s50-vs-golfbuddy-aim-w12": {
-      "h": "6e3d76b05778445a",
-      "d": "2026-10-23"
+      "h": "a04610f1fb4b9007",
+      "d": "2026-10-26"
     },
     "/vs/garmin-approach-s70-vs-garmin-approach-s50": {
-      "h": "002d96ecf7d0f5b5",
-      "d": "2026-10-23"
+      "h": "dbfa1dcb02b00d62",
+      "d": "2026-10-26"
     },
     "/vs/garmin-approach-s70-vs-voicecaddie-t13-pro": {
-      "h": "ed352c0e1491bdca",
-      "d": "2026-10-23"
+      "h": "3fe7ffd2d21cd287",
+      "d": "2026-10-26"
     },
     "/vs/honma-aizu-women-driver-vs-honma-nx-women-driver": {
       "h": "a415d2454589cfb6",
@@ -2779,8 +2795,8 @@
       "d": "2026-10-26"
     },
     "/vs/voicecaddie-t13-pro-vs-garmin-approach-s50": {
-      "h": "a27493c934bd0144",
-      "d": "2026-10-23"
+      "h": "4fb2a12ebc4d8f86",
+      "d": "2026-10-26"
     },
     "/vs/xxio12-fairway-vs-callaway-elyte-fairway": {
       "h": "ed04b85cf408db58",
@@ -2945,11 +2961,6 @@
       "d": "2026-10-26"
     },
     {
-      "url": "/g/putter-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
       "url": "/g/putter-recommend-beginner",
       "kind": "updated",
       "d": "2026-10-26"
@@ -3081,31 +3092,6 @@
     },
     {
       "url": "/c/wedge",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/iron-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/wedge-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/practice-gear-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/fairway-wood-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/utility-recommend",
       "kind": "updated",
       "d": "2026-10-26"
     },
@@ -3315,37 +3301,7 @@
       "d": "2026-10-26"
     },
     {
-      "url": "/p/caddytalk-mini-pro",
-      "kind": "new",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/p/r2g-mate-mini",
-      "kind": "new",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/p/r2g-mate-hybrid",
-      "kind": "new",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/p/mycaddie-mini-mg3",
-      "kind": "new",
-      "d": "2026-10-26"
-    },
-    {
       "url": "/c/rangefinder",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/womens-utility-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/rangefinder-recommend",
       "kind": "updated",
       "d": "2026-10-26"
     },
@@ -3356,11 +3312,6 @@
     },
     {
       "url": "/g/rangefinder-recommend-advanced",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/",
       "kind": "updated",
       "d": "2026-10-26"
     },
@@ -3376,6 +3327,216 @@
     },
     {
       "url": "/vs/voicecaddie-sl3-vs-bushnell-tour-v6-shift",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/p/garmin-approach-s70",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/p/garmin-approach-s50",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/p/voicecaddie-t13-pro",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/p/golfbuddy-aim-w12",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/p/garmin-marq-golfer-gen2",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/p/garmin-fenix-8-amoled",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/p/voicecaddie-t-ultra",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/p/caddytalk-mini-pro",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/p/r2g-mate-mini",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/p/r2g-mate-hybrid",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/p/mycaddie-mini-mg3",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/p/mycaddie-gps-m2",
+      "kind": "new",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/p/galaxy-watch8-golf",
+      "kind": "new",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/p/galaxy-watch8-classic-golf",
+      "kind": "new",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/c/gps",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/driver-recommend-2026",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/womens-utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/wedge-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/golf-ball-compare",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/womens-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/putter-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/golf-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/golf-watch-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/launch-monitor-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/golf-bag-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/golf-glove-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/practice-gear-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/womens-iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/womens-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/golf-gift-guide-2026",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/golf-watch-recommend-intermediate",
+      "kind": "new",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/g/golf-watch-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/vs/garmin-approach-s50-vs-golfbuddy-aim-w12",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/vs/garmin-approach-s70-vs-garmin-approach-s50",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/vs/garmin-approach-s70-vs-voicecaddie-t13-pro",
+      "kind": "updated",
+      "d": "2026-10-26"
+    },
+    {
+      "url": "/vs/voicecaddie-t13-pro-vs-garmin-approach-s50",
       "kind": "updated",
       "d": "2026-10-26"
     }
