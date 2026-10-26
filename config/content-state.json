@@ -207,8 +207,8 @@
       "d": "2026-10-24"
     },
     "/p/titleist-cart14-bag": {
-      "h": "091b35eb3d124213",
-      "d": "2026-10-24"
+      "h": "00361bfb5ee891af",
+      "d": "2026-10-27"
     },
     "/p/ping-sporty-lt-bag": {
       "h": "ea131069c205a32a",
@@ -1187,24 +1187,24 @@
       "d": "2026-10-24"
     },
     "/p/titleist-players4-stand": {
-      "h": "0e7282c83be25786",
-      "d": "2026-10-24"
+      "h": "fdd2a52c1e6be5ac",
+      "d": "2026-10-27"
     },
     "/p/titleist-hybrid14-stand": {
       "h": "5a335f18a62dc427",
       "d": "2026-10-24"
     },
     "/p/cobra-ultralight-pro-stand": {
-      "h": "c22de406c3f5f983",
-      "d": "2026-10-24"
+      "h": "b18c5e827fad69fe",
+      "d": "2026-10-27"
     },
     "/p/pxg-xtreme-hybrid-stand": {
-      "h": "72a91d7781f27aa2",
-      "d": "2026-10-24"
+      "h": "f3337c12624cdedd",
+      "d": "2026-10-27"
     },
     "/p/ping-pioneer-cart": {
-      "h": "4d17c01ab496e1e1",
-      "d": "2026-10-24"
+      "h": "67584121e0eb1ba1",
+      "d": "2026-10-27"
     },
     "/p/footjoy-weathersof-glove": {
       "h": "32ac2a0bb7a4b597",
@@ -1487,8 +1487,8 @@
       "d": "2026-10-26"
     },
     "/p/titleist-players-s5-stand": {
-      "h": "4d2cabb72bbbb9cc",
-      "d": "2026-10-24"
+      "h": "04ba9cdfdf28b5b9",
+      "d": "2026-10-27"
     },
     "/p/titleist-players-womens-glove": {
       "h": "65bc5e55e3a3feb8",
@@ -1847,24 +1847,76 @@
       "d": "2026-10-26"
     },
     "/p/footjoy-pulse-boa-shoes": {
-      "h": "6eb4e77b60bb20f9",
-      "d": "2026-10-26"
+      "h": "915c5f2491ff00cc",
+      "d": "2026-10-27"
     },
     "/p/adidas-adipower-sl-boa-shoes": {
-      "h": "ccd3150fae795fac",
-      "d": "2026-10-26"
+      "h": "c081d356dd39e25d",
+      "d": "2026-10-27"
     },
     "/p/nike-victory-tour-4-boa-shoes": {
-      "h": "dfc62c42a559f17c",
-      "d": "2026-10-26"
+      "h": "961ab0bdb4cbe717",
+      "d": "2026-10-27"
     },
     "/p/ecco-biom-tour-shoes": {
-      "h": "7b15bf3af140c3e0",
-      "d": "2026-10-26"
+      "h": "414f0fc399e4da82",
+      "d": "2026-10-27"
     },
     "/p/nike-victory-tour-4-boa-women-shoes": {
-      "h": "a9a7268549ddaf41",
-      "d": "2026-10-26"
+      "h": "efb0d8da45f26c30",
+      "d": "2026-10-27"
+    },
+    "/p/sunmountain-matchplay14-stand": {
+      "h": "bb15b5bcccd01e95",
+      "d": "2026-10-27"
+    },
+    "/p/titleist-players4-carbon-stand": {
+      "h": "4cf268570b84ef3f",
+      "d": "2026-10-27"
+    },
+    "/p/pxg-lightweight-carry-stand": {
+      "h": "5dc96c49d8ec20ff",
+      "d": "2026-10-27"
+    },
+    "/p/ping-sporty-mj-cart": {
+      "h": "a01f50e7cdb683c6",
+      "d": "2026-10-27"
+    },
+    "/p/titleist-performance-cart-2026": {
+      "h": "dfa3aaab8a7a8937",
+      "d": "2026-10-27"
+    },
+    "/p/callaway-tripletrack-cart-2026": {
+      "h": "c0cf7b5637f2ef64",
+      "d": "2026-10-27"
+    },
+    "/p/callaway-xdry-cart-2026": {
+      "h": "c1e2386c00af7a6d",
+      "d": "2026-10-27"
+    },
+    "/p/mizuno-rb-hybrid2-cart": {
+      "h": "efa24210be7acb86",
+      "d": "2026-10-27"
+    },
+    "/p/mizuno-jpx010-cart": {
+      "h": "930381d698602365",
+      "d": "2026-10-27"
+    },
+    "/p/srixon-s166-cart": {
+      "h": "007968d886664b2e",
+      "d": "2026-10-27"
+    },
+    "/p/xxio-casual-wheel-v2-cart": {
+      "h": "6ee736d35ac69e7d",
+      "d": "2026-10-27"
+    },
+    "/p/xxio-essential-cart": {
+      "h": "5c61a3adce120e85",
+      "d": "2026-10-27"
+    },
+    "/p/cleveland-urban-cart": {
+      "h": "876f40ecb81fb17d",
+      "d": "2026-10-27"
     },
     "/c/driver": {
       "h": "ac2fdd5e9c9605e7",
@@ -1911,8 +1963,8 @@
       "d": "2026-10-26"
     },
     "/c/bag": {
-      "h": "7b6dc8bc6eea3cac",
-      "d": "2026-10-25"
+      "h": "f90b08d0d68d5508",
+      "d": "2026-10-27"
     },
     "/c/glove": {
       "h": "61f2fd78f12c97d8",
@@ -1923,84 +1975,84 @@
       "d": "2026-10-24"
     },
     "/g/driver-recommend-2026": {
-      "h": "4735717a825d4764",
-      "d": "2026-10-26"
+      "h": "fcd23903c1f53b3f",
+      "d": "2026-10-27"
     },
     "/g/fairway-wood-recommend": {
-      "h": "453ca4f83eb97704",
-      "d": "2026-10-26"
+      "h": "573a7babd0e68050",
+      "d": "2026-10-27"
     },
     "/g/utility-recommend": {
-      "h": "9fdd2af2f591f98c",
-      "d": "2026-10-26"
+      "h": "8d3c0d636c52f2a4",
+      "d": "2026-10-27"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "676dd52756312816",
-      "d": "2026-10-26"
+      "h": "c42860bd0171d977",
+      "d": "2026-10-27"
     },
     "/g/iron-recommend": {
-      "h": "c12d9693c0330105",
-      "d": "2026-10-26"
+      "h": "c4e583d7f76e001d",
+      "d": "2026-10-27"
     },
     "/g/womens-utility-recommend": {
-      "h": "9b88a81d370894ef",
-      "d": "2026-10-26"
+      "h": "7bb651c552fab1eb",
+      "d": "2026-10-27"
     },
     "/g/wedge-recommend": {
-      "h": "102af3ff180cdaec",
-      "d": "2026-10-26"
+      "h": "2f8ef2e41da290f8",
+      "d": "2026-10-27"
     },
     "/g/golf-ball-compare": {
-      "h": "c8a4e508c1a701d0",
-      "d": "2026-10-26"
+      "h": "06a8d0942d65057b",
+      "d": "2026-10-27"
     },
     "/g/rangefinder-recommend": {
-      "h": "8fefeb989f7f2252",
-      "d": "2026-10-26"
+      "h": "4805772a4c6e73e8",
+      "d": "2026-10-27"
     },
     "/g/womens-driver-recommend": {
-      "h": "3e05ca6e342733d3",
-      "d": "2026-10-26"
+      "h": "5a615dc9ba18895b",
+      "d": "2026-10-27"
     },
     "/g/putter-recommend": {
-      "h": "2d44110d9527521c",
-      "d": "2026-10-26"
+      "h": "90de2faa1315d1ba",
+      "d": "2026-10-27"
     },
     "/g/golf-shoes-recommend": {
-      "h": "51cd83147677d0b0",
-      "d": "2026-10-26"
+      "h": "8cc984635d95628b",
+      "d": "2026-10-27"
     },
     "/g/golf-watch-recommend": {
-      "h": "d903d182e37ca321",
-      "d": "2026-10-26"
+      "h": "de368749bc7029e0",
+      "d": "2026-10-27"
     },
     "/g/launch-monitor-recommend": {
-      "h": "5c6e7dc546db07d8",
-      "d": "2026-10-26"
+      "h": "88d1bd386c765692",
+      "d": "2026-10-27"
     },
     "/g/golf-bag-recommend": {
-      "h": "f84fb5cd0722ee2f",
-      "d": "2026-10-26"
+      "h": "a364280eddf6e201",
+      "d": "2026-10-27"
     },
     "/g/golf-glove-recommend": {
-      "h": "85c25629530048c3",
-      "d": "2026-10-26"
+      "h": "524a475088a361fd",
+      "d": "2026-10-27"
     },
     "/g/practice-gear-recommend": {
-      "h": "211b772d3bfdf0f2",
-      "d": "2026-10-26"
+      "h": "dec88bf8c1cf043d",
+      "d": "2026-10-27"
     },
     "/g/womens-iron-recommend": {
-      "h": "f17829914dc2b641",
-      "d": "2026-10-26"
+      "h": "bace5f73aea19123",
+      "d": "2026-10-27"
     },
     "/g/womens-shoes-recommend": {
-      "h": "ad8845e47d6ca4bd",
-      "d": "2026-10-26"
+      "h": "0ec6aa95ed54abf5",
+      "d": "2026-10-27"
     },
     "/g/golf-gift-guide-2026": {
-      "h": "ebb2cf59cd8a3cb0",
-      "d": "2026-10-26"
+      "h": "9e25f9755a210065",
+      "d": "2026-10-27"
     },
     "/g/driver-recommend-2026-beginner": {
       "h": "bb57a313c84e4be1",
@@ -2207,8 +2259,8 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "2d380981835a30f5",
-      "d": "2026-10-26"
+      "h": "5060c6f8e0de0f5b",
+      "d": "2026-10-27"
     },
     "/about": {
       "h": "062d2326b8040ec7",
@@ -3411,11 +3463,6 @@
       "d": "2026-10-26"
     },
     {
-      "url": "/g/golf-gift-guide-2026",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
       "url": "/g/golf-watch-recommend-intermediate",
       "kind": "new",
       "d": "2026-10-26"
@@ -3671,132 +3718,7 @@
       "d": "2026-10-26"
     },
     {
-      "url": "/p/footjoy-pulse-boa-shoes",
-      "kind": "new",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/p/adidas-adipower-sl-boa-shoes",
-      "kind": "new",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/p/nike-victory-tour-4-boa-shoes",
-      "kind": "new",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/p/ecco-biom-tour-shoes",
-      "kind": "new",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/p/nike-victory-tour-4-boa-women-shoes",
-      "kind": "new",
-      "d": "2026-10-26"
-    },
-    {
       "url": "/c/shoes",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/driver-recommend-2026",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/fairway-wood-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/utility-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/womens-fairway-wood-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/iron-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/womens-utility-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/wedge-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/golf-ball-compare",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/rangefinder-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/womens-driver-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/putter-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/golf-shoes-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/golf-watch-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/launch-monitor-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/golf-bag-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/golf-glove-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/practice-gear-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/womens-iron-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/g/womens-shoes-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/",
       "kind": "updated",
       "d": "2026-10-26"
     },
@@ -3819,6 +3741,236 @@
       "url": "/vs/ecco-biom-c4-shoes-vs-footjoy-pro-sl",
       "kind": "updated",
       "d": "2026-10-26"
+    },
+    {
+      "url": "/p/titleist-cart14-bag",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/titleist-players4-stand",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/cobra-ultralight-pro-stand",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/pxg-xtreme-hybrid-stand",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/ping-pioneer-cart",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/titleist-players-s5-stand",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/footjoy-pulse-boa-shoes",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/adidas-adipower-sl-boa-shoes",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/nike-victory-tour-4-boa-shoes",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/ecco-biom-tour-shoes",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/nike-victory-tour-4-boa-women-shoes",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/sunmountain-matchplay14-stand",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/titleist-players4-carbon-stand",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/pxg-lightweight-carry-stand",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/ping-sporty-mj-cart",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/titleist-performance-cart-2026",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/callaway-tripletrack-cart-2026",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/callaway-xdry-cart-2026",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/mizuno-rb-hybrid2-cart",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/mizuno-jpx010-cart",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/srixon-s166-cart",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/xxio-casual-wheel-v2-cart",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/xxio-essential-cart",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/cleveland-urban-cart",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/c/bag",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/driver-recommend-2026",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/womens-utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/wedge-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/golf-ball-compare",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/womens-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/putter-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/golf-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/golf-watch-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/launch-monitor-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/golf-bag-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/golf-glove-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/practice-gear-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/womens-iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/womens-shoes-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/golf-gift-guide-2026",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-27"
     }
   ]
 }
