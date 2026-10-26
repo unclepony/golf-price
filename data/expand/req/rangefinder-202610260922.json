@@ -1,0 +1,17 @@
+[
+ {"id":"caddytalk-mini-pro","query":"캐디톡 미니 프로 레이저 거리측정기","must":["캐디톡","미니","프로"],"exclude":["케이스","파우치만","미니미","미니온"]},
+ {"id":"caddytalk-minimi","query":"캐디톡 미니미 거리측정기","must":["캐디톡","미니미"],"exclude":["케이스","하드케이스"]},
+ {"id":"caddytalk-cube","query":"캐디톡 큐브 레이저 거리측정기","must":["캐디톡","큐브"],"exclude":["케이스"]},
+ {"id":"r2g-mate-mini","query":"알투지 메이트 미니 레이저 거리측정기","must":["알투지","메이트","미니"],"exclude":["하이브리드","케이스"]},
+ {"id":"r2g-mate-hybrid","query":"알투지 메이트 하이브리드 레이저 GPS 거리측정기","must":["알투지","메이트","하이브리드"],"exclude":["케이스"]},
+ {"id":"mycaddie-mini-mg3","query":"마이캐디 미니 MG3 레이저 거리측정기","must":["마이캐디","MG3"],"exclude":["케이스"]},
+ {"id":"infite-carryview-mini","query":"인피테 캐리뷰 미니 IXG3000","must":["인피테","IXG3000"],"exclude":["케이스만"]},
+ {"id":"infite-ixg2000-pro","query":"인피테 IXG2000 PRO 레이저 거리측정기","must":["인피테","IXG2000"],"exclude":["IXG3000"]},
+ {"id":"golfbuddy-voice-ai-touch","query":"골프버디 보이스 AI 터치 거리측정기","must":["골프버디","AI","터치"],"exclude":["케이스"]},
+ {"id":"bushnell-pinnacle","query":"부쉬넬 피나클 거리측정기","must":["부쉬넬","피나클"],"exclude":["케이스"]},
+ {"id":"bushnell-tour-v5-shift","query":"부쉬넬 투어 V5 시프트 거리측정기","must":["부쉬넬","V5"],"exclude":["케이스","V6","V7"]},
+ {"id":"voicecaddie-sl2","query":"보이스캐디 SL2 레이저 거리측정기","must":["보이스캐디","SL2"],"exclude":["케이스","SL3"]},
+ {"id":"finecaddie-j8","query":"파인캐디 J8 레이저 거리측정기","must":["파인캐디"],"mustAny":["J8"],"exclude":["케이스"]},
+ {"id":"golfbuddy-aim-l11","query":"골프버디 aim L11 레이저 거리측정기","must":["골프버디","L11"],"exclude":["케이스"]},
+ {"id":"nikon-coolshot-lite","query":"니콘 쿨샷 라이트 골프 거리측정기","must":["니콘","쿨샷","라이트"],"exclude":["케이스","프로"]}
+]
