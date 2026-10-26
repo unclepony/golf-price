@@ -1,0 +1,14 @@
+[
+ {"id":"d1","query":"론치모니터","must":["zzqqxx"]},
+ {"id":"d2","query":"런치모니터 골프","must":["zzqqxx"]},
+ {"id":"d3","query":"골프 스윙분석기","must":["zzqqxx"]},
+ {"id":"d4","query":"골프 스윙 스피드 측정기","must":["zzqqxx"]},
+ {"id":"d5","query":"보이스캐디 SC4","must":["zzqqxx"]},
+ {"id":"d6","query":"블랙티 런치모니터","must":["zzqqxx"]},
+ {"id":"d7","query":"SLX 골프스윙분석기","must":["zzqqxx"]},
+ {"id":"d8","query":"스윙스피드레이더","must":["zzqqxx"]},
+ {"id":"d9","query":"골프 헤드스피드 측정기","must":["zzqqxx"]},
+ {"id":"d10","query":"보이스캐디 SC200","must":["zzqqxx"]},
+ {"id":"d11","query":"골프 레이더 비거리 측정기","must":["zzqqxx"]},
+ {"id":"d12","query":"휴대용 골프 시뮬레이터","must":["zzqqxx"]}
+]
