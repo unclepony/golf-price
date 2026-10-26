@@ -2023,15 +2023,15 @@
       "d": "2026-10-27"
     },
     "/g/fairway-wood-recommend": {
-      "h": "573a7babd0e68050",
+      "h": "5eef2b80beccd89d",
       "d": "2026-10-27"
     },
     "/g/utility-recommend": {
-      "h": "8d3c0d636c52f2a4",
+      "h": "702a94e8df0a05ed",
       "d": "2026-10-27"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "c42860bd0171d977",
+      "h": "b5acb22b0cb0b55d",
       "d": "2026-10-27"
     },
     "/g/iron-recommend": {
@@ -2310,41 +2310,45 @@
       "h": "062d2326b8040ec7",
       "d": "2026-10-16"
     },
+    "/qa/how-many-fairway-woods": {
+      "h": "5bf10a2b38ee2d63",
+      "d": "2026-10-27"
+    },
     "/qa/utility-4-recommend": {
-      "h": "18a9cb008ccc09ba",
-      "d": "2026-10-26"
+      "h": "6901f012f21c9d59",
+      "d": "2026-10-27"
     },
     "/qa/golf-rangefinder-recommend": {
-      "h": "e2a72e2624238b8d",
-      "d": "2026-10-26"
+      "h": "065e243c917d9d9e",
+      "d": "2026-10-27"
     },
     "/qa/golf-ball-recommend": {
-      "h": "7b34ca44165a73f2",
-      "d": "2026-10-26"
+      "h": "1596fe6b75ac01dd",
+      "d": "2026-10-27"
     },
     "/qa/zero-torque-putter": {
-      "h": "cb7abfd1b03caff8",
-      "d": "2026-10-26"
+      "h": "668f44f9a38f70de",
+      "d": "2026-10-27"
     },
     "/qa/womens-golf-club-recommend": {
-      "h": "1292302c0dfe8918",
-      "d": "2026-10-26"
+      "h": "aebc33d2932372c7",
+      "d": "2026-10-27"
     },
     "/qa/wedge-recommend-loft": {
-      "h": "4ffce0b4f1c77850",
-      "d": "2026-10-26"
+      "h": "2df5cf30f4c9eff3",
+      "d": "2026-10-27"
     },
     "/qa/beginner-driver-recommend": {
-      "h": "7c547c7b6a39ae6c",
-      "d": "2026-10-26"
+      "h": "873676d8cbe60e90",
+      "d": "2026-10-27"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "4b2f3c8228123af2",
-      "d": "2026-10-26"
+      "h": "7dedc6457b048bef",
+      "d": "2026-10-27"
     },
     "/qa": {
-      "h": "61d39bebc249cc01",
-      "d": "2026-10-26"
+      "h": "1cc8452dec54f8ab",
+      "d": "2026-10-27"
     },
     "/vs/adidas-adipower-sl-women-shoes-vs-footjoy-pulse-boa-women-shoes": {
       "h": "0392a482dc9ca21c",
@@ -3202,51 +3206,6 @@
       "d": "2026-10-26"
     },
     {
-      "url": "/qa/utility-4-recommend",
-      "kind": "new",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/qa/golf-rangefinder-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/qa/golf-ball-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/qa/zero-torque-putter",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/qa/womens-golf-club-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/qa/wedge-recommend-loft",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/qa/beginner-driver-recommend",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/qa/beginner-golf-club-set",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/qa",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
       "url": "/p/bushnell-pro-x3",
       "kind": "updated",
       "d": "2026-10-26"
@@ -3842,21 +3801,6 @@
       "d": "2026-10-27"
     },
     {
-      "url": "/g/fairway-wood-recommend",
-      "kind": "updated",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/g/utility-recommend",
-      "kind": "updated",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/g/womens-fairway-wood-recommend",
-      "kind": "updated",
-      "d": "2026-10-27"
-    },
-    {
       "url": "/g/womens-utility-recommend",
       "kind": "updated",
       "d": "2026-10-27"
@@ -4148,6 +4092,71 @@
     },
     {
       "url": "/g/wedge-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/qa/how-many-fairway-woods",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/qa/utility-4-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/qa/golf-rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/qa/golf-ball-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/qa/zero-torque-putter",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/qa/womens-golf-club-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/qa/wedge-recommend-loft",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/qa/beginner-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/qa",
       "kind": "updated",
       "d": "2026-10-27"
     }
