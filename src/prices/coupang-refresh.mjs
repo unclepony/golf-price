@@ -12,6 +12,9 @@
 // - 가격이 바뀌어도 콘텐츠 업데이트일은 바뀌지 않는다(build.mjs 가 가격 요소를 지문에서 뺀다).
 // - 판매 종료 처리: productId 가 있는 상품만. 같은 상품을 연속 5일(날짜 기준) 못 찾으면 picks.json 에 gone(날짜)을 적는다 → 빌드가 쿠팡 링크를 숨기고 순위·목록·홈에서 뺀다(주소는 유지, '판매 종료·품절 추정' 표시).
 //   API 는 호출 시점에 품절된 상품을 돌려주지 않으므로 일시 품절도 포함된다. 다시 찾으면 gone 을 지우고 되살린다. 연속 일수는 config/coupang-missing.json.
+// - 가격 튐 보류(2026-10-27 gp-1027-1): 같은 상품 번호인데 직전 값보다 1.5배 넘게 오르거나 1/1.5 아래로 내리면 그날은 직전 값(가격·로켓·확인일)을 그대로 두고
+//   config/coupang-jumps.json 에 기록만 한다. 다음 날 이후에도 같은 값이 다시 나오면 그때 반영한다(진짜 가격 변화는 하루 늦게 들어감).
+//   같은 상품 번호에서 옵션·판매글이 번갈아 잡혀(코브라 DS-ADAPT MAX-K 379,000↔730,000원, 골프공 1더즌↔2더즌 등) 순위·날짜가 매일 흔들리던 것을 막는다.
 // 실행: node --env-file=<.env> src/prices/coupang-refresh.mjs [--max N] [--gap 4]   (키 값은 화면·로그에 쓰지 않는다)
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -35,6 +38,10 @@ const triedFile = C('coupang-refresh.json');
 const missFile = C('coupang-missing.json');
 const missing = existsSync(missFile) ? JSON.parse(readFileSync(missFile, 'utf8')) : { _설명: 'src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { since: 처음 못 찾은 날, days: 연속으로 못 찾은 날 수, last: 마지막으로 못 찾은 날 }. 5일이면 picks.json gone.' };
 const GONE_DAYS = 5;
+const jumpFile = C('coupang-jumps.json');
+const jumps = existsSync(jumpFile) ? JSON.parse(readFileSync(jumpFile, 'utf8')) : {};
+jumps._설명 = 'src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { price: 1.5배 넘게 튄 API 값(반영 보류), held: 그때 유지한 직전 값, first: 처음 본 날, last: 마지막으로 본 날 }. 다음 날 이후 같은 값이 다시 나오면 반영하고 지운다.';
+const JUMP = 1.5;
 const tried = existsSync(triedFile) ? JSON.parse(readFileSync(triedFile, 'utf8')) : { _설명: 'src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → 쿠팡 API 로 마지막 시도한 날(찾음/못 찾음 모두). 순번용.' };
 
 // 단어 묶음: 소문자, 괄호·쉼표·슬래시·가운뎃점 등을 띄어쓰기로, '10.5도'·'10.5' 같은 단위 차이는 그대로 둔다(엄격)
@@ -52,7 +59,9 @@ const save = () => {
   writeFileSync(C('picks.json'), JSON.stringify(picks, null, 2) + '\n');
   writeFileSync(triedFile, JSON.stringify(tried, null, 2) + '\n');
   writeFileSync(missFile, JSON.stringify(missing, null, 2) + '\n');
+  writeFileSync(jumpFile, JSON.stringify(jumps, null, 2) + '\n');
 };
+let held = 0;
 let ok = 0, miss = 0;
 for (const [i, id] of targets.entries()) {
   if (i) await sleep(GAP);
@@ -91,10 +100,24 @@ for (const [i, id] of targets.entries()) {
     continue;
   }
   delete missing[id];
+  // 가격 튐 보류: 직전 값 대비 1.5배 넘게 바뀌면, 앞선 날에 같은 값을 이미 본 경우에만 반영
+  const r = pk.price ? hit.price / pk.price : 1;
+  if (r > JUMP || r < 1 / JUMP) {
+    const j = jumps[id];
+    if (!(j && j.price === hit.price && j.last < today)) {
+      jumps[id] = { price: hit.price, held: pk.price, first: j?.price === hit.price ? j.first : today, last: today };
+      held++;
+      console.log(`가격 튐 보류: ${id} ${pk.price.toLocaleString()}원 → ${hit.price.toLocaleString()}원 (직전 값 유지, 같은 값이 다음 날 다시 나오면 반영)`);
+      save();
+      continue;
+    }
+    console.log(`가격 튐 반영: ${id} ${hit.price.toLocaleString()}원 (${j.last} 에 이어 다시 확인)`);
+  }
+  delete jumps[id];
   picks[id] = { ...pk, productId: String(hit.id), price: hit.price, image: pk.image || hit.image, rocket: hit.rocket, checked: today };
   if (pk.gone) { delete picks[id].gone; console.log(`다시 판매: ${id}`); }
   ok++;
   console.log(`갱신: ${id} ${hit.price.toLocaleString()}원`);
   save();
 }
-console.log(`쿠팡 API 갱신 ${ok}개 · 건너뜀 ${miss}개 · 대상 ${targets.length}개`);
+console.log(`쿠팡 API 갱신 ${ok}개 · 가격 튐 보류 ${held}개 · 건너뜀 ${miss}개 · 대상 ${targets.length}개`);
