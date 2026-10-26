@@ -1975,12 +1975,12 @@
       "d": "2026-10-25"
     },
     "/c/iron": {
-      "h": "d3784efee833b054",
-      "d": "2026-10-26"
+      "h": "b75ee6a0e7a03cae",
+      "d": "2026-10-27"
     },
     "/c/wedge": {
-      "h": "142a6d6536674850",
-      "d": "2026-10-26"
+      "h": "0b06ddfe430bb0cb",
+      "d": "2026-10-27"
     },
     "/c/putter": {
       "h": "6d307b7ae720bf6b",
@@ -2035,7 +2035,7 @@
       "d": "2026-10-27"
     },
     "/g/iron-recommend": {
-      "h": "c4e583d7f76e001d",
+      "h": "548861f90aec3257",
       "d": "2026-10-27"
     },
     "/g/womens-utility-recommend": {
@@ -2043,7 +2043,7 @@
       "d": "2026-10-27"
     },
     "/g/wedge-recommend": {
-      "h": "2f8ef2e41da290f8",
+      "h": "dea929213a58721a",
       "d": "2026-10-27"
     },
     "/g/golf-ball-compare": {
@@ -3202,16 +3202,6 @@
       "d": "2026-10-26"
     },
     {
-      "url": "/c/iron",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/c/wedge",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
       "url": "/qa/utility-4-recommend",
       "kind": "new",
       "d": "2026-10-26"
@@ -3867,17 +3857,7 @@
       "d": "2026-10-27"
     },
     {
-      "url": "/g/iron-recommend",
-      "kind": "updated",
-      "d": "2026-10-27"
-    },
-    {
       "url": "/g/womens-utility-recommend",
-      "kind": "updated",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/g/wedge-recommend",
       "kind": "updated",
       "d": "2026-10-27"
     },
@@ -4148,6 +4128,26 @@
     },
     {
       "url": "/vs/titleist-permasoft-glove-vs-titleist-players-glove",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/c/iron",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/c/wedge",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/wedge-recommend",
       "kind": "updated",
       "d": "2026-10-27"
     }
