@@ -1,4 +1,0 @@
-[
- {"id":"slx-hybrid-mini","query":"SLX-H2 골프 스윙분석기","must":["slx","h2"],"exclude":["plus","플러스","m2","케이스","파우치","필름","거치대만"]},
- {"id":"slx-hybrid-mini-b","query":"SLX 하이브리드 미니 론치모니터","must":["slx"],"mustAny":["h2","hybridmini","하이브리드미니"],"exclude":["plus","플러스","m2","케이스","파우치","필름","거치대만"]}
-]
