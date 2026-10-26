@@ -87,8 +87,24 @@ jobs:
           mkdir -p data
           git add data config
           git commit --allow-empty -m "매일 갱신 $(TZ=Asia/Seoul date +%F)"
-          git pull --rebase
-          git push
+          # 다른 작업이 그사이 올린 커밋과 빌드가 관리하는 config/content-state.json 만 충돌하면
+          # 최신 main 쪽을 받고 다시 빌드해 그 결과로 잇는다(10-27 새벽 이 충돌로 통계·가격이 안 올라감). 다른 파일 충돌은 멈춘다.
+          for i in 1 2 3; do
+            if ! git pull --rebase; then
+              if [ "$(git diff --name-only --diff-filter=U)" = "config/content-state.json" ]; then
+                git checkout --ours config/content-state.json
+                node src/build.mjs > /dev/null
+                git add data config
+                GIT_EDITOR=true git rebase --continue
+              else
+                git rebase --abort || true
+                exit 1
+              fi
+            fi
+            git push && exit 0
+            sleep $((i * 10))
+          done
+          exit 1
 
       - name: IndexNow·구글 사이트맵 알림 (콘텐츠가 바뀐·새·삭제된 페이지가 있을 때만, 배포 5분 뒤)
         env:
