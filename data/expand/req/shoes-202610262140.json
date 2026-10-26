@@ -1,0 +1,194 @@
+[
+ {
+  "id": "footjoy-pulse-boa-shoes",
+  "query": "풋조이 FJ 펄스 보아 스파이크리스 남성 골프화",
+  "must": [
+   "풋조이"
+  ],
+  "mustAny": [
+   "펄스",
+   "pulse"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "중고",
+   "깔창",
+   "직구",
+   "해외",
+   "일본"
+  ]
+ },
+ {
+  "id": "adidas-adipower-sl-boa-shoes",
+  "query": "아디다스 남성 아디파워 SL 보아 스파이크리스 골프화",
+  "must": [
+   "아디다스"
+  ],
+  "mustAny": [
+   "아디파워",
+   "adipower"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "포지드",
+   "forged",
+   "중고",
+   "직구",
+   "해외",
+   "깔창"
+  ]
+ },
+ {
+  "id": "footjoy-hyperflex-boa-shoes",
+  "query": "풋조이 하이퍼플렉스 보아 골프화 아쿠쉬네트코리아 정품",
+  "must": [
+   "풋조이"
+  ],
+  "mustAny": [
+   "하이퍼플렉스",
+   "hyperflex"
+  ],
+  "exclude": [
+   "카본",
+   "carbon",
+   "여성",
+   "우먼스",
+   "중고",
+   "깔창",
+   "징",
+   "스파이크교체",
+   "일본",
+   "직수입",
+   "55493J"
+  ]
+ },
+ {
+  "id": "nike-victory-tour-4-boa-shoes",
+  "query": "나이키 빅토리 투어 4 보아 남성 골프화",
+  "must": [
+   "나이키"
+  ],
+  "mustAny": [
+   "빅토리 투어 4",
+   "빅토리 투어4",
+   "victory tour 4"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "투어 3",
+   "투어3",
+   "프로",
+   "pro",
+   "중고",
+   "미국",
+   "직구",
+   "해외"
+  ]
+ },
+ {
+  "id": "ecco-biom-tour-shoes",
+  "query": "에코 남성 바이옴 투어 골프화",
+  "must": [
+   "에코"
+  ],
+  "mustAny": [
+   "바이옴 투어",
+   "biom tour"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "에코로바",
+   "중고",
+   "직구",
+   "해외",
+   "미국"
+  ]
+ },
+ {
+  "id": "ecco-biom-g5-boa-shoes",
+  "query": "에코 바이옴 G5 보아 골프화",
+  "must": [
+   "에코"
+  ],
+  "mustAny": [
+   "g5"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "에코로바",
+   "g4",
+   "중고",
+   "직구",
+   "해외",
+   "미국"
+  ]
+ },
+ {
+  "id": "skechers-go-golf-max-3-shoes",
+  "query": "스케쳐스 고골프 맥스 3 남성 골프화",
+  "must": [
+   "스케쳐스"
+  ],
+  "mustAny": [
+   "맥스 3",
+   "max 3",
+   "max3",
+   "맥스3"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "페어웨이",
+   "fairway",
+   "중고",
+   "직구",
+   "해외"
+  ]
+ },
+ {
+  "id": "nike-victory-tour-4-boa-women-shoes",
+  "query": "나이키 빅토리 투어 4 보아 여성 골프화",
+  "must": [
+   "나이키",
+   "여성"
+  ],
+  "mustAny": [
+   "빅토리 투어 4",
+   "빅토리 투어4",
+   "victory tour 4"
+  ],
+  "exclude": [
+   "남성",
+   "투어 3",
+   "투어3",
+   "프로",
+   "pro",
+   "중고",
+   "미국",
+   "직구",
+   "해외"
+  ]
+ },
+ {
+  "id": "gfore-mg4plus-women-shoes",
+  "query": "지포어 여성 MG4+ 골프화",
+  "must": [
+   "지포어"
+  ],
+  "mustAny": [
+   "mg4"
+  ],
+  "exclude": [
+   "남성",
+   "중고",
+   "직구",
+   "해외",
+   "미국"
+  ]
+ }
+]
