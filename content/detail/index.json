@@ -41,9 +41,9 @@
  "callaway-elyte-hybrid": "aa75ee119050",
  "cobra-optm-hybrid": "18d00fb11ecb",
  "garmin-approach-s70": "3553548fcdc1",
- "garmin-approach-s50": "4da38ab88e9b",
- "voicecaddie-t13-pro": "e95c0e337d3a",
- "golfbuddy-aim-w12": "8f9853eaa09d",
+ "garmin-approach-s50": "1a15e7cb022b",
+ "voicecaddie-t13-pro": "2016a489a639",
+ "golfbuddy-aim-w12": "dad89b99e234",
  "garmin-approach-r10": "67228d8b9c5b",
  "voicecaddie-sc4-pro": "186d8d1abe07",
  "blacktee-shot5": "f923f0c89526",
@@ -361,7 +361,7 @@
  "odyssey-tri-hot-5k-putter": "83360e8b2349",
  "bushnell-tour-v6": "5db2b6486af0",
  "voicecaddie-laser-fit": "821302f3bd6a",
- "voicecaddie-t-ultra": "6538a91509b9",
+ "voicecaddie-t-ultra": "6bf4768a58e5",
  "voicecaddie-sc300i": "37448e5eb998",
  "footjoy-quantum-shoes": "bb11137e3292",
  "adidas-s2g-shoes": "54ac813fb5a6",
@@ -456,5 +456,8 @@
  "caddytalk-mini-pro": "4e7cd7787d56",
  "r2g-mate-mini": "5d5f9d721743",
  "r2g-mate-hybrid": "1a7d311acd57",
- "mycaddie-mini-mg3": "872b385f483b"
+ "mycaddie-mini-mg3": "872b385f483b",
+ "mycaddie-gps-m2": "b4a318bc0a4e",
+ "galaxy-watch8-golf": "29f89243f5eb",
+ "galaxy-watch8-classic-golf": "3ae16d0cfd23"
 }
