@@ -1,0 +1,466 @@
+[
+ {
+  "id": "taylormade-qi4dmax-driver",
+  "name": "테일러메이드 Qi4D MAX 드라이버 (2026)",
+  "query": "테일러메이드 Qi4D MAX 드라이버 10.5 SR",
+  "must": [
+   "qi4d",
+   "드라이버"
+  ],
+  "mustAny": [
+   "max",
+   "맥스"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "중고",
+   "병행",
+   "직수입",
+   "무게추",
+   "호환",
+   "보호필름",
+   "페어웨이",
+   "우드",
+   "유틸",
+   "아이언",
+   "풀세트",
+   "시타",
+   "lite",
+   "라이트",
+   "ls"
+  ],
+  "summary": "테일러메이드 2026년 Qi4D 시리즈의 고관용(MAX) 드라이버입니다. 솔의 13g·4g 무게추 두 개를 앞뒤로 바꿔 끼워 관용성과 스핀·탄도를 조절하고, 가벼운 알루미늄 칼라로 아낀 무게를 헤드 둘레에 배치했습니다. 460cc, 로프트 9·10.5·12도.",
+  "points": [
+   "기본·LS·MAX Lite 와 구분",
+   "무게추를 뒤에 두면 관용성 최대",
+   "입문자는 10.5도 이상·R/SR"
+  ],
+  "sources": [
+   "https://golfwrx.com/771324/2026-taylormade-qi4d-drivers-golfwrx-launch-report/",
+   "https://www.golfdigest.com/hot-list/drivers/taylormade-qi4d-max",
+   "https://www.todays-golfer.com/equipment/golf-clubs/drivers/taylormade-qi4d-max-driver-review/"
+  ],
+  "guidePick": {
+   "role": "최신 고관용",
+   "forWhom": "최신 테일러메이드로 미스샷을 줄이고 싶은 초심자",
+   "short": "Qi4D 의 관용형",
+   "plus": "무게추로 관용성 조절",
+   "minus": "가격 높음",
+   "pros": [
+    "무게추 위치로 관용성·스핀 조절",
+    "테일러메이드 2026 최신 세대"
+   ],
+   "cons": [
+    "출시 1년 차라 가격이 높음",
+    "전작 Qi35 MAX보다 관성모멘트가 약간 낮다는 평"
+   ],
+   "scores": [
+    5,
+    4,
+    5,
+    2
+   ],
+   "specs": [
+    "기본·MAX·LS·MAX Lite",
+    "2026년",
+    "TBD"
+   ],
+   "verdict": "Qi35 MAX를 보던 입문자가 최신형으로 함께 비교할 모델",
+   "skill": "초심자",
+   "dist": 8
+  },
+  "category": "driver"
+ },
+ {
+  "id": "callaway-quantum-maxd-driver",
+  "name": "캘러웨이 퀀텀 MAX D 드라이버 (2026)",
+  "query": "캘러웨이 퀀텀 MAX D 드라이버",
+  "must": [
+   "드라이버"
+  ],
+  "mustAny": [
+   "max d",
+   "maxd",
+   "max-d",
+   "맥스 d",
+   "맥스d",
+   "맥스-d"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "중고",
+   "병행",
+   "직수입",
+   "무게추",
+   "호환",
+   "보호필름",
+   "페어웨이",
+   "우드",
+   "유틸",
+   "아이언",
+   "풀세트",
+   "시타",
+   "트리플",
+   "td",
+   "fast",
+   "패스트",
+   "미니",
+   "mini"
+  ],
+  "summary": "캘러웨이 2026년 퀀텀 시리즈에서 가장 관용성이 큰 드로우 성향 드라이버입니다. 힐 쪽에 무게를 더 두고 라이각을 59도로 세워(기본 MAX 57도) 오른쪽으로 휘는 공을 줄이도록 했습니다. 트라이포스 페이스, 460cc, 로프트 9·10.5·12도, 옵티핏 호젤 조절.",
+  "points": [
+   "슬라이스 교정형(드로우 성향)",
+   "퀀텀 MAX·TD·TD MAX 와 구분",
+   "훅이 나는 골퍼엔 과교정 주의"
+  ],
+  "sources": [
+   "https://www.callawaygolf.com/product/drivers-2026-quantum-max-d",
+   "https://www.tgw.com/golf-guide/callaway-quantum-driver-comparison-review/",
+   "https://www.golfmagic.com/equipment/drivers/callaway-quantum-max-d-driver-review-big-forgiveness-small-catch"
+  ],
+  "guidePick": {
+   "role": "슬라이스 교정",
+   "forWhom": "공이 오른쪽으로 많이 휘는 초심자",
+   "short": "슬라이스 잡는 퀀텀",
+   "plus": "드로우 성향",
+   "minus": "훅 골퍼엔 과함",
+   "pros": [
+    "힐 쪽 무게·높은 라이각으로 슬라이스 완화",
+    "캘러웨이코리아 정품 유통"
+   ],
+   "cons": [
+    "드로우 골퍼에겐 왼쪽 미스",
+    "경쟁 모델보다 가격이 높은 편"
+   ],
+   "scores": [
+    5,
+    3,
+    5,
+    3
+   ],
+   "specs": [
+    "MAX·MAX D·TD·TD MAX",
+    "2026년",
+    "TBD"
+   ],
+   "verdict": "슬라이스로 고민하는 입문자가 캘러웨이에서 먼저 볼 모델",
+   "skill": "초심자",
+   "dist": 7
+  },
+  "category": "driver"
+ },
+ {
+  "id": "pxg-lightning-max10k-driver",
+  "name": "PXG 라이트닝 MAX-10K+ 드라이버",
+  "query": "PXG 라이트닝 맥스 10K 드라이버 남성",
+  "must": [
+   "드라이버"
+  ],
+  "mustAny": [
+   "라이트닝",
+   "lightning"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "중고",
+   "병행",
+   "직수입",
+   "무게추",
+   "호환",
+   "보호필름",
+   "페어웨이",
+   "우드",
+   "유틸",
+   "아이언",
+   "풀세트",
+   "시타",
+   "투어",
+   "tour",
+   "미드",
+   "mid",
+   "light",
+   "미니",
+   "시크릿",
+   "0311",
+   "블랙옵스"
+  ],
+  "summary": "PXG 라이트닝 시리즈(2026년 1월 국내 출시)에서 가장 관용성이 큰 드라이버입니다. 규정 한도에 가까운 관성모멘트를 목표로 한 큰 헤드에 주파수 튜닝 페이스를 썼고, 무게추로 무게 배분을 조절합니다.",
+  "points": [
+   "라이트닝 투어·투어 미드·MAX 라이트와 구분",
+   "카네 정품 확인",
+   "블랙옵스 후속 세대"
+  ],
+  "sources": [
+   "https://golfwrx.com/770035/the-storm-is-coming-pxg-announces-new-lightning-drivers/",
+   "https://pluggedingolf.com/pxg-lightning-max-10k-driver-review/",
+   "https://www.costco.co.kr/SportsFitnessCamping/Golf/Golf-Clubs/PXG-Lightning-Mid-Tour-Drivers-Ball-12ea/p/698878"
+  ],
+  "guidePick": {
+   "role": "프리미엄 고관용",
+   "forWhom": "PXG 최신형으로 안정적인 티샷을 원하는 중급자",
+   "short": "라이트닝의 관용형",
+   "plus": "매우 높은 관용성",
+   "minus": "가격 높음",
+   "pros": [
+    "라이트닝 중 관성모멘트가 가장 큼",
+    "무게추로 무게 배분 조절"
+   ],
+   "cons": [
+    "프리미엄 가격대",
+    "헤드가 커서 조작성은 낮음"
+   ],
+   "scores": [
+    5,
+    4,
+    4,
+    2
+   ],
+   "specs": [
+    "MAX-10K+·MAX 라이트·투어 미드·투어",
+    "2026년",
+    "TBD"
+   ],
+   "verdict": "블랙옵스보다 최신 PXG를 원하는 중급자가 볼 관용형",
+   "skill": "중급",
+   "dist": 8
+  },
+  "category": "driver"
+ },
+ {
+  "id": "pxg-lightning-tourmid-driver",
+  "name": "PXG 라이트닝 투어 미드 드라이버",
+  "query": "PXG 라이트닝 투어 미드 드라이버 남성",
+  "must": [
+   "드라이버"
+  ],
+  "mustAny": [
+   "라이트닝",
+   "lightning"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "중고",
+   "병행",
+   "직수입",
+   "무게추",
+   "호환",
+   "보호필름",
+   "페어웨이",
+   "우드",
+   "유틸",
+   "아이언",
+   "풀세트",
+   "시타",
+   "max",
+   "맥스",
+   "10k",
+   "light",
+   "미니",
+   "시크릿",
+   "0311",
+   "블랙옵스"
+  ],
+  "summary": "PXG 라이트닝 시리즈에 새로 생긴 중간형 드라이버입니다. 투어 모델보다 조금 크고 관용성이 있으면서 MAX-10K+보다 스핀이 적은, 블랙옵스와 블랙옵스 투어-1 사이를 원하는 골퍼를 위한 모델입니다.",
+  "points": [
+   "라이트닝 투어·MAX-10K+ 와 구분",
+   "스핀이 적어 스윙이 빠른 골퍼용",
+   "로프트 선택지 판매처 확인"
+  ],
+  "sources": [
+   "https://golfwrx.com/770035/the-storm-is-coming-pxg-announces-new-lightning-drivers/",
+   "https://austads.com/products/pxg-lightning-max-10k-driver",
+   "https://www.costco.co.kr/SportsFitnessCamping/Golf/Golf-Clubs/PXG-Lightning-Mid-Tour-Drivers-Ball-12ea/p/698878"
+  ],
+  "guidePick": {
+   "role": "투어형 관용",
+   "forWhom": "스윙이 빠르고 스핀을 줄이고 싶은 상급자",
+   "short": "조작과 관용 사이",
+   "plus": "낮은 스핀",
+   "minus": "가격 높음",
+   "pros": [
+    "투어형 모양에 관용성 보강",
+    "MAX-10K+보다 낮은 스핀"
+   ],
+   "cons": [
+    "프리미엄 가격대",
+    "입문자에겐 관용성 부족"
+   ],
+   "scores": [
+    4,
+    4,
+    2,
+    2
+   ],
+   "specs": [
+    "MAX-10K+·MAX 라이트·투어 미드·투어",
+    "2026년",
+    "TBD"
+   ],
+   "verdict": "블랙옵스 투어-1이 부담스러운 상급자가 볼 PXG 중간형",
+   "skill": "고급",
+   "dist": 8
+  },
+  "category": "driver"
+ },
+ {
+  "id": "honma-beres09-driver",
+  "name": "혼마 베레스 09 드라이버",
+  "query": "혼마 베레스 09 드라이버",
+  "must": [
+   "베레스",
+   "09",
+   "드라이버"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "중고",
+   "병행",
+   "직수입",
+   "무게추",
+   "호환",
+   "보호필름",
+   "페어웨이",
+   "우드",
+   "유틸",
+   "아이언",
+   "풀세트",
+   "시타",
+   "아이주",
+   "aizu",
+   "블랙"
+  ],
+  "summary": "혼마 베레스 09 시리즈(2024년)의 남성 드라이버입니다. Ti811 티타늄 바디와 카본 솔, 460cc 헤드에 도레이 토레카 MX 카본을 쓴 혼마 전용 ARMRQ 샤프트를 달았고, 별 등급(2·3·4·5스타)이 높을수록 샤프트 소재와 마감이 고급입니다.",
+  "points": [
+   "별 등급(2~5스타)에 따라 가격 차이 큼",
+   "정품(혼마코리아) 여부 확인",
+   "가벼운 시니어·중급자용"
+  ],
+  "sources": [
+   "https://us.honmagolf.com/products/beres-09-2star-driver",
+   "https://us.honmagolf.com/products/beres-09-4star-driver"
+  ],
+  "guidePick": {
+   "role": "프리미엄 경량",
+   "forWhom": "가볍고 편한 고급 드라이버를 원하는 중급자·시니어",
+   "short": "혼마 프리미엄 경량",
+   "plus": "가볍고 고급스러움",
+   "minus": "매우 비쌈",
+   "pros": [
+    "가벼운 전용 샤프트로 휘두르기 쉬움",
+    "별 등급별 고급 마감"
+   ],
+   "cons": [
+    "가격이 매우 높음",
+    "스윙이 빠른 골퍼에겐 가벼움"
+   ],
+   "scores": [
+    4,
+    5,
+    4,
+    1
+   ],
+   "specs": [
+    "2스타·3스타·4스타·5스타",
+    "2024년",
+    "TBD"
+   ],
+   "verdict": "가격보다 편안함과 고급감을 원하는 중급자·시니어용",
+   "skill": "중급",
+   "dist": 7
+  },
+  "category": "driver"
+ },
+ {
+  "id": "bridgestone-bx2ht-driver",
+  "name": "브리지스톤 BX2 HT 드라이버",
+  "query": "브리지스톤 BX2 HT 드라이버 석교",
+  "must": [
+   "드라이버"
+  ],
+  "mustAny": [
+   "bx2"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "중고",
+   "병행",
+   "직수입",
+   "무게추",
+   "호환",
+   "보호필름",
+   "페어웨이",
+   "우드",
+   "유틸",
+   "아이언",
+   "풀세트",
+   "시타",
+   "bx1",
+   "b1",
+   "b2"
+  ],
+  "summary": "브리지스톤 BX 시리즈(일본 2025년 9월 발매) 중 높은 탄도와 잘 잡히는 드로우 성향 드라이버입니다. 솔 뒤쪽 무게 배치로 관성모멘트를 높였고, 무게 두 개(8g·2g)를 바꿔 끼우는 조절 카트리지로 탄도를 조절합니다.",
+  "points": [
+   "BX1 ST 등 다른 BX 모델과 구분",
+   "석교상사 정품 확인",
+   "드로우 성향"
+  ],
+  "sources": [
+   "https://www.golfdigest-minna.jp/_ct/17788339",
+   "https://shop.begolfpro.com/product/bridgestone-bx2-ht-mens-driver-diamana-bs50/"
+  ],
+  "guidePick": {
+   "role": "고탄도 드로우",
+   "forWhom": "탄도가 낮고 공이 오른쪽으로 밀리는 중급자",
+   "short": "잘 잡히는 고탄도",
+   "plus": "높은 탄도",
+   "minus": "국내 판매처 적음",
+   "pros": [
+    "드로우 성향으로 오른쪽 미스 완화",
+    "무게 카트리지로 탄도 조절"
+   ],
+   "cons": [
+    "국내 판매처가 적음",
+    "훅 성향 골퍼엔 왼쪽 미스"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    3
+   ],
+   "specs": [
+    "BX1 ST·BX2 HT 등",
+    "2025년",
+    "TBD"
+   ],
+   "verdict": "일본 브랜드의 쉬운 드로우형을 찾는 중급자용",
+   "skill": "중급",
+   "dist": 7
+  },
+  "category": "driver"
+ }
+]
