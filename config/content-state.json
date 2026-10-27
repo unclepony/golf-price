@@ -1971,23 +1971,27 @@
       "d": "2026-10-27"
     },
     "/p/xxio-prime-women-fairway": {
-      "h": "304ecbbed7e03b74",
+      "h": "038845fa239d8378",
       "d": "2026-10-27"
     },
     "/p/yonex-ezonegt3-women-fairway": {
-      "h": "b4d40c5057fd2039",
+      "h": "3ea52c999a62c465",
       "d": "2026-10-27"
     },
     "/p/bridgestone-blady-women-fairway": {
-      "h": "3b73e3e17233b2de",
+      "h": "62140121d7385edc",
       "d": "2026-10-27"
     },
     "/p/majesty-prestigio13-women-fairway": {
-      "h": "fcdc545be8a34679",
+      "h": "cb6bea06feba0f45",
       "d": "2026-10-27"
     },
     "/p/majesty-sublime-women-fairway": {
-      "h": "710a3fe935ed03c6",
+      "h": "52e58d7825bffb28",
+      "d": "2026-10-27"
+    },
+    "/p/yamaha-cs-hmplus-women-hybrid": {
+      "h": "0dffad38752e92b5",
       "d": "2026-10-27"
     },
     "/c/driver": {
@@ -1999,8 +2003,8 @@
       "d": "2026-10-27"
     },
     "/c/utility": {
-      "h": "6add1e22e6cd67b8",
-      "d": "2026-10-25"
+      "h": "f600b6266174abcf",
+      "d": "2026-10-27"
     },
     "/c/iron": {
       "h": "b75ee6a0e7a03cae",
@@ -2067,7 +2071,7 @@
       "d": "2026-10-27"
     },
     "/g/womens-utility-recommend": {
-      "h": "7bb651c552fab1eb",
+      "h": "76b0b82e2c40552c",
       "d": "2026-10-27"
     },
     "/g/wedge-recommend": {
@@ -2207,8 +2211,8 @@
       "d": "2026-10-26"
     },
     "/g/womens-utility-recommend-beginner": {
-      "h": "87c870091cd5bcf6",
-      "d": "2026-10-24"
+      "h": "1ec8017a3b3f5930",
+      "d": "2026-10-27"
     },
     "/g/womens-utility-recommend-intermediate": {
       "h": "959fdf3fbf127cd1",
@@ -2331,7 +2335,7 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "88db31c9180f0e9b",
+      "h": "ff6b3388b38e531a",
       "d": "2026-10-27"
     },
     "/about": {
@@ -3759,11 +3763,6 @@
       "d": "2026-10-27"
     },
     {
-      "url": "/g/womens-utility-recommend",
-      "kind": "updated",
-      "d": "2026-10-27"
-    },
-    {
       "url": "/g/golf-ball-compare",
       "kind": "updated",
       "d": "2026-10-27"
@@ -4219,31 +4218,6 @@
       "d": "2026-10-27"
     },
     {
-      "url": "/p/xxio-prime-women-fairway",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/yonex-ezonegt3-women-fairway",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/bridgestone-blady-women-fairway",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/majesty-prestigio13-women-fairway",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/majesty-sublime-women-fairway",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
       "url": "/c/wood",
       "kind": "updated",
       "d": "2026-10-27"
@@ -4274,17 +4248,62 @@
       "d": "2026-10-27"
     },
     {
-      "url": "/",
-      "kind": "updated",
-      "d": "2026-10-27"
-    },
-    {
       "url": "/vs/callaway-gbb-women-fairway-vs-ping-gle4-women-fairway",
       "kind": "updated",
       "d": "2026-10-27"
     },
     {
       "url": "/vs/callaway-gbb-women-fairway-vs-xxio14-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/xxio-prime-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/yonex-ezonegt3-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/bridgestone-blady-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/majesty-prestigio13-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/majesty-sublime-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/yamaha-cs-hmplus-women-hybrid",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/c/utility",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/womens-utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/womens-utility-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/",
       "kind": "updated",
       "d": "2026-10-27"
     }
