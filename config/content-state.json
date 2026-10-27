@@ -143,8 +143,8 @@
       "d": "2026-10-22"
     },
     "/p/callaway-elyte-fairway": {
-      "h": "00eb3b142d007d6f",
-      "d": "2026-10-25"
+      "h": "480dbe7e619a7432",
+      "d": "2026-10-28"
     },
     "/p/cobra-optm-x-fairway": {
       "h": "45de901bf3fc65e8",
@@ -543,12 +543,12 @@
       "d": "2026-10-27"
     },
     "/p/majesty-royalgold-fairway": {
-      "h": "b0ce28a21e095d79",
-      "d": "2026-10-22"
+      "h": "a80abbabea1d535b",
+      "d": "2026-10-28"
     },
     "/p/xxio12-fairway": {
-      "h": "feebe1b8892a5fc3",
-      "d": "2026-10-25"
+      "h": "615dfd90867a57df",
+      "d": "2026-10-28"
     },
     "/p/mizuno-jpxone-fairway": {
       "h": "8f0d325befb965df",
@@ -559,8 +559,8 @@
       "d": "2026-10-25"
     },
     "/p/xxio14-fairway": {
-      "h": "0cedf8fee820c217",
-      "d": "2026-10-25"
+      "h": "8397e9547165cb53",
+      "d": "2026-10-28"
     },
     "/p/taylormade-qi4dmax-fairway": {
       "h": "97c7f9235cd8f915",
@@ -947,28 +947,28 @@
       "d": "2026-10-22"
     },
     "/p/callaway-elyte-x-fairway": {
-      "h": "15d22bf0977c129b",
-      "d": "2026-10-22"
+      "h": "46b6e3b1f28d60d4",
+      "d": "2026-10-28"
     },
     "/p/taylormade-qi4d-fairway": {
       "h": "365a6f72cca8be70",
       "d": "2026-10-25"
     },
     "/p/cobra-ds-adapt-x-fairway": {
-      "h": "d24f0a4deefe15bf",
-      "d": "2026-10-25"
+      "h": "8e8ebfb8a5783725",
+      "d": "2026-10-28"
     },
     "/p/ping-g440-lst-fairway": {
-      "h": "940e4f19ee26835f",
-      "d": "2026-10-26"
+      "h": "3e26f0383f4044ff",
+      "d": "2026-10-28"
     },
     "/p/taylormade-qi35-tour-fairway": {
       "h": "fe998b3f82927b77",
       "d": "2026-10-26"
     },
     "/p/srixon-zxi-rkt-fairway": {
-      "h": "3826cb2aaf396ab4",
-      "d": "2026-10-26"
+      "h": "ec801eba6e4b7601",
+      "d": "2026-10-28"
     },
     "/p/callaway-quantum-td-fairway": {
       "h": "678d4901db6a1076",
@@ -1323,16 +1323,16 @@
       "d": "2026-10-22"
     },
     "/p/callaway-paradym-aismoke-max-fairway": {
-      "h": "4c1dfc9d145f03b0",
-      "d": "2026-10-25"
+      "h": "1dfcd9060274e127",
+      "d": "2026-10-28"
     },
     "/p/xxio13-fairway": {
       "h": "77acbdfeba8588b7",
       "d": "2026-10-25"
     },
     "/p/honma-tw767-fairway": {
-      "h": "2c29d2bdc073624f",
-      "d": "2026-10-25"
+      "h": "20c30cab58111ccc",
+      "d": "2026-10-28"
     },
     "/p/cobra-darkspeed-hybrid": {
       "h": "66975e45845e44c3",
@@ -2022,13 +2022,37 @@
       "h": "689372de63dad347",
       "d": "2026-10-28"
     },
+    "/p/yonex-ezonegt4-fairway": {
+      "h": "44df374d94f6b9c1",
+      "d": "2026-10-28"
+    },
+    "/p/yonex-ezonegt3-fairway": {
+      "h": "2f8cafaaa8c0959e",
+      "d": "2026-10-28"
+    },
+    "/p/onoff-cbt526-fairway": {
+      "h": "d2a80a70457fd5f8",
+      "d": "2026-10-28"
+    },
+    "/p/honma-beres09-fairway": {
+      "h": "6406511a7fc09739",
+      "d": "2026-10-28"
+    },
+    "/p/pxg-lightning-fairway": {
+      "h": "8819734da8773479",
+      "d": "2026-10-28"
+    },
+    "/p/prgr-superegg-fairway": {
+      "h": "57b3459321f20872",
+      "d": "2026-10-28"
+    },
     "/c/driver": {
       "h": "1110023069b8f4db",
       "d": "2026-10-28"
     },
     "/c/wood": {
-      "h": "7787d1d95b947a98",
-      "d": "2026-10-27"
+      "h": "7b8e535e2dd67150",
+      "d": "2026-10-28"
     },
     "/c/utility": {
       "h": "426c910a40dbc2a8",
@@ -2083,8 +2107,8 @@
       "d": "2026-10-28"
     },
     "/g/fairway-wood-recommend": {
-      "h": "5eef2b80beccd89d",
-      "d": "2026-10-27"
+      "h": "50eba6fb3f576432",
+      "d": "2026-10-28"
     },
     "/g/utility-recommend": {
       "h": "0f552f9bd9eb560c",
@@ -2175,16 +2199,16 @@
       "d": "2026-10-25"
     },
     "/g/fairway-wood-recommend-beginner": {
-      "h": "17e4ca1716e9cb52",
-      "d": "2026-10-25"
+      "h": "f126031312dca35e",
+      "d": "2026-10-28"
     },
     "/g/fairway-wood-recommend-intermediate": {
-      "h": "c702f31c62fc7055",
+      "h": "5d79581202551677",
       "d": "2026-10-28"
     },
     "/g/fairway-wood-recommend-advanced": {
-      "h": "f19d06ca14d9c3ed",
-      "d": "2026-10-26"
+      "h": "c51d5ed59583055b",
+      "d": "2026-10-28"
     },
     "/g/fairway-wood-recommend-pro": {
       "h": "26c23f96a5763105",
@@ -2363,7 +2387,7 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "eb0fdf4c920eb841",
+      "h": "dc3612e509368f62",
       "d": "2026-10-28"
     },
     "/about": {
@@ -3039,5 +3063,116 @@
       "d": "2026-10-19"
     }
   },
-  "pending": []
+  "pending": [
+    {
+      "url": "/p/callaway-elyte-fairway",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/majesty-royalgold-fairway",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/xxio12-fairway",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/xxio14-fairway",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/callaway-elyte-x-fairway",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/cobra-ds-adapt-x-fairway",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/ping-g440-lst-fairway",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/srixon-zxi-rkt-fairway",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/callaway-paradym-aismoke-max-fairway",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/honma-tw767-fairway",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/yonex-ezonegt4-fairway",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/yonex-ezonegt3-fairway",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/onoff-cbt526-fairway",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/honma-beres09-fairway",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/pxg-lightning-fairway",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/prgr-superegg-fairway",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/c/wood",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/g/fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/g/fairway-wood-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/g/fairway-wood-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/g/fairway-wood-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-28"
+    }
+  ]
 }
