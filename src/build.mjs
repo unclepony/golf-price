@@ -763,7 +763,8 @@ function buyBtn(id, cls = 'btn sm', label = '쿠팡에서 현재 가격 보기')
   return ext ? `<a class="${cls} ext" href="${esc(ext.url)}" target="_blank" rel="nofollow noopener">${esc(ext.store)}에서 보기</a>` : '';
 }
 // 제목용 가격 표기: 정확한 금액 대신 'N만원대' (기준가 기준이라 매일 바뀌지 않는다)
-const manwonBand = (n) => (n >= 1e6 ? `${Math.floor(n / 1e5) * 10}만원대` : `${Math.floor(n / 1e4)}만원대`);
+// 1만 원 아래는 '0만원대'가 되지 않게 천원 단위로(2026-10-27 관제탑: 장갑 제목 '0만원대부터')
+const manwonBand = (n) => (n >= 1e6 ? `${Math.floor(n / 1e5) * 10}만원대` : n >= 1e4 ? `${Math.floor(n / 1e4)}만원대` : n >= 1e3 ? `${Math.floor(n / 1e3)}천원대` : `${n}원`);
 function baseMin(ids) {
   const xs = ids.map((id) => pickPrice(id)).filter(Boolean);
   return xs.length ? Math.min(...xs) : null;
@@ -1510,6 +1511,8 @@ function guideTitle(g, skill) {
   const band = bm ? ` | ${manwonBand(bm)}부터` : '';
   // 실력 단계로 나눈 대표 페이지: 검색어('○○ 추천 2026', '○○ 순위', '초보 ○○')에 맞춘다. 단계별 1위가 있어 '순위'는 실제 내용과 같다
   if (!skill && skillGroups(g).length) return `${who}${catWord(c)} 추천 ${CUR_YEAR} 순위: 초보~프로 ${ids.length}종 비교${band}`;
+  // 실력 단계가 없는 가이드(골프백·장갑·골프화, 2026-10-27 관제탑): 종합 편집 점수 순위('N종 중 N위')가 있어 '순위'는 실제 내용과 같다
+  if (!skill && ids.length >= 3) return `${who}${catWord(c)} 추천 ${CUR_YEAR} 순위: ${ids.length}종 비교${band}`;
   return `${who}${skill ? `${SKILL_WORD[skill]} ` : ''}${catWord(c)} 추천 ${ids.length}종 비교 (${CUR_YEAR})${band}`;
 }
 // 메타 설명: 가격 범위 + 핵심 추천 대상
@@ -1523,7 +1526,10 @@ function guideDesc(g, skill) {
   const price = pr ? ` 쿠팡 판매가 ${won(pr.min)}~${won(pr.max)}(${dayLabel(pr.d)} 확인).` : '';
   // 실력 구분 없는 대표 페이지: 검색어('초보 ○○ 추천')에 맞게 초보 1위를 앞에 둔다(없으면 기존 설명)
   const beg = !skill ? ps.find((pk) => pk.skill === '초심자') : null;
-  const target = skill && top ? ` ${top.forWhom}께 맞춘 추천으로, 1위는 ${byId[top.id].p.name}.` : beg ? ` 처음 사는 초보라면 1순위는 ${byId[beg.id].p.name}, 중급·고급·프로 추천도 함께.` : ` ${g.desc}`;
+  // 실력 단계가 없는 가이드: 순위 배지·stageAnswer 와 같은 기준(종합 편집 점수, 옵션 확인 필요·판매 종료 제외)의 1~3위를 바로 답으로(2026-10-27 관제탑, 사장님 10/23 규칙)
+  const tops = !skill && !beg ? ps.filter((pk) => stageRank(g, pk.id)?.r).slice(0, 3) : [];
+  const nm = (pk) => byId[pk.id].p.name;
+  const target = skill && top ? ` ${top.forWhom}께 맞춘 추천으로, 1위는 ${byId[top.id].p.name}.` : beg ? ` 처음 사는 초보라면 1순위는 ${byId[beg.id].p.name}, 중급·고급·프로 추천도 함께.` : tops.length >= 2 ? ` 편집 점수 1위는 ${nm(tops[0])}, 그다음 ${tops.slice(1).map(nm).join('·')}.` : ` ${g.desc}`;
   return `${head}:${price}${target}`.slice(0, 160);
 }
 for (const g of pageGuides) {
