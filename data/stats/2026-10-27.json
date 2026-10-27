@@ -1,0 +1,231 @@
+{
+  "date": "2026-10-27",
+  "by": {
+    "act": {
+      "카카오톡|/": 1,
+      "카카오톡|/c/driver": 1,
+      "카카오톡|/p/taylormade-qi35max-driver": 1,
+      "캠페인: chatgpt.com|/c/putter": 3,
+      "캠페인: chatgpt.com|/c/rangefinder": 1,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 1,
+      "캠페인: chatgpt.com|/g/golf-shoes-recommend": 1,
+      "캠페인: chatgpt.com|/g/womens-iron-recommend": 1,
+      "캠페인: chatgpt.com|/p/blacktee-shot5": 1,
+      "캠페인: chatgpt.com|/p/bridgestone-tour-b-rxs": 1,
+      "캠페인: chatgpt.com|/p/garmin-approach-z82": 1,
+      "캠페인: chatgpt.com|/p/golfbuddy-aim-w12": 1,
+      "캠페인: chatgpt.com|/p/ping-g440-driver": 2,
+      "캠페인: chatgpt.com|/p/ping-gle3-women-iron": 1,
+      "캠페인: chatgpt.com|/p/titleist-performance-cart-2026": 1,
+      "캠페인: chatgpt.com|/p/xxio13-women-driver": 1
+    },
+    "asn": {
+      "AS17451 Biznet Metronet": 2,
+      "AS3559 Korea Telecom": 5,
+      "AS4766 KT": 2,
+      "AS4766 Korea Telecom": 5,
+      "AS4766 Sudogwonseobubonbu": 1,
+      "AS9318 SK Broadband Co Ltd": 1,
+      "AS9644 SK Telecom": 5
+    },
+    "cty": {
+      "ID": 2,
+      "KR": 19
+    },
+    "depth": {
+      "/c/driver|첫 화면": 2,
+      "/c/putter|첫 화면": 5,
+      "/c/rangefinder|25%": 1,
+      "/g/golf-shoes-recommend|첫 화면": 1,
+      "/g/womens-iron-recommend|첫 화면": 2,
+      "/p/blacktee-shot5|25%": 1,
+      "/p/bridgestone-tour-b-rxs|끝까지": 1,
+      "/p/golfbuddy-aim-w12|75%": 1,
+      "/p/ping-g440-driver|25%": 1,
+      "/p/ping-g440-driver|끝까지": 1,
+      "/p/ping-gle3-women-iron|25%": 1,
+      "/p/taylormade-qi35max-driver|끝까지": 1,
+      "/p/titleist-performance-cart-2026|끝까지": 1,
+      "/p/voicecaddie-laser-fit|25%": 1,
+      "/p/xxio13-women-driver|50%": 1,
+      "/|25%": 1,
+      "/|첫 화면": 2
+    },
+    "dev": {
+      "PC": 5,
+      "모바일": 16
+    },
+    "hour": {
+      "12": 1,
+      "13": 1,
+      "15": 7,
+      "18": 2,
+      "21": 1,
+      "22": 2,
+      "23": 3,
+      "04": 1,
+      "07": 2,
+      "08": 1
+    },
+    "nav": {
+      "/c/driver|/p/taylormade-qi35max-driver": 1,
+      "/c/rangefinder|/p/garmin-approach-z82": 1,
+      "/g/womens-iron-recommend|/p/ping-gle3-women-iron": 1,
+      "/p/titleist-performance-cart-2026|/g/golf-bag-recommend": 1,
+      "/|/c/driver": 2
+    },
+    "out": {
+      "/g/golf-bag-recommend|titleist-players-s5-stand": 1,
+      "/p/blacktee-shot5|blacktee-shot5": 1,
+      "/p/golfbuddy-aim-w12|golfbuddy-aim-w12": 1
+    },
+    "outact": {
+      "조작 후|캠페인: chatgpt.com": 3
+    },
+    "outcamp": {
+      "chatgpt.com|blacktee-shot5": 1,
+      "chatgpt.com|golfbuddy-aim-w12": 1,
+      "chatgpt.com|titleist-players-s5-stand": 1
+    },
+    "outref": {
+      "캠페인: chatgpt.com": 3
+    },
+    "pos": {
+      "상세 끝 구매 상자": 1,
+      "상품 소개": 1,
+      "상품 페이지": 1
+    },
+    "pv": {
+      "/": 3,
+      "/c/driver": 2,
+      "/c/putter": 5,
+      "/c/rangefinder": 1,
+      "/g/golf-bag-recommend": 1,
+      "/g/golf-ball-compare": 2,
+      "/g/golf-shoes-recommend": 1,
+      "/g/womens-fairway-wood-recommend": 2,
+      "/g/womens-iron-recommend": 2,
+      "/p/blacktee-shot5": 1,
+      "/p/bridgestone-tour-b-rxs": 1,
+      "/p/garmin-approach-z82": 1,
+      "/p/golfbuddy-aim-w12": 1,
+      "/p/ping-g440-driver": 2,
+      "/p/ping-gle3-women-iron": 1,
+      "/p/taylormade-qi35max-driver": 1,
+      "/p/titleist-performance-cart-2026": 1,
+      "/p/voicecaddie-laser-fit": 1,
+      "/p/xxio13-women-driver": 1
+    },
+    "ref": {
+      "직접·북마크": 2,
+      "카카오톡": 1,
+      "캠페인: chatgpt.com": 14,
+      "캠페인: youtube": 4
+    },
+    "refland": {
+      "직접·북마크|/": 1,
+      "직접·북마크|/p/voicecaddie-laser-fit": 1,
+      "카카오톡|/": 1,
+      "캠페인: chatgpt.com|/c/putter": 4,
+      "캠페인: chatgpt.com|/c/rangefinder": 1,
+      "캠페인: chatgpt.com|/g/golf-shoes-recommend": 1,
+      "캠페인: chatgpt.com|/g/womens-iron-recommend": 1,
+      "캠페인: chatgpt.com|/p/blacktee-shot5": 1,
+      "캠페인: chatgpt.com|/p/bridgestone-tour-b-rxs": 1,
+      "캠페인: chatgpt.com|/p/golfbuddy-aim-w12": 1,
+      "캠페인: chatgpt.com|/p/ping-g440-driver": 2,
+      "캠페인: chatgpt.com|/p/titleist-performance-cart-2026": 1,
+      "캠페인: chatgpt.com|/p/xxio13-women-driver": 1,
+      "캠페인: youtube|/g/golf-ball-compare": 2,
+      "캠페인: youtube|/g/womens-fairway-wood-recommend": 2
+    },
+    "refurl": {
+      "chatgpt.com": 14,
+      "youtube / comment / c-womens-fairway-wood-recommend-beginner": 2,
+      "youtube / video / t-golf-ball-compare-0": 2
+    },
+    "seen": {
+      "/g/golf-bag-recommend": 1,
+      "/g/golf-ball-compare": 1,
+      "/g/golf-shoes-recommend": 1,
+      "/g/womens-fairway-wood-recommend": 1,
+      "/p/blacktee-shot5": 1,
+      "/p/bridgestone-tour-b-rxs": 1,
+      "/p/garmin-approach-z82": 1,
+      "/p/golfbuddy-aim-w12": 1,
+      "/p/ping-g440-driver": 2,
+      "/p/ping-gle3-women-iron": 1,
+      "/p/taylormade-qi35max-driver": 1,
+      "/p/titleist-performance-cart-2026": 1,
+      "/p/xxio13-women-driver": 1
+    },
+    "seenpos": {
+      "비교표": 2,
+      "상품 페이지": 10,
+      "한 줄 결론": 2
+    },
+    "seenref": {
+      "카카오톡": 1,
+      "캠페인: chatgpt.com": 11,
+      "캠페인: youtube": 2
+    },
+    "skip": {
+      "내부(관리자 브라우저)": 1,
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 4
+    },
+    "stay": {
+      "/c/driver|10초 미만": 1,
+      "/c/driver|30초~1분": 1,
+      "/c/putter|10~30초": 1,
+      "/c/putter|10초 미만": 4,
+      "/c/rangefinder|1~3분": 1,
+      "/g/golf-shoes-recommend|10~30초": 1,
+      "/g/womens-iron-recommend|10~30초": 1,
+      "/g/womens-iron-recommend|10초 미만": 1,
+      "/p/blacktee-shot5|10초 미만": 1,
+      "/p/bridgestone-tour-b-rxs|30초~1분": 1,
+      "/p/golfbuddy-aim-w12|30초~1분": 1,
+      "/p/ping-g440-driver|10~30초": 2,
+      "/p/ping-gle3-women-iron|10~30초": 1,
+      "/p/taylormade-qi35max-driver|30초~1분": 1,
+      "/p/titleist-performance-cart-2026|1~3분": 1,
+      "/p/voicecaddie-laser-fit|10초 미만": 1,
+      "/p/xxio13-women-driver|30초~1분": 1,
+      "/|10초 미만": 2,
+      "/|30초~1분": 1
+    },
+    "visit": {
+      "/": 2,
+      "/c/putter": 4,
+      "/c/rangefinder": 1,
+      "/g/golf-ball-compare": 2,
+      "/g/golf-shoes-recommend": 1,
+      "/g/womens-fairway-wood-recommend": 2,
+      "/g/womens-iron-recommend": 1,
+      "/p/blacktee-shot5": 1,
+      "/p/bridgestone-tour-b-rxs": 1,
+      "/p/golfbuddy-aim-w12": 1,
+      "/p/ping-g440-driver": 2,
+      "/p/titleist-performance-cart-2026": 1,
+      "/p/voicecaddie-laser-fit": 1,
+      "/p/xxio13-women-driver": 1
+    },
+    "xpv": {
+      "/c/putter": 5,
+      "/c/rangefinder": 1,
+      "/g/golf-bag-recommend": 1,
+      "/g/golf-ball-compare": 2,
+      "/g/golf-shoes-recommend": 1,
+      "/g/womens-fairway-wood-recommend": 2,
+      "/g/womens-iron-recommend": 2,
+      "/p/blacktee-shot5": 1,
+      "/p/bridgestone-tour-b-rxs": 1,
+      "/p/garmin-approach-z82": 1,
+      "/p/golfbuddy-aim-w12": 1,
+      "/p/ping-g440-driver": 2,
+      "/p/ping-gle3-women-iron": 1,
+      "/p/titleist-performance-cart-2026": 1,
+      "/p/xxio13-women-driver": 1
+    }
+  }
+}

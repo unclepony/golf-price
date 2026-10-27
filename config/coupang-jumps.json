@@ -1,0 +1,21 @@
+{
+  "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { price: 1.5배 넘게 튄 API 값(반영 보류), held: 그때 유지한 직전 값, first: 처음 본 날, last: 마지막으로 본 날 }. 다음 날 이후 같은 값이 다시 나오면 반영하고 지운다.",
+  "honma-d1": {
+    "price": 45160,
+    "held": 22980,
+    "first": "2026-10-28",
+    "last": "2026-10-28"
+  },
+  "taylormade-durable-grip-glove": {
+    "price": 21800,
+    "held": 41350,
+    "first": "2026-10-28",
+    "last": "2026-10-28"
+  },
+  "xxio-nanofront-glove": {
+    "price": 27700,
+    "held": 17400,
+    "first": "2026-10-28",
+    "last": "2026-10-28"
+  }
+}
