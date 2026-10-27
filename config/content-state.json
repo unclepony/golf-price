@@ -11,8 +11,8 @@
       "d": "2026-10-26"
     },
     "/p/ping-g440-driver": {
-      "h": "a002171696ef6caf",
-      "d": "2026-10-26"
+      "h": "560c80960a691477",
+      "d": "2026-10-28"
     },
     "/p/titleist-gt2-driver": {
       "h": "fddc2382025f19ef",
@@ -303,8 +303,8 @@
       "d": "2026-10-22"
     },
     "/p/taylormade-sim2max-driver": {
-      "h": "ec9eee12b0e68d2f",
-      "d": "2026-10-26"
+      "h": "41a295787f77941b",
+      "d": "2026-10-28"
     },
     "/p/taylormade-qi10max-driver": {
       "h": "c6a04a22b5554426",
@@ -315,20 +315,20 @@
       "d": "2026-10-26"
     },
     "/p/majesty-prestigio13-driver": {
-      "h": "03ba9ab50398ebf4",
-      "d": "2026-10-26"
+      "h": "28927fc689bed3a6",
+      "d": "2026-10-28"
     },
     "/p/callaway-paradym-driver": {
       "h": "40c186d1e6539f01",
       "d": "2026-10-26"
     },
     "/p/callaway-quantum-tdmax-driver": {
-      "h": "1cf3a8fbfaeca934",
-      "d": "2026-10-26"
+      "h": "7b57b12b82e29c73",
+      "d": "2026-10-28"
     },
     "/p/xxio14plus-driver": {
-      "h": "bfa8733f78a84a1f",
-      "d": "2026-10-26"
+      "h": "ae90ce6f080d03dd",
+      "d": "2026-10-28"
     },
     "/p/taylormade-qi35ls-driver": {
       "h": "49ca13ffca317ccb",
@@ -343,8 +343,8 @@
       "d": "2026-10-25"
     },
     "/p/titleist-gt3-driver": {
-      "h": "3fed72ec69763192",
-      "d": "2026-10-25"
+      "h": "f75e37d1e70248a2",
+      "d": "2026-10-28"
     },
     "/p/titleist-gts3-driver": {
       "h": "16e9a74c9017f61c",
@@ -907,16 +907,16 @@
       "d": "2026-10-26"
     },
     "/p/cobra-ds-adapt-maxk-driver": {
-      "h": "20ddad6a35314a4d",
-      "d": "2026-10-26"
+      "h": "85fc2080b155b2b3",
+      "d": "2026-10-28"
     },
     "/p/callaway-quantum-max-driver": {
-      "h": "08089e3c0e65b89d",
-      "d": "2026-10-26"
+      "h": "3cc255a0a3f83ad3",
+      "d": "2026-10-28"
     },
     "/p/yamaha-rmx-vdm-driver": {
-      "h": "636d4581f7ff0145",
-      "d": "2026-10-26"
+      "h": "69301ccf9c0dadc6",
+      "d": "2026-10-28"
     },
     "/p/srixon-zxi-rkt-driver": {
       "h": "048b17c786ed7659",
@@ -1579,28 +1579,28 @@
       "d": "2026-10-25"
     },
     "/p/ping-g440sft-driver": {
-      "h": "ed3b253b6f347d9a",
-      "d": "2026-10-26"
+      "h": "c96b4f156a2d3023",
+      "d": "2026-10-28"
     },
     "/p/ping-g440k-driver": {
-      "h": "505f96cafe6f6e9c",
-      "d": "2026-10-26"
+      "h": "02c22944ca3ee049",
+      "d": "2026-10-28"
     },
     "/p/ping-g430max10k-driver": {
-      "h": "0f40f0b5a2c239ba",
-      "d": "2026-10-26"
+      "h": "2bb2eb5a5d3338f3",
+      "d": "2026-10-28"
     },
     "/p/cobra-optm-maxk-driver": {
-      "h": "817dd6e12fe6e66f",
-      "d": "2026-10-26"
+      "h": "ff520a6092a6dced",
+      "d": "2026-10-28"
     },
     "/p/cobra-optm-x-driver": {
       "h": "23cc875a3bcf97bd",
       "d": "2026-10-26"
     },
     "/p/xxio14-driver": {
-      "h": "c018881397f912be",
-      "d": "2026-10-26"
+      "h": "a4f16557d3b189c7",
+      "d": "2026-10-28"
     },
     "/p/mizuno-stmax230-driver": {
       "h": "a766162aad89eb64",
@@ -1995,16 +1995,36 @@
       "d": "2026-10-27"
     },
     "/p/bridgestone-v300x-women-iron": {
-      "h": "7605930c3de1a1ac",
-      "d": "2026-10-27"
+      "h": "eabbefcd5f18b31c",
+      "d": "2026-10-28"
     },
     "/p/prgr-superegg-women-iron": {
-      "h": "80affe802549edd9",
-      "d": "2026-10-27"
+      "h": "ce4238ef968f789a",
+      "d": "2026-10-28"
+    },
+    "/p/taylormade-qi4dmax-driver": {
+      "h": "a59172b4808f6359",
+      "d": "2026-10-28"
+    },
+    "/p/callaway-quantum-maxd-driver": {
+      "h": "2dc4d6a7217cca47",
+      "d": "2026-10-28"
+    },
+    "/p/pxg-lightning-max10k-driver": {
+      "h": "c78d2d53489c0b11",
+      "d": "2026-10-28"
+    },
+    "/p/pxg-lightning-tourmid-driver": {
+      "h": "851e27826759a0ae",
+      "d": "2026-10-28"
+    },
+    "/p/honma-beres09-driver": {
+      "h": "4d9042066e09686f",
+      "d": "2026-10-28"
     },
     "/c/driver": {
-      "h": "ac2fdd5e9c9605e7",
-      "d": "2026-10-26"
+      "h": "1110023069b8f4db",
+      "d": "2026-10-28"
     },
     "/c/wood": {
       "h": "7787d1d95b947a98",
@@ -2059,8 +2079,8 @@
       "d": "2026-10-27"
     },
     "/g/driver-recommend-2026": {
-      "h": "fcd23903c1f53b3f",
-      "d": "2026-10-27"
+      "h": "0634d387e3d3182f",
+      "d": "2026-10-28"
     },
     "/g/fairway-wood-recommend": {
       "h": "5eef2b80beccd89d",
@@ -2139,16 +2159,16 @@
       "d": "2026-10-27"
     },
     "/g/driver-recommend-2026-beginner": {
-      "h": "bb57a313c84e4be1",
-      "d": "2026-10-26"
+      "h": "02fa2b671faba99e",
+      "d": "2026-10-28"
     },
     "/g/driver-recommend-2026-intermediate": {
-      "h": "133cf5f8d693f304",
-      "d": "2026-10-25"
+      "h": "e8f5529bf00cf0f3",
+      "d": "2026-10-28"
     },
     "/g/driver-recommend-2026-advanced": {
-      "h": "3581f758440f56e5",
-      "d": "2026-10-25"
+      "h": "0b9a90af76ff2359",
+      "d": "2026-10-28"
     },
     "/g/driver-recommend-2026-pro": {
       "h": "798d7596d3d368c3",
@@ -2343,8 +2363,8 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "691430e88a192a62",
-      "d": "2026-10-27"
+      "h": "62aa8812a852d7ba",
+      "d": "2026-10-28"
     },
     "/about": {
       "h": "062d2326b8040ec7",
@@ -2403,8 +2423,8 @@
       "d": "2026-10-26"
     },
     "/vs/callaway-elyte-driver-vs-callaway-quantum-tdmax-driver": {
-      "h": "094ae8bda9482ea3",
-      "d": "2026-10-25"
+      "h": "b1b04fa1322800a5",
+      "d": "2026-10-28"
     },
     "/vs/callaway-elyte-hybrid-vs-xxio14-hybrid": {
       "h": "ee35b28db023d08d",
@@ -2459,12 +2479,12 @@
       "d": "2026-10-27"
     },
     "/vs/callaway-paradym-driver-vs-ping-g440-driver": {
-      "h": "85c9551f2632adf0",
-      "d": "2026-10-25"
+      "h": "3d2f122beb8fe92d",
+      "d": "2026-10-28"
     },
     "/vs/callaway-quantum-td-driver-vs-callaway-quantum-tdmax-driver": {
-      "h": "ef04811a79a2aa42",
-      "d": "2026-10-25"
+      "h": "d7ecc78ff561fed5",
+      "d": "2026-10-28"
     },
     "/vs/callaway-quantum-women-hybrid-vs-callaway-elyte-women-hybrid": {
       "h": "a217b2e23fc1c19f",
@@ -2707,8 +2727,8 @@
       "d": "2026-10-23"
     },
     "/vs/ping-g440-driver-vs-majesty-prestigio13-driver": {
-      "h": "287aaae8ab8d9e9e",
-      "d": "2026-10-25"
+      "h": "6ecc48eacbe759ad",
+      "d": "2026-10-28"
     },
     "/vs/ping-g440-women-hybrid-vs-taylormade-stealth-women-rescue": {
       "h": "4f8f07c047730d39",
@@ -2719,12 +2739,12 @@
       "d": "2026-10-24"
     },
     "/vs/ping-g440lst-driver-vs-ping-g440-driver": {
-      "h": "d44530fcdcdeade5",
-      "d": "2026-10-25"
+      "h": "6610fae1659e8fee",
+      "d": "2026-10-28"
     },
     "/vs/ping-g440lst-driver-vs-titleist-gt3-driver": {
-      "h": "7fb5532f2f186f14",
-      "d": "2026-10-25"
+      "h": "8a9de83b7961e326",
+      "d": "2026-10-28"
     },
     "/vs/ping-g440max-women-driver-vs-callaway-quantum-maxfast-women-driver": {
       "h": "c1517410cec8b6d6",
@@ -3766,11 +3786,6 @@
       "d": "2026-10-27"
     },
     {
-      "url": "/g/driver-recommend-2026",
-      "kind": "updated",
-      "d": "2026-10-27"
-    },
-    {
       "url": "/g/rangefinder-recommend",
       "kind": "updated",
       "d": "2026-10-27"
@@ -4511,16 +4526,6 @@
       "d": "2026-10-27"
     },
     {
-      "url": "/p/bridgestone-v300x-women-iron",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/prgr-superegg-women-iron",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
       "url": "/c/iron",
       "kind": "updated",
       "d": "2026-10-27"
@@ -4546,14 +4551,174 @@
       "d": "2026-10-27"
     },
     {
-      "url": "/",
+      "url": "/vs/missile-axg-women-iron-vs-ping-gle4-women-iron",
       "kind": "updated",
       "d": "2026-10-27"
     },
     {
-      "url": "/vs/missile-axg-women-iron-vs-ping-gle4-women-iron",
+      "url": "/p/ping-g440-driver",
       "kind": "updated",
-      "d": "2026-10-27"
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/taylormade-sim2max-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/majesty-prestigio13-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/callaway-quantum-tdmax-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/xxio14plus-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/titleist-gt3-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/cobra-ds-adapt-maxk-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/callaway-quantum-max-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/yamaha-rmx-vdm-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/ping-g440sft-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/ping-g440k-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/ping-g430max10k-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/cobra-optm-maxk-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/xxio14-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/bridgestone-v300x-women-iron",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/prgr-superegg-women-iron",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/taylormade-qi4dmax-driver",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/callaway-quantum-maxd-driver",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/pxg-lightning-max10k-driver",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/pxg-lightning-tourmid-driver",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/honma-beres09-driver",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/c/driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/g/driver-recommend-2026",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/g/driver-recommend-2026-beginner",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/g/driver-recommend-2026-intermediate",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/g/driver-recommend-2026-advanced",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/vs/callaway-elyte-driver-vs-callaway-quantum-tdmax-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/vs/callaway-paradym-driver-vs-ping-g440-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/vs/callaway-quantum-td-driver-vs-callaway-quantum-tdmax-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/vs/ping-g440-driver-vs-majesty-prestigio13-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/vs/ping-g440lst-driver-vs-ping-g440-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/vs/ping-g440lst-driver-vs-titleist-gt3-driver",
+      "kind": "updated",
+      "d": "2026-10-28"
     }
   ]
 }
