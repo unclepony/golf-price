@@ -135,8 +135,8 @@
       "d": "2026-10-25"
     },
     "/p/ping-g440-max-fairway": {
-      "h": "9c261f8f8a67eccf",
-      "d": "2026-10-22"
+      "h": "4290cfe0bc8e3887",
+      "d": "2026-10-27"
     },
     "/p/taylormade-qi35-fairway": {
       "h": "181f2a94cd6841fe",
@@ -531,16 +531,16 @@
       "d": "2026-10-22"
     },
     "/p/taylormade-sim2max-fairway": {
-      "h": "1b289f3b35c7cbd4",
-      "d": "2026-10-22"
+      "h": "8a9662d42086fc27",
+      "d": "2026-10-27"
     },
     "/p/mizuno-stmax230-fairway": {
       "h": "a2c69b74d60efa62",
       "d": "2026-10-22"
     },
     "/p/taylormade-qi10-fairway": {
-      "h": "210012ec5747e954",
-      "d": "2026-10-22"
+      "h": "074a55bfe64209c1",
+      "d": "2026-10-27"
     },
     "/p/majesty-royalgold-fairway": {
       "h": "b0ce28a21e095d79",
@@ -567,8 +567,8 @@
       "d": "2026-10-26"
     },
     "/p/srixon-zxi-fairway": {
-      "h": "968a306cbd62f2a4",
-      "d": "2026-10-26"
+      "h": "ea06596e6e8cc2fa",
+      "d": "2026-10-27"
     },
     "/p/callaway-roguest-fairway": {
       "h": "18ffa2a735b61a28",
@@ -667,8 +667,8 @@
       "d": "2026-10-26"
     },
     "/p/majesty-royal-women-fairway": {
-      "h": "18e467da3c1863be",
-      "d": "2026-10-26"
+      "h": "f9138b152c0e7eed",
+      "d": "2026-10-27"
     },
     "/p/honma-nx-women-fairway": {
       "h": "26930873a45a5341",
@@ -711,12 +711,12 @@
       "d": "2026-10-26"
     },
     "/p/taylormade-qi4d-women-fairway": {
-      "h": "c5d206dfec5054c3",
-      "d": "2026-10-26"
+      "h": "5862cc236fad764e",
+      "d": "2026-10-27"
     },
     "/p/callaway-gbb-women-fairway": {
-      "h": "43be6a5185804622",
-      "d": "2026-10-26"
+      "h": "436bd3bfb651ac1e",
+      "d": "2026-10-27"
     },
     "/p/missile-axg-women-hybrid": {
       "h": "d497ff0dbc28fa53",
@@ -1919,55 +1919,75 @@
       "d": "2026-10-27"
     },
     "/p/footjoy-weathersof-women-glove": {
-      "h": "48f570c00015e4a4",
+      "h": "51482d3f7c37b49b",
       "d": "2026-10-27"
     },
     "/p/taylormade-stratus-soft-glove": {
-      "h": "a8a5b778ee9a884c",
+      "h": "ad93700672850737",
       "d": "2026-10-27"
     },
     "/p/taylormade-dualflex-women-pair-glove": {
-      "h": "27175095481ebdd4",
+      "h": "d3300ef44b9e4daf",
       "d": "2026-10-27"
     },
     "/p/taylormade-t-heat-pair-glove": {
-      "h": "6841cdb873a3d675",
+      "h": "6e2da3bd4dcc43e8",
       "d": "2026-10-27"
     },
     "/p/xxio-premium-sheepskin-glove": {
-      "h": "a74b5b3ed2495ae7",
+      "h": "01dad20b764642ab",
       "d": "2026-10-27"
     },
     "/p/xxio-nanofront-glove": {
-      "h": "880a69345b02efa4",
+      "h": "1c60ecdd0ab51eea",
       "d": "2026-10-27"
     },
     "/p/mizuno-amazing-leather-glove": {
-      "h": "90134b3081ffe88c",
+      "h": "9fda7b266f66d873",
       "d": "2026-10-27"
     },
     "/p/bridgestone-glg76j-women-glove": {
-      "h": "0342764741f941ed",
+      "h": "89ae03e82d3868f3",
       "d": "2026-10-27"
     },
     "/p/adidas-multifit-360-glove": {
-      "h": "23daae5fb6c41230",
+      "h": "77ce5c34669a7ab3",
       "d": "2026-10-27"
     },
     "/p/callaway-winter-glory-women-pair-glove": {
-      "h": "0ae1710ad60d3fba",
+      "h": "52480c9dc3702aea",
       "d": "2026-10-27"
     },
     "/p/callaway-winter-soft-fur-women-pair-glove": {
-      "h": "a90a4b5e96331b4d",
+      "h": "f3ba42872ee2ab44",
       "d": "2026-10-27"
     },
     "/p/inbirdie-tempo-plus": {
-      "h": "5fe2b6ab0f0f7720",
+      "h": "86868ef6d7cee517",
       "d": "2026-10-27"
     },
     "/p/eyeline-speed-trap-2": {
-      "h": "5b5fcfae20193cd3",
+      "h": "0bdb33e234b740dc",
+      "d": "2026-10-27"
+    },
+    "/p/xxio-prime-women-fairway": {
+      "h": "304ecbbed7e03b74",
+      "d": "2026-10-27"
+    },
+    "/p/yonex-ezonegt3-women-fairway": {
+      "h": "b4d40c5057fd2039",
+      "d": "2026-10-27"
+    },
+    "/p/bridgestone-blady-women-fairway": {
+      "h": "3b73e3e17233b2de",
+      "d": "2026-10-27"
+    },
+    "/p/majesty-prestigio13-women-fairway": {
+      "h": "fcdc545be8a34679",
+      "d": "2026-10-27"
+    },
+    "/p/majesty-sublime-women-fairway": {
+      "h": "710a3fe935ed03c6",
       "d": "2026-10-27"
     },
     "/c/driver": {
@@ -1975,8 +1995,8 @@
       "d": "2026-10-26"
     },
     "/c/wood": {
-      "h": "6c6260d462efc9c1",
-      "d": "2026-10-26"
+      "h": "7787d1d95b947a98",
+      "d": "2026-10-27"
     },
     "/c/utility": {
       "h": "6add1e22e6cd67b8",
@@ -2039,7 +2059,7 @@
       "d": "2026-10-27"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "b5acb22b0cb0b55d",
+      "h": "3756a8d2eb864d0b",
       "d": "2026-10-27"
     },
     "/g/iron-recommend": {
@@ -2155,20 +2175,20 @@
       "d": "2026-10-24"
     },
     "/g/womens-fairway-wood-recommend-beginner": {
-      "h": "3bd9d3250e820544",
-      "d": "2026-10-24"
+      "h": "dbb950422ea2921b",
+      "d": "2026-10-27"
     },
     "/g/womens-fairway-wood-recommend-intermediate": {
-      "h": "87ce92824ea79b6e",
-      "d": "2026-10-24"
+      "h": "fdb29c99342869cd",
+      "d": "2026-10-27"
     },
     "/g/womens-fairway-wood-recommend-advanced": {
-      "h": "9c26a9b84eabeb93",
-      "d": "2026-10-24"
+      "h": "7bc302a6f7c40289",
+      "d": "2026-10-27"
     },
     "/g/womens-fairway-wood-recommend-pro": {
-      "h": "53f4810836544e2c",
-      "d": "2026-10-24"
+      "h": "01d52a6c6e3c7ec9",
+      "d": "2026-10-27"
     },
     "/g/iron-recommend-beginner": {
       "h": "41656753c6a88512",
@@ -2311,7 +2331,7 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "9196605acf7fd9e3",
+      "h": "88db31c9180f0e9b",
       "d": "2026-10-27"
     },
     "/about": {
@@ -2419,12 +2439,12 @@
       "d": "2026-10-22"
     },
     "/vs/callaway-gbb-women-fairway-vs-ping-gle4-women-fairway": {
-      "h": "ef09f403c037e211",
-      "d": "2026-10-24"
+      "h": "a117b2b6ac66d9ec",
+      "d": "2026-10-27"
     },
     "/vs/callaway-gbb-women-fairway-vs-xxio14-women-fairway": {
-      "h": "3b71fb7bdabfc407",
-      "d": "2026-10-24"
+      "h": "f2c0e6d830c60ed5",
+      "d": "2026-10-27"
     },
     "/vs/callaway-paradym-driver-vs-ping-g440-driver": {
       "h": "85c9551f2632adf0",
@@ -3479,11 +3499,6 @@
       "d": "2026-10-26"
     },
     {
-      "url": "/p/majesty-royal-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
       "url": "/p/honma-nx-women-fairway",
       "kind": "updated",
       "d": "2026-10-26"
@@ -3530,16 +3545,6 @@
     },
     {
       "url": "/p/onoff-lp423-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/p/taylormade-qi4d-women-fairway",
-      "kind": "updated",
-      "d": "2026-10-26"
-    },
-    {
-      "url": "/p/callaway-gbb-women-fairway",
       "kind": "updated",
       "d": "2026-10-26"
     },
@@ -3939,61 +3944,6 @@
       "d": "2026-10-27"
     },
     {
-      "url": "/p/footjoy-weathersof-women-glove",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/taylormade-stratus-soft-glove",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/taylormade-dualflex-women-pair-glove",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/taylormade-t-heat-pair-glove",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/xxio-premium-sheepskin-glove",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/xxio-nanofront-glove",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/mizuno-amazing-leather-glove",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/bridgestone-glg76j-women-glove",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/adidas-multifit-360-glove",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/callaway-winter-glory-women-pair-glove",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/callaway-winter-soft-fur-women-pair-glove",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
       "url": "/c/glove",
       "kind": "updated",
       "d": "2026-10-27"
@@ -4045,11 +3995,6 @@
     },
     {
       "url": "/g/utility-recommend",
-      "kind": "updated",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/g/womens-fairway-wood-recommend",
       "kind": "updated",
       "d": "2026-10-27"
     },
@@ -4159,16 +4104,6 @@
       "d": "2026-10-27"
     },
     {
-      "url": "/p/inbirdie-tempo-plus",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
-      "url": "/p/eyeline-speed-trap-2",
-      "kind": "new",
-      "d": "2026-10-27"
-    },
-    {
       "url": "/c/practice",
       "kind": "updated",
       "d": "2026-10-27"
@@ -4184,7 +4119,172 @@
       "d": "2026-10-27"
     },
     {
+      "url": "/p/ping-g440-max-fairway",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/taylormade-sim2max-fairway",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/taylormade-qi10-fairway",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/srixon-zxi-fairway",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/majesty-royal-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/taylormade-qi4d-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/callaway-gbb-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/footjoy-weathersof-women-glove",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/taylormade-stratus-soft-glove",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/taylormade-dualflex-women-pair-glove",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/taylormade-t-heat-pair-glove",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/xxio-premium-sheepskin-glove",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/xxio-nanofront-glove",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/mizuno-amazing-leather-glove",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/bridgestone-glg76j-women-glove",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/adidas-multifit-360-glove",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/callaway-winter-glory-women-pair-glove",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/callaway-winter-soft-fur-women-pair-glove",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/inbirdie-tempo-plus",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/eyeline-speed-trap-2",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/xxio-prime-women-fairway",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/yonex-ezonegt3-women-fairway",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/bridgestone-blady-women-fairway",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/majesty-prestigio13-women-fairway",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/p/majesty-sublime-women-fairway",
+      "kind": "new",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/c/wood",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
       "url": "/",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/vs/callaway-gbb-women-fairway-vs-ping-gle4-women-fairway",
+      "kind": "updated",
+      "d": "2026-10-27"
+    },
+    {
+      "url": "/vs/callaway-gbb-women-fairway-vs-xxio14-women-fairway",
       "kind": "updated",
       "d": "2026-10-27"
     }
