@@ -159,7 +159,7 @@
       "d": "2026-10-28"
     },
     "/p/callaway-elyte-hybrid": {
-      "h": "61deedccc835fc41",
+      "h": "bf587f8c32fb23b2",
       "d": "2026-10-28"
     },
     "/p/cobra-optm-hybrid": {
@@ -599,7 +599,7 @@
       "d": "2026-10-28"
     },
     "/p/majesty-royalgold-hybrid": {
-      "h": "7af078a339439495",
+      "h": "9c088aff488132e5",
       "d": "2026-10-28"
     },
     "/p/ping-g430-hybrid": {
@@ -607,19 +607,19 @@
       "d": "2026-10-28"
     },
     "/p/taylormade-qi10-rescue": {
-      "h": "2b3ecab458d42886",
+      "h": "45f38e046012753c",
       "d": "2026-10-28"
     },
     "/p/honma-beres-hybrid": {
-      "h": "de450b80e4fb417a",
+      "h": "efa0b9cf41cf0d74",
       "d": "2026-10-28"
     },
     "/p/mizuno-jpxone-hybrid": {
-      "h": "29c260abea672430",
+      "h": "3430ed4470089f13",
       "d": "2026-10-28"
     },
     "/p/xxio14-hybrid": {
-      "h": "1c722777fba02214",
+      "h": "0f7b7e2b5746c2c7",
       "d": "2026-10-28"
     },
     "/p/srixon-zxi-hybrid": {
@@ -1335,7 +1335,7 @@
       "d": "2026-10-28"
     },
     "/p/cobra-darkspeed-hybrid": {
-      "h": "54d7ce56d65e4d19",
+      "h": "982c0a51e7bc7167",
       "d": "2026-10-28"
     },
     "/p/honma-tw767-hybrid": {
@@ -1343,7 +1343,7 @@
       "d": "2026-10-28"
     },
     "/p/honma-beres09-hybrid": {
-      "h": "7e25b7a1b7e7fbe4",
+      "h": "440d798a48f8915c",
       "d": "2026-10-28"
     },
     "/p/majesty-conquest-hybrid": {
@@ -1351,7 +1351,7 @@
       "d": "2026-10-28"
     },
     "/p/majesty-prestigio13-hybrid": {
-      "h": "403ef2c985c98e07",
+      "h": "29fea832bb548ff4",
       "d": "2026-10-28"
     },
     "/p/kasco-ufo-hybrid": {
@@ -1367,7 +1367,7 @@
       "d": "2026-10-28"
     },
     "/p/taylormade-qi10max-rescue": {
-      "h": "5a130a380bccd8f3",
+      "h": "20044c787b726155",
       "d": "2026-10-28"
     },
     "/p/ping-g730-iron": {
@@ -1627,7 +1627,7 @@
       "d": "2026-10-28"
     },
     "/p/yonex-ezonegt-hybrid": {
-      "h": "3b6518bda937d52b",
+      "h": "b1b99cb4d81b0368",
       "d": "2026-10-28"
     },
     "/p/majesty-w-moment-wedge": {
@@ -2046,6 +2046,22 @@
       "h": "928d8e8d338047fd",
       "d": "2026-10-28"
     },
+    "/p/bridgestone-bx2ht-hybrid": {
+      "h": "04259d521c9b88de",
+      "d": "2026-10-28"
+    },
+    "/p/onoff-cbt526-hybrid": {
+      "h": "3ebe43ca09039361",
+      "d": "2026-10-28"
+    },
+    "/p/pxg-lightning-hybrid": {
+      "h": "8025e72141c65fb7",
+      "d": "2026-10-28"
+    },
+    "/p/yamaha-rmxvd-hybrid": {
+      "h": "c4156dd474ae27aa",
+      "d": "2026-10-28"
+    },
     "/c/driver": {
       "h": "e3bab568e203ab71",
       "d": "2026-10-28"
@@ -2055,7 +2071,7 @@
       "d": "2026-10-28"
     },
     "/c/utility": {
-      "h": "952be37408d8b52e",
+      "h": "fc7639e793f4bfa8",
       "d": "2026-10-28"
     },
     "/c/iron": {
@@ -2111,7 +2127,7 @@
       "d": "2026-10-28"
     },
     "/g/utility-recommend": {
-      "h": "4b7ae53d2336945f",
+      "h": "3f3474c93961fcfb",
       "d": "2026-10-28"
     },
     "/g/womens-fairway-wood-recommend": {
@@ -2215,16 +2231,16 @@
       "d": "2026-10-25"
     },
     "/g/utility-recommend-beginner": {
-      "h": "2db13d32ebacca2a",
-      "d": "2026-10-25"
+      "h": "fd1db97e61af601a",
+      "d": "2026-10-28"
     },
     "/g/utility-recommend-intermediate": {
-      "h": "9e1bb9a632d8d5ec",
+      "h": "a8c48a258fad978f",
       "d": "2026-10-28"
     },
     "/g/utility-recommend-advanced": {
-      "h": "7d4e6a1a7d800b35",
-      "d": "2026-10-24"
+      "h": "5f5733b834e25ac8",
+      "d": "2026-10-28"
     },
     "/g/utility-recommend-pro": {
       "h": "e9f338853458e050",
@@ -2387,7 +2403,7 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "dc3612e509368f62",
+      "h": "aec30336c97455b8",
       "d": "2026-10-28"
     },
     "/about": {
@@ -2451,7 +2467,7 @@
       "d": "2026-10-28"
     },
     "/vs/callaway-elyte-hybrid-vs-xxio14-hybrid": {
-      "h": "b7a4cd3a7392ace2",
+      "h": "d1adf04b042cc717",
       "d": "2026-10-28"
     },
     "/vs/callaway-elyte-maxfast-women-driver-vs-ping-gle3-women-driver": {
@@ -2671,7 +2687,7 @@
       "d": "2026-10-25"
     },
     "/vs/mizuno-jpxone-hybrid-vs-mizuno-stmax230-hybrid": {
-      "h": "49e87e38de22757c",
+      "h": "932776136a00a8a3",
       "d": "2026-10-28"
     },
     "/vs/mizuno-jpxq-women-hybrid-vs-taylormade-qi35maxlite-women-hybrid": {
@@ -2883,7 +2899,7 @@
       "d": "2026-10-24"
     },
     "/vs/taylormade-qi10-rescue-vs-xxio14-hybrid": {
-      "h": "4d48f79d9ef2bd18",
+      "h": "fb1d16295a2b547d",
       "d": "2026-10-28"
     },
     "/vs/taylormade-qi10ls-driver-vs-taylormade-qi4d-driver": {
@@ -2907,8 +2923,8 @@
       "d": "2026-10-22"
     },
     "/vs/taylormade-qi35-rescue-vs-taylormade-qi10-rescue": {
-      "h": "7caebcfee40b1bb7",
-      "d": "2026-10-22"
+      "h": "1521cd5344509074",
+      "d": "2026-10-28"
     },
     "/vs/taylormade-qi4d-driver-vs-taylormade-qi35-driver": {
       "h": "de36d56bf03ad5ce",
@@ -3023,7 +3039,7 @@
       "d": "2026-10-24"
     },
     "/vs/xxio13x-hybrid-vs-xxio14-hybrid": {
-      "h": "107f016eb1b5c67f",
+      "h": "536a539d4526f55f",
       "d": "2026-10-28"
     },
     "/vs/xxio14-women-fairway-vs-mizuno-jpxq2-women-fairway": {
@@ -3080,22 +3096,12 @@
       "d": "2026-10-28"
     },
     {
-      "url": "/",
-      "kind": "updated",
-      "d": "2026-10-28"
-    },
-    {
       "url": "/c/driver",
       "kind": "updated",
       "d": "2026-10-28"
     },
     {
       "url": "/c/wood",
-      "kind": "updated",
-      "d": "2026-10-28"
-    },
-    {
-      "url": "/c/utility",
       "kind": "updated",
       "d": "2026-10-28"
     },
@@ -3141,11 +3147,6 @@
     },
     {
       "url": "/g/fairway-wood-recommend",
-      "kind": "updated",
-      "d": "2026-10-28"
-    },
-    {
-      "url": "/g/utility-recommend",
       "kind": "updated",
       "d": "2026-10-28"
     },
@@ -3376,11 +3377,6 @@
     },
     {
       "url": "/p/taylormade-qi35-rescue",
-      "kind": "updated",
-      "d": "2026-10-28"
-    },
-    {
-      "url": "/p/callaway-elyte-hybrid",
       "kind": "updated",
       "d": "2026-10-28"
     },
@@ -3730,32 +3726,7 @@
       "d": "2026-10-28"
     },
     {
-      "url": "/p/majesty-royalgold-hybrid",
-      "kind": "updated",
-      "d": "2026-10-28"
-    },
-    {
       "url": "/p/ping-g430-hybrid",
-      "kind": "updated",
-      "d": "2026-10-28"
-    },
-    {
-      "url": "/p/taylormade-qi10-rescue",
-      "kind": "updated",
-      "d": "2026-10-28"
-    },
-    {
-      "url": "/p/honma-beres-hybrid",
-      "kind": "updated",
-      "d": "2026-10-28"
-    },
-    {
-      "url": "/p/mizuno-jpxone-hybrid",
-      "kind": "updated",
-      "d": "2026-10-28"
-    },
-    {
-      "url": "/p/xxio14-hybrid",
       "kind": "updated",
       "d": "2026-10-28"
     },
@@ -4465,27 +4436,12 @@
       "d": "2026-10-28"
     },
     {
-      "url": "/p/cobra-darkspeed-hybrid",
-      "kind": "updated",
-      "d": "2026-10-28"
-    },
-    {
       "url": "/p/honma-tw767-hybrid",
       "kind": "updated",
       "d": "2026-10-28"
     },
     {
-      "url": "/p/honma-beres09-hybrid",
-      "kind": "updated",
-      "d": "2026-10-28"
-    },
-    {
       "url": "/p/majesty-conquest-hybrid",
-      "kind": "updated",
-      "d": "2026-10-28"
-    },
-    {
-      "url": "/p/majesty-prestigio13-hybrid",
       "kind": "updated",
       "d": "2026-10-28"
     },
@@ -4501,11 +4457,6 @@
     },
     {
       "url": "/p/ping-g430hl-hybrid",
-      "kind": "updated",
-      "d": "2026-10-28"
-    },
-    {
-      "url": "/p/taylormade-qi10max-rescue",
       "kind": "updated",
       "d": "2026-10-28"
     },
@@ -4761,11 +4712,6 @@
     },
     {
       "url": "/p/prgr-superegg-hybrid",
-      "kind": "updated",
-      "d": "2026-10-28"
-    },
-    {
-      "url": "/p/yonex-ezonegt-hybrid",
       "kind": "updated",
       "d": "2026-10-28"
     },
@@ -5756,6 +5702,136 @@
     },
     {
       "url": "/p/prgr-superegg-women-iron",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/callaway-elyte-hybrid",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/majesty-royalgold-hybrid",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/taylormade-qi10-rescue",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/honma-beres-hybrid",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/mizuno-jpxone-hybrid",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/xxio14-hybrid",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/cobra-darkspeed-hybrid",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/honma-beres09-hybrid",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/majesty-prestigio13-hybrid",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/taylormade-qi10max-rescue",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/yonex-ezonegt-hybrid",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/bridgestone-bx2ht-hybrid",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/onoff-cbt526-hybrid",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/pxg-lightning-hybrid",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/p/yamaha-rmxvd-hybrid",
+      "kind": "new",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/c/utility",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/g/utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/g/utility-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/g/utility-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/g/utility-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/vs/callaway-elyte-hybrid-vs-xxio14-hybrid",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/vs/mizuno-jpxone-hybrid-vs-mizuno-stmax230-hybrid",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/vs/taylormade-qi10-rescue-vs-xxio14-hybrid",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/vs/taylormade-qi35-rescue-vs-taylormade-qi10-rescue",
+      "kind": "updated",
+      "d": "2026-10-28"
+    },
+    {
+      "url": "/vs/xxio13x-hybrid-vs-xxio14-hybrid",
       "kind": "updated",
       "d": "2026-10-28"
     }
