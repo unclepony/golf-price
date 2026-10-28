@@ -41,8 +41,11 @@ const SEEDING = !prevState; // 처음 만들 때는 기존 updated 값을 씨앗
 // (방식만 바뀌어 모든 페이지 날짜가 한꺼번에 바뀌지 않게). v2(2026-10-25): 상품 수·다른 가이드 썸네일·가격대 칸·로켓배송 표시 제외
 // v3(2026-10-26 gp-1026-1): 현재 판매가로 정해지는 문장·묶음(<!--pdep--> 표시: '가격별' 탭, '예산을 줄이고 싶다면', '가격대는 ○○') 제외.
 // 판매가 때문에 순위·판매 가능 여부가 바뀐 것은 그대로 날짜를 바꾼다
-const KEY_V = 3;
+// v4(2026-10-29 gp-1029-2): 상품 FAQ '비슷한 모델과 차이'의 '가격대는 ○○, △△입니다'(<!--pdep4-->, 10/28 d018691 에서 빠져 있던 것)와
+// /jp 계산기 환율(data-rate, 매일 ECB 값) 제외. 10/29 매일 갱신에서 날짜가 바뀐 73쪽 중 11쪽이 이 두 가지뿐이었다
+const KEY_V = 4;
 const pdep = (t) => (t ? `<!--pdep-->${t}<!--/pdep-->` : '');
+const pdep4 = (t) => (t ? `<!--pdep4-->${t}<!--/pdep4-->` : '');
 const PREV_KEY_V = prevState?.keyV ?? 1;
 const state = { _설명: 'build.mjs 가 관리한다. pages: 주소별 본문 지문(h)과 콘텐츠 업데이트일(d). pending: IndexNow 로 보낼 주소(콘텐츠가 바뀐·새로 생긴·삭제된 페이지). 직접 고치지 않는다.', keyV: KEY_V, pages: {}, pending: prevState?.pending ?? [] };
 const pageDates = {};
@@ -72,6 +75,11 @@ function contentKey(html, v = KEY_V) {
     .replace(/\d+\.\d+ 확인/g, '# 확인')
     .replace(/ stale/g, '')
     .replace(/ · 오래된 가격/g, '');
+  // v4 표시(<!--pdep4-->)·환율은 v3 이하로 계산할 때 표시만 지운다(판 바뀐 첫 빌드에서 예전 지문과 같게)
+  main =
+    v >= 4
+      ? main.replace(/<!--pdep4-->[\s\S]*?<!--\/pdep4-->/g, '').replace(/ data-rate="[\d.]*"/g, '')
+      : main.replace(/<!--\/?pdep4-->/g, '');
   // v3 표시(<!--pdep-->)는 v2 이하로 계산할 때 표시만 지운다(판 바뀐 첫 빌드에서 예전 지문과 같게)
   main =
     v >= 3
@@ -1120,7 +1128,7 @@ function productFaq(p) {
     const lv = priceLevel(p.id)?.label && priceLevel(x.id)?.label ? ` 가격대는 ${nm} ${priceLevel(p.id).label}, ${xn} ${priceLevel(x.id).label}입니다.` : '';
     const a1 = freshPrice(p.id), a2 = freshPrice(x.id);
     const pr = a1 && a2 ? ` 쿠팡 판매가는 ${won(a1.won)}(${dayLabel(a1.d)} 확인)과 ${won(a2.won)}(${dayLabel(a2.d)} 확인)입니다.` : '';
-    return { q: `${nm}${hasBatchim(nm) ? '과' : '와'} ${xn}의 차이는?`, a: `${same}${diff}${lv}`, pr, x: x.id };
+    return { q: `${nm}${hasBatchim(nm) ? '과' : '와'} ${xn}의 차이는?`, a: `${same}${diff}`, lv, pr, x: x.id };
   });
 }
 const variantsNeedMap = readJson(join(ROOT, 'config', 'variants.json'), {});
@@ -1506,13 +1514,13 @@ ${vsProductBlock(p.id)}
 ${newsBlock(p.id)}
 <section class="prose"><h2>${esc(cat.name)} 고르는 법</h2><p>${esc(cat.intro)}</p>${figure(p.category)}<ul>${cat.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
 </details>
-${faq.length ? `<section class="prose pd-faq"><h2>자주 묻는 질문</h2>${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}${f.pr ? phist(esc(f.pr)) : ''} <a href="/p/${f.x}">${esc(byId[f.x].p.name)} 보기 ›</a></p>`).join('')}<p class="note">점수 비교는 이 사이트의 주관적 편집 점수 기준이며, 가격은 확인일 기준이라 현재 가격과 다를 수 있습니다.</p></section>` : ''}
+${faq.length ? `<section class="prose pd-faq"><h2>자주 묻는 질문</h2>${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}${pdep4(esc(f.lv))}${f.pr ? phist(esc(f.pr)) : ''} <a href="/p/${f.x}">${esc(byId[f.x].p.name)} 보기 ›</a></p>`).join('')}<p class="note">점수 비교는 이 사이트의 주관적 편집 점수 기준이며, 가격은 확인일 기준이라 현재 가격과 다를 수 있습니다.</p></section>` : ''}
 </section>
 ${pdVideo}
 <div id="history">${priceHistory(p, hist, a)}</div>`;
   writeText(
     join(OUT, 'p', `${p.id}.html`),
-    layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' }, ld: [crumbLd([['홈', '/'], [cat.name, `/c/${p.category}`], [p.name, `/p/${p.id}`]]), ...(faq.length ? [faqLd(faq.map((f) => ({ q: f.q, a: f.a })))] : [])] }),
+    layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' }, ld: [crumbLd([['홈', '/'], [cat.name, `/c/${p.category}`], [p.name, `/p/${p.id}`]]), ...(faq.length ? [faqLd(faq.map((f) => ({ q: f.q, a: f.a + f.lv })))] : [])] }),
   );
 }
 
