@@ -1629,7 +1629,7 @@ ${crit.map((_, i) => `<td class="sc">${pk.scores ? dots(pk.scores[i]) : '-'}</td
         ...(g.faq?.length ? [faqLd(g.faq)] : []),
       ],
       body: `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${guideCat(g)?.id}">${esc(guideCat(g)?.name ?? '')}</a>${g.gender && g.gender !== '공용' ? ` › ${esc(g.gender)}` : ''}</nav>
-<p class="g-kicker">${g.gender ? `<span class="gender g-${esc(g.gender)}">${esc(g.gender === '공용' ? '남녀공용' : g.gender)}</span>` : ''}${esc(guideName(g))}</p>
+<p class="g-kicker">${g.gender ? `<span class="gender g-${esc(g.gender)}">${esc(g.genderBadge ?? (g.gender === '공용' ? '남녀공용' : g.gender))}</span>` : ''}${esc(guideName(g))}</p>
 <h1>${esc(g.title)}</h1>
 ${updatedTag(g.updated)}${stageAnswer(g)}
 ${skillGroups(g).length ? '' : conclusionBox(g, rankedPicks(g), null)}
