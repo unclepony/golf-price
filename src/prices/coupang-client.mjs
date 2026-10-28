@@ -26,3 +26,17 @@ export async function search(keyword, limit = 10, imageSize = '512x512') {
   if (!r.ok || (j.rCode && j.rCode !== '0')) throw new Error(`쿠팡 API ${r.status} ${j.rCode ?? ''} ${j.rMessage ?? j.message ?? ''}`.trim());
   return (j.data?.productData ?? []).map((p) => ({ id: String(p.productId), name: p.productName, price: p.productPrice, rocket: !!p.isRocket, image: p.productImage, url: p.productUrl }));
 }
+
+// 딥링크(공식 API, POST /deeplink): 쿠팡 주소 → 파트너스 링크. subId 를 주면 본문에 같이 보낸다(실적 리포트에서 사이트별로 나눠 보는 이름).
+// unclepony-ops/scripts/coupang-api.mjs deeplink(urls, subId) 와 같은 요청. 반환 [{ from, short, landing }]
+export async function deeplink(urls, subId) {
+  const path = `${BASE}/deeplink`;
+  const r = await fetch(`${HOST}${path}`, {
+    method: 'POST',
+    headers: { Authorization: auth('POST', path, ''), 'Content-Type': 'application/json;charset=UTF-8' },
+    body: JSON.stringify({ coupangUrls: [].concat(urls), ...(subId ? { subId } : {}) }),
+  });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok || (j.rCode && j.rCode !== '0')) throw new Error(`쿠팡 API ${r.status} ${j.rCode ?? ''} ${j.rMessage ?? j.message ?? ''}`.trim());
+  return (j.data ?? []).map((x) => ({ from: x.originalUrl, short: x.shortenUrl, landing: x.landingUrl }));
+}

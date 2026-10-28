@@ -38,6 +38,14 @@ jobs:
           COUPANG_PT_API_SECRET_KEY: ${{ secrets.COUPANG_PT_API_SECRET_KEY }}
         run: node src/prices/coupang-refresh.mjs --gap 4
 
+      - name: 쿠팡 subId 시험 — 결론 표 1위 1개 링크만 subId 'choicegolf' 공식 딥링크로 (gp-1029-1, 한 번 바꾸면 건너뜀, 실패하면 지금 링크 유지)
+        continue-on-error: true
+        timeout-minutes: 3
+        env:
+          COUPANG_PT_API_KEY: ${{ secrets.COUPANG_PT_API_KEY }}
+          COUPANG_PT_API_SECRET_KEY: ${{ secrets.COUPANG_PT_API_SECRET_KEY }}
+        run: node src/prices/coupang-subid.mjs
+
       - name: 데이터 점검 → 이슈 하나에 갱신
         continue-on-error: true
         run: |
