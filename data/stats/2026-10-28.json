@@ -1,35 +1,198 @@
 {
   "date": "2026-10-28",
   "by": {
+    "act": {
+      "직접·북마크|/c/shoes": 1,
+      "캠페인: chatgpt.com|/c/iron": 1,
+      "캠페인: chatgpt.com|/c/shoes": 1,
+      "캠페인: chatgpt.com|/g/womens-iron-recommend": 1,
+      "캠페인: chatgpt.com|/g/womens-shoes-recommend": 2,
+      "캠페인: chatgpt.com|/p/callaway-roguest-maxos-women-iron": 1,
+      "캠페인: chatgpt.com|/p/galaxy-watch8-classic-golf": 3,
+      "캠페인: chatgpt.com|/p/galaxy-watch8-golf": 2,
+      "캠페인: chatgpt.com|/p/ping-g440k-driver": 1,
+      "캠페인: chatgpt.com|/p/volvik-power-soft": 1
+    },
     "asn": {
-      "AS64286 LogicWeb Inc.": 1
+      "AS327934 TUNISIE TELECOM LTE-3G Custome": 1,
+      "AS3786 LG DACOM Corporation": 2,
+      "AS4766 Korea Telecom": 2,
+      "AS4766 Sudogwonseobubonbu": 1,
+      "AS64286 LogicWeb Inc.": 1,
+      "AS9318 SK Broadband Co Ltd": 4,
+      "AS9644 SK Telecom": 10
     },
     "cty": {
+      "KR": 19,
+      "TN": 1,
       "US": 1
     },
     "depth": {
-      "/|25%": 1
+      "/c/iron|첫 화면": 2,
+      "/c/shoes|25%": 1,
+      "/c/shoes|첫 화면": 1,
+      "/g/womens-iron-recommend|첫 화면": 1,
+      "/g/womens-shoes-recommend|첫 화면": 2,
+      "/p/callaway-roguest-maxos-women-iron|75%": 1,
+      "/p/ecco-biom-tour-shoes|25%": 1,
+      "/p/galaxy-watch8-classic-golf|25%": 2,
+      "/p/galaxy-watch8-classic-golf|50%": 1,
+      "/p/galaxy-watch8-golf|첫 화면": 1,
+      "/p/ping-g440k-driver|25%": 1,
+      "/p/ping-g440k-driver|첫 화면": 1,
+      "/p/taylormade-sim2max-iron|25%": 1,
+      "/p/volvik-power-soft|50%": 1,
+      "/|25%": 2
     },
     "dev": {
-      "PC": 1
+      "PC": 7,
+      "모바일": 14
     },
     "hour": {
-      "02": 1
+      "12": 1,
+      "15": 4,
+      "18": 2,
+      "19": 2,
+      "20": 2,
+      "21": 5,
+      "02": 1,
+      "07": 4
+    },
+    "nav": {
+      "/c/iron|/p/taylormade-sim2max-iron": 1,
+      "/c/shoes|/p/ecco-biom-tour-shoes": 1
+    },
+    "out": {
+      "/g/womens-iron-recommend|mizuno-jpxq-women-iron": 1,
+      "/g/womens-iron-recommend|ping-gle3-women-iron": 1,
+      "/p/volvik-power-soft|volvik-power-soft": 1
+    },
+    "outact": {
+      "조작 후|캠페인: chatgpt.com": 3
+    },
+    "outcamp": {
+      "chatgpt.com|mizuno-jpxq-women-iron": 1,
+      "chatgpt.com|ping-gle3-women-iron": 1,
+      "chatgpt.com|volvik-power-soft": 1
+    },
+    "outref": {
+      "캠페인: chatgpt.com": 3
+    },
+    "pos": {
+      "상품 페이지": 1,
+      "점수표": 2
     },
     "pv": {
-      "/": 1
+      "/": 2,
+      "/c/iron": 2,
+      "/c/shoes": 2,
+      "/g/utility-recommend": 2,
+      "/g/womens-iron-recommend": 1,
+      "/g/womens-shoes-recommend": 2,
+      "/g/womens-utility-recommend": 2,
+      "/p/callaway-roguest-maxos-women-iron": 1,
+      "/p/ecco-biom-tour-shoes": 1,
+      "/p/galaxy-watch8-classic-golf": 3,
+      "/p/galaxy-watch8-golf": 2,
+      "/p/ping-g440k-driver": 2,
+      "/p/taylormade-sim2max-iron": 1,
+      "/p/volvik-power-soft": 1
     },
     "ref": {
-      "직접·북마크": 1
+      "직접·북마크": 3,
+      "캠페인: chatgpt.com": 14,
+      "캠페인: youtube": 4
     },
     "refland": {
-      "직접·북마크|/": 1
+      "직접·북마크|/": 2,
+      "직접·북마크|/c/shoes": 1,
+      "캠페인: chatgpt.com|/c/iron": 1,
+      "캠페인: chatgpt.com|/c/shoes": 1,
+      "캠페인: chatgpt.com|/g/womens-iron-recommend": 1,
+      "캠페인: chatgpt.com|/g/womens-shoes-recommend": 2,
+      "캠페인: chatgpt.com|/p/callaway-roguest-maxos-women-iron": 1,
+      "캠페인: chatgpt.com|/p/galaxy-watch8-classic-golf": 3,
+      "캠페인: chatgpt.com|/p/galaxy-watch8-golf": 2,
+      "캠페인: chatgpt.com|/p/ping-g440k-driver": 2,
+      "캠페인: chatgpt.com|/p/volvik-power-soft": 1,
+      "캠페인: youtube|/g/utility-recommend": 2,
+      "캠페인: youtube|/g/womens-utility-recommend": 2
+    },
+    "refurl": {
+      "chatgpt.com": 14,
+      "youtube / comment / c-utility-recommend-beginner": 2,
+      "youtube / video / c-womens-utility-recommend-beginner": 2
+    },
+    "seen": {
+      "/g/utility-recommend": 1,
+      "/g/womens-iron-recommend": 1,
+      "/g/womens-shoes-recommend": 2,
+      "/g/womens-utility-recommend": 1,
+      "/p/callaway-roguest-maxos-women-iron": 1,
+      "/p/galaxy-watch8-classic-golf": 1,
+      "/p/galaxy-watch8-golf": 2,
+      "/p/ping-g440k-driver": 1,
+      "/p/volvik-power-soft": 1
+    },
+    "seenpos": {
+      "비교표": 3,
+      "상품 페이지": 6,
+      "한 줄 결론": 2
+    },
+    "seenref": {
+      "캠페인: chatgpt.com": 9,
+      "캠페인: youtube": 2
+    },
+    "skip": {
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3
     },
     "stay": {
-      "/|10초 미만": 1
+      "/c/iron|10~30초": 1,
+      "/c/iron|10초 미만": 1,
+      "/c/shoes|10~30초": 1,
+      "/c/shoes|30초~1분": 1,
+      "/g/womens-iron-recommend|30초~1분": 1,
+      "/g/womens-shoes-recommend|10~30초": 1,
+      "/g/womens-shoes-recommend|10초 미만": 1,
+      "/p/callaway-roguest-maxos-women-iron|3분 이상": 1,
+      "/p/ecco-biom-tour-shoes|10초 미만": 1,
+      "/p/galaxy-watch8-classic-golf|10~30초": 2,
+      "/p/galaxy-watch8-classic-golf|10초 미만": 1,
+      "/p/galaxy-watch8-golf|10~30초": 1,
+      "/p/ping-g440k-driver|10~30초": 1,
+      "/p/ping-g440k-driver|10초 미만": 1,
+      "/p/taylormade-sim2max-iron|10초 미만": 1,
+      "/p/volvik-power-soft|10~30초": 1,
+      "/|10초 미만": 2
     },
     "visit": {
-      "/": 1
+      "/": 2,
+      "/c/iron": 1,
+      "/c/shoes": 2,
+      "/g/utility-recommend": 2,
+      "/g/womens-iron-recommend": 1,
+      "/g/womens-shoes-recommend": 2,
+      "/g/womens-utility-recommend": 2,
+      "/p/callaway-roguest-maxos-women-iron": 1,
+      "/p/galaxy-watch8-classic-golf": 3,
+      "/p/galaxy-watch8-golf": 2,
+      "/p/ping-g440k-driver": 2,
+      "/p/volvik-power-soft": 1
+    },
+    "xpv": {
+      "/c/iron": 2,
+      "/c/shoes": 1,
+      "/g/utility-recommend": 2,
+      "/g/womens-iron-recommend": 1,
+      "/g/womens-shoes-recommend": 2,
+      "/g/womens-utility-recommend": 2,
+      "/p/callaway-roguest-maxos-women-iron": 1,
+      "/p/ecco-biom-tour-shoes": 1,
+      "/p/galaxy-watch8-classic-golf": 3,
+      "/p/galaxy-watch8-golf": 2,
+      "/p/ping-g440k-driver": 2,
+      "/p/taylormade-sim2max-iron": 1,
+      "/p/volvik-power-soft": 1
     }
   }
 }

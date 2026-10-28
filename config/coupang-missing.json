@@ -2,117 +2,127 @@
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { since: 처음 못 찾은 날, days: 연속으로 못 찾은 날 수, last: 마지막으로 못 찾은 날 }. 5일이면 picks.json gone.",
   "callaway-quantum-max-iron": {
     "since": "2026-10-22",
-    "days": 6,
-    "last": "2026-10-28"
+    "days": 7,
+    "last": "2026-10-29"
   },
   "volvik-axia-iv": {
     "since": "2026-10-23",
-    "days": 5,
-    "last": "2026-10-28"
-  },
-  "ping-blueprint-s-iron": {
-    "since": "2026-10-24",
-    "days": 4,
-    "last": "2026-10-28"
+    "days": 6,
+    "last": "2026-10-29"
   },
   "sklz-gold-flex-trainer": {
     "since": "2026-10-24",
-    "days": 4,
-    "last": "2026-10-28"
+    "days": 5,
+    "last": "2026-10-29"
   },
   "titleist-tour-soft": {
     "since": "2026-10-24",
-    "days": 4,
-    "last": "2026-10-28"
+    "days": 5,
+    "last": "2026-10-29"
   },
   "voicecaddie-t13-pro": {
     "since": "2026-10-24",
-    "days": 4,
-    "last": "2026-10-28"
+    "days": 5,
+    "last": "2026-10-29"
   },
   "ecco-biom-c4-shoes": {
     "since": "2026-10-25",
-    "days": 3,
-    "last": "2026-10-28"
+    "days": 4,
+    "last": "2026-10-29"
   },
   "callaway-erc-soft": {
     "since": "2026-10-26",
-    "days": 2,
-    "last": "2026-10-28"
-  },
-  "callaway-supersoft": {
-    "since": "2026-10-26",
-    "days": 2,
-    "last": "2026-10-28"
+    "days": 3,
+    "last": "2026-10-29"
   },
   "ping-glide-forged-pro-wedge": {
     "since": "2026-10-26",
-    "days": 2,
-    "last": "2026-10-28"
+    "days": 3,
+    "last": "2026-10-29"
   },
   "xxio-x-iron": {
     "since": "2026-10-26",
-    "days": 2,
-    "last": "2026-10-28"
+    "days": 3,
+    "last": "2026-10-29"
   },
   "ecco-lt1-boa-women-shoes": {
     "since": "2026-10-28",
-    "days": 1,
-    "last": "2026-10-28"
+    "days": 2,
+    "last": "2026-10-29"
   },
   "majesty-royale-women-hybrid": {
     "since": "2026-10-28",
-    "days": 1,
-    "last": "2026-10-28"
+    "days": 2,
+    "last": "2026-10-29"
   },
   "ping-g430max10k-driver": {
     "since": "2026-10-28",
-    "days": 1,
-    "last": "2026-10-28"
-  },
-  "ping-g440-sft-fairway": {
-    "since": "2026-10-28",
-    "days": 1,
-    "last": "2026-10-28"
+    "days": 2,
+    "last": "2026-10-29"
   },
   "prgr-superegg-women-fairway": {
     "since": "2026-10-28",
-    "days": 1,
-    "last": "2026-10-28"
+    "days": 2,
+    "last": "2026-10-29"
   },
   "pxg-0311-blackops-driver": {
     "since": "2026-10-28",
-    "days": 1,
-    "last": "2026-10-28"
+    "days": 2,
+    "last": "2026-10-29"
   },
   "taylormade-qi10max-rescue": {
     "since": "2026-10-28",
-    "days": 1,
-    "last": "2026-10-28"
+    "days": 2,
+    "last": "2026-10-29"
   },
   "titleist-avx": {
     "since": "2026-10-28",
-    "days": 1,
-    "last": "2026-10-28"
-  },
-  "titleist-pro-v1x": {
-    "since": "2026-10-28",
-    "days": 1,
-    "last": "2026-10-28"
+    "days": 2,
+    "last": "2026-10-29"
   },
   "titleist-pro-v1x-left-dash": {
     "since": "2026-10-28",
-    "days": 1,
-    "last": "2026-10-28"
-  },
-  "titleist-trufeel": {
-    "since": "2026-10-28",
-    "days": 1,
-    "last": "2026-10-28"
+    "days": 2,
+    "last": "2026-10-29"
   },
   "majesty-prestigio13-women-fairway": {
     "since": "2026-10-28",
+    "days": 2,
+    "last": "2026-10-29"
+  },
+  "air-jordan-1-low-g-shoes": {
+    "since": "2026-10-29",
     "days": 1,
-    "last": "2026-10-28"
+    "last": "2026-10-29"
+  },
+  "bridgestone-tour-b-xs": {
+    "since": "2026-10-29",
+    "days": 1,
+    "last": "2026-10-29"
+  },
+  "callaway-jaws-raw-wedge": {
+    "since": "2026-10-29",
+    "days": 1,
+    "last": "2026-10-29"
+  },
+  "majesty-prestigio13-women-driver": {
+    "since": "2026-10-29",
+    "days": 1,
+    "last": "2026-10-29"
+  },
+  "nike-air-max-90-g-women-shoes": {
+    "since": "2026-10-29",
+    "days": 1,
+    "last": "2026-10-29"
+  },
+  "ping-g440-lst-fairway": {
+    "since": "2026-10-29",
+    "days": 1,
+    "last": "2026-10-29"
+  },
+  "yamaha-cs-hmplus-women-hybrid": {
+    "since": "2026-10-29",
+    "days": 1,
+    "last": "2026-10-29"
   }
 }
