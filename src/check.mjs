@@ -1,5 +1,5 @@
 // 매일 데이터 점검 (node src/check.mjs [--out 파일.md]): 네트워크 요청 없이 저장소 데이터만 본다.
-// 점검: 출시 연도 형식, 초보 가이드 상품의 로프트·샤프트 기준, 이미지·링크 누락, 확인한 지 14일 지난 가격, 관련 영상 목록 형식
+// 점검: 출시 연도 형식, 초보 가이드 상품의 로프트·샤프트 기준, 이미지·링크 누락, 확인한 지 14일 지난 가격·3일 안에 숨겨질 가격, 관련 영상 목록 형식
 // 결과는 마크다운으로 출력하고(GitHub Issue 본문용), 문제가 있어도 실패 코드로 끝내지 않는다(배포를 막지 않는 알림).
 import { join } from 'node:path';
 import { writeFileSync } from 'node:fs';
@@ -48,6 +48,23 @@ add(
   stale.slice(0, 30).map((x) => `${x.p.name} (\`${x.p.id}\`): ${x.d ? `${x.d} 확인, ${days(x.d)}일 전` : '확인 기록 없음'}`).concat(stale.length > 30 ? [`… 외 ${stale.length - 30}개`] : []),
   '`node src/prices/template.mjs` 로 prices.csv 에 확인할 상품 줄을 만들고, 쿠팡 파트너스 사이트에서 가격을 확인해 채운 뒤 `node src/prices/import.mjs` 를 실행하세요.',
   stale.length,
+);
+
+// 곧 숨겨질 가격: 자동 갱신(쿠팡 API)이 같은 상품을 못 찾고 있는 상품을 숨겨지기 전에 알린다
+const SOON = 3;
+const soon = products
+  .filter((p) => links[p.id] && !picks[p.id]?.gone)
+  .map((p) => ({ p, d: lastCheck(p.id) }))
+  .filter((x) => x.d && days(x.d) > STALE - SOON && days(x.d) <= STALE)
+  .sort((a, b) => a.d.localeCompare(b.d));
+add(
+  `${SOON}일 안에 숨겨질 가격 (확인한 지 ${STALE - SOON + 1}~${STALE}일)`,
+  [`쿠팡 상품 번호(productId) 없음 ${soon.filter((x) => !picks[x.p.id]?.productId).length}개 / ${soon.length}개`].concat(
+    soon.slice(0, 30).map((x) => `${x.p.name} (\`${x.p.id}\`): ${x.d} 확인, ${days(x.d)}일 전${picks[x.p.id]?.productId ? '' : ' · productId 없음'}`),
+    soon.length > 30 ? [`… 외 ${soon.length - 30}개`] : [],
+  ),
+  '매일 가격 갱신(src/prices/coupang-refresh.mjs)은 productId 가 없으면 상품명이 완전히 같을 때만 반영합니다. 쿠팡 파트너스에서 같은 상품의 링크를 다시 만들어 productId 를 채우거나, prices.csv 로 직접 확인한 가격을 넣으세요.',
+  soon.length,
 );
 
 add(
