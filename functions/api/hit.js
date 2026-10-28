@@ -114,6 +114,8 @@ export async function onRequestPost({ request, env, waitUntil }) {
       rows.push(['visit', path], ['ref', src], ['refland', `${src}|${path}`], ['dev', device(ua)], ['cty', String(request.cf?.country ?? '??').slice(0, 4)]);
       // 통과한 방문의 네트워크(ASN)·시간대 — 유튜브 링크마다 하루 2번씩 들어오는 방문이 사람인지 검사기인지 망으로 가린다(2026-10-23 관제탑, youtubeking 과 같은 형식, 개인 식별 정보 아님)
       if (request.cf?.asn) rows.push(['asn', `AS${request.cf.asn} ${String(request.cf?.asOrganization ?? '').slice(0, 30)}`.trim()]);
+      // 캠페인(utm) 방문의 망|캠페인|기기(2026-10-29, techprice 6c3978a 와 같은 형식) — 영상 링크마다 2번씩 오는 방문이 같은 망·PC·공개 직후인지 가린다
+      if (s.url && src.startsWith('캠페인')) rows.push(['asncamp', `${request.cf?.asn ? `AS${request.cf.asn} ${String(request.cf?.asOrganization ?? '').slice(0, 30)}`.trim() : '(망 모름)'}|${s.url}|${device(ua)}`.slice(0, 200)]);
       rows.push(['hour', new Date(Date.now() + 9 * 3600e3).toISOString().slice(11, 13)]);
       if (s.kw) rows.push(['kw', `${src}|${s.kw}`]);
       if (s.url) rows.push(['refurl', s.url]);
