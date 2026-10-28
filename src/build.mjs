@@ -1082,6 +1082,47 @@ function productStory(p) {
   const near = diffs ? `<h3>비슷한 상품과 차이</h3><ul>${diffs}</ul><p class="note">점수 비교는 이 사이트의 주관적 편집 점수 기준입니다.</p>` : '';
   return `<section class="prose story"><h2>이런 분께 맞아요</h2>${fit}${alt ? `<h3>이런 분은 다른 선택이 나아요</h3>${alt}` : ''}${near}</section>`;
 }
+// 상품 첫 화면 '바로 답'(2026-10-28 관제탑: ChatGPT 유입은 첫 문장 답을 인용): 추천 대상·감안할 점·쿠팡 판매가(확인일)·같은 단계 1위
+const phist = (t) => `<!--phist-->${t}<!--/phist-->`; // 가격·확인일은 콘텐츠 지문에서 뺀다
+function productAnswer(p) {
+  const m = mainPick(p.id);
+  if (!m) return '';
+  const { g, pk } = m;
+  const nm = p.name;
+  const sp = freshPrice(p.id);
+  const sr = stageRank(g, p.id);
+  const top = pk.skill ? stageTop(g, pk.skill) : rankedPicks(g)[0];
+  const stage = pk.skill ? `${SKILL_WORD[pk.skill]} 단계` : '';
+  const rankTxt = top && top.id === p.id && sr && !sr.warn
+    ? ` ${esc(guideName(g))}에서 ${stage ? `${esc(stage)} ` : ''}1위 모델입니다.`
+    : top && top.id !== p.id ? ` 같은 ${stage ? esc(stage) : '비교'} 1위는 <a href="/p/${top.id}">${esc(byId[top.id].p.name)}</a>입니다.` : '';
+  return `<p class="answer-lead pd-answer"><b>결론:</b> ${esc(nm)}${hasBatchim(nm) ? '은' : '는'} ${pk.skill ? `${esc(SKILL_WORD[pk.skill])}용으로 ` : ''}${esc(pk.forWhom)}께 맞는 모델입니다.${pk.cons?.[0] ? ` 감안할 점: ${esc(pk.cons[0].replace(/[.。]$/, ''))}.` : ''}${sp ? phist(` 쿠팡 판매가 ${won(sp.won)}(${dayLabel(sp.d)} 확인, 현재 가격과 다를 수 있음).`) : ''}${rankTxt}</p>`;
+}
+// 상품 FAQ '비슷한 모델과 차이'(2026-10-28 관제탑: ChatGPT 에 'A vs B'·'○○ 어때?'로 묻는다). 같은 단계 비교 상품 1~2개, 편집 점수·가격대·판매가만
+function productFaq(p) {
+  const m = mainPick(p.id);
+  if (!m) return [];
+  const { g, pk } = m;
+  const crit = g.criteria ?? [];
+  const nm = p.name;
+  return peersOf(g, pk, 2).map((x) => {
+    const xn = byId[x.id].p.name;
+    const up = [], down = [];
+    crit.forEach((c, i) => {
+      const d = (pk.scores?.[i] ?? 0) - (x.scores?.[i] ?? 0);
+      if (d >= 1) up.push(c);
+      if (d <= -1) down.push(c);
+    });
+    const same = pk.skill ? `두 모델 모두 ${guideName(g)}에서 ${SKILL_WORD[pk.skill]} 단계로 분류했습니다.` : `두 모델 모두 ${guideName(g)}에서 비교했습니다.`;
+    const diff = up.length || down.length
+      ? ` ${nm}${hasBatchim(nm) ? '은' : '는'} ${[up.length ? `${up.join('·')} 점수를 더 높게` : '', down.length ? `${down.join('·')} 점수를 더 낮게` : ''].filter(Boolean).join(', ')} 매겼습니다(주관적 편집 점수).`
+      : ' 항목별 편집 점수는 비슷합니다.';
+    const lv = priceLevel(p.id)?.label && priceLevel(x.id)?.label ? ` 가격대는 ${nm} ${priceLevel(p.id).label}, ${xn} ${priceLevel(x.id).label}입니다.` : '';
+    const a1 = freshPrice(p.id), a2 = freshPrice(x.id);
+    const pr = a1 && a2 ? ` 쿠팡 판매가는 ${won(a1.won)}(${dayLabel(a1.d)} 확인)과 ${won(a2.won)}(${dayLabel(a2.d)} 확인)입니다.` : '';
+    return { q: `${nm}${hasBatchim(nm) ? '과' : '와'} ${xn}의 차이는?`, a: `${same}${diff}${lv}`, pr, x: x.id };
+  });
+}
 const variantsNeedMap = readJson(join(ROOT, 'config', 'variants.json'), {});
 const variantsNeed = (id) => variantsNeedMap[id]?.need ?? '';
 // 구매 전 확인할 점: 옵션·사이즈·로프트·샤프트·정품 여부처럼 구매 전에 확인할 것만 (장점은 넣지 않는다)
@@ -1428,8 +1469,12 @@ for (const { p, hist, a } of entries) {
   const cat = cats.find((c) => c.id === p.category);
   const crumb = `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${p.category}">${esc(cat.name)}</a></nav>`;
   const checks = buyChecks(p);
-  const title = `${p.name} 가격·스펙·추천 대상`;
+  // 제목: 모델명 + 쿠팡 판매가(N만원대, 기준가라 매일 바뀌지 않음) + 한 줄 평가(2026-10-28 관제탑)
+  const tm = mainPick(p.id);
+  const tBase = pickPrice(p.id);
+  const title = tm && tBase && tm.pk.plus ? `${p.name} 쿠팡 ${manwonBand(tBase)} · ${tm.pk.plus}` : `${p.name} 가격·스펙·추천 대상`;
   const desc = productDesc(p);
+  const faq = productFaq(p);
   const sc = scoreOf[p.id];
   const top = guidesOf(p.id).filter((g) => !g.mergeInto).map((g) => ({ g, sr: stageRank(g, p.id) }));
   const pdVideo = guidesOf(p.id).map((g) => videoBlock(g)).find(Boolean)?.replace('<section id="videos" class="videos">', '<section id="videos" class="videos">') ?? '';
@@ -1440,6 +1485,7 @@ ${gallery(p, hist)}
 <span class="pt-cat">${esc(cat.name)}</span>
 <h1>${esc(p.name)}</h1>
 ${updatedTag(p.updated)}
+${productAnswer(p)}
 <div class="pt-badges">${isNew(p) ? '<span class="new-mark">NEW</span>' : ''}${GONE[p.id] ? `<span class="tag none">판매 종료·품절 추정 (${ymd(GONE[p.id])} 이후 쿠팡에서 찾을 수 없음)</span>` : ''}${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, sr }) => (sr ? `<span class="tag ${sr.warn ? 'warn' : 'rank'}">${esc(guideName(g).replace(' 비교 및 선택 가이드', ''))} ${esc(sr.label)}</span>` : '')).join('')}${sellable(p.id) ? '' : '<span class="tag none">쿠팡 판매처 없음</span>'}</div>
 ${buyBox(rctx(), p) || `<div class="pd-price">${buyButton(p.id, hist)}</div>`}
 ${links[p.id] && picks[p.id]?.title ? `<p class="linked">연결 상품: ${esc(picks[p.id].title)}</p>` : ''}
@@ -1460,12 +1506,13 @@ ${vsProductBlock(p.id)}
 ${newsBlock(p.id)}
 <section class="prose"><h2>${esc(cat.name)} 고르는 법</h2><p>${esc(cat.intro)}</p>${figure(p.category)}<ul>${cat.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
 </details>
+${faq.length ? `<section class="prose pd-faq"><h2>자주 묻는 질문</h2>${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}${f.pr ? phist(esc(f.pr)) : ''} <a href="/p/${f.x}">${esc(byId[f.x].p.name)} 보기 ›</a></p>`).join('')}<p class="note">점수 비교는 이 사이트의 주관적 편집 점수 기준이며, 가격은 확인일 기준이라 현재 가격과 다를 수 있습니다.</p></section>` : ''}
 </section>
 ${pdVideo}
 <div id="history">${priceHistory(p, hist, a)}</div>`;
   writeText(
     join(OUT, 'p', `${p.id}.html`),
-    layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' }, ld: [crumbLd([['홈', '/'], [cat.name, `/c/${p.category}`], [p.name, `/p/${p.id}`]])] }),
+    layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' }, ld: [crumbLd([['홈', '/'], [cat.name, `/c/${p.category}`], [p.name, `/p/${p.id}`]]), ...(faq.length ? [faqLd(faq.map((f) => ({ q: f.q, a: f.a })))] : [])] }),
   );
 }
 
