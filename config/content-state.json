@@ -2079,15 +2079,15 @@
       "d": "2026-10-29"
     },
     "/p/srixon-z-star-diamond": {
-      "h": "fb13c37fd3a74648",
+      "h": "34ccabbf20929f5d",
       "d": "2026-10-29"
     },
     "/p/bridgestone-e6": {
-      "h": "866a450183dca563",
+      "h": "fcaa701bf7f446c0",
       "d": "2026-10-29"
     },
     "/p/volvik-condor-s3": {
-      "h": "ba6628579470c590",
+      "h": "c00f89a0f65bf286",
       "d": "2026-10-29"
     },
     "/c/driver": {
@@ -2163,7 +2163,7 @@
       "d": "2026-10-29"
     },
     "/g/iron-recommend": {
-      "h": "8ff8a3ee858d81ff",
+      "h": "93a572d5491a2144",
       "d": "2026-10-29"
     },
     "/g/womens-utility-recommend": {
@@ -2438,45 +2438,49 @@
       "h": "062d2326b8040ec7",
       "d": "2026-10-16"
     },
+    "/qa/iron-steel-vs-carbon-shaft": {
+      "h": "f3c532fd425b9976",
+      "d": "2026-10-29"
+    },
     "/qa/how-many-fairway-woods": {
-      "h": "5bf10a2b38ee2d63",
-      "d": "2026-10-27"
+      "h": "3e8913ce5db5fd41",
+      "d": "2026-10-29"
     },
     "/qa/utility-4-recommend": {
-      "h": "6901f012f21c9d59",
-      "d": "2026-10-27"
+      "h": "6a7c397275fcadcf",
+      "d": "2026-10-29"
     },
     "/qa/golf-rangefinder-recommend": {
-      "h": "065e243c917d9d9e",
-      "d": "2026-10-27"
+      "h": "0753e57913f451dd",
+      "d": "2026-10-29"
     },
     "/qa/golf-ball-recommend": {
-      "h": "1596fe6b75ac01dd",
-      "d": "2026-10-27"
+      "h": "b25e5d41ff85743a",
+      "d": "2026-10-29"
     },
     "/qa/zero-torque-putter": {
-      "h": "668f44f9a38f70de",
-      "d": "2026-10-27"
+      "h": "05ad3811664110cb",
+      "d": "2026-10-29"
     },
     "/qa/womens-golf-club-recommend": {
-      "h": "aebc33d2932372c7",
-      "d": "2026-10-27"
+      "h": "ef56cc46eb6c25a1",
+      "d": "2026-10-29"
     },
     "/qa/wedge-recommend-loft": {
-      "h": "2df5cf30f4c9eff3",
-      "d": "2026-10-27"
+      "h": "a202e9874866990a",
+      "d": "2026-10-29"
     },
     "/qa/beginner-driver-recommend": {
-      "h": "873676d8cbe60e90",
-      "d": "2026-10-27"
+      "h": "fad6a5274ff374d1",
+      "d": "2026-10-29"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "7dedc6457b048bef",
-      "d": "2026-10-27"
+      "h": "76f8385c79253698",
+      "d": "2026-10-29"
     },
     "/qa": {
-      "h": "1cc8452dec54f8ab",
-      "d": "2026-10-27"
+      "h": "3b05f81e9e988e88",
+      "d": "2026-10-29"
     },
     "/vs/adidas-adipower-sl-women-shoes-vs-footjoy-pulse-boa-women-shoes": {
       "h": "0392a482dc9ca21c",
@@ -3224,21 +3228,6 @@
       "d": "2026-10-29"
     },
     {
-      "url": "/p/srixon-z-star-diamond",
-      "kind": "new",
-      "d": "2026-10-29"
-    },
-    {
-      "url": "/p/bridgestone-e6",
-      "kind": "new",
-      "d": "2026-10-29"
-    },
-    {
-      "url": "/p/volvik-condor-s3",
-      "kind": "new",
-      "d": "2026-10-29"
-    },
-    {
       "url": "/c/ball",
       "kind": "updated",
       "d": "2026-10-29"
@@ -3485,6 +3474,81 @@
     },
     {
       "url": "/vs/titleist-permasoft-glove-vs-titleist-players-glove",
+      "kind": "updated",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/p/srixon-z-star-diamond",
+      "kind": "updated",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/p/bridgestone-e6",
+      "kind": "updated",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/p/volvik-condor-s3",
+      "kind": "updated",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/g/iron-recommend",
+      "kind": "updated",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/qa/iron-steel-vs-carbon-shaft",
+      "kind": "new",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/qa/how-many-fairway-woods",
+      "kind": "updated",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/qa/utility-4-recommend",
+      "kind": "updated",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/qa/golf-rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/qa/golf-ball-recommend",
+      "kind": "updated",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/qa/zero-torque-putter",
+      "kind": "updated",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/qa/womens-golf-club-recommend",
+      "kind": "updated",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/qa/wedge-recommend-loft",
+      "kind": "updated",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/qa/beginner-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-10-29"
+    },
+    {
+      "url": "/qa",
       "kind": "updated",
       "d": "2026-10-29"
     }
