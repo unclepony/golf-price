@@ -42,8 +42,8 @@
  "cobra-optm-hybrid": "18d00fb11ecb",
  "garmin-approach-s70": "3553548fcdc1",
  "garmin-approach-s50": "1a15e7cb022b",
- "voicecaddie-t13-pro": "ec4f61149232",
- "golfbuddy-aim-w12": "dad89b99e234",
+ "voicecaddie-t13-pro": "3aa51950193f",
+ "golfbuddy-aim-w12": "ac7ccca347e3",
  "garmin-approach-r10": "67228d8b9c5b",
  "voicecaddie-sc4-pro": "186d8d1abe07",
  "blacktee-shot5": "f923f0c89526",
@@ -361,7 +361,7 @@
  "odyssey-tri-hot-5k-putter": "52517f1c1fef",
  "bushnell-tour-v6": "5db2b6486af0",
  "voicecaddie-laser-fit": "cc5c157d5678",
- "voicecaddie-t-ultra": "6bf4768a58e5",
+ "voicecaddie-t-ultra": "f9ef6d07a098",
  "voicecaddie-sc300i": "37448e5eb998",
  "footjoy-quantum-shoes": "bd0ae0dd3f1a",
  "adidas-s2g-shoes": "15ff7a265423",
@@ -457,7 +457,7 @@
  "r2g-mate-mini": "397be0180c75",
  "r2g-mate-hybrid": "1a7d311acd57",
  "mycaddie-mini-mg3": "339c9ed57474",
- "mycaddie-gps-m2": "b4a318bc0a4e",
+ "mycaddie-gps-m2": "3a4dcfc4760b",
  "galaxy-watch8-golf": "29f89243f5eb",
  "galaxy-watch8-classic-golf": "3ae16d0cfd23",
  "footjoy-pulse-boa-shoes": "fb8bd38bbaf8",
@@ -535,5 +535,8 @@
  "caddytalk-cube": "96acda8127e1",
  "golfbuddy-gb-laser-2s-pro": "ad3019fca639",
  "mycaddie-ms3-oled": "6b71cbfa53d6",
- "mycaddie-mh3": "1206975f93cf"
+ "mycaddie-mh3": "1206975f93cf",
+ "galaxy-watch8-golf-40mm": "7551061d9d0b",
+ "golfbuddy-voice-3s-plus": "6d9b4ce0173c",
+ "licata-fitmade-x": "87148972565d"
 }
