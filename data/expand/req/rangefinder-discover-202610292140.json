@@ -1,0 +1,142 @@
+[
+ {
+  "id": "disc00",
+  "query": "레이저 골프 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc01",
+  "query": "부쉬넬 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc02",
+  "query": "보이스캐디 레이저 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc03",
+  "query": "니콘 쿨샷 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc04",
+  "query": "골프버디 레이저 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc05",
+  "query": "캐디톡 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc06",
+  "query": "파인캐디 레이저 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc07",
+  "query": "마이캐디 레이저 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc08",
+  "query": "인피테 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc09",
+  "query": "웰센스 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc10",
+  "query": "가민 어프로치 레이저",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc11",
+  "query": "볼빅 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc12",
+  "query": "숏스코프 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc13",
+  "query": "알투지 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc14",
+  "query": "부쉬넬 핀나클",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc15",
+  "query": "보이스캐디 SL2",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc16",
+  "query": "캐디톡 큐브",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc17",
+  "query": "골프 거리측정기 슬로프 손떨림",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc18",
+  "query": "골프존 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ },
+ {
+  "id": "disc19",
+  "query": "블루버드 골프 거리측정기",
+  "must": [
+   "__zz_none__"
+  ]
+ }
+]
