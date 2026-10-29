@@ -74,7 +74,9 @@ function contentKey(html, v = KEY_V) {
     .replace(/\d+월 \d+일/g, '#')
     .replace(/\d+\.\d+ 확인/g, '# 확인')
     .replace(/ stale/g, '')
-    .replace(/ · 오래된 가격/g, '');
+    .replace(/ · 오래된 가격/g, '')
+    // 상세 끝 구매 상자 버튼은 가격이 숨겨지면 '현재 가격 보기'로 바뀐다 — 예전 글자로 맞춰 지문이 바뀌지 않게
+    .replace(/(class="btn ebuy-btn"[^>]*>)쿠팡에서 현재 가격 보기/g, '$1쿠팡에서 이 가격 보기');
   // v4 표시(<!--pdep4-->)·환율은 v3 이하로 계산할 때 표시만 지운다(판 바뀐 첫 빌드에서 예전 지문과 같게)
   main =
     v >= 4
