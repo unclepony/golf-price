@@ -3,40 +3,40 @@
   "keyV": 4,
   "pages": {
     "/p/taylormade-qi35-driver": {
-      "h": "76a84e9f693fd986",
-      "d": "2026-10-29"
+      "h": "c3a359e5a053f229",
+      "d": "2026-10-30"
     },
     "/p/callaway-elyte-driver": {
-      "h": "091f810012371aed",
-      "d": "2026-10-28"
+      "h": "e846926b473a8c6a",
+      "d": "2026-10-30"
     },
     "/p/ping-g440-driver": {
-      "h": "387f339c8e9e9feb",
-      "d": "2026-10-28"
+      "h": "700b6c155c875f96",
+      "d": "2026-10-30"
     },
     "/p/titleist-gt2-driver": {
-      "h": "8c11db208c50c793",
-      "d": "2026-10-28"
+      "h": "a3d177b601043dce",
+      "d": "2026-10-30"
     },
     "/p/taylormade-p790-iron": {
-      "h": "74d0f850a2a0812f",
-      "d": "2026-10-28"
+      "h": "bb5030e340ca9652",
+      "d": "2026-10-30"
     },
     "/p/ping-g440-iron": {
-      "h": "378e5334ba4d8344",
-      "d": "2026-10-29"
+      "h": "d23d69e732b603c3",
+      "d": "2026-10-30"
     },
     "/p/odyssey-ai-one-putter": {
-      "h": "62d4b6367a14ee1d",
-      "d": "2026-10-28"
+      "h": "40f04ddb42c82df2",
+      "d": "2026-10-30"
     },
     "/p/ping-anser-2-putter": {
       "h": "18d6661c7da056b5",
       "d": "2026-10-29"
     },
     "/p/titleist-pro-v1": {
-      "h": "9b1dd9f07127fff5",
-      "d": "2026-10-28"
+      "h": "c4f8180e54b065f4",
+      "d": "2026-10-30"
     },
     "/p/srixon-z-star": {
       "h": "8d690b88867d7508",
@@ -51,12 +51,12 @@
       "d": "2026-10-29"
     },
     "/p/voicecaddie-sl3": {
-      "h": "20091f8c1e80cd1f",
-      "d": "2026-10-29"
+      "h": "3851f5a2069e1159",
+      "d": "2026-10-30"
     },
     "/p/footjoy-pro-sl": {
-      "h": "28e3a927df09201d",
-      "d": "2026-10-28"
+      "h": "fb4675db54469da8",
+      "d": "2026-10-30"
     },
     "/p/ping-gle4-women-driver": {
       "h": "3fb390e9d3a3e4e9",
@@ -167,20 +167,20 @@
       "d": "2026-10-28"
     },
     "/p/garmin-approach-s70": {
-      "h": "eda265ecc7f52269",
-      "d": "2026-10-29"
+      "h": "d8ec04a26088a65c",
+      "d": "2026-10-30"
     },
     "/p/garmin-approach-s50": {
-      "h": "381d50a37c68c829",
-      "d": "2026-10-29"
+      "h": "627e28c459af685c",
+      "d": "2026-10-30"
     },
     "/p/voicecaddie-t13-pro": {
-      "h": "9f1b67b6c6d096a7",
-      "d": "2026-10-29"
+      "h": "0cc700a3b5f0491a",
+      "d": "2026-10-30"
     },
     "/p/golfbuddy-aim-w12": {
-      "h": "c114a11d8f916a1e",
-      "d": "2026-10-28"
+      "h": "635299fcedaad240",
+      "d": "2026-10-30"
     },
     "/p/garmin-approach-r10": {
       "h": "063e3c9bb48eb3e7",
@@ -1451,8 +1451,8 @@
       "d": "2026-10-29"
     },
     "/p/voicecaddie-t-ultra": {
-      "h": "b184c396a3136d3b",
-      "d": "2026-10-28"
+      "h": "ae85aaadc4ae502e",
+      "d": "2026-10-30"
     },
     "/p/voicecaddie-sc300i": {
       "h": "43d4584ba759f5a6",
@@ -1835,16 +1835,16 @@
       "d": "2026-10-29"
     },
     "/p/mycaddie-gps-m2": {
-      "h": "f7a5da24c1429d6d",
-      "d": "2026-10-28"
+      "h": "50a69ec23a054a97",
+      "d": "2026-10-30"
     },
     "/p/galaxy-watch8-golf": {
-      "h": "067b5f52adac9ad6",
-      "d": "2026-10-28"
+      "h": "96ec4d9e50cacfb8",
+      "d": "2026-10-30"
     },
     "/p/galaxy-watch8-classic-golf": {
-      "h": "f1e1c0059c8a943b",
-      "d": "2026-10-29"
+      "h": "aba668c141db3cd9",
+      "d": "2026-10-30"
     },
     "/p/footjoy-pulse-boa-shoes": {
       "h": "fb979bf8fa1d12c2",
@@ -2135,20 +2135,32 @@
       "d": "2026-10-29"
     },
     "/p/caddytalk-cube": {
-      "h": "67b1d66e62886325",
-      "d": "2026-10-29"
+      "h": "5bc1aa16a772da72",
+      "d": "2026-10-30"
     },
     "/p/golfbuddy-gb-laser-2s-pro": {
-      "h": "43c26c2b851297ed",
-      "d": "2026-10-29"
+      "h": "fb05d0c2973f3357",
+      "d": "2026-10-30"
     },
     "/p/mycaddie-ms3-oled": {
-      "h": "4cc5b32a19858ff2",
-      "d": "2026-10-29"
+      "h": "86918cf3b1b572f6",
+      "d": "2026-10-30"
     },
     "/p/mycaddie-mh3": {
-      "h": "6c3eb1ede6284822",
-      "d": "2026-10-29"
+      "h": "79768488a38ade00",
+      "d": "2026-10-30"
+    },
+    "/p/galaxy-watch8-golf-40mm": {
+      "h": "eb409544ac4fc22a",
+      "d": "2026-10-30"
+    },
+    "/p/golfbuddy-voice-3s-plus": {
+      "h": "7e808fb5ab37d7f7",
+      "d": "2026-10-30"
+    },
+    "/p/licata-fitmade-x": {
+      "h": "ea930f41bc314baa",
+      "d": "2026-10-30"
     },
     "/c/driver": {
       "h": "2ef8ad0f86d8ce44",
@@ -2183,8 +2195,8 @@
       "d": "2026-10-29"
     },
     "/c/gps": {
-      "h": "bef5b2c79691e8d9",
-      "d": "2026-10-29"
+      "h": "b3941b7ebcc6b1b8",
+      "d": "2026-10-30"
     },
     "/c/launch": {
       "h": "4cc4bf355b823330",
@@ -2255,8 +2267,8 @@
       "d": "2026-10-29"
     },
     "/g/golf-watch-recommend": {
-      "h": "a9eac030df39e132",
-      "d": "2026-10-29"
+      "h": "6a10270c21c9e789",
+      "d": "2026-10-30"
     },
     "/g/launch-monitor-recommend": {
       "h": "f817c9b8968d0dc3",
@@ -2462,13 +2474,17 @@
       "h": "9ab5b5a6d22980ab",
       "d": "2026-10-29"
     },
+    "/g/golf-watch-recommend-beginner": {
+      "h": "6fc8cdb491693574",
+      "d": "2026-10-30"
+    },
     "/g/golf-watch-recommend-intermediate": {
-      "h": "5eb410ea1d357727",
-      "d": "2026-10-29"
+      "h": "b9abc6dda984fc38",
+      "d": "2026-10-30"
     },
     "/g/golf-watch-recommend-pro": {
-      "h": "60546a3aad4a3730",
-      "d": "2026-10-29"
+      "h": "f48d6bf0c8896b5b",
+      "d": "2026-10-30"
     },
     "/g/launch-monitor-recommend-beginner": {
       "h": "78704ff937601fd1",
@@ -2495,8 +2511,8 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "6b186f9823bb5c3e",
-      "d": "2026-10-29"
+      "h": "19390807e2a7f9d6",
+      "d": "2026-10-30"
     },
     "/about": {
       "h": "062d2326b8040ec7",
@@ -2751,12 +2767,16 @@
       "d": "2026-10-23"
     },
     "/vs/garmin-approach-s50-vs-golfbuddy-aim-w12": {
-      "h": "53c81b34292f45c5",
-      "d": "2026-10-29"
+      "h": "7f6306f7997f5a4f",
+      "d": "2026-10-30"
     },
     "/vs/garmin-approach-s70-vs-garmin-approach-s50": {
-      "h": "dc8b7b3e52e76b34",
-      "d": "2026-10-29"
+      "h": "3a91f1600d8eed23",
+      "d": "2026-10-30"
+    },
+    "/vs/garmin-approach-s70-vs-voicecaddie-t13-pro": {
+      "h": "049bf51377a5a217",
+      "d": "2026-10-30"
     },
     "/vs/honma-aizu-women-driver-vs-honma-nx-women-driver": {
       "h": "a415d2454589cfb6",
@@ -3113,6 +3133,10 @@
     "/vs/voicecaddie-sl3-vs-bushnell-tour-v6-shift": {
       "h": "f5c79b7c799b1736",
       "d": "2026-10-29"
+    },
+    "/vs/voicecaddie-t13-pro-vs-garmin-approach-s50": {
+      "h": "82cde176a95e94a8",
+      "d": "2026-10-30"
     },
     "/vs/xxio12-fairway-vs-callaway-elyte-fairway": {
       "h": "ed04b85cf408db58",
@@ -3662,11 +3686,6 @@
       "d": "2026-10-29"
     },
     {
-      "url": "/p/ping-g440-iron",
-      "kind": "updated",
-      "d": "2026-10-29"
-    },
-    {
       "url": "/p/callaway-elyte-iron",
       "kind": "updated",
       "d": "2026-10-29"
@@ -4047,11 +4066,6 @@
       "d": "2026-10-29"
     },
     {
-      "url": "/p/voicecaddie-sl3",
-      "kind": "updated",
-      "d": "2026-10-29"
-    },
-    {
       "url": "/p/nikon-coolshot-pro3",
       "kind": "updated",
       "d": "2026-10-29"
@@ -4202,26 +4216,6 @@
       "d": "2026-10-29"
     },
     {
-      "url": "/p/caddytalk-cube",
-      "kind": "new",
-      "d": "2026-10-29"
-    },
-    {
-      "url": "/p/golfbuddy-gb-laser-2s-pro",
-      "kind": "new",
-      "d": "2026-10-29"
-    },
-    {
-      "url": "/p/mycaddie-ms3-oled",
-      "kind": "new",
-      "d": "2026-10-29"
-    },
-    {
-      "url": "/p/mycaddie-mh3",
-      "kind": "new",
-      "d": "2026-10-29"
-    },
-    {
       "url": "/c/rangefinder",
       "kind": "updated",
       "d": "2026-10-29"
@@ -4257,11 +4251,6 @@
       "d": "2026-10-29"
     },
     {
-      "url": "/",
-      "kind": "updated",
-      "d": "2026-10-29"
-    },
-    {
       "url": "/vs/nikon-coolshot-pro3-vs-voicecaddie-sl3",
       "kind": "updated",
       "d": "2026-10-29"
@@ -4270,6 +4259,181 @@
       "url": "/vs/voicecaddie-sl3-vs-bushnell-tour-v6-shift",
       "kind": "updated",
       "d": "2026-10-29"
+    },
+    {
+      "url": "/p/taylormade-qi35-driver",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/callaway-elyte-driver",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/ping-g440-driver",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/titleist-gt2-driver",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/taylormade-p790-iron",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/ping-g440-iron",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/odyssey-ai-one-putter",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/titleist-pro-v1",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/voicecaddie-sl3",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/footjoy-pro-sl",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/garmin-approach-s70",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/garmin-approach-s50",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/voicecaddie-t13-pro",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/golfbuddy-aim-w12",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/voicecaddie-t-ultra",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/mycaddie-gps-m2",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/galaxy-watch8-golf",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/galaxy-watch8-classic-golf",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/caddytalk-cube",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/golfbuddy-gb-laser-2s-pro",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/mycaddie-ms3-oled",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/mycaddie-mh3",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/galaxy-watch8-golf-40mm",
+      "kind": "new",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/golfbuddy-voice-3s-plus",
+      "kind": "new",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/p/licata-fitmade-x",
+      "kind": "new",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/c/gps",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/g/golf-watch-recommend",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/g/golf-watch-recommend-beginner",
+      "kind": "new",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/g/golf-watch-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/g/golf-watch-recommend-pro",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/vs/garmin-approach-s50-vs-golfbuddy-aim-w12",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/vs/garmin-approach-s70-vs-garmin-approach-s50",
+      "kind": "updated",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/vs/garmin-approach-s70-vs-voicecaddie-t13-pro",
+      "kind": "new",
+      "d": "2026-10-30"
+    },
+    {
+      "url": "/vs/voicecaddie-t13-pro-vs-garmin-approach-s50",
+      "kind": "new",
+      "d": "2026-10-30"
     }
   ]
 }
