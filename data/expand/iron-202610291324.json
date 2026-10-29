@@ -3,14 +3,10 @@
   "id": "callaway-paradym-aismoke-iron",
   "category": "iron",
   "name": "캘러웨이 패러다임 Ai 스모크 아이언 세트",
-  "query": "캘러웨이 패러다임 Ai 스모크 아이언",
+  "query": "캘러웨이 Ai 스모크 아이언 세트",
   "must": [
    "스모크",
    "아이언"
-  ],
-  "mustAny": [
-   "패러다임",
-   "paradym"
   ],
   "exclude": [
    "낱개",
@@ -75,15 +71,11 @@
   "id": "callaway-paradym-aismoke-hl-iron",
   "category": "iron",
   "name": "캘러웨이 패러다임 Ai 스모크 HL 아이언 세트",
-  "query": "캘러웨이 패러다임 Ai 스모크 HL 아이언",
+  "query": "캘러웨이 Ai 스모크 HL 아이언",
   "must": [
    "스모크",
    "hl",
    "아이언"
-  ],
-  "mustAny": [
-   "패러다임",
-   "paradym"
   ],
   "exclude": [
    "낱개",
@@ -219,9 +211,9 @@
   "id": "callaway-apex-ai300-iron",
   "category": "iron",
   "name": "캘러웨이 에이펙스 Ai300 아이언 세트",
-  "query": "캘러웨이 에이펙스 Ai300 아이언",
+  "query": "캘러웨이 에이펙스 Ai300 아이언 세트",
   "must": [
-   "ai300",
+   "300",
    "아이언"
   ],
   "exclude": [
@@ -237,7 +229,10 @@
    "헤드커버",
    "드라이버",
    "우드",
-   "유틸"
+   "유틸",
+   "증정",
+   "웨지",
+   "ai200"
   ],
   "summary": "캘러웨이 에이펙스 Ai300은 단조 캐비티백 바디에 단조 455 페이스 컵을 쓴 에이펙스 계열의 관용성 모델입니다. 중공형 Ai200보다 캐비티 구조로 다루기 쉬운 쪽입니다.",
   "points": [
@@ -275,6 +270,11 @@
   "sources": [
    "https://www.callawaygolf.com/apex24",
    "https://www.callawaygolf.com/en/lt/golf-clubs/iron-sets/irons-2024-apex-ai300.html"
+  ],
+  "mustAny": [
+   "ai300",
+   "에이펙스",
+   "apex"
   ]
  },
  {
@@ -355,15 +355,14 @@
   "id": "callaway-apex-cb24-iron",
   "category": "iron",
   "name": "캘러웨이 에이펙스 CB 24 아이언 세트",
-  "query": "캘러웨이 에이펙스 CB 24 아이언",
+  "query": "캘러웨이 에이펙스 CB 아이언",
   "must": [
-   "에이펙스",
    "cb",
    "아이언"
   ],
   "mustAny": [
-   "24",
-   "2024"
+   "에이펙스",
+   "apex"
   ],
   "exclude": [
    "낱개",
@@ -381,8 +380,6 @@
    "유틸",
    "tcb",
    "mb",
-   "프로",
-   "pro",
    "ai200",
    "ai300"
   ],
@@ -449,9 +446,7 @@
    "우드",
    "유틸",
    "유틸리티",
-   "utility",
-   "블랙",
-   "black"
+   "utility"
   ],
   "summary": "타이틀리스트 T200은 단조 페이스 인서트를 쓴 멀티 소재 중공 바디에 맥스 임팩트 기술(폴리머 코어)과 고밀도 D18 텅스텐을 넣은 플레이어스 디스턴스 아이언입니다.",
   "points": [
@@ -496,7 +491,7 @@
   "id": "taylormade-stealth-iron",
   "category": "iron",
   "name": "테일러메이드 스텔스 아이언 세트",
-  "query": "테일러메이드 스텔스 아이언",
+  "query": "테일러메이드 스텔스 아이언 세트",
   "must": [
    "스텔스",
    "아이언"
@@ -518,7 +513,8 @@
    "hd",
    "글로아",
    "gloire",
-   "2",
+   "스텔스2",
+   "stealth2",
    "플러스",
    "plus"
   ],
@@ -565,9 +561,8 @@
   "id": "taylormade-qihl-iron",
   "category": "iron",
   "name": "테일러메이드 Qi HL 아이언 세트",
-  "query": "테일러메이드 Qi HL 아이언",
+  "query": "테일러메이드 Qi HL 아이언 세트",
   "must": [
-   "qi",
    "hl",
    "아이언"
   ],
@@ -586,8 +581,7 @@
    "우드",
    "유틸",
    "맥스",
-   "max",
-   "10"
+   "max"
   ],
   "summary": "테일러메이드 Qi HL은 2024년 Qi 아이언을 높은 탄도용으로 만든 모델입니다. 기본 Qi보다 로프트가 약 2° 누워 있고 같은 구성 기준 최대 26g 가벼우며, 캡 백 디자인과 낮은 무게중심으로 공을 쉽게 띄웁니다.",
   "points": [
@@ -626,15 +620,19 @@
   "sources": [
    "https://www.taylormadegolf.com/Qi-HL-Irons/DW-TC625.html?lang=en_US",
    "https://news.taylormadegolf.com/en-eu/news/designed-for-straight-distance--taylormade-unveils-the-2024-qi-irons/s/54aa90dc-f051-4de4-a4d6-c5240d98bdc0"
+  ],
+  "mustAny": [
+   "qi",
+   "큐아이"
   ]
  },
  {
   "id": "taylormade-p7mb-iron",
   "category": "iron",
   "name": "테일러메이드 P7MB 아이언 세트",
-  "query": "테일러메이드 P7MB 아이언",
+  "query": "테일러메이드 P7MB 아이언 세트",
   "must": [
-   "p7mb",
+   "7mb",
    "아이언"
   ],
   "exclude": [
@@ -651,9 +649,9 @@
    "드라이버",
    "우드",
    "유틸",
-   "p7mc",
-   "p770",
-   "p790"
+   "7mc",
+   "770",
+   "790"
   ],
   "summary": "테일러메이드 P·7MB는 1025 카본 스틸을 2,000톤 프레스로 단조한 머슬백 아이언입니다. 2022년 개편 때 로리 매킬로이·콜린 모리카와의 의견을 반영해 블레이드를 짧게 하고 솔과 진행형 오프셋을 새로 만들었습니다.",
   "points": [
@@ -771,10 +769,9 @@
   "id": "srixon-zx4mk2-iron",
   "category": "iron",
   "name": "스릭슨 ZX4 MK2 아이언 세트",
-  "query": "스릭슨 ZX4 MK2 아이언",
+  "query": "스릭슨 ZX4 아이언 세트",
   "must": [
    "zx4",
-   "mk",
    "아이언"
   ],
   "exclude": [
@@ -829,6 +826,10 @@
   },
   "sources": [
    "https://us.dunlopsports.com/srixon/clubs/irons/zx4-mk-ii-irons/ZX4MKIIIRN.html"
+  ],
+  "mustAny": [
+   "mk",
+   "마크"
   ]
  }
 ]
