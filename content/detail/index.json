@@ -427,7 +427,7 @@
  "volvik-power-soft": "83d1923fb3bb",
  "xxio13-women-driver": "a3cdcaf64767",
  "cobra-darkspeed-max-women-driver": "cc8687cec030",
- "cobra-ds-adapt-maxd-women-driver": "83c2e2cd56c0",
+ "cobra-ds-adapt-maxd-women-driver": "90d8bb8afb0c",
  "honma-beres09-women-driver": "d3c1b1674d0e",
  "majesty-prestigio13-women-driver": "a08d445c7e8d",
  "callaway-roguestmax-iron": "29cdfe0c47e7",
@@ -520,5 +520,7 @@
  "taylormade-mg5-wedge": "8145a3421d80",
  "srixon-z-star-diamond": "b20886eb93b0",
  "bridgestone-e6": "3eab401b8132",
- "volvik-condor-s3": "c410d94d8859"
+ "volvik-condor-s3": "c410d94d8859",
+ "cobra-optm-maxd-women-driver": "d4c7b5afb10d",
+ "yamaha-inpres-drivestar-women-driver": "328a661b36df"
 }
