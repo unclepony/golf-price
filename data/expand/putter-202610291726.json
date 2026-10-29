@@ -302,7 +302,6 @@
    "onset",
    "온셋",
    "tec",
-   
    "g le",
    "gle",
    "pp58",
@@ -430,7 +429,7 @@
  {
   "id": "taylormade-spider-tour-putter",
   "category": "putter",
-  "name": "테일러메이드 스파이더 투어 퍼터",
+  "name": "테일러메이드 스파이더 투어 블랙 퍼터",
   "query": "테일러메이드 스파이더 투어 퍼터",
   "must": [
    "퍼터",
@@ -460,7 +459,7 @@
    "스티커",
    "보호필름"
   ],
-  "summary": "테일러메이드가 2023년 9월 내놓은 스파이더 투어 시리즈의 대표 모양입니다. 고관성 말렛에 공 폭과 같은 흰 트루 패스 정렬, 스파이더 X에서 쓰던 퓨어 롤 인서트를 그대로 썼습니다.",
+  "summary": "테일러메이드가 2023년 9월 시작한 스파이더 투어 시리즈의 대표 모양(블랙 마감)입니다. 고관성 말렛에 공 폭과 같은 흰 트루 패스 정렬, 스파이더 X에서 쓰던 퓨어 롤 인서트를 그대로 썼습니다.",
   "points": [
    "고관성(High MOI) 스파이더 말렛",
    "공 폭과 같은 트루 패스 정렬",
@@ -496,7 +495,8 @@
   },
   "sources": [
    "https://news.taylormadegolf.com/en-us/news/taylormade-new-spider-tour-series-spider-tour-x/s/071c2b9e-2cce-4afc-a216-18f030670c37",
-   "https://www.taylormadegolf.com/spider/?lang=en_US"
+   "https://www.taylormadegolf.com/spider/?lang=en_US",
+   "https://www.taylormadegolf.com/Spider-Tour-Black/DW-TA302.html?lang=en_US"
   ]
  },
  {
