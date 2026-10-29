@@ -1,8 +1,99 @@
 {
   "date": "2026-10-29",
   "by": {
+    "act": {
+      "카카오톡|/": 1,
+      "캠페인: chatgpt.com|/c/ball": 1
+    },
+    "asn": {
+      "AS10036 DLIVE Cable TV": 1,
+      "AS17853 LGTELECOM": 2,
+      "AS37705 TOPNET": 2,
+      "AS64286 LogicWeb Inc.": 1,
+      "AS9644 SK Telecom": 3
+    },
+    "asncamp": {
+      "AS17853 LGTELECOM|chatgpt.com|모바일": 1,
+      "AS37705 TOPNET|youtube / video / lesson-release|PC": 2
+    },
+    "cty": {
+      "KR": 6,
+      "TN": 2,
+      "US": 1
+    },
+    "depth": {
+      "/c/ball|50%": 1,
+      "/|50%": 1
+    },
+    "dev": {
+      "PC": 7,
+      "모바일": 2
+    },
+    "hour": {
+      "10": 1,
+      "13": 1,
+      "14": 1,
+      "18": 2,
+      "07": 4
+    },
+    "pv": {
+      "/": 2,
+      "/c/ball": 1,
+      "/g/practice-gear-recommend": 2,
+      "/g/rangefinder-recommend": 2,
+      "/g/womens-utility-recommend": 2
+    },
+    "ref": {
+      "직접·북마크": 1,
+      "카카오톡": 1,
+      "캠페인: chatgpt.com": 1,
+      "캠페인: youtube": 6
+    },
+    "refland": {
+      "직접·북마크|/": 1,
+      "카카오톡|/": 1,
+      "캠페인: chatgpt.com|/c/ball": 1,
+      "캠페인: youtube|/g/practice-gear-recommend": 2,
+      "캠페인: youtube|/g/rangefinder-recommend": 2,
+      "캠페인: youtube|/g/womens-utility-recommend": 2
+    },
+    "refurl": {
+      "chatgpt.com": 1,
+      "youtube / comment / c-womens-utility-recommend-beginner": 2,
+      "youtube / video / lesson-release": 2,
+      "youtube / video / t-rangefinder-recommend-0": 2
+    },
+    "seen": {
+      "/g/practice-gear-recommend": 1,
+      "/g/rangefinder-recommend": 1,
+      "/g/womens-utility-recommend": 1
+    },
+    "seenpos": {
+      "비교표": 3
+    },
+    "seenref": {
+      "캠페인: youtube": 3
+    },
     "skip": {
-      "내부(관리자 브라우저)": 1
+      "내부(관리자 브라우저)": 2,
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3
+    },
+    "stay": {
+      "/c/ball|1~3분": 1,
+      "/|10~30초": 1
+    },
+    "visit": {
+      "/": 2,
+      "/c/ball": 1,
+      "/g/practice-gear-recommend": 2,
+      "/g/rangefinder-recommend": 2,
+      "/g/womens-utility-recommend": 2
+    },
+    "xpv": {
+      "/c/ball": 1,
+      "/g/practice-gear-recommend": 2,
+      "/g/rangefinder-recommend": 2,
+      "/g/womens-utility-recommend": 2
     }
   }
 }

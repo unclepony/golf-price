@@ -1,0 +1,9 @@
+{
+  "_설명": "src/prices/coupang-subid.mjs 가 관리한다. 상품 id → { subId, from: 바꾸기 전 링크, to: subId 딥링크, date }. 되돌리려면 from 을 links.json 에 다시 넣는다.",
+  "caddytalk-minion2": {
+    "subId": "choicegolf",
+    "from": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9479076109&itemId=28220836196&vendorItemId=95135964859&traceid=V0-153-b02414136fc2bb36&requestid=20261021212634931079616436&token=31850C%7CMIXED&pt=0&slot=1",
+    "to": "https://link.coupang.com/a/ifLxHkOLuu",
+    "date": "2026-10-30"
+  }
+}

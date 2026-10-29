@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-30",
+  "by": {
+    "act": {
+      "캠페인: chatgpt.com|/p/ping-g440lst-driver": 1
+    },
+    "asn": {
+      "AS18779 EGIHosting": 1,
+      "AS3786 LG POWERCOMM": 1
+    },
+    "asncamp": {
+      "AS3786 LG POWERCOMM|chatgpt.com|모바일": 1
+    },
+    "cty": {
+      "KR": 1,
+      "US": 1
+    },
+    "depth": {
+      "/p/ping-g440lst-driver|75%": 1
+    },
+    "dev": {
+      "PC": 1,
+      "모바일": 1
+    },
+    "hour": {
+      "01": 2
+    },
+    "out": {
+      "/p/ping-g440lst-driver|ping-g440lst-driver": 1
+    },
+    "outact": {
+      "조작 후|캠페인: chatgpt.com": 1
+    },
+    "outcamp": {
+      "chatgpt.com|ping-g440lst-driver": 1
+    },
+    "outref": {
+      "캠페인: chatgpt.com": 1
+    },
+    "pos": {
+      "상세 끝 구매 상자": 1
+    },
+    "pv": {
+      "/": 1,
+      "/p/ping-g440lst-driver": 1
+    },
+    "ref": {
+      "직접·북마크": 1,
+      "캠페인: chatgpt.com": 1
+    },
+    "refland": {
+      "직접·북마크|/": 1,
+      "캠페인: chatgpt.com|/p/ping-g440lst-driver": 1
+    },
+    "refurl": {
+      "chatgpt.com": 1
+    },
+    "seen": {
+      "/p/ping-g440lst-driver": 1
+    },
+    "seenpos": {
+      "상품 페이지": 1
+    },
+    "seenref": {
+      "캠페인: chatgpt.com": 1
+    },
+    "stay": {
+      "/p/ping-g440lst-driver|1~3분": 1
+    },
+    "visit": {
+      "/": 1,
+      "/p/ping-g440lst-driver": 1
+    },
+    "xpv": {
+      "/p/ping-g440lst-driver": 1
+    }
+  }
+}
