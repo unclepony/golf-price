@@ -1,10 +1,5 @@
 {
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { since: 처음 못 찾은 날, days: 연속으로 못 찾은 날 수, last: 마지막으로 못 찾은 날 }. 5일이면 picks.json gone.",
-  "callaway-quantum-max-iron": {
-    "since": "2026-10-22",
-    "days": 7,
-    "last": "2026-10-29"
-  },
   "sklz-gold-flex-trainer": {
     "since": "2026-10-24",
     "days": 5,
