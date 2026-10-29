@@ -1,0 +1,4 @@
+[
+ {"id":"callaway-quantum-max-iron","query":"캘러웨이 퀀텀 맥스 아이언 세트","must":["퀀텀","아이언"],"mustAny":["맥스","max"],"exclude":["패스트","fast","낱개","단품","여성","레이디","중고","병행","헤드만"]},
+ {"id":"callaway-quantum-max-iron-b","query":"캘러웨이 퀀텀 MAX 아이언","must":["퀀텀","아이언"],"mustAny":["맥스","max"],"exclude":["패스트","fast","낱개","단품","여성","레이디","중고","병행","헤드만"]}
+]
