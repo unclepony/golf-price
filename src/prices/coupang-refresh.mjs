@@ -40,6 +40,11 @@ const missing = existsSync(missFile) ? JSON.parse(readFileSync(missFile, 'utf8')
 const GONE_DAYS = 5;
 const jumpFile = C('coupang-jumps.json');
 const jumps = existsSync(jumpFile) ? JSON.parse(readFileSync(jumpFile, 'utf8')) : {};
+// 못 맞춘 후보 기록(2026-10-31): productId 가 없어 '상품명 완전 일치'로 못 찾은 상품의 검색 결과 앞 3건(상품 번호·이름·가격·로켓)을 남긴다.
+// 판단 자료일 뿐 가격·링크에는 쓰지 않는다 → 왜 못 맞추는지 보고, 사람이 같은 상품인지 확인해 productId 를 채울 때 쓴다. 찾으면 지운다.
+const candFile = C('coupang-candidates.json');
+const cands = existsSync(candFile) ? JSON.parse(readFileSync(candFile, 'utf8')) : {};
+cands._설명 = 'src/prices/coupang-refresh.mjs 가 관리한다. productId 가 없어 상품명 완전 일치로 못 찾은 상품 id → { day: 마지막 시도일, title: 연결 상품명, price: 기존 판매가, rows: 검색 결과 앞 3건 [상품 번호, 이름, 가격, 로켓] }. 가격·링크에는 쓰지 않는 판단 자료.';
 jumps._설명 = 'src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { price: 1.5배 넘게 튄 API 값(반영 보류), held: 그때 유지한 직전 값, first: 처음 본 날, last: 마지막으로 본 날 }. 다음 날 이후 같은 값이 다시 나오면 반영하고 지운다.';
 const JUMP = 1.5;
 const tried = existsSync(triedFile) ? JSON.parse(readFileSync(triedFile, 'utf8')) : { _설명: 'src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → 쿠팡 API 로 마지막 시도한 날(찾음/못 찾음 모두). 순번용.' };
@@ -60,6 +65,7 @@ const save = () => {
   writeFileSync(triedFile, JSON.stringify(tried, null, 2) + '\n');
   writeFileSync(missFile, JSON.stringify(missing, null, 2) + '\n');
   writeFileSync(jumpFile, JSON.stringify(jumps, null, 2) + '\n');
+  writeFileSync(candFile, JSON.stringify(cands, null, 2) + '\n');
 };
 let held = 0;
 let ok = 0, miss = 0;
@@ -88,6 +94,7 @@ for (const [i, id] of targets.entries()) {
     // (2026-10-25: 10-15·16 에 옵션 글자까지 넣은 연결 상품명이 검색 결과 이름과 달라 206개가 한꺼번에 판매 종료로 갈 뻔함)
     if (!pk.productId) {
       delete missing[id];
+      cands[id] = { day: today, title: pk.title, price: pk.price ?? null, rows: rows.slice(0, 3).map((x) => [x.id, x.name, x.price, x.rocket]) };
       console.log(`건너뜀: ${id} (검색 ${rows.length}건 중 같은 상품명 없음 — 상품 번호가 없어 판매 종료 판단 안 함, 기존 값 유지)`);
       save();
       continue;
@@ -100,6 +107,7 @@ for (const [i, id] of targets.entries()) {
     continue;
   }
   delete missing[id];
+  delete cands[id];
   // 가격 튐 보류: 직전 값 대비 1.5배 넘게 바뀌면, 앞선 날에 같은 값을 이미 본 경우에만 반영
   const r = pk.price ? hit.price / pk.price : 1;
   if (r > JUMP || r < 1 / JUMP) {
