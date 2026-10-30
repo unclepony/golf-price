@@ -709,6 +709,7 @@ table.answer-t { width: 100%; border-collapse: collapse; font-size: 14px; }
 table.answer-t caption { caption-side: bottom; text-align: left; font-size: 12px; color: var(--muted); padding-top: 6px; }
 table.answer-t th, table.answer-t td { padding: 7px 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
 table.answer-t th { font-size: 12px; color: var(--muted); font-weight: 700; }
+table.answer-t td { white-space: normal; word-break: keep-all; overflow-wrap: anywhere; } /* 전역 td nowrap 탓에 휴대폰에서 점수·판매가 칸이 밀려남(2026-10-31 gp-1031-1) */
 table.answer-t td small { display: block; font-size: 12px; color: var(--muted); }
 table.answer-t td.ar, table.answer-t td.as { white-space: nowrap; font-weight: 700; }
 table.answer-t td.aw { white-space: nowrap; }
