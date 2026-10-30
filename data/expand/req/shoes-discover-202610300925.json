@@ -1,0 +1,153 @@
+[
+ {
+  "id": "relink-ecco-biom-c4-shoes",
+  "query": "에코 바이옴 C4 보아 골프화 남성",
+  "must": [
+   "에코"
+  ],
+  "mustAny": [
+   "바이옴c4",
+   "biomc4"
+  ],
+  "exclude": [
+   "깔창",
+   "여성"
+  ]
+ },
+ {
+  "id": "relink2-ecco-biom-c4-shoes",
+  "query": "에코 바이옴 C4 골프화",
+  "must": [
+   "에코"
+  ],
+  "mustAny": [
+   "바이옴c4",
+   "biomc4",
+   "c4"
+  ],
+  "exclude": [
+   "깔창",
+   "여성",
+   "우먼"
+  ]
+ },
+ {
+  "id": "d0",
+  "query": "풋조이 남성 골프화 보아",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d1",
+  "query": "풋조이 남성 골프화 스파이크리스",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d2",
+  "query": "풋조이 여성 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d3",
+  "query": "아디다스 남성 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d4",
+  "query": "아디다스 여성 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d5",
+  "query": "에코 남성 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d6",
+  "query": "에코 여성 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d7",
+  "query": "나이키 남성 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d8",
+  "query": "푸마 남성 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d9",
+  "query": "스케쳐스 남성 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d10",
+  "query": "스케쳐스 여성 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d11",
+  "query": "언더아머 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d12",
+  "query": "뉴발란스 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d13",
+  "query": "미즈노 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d14",
+  "query": "지포어 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d15",
+  "query": "나이키 여성 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ },
+ {
+  "id": "d16",
+  "query": "푸마 여성 골프화",
+  "must": [
+   "__nomatch__"
+  ]
+ }
+]
