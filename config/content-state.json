@@ -735,7 +735,7 @@
       "d": "2026-10-31"
     },
     "/p/majesty-sterna-women-hybrid": {
-      "h": "c3a5e1710a85225b",
+      "h": "f7684d8f67aa5bab",
       "d": "2026-10-31"
     },
     "/p/callaway-elyte-women-hybrid": {
@@ -763,7 +763,7 @@
       "d": "2026-10-31"
     },
     "/p/taylormade-gloire-women-rescue": {
-      "h": "7875eeffe02c4d4f",
+      "h": "c4eb3a71c3bc3671",
       "d": "2026-10-31"
     },
     "/p/taylormade-stealth-women-rescue": {
@@ -1547,12 +1547,12 @@
       "d": "2026-10-28"
     },
     "/p/majesty-royale-women-hybrid": {
-      "h": "1cfb4328055411df",
-      "d": "2026-10-28"
+      "h": "d8ec0d394b63df0c",
+      "d": "2026-10-31"
     },
     "/p/cobra-darkspeed-women-hybrid": {
-      "h": "78b3ef14881b3b21",
-      "d": "2026-10-28"
+      "h": "18c8000c1118415a",
+      "d": "2026-10-31"
     },
     "/p/mizuno-jpxq2-women-iron": {
       "h": "db3f8c60526f3038",
@@ -1991,8 +1991,8 @@
       "d": "2026-10-31"
     },
     "/p/yamaha-cs-hmplus-women-hybrid": {
-      "h": "73a25ea8ce26282c",
-      "d": "2026-10-28"
+      "h": "015d7179d86b9c1d",
+      "d": "2026-10-31"
     },
     "/p/bridgestone-v300x-women-iron": {
       "h": "4c386200dab26d25",
@@ -2278,6 +2278,18 @@
       "h": "7b1c5096da25c96d",
       "d": "2026-10-31"
     },
+    "/p/honma-beres09-women-hybrid": {
+      "h": "563b923167d60b8c",
+      "d": "2026-10-31"
+    },
+    "/p/callaway-revarise-women-hybrid": {
+      "h": "aa02beb441bd8a25",
+      "d": "2026-10-31"
+    },
+    "/p/onoff-lp425-women-utility": {
+      "h": "ca3110f61a88e915",
+      "d": "2026-10-31"
+    },
     "/c/driver": {
       "h": "2ef8ad0f86d8ce44",
       "d": "2026-10-29"
@@ -2287,8 +2299,8 @@
       "d": "2026-10-31"
     },
     "/c/utility": {
-      "h": "fc7639e793f4bfa8",
-      "d": "2026-10-28"
+      "h": "f1364e3dca1bcc7e",
+      "d": "2026-10-31"
     },
     "/c/iron": {
       "h": "1931eb8fc73c79e0",
@@ -2355,8 +2367,8 @@
       "d": "2026-10-31"
     },
     "/g/womens-utility-recommend": {
-      "h": "64193c01c361564b",
-      "d": "2026-10-29"
+      "h": "94d6f3bb83758264",
+      "d": "2026-10-31"
     },
     "/g/wedge-recommend": {
       "h": "8699ac043d7f2757",
@@ -2495,16 +2507,16 @@
       "d": "2026-10-29"
     },
     "/g/womens-utility-recommend-beginner": {
-      "h": "1ec8017a3b3f5930",
-      "d": "2026-10-27"
+      "h": "30633e29e6cee958",
+      "d": "2026-10-31"
     },
     "/g/womens-utility-recommend-intermediate": {
-      "h": "959fdf3fbf127cd1",
-      "d": "2026-10-24"
+      "h": "218a184ec0dfeb89",
+      "d": "2026-10-31"
     },
     "/g/womens-utility-recommend-advanced": {
-      "h": "bad5032c2a1101a5",
-      "d": "2026-10-24"
+      "h": "6f72efd6c0193a08",
+      "d": "2026-10-31"
     },
     "/g/womens-utility-recommend-pro": {
       "h": "f0218f8f4fd7bd51",
@@ -2635,7 +2647,7 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "742ec8c1f16004ac",
+      "h": "149df5dcde53b675",
       "d": "2026-10-31"
     },
     "/about": {
@@ -3331,5 +3343,76 @@
       "d": "2026-10-19"
     }
   },
-  "pending": []
+  "pending": [
+    {
+      "url": "/p/majesty-sterna-women-hybrid",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/p/taylormade-gloire-women-rescue",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/p/majesty-royale-women-hybrid",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/p/cobra-darkspeed-women-hybrid",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/p/yamaha-cs-hmplus-women-hybrid",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/p/honma-beres09-women-hybrid",
+      "kind": "new",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/p/callaway-revarise-women-hybrid",
+      "kind": "new",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/p/onoff-lp425-women-utility",
+      "kind": "new",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/c/utility",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/g/womens-utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/g/womens-utility-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/g/womens-utility-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/g/womens-utility-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-10-31"
+    }
+  ]
 }
