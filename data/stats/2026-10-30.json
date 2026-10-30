@@ -2,77 +2,153 @@
   "date": "2026-10-30",
   "by": {
     "act": {
-      "캠페인: chatgpt.com|/p/ping-g440lst-driver": 1
+      "카카오톡|/c/bag": 2,
+      "카카오톡|/g/golf-bag-recommend": 1,
+      "카카오톡|/p/sunmountain-h2no-stand": 1,
+      "캠페인: chatgpt.com|/g/golf-shoes-recommend": 1,
+      "캠페인: chatgpt.com|/p/ping-g440lst-driver": 1,
+      "캠페인: chatgpt.com|/p/ping-g440sft-driver": 1,
+      "캠페인: chatgpt.com|/p/volvik-vivid": 1,
+      "캠페인: chatgpt.com|/vs/nikon-coolshot-pro3-vs-voicecaddie-sl3": 1
     },
     "asn": {
+      "AS17858 LG POWERCOMM": 1,
       "AS18779 EGIHosting": 1,
-      "AS3786 LG POWERCOMM": 1
+      "AS3786 LG POWERCOMM": 1,
+      "AS4766 Korea Telecom": 2,
+      "AS6619 SamsungSDS Inc.": 1,
+      "AS9318 SK Broadband Co Ltd": 1
     },
     "asncamp": {
-      "AS3786 LG POWERCOMM|chatgpt.com|모바일": 1
+      "AS17858 LG POWERCOMM|chatgpt.com|모바일": 1,
+      "AS3786 LG POWERCOMM|chatgpt.com|모바일": 1,
+      "AS4766 Korea Telecom|chatgpt.com|모바일": 2,
+      "AS6619 SamsungSDS Inc.|chatgpt.com|PC": 1
     },
     "cty": {
-      "KR": 1,
+      "KR": 6,
       "US": 1
     },
     "depth": {
-      "/p/ping-g440lst-driver|75%": 1
+      "/c/bag|75%": 3,
+      "/g/golf-bag-recommend|첫 화면": 1,
+      "/g/golf-shoes-recommend|첫 화면": 1,
+      "/p/ping-g440lst-driver|75%": 1,
+      "/p/sunmountain-h2no-stand|25%": 1,
+      "/p/volvik-vivid|25%": 1,
+      "/vs/nikon-coolshot-pro3-vs-voicecaddie-sl3|50%": 1
     },
     "dev": {
-      "PC": 1,
-      "모바일": 1
+      "PC": 2,
+      "모바일": 5
     },
     "hour": {
-      "01": 2
+      "10": 1,
+      "17": 1,
+      "22": 1,
+      "01": 2,
+      "05": 1,
+      "06": 1
+    },
+    "nav": {
+      "/c/bag|/g/golf-bag-recommend": 1,
+      "/c/bag|/p/sunmountain-h2no-stand": 1
     },
     "out": {
-      "/p/ping-g440lst-driver|ping-g440lst-driver": 1
+      "/p/ping-g440lst-driver|ping-g440lst-driver": 1,
+      "/p/volvik-vivid|volvik-vivid": 1
     },
     "outact": {
-      "조작 후|캠페인: chatgpt.com": 1
+      "조작 후|캠페인: chatgpt.com": 2
     },
     "outcamp": {
-      "chatgpt.com|ping-g440lst-driver": 1
+      "chatgpt.com|ping-g440lst-driver": 1,
+      "chatgpt.com|volvik-vivid": 1
     },
     "outref": {
-      "캠페인: chatgpt.com": 1
+      "캠페인: chatgpt.com": 2
     },
     "pos": {
-      "상세 끝 구매 상자": 1
+      "상세 끝 구매 상자": 1,
+      "상품 페이지": 1
     },
     "pv": {
       "/": 1,
-      "/p/ping-g440lst-driver": 1
+      "/c/bag": 3,
+      "/g/golf-bag-recommend": 1,
+      "/g/golf-shoes-recommend": 1,
+      "/p/ping-g440lst-driver": 1,
+      "/p/ping-g440sft-driver": 1,
+      "/p/sunmountain-h2no-stand": 1,
+      "/p/volvik-vivid": 1,
+      "/vs/nikon-coolshot-pro3-vs-voicecaddie-sl3": 1
     },
     "ref": {
       "직접·북마크": 1,
-      "캠페인: chatgpt.com": 1
+      "카카오톡": 1,
+      "캠페인: chatgpt.com": 5
     },
     "refland": {
       "직접·북마크|/": 1,
-      "캠페인: chatgpt.com|/p/ping-g440lst-driver": 1
+      "카카오톡|/c/bag": 1,
+      "캠페인: chatgpt.com|/g/golf-shoes-recommend": 1,
+      "캠페인: chatgpt.com|/p/ping-g440lst-driver": 1,
+      "캠페인: chatgpt.com|/p/ping-g440sft-driver": 1,
+      "캠페인: chatgpt.com|/p/volvik-vivid": 1,
+      "캠페인: chatgpt.com|/vs/nikon-coolshot-pro3-vs-voicecaddie-sl3": 1
     },
     "refurl": {
-      "chatgpt.com": 1
+      "chatgpt.com": 5
     },
     "seen": {
-      "/p/ping-g440lst-driver": 1
+      "/c/bag": 3,
+      "/g/golf-bag-recommend": 1,
+      "/g/golf-shoes-recommend": 1,
+      "/p/ping-g440lst-driver": 1,
+      "/p/ping-g440sft-driver": 1,
+      "/p/sunmountain-h2no-stand": 1,
+      "/p/volvik-vivid": 1,
+      "/vs/nikon-coolshot-pro3-vs-voicecaddie-sl3": 1
     },
     "seenpos": {
-      "상품 페이지": 1
+      "기타": 1,
+      "비교표": 4,
+      "상품 페이지": 4,
+      "한 줄 결론": 1
     },
     "seenref": {
-      "캠페인: chatgpt.com": 1
+      "카카오톡": 5,
+      "캠페인: chatgpt.com": 5
+    },
+    "skip": {
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3
     },
     "stay": {
-      "/p/ping-g440lst-driver|1~3분": 1
+      "/c/bag|10초 미만": 1,
+      "/c/bag|1~3분": 1,
+      "/c/bag|30초~1분": 1,
+      "/g/golf-bag-recommend|1~3분": 1,
+      "/g/golf-shoes-recommend|10~30초": 1,
+      "/p/ping-g440lst-driver|1~3분": 1,
+      "/p/sunmountain-h2no-stand|30초~1분": 1,
+      "/p/volvik-vivid|10~30초": 1,
+      "/vs/nikon-coolshot-pro3-vs-voicecaddie-sl3|1~3분": 1
     },
     "visit": {
       "/": 1,
-      "/p/ping-g440lst-driver": 1
+      "/c/bag": 1,
+      "/g/golf-shoes-recommend": 1,
+      "/p/ping-g440lst-driver": 1,
+      "/p/ping-g440sft-driver": 1,
+      "/p/volvik-vivid": 1,
+      "/vs/nikon-coolshot-pro3-vs-voicecaddie-sl3": 1
     },
     "xpv": {
-      "/p/ping-g440lst-driver": 1
+      "/g/golf-shoes-recommend": 1,
+      "/p/ping-g440lst-driver": 1,
+      "/p/ping-g440sft-driver": 1,
+      "/p/volvik-vivid": 1,
+      "/vs/nikon-coolshot-pro3-vs-voicecaddie-sl3": 1
     }
   }
 }

@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-31",
+  "by": {
+    "act": {
+      "캠페인: chatgpt.com|/p/caddytalk-cube": 1
+    },
+    "asn": {
+      "AS9318 SK Broadband Co Ltd": 1
+    },
+    "asncamp": {
+      "AS9318 SK Broadband Co Ltd|chatgpt.com|모바일": 1
+    },
+    "cty": {
+      "KR": 1
+    },
+    "depth": {
+      "/p/caddytalk-cube|끝까지": 1
+    },
+    "dev": {
+      "모바일": 1
+    },
+    "hour": {
+      "04": 1
+    },
+    "pv": {
+      "/p/caddytalk-cube": 1
+    },
+    "ref": {
+      "캠페인: chatgpt.com": 1
+    },
+    "refland": {
+      "캠페인: chatgpt.com|/p/caddytalk-cube": 1
+    },
+    "refurl": {
+      "chatgpt.com": 1
+    },
+    "seen": {
+      "/p/caddytalk-cube": 1
+    },
+    "seenpos": {
+      "상품 페이지": 1
+    },
+    "seenref": {
+      "캠페인: chatgpt.com": 1
+    },
+    "stay": {
+      "/p/caddytalk-cube|1~3분": 1
+    },
+    "visit": {
+      "/p/caddytalk-cube": 1
+    },
+    "xpv": {
+      "/p/caddytalk-cube": 1
+    }
+  }
+}

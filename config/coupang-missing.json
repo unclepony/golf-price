@@ -2,117 +2,147 @@
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { since: 처음 못 찾은 날, days: 연속으로 못 찾은 날 수, last: 마지막으로 못 찾은 날 }. 5일이면 picks.json gone.",
   "sklz-gold-flex-trainer": {
     "since": "2026-10-24",
-    "days": 6,
-    "last": "2026-10-30"
+    "days": 7,
+    "last": "2026-10-31"
   },
   "callaway-erc-soft": {
     "since": "2026-10-26",
-    "days": 4,
-    "last": "2026-10-30"
+    "days": 5,
+    "last": "2026-10-31"
   },
   "ping-glide-forged-pro-wedge": {
     "since": "2026-10-26",
-    "days": 4,
-    "last": "2026-10-30"
+    "days": 5,
+    "last": "2026-10-31"
   },
   "xxio-x-iron": {
     "since": "2026-10-26",
-    "days": 4,
-    "last": "2026-10-30"
+    "days": 5,
+    "last": "2026-10-31"
   },
   "ecco-lt1-boa-women-shoes": {
     "since": "2026-10-28",
-    "days": 3,
-    "last": "2026-10-30"
+    "days": 4,
+    "last": "2026-10-31"
   },
   "majesty-royale-women-hybrid": {
     "since": "2026-10-28",
-    "days": 3,
-    "last": "2026-10-30"
+    "days": 4,
+    "last": "2026-10-31"
   },
   "prgr-superegg-women-fairway": {
     "since": "2026-10-28",
-    "days": 3,
-    "last": "2026-10-30"
+    "days": 4,
+    "last": "2026-10-31"
   },
   "pxg-0311-blackops-driver": {
     "since": "2026-10-28",
-    "days": 3,
-    "last": "2026-10-30"
+    "days": 4,
+    "last": "2026-10-31"
   },
   "taylormade-qi10max-rescue": {
     "since": "2026-10-28",
-    "days": 3,
-    "last": "2026-10-30"
-  },
-  "titleist-avx": {
-    "since": "2026-10-28",
-    "days": 3,
-    "last": "2026-10-30"
+    "days": 4,
+    "last": "2026-10-31"
   },
   "majesty-prestigio13-women-fairway": {
     "since": "2026-10-28",
-    "days": 3,
-    "last": "2026-10-30"
+    "days": 4,
+    "last": "2026-10-31"
   },
   "air-jordan-1-low-g-shoes": {
     "since": "2026-10-29",
-    "days": 2,
-    "last": "2026-10-30"
-  },
-  "bridgestone-tour-b-xs": {
-    "since": "2026-10-29",
-    "days": 2,
-    "last": "2026-10-30"
+    "days": 3,
+    "last": "2026-10-31"
   },
   "callaway-jaws-raw-wedge": {
     "since": "2026-10-29",
-    "days": 2,
-    "last": "2026-10-30"
+    "days": 3,
+    "last": "2026-10-31"
   },
   "nike-air-max-90-g-women-shoes": {
     "since": "2026-10-29",
-    "days": 2,
-    "last": "2026-10-30"
+    "days": 3,
+    "last": "2026-10-31"
   },
   "ping-g440-lst-fairway": {
     "since": "2026-10-29",
-    "days": 2,
-    "last": "2026-10-30"
+    "days": 3,
+    "last": "2026-10-31"
   },
   "yamaha-cs-hmplus-women-hybrid": {
     "since": "2026-10-29",
-    "days": 2,
-    "last": "2026-10-30"
-  },
-  "callaway-elyte-td-driver": {
-    "since": "2026-10-30",
-    "days": 1,
-    "last": "2026-10-30"
+    "days": 3,
+    "last": "2026-10-31"
   },
   "callaway-quantum-max-iron": {
     "since": "2026-10-30",
-    "days": 1,
-    "last": "2026-10-30"
-  },
-  "footjoy-stasof-women-glove": {
-    "since": "2026-10-30",
-    "days": 1,
-    "last": "2026-10-30"
+    "days": 2,
+    "last": "2026-10-31"
   },
   "honma-beres09-women-driver": {
     "since": "2026-10-30",
-    "days": 1,
-    "last": "2026-10-30"
+    "days": 2,
+    "last": "2026-10-31"
   },
-  "mizuno-stmax230-driver": {
-    "since": "2026-10-30",
+  "ecco-biom-c4-shoes": {
+    "since": "2026-10-31",
     "days": 1,
-    "last": "2026-10-30"
+    "last": "2026-10-31"
   },
-  "ping-blueprint-s-iron": {
-    "since": "2026-10-30",
+  "ecco-biom-tour-shoes": {
+    "since": "2026-10-31",
     "days": 1,
-    "last": "2026-10-30"
+    "last": "2026-10-31"
+  },
+  "footjoy-pulse-boa-shoes": {
+    "since": "2026-10-31",
+    "days": 1,
+    "last": "2026-10-31"
+  },
+  "golfbuddy-atom": {
+    "since": "2026-10-31",
+    "days": 1,
+    "last": "2026-10-31"
+  },
+  "honma-d1": {
+    "since": "2026-10-31",
+    "days": 1,
+    "last": "2026-10-31"
+  },
+  "nikon-coolshot-pro2-stabilized": {
+    "since": "2026-10-31",
+    "days": 1,
+    "last": "2026-10-31"
+  },
+  "ping-g430max10k-driver": {
+    "since": "2026-10-31",
+    "days": 1,
+    "last": "2026-10-31"
+  },
+  "ping-g440sft-driver": {
+    "since": "2026-10-31",
+    "days": 1,
+    "last": "2026-10-31"
+  },
+  "srixon-q-star-tour-divide": {
+    "since": "2026-10-31",
+    "days": 1,
+    "last": "2026-10-31"
+  },
+  "taylormade-durable-grip-glove": {
+    "since": "2026-10-31",
+    "days": 1,
+    "last": "2026-10-31"
+  },
+  "taylormade-p8cb-iron": {
+    "since": "2026-10-31",
+    "days": 1,
+    "last": "2026-10-31"
+  },
+  "xxio13-women-driver": {
+    "since": "2026-10-31",
+    "days": 1,
+    "last": "2026-10-31"
   }
 }
