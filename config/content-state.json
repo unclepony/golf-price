@@ -2279,15 +2279,15 @@
       "d": "2026-10-31"
     },
     "/p/honma-beres09-women-hybrid": {
-      "h": "563b923167d60b8c",
+      "h": "ea26a41e717eb2c6",
       "d": "2026-10-31"
     },
     "/p/callaway-revarise-women-hybrid": {
-      "h": "aa02beb441bd8a25",
+      "h": "d953fa805b6e558e",
       "d": "2026-10-31"
     },
     "/p/onoff-lp425-women-utility": {
-      "h": "ca3110f61a88e915",
+      "h": "b98056007977ff24",
       "d": "2026-10-31"
     },
     "/c/driver": {
@@ -2359,7 +2359,7 @@
       "d": "2026-10-30"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "c9ef9e420fed1e2f",
+      "h": "41e8ad3583500d14",
       "d": "2026-10-31"
     },
     "/g/iron-recommend": {
@@ -2367,7 +2367,7 @@
       "d": "2026-10-31"
     },
     "/g/womens-utility-recommend": {
-      "h": "94d6f3bb83758264",
+      "h": "4555fc4cc4883113",
       "d": "2026-10-31"
     },
     "/g/wedge-recommend": {
@@ -2654,53 +2654,57 @@
       "h": "062d2326b8040ec7",
       "d": "2026-10-16"
     },
+    "/qa/womens-utility-beginner": {
+      "h": "2c88d1a89c76a7f9",
+      "d": "2026-10-31"
+    },
     "/qa/golf-bag-stand-vs-caddie": {
-      "h": "ea3e05e4b1cd8160",
-      "d": "2026-10-30"
+      "h": "89c066465588cdd3",
+      "d": "2026-10-31"
     },
     "/qa/iron-steel-vs-carbon-shaft": {
-      "h": "8810209434400734",
-      "d": "2026-10-30"
+      "h": "7ffc2a4e03fa0e27",
+      "d": "2026-10-31"
     },
     "/qa/how-many-fairway-woods": {
-      "h": "c75c651d645f296d",
-      "d": "2026-10-30"
+      "h": "c77c01de0b441cb3",
+      "d": "2026-10-31"
     },
     "/qa/utility-4-recommend": {
-      "h": "9751d498fcc525fc",
-      "d": "2026-10-30"
+      "h": "5bef83bf00a9f9c6",
+      "d": "2026-10-31"
     },
     "/qa/golf-rangefinder-recommend": {
-      "h": "f32ca352e977fc3b",
-      "d": "2026-10-30"
+      "h": "7d35abc984dfa769",
+      "d": "2026-10-31"
     },
     "/qa/golf-ball-recommend": {
-      "h": "acdfbdbcbe8bee00",
-      "d": "2026-10-30"
+      "h": "dfb4aaaea4421585",
+      "d": "2026-10-31"
     },
     "/qa/zero-torque-putter": {
-      "h": "5a716be7c9916dd8",
-      "d": "2026-10-30"
+      "h": "6679528d3a5c96ac",
+      "d": "2026-10-31"
     },
     "/qa/womens-golf-club-recommend": {
-      "h": "d18ed364c23f4339",
-      "d": "2026-10-30"
+      "h": "26296f92ce91be7e",
+      "d": "2026-10-31"
     },
     "/qa/wedge-recommend-loft": {
-      "h": "ef29246385f9aff1",
-      "d": "2026-10-30"
+      "h": "b1d8f128298bdcdc",
+      "d": "2026-10-31"
     },
     "/qa/beginner-driver-recommend": {
-      "h": "f45b440787719fd5",
-      "d": "2026-10-30"
+      "h": "23cdba4af4361361",
+      "d": "2026-10-31"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "8e0eb1b9247287f1",
-      "d": "2026-10-30"
+      "h": "0473215c1cf43638",
+      "d": "2026-10-31"
     },
     "/qa": {
-      "h": "eb0926a3d66d97d4",
-      "d": "2026-10-30"
+      "h": "c694db304a313138",
+      "d": "2026-10-31"
     },
     "/vs/adidas-adipower-sl-women-shoes-vs-footjoy-pulse-boa-women-shoes": {
       "h": "912dee150dbc43aa",
@@ -3370,27 +3374,7 @@
       "d": "2026-10-31"
     },
     {
-      "url": "/p/honma-beres09-women-hybrid",
-      "kind": "new",
-      "d": "2026-10-31"
-    },
-    {
-      "url": "/p/callaway-revarise-women-hybrid",
-      "kind": "new",
-      "d": "2026-10-31"
-    },
-    {
-      "url": "/p/onoff-lp425-women-utility",
-      "kind": "new",
-      "d": "2026-10-31"
-    },
-    {
       "url": "/c/utility",
-      "kind": "updated",
-      "d": "2026-10-31"
-    },
-    {
-      "url": "/g/womens-utility-recommend",
       "kind": "updated",
       "d": "2026-10-31"
     },
@@ -3411,6 +3395,96 @@
     },
     {
       "url": "/",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/p/honma-beres09-women-hybrid",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/p/callaway-revarise-women-hybrid",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/p/onoff-lp425-women-utility",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/g/womens-utility-recommend",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/qa/womens-utility-beginner",
+      "kind": "new",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/qa/golf-bag-stand-vs-caddie",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/qa/iron-steel-vs-carbon-shaft",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/qa/how-many-fairway-woods",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/qa/utility-4-recommend",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/qa/golf-rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/qa/golf-ball-recommend",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/qa/zero-torque-putter",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/qa/womens-golf-club-recommend",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/qa/wedge-recommend-loft",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/qa/beginner-driver-recommend",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-10-31"
+    },
+    {
+      "url": "/qa",
       "kind": "updated",
       "d": "2026-10-31"
     }
