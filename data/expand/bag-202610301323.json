@@ -1,0 +1,663 @@
+[
+ {
+  "category": "bag",
+  "id": "titleist-players4-stadry-stand",
+  "name": "타이틀리스트 플레이어스 4 스테이드라이 방수 스탠드백",
+  "query": "타이틀리스트 플레이어스4 스테이드라이 스탠드백",
+  "must": [
+   "타이틀리스트"
+  ],
+  "mustAny": [
+   "스테이드라이",
+   "stadry"
+  ],
+  "exclude": [
+   "중고",
+   "커버",
+   "후드커버",
+   "레인커버",
+   "보스턴",
+   "파우치",
+   "네임택",
+   "미사용",
+   "여성",
+   "레이디",
+   "s4",
+   "s5",
+   "카본",
+   "플러스",
+   "카트"
+  ],
+  "summary": "타이틀리스트 플레이어스 4 스탠드백의 방수형입니다. 제조사 안내 기준 StaDry 방수 소재와 이음새를 막은(실링) 지퍼, 4개 풀렝스 칸막이, 약 1.7kg(3.7파운드)입니다.",
+  "points": [
+   "StaDry 방수 구조·실링 지퍼(제조사 표기)",
+   "4분할 풀렝스 칸막이",
+   "약 1.7kg 경량"
+  ],
+  "guidePick": {
+   "role": "경량 방수 스탠드",
+   "forWhom": "비 오는 날에도 메고 걷는 분",
+   "short": "가벼운 방수 스탠드백",
+   "plus": "방수",
+   "minus": "칸 수",
+   "pros": [
+    "실링 지퍼와 방수 소재로 비에 강합니다(제조사 안내)",
+    "약 1.7kg으로 메고 걷기 가볍습니다"
+   ],
+   "cons": [
+    "4분할이라 클럽이 많으면 칸이 비좁습니다",
+    "주머니 수가 캐디백보다 적습니다"
+   ],
+   "scores": [
+    3,
+    5,
+    5,
+    3
+   ],
+   "specs": [
+    "스탠드백",
+    "방수·4분할·약 1.7kg",
+    "타이틀리스트"
+   ],
+   "verdict": "가볍고 방수까지 되는 걷기용 스탠드백을 찾는 분께"
+  },
+  "sources": [
+   "https://titleist.ca/product/players-4-stadry/23TGB05.html",
+   "https://golfbusinessnews.com/news/new-products/titleist-introduces-new-stand-hybrid-bag-range"
+  ]
+ },
+ {
+  "category": "bag",
+  "id": "titleist-players4-plus-stand",
+  "name": "타이틀리스트 플레이어스 4 플러스 스탠드백",
+  "query": "타이틀리스트 플레이어스4 플러스 스탠드백",
+  "must": [
+   "타이틀리스트",
+   "플러스"
+  ],
+  "mustAny": [
+   "플레이어스4",
+   "플레이어스 4",
+   "players4",
+   "players 4"
+  ],
+  "exclude": [
+   "중고",
+   "커버",
+   "후드커버",
+   "레인커버",
+   "보스턴",
+   "파우치",
+   "네임택",
+   "미사용",
+   "여성",
+   "레이디",
+   "s4",
+   "s5",
+   "카본",
+   "스테이드라이",
+   "stadry",
+   "카트"
+  ],
+  "summary": "타이틀리스트 플레이어스 4에 주머니를 늘린 모델입니다. 제조사 발표 기준 4개 풀렝스 칸막이, 낮은 상단, 약 1.95kg입니다.",
+  "points": [
+   "4분할 풀렝스 칸막이(제조사 표기)",
+   "플레이어스 4보다 주머니가 많음",
+   "약 1.95kg"
+  ],
+  "guidePick": {
+   "role": "수납 늘린 경량 스탠드",
+   "forWhom": "가벼운 스탠드백에 옷·공을 더 넣고 싶은 분",
+   "short": "플레이어스 4 + 주머니",
+   "plus": "수납",
+   "minus": "방수",
+   "pros": [
+    "플레이어스 4 계열 중 주머니가 많은 편입니다(제조사 안내)",
+    "약 1.95kg으로 메고 걷기 무난합니다"
+   ],
+   "cons": [
+    "완전 방수 모델은 아닙니다",
+    "4분할이라 칸 정리는 14분할보다 덜합니다"
+   ],
+   "scores": [
+    4,
+    4,
+    3,
+    3
+   ],
+   "specs": [
+    "스탠드백",
+    "4분할·약 1.95kg",
+    "타이틀리스트"
+   ],
+   "verdict": "플레이어스 4의 가벼움에 수납을 조금 더 원하는 분께"
+  },
+  "sources": [
+   "https://golfbusinessnews.com/news/new-products/titleist-introduces-new-stand-hybrid-bag-range",
+   "https://www.titleist.com/teamtitleist/b/tourblog/posts/meet-the-new-2019-players-collection-and-hybrid-stand-bags"
+  ]
+ },
+ {
+  "category": "bag",
+  "id": "titleist-players-s4-stadry-stand",
+  "name": "타이틀리스트 플레이어스 S4 스테이드라이 스탠드백 (2026)",
+  "query": "타이틀리스트 2026 플레이어스 S4 스테이드라이 스탠드백",
+  "must": [
+   "타이틀리스트",
+   "s4"
+  ],
+  "exclude": [
+   "중고",
+   "커버",
+   "후드커버",
+   "레인커버",
+   "보스턴",
+   "파우치",
+   "네임택",
+   "미사용",
+   "여성",
+   "레이디",
+   "s5",
+   "카본",
+   "카트"
+  ],
+  "summary": "타이틀리스트 2026년 플레이어스 S4 스테이드라이입니다. 제조사 안내 기준 4분할 상단, 8개 주머니, StaDry 방수 구조, 약 2.3kg(5파운드)입니다.",
+  "points": [
+   "StaDry 방수(제조사 표기)",
+   "4분할·8개 주머니",
+   "약 2.3kg으로 플레이어스 4보다 무거움"
+  ],
+  "guidePick": {
+   "role": "수납형 방수 스탠드",
+   "forWhom": "방수와 수납을 둘 다 원하는 분",
+   "short": "2026 방수 스탠드백",
+   "plus": "방수·수납",
+   "minus": "무게",
+   "pros": [
+    "방수 구조라 비에 강합니다(제조사 안내)",
+    "주머니 8개로 수납이 넉넉합니다"
+   ],
+   "cons": [
+    "약 2.3kg으로 초경량 스탠드백보다 무겁습니다",
+    "가격대가 높은 편입니다"
+   ],
+   "scores": [
+    4,
+    3,
+    5,
+    3
+   ],
+   "specs": [
+    "스탠드백",
+    "방수·4분할·8주머니",
+    "타이틀리스트"
+   ],
+   "verdict": "방수 스탠드백에 수납까지 챙기려는 분께"
+  },
+  "sources": [
+   "https://www.titleist.com/product/players-s4-stadry/TB26SX2-002.html"
+  ]
+ },
+ {
+  "category": "bag",
+  "id": "ping-hoofer-lite-stand",
+  "name": "핑 후퍼 라이트 스탠드백",
+  "query": "핑 후퍼 라이트 스탠드백",
+  "must": [
+   "핑",
+   "후퍼",
+   "라이트"
+  ],
+  "exclude": [
+   "중고",
+   "커버",
+   "후드커버",
+   "레인커버",
+   "보스턴",
+   "파우치",
+   "네임택",
+   "미사용",
+   "여성",
+   "레이디",
+   "후퍼14",
+   "후퍼 14",
+   "투어",
+   "몬순",
+   "카트"
+  ],
+  "summary": "핑 후퍼 스탠드백의 가벼운 모델입니다. 4분할 풀렝스 칸막이 상단이며 무게는 약 2.3kg(약 5파운드)입니다.",
+  "points": [
+   "4분할 풀렝스 칸막이",
+   "후퍼보다 가벼운 구성",
+   "완전 방수 모델은 아님"
+  ],
+  "guidePick": {
+   "role": "경량 후퍼",
+   "forWhom": "후퍼를 원하지만 더 가볍게 들고 싶은 분",
+   "short": "가벼운 후퍼",
+   "plus": "무게",
+   "minus": "칸 수",
+   "pros": [
+    "후퍼 계열 중 가벼운 편입니다",
+    "핑 후퍼 특유의 스탠드 다리 구조입니다"
+   ],
+   "cons": [
+    "4분할이라 칸 정리는 덜합니다",
+    "완전 방수 모델은 아닙니다"
+   ],
+   "scores": [
+    3,
+    5,
+    3,
+    4
+   ],
+   "specs": [
+    "스탠드백",
+    "4분할·경량",
+    "핑"
+   ],
+   "verdict": "걷는 라운드가 많고 가벼운 후퍼를 찾는 분께"
+  },
+  "sources": [
+   "https://www.golfdiscount.com/collections/ping/products/ping-2025-hoofer-lite-stand-bag",
+   "https://mygolfspy.com/news-opinion/5-must-have-features-for-stand-bags-in-2025/"
+  ]
+ },
+ {
+  "category": "bag",
+  "id": "ping-hoofer14-stand",
+  "name": "핑 후퍼 14 스탠드백",
+  "query": "핑 후퍼14 스탠드백",
+  "must": [
+   "핑",
+   "후퍼"
+  ],
+  "mustAny": [
+   "후퍼14",
+   "후퍼 14",
+   "hoofer 14",
+   "hoofer14"
+  ],
+  "exclude": [
+   "중고",
+   "커버",
+   "후드커버",
+   "레인커버",
+   "보스턴",
+   "파우치",
+   "네임택",
+   "미사용",
+   "여성",
+   "레이디",
+   "라이트",
+   "투어",
+   "몬순",
+   "카트"
+  ],
+  "summary": "핑 후퍼 스탠드백에 14분할 상단을 넣은 모델입니다. 클럽마다 칸이 따로 있고, 무게는 약 2.5kg으로 기본 후퍼보다 조금 무겁습니다.",
+  "points": [
+   "14분할 상단",
+   "약 2.5kg",
+   "스탠드백이지만 캐디백처럼 칸 정리"
+  ],
+  "guidePick": {
+   "role": "14분할 후퍼",
+   "forWhom": "후퍼를 쓰면서 클럽이 엉키지 않기를 원하는 분",
+   "short": "후퍼인데 14칸",
+   "plus": "칸 정리",
+   "minus": "무게",
+   "pros": [
+    "14칸이라 클럽끼리 부딪히지 않습니다",
+    "핑 후퍼 스탠드 구조 그대로입니다"
+   ],
+   "cons": [
+    "기본 후퍼보다 무겁습니다",
+    "완전 방수 모델은 아닙니다"
+   ],
+   "scores": [
+    5,
+    3,
+    3,
+    3
+   ],
+   "specs": [
+    "스탠드백",
+    "14분할·약 2.5kg",
+    "핑"
+   ],
+   "verdict": "스탠드백에서 칸 정리를 가장 중요하게 보는 분께"
+  },
+  "sources": [
+   "https://mygolfspy.com/reviews/stand-bags/ping-hoofer-14/",
+   "https://golfalot.com/equipment-review/ping-hoofer-14-stand-bag-review"
+  ]
+ },
+ {
+  "category": "bag",
+  "id": "callaway-fairway-c-stand",
+  "name": "캘러웨이 페어웨이 C 스탠드백",
+  "query": "캘러웨이 페어웨이C 스탠드백",
+  "must": [
+   "캘러웨이",
+   "페어웨이"
+  ],
+  "exclude": [
+   "중고",
+   "커버",
+   "후드커버",
+   "레인커버",
+   "보스턴",
+   "파우치",
+   "네임택",
+   "미사용",
+   "여성",
+   "레이디",
+   "hd",
+   "14",
+   "플러스",
+   "카트",
+   "우드"
+  ],
+  "summary": "캘러웨이 경량 스탠드백 페어웨이 C입니다. 제조사 표기 기준 4개 풀렝스 칸막이, 8개 주머니, 약 1.8kg(4파운드)입니다.",
+  "points": [
+   "4분할 풀렝스 칸막이·8주머니(제조사 표기)",
+   "약 1.8kg 경량",
+   "방수형은 별도 모델(페어웨이 C HD)"
+  ],
+  "guidePick": {
+   "role": "가성비 경량 스탠드",
+   "forWhom": "가볍고 무난한 스탠드백을 찾는 분",
+   "short": "가벼운 기본형",
+   "plus": "무게",
+   "minus": "방수",
+   "pros": [
+    "약 1.8kg으로 가볍습니다(제조사 표기)",
+    "주머니 8개로 기본 수납이 됩니다"
+   ],
+   "cons": [
+    "방수 모델이 아닙니다",
+    "4분할이라 칸 정리는 덜합니다"
+   ],
+   "scores": [
+    3,
+    5,
+    3,
+    4
+   ],
+   "specs": [
+    "스탠드백",
+    "4분할·8주머니·약 1.8kg",
+    "캘러웨이"
+   ],
+   "verdict": "가볍고 부담 없는 첫 스탠드백으로"
+  },
+  "sources": [
+   "https://eu.callawaygolf.com/en/lt/callaway-golf/gear/golf-bags/stand-bags/ceu253699.html",
+   "https://www.golfdiscount.com/collections/brands-callaway-golf-bags/products/callaway-2025-fairway-c-stand-bag"
+  ]
+ },
+ {
+  "category": "bag",
+  "id": "sunmountain-c130-cart",
+  "name": "썬마운틴 C-130 카트백",
+  "query": "썬마운틴 C130 캐디백",
+  "must": [
+   "썬마운틴"
+  ],
+  "mustAny": [
+   "c130",
+   "c-130",
+   "c 130"
+  ],
+  "exclude": [
+   "중고",
+   "커버",
+   "후드커버",
+   "레인커버",
+   "보스턴",
+   "파우치",
+   "네임택",
+   "미사용",
+   "여성",
+   "레이디",
+   "스탠드",
+   "하이브리드",
+   "vlo",
+   "c130s"
+  ],
+  "summary": "썬마운틴 대표 카트백 C-130입니다. 제조사 표기 기준 14분할, 11개 주머니(거리측정기 주머니·보냉 주머니 포함), 약 3.4kg(7.6파운드)입니다.",
+  "points": [
+   "14분할 풀렝스 칸막이(제조사 표기)",
+   "주머니 11개, 보냉 주머니",
+   "약 3.4kg"
+  ],
+  "guidePick": {
+   "role": "카트용 14분할",
+   "forWhom": "카트에 싣고 수납을 넉넉히 쓰고 싶은 분",
+   "short": "수납 많은 카트백",
+   "plus": "수납·칸 정리",
+   "minus": "무게",
+   "pros": [
+    "14칸이라 클럽 정리가 쉽습니다(제조사 안내)",
+    "보냉 주머니·거리측정기 주머니가 있습니다"
+   ],
+   "cons": [
+    "약 3.4kg으로 메고 걷기에는 무겁습니다",
+    "부피가 커 트렁크 자리를 차지합니다"
+   ],
+   "scores": [
+    5,
+    2,
+    4,
+    3
+   ],
+   "specs": [
+    "카트백",
+    "14분할·11주머니·약 3.4kg",
+    "썬마운틴"
+   ],
+   "verdict": "카트 라운드 위주이고 수납을 중요하게 보는 분께"
+  },
+  "sources": [
+   "https://www.sunmountain.com/products/c-series-c-130-cart-bag",
+   "https://www.sunmountain.com/blogs/blog/c-130-golf-cart-bag"
+  ]
+ },
+ {
+  "category": "bag",
+  "id": "sunmountain-45ls-14-stand",
+  "name": "썬마운틴 4.5 LS 14WAY 스탠드백",
+  "query": "썬마운틴 4.5LS 14WAY 스탠드백",
+  "must": [
+   "썬마운틴"
+  ],
+  "mustAny": [
+   "4.5ls",
+   "4.5 ls"
+  ],
+  "exclude": [
+   "중고",
+   "커버",
+   "후드커버",
+   "레인커버",
+   "보스턴",
+   "파우치",
+   "네임택",
+   "미사용",
+   "여성",
+   "레이디",
+   "이클립스",
+   "eclipse",
+   "카트"
+  ],
+  "summary": "썬마운틴 경량 계열 4.5 LS의 14분할 스탠드백입니다. 14분할 상단이며 무게는 약 2.6kg(5.75파운드)입니다.",
+  "points": [
+   "14분할 상단",
+   "약 2.6kg",
+   "경량 계열 스탠드백"
+  ],
+  "guidePick": {
+   "role": "14분할 스탠드",
+   "forWhom": "스탠드백에서 칸 정리와 무게를 함께 보는 분",
+   "short": "14칸 스탠드",
+   "plus": "칸 정리",
+   "minus": "무게",
+   "pros": [
+    "14칸이라 클럽끼리 부딪히지 않습니다",
+    "썬마운틴 경량 계열입니다"
+   ],
+   "cons": [
+    "14분할 상단 때문에 4분할보다 무겁습니다",
+    "완전 방수 모델은 아닙니다"
+   ],
+   "scores": [
+    5,
+    3,
+    3,
+    3
+   ],
+   "specs": [
+    "스탠드백",
+    "14분할·약 2.6kg",
+    "썬마운틴"
+   ],
+   "verdict": "14칸 스탠드백을 매치플레이보다 가볍게 원하는 분께"
+  },
+  "sources": [
+   "https://sunmountain.com/collections/fathers-day-collection/products/4-5ls-14w",
+   "https://playbetter.com/products/sun-mountain-2025-4-5ls-14-way-vlo-stand-bag"
+  ]
+ },
+ {
+  "category": "bag",
+  "id": "mizuno-brd3-stand",
+  "name": "미즈노 BR-D3 스탠드백",
+  "query": "미즈노 BR-D3 스탠드백",
+  "must": [
+   "미즈노"
+  ],
+  "mustAny": [
+   "br-d3",
+   "brd3",
+   "br d3"
+  ],
+  "exclude": [
+   "중고",
+   "커버",
+   "후드커버",
+   "레인커버",
+   "보스턴",
+   "파우치",
+   "네임택",
+   "미사용",
+   "여성",
+   "레이디",
+   "br-d4",
+   "brd4",
+   "카트"
+  ],
+  "summary": "미즈노 경량 스탠드백 BR-D3입니다. 4분할 상단(풀렝스 칸막이 2개)이며 무게는 약 2.1kg입니다.",
+  "points": [
+   "4분할 상단·풀렝스 칸막이 2개",
+   "약 2.1kg",
+   "경량 걷기용"
+  ],
+  "guidePick": {
+   "role": "경량 스탠드",
+   "forWhom": "가벼운 걷기용 스탠드백을 찾는 분",
+   "short": "가벼운 미즈노",
+   "plus": "무게",
+   "minus": "칸 정리",
+   "pros": [
+    "약 2.1kg으로 가볍습니다",
+    "무난한 디자인입니다"
+   ],
+   "cons": [
+    "풀렝스 칸막이가 2개뿐입니다",
+    "완전 방수 모델은 아닙니다"
+   ],
+   "scores": [
+    3,
+    5,
+    3,
+    4
+   ],
+   "specs": [
+    "스탠드백",
+    "4분할·약 2.1kg",
+    "미즈노"
+   ],
+   "verdict": "가볍고 단순한 스탠드백을 원하는 분께"
+  },
+  "sources": [
+   "https://golfbusinessnews.com/news/new-products/mizuno-unveils-new-br-d-series-golf-bag-range/",
+   "https://www.golfdiscount.com/collections/mizuno/products/mizuno-2025-brd3-stand-bag"
+  ]
+ },
+ {
+  "category": "bag",
+  "id": "taylormade-flextech-stand",
+  "name": "테일러메이드 플렉스텍 스탠드백",
+  "query": "테일러메이드 플렉스텍 스탠드백",
+  "must": [
+   "테일러메이드"
+  ],
+  "mustAny": [
+   "플렉스텍",
+   "flextech"
+  ],
+  "exclude": [
+   "중고",
+   "커버",
+   "후드커버",
+   "레인커버",
+   "보스턴",
+   "파우치",
+   "네임택",
+   "미사용",
+   "여성",
+   "레이디",
+   "슈퍼라이트",
+   "superlite",
+   "크로스오버",
+   "라이프스타일",
+   "카트"
+  ],
+  "summary": "테일러메이드 대표 스탠드백 플렉스텍입니다. 경량 스탠드백이며 칸 수·무게는 연식마다 달라 판매처에서 확인해야 합니다.",
+  "points": [
+   "테일러메이드 대표 스탠드백",
+   "칸 수·무게는 판매처 확인",
+   "완전 방수 모델은 아님"
+  ],
+  "guidePick": {
+   "role": "테일러메이드 스탠드",
+   "forWhom": "테일러메이드 클럽에 맞춰 백을 고르는 분",
+   "short": "테일러메이드 기본 스탠드",
+   "plus": "브랜드",
+   "minus": "사양 확인",
+   "pros": [
+    "가벼운 걷기용 스탠드백입니다",
+    "테일러메이드 클럽과 색을 맞추기 좋습니다"
+   ],
+   "cons": [
+    "연식마다 칸 수·무게가 달라 판매처 확인이 필요합니다",
+    "완전 방수 모델은 아닙니다"
+   ],
+   "scores": [
+    3,
+    4,
+    3,
+    3
+   ],
+   "specs": [
+    "스탠드백",
+    "판매처 확인",
+    "테일러메이드"
+   ],
+   "verdict": "테일러메이드 브랜드로 맞추고 싶은 분께"
+  },
+  "sources": [
+   "https://www.americangolf.co.uk/gps-bags-equipment/carry-bags/taylormade-flextech-stand-bag-357458.html"
+  ]
+ }
+]
