@@ -1,222 +1,102 @@
 {
- "titleist-players-flex-glove": {
-  "none": "검색 10개 중 조건 맞는 상품 없음",
-  "seen": [
-   "타이틀리스트 남성 골프 장갑 프로페셔널 TG73 라운딩 양가죽 양피 왼손, 1개, 최고급양피-화이트",
-   "타이틀리스트 남성 골프 장갑 프로페셔널 TG73 라운딩 양가죽 양피 왼손, 1개, 최고급양피-블랙",
-   "[3장 세트] 풋조이 NEW 웨더소프 레볼루션 남성 왼손 골프장갑 Weather Sof 남자 볼마커 장갑, 3개, 화이트",
-   "프리미엄 천연 양피 골프장갑 세트, 화이트, 12개",
-   "테크스킨 남녀공용 레인플렉스 골프 레인장갑 오른손용, 블랙, 1개"
-  ]
- },
- "titleist-players-womens-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9585591849&itemId=10275958252&vendorItemId=81821319224&traceid=V0-153-84709963bf27cbbf&requestid=20261024052522321103899566&token=31850C%7CMIXED&pt=0&slot=6",
-  "title": "타이틀리스트 플레이어스 여성 양피 골프장갑 6801E",
+ "taylormade-smartcross-glove": {
+  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=7479128627&itemId=18554318430&vendorItemId=91665438360&traceid=V0-153-b7bea84dda7140d8&requestid=20261030172529626181691917&token=31850C%7CGM&pt=0&slot=1",
+  "title": "테일러메이드 남성용 합피 스마트 크로스 골프장갑 왼손착용 TD305",
   "rocket": false,
-  "productId": "9585591849",
-  "price": 34500,
-  "image": "https://ads-partners.coupang.com/image1/SqmtS4A0ljttrSORSgsOydvyqIcY7A0z1In5PWeFScLEFl4gQxrvFot_vKYpdExAjR9SAqZAoO0NCbhvGFvSNODaBio4mPSm6n_jWaQC_ZwxfXO3ejV95U1dRwzjQlNlwrY6HBikC9wiv0NdZpFJG5D7g0aXWrKRlPrHOZDvr-ii-FBG8mAXFaIqTwKre01JV0dxe8HLDAR0KJ_t-PPfGwZlnMi6V3w1-hrmeDDs4aqB4P0cOryzjjF_j4e4o-nESZFI_dpbeDX9kpZ8G_emPv_cKPwDZw_LBY6EeAk1atj8fnmgzPddGCdNneUkU6xmYNzvcFkqf2S_wGR1vAlcLEIhd7U4F2Y57dIJ6t1dLLIRsf48N_wGMu7hvRayTrOoPlq1vYlfK9lHy99xKzPU66u1y26m7FLHlzgGxXxtEpop3ytHkPGIhzko85DUsUuQrhhu0VtnLOnoU_p4QwAhIZ9QXQPXUZX2x6hleKTmAryYGN-B2mabVIHVlpambkPktxxJVpJ-T_ghdOH5aHKD4kOB5LVqN8QI09XgPlbDTesS1nQpwN2WCB46V8gH3f2G1LwLKeWQUIAbRslOAPEm-1IQboXY_dx3Wn8kFr3g_z_AgE5gx90BSenb1lzpaA==",
-  "checked": "2026-10-24",
-  "cands": 10
- },
- "footjoy-wintersof-pair-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=7677478222&itemId=16658867387&vendorItemId=94492947376&traceid=V0-153-b3f9cd0502ef231b&requestid=20261024053720190103895419&token=31850C%7CMIXED&pt=0&slot=7",
-  "title": "풋조이 2023 윈터소프 남성 양손 방한 골프장갑 66947E",
-  "rocket": false,
-  "productId": "7677478222",
-  "price": 24500,
-  "image": "https://ads-partners.coupang.com/image1/iCyWA6vtrLzzdI03iJsQ0EGLQI5JhD_7DO7gANhyUxxSva3gOErxQeR10u03hJhKsw1AD78mNsCsqQ_u2jtb2nZ6PV4pHPyK66GgZW5a8XFh1MOwrme-IaK4CBl1UW_6ibCYEyZJPN02G94jT7ZNIiI4a0sOeSNgz70YrrccnQ_ZBynIMFQwm-t5QNqI_BgOirrYogDmIGNH_10s3L7zFYZWe3w_EHFyly4iq2hs98G5bNJj1YJcrw1MMHTXP6uN0_VSBXPfmW_apMOR3rGxMm5W9neHaBdjuAJeSMbjx6bkpkUpZ_OXT0hZzJxi-6GxNTiU3Vekr8wILlFormlHynSzq6rO5aulNS6KAayS2YUjVhpTVLHtDJGFF2k3ELVFl_-i3JgNpj2Ef2U7vHAQw7CuaqXSRSXHzP0Sr3ZNOdptdRdcAYZJfb_YI9lPYWIU1sXCV9nZDd3p8De0ABog1iOGwkA7QctH7Ip080nGs6XwiTB69VEEMFqlISCsLdecRIXVO8SRxFQd-31C9RPkK0RwMBIeSOks4f1WYJVXAf_ykRZznRqoNLBv-M49lUAJ__3Ht3EjTb-LBzIayNdjnzLZy08=",
-  "checked": "2026-10-24",
-  "cands": 10
- },
- "footjoy-wintersof-women-pair-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9784179503&itemId=29293056418&vendorItemId=96209097950&traceid=V0-153-26b43e8123d830ba&requestid=20261024052531336034686922&token=31850C%7CMIXED&pt=0&slot=7",
-  "title": "풋조이 여성용 방한 겨울 골프 장갑 윈터소프 양손",
-  "rocket": false,
-  "productId": "9784179503",
-  "price": 30000,
-  "image": "https://ads-partners.coupang.com/image1/Vj31V5R2_fcZAINKVhmSZlacpdAJDOEbvN6uY050H_-ukNXaHZdnaZc6dXaBbfufHznuPqvtalsmGvJuMaD0c-2Mem8ga2ayI_2gGNo45DFtItdI6_-T9OZ9A2jY6JwlolrLAtP3HvABNjNFH1_4WzB76kI9t244Tn2BfVF9fdZKb5_RKQneFbJOsoNkBj4vyvQrtO4ztFzYtQz7swFOO8p8LRqMin22xYIOAuGr3dLeBlYwooTMgPVEzYyVWvIjdA-grGrIRziFZzuWAc7NX_lfgj7FtJknDPJt7d56cxcJ7gZPvfo403-b-vANvSr7Q5NlxOtk9sqpkjuILpMkNOz0XleVPt_88lS64j4F-ZbVFBeMTRb-L-RU_oAyx_98ggX8fK1KHgEvQEM0NBs5DPu7OxawVaJW-d7HTnsQFlpRlOAYrxcTOVGFOtb1bETV8N3W6poOqAAZatPYFrZdVODrXJZ-WbNutmWo3-dA_VWl1NThLVPA2UV_waIM6oK14meOLzMd2k4TFNEMGFHfRA3la19MrkJc0wj0vlRJHJqJaCttl-pUvEoNAl-rCAzPKfPq5jP9435qCxRt",
-  "checked": "2026-10-24",
-  "cands": 7
- },
- "footjoy-gtxtreme-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9393118388&itemId=28008862671&vendorItemId=94966238258&traceid=V0-153-da13e8c15143a25f&clickBeacon=e7697520-cf1f-11f1-b46a-8836d23d4e0b%7E3&requestid=20261024052535767066162961&token=31850C%7CMIXED&pt=1&slot=1",
-  "title": "풋조이 남성용 NEW GT 익스트림 볼마커 골프장갑 왼손용 64840, 화이트 + 블랙, 1개",
-  "rocket": true,
-  "productId": "9393118388",
-  "price": 23400,
-  "image": "https://ads-partners.coupang.com/image1/BZbyccucu_gXBgPSBff2WLbdn3ewmo1dHgkZDTlpQ3_Pj_3n4BYNjwdhrGf5dOmT-RQSxNPP9Ez57rAtlpfBFgLkHFAYL9Pl3D_TDYHLczN87BNk6cYyIbxra0l2vR2gwsy_IOgl44SV5lxZdqXVWaNLrusI0EVqXa1P13mzcbxA0fBV6T1EfgZqc7As_Sjk_g5Epx25ZIaG1R8WsL-qeQVqPOfxIj_3zu2mmlupDtv49rb4wJf1c5PD08Et1_Andeq1U3wocqxHXtI-UYJDAdl_nPCFwSzcFWMCpYxuGs4pPRTcmB5smmBlad2y5P_IbS9qvT_8-uPjVkhIQJxu7e4WuXnF5bfXZL28XFLEK73aqM7KgPbtuqb-2whyqaXL6wZY2KNoUI_JV-A7wqbTrho4jwDg28Pz-5maWAM1a_ipr1zN3n8rJ9HXdmKXnt2oS1Xl27RlDPA2LbkQ8nXeh3k467BY7yWET1f10HiwOnREJ3raJUs-bcte8MqwFedifR1eVceqewQns3nTqj2tDlvJpGmhcywTSFaRSUex97XnF0wUj4l9",
-  "checked": "2026-10-24",
-  "cands": 10
- },
- "footjoy-stasof-women-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9387962168&itemId=27876283829&vendorItemId=94835743982&traceid=V0-153-417db62c6a6b3bdf&requestid=20261024052540131037896313&token=31850C%7CMIXED&pt=0&slot=10",
-  "title": "풋조이 여성 스테이소프 STASOF 블랙 골프장갑 왼손착용 [오른손잡이]",
-  "rocket": true,
-  "productId": "9387962168",
-  "price": 34700,
-  "image": "https://ads-partners.coupang.com/image1/XH8cGC9-xOu0TJ7-XJLQuWySB6DaubhBWOSWT-OQVbfCwDn1DNABWuuZt2Rekmcnc8AJD_KULueyiLRTNj2eMlNRc3yrZUTTPeEkJYqsiG6kosvKrlc0Bpi1aB3qOYPRbikknJNvaYNZKlpluoMh0Ct9QqOTA11qvFQsohnjCcNqn59NDFJJwlVMXEstwYUegLEmoviT_6ljhmmp7e_qcQXzfxL03H_Fp9BqGZGDZOOZmVSE-VbDfsvyy-qbhW4NsdAxUxmimSjgm0qzlYLLDjHWl9jqTkvdzbRhLofjf4wKU1D4rpzGlPe8YQh0Vyk1QaUSrJ984EL0YyM3qavfqO405oY-Arnezp9BDDcZ9vyrJkwWiuEUwXDnJYNaIsN6q-y6hqww0ShJVLnFUzNTCOGMc9awc6xnlXpfiy9vXWMTRBy1Hv3ijjwtbzJT_c_ynIUvQ-K-yuw4tP7DomT7hW-FC326-Oz0xTcuHDxYqYmQga9nmT3h-id-BKURD6QiRMKU5BxNg3RTwd1kYpqZvb32O2cagfoFNkbR3C6AVx1_yC-6msb39o4-p18qVYQDXmMf830Jr0_-DYscoLlblOU_tNM=",
-  "checked": "2026-10-24",
-  "cands": 10
- },
- "callaway-tour-authentic-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9776907646&itemId=29268011631&vendorItemId=96185374331&traceid=V0-153-96684a889424c21f&requestid=20261024053724608037897573&token=31850C%7CMIXED&pt=0&slot=6",
-  "title": "캘러웨이 투어 어센틱 남성 양피 골프장갑",
-  "rocket": false,
-  "productId": "9776907646",
-  "price": 19200,
-  "image": "https://ads-partners.coupang.com/image1/gRqTLWU-jAge99cAgYoJhW_bgzH90KPMk1n26cqH1KO8WNoSxfwyHLyMPWrZHY6bFghhF_r3Bn5tx1CIElkuxITVL77-PHx2bpRjBSWtLkiLSqkmL9BcoDXr4x5PrKtCjnHNgx2TdJtEZWdAXLQMe85-mbJq7zCpq4KLdwN7PVA9FN39J95VnQsN6p1gr1So2jsAJhOkyVVFpohOBSqCM1Jc4GyK87B42ZBokSNOl6whoqbxOiZx5x6qCakerOmI_G7yeBNTOrA0BVpbZVTo9zxMbwVa-f5QCCvE0C54B4rpievNREeF3zyY92bUfe8zwHQrGJbZeQ2K2oBK15S4DcjnZNY7opdYdrWm2P1AmNqDD1Vlt3VO7pBIdRAobBBO72nE04rlyMB34CYYuGUTOU74jkgsHrof47eAbwIsBAuRJCOcgvDHe4lzc2-3DfG6zx7OZuqJlzL0WbglkVMgN7_4U2kqFeQ6hPQlsykAsx6x95LFhAHUnc91TuJjVTY50SBzFmhdxWQh9gHCmb_aGFi9Zr-b4PNkitdb_wyBvai0k45IVf1BdsGOE-FXPCMjwHe07xWtmsyNUxFE",
-  "checked": "2026-10-24",
-  "cands": 10
- },
- "callaway-weather-spann-glove": {
-  "none": "검색 5개 중 조건 맞는 상품 없음",
-  "seen": [
-   "[3장 세트] 풋조이 NEW 웨더소프 레볼루션 남성 왼손 골프장갑 Weather Sof 남자 볼마커 장갑, 3개, 화이트",
-   "[3장 세트] 풋조이 NEW 웨더소프 레볼루션 남성 왼손 골프장갑 Weather Sof 남자 볼마커 장갑, 3개, 화이트",
-   "발그린 프로 반양피 골프장갑 남성용 왼손 4장세트, 1세트, 화이트",
-   "프리미엄 천연 양피 골프장갑 세트, 화이트, 18개",
-   "프리미엄 천연 양피 골프장갑 세트, 화이트, 18개"
-  ]
- },
- "ping-tour-glove": {
-  "none": "검색 10개 중 조건 맞는 상품 없음",
-  "seen": [
-   "핑 G440 MAX 2025년 비거리 골프 드라이버, SR, 9도",
-   "핑 G440 MAX 2025년 비거리 골프 드라이버, R, 9도",
-   "투어골프 파크골프 논슬립 골프장갑 남성용 왼손, TGM-01",
-   "핑 G440 드라이버 MAX 2026년 (주)삼양인터내셔날정식",
-   "투어골프 카브레타 양피 가죽골프장갑 남성용, TGM-04, 1개"
-  ]
- },
- "srixon-cabretta-leather-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9641918455&itemId=28810824149&vendorItemId=95916003081&traceid=V0-153-6e9cb1c2159c7ccd&requestid=20261024053738010026026892&token=31850C%7CMIXED&pt=0&slot=6",
-  "title": "스릭슨 SRX 카브레타 오른손 X-대형",
-  "rocket": false,
-  "productId": "9641918455",
-  "price": 36000,
-  "image": "https://ads-partners.coupang.com/image1/HW2DdsBmg91ve8tbHadN51-WVcYmxcvA5IsQTMJGBNH9UfDgw7eyM7oiKQqJNqc4a6keL0hHSEOhEr0eWI7k7oUw7-A2Fx87dolg38IXk1wv8vfT47G07JDMp7jXxMDCqUbSKNYryNoWRZdkU9HwLQxOdRS6Z2VkJFrNqR2F58mLszZb6p1heJG8I8qpluzduyqi5WN6CcDg3BU-kztcYP-QTEW1CbmMwIbbeB09TwsEdILPGkI8tm3yCTBSUBTVglwdoKWtLXGT5w2ZovCTNYZr3KypwID0ZHbSe3FRf6jDy_2hNK62-Wi0uNbKVU58GOj5769zJmGMZYzpCjpnZ9pt7s1DBcKs74Z9ao9KVSLcYj9LfvVokizT_iO997JbIv3VViittoL_Zqrct3LWPgLA3bKmenmup4qNfs6SIq61ocXsKGhthpl0FdNaWRfBufub_ftEvk1YGCYNYPRp9ZDM0VMp_syHZa4d0p4ApRAPQ1WevTcIi0TlnjrNTMDfC5kD_yOY8J_sAakppxWbSkL4dNz9rUS42U_RnG6chc9OcMM45MVtYqfFbREOnY8wziHC5G7j-0JqCvAz",
-  "checked": "2026-10-24",
-  "cands": 10
- },
- "srixon-all-weather-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9713529625&itemId=29063875117&vendorItemId=95990267590&traceid=V0-153-027c1adaafcd09e0&requestid=20261024052602911183890656&token=31850C%7CMIXED&pt=0&slot=6",
-  "title": "스릭슨 올웨더 남성 골프 글러브",
-  "rocket": false,
-  "productId": "9713529625",
-  "price": 31210,
-  "image": "https://ads-partners.coupang.com/image1/VCK9Ub34Tl_959zXVHQy0tbaNnvHUBuWobcBM_h5F_BVkgEGTpTnBuDDkT11oxtlJZMyB3AGtYvrDtdEkZcy1dmcDuf2kVE8RS1Fmfn-ox6qPd_u6Bd8kHRaWpQQ3EYL0Z1cPQrNsjBPpQtC2ya8w_-x53Uy2xVHjF5K0v4ClfDY1aLKUUEGyv8nyIue19ZNOL_pB3jHyPXlNc6hcE31cKbgmQjwnK6AAfc57A-G3tIbYzFl90Hq8oRZ8jPBQBMHe2CHFtSQIRosjdwCDPdXCB9yJk7s_fXASpeelmzZWZH1_hziZ_o24SPI3uxK47gDvNnWnzyJiGZcFz62CytOtHOQyZGJQHpQIU9-bB0kZ3ftn_w-BmlVbpMexjOsm4QIhiIJvuAq2rmdG0QjulmVShSzr-cT4guaeKG493VVnIONXR2Nhe1d1pVUoIX1kDdad__tNomQXsB_BOAJxs5zui2FHatJrjZg2kgrORP2oHRFEoO2h-zWfGYe99JZLFFJQf8ufcjGSjD-LdNBn0S9-8F3VqYGDXOnhGleSvI7k1l0lPHApZBPigdLrzub9el8lm0jH0GZujn1Z53-",
-  "checked": "2026-10-24",
-  "cands": 10
- },
- "footjoy-weathersof-women-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=7154829576&itemId=19225501987&vendorItemId=89169458562&traceid=V0-153-d418971a21d96797&requestid=20261027052639140134499893&token=31850C%7CMIXED&pt=0&slot=6",
-  "title": "풋조이 여성용 뉴 웨더소프 합피 골프장갑 왼손용",
-  "rocket": true,
-  "productId": "7154829576",
-  "price": 13500,
-  "image": "https://ads-partners.coupang.com/image1/epjk-vE05J1emVJhetxkO9gcArMwzw-_LcXdwTGwi0agtEoxbRIhutP20MNvW-SOHoaqAuuX0eWJ5iu0LAOe2cXFmYnT8f8sdUgTSUYesG5VAiOQ4ObPGp96RJjfpGKUTkc4xdYkrfCQB-f815rKXQdE0g97SnQ1DI4Kc4hJicmImaDF_5ERkq9tFrvkXjct4sP1X_ugfZFHD-TecOE0ov-5pza8xqx0D6-43BqYwlQQ5D0_oY8PBmFPS827jvc8yM2bBwIgYdrNuRLQ8_ZgaxJHwUBP808jqcdjMmizyPSDq2zOXGt1pw8sxIqItQkvqbGT0rr9-HhsjoM3_rBwmZ5PPd92jWmB_F5W7fzjv0Srbvp5j1-rZSwmA_KFlU-VGYerNlxWPvWHxBNs_TrlN7imOHRqoIwoOBLH7-kOn2rsWnoMtM7oLHDdUC6v7fyrV90YXg5XP6Zb1tfxfz6c_4-EYGa9t4Y-muqrCkXVnFj-Tq5YX1elUf8wjJvnushTsffWTruaJraUoai8NkrXeKRQaiikxfI1eAesQfLh_mUOYaTwERHwIRNKOUl5IdQzbtyokg==",
-  "checked": "2026-10-27",
-  "cands": 10
- },
- "taylormade-stratus-soft-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=8704798192&itemId=25279770493&vendorItemId=92270928400&traceid=V0-153-ba5f88ca24847b54&requestid=20261027052643503185581000&token=31850C%7CMIXED&pt=0&slot=6",
-  "title": "테일러메이드 Stratus Soft 스트라투스 소프트 골프장갑",
-  "rocket": false,
-  "productId": "8704798192",
+  "productId": "7479128627",
   "price": 9900,
-  "image": "https://ads-partners.coupang.com/image1/I_SlyfJ_Ns94TzlDI8B5Tgxa9Fjox6esQ3vhOjmN1T-rKtFrObZ3hEZurdA7IAYz0EdIoXm8P-oNMbcT6LQrzmAtW4ndF4OnJNf33USPpNwMGFwKeMcAZpRHzuSQFfPwMTweR0-ECRfrDEpXX-xe8PSAEFvHbJIhJcybNjbRn5x1BKyeOsy2A50Ti4cNve9GIVbDHGzKQKV1TsN231oYsz4H8ZdifE6McYQZfRusHi2emfCHOBPcFKUAUqObWxmWzKfx46fxEzPnBvJC4h5ORNfgL_sGpNYSwELdWdTZ9lUnpLPCrRUH70qqisOk45nS-FIOhcoB9pZrSrqa7UshkGe8p4kwfJp80oQXJFL4PyIS0bZez0b8qU3oipa3kut0slmWRh8eH-eJ2KXrjCalw_WByCBj5yOPLOYTr7PHrkiMkjHFQ1vmV6_-yrJKWPw-KW6-5fUVTSumsqt6z-4zOfF_QCis0se5_QixH4AJf0VefnbN4Q1WWCsi7lD1m1u2YjR6HG6tqLYKRxksPcpdV_ozqo26-HizkFSQ2DgDdsJF5Ii99t-kwcXl352jqPaOXZRrFq8TQdKI8qPjUnTK9nXPAw==",
-  "checked": "2026-10-27",
-  "cands": 7
+  "image": "https://ads-partners.coupang.com/image1/nORA_0OPeT_NKs8knMuZltDDCBxNHOkq8fPZJ_dUxdFhGn1xVFOUIsHX6L1sxRBwyjPaGRd3AoZtDPFGaPGJGSnwaBAH_22Yyndf05fEvcoqPQ_PllreBujiQ_U_LAJK3_Rs4F_n1NXsdrsVmhe_JYC4w_FohNMD4el370C7Da-2SmQZMVIpgrmAFpnYiGVNuI0dpnh5Epyge98Hm7pCM5vBOH4SqdrTADQ_OzWTf__Zv940Lh8v35nLF3kB_q2vefIp6PcwhYAGJd16P5IdgCqNiU0pSVrxrBR-hJTxSqCPKB56yAnfflX_hqubVhJxg-P1K-n3UGlgyVliB53ci6UrmMT1iEqn50uiT_t-MtXLRSP1J69feHFRFQ-jMucwtzV8AxBNVBOryDZydHL0l0zzJPhLSAhpkVCtjy1FtvWdk_lxXzd9UhzIGnAuiuynhpNsqf74VjCaNSfEjZo043GQLH4iFCqbg5wG-ckvJLrXUgpuJlm5K_EdaMGzNy9lQiz_GpUe3L8I0NMWCwYfj0hgrGt07jhxkO7zL8rczxBjGLcjr0Km1ubkQZsbnWvW4hrx_pkY1csH",
+  "checked": "2026-10-30",
+  "cands": 3
  },
- "taylormade-dualflex-women-pair-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9540069918&itemId=28456644395&vendorItemId=93812018561&traceid=V0-153-0635daaf549efd81&requestid=20261027052647886289861327&token=31850C%7CMIXED&pt=0&slot=6",
-  "title": "[양손1세트] 테일러메이드 듀얼플렉스 여성 양손 골프장갑 UN870",
+ "taylormade-axelon-glove": {
+  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9685056165&itemId=29199220723&vendorItemId=95893376673&traceid=V0-153-9573768f854c40df&requestid=20261030172534133019315289&token=31850C%7CMIXED&pt=0&slot=6",
+  "title": "테일러메이드 남성용 26년 신상품 AXELON 가죽 장갑 왼손용",
   "rocket": true,
-  "productId": "9540069918",
-  "price": 41410,
-  "image": "https://ads-partners.coupang.com/image1/5EPrCfVu4NWwZ1lf5KAUmgkUi7TVEBG__Vq6oyMi0fjPq8IoOkelu9dmiG7LFOqyWdgv2i0JT8G84pyLbBR_RyJUIYxGQ_7gyIC2oFOyLKEXQj3D4dVorJvw8VgpesZAhsDIUa2WpemgZdCqmsM5qNm5tkA36NUaoDVKSVBiRN1guKU99edYX7S0aFoM8_Ey_iMKYdEP4LZ_SAk3lCftw0ODQ40WzcEYvNEkh88NVGjml5TlCY4Cjz5SUZSnkbATlz2SkVh5BmEswD-xoo5aSKJFBFfER3Ew9nZUF3_dMMbozbvijx-GkmjHYFZLEcnBnCRLkb4jSMotoq-hULpnybWIkPcgOjmVGF6S3EYo6aOeDFIDATOyKLLes2cpyf1DCla6Bg6yetMSKuHA-mwJ2NlwSmUBfprdFCKJTqEm7G6f-bao43zbhlFNNRSPnKZwwlAi5m0MDQPzY7YjVte9lABneb8CdcBIbmhaCvEvhorsLpElTGu3nX3XHaU6ll1yYaR5Uy2Hgi7pskGqYBOvVfad9ofz4RUgo2rwm869Op4AkJGiMhJ4To_yJtvwVQ28r6KZd0kzhviYHIGZxT0fZFfio0k=",
-  "checked": "2026-10-27",
-  "cands": 8
- },
- "taylormade-t-heat-pair-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9770892398&itemId=29246351179&vendorItemId=96164616843&traceid=V0-153-002aa603305b22a9&requestid=20261027052652265116611010&token=31850C%7CMIXED&pt=0&slot=6",
-  "title": "테일러메이드 T Heat GLOVE 양손착용 세트",
-  "rocket": true,
-  "productId": "9770892398",
-  "price": 33360,
-  "image": "https://ads-partners.coupang.com/image1/LJ-Jpi-y9uCvbURlLG15POanUV5xNOwXwO68125x7Q-N4Otdg90W7TSELON_a3JZxhcWDQbNUJmZzKg7AcLziikU_SY7NZqRetMtxiKMNdyypX58eHneoRPkahAtHavKQ9AAZTagmIL5GCHuX2EYBH7_AJL9RJ9oWdnHla69At7N6msjRNFE9GE8WJp_OHP1AlbPVaPj07sOzhiXotqwndE715fcmknFhjpVYhtK0QyR-Vi2diKGZ0TfZp8EixMItAmygBQzySM3ZixW0Z-cNXt6MMlBwcYTqsoncfB9H1dXKUjopSUkpzlxpmOZ2MHUluXW30uU9hentUe07y5Kt9wAmg4YzhthFV7TECGekbs4ojKmbKP41jCUjhLvtsJIrm3U1S5-XAivLzC62tbG9svgre9Sq0RCetwtLx9wjr53u-lEbKKKdffB8iz2IGamK71heRPRzK_DjjYOA-IF6_uyjNOg60Ykvzop0SeClYj4QJgr1AQbpRQQPnHVFdlFjkZFIiPac1-s85zLYZRxvyse_XRIYHqXYDNRS__8bxw-6vOV38r5RifJWRc=",
-  "checked": "2026-10-27",
-  "cands": 10
- },
- "xxio-premium-sheepskin-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=8002642252&itemId=24321487599&vendorItemId=91340377898&traceid=V0-153-668e91cc8ff456de&clickBeacon=96e7eb00-d17b-11f1-abfb-3a62239bce8e%7E3&requestid=20261027052656696299478063&token=31850C%7CMIXED&pt=1&slot=1",
-  "title": "던롭 젝시오 골프장갑 남성 프리미엄 남자 양피 신축성 손목 밴딩 장갑, 화이트, 1개",
-  "rocket": true,
-  "productId": "8002642252",
-  "price": 20500,
-  "image": "https://ads-partners.coupang.com/image1/4A8tKBj6piTX4UuF4FYCcDJXecoCvSpBetpoNfbQx8rm40z6Yk3qbh937OSEtkftNJmJ7VmeAAv3A2ALpJ-JiPwe8uj2A0rqmKAwkTvVH5O6Uw_FI7JDVAWaTmhi3ThaGm_f2pVX-6tNWN55dkUgB_ekSZBthGIQGOqgfScN8RuqDyVsdTrb-6ejKXgr5nvy8AY9CWWEl_ysPwbgdtL27S3gnC_zB91J3ihvVHMnZZXoobq0EpxPfjZQfH9rn06AbQZGr-FymVM_QE29xEq9DPCeyKGu61CN3CwkXKhL89nBP8KUSkwGUJOW3IKVuwP9t6KSRC4xdtJtpkq9pJojkd102e2qVipneiu3QWbqCIEohixpxdk8jDLOk5MXxtT1J5MDrhgS57zMZH9Qm3hEw94hAmdAmt7aTPTrkmpCtlkfmE_yfEaa6k0E10Z3nm4orLpX5Tdxds63DQOALLhIuZKkF4mcpj8np54R40WRz3O7EaWb2yxSAxKFDE2CvAuy6hrmrNHBvsuRHKkoOAAT_3AtzYILh6RlmGEDJ1s8v0GEZNdSxs6yvN7szAlxycghqPoecIhoFPXU",
-  "checked": "2026-10-27",
+  "productId": "9685056165",
+  "price": 32900,
+  "image": "https://ads-partners.coupang.com/image1/FaVkMVxwMZncftIYFUG6iGJoGDD0keGanLZxXAd-3B3wbTBkprEG5_fEaFSqf5xh9myKH-tG8kc9YNmGtv2fH2tFn2WfxY02vVDVAvBf5kv7sANqxBc0HR8715dhuSStKWZjAJPKM3onja_eGh27p_l9bl3RwubjdJV_jxcmVmPKv8MdTttHs-UvtJYuIu2pYoIHZ8L-sHU43XD_KGNNWt2w9E6AhKlkuJTalMTgEkk1pYBTIFPCnNyyLtAwjpSk_Asf1Al7lNp892wMiD-uxJFuShSKQtyvr6HlL_rnaPckkEqkLhZCVyjfRvcjSBc-G7Mp1uqzEXwJ_kDSGXUNaG-8dUIky3Kh7clwqIn_a-8g8VDao8uFg4kKLhv8EnZF--6JQ5XfEJl96Du-NZ3Ycy9O3CfRNZTAlMrqoE7Q4mdHHSAAM3UdH8oNy8JhY-whBAbHiXd1BIPOftC1YRaVIHbhbANtVNmKKWOaxSVzZfWwxTlBqGW4DLSpC2Tr_MUKyjauijdkRE02jFWoKBJzRFNWTAK8z1ZsTzePqE1_mF64_S9J7At1SS5wmLUZtMkmyt5k",
+  "checked": "2026-10-30",
   "cands": 9
  },
- "xxio-nanofront-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=7910327559&itemId=28297075658&vendorItemId=91379297092&traceid=V0-153-8841524911698155&clickBeacon=997dff30-d17b-11f1-abf3-740405d27802%7E3&requestid=20261027052701074306323971&token=31850C%7CMIXED&pt=1&slot=1",
-  "title": "던롭 젝시오 남성 나노프론트 합피 왼손 에어홀 골프장갑, 화이트, 1개",
+ "taylormade-performance-glove": {
+  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=8880199122&itemId=25915808418&vendorItemId=92901401242&traceid=V0-153-4c260417e6891a0f&requestid=20261030172538493325717237&token=31850C%7CMIXED&pt=0&slot=8",
+  "title": "테일러메이드 퍼포먼스 골프장갑 남성용",
   "rocket": true,
-  "productId": "7910327559",
-  "price": 17400,
-  "image": "https://ads-partners.coupang.com/image1/llo-N40tcr2LwCRslmA_DdoT3BPXWWSGFTifZJM3dJv6ZUQ0X6HHe4XhDYgDRfXt3Awl45pz4ImilZSaC3isRfTlUhomT1W08RFHqGZt_qfe_QCn_uVqtg_LF7SRcYAjHLu7wozg_WrauCD0n87Ytdna4jnjq63h4S0wCt3sN7WveeBnFtKuaPpCh6_BUrrUbPWbJg_aSPATZuCxoPU5OnsRPbJtOElbZzq7wZLGd5_8mY62i_hdTesqTwwM9Kehy4Cy3VSXe8lfAeqG8Ir6OM2cGHGXu7cK-kLlk35EQawrlRoRN_vf1Oiz8E5czFwNJGMZUTUKNqH4igXiPvKOZ7r2J3NXYkFPKX3MnCtlHvFvqzizrsBKBuN9ZTyspipvSrHF5E0F38LGdHOgrQLZMvtgRSLsmEN0taNu-10GHZygOuINyfPovJi0eEcB2qZZeiHxKQSvYvKRZSrzQW5zRfuiv6MSxdTTGQ8fOJ9box2sYqpe8Hep-faRWe5iA8DjSMw1-n9gsYbvRXowvoq0D6DwA0uNgn68aLjV447aJSLYxcqIu0T5Fcr-ehNYmR93JAmeY9dl8NnY",
-  "checked": "2026-10-27",
-  "cands": 8
- },
- "mizuno-amazing-leather-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=8571726922&itemId=25074092952&vendorItemId=92255808874&traceid=V0-153-94294593c4b19e05&requestid=20261027052705419298658907&token=31850C%7CMIXED&pt=0&slot=6",
-  "title": "[한국미즈노정품]2024 미즈노 어메이징 레더 SG 양피 골프장갑[남성용][화이트왼손착용][5MJML40301]",
-  "rocket": false,
-  "productId": "8571726922",
-  "price": 19800,
-  "image": "https://ads-partners.coupang.com/image1/6hl5ojyhy7Eqhlxu6m4SrXh0biCK2IFiTnz0iBALLnnBK3Pe8mjOfaZMU2s6iP2ivzYqk5977bq7gLOEuxOmb5P6GndsHpFx4WC5AvhE3Ih1VSE0yRMiaNUKTkt3jwuVucwOdG-HmLPFSud-nbzCBzmECHv3_d1EJg8HUZ4xmGTLOYQecB17O5WBk3O_RYD98Lms1OLMRs0qn-0JHQ_qgEYelR6vvo0J5d4yqnjFG0WRcOy66P42ds6DT5TR1xxTOio_Ytb9HoCOJy5RHIMX23g-abEqG37YR-sGES5dOHzI2puMG8WfYQ5jJfoEcTrZX5iQoyqMZ99zRY4OVShlTqDA7bvu2TVnWyi93VkrcK_TYaNbO8LhpArdeldLydMofPVRMe25dlmWwPUo5epNhrY-e93bYIycemiBq-jfhRZl-ll-8WFlvNEk-8hBR1aEO5BTd1IDgLJynntJOgwws_VO1qgMlzMQA_wRHqKIp07PmIZ1DcrKLhBc-6xXowmHZN3tDxfNtb5iOeIeKXMZTMeh5dp6gVtfMBzPXs5XTj0p38wjaUmLYyCZQrcmzLW0Q72tFbyge7pikGsK14PoWRS4c4o=",
-  "checked": "2026-10-27",
-  "cands": 6
- },
- "bridgestone-glg76j-women-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=7543703213&itemId=19837075161&vendorItemId=84231450330&traceid=V0-153-0cd2a54d1e34484a&requestid=20261027052709892306326397&token=31850C%7CGM&pt=0&slot=1",
-  "title": "브리지스톤골프 여성용 골프장갑(왼손-1EA) GLG76J",
-  "rocket": false,
-  "productId": "7543703213",
-  "price": 15000,
-  "image": "https://ads-partners.coupang.com/image1/fcZLzAI5QFA08dsGfUpIpc3IUsq8UmDc6IU4J_pJjhblWQG3lf-7fVNB0T1KEOtC3zcaRe-GzZ-9BLiclQR4u9RCTqHC-AnvOKSVWQJ9H_Ltd7IRb85FeEKQ7oQ8jnBl8tnsjdNK017Ej-TtkEIK-_eMSaaYVtgTwTolDZu5w0QN3N6qMD50CpdBNDVMqV48-LEzqf5RC2Yl5RJogq_fvoFYnde0xA2zgUG_IuMStHNuksFwoceihDCxGRfz3Edw_Brs7cQyq6L7bUZXreyRg_XpDYz5Mx_gnJ_KktgPxj-aj5eQEmx60xauznMc9Dw8XvSnY4Z9k4koRh4n-2tdollGCO2bDhVUgfs0Ky_0UHQ2hOSRkrhtrS-1lWpo1Mk5ZAUGcfEUYNSkrMEEAvJ5YhqLTwD9WvDeZYSuUMYW0dhUWN8UpuPeR49hil6YMisibGWrTL6AYm5s83klMAJIDy_Sgjv-iNitW6iC8y7tEUZAHeGNM4Y2UNbYErfbodjy22Nr10V1OgaEsYCZ-rb8HhTRf0O3hHn6enqs6mtmGWOuxnfU4Mon2lhG7Qkzfvc8PAn_wYFvRlUB",
-  "checked": "2026-10-27",
-  "cands": 1
- },
- "adidas-multifit-360-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=6773905836&itemId=29203685501&vendorItemId=96123918069&traceid=V0-153-c737c938dcd92af1&clickBeacon=a185f750-d17b-11f1-9fef-b3aa29d26001%7E3&requestid=20261027052714484185466900&token=31850C%7CMIXED&pt=1&slot=1",
-  "title": "아디다스골프 멀티 핏 360 골프장갑 왼손용, 화이트실버, 2개",
-  "rocket": true,
-  "productId": "6773905836",
-  "price": 29900,
-  "image": "https://ads-partners.coupang.com/image1/u8hwWhI-bMNXUs7ouzdYzoQdHJHKy3_fGZJ1PvMIydpXkexBN86a8CMiGPwZFg8bB2DnY0Gvj4sjMJ3d9dF-0GachQBwf9lj0t_KYOsNWs9v20GqqMDr6HwiFsgahRYlvvjf69rpiigAHxzTlrNl9f6wHuLSZstCXAEAn0hdFIkSiBdGnqUYFUx34konRC_7BRQrQLs4kd9oTGzG2d4Y10C9P19J96Ijlb4rDX2UBSxeLzxs5z4AG-rUypfvr2b4AeOzNNV3RexEllwL33sq-S8goXMBwnrhZTvNMUsvxnUCDIArAvfCySzqL43MyAUiaJHhyBianUz_o_UjVF2-M8TEFAnSqmd9N6W9sFtxSEPLnt34L6LuUBCfhyU42-XPI5vVy_5J0VZh6Gs9xHUSO6OsYsx-8_6RGI7rKFVedrrrxaIMpO8o0-bbnm7na3-BQSSkolycANZRcsLpWVJgjoW0DBE4A_clb64QPaIcRxQzWkBt_mdMnF8T9sVWFCdhM-83Ajj7kzcEWNWNlDi0FLN9V4G0WUUfU1Tp6ky8EWeOzjp0",
-  "checked": "2026-10-27",
+  "productId": "8880199122",
+  "price": 26900,
+  "image": "https://ads-partners.coupang.com/image1/htYkgBnTOJlFe0PvhgkQWIXH2-mvTof9XERvzt6aUYpD_WwS7NXwYbjfapjKUD3dAaFAZLIwsqpAfSpenIsTNyMppHMnFwGG4FEflLPHlGboqv-oqxpz6MXW55hApjcq9WzKWb0GvN1D071uPk42IgxVo4iozwVzpOLpIfQHwHr9DcXGfXVtS8v2DMY7fDwVkLHSFCOxhTsb3CcIBHGRtVfTVusjvSwLfAVLUk_ICl68vxJx0JLVyfJjPQXJTl7oWnmAx87695fxwWoFUQH05A74QRsweB9npc7ndIzGOHxsZIeKjG6Tf--KLuAfWV3-75LZAsoMcxlC4Azn8xjcjSFhe_IHpmPSFu_oOGfeXYnWxJYTtRdWRxR4Q5QDAqHj6M4M2milJ7F6-l34N5NRGGTHFi4FRBCS_IVCGakJrebKyaHJv-zRZcrpQXWG5kUaA98YSoA2JG-jmvMTch3mbM9zoM1UXxUsI_eed6XjxvHAi9wzf_ad1RzQImI8Bb6tCvaCvPUizouShdxvsczWG7jtfmp0jKBHiygPMsNS9qMKVNdw6drkl9qW-AbIz7FBX1oG5gs6LqFa0w==",
+  "checked": "2026-10-30",
   "cands": 10
  },
- "callaway-winter-glory-women-pair-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9737474066&itemId=29142262574&vendorItemId=96065790142&traceid=V0-153-8e4562e0723fef89&clickBeacon=a431dd70-d17b-11f1-91ca-479312e2608b%7E3&requestid=20261027052718957289869578&token=31850C%7CMIXED&pt=1&slot=1",
-  "title": "캘러웨이 2025 윈터 글로리 여성용 양손 방한 합피장갑, 1개, 화이트",
+ "ping-basic-glove": {
+  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9755294131&itemId=29208727624&vendorItemId=96133116237&traceid=V0-153-baf84f7ab7af3588&requestid=20261030172542883275236097&token=31850C%7CGM&pt=0&slot=1",
+  "title": "핑 골프장갑 [매장정품] [핑(골프)] (111F7GV901)남성 베이직 F7GV901",
   "rocket": false,
-  "productId": "9737474066",
-  "price": 28000,
-  "image": "https://ads-partners.coupang.com/image1/wjiYfg-Su-dFvXr3wnnDdVeNAzZbXzvgen7diqEsYVi1f4_6FXwLq6n9cbuckQRRY-wKK-c2wN7mr_wmmZKx6je1aY6dz1lSuHW3Npeb4phFpMteDwQXlKeGxh8Sqis2J3Mv6-1xLqEaYgbn0g8_UpPtI6pcFhL3rHjr-hvIars46mTLjB9rNiEqfJVcGCxZRYz2j70a2pq1UqgUzDB0sIOTmYo8zdL02H0VGAdXmJHcz3DoKB_PNeEfhjvYC-WU96z55Vkaq2TOyw66Uau0zoCKmcTzg_nAw5hb6vosE1n9B1-x88yjDPXCdckhw6gqT5Aq6FbQkEWEXdZWz0Kv2QHfXyRkv50uKRm-CEjHPmJ5sk9YIXGe9O9rt-tH4CipBBhcunQO0hfFp2T7j-_dmYfo5q141fI7Htfy-WbVSpRMOtujIwr6M8fbHj0JmOPHLUFyAJTdGXZp-Q37_y49T0-BiuT0s5mNXR2p2O-O1PI4xDfV377-SuQhPbGyUyJhlzfWyZKfGT2Yogq6GlyC4X0YY-XmOu2dUMw16A52nPyDetF4A1bIuKkc0vIm92Jav6tMyJN4Z3I=",
-  "checked": "2026-10-27",
+  "productId": "9755294131",
+  "price": 28800,
+  "image": "https://ads-partners.coupang.com/image1/TD6cW1JIuP9HlE8ETM01VpA8bjYasIUtx6pexVW2TSw-efMtVSm1EB6BvJhvssThR9vQs0yQAy9dyhs6ceP4wtlzeQvGFJzXQs7Cvk7Eb4x7nPPwVrN313Q8-Orm7tO31Pad0GwWbqsZ22CTg-C1EPJ6B3Tgdf7vvSiEs5yTBG2BnrkRxy8q9EElLr9U1qmlPtKhC4MmMgIUZrvAKjSbjlX3atVXbX3f34DoiMRLf_OZCi82EGuvmEB_lgl_qWayxQe84FjJY5nC8bph1Tq0B0Hduktim7Ew4XFz06XSpBsMvRIy3SiM7uH4nwqf3bePdYP8vZFGcG-PSse3vg1ZUu4j9jOjDUSrXg8DNd5Oc_5dN-0_Qcd68npMpo-9bHaQKj32UqNRkERz1QtTxuF_emY3d3WS_90DBLNTrNVgt-SBpZjEtddd58blclR3JuUYK9FhbvjQMEL9No8wGBzejIi0PvLm0F_3NfN22Z0YvJ7Sv47V8ilVSfhgTdWo95KN7t2zbe17nTT3IpTMONUFwZlmg6Bw1BKwqFSCXgfWFtVgCAtQA02BTddWi2gmedzY4qb8r1TiAY4t",
+  "checked": "2026-10-30",
+  "cands": 4
+ },
+ "ping-synthetic-glove": {
+  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9717911136&itemId=29079951514&vendorItemId=96220658412&traceid=V0-153-b4b9255694d5b9a5&requestid=20261030172547340136192580&token=31850C%7CGM&pt=0&slot=1",
+  "title": "핑 남성 합피 한손 장갑 111D3GV001",
+  "rocket": false,
+  "productId": "9717911136",
+  "price": 32700,
+  "image": "https://ads-partners.coupang.com/image1/KC1J8pj18TyIeFQ2KItb6AEirgyAaPmZZhc_f2ktoo18Zg1Wy_-CqPSF2XSS9kxS0oBk5zWVyndsN1UUH2qIHQ7ouitGWotk809dVOkQsSU-zKBCj1ySPhKq2LoBnBvJhKtBCM2eyOPioHzRGt3MRTeEjRa84WyBQkKwcK2xap8fSLvZOEmzS8T0-M0e1j8KJbpMQ3AzNYjYTxowYGX58k0Sp0cJumcLSnRZJGIyRejIQxyhQQWdZcCvpc1kg6bRf_Aj4dXpNoWEMD1S5xAnRwhJopvkhHR9GMg2yh4gPe1rITN1DHuOprJs5NK7SwLW32H5QymQ3yAZTv6IrTlXAUdfI0kwKukw48htGSZS-I7tlDzuZw31RJGLNNSoh4-LKefngztZZN9s3aNj9_h2ZlCDKY1HDMtl13OdaZlQhm8a3jq1c4sB9UqiWyriBIROAbTKcs0cYbWcpYq4-agtGyhdIitizOnx0917KrdfszgztKVVrJg_FmOP6nZTn8o8c4G2ul7Y8nQ2VxFSkgJVBVAV6kuf4Z1o3NWCVvVv1QT_1UcodGM_R9P1kcaGKelgppYLcJoc8tTFm2YnDiP8mAI=",
+  "checked": "2026-10-30",
+  "cands": 3
+ },
+ "ping-gl-t2601-glove": {
+  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9732463931&itemId=29124410813&vendorItemId=96158595393&traceid=V0-153-aba1d847bc3a545b&requestid=20261030172551829181691923&token=31850C%7CMIXED&pt=0&slot=6",
+  "title": "PING 핑 GL-T2601 프리미엄 천연 양가죽 골프장갑 남성용 오른손",
+  "rocket": false,
+  "productId": "9732463931",
+  "price": 49610,
+  "image": "https://ads-partners.coupang.com/image1/ANGecGQasId8EpQbAGcOnrPP6NvM9692a_3gIlVuo3eT3wkx-Hji6t-1GWYZlzspAbOOcCZECWdlcexoPHKvYdl5FjZgnGCjCUHU2oI4ejXAlL20ZN8H5GZOxQL_OD5tLQL2zfze7VX7EHgiAhjQBlP0Z9oSew0o3PuGYlN-o4lMLpvAaoQSbjrExvor2Bhwuglql-wYXk2rB0UAr8sMdt5Me86WKU0mOY9ioIgvoG8HMtQzoDitivIXRUjvE9OPSd4MlNWrNDzt_raFuYedFhy1G-TJvICT-mI9k3y4CORhIrp_baAqTzNwPE1L5rIyF12EnwZ6USmUGNtyQ9SREvAwvhhEKVTVOVcg37suf--ExDSsBnud3cdLTQS1GKfazAGdxrl07fIaVwJWrjXflGobyZE6IOEYHJbFIbZ6VKSWO3-Sl6vztKbCazZslEomGMDh2L7m1Cca18kZrovGQ1a73Ma54eCXFNeaP7e4SDEuR3_k5q6R-5SJkbjjz6Ji5jfXPM1zA-7BEZvZwvIODCvv9W_AKocq-cpctVWZSxCjYf2Lryy04ZoDQxN3cBmC9ENPz0f108IzXPsP",
+  "checked": "2026-10-30",
   "cands": 6
  },
- "callaway-winter-soft-fur-women-pair-glove": {
-  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9736324581&itemId=29138165520&vendorItemId=96061880838&traceid=V0-153-ab5a6c0cfca01bcf&clickBeacon=a6d51100-d17b-11f1-99fe-8ed2f9a56f6f%7E3&requestid=20261027052723368287789512&token=31850C%7CMIXED&pt=1&slot=1",
-  "title": "캘러웨이 (26)우먼스 윈터 소프트 퍼 방한장갑/ 양손, 1개, 라이트블루",
-  "rocket": false,
-  "productId": "9736324581",
-  "price": 35000,
-  "image": "https://ads-partners.coupang.com/image1/HiW7yToiaUkweb9zHvCKqQekUksa1rYfPq3nevdEn3YHbVvUlz65M-Masp0eOhNk-TmRlb2--3liad_wc75XfUAiPRk3tugPL-IkPtLRsDjs-8g6kRArYmCQB3apvwYnUKdROY7I_zAOCqghZsnSkn821NaOlOs0WjFWyujlso1a0p43xm82zooM8DTtCQ12Bwi9M90AbK_LagGVB3woLLsJO2qous1ygedaTNdbpuTWmxCEFIU-bmrN279NTHAyileEUWC6jzuJ9w7PIwyfzFij0cjLqf1aYItUgpoD9nJ8PN-1tZjDS9Jotoi1uPVfxQDCbaXo7HQX-8G0IOuWk6R2ZDikXIBazPmGbIgXrev-02B5Gr0dnaOwSOmntTmOXhEnV1aBE5yXACaJmhObdrrz6ycV-wzAFpEPsvr0Z3UqLoxHkyRtyIVyla4yWczhAYspjiJIei72IBdvMIkMSPdCuWI3qtdefD_KmvFUFpbvUlQRg5cBz8z8kyyqzrMoV1mlOmNBWN6ebe4bUCwunIW5vKIEZru5Ey77K3-1gy5Xf7AFLJ8eBN9J0ChXYajWa6MYg7mPY3fN",
-  "checked": "2026-10-27",
+ "adidas-multifit-glove": {
+  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=6056601861&itemId=29202080668&vendorItemId=96122379280&traceid=V0-153-4f707944bd145cf6&requestid=20261030172558026147139407&token=31850C%7CGM&pt=0&slot=3",
+  "title": "아디다스골프 남성용 멀티 핏 골프장갑 왼손용",
+  "rocket": true,
+  "productId": "6056601861",
+  "price": 27160,
+  "image": "https://ads-partners.coupang.com/image1/rOaftHQ3tC9g5G3XrFc7VemoQssyUB1SVtaF2JU3rYB-4Qvt6rGoAlySBzXfAom5gd0jqey6CHfMjr4VLGtHHdewtITguxTbtQ4y1Gnx3sBmUx6u_TBmhdKiYP7goX1LEhXYlvkHhvKHyAPxLkhwwjOFoEO4_V7nGEFH3MUb60lD816Dx18iwjBPC41w1T9bRcBPpE6somcC-vQ8aSWTIN_lsUDX8K3O9vNj50J095QArwujN5IkZJiNF3kzqsX57n-kLA4vthZvl46kzEPhnEy_wfNfmmYkTMQrRAlXmvjbtqyYZtBsAcPkxZ-LuITWtpu4Af__2iPnyt0RJtWhxkjismT2JsiIIO_aCvfKaeeu1EpLop5ff38kWLm5VzQW8VqXn2PHqyJceR11w8Oapuuihr43VpKYKAhnYMY8Kwp-nqQ7jW7l4VfsQKsU3jbMva2wtSpPRzT3v1Ron0_DPlYeXAeoNvUdCTp_HZb3G9ZMu_uCJ0RYBlsI6ghTY7CT488Uxa0kSEYhC9DQIj0ZZgINGOJav3RxPXUpJuFhqDWzLJzEwBmLd4H3hdpklBlFodhhJA==",
+  "checked": "2026-10-30",
   "cands": 10
+ },
+ "srixon-cabretta-leather-glove": {
+  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=8562924282&itemId=25162970283&vendorItemId=94943267977&traceid=V0-153-e2a3e167013b9b01&requestid=20261030172602501024876556&token=31850C%7CMIXED&pt=0&slot=1",
+  "title": "스릭슨 SRX 카브레타 카뎃 왼손 골프장갑 화이트 M",
+  "rocket": false,
+  "productId": "8562924282",
+  "price": 56900,
+  "image": "https://ads-partners.coupang.com/image1/6Fmco3aKRHjqpcwe6ASWsymMoFPhQoFJE44BfJdJj69L7Y7CLeqFo7a_kSlirodf-l9WV7Z-BSMpKCp20pxp5dsy24touCDPnR4kPTs6j35_NiwTMGxnmMvhOwiszP5Bur3atCqeG0WRzs5Cc5YE0tQU94n2Am_oohW6SfzVnNWM599e2UM7e9amnCjpHZass6KuVXucAkRj9-4upjD6nMcydMqywYuSwYuQfFIhjlVtWEPQY0p-XjsVICARe45ad9dooITeGVxgkDQEDMrKkn-b-hCtY7N_Sj9IKP77hvK3jvRyBL0ZM_Ma-cu4Js3Cs9uqniY8hxtt6xugD2HUgrSRajh1GZbth9GMgqDsb19KuQfX75L-uChIGKPKBBQGHT8hj0d72QFV9AvssDZm0EZmP19LGTOQYbHfGMDS17k6lfibG8zEytLUbwZjRhfiFrWdgJaJZBqONOV4VwhBDsHmFqx0EZFPySGyGUJ5ByYDPcFEsBGQ-Hb0qOrkZdcTIg2S23Ko4zQF5gFDLKuNDeFTXj6xfyl01sEYfWEafJFwuWMpePXIs_TUAu6KYmoR4ormdkiTXSBYZ90O",
+  "checked": "2026-10-30",
+  "cands": 10
+ },
+ "footjoy-hyperflx-glove": {
+  "none": "검색 10개 중 조건 맞는 상품 없음",
+  "seen": [
+   "몽키그립 남녀공용 양피 파워패드 골프장갑 왼손용, 화이트, 1개",
+   "[3장 세트] 풋조이 NEW 웨더소프 레볼루션 남성 왼손 골프장갑 Weather Sof 남자 볼마커 장갑, 화이트, 3개",
+   "풋조이 남성용 NEW GT 익스트림 볼마커 골프장갑 왼손용 64840, 화이트 + 블랙, 1개",
+   "풋조이 여성용 뉴 웨더소프 합피 골프장갑 왼손용, 화이트, 1개",
+   "풋조이 남성용 합성피혁 레인그립 골프장갑 왼손착용, 화이트 + 그레이, 1개"
+  ]
+ },
+ "titleist-permatech-glove": {
+  "none": "검색 5개 중 조건 맞는 상품 없음",
+  "seen": [
+   "타이틀리스트 남성 골프 장갑 프로페셔널 TG73 라운딩 양가죽 양피 왼손, 1개, 최고급양피-화이트",
+   "타이틀리스트 남성 골프 장갑 프로페셔널 TG73 라운딩 양가죽 양피 왼손, 1개, 최고급양피-화이트",
+   "프리미엄 천연 양피 골프장갑 세트, 화이트, 6개",
+   "[3장 세트] 풋조이 NEW 웨더소프 레볼루션 남성 왼손 골프장갑 Weather Sof 남자 볼마커 장갑, 3개, 화이트",
+   "프리미엄 천연 양피 골프장갑 세트, 화이트, 6개"
+  ]
  }
 }
