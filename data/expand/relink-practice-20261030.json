@@ -1,0 +1,30 @@
+[
+ {
+  "id": "sklz-gold-flex-trainer",
+  "query": "SKLZ 골드플렉스 스윙 트레이너",
+  "must": [
+   "골드플렉스"
+  ],
+  "exclude": [
+   "중고",
+   "부품",
+   "교체용"
+  ]
+ },
+ {
+  "id": "sklz-gold-flex-trainer__2",
+  "query": "스킬즈 골드 플렉스 골프 스윙 연습기",
+  "must": [
+   "골드"
+  ],
+  "mustAny": [
+   "sklz",
+   "스킬즈"
+  ],
+  "exclude": [
+   "중고",
+   "부품",
+   "교체용"
+  ]
+ }
+]
