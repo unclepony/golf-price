@@ -1060,11 +1060,11 @@ function productStory(p) {
   const link = (id) => `<a href="/p/${id}">${esc(name(id))}</a>`;
   const iss = issuesOf(g, pk);
   // 1) 이런 분께 맞아요
-  const fit = `<p>${esc(pk.forWhom)}께 맞는 모델입니다.${pk.skill ? ` ${esc(guideName(g))}에서 <b>${esc(SKILL_WORD[pk.skill])}</b> 단계로 분류했습니다.` : ''}${pk.pros?.length ? ` 강점으로는 ${pk.pros.map((t) => esc(t)).join(', ')}을(를) 꼽았습니다.` : ''}</p>`;
+  const fit = `<p>${esc(pk.forWhom)}께 맞는 모델입니다.${pk.skill ? ` ${esc(guideName(g))}에서 <b>${esc(SKILL_WORD[pk.skill])}</b> 단계로 분류했습니다.` : ''}${pk.pros?.length ? ` 강점으로 꼽은 점: ${pk.pros.map((t) => esc(t.replace(/[.。]\s*$/, ''))).join(' · ')}.` : ''}</p>`;
   // 2) 이런 분은 다른 선택이 나아요
   const others = [];
   if (iss.length) others.push(`연결된 쿠팡 상품은 ${esc(iss.map((x) => x.msg.split(' · ')[0].replace('연결 상품 ', '')).join(', '))} 옵션이라 초보 기준과 맞지 않습니다. 같은 모델의 ${esc(variantsNeed(p.id) || '권장 옵션')}을 고르세요.`);
-  if (pk.cons?.length) others.push(`${pk.cons.map((t) => esc(t)).join(', ')} 점이 마음에 걸린다면 다른 모델을 함께 보세요.`);
+  if (pk.cons?.length) others.push(`감안할 점: ${pk.cons.map((t) => esc(t.replace(/[.。]\s*$/, ''))).join(' · ')}. 이 점이 마음에 걸린다면 다른 모델을 함께 보세요.`);
   const cheaper = rankedPicks(g)
     .filter((x) => x.id !== pk.id && (x.skill ?? null) === (pk.skill ?? null) && !warned(g, x) && pickPrice(x.id) && pickPrice(pk.id) && priceLevel(x.id)?.n < priceLevel(pk.id)?.n)
     .sort((x, y) => totalScore(y) - totalScore(x))[0];
@@ -1084,7 +1084,7 @@ function productStory(p) {
         if (d >= 1) up.push(c);
         if (d <= -1) down.push(c);
       });
-      const lv = priceLevel(pk.id)?.label && priceLevel(x.id)?.label ? pdep(` 가격대는 ${esc(priceLevel(pk.id).label)}, ${esc(name(x.id))}는 ${esc(priceLevel(x.id).label)}입니다.`) : '';
+      const lv = priceLevel(pk.id)?.label && priceLevel(x.id)?.label ? pdep(` 가격대는 ${esc(priceLevel(pk.id).label)}, ${esc(josa(name(x.id), '은', '는'))} ${esc(priceLevel(x.id).label)}입니다.`) : '';
       if (!up.length && !down.length) return `<li>${link(x.id)}와는 항목별 점수가 비슷합니다.${lv}</li>`;
       return `<li>${link(x.id)}보다 ${up.length ? `${esc(up.join('·'))} 점수는 높게` : ''}${up.length && down.length ? ', ' : ''}${down.length ? `${esc(down.join('·'))} 점수는 낮게` : ''} 매겼습니다.${lv}</li>`;
     })
