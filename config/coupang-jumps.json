@@ -1,15 +1,15 @@
 {
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { price: 1.5배 넘게 튄 API 값(반영 보류), held: 그때 유지한 직전 값, first: 처음 본 날, last: 마지막으로 본 날 }. 다음 날 이후 같은 값이 다시 나오면 반영하고 지운다.",
   "footjoy-cabrettasof-glove": {
-    "price": 43110,
+    "price": 42900,
     "held": 28090,
-    "first": "2026-10-31",
-    "last": "2026-10-31"
+    "first": "2026-11-01",
+    "last": "2026-11-01"
   },
-  "callaway-winter-glory-women-pair-glove": {
-    "price": 48400,
-    "held": 28000,
-    "first": "2026-10-31",
-    "last": "2026-10-31"
+  "macclyde-tempo-trainer": {
+    "price": 54000,
+    "held": 35100,
+    "first": "2026-11-01",
+    "last": "2026-11-01"
   }
 }

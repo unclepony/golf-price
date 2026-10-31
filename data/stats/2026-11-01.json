@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-01",
+  "by": {
+    "act": {
+      "캠페인: chatgpt.com|/g/rangefinder-recommend": 1,
+      "캠페인: chatgpt.com|/p/caddytalk-cube": 1
+    },
+    "asn": {
+      "AS18779 EGIHosting": 1,
+      "AS4766 Korea Telecom": 1
+    },
+    "asncamp": {
+      "AS4766 Korea Telecom|chatgpt.com|모바일": 1
+    },
+    "cty": {
+      "KR": 1,
+      "US": 1
+    },
+    "depth": {
+      "/g/rangefinder-recommend|첫 화면": 1,
+      "/p/caddytalk-cube|끝까지": 1
+    },
+    "dev": {
+      "PC": 1,
+      "모바일": 1
+    },
+    "hour": {
+      "00": 1,
+      "01": 1
+    },
+    "nav": {
+      "/g/rangefinder-recommend|/p/caddytalk-cube": 1
+    },
+    "pv": {
+      "/": 1,
+      "/g/rangefinder-recommend": 2,
+      "/p/caddytalk-cube": 1
+    },
+    "ref": {
+      "직접·북마크": 1,
+      "캠페인: chatgpt.com": 1
+    },
+    "refland": {
+      "직접·북마크|/": 1,
+      "캠페인: chatgpt.com|/g/rangefinder-recommend": 1
+    },
+    "refurl": {
+      "chatgpt.com": 1
+    },
+    "seen": {
+      "/p/caddytalk-cube": 1
+    },
+    "seenpos": {
+      "상품 페이지": 1
+    },
+    "seenref": {
+      "캠페인: chatgpt.com": 1
+    },
+    "stay": {
+      "/g/rangefinder-recommend|30초~1분": 1,
+      "/p/caddytalk-cube|3분 이상": 1
+    },
+    "visit": {
+      "/": 1,
+      "/g/rangefinder-recommend": 1
+    },
+    "xpv": {
+      "/g/rangefinder-recommend": 2,
+      "/p/caddytalk-cube": 1
+    }
+  }
+}

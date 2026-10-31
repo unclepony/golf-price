@@ -2,55 +2,116 @@
   "date": "2026-10-31",
   "by": {
     "act": {
-      "캠페인: chatgpt.com|/p/caddytalk-cube": 1
+      "캠페인: chatgpt.com|/c/shoes": 1,
+      "캠페인: chatgpt.com|/g/practice-gear-recommend": 1,
+      "캠페인: chatgpt.com|/p/bridgestone-brm2-wedge": 1,
+      "캠페인: chatgpt.com|/p/caddytalk-cube": 1,
+      "캠페인: chatgpt.com|/p/callaway-elyte-td-driver": 1,
+      "캠페인: chatgpt.com|/p/taylormade-sim2max-iron": 1
     },
     "asn": {
-      "AS9318 SK Broadband Co Ltd": 1
+      "AS17858 LG POWERCOMM": 3,
+      "AS3786 LG POWERCOMM": 1,
+      "AS9318 SK Broadband Co Ltd": 4,
+      "AS9644 SK Telecom": 2
     },
     "asncamp": {
-      "AS9318 SK Broadband Co Ltd|chatgpt.com|모바일": 1
+      "AS17858 LG POWERCOMM|chatgpt.com|모바일": 3,
+      "AS3786 LG POWERCOMM|chatgpt.com|모바일": 1,
+      "AS9318 SK Broadband Co Ltd|chatgpt.com|모바일": 2,
+      "AS9318 SK Broadband Co Ltd|youtube / video / t-wedge-recommend-1|PC": 2,
+      "AS9644 SK Telecom|chatgpt.com|모바일": 2
     },
     "cty": {
-      "KR": 1
+      "KR": 10
     },
     "depth": {
-      "/p/caddytalk-cube|끝까지": 1
+      "/c/shoes|25%": 1,
+      "/g/practice-gear-recommend|첫 화면": 3,
+      "/p/caddytalk-cube|끝까지": 1,
+      "/p/callaway-elyte-td-driver|25%": 1,
+      "/p/taylormade-sim2max-iron|첫 화면": 1
     },
     "dev": {
-      "모바일": 1
+      "PC": 2,
+      "모바일": 8
     },
     "hour": {
+      "11": 1,
+      "12": 1,
+      "18": 2,
+      "20": 5,
       "04": 1
     },
     "pv": {
-      "/p/caddytalk-cube": 1
+      "/c/shoes": 1,
+      "/g/practice-gear-recommend": 3,
+      "/g/wedge-recommend": 2,
+      "/p/bridgestone-brm2-wedge": 1,
+      "/p/caddytalk-cube": 1,
+      "/p/callaway-elyte-td-driver": 1,
+      "/p/taylormade-sim2max-iron": 1
     },
     "ref": {
-      "캠페인: chatgpt.com": 1
+      "캠페인: chatgpt.com": 8,
+      "캠페인: youtube": 2
     },
     "refland": {
-      "캠페인: chatgpt.com|/p/caddytalk-cube": 1
+      "캠페인: chatgpt.com|/c/shoes": 1,
+      "캠페인: chatgpt.com|/g/practice-gear-recommend": 3,
+      "캠페인: chatgpt.com|/p/bridgestone-brm2-wedge": 1,
+      "캠페인: chatgpt.com|/p/caddytalk-cube": 1,
+      "캠페인: chatgpt.com|/p/callaway-elyte-td-driver": 1,
+      "캠페인: chatgpt.com|/p/taylormade-sim2max-iron": 1,
+      "캠페인: youtube|/g/wedge-recommend": 2
     },
     "refurl": {
-      "chatgpt.com": 1
+      "chatgpt.com": 8,
+      "youtube / video / t-wedge-recommend-1": 2
     },
     "seen": {
-      "/p/caddytalk-cube": 1
+      "/g/wedge-recommend": 1,
+      "/p/bridgestone-brm2-wedge": 1,
+      "/p/caddytalk-cube": 1,
+      "/p/callaway-elyte-td-driver": 1,
+      "/p/taylormade-sim2max-iron": 1
     },
     "seenpos": {
-      "상품 페이지": 1
+      "비교표": 1,
+      "상품 페이지": 4
     },
     "seenref": {
-      "캠페인: chatgpt.com": 1
+      "캠페인: chatgpt.com": 4,
+      "캠페인: youtube": 1
+    },
+    "skip": {
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3
     },
     "stay": {
-      "/p/caddytalk-cube|1~3분": 1
+      "/c/shoes|10초 미만": 1,
+      "/g/practice-gear-recommend|10~30초": 1,
+      "/g/practice-gear-recommend|10초 미만": 2,
+      "/p/caddytalk-cube|1~3분": 1,
+      "/p/callaway-elyte-td-driver|10~30초": 1,
+      "/p/taylormade-sim2max-iron|10초 미만": 1
     },
     "visit": {
-      "/p/caddytalk-cube": 1
+      "/c/shoes": 1,
+      "/g/practice-gear-recommend": 3,
+      "/g/wedge-recommend": 2,
+      "/p/bridgestone-brm2-wedge": 1,
+      "/p/caddytalk-cube": 1,
+      "/p/callaway-elyte-td-driver": 1,
+      "/p/taylormade-sim2max-iron": 1
     },
     "xpv": {
-      "/p/caddytalk-cube": 1
+      "/c/shoes": 1,
+      "/g/practice-gear-recommend": 3,
+      "/g/wedge-recommend": 2,
+      "/p/bridgestone-brm2-wedge": 1,
+      "/p/caddytalk-cube": 1,
+      "/p/callaway-elyte-td-driver": 1,
+      "/p/taylormade-sim2max-iron": 1
     }
   }
 }
