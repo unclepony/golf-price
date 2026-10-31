@@ -1,27 +1,381 @@
 [
- {"id":"srixon-zxi-max-driver","category":"driver","name":"스릭슨 ZXi MAX 드라이버","query":"던롭스포츠코리아 스릭슨 ZXi MAX 드라이버 남성","must":["zxi","드라이버"],"mustAny":["max","맥스"],"exclude":["rkt","ls","여성","레이디","헤드만","샤프트만","헤드커버","중고","병행","직수입","직구","해외","무게추","호환","페어웨이","우드","유틸","아이언","풀세트","시타"],
-  "summary":"스릭슨 ZXi 드라이버 시리즈(2025년) 가운데 관성모멘트가 가장 높은 관용성 모델입니다. 460cc 헤드 뒤쪽 낮은 곳에 무게추 하나를 두어 스윙웨이트를 맞추고, 1.5도 범위의 호젤로 로프트·라이·페이스 각을 조절합니다. 로프트 9·10.5·12도.",
-  "points":["ZXi 시리즈 중 관용성 최대","무게추 1개(스윙웨이트 조절)","기본 ZXi·ZXi LS·ZXi RKT 와 구분"],
-  "sources":["https://us.dunlopsports.com/srixon/clubs/drivers/zxi-max-driver/zxi-max-driver/11242127.html","https://za.dunlopsports.com/MZXIMAXDRV.html"],
-  "guidePick":{"role":"스릭슨 고관용","forWhom":"스릭슨 타구감에 관용성을 더하고 싶은 초심자·중급 골퍼","short":"ZXi 의 관용형","plus":"높은 관성모멘트","minus":"조절 폭 좁음","pros":["ZXi 시리즈 중 관성모멘트 최대","후속 RKT 출시로 값 부담 감소"],"cons":["무게추가 하나라 탄도·구질 조절 폭이 좁음","재고가 줄어드는 직전 모델"],"scores":[5,4,4,4],"specs":["ZXi·MAX·LS","2025년","TBD"],"verdict":"스릭슨을 좋아하지만 빗맞음이 걱정인 입문자에게 맞는 관용형 드라이버","skill":"초심자","dist":6}},
- {"id":"honma-tw757d-driver","category":"driver","name":"혼마 TW757 D 드라이버","query":"혼마 투어월드 TW757 D 드라이버 남성","must":["tw757d","드라이버"],"exclude":["tw767","tw757s","여성","레이디","헤드만","샤프트만","헤드커버","중고","병행","직수입","직구","해외","무게추","호환","페어웨이","우드","유틸","아이언","풀세트","시타"],
-  "summary":"혼마 투어월드 TW757 시리즈(2022년)의 D 형 드라이버입니다. 460cc 헤드에 카본 슬롯 기술을 쓰고, 솔 뒤쪽 힐과 앞쪽 토우의 무게추(9g·3g)로 드로우 쪽 구질과 방향을 잡습니다. P-SAT 호젤로 로프트 ±1도·페이스 각 ±1.5도 조절, 로프트 9·10.5도.",
-  "points":["460cc 드로우 성향","솔 무게추 2개(9g·3g)","TW757 S·TW767 과 구분"],
-  "sources":["https://us.honmagolf.com/blogs/news/bragging-rights","https://golfbusinessnews.com/news/new-products/honma-unveils-tw757-range/","https://mygolfway.com/en/honma-golf-the-new-tworld-drivers-face-to-face-tw757-type-s-vs-tw757-type-d-which-one-is-yours"],
-  "guidePick":{"role":"혼마 직전 관용형","forWhom":"슬라이스를 줄이고 싶은 중급 골퍼","short":"드로우 성향 460cc","plus":"방향 안정","minus":"구형","pros":["드로우 성향 무게 배치로 슬라이스 완화","호젤로 로프트·페이스 각 조절"],"cons":["후속 TW767 출시로 직전 모델","판매처·재고가 적음"],"scores":[4,4,4,4],"specs":["TW757 S·D","2022년","TBD"],"verdict":"혼마 손맛을 직전 모델 값으로 원하면서 오른쪽 미스를 줄이고 싶은 중급 골퍼에게 맞는 모델","skill":"중급","dist":5}},
- {"id":"honma-tw757s-driver","category":"driver","name":"혼마 TW757 S 드라이버","query":"혼마 투어월드 TW757 S 드라이버 남성","must":["tw757s","드라이버"],"exclude":["tw767","tw757d","여성","레이디","헤드만","샤프트만","헤드커버","중고","병행","직수입","직구","해외","무게추","호환","페어웨이","우드","유틸","아이언","풀세트","시타"],
-  "summary":"혼마 투어월드 TW757 시리즈(2022년)의 S 형 드라이버입니다. 450cc 헤드에 카본 슬롯 기술을 쓰고, 솔 앞뒤 무게추로 스핀과 탄도를 조절합니다. 관용성 쪽인 460cc D 형과 달리 곧은 구질과 스핀 제어를 원하는 상급자를 겨냥했습니다. 로프트 9·10.5도.",
-  "points":["450cc 헤드","솔 앞뒤 무게 조절","TW757 D·TW767 과 구분"],
-  "sources":["https://us.honmagolf.com/blogs/news/bragging-rights","https://golfbusinessnews.com/news/new-products/honma-unveils-tw757-range/","https://www.golfmonthly.com/reviews/drivers/honma-tw757-s-driver-review"],
-  "guidePick":{"role":"조작형 직전 모델","forWhom":"스핀과 탄도를 다루려는 상급 골퍼","short":"혼마 투어 조작형","plus":"조작성·스핀 제어","minus":"관용성 낮음","pros":["작은 헤드로 조작 쉬움","앞뒤 무게로 스핀 조절"],"cons":["빗맞으면 손해가 큼","후속 TW767 출시로 구형"],"scores":[3,5,2,4],"specs":["TW757 S·D","2022년","TBD"],"verdict":"혼마 투어 감성을 직전 모델 값으로 원하는 고급 골퍼의 선택지","skill":"고급","dist":6}},
- {"id":"yamaha-inpres-drivestar-driver","category":"driver","name":"야마하 인프레스 드라이브스타 드라이버 (남성)","query":"야마하 인프레스 드라이브스타 남성 드라이버","must":["드라이버"],"mustAny":["드라이브스타","drivestar"],"exclude":["여성","레이디","ladies","헤드만","샤프트만","헤드커버","중고","병행","직수입","직구","해외","풀세트","세트","시타","우드","하이브리드","아이언","유틸"],
-  "summary":"야마하 인프레스 드라이브스타 남성용은 BOOSTBOX 구조로 임팩트 에너지를 공 속도로 바꾸고, 후지쿠라와 함께 만든 SPEEDER NX 샤프트를 단 비거리형 드라이버입니다. 야마하 발표 로프트는 9.5·10.5·11.5도입니다.",
-  "points":["상품명에 남성용·드라이브스타 확인(여성용과 다름)","연도(2022·2025)별 사양은 판매처 확인","입문자는 10.5도 이상·R"],
-  "sources":["https://global.golf.yamaha.com/en/products/driver/inpres_drivestar/","https://www.yamaha.com/ja/news_release/2022/22091201/"],
-  "guidePick":{"role":"일본 브랜드 비거리형","forWhom":"가볍고 쉽게 멀리 보내고 싶은 초보 남성 골퍼","short":"BOOSTBOX 비거리","plus":"쉬운 비거리","minus":"국내 재고 적음","pros":["BOOSTBOX 구조로 공 속도 강조","11.5도까지 있어 공이 쉽게 뜸"],"cons":["국내 판매처가 적어 재고가 들쭉날쭉","연도별 사양(샤프트)이 달라 확인 필요"],"scores":[4,4,5,3],"specs":["TBD","TBD","TBD"],"verdict":"스윙이 빠르지 않은 초보 남성 골퍼가 일본 브랜드 비거리형으로 볼 만한 드라이버","skill":"초심자","dist":7}},
- {"id":"titleist-gt1-driver","category":"driver","name":"타이틀리스트 GT1 드라이버","query":"타이틀리스트 GT1 드라이버 남성 정품","must":["gt1","드라이버"],"exclude":["헤드만","헤드","샤프트만","샤프트","무게추","호환","여성","레이디","중고","병행","직수입","직구","해외","페어웨이","우드","유틸","하이브리드","시타"],
-  "summary":"타이틀리스트 GT 드라이버 가운데 가장 가볍고 탄도가 높은 모델로 2025년 GT 시리즈에 더해졌습니다. 460cc 헤드, 뒤쪽 솔 무게추, 로프트 9·10·12도이며 가벼운 샤프트 구성이 있습니다.",
-  "points":["GT 시리즈 중 가장 가벼운 고탄도형","로프트 12도까지","GT2·GT3·GT4 와 구분"],
-  "sources":["https://titleist.com.au/golf-clubs/drivers/gt1","https://www.titleist.com.my/golf-clubs/drivers/gt1","https://golfwrx.com/752680/gt1-driver-fairway-woods-hybrid-join-the-titleist-gt-family/"],
-  "guidePick":{"role":"타이틀리스트 경량형","forWhom":"타이틀리스트를 쓰고 싶은 스윙 스피드 느린 초심자","short":"GT 의 경량 고탄도","plus":"가벼워 쉽게 휘두름","minus":"강한 스윙엔 가벼움","pros":["GT 중 가장 가벼워 휘두르기 쉬움","높은 탄도로 캐리 확보"],"cons":["스윙이 빠르면 탄도·스핀이 많을 수 있음","타이틀리스트라 가격대 높음"],"scores":[4,4,5,3],"specs":["GT1·GT2·GT3·GT4","2025년","TBD"],"verdict":"스윙 스피드가 느려도 타이틀리스트를 원하는 입문자에게 맞는 경량 드라이버","skill":"초심자","dist":7}}
+ {
+  "id": "srixon-zxi-max-driver",
+  "category": "driver",
+  "name": "스릭슨 ZXi MAX 드라이버",
+  "query": "던롭스포츠코리아정품 스릭슨 ZXi MAX 남성 드라이버",
+  "must": [
+   "zxi",
+   "드라이버"
+  ],
+  "mustAny": [
+   "max",
+   "맥스"
+  ],
+  "exclude": [
+   "rkt",
+   "ls",
+   "여성",
+   "레이디",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "중고",
+   "병행",
+   "직수입",
+   "직구",
+   "해외",
+   "무게추",
+   "호환",
+   "페어웨이",
+   "우드",
+   "유틸",
+   "아이언",
+   "풀세트",
+   "시타",
+   "드라이버헤드",
+   "헤드9도",
+   "헤드10.5도",
+   "zxi/"
+  ],
+  "summary": "스릭슨 ZXi 드라이버 시리즈(2025년) 가운데 관성모멘트가 가장 높은 관용성 모델입니다. 460cc 헤드 뒤쪽 낮은 곳에 무게추 하나를 두어 스윙웨이트를 맞추고, 1.5도 범위의 호젤로 로프트·라이·페이스 각을 조절합니다. 로프트 9·10.5·12도.",
+  "points": [
+   "ZXi 시리즈 중 관용성 최대",
+   "무게추 1개(스윙웨이트 조절)",
+   "기본 ZXi·ZXi LS·ZXi RKT 와 구분"
+  ],
+  "sources": [
+   "https://us.dunlopsports.com/srixon/clubs/drivers/zxi-max-driver/zxi-max-driver/11242127.html",
+   "https://za.dunlopsports.com/MZXIMAXDRV.html"
+  ],
+  "guidePick": {
+   "role": "스릭슨 고관용",
+   "forWhom": "스릭슨 타구감에 관용성을 더하고 싶은 초심자·중급 골퍼",
+   "short": "ZXi 의 관용형",
+   "plus": "높은 관성모멘트",
+   "minus": "조절 폭 좁음",
+   "pros": [
+    "ZXi 시리즈 중 관성모멘트 최대",
+    "후속 RKT 출시로 값 부담 감소"
+   ],
+   "cons": [
+    "무게추가 하나라 탄도·구질 조절 폭이 좁음",
+    "재고가 줄어드는 직전 모델"
+   ],
+   "scores": [
+    5,
+    4,
+    4,
+    4
+   ],
+   "specs": [
+    "ZXi·MAX·LS",
+    "2025년",
+    "TBD"
+   ],
+   "verdict": "스릭슨을 좋아하지만 빗맞음이 걱정인 입문자에게 맞는 관용형 드라이버",
+   "skill": "초심자",
+   "dist": 6
+  }
+ },
+ {
+  "id": "honma-tw757d-driver",
+  "category": "driver",
+  "name": "혼마 TW757 D 드라이버",
+  "query": "혼마골프 정품 혼마 투어월드 TW757 타입-D 남성 드라이버",
+  "must": [
+   "tw757",
+   "드라이버"
+  ],
+  "exclude": [
+   "tw767",
+   "tw757s",
+   "여성",
+   "레이디",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "중고",
+   "병행",
+   "직수입",
+   "직구",
+   "해외",
+   "무게추",
+   "호환",
+   "페어웨이",
+   "우드",
+   "유틸",
+   "아이언",
+   "풀세트",
+   "시타",
+   "타입s",
+   "types"
+  ],
+  "summary": "혼마 투어월드 TW757 시리즈(2022년)의 D 형 드라이버입니다. 460cc 헤드에 카본 슬롯 기술을 쓰고, 솔 뒤쪽 힐과 앞쪽 토우의 무게추(9g·3g)로 드로우 쪽 구질과 방향을 잡습니다. P-SAT 호젤로 로프트 ±1도·페이스 각 ±1.5도 조절, 로프트 9·10.5도.",
+  "points": [
+   "460cc 드로우 성향",
+   "솔 무게추 2개(9g·3g)",
+   "TW757 S·TW767 과 구분"
+  ],
+  "sources": [
+   "https://us.honmagolf.com/blogs/news/bragging-rights",
+   "https://golfbusinessnews.com/news/new-products/honma-unveils-tw757-range/",
+   "https://mygolfway.com/en/honma-golf-the-new-tworld-drivers-face-to-face-tw757-type-s-vs-tw757-type-d-which-one-is-yours"
+  ],
+  "guidePick": {
+   "role": "혼마 직전 관용형",
+   "forWhom": "슬라이스를 줄이고 싶은 중급 골퍼",
+   "short": "드로우 성향 460cc",
+   "plus": "방향 안정",
+   "minus": "구형",
+   "pros": [
+    "드로우 성향 무게 배치로 슬라이스 완화",
+    "호젤로 로프트·페이스 각 조절"
+   ],
+   "cons": [
+    "후속 TW767 출시로 직전 모델",
+    "판매처·재고가 적음"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    4
+   ],
+   "specs": [
+    "TW757 S·D",
+    "2022년",
+    "TBD"
+   ],
+   "verdict": "혼마 손맛을 직전 모델 값으로 원하면서 오른쪽 미스를 줄이고 싶은 중급 골퍼에게 맞는 모델",
+   "skill": "중급",
+   "dist": 5
+  },
+  "mustAny": [
+   "tw757d",
+   "타입d",
+   "typed"
+  ]
+ },
+ {
+  "id": "honma-tw757s-driver",
+  "category": "driver",
+  "name": "혼마 TW757 S 드라이버",
+  "query": "혼마골프 정품 혼마 투어월드 TW757 타입-S 남성 드라이버",
+  "must": [
+   "tw757",
+   "드라이버"
+  ],
+  "exclude": [
+   "tw767",
+   "tw757d",
+   "여성",
+   "레이디",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "중고",
+   "병행",
+   "직수입",
+   "직구",
+   "해외",
+   "무게추",
+   "호환",
+   "페어웨이",
+   "우드",
+   "유틸",
+   "아이언",
+   "풀세트",
+   "시타",
+   "타입d",
+   "typed"
+  ],
+  "summary": "혼마 투어월드 TW757 시리즈(2022년)의 S 형 드라이버입니다. 450cc 헤드에 카본 슬롯 기술을 쓰고, 솔 앞뒤 무게추로 스핀과 탄도를 조절합니다. 관용성 쪽인 460cc D 형과 달리 곧은 구질과 스핀 제어를 원하는 상급자를 겨냥했습니다. 로프트 9·10.5도.",
+  "points": [
+   "450cc 헤드",
+   "솔 앞뒤 무게 조절",
+   "TW757 D·TW767 과 구분"
+  ],
+  "sources": [
+   "https://us.honmagolf.com/blogs/news/bragging-rights",
+   "https://golfbusinessnews.com/news/new-products/honma-unveils-tw757-range/",
+   "https://www.golfmonthly.com/reviews/drivers/honma-tw757-s-driver-review"
+  ],
+  "guidePick": {
+   "role": "조작형 직전 모델",
+   "forWhom": "스핀과 탄도를 다루려는 상급 골퍼",
+   "short": "혼마 투어 조작형",
+   "plus": "조작성·스핀 제어",
+   "minus": "관용성 낮음",
+   "pros": [
+    "작은 헤드로 조작 쉬움",
+    "앞뒤 무게로 스핀 조절"
+   ],
+   "cons": [
+    "빗맞으면 손해가 큼",
+    "후속 TW767 출시로 구형"
+   ],
+   "scores": [
+    3,
+    5,
+    2,
+    4
+   ],
+   "specs": [
+    "TW757 S·D",
+    "2022년",
+    "TBD"
+   ],
+   "verdict": "혼마 투어 감성을 직전 모델 값으로 원하는 고급 골퍼의 선택지",
+   "skill": "고급",
+   "dist": 6
+  },
+  "mustAny": [
+   "tw757s",
+   "타입s",
+   "types"
+  ]
+ },
+ {
+  "id": "yamaha-inpres-drivestar-driver",
+  "category": "driver",
+  "name": "야마하 인프레스 드라이브스타 드라이버 (남성)",
+  "query": "야마하 인프레스 드라이브스타 남성 드라이버",
+  "must": [
+   "드라이버"
+  ],
+  "mustAny": [
+   "드라이브스타",
+   "drivestar"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "ladies",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "중고",
+   "병행",
+   "직수입",
+   "직구",
+   "해외",
+   "풀세트",
+   "세트",
+   "시타",
+   "우드",
+   "하이브리드",
+   "아이언",
+   "유틸"
+  ],
+  "summary": "야마하 인프레스 드라이브스타 남성용은 BOOSTBOX 구조로 임팩트 에너지를 공 속도로 바꾸고, 후지쿠라와 함께 만든 SPEEDER NX 샤프트를 단 비거리형 드라이버입니다. 야마하 발표 로프트는 9.5·10.5·11.5도입니다.",
+  "points": [
+   "상품명에 남성용·드라이브스타 확인(여성용과 다름)",
+   "연도(2022·2025)별 사양은 판매처 확인",
+   "입문자는 10.5도 이상·R"
+  ],
+  "sources": [
+   "https://global.golf.yamaha.com/en/products/driver/inpres_drivestar/",
+   "https://www.yamaha.com/ja/news_release/2022/22091201/"
+  ],
+  "guidePick": {
+   "role": "일본 브랜드 비거리형",
+   "forWhom": "가볍고 쉽게 멀리 보내고 싶은 초보 남성 골퍼",
+   "short": "BOOSTBOX 비거리",
+   "plus": "쉬운 비거리",
+   "minus": "국내 재고 적음",
+   "pros": [
+    "BOOSTBOX 구조로 공 속도 강조",
+    "11.5도까지 있어 공이 쉽게 뜸"
+   ],
+   "cons": [
+    "국내 판매처가 적어 재고가 들쭉날쭉",
+    "연도별 사양(샤프트)이 달라 확인 필요"
+   ],
+   "scores": [
+    4,
+    4,
+    5,
+    3
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "TBD"
+   ],
+   "verdict": "스윙이 빠르지 않은 초보 남성 골퍼가 일본 브랜드 비거리형으로 볼 만한 드라이버",
+   "skill": "초심자",
+   "dist": 7
+  }
+ },
+ {
+  "id": "titleist-gt1-driver",
+  "category": "driver",
+  "name": "타이틀리스트 GT1 드라이버",
+  "query": "타이틀리스트 GT1 드라이버 남성 정품",
+  "must": [
+   "gt1",
+   "드라이버"
+  ],
+  "exclude": [
+   "헤드만",
+   "헤드",
+   "샤프트만",
+   "샤프트",
+   "무게추",
+   "호환",
+   "여성",
+   "레이디",
+   "중고",
+   "병행",
+   "직수입",
+   "직구",
+   "해외",
+   "페어웨이",
+   "우드",
+   "유틸",
+   "하이브리드",
+   "시타"
+  ],
+  "summary": "타이틀리스트 GT 드라이버 가운데 가장 가볍고 탄도가 높은 모델로 2025년 GT 시리즈에 더해졌습니다. 460cc 헤드, 뒤쪽 솔 무게추, 로프트 9·10·12도이며 가벼운 샤프트 구성이 있습니다.",
+  "points": [
+   "GT 시리즈 중 가장 가벼운 고탄도형",
+   "로프트 12도까지",
+   "GT2·GT3·GT4 와 구분"
+  ],
+  "sources": [
+   "https://titleist.com.au/golf-clubs/drivers/gt1",
+   "https://www.titleist.com.my/golf-clubs/drivers/gt1",
+   "https://golfwrx.com/752680/gt1-driver-fairway-woods-hybrid-join-the-titleist-gt-family/"
+  ],
+  "guidePick": {
+   "role": "타이틀리스트 경량형",
+   "forWhom": "타이틀리스트를 쓰고 싶은 스윙 스피드 느린 초심자",
+   "short": "GT 의 경량 고탄도",
+   "plus": "가벼워 쉽게 휘두름",
+   "minus": "강한 스윙엔 가벼움",
+   "pros": [
+    "GT 중 가장 가벼워 휘두르기 쉬움",
+    "높은 탄도로 캐리 확보"
+   ],
+   "cons": [
+    "스윙이 빠르면 탄도·스핀이 많을 수 있음",
+    "타이틀리스트라 가격대 높음"
+   ],
+   "scores": [
+    4,
+    4,
+    5,
+    3
+   ],
+   "specs": [
+    "GT1·GT2·GT3·GT4",
+    "2025년",
+    "TBD"
+   ],
+   "verdict": "스윙 스피드가 느려도 타이틀리스트를 원하는 입문자에게 맞는 경량 드라이버",
+   "skill": "초심자",
+   "dist": 7
+  }
+ }
 ]
