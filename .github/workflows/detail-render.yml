@@ -31,4 +31,4 @@ jobs:
           git config user.name unclepony; git config user.email unclepony77@gmail.com
           git add content/detail
           git diff --cached --quiet || git commit -q -m "상세 이미지 갱신 (GitHub Actions)"
-          git pull -q --rebase && git push -q
+          git pull -q --rebase --autostash && git push -q
