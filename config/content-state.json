@@ -39,7 +39,7 @@
       "d": "2026-11-01"
     },
     "/p/srixon-z-star": {
-      "h": "509d960622c1238d",
+      "h": "09d245944cf2e7fc",
       "d": "2026-11-01"
     },
     "/p/callaway-chrome-soft": {
@@ -87,7 +87,7 @@
       "d": "2026-11-01"
     },
     "/p/taylormade-tp5-ball": {
-      "h": "bf348e4404e8110f",
+      "h": "5d8bd6ef348afadf",
       "d": "2026-11-01"
     },
     "/p/nikon-coolshot-pro3": {
@@ -1051,15 +1051,15 @@
       "d": "2026-11-01"
     },
     "/p/titleist-avx": {
-      "h": "069fcf37c60a4d69",
+      "h": "0ed35ae940ab2883",
       "d": "2026-11-01"
     },
     "/p/titleist-tour-soft": {
-      "h": "332fbdd44b64338f",
+      "h": "ef6619b3a99dc025",
       "d": "2026-11-01"
     },
     "/p/callaway-erc-soft": {
-      "h": "d6ed7772d4b06f37",
+      "h": "7a544717e2c4bdee",
       "d": "2026-11-01"
     },
     "/p/titleist-velocity": {
@@ -1291,7 +1291,7 @@
       "d": "2026-11-01"
     },
     "/p/callaway-chrome-tour-triple-diamond": {
-      "h": "c7ec0da30e7aeb8d",
+      "h": "0dfa78010fa23ae6",
       "d": "2026-11-01"
     },
     "/p/bridgestone-tour-b-xs": {
@@ -1303,11 +1303,11 @@
       "d": "2026-11-01"
     },
     "/p/volvik-condor-x": {
-      "h": "abc850f19b7c65d7",
+      "h": "9c5e92800148d39a",
       "d": "2026-11-01"
     },
     "/p/volvik-condor-s4": {
-      "h": "648f0aec45714738",
+      "h": "ae3af9c4c1740d0d",
       "d": "2026-11-01"
     },
     "/p/volvik-vivid": {
@@ -1315,7 +1315,7 @@
       "d": "2026-11-01"
     },
     "/p/volvik-axia-iv": {
-      "h": "183acf7eb7141672",
+      "h": "1a3694655e310d21",
       "d": "2026-11-01"
     },
     "/p/taylormade-qi10max-fairway": {
@@ -1679,7 +1679,7 @@
       "d": "2026-11-01"
     },
     "/p/taylormade-tp5-pix": {
-      "h": "6cf359612e9ba537",
+      "h": "449ac1b0cd8b3ffe",
       "d": "2026-11-01"
     },
     "/p/callaway-warbird": {
@@ -1695,7 +1695,7 @@
       "d": "2026-11-01"
     },
     "/p/xxio-rebound-drive-2": {
-      "h": "56701070c495342c",
+      "h": "1b7bb8b8226bf822",
       "d": "2026-11-01"
     },
     "/p/wilson-duo-soft": {
@@ -2079,7 +2079,7 @@
       "d": "2026-11-01"
     },
     "/p/srixon-z-star-diamond": {
-      "h": "a8b4b6132c269b26",
+      "h": "e669372bc24a32cc",
       "d": "2026-11-01"
     },
     "/p/bridgestone-e6": {
@@ -2406,6 +2406,14 @@
       "h": "275ad66079abc07d",
       "d": "2026-11-01"
     },
+    "/p/bridgestone-e12-contact": {
+      "h": "fffa27e6339e9f25",
+      "d": "2026-11-01"
+    },
+    "/p/saintnine-n-pro": {
+      "h": "9f9b96d98a12d5c8",
+      "d": "2026-11-01"
+    },
     "/c/driver": {
       "h": "64e05333800c1c30",
       "d": "2026-10-31"
@@ -2431,8 +2439,8 @@
       "d": "2026-11-01"
     },
     "/c/ball": {
-      "h": "27ba28d1f583c9ca",
-      "d": "2026-10-31"
+      "h": "986134628742ad07",
+      "d": "2026-11-01"
     },
     "/c/rangefinder": {
       "h": "8c8713ad0c43ebf2",
@@ -2491,8 +2499,8 @@
       "d": "2026-11-01"
     },
     "/g/golf-ball-compare": {
-      "h": "375356663e50e789",
-      "d": "2026-10-31"
+      "h": "807e4576b2a76963",
+      "d": "2026-11-01"
     },
     "/g/rangefinder-recommend": {
       "h": "8f4dec20f5018a81",
@@ -2659,12 +2667,12 @@
       "d": "2026-10-29"
     },
     "/g/golf-ball-compare-intermediate": {
-      "h": "81b593484585670d",
-      "d": "2026-10-31"
+      "h": "35e720e2f36495fa",
+      "d": "2026-11-01"
     },
     "/g/golf-ball-compare-advanced": {
-      "h": "7736801352da7c72",
-      "d": "2026-10-30"
+      "h": "765755c43a18898f",
+      "d": "2026-11-01"
     },
     "/g/golf-ball-compare-pro": {
       "h": "78118073295e5636",
@@ -2763,7 +2771,7 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "9517156147983526",
+      "h": "00831ed977438d56",
       "d": "2026-11-01"
     },
     "/about": {
@@ -3559,11 +3567,6 @@
       "d": "2026-11-01"
     },
     {
-      "url": "/p/srixon-z-star",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
       "url": "/p/callaway-chrome-soft",
       "kind": "updated",
       "d": "2026-11-01"
@@ -3605,11 +3608,6 @@
     },
     {
       "url": "/p/callaway-elyte-maxfast-women-driver",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
-      "url": "/p/taylormade-tp5-ball",
       "kind": "updated",
       "d": "2026-11-01"
     },
@@ -4769,21 +4767,6 @@
       "d": "2026-11-01"
     },
     {
-      "url": "/p/titleist-avx",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
-      "url": "/p/titleist-tour-soft",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
-      "url": "/p/callaway-erc-soft",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
       "url": "/p/titleist-velocity",
       "kind": "updated",
       "d": "2026-11-01"
@@ -5044,11 +5027,6 @@
       "d": "2026-11-01"
     },
     {
-      "url": "/p/callaway-chrome-tour-triple-diamond",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
       "url": "/p/bridgestone-tour-b-xs",
       "kind": "updated",
       "d": "2026-11-01"
@@ -5059,22 +5037,7 @@
       "d": "2026-11-01"
     },
     {
-      "url": "/p/volvik-condor-x",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
-      "url": "/p/volvik-condor-s4",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
       "url": "/p/volvik-vivid",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
-      "url": "/p/volvik-axia-iv",
       "kind": "updated",
       "d": "2026-11-01"
     },
@@ -5499,11 +5462,6 @@
       "d": "2026-11-01"
     },
     {
-      "url": "/p/taylormade-tp5-pix",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
       "url": "/p/callaway-warbird",
       "kind": "updated",
       "d": "2026-11-01"
@@ -5515,11 +5473,6 @@
     },
     {
       "url": "/p/honma-d1",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
-      "url": "/p/xxio-rebound-drive-2",
       "kind": "updated",
       "d": "2026-11-01"
     },
@@ -5960,11 +5913,6 @@
     },
     {
       "url": "/p/taylormade-mg5-wedge",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
-      "url": "/p/srixon-z-star-diamond",
       "kind": "updated",
       "d": "2026-11-01"
     },
@@ -6604,11 +6552,6 @@
       "d": "2026-11-01"
     },
     {
-      "url": "/",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
       "url": "/vs/taylormade-spider-tour-x-putter-vs-mizuno-mcraft-omoi6-putter",
       "kind": "updated",
       "d": "2026-11-01"
@@ -6635,6 +6578,101 @@
     },
     {
       "url": "/p/pxg-battle-ready2-putter",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/p/srixon-z-star",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/p/taylormade-tp5-ball",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/p/titleist-avx",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/p/titleist-tour-soft",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/p/callaway-erc-soft",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/p/callaway-chrome-tour-triple-diamond",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/p/volvik-condor-x",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/p/volvik-condor-s4",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/p/volvik-axia-iv",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/p/taylormade-tp5-pix",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/p/xxio-rebound-drive-2",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/p/srixon-z-star-diamond",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/p/bridgestone-e12-contact",
+      "kind": "new",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/p/saintnine-n-pro",
+      "kind": "new",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/c/ball",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/g/golf-ball-compare",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/g/golf-ball-compare-intermediate",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/g/golf-ball-compare-advanced",
+      "kind": "updated",
+      "d": "2026-11-01"
+    },
+    {
+      "url": "/",
       "kind": "updated",
       "d": "2026-11-01"
     }
