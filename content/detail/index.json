@@ -22,7 +22,7 @@
  "ping-fetch-putter": "7376e8d1a6dd",
  "taylormade-tp5-ball": "da236c6b9bf6",
  "nikon-coolshot-pro3": "2f0a6ed94c7f",
- "taylormade-qi35-maxlite-women-driver": "d0ddb8c3c2ca",
+ "taylormade-qi35-maxlite-women-driver": "147fe361fd8b",
  "bushnell-tour-v6-shift": "5d4e3ad0338f",
  "footjoy-premiere-packard-shoes": "c8f5709ec297",
  "titleist-t100-iron": "36d1269ed4da",
@@ -427,7 +427,7 @@
  "volvik-power-soft": "83d1923fb3bb",
  "xxio13-women-driver": "a3cdcaf64767",
  "cobra-darkspeed-max-women-driver": "cc8687cec030",
- "cobra-ds-adapt-maxd-women-driver": "90d8bb8afb0c",
+ "cobra-ds-adapt-maxd-women-driver": "51a18092636b",
  "honma-beres09-women-driver": "d3c1b1674d0e",
  "majesty-prestigio13-women-driver": "a08d445c7e8d",
  "callaway-roguestmax-iron": "29cdfe0c47e7",
@@ -521,8 +521,8 @@
  "srixon-z-star-diamond": "fb47a9dd71b7",
  "bridgestone-e6": "3eab401b8132",
  "volvik-condor-s3": "c410d94d8859",
- "cobra-optm-maxd-women-driver": "d4c7b5afb10d",
- "yamaha-inpres-drivestar-women-driver": "328a661b36df",
+ "cobra-optm-maxd-women-driver": "5e96b234fd98",
+ "yamaha-inpres-drivestar-women-driver": "53cbe66001de",
  "callaway-paradym-iron": "d592b899d616",
  "callaway-apex-pro24-iron": "9927df3d9b3c",
  "callaway-apex-cb24-iron": "7eae43735344",
@@ -606,5 +606,8 @@
  "wellsense-black-eagle-metal": "02c8c3dce09a",
  "wellsense-black-eagle-zero": "99920d909e2e",
  "voicecaddie-l6": "c761cc74bb55",
- "caddytalk-minion-plus": "560501bd1f2d"
+ "caddytalk-minion-plus": "560501bd1f2d",
+ "prgr-crystalegg-women-driver": "2920f50bd08c",
+ "callaway-reva-women-driver": "b6118a2440bd",
+ "majesty-royale-women-driver": "976befa00ab4"
 }
