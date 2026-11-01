@@ -179,8 +179,8 @@
       "d": "2026-11-01"
     },
     "/p/golfbuddy-aim-w12": {
-      "h": "ef9b262ffb120f5d",
-      "d": "2026-11-01"
+      "h": "61ce19134d4c4694",
+      "d": "2026-11-02"
     },
     "/p/garmin-approach-r10": {
       "h": "41f8f0e7631d286e",
@@ -1835,8 +1835,8 @@
       "d": "2026-11-01"
     },
     "/p/mycaddie-gps-m2": {
-      "h": "afacc03971c66c2c",
-      "d": "2026-11-01"
+      "h": "7e87728d53e9c6b8",
+      "d": "2026-11-02"
     },
     "/p/galaxy-watch8-golf": {
       "h": "178c3f98d1134de0",
@@ -2155,12 +2155,12 @@
       "d": "2026-11-01"
     },
     "/p/golfbuddy-voice-3s-plus": {
-      "h": "d1569d5c278183df",
-      "d": "2026-11-01"
+      "h": "e683f411dfc2d84c",
+      "d": "2026-11-02"
     },
     "/p/licata-fitmade-x": {
-      "h": "422bdf3f6e2e2d67",
-      "d": "2026-11-01"
+      "h": "d6949bf947d5af6e",
+      "d": "2026-11-02"
     },
     "/p/footjoy-prolite-boa-shoes": {
       "h": "aa7e600f12809982",
@@ -2435,16 +2435,20 @@
       "d": "2026-11-01"
     },
     "/p/prgr-crystalegg-women-driver": {
-      "h": "f2407a72bceff8a6",
-      "d": "2026-11-01"
+      "h": "52214e3a095e3283",
+      "d": "2026-11-02"
     },
     "/p/callaway-reva-women-driver": {
-      "h": "0f1ba3491afccdcf",
-      "d": "2026-11-01"
+      "h": "408cfaa482ff80a7",
+      "d": "2026-11-02"
     },
     "/p/majesty-royale-women-driver": {
-      "h": "afe1a9652962e2ec",
-      "d": "2026-11-01"
+      "h": "2947227a2ea8d405",
+      "d": "2026-11-02"
+    },
+    "/p/voicecaddie-vc4": {
+      "h": "120af3dab4119498",
+      "d": "2026-11-02"
     },
     "/c/driver": {
       "h": "6feb8a8336f9a346",
@@ -2479,8 +2483,8 @@
       "d": "2026-11-01"
     },
     "/c/gps": {
-      "h": "b3941b7ebcc6b1b8",
-      "d": "2026-10-30"
+      "h": "d70146ac74d0ae90",
+      "d": "2026-11-02"
     },
     "/c/launch": {
       "h": "4cc4bf355b823330",
@@ -2551,8 +2555,8 @@
       "d": "2026-11-01"
     },
     "/g/golf-watch-recommend": {
-      "h": "6a10270c21c9e789",
-      "d": "2026-10-30"
+      "h": "2d22e006dcdd34ea",
+      "d": "2026-11-02"
     },
     "/g/launch-monitor-recommend": {
       "h": "f817c9b8968d0dc3",
@@ -2759,8 +2763,8 @@
       "d": "2026-11-01"
     },
     "/g/golf-watch-recommend-beginner": {
-      "h": "6fc8cdb491693574",
-      "d": "2026-10-30"
+      "h": "482f163de43622a0",
+      "d": "2026-11-02"
     },
     "/g/golf-watch-recommend-intermediate": {
       "h": "b9abc6dda984fc38",
@@ -2803,8 +2807,8 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "b67ff01dbc5941d8",
-      "d": "2026-11-01"
+      "h": "68acf0846f958718",
+      "d": "2026-11-02"
     },
     "/about": {
       "h": "062d2326b8040ec7",
@@ -3715,11 +3719,6 @@
     },
     {
       "url": "/p/voicecaddie-t13-pro",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
-      "url": "/p/golfbuddy-aim-w12",
       "kind": "updated",
       "d": "2026-11-01"
     },
@@ -5414,11 +5413,6 @@
       "d": "2026-11-01"
     },
     {
-      "url": "/p/mycaddie-gps-m2",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
       "url": "/p/galaxy-watch8-golf",
       "kind": "updated",
       "d": "2026-11-01"
@@ -5740,16 +5734,6 @@
     },
     {
       "url": "/p/galaxy-watch8-golf-40mm",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
-      "url": "/p/golfbuddy-voice-3s-plus",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
-      "url": "/p/licata-fitmade-x",
       "kind": "updated",
       "d": "2026-11-01"
     },
@@ -6764,21 +6748,6 @@
       "d": "2026-11-01"
     },
     {
-      "url": "/p/prgr-crystalegg-women-driver",
-      "kind": "new",
-      "d": "2026-11-01"
-    },
-    {
-      "url": "/p/callaway-reva-women-driver",
-      "kind": "new",
-      "d": "2026-11-01"
-    },
-    {
-      "url": "/p/majesty-royale-women-driver",
-      "kind": "new",
-      "d": "2026-11-01"
-    },
-    {
       "url": "/c/driver",
       "kind": "updated",
       "d": "2026-11-01"
@@ -6804,11 +6773,6 @@
       "d": "2026-11-01"
     },
     {
-      "url": "/",
-      "kind": "updated",
-      "d": "2026-11-01"
-    },
-    {
       "url": "/vs/prgr-sweep-women-driver-vs-taylormade-qi35-maxlite-women-driver",
       "kind": "updated",
       "d": "2026-11-01"
@@ -6817,6 +6781,66 @@
       "url": "/vs/taylormade-sim2max-women-driver-vs-taylormade-qi35-maxlite-women-driver",
       "kind": "updated",
       "d": "2026-11-01"
+    },
+    {
+      "url": "/p/golfbuddy-aim-w12",
+      "kind": "updated",
+      "d": "2026-11-02"
+    },
+    {
+      "url": "/p/mycaddie-gps-m2",
+      "kind": "updated",
+      "d": "2026-11-02"
+    },
+    {
+      "url": "/p/golfbuddy-voice-3s-plus",
+      "kind": "updated",
+      "d": "2026-11-02"
+    },
+    {
+      "url": "/p/licata-fitmade-x",
+      "kind": "updated",
+      "d": "2026-11-02"
+    },
+    {
+      "url": "/p/prgr-crystalegg-women-driver",
+      "kind": "updated",
+      "d": "2026-11-02"
+    },
+    {
+      "url": "/p/callaway-reva-women-driver",
+      "kind": "updated",
+      "d": "2026-11-02"
+    },
+    {
+      "url": "/p/majesty-royale-women-driver",
+      "kind": "updated",
+      "d": "2026-11-02"
+    },
+    {
+      "url": "/p/voicecaddie-vc4",
+      "kind": "new",
+      "d": "2026-11-02"
+    },
+    {
+      "url": "/c/gps",
+      "kind": "updated",
+      "d": "2026-11-02"
+    },
+    {
+      "url": "/g/golf-watch-recommend",
+      "kind": "updated",
+      "d": "2026-11-02"
+    },
+    {
+      "url": "/g/golf-watch-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-11-02"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-11-02"
     }
   ]
 }
