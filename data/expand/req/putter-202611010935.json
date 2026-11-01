@@ -1,0 +1,660 @@
+[
+ {
+  "category": "putter",
+  "id": "taylormade-spider-tour-f-putter",
+  "name": "테일러메이드 2026 스파이더 투어 F 퍼터",
+  "query": "테일러메이드 2026 스파이더 투어 F 퍼터",
+  "must": [
+   "스파이더",
+   "퍼터"
+  ],
+  "mustAny": [
+   "투어f"
+  ],
+  "exclude": [
+   "투어x",
+   "투어v",
+   "zt",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "여성",
+   "레이디",
+   "스티커",
+   "보호필름",
+   "주니어"
+  ],
+  "summary": "스파이더 투어 F는 2026년 스파이더 투어 패밀리에 새로 들어온 헤드입니다. 날개형 뒷모양에 단일 시라인을 넣었고, L넥(토행 33°)과 더블벤드(페이스 밸런스) 두 가지가 있습니다.",
+  "points": [
+   "2026년 새 스파이더 형상(날개형 뒷부분)",
+   "단일 시라인 정렬",
+   "L넥(아크형)·더블벤드(직선형) 두 가지"
+  ],
+  "guidePick": {
+   "role": "투어 신형 말렛",
+   "forWhom": "스파이더의 안정감에 깔끔한 정렬선을 원하는 고급 골퍼",
+   "short": "2026 스파이더 신형",
+   "plus": "관용성",
+   "minus": "고가",
+   "pros": [
+    "스파이더 계열의 높은 안정감",
+    "넥 선택으로 스트로크 유형에 맞춤"
+   ],
+   "cons": [
+    "고가",
+    "시라인이 하나라 정렬 보조가 단순"
+   ],
+   "scores": [
+    5,
+    4,
+    4,
+    3
+   ],
+   "specs": [
+    "말렛(날개형)",
+    "TBD",
+    "단일 시라인 · L넥/더블벤드"
+   ],
+   "verdict": "스파이더 안정감에 단순한 정렬을 원하는 고급자용",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://www.geconomy.co.kr/mobile/article.html?no=320762",
+   "https://www.todays-golfer.com/news-and-events/equipment-news/taylormade-spider-putters-2026/"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "odyssey-aidual-7-putter",
+  "name": "오디세이 Ai-DUAL #7 퍼터",
+  "query": "오디세이 2026 Ai-DUAL 퍼터 7번",
+  "must": [
+   "ai-dual",
+   "퍼터"
+  ],
+  "mustAny": [
+   "7번",
+   "#7",
+   "7db",
+   "7s",
+   "세븐",
+   "no7"
+  ],
+  "exclude": [
+   "s2s",
+   "스퀘어",
+   "square",
+   "하프볼",
+   "1/2",
+   "½",
+   "크루저",
+   "cruiser",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "여성",
+   "레이디",
+   "스티커",
+   "보호필름",
+   "주니어"
+  ],
+  "summary": "오디세이 Ai-DUAL은 2026년 2월 캘러웨이골프 코리아가 출시한 퍼터 라인입니다. 단단한 안쪽 코어와 부드러운 바깥층의 두 겹 AI 우레탄 인서트를 넣었고, #7은 팽 날개 모양 말렛입니다.",
+  "points": [
+   "2026년 신형 · 두 겹(듀얼 레이어) AI 우레탄 인서트",
+   "#7 말렛 헤드",
+   "일반형(토크 있는) 넥 — 제로토크형은 S2S"
+  ],
+  "guidePick": {
+   "role": "신형 말렛 정석",
+   "forWhom": "오디세이 #7 모양이 익숙한 중급 골퍼",
+   "short": "2026 오디세이 말렛",
+   "plus": "타구감",
+   "minus": "고가",
+   "pros": [
+    "두 겹 인서트로 부드러운 감과 일정한 거리",
+    "익숙한 #7 말렛 정렬"
+   ],
+   "cons": [
+    "30만원대 이상",
+    "구형 Ai-ONE #7과 모양 차이 작음"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    3
+   ],
+   "specs": [
+    "말렛(#7)",
+    "TBD",
+    "Ai-DUAL 두 겹 인서트"
+   ],
+   "verdict": "#7 말렛을 최신 인서트로 바꾸려는 중급자용",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://www.twig24.com/news/2026/02/02/20260202500070",
+   "https://mygolfspy.com/news-opinion/odysseys-new-putters-double-the-insert-layers-and-halve-the-ball/"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "odyssey-aidual-halfball-putter",
+  "name": "오디세이 Ai-DUAL 하프볼 퍼터",
+  "query": "오디세이 Ai-DUAL 하프볼 퍼터",
+  "must": [
+   "ai-dual",
+   "퍼터"
+  ],
+  "mustAny": [
+   "하프볼",
+   "1/2볼",
+   "1/2ball",
+   "½",
+   "halfball",
+   "1/2"
+  ],
+  "exclude": [
+   "s2s",
+   "스퀘어",
+   "square",
+   "크루저",
+   "cruiser",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "여성",
+   "레이디",
+   "스티커",
+   "보호필름",
+   "주니어"
+  ],
+  "summary": "Ai-DUAL 하프볼(½ Ball)은 헤드 위에 반원 정렬 표시를 넣어 어드레스 때 페이스와 공의 위치를 쉽게 보게 한 모델입니다. 두 겹 AI 우레탄 인서트를 씁니다.",
+  "points": [
+   "반원(½ Ball) 정렬 표시",
+   "두 겹 AI 우레탄 인서트",
+   "더블와이드·#7 S 등 여러 헤드(판매처 확인)"
+  ],
+  "guidePick": {
+   "role": "정렬 보조형",
+   "forWhom": "공과 페이스를 맞추기 어려운 초심자",
+   "short": "반원 정렬 말렛",
+   "plus": "정렬 편의",
+   "minus": "헤드별 차이",
+   "pros": [
+    "반원 표시로 공 위치를 바로 확인",
+    "최신 인서트의 부드러운 감"
+   ],
+   "cons": [
+    "30만원대 이상",
+    "헤드 모양을 옵션으로 확인해야 함"
+   ],
+   "scores": [
+    4,
+    4,
+    5,
+    3
+   ],
+   "specs": [
+    "말렛·와이드 블레이드(모델별)",
+    "TBD",
+    "½ Ball 정렬 · 두 겹 인서트"
+   ],
+   "verdict": "정렬이 가장 고민인 초심자용 최신 퍼터",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://www.twig24.com/news/2026/02/02/20260202500070",
+   "https://golf.com/gear/putters/odyssey-introduces-ai-dual-putters-1-2-ball-alignment/?amp=1"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "odyssey-aidual-1-putter",
+  "name": "오디세이 Ai-DUAL #1 퍼터",
+  "query": "오디세이 Ai-DUAL 퍼터 1번 블레이드",
+  "must": [
+   "ai-dual",
+   "퍼터"
+  ],
+  "mustAny": [
+   "1번",
+   "#1",
+   "1db",
+   "no1"
+  ],
+  "exclude": [
+   "s2s",
+   "스퀘어",
+   "square",
+   "하프볼",
+   "1/2",
+   "½",
+   "크루저",
+   "cruiser",
+   "7번",
+   "#7",
+   "더블와이드",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "여성",
+   "레이디",
+   "스티커",
+   "보호필름",
+   "주니어"
+  ],
+  "summary": "Ai-DUAL #1은 Ai-DUAL 라인의 정통 블레이드(앤서형) 헤드입니다. 두 겹 AI 우레탄 인서트를 씁니다.",
+  "points": [
+   "블레이드 헤드",
+   "두 겹 AI 우레탄 인서트",
+   "아크형 스트로크에 맞는 토행"
+  ],
+  "guidePick": {
+   "role": "인서트 블레이드",
+   "forWhom": "블레이드에 부드러운 인서트 감을 원하는 고급 골퍼",
+   "short": "오디세이 신형 블레이드",
+   "plus": "손맛",
+   "minus": "관용성",
+   "pros": [
+    "블레이드 특유의 조작감",
+    "인서트로 부드러운 타구감"
+   ],
+   "cons": [
+    "말렛보다 관용성 낮음",
+    "30만원대 이상"
+   ],
+   "scores": [
+    3,
+    5,
+    3,
+    3
+   ],
+   "specs": [
+    "블레이드(#1)",
+    "TBD",
+    "Ai-DUAL 두 겹 인서트"
+   ],
+   "verdict": "블레이드를 쓰되 부드러운 감을 원하는 고급자용",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://www.twig24.com/news/2026/02/02/20260202500070",
+   "https://golfalot.com/equipment-review/odyssey-ai-dual-1-putter-review"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "odyssey-aione-tripletrack-2ball-putter",
+  "name": "오디세이 Ai-ONE 트리플트랙 투볼 퍼터",
+  "query": "오디세이 Ai-ONE 트리플트랙 투볼 퍼터",
+  "must": [
+   "트리플트랙",
+   "퍼터"
+  ],
+  "mustAny": [
+   "투볼",
+   "2볼",
+   "2ball",
+   "2-ball"
+  ],
+  "exclude": [
+   "7번",
+   "#7",
+   "로시",
+   "rossie",
+   "더블와이드",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "여성",
+   "레이디",
+   "스티커",
+   "보호필름",
+   "주니어"
+  ],
+  "summary": "Ai-ONE 트리플트랙은 캘러웨이골프 코리아가 2025년 2월 낸 한국형 퍼터로, 트리플트랙 세 줄 정렬과 Ai-ONE 인서트를 넣었습니다. 투볼은 다섯 헤드 중 공 두 개 모양 말렛입니다.",
+  "points": [
+   "트리플트랙 세 줄 정렬",
+   "Ai-ONE AI 인서트",
+   "투볼 말렛(국내 5종 헤드 중 하나)"
+  ],
+  "guidePick": {
+   "role": "정렬 최강 말렛",
+   "forWhom": "방향이 자주 틀어지는 초심자",
+   "short": "세 줄+투볼 정렬",
+   "plus": "정렬 편의",
+   "minus": "헤드가 큼",
+   "pros": [
+    "세 줄과 투볼 표시로 정렬이 매우 쉬움",
+    "관용성 높은 말렛"
+   ],
+   "cons": [
+    "헤드가 커서 손맛이 둔함",
+    "블레이드를 선호하면 어색함"
+   ],
+   "scores": [
+    5,
+    3,
+    5,
+    4
+   ],
+   "specs": [
+    "말렛(투볼)",
+    "TBD",
+    "트리플트랙 · Ai-ONE 인서트"
+   ],
+   "verdict": "정렬이 불안한 초심자에게 가장 쉬운 선택",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://sports.khan.co.kr/article/202502051124003"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "lab-link-2-2-putter",
+  "name": "L.A.B. 골프 LINK.2.2 퍼터",
+  "query": "랩골프 LINK 2.2 퍼터",
+  "must": [
+   "link",
+   "퍼터"
+  ],
+  "mustAny": [
+   "2.2",
+   "22"
+  ],
+  "exclude": [
+   "2.1",
+   "mezz",
+   "df3",
+   "oz1",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "여성",
+   "레이디",
+   "스티커",
+   "보호필름",
+   "주니어"
+  ],
+  "summary": "L.A.B. 골프 LINK.2.2는 힐 샤프트 와이드 블레이드에 라이 각 균형(Lie Angle Balance) 제로토크 설계를 넣은 퍼터입니다. 303 스테인리스 헤드에 블랙 PVD 마감, 로프트 3.5°입니다.",
+  "points": [
+   "라이 각 균형(제로토크) 와이드 블레이드",
+   "303 스테인리스 · 블랙 PVD",
+   "로프트 3.5° · 라이 69°"
+  ],
+  "guidePick": {
+   "role": "제로토크 블레이드",
+   "forWhom": "블레이드 모양을 유지하며 제로토크를 쓰려는 프로·상급자",
+   "short": "블레이드형 제로토크",
+   "plus": "직진성",
+   "minus": "고가",
+   "pros": [
+    "블레이드 모양으로 제로토크",
+    "헤드 회전이 적어 페이스 유지"
+   ],
+   "cons": [
+    "고가(해외 정가 499달러)",
+    "국내 유통·AS 판매처 확인 필요"
+   ],
+   "scores": [
+    5,
+    4,
+    4,
+    2
+   ],
+   "specs": [
+    "와이드 블레이드",
+    "TBD",
+    "제로토크 · 로프트 3.5°"
+   ],
+   "verdict": "블레이드 감을 원하는 제로토크 사용자용",
+   "skill": "프로"
+  },
+  "sources": [
+   "https://www.thestar.com.my/sport/golf/2026/07/12/lab-golf-blends-heritage-and-innovation-in-link2-putter-series",
+   "https://austads.com/collections/ladies-golf-clubs/products/lab-link-2-2-putter"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "pxg-battle-ready2-putter",
+  "name": "PXG 배틀레디 II 퍼터",
+  "query": "PXG 배틀레디2 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "배틀레디2",
+   "배틀레디ii",
+   "battleready2",
+   "battlereadyii",
+   "배틀레디 2"
+  ],
+  "exclude": [
+   "hellcat",
+   "헬캣",
+   "보호필름",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "여성",
+   "레이디",
+   "스티커",
+   "보호필름",
+   "주니어"
+  ],
+  "summary": "PXG 배틀레디 II는 2023년 나온 퍼터 라인으로, 0311 아이언 기술을 빌린 얇은 벽 중공 구조로 무게를 바깥에 몰아 헤드 크기 대비 관성모멘트를 높였습니다. 블레이드(브랜든·대거+ 등)와 말렛(뱃어택·원앤던 등)이 있습니다.",
+  "points": [
+   "얇은 벽 중공 헤드(0311 아이언 기술)",
+   "블레이드·말렛 여러 헤드",
+   "2024 다크니스(검정) 마감 추가"
+  ],
+  "guidePick": {
+   "role": "프리미엄 중공 퍼터",
+   "forWhom": "고급 소재·마감을 원하는 프로·상급자",
+   "short": "PXG 대표 퍼터",
+   "plus": "안정감",
+   "minus": "고가",
+   "pros": [
+    "중공 구조로 관용성 확보",
+    "헤드 모양 선택 폭 넓음"
+   ],
+   "cons": [
+    "고가",
+    "헤드별로 성격이 달라 옵션 확인 필요"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    2
+   ],
+   "specs": [
+    "블레이드·말렛(모델별)",
+    "TBD",
+    "중공 바디 · 고관성"
+   ],
+   "verdict": "PXG 마감과 감을 원하는 상급자용",
+   "skill": "프로"
+  },
+  "sources": [
+   "https://golf.com/gear/putters/pxg-irons-technology-new-battle-ready-ii-putters/",
+   "https://pxg.com/products/battle-ready-ii-bat-attack-putters"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "cleveland-hbsoft2-retreve-putter",
+  "name": "클리브랜드 HB 소프트 2 리트리브 퍼터",
+  "query": "클리브랜드 HB 소프트 2 리트리브 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "리트리브",
+   "retreve",
+   "리트리버"
+  ],
+  "exclude": [
+   "밀드",
+   "milled",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "여성",
+   "레이디",
+   "스티커",
+   "보호필름",
+   "주니어"
+  ],
+  "summary": "클리브랜드 HB 소프트 2 리트리브는 HB 소프트 2 시리즈의 말렛으로, 허리를 굽히지 않고 헤드로 공을 집어 올릴 수 있게 무게중심을 맞췄습니다. CNC 밀링 페이스(스피드 최적화 페이스), 로프트 3°, 헤드 365g입니다.",
+  "points": [
+   "허리 안 굽히고 공 집기(리트리브 설계)",
+   "CNC 밀링 스피드 최적화 페이스",
+   "로프트 3° · 헤드 365g · 오버사이즈 그립"
+  ],
+  "guidePick": {
+   "role": "가성비 실용 말렛",
+   "forWhom": "저렴하고 편한 말렛을 찾는 초심자",
+   "short": "공 집기 편한 말렛",
+   "plus": "가성비",
+   "minus": "손맛 평범",
+   "pros": [
+    "10만원대 가격대(해외 정가 159.99달러)",
+    "공을 헤드로 집을 수 있음"
+   ],
+   "cons": [
+    "고급 퍼터보다 손맛 평범",
+    "국내 판매처 확인 필요"
+   ],
+   "scores": [
+    4,
+    3,
+    4,
+    5
+   ],
+   "specs": [
+    "말렛",
+    "TBD",
+    "리트리브 설계 · 밀링 페이스"
+   ],
+   "verdict": "싸고 편한 첫 말렛을 찾는 초심자용",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://us.dunlopsports.com/cleveland-golf/clubs/putters/hb-soft-2/hb-soft-2-putter-retreve/MHBSOFT2-R.html",
+   "https://mygolfspy.com/news-opinion/cleveland-hb-soft-2-putters/"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "mizuno-mcraft-x-putter",
+  "name": "미즈노 M.CRAFT X 퍼터",
+  "query": "미즈노 M CRAFT X 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "mcraftx",
+   "엠크래프트x",
+   "m크래프트x"
+  ],
+  "exclude": [
+   "omoi",
+   "오모이",
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "여성",
+   "레이디",
+   "스티커",
+   "보호필름",
+   "주니어"
+  ],
+  "summary": "미즈노 M.CRAFT X는 2025년 나온 조립형 퍼터로, 단조 1025 스틸 넥·페이스와 CNC 밀링 알루미늄 뒷부분을 조합합니다. 넥 3종·뒷부분 3종·교환 무게추(7·14·21g)로 모양과 무게를 바꿀 수 있습니다.",
+  "points": [
+   "단조 1025 스틸 페이스 + 알루미늄 뒷부분 조립형",
+   "넥 3종 · 뒷부분 3종 조합",
+   "교환 무게추 7·14·21g"
+  ],
+  "guidePick": {
+   "role": "조립형 단조 퍼터",
+   "forWhom": "모양·무게를 직접 맞추고 싶은 고급 골퍼",
+   "short": "미즈노 조립형",
+   "plus": "맞춤 폭",
+   "minus": "타구감 호불호",
+   "pros": [
+    "넥·뒷부분 조합으로 맞춤",
+    "단조 스틸 페이스"
+   ],
+   "cons": [
+    "두 조각 구조라 감이 둔하다는 평",
+    "고가"
+   ],
+   "scores": [
+    4,
+    3,
+    4,
+    3
+   ],
+   "specs": [
+    "블레이드·말렛(조합별)",
+    "TBD",
+    "조립형 · 교환 무게추"
+   ],
+   "verdict": "퍼터를 직접 조합해 보고 싶은 고급자용",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://golfwrx.com/752358/mizuno-unveils-its-latest-putter-the-m-craft-x/",
+   "https://www.golfmagic.com/equipment/putters/mizuno-m-craft-x-putter-review"
+  ]
+ }
+]
