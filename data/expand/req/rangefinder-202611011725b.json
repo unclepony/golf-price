@@ -1,0 +1,4 @@
+[
+ {"id":"wellsense-black-eagle-metal","query":"웰센스 WS-901 골프거리측정기","must":["웰센스"],"mustAny":["ws901","블랙이글메탈"],"exclude":["케이스","배터리","중고","필름","미니","ws903","ws804","ws801"]},
+ {"id":"wellsense-black-eagle-metal-mini","query":"웰센스 메탈 미니 골프거리측정기","must":["웰센스"],"mustAny":["ws903","메탈미니"],"exclude":["케이스","배터리","중고","필름","ws901","ws804","ws801"]}
+]
