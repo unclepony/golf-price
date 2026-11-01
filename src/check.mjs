@@ -7,6 +7,7 @@ import { ROOT, readJson, loadLinks, historyDir, todayKst } from './lib.mjs';
 import { beginnerIssues, releaseIssues } from './rules.mjs';
 import { videoIssues } from './videos.mjs';
 import { loadQa } from './qa.mjs';
+import { match2 } from './prices/match2.mjs';
 
 const out = process.argv.includes('--out') ? process.argv[process.argv.indexOf('--out') + 1] : null;
 const products = readJson(join(ROOT, 'config', 'products.json')).products;
@@ -73,10 +74,14 @@ const cands = readJson(join(ROOT, 'config', 'coupang-candidates.json'), {});
 const cWords = (s) => [...new Set(String(s ?? '').toLowerCase().replace(/[()[\]{}/,·+|]/g, ' ').split(/\s+/).filter(Boolean))].sort().join(' ');
 const cBase = (s) => String(s ?? '').split(',')[0].replace(/\s+/g, ' ').trim().toLowerCase();
 const fill = [];
+// 2026-11-02: 매일 가격 갱신의 2단계 맞춤(src/prices/match2.mjs)이 차례가 오면 스스로 저장할 상품은 사람 확인 목록에서 빼고 건수만 따로 센다.
+const auto2 = [];
 for (const [id, v] of Object.entries(cands)) {
   const pk = picks[id];
   if (id.startsWith('_') || !pk || pk.productId || !Array.isArray(v?.rows)) continue;
   const sane = (price) => price > 0 && (!pk.price || (price >= pk.price * 0.5 && price <= pk.price * 2));
+  const prod = products.find((p) => p.id === id);
+  if (match2(prod, pk, v.rows.map(([rid, nm, price, rocket]) => ({ id: rid, name: nm, price, rocket })).filter((r) => sane(r.price)))) { auto2.push(id); continue; }
   const full = v.rows.find((r) => cWords(r[1]) === cWords(pk.title) && sane(r[2]));
   const part = full ? null : v.rows.find((r) => cBase(r[1]) === cBase(pk.title) && sane(r[2]));
   const r = full ?? part;
@@ -85,7 +90,7 @@ for (const [id, v] of Object.entries(cands)) {
 fill.sort((a, b) => b.guide - a.guide || b.kind.startsWith('이름') - a.kind.startsWith('이름') || a.id.localeCompare(b.id));
 add(
   '상품 번호(productId) 채우기 후보 — 가격 갱신이 못 맞춘 상품 중 같은 상품으로 보이는 쿠팡 검색 결과 (자동 반영 안 함)',
-  fill.slice(0, 60).map((x) => `${name(x.id)} (\`${x.id}\`): 후보 ${x.r[0]} · ${Number(x.r[2]).toLocaleString('ko-KR')}원${x.r[3] ? ' · 로켓' : ''} — ${x.kind}${x.guide ? '' : ' · 가이드에 없음'}`).concat(fill.length > 60 ? [`… 외 ${fill.length - 60}개`] : []),
+  [`매일 가격 갱신의 2단계 맞춤이 스스로 채울 상품 ${auto2.length}개는 이 목록에서 뺐습니다(차례가 오면 자동 저장, 확인 필요 없음).`].concat(fill.slice(0, 60).map((x) => `${name(x.id)} (\`${x.id}\`): 후보 ${x.r[0]} · ${Number(x.r[2]).toLocaleString('ko-KR')}원${x.r[3] ? ' · 로켓' : ''} — ${x.kind}${x.guide ? '' : ' · 가이드에 없음'}`)).concat(fill.length > 60 ? [`… 외 ${fill.length - 60}개`] : []),
   '쿠팡 파트너스 사이트에서 연결한 상품과 같은 상품(같은 모델·옵션 구성)인지 확인한 뒤 `config/picks.json` 의 `productId` 에 후보 번호를 적으면 다음 매일 갱신부터 가격이 다시 보입니다. 다른 상품이면 적지 마세요. 링크는 바꾸지 않습니다.',
   fill.length,
 );
