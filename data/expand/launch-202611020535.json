@@ -1,0 +1,23 @@
+[
+ {"id":"flightscope-mevo-gen2","category":"launch","name":"플라이트스코프 미보 젠2 런치 모니터",
+  "query":"플라이트스코프 미보 젠2","must":["미보"],"mustAny":["젠2","gen2","gen 2","젠 2"],
+  "exclude":["중고","케이스","거치대","매트","스티커","파우치","필름","충전기","리퍼","직구","병행","해외","미국","플러스","plus","mevo+"],
+  "summary":"플라이트스코프의 휴대용 런치 모니터 신형입니다. 레이더와 카메라 영상 처리를 함께 쓰는 퓨전 트래킹으로 볼·클럽 데이터를 측정합니다.",
+  "points":["제조사 기준 레이더와 이미지 처리를 결합한 퓨전 트래킹으로 볼·클럽 데이터 20가지를 측정합니다(기존 미보 8가지).","국내에는 플라이트스코프 한국지사가 소개했고, 별도 구독료 없이 코스 8곳 시뮬레이션을 쓸 수 있다고 밝혔습니다.","실내에서 스핀을 재려면 제조사 FAQ 기준 공에 알루미늄 스티커가 필요할 수 있고, 타석 주변 조도(약 300럭스)가 필요합니다."],
+  "guidePick":{"role":"구독료 없는 시뮬형","forWhom":"구독료 부담 없이 실내외 데이터와 코스 연습을 함께 원하는 분","short":"구독료 없는 레이더+카메라","plus":"데이터 20가지","minus":"설치 공간·조명","pros":["레이더와 카메라를 함께 쓰는 퓨전 트래킹","제조사 기준 구독료 없이 코스 8곳 시뮬레이션"],"cons":["실내는 공 뒤·앞 거리와 조명 조건을 맞춰야 함","실내 스핀 측정에 스티커가 필요할 수 있음"],"scores":[5,3,5,3],"specs":["레이더+카메라(퓨전 트래킹)","플라이트스코프(한국지사)","확인 필요"],"verdict":"상위 데이터를 구독료 없이 쓰고 싶은 중·상급자의 실속 고급형","skill":"고급"},
+  "sources":["https://flightscope.com/products/mevo-gen2","https://flightscope.com/pages/faq","https://flightscope.com/blogs/news/flightscope-releases-mevo-gen2-the-most-complete-launch-monitor-and-simulator-on-the-market-and-its-under-1-200","https://www.etnews.com (2026 대한민국 가전대상 미보 젠2, 박호근 한국지사장)"]},
+ {"id":"flightscope-mevo-plus","category":"launch","name":"플라이트스코프 미보 플러스 런치 모니터",
+  "query":"플라이트스코프 미보 플러스","must":["미보"],"mustAny":["플러스","plus","mevo+","미보+"],
+  "exclude":["중고","케이스","거치대","매트","스티커","파우치","필름","충전기","리퍼","직구","병행","해외","미국","젠2","gen2"],
+  "summary":"플라이트스코프의 레이더 런치 모니터이자 시뮬레이터입니다. 미보 젠2 이전 상위 모델입니다.",
+  "points":["제조사 기준 도플러 레이더로 볼·클럽 데이터 20가지 이상을 측정하고 E6 코스·연습장 시뮬레이션을 지원합니다.","후속 미보 젠2가 나와 직전 모델이 되었습니다. 판매처의 버전(2023 에디션 등)과 정식 AS 여부를 확인하세요."],
+  "guidePick":{"role":"레이더 시뮬형","forWhom":"E6 시뮬레이션과 자세한 데이터를 원하는 분","short":"직전 세대 상위 레이더","plus":"데이터·시뮬","minus":"가격·직전 모델","pros":["볼·클럽 데이터 20가지 이상","E6 코스와 연습장 시뮬레이션"],"cons":["후속 젠2가 나온 직전 모델","판매가가 높은 편이라 가격 확인 필요"],"scores":[5,3,4,2],"specs":["도플러 레이더","플라이트스코프(한국지사)","확인 필요"],"verdict":"판매가가 젠2보다 낮을 때만 고려할 직전 상위 모델","skill":"고급"},
+  "sources":["https://flightscope.com/pages/faq","https://www.playbetter.com/blogs/golf/flightscope-mevo-plus-golf-launch-monitor-review"]},
+ {"id":"voicecaddie-sc4","category":"launch","name":"보이스캐디 스윙캐디 SC4 런치 모니터",
+  "query":"보이스캐디 SC4 론치모니터","must":["sc4"],"mustAny":["보이스캐디","스윙캐디","voicecaddie"],
+  "exclude":["pro","프로","sc200","sc300","중고","케이스","거치대","스탠드","매트","스티커","파우치","필름","충전기","리모컨","리퍼","직구","병행","해외","일본","미국"],
+  "summary":"보이스캐디의 휴대용 런치 모니터 겸 시뮬레이터입니다. SC4 PRO 아래 모델로 2023년 국내 출시됐습니다.",
+  "points":["2023년 국내 출시 때 기존 7가지 샷 데이터에 발사 방향(론치 디렉션)을 더했다고 소개됐습니다.","제조사 기준 실내외에서 쓰는 휴대용 런치 모니터이자 시뮬레이터입니다. SC4 PRO와의 데이터 차이는 판매처에서 확인하세요."],
+  "guidePick":{"role":"국산 시뮬 입문","forWhom":"국내 AS를 받으며 시뮬레이션까지 해 보고 싶은 분","short":"SC4 PRO 아래 국산 시뮬형","plus":"국내 AS·시뮬","minus":"PRO보다 데이터 적음","pros":["국내 브랜드 AS","실내외 겸용 시뮬레이터 기능"],"cons":["상위 SC4 PRO보다 데이터가 적을 수 있음","판매처 확인 필요"],"scores":[3,4,4,3],"specs":["레이더","보이스캐디(국내)","확인 필요"],"verdict":"SC300i보다 한 단계 위, PRO 가격은 부담인 중급자용","skill":"중급"},
+  "sources":["https://sports.khan.co.kr/article/202304121136003/amp","https://voicecaddie.com/collections/practice/products/sc4-simulator-launch-monitor","https://voicecaddie.com/pages/compare-launch-monitors"]}
+]
