@@ -3,7 +3,7 @@
   "category": "driver",
   "id": "honma-twgs-women-driver",
   "name": "혼마 T//WORLD GS 여성용 드라이버",
-  "query": "혼마 투어월드 GS 여성 드라이버",
+  "query": "혼마 TWORLD GS 여성 드라이버",
   "must": [
    "드라이버",
    "gs"
@@ -364,19 +364,15 @@
   "category": "driver",
   "id": "callaway-paradymx-women-driver",
   "name": "캘러웨이 패러다임 X 여성용 드라이버",
-  "query": "캘러웨이 패러다임 X 여성 드라이버",
+  "query": "캘러웨이 패러다임X 여성용 드라이버",
   "must": [
    "패러다임",
-   "x",
    "드라이버"
   ],
   "mustAny": [
-   "여성",
-   "레이디",
-   "우먼",
-   "women",
-   "ladies",
-   "lady"
+   "패러다임x",
+   "paradymx",
+   "패러다임엑스"
   ],
   "exclude": [
    "중고",
