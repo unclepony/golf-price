@@ -20,6 +20,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { search, hasKeys } from './coupang-client.mjs';
+import { match2 } from './match2.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const arg = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? Number(process.argv[i + 1]) : d; };
@@ -81,6 +82,11 @@ for (const [i, id] of targets.entries()) {
   let hit = pk.productId
     ? rows.find((r) => r.id === String(pk.productId) && sane(r))
     : rows.find((r) => words(r.name) === want && sane(r) && (pk.rocket === undefined || !!pk.rocket === r.rocket));
+  // 2단계(2026-11-02 gp-1102-2): 완전 일치가 없고 productId 도 없을 때만. 아래를 모두 만족하는 상품 번호가 '딱 1개'일 때만 쓴다.
+  if (!hit && !pk.productId) {
+    const two = match2(prods[id], pk, rows.filter(sane));
+    if (two) { hit = two; console.log(`2단계 맞춤(첫 저장): ${id} → 상품 번호 ${two.id} "${two.name}"`); }
+  }
   // 상품 번호가 있는데 상품명 검색 10건에 없으면, 상품을 처음 찾을 때 쓴 검색어(products.json query)로 한 번 더 본다(같은 번호만 인정)
   const q2 = prods[id]?.query;
   if (!hit && pk.productId && q2 && q2.trim() !== pk.title.trim()) {
