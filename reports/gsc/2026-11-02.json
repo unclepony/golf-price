@@ -1,0 +1,354 @@
+{
+  "range": {
+    "startDate": "2026-10-24",
+    "endDate": "2026-10-30"
+  },
+  "pages": [
+    {
+      "page": "https://choicegolf.unclepony.com/",
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 0.5,
+      "position": 2
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/c/bag",
+      "clicks": 1,
+      "impressions": 9,
+      "ctr": 0.1111,
+      "position": 8.4
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/iron-recommend",
+      "clicks": 1,
+      "impressions": 10,
+      "ctr": 0.1,
+      "position": 6.4
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/c/ball",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/c/driver",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5.7
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/c/glove",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/c/iron",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 8.8
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/c/launch",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/c/rangefinder",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 44
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/c/wood",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 7.3
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/driver-recommend-2026-intermediate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/fairway-wood-recommend",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6.5
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/golf-bag-recommend",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/golf-ball-compare-beginner",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/iron-recommend-advanced",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/iron-recommend-beginner",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/launch-monitor-recommend",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/putter-recommend",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/putter-recommend-beginner",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/rangefinder-recommend",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/rangefinder-recommend-advanced",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/rangefinder-recommend-beginner",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2.7
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/rangefinder-recommend-pro",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/wedge-recommend",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/wedge-recommend-advanced",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/womens-driver-recommend",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/jp",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/jp/xxio14-driver",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/p/blacktee-shot5",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/p/bushnell-tour-v6",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/p/callaway-erc-soft",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/p/callaway-quantummax-hybrid",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/p/cobra-optm-hybrid",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 35
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/p/cobra-ultralight-pro-stand",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/p/garmin-approach-r10",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/p/mizuno-mcraft-omoi6-putter",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/p/pxg-xtreme-hybrid-stand",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/p/taylormade-mg4-wedge",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/p/taylormade-sim2max-fairway",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 17
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/p/voicecaddie-sc4-pro",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 37
+    }
+  ],
+  "queries": [
+    {
+      "page": "https://choicegolf.unclepony.com/c/bag",
+      "query": "골프백 브랜드 순위",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 9.2
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/c/ball",
+      "query": "골프공 가격 순위",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/c/ball",
+      "query": "골프공 브랜드 순위",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/c/driver",
+      "query": "드라이버 추천 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/c/iron",
+      "query": "2026 아이언 순위",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/c/rangefinder",
+      "query": "골프 거리 측정기 추천",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 44
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/g/iron-recommend-advanced",
+      "query": "상급자용 아이언 추천",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://choicegolf.unclepony.com/p/voicecaddie-sc4-pro",
+      "query": "sc4",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 37
+    }
+  ]
+}
