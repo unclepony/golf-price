@@ -1991,8 +1991,8 @@
       "d": "2026-11-03"
     },
     "/p/yamaha-cs-hmplus-women-hybrid": {
-      "h": "1913aaad2f26148e",
-      "d": "2026-11-02"
+      "h": "a93406087ba57625",
+      "d": "2026-11-03"
     },
     "/p/bridgestone-v300x-women-iron": {
       "h": "cac038671f2ed06a",
@@ -2583,15 +2583,27 @@
       "d": "2026-11-03"
     },
     "/p/callaway-aismokemaxfast-women-fairway": {
-      "h": "51d8622ab964b776",
+      "h": "3d7a956cbb0b1989",
       "d": "2026-11-03"
     },
     "/p/jestime-ponytail-women-fairway": {
-      "h": "71202e0b6cf679ea",
+      "h": "2b0a184f79a84a6d",
       "d": "2026-11-03"
     },
     "/p/mutsumihonma-mh622-women-fairway": {
-      "h": "f5bdee1a218ccc0f",
+      "h": "7134c16e3aa3164b",
+      "d": "2026-11-03"
+    },
+    "/p/ping-gle3-women-hybrid": {
+      "h": "0ded959b68927a84",
+      "d": "2026-11-03"
+    },
+    "/p/jestime-ponytail-women-hybrid": {
+      "h": "dc7808b860fc256c",
+      "d": "2026-11-03"
+    },
+    "/p/majesty-prestigio13-women-utility": {
+      "h": "92195654af0eb770",
       "d": "2026-11-03"
     },
     "/c/driver": {
@@ -2603,8 +2615,8 @@
       "d": "2026-11-03"
     },
     "/c/utility": {
-      "h": "d7ebbd7b1f8d706f",
-      "d": "2026-11-02"
+      "h": "335653ee1836131b",
+      "d": "2026-11-03"
     },
     "/c/iron": {
       "h": "9ba557b3f0dbd97e",
@@ -2671,8 +2683,8 @@
       "d": "2026-11-02"
     },
     "/g/womens-utility-recommend": {
-      "h": "b40ab848e142403b",
-      "d": "2026-11-02"
+      "h": "0d83ea6a6c98de9a",
+      "d": "2026-11-03"
     },
     "/g/wedge-recommend": {
       "h": "167688ecd002f636",
@@ -2811,16 +2823,16 @@
       "d": "2026-11-01"
     },
     "/g/womens-utility-recommend-beginner": {
-      "h": "77ea4c83bc73edcc",
-      "d": "2026-11-02"
+      "h": "43fdc716f0d74f8b",
+      "d": "2026-11-03"
     },
     "/g/womens-utility-recommend-intermediate": {
-      "h": "218a184ec0dfeb89",
-      "d": "2026-10-31"
+      "h": "3ba0be8f06be8cf8",
+      "d": "2026-11-03"
     },
     "/g/womens-utility-recommend-advanced": {
-      "h": "6f72efd6c0193a08",
-      "d": "2026-10-31"
+      "h": "14bd2fb5feb0fd87",
+      "d": "2026-11-03"
     },
     "/g/womens-utility-recommend-pro": {
       "h": "f0218f8f4fd7bd51",
@@ -2951,7 +2963,7 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "940d57a423246a0d",
+      "h": "bdce3a9ad671dfe7",
       "d": "2026-11-03"
     },
     "/about": {
@@ -4551,11 +4563,6 @@
       "d": "2026-11-02"
     },
     {
-      "url": "/g/womens-utility-recommend",
-      "kind": "updated",
-      "d": "2026-11-02"
-    },
-    {
       "url": "/g/wedge-recommend",
       "kind": "updated",
       "d": "2026-11-02"
@@ -4781,21 +4788,6 @@
       "d": "2026-11-03"
     },
     {
-      "url": "/p/callaway-aismokemaxfast-women-fairway",
-      "kind": "new",
-      "d": "2026-11-03"
-    },
-    {
-      "url": "/p/jestime-ponytail-women-fairway",
-      "kind": "new",
-      "d": "2026-11-03"
-    },
-    {
-      "url": "/p/mutsumihonma-mh622-women-fairway",
-      "kind": "new",
-      "d": "2026-11-03"
-    },
-    {
       "url": "/c/wood",
       "kind": "updated",
       "d": "2026-11-03"
@@ -4821,17 +4813,77 @@
       "d": "2026-11-03"
     },
     {
-      "url": "/",
-      "kind": "updated",
-      "d": "2026-11-03"
-    },
-    {
       "url": "/vs/ping-gle3-women-fairway-vs-majesty-royal-women-fairway",
       "kind": "updated",
       "d": "2026-11-03"
     },
     {
       "url": "/vs/xxio13-women-fairway-vs-majesty-royal-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-03"
+    },
+    {
+      "url": "/p/yamaha-cs-hmplus-women-hybrid",
+      "kind": "updated",
+      "d": "2026-11-03"
+    },
+    {
+      "url": "/p/callaway-aismokemaxfast-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-03"
+    },
+    {
+      "url": "/p/jestime-ponytail-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-03"
+    },
+    {
+      "url": "/p/mutsumihonma-mh622-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-03"
+    },
+    {
+      "url": "/p/ping-gle3-women-hybrid",
+      "kind": "new",
+      "d": "2026-11-03"
+    },
+    {
+      "url": "/p/jestime-ponytail-women-hybrid",
+      "kind": "new",
+      "d": "2026-11-03"
+    },
+    {
+      "url": "/p/majesty-prestigio13-women-utility",
+      "kind": "new",
+      "d": "2026-11-03"
+    },
+    {
+      "url": "/c/utility",
+      "kind": "updated",
+      "d": "2026-11-03"
+    },
+    {
+      "url": "/g/womens-utility-recommend",
+      "kind": "updated",
+      "d": "2026-11-03"
+    },
+    {
+      "url": "/g/womens-utility-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-11-03"
+    },
+    {
+      "url": "/g/womens-utility-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-11-03"
+    },
+    {
+      "url": "/g/womens-utility-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-11-03"
+    },
+    {
+      "url": "/",
       "kind": "updated",
       "d": "2026-11-03"
     }
