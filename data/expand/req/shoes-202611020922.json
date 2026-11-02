@@ -1,0 +1,19 @@
+[
+{"id":"relink-air-jordan-1-low-g-shoes","query":"나이키 에어 조던 1 로우 G 골프화","must":["조던"],"mustAny":["1로우g","1lowg"],"exclude":["스파이크","하이","미드","키즈","중고","깔창","징","여성"]},
+{"id":"relink-ecco-lt1-boa-women-shoes","query":"에코 여성 LT1 골프화","must":["에코","lt1"],"exclude":["바이옴","중고","깔창","징","남성"]},
+{"id":"relink-nike-air-max-90-g-women-shoes","query":"나이키 에어맥스 90 G 여성 골프화","must":["나이키"],"mustAny":["에어맥스90g","airmax90g"],"exclude":["95","조던","중고","깔창","징"]},
+{"id":"footjoy-hyperflex-boa-shoes","query":"풋조이 하이퍼플렉스 보아 남성 골프화","must":["풋조이"],"mustAny":["하이퍼플렉스","hyperflex"],"exclude":["여성","우먼스","주니어","중고","깔창","직구","해외"]},
+{"id":"footjoy-dna-helix-boa-shoes","query":"풋조이 DNA 헬릭스 보아 남성 골프화","must":["풋조이"],"mustAny":["헬릭스","helix"],"exclude":["여성","우먼스","여자","주니어","중고","깔창","직구","해외"]},
+{"id":"footjoy-dna-helix-boa-women-shoes","query":"풋조이 여성 DNA 헬릭스 보아 골프화","must":["풋조이","여"],"mustAny":["헬릭스","helix","디엔에이"],"exclude":["남성","주니어","중고","깔창","직구","해외"]},
+{"id":"footjoy-versafit-boa-shoes","query":"풋조이 버사핏 보아 남성 골프화","must":["풋조이"],"mustAny":["버사핏","versafit"],"exclude":["여성","우먼스","주니어","중고","깔창","직구","해외"]},
+{"id":"footjoy-flow2-boa-shoes","query":"풋조이 남성 플로우 2.0 보아 골프화","must":["풋조이","남성"],"mustAny":["플로우20","flow20","플로우2"],"exclude":["여성","우먼스","주니어","중고","깔창","직구","해외"]},
+{"id":"adidas-alphamotion-boa-shoes","query":"아디다스 남성 알파모션 보아 골프화","must":["아디다스"],"mustAny":["알파모션","alphamotion"],"exclude":["여성","우먼스","주니어","키즈","중고","깔창","직구","해외"]},
+{"id":"adidas-fluid-motion-boa-women-shoes","query":"아디다스 여성 플루이드 모션 보아 골프화","must":["아디다스","여성"],"mustAny":["플루이드모션","fluidmotion"],"exclude":["남성","주니어","중고","깔창","직구","해외"]},
+{"id":"newbalance-fuelcell-910-boa-shoes","query":"뉴발란스 퓨어셀 910 보아 골프화","must":["뉴발란스"],"mustAny":["u910","910"],"exclude":["여성","주니어","중고","깔창","직구","해외"]},
+{"id":"newbalance-574-boa-shoes","query":"뉴발란스 574 보아 골프화","must":["뉴발란스","574"],"mustAny":["보아","boa"],"exclude":["주니어","중고","깔창","직구","해외"]},
+{"id":"mizuno-nexlite-gs-boa-shoes","query":"미즈노 넥스라이트 GS 보아 남성 골프화","must":["미즈노"],"mustAny":["넥스라이트gs","nexlitegs"],"exclude":["여성","주니어","중고","깔창","직구","해외"]},
+{"id":"puma-shadowcat-nitro-shoes","query":"푸마 쉐도우캣 나이트로 남성 골프화","must":["푸마"],"mustAny":["쉐도우캣나이트로","shadowcatnitro","섀도우캣나이트로"],"exclude":["나이트로2","nitro2","여성","주니어","중고","깔창","직구","해외"]},
+{"id":"callaway-aero-sport-2-boa-shoes","query":"캘러웨이 에어로 스포츠 2.0 보아 남성 골프화","must":["캘러웨이"],"mustAny":["에어로스포츠","aerosport"],"exclude":["여성","주니어","중고","깔창","직구","해외"]},
+{"id":"gfore-mg4plus-women-shoes","query":"지포어 여성 MG4+ 골프화","must":["지포어","여성"],"mustAny":["mg4"],"exclude":["남성","중고","깔창","직구","해외"]},
+{"id":"ecco-biom-g5-boa-shoes","query":"에코 바이옴 G5 보아 골프화","must":["에코"],"mustAny":["바이옴g5","biomg5"],"exclude":["여성","주니어","중고","깔창","직구","해외"]}
+]
