@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-03",
+  "by": {
+    "asn": {
+      "AS17506 ARTERIA Networks Corporation": 1
+    },
+    "asncamp": {
+      "AS17506 ARTERIA Networks Corporation|chatgpt.com|PC": 1
+    },
+    "cty": {
+      "JP": 1
+    },
+    "depth": {
+      "/p/callaway-jaws-raw-wedge|25%": 1
+    },
+    "dev": {
+      "PC": 1
+    },
+    "hour": {
+      "00": 1
+    },
+    "pv": {
+      "/p/callaway-jaws-raw-wedge": 1
+    },
+    "ref": {
+      "캠페인: chatgpt.com": 1
+    },
+    "refland": {
+      "캠페인: chatgpt.com|/p/callaway-jaws-raw-wedge": 1
+    },
+    "refurl": {
+      "chatgpt.com": 1
+    },
+    "stay": {
+      "/p/callaway-jaws-raw-wedge|10초 미만": 1
+    },
+    "visit": {
+      "/p/callaway-jaws-raw-wedge": 1
+    },
+    "xpv": {
+      "/p/callaway-jaws-raw-wedge": 1
+    }
+  }
+}
