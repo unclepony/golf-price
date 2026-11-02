@@ -43,7 +43,8 @@ const SEEDING = !prevState; // 처음 만들 때는 기존 updated 값을 씨앗
 // 판매가 때문에 순위·판매 가능 여부가 바뀐 것은 그대로 날짜를 바꾼다
 // v4(2026-10-29 gp-1029-2): 상품 FAQ '비슷한 모델과 차이'의 '가격대는 ○○, △△입니다'(<!--pdep4-->, 10/28 d018691 에서 빠져 있던 것)와
 // /jp 계산기 환율(data-rate, 매일 ECB 값) 제외. 10/29 매일 갱신에서 날짜가 바뀐 73쪽 중 11쪽이 이 두 가지뿐이었다
-const KEY_V = 4;
+// v5(2026-11-03 셀프 개선): 상품 정보 표의 같은 이름 줄(브랜드 두 번)을 합친 표(<!--tbl5-->). v4 이하로 계산할 때는 <!--tbl4:…--> 의 예전 표로 바꿔 넣는다
+const KEY_V = 5;
 const pdep = (t) => (t ? `<!--pdep-->${t}<!--/pdep-->` : '');
 const pdep4 = (t) => (t ? `<!--pdep4-->${t}<!--/pdep4-->` : '');
 const PREV_KEY_V = prevState?.keyV ?? 1;
@@ -53,7 +54,13 @@ const TODAY = todayKst();
 function contentKey(html, v = KEY_V) {
   const a = html.indexOf('<main');
   const b = html.indexOf('</main>');
-  let main = (a >= 0 && b > a ? html.slice(a, b) : html)
+  let main = a >= 0 && b > a ? html.slice(a, b) : html;
+  // v5 표(<!--tbl5-->)는 v4 이하로 계산할 때 예전 표(<!--tbl4:base64-->)로 바꾼다(판 바뀐 첫 빌드에서 예전 지문과 같게). 아래 정리보다 먼저 해야 예전 표에도 같은 정리가 들어간다
+  main =
+    v >= 5
+      ? main.replace(/<!--\/?tbl5-->/g, '').replace(/<!--tbl4:[A-Za-z0-9+/=]*-->/g, '')
+      : main.replace(/<!--tbl5-->[\s\S]*?<!--\/tbl5-->/g, '').replace(/<!--tbl4:([A-Za-z0-9+/=]*)-->/g, (_, b) => Buffer.from(b, 'base64').toString());
+  main = main
     .replace(/"pr":\d+,"pd":"[^"]*"/g, '')
     .replace(/<p class="updated"[\s\S]*?<\/p>/g, '')
     // 가격 기록에서 나오는 부분(판단 문구·그래프·통계·가격 하락 목록)은 가격만 바뀌어도 달라지므로 뺀다

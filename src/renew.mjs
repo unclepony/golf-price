@@ -166,7 +166,18 @@ export function infoTable(ctx, p) {
   if (lv) rows.push(['가격대', `${lv.label} (${ctx.catName(p.category)} 비교 기준)`]);
   const mp = ctx.mainPick(p.id);
   if (mp) (mp.g.specRows ?? []).forEach((label, i) => mp.pk.specs?.[i] && !/^TBD$/.test(mp.pk.specs[i]) && rows.push([label.replace('연결 상품 ', '연결 상품 '), String(mp.pk.specs[i])]));
-  return `<table class="pd-tbl"><tbody>${rows.map(([k, v]) => `<tr><th scope="row">${esc(k)}</th><td>${esc(v)}</td></tr>`).join('')}</tbody></table>`;
+  const table = (rs) => `<table class="pd-tbl"><tbody>${rs.map(([k, v]) => `<tr><th scope="row">${esc(k)}</th><td>${esc(v)}</td></tr>`).join('')}</tbody></table>`;
+  // 가이드 사양에 '브랜드' 같은 같은 이름 줄이 또 있으면(골프백·장갑·연습용품·시계·런치 모니터 가이드) 한 줄로 합친다.
+  // 값은 가이드 사양(사람이 적은 값, 예: '삼성전자'·'오피티골프')을 쓴다 — 상품명 첫 낱말은 '오피티골프(OPT' 처럼 잘릴 수 있다
+  const merged = [];
+  for (const [k, v] of rows) {
+    const j = merged.findIndex(([mk]) => mk === k);
+    if (j >= 0) merged[j] = [k, v];
+    else merged.push([k, v]);
+  }
+  if (merged.length === rows.length) return table(rows);
+  // 지문 v4 로 계산할 때는 예전 표(줄 두 번)로 보이게 해서, 이 정리만으로 '마지막 업데이트' 날짜가 바뀌지 않게 한다(build.mjs contentKey)
+  return `<!--tbl5-->${table(merged)}<!--/tbl5--><!--tbl4:${Buffer.from(table(rows)).toString('base64')}-->`;
 }
 
 // 상세 화면 탭(같은 페이지 안 이동)
