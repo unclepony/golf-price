@@ -293,7 +293,7 @@
   "cobra-optm-hybrid": {
     "title": "코브라정품 OPTM 유틸리티 2026년 코브라푸마골프코리아, SPEEDER NX 4번 21도 [S]",
     "price": 275000,
-    "rocket": false,
+    "rocket": true,
     "image": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/6b32/0a83d7f315a9d64df74c179c2b39fd4d8de351156c38ddb0f6b92fc3ece3.jpg",
     "checked": "2026-11-03",
     "productId": "9341817401"
@@ -518,10 +518,11 @@
   },
   "taylormade-qi10max-driver": {
     "title": "테일러메이드코리아 Qi10 MAX 드라이버(남여), TM50 10.5도 S, S, 10.5",
-    "price": 499000,
+    "price": 439000,
     "rocket": false,
     "image": "https://t2c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/098b/e44aa93fb5cf428dd43b25c775fb20fc79caa95fab1f69bce8838af3faa1.jpg",
-    "checked": "2026-10-16"
+    "checked": "2026-11-03",
+    "productId": "8075124811"
   },
   "taylormade-qi35max-driver": {
     "title": "테일러메이드 남성용 Qi35 MAX 드라이버 DIA BLUE TM50, 9도, S",
@@ -1082,7 +1083,7 @@
   "mizuno-jpxone-hybrid": {
     "title": "한국미즈노 JPX ONE 유틸리티 남성 2026년 미즈노정품, VENTUS BLUE FM 4번 22도 SR",
     "price": 260000,
-    "rocket": false,
+    "rocket": true,
     "image": "https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/7797/977aed05d7fe134467cb7ef4ab397340cac0e731feabee01b74e0d89693e.jpg",
     "checked": "2026-11-03",
     "productId": "9396245742"
@@ -1768,8 +1769,8 @@
   },
   "mizuno-jpx925-hotmetal-iron": {
     "title": "미즈노 JPX925 핫메탈 아이언 (8I) NS950 S",
-    "price": 947900,
-    "rocket": false,
+    "price": 919000,
+    "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/x7g9W730DHDtsBWxx219fiJQKsgV0RTecCA7IGJQC77sGuJyAXvNAxFCPtbfgvrCYtghvCqyDoaPWQou7jlj1K9A3PfZBBI0haUkQNcqLFP5exm6osYKF2UInM5LI4D7DTGtau4eXdLehz-7HfPpFPbn9H-MHat4uzKhXaW2lCVct2UP0hWvb50i7m2gEhqaDGc-BIFKd2v5U6M7iQZIQoENkN-QpbFQ338GK-yqe3AC-B0uTOQqe_3T_SjqnmNSNV4muuuOIjZ-5TcxMmIuw2Tva8x4xR_sqHcsRXGH6QYcq34e071j1CcNrJXamUogipxJChurYsPqkkrymWWW2GsBFSnYsd8_ZTCyF9nM1l15d3ENqD9t9stOPBNNBR5yJPxVHan-OsTQ27zevXCCZSQspJ730FuaJzCMC74f3WUDYui281HDyWA6d2LjIvEsFUJT2pgS9D3hQdLYvKU49VP60iYSiqNk9A4GwomUgjAhFie4kW2YH26SDbcg1h6NhQ-6Bkcb1dKE5p-CSda18BhUv8Te4k-ZcnLI1ltQ8fcM",
     "checked": "2026-11-03",
     "productId": "9200546573"
@@ -2492,7 +2493,7 @@
     "price": 176870,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/pjVrCOYuaPbqYiwnpinizLAQw1RP0jW7ZVWg4iC93CuiZvIMO34RAnHCYioUrjTSFACCCAmf7T-HQbbrdZGgnINh36FnA22SShRon413GxOZX8qAM7wmMZyCaY_QNG_etD9JbTCO1_3FLJ8144m07Hq5T2sS1IisENVuVqDMaimJKpyWHwUO1DgM6zJ00e3HjGCQS7HkHxlQjWfpZ4dl0b3tLaMolT9g-ojf9rdRXio_lsQGNaDbo4KGY6ZVpsNAH30x_ZStv6-R0-F4BCe71yT-zE3VvhLAZ4c2OWRn5YmgWZYSRiYspylcAJIzd-3hL9Wn7e4W1IxemJ-MUYye1-ld3pfGbQGhPTbVpehNXPvhJtt_ALWZ4JjIK2Bt5W1BHeNo2fiaIT7HTS5SDG1DMMoBdJmHGck-dp5-zuAtJxnUv0JToKJgdUIw5eZXc_xj2UWg0x_acQ-_dMbnTeBFXNdTPAOfZljrT0iU42DsvzyBk4v6F7ALniuFdL2l0JkzkxCMR1rk9erF0Z5-QRFpWqZql35kV2Zkcdf-8yx9vADfYG7y5m3v2qt3N9aiGRjr3pkzs4D9zK91qBvh",
-    "checked": "2026-11-02",
+    "checked": "2026-11-03",
     "productId": "9779450971"
   },
   "honma-beres09-hybrid": {
@@ -2995,7 +2996,7 @@
   "cobra-optm-maxk-driver": {
     "title": "코브라정품 OPTM MAX-K 드라이버 2026년 코브라푸마골프코리아, SPEEDER NX 10.5도 [SR]",
     "price": 760000,
-    "rocket": false,
+    "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/NoFgT0ZMBo6IbDIHNlAt6R4VlgoPTkPXzbZiDDyRY2mxPZZHSjtVoqWCEX7Y4LHmZ_0vQSezX3oAgc3cv2wDap6yQrAzZxmGtz1HvZW6J3kwLFV2a7yHWx1p1_rLYUK9_iDhW69g54_uS5wwqyfkGkQ_cyh1Zp6Qs9RNSkR3r7vdg59EupRUN3IH7KeuOEftowuMb6UvyeGAzrEglSOv53q1Q93cqXwS1tR-sC1Dc5cNFybc1OgFlOPxT2O1XGhnyxu4aKtxFNJEd37RqITUQFGTbilnCDH5yAh5wHPSppUIqtV1HN0cDwEbowt0usW_JvtDfTkfog3mtGg6lpSzCwBGgTXKJC9ykiuqIYABpHrzxbIa0l0hd0Qrew2Uu8giLu47ZU_cM9nfJOwuttdxKm-yN5WQ_NW2cT4Hy04yNtYphCy-hqhJSDUu09gUH7Dg4MDKbkD--3A0gN7CzvEeoFgWAYniPOIPsZoOv7eQ2Ax5P2f5WHu2wII7sloaz0t7lDEsei06-dJczEpmi_SOePoUFty5bw6ozDXEvVNiBW5gXeeP0Y5WbU-E0Xdf9c635vFxdqJm02s=",
     "checked": "2026-11-03",
     "productId": "9344792466"
@@ -3147,7 +3148,7 @@
   },
   "srixon-ad333": {
     "title": "[1더즌] 던롭 스릭슨 NEW AD333 2.0 비거리 2피스 골프공 저압축 유광 골프볼 12구, NEW AD333 2.0 2피스 옐로우, 1박스, 12개입",
-    "price": 24290,
+    "price": 22730,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/ZWyddLaky8GOBT61Zanps20X28W6_46zDCE1wx1OyXjHyhkXvbvnG757UXOrHQPg5sbmiwLBNI0_LhIT27GBKiI_SzKHeYVWl3R0ApMG_Uae05qNcgnRQJLou7jE8iI2q0MmRTvNsAriyt-c6lsi1z2zHF71Vcyxdaz_SX4mNvOY2RsQF-THxxmDpaSCQlFwgIKRCtBqWx8D_UOmL781oYYos9y7rT7VoY5vXQtEZFZEOYpqAUR8FHnPkNuc3kHjtFY4I23wlZyQIsyo0E0bQxiXBxmk8RD0j7GEyvEGSFrTNmS8wTUuqQcSZx0ky0kpTuAJlDZTW2mmxgd0Tj1cbIgSXO0g5Ala-zdEfuOp7fYOm_DL6duFqucXyWW9bA0FKnZi5O_gAp8D2LzkBNUP_YpHo7PjEX5_pTDuDDDujxLtHEc4LP-YLZ_FylJAloOSvei4uk1ICLHHF2PsH3pbt73LpaMQl7b-P0ibTAS-YBkWAq7XXCHBuuHK4ODRtpsTHbvKh96qr3AZ4mpqh-MqjmPrOOo1LsN9S0PikEZ9CNeJ-MHiLwdc8P_Au5AWy4pTGA==",
     "checked": "2026-11-03",
@@ -3436,7 +3437,7 @@
   },
   "bettinardi-queen-b-putter": {
     "title": "베티나르디 퀸비 퍼터 컬렉션[남여공용][블레이드말렛][LAMIN SINK FIT GRIP], R, 3도",
-    "price": 539000,
+    "price": 537810,
     "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/GBUSouYQdFWYXt1JGPoY8OPAUoAtnMDqdCoPiBG8JexHqExCZE5VPx7wsaDNSv9fCqeDxRwtg0az910OQDSHIEc8TUNVWrH5fgY34hzp3vNxcOeIkcK2FOIiiPRR39mZ7WZqUP2rb-tZBOZBIVeuLqlEJmguJiwSuWiwdd8Wcf28_njF0dlc5-p3qEtEWX07pC1CFdQ93FuQAigCAqqIo1DVWcx8PFPX7efdbNJJ2NSI-OyeFGUkMAAaJ2RjaLuY1FOEQYBpBimigFfW4-KPdFyQO4adcA-1_3oCJFFxA3uhCtLyLBAnoszvCjoA9aMp_zzj1CztGONKPuME1AQwOs1pjzwIgLv1n1_wmmhbOcx0u0tmgYSg38tK-pB0rsRmAFUJmWrsZpqG_0mJDhxXHWVRqk-1Z9cIsyz2CYr5UBWMxXkhycXLU28VcMdz1dIjjQLfCp6HKsfqnOs0kflOir7jNxla1qDdbNQxukuc1IvhxTU9-zb6fSaGMehyruGEjWQw0uxlnMMOM-Dvr8wN9-YWWzrzZduyFcWzcdd1nKMNiYldjOB38QaXJRNOyhPAntrpNbhGRbAx",
     "checked": "2026-11-03",
@@ -3461,7 +3462,7 @@
   "r2g-mate-mini": {
     "title": "알투지 메이트 미니 레이저 골프거리측정기, 스페이스 그레이, R2G",
     "price": 199000,
-    "rocket": true,
+    "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/WDHUJQY6_d83-ydKWKaVLtUZmq1aew5G7lJCfw3MKRHjTGB3qL4K5BA12QifpE4NQqn-_fWPn4j79r5rArFQlCWo53AdK-uHNXf5qOOjJYnwCRGDerLPrqcLiiLzBE6q4P4C4CFSnZ5sCJWdOiByot8GeGECZBX1cKU1vLu1eejv3njwoT7VfTnavsndbGKFYjdXaV0gYYojfCK7I_aP5a9FPsapC1MpJFK_EB7eskwMkeIRHHnpbWCLhQhIiR9VVKO972IPfiNNpIxCCjx58UEJmLe2vzNej9KGEEW0dD8tJxQPOUKhhG6mNe8L6L9nvXbgzacYyakNRJgQIcM5NvrtDzvvckvSY1F8JVS-WSrzs8MDTeaWujxHcB5bd3ApVNqdsS1NJhl2PAOW7Jf0kn1cPdqKGLIPndMqT-mBel5G9aDvnVwLhAHXYW1O7wZRKQTWZW-AqpPKg1ORRC0guVWIH3rZxEPzWzTXRcYdVxZQKhFqRCpCeJ31a3DYFPwwAMJTht5nCeCK2495Tu1sL3CS2c_C-mt48CZlNLudZc2dyQj2RHbKHvHtZUMOuvLVphUUhgo3jTw=",
     "checked": "2026-11-03",
     "productId": "8677526453"
@@ -3644,8 +3645,8 @@
   },
   "cleveland-urban-cart": {
     "title": "던롭 클리브랜드 어반 골프 방수 캐디백 9인치 6분할 심플 튼튼한 골프백 가방, 블랙",
-    "price": 244100,
-    "rocket": false,
+    "price": 203360,
+    "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/W52DnrePKuWxbgdDW7H7GIoWSF1xQ4RzExlVrU0El2zZHfcGyQ-YQnFJ_0gnOjBkWri82wjQE2sOL_MsX5He9tDxYupiU7iQ7JFgixqWWMuSQtUMXVeV9oYkvio9_HQhlm_0RrC0XlbaI26ppGyoufaIk4H9CsDseV3ar5dFaJ7Gm78URNoWPGmnDvbVeujVwq8Dr-zTQyPwtBX4XVe6L0QVwehY7W4so6ltrhlxs1j8foRRSCEeGpU8-LNYcNms8ObNwmGx64LbbdnxqMUQaSaKS6GxyEooCx0O7_2CLghqGNfBlEEz2uNK73cGcnM_JIb2oW6JC1mB7IYbjrNUMelrQnqV0OdZTvWiDMVpAUXzOr_vPcy9luK0YRKX-8n1aC5SBUqWJ9BlYXkVMZAc1QC8x98Uu3Bjs5UWODjYt8tp_Dpy1-aGuMCDpbckN49fBlmsWK-usyUxhizIpUP1zU3a9yiUa5YZR6yMXBvZM2BGSufOxFxc6WC2JTHkiCM9YJFEQOHb5FiV_xY4QZhwnsf-AE4vQqBH23SxHBXbsARclb6JKrR1Z8sijTKDHg2GxA==",
     "checked": "2026-11-03",
     "productId": "9560300831"
@@ -3684,8 +3685,8 @@
   },
   "xxio-premium-sheepskin-glove": {
     "title": "던롭 젝시오 골프장갑 남성 프리미엄 남자 양피 신축성 손목 밴딩 장갑, 화이트, 1개",
-    "price": 20500,
-    "rocket": true,
+    "price": 24600,
+    "rocket": false,
     "image": "https://ads-partners.coupang.com/image1/4A8tKBj6piTX4UuF4FYCcDJXecoCvSpBetpoNfbQx8rm40z6Yk3qbh937OSEtkftNJmJ7VmeAAv3A2ALpJ-JiPwe8uj2A0rqmKAwkTvVH5O6Uw_FI7JDVAWaTmhi3ThaGm_f2pVX-6tNWN55dkUgB_ekSZBthGIQGOqgfScN8RuqDyVsdTrb-6ejKXgr5nvy8AY9CWWEl_ysPwbgdtL27S3gnC_zB91J3ihvVHMnZZXoobq0EpxPfjZQfH9rn06AbQZGr-FymVM_QE29xEq9DPCeyKGu61CN3CwkXKhL89nBP8KUSkwGUJOW3IKVuwP9t6KSRC4xdtJtpkq9pJojkd102e2qVipneiu3QWbqCIEohixpxdk8jDLOk5MXxtT1J5MDrhgS57zMZH9Qm3hEw94hAmdAmt7aTPTrkmpCtlkfmE_yfEaa6k0E10Z3nm4orLpX5Tdxds63DQOALLhIuZKkF4mcpj8np54R40WRz3O7EaWb2yxSAxKFDE2CvAuy6hrmrNHBvsuRHKkoOAAT_3AtzYILh6RlmGEDJ1s8v0GEZNdSxs6yvN7szAlxycghqPoecIhoFPXU",
     "checked": "2026-11-03",
     "productId": "8002642252"
@@ -4711,7 +4712,7 @@
     "price": 106100,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/G_RyyaTyd1lQ9S4ZGzTDULhESRl9GtvQmGAG0kwJnajXSuHtGeDQn9Hzjx99JOH7CQwdD1Kkgtrz_jbJ3EQWwC9YsV9Aw2Kttf_fvKBrgHoHByoV5cGi1GsKRWvBBK5daIAdcUgqYi01pSjY5Tr8cDLnBx6IFpySfF6qIRdSUsWnY7gX0q5U_52vylvtOVxKDLaDpS_roEa53xv_zVndAvR7jtUQplDrf4mYoiVLSun6WMH_dnHOQK3L0kauSKuOSb1ff8Z97yydbNw8fl_5RxtDOQRlM-YsDNjstlJU5KRjPkJB7f1FHbv6cycBM39ZtzhZMLn6nCj34AlA4bd1NZUIsCQM6qzSspfsUhmgvfMZDKJ0QCOaxmFT1cK6FU_uzULzjxJhwidWKTfts_7CK1OL12_OaFsN9qf8R3sUa7Rc-1iwvsjEGUPaSE9RiWOoCMDrbEqtA9Bq8SI4rW95SPlYFd2V_nEdgxqBJ8mx8nxZvCsEwxum75HwIhuZoX6eRKSSElMcrGonLYquJL46Ky7w2C2EpBx9N4abX3JWi5JQmsXBaqGARB-R8EM=",
-    "checked": "2026-11-02",
+    "checked": "2026-11-03",
     "productId": "1406055938"
   },
   "footjoy-hyperflex-boa-shoes": {
@@ -4860,7 +4861,7 @@
   },
   "castelbajac-womens-glove": {
     "title": "까스텔바작 여성용 반양피 골프장갑, 화이트레드, 1개",
-    "price": 24950,
+    "price": 24990,
     "rocket": true,
     "image": "https://ads-partners.coupang.com/image1/eCZJzn4mIuVhTClkeE_J0ZW0akg_woYQ8rtfJbAmf8-Bee9ST8wWa7EZwQ5oCT4m8JlFgrh7YDlsH0xkodOb3p1yDqU5WZXS99DJ49OuXvE0vPt2PWWxiiz3j8HWKCO8vkGG_bl1d-5_JxPAZH4hxxFZVGe7lpcp8LzLIwtO0zZKgK5Lti8KDVpW8eSiw17j2b93t1Rga6YFy25cVfizrScPHvrSaMCNfK-_oNrcZ6GMNomNIRQmYP3kzl_ja1zVBGA4Z48Dwoyar4XAENdVmNpyjxK3xvP144YMVN46xRj5bEmIqwAwWrSe6Ns41MBZgMo8qDFdFf5fLCIdp38Y2WQUAtAzcXVyCW2Ub7ANIUyVKm24AGcnhGFNCKjgygaOjAi17bqK0oWPukkEkUi_m0WDa2ZERNidIBVPAwuO_usdlVR0QHVYPxq36bCqUs56MY4y_J0XhTB8rwBR8ySkNRrVtN-zIN_r_s7MQYVpwxkkSR0H-mUvNwfkLyci_MzKI-XIiWVD8wSEuzeSCubYFP_w-J9rAYrHBOVgqOXc76caz6YGAuE6exF6Iwj-nljy-w==",
     "checked": "2026-11-03",

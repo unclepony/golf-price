@@ -1,43 +1,88 @@
 {
   "date": "2026-11-03",
   "by": {
+    "act": {
+      "카카오톡|/c/driver": 1
+    },
     "asn": {
-      "AS17506 ARTERIA Networks Corporation": 1
+      "AS17506 ARTERIA Networks Corporation": 1,
+      "AS2514 InfoSphere (NTTPC Communicatio": 1,
+      "AS7672 FITWeb(Hokuden Information Sys": 1,
+      "AS9316 DACOM-PUBNETPLUS": 1,
+      "AS9615 TOYOHASHI CABLE NETWORK INC.": 2
     },
     "asncamp": {
-      "AS17506 ARTERIA Networks Corporation|chatgpt.com|PC": 1
+      "AS17506 ARTERIA Networks Corporation|chatgpt.com|PC": 1,
+      "AS2514 InfoSphere (NTTPC Communicatio|youtube / comment / c-womens-driver-recommend-beginner|PC": 1,
+      "AS7672 FITWeb(Hokuden Information Sys|youtube / video / t-rangefinder-recommend-1|PC": 1,
+      "AS9615 TOYOHASHI CABLE NETWORK INC.|youtube / comment / c-womens-driver-recommend-beginner|PC": 1,
+      "AS9615 TOYOHASHI CABLE NETWORK INC.|youtube / video / t-rangefinder-recommend-1|PC": 1
     },
     "cty": {
-      "JP": 1
+      "JP": 5,
+      "KR": 1
     },
     "depth": {
+      "/c/driver|첫 화면": 1,
       "/p/callaway-jaws-raw-wedge|25%": 1
     },
     "dev": {
-      "PC": 1
+      "PC": 5,
+      "모바일": 1
     },
     "hour": {
-      "00": 1
+      "00": 1,
+      "07": 3,
+      "08": 2
     },
     "pv": {
+      "/c/driver": 1,
+      "/g/rangefinder-recommend": 2,
+      "/g/womens-driver-recommend": 2,
       "/p/callaway-jaws-raw-wedge": 1
     },
     "ref": {
-      "캠페인: chatgpt.com": 1
+      "카카오톡": 1,
+      "캠페인: chatgpt.com": 1,
+      "캠페인: youtube": 4
     },
     "refland": {
-      "캠페인: chatgpt.com|/p/callaway-jaws-raw-wedge": 1
+      "카카오톡|/c/driver": 1,
+      "캠페인: chatgpt.com|/p/callaway-jaws-raw-wedge": 1,
+      "캠페인: youtube|/g/rangefinder-recommend": 2,
+      "캠페인: youtube|/g/womens-driver-recommend": 2
     },
     "refurl": {
-      "chatgpt.com": 1
+      "chatgpt.com": 1,
+      "youtube / comment / c-womens-driver-recommend-beginner": 2,
+      "youtube / video / t-rangefinder-recommend-1": 2
+    },
+    "seen": {
+      "/g/rangefinder-recommend": 1,
+      "/g/womens-driver-recommend": 1
+    },
+    "seenpos": {
+      "비교표": 2
+    },
+    "seenref": {
+      "캠페인: youtube": 2
+    },
+    "skip": {
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 1
     },
     "stay": {
+      "/c/driver|10초 미만": 1,
       "/p/callaway-jaws-raw-wedge|10초 미만": 1
     },
     "visit": {
+      "/c/driver": 1,
+      "/g/rangefinder-recommend": 2,
+      "/g/womens-driver-recommend": 2,
       "/p/callaway-jaws-raw-wedge": 1
     },
     "xpv": {
+      "/g/rangefinder-recommend": 2,
+      "/g/womens-driver-recommend": 2,
       "/p/callaway-jaws-raw-wedge": 1
     }
   }
