@@ -497,6 +497,7 @@ tr.r-total td { padding-top: 12px; }
 .pd-price .lvl-link { flex-direction: row; gap: 10px; }
 .pd-price .lvl { font-size: 16px; padding: 5px 14px; }
 .pd-price .lvl-link small { font-size: 13px; }
+.pd-price:empty { display: none; }
 .pdate { display: block; font-size: 11px; font-weight: 500; color: var(--muted); }
 .pt-price { margin-top: auto; }
 .pt-price + .pt-cta { margin-top: 2px; }
@@ -1023,6 +1024,13 @@ a.btn.xs[rel~="sponsored"], a.btn.sm[rel~="sponsored"] { max-width: none; }
 .pd-cmp span { font-size: 14px; color: var(--muted); }
 .pd-cmp b { font-size: 17px; }
 .pd-cmp:hover { border-color: var(--accent); color: var(--accent); }
+.pd-alt { margin: 12px 0; padding: 14px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.pd-alt-k { margin: 0 0 8px; font-size: 14px; color: var(--muted); }
+.pd-alt ul { margin: 0; padding: 0; list-style: none; }
+.pd-alt li a { display: block; padding: 10px 0; border-top: 1px solid var(--line); color: var(--text); text-decoration: none; font-weight: 600; }
+.pd-alt li:first-child a { border-top: 0; }
+.pd-alt li a small { font-weight: 400; color: var(--muted); margin-left: 4px; }
+.pd-alt li a:hover { color: var(--accent); }
 .pd-more { margin: 8px 0 24px; border-top: 1px solid var(--line); }
 .pd-more > summary { cursor: pointer; padding: 14px 4px; font-weight: 700; color: var(--muted); }
 .pd-more[open] > summary { color: var(--text); }

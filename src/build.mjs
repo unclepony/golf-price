@@ -1036,6 +1036,18 @@ const mainPick = (id) => {
   const g = guidesOf(id)[0];
   return g ? { g, pk: g.picks.find((x) => x.id === id) } : null;
 };
+// 판매 종료·쿠팡 판매처 없는 상품 페이지: 쿠팡 가격 상자 대신 같은 가이드에서 지금 쿠팡 링크가 있는 상품 3개(같은 실력 단계 먼저)를 보여 준다.
+// 막다른 화면에서 바로 나가는 방문을 비교 상품으로 잇기 위함(2026-11-04 셀프 개선). 판매 상태에 따라 바뀌는 영역이라 가격처럼 콘텐츠 지문에서 뺀다(phist)
+function altBox(p) {
+  const mp = mainPick(p.id);
+  if (!mp) return '';
+  const pool = rankedPicks(mp.g).filter((x) => x.id !== p.id && !warned(mp.g, x));
+  const sk = mp.pk?.skill ?? null;
+  const list = [...pool.filter((x) => (x.skill ?? null) === sk), ...pool.filter((x) => (x.skill ?? null) !== sk)].slice(0, 3);
+  if (!list.length) return '';
+  const why = GONE[p.id] ? '이 상품은 지금 쿠팡에서 찾을 수 없습니다.' : '이 상품은 쿠팡 판매처가 없습니다.';
+  return `<!--phist--><div class="pd-alt"><p class="pd-alt-k">${why} 같은 비교에서 지금 볼 수 있는 상품${sk ? ` (${esc(sk)} 먼저)` : ''}</p><ul>${list.map((x) => `<li><a href="/p/${x.id}">${esc(byId[x.id].p.name)}${x.skill ? ` <small>${esc(x.skill)}</small>` : ''} ›</a></li>`).join('')}</ul></div><!--/phist-->`;
+}
 // 사양 칸 중 구매 판단에 쓰는 것(번호·로프트·샤프트·구성·길이 등)을 '이름 값' 형태로
 const SPEC_KEYS = /번호|로프트|샤프트|사양|구성|길이|헤드|유형|구조|소재|조임/;
 function specPairs(g, pk) {
@@ -1507,7 +1519,7 @@ ${gallery(p, hist)}
 ${updatedTag(p.updated)}
 ${productAnswer(p)}
 <div class="pt-badges">${isNew(p) ? '<span class="new-mark">NEW</span>' : ''}${GONE[p.id] ? `<span class="tag none">판매 종료·품절 추정 (${ymd(GONE[p.id])} 이후 쿠팡에서 찾을 수 없음)</span>` : ''}${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, sr }) => (sr ? `<span class="tag ${sr.warn ? 'warn' : 'rank'}">${esc(guideName(g).replace(' 비교 및 선택 가이드', ''))} ${esc(sr.label)}</span>` : '')).join('')}${sellable(p.id) ? '' : '<span class="tag none">쿠팡 판매처 없음</span>'}</div>
-${buyBox(rctx(), p) || `<div class="pd-price">${buyButton(p.id, hist)}</div>`}
+${buyBox(rctx(), p) || `<div class="pd-price">${buyButton(p.id, hist)}</div>${altBox(p)}`}
 ${links[p.id] && picks[p.id]?.title ? `<p class="linked">연결 상품: ${esc(picks[p.id].title)}</p>` : ''}
 ${infoTable(rctx(), p)}
 <p class="pd-sum">${esc(p.summary)}</p>
