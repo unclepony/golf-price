@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-04",
+  "by": {
+    "act": {
+      "직접·북마크|/p/titleist-t250-iron": 2,
+      "캠페인: chatgpt.com|/p/golflex-shot-tracker-2": 1
+    },
+    "asn": {
+      "AS4766 KT": 2,
+      "AS4766 Korea Telecom": 1
+    },
+    "asncamp": {
+      "AS4766 Korea Telecom|chatgpt.com|PC": 1
+    },
+    "cty": {
+      "KR": 3
+    },
+    "depth": {
+      "/p/golflex-shot-tracker-2|25%": 1,
+      "/p/titleist-t250-iron|25%": 1,
+      "/p/titleist-t250-iron|75%": 1,
+      "/p/titleist-t250-iron|끝까지": 1
+    },
+    "dev": {
+      "PC": 3
+    },
+    "hour": {
+      "00": 3
+    },
+    "out": {
+      "/p/golflex-shot-tracker-2|golflex-shot-tracker-2": 1
+    },
+    "outact": {
+      "조작 후|캠페인: chatgpt.com": 1
+    },
+    "outcamp": {
+      "chatgpt.com|golflex-shot-tracker-2": 1
+    },
+    "outref": {
+      "캠페인: chatgpt.com": 1
+    },
+    "pos": {
+      "상품 페이지": 1
+    },
+    "pv": {
+      "/p/golflex-shot-tracker-2": 1,
+      "/p/titleist-t250-iron": 2
+    },
+    "ref": {
+      "직접·북마크": 2,
+      "캠페인: chatgpt.com": 1
+    },
+    "refland": {
+      "직접·북마크|/p/titleist-t250-iron": 2,
+      "캠페인: chatgpt.com|/p/golflex-shot-tracker-2": 1
+    },
+    "refurl": {
+      "chatgpt.com": 1
+    },
+    "seen": {
+      "/p/golflex-shot-tracker-2": 1,
+      "/p/titleist-t250-iron": 2
+    },
+    "seenpos": {
+      "상품 페이지": 3
+    },
+    "seenref": {
+      "직접·북마크": 2,
+      "캠페인: chatgpt.com": 1
+    },
+    "skip": {
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 1
+    },
+    "stay": {
+      "/p/golflex-shot-tracker-2|10초 미만": 1,
+      "/p/titleist-t250-iron|10~30초": 1,
+      "/p/titleist-t250-iron|1~3분": 1,
+      "/p/titleist-t250-iron|3분 이상": 1
+    },
+    "visit": {
+      "/p/golflex-shot-tracker-2": 1,
+      "/p/titleist-t250-iron": 2
+    },
+    "xpv": {
+      "/p/golflex-shot-tracker-2": 1
+    }
+  }
+}
