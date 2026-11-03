@@ -20,7 +20,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { search, hasKeys } from './coupang-client.mjs';
-import { match2 } from './match2.mjs';
+import { match2, passMust } from './match2.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const arg = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? Number(process.argv[i + 1]) : d; };
@@ -87,6 +87,17 @@ for (const [i, id] of targets.entries()) {
     const two = match2(prods[id], pk, rows.filter(sane));
     if (two) { hit = two; console.log(`2단계 맞춤(첫 저장): ${id} → 상품 번호 ${two.id} "${two.name}"`); }
   }
+  // 검색어 다시(2026-11-04 gp-1104-1): productId 가 없고, 긴 연결 상품명 검색 10건에 must/mustAny 를 통과하는 결과가 하나도 없으면
+  // (11/04 후보 136개 중 75개 — 섬유유연제·고양이 모래처럼 엉뚱한 결과) products.json 의 query 로 한 번 더 검색해 같은 2단계 규칙(①~④)을 그대로 적용한다.
+  // 규칙은 느슨하게 하지 않는다. 그 결과는 후보 기록의 qrows 로 남겨 오프라인 시험(node src/prices/match2.mjs)에 쓴다.
+  let qrows = null;
+  const pq = prods[id];
+  if (!hit && !pk.productId && pq?.query && pq.query.trim() !== pk.title.trim() && !rows.some((r) => passMust(pq, r))) {
+    await sleep(GAP);
+    try { qrows = await search(pq.query.replace(/\s+/g, ' ').trim().slice(0, 50), 10); } catch (e) { console.log(`오류로 멈춤 (${id}): ${e.message}`); break; }
+    hit = qrows.find((r) => words(r.name) === want && sane(r) && (pk.rocket === undefined || !!pk.rocket === r.rocket)) ?? match2(pq, pk, qrows.filter(sane));
+    if (hit) console.log(`검색어 다시 맞춤(첫 저장): ${id} → 상품 번호 ${hit.id} "${hit.name}"`);
+  }
   // 상품 번호가 있는데 상품명 검색 10건에 없으면, 상품을 처음 찾을 때 쓴 검색어(products.json query)로 한 번 더 본다(같은 번호만 인정)
   const q2 = prods[id]?.query;
   if (!hit && pk.productId && q2 && q2.trim() !== pk.title.trim()) {
@@ -100,7 +111,7 @@ for (const [i, id] of targets.entries()) {
     // (2026-10-25: 10-15·16 에 옵션 글자까지 넣은 연결 상품명이 검색 결과 이름과 달라 206개가 한꺼번에 판매 종료로 갈 뻔함)
     if (!pk.productId) {
       delete missing[id];
-      cands[id] = { day: today, title: pk.title, price: pk.price ?? null, rows: rows.slice(0, 10).map((x) => [x.id, x.name, x.price, x.rocket]) };
+      cands[id] = { day: today, title: pk.title, price: pk.price ?? null, rows: rows.slice(0, 10).map((x) => [x.id, x.name, x.price, x.rocket]), ...(qrows ? { query: pq.query, qrows: qrows.slice(0, 10).map((x) => [x.id, x.name, x.price, x.rocket]) } : {}) };
       console.log(`건너뜀: ${id} (검색 ${rows.length}건 중 같은 상품명 없음 — 상품 번호가 없어 판매 종료 판단 안 함, 기존 값 유지)`);
       save();
       continue;
