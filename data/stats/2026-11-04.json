@@ -3,29 +3,73 @@
   "by": {
     "act": {
       "직접·북마크|/p/titleist-t250-iron": 2,
-      "캠페인: chatgpt.com|/p/golflex-shot-tracker-2": 1
+      "캠페인: chatgpt.com|/c/bag": 3,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 1,
+      "캠페인: chatgpt.com|/g/iron-recommend-advanced": 1,
+      "캠페인: chatgpt.com|/g/womens-iron-recommend": 1,
+      "캠페인: chatgpt.com|/p/golflex-shot-tracker-2": 1,
+      "캠페인: chatgpt.com|/p/ping-hoofer-stand": 1,
+      "캠페인: chatgpt.com|/p/srixon-s166-cart": 2,
+      "캠페인: chatgpt.com|/p/srixon-zxi5-iron": 1,
+      "캠페인: chatgpt.com|/p/sunmountain-h2no-stand": 1,
+      "캠페인: chatgpt.com|/p/titleist-hybrid14-stand": 1
     },
     "asn": {
-      "AS4766 KT": 2,
-      "AS4766 Korea Telecom": 1
+      "AS17858 LG POWERCOMM": 1,
+      "AS3559 Korea Telecom": 1,
+      "AS4766 KT": 4,
+      "AS4766 Korea Telecom": 1,
+      "AS4766 Sudogwonseobubonbu": 1,
+      "AS9318 SK Broadband Co Ltd": 2,
+      "AS9644 SK Telecom": 1
     },
     "asncamp": {
-      "AS4766 Korea Telecom|chatgpt.com|PC": 1
+      "AS17858 LG POWERCOMM|chatgpt.com|모바일": 1,
+      "AS3559 Korea Telecom|chatgpt.com|모바일": 1,
+      "AS4766 KT|chatgpt.com|모바일": 2,
+      "AS4766 Korea Telecom|chatgpt.com|PC": 1,
+      "AS9318 SK Broadband Co Ltd|chatgpt.com|PC": 1,
+      "AS9318 SK Broadband Co Ltd|youtube / video / c-putter-recommend-beginner|PC": 1,
+      "AS9644 SK Telecom|youtube / video / c-putter-recommend-beginner|PC": 1
     },
     "cty": {
-      "KR": 3
+      "KR": 11
     },
     "depth": {
+      "/c/bag|25%": 3,
+      "/c/bag|끝까지": 1,
+      "/g/golf-bag-recommend|첫 화면": 1,
+      "/g/iron-recommend-advanced|25%": 1,
       "/p/golflex-shot-tracker-2|25%": 1,
+      "/p/ping-hoofer-stand|끝까지": 1,
+      "/p/srixon-s166-cart|75%": 1,
+      "/p/srixon-s166-cart|끝까지": 1,
+      "/p/srixon-zxi5-iron|25%": 1,
+      "/p/sunmountain-h2no-stand|끝까지": 1,
+      "/p/titleist-hybrid14-stand|끝까지": 1,
       "/p/titleist-t250-iron|25%": 1,
       "/p/titleist-t250-iron|75%": 1,
-      "/p/titleist-t250-iron|끝까지": 1
+      "/p/titleist-t250-iron|끝까지": 1,
+      "/|25%": 1,
+      "/|첫 화면": 1
     },
     "dev": {
-      "PC": 3
+      "PC": 7,
+      "모바일": 4
     },
     "hour": {
-      "00": 3
+      "12": 1,
+      "18": 3,
+      "22": 2,
+      "00": 3,
+      "08": 2
+    },
+    "nav": {
+      "/c/bag|/p/srixon-s166-cart": 2,
+      "/g/golf-bag-recommend|/p/ping-hoofer-stand": 1,
+      "/g/golf-bag-recommend|/p/sunmountain-h2no-stand": 1,
+      "/g/golf-bag-recommend|/p/titleist-hybrid14-stand": 1,
+      "/g/iron-recommend-advanced|/p/srixon-zxi5-iron": 1
     },
     "out": {
       "/p/golflex-shot-tracker-2|golflex-shot-tracker-2": 1
@@ -43,46 +87,104 @@
       "상품 페이지": 1
     },
     "pv": {
+      "/": 2,
+      "/c/bag": 4,
+      "/g/golf-bag-recommend": 1,
+      "/g/iron-recommend-advanced": 1,
+      "/g/putter-recommend": 2,
+      "/g/womens-iron-recommend": 1,
       "/p/golflex-shot-tracker-2": 1,
+      "/p/ping-hoofer-stand": 1,
+      "/p/srixon-s166-cart": 2,
+      "/p/srixon-zxi5-iron": 1,
+      "/p/sunmountain-h2no-stand": 1,
+      "/p/titleist-hybrid14-stand": 1,
       "/p/titleist-t250-iron": 2
     },
     "ref": {
-      "직접·북마크": 2,
-      "캠페인: chatgpt.com": 1
+      "직접·북마크": 3,
+      "캠페인: chatgpt.com": 6,
+      "캠페인: youtube": 2
     },
     "refland": {
+      "직접·북마크|/": 1,
       "직접·북마크|/p/titleist-t250-iron": 2,
-      "캠페인: chatgpt.com|/p/golflex-shot-tracker-2": 1
+      "캠페인: chatgpt.com|/c/bag": 2,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 1,
+      "캠페인: chatgpt.com|/g/iron-recommend-advanced": 1,
+      "캠페인: chatgpt.com|/g/womens-iron-recommend": 1,
+      "캠페인: chatgpt.com|/p/golflex-shot-tracker-2": 1,
+      "캠페인: youtube|/g/putter-recommend": 2
     },
     "refurl": {
-      "chatgpt.com": 1
+      "chatgpt.com": 6,
+      "youtube / video / c-putter-recommend-beginner": 2
     },
     "seen": {
+      "/c/bag": 1,
+      "/g/golf-bag-recommend": 1,
+      "/g/iron-recommend-advanced": 1,
+      "/g/putter-recommend": 1,
       "/p/golflex-shot-tracker-2": 1,
+      "/p/ping-hoofer-stand": 1,
+      "/p/srixon-s166-cart": 2,
+      "/p/srixon-zxi5-iron": 1,
+      "/p/sunmountain-h2no-stand": 1,
+      "/p/titleist-hybrid14-stand": 1,
       "/p/titleist-t250-iron": 2
     },
     "seenpos": {
-      "상품 페이지": 3
+      "비교표": 2,
+      "상품 페이지": 9,
+      "한 줄 결론": 2
     },
     "seenref": {
       "직접·북마크": 2,
-      "캠페인: chatgpt.com": 1
+      "캠페인: chatgpt.com": 10,
+      "캠페인: youtube": 1
     },
     "skip": {
-      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 1
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3
     },
     "stay": {
+      "/c/bag|10초 미만": 3,
+      "/c/bag|30초~1분": 1,
+      "/g/golf-bag-recommend|1~3분": 1,
+      "/g/iron-recommend-advanced|30초~1분": 1,
       "/p/golflex-shot-tracker-2|10초 미만": 1,
+      "/p/ping-hoofer-stand|30초~1분": 1,
+      "/p/srixon-s166-cart|10~30초": 1,
+      "/p/srixon-s166-cart|30초~1분": 1,
+      "/p/srixon-zxi5-iron|1~3분": 1,
+      "/p/sunmountain-h2no-stand|10~30초": 1,
+      "/p/titleist-hybrid14-stand|30초~1분": 1,
       "/p/titleist-t250-iron|10~30초": 1,
       "/p/titleist-t250-iron|1~3분": 1,
-      "/p/titleist-t250-iron|3분 이상": 1
+      "/p/titleist-t250-iron|3분 이상": 1,
+      "/|10초 미만": 2
     },
     "visit": {
+      "/": 1,
+      "/c/bag": 2,
+      "/g/golf-bag-recommend": 1,
+      "/g/iron-recommend-advanced": 1,
+      "/g/putter-recommend": 2,
+      "/g/womens-iron-recommend": 1,
       "/p/golflex-shot-tracker-2": 1,
       "/p/titleist-t250-iron": 2
     },
     "xpv": {
-      "/p/golflex-shot-tracker-2": 1
+      "/c/bag": 4,
+      "/g/golf-bag-recommend": 1,
+      "/g/iron-recommend-advanced": 1,
+      "/g/putter-recommend": 2,
+      "/g/womens-iron-recommend": 1,
+      "/p/golflex-shot-tracker-2": 1,
+      "/p/ping-hoofer-stand": 1,
+      "/p/srixon-s166-cart": 2,
+      "/p/srixon-zxi5-iron": 1,
+      "/p/sunmountain-h2no-stand": 1,
+      "/p/titleist-hybrid14-stand": 1
     }
   }
 }

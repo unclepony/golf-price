@@ -1,27 +1,15 @@
 {
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { price: 1.5배 넘게 튄 API 값(반영 보류), held: 그때 유지한 직전 값, first: 처음 본 날, last: 마지막으로 본 날 }. 다음 날 이후 같은 값이 다시 나오면 반영하고 지운다.",
-  "callaway-jaws-forged-wedge": {
-    "price": 158000,
-    "held": 98000,
-    "first": "2026-11-04",
-    "last": "2026-11-04"
+  "cobra-kingtour-iron": {
+    "price": 499000,
+    "held": 986950,
+    "first": "2026-11-05",
+    "last": "2026-11-05"
   },
-  "monkeygrip-powerpad-glove": {
-    "price": 38000,
-    "held": 22000,
-    "first": "2026-11-04",
-    "last": "2026-11-04"
-  },
-  "taylormade-tp-genuine-leather-glove": {
-    "price": 22190,
-    "held": 42000,
-    "first": "2026-11-04",
-    "last": "2026-11-04"
-  },
-  "wixx-speed-stick": {
-    "price": 13900,
-    "held": 25900,
-    "first": "2026-11-04",
-    "last": "2026-11-04"
+  "taylormade-durable-grip-glove": {
+    "price": 14400,
+    "held": 22850,
+    "first": "2026-11-05",
+    "last": "2026-11-05"
   }
 }
