@@ -2,7 +2,7 @@
 // 점검: 출시 연도 형식, 초보 가이드 상품의 로프트·샤프트 기준, 이미지·링크 누락, 확인한 지 14일 지난 가격·3일 안에 숨겨질 가격, 관련 영상 목록 형식
 // 결과는 마크다운으로 출력하고(GitHub Issue 본문용), 문제가 있어도 실패 코드로 끝내지 않는다(배포를 막지 않는 알림).
 import { join } from 'node:path';
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, readdirSync } from 'node:fs';
 import { ROOT, readJson, loadLinks, historyDir, todayKst } from './lib.mjs';
 import { beginnerIssues, releaseIssues } from './rules.mjs';
 import { videoIssues } from './videos.mjs';
@@ -26,6 +26,17 @@ const lastCheck = (id) => {
   return [h, s].filter(Boolean).sort().at(-1) ?? null;
 };
 
+// 2026-11-05: 최근 30일 상품 페이지 조회수(data/stats, 하루 합계 pv)로 사람이 먼저 볼 상품을 앞에 둔다(방문 많은 상품의 가격부터 되살리기)
+const statDir = join(ROOT, 'data', 'stats');
+const views = {};
+let statFiles = [];
+try { statFiles = readdirSync(statDir).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f) && days(f.slice(0, 10)) >= 0 && days(f.slice(0, 10)) < 30); } catch {}
+for (const f of statFiles) for (const [path, n] of Object.entries(readJson(join(statDir, f), {})?.by?.pv ?? {})) {
+  if (path.startsWith('/p/') && typeof n === 'number') views[path.slice(3)] = (views[path.slice(3)] ?? 0) + n;
+}
+const pv = (id) => views[id] ?? 0;
+const pvNote = (id) => (pv(id) ? ` · 최근 30일 조회 ${pv(id)}` : '');
+
 const sections = [];
 const add = (title, items, hint = '', count = items.length) => sections.push({ title, items, hint, count });
 
@@ -43,10 +54,10 @@ const stale = products
   .filter((p) => links[p.id])
   .map((p) => ({ p, d: lastCheck(p.id) }))
   .filter((x) => !x.d || days(x.d) > STALE)
-  .sort((a, b) => (a.d ?? '').localeCompare(b.d ?? ''));
+  .sort((a, b) => pv(b.p.id) - pv(a.p.id) || (a.d ?? '').localeCompare(b.d ?? ''));
 add(
   `확인한 지 ${STALE}일 지난 가격 (화면에서 숨겨짐)`,
-  stale.slice(0, 30).map((x) => `${x.p.name} (\`${x.p.id}\`): ${x.d ? `${x.d} 확인, ${days(x.d)}일 전` : '확인 기록 없음'}`).concat(stale.length > 30 ? [`… 외 ${stale.length - 30}개`] : []),
+  stale.slice(0, 30).map((x) => `${x.p.name} (\`${x.p.id}\`): ${x.d ? `${x.d} 확인, ${days(x.d)}일 전` : '확인 기록 없음'}${pvNote(x.p.id)}`).concat(stale.length > 30 ? [`… 외 ${stale.length - 30}개`] : []),
   '`node src/prices/template.mjs` 로 prices.csv 에 확인할 상품 줄을 만들고, 쿠팡 파트너스 사이트에서 가격을 확인해 채운 뒤 `node src/prices/import.mjs` 를 실행하세요.',
   stale.length,
 );
@@ -87,11 +98,11 @@ for (const [id, v] of Object.entries(cands)) {
   const r = full ?? part;
   if (r) fill.push({ id, kind: full ? '이름 같음, 로켓 여부만 다름' : '쉼표 앞 이름 같음, 옵션 글자 다름', r, guide: inGuides.has(id) });
 }
-fill.sort((a, b) => b.guide - a.guide || b.kind.startsWith('이름') - a.kind.startsWith('이름') || a.id.localeCompare(b.id));
+fill.sort((a, b) => pv(b.id) - pv(a.id) || b.guide - a.guide || b.kind.startsWith('이름') - a.kind.startsWith('이름') || a.id.localeCompare(b.id));
 add(
   '상품 번호(productId) 채우기 후보 — 가격 갱신이 못 맞춘 상품 중 같은 상품으로 보이는 쿠팡 검색 결과 (자동 반영 안 함)',
-  [`매일 가격 갱신의 2단계 맞춤이 스스로 채울 상품 ${auto2.length}개는 이 목록에서 뺐습니다(차례가 오면 자동 저장, 확인 필요 없음).`].concat(fill.slice(0, 60).map((x) => `${name(x.id)} (\`${x.id}\`): 후보 ${x.r[0]} · ${Number(x.r[2]).toLocaleString('ko-KR')}원${x.r[3] ? ' · 로켓' : ''} — ${x.kind}${x.guide ? '' : ' · 가이드에 없음'}`)).concat(fill.length > 60 ? [`… 외 ${fill.length - 60}개`] : []),
-  '쿠팡 파트너스 사이트에서 연결한 상품과 같은 상품(같은 모델·옵션 구성)인지 확인한 뒤 `config/picks.json` 의 `productId` 에 후보 번호를 적으면 다음 매일 갱신부터 가격이 다시 보입니다. 다른 상품이면 적지 마세요. 링크는 바꾸지 않습니다.',
+  [`매일 가격 갱신의 2단계 맞춤이 스스로 채울 상품 ${auto2.length}개는 이 목록에서 뺐습니다(차례가 오면 자동 저장, 확인 필요 없음).`].concat(fill.slice(0, 60).map((x) => `${name(x.id)} (\`${x.id}\`): 후보 ${x.r[0]} · ${Number(x.r[2]).toLocaleString('ko-KR')}원${x.r[3] ? ' · 로켓' : ''} — ${x.kind}${x.guide ? '' : ' · 가이드에 없음'}${pvNote(x.id)}`)).concat(fill.length > 60 ? [`… 외 ${fill.length - 60}개`] : []),
+  '최근 30일 상품 페이지 조회가 많은 순서입니다(위부터 채우면 효과가 큼). 쿠팡 파트너스 사이트에서 연결한 상품과 같은 상품(같은 모델·옵션 구성)인지 확인한 뒤 `config/picks.json` 의 `productId` 에 후보 번호를 적으면 다음 매일 갱신부터 가격이 다시 보입니다. 다른 상품이면 적지 마세요. 링크는 바꾸지 않습니다.',
   fill.length,
 );
 
