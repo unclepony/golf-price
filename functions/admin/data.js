@@ -18,10 +18,12 @@ export async function onRequestGet({ request, env }) {
       all('SELECT kind, k, SUM(n) AS n FROM stats WHERE day BETWEEN ?1 AND ?2 GROUP BY kind, k', from, to),
       all("SELECT kind, SUM(n) AS n FROM stats WHERE day BETWEEN ?1 AND ?2 AND kind IN ('pv','visit','out') GROUP BY kind", prevFrom, prevTo),
     ]);
+    // ?day= 일 때만: 판매까지의 과정(journey 표, 쿠팡 클릭 한 줄씩) — 매일 분석이 클릭까지 거쳐 온 길을 보도록. 표가 없으면 빈 목록. 시각은 시(時)까지만 내보낸다.
+    const journey = one ? (await all('SELECT substr(at, 12, 2) AS hour, pid, page, src, kw, url, land, trail, steps, secs, dev, pos FROM journey WHERE day = ?1 ORDER BY at', one).catch(() => [])) : undefined;
     const names = await env.ASSETS.fetch(new URL('/assets/search.json', url)).then((r) => r.json()).catch(() => ({ products: [], guides: [] }));
     return json({
       from, to, days,
-      daily, rows, prev,
+      daily, rows, prev, journey,
       products: Object.fromEntries(names.products.map((p) => [p.id, p.n])),
       pages: Object.fromEntries([['/', '홈'], ['/about', '운영 안내'], ...names.products.map((p) => [p.u, p.n]), ...names.guides.map((g) => [g.u, g.t])]),
     });
