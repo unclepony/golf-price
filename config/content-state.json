@@ -2719,12 +2719,12 @@
       "d": "2026-11-05"
     },
     "/p/bridgestone-biting-spin-wedge": {
-      "h": "a22dcdf24c9c5216",
-      "d": "2026-11-05"
+      "h": "7b119f23d99c102e",
+      "d": "2026-11-06"
     },
     "/p/cleveland-rtx-zipcore-wedge": {
-      "h": "2bbd27e6736a7008",
-      "d": "2026-11-05"
+      "h": "ef2072318d283458",
+      "d": "2026-11-06"
     },
     "/c/driver": {
       "h": "865c56b6d328597a",
@@ -2835,8 +2835,8 @@
       "d": "2026-11-02"
     },
     "/g/launch-monitor-recommend": {
-      "h": "1fc49cb813036913",
-      "d": "2026-11-02"
+      "h": "bd712af623d9968a",
+      "d": "2026-11-06"
     },
     "/g/golf-bag-recommend": {
       "h": "ae2e5feec3dc14e4",
@@ -2847,8 +2847,8 @@
       "d": "2026-11-05"
     },
     "/g/practice-gear-recommend": {
-      "h": "80fa6031b03c6142",
-      "d": "2026-11-03"
+      "h": "e0844f5a201ef9c8",
+      "d": "2026-11-06"
     },
     "/g/womens-iron-recommend": {
       "h": "c65db8b58fad2110",
@@ -3091,76 +3091,80 @@
       "d": "2026-10-16"
     },
     "/qa/womens-iron-beginner": {
-      "h": "f00e5c23637e662c",
-      "d": "2026-11-05"
+      "h": "36d7aa09ef83e8f0",
+      "d": "2026-11-06"
     },
     "/qa/womens-utility-beginner": {
-      "h": "c192eaa9df6c26bc",
-      "d": "2026-11-05"
+      "h": "0c56442882c0b5f0",
+      "d": "2026-11-06"
     },
     "/qa/golf-practice-gear-beginner": {
-      "h": "263176f8e0116f64",
-      "d": "2026-11-05"
+      "h": "c7b6516d67a001b0",
+      "d": "2026-11-06"
     },
     "/qa/golf-bag-stand-vs-caddie": {
-      "h": "8887fe39f93e4cf1",
-      "d": "2026-11-05"
+      "h": "8b74f2cfe6f70de3",
+      "d": "2026-11-06"
+    },
+    "/qa/golf-swing-analyzer-beginner": {
+      "h": "48af4a125ef4cfaa",
+      "d": "2026-11-06"
     },
     "/qa/used-golf-clubs-beginner": {
-      "h": "0d259d48d071642e",
-      "d": "2026-11-05"
+      "h": "c3e86127ffa07cbf",
+      "d": "2026-11-06"
     },
     "/qa/womens-golf-shoes-beginner": {
-      "h": "c3836f45a51e1550",
-      "d": "2026-11-05"
+      "h": "62e0e6815ae735f3",
+      "d": "2026-11-06"
     },
     "/qa/iron-steel-vs-carbon-shaft": {
-      "h": "dbe9bbabc0bf550f",
-      "d": "2026-11-05"
+      "h": "145a12b4ed376633",
+      "d": "2026-11-06"
     },
     "/qa/how-many-fairway-woods": {
-      "h": "ef2ca11cb0682e53",
-      "d": "2026-11-05"
+      "h": "a0782c48613ced58",
+      "d": "2026-11-06"
     },
     "/qa/mens-golf-shoes-beginner": {
-      "h": "1e63132b3cd2b9d2",
-      "d": "2026-11-05"
+      "h": "4ef46022b0ebebfd",
+      "d": "2026-11-06"
     },
     "/qa/utility-4-recommend": {
-      "h": "6e0e903bf9468f36",
-      "d": "2026-11-05"
+      "h": "05c97b43b063f10b",
+      "d": "2026-11-06"
     },
     "/qa/golf-rangefinder-recommend": {
-      "h": "fd7533c50b81af95",
-      "d": "2026-11-05"
+      "h": "e5326408c39fa455",
+      "d": "2026-11-06"
     },
     "/qa/golf-ball-recommend": {
-      "h": "443ab43a5a12a893",
-      "d": "2026-11-05"
+      "h": "9a4e8d8c9ebfb421",
+      "d": "2026-11-06"
     },
     "/qa/zero-torque-putter": {
-      "h": "04f26866137fa376",
-      "d": "2026-11-05"
+      "h": "dfc32d17d1588a93",
+      "d": "2026-11-06"
     },
     "/qa/womens-golf-club-recommend": {
-      "h": "36b66edd2887443e",
-      "d": "2026-11-05"
+      "h": "2899e1a25bb467b2",
+      "d": "2026-11-06"
     },
     "/qa/wedge-recommend-loft": {
-      "h": "10c547643dc2635d",
-      "d": "2026-11-05"
+      "h": "427233d3c18711a9",
+      "d": "2026-11-06"
     },
     "/qa/beginner-driver-recommend": {
-      "h": "b098d1c33dd081ec",
-      "d": "2026-11-05"
+      "h": "37b288bb5348cb13",
+      "d": "2026-11-06"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "6d1ebc42777152f2",
-      "d": "2026-11-05"
+      "h": "18b47ce8de2d5a7a",
+      "d": "2026-11-06"
     },
     "/qa": {
-      "h": "3366a43c9accf24f",
-      "d": "2026-11-05"
+      "h": "a3f504eb16de7b4d",
+      "d": "2026-11-06"
     },
     "/vs/adidas-adipower-sl-women-shoes-vs-footjoy-pulse-boa-women-shoes": {
       "h": "912dee150dbc43aa",
@@ -3820,96 +3824,6 @@
       "d": "2026-11-05"
     },
     {
-      "url": "/qa/womens-iron-beginner",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/womens-utility-beginner",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/golf-practice-gear-beginner",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/golf-bag-stand-vs-caddie",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/used-golf-clubs-beginner",
-      "kind": "new",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/womens-golf-shoes-beginner",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/iron-steel-vs-carbon-shaft",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/how-many-fairway-woods",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/mens-golf-shoes-beginner",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/utility-4-recommend",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/golf-rangefinder-recommend",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/golf-ball-recommend",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/zero-torque-putter",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/womens-golf-club-recommend",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/wedge-recommend-loft",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/beginner-driver-recommend",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa/beginner-golf-club-set",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/qa",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
       "url": "/p/callaway-opus-sp-wedge",
       "kind": "updated",
       "d": "2026-11-05"
@@ -3970,16 +3884,6 @@
       "d": "2026-11-05"
     },
     {
-      "url": "/p/bridgestone-biting-spin-wedge",
-      "kind": "new",
-      "d": "2026-11-05"
-    },
-    {
-      "url": "/p/cleveland-rtx-zipcore-wedge",
-      "kind": "new",
-      "d": "2026-11-05"
-    },
-    {
       "url": "/c/wedge",
       "kind": "updated",
       "d": "2026-11-05"
@@ -4013,6 +3917,121 @@
       "url": "/vs/ping-s159-wedge-vs-ping-glide4-wedge",
       "kind": "updated",
       "d": "2026-11-05"
+    },
+    {
+      "url": "/p/bridgestone-biting-spin-wedge",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/p/cleveland-rtx-zipcore-wedge",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/g/launch-monitor-recommend",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/g/practice-gear-recommend",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/womens-iron-beginner",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/womens-utility-beginner",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/golf-practice-gear-beginner",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/golf-bag-stand-vs-caddie",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/golf-swing-analyzer-beginner",
+      "kind": "new",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/used-golf-clubs-beginner",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/womens-golf-shoes-beginner",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/iron-steel-vs-carbon-shaft",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/how-many-fairway-woods",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/mens-golf-shoes-beginner",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/utility-4-recommend",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/golf-rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/golf-ball-recommend",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/zero-torque-putter",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/womens-golf-club-recommend",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/wedge-recommend-loft",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/beginner-driver-recommend",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-11-06"
+    },
+    {
+      "url": "/qa",
+      "kind": "updated",
+      "d": "2026-11-06"
     }
   ]
 }
