@@ -19,6 +19,13 @@
   } catch {
     fresh = !document.referrer.startsWith(location.origin);
   }
+  // 판매까지의 과정(2026-11-06 사장님): 이 탭에서 본 페이지 순서(최근 6쪽)·쪽수·머문 시간을 이 탭에만 기억했다가 쿠팡 클릭 때 함께 보낸다(사용자 ID·쿠키 없음)
+  let jr = { l: location.pathname, t: Date.now(), n: 0, tr: [] };
+  try { const js = JSON.parse(sessionStorage.getItem('gp_j') || 'null'); if (js && !fresh && Array.isArray(js.tr)) jr = js; } catch {}
+  if (jr.tr[jr.tr.length - 1] !== location.pathname) jr.tr = [...jr.tr, location.pathname].slice(-6);
+  jr.n += 1;
+  try { sessionStorage.setItem('gp_j', JSON.stringify(jr)); } catch {}
+  const jour = () => ({ j: { l: jr.l, n: jr.n, s: Math.round((Date.now() - jr.t) / 1000), tr: jr.tr } });
   const beacon = (o) => {
     try {
       if (localStorage.getItem('gp_nostat') === '1' || navigator.webdriver) return;
@@ -48,7 +55,7 @@
     }
     if (!a || !(/(^|\.)coupang\.com$/.test(a.hostname) || a.pathname.startsWith('/go/'))) return;
     if (e.type === 'auxclick' && e.button !== 1) return;
-    beacon({ t: 'out', h: a.getAttribute('href'), w: where(a), a: acted ? 1 : 0 });
+    beacon({ t: 'out', h: a.getAttribute('href'), w: where(a), a: acted ? 1 : 0, ...jour() });
   };
   document.addEventListener('click', onOut, true);
   document.addEventListener('auxclick', onOut, true);

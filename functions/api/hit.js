@@ -77,6 +77,17 @@ function skipReason(request) {
   return '';
 }
 
+// 판매까지의 과정(journey 표, 2026-11-06 사장님): 쿠팡 클릭 한 번 = 한 줄. 유입 경로·검색어·캠페인, 이 탭의 첫 페이지·거쳐 온 페이지(최근 6쪽)·쪽수·머문 초·기기·버튼 위치.
+// unclepony-ops 판매 내역(/sales)이 쿠팡 주문(누른 상품 번호·날짜)과 이 줄을 잇는다. IP·쿠키·사용자 ID 는 저장하지 않는다(시각은 분까지).
+function journey(db, waitUntil, x) {
+  const p = (v) => String(v ?? '').slice(0, 120);
+  const j = x.j && typeof x.j === 'object' ? x.j : {};
+  const tr = (Array.isArray(j.tr) ? j.tr : []).filter((t) => typeof t === 'string' && t.startsWith('/')).slice(-6).map((t) => t.slice(0, 100)).join(' → ');
+  const at = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 16);
+  waitUntil(db.prepare('INSERT INTO journey (at, day, pid, page, src, kw, url, land, trail, steps, secs, dev, pos) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12, ?13)')
+    .bind(at, at.slice(0, 10), p(x.pid), p(x.page), p(x.src), p(x.kw), p(x.url), typeof j.l === 'string' ? j.l.slice(0, 120) : '', tr, Math.min(999, Number(j.n) || 0), Math.min(86400, Number(j.s) || 0), p(x.dev), p(x.pos)).run().catch(() => {}));
+}
+
 export async function onRequestPost({ request, env, waitUntil }) {
   const done = new Response(null, { status: 204, headers: { 'Cache-Control': 'no-store' } });
   if (!env.CLICKS) return done;
@@ -131,6 +142,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
     // 클릭 전에 사람 조작(마우스·터치·키)이 있었나(2026-10-24) — '조작 없이'는 프로그램이 누른 클릭(AI 에이전트·자동화)일 가능성. 키: 조작 여부|유입 경로
     rows.push(['outact', `${b.a === 1 ? '조작 후' : b.a === 0 ? '조작 없이' : '알 수 없음'}|${src}`]);
     rows.push(['out', `${path}|${id}`], ['outref', src], ['pos', String(b.w ?? '기타').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20) || '기타']);
+    journey(env.CLICKS, waitUntil, { pid: id, page: path, src, kw: s.kw, url: s.url, j: b.j, dev: device(ua), pos: b.w });
   } else if (b.t === 'aff') {
     // 쿠팡 외 제휴 링크 클릭(예: agoda-tokyo) — 쿠팡 클릭(out)과 따로 센다
     const k = String(b.k ?? '').replace(/[^\w-]/g, '').slice(0, 40);
