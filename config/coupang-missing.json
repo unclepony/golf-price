@@ -1,188 +1,173 @@
 {
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { since: 처음 못 찾은 날, days: 연속으로 못 찾은 날 수, last: 마지막으로 못 찾은 날 }. 5일이면 picks.json gone.",
-  "sklz-gold-flex-trainer": {
-    "since": "2026-10-24",
-    "days": 12,
-    "last": "2026-11-05"
-  },
   "honma-beres09-women-driver": {
     "since": "2026-10-30",
-    "days": 7,
-    "last": "2026-11-05"
+    "days": 8,
+    "last": "2026-11-06"
   },
   "golfbuddy-atom": {
     "since": "2026-10-31",
-    "days": 6,
-    "last": "2026-11-05"
-  },
-  "xxio13-women-driver": {
-    "since": "2026-10-31",
-    "days": 6,
-    "last": "2026-11-05"
+    "days": 7,
+    "last": "2026-11-06"
   },
   "callaway-elyte-td-driver": {
     "since": "2026-11-01",
-    "days": 5,
-    "last": "2026-11-05"
+    "days": 6,
+    "last": "2026-11-06"
   },
   "ping-blueprint-s-iron": {
     "since": "2026-11-01",
-    "days": 5,
-    "last": "2026-11-05"
+    "days": 6,
+    "last": "2026-11-06"
   },
   "ping-g430max-fairway": {
     "since": "2026-11-01",
-    "days": 5,
-    "last": "2026-11-05"
+    "days": 6,
+    "last": "2026-11-06"
   },
   "volvik-axia-iv": {
     "since": "2026-11-01",
-    "days": 5,
-    "last": "2026-11-05"
-  },
-  "callaway-elyte-td-fairway": {
-    "since": "2026-11-02",
-    "days": 4,
-    "last": "2026-11-05"
+    "days": 6,
+    "last": "2026-11-06"
   },
   "kasco-dolphin-dw125g-wedge": {
     "since": "2026-11-02",
-    "days": 4,
-    "last": "2026-11-05"
+    "days": 5,
+    "last": "2026-11-06"
   },
   "pgm-putting-mat-3m": {
     "since": "2026-11-02",
-    "days": 4,
-    "last": "2026-11-05"
-  },
-  "bridgestone-tour-b-xs": {
-    "since": "2026-11-03",
-    "days": 3,
-    "last": "2026-11-05"
+    "days": 5,
+    "last": "2026-11-06"
   },
   "ecco-street-720-goretex-women-shoes": {
     "since": "2026-11-03",
-    "days": 3,
-    "last": "2026-11-05"
+    "days": 4,
+    "last": "2026-11-06"
   },
   "ping-pioneer-cart": {
     "since": "2026-11-03",
-    "days": 3,
-    "last": "2026-11-05"
-  },
-  "taylormade-spider-tour-f-putter": {
-    "since": "2026-11-03",
-    "days": 3,
-    "last": "2026-11-05"
+    "days": 4,
+    "last": "2026-11-06"
   },
   "voicecaddie-sc300i": {
     "since": "2026-11-03",
-    "days": 3,
-    "last": "2026-11-05"
+    "days": 4,
+    "last": "2026-11-06"
   },
   "bridgestone-e12-contact": {
     "since": "2026-11-04",
-    "days": 2,
-    "last": "2026-11-05"
+    "days": 3,
+    "last": "2026-11-06"
   },
   "callaway-apex-pro24-iron": {
     "since": "2026-11-04",
-    "days": 2,
-    "last": "2026-11-05"
+    "days": 3,
+    "last": "2026-11-06"
   },
   "honma-beres-aizu-driver": {
     "since": "2026-11-04",
-    "days": 2,
-    "last": "2026-11-05"
+    "days": 3,
+    "last": "2026-11-06"
   },
   "majesty-prestigio13-fairway": {
     "since": "2026-11-04",
-    "days": 2,
-    "last": "2026-11-05"
-  },
-  "pxg-0311-blackops-driver": {
-    "since": "2026-11-04",
-    "days": 2,
-    "last": "2026-11-05"
-  },
-  "caddytalk-cube": {
-    "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
-  },
-  "callaway-winter-soft-fur-women-pair-glove": {
-    "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
+    "days": 3,
+    "last": "2026-11-06"
   },
   "cleveland-rtx6-wedge": {
     "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
-  },
-  "ecco-biom-h5-shoes": {
-    "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
-  },
-  "footjoy-raingrip-glove": {
-    "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
+    "days": 2,
+    "last": "2026-11-06"
   },
   "footjoy-wintersof-women-pair-glove": {
     "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
+    "days": 2,
+    "last": "2026-11-06"
   },
   "honma-d1": {
     "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
+    "days": 2,
+    "last": "2026-11-06"
   },
   "nike-air-max-90-g-women-shoes": {
     "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
-  },
-  "nike-infinity-g-nn-shoes": {
-    "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
+    "days": 2,
+    "last": "2026-11-06"
   },
   "ping-g440k-driver": {
     "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
+    "days": 2,
+    "last": "2026-11-06"
   },
   "ping-g440sft-driver": {
     "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
-  },
-  "prgr-superegg-women-fairway": {
-    "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
+    "days": 2,
+    "last": "2026-11-06"
   },
   "srixon-q-star-tour-divide": {
     "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
+    "days": 2,
+    "last": "2026-11-06"
   },
   "srixon-zxi5-iron": {
     "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
-  },
-  "taylormade-qi35max-rescue": {
-    "since": "2026-11-05",
-    "days": 1,
-    "last": "2026-11-05"
+    "days": 2,
+    "last": "2026-11-06"
   },
   "voicecaddie-t13-pro": {
     "since": "2026-11-05",
+    "days": 2,
+    "last": "2026-11-06"
+  },
+  "adidas-adipower-sl-women-shoes": {
+    "since": "2026-11-06",
     "days": 1,
-    "last": "2026-11-05"
+    "last": "2026-11-06"
+  },
+  "callaway-elyte-iron": {
+    "since": "2026-11-06",
+    "days": 1,
+    "last": "2026-11-06"
+  },
+  "callaway-erc-soft": {
+    "since": "2026-11-06",
+    "days": 1,
+    "last": "2026-11-06"
+  },
+  "callaway-supersoft": {
+    "since": "2026-11-06",
+    "days": 1,
+    "last": "2026-11-06"
+  },
+  "callaway-tour-authentic-glove": {
+    "since": "2026-11-06",
+    "days": 1,
+    "last": "2026-11-06"
+  },
+  "callaway-winter-glory-women-pair-glove": {
+    "since": "2026-11-06",
+    "days": 1,
+    "last": "2026-11-06"
+  },
+  "mizuno-stmax230-driver": {
+    "since": "2026-11-06",
+    "days": 1,
+    "last": "2026-11-06"
+  },
+  "taylormade-spider-tour-x-putter": {
+    "since": "2026-11-06",
+    "days": 1,
+    "last": "2026-11-06"
+  },
+  "voicecaddie-t-ultra": {
+    "since": "2026-11-06",
+    "days": 1,
+    "last": "2026-11-06"
+  },
+  "volvik-condor-x": {
+    "since": "2026-11-06",
+    "days": 1,
+    "last": "2026-11-06"
   }
 }

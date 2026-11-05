@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-06",
+  "by": {
+    "act": {
+      "캠페인: chatgpt.com|/p/titleist-players4-stand": 2
+    },
+    "asn": {
+      "AS3559 Korea Telecom": 2
+    },
+    "asncamp": {
+      "AS3559 Korea Telecom|chatgpt.com|모바일": 2
+    },
+    "cty": {
+      "KR": 2
+    },
+    "depth": {
+      "/p/titleist-players4-stand|25%": 2
+    },
+    "dev": {
+      "모바일": 2
+    },
+    "hour": {
+      "02": 2
+    },
+    "out": {
+      "/p/titleist-players4-stand|titleist-players4-stand": 1
+    },
+    "outact": {
+      "조작 후|캠페인: chatgpt.com": 1
+    },
+    "outcamp": {
+      "chatgpt.com|titleist-players4-stand": 1
+    },
+    "outref": {
+      "캠페인: chatgpt.com": 1
+    },
+    "pos": {
+      "상품 페이지": 1
+    },
+    "pv": {
+      "/p/titleist-players4-stand": 2
+    },
+    "ref": {
+      "캠페인: chatgpt.com": 2
+    },
+    "refland": {
+      "캠페인: chatgpt.com|/p/titleist-players4-stand": 2
+    },
+    "refurl": {
+      "chatgpt.com": 2
+    },
+    "seen": {
+      "/p/titleist-players4-stand": 2
+    },
+    "seenpos": {
+      "상품 페이지": 2
+    },
+    "seenref": {
+      "캠페인: chatgpt.com": 2
+    },
+    "stay": {
+      "/p/titleist-players4-stand|10~30초": 1,
+      "/p/titleist-players4-stand|10초 미만": 1
+    },
+    "visit": {
+      "/p/titleist-players4-stand": 2
+    },
+    "xpv": {
+      "/p/titleist-players4-stand": 2
+    }
+  }
+}

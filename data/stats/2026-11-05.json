@@ -1,4 +1,153 @@
 {
   "date": "2026-11-05",
-  "by": {}
+  "by": {
+    "act": {
+      "직접·북마크|/g/practice-gear-recommend": 1,
+      "직접·북마크|/p/cleveland-launcher-xlhalo-iron": 1,
+      "직접·북마크|/p/inbirdie-swing-plus": 1,
+      "직접·북마크|/p/taylormade-qi35-rescue": 1,
+      "캠페인: chatgpt.com|/p/blacktee-shot5": 1,
+      "캠페인: chatgpt.com|/p/caddytalk-cube": 1,
+      "캠페인: chatgpt.com|/p/cobra-optm-hybrid": 1
+    },
+    "asn": {
+      "AS17853 LGTELECOM": 1,
+      "AS3559 Korea Telecom": 1,
+      "AS4766 KT": 2,
+      "AS62654 MENLO SECURITY, INC.": 1,
+      "AS9318 ubase": 1,
+      "AS9644 SK Telecom": 7
+    },
+    "asncamp": {
+      "AS17853 LGTELECOM|chatgpt.com|모바일": 1,
+      "AS4766 KT|chatgpt.com|모바일": 2,
+      "AS9644 SK Telecom|youtube / comment / c-putter-recommend-beginner|PC": 2,
+      "AS9644 SK Telecom|youtube / video / t-vokey-wedge-guide-0|PC": 2,
+      "AS9644 SK Telecom|youtube / video / t-vokey-wedge-guide-1|PC": 2
+    },
+    "cty": {
+      "KR": 13
+    },
+    "depth": {
+      "/g/practice-gear-recommend|첫 화면": 1,
+      "/p/blacktee-shot5|25%": 1,
+      "/p/caddytalk-cube|25%": 1,
+      "/p/cleveland-launcher-xlhalo-iron|끝까지": 1,
+      "/p/cobra-optm-hybrid|25%": 1,
+      "/p/inbirdie-swing-plus|25%": 1,
+      "/p/taylormade-qi35-rescue|끝까지": 1
+    },
+    "dev": {
+      "PC": 8,
+      "모바일": 5
+    },
+    "hour": {
+      "12": 1,
+      "15": 2,
+      "17": 1,
+      "18": 2,
+      "20": 2,
+      "23": 1,
+      "07": 2,
+      "08": 2
+    },
+    "out": {
+      "/p/caddytalk-cube|caddytalk-cube": 1
+    },
+    "outact": {
+      "조작 후|캠페인: chatgpt.com": 1
+    },
+    "outcamp": {
+      "chatgpt.com|caddytalk-cube": 1
+    },
+    "outref": {
+      "캠페인: chatgpt.com": 1
+    },
+    "pos": {
+      "상품 페이지": 1
+    },
+    "pv": {
+      "/g/practice-gear-recommend": 1,
+      "/g/putter-recommend": 2,
+      "/g/wedge-recommend": 4,
+      "/p/blacktee-shot5": 1,
+      "/p/caddytalk-cube": 1,
+      "/p/cleveland-launcher-xlhalo-iron": 1,
+      "/p/cobra-optm-hybrid": 1,
+      "/p/inbirdie-swing-plus": 1,
+      "/p/taylormade-qi35-rescue": 1
+    },
+    "ref": {
+      "직접·북마크": 4,
+      "캠페인: chatgpt.com": 3,
+      "캠페인: youtube": 6
+    },
+    "refland": {
+      "직접·북마크|/g/practice-gear-recommend": 1,
+      "직접·북마크|/p/cleveland-launcher-xlhalo-iron": 1,
+      "직접·북마크|/p/inbirdie-swing-plus": 1,
+      "직접·북마크|/p/taylormade-qi35-rescue": 1,
+      "캠페인: chatgpt.com|/p/blacktee-shot5": 1,
+      "캠페인: chatgpt.com|/p/caddytalk-cube": 1,
+      "캠페인: chatgpt.com|/p/cobra-optm-hybrid": 1,
+      "캠페인: youtube|/g/putter-recommend": 2,
+      "캠페인: youtube|/g/wedge-recommend": 4
+    },
+    "refurl": {
+      "chatgpt.com": 3,
+      "youtube / comment / c-putter-recommend-beginner": 2,
+      "youtube / video / t-vokey-wedge-guide-0": 2,
+      "youtube / video / t-vokey-wedge-guide-1": 2
+    },
+    "seen": {
+      "/g/practice-gear-recommend": 1,
+      "/g/putter-recommend": 1,
+      "/g/wedge-recommend": 2,
+      "/p/blacktee-shot5": 1,
+      "/p/caddytalk-cube": 1,
+      "/p/cleveland-launcher-xlhalo-iron": 1,
+      "/p/cobra-optm-hybrid": 1,
+      "/p/inbirdie-swing-plus": 1,
+      "/p/taylormade-qi35-rescue": 1
+    },
+    "seenpos": {
+      "비교표": 4,
+      "상품 페이지": 6
+    },
+    "seenref": {
+      "직접·북마크": 4,
+      "캠페인: chatgpt.com": 3,
+      "캠페인: youtube": 3
+    },
+    "skip": {
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3
+    },
+    "stay": {
+      "/g/practice-gear-recommend|30초~1분": 1,
+      "/p/blacktee-shot5|10초 미만": 1,
+      "/p/caddytalk-cube|10초 미만": 1,
+      "/p/cleveland-launcher-xlhalo-iron|10초 미만": 1,
+      "/p/cobra-optm-hybrid|10~30초": 1,
+      "/p/inbirdie-swing-plus|10초 미만": 1,
+      "/p/taylormade-qi35-rescue|10초 미만": 1
+    },
+    "visit": {
+      "/g/practice-gear-recommend": 1,
+      "/g/putter-recommend": 2,
+      "/g/wedge-recommend": 4,
+      "/p/blacktee-shot5": 1,
+      "/p/caddytalk-cube": 1,
+      "/p/cleveland-launcher-xlhalo-iron": 1,
+      "/p/cobra-optm-hybrid": 1,
+      "/p/inbirdie-swing-plus": 1,
+      "/p/taylormade-qi35-rescue": 1
+    },
+    "xpv": {
+      "/g/putter-recommend": 2,
+      "/g/wedge-recommend": 4,
+      "/p/blacktee-shot5": 1,
+      "/p/caddytalk-cube": 1,
+      "/p/cobra-optm-hybrid": 1
+    }
+  }
 }
