@@ -123,8 +123,8 @@
       "d": "2026-11-03"
     },
     "/p/callaway-opus-sp-wedge": {
-      "h": "ab7439f93c8de842",
-      "d": "2026-11-01"
+      "h": "4f3b665596c8a727",
+      "d": "2026-11-05"
     },
     "/p/taylormade-mg4-wedge": {
       "h": "0e41870be911fbe9",
@@ -807,20 +807,20 @@
       "d": "2026-11-01"
     },
     "/p/callaway-jaws-forged-wedge": {
-      "h": "10c6b412dd9b9e4b",
-      "d": "2026-11-03"
+      "h": "d2b6a7654ebf4041",
+      "d": "2026-11-05"
     },
     "/p/cleveland-rtx6-wedge": {
-      "h": "edc663773731a87a",
-      "d": "2026-11-03"
+      "h": "67a4a3cdebeaa25a",
+      "d": "2026-11-05"
     },
     "/p/honma-tww5-wedge": {
-      "h": "8d9044a5cb4b362d",
-      "d": "2026-11-02"
+      "h": "72ddab52eaca3fae",
+      "d": "2026-11-05"
     },
     "/p/ping-glide4-wedge": {
-      "h": "271319933ff23a5c",
-      "d": "2026-11-01"
+      "h": "3a7de2dcb265f43d",
+      "d": "2026-11-05"
     },
     "/p/fourteen-rm4-wedge": {
       "h": "8e41369ba17d840b",
@@ -1635,12 +1635,12 @@
       "d": "2026-11-01"
     },
     "/p/fourteen-rm-alpha-wedge": {
-      "h": "88f8f4a1882c279d",
-      "d": "2026-11-01"
+      "h": "0d82ac7d62c36407",
+      "d": "2026-11-05"
     },
     "/p/cobra-king-wedge": {
-      "h": "da1eeac26e4acaf0",
-      "d": "2026-11-01"
+      "h": "a1473f005f8ffeb0",
+      "d": "2026-11-05"
     },
     "/p/callaway-jaws-raw-wedge": {
       "h": "c4babbc3f07b2c76",
@@ -2071,8 +2071,8 @@
       "d": "2026-11-01"
     },
     "/p/callaway-opus-wedge": {
-      "h": "ab560e9eea4a57a3",
-      "d": "2026-11-02"
+      "h": "a760be58003337fe",
+      "d": "2026-11-05"
     },
     "/p/taylormade-mg5-wedge": {
       "h": "cdb558af008dbe39",
@@ -2363,28 +2363,28 @@
       "d": "2026-11-04"
     },
     "/p/cleveland-rtx-fullface2-wedge": {
-      "h": "9f187fc652184744",
-      "d": "2026-11-01"
+      "h": "7a680993fa9c02cc",
+      "d": "2026-11-05"
     },
     "/p/cleveland-smartsole-fullface-wedge": {
       "h": "b3594ca9dfc3a718",
       "d": "2026-11-01"
     },
     "/p/pxg-sugar-daddy3-wedge": {
-      "h": "fe78c35b71548d9f",
+      "h": "778d724ae11e973e",
       "d": "2026-11-05"
     },
     "/p/cobra-snakebite-wedge": {
-      "h": "95a823c7ff5843d7",
-      "d": "2026-11-01"
+      "h": "10e06af4966b8d14",
+      "d": "2026-11-05"
     },
     "/p/kasco-dolphin-dw125g-wedge": {
       "h": "1fc63a60c06738b0",
       "d": "2026-11-01"
     },
     "/p/honma-beres-w-wedge": {
-      "h": "d1d5128e6fd6cbcb",
-      "d": "2026-11-01"
+      "h": "17647ebb16d4bce8",
+      "d": "2026-11-05"
     },
     "/p/taylormade-spider-tour-f-putter": {
       "h": "562ae1e5ff85e9aa",
@@ -2718,6 +2718,14 @@
       "h": "7c41a08592d83684",
       "d": "2026-11-05"
     },
+    "/p/bridgestone-biting-spin-wedge": {
+      "h": "a22dcdf24c9c5216",
+      "d": "2026-11-05"
+    },
+    "/p/cleveland-rtx-zipcore-wedge": {
+      "h": "2bbd27e6736a7008",
+      "d": "2026-11-05"
+    },
     "/c/driver": {
       "h": "865c56b6d328597a",
       "d": "2026-11-05"
@@ -2735,7 +2743,7 @@
       "d": "2026-11-05"
     },
     "/c/wedge": {
-      "h": "f9a05a027e0a1037",
+      "h": "8caa7e079c6c7f34",
       "d": "2026-11-05"
     },
     "/c/putter": {
@@ -2799,7 +2807,7 @@
       "d": "2026-11-04"
     },
     "/g/wedge-recommend": {
-      "h": "6517eef08583a8eb",
+      "h": "5de75843a4a1a41d",
       "d": "2026-11-05"
     },
     "/g/golf-ball-compare": {
@@ -2955,11 +2963,11 @@
       "d": "2026-11-01"
     },
     "/g/wedge-recommend-intermediate": {
-      "h": "2ef0ecdfc1ada414",
-      "d": "2026-11-02"
+      "h": "11473fb7ffee6809",
+      "d": "2026-11-05"
     },
     "/g/wedge-recommend-advanced": {
-      "h": "bec2aeb2ad6f47ab",
+      "h": "2c249a61439adc98",
       "d": "2026-11-05"
     },
     "/g/wedge-recommend-pro": {
@@ -3075,7 +3083,7 @@
       "d": "2026-10-24"
     },
     "/": {
-      "h": "24f799c45ef8af1f",
+      "h": "64b55bbf2e2fe7bd",
       "d": "2026-11-05"
     },
     "/about": {
@@ -3283,8 +3291,8 @@
       "d": "2026-10-23"
     },
     "/vs/cleveland-rtx6-wedge-vs-callaway-opus-sp-wedge": {
-      "h": "87f2442280c02417",
-      "d": "2026-10-25"
+      "h": "0ec8c0dc7874edc2",
+      "d": "2026-11-05"
     },
     "/vs/cleveland-rtx6-wedge-vs-cleveland-smartsole-chipper": {
       "h": "d9635e89f1973f6a",
@@ -3531,7 +3539,7 @@
       "d": "2026-10-24"
     },
     "/vs/ping-s159-wedge-vs-ping-glide4-wedge": {
-      "h": "d3deb2c50b257834",
+      "h": "7c606b69cb318ad9",
       "d": "2026-11-05"
     },
     "/vs/ping-s259-wedge-vs-cleveland-smartsole-chipper": {
@@ -3812,11 +3820,6 @@
       "d": "2026-11-05"
     },
     {
-      "url": "/",
-      "kind": "updated",
-      "d": "2026-11-05"
-    },
-    {
       "url": "/qa/womens-iron-beginner",
       "kind": "updated",
       "d": "2026-11-05"
@@ -3903,6 +3906,111 @@
     },
     {
       "url": "/qa",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/p/callaway-opus-sp-wedge",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/p/callaway-jaws-forged-wedge",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/p/cleveland-rtx6-wedge",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/p/honma-tww5-wedge",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/p/ping-glide4-wedge",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/p/fourteen-rm-alpha-wedge",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/p/cobra-king-wedge",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/p/callaway-opus-wedge",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/p/cleveland-rtx-fullface2-wedge",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/p/pxg-sugar-daddy3-wedge",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/p/cobra-snakebite-wedge",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/p/honma-beres-w-wedge",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/p/bridgestone-biting-spin-wedge",
+      "kind": "new",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/p/cleveland-rtx-zipcore-wedge",
+      "kind": "new",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/c/wedge",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/g/wedge-recommend",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/g/wedge-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/g/wedge-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/vs/cleveland-rtx6-wedge-vs-callaway-opus-sp-wedge",
+      "kind": "updated",
+      "d": "2026-11-05"
+    },
+    {
+      "url": "/vs/ping-s159-wedge-vs-ping-glide4-wedge",
       "kind": "updated",
       "d": "2026-11-05"
     }
