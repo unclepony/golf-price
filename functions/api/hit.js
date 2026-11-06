@@ -121,6 +121,8 @@ export async function onRequestPost({ request, env, waitUntil }) {
   if (b.t === 'pv') {
     rows.push(['pv', path]);
     if (ext) rows.push(['xpv', path]); // 외부 유입 페이지뷰
+    // 상품 페이지 가격 표시 상태별 페이지뷰(2026-11-07) — 키: 상태|페이지. out(페이지|상품)과 견주면 '가격 보임 vs 숨김' 쿠팡 클릭률이 나온다
+    if (path.startsWith('/p/') && ['가격 보임', '가격 숨김', '링크 없음'].includes(b.ps)) rows.push(['pvprice', `${b.ps}|${path}`]);
     if (b.v) {
       rows.push(['visit', path], ['ref', src], ['refland', `${src}|${path}`], ['dev', device(ua)], ['cty', String(request.cf?.country ?? '??').slice(0, 4)]);
       // 통과한 방문의 네트워크(ASN)·시간대 — 유튜브 링크마다 하루 2번씩 들어오는 방문이 사람인지 검사기인지 망으로 가린다(2026-10-23 관제탑, youtubeking 과 같은 형식, 개인 식별 정보 아님)
