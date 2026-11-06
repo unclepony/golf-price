@@ -142,16 +142,18 @@
  {
   "category": "putter",
   "id": "odyssey-aidual-jailbird-mini-putter",
-  "name": "오디세이 Ai-DUAL 제일버드 미니 퍼터 (2026)",
+  "name": "오디세이 Ai-DUAL 제일버드 미니 1/2볼 퍼터 (2026)",
   "query": "오딧세이 Ai 듀얼 제일버드 미니 퍼터",
   "must": [
    "퍼터",
    "제일버드",
-   "미니"
+   "미니",
+   "듀얼"
   ],
   "mustAny": [
-   "듀얼",
-   "dual"
+   "1/2",
+   "½",
+   "하프볼"
   ],
   "exclude": [
    "s2s",
@@ -179,7 +181,7 @@
   "points": [
    "작은 말렛 + 더블벤드(페이스 밸런스)",
    "두 겹 Ai-DUAL 인서트",
-   "1/2볼 정렬 표시 버전 선택 가능"
+   "1/2볼 정렬 표시"
   ],
   "guidePick": {
    "role": "작은 말렛 신형",
@@ -349,7 +351,7 @@
  {
   "category": "putter",
   "id": "pxg-battle-ready2-bat-attack-putter",
-  "name": "PXG 배틀레디 II 뱃 어택 퍼터",
+  "name": "PXG 배틀레디 II 뱃 어택 퍼터(다크니스)",
   "query": "PXG 배틀레디2 뱃어택 퍼터",
   "must": [
    "퍼터"
