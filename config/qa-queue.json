@@ -145,6 +145,13 @@
       "slug": "golf-swing-analyzer-beginner",
       "file": "content/qa/014-golf-swing-analyzer-beginner.md",
       "date": "2026-11-06"
+    },
+    {
+      "no": 16,
+      "kw": "골프 장갑 추천",
+      "slug": "golf-glove-beginner",
+      "file": "content/qa/016-golf-glove-beginner.md",
+      "date": "2026-11-07"
     }
   ]
 }
