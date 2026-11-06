@@ -2,71 +2,310 @@
   "date": "2026-11-06",
   "by": {
     "act": {
-      "캠페인: chatgpt.com|/p/titleist-players4-stand": 2
+      "직접·북마크|/c/iron": 1,
+      "직접·북마크|/p/callaway-xforged-starplus-iron": 1,
+      "캠페인: chatgpt.com|/c/launch": 2,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 1,
+      "캠페인: chatgpt.com|/p/footjoy-weathersof-glove": 1,
+      "캠페인: chatgpt.com|/p/garmin-approach-r10": 1,
+      "캠페인: chatgpt.com|/p/phigolf-2": 1,
+      "캠페인: chatgpt.com|/p/sunmountain-h2no-stand": 1,
+      "캠페인: chatgpt.com|/p/titleist-hybrid14-stand": 1,
+      "캠페인: chatgpt.com|/p/titleist-players4-stand": 2,
+      "캠페인: chatgpt.com|/p/voicecaddie-sc300i": 1,
+      "캠페인: chatgpt.com|/p/voicecaddie-sc4-pro": 1
     },
     "asn": {
-      "AS3559 Korea Telecom": 2
+      "AS3559 Korea Telecom": 3,
+      "AS4766 Korea Telecom": 2,
+      "AS7672 FITWeb(Hokuden Information Sys": 1,
+      "AS9318 SK Broadband Co Ltd": 1,
+      "AS9605 NTT DOCOMO, Inc.": 1,
+      "AS9644 SK Telecom": 1
     },
     "asncamp": {
-      "AS3559 Korea Telecom|chatgpt.com|모바일": 2
+      "AS3559 Korea Telecom|chatgpt.com|모바일": 3,
+      "AS4766 Korea Telecom|chatgpt.com|PC": 2,
+      "AS7672 FITWeb(Hokuden Information Sys|youtube / video / c-utility-recommend-mid|PC": 1,
+      "AS9318 SK Broadband Co Ltd|chatgpt.com|PC": 1,
+      "AS9605 NTT DOCOMO, Inc.|youtube / video / c-utility-recommend-mid|PC": 1
     },
     "cty": {
-      "KR": 2
+      "JP": 2,
+      "KR": 7
     },
     "depth": {
-      "/p/titleist-players4-stand|25%": 2
+      "/c/iron|첫 화면": 2,
+      "/c/launch|25%": 1,
+      "/c/launch|첫 화면": 1,
+      "/g/golf-bag-recommend|첫 화면": 1,
+      "/p/callaway-xforged-starplus-iron|첫 화면": 1,
+      "/p/footjoy-weathersof-glove|25%": 1,
+      "/p/garmin-approach-r10|끝까지": 1,
+      "/p/phigolf-2|끝까지": 1,
+      "/p/sunmountain-h2no-stand|25%": 1,
+      "/p/titleist-hybrid14-stand|끝까지": 1,
+      "/p/titleist-players4-stand|25%": 2,
+      "/p/voicecaddie-sc300i|25%": 1,
+      "/p/voicecaddie-sc4-pro|25%": 1
     },
     "dev": {
-      "모바일": 2
+      "PC": 5,
+      "모바일": 4
     },
     "hour": {
+      "10": 2,
+      "18": 2,
+      "20": 1,
+      "23": 2,
       "02": 2
     },
+    "nav": {
+      "/c/iron|/p/callaway-xforged-starplus-iron": 1,
+      "/c/launch|/p/garmin-approach-r10": 1,
+      "/c/launch|/p/phigolf-2": 1,
+      "/c/launch|/p/voicecaddie-sc300i": 1,
+      "/c/launch|/p/voicecaddie-sc4-pro": 1,
+      "/g/golf-bag-recommend|/p/sunmountain-h2no-stand": 1,
+      "/g/golf-bag-recommend|/p/titleist-hybrid14-stand": 1
+    },
     "out": {
-      "/p/titleist-players4-stand|titleist-players4-stand": 1
+      "/p/callaway-xforged-starplus-iron|callaway-xforged-starplus-iron": 1,
+      "/p/footjoy-weathersof-glove|footjoy-weathersof-glove": 3,
+      "/p/garmin-approach-r10|garmin-approach-r10": 1,
+      "/p/titleist-players4-stand|titleist-players4-stand": 1,
+      "/p/voicecaddie-sc300i|voicecaddie-sc300i": 1,
+      "/p/voicecaddie-sc4-pro|voicecaddie-sc4-pro": 1
     },
     "outact": {
-      "조작 후|캠페인: chatgpt.com": 1
+      "조작 후|직접·북마크": 1,
+      "조작 후|캠페인: chatgpt.com": 7
     },
     "outcamp": {
-      "chatgpt.com|titleist-players4-stand": 1
+      "chatgpt.com|footjoy-weathersof-glove": 3,
+      "chatgpt.com|garmin-approach-r10": 1,
+      "chatgpt.com|titleist-players4-stand": 1,
+      "chatgpt.com|voicecaddie-sc300i": 1,
+      "chatgpt.com|voicecaddie-sc4-pro": 1
     },
     "outref": {
-      "캠페인: chatgpt.com": 1
+      "직접·북마크": 1,
+      "캠페인: chatgpt.com": 7
     },
     "pos": {
-      "상품 페이지": 1
+      "상세 끝 구매 상자": 1,
+      "상품 페이지": 7
     },
     "pv": {
-      "/p/titleist-players4-stand": 2
+      "/c/iron": 2,
+      "/c/launch": 2,
+      "/g/golf-bag-recommend": 1,
+      "/g/utility-recommend": 2,
+      "/p/callaway-xforged-starplus-iron": 1,
+      "/p/footjoy-weathersof-glove": 1,
+      "/p/garmin-approach-r10": 1,
+      "/p/phigolf-2": 1,
+      "/p/sunmountain-h2no-stand": 1,
+      "/p/titleist-hybrid14-stand": 1,
+      "/p/titleist-players4-stand": 2,
+      "/p/voicecaddie-sc300i": 1,
+      "/p/voicecaddie-sc4-pro": 1
     },
     "ref": {
-      "캠페인: chatgpt.com": 2
+      "직접·북마크": 1,
+      "캠페인: chatgpt.com": 6,
+      "캠페인: youtube": 2
     },
     "refland": {
-      "캠페인: chatgpt.com|/p/titleist-players4-stand": 2
+      "직접·북마크|/c/iron": 1,
+      "캠페인: chatgpt.com|/c/launch": 2,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 1,
+      "캠페인: chatgpt.com|/p/footjoy-weathersof-glove": 1,
+      "캠페인: chatgpt.com|/p/titleist-players4-stand": 2,
+      "캠페인: youtube|/g/utility-recommend": 2
     },
     "refurl": {
-      "chatgpt.com": 2
+      "chatgpt.com": 6,
+      "youtube / video / c-utility-recommend-mid": 2
     },
     "seen": {
-      "/p/titleist-players4-stand": 2
+      "/g/golf-bag-recommend": 1,
+      "/g/utility-recommend": 1,
+      "/p/callaway-xforged-starplus-iron": 1,
+      "/p/footjoy-weathersof-glove": 1,
+      "/p/garmin-approach-r10": 1,
+      "/p/phigolf-2": 1,
+      "/p/sunmountain-h2no-stand": 1,
+      "/p/titleist-hybrid14-stand": 1,
+      "/p/titleist-players4-stand": 2,
+      "/p/voicecaddie-sc300i": 1,
+      "/p/voicecaddie-sc4-pro": 1
     },
     "seenpos": {
-      "상품 페이지": 2
+      "비교표": 1,
+      "상품 페이지": 10,
+      "한 줄 결론": 1
     },
     "seenref": {
-      "캠페인: chatgpt.com": 2
+      "직접·북마크": 1,
+      "캠페인: chatgpt.com": 10,
+      "캠페인: youtube": 1
+    },
+    "skip": {
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3,
+      "데이터센터 AS32934 Meta Platforms Ireland Limited": 2
     },
     "stay": {
+      "/c/iron|10~30초": 1,
+      "/c/iron|10초 미만": 1,
+      "/c/launch|10~30초": 1,
+      "/c/launch|10초 미만": 1,
+      "/g/golf-bag-recommend|10~30초": 1,
+      "/p/callaway-xforged-starplus-iron|10~30초": 1,
+      "/p/footjoy-weathersof-glove|10~30초": 1,
+      "/p/garmin-approach-r10|10초 미만": 1,
+      "/p/phigolf-2|10~30초": 1,
+      "/p/sunmountain-h2no-stand|10초 미만": 1,
+      "/p/titleist-hybrid14-stand|30초~1분": 1,
       "/p/titleist-players4-stand|10~30초": 1,
-      "/p/titleist-players4-stand|10초 미만": 1
+      "/p/titleist-players4-stand|10초 미만": 1,
+      "/p/voicecaddie-sc300i|10초 미만": 1,
+      "/p/voicecaddie-sc4-pro|10초 미만": 1
     },
     "visit": {
+      "/c/iron": 1,
+      "/c/launch": 2,
+      "/g/golf-bag-recommend": 1,
+      "/g/utility-recommend": 2,
+      "/p/footjoy-weathersof-glove": 1,
       "/p/titleist-players4-stand": 2
     },
     "xpv": {
-      "/p/titleist-players4-stand": 2
+      "/c/launch": 2,
+      "/g/golf-bag-recommend": 1,
+      "/g/utility-recommend": 2,
+      "/p/footjoy-weathersof-glove": 1,
+      "/p/garmin-approach-r10": 1,
+      "/p/phigolf-2": 1,
+      "/p/sunmountain-h2no-stand": 1,
+      "/p/titleist-hybrid14-stand": 1,
+      "/p/titleist-players4-stand": 2,
+      "/p/voicecaddie-sc300i": 1,
+      "/p/voicecaddie-sc4-pro": 1
     }
-  }
+  },
+  "journey": [
+    {
+      "hour": "02",
+      "pid": "titleist-players4-stand",
+      "page": "/p/titleist-players4-stand",
+      "src": "캠페인: chatgpt.com",
+      "kw": "",
+      "url": "chatgpt.com",
+      "land": "/p/titleist-players4-stand",
+      "trail": "/p/titleist-players4-stand",
+      "steps": 1,
+      "secs": 3,
+      "dev": "모바일",
+      "pos": "상품 페이지"
+    },
+    {
+      "hour": "10",
+      "pid": "callaway-xforged-starplus-iron",
+      "page": "/p/callaway-xforged-starplus-iron",
+      "src": "직접·북마크",
+      "kw": "",
+      "url": "",
+      "land": "/c/iron",
+      "trail": "/c/iron → /p/callaway-xforged-starplus-iron",
+      "steps": 2,
+      "secs": 42,
+      "dev": "모바일",
+      "pos": "상품 페이지"
+    },
+    {
+      "hour": "20",
+      "pid": "footjoy-weathersof-glove",
+      "page": "/p/footjoy-weathersof-glove",
+      "src": "캠페인: chatgpt.com",
+      "kw": "",
+      "url": "chatgpt.com",
+      "land": "/p/footjoy-weathersof-glove",
+      "trail": "/p/footjoy-weathersof-glove",
+      "steps": 1,
+      "secs": 12,
+      "dev": "모바일",
+      "pos": "상품 페이지"
+    },
+    {
+      "hour": "21",
+      "pid": "footjoy-weathersof-glove",
+      "page": "/p/footjoy-weathersof-glove",
+      "src": "캠페인: chatgpt.com",
+      "kw": "",
+      "url": "chatgpt.com",
+      "land": "/p/footjoy-weathersof-glove",
+      "trail": "/p/footjoy-weathersof-glove",
+      "steps": 1,
+      "secs": 201,
+      "dev": "모바일",
+      "pos": "상품 페이지"
+    },
+    {
+      "hour": "21",
+      "pid": "footjoy-weathersof-glove",
+      "page": "/p/footjoy-weathersof-glove",
+      "src": "캠페인: chatgpt.com",
+      "kw": "",
+      "url": "chatgpt.com",
+      "land": "/p/footjoy-weathersof-glove",
+      "trail": "/p/footjoy-weathersof-glove",
+      "steps": 1,
+      "secs": 228,
+      "dev": "모바일",
+      "pos": "상품 페이지"
+    },
+    {
+      "hour": "23",
+      "pid": "garmin-approach-r10",
+      "page": "/p/garmin-approach-r10",
+      "src": "캠페인: chatgpt.com",
+      "kw": "",
+      "url": "chatgpt.com",
+      "land": "/c/launch",
+      "trail": "/c/launch → /p/phigolf-2 → /p/garmin-approach-r10",
+      "steps": 3,
+      "secs": 46,
+      "dev": "PC",
+      "pos": "상세 끝 구매 상자"
+    },
+    {
+      "hour": "23",
+      "pid": "voicecaddie-sc300i",
+      "page": "/p/voicecaddie-sc300i",
+      "src": "캠페인: chatgpt.com",
+      "kw": "",
+      "url": "chatgpt.com",
+      "land": "/c/launch",
+      "trail": "/c/launch → /p/voicecaddie-sc4-pro → /p/voicecaddie-sc300i",
+      "steps": 3,
+      "secs": 44,
+      "dev": "PC",
+      "pos": "상품 페이지"
+    },
+    {
+      "hour": "23",
+      "pid": "voicecaddie-sc4-pro",
+      "page": "/p/voicecaddie-sc4-pro",
+      "src": "캠페인: chatgpt.com",
+      "kw": "",
+      "url": "chatgpt.com",
+      "land": "/c/launch",
+      "trail": "/c/launch → /p/voicecaddie-sc4-pro",
+      "steps": 2,
+      "secs": 32,
+      "dev": "PC",
+      "pos": "상품 페이지"
+    }
+  ]
 }

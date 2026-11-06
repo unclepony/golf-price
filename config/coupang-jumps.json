@@ -1,27 +1,15 @@
 {
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { price: 1.5배 넘게 튄 API 값(반영 보류), held: 그때 유지한 직전 값, first: 처음 본 날, last: 마지막으로 본 날 }. 다음 날 이후 같은 값이 다시 나오면 반영하고 지운다.",
   "taylormade-durable-grip-glove": {
-    "price": 15000,
+    "price": 14400,
     "held": 22850,
-    "first": "2026-11-06",
-    "last": "2026-11-06"
+    "first": "2026-11-07",
+    "last": "2026-11-07"
   },
-  "cobra-ds-adapt-maxk-driver": {
-    "price": 816000,
-    "held": 473000,
-    "first": "2026-11-06",
-    "last": "2026-11-06"
-  },
-  "monkeygrip-powerpad-glove": {
-    "price": 22000,
-    "held": 38000,
-    "first": "2026-11-06",
-    "last": "2026-11-06"
-  },
-  "taylormade-tp5-pix": {
-    "price": 59400,
-    "held": 117300,
-    "first": "2026-11-06",
-    "last": "2026-11-06"
+  "callaway-jaws-forged-wedge": {
+    "price": 158000,
+    "held": 98000,
+    "first": "2026-11-07",
+    "last": "2026-11-07"
   }
 }
