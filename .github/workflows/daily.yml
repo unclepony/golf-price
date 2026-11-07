@@ -97,8 +97,10 @@ jobs:
           git commit --allow-empty -m "매일 갱신 $(TZ=Asia/Seoul date +%F)"
           # 다른 작업이 그사이 올린 커밋과 빌드가 관리하는 config/content-state.json 만 충돌하면
           # 최신 main 쪽을 받고 다시 빌드해 그 결과로 잇는다(10-27 새벽 이 충돌로 통계·가격이 안 올라감). 다른 파일 충돌은 멈춘다.
+          # 11-05~11-08 '커밋 안 된 변경이 있어 rebase 못 함'으로 3일 연속 실패 → 남은 변경을 기록에 보이고, 잠시 치워 두었다가(autostash) 되돌린다
+          git status --short | grep -v '^??' || true
           for i in 1 2 3; do
-            if ! git pull --rebase; then
+            if ! git pull --rebase --autostash; then
               if [ "$(git diff --name-only --diff-filter=U)" = "config/content-state.json" ]; then
                 git checkout --ours config/content-state.json
                 node src/build.mjs > /dev/null
@@ -129,5 +131,6 @@ jobs:
           node src/indexnow.mjs
           git add config/content-state.json
           git diff --cached --quiet || git commit -m "IndexNow 전송 $(TZ=Asia/Seoul date +%F) [skip ci]"
-          git pull --rebase
+          git status --short | grep -v '^??' || true
+          git pull --rebase --autostash
           git push
