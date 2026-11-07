@@ -357,6 +357,29 @@ const imageOf = (id, hist) => hist?.latest?.image ?? picks[id]?.image;
 const PRICE_DATE = SITE.priceCheckedAt ?? '';
 const priceDateLabel = PRICE_DATE ? `${+PRICE_DATE.slice(5, 7)}.${+PRICE_DATE.slice(8, 10)}` : '';
 const pickPrice = (id) => picks[id]?.price ?? null;
+// 순서용 기준 가격(2026-11-08 gp-1108-1): 동점 순위 정리·결론의 예산 추천·'가장 싸게 시작하려면' 모델 고르기에만 쓴다.
+// 매일 쿠팡 갱신이 판매가를 바꾸면 동점 모델 순서가 뒤집혀 '같은 단계 1위'·비교 상대·결론 표가 바뀌고 /p 100쪽 넘게 날짜가 바뀌었다
+// (11/06→11/07 시험: 지문 바뀐 쪽 131. ±5% 기준은 131 그대로 — 순서를 뒤집는 변동이 대개 10~30%, ±30% 는 43).
+// 판매가가 ±30% 넘게 바뀌거나 월요일(주 1회 정기, rebaseline --weekly 와 같은 날)에만 오늘 값으로 다시 정한다.
+// 보이는 판매가·확인일·제목 가격대·가격 단계는 그대로 현재 판매가(pickPrice·freshPrice)다.
+// config/price-basis.json 은 build.mjs 가 관리하고 매일 갱신 커밋(git add config)이 이어받는다. 되돌리기: orderPrice 를 pickPrice 로 바꾸면 된다
+const BASIS_FILE = join(ROOT, 'config', 'price-basis.json');
+const BASIS_BAND = 0.3;
+const BASIS_WEEKLY = new Date(Date.parse(todayKst())).getUTCDay() === 1;
+const basisPrev = readJson(BASIS_FILE, {})?.items ?? {};
+const basis = {};
+let basisMoved = 0;
+for (const [id, v] of Object.entries(picks)) {
+  const cur = v?.price;
+  if (!cur) continue;
+  const b = basisPrev[id];
+  if (b?.won && (b.won === cur || (!BASIS_WEEKLY && Math.abs(cur - b.won) / b.won <= BASIS_BAND))) basis[id] = b;
+  else {
+    basis[id] = { won: cur, d: todayKst() };
+    if (b?.won) basisMoved++;
+  }
+}
+const orderPrice = (id) => basis[id]?.won ?? pickPrice(id);
 const BUILD_DAY = todayKst();
 const PRICE_STALE_DAYS = NOTICES.priceStaleDays ?? 14; // 확인한 지 이보다 오래된 가격은 숨기고 '현재 가격 보기' 버튼만 보여 준다
 const dayLabel = (d) => `${+d.slice(5, 7)}월 ${+d.slice(8, 10)}일`;
@@ -619,7 +642,7 @@ const warned = (g, pk) => issuesOf(g, pk).length > 0;
 const rankedPicks = (g) =>
   g.picks
     .filter((pk) => byId[pk.id] && sellable(pk.id))
-    .sort((x, y) => warned(g, x) - warned(g, y) || totalScore(y) - totalScore(x) || (y.scores?.[tieIdx(g)] ?? 0) - (x.scores?.[tieIdx(g)] ?? 0) || (pickPrice(x.id) ?? 9e9) - (pickPrice(y.id) ?? 9e9));
+    .sort((x, y) => warned(g, x) - warned(g, y) || totalScore(y) - totalScore(x) || (y.scores?.[tieIdx(g)] ?? 0) - (x.scores?.[tieIdx(g)] ?? 0) || (orderPrice(x.id) ?? 9e9) - (orderPrice(y.id) ?? 9e9));
 // 동점 기준 항목: 쉬움 계열 항목(쉬움·초보 적합·관용성·정렬·가벼움)이 있으면 그것, 없으면 첫 항목
 function tieIdx(g) {
   const c = g.criteria ?? [];
@@ -825,7 +848,7 @@ function answerBlock(g, ps, skill) {
   const ei = easyIdx(g);
   const easy = ei >= 0 ? [...rows].sort((a, b) => (b.scores?.[ei] ?? 0) - (a.scores?.[ei] ?? 0) || totalScore(b) - totalScore(a))[0] : null;
   const priced = rows.map((pk) => ({ pk, sp: freshPrice(pk.id) })).filter((x) => x.sp);
-  const cheap = [...priced].sort((a, b) => a.sp.won - b.sp.won)[0];
+  const cheap = [...priced].sort((a, b) => (orderPrice(a.pk.id) ?? a.sp.won) - (orderPrice(b.pk.id) ?? b.sp.won) || a.sp.won - b.sp.won)[0]; // 고르기는 기준 가격(gp-1108-1), 보이는 금액은 판매가
   const ds = priced.map((x) => x.sp.d).sort();
   const dRange = ds.length ? (ds[0] === ds.at(-1) ? dayLabel(ds[0]) : `${dayLabel(ds[0])}~${dayLabel(ds.at(-1))}`) : '';
   const ws = priced.map((x) => x.sp.won);
@@ -888,7 +911,7 @@ function conclusionBox(g, ps, skill) {
   const pool = ok.length >= 2 ? ok : ps;
   const sc = pool.map(totalScore).sort((a, b) => b - a);
   const median = sc[Math.floor((sc.length - 1) / 2)];
-  const budget = pick(man.budget) ?? [...pool].filter((pk) => totalScore(pk) >= median && pickPrice(pk.id)).sort((a, b) => pickPrice(a.id) - pickPrice(b.id))[0];
+  const budget = pick(man.budget) ?? [...pool].filter((pk) => totalScore(pk) >= median && pickPrice(pk.id)).sort((a, b) => orderPrice(a.id) - orderPrice(b.id))[0];
   const hard = skill === '고급' || skill === '프로';
   const ei = easyIdx(g);
   const order = hard || ei < 0 ? pool : [...pool].sort((a, b) => (b.scores?.[ei] ?? 0) - (a.scores?.[ei] ?? 0) || totalScore(b) - totalScore(a));
@@ -2103,6 +2126,8 @@ if (!DEMO) {
   const seen = new Set();
   state.pending = state.pending.reverse().filter((x) => !seen.has(x.url) && seen.add(x.url)).reverse();
   writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n');
+  writeFileSync(BASIS_FILE, JSON.stringify({ _설명: 'build.mjs 가 관리한다(gp-1108-1). 상품별 순서용 기준 가격(won)과 정한 날(d). 동점 순위·예산 추천·가장 싼 모델 고르기에만 쓴다. 판매가가 ±30% 넘게 바뀌거나 월요일에만 갱신. 직접 고치지 않는다.', band: BASIS_BAND, items: Object.fromEntries(Object.entries(basis).sort()) }, null, 2) + '\n');
+  console.log(`기준 가격: ${Object.keys(basis).length}개 중 오늘 다시 정함 ${basisMoved}개(${BASIS_WEEKLY ? '월요일 정기' : `±${BASIS_BAND * 100}% 넘음`})`);
   if (state.pending.length) console.log(`IndexNow 대기열: ${state.pending.length}개 (node src/indexnow.mjs 로 전송)`);
 }
 // 클릭 추적용 이동 표 (functions/go/[id].js 가 읽는다)

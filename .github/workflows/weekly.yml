@@ -75,12 +75,12 @@ jobs:
           git config user.name "golf-price-bot"
           git config user.email "golf-price-bot@users.noreply.github.com"
           # 빌드가 관리하는 상태 파일은 매일 점검 작업이 갱신하므로 여기서는 넣지 않는다
-          git checkout -- config/content-state.json config/url-manifest.json 2>/dev/null || true
+          git checkout -- config/content-state.json config/url-manifest.json config/price-basis.json 2>/dev/null || true
           git add reports prices.csv config/howto.json
           if git diff --cached --quiet; then echo "바뀐 내용 없음"; echo "done=1" >> "$GITHUB_OUTPUT"; exit 0; fi
           # 안전장치: 빌드(출시 형식·URL 301 보호 포함)와 링크 검사를 통과해야만 반영한다
           if node src/build.mjs && node src/linkcheck.mjs; then
-            git checkout -- config/content-state.json config/url-manifest.json 2>/dev/null || true
+            git checkout -- config/content-state.json config/url-manifest.json config/price-basis.json 2>/dev/null || true
             git commit -m "주간 분석 $DAY: 가격 확인 목록, title/description 개선안, 본문·FAQ 초안 (자동 반영)"
             git pull --rebase
             git push
@@ -95,7 +95,7 @@ jobs:
         run: |
           DAY=$(TZ=Asia/Seoul date +%F)
           BR="weekly/$DAY"
-          git checkout -- config/content-state.json config/url-manifest.json 2>/dev/null || true
+          git checkout -- config/content-state.json config/url-manifest.json config/price-basis.json 2>/dev/null || true
           git checkout -b "$BR"
           git add reports prices.csv config/howto.json
           git diff --cached --quiet && { echo "바뀐 내용 없음"; exit 0; }

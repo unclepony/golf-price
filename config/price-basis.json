@@ -1,0 +1,2754 @@
+{
+  "_설명": "build.mjs 가 관리한다(gp-1108-1). 상품별 순서용 기준 가격(won)과 정한 날(d). 동점 순위·예산 추천·가장 싼 모델 고르기에만 쓴다. 판매가가 ±30% 넘게 바뀌거나 월요일에만 갱신. 직접 고치지 않는다.",
+  "band": 0.3,
+  "items": {
+    "18h-maxspeed-trainer": {
+      "won": 78000,
+      "d": "2026-11-08"
+    },
+    "adidas-adipower-sl-boa-shoes": {
+      "won": 119000,
+      "d": "2026-11-08"
+    },
+    "adidas-adipower-sl-women-shoes": {
+      "won": 119000,
+      "d": "2026-11-08"
+    },
+    "adidas-codechaos-shoes": {
+      "won": 189000,
+      "d": "2026-11-08"
+    },
+    "adidas-multifit-360-glove": {
+      "won": 29900,
+      "d": "2026-11-08"
+    },
+    "adidas-multifit-glove": {
+      "won": 28000,
+      "d": "2026-11-08"
+    },
+    "adidas-s2g-boa-women-shoes": {
+      "won": 89000,
+      "d": "2026-11-08"
+    },
+    "adidas-s2g-shoes": {
+      "won": 106300,
+      "d": "2026-11-08"
+    },
+    "air-jordan-1-low-g-shoes": {
+      "won": 181130,
+      "d": "2026-11-08"
+    },
+    "bettinardi-queen-b-putter": {
+      "won": 539000,
+      "d": "2026-11-08"
+    },
+    "bj-eyeforce-putting-mirror": {
+      "won": 9900,
+      "d": "2026-11-08"
+    },
+    "bj-sml-putting-trainer": {
+      "won": 175000,
+      "d": "2026-11-08"
+    },
+    "blacktee-shot5": {
+      "won": 349000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-241cb-iron": {
+      "won": 900000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-242cb-iron": {
+      "won": 1190000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-bforged-100cb-iron": {
+      "won": 1500000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-bforged-200cbplus-iron": {
+      "won": 1500000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-biting-spin-wedge": {
+      "won": 279000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-blady-women-fairway": {
+      "won": 290000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-brm2-wedge": {
+      "won": 270000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-bx2-driver": {
+      "won": 800000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-bx2ht-hybrid": {
+      "won": 400000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-e12-contact": {
+      "won": 37300,
+      "d": "2026-11-08"
+    },
+    "bridgestone-e6": {
+      "won": 25000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-glg76j-women-glove": {
+      "won": 15000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-tour-b-rxs": {
+      "won": 48000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-tour-b-x": {
+      "won": 50000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-tour-b-xs": {
+      "won": 63990,
+      "d": "2026-11-08"
+    },
+    "bridgestone-v300-iron": {
+      "won": 1039990,
+      "d": "2026-11-08"
+    },
+    "bridgestone-v300-women-iron": {
+      "won": 1390000,
+      "d": "2026-11-08"
+    },
+    "bridgestone-v300x-women-iron": {
+      "won": 1650000,
+      "d": "2026-11-08"
+    },
+    "bushnell-a1-slope": {
+      "won": 297000,
+      "d": "2026-11-08"
+    },
+    "bushnell-pro-x3": {
+      "won": 720000,
+      "d": "2026-11-08"
+    },
+    "bushnell-pro-x3-plus": {
+      "won": 660000,
+      "d": "2026-11-08"
+    },
+    "bushnell-tour-v6": {
+      "won": 470000,
+      "d": "2026-11-08"
+    },
+    "bushnell-tour-v6-shift": {
+      "won": 540000,
+      "d": "2026-11-08"
+    },
+    "bushnell-tour-v7-shift": {
+      "won": 589000,
+      "d": "2026-11-08"
+    },
+    "caddytalk-cube": {
+      "won": 144060,
+      "d": "2026-11-08"
+    },
+    "caddytalk-mini-pro": {
+      "won": 218000,
+      "d": "2026-11-08"
+    },
+    "caddytalk-minion": {
+      "won": 156000,
+      "d": "2026-11-08"
+    },
+    "caddytalk-minion-plus": {
+      "won": 165470,
+      "d": "2026-11-08"
+    },
+    "caddytalk-minion2": {
+      "won": 184070,
+      "d": "2026-11-08"
+    },
+    "callaway-aismokemaxfast-women-fairway": {
+      "won": 344000,
+      "d": "2026-11-08"
+    },
+    "callaway-apex-ai150-iron": {
+      "won": 1750000,
+      "d": "2026-11-08"
+    },
+    "callaway-apex-ai200-iron": {
+      "won": 990000,
+      "d": "2026-11-08"
+    },
+    "callaway-apex-cb24-iron": {
+      "won": 1530000,
+      "d": "2026-11-08"
+    },
+    "callaway-apex-mb24-iron": {
+      "won": 1877000,
+      "d": "2026-11-08"
+    },
+    "callaway-apex-pro24-iron": {
+      "won": 1690000,
+      "d": "2026-11-08"
+    },
+    "callaway-apex-tcb24-iron": {
+      "won": 1784990,
+      "d": "2026-11-08"
+    },
+    "callaway-bigbertha23-iron": {
+      "won": 1649500,
+      "d": "2026-11-08"
+    },
+    "callaway-cb12-wedge": {
+      "won": 165000,
+      "d": "2026-11-08"
+    },
+    "callaway-chrome-soft": {
+      "won": 50440,
+      "d": "2026-11-08"
+    },
+    "callaway-chrome-tour": {
+      "won": 65890,
+      "d": "2026-11-08"
+    },
+    "callaway-chrome-tour-triple-diamond": {
+      "won": 66440,
+      "d": "2026-11-08"
+    },
+    "callaway-chrome-tour-x": {
+      "won": 64800,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-driver": {
+      "won": 441320,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-fairway": {
+      "won": 267720,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-hl-iron": {
+      "won": 1040000,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-hybrid": {
+      "won": 275000,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-iron": {
+      "won": 1012000,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-maxfast-driver": {
+      "won": 395000,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-maxfast-women-driver": {
+      "won": 406050,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-maxfast-women-iron": {
+      "won": 1012000,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-td-driver": {
+      "won": 476000,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-td-fairway": {
+      "won": 720000,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-tdmax-driver": {
+      "won": 890000,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-women-fairway": {
+      "won": 319000,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-women-hybrid": {
+      "won": 230570,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-x-driver": {
+      "won": 1026000,
+      "d": "2026-11-08"
+    },
+    "callaway-elyte-x-fairway": {
+      "won": 319000,
+      "d": "2026-11-08"
+    },
+    "callaway-elytex-hybrid": {
+      "won": 275000,
+      "d": "2026-11-08"
+    },
+    "callaway-epic-superhybrid": {
+      "won": 354720,
+      "d": "2026-11-08"
+    },
+    "callaway-erc-soft": {
+      "won": 55000,
+      "d": "2026-11-08"
+    },
+    "callaway-gbb-women-fairway": {
+      "won": 480020,
+      "d": "2026-11-08"
+    },
+    "callaway-jaws-forged-wedge": {
+      "won": 98000,
+      "d": "2026-11-08"
+    },
+    "callaway-jaws-raw-wedge": {
+      "won": 230000,
+      "d": "2026-11-08"
+    },
+    "callaway-opus-platinum-wedge": {
+      "won": 270000,
+      "d": "2026-11-08"
+    },
+    "callaway-opus-sp-wedge": {
+      "won": 181350,
+      "d": "2026-11-08"
+    },
+    "callaway-opus-wedge": {
+      "won": 169000,
+      "d": "2026-11-08"
+    },
+    "callaway-paradym-aismoke-max-fairway": {
+      "won": 700000,
+      "d": "2026-11-08"
+    },
+    "callaway-paradym-driver": {
+      "won": 263120,
+      "d": "2026-11-08"
+    },
+    "callaway-paradym-iron": {
+      "won": 794100,
+      "d": "2026-11-08"
+    },
+    "callaway-quantum-max-driver": {
+      "won": 645000,
+      "d": "2026-11-08"
+    },
+    "callaway-quantum-max-iron": {
+      "won": 1610000,
+      "d": "2026-11-08"
+    },
+    "callaway-quantum-maxd-driver": {
+      "won": 587210,
+      "d": "2026-11-08"
+    },
+    "callaway-quantum-maxd-fairway": {
+      "won": 392220,
+      "d": "2026-11-08"
+    },
+    "callaway-quantum-maxfast-fairway": {
+      "won": 480000,
+      "d": "2026-11-08"
+    },
+    "callaway-quantum-maxfast-women-driver": {
+      "won": 720000,
+      "d": "2026-11-08"
+    },
+    "callaway-quantum-maxfast-women-iron": {
+      "won": 1400000,
+      "d": "2026-11-08"
+    },
+    "callaway-quantum-td-driver": {
+      "won": 652370,
+      "d": "2026-11-08"
+    },
+    "callaway-quantum-td-fairway": {
+      "won": 418500,
+      "d": "2026-11-08"
+    },
+    "callaway-quantum-tdmax-driver": {
+      "won": 689980,
+      "d": "2026-11-08"
+    },
+    "callaway-quantum-women-hybrid": {
+      "won": 320000,
+      "d": "2026-11-08"
+    },
+    "callaway-quantummax-fairway": {
+      "won": 379000,
+      "d": "2026-11-08"
+    },
+    "callaway-quantummax-hybrid": {
+      "won": 320190,
+      "d": "2026-11-08"
+    },
+    "callaway-quantummax-women-fairway": {
+      "won": 420000,
+      "d": "2026-11-08"
+    },
+    "callaway-quantummaxfast-women-fairway": {
+      "won": 480000,
+      "d": "2026-11-08"
+    },
+    "callaway-racer-stand-2026": {
+      "won": 275500,
+      "d": "2026-11-08"
+    },
+    "callaway-reva": {
+      "won": 29000,
+      "d": "2026-11-08"
+    },
+    "callaway-reva-women-driver": {
+      "won": 476090,
+      "d": "2026-11-08"
+    },
+    "callaway-revarise-women-fairway": {
+      "won": 399000,
+      "d": "2026-11-08"
+    },
+    "callaway-revarise-women-hybrid": {
+      "won": 337000,
+      "d": "2026-11-08"
+    },
+    "callaway-roguest-fairway": {
+      "won": 250000,
+      "d": "2026-11-08"
+    },
+    "callaway-roguest-hybrid": {
+      "won": 200000,
+      "d": "2026-11-08"
+    },
+    "callaway-roguest-maxos-women-iron": {
+      "won": 609000,
+      "d": "2026-11-08"
+    },
+    "callaway-roguest-women-driver": {
+      "won": 359000,
+      "d": "2026-11-08"
+    },
+    "callaway-roguest-women-fairway": {
+      "won": 203390,
+      "d": "2026-11-08"
+    },
+    "callaway-roguest-women-hybrid": {
+      "won": 199000,
+      "d": "2026-11-08"
+    },
+    "callaway-roguest-women-iron": {
+      "won": 605100,
+      "d": "2026-11-08"
+    },
+    "callaway-roguestmax-iron": {
+      "won": 759000,
+      "d": "2026-11-08"
+    },
+    "callaway-supersoft": {
+      "won": 46000,
+      "d": "2026-11-08"
+    },
+    "callaway-tour-authentic-glove": {
+      "won": 19200,
+      "d": "2026-11-08"
+    },
+    "callaway-tripletrack-cart-2026": {
+      "won": 331250,
+      "d": "2026-11-08"
+    },
+    "callaway-twoball-ten-putter": {
+      "won": 190000,
+      "d": "2026-11-08"
+    },
+    "callaway-warbird": {
+      "won": 21000,
+      "d": "2026-11-08"
+    },
+    "callaway-winter-glory-women-pair-glove": {
+      "won": 48400,
+      "d": "2026-11-08"
+    },
+    "callaway-winter-soft-fur-women-pair-glove": {
+      "won": 34500,
+      "d": "2026-11-08"
+    },
+    "callaway-xdry-cart-2026": {
+      "won": 339000,
+      "d": "2026-11-08"
+    },
+    "callaway-xforged-max-iron": {
+      "won": 1250000,
+      "d": "2026-11-08"
+    },
+    "callaway-xforged-starplus-iron": {
+      "won": 720000,
+      "d": "2026-11-08"
+    },
+    "castelbajac-womens-glove": {
+      "won": 24950,
+      "d": "2026-11-08"
+    },
+    "cleveland-cgone-wedge": {
+      "won": 144500,
+      "d": "2026-11-08"
+    },
+    "cleveland-frontline-elite-putter": {
+      "won": 179000,
+      "d": "2026-11-08"
+    },
+    "cleveland-hb-soft-milled-putter": {
+      "won": 139000,
+      "d": "2026-11-08"
+    },
+    "cleveland-hbsoft2-putter": {
+      "won": 129000,
+      "d": "2026-11-08"
+    },
+    "cleveland-launcher-halo-xl-fairway": {
+      "won": 336800,
+      "d": "2026-11-08"
+    },
+    "cleveland-launcher-xlhalo-iron": {
+      "won": 526800,
+      "d": "2026-11-08"
+    },
+    "cleveland-rtx-fullface2-wedge": {
+      "won": 279100,
+      "d": "2026-11-08"
+    },
+    "cleveland-rtx-zipcore-wedge": {
+      "won": 115000,
+      "d": "2026-11-08"
+    },
+    "cleveland-rtx6-wedge": {
+      "won": 149000,
+      "d": "2026-11-08"
+    },
+    "cleveland-rtz-wedge": {
+      "won": 165000,
+      "d": "2026-11-08"
+    },
+    "cleveland-smartsole-chipper": {
+      "won": 180000,
+      "d": "2026-11-08"
+    },
+    "cleveland-smartsole-fullface-wedge": {
+      "won": 169200,
+      "d": "2026-11-08"
+    },
+    "cleveland-urban-cart": {
+      "won": 209650,
+      "d": "2026-11-08"
+    },
+    "cobra-darkspeed-hybrid": {
+      "won": 159000,
+      "d": "2026-11-08"
+    },
+    "cobra-darkspeed-max-women-driver": {
+      "won": 730000,
+      "d": "2026-11-08"
+    },
+    "cobra-darkspeed-women-hybrid": {
+      "won": 330000,
+      "d": "2026-11-08"
+    },
+    "cobra-darkspeedmax-women-fairway": {
+      "won": 430000,
+      "d": "2026-11-08"
+    },
+    "cobra-ds-adapt-ls-driver": {
+      "won": 816000,
+      "d": "2026-11-08"
+    },
+    "cobra-ds-adapt-maxd-women-driver": {
+      "won": 730000,
+      "d": "2026-11-08"
+    },
+    "cobra-ds-adapt-maxk-driver": {
+      "won": 348990,
+      "d": "2026-11-08"
+    },
+    "cobra-ds-adapt-x-driver": {
+      "won": 990000,
+      "d": "2026-11-08"
+    },
+    "cobra-ds-adapt-x-fairway": {
+      "won": 204600,
+      "d": "2026-11-08"
+    },
+    "cobra-dsadapt-hybrid": {
+      "won": 540000,
+      "d": "2026-11-08"
+    },
+    "cobra-dsadapt-iron": {
+      "won": 1120000,
+      "d": "2026-11-08"
+    },
+    "cobra-dsadaptmax-women-fairway": {
+      "won": 479400,
+      "d": "2026-11-08"
+    },
+    "cobra-king-wedge": {
+      "won": 189000,
+      "d": "2026-11-08"
+    },
+    "cobra-kingtour-iron": {
+      "won": 499000,
+      "d": "2026-11-08"
+    },
+    "cobra-optm-hybrid": {
+      "won": 275000,
+      "d": "2026-11-08"
+    },
+    "cobra-optm-maxd-women-driver": {
+      "won": 721000,
+      "d": "2026-11-08"
+    },
+    "cobra-optm-maxk-driver": {
+      "won": 760000,
+      "d": "2026-11-08"
+    },
+    "cobra-optm-x-driver": {
+      "won": 760000,
+      "d": "2026-11-08"
+    },
+    "cobra-optm-x-fairway": {
+      "won": 335000,
+      "d": "2026-11-08"
+    },
+    "cobra-snakebite-wedge": {
+      "won": 87010,
+      "d": "2026-11-08"
+    },
+    "cobra-ultralight-pro-stand": {
+      "won": 599000,
+      "d": "2026-11-08"
+    },
+    "david-woody2-wedge": {
+      "won": 167000,
+      "d": "2026-11-08"
+    },
+    "ecco-biom-c4-shoes": {
+      "won": 139990,
+      "d": "2026-11-08"
+    },
+    "ecco-biom-c4-women-shoes": {
+      "won": 139990,
+      "d": "2026-11-08"
+    },
+    "ecco-biom-g5-boa-shoes": {
+      "won": 268100,
+      "d": "2026-11-08"
+    },
+    "ecco-biom-h5-shoes": {
+      "won": 340000,
+      "d": "2026-11-08"
+    },
+    "ecco-biom-h5-women-shoes": {
+      "won": 380000,
+      "d": "2026-11-08"
+    },
+    "ecco-biom-tour-shoes": {
+      "won": 324000,
+      "d": "2026-11-08"
+    },
+    "ecco-goretex-women-shoes": {
+      "won": 119990,
+      "d": "2026-11-08"
+    },
+    "ecco-lt1-boa-shoes": {
+      "won": 310000,
+      "d": "2026-11-08"
+    },
+    "ecco-lt1-boa-women-shoes": {
+      "won": 310000,
+      "d": "2026-11-08"
+    },
+    "ecco-street-720-goretex-shoes": {
+      "won": 320000,
+      "d": "2026-11-08"
+    },
+    "ecco-street-720-goretex-women-shoes": {
+      "won": 360000,
+      "d": "2026-11-08"
+    },
+    "evnroll-er22-putter": {
+      "won": 359000,
+      "d": "2026-11-08"
+    },
+    "evnroll-er5-putter": {
+      "won": 399000,
+      "d": "2026-11-08"
+    },
+    "evnroll-z2s-putter": {
+      "won": 570000,
+      "d": "2026-11-08"
+    },
+    "evnroll-z5s-putter": {
+      "won": 570000,
+      "d": "2026-11-08"
+    },
+    "eyeline-speed-trap-2": {
+      "won": 125000,
+      "d": "2026-11-08"
+    },
+    "footjoy-cabrettasof-glove": {
+      "won": 42900,
+      "d": "2026-11-08"
+    },
+    "footjoy-flow2-boa-women-shoes": {
+      "won": 176000,
+      "d": "2026-11-08"
+    },
+    "footjoy-gtxtreme-glove": {
+      "won": 23400,
+      "d": "2026-11-08"
+    },
+    "footjoy-hyperflex-boa-shoes": {
+      "won": 169000,
+      "d": "2026-11-08"
+    },
+    "footjoy-lady-ecomfort-pair-glove": {
+      "won": 20400,
+      "d": "2026-11-08"
+    },
+    "footjoy-premiere-packard-shoes": {
+      "won": 203300,
+      "d": "2026-11-08"
+    },
+    "footjoy-pro-sl": {
+      "won": 232000,
+      "d": "2026-11-08"
+    },
+    "footjoy-prolite-boa-shoes": {
+      "won": 98010,
+      "d": "2026-11-08"
+    },
+    "footjoy-pulse-boa-shoes": {
+      "won": 203380,
+      "d": "2026-11-08"
+    },
+    "footjoy-pulse-boa-women-shoes": {
+      "won": 194750,
+      "d": "2026-11-08"
+    },
+    "footjoy-pure-touch-glove": {
+      "won": 26960,
+      "d": "2026-11-08"
+    },
+    "footjoy-quantum-shoes": {
+      "won": 250000,
+      "d": "2026-11-08"
+    },
+    "footjoy-quantum-women-shoes": {
+      "won": 205000,
+      "d": "2026-11-08"
+    },
+    "footjoy-raingrip-glove": {
+      "won": 17000,
+      "d": "2026-11-08"
+    },
+    "footjoy-raingrip-pair-glove": {
+      "won": 30000,
+      "d": "2026-11-08"
+    },
+    "footjoy-raingrip-women-pair-glove": {
+      "won": 34990,
+      "d": "2026-11-08"
+    },
+    "footjoy-stasof-glove": {
+      "won": 29000,
+      "d": "2026-11-08"
+    },
+    "footjoy-stasof-women-glove": {
+      "won": 34700,
+      "d": "2026-11-08"
+    },
+    "footjoy-tour-rival-boa-shoes": {
+      "won": 135000,
+      "d": "2026-11-08"
+    },
+    "footjoy-tour-rival-women-shoes": {
+      "won": 125000,
+      "d": "2026-11-08"
+    },
+    "footjoy-weathersof-glove": {
+      "won": 48200,
+      "d": "2026-11-08"
+    },
+    "footjoy-weathersof-women-glove": {
+      "won": 23900,
+      "d": "2026-11-08"
+    },
+    "footjoy-wintersof-women-pair-glove": {
+      "won": 30000,
+      "d": "2026-11-08"
+    },
+    "fourteen-dj6-wedge": {
+      "won": 199000,
+      "d": "2026-11-08"
+    },
+    "fourteen-frz-wedge": {
+      "won": 310000,
+      "d": "2026-11-08"
+    },
+    "fourteen-rm-alpha-wedge": {
+      "won": 170000,
+      "d": "2026-11-08"
+    },
+    "fourteen-rm4-wedge": {
+      "won": 139000,
+      "d": "2026-11-08"
+    },
+    "galaxy-watch8-classic-golf": {
+      "won": 559000,
+      "d": "2026-11-08"
+    },
+    "galaxy-watch8-golf": {
+      "won": 469000,
+      "d": "2026-11-08"
+    },
+    "galaxy-watch8-golf-40mm": {
+      "won": 439000,
+      "d": "2026-11-08"
+    },
+    "garmin-approach-r10": {
+      "won": 875000,
+      "d": "2026-11-08"
+    },
+    "garmin-approach-r50": {
+      "won": 7399000,
+      "d": "2026-11-08"
+    },
+    "garmin-approach-s50": {
+      "won": 399000,
+      "d": "2026-11-08"
+    },
+    "garmin-approach-s70": {
+      "won": 1040000,
+      "d": "2026-11-08"
+    },
+    "garmin-approach-z82": {
+      "won": 949000,
+      "d": "2026-11-08"
+    },
+    "garmin-fenix-8-amoled": {
+      "won": 1820000,
+      "d": "2026-11-08"
+    },
+    "garmin-marq-golfer-gen2": {
+      "won": 3603980,
+      "d": "2026-11-08"
+    },
+    "golfbuddy-aim-w12": {
+      "won": 203000,
+      "d": "2026-11-08"
+    },
+    "golfbuddy-atom": {
+      "won": 152800,
+      "d": "2026-11-08"
+    },
+    "golfbuddy-gb-laser-2s-pro": {
+      "won": 129000,
+      "d": "2026-11-08"
+    },
+    "golfbuddy-voice-3s-plus": {
+      "won": 189000,
+      "d": "2026-11-08"
+    },
+    "golflex-shot-tracker-2": {
+      "won": 19900,
+      "d": "2026-11-08"
+    },
+    "goodprep-chipping-net": {
+      "won": 20830,
+      "d": "2026-11-08"
+    },
+    "honma-aizu-women-driver": {
+      "won": 544000,
+      "d": "2026-11-08"
+    },
+    "honma-aizu-women-fairway": {
+      "won": 361000,
+      "d": "2026-11-08"
+    },
+    "honma-aizu-women-hybrid": {
+      "won": 290160,
+      "d": "2026-11-08"
+    },
+    "honma-aizu-women-iron": {
+      "won": 1454960,
+      "d": "2026-11-08"
+    },
+    "honma-beres-aizu-driver": {
+      "won": 612000,
+      "d": "2026-11-08"
+    },
+    "honma-beres-aizu-hybrid": {
+      "won": 269360,
+      "d": "2026-11-08"
+    },
+    "honma-beres-hybrid": {
+      "won": 206960,
+      "d": "2026-11-08"
+    },
+    "honma-beres-w-wedge": {
+      "won": 290000,
+      "d": "2026-11-08"
+    },
+    "honma-beres09-driver": {
+      "won": 2090000,
+      "d": "2026-11-08"
+    },
+    "honma-beres09-fairway": {
+      "won": 446160,
+      "d": "2026-11-08"
+    },
+    "honma-beres09-hybrid": {
+      "won": 523160,
+      "d": "2026-11-08"
+    },
+    "honma-beres09-iron": {
+      "won": 10790000,
+      "d": "2026-11-08"
+    },
+    "honma-beres09-women-driver": {
+      "won": 789000,
+      "d": "2026-11-08"
+    },
+    "honma-beres09-women-fairway": {
+      "won": 499000,
+      "d": "2026-11-08"
+    },
+    "honma-beres09-women-hybrid": {
+      "won": 575000,
+      "d": "2026-11-08"
+    },
+    "honma-beres09-women-iron": {
+      "won": 2015000,
+      "d": "2026-11-08"
+    },
+    "honma-beres10-women-fairway": {
+      "won": 1005000,
+      "d": "2026-11-08"
+    },
+    "honma-beres10-women-iron": {
+      "won": 6350000,
+      "d": "2026-11-08"
+    },
+    "honma-bezeal3-hybrid": {
+      "won": 244890,
+      "d": "2026-11-08"
+    },
+    "honma-bezeal3-women-hybrid": {
+      "won": 360000,
+      "d": "2026-11-08"
+    },
+    "honma-d1": {
+      "won": 44680,
+      "d": "2026-11-08"
+    },
+    "honma-kiwami6-women-fairway": {
+      "won": 240800,
+      "d": "2026-11-08"
+    },
+    "honma-nx-women-driver": {
+      "won": 229000,
+      "d": "2026-11-08"
+    },
+    "honma-nx-women-fairway": {
+      "won": 109000,
+      "d": "2026-11-08"
+    },
+    "honma-tw747-putter": {
+      "won": 200000,
+      "d": "2026-11-08"
+    },
+    "honma-tw757-fairway": {
+      "won": 283720,
+      "d": "2026-11-08"
+    },
+    "honma-tw757-hybrid": {
+      "won": 179000,
+      "d": "2026-11-08"
+    },
+    "honma-tw757d-driver": {
+      "won": 900000,
+      "d": "2026-11-08"
+    },
+    "honma-tw757s-driver": {
+      "won": 900000,
+      "d": "2026-11-08"
+    },
+    "honma-tw767-fairway": {
+      "won": 332000,
+      "d": "2026-11-08"
+    },
+    "honma-tw767-hybrid": {
+      "won": 176870,
+      "d": "2026-11-08"
+    },
+    "honma-tw767hx-iron": {
+      "won": 780000,
+      "d": "2026-11-08"
+    },
+    "honma-tw767max-driver": {
+      "won": 814620,
+      "d": "2026-11-08"
+    },
+    "honma-tw767px-iron": {
+      "won": 1167500,
+      "d": "2026-11-08"
+    },
+    "honma-tw767vx-iron": {
+      "won": 716600,
+      "d": "2026-11-08"
+    },
+    "honma-twgs-iron": {
+      "won": 1760000,
+      "d": "2026-11-08"
+    },
+    "honma-twgs-women-iron": {
+      "won": 876280,
+      "d": "2026-11-08"
+    },
+    "honma-tww5-wedge": {
+      "won": 165360,
+      "d": "2026-11-08"
+    },
+    "inbirdie-swing-plus": {
+      "won": 338000,
+      "d": "2026-11-08"
+    },
+    "inbirdie-tempo-plus": {
+      "won": 397000,
+      "d": "2026-11-08"
+    },
+    "jestime-ponytail-women-fairway": {
+      "won": 355400,
+      "d": "2026-11-08"
+    },
+    "jestime-ponytail-women-hybrid": {
+      "won": 259160,
+      "d": "2026-11-08"
+    },
+    "jestime-ponytail-women-iron": {
+      "won": 1390500,
+      "d": "2026-11-08"
+    },
+    "jogeuman-tempoflex": {
+      "won": 34900,
+      "d": "2026-11-08"
+    },
+    "kasco-dolphin-dw123-wedge": {
+      "won": 239500,
+      "d": "2026-11-08"
+    },
+    "kasco-dolphin-dw125g-wedge": {
+      "won": 161650,
+      "d": "2026-11-08"
+    },
+    "kasco-ufo-hybrid": {
+      "won": 340000,
+      "d": "2026-11-08"
+    },
+    "kero-putting-mat-3m": {
+      "won": 39800,
+      "d": "2026-11-08"
+    },
+    "lab-df3-putter": {
+      "won": 740000,
+      "d": "2026-11-08"
+    },
+    "lab-mezz1-putter": {
+      "won": 449000,
+      "d": "2026-11-08"
+    },
+    "lag-shot-7iron-trainer": {
+      "won": 162000,
+      "d": "2026-11-08"
+    },
+    "lag-shot-driver-trainer": {
+      "won": 240000,
+      "d": "2026-11-08"
+    },
+    "licata-fitmade-x": {
+      "won": 185000,
+      "d": "2026-11-08"
+    },
+    "macclyde-tempo-trainer": {
+      "won": 54000,
+      "d": "2026-11-08"
+    },
+    "majesty-conquest-hybrid": {
+      "won": 209000,
+      "d": "2026-11-08"
+    },
+    "majesty-prestigio13-driver": {
+      "won": 1341600,
+      "d": "2026-11-08"
+    },
+    "majesty-prestigio13-fairway": {
+      "won": 1000000,
+      "d": "2026-11-08"
+    },
+    "majesty-prestigio13-hybrid": {
+      "won": 640000,
+      "d": "2026-11-08"
+    },
+    "majesty-prestigio13-iron": {
+      "won": 3109600,
+      "d": "2026-11-08"
+    },
+    "majesty-prestigio13-women-driver": {
+      "won": 1490000,
+      "d": "2026-11-08"
+    },
+    "majesty-prestigio13-women-fairway": {
+      "won": 1030000,
+      "d": "2026-11-08"
+    },
+    "majesty-prestigio13-women-iron": {
+      "won": 2863000,
+      "d": "2026-11-08"
+    },
+    "majesty-prestigio13-women-utility": {
+      "won": 650000,
+      "d": "2026-11-08"
+    },
+    "majesty-prestigio14-women-iron": {
+      "won": 6650000,
+      "d": "2026-11-08"
+    },
+    "majesty-royal-women-fairway": {
+      "won": 500000,
+      "d": "2026-11-08"
+    },
+    "majesty-royale-women-driver": {
+      "won": 714560,
+      "d": "2026-11-08"
+    },
+    "majesty-royale-women-hybrid": {
+      "won": 450000,
+      "d": "2026-11-08"
+    },
+    "majesty-royalgold-fairway": {
+      "won": 368900,
+      "d": "2026-11-08"
+    },
+    "majesty-royalgold-hybrid": {
+      "won": 310960,
+      "d": "2026-11-08"
+    },
+    "majesty-shuttle-women-driver": {
+      "won": 456570,
+      "d": "2026-11-08"
+    },
+    "majesty-shuttle-women-iron": {
+      "won": 938180,
+      "d": "2026-11-08"
+    },
+    "majesty-sterna-women-fairway": {
+      "won": 295000,
+      "d": "2026-11-08"
+    },
+    "majesty-sterna-women-hybrid": {
+      "won": 179000,
+      "d": "2026-11-08"
+    },
+    "majesty-sterna-women-iron": {
+      "won": 809000,
+      "d": "2026-11-08"
+    },
+    "majesty-sublime-women-fairway": {
+      "won": 2279000,
+      "d": "2026-11-08"
+    },
+    "majesty-w-moment-wedge": {
+      "won": 177220,
+      "d": "2026-11-08"
+    },
+    "missile-axg-women-hybrid": {
+      "won": 99000,
+      "d": "2026-11-08"
+    },
+    "missile-axg-women-iron": {
+      "won": 436310,
+      "d": "2026-11-08"
+    },
+    "mizuno-amazing-leather-glove": {
+      "won": 19800,
+      "d": "2026-11-08"
+    },
+    "mizuno-brd3-stand": {
+      "won": 436770,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpx010-cart": {
+      "won": 239470,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpx923-forged-iron": {
+      "won": 1213980,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpx923-hotmetal-iron": {
+      "won": 799000,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpx923-wedge": {
+      "won": 90100,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpx925-forged-iron": {
+      "won": 990000,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpx925-hmpro-iron": {
+      "won": 919000,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpx925-hotmetal-iron": {
+      "won": 919000,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpx925f-women-iron": {
+      "won": 1290000,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpxone-driver": {
+      "won": 520000,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpxone-fairway": {
+      "won": 310000,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpxone-hybrid": {
+      "won": 260000,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpxq-women-fairway": {
+      "won": 173910,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpxq-women-hybrid": {
+      "won": 184780,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpxq-women-iron": {
+      "won": 674550,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpxq2-women-fairway": {
+      "won": 297000,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpxq2-women-hybrid": {
+      "won": 275000,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpxq2-women-iron": {
+      "won": 1450000,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpxs30-women-iron": {
+      "won": 949050,
+      "d": "2026-11-08"
+    },
+    "mizuno-jpxs40-women-iron": {
+      "won": 1572150,
+      "d": "2026-11-08"
+    },
+    "mizuno-mcraft-omoi6-putter": {
+      "won": 279000,
+      "d": "2026-11-08"
+    },
+    "mizuno-pro-241-iron": {
+      "won": 1500000,
+      "d": "2026-11-08"
+    },
+    "mizuno-pro-243-iron": {
+      "won": 997630,
+      "d": "2026-11-08"
+    },
+    "mizuno-pro-245-iron": {
+      "won": 1829200,
+      "d": "2026-11-08"
+    },
+    "mizuno-pro-s1-iron": {
+      "won": 1300000,
+      "d": "2026-11-08"
+    },
+    "mizuno-pro-s3-iron": {
+      "won": 1315040,
+      "d": "2026-11-08"
+    },
+    "mizuno-pro-t1-wedge": {
+      "won": 155000,
+      "d": "2026-11-08"
+    },
+    "mizuno-rb-hybrid2-cart": {
+      "won": 314690,
+      "d": "2026-11-08"
+    },
+    "mizuno-stmax230-driver": {
+      "won": 382850,
+      "d": "2026-11-08"
+    },
+    "mizuno-stmax230-fairway": {
+      "won": 220000,
+      "d": "2026-11-08"
+    },
+    "mizuno-stmax230-hybrid": {
+      "won": 190000,
+      "d": "2026-11-08"
+    },
+    "mizuno-stz230-fairway": {
+      "won": 185000,
+      "d": "2026-11-08"
+    },
+    "mizuno-stz230-hybrid": {
+      "won": 168000,
+      "d": "2026-11-08"
+    },
+    "mizuno-t24-wedge": {
+      "won": 207660,
+      "d": "2026-11-08"
+    },
+    "monkeygrip-powerpad-glove": {
+      "won": 38000,
+      "d": "2026-11-08"
+    },
+    "mutsumihonma-mh622-women-fairway": {
+      "won": 305000,
+      "d": "2026-11-08"
+    },
+    "mycaddie-gps-m2": {
+      "won": 221000,
+      "d": "2026-11-08"
+    },
+    "mycaddie-mh3": {
+      "won": 290000,
+      "d": "2026-11-08"
+    },
+    "mycaddie-mini-mg3": {
+      "won": 164000,
+      "d": "2026-11-08"
+    },
+    "mycaddie-ms3-oled": {
+      "won": 255400,
+      "d": "2026-11-08"
+    },
+    "newbalance-574-v4-sl-boa-shoes": {
+      "won": 149000,
+      "d": "2026-11-08"
+    },
+    "nike-air-max-90-g-shoes": {
+      "won": 142900,
+      "d": "2026-11-08"
+    },
+    "nike-air-max-90-g-women-shoes": {
+      "won": 124800,
+      "d": "2026-11-08"
+    },
+    "nike-infinity-g-nn-shoes": {
+      "won": 73900,
+      "d": "2026-11-08"
+    },
+    "nike-roshe-g-shoes": {
+      "won": 149000,
+      "d": "2026-11-08"
+    },
+    "nike-victory-pro-3-shoes": {
+      "won": 201400,
+      "d": "2026-11-08"
+    },
+    "nike-victory-tour-4-boa-shoes": {
+      "won": 132020,
+      "d": "2026-11-08"
+    },
+    "nike-victory-tour-4-boa-women-shoes": {
+      "won": 297930,
+      "d": "2026-11-08"
+    },
+    "nikon-coolshot-pro2-stabilized": {
+      "won": 356500,
+      "d": "2026-11-08"
+    },
+    "nikon-coolshot-pro3": {
+      "won": 580000,
+      "d": "2026-11-08"
+    },
+    "odyssey-ai-one-putter": {
+      "won": 215000,
+      "d": "2026-11-08"
+    },
+    "odyssey-aidual-1-putter": {
+      "won": 345000,
+      "d": "2026-11-08"
+    },
+    "odyssey-aidual-7-putter": {
+      "won": 350000,
+      "d": "2026-11-08"
+    },
+    "odyssey-aidual-halfball-putter": {
+      "won": 350000,
+      "d": "2026-11-08"
+    },
+    "odyssey-aidual-jailbird-mini-putter": {
+      "won": 340000,
+      "d": "2026-11-08"
+    },
+    "odyssey-aidual-s2s-putter": {
+      "won": 380000,
+      "d": "2026-11-08"
+    },
+    "odyssey-aione-jailbird-mini-putter": {
+      "won": 240000,
+      "d": "2026-11-08"
+    },
+    "odyssey-aione-milled-seven-t-putter": {
+      "won": 400000,
+      "d": "2026-11-08"
+    },
+    "odyssey-aione-s2s-putter": {
+      "won": 470000,
+      "d": "2026-11-08"
+    },
+    "odyssey-aione-tripletrack-putter": {
+      "won": 304550,
+      "d": "2026-11-08"
+    },
+    "odyssey-aione-twoball-putter": {
+      "won": 240000,
+      "d": "2026-11-08"
+    },
+    "odyssey-dfx-2ball-blade-putter": {
+      "won": 193000,
+      "d": "2026-11-08"
+    },
+    "odyssey-tri-hot-5k-putter": {
+      "won": 249000,
+      "d": "2026-11-08"
+    },
+    "odyssey-white-hot-og-2ball-putter": {
+      "won": 352000,
+      "d": "2026-11-08"
+    },
+    "onoff-cbt526-fairway": {
+      "won": 580000,
+      "d": "2026-11-08"
+    },
+    "onoff-cbt526-hybrid": {
+      "won": 455000,
+      "d": "2026-11-08"
+    },
+    "onoff-lp423-women-fairway": {
+      "won": 400000,
+      "d": "2026-11-08"
+    },
+    "onoff-lp425-women-driver": {
+      "won": 649000,
+      "d": "2026-11-08"
+    },
+    "onoff-lp425-women-fairway": {
+      "won": 530000,
+      "d": "2026-11-08"
+    },
+    "onoff-lp425-women-utility": {
+      "won": 390000,
+      "d": "2026-11-08"
+    },
+    "optgolf-balance-pin": {
+      "won": 69000,
+      "d": "2026-11-08"
+    },
+    "orange-whip-trainer": {
+      "won": 203740,
+      "d": "2026-11-08"
+    },
+    "pgm-putting-mat-3m": {
+      "won": 42800,
+      "d": "2026-11-08"
+    },
+    "phigolf-2": {
+      "won": 269000,
+      "d": "2026-11-08"
+    },
+    "ping-anser-2-putter": {
+      "won": 295000,
+      "d": "2026-11-08"
+    },
+    "ping-anserd-putter": {
+      "won": 334490,
+      "d": "2026-11-08"
+    },
+    "ping-b60-putter": {
+      "won": 265000,
+      "d": "2026-11-08"
+    },
+    "ping-basic-glove": {
+      "won": 28800,
+      "d": "2026-11-08"
+    },
+    "ping-blueprint-s-iron": {
+      "won": 1650000,
+      "d": "2026-11-08"
+    },
+    "ping-blueprint-t-iron": {
+      "won": 1430000,
+      "d": "2026-11-08"
+    },
+    "ping-bunker-wedge": {
+      "won": 208000,
+      "d": "2026-11-08"
+    },
+    "ping-chip-wedge": {
+      "won": 216400,
+      "d": "2026-11-08"
+    },
+    "ping-ds72-putter": {
+      "won": 260750,
+      "d": "2026-11-08"
+    },
+    "ping-fetch-putter": {
+      "won": 255000,
+      "d": "2026-11-08"
+    },
+    "ping-g430-hybrid": {
+      "won": 330000,
+      "d": "2026-11-08"
+    },
+    "ping-g430-iron": {
+      "won": 1051550,
+      "d": "2026-11-08"
+    },
+    "ping-g430-lst-driver": {
+      "won": 850000,
+      "d": "2026-11-08"
+    },
+    "ping-g430-max-driver": {
+      "won": 810000,
+      "d": "2026-11-08"
+    },
+    "ping-g430hl-hybrid": {
+      "won": 362180,
+      "d": "2026-11-08"
+    },
+    "ping-g430hl-iron": {
+      "won": 1862000,
+      "d": "2026-11-08"
+    },
+    "ping-g430lst-fairway": {
+      "won": 370300,
+      "d": "2026-11-08"
+    },
+    "ping-g430max-fairway": {
+      "won": 499170,
+      "d": "2026-11-08"
+    },
+    "ping-g430max10k-driver": {
+      "won": 890000,
+      "d": "2026-11-08"
+    },
+    "ping-g440-driver": {
+      "won": 690000,
+      "d": "2026-11-08"
+    },
+    "ping-g440-hybrid": {
+      "won": 370000,
+      "d": "2026-11-08"
+    },
+    "ping-g440-iron": {
+      "won": 1245000,
+      "d": "2026-11-08"
+    },
+    "ping-g440-lst-fairway": {
+      "won": 710000,
+      "d": "2026-11-08"
+    },
+    "ping-g440-max-fairway": {
+      "won": 360000,
+      "d": "2026-11-08"
+    },
+    "ping-g440-sft-fairway": {
+      "won": 355000,
+      "d": "2026-11-08"
+    },
+    "ping-g440-women-hybrid": {
+      "won": 390000,
+      "d": "2026-11-08"
+    },
+    "ping-g440hl-iron": {
+      "won": 1510000,
+      "d": "2026-11-08"
+    },
+    "ping-g440hl-women-driver": {
+      "won": 690000,
+      "d": "2026-11-08"
+    },
+    "ping-g440k-driver": {
+      "won": 825000,
+      "d": "2026-11-08"
+    },
+    "ping-g440lst-driver": {
+      "won": 649000,
+      "d": "2026-11-08"
+    },
+    "ping-g440max-women-driver": {
+      "won": 700000,
+      "d": "2026-11-08"
+    },
+    "ping-g440sft-driver": {
+      "won": 655000,
+      "d": "2026-11-08"
+    },
+    "ping-g730-iron": {
+      "won": 1300000,
+      "d": "2026-11-08"
+    },
+    "ping-gle3-women-driver": {
+      "won": 560000,
+      "d": "2026-11-08"
+    },
+    "ping-gle3-women-fairway": {
+      "won": 350000,
+      "d": "2026-11-08"
+    },
+    "ping-gle3-women-hybrid": {
+      "won": 380000,
+      "d": "2026-11-08"
+    },
+    "ping-gle3-women-iron": {
+      "won": 970000,
+      "d": "2026-11-08"
+    },
+    "ping-gle4-women-driver": {
+      "won": 860000,
+      "d": "2026-11-08"
+    },
+    "ping-gle4-women-fairway": {
+      "won": 460000,
+      "d": "2026-11-08"
+    },
+    "ping-gle4-women-hybrid": {
+      "won": 360000,
+      "d": "2026-11-08"
+    },
+    "ping-gle4-women-iron": {
+      "won": 1790000,
+      "d": "2026-11-08"
+    },
+    "ping-glide-forged-pro-wedge": {
+      "won": 214000,
+      "d": "2026-11-08"
+    },
+    "ping-glide4-wedge": {
+      "won": 190000,
+      "d": "2026-11-08"
+    },
+    "ping-hoofer-stand": {
+      "won": 316000,
+      "d": "2026-11-08"
+    },
+    "ping-i230-iron": {
+      "won": 790000,
+      "d": "2026-11-08"
+    },
+    "ping-i240-iron": {
+      "won": 1520000,
+      "d": "2026-11-08"
+    },
+    "ping-i525-iron": {
+      "won": 890000,
+      "d": "2026-11-08"
+    },
+    "ping-i530-iron": {
+      "won": 1520000,
+      "d": "2026-11-08"
+    },
+    "ping-ketsch-g-putter": {
+      "won": 420000,
+      "d": "2026-11-08"
+    },
+    "ping-mundy-putter": {
+      "won": 249000,
+      "d": "2026-11-08"
+    },
+    "ping-pioneer-cart": {
+      "won": 753400,
+      "d": "2026-11-08"
+    },
+    "ping-s159-wedge": {
+      "won": 249270,
+      "d": "2026-11-08"
+    },
+    "ping-s259-wedge": {
+      "won": 230000,
+      "d": "2026-11-08"
+    },
+    "ping-scottsdale-anser4-putter": {
+      "won": 358000,
+      "d": "2026-11-08"
+    },
+    "ping-scottsdale-prime-tyne4-putter": {
+      "won": 280000,
+      "d": "2026-11-08"
+    },
+    "ping-scottsdale-tec-ally-blue-onset-putter": {
+      "won": 540000,
+      "d": "2026-11-08"
+    },
+    "ping-scottsdale-tec-ketsch-onset-putter": {
+      "won": 540000,
+      "d": "2026-11-08"
+    },
+    "ping-shea-putter": {
+      "won": 274010,
+      "d": "2026-11-08"
+    },
+    "ping-sporty-lt-bag": {
+      "won": 285000,
+      "d": "2026-11-08"
+    },
+    "ping-sporty-mj-cart": {
+      "won": 242100,
+      "d": "2026-11-08"
+    },
+    "ping-synthetic-glove": {
+      "won": 29100,
+      "d": "2026-11-08"
+    },
+    "ping-tomcat14-putter": {
+      "won": 293700,
+      "d": "2026-11-08"
+    },
+    "ping-tyne-g-putter": {
+      "won": 245000,
+      "d": "2026-11-08"
+    },
+    "ping-womens-color-pair-glove": {
+      "won": 68600,
+      "d": "2026-11-08"
+    },
+    "ping-womens-mesh-pair-glove": {
+      "won": 75000,
+      "d": "2026-11-08"
+    },
+    "ping-womens-sheepskin-glove": {
+      "won": 32400,
+      "d": "2026-11-08"
+    },
+    "pistop-topswing-trainer": {
+      "won": 23980,
+      "d": "2026-11-08"
+    },
+    "powerrack-speedup-trainer": {
+      "won": 25800,
+      "d": "2026-11-08"
+    },
+    "prgr-crystalegg-women-driver": {
+      "won": 655460,
+      "d": "2026-11-08"
+    },
+    "prgr-superegg-fairway": {
+      "won": 400980,
+      "d": "2026-11-08"
+    },
+    "prgr-superegg-hybrid": {
+      "won": 306040,
+      "d": "2026-11-08"
+    },
+    "prgr-superegg-women-fairway": {
+      "won": 350000,
+      "d": "2026-11-08"
+    },
+    "prgr-superegg-women-iron": {
+      "won": 2203200,
+      "d": "2026-11-08"
+    },
+    "prgr-superegg-women-utility": {
+      "won": 290000,
+      "d": "2026-11-08"
+    },
+    "prgr-sweep-women-driver": {
+      "won": 188780,
+      "d": "2026-11-08"
+    },
+    "prgr-sweep-women-iron": {
+      "won": 320410,
+      "d": "2026-11-08"
+    },
+    "puma-fusion-tech-sl-25-shoes": {
+      "won": 82000,
+      "d": "2026-11-08"
+    },
+    "putting-highway-portable": {
+      "won": 14160,
+      "d": "2026-11-08"
+    },
+    "puttist-2-digital-putting": {
+      "won": 159000,
+      "d": "2026-11-08"
+    },
+    "pxg-0311-3x-wedge": {
+      "won": 248000,
+      "d": "2026-11-08"
+    },
+    "pxg-0311-blackops-driver": {
+      "won": 499800,
+      "d": "2026-11-08"
+    },
+    "pxg-0311-gen6-fairway": {
+      "won": 313590,
+      "d": "2026-11-08"
+    },
+    "pxg-0311-gen6-hybrid": {
+      "won": 313790,
+      "d": "2026-11-08"
+    },
+    "pxg-0311p-gen8-iron": {
+      "won": 2574000,
+      "d": "2026-11-08"
+    },
+    "pxg-0311t-gen8-iron": {
+      "won": 2520000,
+      "d": "2026-11-08"
+    },
+    "pxg-0311xp-gen7-iron": {
+      "won": 1800000,
+      "d": "2026-11-08"
+    },
+    "pxg-aluminum-lightweight-stand": {
+      "won": 449000,
+      "d": "2026-11-08"
+    },
+    "pxg-battle-ready2-bat-attack-putter": {
+      "won": 660000,
+      "d": "2026-11-08"
+    },
+    "pxg-battle-ready2-putter": {
+      "won": 660000,
+      "d": "2026-11-08"
+    },
+    "pxg-fairway-lite-cart": {
+      "won": 496100,
+      "d": "2026-11-08"
+    },
+    "pxg-hellcat-putter": {
+      "won": 320000,
+      "d": "2026-11-08"
+    },
+    "pxg-lightning-fairway": {
+      "won": 490000,
+      "d": "2026-11-08"
+    },
+    "pxg-lightning-hybrid": {
+      "won": 510000,
+      "d": "2026-11-08"
+    },
+    "pxg-lightning-max10k-driver": {
+      "won": 790000,
+      "d": "2026-11-08"
+    },
+    "pxg-lightning-tourmid-driver": {
+      "won": 690000,
+      "d": "2026-11-08"
+    },
+    "pxg-lightweight-carry-stand": {
+      "won": 299000,
+      "d": "2026-11-08"
+    },
+    "pxg-meshed-lightweight-stand": {
+      "won": 389000,
+      "d": "2026-11-08"
+    },
+    "pxg-stickem-wedge": {
+      "won": 270000,
+      "d": "2026-11-08"
+    },
+    "pxg-sugar-daddy3-wedge": {
+      "won": 530000,
+      "d": "2026-11-08"
+    },
+    "pxg-xtreme-hybrid-stand": {
+      "won": 924800,
+      "d": "2026-11-08"
+    },
+    "r2g-mate-hybrid": {
+      "won": 568050,
+      "d": "2026-11-08"
+    },
+    "r2g-mate-mini": {
+      "won": 199000,
+      "d": "2026-11-08"
+    },
+    "rapsodo-mlm": {
+      "won": 345480,
+      "d": "2026-11-08"
+    },
+    "rapsodo-mlm2pro": {
+      "won": 1529580,
+      "d": "2026-11-08"
+    },
+    "redstick-mini-duo-alignment": {
+      "won": 49500,
+      "d": "2026-11-08"
+    },
+    "ribaren-wrist-trainer": {
+      "won": 8700,
+      "d": "2026-11-08"
+    },
+    "roycow-swing-mat": {
+      "won": 35100,
+      "d": "2026-11-08"
+    },
+    "saintnine-n-pro": {
+      "won": 36000,
+      "d": "2026-11-08"
+    },
+    "saintnine-n-pro-x": {
+      "won": 37200,
+      "d": "2026-11-08"
+    },
+    "skechers-go-golf-elite-6-shoes": {
+      "won": 152150,
+      "d": "2026-11-08"
+    },
+    "skechers-go-golf-flight-shoes": {
+      "won": 118150,
+      "d": "2026-11-08"
+    },
+    "skechers-go-golf-flight-women-shoes": {
+      "won": 118150,
+      "d": "2026-11-08"
+    },
+    "sklz-gold-flex-trainer": {
+      "won": 129500,
+      "d": "2026-11-08"
+    },
+    "sklz-home-driving-range-kit": {
+      "won": 237220,
+      "d": "2026-11-08"
+    },
+    "sklz-quickster-chipping-net": {
+      "won": 90440,
+      "d": "2026-11-08"
+    },
+    "sklz-smash-bag": {
+      "won": 54830,
+      "d": "2026-11-08"
+    },
+    "skulldog-short-7iron": {
+      "won": 19000,
+      "d": "2026-11-08"
+    },
+    "srixon-ad333": {
+      "won": 24290,
+      "d": "2026-11-08"
+    },
+    "srixon-all-weather-glove": {
+      "won": 31210,
+      "d": "2026-11-08"
+    },
+    "srixon-q-star-tour": {
+      "won": 41000,
+      "d": "2026-11-08"
+    },
+    "srixon-q-star-tour-divide": {
+      "won": 50300,
+      "d": "2026-11-08"
+    },
+    "srixon-s166-cart": {
+      "won": 169000,
+      "d": "2026-11-08"
+    },
+    "srixon-soft-feel-lady": {
+      "won": 14890,
+      "d": "2026-11-08"
+    },
+    "srixon-weatherproof-stand-2026": {
+      "won": 277400,
+      "d": "2026-11-08"
+    },
+    "srixon-z-star": {
+      "won": 38250,
+      "d": "2026-11-08"
+    },
+    "srixon-z-star-diamond": {
+      "won": 83060,
+      "d": "2026-11-08"
+    },
+    "srixon-z-star-xv": {
+      "won": 74000,
+      "d": "2026-11-08"
+    },
+    "srixon-zforged2-iron": {
+      "won": 1193000,
+      "d": "2026-11-08"
+    },
+    "srixon-zx5mk2-iron": {
+      "won": 1303100,
+      "d": "2026-11-08"
+    },
+    "srixon-zx7mk2-iron": {
+      "won": 912000,
+      "d": "2026-11-08"
+    },
+    "srixon-zxhmk2-hybrid": {
+      "won": 200000,
+      "d": "2026-11-08"
+    },
+    "srixon-zxi-driver": {
+      "won": 450000,
+      "d": "2026-11-08"
+    },
+    "srixon-zxi-fairway": {
+      "won": 255000,
+      "d": "2026-11-08"
+    },
+    "srixon-zxi-hybrid": {
+      "won": 248000,
+      "d": "2026-11-08"
+    },
+    "srixon-zxi-max-driver": {
+      "won": 480000,
+      "d": "2026-11-08"
+    },
+    "srixon-zxi-rkt-driver": {
+      "won": 790000,
+      "d": "2026-11-08"
+    },
+    "srixon-zxi-rkt-fairway": {
+      "won": 450000,
+      "d": "2026-11-08"
+    },
+    "srixon-zxi-rkt-ls-driver": {
+      "won": 820000,
+      "d": "2026-11-08"
+    },
+    "srixon-zxi4-iron": {
+      "won": 1002760,
+      "d": "2026-11-08"
+    },
+    "srixon-zxi5-iron": {
+      "won": 986000,
+      "d": "2026-11-08"
+    },
+    "srixon-zxi7-iron": {
+      "won": 986000,
+      "d": "2026-11-08"
+    },
+    "srixon-zxmk2-fairway": {
+      "won": 210000,
+      "d": "2026-11-08"
+    },
+    "sunmountain-h2no-stand": {
+      "won": 239000,
+      "d": "2026-11-08"
+    },
+    "sunmountain-matchplay14-stand": {
+      "won": 573120,
+      "d": "2026-11-08"
+    },
+    "superspeed-speed-sticks-pro": {
+      "won": 420000,
+      "d": "2026-11-08"
+    },
+    "swingimpact-swingcaddie": {
+      "won": 270000,
+      "d": "2026-11-08"
+    },
+    "taylormade-axelon-glove": {
+      "won": 32900,
+      "d": "2026-11-08"
+    },
+    "taylormade-distance-plus": {
+      "won": 33270,
+      "d": "2026-11-08"
+    },
+    "taylormade-dualflex-women-pair-glove": {
+      "won": 40560,
+      "d": "2026-11-08"
+    },
+    "taylormade-durable-grip-glove": {
+      "won": 22850,
+      "d": "2026-11-08"
+    },
+    "taylormade-gloire-women-rescue": {
+      "won": 330000,
+      "d": "2026-11-08"
+    },
+    "taylormade-glory-women-driver": {
+      "won": 715200,
+      "d": "2026-11-08"
+    },
+    "taylormade-hitoe5-wedge": {
+      "won": 220000,
+      "d": "2026-11-08"
+    },
+    "taylormade-mg4-wedge": {
+      "won": 149000,
+      "d": "2026-11-08"
+    },
+    "taylormade-mg5-wedge": {
+      "won": 220000,
+      "d": "2026-11-08"
+    },
+    "taylormade-p770-iron": {
+      "won": 1290000,
+      "d": "2026-11-08"
+    },
+    "taylormade-p790-2025-iron": {
+      "won": 1500000,
+      "d": "2026-11-08"
+    },
+    "taylormade-p790-iron": {
+      "won": 1040000,
+      "d": "2026-11-08"
+    },
+    "taylormade-p790-women-iron": {
+      "won": 1575000,
+      "d": "2026-11-08"
+    },
+    "taylormade-p7cb-iron": {
+      "won": 1600000,
+      "d": "2026-11-08"
+    },
+    "taylormade-p7mc-iron": {
+      "won": 940000,
+      "d": "2026-11-08"
+    },
+    "taylormade-p8cb-iron": {
+      "won": 1370000,
+      "d": "2026-11-08"
+    },
+    "taylormade-p8cb-women-iron": {
+      "won": 1370000,
+      "d": "2026-11-08"
+    },
+    "taylormade-performance-glove": {
+      "won": 26900,
+      "d": "2026-11-08"
+    },
+    "taylormade-players-glove": {
+      "won": 15900,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi-iron": {
+      "won": 699000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi-maxlite-women-iron": {
+      "won": 799000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi10-fairway": {
+      "won": 269000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi10-rescue": {
+      "won": 269000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi10ls-driver": {
+      "won": 645000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi10max-driver": {
+      "won": 439000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi10max-fairway": {
+      "won": 269000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi10max-rescue": {
+      "won": 229000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi35-driver": {
+      "won": 459000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi35-fairway": {
+      "won": 269000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi35-maxlite-women-driver": {
+      "won": 494360,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi35-rescue": {
+      "won": 231570,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi35-tour-fairway": {
+      "won": 269000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi35ls-driver": {
+      "won": 455050,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi35max-driver": {
+      "won": 459000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi35max-rescue": {
+      "won": 279000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi35maxlite-women-fairway": {
+      "won": 338530,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi35maxlite-women-hybrid": {
+      "won": 299000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi4d-driver": {
+      "won": 789000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi4d-fairway": {
+      "won": 445000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi4d-hybrid": {
+      "won": 400000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi4d-maxlite-women-driver": {
+      "won": 880000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi4d-women-fairway": {
+      "won": 468120,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi4dls-driver": {
+      "won": 1230000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi4dmax-driver": {
+      "won": 789000,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi4dmax-fairway": {
+      "won": 463440,
+      "d": "2026-11-08"
+    },
+    "taylormade-qi4dmax-hybrid": {
+      "won": 400000,
+      "d": "2026-11-08"
+    },
+    "taylormade-sim2max-driver": {
+      "won": 328000,
+      "d": "2026-11-08"
+    },
+    "taylormade-sim2max-fairway": {
+      "won": 199000,
+      "d": "2026-11-08"
+    },
+    "taylormade-sim2max-iron": {
+      "won": 615550,
+      "d": "2026-11-08"
+    },
+    "taylormade-sim2max-women-driver": {
+      "won": 339000,
+      "d": "2026-11-08"
+    },
+    "taylormade-sim2max-women-iron": {
+      "won": 727050,
+      "d": "2026-11-08"
+    },
+    "taylormade-sim2maxd-women-fairway": {
+      "won": 200200,
+      "d": "2026-11-08"
+    },
+    "taylormade-smartcross-glove": {
+      "won": 9900,
+      "d": "2026-11-08"
+    },
+    "taylormade-spider-tour-f-putter": {
+      "won": 380000,
+      "d": "2026-11-08"
+    },
+    "taylormade-spider-tour-putter": {
+      "won": 350000,
+      "d": "2026-11-08"
+    },
+    "taylormade-spider-tour-v-putter": {
+      "won": 408000,
+      "d": "2026-11-08"
+    },
+    "taylormade-spider-tour-x-putter": {
+      "won": 330000,
+      "d": "2026-11-08"
+    },
+    "taylormade-spider-zt-max-putter": {
+      "won": 671000,
+      "d": "2026-11-08"
+    },
+    "taylormade-spider-zt-putter": {
+      "won": 511100,
+      "d": "2026-11-08"
+    },
+    "taylormade-stealth-women-iron": {
+      "won": 690000,
+      "d": "2026-11-08"
+    },
+    "taylormade-stealth-women-rescue": {
+      "won": 221070,
+      "d": "2026-11-08"
+    },
+    "taylormade-stratus-soft-glove": {
+      "won": 9900,
+      "d": "2026-11-08"
+    },
+    "taylormade-t-heat-pair-glove": {
+      "won": 28260,
+      "d": "2026-11-08"
+    },
+    "taylormade-tour-response-stripe": {
+      "won": 191100,
+      "d": "2026-11-08"
+    },
+    "taylormade-tp-genuine-leather-glove": {
+      "won": 22190,
+      "d": "2026-11-08"
+    },
+    "taylormade-tp-reserve-b11-putter": {
+      "won": 535000,
+      "d": "2026-11-08"
+    },
+    "taylormade-tp5-ball": {
+      "won": 51400,
+      "d": "2026-11-08"
+    },
+    "taylormade-tp5-pix": {
+      "won": 175200,
+      "d": "2026-11-08"
+    },
+    "taylormade-tp5x": {
+      "won": 98000,
+      "d": "2026-11-08"
+    },
+    "taylormade-tp5x-pix": {
+      "won": 52480,
+      "d": "2026-11-08"
+    },
+    "titleist-avx": {
+      "won": 65000,
+      "d": "2026-11-08"
+    },
+    "titleist-cart14-bag": {
+      "won": 459000,
+      "d": "2026-11-08"
+    },
+    "titleist-elite-lite5-stadry-cart": {
+      "won": 415070,
+      "d": "2026-11-08"
+    },
+    "titleist-gt2-driver": {
+      "won": 900000,
+      "d": "2026-11-08"
+    },
+    "titleist-gt3-driver": {
+      "won": 900000,
+      "d": "2026-11-08"
+    },
+    "titleist-gts3-driver": {
+      "won": 990000,
+      "d": "2026-11-08"
+    },
+    "titleist-hybrid14-stand": {
+      "won": 390000,
+      "d": "2026-11-08"
+    },
+    "titleist-hybrid5-stand": {
+      "won": 384000,
+      "d": "2026-11-08"
+    },
+    "titleist-performance-cart-2026": {
+      "won": 427300,
+      "d": "2026-11-08"
+    },
+    "titleist-permasoft-glove": {
+      "won": 27200,
+      "d": "2026-11-08"
+    },
+    "titleist-permasoft-womens-glove": {
+      "won": 38500,
+      "d": "2026-11-08"
+    },
+    "titleist-players-glove": {
+      "won": 34900,
+      "d": "2026-11-08"
+    },
+    "titleist-players-s5-stand": {
+      "won": 389000,
+      "d": "2026-11-08"
+    },
+    "titleist-players-womens-glove": {
+      "won": 34500,
+      "d": "2026-11-08"
+    },
+    "titleist-players4-carbon-stand": {
+      "won": 359000,
+      "d": "2026-11-08"
+    },
+    "titleist-players4-plus-stand": {
+      "won": 390000,
+      "d": "2026-11-08"
+    },
+    "titleist-players4-stand": {
+      "won": 329900,
+      "d": "2026-11-08"
+    },
+    "titleist-players5-carbon-stand": {
+      "won": 395000,
+      "d": "2026-11-08"
+    },
+    "titleist-pro-v1": {
+      "won": 100000,
+      "d": "2026-11-08"
+    },
+    "titleist-pro-v1x": {
+      "won": 73000,
+      "d": "2026-11-08"
+    },
+    "titleist-pro-v1x-left-dash": {
+      "won": 73000,
+      "d": "2026-11-08"
+    },
+    "titleist-t100-iron": {
+      "won": 1545000,
+      "d": "2026-11-08"
+    },
+    "titleist-t150-iron": {
+      "won": 1545000,
+      "d": "2026-11-08"
+    },
+    "titleist-t250-iron": {
+      "won": 1545000,
+      "d": "2026-11-08"
+    },
+    "titleist-t350-iron": {
+      "won": 1920000,
+      "d": "2026-11-08"
+    },
+    "titleist-tour-soft": {
+      "won": 43900,
+      "d": "2026-11-08"
+    },
+    "titleist-trufeel": {
+      "won": 34000,
+      "d": "2026-11-08"
+    },
+    "titleist-tsi1-driver": {
+      "won": 477540,
+      "d": "2026-11-08"
+    },
+    "titleist-velocity": {
+      "won": 32900,
+      "d": "2026-11-08"
+    },
+    "titleist-vokey-sm8": {
+      "won": 275100,
+      "d": "2026-11-08"
+    },
+    "tmax-golf-net-2m": {
+      "won": 231280,
+      "d": "2026-11-08"
+    },
+    "todin-perfect-swing-trainer": {
+      "won": 37800,
+      "d": "2026-11-08"
+    },
+    "ua-drive-fade-2-shoes": {
+      "won": 142120,
+      "d": "2026-11-08"
+    },
+    "ua-drive-fade-2-spikeless-women-shoes": {
+      "won": 189000,
+      "d": "2026-11-08"
+    },
+    "ua-phantom-fore-boa-shoes": {
+      "won": 224400,
+      "d": "2026-11-08"
+    },
+    "voicecaddie-l6": {
+      "won": 279800,
+      "d": "2026-11-08"
+    },
+    "voicecaddie-laser-fit": {
+      "won": 181350,
+      "d": "2026-11-08"
+    },
+    "voicecaddie-sc200-plus": {
+      "won": 199000,
+      "d": "2026-11-08"
+    },
+    "voicecaddie-sc300i": {
+      "won": 399000,
+      "d": "2026-11-08"
+    },
+    "voicecaddie-sc4-pro": {
+      "won": 590870,
+      "d": "2026-11-08"
+    },
+    "voicecaddie-sl-mini": {
+      "won": 398000,
+      "d": "2026-11-08"
+    },
+    "voicecaddie-sl3": {
+      "won": 598000,
+      "d": "2026-11-08"
+    },
+    "voicecaddie-t-ultra": {
+      "won": 275000,
+      "d": "2026-11-08"
+    },
+    "voicecaddie-t13-pro": {
+      "won": 439120,
+      "d": "2026-11-08"
+    },
+    "voicecaddie-vc4": {
+      "won": 106100,
+      "d": "2026-11-08"
+    },
+    "volvik-axia-iv": {
+      "won": 45000,
+      "d": "2026-11-08"
+    },
+    "volvik-condor-s3": {
+      "won": 44000,
+      "d": "2026-11-08"
+    },
+    "volvik-condor-s4": {
+      "won": 44000,
+      "d": "2026-11-08"
+    },
+    "volvik-condor-x": {
+      "won": 49740,
+      "d": "2026-11-08"
+    },
+    "volvik-magma": {
+      "won": 29800,
+      "d": "2026-11-08"
+    },
+    "volvik-performance-glove": {
+      "won": 14740,
+      "d": "2026-11-08"
+    },
+    "volvik-performance-wheel-stand": {
+      "won": 254000,
+      "d": "2026-11-08"
+    },
+    "volvik-power-soft": {
+      "won": 22280,
+      "d": "2026-11-08"
+    },
+    "volvik-skull-lycra-glove": {
+      "won": 29200,
+      "d": "2026-11-08"
+    },
+    "volvik-vivid": {
+      "won": 38530,
+      "d": "2026-11-08"
+    },
+    "wellsense-black-eagle-metal": {
+      "won": 275000,
+      "d": "2026-11-08"
+    },
+    "wellsense-black-eagle-pro": {
+      "won": 270000,
+      "d": "2026-11-08"
+    },
+    "wellsense-black-eagle-zero": {
+      "won": 169000,
+      "d": "2026-11-08"
+    },
+    "wilson-duo-soft": {
+      "won": 47640,
+      "d": "2026-11-08"
+    },
+    "winnerspirit-miracle-201-v3": {
+      "won": 114400,
+      "d": "2026-11-08"
+    },
+    "winnerspirit-miracle-205": {
+      "won": 115900,
+      "d": "2026-11-08"
+    },
+    "winnerspirit-miracle-580-v3": {
+      "won": 132000,
+      "d": "2026-11-08"
+    },
+    "wixx-speed-stick": {
+      "won": 25900,
+      "d": "2026-11-08"
+    },
+    "xxio-casual-wheel-v2-cart": {
+      "won": 399000,
+      "d": "2026-11-08"
+    },
+    "xxio-essential-cart": {
+      "won": 299000,
+      "d": "2026-11-08"
+    },
+    "xxio-nanofront-glove": {
+      "won": 17400,
+      "d": "2026-11-08"
+    },
+    "xxio-premium-sheepskin-glove": {
+      "won": 20500,
+      "d": "2026-11-08"
+    },
+    "xxio-prime-royal6-fairway": {
+      "won": 880000,
+      "d": "2026-11-08"
+    },
+    "xxio-prime-women-fairway": {
+      "won": 597800,
+      "d": "2026-11-08"
+    },
+    "xxio-primeroyal-iron": {
+      "won": 2900000,
+      "d": "2026-11-08"
+    },
+    "xxio-primeroyal6-women-iron": {
+      "won": 2750000,
+      "d": "2026-11-08"
+    },
+    "xxio-rebound-drive-2": {
+      "won": 41820,
+      "d": "2026-11-08"
+    },
+    "xxio-x-iron": {
+      "won": 919000,
+      "d": "2026-11-08"
+    },
+    "xxio12-fairway": {
+      "won": 237600,
+      "d": "2026-11-08"
+    },
+    "xxio13-fairway": {
+      "won": 290000,
+      "d": "2026-11-08"
+    },
+    "xxio13-hybrid": {
+      "won": 244620,
+      "d": "2026-11-08"
+    },
+    "xxio13-iron": {
+      "won": 1289990,
+      "d": "2026-11-08"
+    },
+    "xxio13-women-driver": {
+      "won": 698000,
+      "d": "2026-11-08"
+    },
+    "xxio13-women-fairway": {
+      "won": 288170,
+      "d": "2026-11-08"
+    },
+    "xxio13-women-hybrid": {
+      "won": 279990,
+      "d": "2026-11-08"
+    },
+    "xxio13-women-iron": {
+      "won": 1190000,
+      "d": "2026-11-08"
+    },
+    "xxio13x-hybrid": {
+      "won": 280000,
+      "d": "2026-11-08"
+    },
+    "xxio14-driver": {
+      "won": 960000,
+      "d": "2026-11-08"
+    },
+    "xxio14-fairway": {
+      "won": 600000,
+      "d": "2026-11-08"
+    },
+    "xxio14-hybrid": {
+      "won": 400000,
+      "d": "2026-11-08"
+    },
+    "xxio14-iron": {
+      "won": 1230000,
+      "d": "2026-11-08"
+    },
+    "xxio14-women-driver": {
+      "won": 719000,
+      "d": "2026-11-08"
+    },
+    "xxio14-women-fairway": {
+      "won": 474000,
+      "d": "2026-11-08"
+    },
+    "xxio14-women-hybrid": {
+      "won": 439000,
+      "d": "2026-11-08"
+    },
+    "xxio14-women-iron": {
+      "won": 1485170,
+      "d": "2026-11-08"
+    },
+    "xxio14plus-driver": {
+      "won": 704000,
+      "d": "2026-11-08"
+    },
+    "yamaha-cs-hmplus-women-hybrid": {
+      "won": 224900,
+      "d": "2026-11-08"
+    },
+    "yamaha-inpres-drivestar-iron": {
+      "won": 1420000,
+      "d": "2026-11-08"
+    },
+    "yamaha-inpres-drivestar-women-driver": {
+      "won": 545000,
+      "d": "2026-11-08"
+    },
+    "yamaha-inpres-udplus2-hybrid": {
+      "won": 264700,
+      "d": "2026-11-08"
+    },
+    "yamaha-rmx-vdm-driver": {
+      "won": 620000,
+      "d": "2026-11-08"
+    },
+    "yamaha-rmxvd-hybrid": {
+      "won": 510000,
+      "d": "2026-11-08"
+    },
+    "yonex-ezonegt-hybrid": {
+      "won": 330000,
+      "d": "2026-11-08"
+    },
+    "yonex-ezonegt3-fairway": {
+      "won": 279000,
+      "d": "2026-11-08"
+    },
+    "yonex-ezonegt3-women-fairway": {
+      "won": 279000,
+      "d": "2026-11-08"
+    },
+    "yonex-ezonegt3-women-iron": {
+      "won": 1000000,
+      "d": "2026-11-08"
+    },
+    "yonex-ezonegt4-fairway": {
+      "won": 350000,
+      "d": "2026-11-08"
+    },
+    "zeroputt-digital-putting": {
+      "won": 235600,
+      "d": "2026-11-08"
+    }
+  }
+}
