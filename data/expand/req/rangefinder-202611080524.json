@@ -1,0 +1,118 @@
+[
+ {
+  "category": "rangefinder",
+  "id": "voicecaddie-sl-mini",
+  "name": "보이스캐디 SL mini v2.0 거리측정기",
+  "query": "보이스캐디 SL mini 거리측정기",
+  "must": ["보이스캐디"],
+  "mustAny": ["slmini", "sl미니", "에스엘미니"],
+  "exclude": ["케이스", "파우치단품", "배터리", "중고", "필름", "리퍼", "sl3", "sl2"],
+  "summary": "보이스캐디의 소형 GPS+레이저 하이브리드 거리측정기입니다. 공식 자료 기준 외부 OLED 터치스크린으로 코스 레이아웃·그린 기복 정보를 보여 주고, V-Algorithm 3.0 자동 경사 계산을 씁니다. 국내 공식몰에는 2026년형 v2.0이 올라 있습니다.",
+  "points": [
+   "레이저 측정 + GPS 코스 정보를 한 기기에",
+   "외부 OLED 터치스크린(코스 레이아웃·그린 기복·퍼트 방향)",
+   "V-Algorithm 3.0 자동 경사 계산"
+  ],
+  "guidePick": {
+   "role": "소형 레이저+GPS",
+   "forWhom": "레이저 거리와 그린 정보를 한 손에 쥐는 작은 기기로 보고 싶은 고급 골퍼",
+   "short": "터치스크린 하이브리드",
+   "plus": "GPS 코스·그린 정보",
+   "minus": "레이저 전용보다 비쌈",
+   "pros": [
+    "레이저와 GPS 코스 정보를 작은 몸체 하나로",
+    "외부 터치스크린으로 그린 기복·코스 레이아웃 확인"
+   ],
+   "cons": [
+    "무게·배율·측정 범위는 공식 자료에서 확인하지 못함",
+    "GPS 기능 때문에 단순 레이저보다 가격이 높음"
+   ],
+   "scores": [4, 5, 4, 3],
+   "specs": ["레이저+GPS 하이브리드", "외부 OLED 터치스크린·자동 경사 계산·그린 기복", "국내 브랜드(보이스캐디)"],
+   "verdict": "SL3보다 작은 몸체로 레이저+GPS를 함께 쓰고 싶은 분께 맞는 보이스캐디 하이브리드입니다.",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://www.voicecaddie.co.kr/product/926124",
+   "https://voicecaddie.com/products/sl-mini-laser-rangefinder",
+   "https://voicecaddie.com/pages/sl-mini-teaser"
+  ]
+ },
+ {
+  "category": "rangefinder",
+  "id": "golfbuddy-aim-l20",
+  "name": "골프버디 aim L20 거리측정기",
+  "query": "골프버디 aim L20 레이저 거리측정기",
+  "must": ["골프버디"],
+  "mustAny": ["l20"],
+  "exclude": ["케이스", "파우치단품", "배터리", "중고", "필름", "리퍼", "l30", "l12", "l11", "l10"],
+  "summary": "골프존이 만드는 골프버디의 레이저 거리측정기로, 공식 페이지는 '세계 최초 샷 트래킹이 가능한 레이저 거리측정기'로 소개합니다. ZST+ 기술로 0.15초 측정, 2~800m 측정 범위, IPX4 생활 방수입니다.",
+  "points": [
+   "앱과 블루투스로 연결해 샷 트래킹",
+   "ZST+ 0.15초 측정, 2~800m",
+   "IPX4 방수"
+  ],
+  "guidePick": {
+   "role": "샷 트래킹 레이저",
+   "forWhom": "거리 측정과 함께 내 샷 거리 기록을 앱으로 남기고 싶은 중급 골퍼",
+   "short": "앱 샷 트래킹",
+   "plus": "샷 기록·0.15초 측정",
+   "minus": "앱 연동 필요",
+   "pros": [
+    "골프버디 앱과 블루투스 연결로 샷 트래킹",
+    "0.15초 측정(ZST+), 2~800m 측정 범위"
+   ],
+   "cons": [
+    "샷 기록 기능을 쓰려면 스마트폰 앱 연결 필요",
+    "상위 aim L30의 렌즈 구동식 손떨림 방지(OIS)는 없음"
+   ],
+   "scores": [4, 4, 4, 4],
+   "specs": ["레이저", "샷 트래킹(앱 연동)·0.15초 측정·IPX4", "국내 브랜드(골프존 골프버디)"],
+   "verdict": "거리만 재는 데서 그치지 않고 샷 기록까지 남기고 싶은 분께 맞는 골프버디 레이저입니다.",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://kr.golfbuddy.com/products/L20.asp?pType=0",
+   "https://kr.golfbuddy.com/support/manuals.asp"
+  ]
+ },
+ {
+  "category": "rangefinder",
+  "id": "caddytalk-minion",
+  "name": "캐디톡 미니온 거리측정기",
+  "query": "캐디톡 미니온 레이저 거리측정기",
+  "must": ["캐디톡"],
+  "mustAny": ["미니온", "minion"],
+  "exclude": ["케이스", "파우치단품", "배터리", "중고", "필름", "리퍼", "플러스", "plus", "미니온2", "minion2", "미니온 2", "미니프로", "미니미", "큐브", "윈디"],
+  "summary": "캐디톡이 2024년 내놓은 97~99g 초경량 레이저 거리측정기입니다. 공식 자료 기준 고저차와 볼 탄도를 반영하는 매직 슬로프(M-Slope)를 넣고, 캐디모드·환경슬로프 같은 고급 기능은 빼서 가볍고 작게 만들었습니다.",
+  "points": [
+   "97~99g 초경량(캐디톡 공식 표기)",
+   "매직 슬로프(M-Slope) 보정 거리",
+   "캐디모드·환경슬로프는 없음(상위 미니온 플러스에 캐디모드)"
+  ],
+  "guidePick": {
+   "role": "100g 미만 기본형",
+   "forWhom": "꼭 필요한 기능만 있는 가장 가벼운 레이저를 원하는 입문 골퍼",
+   "short": "99g 기본형",
+   "plus": "초경량·기본 슬로프",
+   "minus": "고급 기능 없음",
+   "pros": [
+    "97~99g으로 주머니에 넣어도 부담이 적음",
+    "매직 슬로프로 고저차 보정 거리 확인"
+   ],
+   "cons": [
+    "캐디모드·환경슬로프 없음",
+    "더 가벼운 후속 미니온2(72g)가 따로 판매 중"
+   ],
+   "scores": [4, 3, 4, 4],
+   "specs": ["레이저", "매직 슬로프(고저차 보정)·초경량", "국내 브랜드(캐디톡)"],
+   "verdict": "기본 기능만으로 충분하고 무게를 가장 중시하는 입문자에게 맞는 캐디톡 기본형입니다.",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://caddytalk.co.kr/product/%EC%BA%90%EB%94%94%ED%86%A1-%EB%AF%B8%EB%8B%88%EC%98%A8/44/",
+   "https://caddytalk.co.kr/article/faq/3/190/",
+   "https://m.caddytalk.co.kr/board/free/read2.html?no=83&board_no=3"
+  ]
+ }
+]
