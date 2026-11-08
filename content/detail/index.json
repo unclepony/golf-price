@@ -276,7 +276,7 @@
  "bushnell-pro-x3-plus": "af4b1ecdf962",
  "garmin-marq-golfer-gen2": "63da0fc16f9f",
  "garmin-fenix-8-amoled": "d9539f8df3c2",
- "voicecaddie-sc200-plus": "8cb10ea22fd8",
+ "voicecaddie-sc200-plus": "6256f44adc2e",
  "phigolf-2": "6de24256d09a",
  "rapsodo-mlm": "0478b7a49d15",
  "garmin-approach-r50": "7b435a4ad6f4",
@@ -362,7 +362,7 @@
  "bushnell-tour-v6": "06a4cd235425",
  "voicecaddie-laser-fit": "74f0c0564c0b",
  "voicecaddie-t-ultra": "f9ef6d07a098",
- "voicecaddie-sc300i": "59cdadfca5bd",
+ "voicecaddie-sc300i": "d187499a8ff9",
  "footjoy-quantum-shoes": "2b3297f96efa",
  "adidas-s2g-shoes": "da902dcf22f2",
  "skechers-go-golf-elite-6-shoes": "40207b338073",
@@ -691,5 +691,6 @@
  "taylormade-tp5x-pix": "6cf11a4b1ca3",
  "volvik-magma": "00bae65b2430",
  "voicecaddie-sl-mini": "6acb83e686a5",
- "caddytalk-minion": "27f119a159ed"
+ "caddytalk-minion": "27f119a159ed",
+ "voicecaddie-ss10": "686b55d36319"
 }
