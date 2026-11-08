@@ -1,0 +1,10 @@
+[
+ {"id":"q-garmin-j1","query":"가민 어프로치 J1 주니어 골프 시계","must":["J1"],"mustAny":["가민","Garmin","GARMIN"],"exclude":["케이스","필름","스트랩","밴드","충전","보호","중고"]},
+ {"id":"q-garmin-g82","query":"가민 어프로치 G82 골프 GPS","must":["G82"],"mustAny":["가민","Garmin","GARMIN"],"exclude":["케이스","필름","보호","중고","거치"]},
+ {"id":"q-garmin-s72","query":"가민 어프로치 S72 골프 스마트워치","must":["S72"],"mustAny":["가민","Garmin","GARMIN"],"exclude":["케이스","필름","스트랩","밴드","충전","보호","중고"]},
+ {"id":"q-garmin-s44-kr","query":"가민코리아 정품 어프로치 S44","must":["S44"],"mustAny":["가민","Garmin","GARMIN"],"exclude":["케이스","필름","스트랩","밴드","충전","보호","중고","일본","FROM JAPAN"]},
+ {"id":"q-galaxy-watch9-golf","query":"갤럭시 워치9 골프 스마트캐디","must":["골프"],"mustAny":["워치9","워치 9"],"exclude":["케이스","필름","스트랩","밴드","보호"]},
+ {"id":"q-shotscope-g6","query":"샷스코프 G6 골프 GPS 시계","must":["G6"],"mustAny":["샷스코프","Shot Scope","SHOT SCOPE"],"exclude":["케이스","필름","스트랩","보호"]},
+ {"id":"q-voicecaddie-t-ultra2","query":"보이스캐디 T-Ultra 2 골프 시계","must":["울트라"],"mustAny":["보이스캐디"],"exclude":["케이스","필름","스트랩","밴드","보호"]},
+ {"id":"q-golfbuddy-aim-w13","query":"골프버디 aim W13 시계형 거리측정기","must":["W13"],"mustAny":["골프버디","GOLFBUDDY","GOLF BUDDY"],"exclude":["케이스","필름","스트랩","보호"]}
+]
