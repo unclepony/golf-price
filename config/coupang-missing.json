@@ -1,10 +1,5 @@
 {
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { since: 처음 못 찾은 날, days: 연속으로 못 찾은 날 수, last: 마지막으로 못 찾은 날 }. 5일이면 picks.json gone.",
-  "honma-beres09-women-driver": {
-    "since": "2026-10-30",
-    "days": 9,
-    "last": "2026-11-07"
-  },
   "golfbuddy-atom": {
     "since": "2026-10-31",
     "days": 8,
