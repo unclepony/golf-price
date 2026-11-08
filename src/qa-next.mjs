@@ -16,17 +16,20 @@ if (!next) {
   console.log(JSON.stringify({ next: null, 설명: '남은 글감이 없습니다. keywords.json 에 글감을 더하세요.' }, null, 2));
   process.exit(0);
 }
-const guides = readJson(join(ROOT, 'config', 'guides.json')).guides.filter((g) => !g.mergeInto);
+// 합쳐진 가이드(mergeInto)도 사실로 쓴다 — 화면에서는 대상 가이드의 #vokey 섹션에 그대로 보이므로 링크는 그쪽(build.mjs 301 규칙과 같음)
+const guides = readJson(join(ROOT, 'config', 'guides.json')).guides;
 const pick = (s) => guides.find((g) => g.slug === s);
 const facts = (next.guide ?? []).map(pick).filter(Boolean).map((g) => ({
   slug: g.slug,
-  url: `/g/${g.slug}`,
+  url: g.mergeInto ? `/g/${g.mergeInto}#vokey` : `/g/${g.slug}`,
+  ...(g.mergeInto ? { mergedInto: g.mergeInto } : {}),
   title: g.title,
   updated: g.updated,
   intro: g.intro,
   criteria: g.criteria,
   sections: g.sections,
   faq: g.faq,
+  ...(g.grinds ? { grinds: g.grinds } : {}),
 }));
 const missing = (next.guide ?? []).filter((s) => !pick(s));
 console.log(
