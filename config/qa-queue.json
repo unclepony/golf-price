@@ -159,6 +159,13 @@
       "slug": "vokey-wedge-grind",
       "file": "content/qa/018-vokey-wedge-grind.md",
       "date": "2026-11-08"
+    },
+    {
+      "no": 30,
+      "kw": "여성 드라이버 추천",
+      "slug": "womens-driver-beginner",
+      "file": "content/qa/030-womens-driver-beginner.md",
+      "date": "2026-11-09"
     }
   ]
 }
