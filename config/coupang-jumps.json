@@ -1,15 +1,21 @@
 {
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { price: 1.5배 넘게 튄 API 값(반영 보류), held: 그때 유지한 직전 값, first: 처음 본 날, last: 마지막으로 본 날 }. 다음 날 이후 같은 값이 다시 나오면 반영하고 지운다.",
-  "taylormade-durable-grip-glove": {
-    "price": 14400,
-    "held": 22850,
-    "first": "2026-11-07",
-    "last": "2026-11-07"
+  "footjoy-gtxtreme-glove": {
+    "price": 41900,
+    "held": 23400,
+    "first": "2026-11-09",
+    "last": "2026-11-09"
   },
-  "callaway-jaws-forged-wedge": {
-    "price": 158000,
-    "held": 98000,
-    "first": "2026-11-07",
-    "last": "2026-11-07"
+  "taylormade-tp-genuine-leather-glove": {
+    "price": 42000,
+    "held": 22190,
+    "first": "2026-11-09",
+    "last": "2026-11-09"
+  },
+  "volvik-vivid": {
+    "price": 76950,
+    "held": 38530,
+    "first": "2026-11-09",
+    "last": "2026-11-09"
   }
 }

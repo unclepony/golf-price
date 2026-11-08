@@ -1,10 +1,139 @@
 {
   "date": "2026-11-07",
   "by": {
+    "act": {
+      "캠페인: chatgpt.com|/c/iron": 1,
+      "캠페인: chatgpt.com|/g/golf-watch-recommend": 2,
+      "캠페인: chatgpt.com|/p/galaxy-watch8-golf": 2
+    },
+    "asn": {
+      "AS134913 JETWAY BROADBAND": 1,
+      "AS4766 Korea Telecom": 1,
+      "AS55410 This space is statically assig": 1,
+      "AS9318 SK Broadband Co Ltd": 1
+    },
+    "asncamp": {
+      "AS134913 JETWAY BROADBAND|youtube / video / t-womens-driver-recommend-1|PC": 1,
+      "AS4766 Korea Telecom|chatgpt.com|모바일": 1,
+      "AS55410 This space is statically assig|youtube / video / t-womens-driver-recommend-1|PC": 1,
+      "AS9318 SK Broadband Co Ltd|chatgpt.com|PC": 1
+    },
+    "cty": {
+      "IN": 2,
+      "KR": 2
+    },
+    "depth": {
+      "/c/iron|첫 화면": 1,
+      "/g/golf-watch-recommend|50%": 9,
+      "/g/golf-watch-recommend|첫 화면": 1,
+      "/p/galaxy-watch8-golf|75%": 1,
+      "/p/galaxy-watch8-golf|끝까지": 1
+    },
+    "dev": {
+      "PC": 3,
+      "모바일": 1
+    },
+    "hour": {
+      "16": 1,
+      "18": 2,
+      "19": 1
+    },
+    "nav": {
+      "/g/golf-watch-recommend|/p/galaxy-watch8-golf": 1,
+      "/p/galaxy-watch8-golf|/g/golf-watch-recommend": 10
+    },
+    "out": {
+      "/g/golf-watch-recommend|galaxy-watch8-golf": 1
+    },
+    "outact": {
+      "조작 후|캠페인: chatgpt.com": 1
+    },
+    "outcamp": {
+      "chatgpt.com|galaxy-watch8-golf": 1
+    },
+    "outref": {
+      "캠페인: chatgpt.com": 1
+    },
+    "pos": {
+      "상품 소개": 1
+    },
+    "pv": {
+      "/c/iron": 1,
+      "/g/golf-watch-recommend": 10,
+      "/g/womens-driver-recommend": 2,
+      "/p/galaxy-watch8-golf": 2
+    },
+    "pvprice": {
+      "가격 보임|/p/galaxy-watch8-golf": 2
+    },
+    "ref": {
+      "캠페인: chatgpt.com": 2,
+      "캠페인: youtube": 2
+    },
+    "refland": {
+      "캠페인: chatgpt.com|/c/iron": 1,
+      "캠페인: chatgpt.com|/p/galaxy-watch8-golf": 1,
+      "캠페인: youtube|/g/womens-driver-recommend": 2
+    },
+    "refurl": {
+      "chatgpt.com": 2,
+      "youtube / video / t-womens-driver-recommend-1": 2
+    },
+    "seen": {
+      "/g/golf-watch-recommend": 2,
+      "/g/womens-driver-recommend": 1,
+      "/p/galaxy-watch8-golf": 2
+    },
+    "seenpos": {
+      "비교표": 2,
+      "상품 소개": 1,
+      "상품 페이지": 2
+    },
+    "seenref": {
+      "캠페인: chatgpt.com": 4,
+      "캠페인: youtube": 1
+    },
     "skip": {
       "내부(관리자 브라우저)": 1,
-      "데이터센터 AS14618 Amazon.com, Inc.": 1
+      "데이터센터 AS14618 Amazon.com, Inc.": 1,
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3
+    },
+    "stay": {
+      "/c/iron|30초~1분": 1,
+      "/g/golf-watch-recommend|10~30초": 4,
+      "/g/golf-watch-recommend|10초 미만": 1,
+      "/g/golf-watch-recommend|1~3분": 1,
+      "/g/golf-watch-recommend|30초~1분": 1,
+      "/g/golf-watch-recommend|3분 이상": 3,
+      "/p/galaxy-watch8-golf|10~30초": 1,
+      "/p/galaxy-watch8-golf|1~3분": 1
+    },
+    "visit": {
+      "/c/iron": 1,
+      "/g/womens-driver-recommend": 2,
+      "/p/galaxy-watch8-golf": 1
+    },
+    "xpv": {
+      "/c/iron": 1,
+      "/g/golf-watch-recommend": 10,
+      "/g/womens-driver-recommend": 2,
+      "/p/galaxy-watch8-golf": 2
     }
   },
-  "journey": []
+  "journey": [
+    {
+      "hour": "19",
+      "pid": "galaxy-watch8-golf",
+      "page": "/g/golf-watch-recommend",
+      "src": "캠페인: chatgpt.com",
+      "kw": "",
+      "url": "chatgpt.com",
+      "land": "/p/galaxy-watch8-golf",
+      "trail": "/p/galaxy-watch8-golf → /g/golf-watch-recommend → /p/galaxy-watch8-golf → /g/golf-watch-recommend",
+      "steps": 4,
+      "secs": 192,
+      "dev": "PC",
+      "pos": "상품 소개"
+    }
+  ]
 }
