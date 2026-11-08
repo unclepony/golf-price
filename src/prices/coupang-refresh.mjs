@@ -26,6 +26,11 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const arg = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? Number(process.argv[i + 1]) : d; };
 const MAX = arg('--max', 100000);
 const GAP = Math.max(3, arg('--gap', 4)) * 1000;
+// --minutes N: N분이 지나면 다음 상품으로 넘어가지 않고 멈춘다(그때까지 찾은 것은 저장됨, 남은 상품은 '오래된 순'이라 다음 날 먼저 한다).
+// 2026-11-09: 상품이 700개를 넘자 매일 작업의 60분 시간 한도에 걸렸고, 끊긴 뒤에도 이 스크립트가 계속 돌며 picks.json 등을 고쳐
+// 커밋 뒤 '커밋 안 된 변경'이 남았다(11-05~08 매일 작업 실패, 11-09 기록에 picks.json 등 4개 파일 M 표시). 스스로 한도 전에 멈춘다.
+const MINUTES = arg('--minutes', 0);
+const DEADLINE = MINUTES > 0 ? Date.now() + MINUTES * 60e3 : Infinity;
 const today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
 
 if (!hasKeys()) { console.log('쿠팡 API 키 없음 — 건너뜀'); process.exit(0); }
@@ -71,6 +76,7 @@ const save = () => {
 let held = 0;
 let ok = 0, miss = 0;
 for (const [i, id] of targets.entries()) {
+  if (Date.now() > DEADLINE) { console.log(`시간 한도(${MINUTES}분)로 멈춤: ${i}/${targets.length}개 처리, 남은 ${targets.length - i}개는 다음 실행에 먼저`); break; }
   if (i) await sleep(GAP);
   const pk = picks[id];
   let rows;
