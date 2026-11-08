@@ -1,0 +1,756 @@
+[
+ {
+  "id": "footjoy-pro-slx-shoes",
+  "category": "shoes",
+  "gender": "남성",
+  "name": "풋조이 프로 SLX 골프화",
+  "query": "풋조이 프로SLX 남성 골프화",
+  "must": [
+   "풋조이"
+  ],
+  "mustAny": [
+   "proslx",
+   "프로slx"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "카본",
+   "carbon",
+   "주니어",
+   "중고",
+   "깔창",
+   "직구",
+   "해외",
+   "징",
+   "스파이크교체"
+  ],
+  "summary": "풋조이가 프로 SL의 후속으로 내놓은 스파이크리스 골프화입니다. 풋조이 발표 자료는 스트라토폼 미드솔, 3D X-Wing 안정 구조, PWR TRAX 접지 시스템을 안내하며, 끈과 보아(BOA) 두 가지 조임 방식이 있습니다.",
+  "points": [
+   "카본 모델(프로 SLX 카본)과 보아 모델이 따로 있으니 상품명 확인",
+   "방수 보증 기간은 판매처 확인"
+  ],
+  "guidePick": {
+   "role": "투어급 스파이크리스",
+   "forWhom": "스파이크리스의 편안함에 스윙 안정감까지 원하는 중상급 골퍼",
+   "short": "안정감 높은 스파이크리스",
+   "plus": "안정감·접지",
+   "minus": "가격대",
+   "pros": [
+    "3D X-Wing 구조로 스윙 때 발 흔들림을 줄임(제조사 안내)",
+    "PWR TRAX 바닥으로 스파이크리스치고 접지가 강한 편"
+   ],
+   "cons": [
+    "스파이크리스 중 가격대가 높은 편",
+    "일반 스파이크리스보다 무게감이 있음"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    3
+   ],
+   "specs": [
+    "스파이크리스",
+    "끈·보아(판매글 확인)",
+    "판매처 확인"
+   ],
+   "verdict": "프로 SL보다 안정감을 높인 후속 모델을 찾는 중상급 골퍼께 맞는 스파이크리스",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://golfbusinessnews.com/news/new-products/footjoy-unveils-new-pro-slx-range/",
+   "https://www.asiae.co.kr/en/article/2024032511303216494"
+  ]
+ },
+ {
+  "id": "footjoy-fuel-shoes",
+  "category": "shoes",
+  "gender": "남성",
+  "name": "풋조이 퓨얼 골프화",
+  "query": "풋조이 퓨얼 남성 골프화",
+  "must": [
+   "풋조이"
+  ],
+  "mustAny": [
+   "퓨얼",
+   "fuel"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "주니어",
+   "중고",
+   "깔창",
+   "직구",
+   "해외",
+   "징",
+   "스파이크교체"
+  ],
+  "summary": "풋조이가 2022년에 내놓은 운동화형 스파이크리스 골프화입니다. 풋조이는 바닥의 파워 스태빌라이저(Power Stabilizer)와 가운데 스태빌리티 브리지, 가벼운 스트라토라이트 폼을 안내합니다.",
+  "points": [
+   "보아 모델(퓨얼 보아)과 퓨얼 스포츠가 따로 있으니 상품명 확인",
+   "2022년 출시 모델이라 판매처 재고·사이즈 확인"
+  ],
+  "guidePick": {
+   "role": "운동화형 스파이크리스",
+   "forWhom": "운동화처럼 편한 첫 골프화를 찾는 입문·중급 골퍼",
+   "short": "가벼운 운동화형",
+   "plus": "착화감·가벼움",
+   "minus": "경사지 접지",
+   "pros": [
+    "스트라토라이트 폼으로 가벼운 쿠션(제조사 안내)",
+    "운동화 같은 디자인이라 연습장·라운드 겸용"
+   ],
+   "cons": [
+    "젖은 경사지 접지는 스파이크형보다 약함",
+    "직전 세대라 색상·사이즈가 제한될 수 있음"
+   ],
+   "scores": [
+    5,
+    3,
+    3,
+    4
+   ],
+   "specs": [
+    "스파이크리스",
+    "끈",
+    "판매처 확인"
+   ],
+   "verdict": "편안함을 우선하는 입문 골퍼께 무난한 풋조이 운동화형 골프화",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://www.golfdigest.com/story/footjoy-fuel-new-spikeless-golf-shoe",
+   "https://www.australiangolfdigest.com.au/?p=81774"
+  ]
+ },
+ {
+  "id": "adidas-tour360-24-shoes",
+  "category": "shoes",
+  "gender": "남성",
+  "name": "아디다스 투어360 24 골프화",
+  "query": "아디다스 투어360 24 골프화",
+  "must": [
+   "아디다스"
+  ],
+  "mustAny": [
+   "투어36024",
+   "tour36024"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "주니어",
+   "투어36025",
+   "tour36025",
+   "투어36022",
+   "tour36022",
+   "스파이크리스",
+   "중고",
+   "깔창",
+   "직구",
+   "해외",
+   "징",
+   "스파이크교체"
+  ],
+  "summary": "아디다스의 대표 스파이크 골프화 투어360의 2024년 모델입니다. 아디다스 공식 페이지는 7징 TPU 바닥, 라이트스트라이크 쿠션, 토션 브리지를 안내합니다.",
+  "points": [
+   "스파이크리스 후속(투어360 25 SL)이 따로 있으니 바닥 형태 확인",
+   "징 교체형이라 교체 징 규격은 판매처 확인"
+  ],
+  "guidePick": {
+   "role": "정통 스파이크화",
+   "forWhom": "경사지·젖은 잔디에서 확실한 접지를 원하는 중상급·상급 골퍼",
+   "short": "7징 투어 스파이크",
+   "plus": "접지·안정감",
+   "minus": "일상 겸용 불편",
+   "pros": [
+    "7징 TPU 바닥으로 강한 접지(제조사 안내)",
+    "토션 브리지로 스윙 때 비틀림 억제(제조사 안내)"
+   ],
+   "cons": [
+    "스파이크형이라 클럽하우스·일상 겸용은 불편",
+    "방수 정보는 판매처 확인"
+   ],
+   "scores": [
+    4,
+    5,
+    3,
+    3
+   ],
+   "specs": [
+    "스파이크",
+    "끈",
+    "판매처 확인"
+   ],
+   "verdict": "접지와 안정감을 가장 중요하게 보는 상급 골퍼께 맞는 아디다스 투어 스파이크화",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://www.adidas.fi/tour360-24-golf-shoes/HQ0044.html",
+   "https://www.adidas.com/us/tour360"
+  ]
+ },
+ {
+  "id": "adidas-zg23-shoes",
+  "category": "shoes",
+  "gender": "남성",
+  "name": "아디다스 ZG23 골프화",
+  "query": "아디다스 ZG23 골프화",
+  "must": [
+   "아디다스"
+  ],
+  "mustAny": [
+   "zg23"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "주니어",
+   "보아",
+   "boa",
+   "중고",
+   "깔창",
+   "직구",
+   "해외",
+   "징",
+   "스파이크교체"
+  ],
+  "summary": "아디다스가 2023년에 내놓은 가벼운 스파이크 골프화입니다. 아디다스는 라이트스트라이크·라이트스트라이크 프로를 함께 쓴 미드솔, 스프린트스킨 마이크로파이버 갑피, 6징 씬테크(Thintech) 바닥을 안내합니다.",
+  "points": [
+   "보아 모델(ZG23 보아)이 따로 있으니 상품명 확인",
+   "2023년 출시 모델이라 판매처 재고 확인"
+  ],
+  "guidePick": {
+   "role": "가벼운 스파이크화",
+   "forWhom": "가볍고 낮은 스파이크화를 원하는 중상급 골퍼",
+   "short": "경량 스파이크",
+   "plus": "가벼움·쿠션",
+   "minus": "직전 세대",
+   "pros": [
+    "라이트스트라이크 프로 쿠션(제조사 안내)",
+    "6징 씬테크 바닥으로 지면에 가깝게 서는 느낌"
+   ],
+   "cons": [
+    "2023년 모델이라 색상·사이즈가 제한될 수 있음",
+    "스파이크형이라 일상 겸용은 불편"
+   ],
+   "scores": [
+    4,
+    4,
+    3,
+    4
+   ],
+   "specs": [
+    "스파이크",
+    "끈",
+    "판매처 확인"
+   ],
+   "verdict": "가벼운 스파이크화를 합리적인 가격에 찾는 중상급 골퍼께 맞는 직전 세대 모델",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://www.adidas.co.nz/zg-shoes-wide_fit",
+   "https://mygolfspy.com/news-opinion/new-for-2023-adidas-zg23-golf-shoes/"
+  ]
+ },
+ {
+  "id": "ecco-biom-h4-shoes",
+  "category": "shoes",
+  "gender": "남성",
+  "name": "에코 바이옴 H4 골프화",
+  "query": "에코 바이옴 H4 골프화 남성",
+  "must": [
+   "에코"
+  ],
+  "mustAny": [
+   "바이옴h4",
+   "biomh4"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "h5",
+   "h3",
+   "주니어",
+   "중고",
+   "깔창",
+   "징",
+   "스파이크교체",
+   "직구",
+   "해외"
+  ],
+  "summary": "에코의 하이브리드 골프화 바이옴 H4입니다. 에코 공식 페이지는 고어텍스(GORE-TEX) 방수 멤브레인, BIOM 내추럴 모션, MTN GRIP 바닥, 빼낼 수 있는 오솔라이트 깔창을 안내합니다.",
+  "points": [
+   "후속 바이옴 H5와 보아 모델이 따로 있으니 상품명 확인",
+   "유럽 사이즈 체계라 평소 사이즈와 비교 필요"
+  ],
+  "guidePick": {
+   "role": "고어텍스 하이브리드",
+   "forWhom": "비 오는 날에도 편하게 걷는 방수 골프화를 원하는 중급 골퍼",
+   "short": "고어텍스 하이브리드",
+   "plus": "방수·착화감",
+   "minus": "가격대",
+   "pros": [
+    "고어텍스 방수 멤브레인(제조사 안내)",
+    "MTN GRIP 바닥으로 하이브리드치고 접지 양호"
+   ],
+   "cons": [
+    "가격대가 높은 편",
+    "후속 H5가 나와 재고 확인 필요"
+   ],
+   "scores": [
+    5,
+    4,
+    5,
+    3
+   ],
+   "specs": [
+    "하이브리드",
+    "끈",
+    "고어텍스 방수"
+   ],
+   "verdict": "방수와 편안함을 함께 원하는 골퍼께 맞는 에코 하이브리드 직전 세대",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://ca.ecco.com/en/ecco-mens-golf-biom-h4-shoe-108204.html",
+   "https://ae.ecco.com/en-ae/outdoor/product-types/golf/+m+golf+biom+h4-108204-01177"
+  ]
+ },
+ {
+  "id": "ecco-biom-h4-women-shoes",
+  "category": "shoes",
+  "gender": "여성",
+  "name": "에코 바이옴 H4 여성 골프화",
+  "query": "에코 바이옴 H4 여성 골프화",
+  "must": [
+   "에코"
+  ],
+  "mustAny": [
+   "바이옴h4",
+   "biomh4"
+  ],
+  "exclude": [
+   "남성",
+   "h5",
+   "h3",
+   "주니어",
+   "중고",
+   "깔창",
+   "징",
+   "스파이크교체",
+   "직구",
+   "해외"
+  ],
+  "summary": "에코 하이브리드 골프화 바이옴 H4의 여성 모델입니다. 에코 공식 페이지는 고어텍스(GORE-TEX) 방수, BIOM 내추럴 모션, MTN GRIP 바닥을 안내합니다.",
+  "points": [
+   "후속 바이옴 H5 여성이 따로 있으니 상품명 확인",
+   "유럽 사이즈 체계라 평소 사이즈와 비교 필요"
+  ],
+  "guidePick": {
+   "role": "여성 고어텍스 하이브리드",
+   "forWhom": "이슬 맺힌 아침 라운드에도 발이 젖지 않는 신발을 원하는 여성 골퍼",
+   "short": "여성 방수 하이브리드",
+   "plus": "방수·착화감",
+   "minus": "가격대",
+   "pros": [
+    "고어텍스 방수(제조사 안내)",
+    "하이브리드 바닥이라 코스·일상 겸용"
+   ],
+   "cons": [
+    "가격대가 높은 편",
+    "후속 H5가 나와 재고 확인 필요"
+   ],
+   "scores": [
+    5,
+    4,
+    5,
+    3
+   ],
+   "specs": [
+    "하이브리드",
+    "끈",
+    "고어텍스 방수"
+   ],
+   "verdict": "방수와 편안함을 우선하는 여성 골퍼께 맞는 에코 하이브리드",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://global.ecco.com/en-ae/outdoor/product-types/golf/+w+golf+biom+h4-108203-01415"
+  ]
+ },
+ {
+  "id": "puma-phantomcat-nitro-shoes",
+  "category": "shoes",
+  "gender": "남성",
+  "name": "푸마 팬텀캣 니트로 골프화",
+  "query": "푸마 팬텀캣 니트로 골프화",
+  "must": [
+   "푸마"
+  ],
+  "mustAny": [
+   "팬텀캣",
+   "phantomcat"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "주니어",
+   "중고",
+   "깔창",
+   "직구",
+   "해외",
+   "징",
+   "스파이크교체"
+  ],
+  "summary": "푸마 골프가 2024년에 내놓은 스파이크 골프화입니다. 푸마 발표 자료는 뒤꿈치의 질소 주입 NITRO 폼, 여러 방향으로 움직이는 FLEXSPIKE 징, 천연 가죽 갑피, 1년 방수 보증을 안내합니다.",
+  "points": [
+   "팬텀캣 니트로 스포츠·니트로+ 등 변형이 있으니 상품명 확인",
+   "징 형태가 독특해 교체 징은 판매처 확인"
+  ],
+  "guidePick": {
+   "role": "투어 스파이크화",
+   "forWhom": "강한 스윙에도 발이 버티는 스파이크화를 원하는 상급 골퍼",
+   "short": "FLEXSPIKE 스파이크",
+   "plus": "접지·반발 쿠션",
+   "minus": "일상 겸용 불편",
+   "pros": [
+    "NITRO 폼 쿠션(제조사 안내)",
+    "FLEXSPIKE 징으로 스윙·보행 모두 고려(제조사 안내)"
+   ],
+   "cons": [
+    "스파이크형이라 일상 겸용은 불편",
+    "국내 판매처가 적을 수 있음"
+   ],
+   "scores": [
+    4,
+    5,
+    4,
+    3
+   ],
+   "specs": [
+    "스파이크",
+    "끈",
+    "1년 방수 보증(제조사 안내)"
+   ],
+   "verdict": "접지와 쿠션을 함께 원하는 상급 골퍼께 맞는 푸마의 투어 스파이크화",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://pgatour.com/article/news/equipment-report/2024/02/20/puma-golf-new-phantomcat-nitro-shoes-innovation-flexibility-explosiveness-to-course",
+   "https://www.golfmagic.com/equipment/news/puma-golf-launches-brand-new-phantomcat-nitro-shoe-2024"
+  ]
+ },
+ {
+  "id": "ua-hovr-drive-2-shoes",
+  "category": "shoes",
+  "gender": "남성",
+  "name": "언더아머 호버 드라이브 2 골프화",
+  "query": "언더아머 호버 드라이브 2 골프화",
+  "must": [
+   "언더아머"
+  ],
+  "mustAny": [
+   "호버드라이브",
+   "hovrdrive"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "주니어",
+   "중고",
+   "깔창",
+   "직구",
+   "해외",
+   "징",
+   "스파이크교체"
+  ],
+  "summary": "언더아머가 2022년 시즌에 내놓은 스파이크 골프화입니다. 언더아머 발표 자료는 HOVR 쿠션, 3D 성형 힐컵, UA Storm·Never-Wet 방수와 1년 방수 보증을 안내합니다.",
+  "points": [
+   "스파이크리스(SL)·와이드 모델이 따로 있으니 상품명 확인",
+   "2022년 출시 모델이라 판매처 재고 확인"
+  ],
+  "guidePick": {
+   "role": "쿠션 스파이크화",
+   "forWhom": "쿠션 좋은 스파이크화를 합리적인 가격에 찾는 중급 골퍼",
+   "short": "HOVR 쿠션 스파이크",
+   "plus": "쿠션·방수",
+   "minus": "직전 세대",
+   "pros": [
+    "HOVR 쿠션(제조사 안내)",
+    "UA Storm 방수와 1년 방수 보증(제조사 안내)"
+   ],
+   "cons": [
+    "2022년 모델이라 색상·사이즈가 제한될 수 있음",
+    "스파이크형이라 일상 겸용은 불편"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    4
+   ],
+   "specs": [
+    "스파이크",
+    "끈",
+    "1년 방수 보증(제조사 안내)"
+   ],
+   "verdict": "쿠션과 방수를 갖춘 스파이크화를 찾는 중급 골퍼께 맞는 언더아머 모델",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://golfbusinessnews.com/news/new-products/under-armour-launches-hovr-drive-2",
+   "https://www.golfretailing.com/news/under-armour-launches-the-new-ua-hovr-drive-2-model/"
+  ]
+ },
+ {
+  "id": "nike-infinity-tour-next2-shoes",
+  "category": "shoes",
+  "gender": "남성",
+  "name": "나이키 에어 줌 인피니티 투어 넥스트% 2 골프화",
+  "query": "나이키 에어 줌 인피니티 투어 넥스트 2 골프화",
+  "must": [
+   "나이키"
+  ],
+  "mustAny": [
+   "인피니티투어",
+   "infinitytour"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "주니어",
+   "중고",
+   "깔창",
+   "직구",
+   "해외",
+   "징",
+   "스파이크교체"
+  ],
+  "summary": "나이키 에어 줌 인피니티 투어 넥스트%의 두 번째 모델로, 스파이크가 일체형인 골프화입니다. 국내 공식 사양은 판매처 확인이 필요합니다.",
+  "points": [
+   "첫 모델(넥스트%)·NRG 한정판 등이 섞여 있으니 상품명의 '2' 확인",
+   "세부 사양은 판매처 확인"
+  ],
+  "guidePick": {
+   "role": "투어 쿠션화",
+   "forWhom": "쿠션과 접지를 함께 원하는 중상급 골퍼",
+   "short": "줌 에어 투어화",
+   "plus": "쿠션·접지",
+   "minus": "가격대",
+   "pros": [
+    "줌 에어 쿠션",
+    "투어용으로 나온 접지 바닥"
+   ],
+   "cons": [
+    "가격대가 높은 편",
+    "세부 사양은 판매처 확인 필요"
+   ],
+   "scores": [
+    5,
+    4,
+    3,
+    3
+   ],
+   "specs": [
+    "판매처 확인",
+    "끈",
+    "판매처 확인"
+   ],
+   "verdict": "쿠션 좋은 투어급 골프화를 원하는 중상급 골퍼께 맞는 나이키 모델",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://golfmonthly.com/reviews/shoes/nike-air-zoom-infinity-tour-next-2-golf-shoe-review"
+  ]
+ },
+ {
+  "id": "skechers-go-golf-max-3-shoes",
+  "category": "shoes",
+  "gender": "남성",
+  "name": "스케쳐스 고골프 맥스 3 골프화",
+  "query": "스케쳐스 고골프 맥스 3 골프화 남성",
+  "must": [
+   "스케쳐스"
+  ],
+  "mustAny": [
+   "맥스3",
+   "max3"
+  ],
+  "exclude": [
+   "여성",
+   "우먼스",
+   "주니어",
+   "중고",
+   "깔창",
+   "직구",
+   "해외",
+   "징",
+   "스파이크교체"
+  ],
+  "summary": "스케쳐스 고골프 맥스 시리즈의 세 번째 모델입니다. 스케쳐스 공식 페이지는 '하루 종일 받쳐 주는 편안함'을 내세우며, 세부 사양은 판매처 확인이 필요합니다.",
+  "points": [
+   "와이드(엑스트라 와이드) 모델이 따로 있으니 상품명 확인",
+   "방수 여부는 판매처 확인"
+  ],
+  "guidePick": {
+   "role": "편한 입문 골프화",
+   "forWhom": "부담 없는 가격에 편한 첫 골프화를 찾는 입문 골퍼",
+   "short": "입문용 편안함",
+   "plus": "착화감·가격",
+   "minus": "사양 정보 적음",
+   "pros": [
+    "가벼운 쿠션 위주의 편한 착화감",
+    "입문용으로 부담 적은 가격대"
+   ],
+   "cons": [
+    "세부 사양은 판매처 확인 필요",
+    "젖은 경사지 접지는 스파이크형보다 약함"
+   ],
+   "scores": [
+    5,
+    3,
+    3,
+    5
+   ],
+   "specs": [
+    "판매처 확인",
+    "끈",
+    "판매처 확인"
+   ],
+   "verdict": "편안함과 가격을 우선하는 입문 골퍼께 무난한 스케쳐스 골프화",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://skechers.ca/en/go-golf-max-3/214080.html",
+   "https://skechers.ie/go-golf-max-3/214080.html"
+  ]
+ },
+ {
+  "id": "footjoy-pro-sl-women-shoes",
+  "category": "shoes",
+  "gender": "여성",
+  "name": "풋조이 프로 SL 여성 골프화",
+  "query": "풋조이 여성 프로SL 골프화",
+  "must": [
+   "풋조이"
+  ],
+  "mustAny": [
+   "prosl",
+   "프로sl"
+  ],
+  "exclude": [
+   "남성",
+   "slx",
+   "프로slx",
+   "주니어",
+   "중고",
+   "깔창",
+   "직구",
+   "해외",
+   "징",
+   "스파이크교체"
+  ],
+  "summary": "풋조이 대표 스파이크리스 골프화 프로 SL의 여성 모델입니다. 풋조이 영국 공식몰에 여성 모델(Pro|SL Women)이 따로 있으며, 세부 사양은 판매처 확인이 필요합니다.",
+  "points": [
+   "후속 프로 SLX 여성이 따로 있으니 상품명 확인",
+   "시즌별 색상이 많아 품번 확인"
+  ],
+  "guidePick": {
+   "role": "여성 대표 스파이크리스",
+   "forWhom": "코스에서 안정적인 스파이크리스를 원하는 중급 여성 골퍼",
+   "short": "여성 정통 스파이크리스",
+   "plus": "접지·디자인",
+   "minus": "일상 겸용",
+   "pros": [
+    "골프화다운 단정한 디자인",
+    "스파이크리스 중 접지가 좋은 편"
+   ],
+   "cons": [
+    "운동화형보다 일상 겸용은 덜 편함",
+    "세부 사양은 판매처 확인"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    3
+   ],
+   "specs": [
+    "스파이크리스",
+    "끈",
+    "판매처 확인"
+   ],
+   "verdict": "검증된 스파이크리스를 찾는 중급 여성 골퍼께 맞는 풋조이 대표 모델",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://www.footjoy.co.uk/en_GB/pro%7Csl-women/012PSL-98134.html"
+  ]
+ },
+ {
+  "id": "footjoy-pro-slx-women-shoes",
+  "category": "shoes",
+  "gender": "여성",
+  "name": "풋조이 프로 SLX 보아 여성 골프화",
+  "query": "풋조이 여성 프로SLX 보아 골프화",
+  "must": [
+   "풋조이"
+  ],
+  "mustAny": [
+   "proslx",
+   "프로slx"
+  ],
+  "exclude": [
+   "남성",
+   "카본",
+   "carbon",
+   "주니어",
+   "중고",
+   "깔창",
+   "직구",
+   "해외",
+   "징",
+   "스파이크교체"
+  ],
+  "summary": "풋조이 프로 SLX의 여성 보아(BOA) 모델입니다. 국내에서는 여성용이 보아 방식으로 나왔다고 보도됐으며, 풋조이는 스트라토폼 미드솔과 3D X-Wing 안정 구조를 안내합니다.",
+  "points": [
+   "남성·카본 모델과 섞여 있을 수 있으니 성별 확인",
+   "방수 보증 기간은 판매처 확인"
+  ],
+  "guidePick": {
+   "role": "여성 투어급 스파이크리스",
+   "forWhom": "다이얼로 조이고 스윙 안정감까지 원하는 중상급 여성 골퍼",
+   "short": "여성 보아 SLX",
+   "plus": "안정감·조임 편의",
+   "minus": "가격대",
+   "pros": [
+    "보아 다이얼로 빠른 조임",
+    "3D X-Wing 구조로 스윙 안정감(제조사 안내)"
+   ],
+   "cons": [
+    "가격대가 높은 편",
+    "방수 정보는 판매처 확인"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    3
+   ],
+   "specs": [
+    "스파이크리스",
+    "보아 다이얼",
+    "판매처 확인"
+   ],
+   "verdict": "안정감 높은 보아 스파이크리스를 찾는 중상급 여성 골퍼께 맞는 모델",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://www.asiae.co.kr/en/article/2024032511303216494",
+   "https://golfbusinessnews.com/news/new-products/footjoy-unveils-new-pro-slx-range/"
+  ]
+ }
+]
