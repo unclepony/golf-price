@@ -34,8 +34,14 @@ try { statFiles = readdirSync(statDir).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/
 for (const f of statFiles) for (const [path, n] of Object.entries(readJson(join(statDir, f), {})?.by?.pv ?? {})) {
   if (path.startsWith('/p/') && typeof n === 'number') views[path.slice(3)] = (views[path.slice(3)] ?? 0) + n;
 }
-const pv = (id) => views[id] ?? 0;
-const pvNote = (id) => (pv(id) ? ` · 최근 30일 조회 ${pv(id)}` : '');
+// 2026-11-10: 쿠팡 클릭(out '페이지|상품ID')도 센다 — 가이드·결론 표에서 눌린 상품은 상품 페이지 조회가 없어도 가격이 숨겨지면 손해가 크다(예: 보이스캐디 SC4 PRO, 11-02~08 클릭 2·상품 페이지 조회 1)
+const outs = {};
+for (const f of statFiles) for (const [k, n] of Object.entries(readJson(join(statDir, f), {})?.by?.out ?? {})) {
+  const id = k.split('|')[1];
+  if (id && typeof n === 'number') outs[id] = (outs[id] ?? 0) + n;
+}
+const pv = (id) => (outs[id] ?? 0) * 1000 + (views[id] ?? 0); // 정렬용: 쿠팡 클릭 먼저, 같으면 조회수
+const pvNote = (id) => [outs[id] && `최근 30일 쿠팡 클릭 ${outs[id]}`, views[id] && `최근 30일 조회 ${views[id]}`].filter(Boolean).map((t) => ` · ${t}`).join('');
 
 const sections = [];
 const add = (title, items, hint = '', count = items.length) => sections.push({ title, items, hint, count });
