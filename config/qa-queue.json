@@ -166,6 +166,13 @@
       "slug": "womens-driver-beginner",
       "file": "content/qa/030-womens-driver-beginner.md",
       "date": "2026-11-09"
+    },
+    {
+      "no": 19,
+      "kw": "드라이버 언제 사야 싸나",
+      "slug": "driver-best-time-to-buy",
+      "file": "content/qa/019-driver-best-time-to-buy.md",
+      "date": "2026-11-10"
     }
   ]
 }
