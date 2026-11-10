@@ -142,6 +142,12 @@
       "format": "long",
       "title": "여성 유틸리티 추천 (2026) 초보 골퍼 5종 비교 | 관용성·띄우기 쉬움",
       "publishAt": "2026-10-28T09:00:00.000Z"
+    },
+    {
+      "id": "mOAAA4owGdU",
+      "format": "long",
+      "title": "여성 유틸리티 추천 (2026) 중급 골퍼 5종 비교 | 비거리 성향·관용성·띄우기 쉬움",
+      "publishAt": "2026-11-11T09:00:00.000Z"
     }
   ],
   "practice-gear-recommend": [
@@ -264,6 +270,14 @@
       "format": "shorts",
       "title": "골프화 언제 사야 쌀까? 이월 모델이 답 | 초보 골퍼 골프화 고르기 #shorts",
       "publishAt": "2026-11-10T09:00:00.000Z"
+    }
+  ],
+  "golf-glove-recommend": [
+    {
+      "id": "FlMQzj8_ZKg",
+      "format": "shorts",
+      "title": "골프장갑 언제 바꿀까? 교체 신호 2가지 | 초보 골퍼 골프장갑 고르기 #shorts",
+      "publishAt": "2026-11-11T22:30:00.000Z"
     }
   ]
 }
