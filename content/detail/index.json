@@ -61,7 +61,7 @@
  "swingimpact-swingcaddie": "5ccb38c1850c",
  "pistop-topswing-trainer": "3352d34a424b",
  "xxio14-women-iron": "b1f5d6c33eca",
- "ping-gle4-women-iron": "4d41bfd7f4ff",
+ "ping-gle4-women-iron": "d2a8ca677a50",
  "callaway-elyte-maxfast-women-iron": "bb1a9e856c89",
  "taylormade-qi-maxlite-women-iron": "b03475880345",
  "footjoy-pulse-boa-women-shoes": "24b063d140db",
@@ -388,7 +388,7 @@
  "majesty-royale-women-hybrid": "16af2159b4d3",
  "cobra-darkspeed-women-hybrid": "433648528b52",
  "mizuno-jpxq2-women-iron": "432bff8b137b",
- "majesty-sterna-women-iron": "0cc7c0d15297",
+ "majesty-sterna-women-iron": "0ff0217fb435",
  "xxio-primeroyal6-women-iron": "6e499ebd13db",
  "callaway-quantum-maxfast-women-iron": "63f879d4c3ca",
  "callaway-roguest-maxos-women-iron": "44776dffda2c",
@@ -498,7 +498,7 @@
  "majesty-sublime-women-fairway": "95a798a971ac",
  "yamaha-cs-hmplus-women-hybrid": "d9e60299298a",
  "bridgestone-v300x-women-iron": "46b529dfc4bb",
- "prgr-superegg-women-iron": "e9be8573d4a0",
+ "prgr-superegg-women-iron": "d5a957a843b1",
  "taylormade-qi4dmax-driver": "f008293ab951",
  "callaway-quantum-maxd-driver": "dc26de67cc1d",
  "pxg-lightning-max10k-driver": "70edb39b2425",
@@ -744,5 +744,10 @@
  "cobra-optm-women-hybrid": "1219b0236692",
  "yamaha-drivestar-women-utility": "e6c80323ecdf",
  "elord-dynas9-women-utility": "2f9e61c5c940",
- "prgr-sweep-women-utility": "981a8eb9837e"
+ "prgr-sweep-women-utility": "981a8eb9837e",
+ "yamaha-inpres-drivestar-women-iron": "5528579310d8",
+ "xxio-primeroyal5-women-iron": "edd9af0d6192",
+ "majesty-royale-women-iron": "c87599359bc3",
+ "elord-dynas9-women-iron": "de93ec1e87fd",
+ "jestime-fairlady-women-iron": "250e4daae6ae"
 }
