@@ -735,8 +735,8 @@
       "d": "2026-11-01"
     },
     "/p/majesty-sterna-women-hybrid": {
-      "h": "5817286fb42cb0c5",
-      "d": "2026-11-01"
+      "h": "e6641bca4ab7d365",
+      "d": "2026-11-10"
     },
     "/p/callaway-elyte-women-hybrid": {
       "h": "e6a827126033d16d",
@@ -1543,12 +1543,12 @@
       "d": "2026-11-10"
     },
     "/p/prgr-superegg-women-utility": {
-      "h": "35cebd31306f40a8",
-      "d": "2026-11-01"
+      "h": "67fe459fd18de3ce",
+      "d": "2026-11-10"
     },
     "/p/majesty-royale-women-hybrid": {
-      "h": "63462d6fc8dafe1c",
-      "d": "2026-11-01"
+      "h": "3815b881ffd53445",
+      "d": "2026-11-10"
     },
     "/p/cobra-darkspeed-women-hybrid": {
       "h": "bd3cee5d7eb0c909",
@@ -1991,8 +1991,8 @@
       "d": "2026-11-10"
     },
     "/p/yamaha-cs-hmplus-women-hybrid": {
-      "h": "a93406087ba57625",
-      "d": "2026-11-03"
+      "h": "1b1bbe8cd543305c",
+      "d": "2026-11-10"
     },
     "/p/bridgestone-v300x-women-iron": {
       "h": "cac038671f2ed06a",
@@ -2283,12 +2283,12 @@
       "d": "2026-11-01"
     },
     "/p/callaway-revarise-women-hybrid": {
-      "h": "1d9c6f904606f6e0",
-      "d": "2026-11-01"
+      "h": "54dfe2201d802c73",
+      "d": "2026-11-10"
     },
     "/p/onoff-lp425-women-utility": {
-      "h": "ceb88fe2fbfab09d",
-      "d": "2026-11-01"
+      "h": "94df8fea9d1a883a",
+      "d": "2026-11-10"
     },
     "/p/xxio13-women-iron": {
       "h": "f5bc19532e09fbfb",
@@ -2595,12 +2595,12 @@
       "d": "2026-11-10"
     },
     "/p/ping-gle3-women-hybrid": {
-      "h": "ede26b325e68e94a",
-      "d": "2026-11-03"
+      "h": "40fb303ae8318d1a",
+      "d": "2026-11-10"
     },
     "/p/jestime-ponytail-women-hybrid": {
-      "h": "831c57e3242bfbec",
-      "d": "2026-11-03"
+      "h": "d6e913802ffaf578",
+      "d": "2026-11-10"
     },
     "/p/majesty-prestigio13-women-utility": {
       "h": "d5d9f6e4c60f065e",
@@ -2970,6 +2970,22 @@
       "h": "b00fb6c1648d59a0",
       "d": "2026-11-10"
     },
+    "/p/cobra-optm-women-hybrid": {
+      "h": "ebab1756233044ec",
+      "d": "2026-11-10"
+    },
+    "/p/yamaha-drivestar-women-utility": {
+      "h": "408830ffd16945d1",
+      "d": "2026-11-10"
+    },
+    "/p/elord-dynas9-women-utility": {
+      "h": "9551a61bb90a4126",
+      "d": "2026-11-10"
+    },
+    "/p/prgr-sweep-women-utility": {
+      "h": "d071135213834581",
+      "d": "2026-11-10"
+    },
     "/c/driver": {
       "h": "fbff90815e869e33",
       "d": "2026-11-10"
@@ -2979,8 +2995,8 @@
       "d": "2026-11-10"
     },
     "/c/utility": {
-      "h": "d53e025612ec7ed3",
-      "d": "2026-11-04"
+      "h": "45ef23d6dcaaa3f6",
+      "d": "2026-11-10"
     },
     "/c/iron": {
       "h": "c5491f27e7e59a72",
@@ -3047,8 +3063,8 @@
       "d": "2026-11-09"
     },
     "/g/womens-utility-recommend": {
-      "h": "664ecf33d892de6f",
-      "d": "2026-11-09"
+      "h": "430c2749e35575ca",
+      "d": "2026-11-10"
     },
     "/g/wedge-recommend": {
       "h": "a96864e44053ced4",
@@ -3187,12 +3203,12 @@
       "d": "2026-11-06"
     },
     "/g/womens-utility-recommend-beginner": {
-      "h": "43fdc716f0d74f8b",
-      "d": "2026-11-03"
+      "h": "3abff7f951f3b15e",
+      "d": "2026-11-10"
     },
     "/g/womens-utility-recommend-intermediate": {
-      "h": "3ba0be8f06be8cf8",
-      "d": "2026-11-03"
+      "h": "ab79058b6b8e4ec5",
+      "d": "2026-11-10"
     },
     "/g/womens-utility-recommend-advanced": {
       "h": "14bd2fb5feb0fd87",
@@ -3331,7 +3347,7 @@
       "d": "2026-11-06"
     },
     "/": {
-      "h": "aa9cff3df269c922",
+      "h": "d69e053236a7124c",
       "d": "2026-11-10"
     },
     "/about": {
@@ -4193,11 +4209,6 @@
       "d": "2026-11-10"
     },
     {
-      "url": "/",
-      "kind": "updated",
-      "d": "2026-11-10"
-    },
-    {
       "url": "/vs/callaway-elyte-women-fairway-vs-honma-aizu-women-fairway",
       "kind": "updated",
       "d": "2026-11-10"
@@ -4229,6 +4240,91 @@
     },
     {
       "url": "/p/elord-dynas9-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/majesty-sterna-women-hybrid",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/prgr-superegg-women-utility",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/majesty-royale-women-hybrid",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/yamaha-cs-hmplus-women-hybrid",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/callaway-revarise-women-hybrid",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/onoff-lp425-women-utility",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/ping-gle3-women-hybrid",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/jestime-ponytail-women-hybrid",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/cobra-optm-women-hybrid",
+      "kind": "new",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/yamaha-drivestar-women-utility",
+      "kind": "new",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/elord-dynas9-women-utility",
+      "kind": "new",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/prgr-sweep-women-utility",
+      "kind": "new",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/c/utility",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/g/womens-utility-recommend",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/g/womens-utility-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/g/womens-utility-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/",
       "kind": "updated",
       "d": "2026-11-10"
     }
