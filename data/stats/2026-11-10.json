@@ -1,61 +1,184 @@
 {
   "date": "2026-11-10",
   "by": {
+    "act": {
+      "다음·카카오|/": 1,
+      "직접·북마크|/c/utility": 1,
+      "직접·북마크|/p/callaway-roguest-hybrid": 1,
+      "캠페인: chatgpt.com|/c/shoes": 3,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 1,
+      "캠페인: chatgpt.com|/g/practice-gear-recommend": 1,
+      "캠페인: chatgpt.com|/p/ua-drive-fade-2-shoes": 1
+    },
     "asn": {
-      "AS9644 SK Telecom": 4
+      "AS17853 LGTELECOM": 1,
+      "AS17858 LG POWERCOMM": 3,
+      "AS3559 Korea Telecom": 1,
+      "AS3786 LG Uplus": 1,
+      "AS4766 Korea Telecom": 1,
+      "AS9644 SK Telecom": 6
     },
     "asncamp": {
+      "AS17853 LGTELECOM|chatgpt.com|모바일": 1,
+      "AS17858 LG POWERCOMM|chatgpt.com|모바일": 3,
+      "AS3559 Korea Telecom|chatgpt.com|모바일": 1,
       "AS9644 SK Telecom|youtube / comment / c-rangefinder-recommend-all|PC": 2,
+      "AS9644 SK Telecom|youtube / video / t-golf-shoes-recommend-1|PC": 2,
       "AS9644 SK Telecom|youtube / video / t-vokey-wedge-guide-3|PC": 2
     },
     "cty": {
-      "KR": 4
+      "KR": 13
+    },
+    "depth": {
+      "/c/shoes|50%": 1,
+      "/c/shoes|첫 화면": 2,
+      "/c/utility|첫 화면": 1,
+      "/g/golf-bag-recommend|첫 화면": 1,
+      "/g/practice-gear-recommend|첫 화면": 1,
+      "/p/callaway-roguest-hybrid|첫 화면": 1,
+      "/p/ua-drive-fade-2-shoes|50%": 1,
+      "/|끝까지": 1
     },
     "dev": {
-      "PC": 4
+      "PC": 7,
+      "모바일": 6
     },
     "hour": {
+      "10": 2,
+      "17": 1,
+      "18": 2,
+      "21": 3,
+      "22": 1,
       "07": 2,
       "08": 2
     },
+    "kw": {
+      "다음·카카오|골프용품": 1
+    },
+    "nav": {
+      "/c/shoes|/p/ua-drive-fade-2-shoes": 1,
+      "/c/utility|/p/callaway-roguest-hybrid": 1
+    },
+    "out": {
+      "/p/callaway-roguest-hybrid|callaway-roguest-hybrid": 1
+    },
+    "outact": {
+      "조작 후|직접·북마크": 1
+    },
+    "outref": {
+      "직접·북마크": 1
+    },
+    "pos": {
+      "상품 페이지": 1
+    },
     "pv": {
+      "/": 1,
+      "/c/shoes": 3,
+      "/c/utility": 1,
+      "/g/golf-bag-recommend": 1,
+      "/g/golf-shoes-recommend": 2,
+      "/g/practice-gear-recommend": 1,
       "/g/rangefinder-recommend": 2,
-      "/g/wedge-recommend": 2
+      "/g/wedge-recommend": 2,
+      "/p/callaway-roguest-hybrid": 1,
+      "/p/ua-drive-fade-2-shoes": 1
+    },
+    "pvprice": {
+      "가격 보임|/p/callaway-roguest-hybrid": 1,
+      "가격 보임|/p/ua-drive-fade-2-shoes": 1
     },
     "ref": {
-      "캠페인: youtube": 4
+      "다음·카카오": 1,
+      "직접·북마크": 1,
+      "캠페인: chatgpt.com": 5,
+      "캠페인: youtube": 6
     },
     "refland": {
+      "다음·카카오|/": 1,
+      "직접·북마크|/c/utility": 1,
+      "캠페인: chatgpt.com|/c/shoes": 3,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 1,
+      "캠페인: chatgpt.com|/g/practice-gear-recommend": 1,
+      "캠페인: youtube|/g/golf-shoes-recommend": 2,
       "캠페인: youtube|/g/rangefinder-recommend": 2,
       "캠페인: youtube|/g/wedge-recommend": 2
     },
     "refurl": {
+      "chatgpt.com": 5,
       "youtube / comment / c-rangefinder-recommend-all": 2,
+      "youtube / video / t-golf-shoes-recommend-1": 2,
       "youtube / video / t-vokey-wedge-guide-3": 2
     },
     "seen": {
+      "/c/shoes": 1,
+      "/g/golf-bag-recommend": 1,
+      "/g/golf-shoes-recommend": 1,
+      "/g/practice-gear-recommend": 1,
       "/g/rangefinder-recommend": 1,
-      "/g/wedge-recommend": 1
+      "/g/wedge-recommend": 1,
+      "/p/callaway-roguest-hybrid": 1,
+      "/p/ua-drive-fade-2-shoes": 1
     },
     "seenpos": {
-      "비교표": 1,
-      "상품 소개": 1
+      "비교표": 4,
+      "상품 소개": 1,
+      "상품 페이지": 2,
+      "한 줄 결론": 1
     },
     "seenref": {
-      "캠페인: youtube": 2
+      "직접·북마크": 1,
+      "캠페인: chatgpt.com": 4,
+      "캠페인: youtube": 3
     },
     "skip": {
-      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 2,
+      "내부(관리자 브라우저)": 1,
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 4,
       "데이터센터 AS32934 Meta Platforms Ireland Limited": 1
     },
+    "stay": {
+      "/c/shoes|10~30초": 3,
+      "/c/utility|10초 미만": 1,
+      "/g/golf-bag-recommend|10~30초": 1,
+      "/g/practice-gear-recommend|1~3분": 1,
+      "/p/callaway-roguest-hybrid|10초 미만": 1,
+      "/p/ua-drive-fade-2-shoes|10~30초": 1,
+      "/|10초 미만": 1
+    },
     "visit": {
+      "/": 1,
+      "/c/shoes": 3,
+      "/c/utility": 1,
+      "/g/golf-bag-recommend": 1,
+      "/g/golf-shoes-recommend": 2,
+      "/g/practice-gear-recommend": 1,
       "/g/rangefinder-recommend": 2,
       "/g/wedge-recommend": 2
     },
     "xpv": {
+      "/": 1,
+      "/c/shoes": 3,
+      "/g/golf-bag-recommend": 1,
+      "/g/golf-shoes-recommend": 2,
+      "/g/practice-gear-recommend": 1,
       "/g/rangefinder-recommend": 2,
-      "/g/wedge-recommend": 2
+      "/g/wedge-recommend": 2,
+      "/p/ua-drive-fade-2-shoes": 1
     }
   },
-  "journey": []
+  "journey": [
+    {
+      "hour": "22",
+      "pid": "callaway-roguest-hybrid",
+      "page": "/p/callaway-roguest-hybrid",
+      "src": "직접·북마크",
+      "kw": "",
+      "url": "",
+      "land": "/c/utility",
+      "trail": "/c/utility → /p/callaway-roguest-hybrid",
+      "steps": 2,
+      "secs": 6,
+      "dev": "모바일",
+      "pos": "상품 페이지"
+    }
+  ]
 }
