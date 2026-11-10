@@ -251,8 +251,8 @@
       "d": "2026-11-03"
     },
     "/p/ping-gle4-women-iron": {
-      "h": "ad6b3e150d65fcec",
-      "d": "2026-11-04"
+      "h": "f0acc3f99f99ef1b",
+      "d": "2026-11-10"
     },
     "/p/callaway-elyte-maxfast-women-iron": {
       "h": "66340c611441ab1e",
@@ -491,8 +491,8 @@
       "d": "2026-11-03"
     },
     "/p/majesty-shuttle-women-iron": {
-      "h": "b38441af19e9b02b",
-      "d": "2026-11-04"
+      "h": "016bc5aef2e5012e",
+      "d": "2026-11-10"
     },
     "/p/mizuno-jpxq-women-iron": {
       "h": "f40e1253b4d259b1",
@@ -1559,8 +1559,8 @@
       "d": "2026-11-04"
     },
     "/p/majesty-sterna-women-iron": {
-      "h": "dd64704896b421f7",
-      "d": "2026-11-04"
+      "h": "ec0561ad0304fe40",
+      "d": "2026-11-10"
     },
     "/p/xxio-primeroyal6-women-iron": {
       "h": "29da5f706409bb10",
@@ -1999,8 +1999,8 @@
       "d": "2026-11-01"
     },
     "/p/prgr-superegg-women-iron": {
-      "h": "19d9e996f6b673d0",
-      "d": "2026-11-04"
+      "h": "b11e3a446acc5b54",
+      "d": "2026-11-10"
     },
     "/p/taylormade-qi4dmax-driver": {
       "h": "988a0202357feed9",
@@ -2655,8 +2655,8 @@
       "d": "2026-11-04"
     },
     "/p/honma-twgs-women-iron": {
-      "h": "aefeb225f5327c65",
-      "d": "2026-11-04"
+      "h": "37e67ea37e25a5bd",
+      "d": "2026-11-10"
     },
     "/p/yonex-ezonegt3-women-iron": {
       "h": "a757b8e5c552db8f",
@@ -2986,6 +2986,26 @@
       "h": "b64c5fbb2d2b331b",
       "d": "2026-11-10"
     },
+    "/p/yamaha-inpres-drivestar-women-iron": {
+      "h": "004a30c16ef1ba26",
+      "d": "2026-11-10"
+    },
+    "/p/xxio-primeroyal5-women-iron": {
+      "h": "5a001a6488c47ea6",
+      "d": "2026-11-10"
+    },
+    "/p/majesty-royale-women-iron": {
+      "h": "1d79e278690e011a",
+      "d": "2026-11-10"
+    },
+    "/p/elord-dynas9-women-iron": {
+      "h": "f39d835e5f333df1",
+      "d": "2026-11-10"
+    },
+    "/p/jestime-fairlady-women-iron": {
+      "h": "d032f0b017708508",
+      "d": "2026-11-10"
+    },
     "/c/driver": {
       "h": "ea2ec4b15067badd",
       "d": "2026-11-10"
@@ -2999,7 +3019,7 @@
       "d": "2026-11-10"
     },
     "/c/iron": {
-      "h": "d726eefc34c4ff77",
+      "h": "b896408008e872fd",
       "d": "2026-11-10"
     },
     "/c/wedge": {
@@ -3111,7 +3131,7 @@
       "d": "2026-11-10"
     },
     "/g/womens-iron-recommend": {
-      "h": "cfd7d69011b6a5cc",
+      "h": "cf623d6ffab2a230",
       "d": "2026-11-10"
     },
     "/g/womens-shoes-recommend": {
@@ -3331,12 +3351,12 @@
       "d": "2026-11-02"
     },
     "/g/womens-iron-recommend-beginner": {
-      "h": "bd085d9091a9336f",
-      "d": "2026-11-04"
+      "h": "c84fd391ed7ab954",
+      "d": "2026-11-10"
     },
     "/g/womens-iron-recommend-intermediate": {
-      "h": "673c393ebfda4cba",
-      "d": "2026-11-04"
+      "h": "1fadb3a9a1e86ba3",
+      "d": "2026-11-10"
     },
     "/g/womens-iron-recommend-advanced": {
       "h": "764ddc62040b78fc",
@@ -3347,7 +3367,7 @@
       "d": "2026-11-06"
     },
     "/": {
-      "h": "a0834ceeb40b8544",
+      "h": "7e9d5e3466f8e353",
       "d": "2026-11-10"
     },
     "/about": {
@@ -3675,8 +3695,8 @@
       "d": "2026-10-24"
     },
     "/vs/missile-axg-women-iron-vs-ping-gle4-women-iron": {
-      "h": "515d6b34304cc038",
-      "d": "2026-11-04"
+      "h": "cb86e237649c6d26",
+      "d": "2026-11-10"
     },
     "/vs/mizuno-jpx925f-women-iron-vs-mizuno-jpxq-women-iron": {
       "h": "21ecf90f5411c596",
@@ -4319,11 +4339,6 @@
       "d": "2026-11-10"
     },
     {
-      "url": "/c/iron",
-      "kind": "updated",
-      "d": "2026-11-10"
-    },
-    {
       "url": "/c/wedge",
       "kind": "updated",
       "d": "2026-11-10"
@@ -4459,17 +4474,87 @@
       "d": "2026-11-10"
     },
     {
-      "url": "/g/womens-iron-recommend",
-      "kind": "updated",
-      "d": "2026-11-10"
-    },
-    {
       "url": "/g/womens-shoes-recommend",
       "kind": "updated",
       "d": "2026-11-10"
     },
     {
+      "url": "/p/ping-gle4-women-iron",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/majesty-shuttle-women-iron",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/majesty-sterna-women-iron",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/prgr-superegg-women-iron",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/honma-twgs-women-iron",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/yamaha-inpres-drivestar-women-iron",
+      "kind": "new",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/xxio-primeroyal5-women-iron",
+      "kind": "new",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/majesty-royale-women-iron",
+      "kind": "new",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/elord-dynas9-women-iron",
+      "kind": "new",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/p/jestime-fairlady-women-iron",
+      "kind": "new",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/c/iron",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/g/womens-iron-recommend",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/g/womens-iron-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/g/womens-iron-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
       "url": "/",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/vs/missile-axg-women-iron-vs-ping-gle4-women-iron",
       "kind": "updated",
       "d": "2026-11-10"
     }
