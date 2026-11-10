@@ -906,6 +906,34 @@ function stageAnswer(g) {
   return `<section class="answer" aria-label="바로 답">${lead}
 <div class="tablewrap"><table class="answer-t"><caption>${esc(word)} ${noSkill ? '상위 3개' : '실력별 1위'}${budget ? '·예산 1순위' : ''} 결론 표 · 순위는 ${noSkill ? '' : '같은 실력 단계 안의 '}주관적 편집 점수(5점 만점)${budget ? ', 예산 1순위는 점수가 중간 이상인 모델 중 가장 싼 모델' : ''}, 가격대는 같은 분류 안 비교</caption><thead><tr><th>${noSkill ? '순위' : '실력'}</th><th>모델 · 특징</th><th>점수</th><th>가격대</th><th>쿠팡 판매가</th></tr></thead><tbody>${tr}</tbody></table></div></section>`;
 }
+// 브랜드별 정리(2026-11-10 관제탑: '골프백·골프공·장갑 브랜드 순위' 검색 수요). guides.json brandSection 이 켜진 가이드에만.
+// 이 가이드에 넣은 모델만 센다: 모델 수·쿠팡 판매가 범위(확인일)·대표 모델(편집 점수 최고). 인기·판매 순위가 아님을 적는다
+function brandSection(g) {
+  if (!g.brandSection) return '';
+  const all = rankedPicks(g);
+  const by = new Map();
+  for (const pk of all) {
+    const b = byId[pk.id].p.name.split(/\s+/)[0];
+    if (!by.has(b)) by.set(b, []);
+    by.get(b).push(pk);
+  }
+  if (by.size < 3) return '';
+  const ph = (t) => `<!--phist-->${t}<!--/phist-->`;
+  const rows = [...by.entries()]
+    .sort((x, y) => y[1].length - x[1].length || x[0].localeCompare(y[0], 'ko'))
+    .map(([b, ps]) => {
+      const pr = ps.map((pk) => freshPrice(pk.id)).filter(Boolean);
+      const ws = pr.map((sp) => sp.won);
+      const ds = pr.map((sp) => sp.d).sort();
+      const range = ws.length ? `${won(Math.min(...ws))}${ws.length > 1 && Math.max(...ws) !== Math.min(...ws) ? `~${won(Math.max(...ws))}` : ''}<small>${ds[0] === ds.at(-1) ? dayLabel(ds[0]) : `${dayLabel(ds[0])}~${dayLabel(ds.at(-1))}`} 확인</small>` : '<small>판매처에서 확인</small>';
+      const top = [...ps].sort((x, y) => totalScore(y) - totalScore(x))[0];
+      return `<tr><td><b>${esc(b)}</b></td><td class="as">${ps.length}종</td><td class="aw">${ph(range)}</td><td><a href="/p/${top.id}">${esc(byId[top.id].p.name)}</a><small>편집 점수 ${totalScore(top).toFixed(1)}</small></td></tr>`;
+    })
+    .join('');
+  const word = guideCat(g)?.name ?? '';
+  return `<section class="prose brands" id="brands"><h2>${esc(word)} 브랜드별 정리</h2><p>이 가이드에서 비교한 ${all.length}종을 브랜드별로 묶었습니다. 브랜드마다 넣은 모델 수, 쿠팡 판매가 범위, 대표 모델(이 사이트 편집 점수가 가장 높은 모델)을 정리했습니다.</p>
+<div class="tablewrap"><table class="answer-t"><caption>정렬: 이 가이드에 넣은 모델 수가 많은 순(같으면 가나다순). 판매량·인기 순위가 아니며, 점수는 주관적 편집 점수(5점 만점), 가격은 확인일 기준이라 현재 가격과 다를 수 있습니다.</caption><thead><tr><th>브랜드</th><th>모델 수</th><th>쿠팡 판매가</th><th>대표 모델</th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
+}
 // 한 줄 결론: 예산 기준 1개 + 쉬움(초보·중급) 또는 성능(상급·프로) 기준 1개. howto.json 의 conclusion 으로 수동 지정 가능
 function conclusionBox(g, ps, skill) {
   if (ps.length < 2) return '';
@@ -1695,6 +1723,7 @@ ${updatedTag(g.updated)}${stageAnswer(g)}
 ${skillGroups(g).length ? '' : conclusionBox(g, rankedPicks(g), null)}
 <section class="prose"><p>${esc(g.intro)}</p></section>
 ${criteriaBox(g)}
+${brandSection(g)}
 <nav class="toc">${mergedInto(g).some((m) => m.grinds) ? '<a href="#vokey">보키 그라인드 비교</a>' : ''}<a href="#cmp">비교표</a><a href="#tiers">수준별 비교</a>${g.picks.some((pk) => pk.dist) ? '<a href="#dist">비거리 비교</a>' : ''}<a href="#scores">항목별 점수</a><a href="#models">모델별 분석</a><a href="#choose">선택 가이드</a><a href="#faq">자주 묻는 질문</a></nav>
 <section id="cmp">${infographic(g)}${offerlessList(g)}</section>
 ${skillNav(g)}<div id="tiers">${tierCompare(g)}</div>

@@ -3043,79 +3043,79 @@
       "d": "2026-11-10"
     },
     "/g/driver-recommend-2026": {
-      "h": "575c86bc0df2fb39",
+      "h": "8ee79d8ed03c6983",
       "d": "2026-11-10"
     },
     "/g/fairway-wood-recommend": {
-      "h": "8e6b3f4565d9c7d5",
+      "h": "c4f978625d5a97c8",
       "d": "2026-11-10"
     },
     "/g/utility-recommend": {
-      "h": "7e914080a572fb09",
+      "h": "33a1e0e407ec5662",
       "d": "2026-11-10"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "bcadf4ceaeb830e6",
+      "h": "e6173a60a5480f0d",
       "d": "2026-11-10"
     },
     "/g/iron-recommend": {
-      "h": "48eb6355c2b3fc40",
+      "h": "8463c5a3d6b2063e",
       "d": "2026-11-10"
     },
     "/g/womens-utility-recommend": {
-      "h": "7c06c7e82869556a",
+      "h": "ba3a67e60da6a206",
       "d": "2026-11-10"
     },
     "/g/wedge-recommend": {
-      "h": "357efbc8fe192453",
+      "h": "6344c2eaf40fe72f",
       "d": "2026-11-10"
     },
     "/g/golf-ball-compare": {
-      "h": "38a038857031bd7a",
+      "h": "8dc0dab2be0ddf93",
       "d": "2026-11-10"
     },
     "/g/rangefinder-recommend": {
-      "h": "4abd5c7fdda97a10",
+      "h": "4c46ee8a9f871432",
       "d": "2026-11-10"
     },
     "/g/womens-driver-recommend": {
-      "h": "a9fffc38a9576dbe",
+      "h": "68d9819d024ecfc0",
       "d": "2026-11-10"
     },
     "/g/putter-recommend": {
-      "h": "d259c2f40e5b747c",
+      "h": "7ab32a5e89badbb3",
       "d": "2026-11-10"
     },
     "/g/golf-shoes-recommend": {
-      "h": "7856654542786d7a",
-      "d": "2026-11-09"
+      "h": "83c95a4c9130690e",
+      "d": "2026-11-10"
     },
     "/g/golf-watch-recommend": {
-      "h": "8fb5ae886d5616b4",
+      "h": "11dc25fba1eb0f2b",
       "d": "2026-11-10"
     },
     "/g/launch-monitor-recommend": {
-      "h": "bbc569cf410f3fb0",
+      "h": "31ad93c06bc3b9e3",
       "d": "2026-11-10"
     },
     "/g/golf-bag-recommend": {
-      "h": "04a3603ea97bc0a4",
+      "h": "3e9807abc4f286a9",
       "d": "2026-11-10"
     },
     "/g/golf-glove-recommend": {
-      "h": "84d8756a97ed5cb0",
+      "h": "4b36b47ee0450f1d",
       "d": "2026-11-10"
     },
     "/g/practice-gear-recommend": {
-      "h": "45c0886773d6e7ad",
+      "h": "77622f1c4ad86a90",
       "d": "2026-11-10"
     },
     "/g/womens-iron-recommend": {
-      "h": "8440c2a4aa1f467b",
+      "h": "cfd7d69011b6a5cc",
       "d": "2026-11-10"
     },
     "/g/womens-shoes-recommend": {
-      "h": "af113d2386b92df6",
+      "h": "09fa11541bf9010d",
       "d": "2026-11-10"
     },
     "/g/golf-gift-guide-2026": {
@@ -4430,6 +4430,11 @@
     },
     {
       "url": "/g/putter-recommend",
+      "kind": "updated",
+      "d": "2026-11-10"
+    },
+    {
+      "url": "/g/golf-shoes-recommend",
       "kind": "updated",
       "d": "2026-11-10"
     },

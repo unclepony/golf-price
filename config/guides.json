@@ -12266,7 +12266,8 @@
         "타구감"
       ],
       "gender": "공용",
-      "updated": "2026-10-16"
+      "updated": "2026-10-16",
+      "brandSection": true
     },
     {
       "slug": "rangefinder-recommend",
@@ -18615,7 +18616,8 @@
           "a": "골프백은 성능 차이가 나는 용품이 아니라서 중고도 괜찮습니다. 지퍼와 스탠드 다리가 잘 움직이는지, 바닥이 닳거나 찢어지지 않았는지, 어깨끈이 멀쩡한지 확인하고 사세요."
         }
       ],
-      "updated": "2026-10-16"
+      "updated": "2026-10-16",
+      "brandSection": true
     },
     {
       "slug": "golf-glove-recommend",
@@ -20290,7 +20292,8 @@
         }
       ],
       "updated": "2026-10-16",
-      "answerFirst": true
+      "answerFirst": true,
+      "brandSection": true
     },
     {
       "slug": "practice-gear-recommend",
