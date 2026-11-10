@@ -3039,19 +3039,19 @@
       "d": "2026-11-11"
     },
     "/c/driver": {
-      "h": "01332109aae0c0f5",
+      "h": "199f80c4312903e1",
       "d": "2026-11-11"
     },
     "/c/wood": {
-      "h": "143c401911106ab9",
-      "d": "2026-11-10"
+      "h": "1da88475b3ee1c81",
+      "d": "2026-11-11"
     },
     "/c/utility": {
-      "h": "2b04f06882632b20",
-      "d": "2026-11-10"
+      "h": "cd16fc101cbd0fc6",
+      "d": "2026-11-11"
     },
     "/c/iron": {
-      "h": "54c25b053fbc06bd",
+      "h": "ee679205c5f2d553",
       "d": "2026-11-11"
     },
     "/c/wedge": {
@@ -3079,7 +3079,7 @@
       "d": "2026-11-10"
     },
     "/c/shoes": {
-      "h": "851575c6dea7a5cb",
+      "h": "05a231db350e1520",
       "d": "2026-11-11"
     },
     "/c/bag": {
@@ -4309,6 +4309,31 @@
     },
     {
       "url": "/vs/callaway-roguest-fairway-vs-callaway-quantummax-fairway",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/c/driver",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/c/wood",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/c/utility",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/c/iron",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/c/shoes",
       "kind": "updated",
       "d": "2026-11-11"
     }

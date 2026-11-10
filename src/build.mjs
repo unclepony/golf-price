@@ -871,7 +871,9 @@ function answerBlock(g, ps, skill) {
 }
 // 전체 가이드·분류 첫 화면용 '바로 답'(2026-10-25 gp-1025-2): guides.json 의 answerFirst 가 켜진 가이드에만
 // 실력 단계별 1위 + 판매가 범위·확인일 + 짧은 결론 표. 값은 answerBlock 과 같은 기존 데이터(편집 점수·판매가·확인일)
-function stageAnswer(g) {
+// inCat(2026-11-11 셀프 개선): 분류 페이지(/c/)에서는 성별 가이드의 결론 앞에 '여성'·'남성'을 붙인다.
+// /c/shoes 첫 화면에 여성 가이드 결론만 '골프화 14종 … 1위'로 떠서 분류 전체 1위처럼 읽혔다(남성 가이드는 실력 단계 1위가 1개뿐이라 결론이 안 나옴).
+function stageAnswer(g, inCat = false) {
   if (!g.answerFirst) return '';
   // 실력 단계가 없는 가이드(골프백 등, 2026-10-25 gp-1025-2 이어서)는 종합 편집 점수 상위 3개
   const noSkill = !g.picks.some((pk) => pk.skill);
@@ -886,7 +888,7 @@ function stageAnswer(g) {
   const ws = priced.map((sp) => sp.won);
   const ds = priced.map((sp) => sp.d).sort();
   const dRange = ds.length ? (ds[0] === ds.at(-1) ? dayLabel(ds[0]) : `${dayLabel(ds[0])}~${dayLabel(ds.at(-1))}`) : '';
-  const word = guideCat(g)?.name ?? ''; // 분류 페이지가 catWord 정의보다 먼저 만들어지므로 분류명을 그대로 쓴다
+  const word = (inCat && g.gender && g.gender !== '공용' ? `${g.gender} ` : '') + (guideCat(g)?.name ?? ''); // 분류 페이지가 catWord 정의보다 먼저 만들어지므로 분류명을 그대로 쓴다
   const topLink = (x) => `<a href="/p/${x.pk.id}"><b>${esc(nm(x.pk))}</b></a>`;
   // 제목의 종 수(전체)와 결론의 종 수(순위에 든 모델)가 다르면 왜 다른지 밝힌다(2026-10-26 gp-1026-2: 아이언 제목 56종·결론 50종)
   const total = rankedPicks(g).length; // 제목·h1 과 같은 계산(쿠팡 판매처가 있는 모델 수)
@@ -1622,7 +1624,7 @@ for (const c of cats) {
       ld: [crumbLd([['홈', '/'], [c.name, `/c/${c.id}`]])],
       body: `<nav class="crumb"><a href="/">홈</a> › ${esc(c.name)}</nav>
 <h1>${esc(c.name)}</h1>
-${updatedTag(max2(...related.map((g) => g.updated)))}${related.map(stageAnswer).join('')}
+${updatedTag(max2(...related.map((g) => g.updated)))}${related.map((g) => stageAnswer(g, true)).join('')}
 <p class="plp-intro">${esc(c.intro)}</p>
 ${listBlock(rctx(), c, items)}
 ${related.length ? `<h2 class="plp-h2">${esc(c.name)} 실력별 비교 가이드</h2>` : ''}
