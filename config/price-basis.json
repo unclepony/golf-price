@@ -558,6 +558,10 @@
       "won": 149000,
       "d": "2026-11-08"
     },
+    "cleveland-rtz-fullface-wedge": {
+      "won": 190000,
+      "d": "2026-11-11"
+    },
     "cleveland-rtz-wedge": {
       "won": 165000,
       "d": "2026-11-08"
@@ -2290,9 +2294,17 @@
       "won": 715200,
       "d": "2026-11-08"
     },
+    "taylormade-hitoe3-wedge": {
+      "won": 139000,
+      "d": "2026-11-11"
+    },
     "taylormade-hitoe5-wedge": {
       "won": 220000,
       "d": "2026-11-08"
+    },
+    "taylormade-mg3-wedge": {
+      "won": 155000,
+      "d": "2026-11-11"
     },
     "taylormade-mg4-wedge": {
       "won": 149000,
