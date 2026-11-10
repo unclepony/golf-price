@@ -173,6 +173,13 @@
       "slug": "driver-best-time-to-buy",
       "file": "content/qa/019-driver-best-time-to-buy.md",
       "date": "2026-11-10"
+    },
+    {
+      "no": 21,
+      "kw": "시니어 골프채 추천",
+      "slug": "senior-golf-clubs-beginner",
+      "file": "content/qa/021-senior-golf-clubs-beginner.md",
+      "date": "2026-11-11"
     }
   ]
 }

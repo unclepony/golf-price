@@ -571,7 +571,7 @@
       "d": "2026-11-01"
     },
     "/p/callaway-roguest-fairway": {
-      "h": "e60537000035ee4f",
+      "h": "42a5def905bc22eb",
       "d": "2026-11-11"
     },
     "/p/ping-g430lst-fairway": {
@@ -3095,23 +3095,23 @@
       "d": "2026-11-10"
     },
     "/g/driver-recommend-2026": {
-      "h": "7c57dd6247e237eb",
+      "h": "ff6b060bf298b493",
       "d": "2026-11-11"
     },
     "/g/fairway-wood-recommend": {
-      "h": "4a8e29e2349e48df",
+      "h": "06f83d6f085a9e88",
       "d": "2026-11-11"
     },
     "/g/utility-recommend": {
-      "h": "478bb9e02dc3da9f",
-      "d": "2026-11-10"
+      "h": "d839ba091d5bc2a3",
+      "d": "2026-11-11"
     },
     "/g/womens-fairway-wood-recommend": {
       "h": "e6173a60a5480f0d",
       "d": "2026-11-10"
     },
     "/g/iron-recommend": {
-      "h": "80a2ee33a8a7f186",
+      "h": "122105e7c774bdf5",
       "d": "2026-11-11"
     },
     "/g/womens-utility-recommend": {
@@ -3131,7 +3131,7 @@
       "d": "2026-11-10"
     },
     "/g/womens-driver-recommend": {
-      "h": "2d3e8a964ec68bf5",
+      "h": "61defde76190153e",
       "d": "2026-11-11"
     },
     "/g/putter-recommend": {
@@ -3183,11 +3183,11 @@
       "d": "2026-11-09"
     },
     "/g/driver-recommend-2026-advanced": {
-      "h": "fd646f87b8d1f4bf",
+      "h": "3af251c2b45b1c5d",
       "d": "2026-11-11"
     },
     "/g/driver-recommend-2026-pro": {
-      "h": "f546080206f83b67",
+      "h": "a88397c94c7b15b3",
       "d": "2026-11-11"
     },
     "/g/fairway-wood-recommend-beginner": {
@@ -3199,11 +3199,11 @@
       "d": "2026-11-10"
     },
     "/g/fairway-wood-recommend-advanced": {
-      "h": "0b5ec085564c11b5",
+      "h": "40c29a70198e3165",
       "d": "2026-11-11"
     },
     "/g/fairway-wood-recommend-pro": {
-      "h": "ab2c79b5e1206d31",
+      "h": "9014fdb77c2f24c6",
       "d": "2026-11-11"
     },
     "/g/utility-recommend-beginner": {
@@ -3407,96 +3407,100 @@
       "d": "2026-10-16"
     },
     "/qa/womens-driver-beginner": {
-      "h": "a3852a60f9c370ba",
-      "d": "2026-11-10"
+      "h": "0590dbb90c69cebe",
+      "d": "2026-11-11"
     },
     "/qa/womens-iron-beginner": {
-      "h": "6acc5df5708cb90f",
-      "d": "2026-11-10"
+      "h": "bff1cd29d197984e",
+      "d": "2026-11-11"
+    },
+    "/qa/senior-golf-clubs-beginner": {
+      "h": "ff8f3547a8b1deff",
+      "d": "2026-11-11"
     },
     "/qa/womens-utility-beginner": {
-      "h": "52e91cc6a4c7c0a6",
-      "d": "2026-11-10"
+      "h": "c43ca8ae5bfb597d",
+      "d": "2026-11-11"
     },
     "/qa/driver-best-time-to-buy": {
-      "h": "958996e6ecfdfa1a",
-      "d": "2026-11-10"
+      "h": "19a4e3453ec39795",
+      "d": "2026-11-11"
     },
     "/qa/vokey-wedge-grind": {
-      "h": "d915d2ce77092c36",
-      "d": "2026-11-10"
+      "h": "bc1028c0268ed547",
+      "d": "2026-11-11"
     },
     "/qa/golf-practice-gear-beginner": {
-      "h": "6c0dbbe8e9291b94",
-      "d": "2026-11-10"
+      "h": "5c10d84bb3b06cc7",
+      "d": "2026-11-11"
     },
     "/qa/golf-glove-beginner": {
-      "h": "ee45e11d896d698c",
-      "d": "2026-11-10"
+      "h": "46e581181ee8e1cb",
+      "d": "2026-11-11"
     },
     "/qa/golf-bag-stand-vs-caddie": {
-      "h": "a5d2ec6aa807d8a6",
-      "d": "2026-11-10"
+      "h": "1e222846c9f8ad65",
+      "d": "2026-11-11"
     },
     "/qa/golf-swing-analyzer-beginner": {
-      "h": "ca2fcaa9c4d3cf98",
-      "d": "2026-11-10"
+      "h": "924ba62d1f18de55",
+      "d": "2026-11-11"
     },
     "/qa/used-golf-clubs-beginner": {
-      "h": "b406484a8cfcda4b",
-      "d": "2026-11-10"
+      "h": "c59aa7bd34b7dc91",
+      "d": "2026-11-11"
     },
     "/qa/womens-golf-shoes-beginner": {
-      "h": "e96a54cdd69786a6",
-      "d": "2026-11-10"
+      "h": "425a944f17db63e3",
+      "d": "2026-11-11"
     },
     "/qa/iron-steel-vs-carbon-shaft": {
-      "h": "099d49acd5663524",
-      "d": "2026-11-10"
+      "h": "90288bc3a4480ebe",
+      "d": "2026-11-11"
     },
     "/qa/how-many-fairway-woods": {
-      "h": "54d603e78c08d3fa",
-      "d": "2026-11-10"
+      "h": "a6ad83f95d39a8d1",
+      "d": "2026-11-11"
     },
     "/qa/mens-golf-shoes-beginner": {
-      "h": "fda38397ea891c41",
-      "d": "2026-11-10"
+      "h": "5b3ccc03fc5f581c",
+      "d": "2026-11-11"
     },
     "/qa/utility-4-recommend": {
-      "h": "b6598eb4c2b32de2",
-      "d": "2026-11-10"
+      "h": "282f638316aa1942",
+      "d": "2026-11-11"
     },
     "/qa/golf-rangefinder-recommend": {
-      "h": "f8128539eefb7f0b",
-      "d": "2026-11-10"
+      "h": "529e81659fca256f",
+      "d": "2026-11-11"
     },
     "/qa/golf-ball-recommend": {
-      "h": "b3ebd1dbed17ff10",
-      "d": "2026-11-10"
+      "h": "5fde2ed439ee445c",
+      "d": "2026-11-11"
     },
     "/qa/zero-torque-putter": {
-      "h": "b5267479ef8d7a17",
-      "d": "2026-11-10"
+      "h": "c0ba6235bbddefc4",
+      "d": "2026-11-11"
     },
     "/qa/womens-golf-club-recommend": {
-      "h": "e999203490501394",
-      "d": "2026-11-10"
+      "h": "5e36865a34c26c34",
+      "d": "2026-11-11"
     },
     "/qa/wedge-recommend-loft": {
-      "h": "fab6be8163ce22cf",
-      "d": "2026-11-10"
+      "h": "c22cc5d47a70391e",
+      "d": "2026-11-11"
     },
     "/qa/beginner-driver-recommend": {
-      "h": "b0c3e9101ce15946",
-      "d": "2026-11-10"
+      "h": "8f0b593532a563dd",
+      "d": "2026-11-11"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "f8f3571815809a88",
-      "d": "2026-11-10"
+      "h": "4ecded8140c6d775",
+      "d": "2026-11-11"
     },
     "/qa": {
-      "h": "10e30532b3f361f7",
-      "d": "2026-11-10"
+      "h": "1b9a681cb50a520e",
+      "d": "2026-11-11"
     },
     "/vs/adidas-codechaos-shoes-vs-footjoy-premiere-packard-shoes": {
       "h": "aa3d7749f7dd6cf3",
@@ -3521,6 +3525,10 @@
     "/vs/callaway-elyte-maxfast-women-driver-vs-taylormade-sim2max-women-driver": {
       "h": "400539e63b77928f",
       "d": "2026-10-22"
+    },
+    "/vs/callaway-elyte-td-fairway-vs-callaway-roguest-fairway": {
+      "h": "87604e0ebf47a843",
+      "d": "2026-11-11"
     },
     "/vs/callaway-elyte-women-fairway-vs-honma-aizu-women-fairway": {
       "h": "49c55498ac098f16",
@@ -3583,11 +3591,11 @@
       "d": "2026-10-22"
     },
     "/vs/callaway-roguest-fairway-vs-callaway-elyte-fairway": {
-      "h": "fe8c19a94bdf8e59",
+      "h": "8fa5899f91e24856",
       "d": "2026-11-11"
     },
     "/vs/callaway-roguest-fairway-vs-callaway-quantummax-fairway": {
-      "h": "3685b000011ffa17",
+      "h": "e6d57e622456739d",
       "d": "2026-11-11"
     },
     "/vs/callaway-roguest-women-driver-vs-callaway-elyte-maxfast-women-driver": {
@@ -3636,6 +3644,10 @@
     },
     "/vs/cleveland-rtz-wedge-vs-taylormade-mg4-wedge": {
       "h": "f814b95cc790c74a",
+      "d": "2026-11-11"
+    },
+    "/vs/cobra-optm-ls-driver-vs-cobra-ds-adapt-x-driver": {
+      "h": "2ddbe83b026b2ec5",
       "d": "2026-11-11"
     },
     "/vs/ecco-biom-c4-shoes-vs-adidas-codechaos-shoes": {
@@ -4090,14 +4102,6 @@
       "h": "acf8bc975adee99c",
       "d": "2026-10-24"
     },
-    "/vs/cobra-optm-ls-driver-vs-cobra-ds-adapt-x-driver": {
-      "h": "2ddbe83b026b2ec5",
-      "d": "2026-11-11"
-    },
-    "/vs/callaway-elyte-td-fairway-vs-callaway-roguest-fairway": {
-      "h": "87604e0ebf47a843",
-      "d": "2026-11-11"
-    },
     "/jp": {
       "h": "f460b7ba49952f37",
       "d": "2026-10-19"
@@ -4127,5 +4131,186 @@
       "d": "2026-10-19"
     }
   },
-  "pending": []
+  "pending": [
+    {
+      "url": "/p/callaway-roguest-fairway",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/g/driver-recommend-2026",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/g/fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/g/utility-recommend",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/g/iron-recommend",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/g/womens-driver-recommend",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/g/driver-recommend-2026-advanced",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/g/driver-recommend-2026-pro",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/g/fairway-wood-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/g/fairway-wood-recommend-pro",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/womens-driver-beginner",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/womens-iron-beginner",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/senior-golf-clubs-beginner",
+      "kind": "new",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/womens-utility-beginner",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/driver-best-time-to-buy",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/vokey-wedge-grind",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/golf-practice-gear-beginner",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/golf-glove-beginner",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/golf-bag-stand-vs-caddie",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/golf-swing-analyzer-beginner",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/used-golf-clubs-beginner",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/womens-golf-shoes-beginner",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/iron-steel-vs-carbon-shaft",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/how-many-fairway-woods",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/mens-golf-shoes-beginner",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/utility-4-recommend",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/golf-rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/golf-ball-recommend",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/zero-torque-putter",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/womens-golf-club-recommend",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/wedge-recommend-loft",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/beginner-driver-recommend",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/qa",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/vs/callaway-roguest-fairway-vs-callaway-elyte-fairway",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/vs/callaway-roguest-fairway-vs-callaway-quantummax-fairway",
+      "kind": "updated",
+      "d": "2026-11-11"
+    }
+  ]
 }
