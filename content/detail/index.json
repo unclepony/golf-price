@@ -510,7 +510,7 @@
  "honma-beres09-fairway": "37483399caf9",
  "pxg-lightning-fairway": "071a72eb5ccb",
  "prgr-superegg-fairway": "f4aae79aafe9",
- "bridgestone-bx2ht-hybrid": "38d31ef41390",
+ "bridgestone-bx2ht-hybrid": "26bae7a7164a",
  "onoff-cbt526-hybrid": "18ad9ec75b4b",
  "pxg-lightning-hybrid": "83a0b9c76739",
  "yamaha-rmxvd-hybrid": "4f3df760129d",
@@ -665,8 +665,8 @@
  "honma-twgs-women-iron": "2ba60fb53524",
  "yonex-ezonegt3-women-iron": "aa0f82ab0abe",
  "jestime-ponytail-women-iron": "39f6e0a9ceb2",
- "yamaha-inpres-udplus2-hybrid": "2f797e4cfa3a",
- "honma-bezeal3-hybrid": "fd1faba9759d",
+ "yamaha-inpres-udplus2-hybrid": "0d4116094f5d",
+ "honma-bezeal3-hybrid": "2bb0ed09d259",
  "pxg-0311-gen6-hybrid": "c7615f5b4af7",
  "honma-beres-aizu-hybrid": "4712c5f6a86c",
  "xxio13-hybrid": "dcb9a03532da",
@@ -749,5 +749,6 @@
  "xxio-primeroyal5-women-iron": "edd9af0d6192",
  "majesty-royale-women-iron": "c87599359bc3",
  "elord-dynas9-women-iron": "de93ec1e87fd",
- "jestime-fairlady-women-iron": "250e4daae6ae"
+ "jestime-fairlady-women-iron": "250e4daae6ae",
+ "onoff-aka-utility": "053a7d910b1a"
 }
