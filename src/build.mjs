@@ -1932,6 +1932,17 @@ const HERO = heroIds.map((id) => {
   const sr = m && stageRank(m.g, id);
   return it && { ...it, kicker: `${catName[it.cat] ?? ''}${sr && !sr.warn ? ` · ${sr.label}` : ''}`, sub: m?.pk.short ?? m?.pk.role ?? '' };
 }).filter(Boolean);
+// 홈 '많이 찾는 주제'(2026-11-10 관제탑: ChatGPT 손님 착지가 많은 주제 — 연습용품·골프백·골프화·퍼터·거리측정기). 없는 주소는 빼고 그린다
+const HOME_TOPICS = (() => {
+  const items = [
+    ['/g/practice-gear-recommend', '연습용품 추천'],
+    ['/g/golf-bag-recommend', '골프백 추천·브랜드별'],
+    ['/c/shoes', '골프화 추천'],
+    ['/c/putter', '퍼터 순위'],
+    ['/g/rangefinder-recommend', '거리측정기 추천'],
+  ].filter(([u]) => existsSync(join(OUT, `${u.slice(1)}.html`)));
+  return items.length ? `<nav class="htopics" aria-label="많이 찾는 주제"><b>많이 찾는 주제</b>${items.map(([u, t]) => `<a href="${u}">${esc(t)}</a>`).join('')}</nav>` : '';
+})();
 writeText(
   join(OUT, 'index.html'),
   layout({
@@ -1944,6 +1955,7 @@ writeText(
     desc: `드라이버·우드·유틸리티·아이언·웨지·퍼터부터 골프공·거리측정기·골프화까지 ${cats.length}개 골프용품을 실력(초심자~프로)·성별·가격대별로 비교합니다. 장단점과 주관적 편집 점수, 쿠팡 판매가를 함께 정리했습니다.`,
     path: '/',
     body: `${homeHero(rctx(), HERO)}
+${HOME_TOPICS}
 ${homeQuick(rctx())}
 ${homeBest(rctx(), HOME_RANKED, HOME_ALL)}
 <section class="hhero">

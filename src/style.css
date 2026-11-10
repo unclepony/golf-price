@@ -1162,3 +1162,9 @@ table.answer-t td.al { font-size: 12px; white-space: nowrap; color: var(--muted)
 @media (max-width: 560px) { table.answer-t th, table.answer-t td { padding: 6px 4px; font-size: 13px; } table.answer-t td small { display: block; } }
 /* 브랜드별 정리(2026-11-10) */
 .brands table.answer-t td small { display: block; color: var(--muted); font-size: 11px; }
+/* 홈 많이 찾는 주제(2026-11-10): PC·휴대폰 모두 보임, 휴대폰은 한 줄 가로 넘김 */
+.htopics { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 14px 0 6px; }
+.htopics b { font-size: 13px; color: var(--muted); margin-right: 4px; }
+.htopics a { display: inline-block; padding: 7px 14px; border: 1px solid var(--line); border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--text); text-decoration: none; background: var(--card, #fff); white-space: nowrap; }
+.htopics a:hover { border-color: var(--accent); color: var(--accent); }
+@media (max-width: 560px) { .htopics { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; } .htopics::-webkit-scrollbar { display: none; } .htopics b { flex: 0 0 auto; } }
