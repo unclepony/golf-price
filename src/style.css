@@ -1157,3 +1157,6 @@ table.ig.grind-t { min-width: 720px !important; }
 .logo-sub { color: #5b6b82; letter-spacing: 2.4px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo-emb img { filter: brightness(0) invert(1); opacity: .92; } :root:not([data-theme="light"]) .logo-name, :root:not([data-theme="light"]) .logo-name b { color: #f1ede2; background: none; } :root:not([data-theme="light"]) .logo-sub { color: #a9b4c4; } }
 @media (max-width: 560px) { .logo-emb { width: 40px; height: 40px; flex-basis: 40px; } .logo-name b { font-size: inherit; } }
+/* 결론 표 가격대 칸(2026-11-10) */
+table.answer-t td.al { font-size: 12px; white-space: nowrap; color: var(--muted); }
+@media (max-width: 560px) { table.answer-t th, table.answer-t td { padding: 6px 4px; font-size: 13px; } table.answer-t td small { display: block; } }

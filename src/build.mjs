@@ -892,14 +892,19 @@ function stageAnswer(g) {
   const total = rankedPicks(g).length; // 제목·h1 과 같은 계산(쿠팡 판매처가 있는 모델 수)
   const cnt = total > all.length ? `${all.length}종(전체 ${total}종 중 옵션 확인이 끝난 모델)` : `${all.length}종`;
   const lead = `<p class="answer-lead"><b>결론:</b> ${esc(word)} ${cnt}을 ${noSkill ? `비교하면 ${topLink(tops[0])}${hasBatchim(nm(tops[0].pk)) ? '이' : '가'} 1위, 그다음은 ${tops.slice(1).map(topLink).join(', ')} 순입니다(주관적 편집 점수 기준).` : `실력 단계별로 비교하면 ${tops.map((x) => `${esc(SKILL_WORD[x.s])}는 ${topLink(x)}`).join(', ')}가 1위입니다(주관적 편집 점수 기준).`}${ws.length ? ph(` ${all.length}종의 쿠팡 판매가는 ${won(Math.min(...ws))}~${won(Math.max(...ws))}(${dRange} 확인, 현재 가격과 다를 수 있음)입니다.`) : ''}</p>`;
-  const tr = tops
-    .map(({ s, pk }) => {
+  // 용도별 줄(2026-11-10 관제탑: /c 첫 화면 이탈이 많아 '용도별 1순위·가격대·확인일'을 표에): 예산 1순위 = 편집 점수가 중간값 이상인 모델 중 기준가가 가장 낮은 것
+  const sc = all.map(totalScore).sort((a, b) => b - a);
+  const median = sc[Math.floor((sc.length - 1) / 2)];
+  const budget = all.filter((pk) => totalScore(pk) >= median && pickPrice(pk.id) && !tops.some((t) => t.pk.id === pk.id)).sort((a, b) => orderPrice(a.id) - orderPrice(b.id))[0];
+  const rows = [...tops.map((t) => ({ ...t, label: noSkill ? t.s : `<span class="skill sk-${SKILLS.indexOf(t.s) + 1}">${t.s}</span>` })), ...(budget ? [{ pk: budget, label: '예산 1순위' }] : [])];
+  const tr = rows
+    .map(({ pk, label }) => {
       const sp = freshPrice(pk.id);
-      return `<tr><td class="ar">${noSkill ? s : `<span class="skill sk-${SKILLS.indexOf(s) + 1}">${s}</span>`}</td><td><a href="/p/${pk.id}">${esc(nm(pk))}</a><small>${esc(pk.short ?? pk.role ?? '')}</small></td><td class="as">${totalScore(pk).toFixed(1)}</td><td class="aw">${ph(sp ? `${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small>` : '<small>판매처에서 확인</small>')}</td></tr>`;
+      return `<tr><td class="ar">${label}</td><td><a href="/p/${pk.id}">${esc(nm(pk))}</a><small>${esc(pk.short ?? pk.role ?? '')}</small></td><td class="as">${totalScore(pk).toFixed(1)}</td><td class="al">${esc(priceLevel(pk.id)?.label ?? '-')}</td><td class="aw">${ph(sp ? `${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small>` : '<small>판매처에서 확인</small>')}</td></tr>`;
     })
     .join('');
   return `<section class="answer" aria-label="바로 답">${lead}
-<div class="tablewrap"><table class="answer-t"><caption>${esc(word)} ${noSkill ? '상위 3개 결론 표 · 순위는 주관적 편집 점수(5점 만점)' : '실력별 1위 결론 표 · 순위는 같은 실력 단계 안의 주관적 편집 점수(5점 만점)'}</caption><thead><tr><th>${noSkill ? '순위' : '실력'}</th><th>${noSkill ? '모델' : '1위 모델'} · 특징</th><th>점수</th><th>쿠팡 판매가</th></tr></thead><tbody>${tr}</tbody></table></div></section>`;
+<div class="tablewrap"><table class="answer-t"><caption>${esc(word)} ${noSkill ? '상위 3개' : '실력별 1위'}${budget ? '·예산 1순위' : ''} 결론 표 · 순위는 ${noSkill ? '' : '같은 실력 단계 안의 '}주관적 편집 점수(5점 만점)${budget ? ', 예산 1순위는 점수가 중간 이상인 모델 중 가장 싼 모델' : ''}, 가격대는 같은 분류 안 비교</caption><thead><tr><th>${noSkill ? '순위' : '실력'}</th><th>모델 · 특징</th><th>점수</th><th>가격대</th><th>쿠팡 판매가</th></tr></thead><tbody>${tr}</tbody></table></div></section>`;
 }
 // 한 줄 결론: 예산 기준 1개 + 쉬움(초보·중급) 또는 성능(상급·프로) 기준 1개. howto.json 의 conclusion 으로 수동 지정 가능
 function conclusionBox(g, ps, skill) {
