@@ -3078,6 +3078,10 @@
       "h": "150d8458b8a86a28",
       "d": "2026-11-11"
     },
+    "/p/garmin-approach-z10": {
+      "h": "d9a450500b451606",
+      "d": "2026-11-11"
+    },
     "/c/driver": {
       "h": "199f80c4312903e1",
       "d": "2026-11-11"
@@ -3107,8 +3111,8 @@
       "d": "2026-11-11"
     },
     "/c/rangefinder": {
-      "h": "1bc83af99da1c367",
-      "d": "2026-11-10"
+      "h": "2f4f95b32d83c46c",
+      "d": "2026-11-11"
     },
     "/c/gps": {
       "h": "2aba50349c1235fc",
@@ -3167,8 +3171,8 @@
       "d": "2026-11-11"
     },
     "/g/rangefinder-recommend": {
-      "h": "4c46ee8a9f871432",
-      "d": "2026-11-10"
+      "h": "bfcb9c4a2a559db5",
+      "d": "2026-11-11"
     },
     "/g/womens-driver-recommend": {
       "h": "61defde76190153e",
@@ -3347,8 +3351,8 @@
       "d": "2026-11-08"
     },
     "/g/rangefinder-recommend-intermediate": {
-      "h": "fc8a7d09936610dc",
-      "d": "2026-11-01"
+      "h": "7e1fd38a131e1cea",
+      "d": "2026-11-11"
     },
     "/g/rangefinder-recommend-advanced": {
       "h": "525b76294535fe74",
@@ -3439,7 +3443,7 @@
       "d": "2026-11-06"
     },
     "/": {
-      "h": "576f1f5aafe90ca1",
+      "h": "98581563d2520f31",
       "d": "2026-11-11"
     },
     "/about": {
@@ -4659,6 +4663,26 @@
     },
     {
       "url": "/g/golf-ball-compare-intermediate",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/p/garmin-approach-z10",
+      "kind": "new",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/c/rangefinder",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/g/rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/g/rangefinder-recommend-intermediate",
       "kind": "updated",
       "d": "2026-11-11"
     },
