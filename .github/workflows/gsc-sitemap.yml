@@ -1,0 +1,31 @@
+# 서치콘솔에 사이트맵 다시 제출 + 주요 페이지 색인 상태 확인 (손으로 실행: gh workflow run gsc-sitemap.yml)
+# 매일 작업(daily.yml)은 콘텐츠가 바뀐 쪽이 있을 때만 제출하고, 예약 실행이 몇 시간씩 늦게 시작된다.
+# 사이트맵을 크게 바꾼 날(2026-11-11 구글 색인 회복: 1,045 → 175쪽)처럼 바로 다시 제출해야 할 때 쓴다. 파일을 고치거나 커밋하지 않는다.
+name: gsc-sitemap
+
+on:
+  workflow_dispatch:
+    inputs:
+      inspect:
+        description: '색인 상태를 볼 주요 페이지 수(0 이면 제출만)'
+        required: false
+        default: '5'
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    env:
+      SITE_URL: https://choicegolf.unclepony.com
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 사이트맵 제출·색인 상태 확인
+        env:
+          GSC_SERVICE_ACCOUNT: ${{ secrets.GSC_SERVICE_ACCOUNT }}
+          GSC_SITE: ${{ secrets.GSC_SITE }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+          GSC_OAUTH_CLIENT_ID: ${{ secrets.GSC_OAUTH_CLIENT_ID }}
+          GSC_OAUTH_CLIENT_SECRET: ${{ secrets.GSC_OAUTH_CLIENT_SECRET }}
+        run: node src/gsc-sitemap.mjs --inspect "${{ inputs.inspect }}"
