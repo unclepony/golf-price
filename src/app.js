@@ -41,6 +41,7 @@
   const where = (a) =>
     a.closest('.stickybuy') ? '하단 고정 버튼'
     : a.closest('.fitem') ? '장비 찾기'
+    : a.closest('.season') ? '계절 묶음' // 2026-11-11: 겨울 방한 장갑 등 계절 묶음 표
     : a.closest('.conclusion') ? '한 줄 결론'
     : a.closest('table.scores') ? '점수표'
     : a.closest('table') ? '비교표'

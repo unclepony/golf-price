@@ -942,6 +942,27 @@ function brandSection(g) {
   return `<section class="prose brands" id="brands"><h2>${esc(word)} 브랜드별 정리</h2><p>이 가이드에서 비교한 ${all.length}종을 브랜드별로 묶었습니다. 브랜드마다 넣은 모델 수, 쿠팡 판매가 범위, 대표 모델(이 사이트 편집 점수가 가장 높은 모델)을 정리했습니다.</p>
 <div class="tablewrap"><table class="answer-t"><caption>정렬: 이 가이드에 넣은 모델 수가 많은 순(같으면 가나다순). 판매량·인기 순위가 아니며, 점수는 주관적 편집 점수(5점 만점), 가격은 확인일 기준이라 현재 가격과 다를 수 있습니다.</caption><thead><tr><th>브랜드</th><th>모델 수</th><th>쿠팡 판매가</th><th>대표 모델</th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
 }
+// 계절 묶음(2026-11-11 장갑 3번: 11월 장갑 주문·겨울 수요): guides.json season { id, title, months, match, lead, home } — 그 달(한국 시간)에만
+// 가이드·분류 첫 화면(바로 답 아래)과 홈 '많이 찾는 주제'에 보인다. 상품 이름에 match 낱말이 든 모델만, 같은 성별 안에서 편집 점수 순. 가격·확인일은 지문에서 뺀다
+const seasonOn = (g) => !!g.season?.months?.includes(Number(TODAY.slice(5, 7)));
+function seasonSection(g, inCat = false) {
+  if (!seasonOn(g)) return '';
+  const re = new RegExp(g.season.match);
+  const ps = rankedPicks(g).filter((pk) => re.test(byId[pk.id]?.p.name ?? '') && outHref(pk.id) && !GONE[pk.id]);
+  if (ps.length < 2) return '';
+  const sex = (n) => (/여성|우먼|레이디/.test(n) ? '여성' : /남성/.test(n) ? '남성' : '판매처 확인');
+  const ord = { 남성: 0, 여성: 1, '판매처 확인': 2 };
+  const rows = [...ps]
+    .sort((a, b) => ord[sex(byId[a.id].p.name)] - ord[sex(byId[b.id].p.name)] || totalScore(b) - totalScore(a))
+    .map((pk) => {
+      const nm = byId[pk.id].p.name;
+      const sp = freshPrice(pk.id);
+      return `<tr><td><a href="/p/${pk.id}">${esc(nm)}</a><small>${esc(pk.short ?? pk.role ?? '')}</small></td><td class="al">${sex(nm) === '판매처 확인' ? (/양손/.test(nm) ? '양손 · 성별 확인' : '성별 확인') : `${esc(sex(nm))}${/양손/.test(nm) ? '·양손' : ''}`}</td><td class="as">${totalScore(pk).toFixed(1)}</td><td class="aw">${phist(sp ? `${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small>` : '<small>판매처에서 확인</small>')}<a class="season-go" href="${esc(outHref(pk.id))}" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></td></tr>`;
+    })
+    .join('');
+  return `<section class="answer season" id="${esc(g.season.id)}" aria-label="${esc(g.season.title)}"><p class="answer-lead"><b>${esc(g.season.title)}:</b> ${inCat ? `${esc(guideName(g))}에서 ` : ''}${esc(String(g.season.lead ?? '').replace('{n}', String(ps.length)))}</p>
+<div class="tablewrap"><table class="answer-t"><caption>${esc(g.season.title)} · 같은 성별 안에서 주관적 편집 점수 순, 가격은 확인일 기준이라 현재 가격과 다를 수 있음</caption><thead><tr><th>모델 · 특징</th><th>구분</th><th>점수</th><th>쿠팡 판매가</th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
+}
 // 한 줄 결론: 예산 기준 1개 + 쉬움(초보·중급) 또는 성능(상급·프로) 기준 1개. howto.json 의 conclusion 으로 수동 지정 가능
 function conclusionBox(g, ps, skill) {
   if (ps.length < 2) return '';
@@ -1644,7 +1665,7 @@ for (const c of cats) {
       ld: [crumbLd([['홈', '/'], [c.name, `/c/${c.id}`]])],
       body: `<nav class="crumb"><a href="/">홈</a> › ${esc(c.name)}</nav>
 <h1>${esc(c.name)}</h1>
-${updatedTag(max2(...related.map((g) => g.updated)))}${related.map((g) => stageAnswer(g, true)).join('')}
+${updatedTag(max2(...related.map((g) => g.updated)))}${related.map((g) => stageAnswer(g, true)).join('')}${related.map((g) => seasonSection(g, true)).join('')}
 <p class="plp-intro">${esc(c.intro)}</p>
 ${listBlock(rctx(), c, items)}
 ${related.length ? `<h2 class="plp-h2">${esc(c.name)} 실력별 비교 가이드</h2>` : ''}
@@ -1741,7 +1762,7 @@ ${crit.map((_, i) => `<td class="sc">${pk.scores ? dots(pk.scores[i]) : '-'}</td
       body: `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${guideCat(g)?.id}">${esc(guideCat(g)?.name ?? '')}</a>${g.gender && g.gender !== '공용' ? ` › ${esc(g.gender)}` : ''}</nav>
 <p class="g-kicker">${g.gender ? `<span class="gender g-${esc(g.gender)}">${esc(g.genderBadge ?? (g.gender === '공용' ? '남녀공용' : g.gender))}</span>` : ''}${esc(guideName(g))}</p>
 <h1>${esc(g.title)}</h1>
-${updatedTag(g.updated)}${stageAnswer(g)}
+${updatedTag(g.updated)}${stageAnswer(g)}${seasonSection(g)}
 ${skillGroups(g).length ? '' : conclusionBox(g, rankedPicks(g), null)}
 <section class="prose"><p>${esc(g.intro)}</p></section>
 ${criteriaBox(g)}
@@ -1957,12 +1978,13 @@ const HERO = heroIds.map((id) => {
 // 홈 '많이 찾는 주제'(2026-11-10 관제탑: ChatGPT 손님 착지가 많은 주제 — 연습용품·골프백·골프화·퍼터·거리측정기). 없는 주소는 빼고 그린다
 const HOME_TOPICS = (() => {
   const items = [
+    ...pageGuides.filter((g) => seasonOn(g) && g.season.home).map((g) => [`/g/${g.slug}#${g.season.id}`, g.season.home]), // 계절 묶음(겨울 골프장갑 등, 그 달에만)
     ['/g/practice-gear-recommend', '연습용품 추천'],
     ['/g/golf-bag-recommend', '골프백 추천·브랜드별'],
     ['/c/shoes', '골프화 추천'],
     ['/c/putter', '퍼터 순위'],
     ['/g/rangefinder-recommend', '거리측정기 추천'],
-  ].filter(([u]) => existsSync(join(OUT, `${u.slice(1)}.html`)));
+  ].filter(([u]) => existsSync(join(OUT, `${u.split('#')[0].slice(1)}.html`)));
   return items.length ? `<nav class="htopics" aria-label="많이 찾는 주제"><b>많이 찾는 주제</b>${items.map(([u, t]) => `<a href="${u}">${esc(t)}</a>`).join('')}</nav>` : '';
 })();
 writeText(

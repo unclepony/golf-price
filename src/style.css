@@ -1175,3 +1175,7 @@ table.answer-t td.al { font-size: 12px; white-space: nowrap; color: var(--muted)
 .pd-pack-n a { font-weight: 700; color: var(--text); }
 .pd-pack-n span { color: var(--muted); font-size: 13px; }
 .pd-pack-btn { justify-self: start; padding: 8px 14px; font-size: 14px; }
+/* 계절 묶음(2026-11-11, 겨울 방한 장갑) */
+.answer.season { margin-top: 12px; }
+.answer.season .season-go { display: inline-block; margin-left: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; }
+@media (max-width: 560px) { .answer.season .season-go { display: block; margin: 4px 0 0; } }

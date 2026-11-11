@@ -20957,7 +20957,21 @@
       ],
       "updated": "2026-10-16",
       "answerFirst": true,
-      "brandSection": true
+      "brandSection": true,
+      "season": {
+        "_설명": "계절 묶음: months 에 든 달(한국 시간)에만 가이드·분류 첫 화면과 홈 바로가기에 보인다. match = 상품 이름 낱말(정규식)",
+        "id": "winter",
+        "title": "겨울 방한 장갑",
+        "months": [
+          11,
+          12,
+          1,
+          2
+        ],
+        "match": "겨울|방한|윈터|써멀",
+        "lead": "이름에 겨울·방한 용도가 적힌 장갑 {n}종을 남성·여성으로 나눠 정리했습니다. 보온 장갑은 두께가 있어 일반 장갑보다 손맛이 둔한 편입니다(각 상품의 감안할 점).",
+        "home": "겨울 골프장갑"
+      }
     },
     {
       "slug": "practice-gear-recommend",
