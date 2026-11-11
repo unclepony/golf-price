@@ -22,11 +22,11 @@ const OUT = join(ROOT, 'site');
 // 안내 문구는 config/notices.json 한 곳에서 관리한다 (고지·점수·가격 안내)
 const NOTICES = readJson(join(ROOT, 'config', 'notices.json'), {});
 const DISCLOSURE = NOTICES.disclosure;
-// 가격 출처 상태: API 기록이 하나라도 있으면 api, 아니면 manual (링크 생성 때 확인·직접 입력)
+// 가격 출처 상태: API 가격 기록(추이)이 하나라도 있으면 api, 매일 공식 API 로 판매가만 확인하면 refresh(config/coupang-refresh.json, 2026-11-11), 아니면 manual (링크 생성 때 확인·직접 입력)
 const PRICE_MODE = (() => {
   const dir = historyDir(process.argv.includes('--demo'));
-  if (!existsSync(dir)) return 'manual';
-  return readdirSync(dir).some((f) => f.endsWith('.json') && (readJson(join(dir, f), {}).points ?? []).some((p) => (p.src ?? 'api') === 'api')) ? 'api' : 'manual';
+  if (existsSync(dir) && readdirSync(dir).some((f) => f.endsWith('.json') && (readJson(join(dir, f), {}).points ?? []).some((p) => (p.src ?? 'api') === 'api'))) return 'api';
+  return existsSync(join(ROOT, 'config', 'coupang-refresh.json')) && !process.argv.includes('--demo') ? 'refresh' : 'manual';
 })();
 const PRICE_NOTE = NOTICES.price?.[PRICE_MODE];
 
@@ -2084,7 +2084,7 @@ ${ABOUT.operator ? `<section class="prose" id="operator"><h2>운영자 소개</h
 <p>${PRICE_NOTE}</p>
 <ul>
 ${(NOTICES.priceDetails?.[PRICE_MODE] ?? []).map((t) => `<li>${esc(t)}</li>`).join('')}
-<li>"사기 좋은 때" 판단: 역대 최저가와 2% 이내면 '역대 최저가 근처', 최근 30일 평균보다 5% 이상 낮으면 '평소보다 저렴', 5% 이상 높으면 '평소보다 비쌈', 기록이 7일 미만이면 '데이터 수집 중'입니다.</li>
+${PRICE_MODE === 'api' ? `<li>"사기 좋은 때" 판단: 역대 최저가와 2% 이내면 '역대 최저가 근처', 최근 30일 평균보다 5% 이상 낮으면 '평소보다 저렴', 5% 이상 높으면 '평소보다 비쌈', 기록이 7일 미만이면 '데이터 수집 중'입니다.</li>` : ''}
 <li>해외직구·구매대행·병행수입 상품은 비교와 가격 기록에서 뺍니다.</li>
 </ul>
 </section>
@@ -2092,7 +2092,7 @@ ${(NOTICES.priceDetails?.[PRICE_MODE] ?? []).map((t) => `<li>${esc(t)}</li>`).jo
 <h2>업데이트 주기</h2>
 <ul>
 <li>가이드와 상품 정보: 신모델 출시나 판매처 변경이 있을 때 고치며, 각 페이지 상단에 '마지막 업데이트' 날짜를 적습니다.</li>
-<li>가격: API 승인 뒤 매일 자동 기록, 사이트는 하루 한 번 다시 만들어집니다. 가격만 바뀐 경우에는 '마지막 업데이트' 날짜를 바꾸지 않습니다.</li>
+<li>가격: ${PRICE_MODE === 'manual' ? 'API 승인 뒤 매일 자동 기록' : '쿠팡 파트너스 공식 API로 매일 한 번 확인'}, 사이트는 하루 한 번 다시 만들어집니다. 가격만 바뀐 경우에는 '마지막 업데이트' 날짜를 바꾸지 않습니다.</li>
 <li>가격대 단계와 동점 순위에 쓰는 기준가는 가격이 10% 이상 변했을 때나 주 1회 정기 재계산 때만 바뀌어, 순위가 매일 흔들리지 않습니다.</li>
 </ul>
 </section>
