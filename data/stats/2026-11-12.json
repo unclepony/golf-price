@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-12",
+  "by": {
+    "act": {
+      "직접·북마크|/p/jogeuman-eyeline-strokemeter": 1,
+      "캠페인: chatgpt.com|/c/practice": 1,
+      "캠페인: chatgpt.com|/c/rangefinder": 1
+    },
+    "asn": {
+      "AS4766 Korea Telecom": 1,
+      "AS9644 SK Telecom": 2
+    },
+    "asncamp": {
+      "AS4766 Korea Telecom|chatgpt.com|모바일": 1,
+      "AS9644 SK Telecom|chatgpt.com|모바일": 1
+    },
+    "cty": {
+      "KR": 3
+    },
+    "depth": {
+      "/c/practice|첫 화면": 1,
+      "/p/jogeuman-eyeline-strokemeter|끝까지": 1
+    },
+    "dev": {
+      "모바일": 3
+    },
+    "hour": {
+      "00": 2,
+      "06": 1
+    },
+    "pv": {
+      "/c/practice": 1,
+      "/c/rangefinder": 1,
+      "/p/jogeuman-eyeline-strokemeter": 1
+    },
+    "pvprice": {
+      "가격 보임|/p/jogeuman-eyeline-strokemeter": 1
+    },
+    "ref": {
+      "직접·북마크": 1,
+      "캠페인: chatgpt.com": 2
+    },
+    "refland": {
+      "직접·북마크|/p/jogeuman-eyeline-strokemeter": 1,
+      "캠페인: chatgpt.com|/c/practice": 1,
+      "캠페인: chatgpt.com|/c/rangefinder": 1
+    },
+    "refurl": {
+      "chatgpt.com": 2
+    },
+    "seen": {
+      "/p/jogeuman-eyeline-strokemeter": 1
+    },
+    "seenpos": {
+      "상품 페이지": 1
+    },
+    "seenref": {
+      "직접·북마크": 1
+    },
+    "skip": {
+      "내부(관리자 브라우저)": 2,
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 2
+    },
+    "stay": {
+      "/c/practice|10초 미만": 1,
+      "/p/jogeuman-eyeline-strokemeter|10~30초": 1
+    },
+    "visit": {
+      "/c/practice": 1,
+      "/c/rangefinder": 1,
+      "/p/jogeuman-eyeline-strokemeter": 1
+    },
+    "xpv": {
+      "/c/practice": 1,
+      "/c/rangefinder": 1
+    }
+  },
+  "journey": []
+}
