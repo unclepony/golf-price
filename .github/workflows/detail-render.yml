@@ -20,8 +20,17 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      # 2026-11-12 관제탑: 11/11 golf-price 3·techprice 1번이 러너 DNS 일시 장애(azure.archive.ubuntu.com 이름 찾기 실패)로 글꼴 설치에서 실패 →
+      #   apt 재시도 옵션 + 30초 간격 3번 시도. 글꼴 없이 만들면 한글이 네모로 나오므로 3번 다 실패하면 그대로 실패시킨다.
       - name: 글꼴
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk >/dev/null
+        timeout-minutes: 8
+        run: |
+          A='-o Acquire::Retries=3 -o Acquire::http::Timeout=30'
+          for i in 1 2 3; do
+            sudo apt-get $A update -qq && sudo apt-get $A install -y -qq fonts-noto-cjk >/dev/null && fc-list :lang=ko family | grep -q 'Noto Sans CJK' && exit 0
+            echo "::warning::글꼴 설치 실패 ${i}번째 — 30초 뒤 다시"; [ "$i" = 3 ] || sleep 30
+          done
+          echo '::error::글꼴 설치 3번 실패'; exit 1
       - name: 상세 이미지 만들기
         env:
           CHROME: /usr/bin/google-chrome
