@@ -85,8 +85,9 @@ for (const [i, id] of targets.entries()) {
   const want = words(pk.title);
   const sane = (r) => r.price > 0 && (!pk.price || (r.price >= pk.price * 0.5 && r.price <= pk.price * 2));
   // productId 가 있으면 그것으로만(정확히 같은 상품), 없으면 상품명 단어 완전 일치 + 로켓 여부
+  // 같은 상품 번호가 옵션별로 여러 줄 나오면(예: 골프티 4색 세트 12,600원·낱개 9,900원) 우리 연결 상품명과 단어가 같은 옵션 줄을 먼저 쓴다(2026-11-11). 없으면 예전처럼 첫 줄
   let hit = pk.productId
-    ? rows.find((r) => r.id === String(pk.productId) && sane(r))
+    ? (rows.find((r) => r.id === String(pk.productId) && words(r.name) === want && sane(r)) ?? rows.find((r) => r.id === String(pk.productId) && sane(r)))
     : rows.find((r) => words(r.name) === want && sane(r) && (pk.rocket === undefined || !!pk.rocket === r.rocket));
   // 2단계(2026-11-02 gp-1102-2): 완전 일치가 없고 productId 도 없을 때만. 아래를 모두 만족하는 상품 번호가 '딱 1개'일 때만 쓴다.
   if (!hit && !pk.productId) {
