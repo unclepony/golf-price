@@ -15,7 +15,9 @@ const PORT = 4300 + Math.floor(Math.random() * 300);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const site = join(ROOT, 'site');
 if (!existsSync(join(site, 'sitemap.xml'))) { console.error('site/ 가 없습니다. 먼저 node src/build.mjs'); process.exit(1); }
-const urls = [...readFileSync(join(site, 'sitemap.xml'), 'utf8').matchAll(/<loc>[^<]*?(\/[^<]*)<\/loc>/g)].map((m) => m[1].replace(/^\/\/[^/]+/, '')).map((u) => (u.startsWith('/') ? u : '/' + u));
+// 전체 쪽 목록(assets/pages.txt, 사이트맵에서 뺀 noindex 쪽 포함)이 있으면 그것, 없으면 사이트맵
+const PAGES_TXT = join(site, 'assets', 'pages.txt');
+const urls = existsSync(PAGES_TXT) ? readFileSync(PAGES_TXT, 'utf8').split('\n').map((s) => s.trim()).filter(Boolean) : [...readFileSync(join(site, 'sitemap.xml'), 'utf8').matchAll(/<loc>[^<]*?(\/[^<]*)<\/loc>/g)].map((m) => m[1].replace(/^\/\/[^/]+/, '')).map((u) => (u.startsWith('/') ? u : '/' + u));
 const paths = urls.map((u) => new URL(u, 'http://x').pathname);
 // 표본: 종류별로 앞의 몇 개
 const pick = (re, n) => paths.filter((p) => re.test(p)).slice(0, n);

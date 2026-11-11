@@ -22,6 +22,12 @@ const OUT = join(ROOT, 'site');
 // 안내 문구는 config/notices.json 한 곳에서 관리한다 (고지·점수·가격 안내)
 const NOTICES = readJson(join(ROOT, 'config', 'notices.json'), {});
 const DISCLOSURE = NOTICES.disclosure;
+// 구글 색인 회복(질문함 #44, 2026-11-11 사장님 결정): 얇은 자동 쪽 목록(config/noindex.json — src/noindex-list.mjs 가 만든다, 기준은 docs/google-index-recovery-2026-11.md).
+// 여기 있는 주소는 사이트맵·llms.txt 에서 빼고 <meta name="googlebot" content="noindex,follow"> 를 붙인다. 주소는 그대로 열린다(301·404 없음).
+// googlebot 만 막는 이유: 구글 품질 판단 때문의 조치이고, 쿠팡 이동이 가장 많은 ChatGPT 유입(빙 색인을 씀)은 지키기 위해. bot 을 'robots' 로 바꾸면 모든 검색엔진에 적용. 되돌리기: paths 를 비운다
+const NOINDEX_CONF = readJson(join(ROOT, 'config', 'noindex.json'), {});
+const NOINDEX = new Set(NOINDEX_CONF.paths ?? []);
+const NOINDEX_BOT = NOINDEX_CONF.bot === 'robots' ? 'robots' : 'googlebot';
 // 가격 출처 상태: API 가격 기록(추이)이 하나라도 있으면 api, 매일 공식 API 로 판매가만 확인하면 refresh(config/coupang-refresh.json, 2026-11-11), 아니면 manual (링크 생성 때 확인·직접 입력)
 const PRICE_MODE = (() => {
   const dir = historyDir(process.argv.includes('--demo'));
@@ -310,7 +316,7 @@ function layout({ title, desc, path, body, recent, ld = [], raw = false }) {
 <meta property="og:site_name" content="${esc(SITE_NAME)}">
 <meta property="og:locale" content="ko_KR">
 ${ogImg ? `<meta property="og:image" content="${esc(ogImg)}">\n<meta property="og:image:width" content="${ogImg === BRAND_OG ? 1200 : 492}">\n<meta property="og:image:height" content="${ogImg === BRAND_OG ? 630 : 492}">\n<meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">'}
-${DEMO ? '<meta name="robots" content="noindex">' : path === '/' ? VERIFY : ''}
+${DEMO ? '<meta name="robots" content="noindex">' : path === '/' ? VERIFY : NOINDEX.has(path) ? `<meta name="${NOINDEX_BOT}" content="noindex,follow">` : ''}
 <link rel="stylesheet" href="/assets/style.css?v=${ASSET_V}">
 <link rel="icon" href="/assets/icon-48.png" sizes="48x48" type="image/png">
 <link rel="apple-touch-icon" href="/assets/icon-180.png">
@@ -2187,7 +2193,7 @@ if (!DEMO) {
     const pr = priceRange(ps.map((pk) => pk.id));
     return `- [${guideName(g)}](${SITE_URL}/g/${g.slug}): ${ps.length}종${pr ? `, 쿠팡 판매가 ${won(pr.min)}~${won(pr.max)}` : ''}. ${g.desc}`;
   };
-  const skillLines = pageGuides.flatMap((g) => skillGroups(g).map((x) => `- [${guideName(g).replace(' 비교 및 선택 가이드', '')} ${SKILL_WORD[x.skill]}](${SITE_URL}${skillPath(g, x.skill)}): ${x.ids.length}종`));
+  const skillLines = pageGuides.flatMap((g) => skillGroups(g).filter((x) => !NOINDEX.has(skillPath(g, x.skill))).map((x) => `- [${guideName(g).replace(' 비교 및 선택 가이드', '')} ${SKILL_WORD[x.skill]}](${SITE_URL}${skillPath(g, x.skill)}): ${x.ids.length}종`));
   rawWrite(
     join(OUT, 'llms.txt'),
     `# ${SITE_NAME}
@@ -2213,7 +2219,7 @@ ${QA.list.length ? `## 초보 Q&A
 ${QA.list.map((a) => `- [${a.title}](${SITE_URL}/qa/${a.slug}): ${a.desc}`).join('\n')}
 
 ` : ''}## 1:1 비교 (A vs B)
-${VS_PAIRS.map((v) => `- [${vsName(v.a)} vs ${vsName(v.b)}](${SITE_URL}${v.path})`).join('\n')}
+${VS_PAIRS.filter((v) => !NOINDEX.has(v.path)).map((v) => `- [${vsName(v.a)} vs ${vsName(v.b)}](${SITE_URL}${v.path})`).join('\n')}
 
 ## 일본 골프채 정가 비교
 ${JP_URLS.length ? `- [일본 골프채 가격 비교: 일본 정가 vs 한국 정가](${SITE_URL}/jp): 일본 제조사 정가와 한국 공식 정가를 환율로 비교, 직구 세금은 관세청 안내 링크
@@ -2228,9 +2234,13 @@ ${cats.map((c) => `- [${c.name}](${SITE_URL}/c/${c.id})`).join('\n')}
 rawWrite(join(OUT, 'version.json'), JSON.stringify({ commit: BUILD_COMMIT, builtAt: `${BUILD_AT} KST` }));
 // IndexNow 키 파일
 if (SITE.indexNowKey && !DEMO) rawWrite(join(OUT, `${SITE.indexNowKey}.txt`), SITE.indexNowKey);
+// 전체 쪽 목록(사이트맵에서 뺀 쪽 포함): 방문 집계(functions/api/hit.js)·화면 점검(qa-visual)이 읽는다 — 사이트맵에서 빼도 방문·쿠팡 이동은 계속 센다
+rawWrite(join(OUT, 'assets', 'pages.txt'), urls.map(([u]) => u).join('\n') + '\n');
+if (NOINDEX.size) console.log(`사이트맵 ${urls.filter(([u]) => !NOINDEX.has(u)).length}쪽 (얇은 자동 쪽 ${urls.filter(([u]) => NOINDEX.has(u)).length}쪽은 빼고 ${NOINDEX_BOT} noindex — config/noindex.json)`);
 rawWrite(
   join(OUT, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
+    .filter(([u]) => !NOINDEX.has(u))
     .map(([u, d]) => `<url><loc>${SITE_URL}${u}</loc><lastmod>${d}</lastmod></url>`)
     .join('\n')}\n</urlset>\n`,
 );

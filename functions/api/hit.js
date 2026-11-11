@@ -9,8 +9,13 @@ let HREF2ID = null; // 쿠팡 링크 → 상품ID (assets/go.json 을 뒤집음)
 
 async function tables(env, url) {
   if (!PATHS) {
-    const xml = await env.ASSETS.fetch(new URL('/sitemap.xml', url)).then((r) => (r.ok ? r.text() : '')).catch(() => '');
-    PATHS = new Set([...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => norm(new URL(m[1]).pathname)));
+    // 전체 쪽 목록(assets/pages.txt, 2026-11-11): 사이트맵에서 뺀 noindex 쪽도 방문·쿠팡 이동을 센다. 목록이 없으면 사이트맵
+    const txt = await env.ASSETS.fetch(new URL('/assets/pages.txt', url)).then((r) => (r.ok ? r.text() : '')).catch(() => '');
+    if (txt.trim()) PATHS = new Set(txt.split('\n').map((s) => s.trim()).filter(Boolean).map(norm));
+    else {
+      const xml = await env.ASSETS.fetch(new URL('/sitemap.xml', url)).then((r) => (r.ok ? r.text() : '')).catch(() => '');
+      PATHS = new Set([...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => norm(new URL(m[1]).pathname)));
+    }
     const go = await env.ASSETS.fetch(new URL('/assets/go.json', url)).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
     HREF2ID = new Map(Object.entries(go).map(([id, href]) => [href, id]));
   }
