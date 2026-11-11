@@ -283,10 +283,10 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
   );
 
   // 홈: 내 실력에 맞는 장비 찾기 (아이템·성별·실력·예산으로 걸러 점수 순 6개, 전체 비교 페이지로 연결)
-  const fd = $('#finderData');
+  const fsec = $('#finder[data-src]');
   const ff = $('.finder-f');
-  if (fd && ff) {
-    const data = JSON.parse(fd.textContent);
+  if (fsec && ff) fetch(fsec.dataset.src).then((r) => (r.ok ? r.json() : null)).then((data) => {
+    if (!data) return;
     const LV = ['', '저가', '중가', '고가', '프리미엄'];
     const won = (n) => `${Math.round(n).toLocaleString('ko-KR')}원`;
     const render = () => {
@@ -312,7 +312,7 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
     ff.s.value = '초심자'; ff.g.value = '남성'; // 유튜브·Q&A 영상이 초보 남성 기준 — 처음 보이는 6개를 초심자·남성으로(전체는 선택지에 그대로)
     ff.addEventListener('change', render);
     render();
-  }
+  }).catch(() => {});
 
   // ---------- 2026-10 리뉴얼: 큰 메뉴(휴대폰에서는 펼치기), 분류 목록 필터·정렬, 상세 탭 표시 ----------
   const mega = $('.mega');
@@ -418,7 +418,8 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
   const best = $('[data-best]');
   if (best) {
     const grid = $('#bestGrid', best);
-    const data = JSON.parse($('#bestData', best).textContent);
+    let data = null; // 탭 전환용 전체 상품 자료 — 따로 받은 뒤에만 다시 그린다(그 전에는 HTML 의 20개 그대로)
+    const dataP = fetch(best.dataset.best).then((r) => (r.ok ? r.json() : null)).then((j) => (data = j)).catch(() => null);
     const tabs = $$('.hbest-tabs button', best);
     const LVN = ['', '저가', '중가', '고가', '프리미엄'];
     const SKN = ['초심자', '중급', '고급', '프로'];
@@ -428,12 +429,13 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
     const card = (it, r) => `<a class="pc" href="/p/${esc(it.id)}" data-m="${mOf(it.cat)}"><span class="pc-img"><span class="pc-rank">${r}</span>${it.image ? `<img src="${esc(it.image)}" alt="" loading="lazy" decoding="async" width="212" height="212">` : ''}${it.rocket ? '<span class="pc-rocket">로켓배송</span>' : ''}</span><span class="pc-brand">${it.isNew ? '<span class="new-mark">NEW</span>' : ''}${esc(it.brand)}</span><b class="pc-name">${esc(it.name)}</b><span class="pc-tags tierline">${it.skill ? `<span class="skill sk-${SKN.indexOf(it.skill) + 1}">${esc(it.skill)}</span>` : ''}${it.lvl ? `<span class="lvl lvl-${it.lvl}" title="가격대: ${LVN[it.lvl]}"><i>${'₩'.repeat(it.lvl)}</i><s>${'₩'.repeat(4 - it.lvl)}</s><em>${LVN[it.lvl]}</em></span>` : ''}</span>${it.score ? `<span class="pc-score">편집 점수 ${it.score.toFixed(1)}</span>` : ''}${it.price ? `<span class="pc-price"><b>${it.price.toLocaleString('ko-KR')}원</b><small>쿠팡 · ${+it.priceD.slice(5, 7)}.${+it.priceD.slice(8, 10)} 확인</small></span>` : '<span class="pc-price none">쿠팡에서 가격 확인</span>'}</a>`;
     let key = 'all';
     const render = () => {
+      if (!data) return;
       const ids = [...order, ...Object.keys(data).filter((id) => !order.includes(id))].filter((id) => data[id] && (key === 'all' || mOf(data[id].cat) === key)).slice(0, 20);
       grid.innerHTML = ids.map((id, i) => card(data[id], i + 1)).join('');
     };
-    tabs.forEach((b) => b.addEventListener('click', () => { tabs.forEach((x) => { x.classList.toggle('on', x === b); x.setAttribute('aria-selected', String(x === b)); }); key = b.dataset.k; render(); }));
-    fetch('/api/best').then((r) => (r.ok ? r.json() : null)).then((j) => {
-      if (!j?.items?.length) return;
+    tabs.forEach((b) => b.addEventListener('click', () => { tabs.forEach((x) => { x.classList.toggle('on', x === b); x.setAttribute('aria-selected', String(x === b)); }); key = b.dataset.k; dataP.then(render); }));
+    Promise.all([fetch('/api/best').then((r) => (r.ok ? r.json() : null)), dataP]).then(([j]) => {
+      if (!j?.items?.length || !data) return;
       const live = j.items.map((x) => x.id).filter((id) => data[id]);
       order = [...live, ...order.filter((id) => !live.includes(id))];
       $('#bestSpan', best).textContent = j.span === 'today' ? '오늘 방문 많은 순 · 실시간' : '최근 3일 방문 많은 순';

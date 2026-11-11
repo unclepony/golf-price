@@ -214,17 +214,17 @@ export function homeQuick(ctx) {
     .join('')}</nav>`;
 }
 
-export function homeBest(ctx, ranked, all) {
+// 탭 전환용 전체 상품 자료(약 600KB)는 HTML 에 넣지 않고 dataUrl 파일로 따로 둔다(홈 첫 화면 다운로드를 줄임 — 2026-11-12)
+export const homeBestData = (all) => Object.fromEntries(all.map((it) => [it.id, it]));
+export function homeBest(ctx, ranked, dataUrl) {
   const { esc } = ctx;
   const tabs = [['all', '전체'], ...MENU.filter((m) => m.cats).map((m) => [m.key, m.name])];
-  const data = Object.fromEntries(all.map((it) => [it.id, it]));
   const cards = ranked.slice(0, 20).map((it, i) => productCard(ctx, it).replace('<a class="pc"', `<a class="pc" data-m="${menuOf(it.cat)}"`).replace('<span class="pc-img">', `<span class="pc-img"><span class="pc-rank">${i + 1}</span>`)).join('');
-  return `<section class="hbest" id="best" data-best>
+  return `<section class="hbest" id="best" data-best="${esc(dataUrl)}">
 <div class="block-h"><h2>실시간 베스트</h2><span id="bestSpan">최근 방문 많은 순</span></div>
 <nav class="hbest-tabs" role="tablist">${tabs.map(([k, t], i) => `<button type="button" role="tab" data-k="${k}"${i === 0 ? ' class="on" aria-selected="true"' : ''}>${esc(t)}</button>`).join('')}</nav>
 <div class="plp-grid hbest-grid" id="bestGrid">${cards}</div>
 <p class="note">사람들이 이 사이트에서 많이 본 상품 순서입니다(개인 정보 없이 페이지 방문 합계만 사용). 가격은 쿠팡 판매가를 확인한 날짜 기준입니다.</p>
-<script type="application/json" id="bestData">${JSON.stringify(data).replace(/</g, '\u003c')}</script>
 </section>`;
 }
 

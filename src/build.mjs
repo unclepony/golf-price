@@ -9,7 +9,7 @@ import { join } from 'node:path';
 import { ROOT, loadConfig, loadLinks, historyDir, readJson, writeText as rawWrite, todayKst } from './lib.mjs';
 import { beginnerIssues, releaseIssues } from './rules.mjs';
 import { loadQa, qaRelatedBlock, writeQaPages } from './qa.mjs';
-import { megaNav, listBlock, buyBox, infoTable, pdTabs, itemInfo, homeHero, homeQuick, homeBest, endBuy } from './renew.mjs';
+import { megaNav, listBlock, buyBox, infoTable, pdTabs, itemInfo, homeHero, homeQuick, homeBest, homeBestData, endBuy } from './renew.mjs';
 import { publicVideos, isShorts, isVideoId, videoIssues } from './videos.mjs';
 import { writeJpPages } from './jp.mjs';
 
@@ -1987,6 +1987,14 @@ const HOME_TOPICS = (() => {
   ].filter(([u]) => existsSync(join(OUT, `${u.split('#')[0].slice(1)}.html`)));
   return items.length ? `<nav class="htopics" aria-label="많이 찾는 주제"><b>많이 찾는 주제</b>${items.map(([u, t]) => `<a href="${u}">${esc(t)}</a>`).join('')}</nav>` : '';
 })();
+// 홈 '실시간 베스트' 탭·'장비 찾기' 자료는 따로 파일로(합쳐 약 1.2MB 를 HTML 에 넣으면 휴대폰 첫 화면이 느려짐 — 2026-11-12). 내용이 바뀌면 주소(?v=)도 바뀐다
+const homeJson = (name, obj) => {
+  const text = JSON.stringify(obj);
+  writeText(join(OUT, 'assets', name), text);
+  return `/assets/${name}?v=${createHash('md5').update(text).digest('hex').slice(0, 8)}`;
+};
+const BEST_URL = homeJson('home-best.json', homeBestData(HOME_ALL));
+const FINDER_URL = homeJson('home-finder.json', finderData);
 writeText(
   join(OUT, 'index.html'),
   layout({
@@ -2001,14 +2009,14 @@ writeText(
     body: `${homeHero(rctx(), HERO)}
 ${HOME_TOPICS}
 ${homeQuick(rctx())}
-${homeBest(rctx(), HOME_RANKED, HOME_ALL)}
+${homeBest(rctx(), HOME_RANKED, BEST_URL)}
 <section class="hhero">
 <h1>골프용품을 <em>실력·성별·가격대</em>별로 비교해, 나에게 맞는 모델과 쿠팡 판매가를 한 번에 보여 드립니다.</h1>
 <p>${pageGuides.length}개 비교 가이드 · ${entries.filter((e) => sellable(e.p.id)).length}개 상품 · 점수는 주관적 참고 점수이며 순위는 같은 실력 단계 안에서만 매깁니다.</p>
 <nav class="hcats" aria-label="카테고리 바로가기">${homeCats}</nav>
 </section>
 
-<section class="finder" id="finder"><h2>내 실력에 맞는 장비 찾기</h2>
+<section class="finder" id="finder" data-src="${esc(FINDER_URL)}"><h2>내 실력에 맞는 장비 찾기</h2>
 <form class="finder-f" onsubmit="return false">
 <label>아이템<select name="c">${finderCats.map((c) => `<option value="${c.id}">${esc(c.name)}</option>`).join('')}</select></label>
 <label>성별<select name="g"><option value="">전체</option><option>남성</option><option>여성</option></select></label>
@@ -2016,7 +2024,6 @@ ${homeBest(rctx(), HOME_RANKED, HOME_ALL)}
 <label>예산<select name="lv"><option value="0">전체</option>${LEVELS.slice(1).map((l, i) => `<option value="${i + 1}">${l}</option>`).join('')}</select></label>
 </form>
 <div class="finder-r" id="finderR"></div>
-<script type="application/json" id="finderData">${JSON.stringify(finderData).replace(/</g, '\\u003c')}</script>
 </section>
 
 <section class="block" id="guides"><div class="block-h"><h2>대표 비교 가이드</h2><span>실력 단계별 5종씩 비교</span></div>${guideGrid(featured)}
