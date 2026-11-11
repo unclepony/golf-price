@@ -18,6 +18,9 @@ async function tables(env, url) {
 const OLD_SITE_HOSTS = new Set(['golfprice.unclepony.com', 'golf-price.pages.dev']); // 이전한 옛 주소(2026-10-22)
 const norm = (p) => (p.length > 1 ? p.replace(/\/+$/, '').replace(/\.html$/, '') : p) || '/';
 const day = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10); // 한국 시간 날짜
+// golfvideo 영상 공개 시각(한국 시간, golfvideo src/daily.mjs SLOTS 07:30·18:00). 공개 시각부터 60분 안이면 true (techprice hit.js 와 같은 형식)
+const SLOTS = [7 * 60 + 30, 18 * 60];
+const afterSlot = () => { const t = new Date(Date.now() + 9 * 3600e3); const m = t.getUTCHours() * 60 + t.getUTCMinutes(); return SLOTS.some((slot) => m >= slot && m < slot + 60); };
 
 // 유입 경로 판정 → { src: 큰 분류, kw: 검색어(넘어올 때만), url: 들어온 외부 페이지(호스트+경로) }
 // - 브라우저는 보통 다른 사이트 주소를 '도메인까지만' 넘기므로 url 은 도메인만 남는 경우가 많다. 구글은 검색어를 넘기지 않는다(서치콘솔에서 확인)
@@ -132,6 +135,9 @@ export async function onRequestPost({ request, env, waitUntil }) {
       rows.push(['hour', new Date(Date.now() + 9 * 3600e3).toISOString().slice(11, 13)]);
       if (s.kw) rows.push(['kw', `${src}|${s.kw}`]);
       if (s.url) rows.push(['refurl', s.url]);
+      // 공개 직후 자동 방문 의심 칸(2026-11-11 관제탑, techprice tp-1105-2 와 같은 형식): 유튜브 캠페인 + PC + 공개 1시간 안인 방문을 캠페인별로 따로 센다.
+      // 유튜브 손님 2주 50명·쿠팡 이동 0 중 링크마다 정확히 2번씩 오는 방문이 사람인지 가리려는 것. 외부 합계에서 빼지 않는다(칸만 — 판정은 사람이)
+      if (s.url && /^youtube \//.test(s.url) && device(ua) === 'PC' && afterSlot()) rows.push(['ytbot', s.url]);
     } else if (b.f) {
       // 사이트 안 이동: 앞 페이지|이 페이지 (둘 다 사이트맵 경로일 때만)
       const prev = norm(String(b.f).slice(0, 200));
