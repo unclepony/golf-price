@@ -1168,3 +1168,10 @@ table.answer-t td.al { font-size: 12px; white-space: nowrap; color: var(--muted)
 .htopics a { display: inline-block; padding: 7px 14px; border: 1px solid var(--line); border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--text); text-decoration: none; background: var(--card, #fff); white-space: nowrap; }
 .htopics a:hover { border-color: var(--accent); color: var(--accent); }
 @media (max-width: 560px) { .htopics { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; } .htopics::-webkit-scrollbar { display: none; } .htopics b { flex: 0 0 auto; } }
+/* 같은 상품 묶음 연결 칸(2026-11-11, 장갑) */
+.pd-pack { margin: 12px 0; padding: 12px 14px; border: 1px dashed var(--line); border-radius: 10px; background: var(--card, #fff); display: grid; gap: 6px; }
+.pd-pack-k { margin: 0; font-size: 12px; font-weight: 700; color: var(--muted); }
+.pd-pack-n { margin: 0; font-size: 14px; line-height: 1.45; }
+.pd-pack-n a { font-weight: 700; color: var(--text); }
+.pd-pack-n span { color: var(--muted); font-size: 13px; }
+.pd-pack-btn { justify-self: start; padding: 8px 14px; font-size: 14px; }

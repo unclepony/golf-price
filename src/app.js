@@ -46,6 +46,7 @@
     : a.closest('table') ? '비교표'
     : a.classList.contains('lvl-link') ? '단계 카드'
     : a.closest('.pick') ? '상품 소개'
+    : a.closest('.pd-pack') ? '묶음 상자' // 2026-11-11: 낱장 ↔ 묶음 연결 칸(장갑)
     : a.closest('.ebuy') ? '상세 끝 구매 상자' // 2026-10-22: 상품 상세 끝 구매 상자를 위쪽 가격 상자('상품 페이지')와 나눠 센다
     : location.pathname.startsWith('/p/') ? '상품 페이지'
     : '기타';

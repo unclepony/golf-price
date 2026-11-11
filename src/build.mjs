@@ -1219,6 +1219,19 @@ function productFaq(p) {
     return { q: `${nm}${hasBatchim(nm) ? '과' : '와'} ${xn}의 차이는?`, a: `${same}${diff}`, lv, pr, x: x.id };
   });
 }
+// 같은 상품 묶음(2026-11-11 장갑 1번: 장갑은 소모품이라 묶음이 손님에게 싸고 주문 금액은 커진다): products.json pack = 낱장 상품 → 묶음 상품 id.
+// 낱장 쪽에는 묶음(1장 기준 가격 함께)을, 묶음 쪽에는 '사이즈 먼저 확인할 낱장'을 보여 준다. 가격·확인일은 콘텐츠 지문에서 뺀다
+const PACK_OF = Object.fromEntries(config.products.filter((x) => x.pack).map((x) => [x.pack, x.id]));
+function packBox(p) {
+  const other = p.pack ?? PACK_OF[p.id];
+  if (!other || !byId[other] || GONE[other] || !outHref(other)) return '';
+  const isPack = !p.pack;
+  const n = Number(/(\d+)\s*장/.exec(byId[isPack ? p.id : other].p.name)?.[1] ?? 0);
+  const sp = freshPrice(other);
+  const per = !isPack && sp && n > 1 ? ` · 1장 기준 약 ${won(Math.round(sp.won / n / 100) * 100)}` : '';
+  const lead = isPack ? '사이즈를 먼저 확인하려면 같은 장갑 낱장' : `같은 장갑 ${n > 1 ? `${n}장 ` : ''}묶음도 있습니다`;
+  return `<div class="pd-pack"><p class="pd-pack-k">${esc(lead)}</p><p class="pd-pack-n"><a href="/p/${other}">${esc(byId[other].p.name)}</a>${sp ? phist(` <span>쿠팡 판매가 ${won(sp.won)} (${dayLabel(sp.d)} 확인${per})</span>`) : ''}</p><a class="btn pd-pack-btn" href="${esc(outHref(other))}" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 ${isPack ? '낱장' : '묶음'} 보기</a></div>`;
+}
 const variantsNeedMap = readJson(join(ROOT, 'config', 'variants.json'), {});
 const variantsNeed = (id) => variantsNeedMap[id]?.need ?? '';
 // 구매 전 확인할 점: 옵션·사이즈·로프트·샤프트·정품 여부처럼 구매 전에 확인할 것만 (장점은 넣지 않는다)
@@ -1584,6 +1597,7 @@ ${updatedTag(p.updated)}
 ${productAnswer(p)}
 <div class="pt-badges">${isNew(p) ? '<span class="new-mark">NEW</span>' : ''}${GONE[p.id] ? `<span class="tag none">판매 종료·품절 추정 (${ymd(GONE[p.id])} 이후 쿠팡에서 찾을 수 없음)</span>` : ''}${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, sr }) => (sr ? `<span class="tag ${sr.warn ? 'warn' : 'rank'}">${esc(guideName(g).replace(' 비교 및 선택 가이드', ''))} ${esc(sr.label)}</span>` : '')).join('')}${sellable(p.id) ? '' : '<span class="tag none">쿠팡 판매처 없음</span>'}</div>
 ${buyBox(rctx(), p) || `<div class="pd-price">${buyButton(p.id, hist)}</div>${altBox(p)}`}
+${packBox(p)}
 ${links[p.id] && picks[p.id]?.title ? `<p class="linked">연결 상품: ${esc(picks[p.id].title)}</p>` : ''}
 ${infoTable(rctx(), p)}
 <p class="pd-sum">${esc(p.summary)}</p>
