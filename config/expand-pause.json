@@ -1,0 +1,7 @@
+{
+  "_설명": "새 상품(새 /p 쪽) 추가 중지 스위치. src/expand/merge.mjs 가 읽는다. paused=true 면 새 상품을 넣지 않는다(--allow-new 로 따로 지시한 한 건만 예외). 상품 늘리기 루틴 지시문(unclepony-ops docs/routines/golfprice-expand-rotate.md)에도 같은 중지가 적혀 있다.",
+  "paused": true,
+  "since": "2026-11-11",
+  "why": "구글 색인 회복 — 질문함 #44 사장님 결정 \"모두 해\" ③ 새 대량 쪽 추가 멈춤",
+  "until": "사장님·관제탑 지시가 있을 때까지"
+}

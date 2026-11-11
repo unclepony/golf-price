@@ -7,6 +7,13 @@ const flag = (k) => { const i = process.argv.indexOf(k); return i > 0 ? process.
 const only = flag('--only'), skip = flag('--skip') ?? [];
 const C = (f) => join(repo, 'config', f);
 const rd = (f) => JSON.parse(readFileSync(C(f), 'utf8'));
+// 새 상품 추가 중지(2026-11-11 사장님 결정, 질문함 #44 구글 색인 회복): config/expand-pause.json 의 paused 가 true 면 새 상품을 넣지 않는다.
+// 사장님·관제탑이 따로 지시한 한 건만 --allow-new 로 넣는다(예: 새 쿠팡 파트너스 계정 승인용 링크 1개). 판매 종료 다시 잇기·링크·가격 고치기는 이 도구를 쓰지 않으므로 계속할 수 있다
+const PAUSE = (() => { try { return rd('expand-pause.json'); } catch { return null; } })();
+if (PAUSE?.paused && !process.argv.includes('--allow-new')) {
+  console.log(`새 상품 추가 중지 기간(${PAUSE.since}~, ${PAUSE.why}) — 아무것도 넣지 않습니다. 기존 상품의 링크·가격·모델 연결만 고치세요. 다시 켜기: config/expand-pause.json paused=false (사장님·관제탑 지시가 있을 때만)`);
+  process.exit(0);
+}
 const wr = (f, v) => writeFileSync(C(f), JSON.stringify(v, null, 2) + '\n');
 const products = rd('products.json'), links = rd('links.json'), picks = rd('picks.json'), guides = rd('guides.json');
 const cands = JSON.parse(readFileSync(candF, 'utf8'));
