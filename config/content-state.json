@@ -231,19 +231,19 @@
       "d": "2026-11-11"
     },
     "/p/orange-whip-trainer": {
-      "h": "1826009e72465f85",
+      "h": "687a25f1fe122e1c",
       "d": "2026-11-11"
     },
     "/p/zeroputt-digital-putting": {
-      "h": "d5098171bf46650c",
+      "h": "a3dd939b953878b2",
       "d": "2026-11-11"
     },
     "/p/swingimpact-swingcaddie": {
-      "h": "ad5d9953d3ad8355",
+      "h": "6f26308a38a37e49",
       "d": "2026-11-11"
     },
     "/p/pistop-topswing-trainer": {
-      "h": "f1717d48c353ddfc",
+      "h": "b154be6eaf41de7c",
       "d": "2026-11-11"
     },
     "/p/xxio14-women-iron": {
@@ -3098,6 +3098,10 @@
       "h": "7ec3041a18622a97",
       "d": "2026-11-11"
     },
+    "/p/idmakers-aiming-height-control-tee": {
+      "h": "93972a4e1ca41268",
+      "d": "2026-11-11"
+    },
     "/c/driver": {
       "h": "199f80c4312903e1",
       "d": "2026-11-11"
@@ -3151,8 +3155,8 @@
       "d": "2026-11-11"
     },
     "/c/practice": {
-      "h": "1800fee42b9a41ab",
-      "d": "2026-11-10"
+      "h": "85ce618ea28f268f",
+      "d": "2026-11-11"
     },
     "/g/driver-recommend-2026": {
       "h": "ff6b060bf298b493",
@@ -3219,8 +3223,8 @@
       "d": "2026-11-11"
     },
     "/g/practice-gear-recommend": {
-      "h": "77622f1c4ad86a90",
-      "d": "2026-11-10"
+      "h": "c90d3282ec884688",
+      "d": "2026-11-11"
     },
     "/g/womens-iron-recommend": {
       "h": "cf623d6ffab2a230",
@@ -3459,7 +3463,7 @@
       "d": "2026-11-06"
     },
     "/": {
-      "h": "8d6ed4a15d9c78a9",
+      "h": "74b1d0107f44054b",
       "d": "2026-11-11"
     },
     "/about": {
@@ -3955,8 +3959,8 @@
       "d": "2026-11-02"
     },
     "/vs/pistop-topswing-trainer-vs-swingimpact-swingcaddie": {
-      "h": "6a64bea971f02216",
-      "d": "2026-10-24"
+      "h": "5bed75ebcea1453d",
+      "d": "2026-11-11"
     },
     "/vs/prgr-sweep-women-driver-vs-taylormade-qi35-maxlite-women-driver": {
       "h": "bebdc9f25ffa688a",
@@ -4817,26 +4821,6 @@
     },
     {
       "url": "/p/titleist-permasoft-glove",
-      "kind": "updated",
-      "d": "2026-11-11"
-    },
-    {
-      "url": "/p/orange-whip-trainer",
-      "kind": "updated",
-      "d": "2026-11-11"
-    },
-    {
-      "url": "/p/zeroputt-digital-putting",
-      "kind": "updated",
-      "d": "2026-11-11"
-    },
-    {
-      "url": "/p/swingimpact-swingcaddie",
-      "kind": "updated",
-      "d": "2026-11-11"
-    },
-    {
-      "url": "/p/pistop-topswing-trainer",
       "kind": "updated",
       "d": "2026-11-11"
     },
@@ -8406,17 +8390,57 @@
       "d": "2026-11-11"
     },
     {
-      "url": "/",
-      "kind": "updated",
-      "d": "2026-11-11"
-    },
-    {
       "url": "/c/glove",
       "kind": "updated",
       "d": "2026-11-11"
     },
     {
       "url": "/g/golf-glove-recommend",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/p/orange-whip-trainer",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/p/zeroputt-digital-putting",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/p/swingimpact-swingcaddie",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/p/pistop-topswing-trainer",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/c/practice",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/g/practice-gear-recommend",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/vs/pistop-topswing-trainer-vs-swingimpact-swingcaddie",
+      "kind": "updated",
+      "d": "2026-11-11"
+    },
+    {
+      "url": "/p/idmakers-aiming-height-control-tee",
       "kind": "updated",
       "d": "2026-11-11"
     }
