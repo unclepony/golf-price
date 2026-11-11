@@ -1179,3 +1179,5 @@ table.answer-t td.al { font-size: 12px; white-space: nowrap; color: var(--muted)
 .answer.season { margin-top: 12px; }
 .answer.season .season-go { display: inline-block; margin-left: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; }
 @media (max-width: 560px) { .answer.season .season-go { display: block; margin: 4px 0 0; } }
+/* 상품 정보 표(pd-tbl): 전역 th,td nowrap 때문에 긴 사양(예: '합성 위주 (FiberSof 계열·세부 소재는 판매처 확인)')이 칸 밖으로 넘치고 휴대폰에서 가로 스크롤이 생김(2026-11-11 화면 점검) → 줄바꿈 허용 */
+.pd-tbl th, .pd-tbl td { white-space: normal; word-break: keep-all; overflow-wrap: anywhere; }
