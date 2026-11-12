@@ -114,7 +114,7 @@ Node.js 22.9 이상이 필요합니다.
 
 ## 상품 늘리기 (분야별 돌아가며)
 
-> **새 상품 추가 중지(2026-11-11~, 구글 색인 회복 — 질문함 #44 사장님 결정)**: config/expand-pause.json 의 paused 가 true 인 동안 src/expand/merge.mjs 는 새 상품을 넣지 않는다. 사장님·관제탑이 따로 지시한 한 건만 --allow-new 로 넣는다. 판매 종료 다시 잇기·링크·가격 고치기는 계속한다.
+> **새 상품 추가 중지 스위치**: config/expand-pause.json 의 paused 가 true 인 동안 src/expand/merge.mjs 는 새 상품을 넣지 않는다(따로 지시한 한 건만 --allow-new). 2026-11-11 구글 색인 회복(질문함 #44)으로 켰다가 2026-11-13 사장님 지시로 끔 — 골프 상품 늘리기는 계속. 새로 생긴 상품 쪽의 구글 색인은 docs/google-index-recovery-2026-11.md 의 '새 자동 쪽' 규칙을 따른다.
 
 - 후보: 제조사 공식 페이지로 확인한 사실만(리서치 결과 JSON, `.expand/` — 저장소에 넣지 않음).
 - 쿠팡 찾기: `node --env-file=<unclepony-ops/.env> src/expand/pick.mjs .expand/res-<분야>.json .expand/<분야>.json` — 쿠팡 파트너스 공식 검색 API, 호출 간격 65초, 같은 모델 확인(must/mustAny/exclude, 한글·영문 표기 맞춤), 직구·병행·중고 제외, 로켓배송 우선.
