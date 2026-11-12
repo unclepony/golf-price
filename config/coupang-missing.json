@@ -5,11 +5,6 @@
     "days": 12,
     "last": "2026-11-12"
   },
-  "ping-g430max-fairway": {
-    "since": "2026-11-01",
-    "days": 10,
-    "last": "2026-11-12"
-  },
   "ping-pioneer-cart": {
     "since": "2026-11-03",
     "days": 8,
@@ -56,11 +51,6 @@
     "last": "2026-11-12"
   },
   "bridgestone-e6": {
-    "since": "2026-11-07",
-    "days": 5,
-    "last": "2026-11-12"
-  },
-  "callaway-elyte-x-fairway": {
     "since": "2026-11-07",
     "days": 5,
     "last": "2026-11-12"

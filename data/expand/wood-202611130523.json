@@ -1,0 +1,160 @@
+[
+ {
+  "id": "callaway-bigbertha-fairway",
+  "category": "wood",
+  "name": "캘러웨이 빅버사 23 페어웨이 우드",
+  "query": "캘러웨이 빅버사 페어웨이우드 남성",
+  "must": [
+   "빅버사"
+  ],
+  "mustAny": [
+   "페어웨이",
+   "우드"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "우먼",
+   "ladies",
+   "lady",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "커버만",
+   "중고",
+   "병행",
+   "직수입",
+   "무게추",
+   "호환",
+   "시타",
+   "드라이버",
+   "유틸",
+   "하이브리드",
+   "레스큐",
+   "아이언",
+   "풀세트",
+   "왼손",
+   "좌타",
+   "슬리브",
+   "보호필름",
+   "b21",
+   "레바",
+   "reva"
+  ],
+  "summary": "캘러웨이 2023년 빅버사 페어웨이 우드입니다. 큰 헤드와 얕은 페이스로 띄우기 쉽고, 관용성과 슬라이스 줄이기에 맞춘 쉬운 우드입니다.",
+  "points": [
+   "큰 헤드·얕은 페이스로 높은 탄도",
+   "관용성·슬라이스 줄이기에 맞춤",
+   "3·5번은 로프트 조절 호젤"
+  ],
+  "sources": [
+   "https://www.callawaygolf.com/family/great-big-bertha/fwoods-2023-gbb.html",
+   "https://www.amateurgolf.com/golf-tournament-news/29767/Callaway-brings-more-forgiveness-and-distance-with-the-2023-Big-Bertha-lineup"
+  ],
+  "guidePick": {
+   "role": "쉬운 캘러웨이 우드",
+   "forWhom": "우드가 잘 안 뜨고 슬라이스가 나는 초보 골퍼",
+   "short": "빅버사 23",
+   "plus": "쉬움",
+   "minus": "직전 세대",
+   "pros": [
+    "큰 헤드·얕은 페이스로 잘 뜸",
+    "슬라이스 줄이기에 맞춘 설계"
+   ],
+   "cons": [
+    "2023년 모델(새 퀀텀 MAX 계열보다 이전)",
+    "7·9번 등 일부 번호는 로프트 조절 없음"
+   ],
+   "scores": [
+    3,
+    5,
+    5,
+    3
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2023년 6월(캘러웨이골프 코리아)"
+   ],
+   "verdict": "우드가 어려운 초보가 고르기 쉬운 캘러웨이 선택",
+   "skill": "초심자"
+  }
+ },
+ {
+  "id": "yamaha-rmx-vd-fairway",
+  "category": "wood",
+  "name": "야마하 RMX VD 페어웨이 우드",
+  "query": "야마하 RMX VD 페어웨이우드",
+  "must": [
+   "rmx"
+  ],
+  "mustAny": [
+   "vd"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "우먼",
+   "ladies",
+   "lady",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "커버만",
+   "중고",
+   "병행",
+   "직수입",
+   "무게추",
+   "호환",
+   "시타",
+   "드라이버",
+   "유틸",
+   "하이브리드",
+   "레스큐",
+   "아이언",
+   "풀세트",
+   "왼손",
+   "좌타",
+   "슬리브",
+   "보호필름"
+  ],
+  "summary": "야마하 리믹스(RMX) VD 페어웨이 우드입니다. 티타늄 바디·티타늄 페이스와 솔 쪽 무게로 낮은 무게중심을 만든 2세대 VD 우드로, 국내는 오리엔트골프가 수입합니다.",
+  "points": [
+   "티타늄 바디·티타늄 페이스",
+   "솔 쪽 무게로 낮은 무게중심",
+   "국내 공식 수입사 오리엔트골프"
+  ],
+  "sources": [
+   "https://global.golf.yamaha.com/en/products/fairwaywood_utility/rmx_vd_fw/",
+   "https://global.golf.yamaha.com/en/download/pdf/yamaha_golf_spec_guide_2024.pdf"
+  ],
+  "guidePick": {
+   "role": "티타늄 헤드 프리미엄 우드",
+   "forWhom": "거리와 방향을 같이 원하는 중급 골퍼",
+   "short": "RMX VD",
+   "plus": "티타늄 헤드",
+   "minus": "비쌈",
+   "pros": [
+    "티타늄 바디·페이스의 프리미엄 구성",
+    "낮은 무게중심으로 띄우기 쉬움"
+   ],
+   "cons": [
+    "가격이 높은 편",
+    "국내 판매처가 적음"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    2
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "판매처 확인"
+   ],
+   "verdict": "티타늄 헤드 우드를 원하는 중급 골퍼의 야마하 선택",
+   "skill": "중급"
+  }
+ }
+]
