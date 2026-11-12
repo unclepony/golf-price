@@ -46,6 +46,10 @@
       "won": 181130,
       "d": "2026-11-08"
     },
+    "apex-7iron-short-trainer": {
+      "won": 26800,
+      "d": "2026-11-13"
+    },
     "bettinardi-queen-b-putter": {
       "won": 539000,
       "d": "2026-11-08"
@@ -161,6 +165,10 @@
     "bushnell-tour-v7-shift": {
       "won": 589000,
       "d": "2026-11-08"
+    },
+    "buttermng-nice-putting": {
+      "won": 15000,
+      "d": "2026-11-13"
     },
     "caddytalk-cube": {
       "won": 144060,
@@ -678,6 +686,10 @@
       "won": 599000,
       "d": "2026-11-08"
     },
+    "comet-swing-trainer": {
+      "won": 13480,
+      "d": "2026-11-13"
+    },
     "david-woody2-wedge": {
       "won": 169000,
       "d": "2026-11-09"
@@ -765,6 +777,10 @@
     "evnroll-z5s-putter": {
       "won": 570000,
       "d": "2026-11-08"
+    },
+    "eyeline-shoulder-mirror-large": {
+      "won": 49000,
+      "d": "2026-11-13"
     },
     "eyeline-speed-trap-2": {
       "won": 125000,
@@ -1162,6 +1178,10 @@
       "won": 165360,
       "d": "2026-11-08"
     },
+    "hoongolf-balance-board-hl011": {
+      "won": 42800,
+      "d": "2026-11-13"
+    },
     "idmakers-aiming-height-control-tee": {
       "won": 12600,
       "d": "2026-11-11"
@@ -1193,6 +1213,10 @@
     "jestime-ponytail-women-iron": {
       "won": 1340500,
       "d": "2026-11-09"
+    },
+    "jogeuman-eyeline-pendulum-rod": {
+      "won": 46540,
+      "d": "2026-11-13"
     },
     "jogeuman-eyeline-strokemeter": {
       "won": 35940,
@@ -1665,6 +1689,10 @@
     "orange-whip-trainer": {
       "won": 203740,
       "d": "2026-11-08"
+    },
+    "panexi-arm-band": {
+      "won": 11000,
+      "d": "2026-11-13"
     },
     "pgm-approach-slope-trainer": {
       "won": 99000,
@@ -2149,6 +2177,10 @@
     "rookierookie-distance-rope": {
       "won": 31900,
       "d": "2026-11-09"
+    },
+    "rookierookie-swing-brush": {
+      "won": 59800,
+      "d": "2026-11-13"
     },
     "roycow-swing-mat": {
       "won": 39000,
@@ -3077,6 +3109,14 @@
     "zeroputt-digital-putting": {
       "won": 235600,
       "d": "2026-11-08"
+    },
+    "zikandi-foam-ball": {
+      "won": 20900,
+      "d": "2026-11-13"
+    },
+    "zikandi-swing-rail": {
+      "won": 27900,
+      "d": "2026-11-13"
     }
   }
 }
