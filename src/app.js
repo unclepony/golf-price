@@ -48,6 +48,7 @@
     a.closest('.stickybuy') ? '하단 고정 버튼'
     : a.closest('.fitem') ? '장비 찾기'
     : a.closest('.season') ? '계절 묶음' // 2026-11-11: 겨울 방한 장갑 등 계절 묶음 표
+    : a.closest('.answer') ? '결론 표' // 2026-11-13: 첫 화면 '바로 답' 결론 표(가이드·분류)의 쿠팡에서 보기
     : a.closest('.conclusion') ? '한 줄 결론'
     : a.closest('table.scores') ? '점수표'
     : a.closest('table') ? '비교표'

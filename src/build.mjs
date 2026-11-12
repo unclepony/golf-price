@@ -913,7 +913,10 @@ function stageAnswer(g, inCat = false) {
   const tr = rows
     .map(({ pk, label }) => {
       const sp = freshPrice(pk.id);
-      return `<tr><td class="ar">${label}</td><td><a href="/p/${pk.id}">${esc(nm(pk))}</a><small>${esc(pk.short ?? pk.role ?? '')}</small></td><td class="as">${totalScore(pk).toFixed(1)}</td><td class="al">${esc(priceLevel(pk.id)?.label ?? '-')}</td><td class="aw">${ph(sp ? `${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small>` : '<small>판매처에서 확인</small>')}</td></tr>`;
+      // 쿠팡 판매가 칸 아래 '쿠팡에서 보기'(2026-11-13 셀프 개선): /c/ 첫 화면 결론 표에 가격만 있고 쿠팡 링크가 없어, 첫 쿠팡 버튼이 휴대폰에서 9,000~24,000px 아래였다.
+      // 판매 상태에 따라 바뀌는 링크라 가격처럼 콘텐츠 지문에서 뺀다(ph). 판매 종료(gone)·링크 없는 상품은 outHref 가 null 이라 안 붙는다
+      const go = GONE[pk.id] ? null : outHref(pk.id);
+      return `<tr><td class="ar">${label}</td><td><a href="/p/${pk.id}">${esc(nm(pk))}</a><small>${esc(pk.short ?? pk.role ?? '')}</small></td><td class="as">${totalScore(pk).toFixed(1)}</td><td class="al">${esc(priceLevel(pk.id)?.label ?? '-')}</td><td class="aw">${ph((sp ? `${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small>` : '<small>판매처에서 확인</small>') + (go ? `<a class="answer-go" href="${esc(go)}" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a>` : ''))}</td></tr>`;
     })
     .join('');
   return `<section class="answer" aria-label="바로 답">${lead}
