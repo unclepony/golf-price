@@ -122,6 +122,12 @@
       "format": "long",
       "title": "중급 골퍼 남성 유틸리티 5종 비교 (2026) | 비거리 성향·관용성·띄우기 쉬움",
       "publishAt": "2026-11-06T09:00:00.000Z"
+    },
+    {
+      "id": "gf5SZe_9sPM",
+      "format": "long",
+      "title": "상급 골퍼 남성 유틸리티 추천 5종 비교 (2026) | 비거리 성향·관용성·띄우기 쉬움",
+      "publishAt": "2026-11-13T09:00:00.000Z"
     }
   ],
   "womens-utility-recommend": [
@@ -284,6 +290,14 @@
       "format": "shorts",
       "title": "골프장갑 언제 바꿀까? 교체 신호 2가지 | 초보 골퍼 골프장갑 고르기 #shorts",
       "publishAt": "2026-11-11T22:30:00.000Z"
+    }
+  ],
+  "womens-iron-recommend": [
+    {
+      "id": "pxvdiQN9sgo",
+      "format": "shorts",
+      "title": "여성 골퍼, 남성용 아이언 써도 될까? | 여성 아이언 추천 고르기 #shorts",
+      "publishAt": "2026-11-13T22:30:00.000Z"
     }
   ]
 }
