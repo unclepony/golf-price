@@ -1987,6 +1987,13 @@ const HOME_TOPICS = (() => {
   ].filter(([u]) => existsSync(join(OUT, `${u.split('#')[0].slice(1)}.html`)));
   return items.length ? `<nav class="htopics" aria-label="많이 찾는 주제"><b>많이 찾는 주제</b>${items.map(([u, t]) => `<a href="${u}">${esc(t)}</a>`).join('')}</nav>` : '';
 })();
+// 인스타 앱 손님 바로 가기(2026-11-12 관제탑 낮): 프로필 링크는 홈으로 오는데, 릴스는 '프로필 링크의 가이드에서 실력별 비교'라고 안내한다.
+// 홈 첫 화면엔 실력별 가이드가 바로 안 보여(메뉴 → 분류 → 가이드) template 으로만 넣고, app.js 가 인스타 앱 브라우저에서만 꺼내 맨 위에 보인다(실력별 순위는 각 가이드 안)(검색엔진·다른 손님 화면은 그대로)
+const IG_ROW = (() => {
+  const order = [...FEATURED.map((slug) => pageGuides.find((g) => g.slug === slug)).filter(Boolean), ...pageGuides.filter((g) => !FEATURED.includes(g.slug))];
+  const items = order.filter((g) => existsSync(join(OUT, 'g', `${g.slug}.html`)));
+  return items.length ? `<template id="igrow"><nav class="htopics igrow" aria-label="인스타 릴스에서 본 비교"><b>릴스에서 본 가이드</b>${items.map((g) => `<a href="/g/${g.slug}">${esc(guideName(g).replace(/ 비교 및 선택 가이드$/, ' 비교'))}</a>`).join('')}</nav></template>` : '';
+})();
 // 홈 '실시간 베스트' 탭·'장비 찾기' 자료는 따로 파일로(합쳐 약 1.2MB 를 HTML 에 넣으면 휴대폰 첫 화면이 느려짐 — 2026-11-12). 내용이 바뀌면 주소(?v=)도 바뀐다
 const homeJson = (name, obj) => {
   const text = JSON.stringify(obj);
@@ -2006,7 +2013,7 @@ writeText(
     raw: true,
     desc: `드라이버·우드·유틸리티·아이언·웨지·퍼터부터 골프공·거리측정기·골프화까지 ${cats.length}개 골프용품을 실력(초심자~프로)·성별·가격대별로 비교합니다. 장단점과 주관적 편집 점수, 쿠팡 판매가를 함께 정리했습니다.`,
     path: '/',
-    body: `${homeHero(rctx(), HERO)}
+    body: `${IG_ROW}${homeHero(rctx(), HERO)}
 ${HOME_TOPICS}
 ${homeQuick(rctx())}
 ${homeBest(rctx(), HOME_RANKED, BEST_URL)}

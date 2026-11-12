@@ -5,6 +5,12 @@
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
   const norm = (s) => String(s ?? '').toLowerCase().replace(/[\s\-_·.()]/g, '');
 
+  // 인스타 앱 손님(프로필 링크 → 홈, 2026-11-12): 홈에 숨겨 둔 '릴스에서 본 가이드' 줄을 인스타 앱 브라우저에서만 맨 위에 꺼낸다
+  try {
+    const t = document.getElementById('igrow');
+    if (t && /Instagram/i.test(navigator.userAgent)) t.replaceWith(t.content.cloneNode(true));
+  } catch {}
+
   // ---------- 방문·쿠팡 클릭 집계 (/api/hit → 운영자 모니터링 /admin) ----------
   // 하루 합계만 센다(IP·쿠키·사용자 ID 없음). 쿠팡 링크는 바꾸지 않고, 클릭할 때 이 사이트에 신호만 보낸다.
   // 운영자는 /admin 의 '이 브라우저의 방문은 세지 않기'로 자기 방문을 뺄 수 있다.
