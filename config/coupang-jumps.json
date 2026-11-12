@@ -11,5 +11,23 @@
     "held": 37200,
     "first": "2026-11-12",
     "last": "2026-11-12"
+  },
+  "callaway-winter-glory-women-pair-glove": {
+    "price": 48400,
+    "held": 26400,
+    "first": "2026-11-13",
+    "last": "2026-11-13"
+  },
+  "footjoy-spectrum-women-glove": {
+    "price": 36900,
+    "held": 21000,
+    "first": "2026-11-13",
+    "last": "2026-11-13"
+  },
+  "honma-d1": {
+    "price": 102000,
+    "held": 66260,
+    "first": "2026-11-13",
+    "last": "2026-11-13"
   }
 }

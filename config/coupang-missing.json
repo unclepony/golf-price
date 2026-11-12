@@ -2,8 +2,8 @@
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { since: 처음 못 찾은 날, days: 연속으로 못 찾은 날 수, last: 마지막으로 못 찾은 날 }. 5일이면 picks.json gone.",
   "golfbuddy-atom": {
     "since": "2026-10-31",
-    "days": 12,
-    "last": "2026-11-12"
+    "days": 13,
+    "last": "2026-11-13"
   },
   "ping-pioneer-cart": {
     "since": "2026-11-03",
@@ -17,33 +17,33 @@
   },
   "srixon-q-star-tour-divide": {
     "since": "2026-11-05",
-    "days": 5,
-    "last": "2026-11-11"
+    "days": 6,
+    "last": "2026-11-13"
   },
   "srixon-zxi5-iron": {
     "since": "2026-11-05",
-    "days": 5,
-    "last": "2026-11-11"
+    "days": 6,
+    "last": "2026-11-13"
   },
   "callaway-elyte-iron": {
     "since": "2026-11-06",
-    "days": 6,
-    "last": "2026-11-12"
+    "days": 7,
+    "last": "2026-11-13"
   },
   "callaway-erc-soft": {
     "since": "2026-11-06",
-    "days": 6,
-    "last": "2026-11-12"
+    "days": 7,
+    "last": "2026-11-13"
   },
   "voicecaddie-t-ultra": {
     "since": "2026-11-06",
-    "days": 4,
-    "last": "2026-11-11"
+    "days": 5,
+    "last": "2026-11-13"
   },
   "yamaha-cs-hmplus-women-hybrid": {
     "since": "2026-11-07",
-    "days": 3,
-    "last": "2026-11-11"
+    "days": 4,
+    "last": "2026-11-13"
   },
   "yonex-ezonegt3-women-iron": {
     "since": "2026-11-07",
@@ -52,18 +52,18 @@
   },
   "bridgestone-e6": {
     "since": "2026-11-07",
-    "days": 5,
-    "last": "2026-11-12"
+    "days": 6,
+    "last": "2026-11-13"
   },
   "honma-tw767-hybrid": {
     "since": "2026-11-07",
-    "days": 5,
-    "last": "2026-11-12"
+    "days": 6,
+    "last": "2026-11-13"
   },
   "honma-twgs-women-iron": {
     "since": "2026-11-07",
-    "days": 5,
-    "last": "2026-11-12"
+    "days": 6,
+    "last": "2026-11-13"
   },
   "mizuno-stmax230-hybrid": {
     "since": "2026-11-07",
@@ -87,38 +87,38 @@
   },
   "srixon-z-star-diamond": {
     "since": "2026-11-07",
-    "days": 3,
-    "last": "2026-11-11"
+    "days": 4,
+    "last": "2026-11-13"
   },
   "srixon-z-star-xv": {
     "since": "2026-11-07",
-    "days": 3,
-    "last": "2026-11-11"
+    "days": 4,
+    "last": "2026-11-13"
   },
   "taylormade-qi4dls-driver": {
     "since": "2026-11-07",
-    "days": 3,
-    "last": "2026-11-11"
+    "days": 4,
+    "last": "2026-11-13"
   },
   "winnerspirit-miracle-205": {
     "since": "2026-11-09",
-    "days": 2,
-    "last": "2026-11-11"
+    "days": 3,
+    "last": "2026-11-13"
   },
   "bridgestone-bx2ht-hybrid": {
     "since": "2026-11-09",
-    "days": 4,
-    "last": "2026-11-12"
+    "days": 5,
+    "last": "2026-11-13"
   },
   "footjoy-premiere-packard-shoes": {
     "since": "2026-11-09",
-    "days": 4,
-    "last": "2026-11-12"
+    "days": 5,
+    "last": "2026-11-13"
   },
   "honma-nx-women-driver": {
     "since": "2026-11-09",
-    "days": 4,
-    "last": "2026-11-12"
+    "days": 5,
+    "last": "2026-11-13"
   },
   "majesty-prestigio13-hybrid": {
     "since": "2026-11-09",
@@ -137,53 +137,48 @@
   },
   "taylormade-qi35max-rescue": {
     "since": "2026-11-09",
-    "days": 2,
-    "last": "2026-11-11"
+    "days": 3,
+    "last": "2026-11-13"
   },
   "honma-beres09-women-driver": {
     "since": "2026-11-10",
-    "days": 3,
-    "last": "2026-11-12"
+    "days": 4,
+    "last": "2026-11-13"
   },
   "bridgestone-tour-b-rxs": {
     "since": "2026-11-10",
-    "days": 3,
-    "last": "2026-11-12"
+    "days": 4,
+    "last": "2026-11-13"
   },
   "bridgestone-tour-b-xs": {
     "since": "2026-11-10",
-    "days": 3,
-    "last": "2026-11-12"
-  },
-  "caddytalk-cube": {
-    "since": "2026-11-10",
-    "days": 3,
-    "last": "2026-11-12"
+    "days": 4,
+    "last": "2026-11-13"
   },
   "callaway-elyte-td-fairway": {
     "since": "2026-11-10",
-    "days": 3,
-    "last": "2026-11-12"
+    "days": 4,
+    "last": "2026-11-13"
   },
   "callaway-jaws-raw-wedge": {
     "since": "2026-11-10",
-    "days": 3,
-    "last": "2026-11-12"
+    "days": 4,
+    "last": "2026-11-13"
   },
   "callaway-reva-women-driver": {
     "since": "2026-11-10",
-    "days": 3,
-    "last": "2026-11-12"
+    "days": 4,
+    "last": "2026-11-13"
   },
   "garmin-approach-s70": {
     "since": "2026-11-10",
-    "days": 3,
-    "last": "2026-11-12"
+    "days": 4,
+    "last": "2026-11-13"
   },
   "majesty-royalgold-fairway": {
     "since": "2026-11-10",
-    "days": 2,
-    "last": "2026-11-11"
+    "days": 3,
+    "last": "2026-11-13"
   },
   "mizuno-stmax230-driver": {
     "since": "2026-11-10",
@@ -202,68 +197,48 @@
   },
   "taylormade-p8cb-women-iron": {
     "since": "2026-11-11",
-    "days": 1,
-    "last": "2026-11-11"
+    "days": 2,
+    "last": "2026-11-13"
   },
   "taylormade-stealth-women-rescue": {
     "since": "2026-11-11",
-    "days": 1,
-    "last": "2026-11-11"
+    "days": 2,
+    "last": "2026-11-13"
   },
   "taylormade-tour-response-stripe": {
     "since": "2026-11-11",
-    "days": 1,
-    "last": "2026-11-11"
+    "days": 2,
+    "last": "2026-11-13"
   },
   "titleist-pro-v1": {
     "since": "2026-11-11",
-    "days": 1,
-    "last": "2026-11-11"
-  },
-  "titleist-pro-v1x-left-dash": {
-    "since": "2026-11-11",
-    "days": 1,
-    "last": "2026-11-11"
-  },
-  "tmax-golf-net-2m": {
-    "since": "2026-11-11",
-    "days": 1,
-    "last": "2026-11-11"
-  },
-  "wellsense-black-eagle-metal": {
-    "since": "2026-11-11",
-    "days": 1,
-    "last": "2026-11-11"
+    "days": 2,
+    "last": "2026-11-13"
   },
   "xxio-prime-women-fairway": {
     "since": "2026-11-11",
-    "days": 1,
-    "last": "2026-11-11"
+    "days": 2,
+    "last": "2026-11-13"
   },
   "xxio13-hybrid": {
     "since": "2026-11-11",
-    "days": 1,
-    "last": "2026-11-11"
+    "days": 2,
+    "last": "2026-11-13"
   },
   "bj-sml-putting-trainer": {
     "since": "2026-11-11",
-    "days": 2,
-    "last": "2026-11-12"
-  },
-  "ecco-street-720-goretex-shoes": {
-    "since": "2026-11-11",
-    "days": 2,
-    "last": "2026-11-12"
+    "days": 3,
+    "last": "2026-11-13"
   },
   "honma-aizu-women-hybrid": {
     "since": "2026-11-11",
-    "days": 2,
-    "last": "2026-11-12"
+    "days": 3,
+    "last": "2026-11-13"
   },
   "honma-nx-women-fairway": {
     "since": "2026-11-11",
-    "days": 2,
-    "last": "2026-11-12"
+    "days": 3,
+    "last": "2026-11-13"
   },
   "ping-g430-hybrid": {
     "since": "2026-11-12",
@@ -312,22 +287,82 @@
   },
   "callaway-elyte-maxfast-women-driver": {
     "since": "2026-11-12",
-    "days": 1,
-    "last": "2026-11-12"
+    "days": 2,
+    "last": "2026-11-13"
   },
   "callaway-elyte-td-driver": {
     "since": "2026-11-12",
-    "days": 1,
-    "last": "2026-11-12"
+    "days": 2,
+    "last": "2026-11-13"
   },
   "honma-beres09-fairway": {
     "since": "2026-11-12",
-    "days": 1,
-    "last": "2026-11-12"
+    "days": 2,
+    "last": "2026-11-13"
   },
   "honma-kiwami6-women-fairway": {
     "since": "2026-11-12",
+    "days": 2,
+    "last": "2026-11-13"
+  },
+  "taylormade-qi4d-fairway": {
+    "since": "2026-11-13",
     "days": 1,
-    "last": "2026-11-12"
+    "last": "2026-11-13"
+  },
+  "taylormade-qi4dmax-fairway": {
+    "since": "2026-11-13",
+    "days": 1,
+    "last": "2026-11-13"
+  },
+  "taylormade-stealth-women-iron": {
+    "since": "2026-11-13",
+    "days": 1,
+    "last": "2026-11-13"
+  },
+  "voicecaddie-vc4": {
+    "since": "2026-11-13",
+    "days": 1,
+    "last": "2026-11-13"
+  },
+  "xxio13-women-driver": {
+    "since": "2026-11-13",
+    "days": 1,
+    "last": "2026-11-13"
+  },
+  "adidas-women-cool-pair-glove": {
+    "since": "2026-11-13",
+    "days": 1,
+    "last": "2026-11-13"
+  },
+  "bridgestone-241cb-iron": {
+    "since": "2026-11-13",
+    "days": 1,
+    "last": "2026-11-13"
+  },
+  "callaway-opti-thermal-pair-glove": {
+    "since": "2026-11-13",
+    "days": 1,
+    "last": "2026-11-13"
+  },
+  "callaway-xforged-max-iron": {
+    "since": "2026-11-13",
+    "days": 1,
+    "last": "2026-11-13"
+  },
+  "footjoy-flow2-boa-women-shoes": {
+    "since": "2026-11-13",
+    "days": 1,
+    "last": "2026-11-13"
+  },
+  "footjoy-wintersof-women-pair-glove": {
+    "since": "2026-11-13",
+    "days": 1,
+    "last": "2026-11-13"
+  },
+  "jogeuman-tempoflex": {
+    "since": "2026-11-13",
+    "days": 1,
+    "last": "2026-11-13"
   }
 }
