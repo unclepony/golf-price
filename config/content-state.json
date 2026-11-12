@@ -59,7 +59,7 @@
       "d": "2026-11-12"
     },
     "/p/ping-gle4-women-driver": {
-      "h": "a3b1be9a5ee60475",
+      "h": "e4447ac994623b32",
       "d": "2026-11-12"
     },
     "/p/xxio14-women-driver": {
@@ -367,7 +367,7 @@
       "d": "2026-11-11"
     },
     "/p/honma-nx-women-driver": {
-      "h": "2e065d693051dc57",
+      "h": "2b8f8cab9560fb10",
       "d": "2026-11-12"
     },
     "/p/majesty-shuttle-women-driver": {
@@ -391,19 +391,19 @@
       "d": "2026-11-11"
     },
     "/p/callaway-roguest-women-driver": {
-      "h": "1856b4bd31b4aa47",
+      "h": "40ef7e0d97a2ed7a",
       "d": "2026-11-12"
     },
     "/p/honma-aizu-women-driver": {
-      "h": "8221eed483a942f1",
+      "h": "28f70814064b5281",
       "d": "2026-11-12"
     },
     "/p/callaway-quantum-maxfast-women-driver": {
-      "h": "e23b39604e5c6d75",
+      "h": "4ac3faf2434f4a77",
       "d": "2026-11-12"
     },
     "/p/taylormade-qi4d-maxlite-women-driver": {
-      "h": "6f5f2bfe6c237701",
+      "h": "0a36afc1254512e6",
       "d": "2026-11-12"
     },
     "/p/ping-g440max-women-driver": {
@@ -1719,11 +1719,11 @@
       "d": "2026-11-11"
     },
     "/p/honma-beres09-women-driver": {
-      "h": "8c92a14a53236cfb",
+      "h": "1ad74f87eafdae8b",
       "d": "2026-11-12"
     },
     "/p/majesty-prestigio13-women-driver": {
-      "h": "7b4096e369b4da96",
+      "h": "99123e950e50536e",
       "d": "2026-11-12"
     },
     "/p/callaway-roguestmax-iron": {
@@ -3103,7 +3103,7 @@
       "d": "2026-11-11"
     },
     "/c/driver": {
-      "h": "b00a99bc477de504",
+      "h": "c084321132a90f64",
       "d": "2026-11-12"
     },
     "/c/wood": {
@@ -3195,7 +3195,7 @@
       "d": "2026-11-11"
     },
     "/g/womens-driver-recommend": {
-      "h": "ee39964491175095",
+      "h": "7addaaf76a9235e4",
       "d": "2026-11-12"
     },
     "/g/putter-recommend": {
@@ -3383,7 +3383,7 @@
       "d": "2026-10-29"
     },
     "/g/womens-driver-recommend-beginner": {
-      "h": "6a10ab013ebc823a",
+      "h": "540a0574fc47ff40",
       "d": "2026-11-12"
     },
     "/g/womens-driver-recommend-intermediate": {
@@ -3391,7 +3391,7 @@
       "d": "2026-11-06"
     },
     "/g/womens-driver-recommend-advanced": {
-      "h": "4509f920b88d6d77",
+      "h": "2d26870928a1efe3",
       "d": "2026-11-12"
     },
     "/g/womens-driver-recommend-pro": {
@@ -3463,7 +3463,7 @@
       "d": "2026-11-06"
     },
     "/": {
-      "h": "750c30e17fa869de",
+      "h": "f22e7fbb51038503",
       "d": "2026-11-12"
     },
     "/about": {
@@ -3675,11 +3675,11 @@
       "d": "2026-10-22"
     },
     "/vs/callaway-roguest-women-driver-vs-callaway-quantum-maxfast-women-driver": {
-      "h": "37815d636b3931e2",
+      "h": "cc72576e40fad3d6",
       "d": "2026-11-12"
     },
     "/vs/callaway-roguest-women-driver-vs-taylormade-qi4d-maxlite-women-driver": {
-      "h": "8e0bead86bcafdf0",
+      "h": "8c666bc522c0b2d1",
       "d": "2026-11-12"
     },
     "/vs/callaway-roguest-women-hybrid-vs-taylormade-qi35maxlite-women-hybrid": {
@@ -3793,6 +3793,10 @@
     "/vs/garmin-approach-s70-vs-voicecaddie-t13-pro": {
       "h": "55309deab144a78c",
       "d": "2026-11-11"
+    },
+    "/vs/honma-aizu-women-driver-vs-honma-nx-women-driver": {
+      "h": "824c2bff0da4750d",
+      "d": "2026-11-12"
     },
     "/vs/honma-kiwami6-women-fairway-vs-honma-nx-women-fairway": {
       "h": "c7d323be2354b2b8",
@@ -3919,11 +3923,11 @@
       "d": "2026-11-03"
     },
     "/vs/ping-g440max-women-driver-vs-callaway-quantum-maxfast-women-driver": {
-      "h": "6c0561cdd65fb262",
+      "h": "c1517410cec8b6d6",
       "d": "2026-11-12"
     },
     "/vs/ping-g440max-women-driver-vs-ping-gle4-women-driver": {
-      "h": "993c104dba483468",
+      "h": "caef944bb6e5403f",
       "d": "2026-11-12"
     },
     "/vs/ping-gle3-women-fairway-vs-majesty-royal-women-fairway": {
@@ -4063,7 +4067,7 @@
       "d": "2026-11-03"
     },
     "/vs/taylormade-qi4d-maxlite-women-driver-vs-taylormade-sim2max-women-driver": {
-      "h": "134ca09020a96584",
+      "h": "d914d4a59e4c3113",
       "d": "2026-11-12"
     },
     "/vs/taylormade-qi4dls-driver-vs-taylormade-qi35ls-driver": {
@@ -4528,7 +4532,97 @@
       "d": "2026-11-12"
     },
     {
+      "url": "/p/ping-gle4-women-driver",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/p/honma-nx-women-driver",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/p/callaway-roguest-women-driver",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/p/honma-aizu-women-driver",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/p/callaway-quantum-maxfast-women-driver",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/p/taylormade-qi4d-maxlite-women-driver",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/p/honma-beres09-women-driver",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/p/majesty-prestigio13-women-driver",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/c/driver",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/g/womens-driver-recommend",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/g/womens-driver-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/g/womens-driver-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
       "url": "/",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/vs/callaway-roguest-women-driver-vs-callaway-quantum-maxfast-women-driver",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/vs/callaway-roguest-women-driver-vs-taylormade-qi4d-maxlite-women-driver",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/vs/honma-aizu-women-driver-vs-honma-nx-women-driver",
+      "kind": "new",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/vs/ping-g440max-women-driver-vs-callaway-quantum-maxfast-women-driver",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/vs/ping-g440max-women-driver-vs-ping-gle4-women-driver",
+      "kind": "updated",
+      "d": "2026-11-12"
+    },
+    {
+      "url": "/vs/taylormade-qi4d-maxlite-women-driver-vs-taylormade-sim2max-women-driver",
       "kind": "updated",
       "d": "2026-11-12"
     }
