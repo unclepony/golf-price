@@ -1,0 +1,9 @@
+[
+  {
+    "id": "ping-pioneer-cart",
+    "query": "PING PIONEER 카트백",
+    "must": ["pioneer"],
+    "mustAny": ["핑", "ping"],
+    "exclude": ["몬순", "monsoon", "중고", "커버", "레인커버", "보스턴", "파우치", "네임택"]
+  }
+]
