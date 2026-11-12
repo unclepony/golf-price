@@ -1,37 +1,55 @@
 {
- "_설명": "구글 색인 회복(질문함 #44, 2026-11-11 사장님 결정). src/noindex-list.mjs 가 만든 스냅숏 — 여기 있는 주소는 사이트맵·llms.txt 에서 빠지고 <meta name=\"googlebot\" content=\"noindex,follow\"> 가 붙는다. 주소는 그대로 열린다. 되돌리기: paths 를 비운다. 기준: docs/google-index-recovery-2026-11.md",
+ "_설명": "구글 색인 회복(질문함 #44, 2026-11-11 사장님 결정). src/noindex-list.mjs 가 만든다. paths = noindex 목록(스냅숏), kept = 활동(외부 페이지뷰·첫 방문·ChatGPT 착지·쿠팡 이동)이 있어 남긴 쪽, pin = 사장님 지시 등으로 늘 남기는 쪽, newAuto = \"noindex\" 면 목록 밖 새 자동 쪽(/p·/vs·/g 실력별·/jp 하위)도 kept·pin 에 오르기 전까지 noindex(2026-11-13 골프 상품 늘리기 재개). noindex 쪽은 사이트맵·llms.txt 에서 빠지고 <meta name=\"googlebot\" content=\"noindex,follow\"> 가 붙는다. 주소는 그대로 열린다. 활동이 생긴 쪽 올리기: node src/noindex-list.mjs --promote. 되돌리기: paths 를 비우고 newAuto 를 지운다. 기준: docs/google-index-recovery-2026-11.md",
  "bot": "googlebot",
+ "newAuto": "noindex",
  "made": "2026-11-11",
  "window": {
   "from": "2026-10-13",
   "to": "2026-11-11",
   "statsFirstDay": "2026-10-17"
  },
- "rule": "대상 = /p/·/vs/·/g/…-실력·/jp/ 하위(자동 생성 쪽). 남김 = 기간 안 외부 페이지뷰·첫 방문·ChatGPT 착지·그 쪽에서 쿠팡 이동이 있는 쪽, /p/ 는 그 상품이 어디서든 쿠팡 이동으로 눌린 쪽. 홈·/about·/c/·/g/ 본편·/qa·/jp 첫 쪽은 대상 아님",
+ "promote": {
+  "last": "2026-11-13",
+  "window": {
+   "from": "2026-10-15",
+   "to": "2026-11-13"
+  },
+  "log": [
+   {
+    "day": "2026-11-13",
+    "pages": [
+     "/p/jogeuman-eyeline-strokemeter"
+    ]
+   }
+  ]
+ },
+ "rule": "대상 = /p/·/vs/·/g/…-실력·/jp/ 하위(자동 생성 쪽). 남김 = 기간 안 외부 페이지뷰·첫 방문·ChatGPT 착지·그 쪽에서 쿠팡 이동이 있는 쪽, /p/ 는 그 상품이 어디서든 쿠팡 이동으로 눌린 쪽. 홈·/about·/c/·/g/ 본편·/qa·/jp 첫 쪽은 대상 아님. pin 은 늘 남김. --promote 는 올리기만 한다",
  "counts": {
-  "pagesAll": 1045,
-  "auto": 984,
+  "pagesAll": 1053,
+  "auto": 991,
   "autoByType": {
    "g-skill": 56,
-   "p": 770,
-   "vs": 152,
+   "p": 775,
+   "vs": 154,
    "jp-sub": 6
   },
-  "keep": 110,
-  "keepByType": {
-   "g-skill": 11,
-   "p": 96,
-   "vs": 2,
-   "jp-sub": 1
-  },
-  "noindex": 874,
+  "keep": 111,
+  "pin": 5,
+  "noindex": 875,
   "noindexByType": {
    "g-skill": 45,
-   "p": 674,
-   "vs": 150,
+   "p": 673,
+   "vs": 152,
    "jp-sub": 5
   },
-  "sitemapAfter": 171
+  "sitemapAfter": 178
+ },
+ "pin": {
+  "/p/idmakers-aiming-height-control-tee": "사장님 지시(11/11): 새 쿠팡 파트너스 계정 승인용 링크 페이지 — 그대로 둠",
+  "/p/footjoy-cabrettasof-women-pair-glove": "사장님 지시(11/11 장갑 1~3번): 손님이 실제로 산 모델",
+  "/p/footjoy-flx-glove": "사장님 지시(11/11 장갑 1~3번): 손님이 실제로 산 모델(현행)",
+  "/p/footjoy-weathersof-3pack-glove": "사장님 지시(11/11 장갑 1~3번): 3장 묶음",
+  "/p/footjoy-wintersof-pair-glove": "사장님 지시(11/11 장갑 1~3번): 겨울 장갑"
  },
  "kept": {
   "/g/utility-recommend-pro": "첫 방문",
@@ -143,7 +161,8 @@
   "/p/callaway-elyte-maxfast-driver": "외부 페이지뷰",
   "/vs/nikon-coolshot-pro3-vs-voicecaddie-sl3": "ChatGPT 착지·첫 방문·외부 페이지뷰",
   "/vs/rapsodo-mlm2pro-vs-garmin-approach-r10": "ChatGPT 착지·첫 방문·외부 페이지뷰",
-  "/jp/xxio14-driver": "첫 방문"
+  "/jp/xxio14-driver": "첫 방문",
+  "/p/jogeuman-eyeline-strokemeter": "첫 방문 (2026-11-13 올림)"
  },
  "paths": [
   "/g/driver-recommend-2026-beginner",
@@ -821,7 +840,6 @@
   "/p/pgm-realarc94-trainer",
   "/p/pgm-approach-slope-trainer",
   "/p/inbirdie-woods-plus-cup",
-  "/p/jogeuman-eyeline-strokemeter",
   "/p/golflex-chipster-set",
   "/p/rookierookie-distance-rope",
   "/p/pgm-warmup-power-trainer",
@@ -865,6 +883,7 @@
   "/p/xxio-premium-ball",
   "/p/honma-d1-speedmonster",
   "/p/garmin-approach-z10",
+  "/vs/adidas-adipower-sl-women-shoes-vs-footjoy-pulse-boa-women-shoes",
   "/vs/adidas-codechaos-shoes-vs-footjoy-premiere-packard-shoes",
   "/vs/bushnell-pro-x3-vs-nikon-coolshot-pro3",
   "/vs/callaway-elyte-driver-vs-callaway-quantum-tdmax-driver",
@@ -905,6 +924,7 @@
   "/vs/ecco-biom-c4-shoes-vs-adidas-codechaos-shoes",
   "/vs/ecco-biom-c4-shoes-vs-footjoy-premiere-packard-shoes",
   "/vs/ecco-biom-c4-shoes-vs-footjoy-pro-sl",
+  "/vs/ecco-goretex-women-shoes-vs-adidas-adipower-sl-women-shoes",
   "/vs/ecco-goretex-women-shoes-vs-footjoy-flow2-boa-women-shoes",
   "/vs/ecco-goretex-women-shoes-vs-footjoy-pulse-boa-women-shoes",
   "/vs/evnroll-z5s-putter-vs-ping-anser-2-putter",

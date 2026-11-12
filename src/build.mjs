@@ -26,7 +26,12 @@ const DISCLOSURE = NOTICES.disclosure;
 // 여기 있는 주소는 사이트맵·llms.txt 에서 빼고 <meta name="googlebot" content="noindex,follow"> 를 붙인다. 주소는 그대로 열린다(301·404 없음).
 // googlebot 만 막는 이유: 구글 품질 판단 때문의 조치이고, 쿠팡 이동이 가장 많은 ChatGPT 유입(빙 색인을 씀)은 지키기 위해. bot 을 'robots' 로 바꾸면 모든 검색엔진에 적용. 되돌리기: paths 를 비운다
 const NOINDEX_CONF = readJson(join(ROOT, 'config', 'noindex.json'), {});
-const NOINDEX = new Set(NOINDEX_CONF.paths ?? []);
+// 새 자동 쪽(2026-11-13 골프 상품 늘리기 재개): newAuto 가 'noindex' 면 목록(스냅숏)에 없는 자동 쪽(/p·/vs·/g 실력별·/jp 하위)도
+// kept(활동 있음)·pin(사장님 지시 등 고정)에 오르기 전까지 같은 대우. 활동이 생기면 node src/noindex-list.mjs --promote 로 kept 에 올린다
+const NOINDEX_LIST = new Set(NOINDEX_CONF.paths ?? []);
+const NOINDEX_KEEP = new Set([...Object.keys(NOINDEX_CONF.kept ?? {}), ...Object.keys(NOINDEX_CONF.pin ?? {})]);
+const AUTO_PAGE = (p) => p.startsWith('/p/') || p.startsWith('/vs/') || /^\/g\/.+-(beginner|intermediate|advanced|pro)$/.test(p) || p.startsWith('/jp/');
+const NOINDEX = { has: (p) => !NOINDEX_KEEP.has(p) && (NOINDEX_LIST.has(p) || (NOINDEX_CONF.newAuto === 'noindex' && AUTO_PAGE(p))), on: NOINDEX_LIST.size > 0 || NOINDEX_CONF.newAuto === 'noindex' };
 const NOINDEX_BOT = NOINDEX_CONF.bot === 'robots' ? 'robots' : 'googlebot';
 // 가격 출처 상태: API 가격 기록(추이)이 하나라도 있으면 api, 매일 공식 API 로 판매가만 확인하면 refresh(config/coupang-refresh.json, 2026-11-11), 아니면 manual (링크 생성 때 확인·직접 입력)
 const PRICE_MODE = (() => {
@@ -2286,7 +2291,7 @@ rawWrite(join(OUT, 'version.json'), JSON.stringify({ commit: BUILD_COMMIT, built
 if (SITE.indexNowKey && !DEMO) rawWrite(join(OUT, `${SITE.indexNowKey}.txt`), SITE.indexNowKey);
 // 전체 쪽 목록(사이트맵에서 뺀 쪽 포함): 방문 집계(functions/api/hit.js)·화면 점검(qa-visual)이 읽는다 — 사이트맵에서 빼도 방문·쿠팡 이동은 계속 센다
 rawWrite(join(OUT, 'assets', 'pages.txt'), urls.map(([u]) => u).join('\n') + '\n');
-if (NOINDEX.size) console.log(`사이트맵 ${urls.filter(([u]) => !NOINDEX.has(u)).length}쪽 (얇은 자동 쪽 ${urls.filter(([u]) => NOINDEX.has(u)).length}쪽은 빼고 ${NOINDEX_BOT} noindex — config/noindex.json)`);
+if (NOINDEX.on) console.log(`사이트맵 ${urls.filter(([u]) => !NOINDEX.has(u)).length}쪽 (얇은 자동 쪽 ${urls.filter(([u]) => NOINDEX.has(u)).length}쪽은 빼고 ${NOINDEX_BOT} noindex — 목록 ${urls.filter(([u]) => NOINDEX_LIST.has(u)).length}·목록 밖 새 자동 쪽 ${urls.filter(([u]) => NOINDEX.has(u) && !NOINDEX_LIST.has(u)).length} — config/noindex.json)`);
 rawWrite(
   join(OUT, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
