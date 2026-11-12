@@ -1,0 +1,6 @@
+[
+ {"id":"callaway-tour-authentic-glove","query":"캘러웨이 투어 오센틱 양피 골프장갑","must":["캘러웨이","투어"],"mustAny":["오센틱","어센틱","authentic","오쎈틱"],"exclude":["여성","레이디","트리플","다이아몬드","중고","골프공","세트","골프백","우먼스"]},
+ {"id":"callaway-tour-authentic-glove-b","query":"캘러웨이 투어 어센틱 남성 골프장갑","must":["캘러웨이","투어"],"mustAny":["오센틱","어센틱","authentic","오쎈틱"],"exclude":["여성","레이디","트리플","다이아몬드","중고","골프공","세트","골프백","우먼스"]},
+ {"id":"callaway-winter-glory-women-pair-glove","query":"캘러웨이 윈터 글로리 여성용 양손 방한 합피장갑","must":["캘러웨이","윈터","글로리"],"exclude":["남성","중고","골프공","3장","4장","4p","3p","10개","5개","옵티써멀"]},
+ {"id":"callaway-winter-glory-women-pair-glove-b","query":"캘러웨이 윈터글로리 여성 양손 장갑","must":["캘러웨이"],"mustAny":["윈터 글로리","윈터글로리"],"exclude":["남성","중고","골프공","3장","4장","4p","3p","10개","5개","옵티써멀"]}
+]
