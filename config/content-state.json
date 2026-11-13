@@ -1975,12 +1975,12 @@
       "d": "2026-11-11"
     },
     "/p/yonex-ezonegt3-women-fairway": {
-      "h": "7e2c294e159bd07a",
-      "d": "2026-11-11"
+      "h": "420072fac4b9c84f",
+      "d": "2026-11-13"
     },
     "/p/bridgestone-blady-women-fairway": {
-      "h": "48380b7df8093515",
-      "d": "2026-11-11"
+      "h": "2afb4cf9e75c2024",
+      "d": "2026-11-13"
     },
     "/p/majesty-prestigio13-women-fairway": {
       "h": "62870288c1dd071f",
@@ -2267,8 +2267,8 @@
       "d": "2026-11-11"
     },
     "/p/onoff-lp425-women-fairway": {
-      "h": "10361f765b07b7bc",
-      "d": "2026-11-11"
+      "h": "a7b3af9eafb4c448",
+      "d": "2026-11-13"
     },
     "/p/majesty-sterna-women-fairway": {
       "h": "a4fb1e8044b95688",
@@ -2587,8 +2587,8 @@
       "d": "2026-11-11"
     },
     "/p/jestime-ponytail-women-fairway": {
-      "h": "232711f0da95dfcf",
-      "d": "2026-11-11"
+      "h": "1b37f3ab616e8278",
+      "d": "2026-11-13"
     },
     "/p/mutsumihonma-mh622-women-fairway": {
       "h": "f306c645492ece3b",
@@ -3151,15 +3151,19 @@
       "d": "2026-11-13"
     },
     "/p/callaway-gbb23-hybrid": {
-      "h": "9bfc5814c87d9b8f",
+      "h": "6f3871dc19e7ade7",
       "d": "2026-11-13"
     },
     "/p/majesty-sublime-hybrid": {
-      "h": "b6bd622a49630fa8",
+      "h": "4ddcf88d859c7cb4",
       "d": "2026-11-13"
     },
     "/p/elord-dynas8-hybrid": {
-      "h": "c75b1e64903e0bf6",
+      "h": "c459f0d9f3d08cd8",
+      "d": "2026-11-13"
+    },
+    "/p/honma-bezeal3-women-fairway": {
+      "h": "cb508ffb23a23d40",
       "d": "2026-11-13"
     },
     "/c/driver": {
@@ -3167,7 +3171,7 @@
       "d": "2026-11-13"
     },
     "/c/wood": {
-      "h": "3b1138f4904b2687",
+      "h": "7fc72d844b5598f3",
       "d": "2026-11-13"
     },
     "/c/utility": {
@@ -3231,8 +3235,8 @@
       "d": "2026-11-13"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "e6173a60a5480f0d",
-      "d": "2026-11-10"
+      "h": "a13f899794aca68a",
+      "d": "2026-11-13"
     },
     "/g/iron-recommend": {
       "h": "d951a7458e6370e2",
@@ -3351,8 +3355,8 @@
       "d": "2026-11-10"
     },
     "/g/womens-fairway-wood-recommend-intermediate": {
-      "h": "f3cc4fd07ff1ac28",
-      "d": "2026-11-10"
+      "h": "09a81b9a34fd6e54",
+      "d": "2026-11-13"
     },
     "/g/womens-fairway-wood-recommend-advanced": {
       "h": "2d931f0b526ed104",
@@ -3523,7 +3527,7 @@
       "d": "2026-11-06"
     },
     "/": {
-      "h": "c0c3a68b06aabc6d",
+      "h": "1983cf2534b01a30",
       "d": "2026-11-13"
     },
     "/about": {
@@ -4369,21 +4373,6 @@
       "d": "2026-11-13"
     },
     {
-      "url": "/p/callaway-gbb23-hybrid",
-      "kind": "new",
-      "d": "2026-11-13"
-    },
-    {
-      "url": "/p/majesty-sublime-hybrid",
-      "kind": "new",
-      "d": "2026-11-13"
-    },
-    {
-      "url": "/p/elord-dynas8-hybrid",
-      "kind": "new",
-      "d": "2026-11-13"
-    },
-    {
       "url": "/c/utility",
       "kind": "updated",
       "d": "2026-11-13"
@@ -4409,11 +4398,6 @@
       "d": "2026-11-13"
     },
     {
-      "url": "/",
-      "kind": "updated",
-      "d": "2026-11-13"
-    },
-    {
       "url": "/vs/callaway-epic-superhybrid-vs-callaway-quantummax-hybrid",
       "kind": "updated",
       "d": "2026-11-13"
@@ -4435,6 +4419,66 @@
     },
     {
       "url": "/vs/xxio13x-hybrid-vs-xxio14-hybrid",
+      "kind": "updated",
+      "d": "2026-11-13"
+    },
+    {
+      "url": "/p/yonex-ezonegt3-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-13"
+    },
+    {
+      "url": "/p/bridgestone-blady-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-13"
+    },
+    {
+      "url": "/p/onoff-lp425-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-13"
+    },
+    {
+      "url": "/p/jestime-ponytail-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-13"
+    },
+    {
+      "url": "/p/callaway-gbb23-hybrid",
+      "kind": "updated",
+      "d": "2026-11-13"
+    },
+    {
+      "url": "/p/majesty-sublime-hybrid",
+      "kind": "updated",
+      "d": "2026-11-13"
+    },
+    {
+      "url": "/p/elord-dynas8-hybrid",
+      "kind": "updated",
+      "d": "2026-11-13"
+    },
+    {
+      "url": "/p/honma-bezeal3-women-fairway",
+      "kind": "new",
+      "d": "2026-11-13"
+    },
+    {
+      "url": "/c/wood",
+      "kind": "updated",
+      "d": "2026-11-13"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-11-13"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-11-13"
+    },
+    {
+      "url": "/",
       "kind": "updated",
       "d": "2026-11-13"
     }
