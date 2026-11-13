@@ -122,8 +122,9 @@ add('게시하지 못한 초보 Q&A 글 (content/qa, 검사 불통과)', loadQa(
 
 add(
   '판매 종료·품절 추정 상품 (쿠팡 API 에서 5일 연속 못 찾음 → 사이트에서 링크 숨김)',
-  Object.entries(picks).filter(([, v]) => v?.gone).map(([id, v]) => `${name(id)} (\`${id}\`): ${v.gone} 부터`),
-  '같은 모델의 다른 쿠팡 판매글이 있으면 src/expand 로 찾아 링크를 바꾸고(gone 지움), 단종이면 그대로 둔다(주소 유지).',
+  // 2026-11-14: 쿠팡 클릭·조회 많은 순(다시 잇기 우선순위) — 하루에 14 → 22개로 늘어 어느 것부터 다시 이을지 알 수 있게
+  Object.entries(picks).filter(([, v]) => v?.gone).sort(([a, x], [b, y]) => pv(b) - pv(a) || String(x.gone).localeCompare(String(y.gone))).map(([id, v]) => `${name(id)} (\`${id}\`): ${v.gone} 부터${pvNote(id)}`),
+  '최근 30일 쿠팡 클릭·조회가 많은 순서입니다. 같은 모델의 다른 쿠팡 판매글이 있으면 src/expand 로 찾아 링크를 바꾸고(gone 지움), 단종이면 그대로 둔다(주소 유지).',
 );
 
 const total =sections.reduce((s, x) => s + x.count, 0);
