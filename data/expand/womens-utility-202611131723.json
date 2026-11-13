@@ -1,0 +1,118 @@
+[
+ {
+  "id": "taylormade-qi4dmaxlite-women-rescue",
+  "category": "utility",
+  "name": "테일러메이드 Qi4D MAX Lite 여성 레스큐",
+  "query": "테일러메이드 Qi4D 맥스 라이트 여성 레스큐",
+  "must": ["qi4d"],
+  "mustAny": ["여성", "레이디", "우먼", "women", "ladies", "lady", "레이디스"],
+  "exclude": ["중고", "헤드만", "시타", "헤드커버", "드라이버", "페어웨이", "아이언", "남성", "풀세트", "샤프트만", "커버만", "그립", "세트", "퍼터", "qi35", "qi10"],
+  "summary": "테일러메이드가 2026년 Qi4D 라인에 넣은 여성용 MAX Lite 레스큐(유틸리티)입니다. 가벼운 헤드·샤프트·그립으로 느린 스윙에서도 공을 높이 띄우도록 만든 모델로, 여성용은 4H~7H 네 가지 로프트로 나옵니다.",
+  "points": [
+    "2026년 Qi4D 라인 여성용 MAX Lite 레스큐(Qi35 MAX Lite 후속)",
+    "여성용 4H~7H 네 가지 로프트, 경량 여성용 샤프트",
+    "연결 상품 번호·로프트는 판매처 확인"
+  ],
+  "guidePick": {
+    "role": "2026 최신 경량 레스큐",
+    "forWhom": "스윙이 느린 편이라 가볍고 잘 뜨는 최신 유틸리티를 찾는 초심자~중급 여성 골퍼",
+    "short": "2026 신형·초경량",
+    "plus": "가벼운 구성으로 높이 띄우기 쉬움",
+    "minus": "신형이라 가격대 높음",
+    "pros": ["제조사 소개상 경량 헤드·샤프트·그립으로 스윙 속도를 살리는 설계", "여성용 4H~7H 네 가지 로프트"],
+    "cons": ["2026년 신형이라 할인 폭이 작음", "연결 상품 번호·로프트는 판매처 확인"],
+    "scores": [4, 4, 5, 3],
+    "specs": ["TBD", "TBD", "2026년"],
+    "verdict": "Qi35 MAX Lite 대신 2026년 최신 경량 여성 레스큐를 원할 때",
+    "skill": "초심자"
+  },
+  "sources": ["https://www.pgatour.com/article/news/equipment-report/2026/01/08/what-to-know-about-taylormade-qi4d-driver-fairway-wood-hybrids-irons-scottie-scheffler-rory-mcilroy-tommy-fleetwood", "https://www.costco.co.kr/p/698708"]
+ },
+ {
+  "id": "callaway-bigberthareva-women-hybrid",
+  "category": "utility",
+  "name": "캘러웨이 빅버사 레바 여성 하이브리드(2023)",
+  "query": "캘러웨이 빅버사 레바 여성 하이브리드",
+  "must": ["레바"],
+  "mustAny": ["빅버사", "빅 버사", "big bertha"],
+  "exclude": ["중고", "헤드만", "시타", "헤드커버", "드라이버", "페어웨이", "아이언", "남성", "풀세트", "샤프트만", "커버만", "그립", "세트", "퍼터", "라이즈", "rise"],
+  "summary": "캘러웨이 여성 전용 라인 '빅버사 레바'의 2023년 하이브리드입니다. 캘러웨이는 헤드를 크게 해 크게 빗나가는 샷을 줄이고, 여성 골퍼 조사를 바탕으로 로프트·스윙웨이트·길이를 맞췄다고 소개합니다. 4H~8H(24~36도)로 나옵니다.",
+  "points": [
+    "캘러웨이 여성 전용 빅버사 레바 라인 2023년 하이브리드",
+    "4H 24도~8H 36도, 큰 헤드로 띄우기 쉬움",
+    "연결 상품 번호·로프트는 판매처 확인"
+  ],
+  "guidePick": {
+    "role": "여성 전용 큰 헤드",
+    "forWhom": "롱아이언 대신 쉽게 뜨는 여성 전용 하이브리드를 찾는 초심자~중급 여성 골퍼",
+    "short": "여성 전용·큰 헤드",
+    "plus": "큰 헤드로 빗맞아도 덜 휘어짐",
+    "minus": "2023년 모델이라 재고 확인 필요",
+    "pros": ["제조사 소개상 캘러웨이 여성 하이브리드 중 가장 띄우기 쉬운 설계", "4H~8H(24~36도)로 고를 수 있는 번호가 많음"],
+    "cons": ["직전 세대(2023년)라 번호별 재고가 고르지 않을 수 있음", "연결 상품 번호·로프트는 판매처 확인"],
+    "scores": [3, 5, 5, 4],
+    "specs": ["TBD", "TBD", "2023년"],
+    "verdict": "레바 라이즈보다 앞 세대지만 가격이 내려간 여성 전용 하이브리드를 원할 때",
+    "skill": "초심자"
+  },
+  "sources": ["https://callawaygolf.com/golf-clubs/hybrids/hybrids-2023-big-bertha-reva-womens.html", "https://golfwrx.com/628402/callaway-unveils-big-bertha-reva-line-including-driver-fairway-woods-hybrids-and-irons/"]
+ },
+ {
+  "id": "bridgestone-bld-women-utility",
+  "category": "utility",
+  "name": "브리지스톤 B-LD 여성 유틸리티",
+  "query": "브리지스톤 BLD 여성 유틸리티",
+  "must": ["브리지스톤"],
+  "mustAny": ["b-ld", "bld", "비엘디"],
+  "exclude": ["중고", "헤드만", "시타", "헤드커버", "드라이버", "페어웨이", "아이언", "남성", "풀세트", "샤프트만", "커버만", "그립", "세트", "퍼터", "골프공", "볼"],
+  "summary": "브리지스톤골프의 여성 전용 'B-LD(비레디)' 라인 유틸리티입니다. 브리지스톤은 B-LD 라인을 슬라이스로 고민하는 여성 골퍼를 위해 무게중심 각도를 키워 공을 잘 잡히게 만들었다고 소개합니다.",
+  "points": [
+    "브리지스톤 여성 전용 B-LD(비레디) 라인",
+    "슬라이스를 줄이도록 공이 잘 잡히는 설계(제조사 소개)",
+    "연결 상품 번호·로프트·샤프트는 판매처 확인"
+  ],
+  "guidePick": {
+    "role": "슬라이스 줄이는 여성 전용",
+    "forWhom": "공이 오른쪽으로 자주 휘는 중급 여성 골퍼",
+    "short": "슬라이스 억제·일본 브랜드",
+    "plus": "공이 잘 잡혀 오른쪽 휘어짐이 적음",
+    "minus": "판매 번호가 적음",
+    "pros": ["제조사 소개상 무게중심 각도를 키워 슬라이스를 줄이는 설계", "여성 전용 라인이라 가벼운 구성"],
+    "cons": ["국내 판매 번호·로프트가 많지 않음", "연결 상품 번호·로프트는 판매처 확인"],
+    "scores": [3, 4, 4, 3],
+    "specs": ["TBD", "TBD", "판매처 확인"],
+    "verdict": "슬라이스 때문에 유틸리티가 자꾸 오른쪽으로 갈 때",
+    "skill": "중급"
+  },
+  "sources": ["https://www.asiae.co.kr/en/article/2022051206313102749", "https://www.yodobashi.com/maker/0000031045/"]
+ },
+ {
+  "id": "cleveland-halo-xl-women-hybrid",
+  "category": "utility",
+  "name": "클리브랜드 런처 XL 헤일로 여성 하이브리드",
+  "query": "클리브랜드 헤일로 XL 여성 하이브리드",
+  "must": ["헤일로"],
+  "mustAny": ["여성", "레이디", "우먼", "women", "ladies", "lady", "레이디스"],
+  "exclude": ["중고", "헤드만", "시타", "헤드커버", "드라이버", "페어웨이", "아이언", "남성", "풀세트", "샤프트만", "커버만", "그립", "세트", "퍼터", "웨지"],
+  "summary": "클리브랜드 런처 XL 헤일로 하이브리드의 여성용입니다. 클리브랜드는 큰 헤드로 자사 하이브리드 중 가장 높은 관성모멘트를 냈다고 소개합니다.",
+  "points": [
+    "클리브랜드 런처 XL 헤일로 여성용 하이브리드",
+    "큰 헤드로 관용성을 높인 설계(제조사 소개)",
+    "연결 상품 번호·로프트는 판매처 확인"
+  ],
+  "guidePick": {
+    "role": "큰 헤드 관용성",
+    "forWhom": "아이언처럼 치기 쉬운 큰 헤드 하이브리드를 찾는 초심자 여성 골퍼",
+    "short": "큰 헤드·쉬운 타구",
+    "plus": "큰 헤드로 빗맞아도 거리 손실이 적음",
+    "minus": "국내 판매처가 적음",
+    "pros": ["제조사 소개상 자사 하이브리드 중 가장 높은 관성모멘트", "아이언 대체용으로 치기 쉬운 형태"],
+    "cons": ["국내 판매처·재고가 많지 않음", "연결 상품 번호·로프트는 판매처 확인"],
+    "scores": [3, 5, 4, 4],
+    "specs": ["TBD", "TBD", "판매처 확인"],
+    "verdict": "치기 쉬운 큰 헤드 하이브리드를 합리적인 값에 찾을 때",
+    "skill": "초심자"
+  },
+  "sources": ["https://us.dunlopsports.com/launcher-xl-halo-hybrid/11204495.html", "https://www.clickgolf.co.uk/cleveland-launcher-xl-halo-golf-hybrid-women-s-1595564.html"]
+ }
+]
