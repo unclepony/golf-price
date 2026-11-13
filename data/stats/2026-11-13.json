@@ -1,5 +1,261 @@
 {
   "date": "2026-11-13",
-  "by": {},
-  "journey": []
+  "by": {
+    "act": {
+      "직접·북마크|/p/galaxy-watch8-golf": 1,
+      "카카오톡|/": 1,
+      "카카오톡|/c/utility": 1,
+      "카카오톡|/p/taylormade-qi35-rescue": 1,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 2,
+      "캠페인: chatgpt.com|/g/iron-recommend": 1,
+      "캠페인: chatgpt.com|/g/womens-driver-recommend": 1,
+      "캠페인: chatgpt.com|/p/cleveland-launcher-halo-xl-fairway": 1,
+      "캠페인: chatgpt.com|/p/titleist-hybrid14-stand": 1,
+      "캠페인: chatgpt.com|/p/xxio13-iron": 2,
+      "캠페인: ig|/": 1
+    },
+    "asn": {
+      "AS17858 DACOM-PUBNETPLUS": 1,
+      "AS3559 Korea Telecom": 6,
+      "AS4766 KT": 1,
+      "AS53813 Zscaler Seoul": 3,
+      "AS7552 Viettel Group": 1,
+      "AS7552 xDSL Services of DaNang": 1,
+      "AS9318 SK Broadband Co Ltd": 1
+    },
+    "asncamp": {
+      "AS17858 DACOM-PUBNETPLUS|chatgpt.com|모바일": 1,
+      "AS3559 Korea Telecom|chatgpt.com|모바일": 5,
+      "AS4766 KT|chatgpt.com|모바일": 1,
+      "AS53813 Zscaler Seoul|ig / social|PC": 1,
+      "AS7552 Viettel Group|youtube / video / c-utility-recommend-adv|PC": 1,
+      "AS7552 xDSL Services of DaNang|youtube / video / c-utility-recommend-adv|PC": 1,
+      "AS9318 SK Broadband Co Ltd|chatgpt.com|모바일": 1
+    },
+    "cty": {
+      "KR": 12,
+      "VN": 2
+    },
+    "depth": {
+      "/c/utility|첫 화면": 1,
+      "/g/golf-bag-recommend|첫 화면": 2,
+      "/g/iron-recommend|첫 화면": 1,
+      "/g/womens-driver-recommend|첫 화면": 1,
+      "/p/cleveland-launcher-halo-xl-fairway|25%": 1,
+      "/p/galaxy-watch8-golf|25%": 1,
+      "/p/taylormade-qi35-rescue|25%": 1,
+      "/p/titleist-hybrid14-stand|75%": 1,
+      "/p/xxio13-iron|끝까지": 1,
+      "/|첫 화면": 3
+    },
+    "dev": {
+      "PC": 5,
+      "모바일": 9
+    },
+    "hour": {
+      "12": 1,
+      "13": 3,
+      "14": 2,
+      "15": 3,
+      "18": 2,
+      "21": 2,
+      "09": 1
+    },
+    "nav": {
+      "/c/utility|/p/taylormade-qi35-rescue": 1,
+      "/g/golf-bag-recommend|/p/titleist-hybrid14-stand": 1,
+      "/|/c/utility": 1
+    },
+    "out": {
+      "/p/galaxy-watch8-golf|galaxy-watch8-golf": 1,
+      "/p/taylormade-qi35-rescue|taylormade-qi35-rescue": 1,
+      "/p/titleist-hybrid14-stand|titleist-hybrid14-stand": 1,
+      "/p/xxio13-iron|xxio13-iron": 1
+    },
+    "outact": {
+      "조작 후|직접·북마크": 1,
+      "조작 후|카카오톡": 1,
+      "조작 후|캠페인: chatgpt.com": 2
+    },
+    "outcamp": {
+      "chatgpt.com|titleist-hybrid14-stand": 1,
+      "chatgpt.com|xxio13-iron": 1
+    },
+    "outref": {
+      "직접·북마크": 1,
+      "카카오톡": 1,
+      "캠페인: chatgpt.com": 2
+    },
+    "pos": {
+      "상세 끝 구매 상자": 1,
+      "상품 페이지": 3
+    },
+    "pv": {
+      "/": 3,
+      "/c/utility": 1,
+      "/g/golf-bag-recommend": 2,
+      "/g/iron-recommend": 2,
+      "/g/utility-recommend-advanced": 2,
+      "/g/womens-driver-recommend": 1,
+      "/p/cleveland-launcher-halo-xl-fairway": 1,
+      "/p/galaxy-watch8-golf": 1,
+      "/p/taylormade-qi35-rescue": 1,
+      "/p/titleist-hybrid14-stand": 1,
+      "/p/xxio13-iron": 2
+    },
+    "pvprice": {
+      "가격 보임|/p/cleveland-launcher-halo-xl-fairway": 1,
+      "가격 보임|/p/galaxy-watch8-golf": 1,
+      "가격 보임|/p/taylormade-qi35-rescue": 1,
+      "가격 보임|/p/titleist-hybrid14-stand": 1,
+      "가격 숨김|/p/xxio13-iron": 2
+    },
+    "ref": {
+      "affiliate-admin.coupang.net": 1,
+      "직접·북마크": 1,
+      "카카오톡": 1,
+      "캠페인: chatgpt.com": 8,
+      "캠페인: ig": 1,
+      "캠페인: youtube": 2
+    },
+    "refland": {
+      "affiliate-admin.coupang.net|/": 1,
+      "직접·북마크|/p/galaxy-watch8-golf": 1,
+      "카카오톡|/": 1,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 2,
+      "캠페인: chatgpt.com|/g/iron-recommend": 2,
+      "캠페인: chatgpt.com|/g/womens-driver-recommend": 1,
+      "캠페인: chatgpt.com|/p/cleveland-launcher-halo-xl-fairway": 1,
+      "캠페인: chatgpt.com|/p/xxio13-iron": 2,
+      "캠페인: ig|/": 1,
+      "캠페인: youtube|/g/utility-recommend-advanced": 2
+    },
+    "refurl": {
+      "affiliate-admin.coupang.net": 1,
+      "chatgpt.com": 8,
+      "ig / social": 1,
+      "youtube / video / c-utility-recommend-adv": 2
+    },
+    "seen": {
+      "/c/utility": 1,
+      "/g/golf-bag-recommend": 2,
+      "/g/iron-recommend": 2,
+      "/g/utility-recommend-advanced": 2,
+      "/g/womens-driver-recommend": 1,
+      "/p/cleveland-launcher-halo-xl-fairway": 1,
+      "/p/galaxy-watch8-golf": 1,
+      "/p/taylormade-qi35-rescue": 1,
+      "/p/titleist-hybrid14-stand": 1,
+      "/p/xxio13-iron": 2
+    },
+    "seenpos": {
+      "결론 표": 6,
+      "상품 페이지": 6,
+      "한 줄 결론": 2
+    },
+    "seenref": {
+      "직접·북마크": 1,
+      "카카오톡": 2,
+      "캠페인: chatgpt.com": 9,
+      "캠페인: youtube": 2
+    },
+    "skip": {
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3
+    },
+    "stay": {
+      "/c/utility|10초 미만": 1,
+      "/g/golf-bag-recommend|10~30초": 1,
+      "/g/golf-bag-recommend|10초 미만": 1,
+      "/g/iron-recommend|10~30초": 1,
+      "/g/womens-driver-recommend|30초~1분": 1,
+      "/p/cleveland-launcher-halo-xl-fairway|10초 미만": 1,
+      "/p/galaxy-watch8-golf|10초 미만": 1,
+      "/p/taylormade-qi35-rescue|10초 미만": 1,
+      "/p/titleist-hybrid14-stand|10~30초": 1,
+      "/p/xxio13-iron|10~30초": 1,
+      "/|10초 미만": 2,
+      "/|30초~1분": 1
+    },
+    "visit": {
+      "/": 3,
+      "/g/golf-bag-recommend": 2,
+      "/g/iron-recommend": 2,
+      "/g/utility-recommend-advanced": 2,
+      "/g/womens-driver-recommend": 1,
+      "/p/cleveland-launcher-halo-xl-fairway": 1,
+      "/p/galaxy-watch8-golf": 1,
+      "/p/xxio13-iron": 2
+    },
+    "xpv": {
+      "/": 2,
+      "/g/golf-bag-recommend": 2,
+      "/g/iron-recommend": 2,
+      "/g/utility-recommend-advanced": 2,
+      "/g/womens-driver-recommend": 1,
+      "/p/cleveland-launcher-halo-xl-fairway": 1,
+      "/p/titleist-hybrid14-stand": 1,
+      "/p/xxio13-iron": 2
+    },
+    "ytbot": {
+      "youtube / video / c-utility-recommend-adv": 2
+    }
+  },
+  "journey": [
+    {
+      "hour": "09",
+      "pid": "taylormade-qi35-rescue",
+      "page": "/p/taylormade-qi35-rescue",
+      "src": "카카오톡",
+      "kw": "",
+      "url": "",
+      "land": "/",
+      "trail": "/ → /c/utility → /p/taylormade-qi35-rescue",
+      "steps": 3,
+      "secs": 9,
+      "dev": "모바일",
+      "pos": "상품 페이지"
+    },
+    {
+      "hour": "13",
+      "pid": "galaxy-watch8-golf",
+      "page": "/p/galaxy-watch8-golf",
+      "src": "직접·북마크",
+      "kw": "",
+      "url": "",
+      "land": "/p/galaxy-watch8-golf",
+      "trail": "/p/galaxy-watch8-golf",
+      "steps": 1,
+      "secs": 4,
+      "dev": "PC",
+      "pos": "상품 페이지"
+    },
+    {
+      "hour": "14",
+      "pid": "xxio13-iron",
+      "page": "/p/xxio13-iron",
+      "src": "캠페인: chatgpt.com",
+      "kw": "",
+      "url": "chatgpt.com",
+      "land": "/p/xxio13-iron",
+      "trail": "/p/xxio13-iron",
+      "steps": 1,
+      "secs": 16,
+      "dev": "모바일",
+      "pos": "상세 끝 구매 상자"
+    },
+    {
+      "hour": "15",
+      "pid": "titleist-hybrid14-stand",
+      "page": "/p/titleist-hybrid14-stand",
+      "src": "캠페인: chatgpt.com",
+      "kw": "",
+      "url": "chatgpt.com",
+      "land": "/g/golf-bag-recommend",
+      "trail": "/g/golf-bag-recommend → /p/titleist-hybrid14-stand",
+      "steps": 2,
+      "secs": 36,
+      "dev": "모바일",
+      "pos": "상품 페이지"
+    }
+  ]
 }
