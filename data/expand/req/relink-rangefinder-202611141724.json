@@ -1,0 +1,4 @@
+[
+ {"id":"relink-golfbuddy-atom","query":"골프버디 아톰 거리측정기","must":["골프버디"],"mustAny":["아톰","atom"],"exclude":["케이스","중고","배터리","파우치단품","필름","리퍼"]},
+ {"id":"relink-golfbuddy-atom-en","query":"GOLFBUDDY ATOM 레이저 거리측정기","must":["골프버디"],"mustAny":["아톰","atom"],"exclude":["케이스","중고","배터리","파우치단품","필름","리퍼"]}
+]
