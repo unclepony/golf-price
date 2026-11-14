@@ -1,45 +1,191 @@
 {
   "date": "2026-11-14",
   "by": {
+    "act": {
+      "빙|/jp": 1,
+      "빙|/jp/xxio14-driver": 1,
+      "캠페인: chatgpt.com|/g/driver-recommend-2026-beginner": 1,
+      "캠페인: chatgpt.com|/p/cleveland-urban-cart": 1
+    },
     "asn": {
-      "AS6079 Sky UK Limited": 1
+      "AS17858 LG POWERCOMM": 1,
+      "AS4713 Open Computer Network": 1,
+      "AS4766 Korea Telecom": 2,
+      "AS55836 Reliance Jio Infocomm Limited": 2,
+      "AS6079 Sky UK Limited": 1,
+      "AS9318 SK Broadband Co Ltd": 1,
+      "AS9354 COMMUNITY NETWORK CENTER INC.": 1,
+      "AS9644 SK Telecom": 3
+    },
+    "asncamp": {
+      "AS17858 LG POWERCOMM|chatgpt.com|모바일": 1,
+      "AS4713 Open Computer Network|youtube / video / t-womens-iron-recommend-0|PC": 1,
+      "AS4766 Korea Telecom|chatgpt.com|모바일": 1,
+      "AS55836 Reliance Jio Infocomm Limited|youtube / comment / c-utility-recommend-adv|PC": 2,
+      "AS9318 SK Broadband Co Ltd|chatgpt.com|모바일": 1,
+      "AS9354 COMMUNITY NETWORK CENTER INC.|youtube / video / t-womens-iron-recommend-0|PC": 1,
+      "AS9644 SK Telecom|chatgpt.com|모바일": 1,
+      "AS9644 SK Telecom|youtube / video / t-fairway-wood-recommend-1|PC": 2
     },
     "cty": {
+      "IN": 2,
+      "JP": 2,
+      "KR": 7,
       "US": 1
     },
     "depth": {
+      "/g/driver-recommend-2026-beginner|첫 화면": 1,
+      "/jp/xxio14-driver|25%": 1,
+      "/jp|25%": 1,
+      "/p/callaway-tour-authentic-glove|첫 화면": 1,
+      "/p/cleveland-urban-cart|25%": 1,
+      "/p/jestime-ponytail-women-hybrid|첫 화면": 1,
       "/vs/callaway-elyte-women-hybrid-vs-ping-gle4-women-hybrid|25%": 1
     },
     "dev": {
-      "PC": 1
+      "PC": 8,
+      "모바일": 4
     },
     "hour": {
-      "00": 1
+      "13": 1,
+      "18": 2,
+      "20": 1,
+      "21": 1,
+      "00": 1,
+      "07": 3,
+      "08": 3
+    },
+    "nav": {
+      "/jp/xxio14-driver|/jp": 1
+    },
+    "out": {
+      "/g/driver-recommend-2026-beginner|callaway-elyte-maxfast-driver": 1
+    },
+    "outact": {
+      "조작 후|캠페인: chatgpt.com": 1
+    },
+    "outcamp": {
+      "chatgpt.com|callaway-elyte-maxfast-driver": 1
+    },
+    "outref": {
+      "캠페인: chatgpt.com": 1
+    },
+    "pos": {
+      "한 줄 결론": 1
     },
     "pv": {
+      "/g/driver-recommend-2026-beginner": 1,
+      "/g/fairway-wood-recommend": 2,
+      "/g/utility-recommend-advanced": 2,
+      "/g/womens-iron-recommend": 2,
+      "/jp": 1,
+      "/jp/xxio14-driver": 1,
+      "/p/callaway-tour-authentic-glove": 1,
+      "/p/cleveland-urban-cart": 1,
+      "/p/jestime-ponytail-women-hybrid": 1,
       "/vs/callaway-elyte-women-hybrid-vs-ping-gle4-women-hybrid": 1
     },
+    "pvprice": {
+      "가격 보임|/p/callaway-tour-authentic-glove": 1,
+      "가격 보임|/p/cleveland-urban-cart": 1,
+      "가격 보임|/p/jestime-ponytail-women-hybrid": 1
+    },
     "ref": {
-      "직접·북마크": 1
+      "빙": 1,
+      "직접·북마크": 1,
+      "캠페인: chatgpt.com": 4,
+      "캠페인: youtube": 6
     },
     "refland": {
-      "직접·북마크|/vs/callaway-elyte-women-hybrid-vs-ping-gle4-women-hybrid": 1
+      "빙|/jp/xxio14-driver": 1,
+      "직접·북마크|/vs/callaway-elyte-women-hybrid-vs-ping-gle4-women-hybrid": 1,
+      "캠페인: chatgpt.com|/g/driver-recommend-2026-beginner": 1,
+      "캠페인: chatgpt.com|/p/callaway-tour-authentic-glove": 1,
+      "캠페인: chatgpt.com|/p/cleveland-urban-cart": 1,
+      "캠페인: chatgpt.com|/p/jestime-ponytail-women-hybrid": 1,
+      "캠페인: youtube|/g/fairway-wood-recommend": 2,
+      "캠페인: youtube|/g/utility-recommend-advanced": 2,
+      "캠페인: youtube|/g/womens-iron-recommend": 2
+    },
+    "refurl": {
+      "chatgpt.com": 4,
+      "youtube / comment / c-utility-recommend-adv": 2,
+      "youtube / video / t-fairway-wood-recommend-1": 2,
+      "youtube / video / t-womens-iron-recommend-0": 2
     },
     "seen": {
+      "/g/driver-recommend-2026-beginner": 1,
+      "/g/fairway-wood-recommend": 2,
+      "/g/utility-recommend-advanced": 2,
+      "/g/womens-iron-recommend": 2,
+      "/p/cleveland-urban-cart": 1,
       "/vs/callaway-elyte-women-hybrid-vs-ping-gle4-women-hybrid": 1
     },
     "seenpos": {
-      "기타": 1
+      "결론 표": 4,
+      "기타": 1,
+      "상품 페이지": 1,
+      "한 줄 결론": 3
     },
     "seenref": {
-      "직접·북마크": 1
+      "직접·북마크": 1,
+      "캠페인: chatgpt.com": 2,
+      "캠페인: youtube": 6
+    },
+    "skip": {
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3
     },
     "stay": {
+      "/g/driver-recommend-2026-beginner|10~30초": 1,
+      "/jp/xxio14-driver|10~30초": 1,
+      "/jp|10~30초": 1,
+      "/p/callaway-tour-authentic-glove|10초 미만": 1,
+      "/p/cleveland-urban-cart|10초 미만": 1,
+      "/p/jestime-ponytail-women-hybrid|10초 미만": 1,
       "/vs/callaway-elyte-women-hybrid-vs-ping-gle4-women-hybrid|10초 미만": 1
     },
     "visit": {
+      "/g/driver-recommend-2026-beginner": 1,
+      "/g/fairway-wood-recommend": 2,
+      "/g/utility-recommend-advanced": 2,
+      "/g/womens-iron-recommend": 2,
+      "/jp/xxio14-driver": 1,
+      "/p/callaway-tour-authentic-glove": 1,
+      "/p/cleveland-urban-cart": 1,
+      "/p/jestime-ponytail-women-hybrid": 1,
       "/vs/callaway-elyte-women-hybrid-vs-ping-gle4-women-hybrid": 1
+    },
+    "xpv": {
+      "/g/driver-recommend-2026-beginner": 1,
+      "/g/fairway-wood-recommend": 2,
+      "/g/utility-recommend-advanced": 2,
+      "/g/womens-iron-recommend": 2,
+      "/jp": 1,
+      "/jp/xxio14-driver": 1,
+      "/p/callaway-tour-authentic-glove": 1,
+      "/p/cleveland-urban-cart": 1,
+      "/p/jestime-ponytail-women-hybrid": 1
+    },
+    "ytbot": {
+      "youtube / comment / c-utility-recommend-adv": 2,
+      "youtube / video / t-fairway-wood-recommend-1": 2,
+      "youtube / video / t-womens-iron-recommend-0": 2
     }
   },
-  "journey": []
+  "journey": [
+    {
+      "hour": "07",
+      "pid": "callaway-elyte-maxfast-driver",
+      "page": "/g/driver-recommend-2026-beginner",
+      "src": "캠페인: chatgpt.com",
+      "kw": "",
+      "url": "chatgpt.com",
+      "land": "/g/driver-recommend-2026-beginner",
+      "trail": "/g/driver-recommend-2026-beginner",
+      "steps": 1,
+      "secs": 12,
+      "dev": "모바일",
+      "pos": "한 줄 결론"
+    }
+  ]
 }

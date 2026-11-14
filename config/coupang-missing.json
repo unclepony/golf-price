@@ -2,8 +2,8 @@
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { since: 처음 못 찾은 날, days: 연속으로 못 찾은 날 수, last: 마지막으로 못 찾은 날 }. 5일이면 picks.json gone.",
   "golfbuddy-atom": {
     "since": "2026-10-31",
-    "days": 14,
-    "last": "2026-11-14"
+    "days": 15,
+    "last": "2026-11-15"
   },
   "ping-pioneer-cart": {
     "since": "2026-11-03",
@@ -12,18 +12,18 @@
   },
   "callaway-erc-soft": {
     "since": "2026-11-06",
-    "days": 8,
-    "last": "2026-11-14"
+    "days": 9,
+    "last": "2026-11-15"
   },
   "voicecaddie-t-ultra": {
     "since": "2026-11-06",
-    "days": 5,
-    "last": "2026-11-13"
+    "days": 6,
+    "last": "2026-11-15"
   },
   "yamaha-cs-hmplus-women-hybrid": {
     "since": "2026-11-07",
-    "days": 4,
-    "last": "2026-11-13"
+    "days": 5,
+    "last": "2026-11-15"
   },
   "yonex-ezonegt3-women-iron": {
     "since": "2026-11-07",
@@ -32,13 +32,13 @@
   },
   "bridgestone-e6": {
     "since": "2026-11-07",
-    "days": 7,
-    "last": "2026-11-14"
+    "days": 8,
+    "last": "2026-11-15"
   },
   "honma-twgs-women-iron": {
     "since": "2026-11-07",
-    "days": 7,
-    "last": "2026-11-14"
+    "days": 8,
+    "last": "2026-11-15"
   },
   "mizuno-stmax230-hybrid": {
     "since": "2026-11-07",
@@ -62,33 +62,33 @@
   },
   "srixon-z-star-diamond": {
     "since": "2026-11-07",
-    "days": 4,
-    "last": "2026-11-13"
+    "days": 5,
+    "last": "2026-11-15"
   },
   "srixon-z-star-xv": {
     "since": "2026-11-07",
-    "days": 4,
-    "last": "2026-11-13"
+    "days": 5,
+    "last": "2026-11-15"
   },
   "taylormade-qi4dls-driver": {
     "since": "2026-11-07",
-    "days": 4,
-    "last": "2026-11-13"
+    "days": 5,
+    "last": "2026-11-15"
   },
   "winnerspirit-miracle-205": {
     "since": "2026-11-09",
-    "days": 3,
-    "last": "2026-11-13"
+    "days": 4,
+    "last": "2026-11-15"
   },
   "footjoy-premiere-packard-shoes": {
     "since": "2026-11-09",
-    "days": 6,
-    "last": "2026-11-14"
+    "days": 7,
+    "last": "2026-11-15"
   },
   "honma-nx-women-driver": {
     "since": "2026-11-09",
-    "days": 6,
-    "last": "2026-11-14"
+    "days": 7,
+    "last": "2026-11-15"
   },
   "majesty-prestigio13-hybrid": {
     "since": "2026-11-09",
@@ -107,38 +107,33 @@
   },
   "taylormade-qi35max-rescue": {
     "since": "2026-11-09",
-    "days": 3,
-    "last": "2026-11-13"
+    "days": 4,
+    "last": "2026-11-15"
   },
   "honma-beres09-women-driver": {
     "since": "2026-11-10",
-    "days": 5,
-    "last": "2026-11-14"
+    "days": 6,
+    "last": "2026-11-15"
   },
   "bridgestone-tour-b-rxs": {
     "since": "2026-11-10",
-    "days": 5,
-    "last": "2026-11-14"
+    "days": 6,
+    "last": "2026-11-15"
   },
   "callaway-elyte-td-fairway": {
     "since": "2026-11-10",
-    "days": 5,
-    "last": "2026-11-14"
-  },
-  "callaway-jaws-raw-wedge": {
-    "since": "2026-11-10",
-    "days": 5,
-    "last": "2026-11-14"
+    "days": 6,
+    "last": "2026-11-15"
   },
   "callaway-reva-women-driver": {
     "since": "2026-11-10",
-    "days": 5,
-    "last": "2026-11-14"
+    "days": 6,
+    "last": "2026-11-15"
   },
   "majesty-royalgold-fairway": {
     "since": "2026-11-10",
-    "days": 3,
-    "last": "2026-11-13"
+    "days": 4,
+    "last": "2026-11-15"
   },
   "mizuno-stmax230-driver": {
     "since": "2026-11-10",
@@ -157,48 +152,38 @@
   },
   "taylormade-p8cb-women-iron": {
     "since": "2026-11-11",
-    "days": 2,
-    "last": "2026-11-13"
-  },
-  "taylormade-stealth-women-rescue": {
-    "since": "2026-11-11",
-    "days": 2,
-    "last": "2026-11-13"
+    "days": 3,
+    "last": "2026-11-15"
   },
   "taylormade-tour-response-stripe": {
     "since": "2026-11-11",
-    "days": 2,
-    "last": "2026-11-13"
-  },
-  "titleist-pro-v1": {
-    "since": "2026-11-11",
-    "days": 2,
-    "last": "2026-11-13"
+    "days": 3,
+    "last": "2026-11-15"
   },
   "xxio-prime-women-fairway": {
     "since": "2026-11-11",
-    "days": 2,
-    "last": "2026-11-13"
+    "days": 3,
+    "last": "2026-11-15"
   },
   "xxio13-hybrid": {
     "since": "2026-11-11",
-    "days": 2,
-    "last": "2026-11-13"
+    "days": 3,
+    "last": "2026-11-15"
   },
   "bj-sml-putting-trainer": {
     "since": "2026-11-11",
-    "days": 4,
-    "last": "2026-11-14"
+    "days": 5,
+    "last": "2026-11-15"
   },
   "honma-aizu-women-hybrid": {
     "since": "2026-11-11",
-    "days": 4,
-    "last": "2026-11-14"
+    "days": 5,
+    "last": "2026-11-15"
   },
   "honma-nx-women-fairway": {
     "since": "2026-11-11",
-    "days": 4,
-    "last": "2026-11-14"
+    "days": 5,
+    "last": "2026-11-15"
   },
   "ping-womens-mesh-pair-glove": {
     "since": "2026-11-12",
@@ -232,73 +217,68 @@
   },
   "callaway-elyte-td-driver": {
     "since": "2026-11-12",
-    "days": 3,
-    "last": "2026-11-14"
+    "days": 4,
+    "last": "2026-11-15"
   },
   "honma-beres09-fairway": {
     "since": "2026-11-12",
-    "days": 3,
-    "last": "2026-11-14"
+    "days": 4,
+    "last": "2026-11-15"
   },
   "honma-kiwami6-women-fairway": {
     "since": "2026-11-12",
-    "days": 3,
-    "last": "2026-11-14"
+    "days": 4,
+    "last": "2026-11-15"
   },
   "taylormade-qi4d-fairway": {
     "since": "2026-11-13",
-    "days": 1,
-    "last": "2026-11-13"
+    "days": 2,
+    "last": "2026-11-15"
   },
   "taylormade-qi4dmax-fairway": {
     "since": "2026-11-13",
-    "days": 1,
-    "last": "2026-11-13"
+    "days": 2,
+    "last": "2026-11-15"
   },
   "taylormade-stealth-women-iron": {
     "since": "2026-11-13",
-    "days": 1,
-    "last": "2026-11-13"
-  },
-  "voicecaddie-vc4": {
-    "since": "2026-11-13",
-    "days": 1,
-    "last": "2026-11-13"
+    "days": 2,
+    "last": "2026-11-15"
   },
   "xxio13-women-driver": {
     "since": "2026-11-13",
-    "days": 1,
-    "last": "2026-11-13"
+    "days": 2,
+    "last": "2026-11-15"
   },
   "adidas-women-cool-pair-glove": {
     "since": "2026-11-13",
-    "days": 2,
-    "last": "2026-11-14"
+    "days": 3,
+    "last": "2026-11-15"
   },
   "bridgestone-241cb-iron": {
     "since": "2026-11-13",
-    "days": 2,
-    "last": "2026-11-14"
+    "days": 3,
+    "last": "2026-11-15"
   },
   "callaway-xforged-max-iron": {
     "since": "2026-11-13",
-    "days": 2,
-    "last": "2026-11-14"
+    "days": 3,
+    "last": "2026-11-15"
   },
   "footjoy-flow2-boa-women-shoes": {
     "since": "2026-11-13",
-    "days": 2,
-    "last": "2026-11-14"
+    "days": 3,
+    "last": "2026-11-15"
   },
   "footjoy-wintersof-women-pair-glove": {
     "since": "2026-11-13",
-    "days": 2,
-    "last": "2026-11-14"
+    "days": 3,
+    "last": "2026-11-15"
   },
   "jogeuman-tempoflex": {
     "since": "2026-11-13",
-    "days": 2,
-    "last": "2026-11-14"
+    "days": 3,
+    "last": "2026-11-15"
   },
   "mizuno-jpxs40-women-iron": {
     "since": "2026-11-14",
@@ -310,24 +290,64 @@
     "days": 1,
     "last": "2026-11-14"
   },
-  "adidas-adipower-sl-women-shoes": {
-    "since": "2026-11-14",
-    "days": 1,
-    "last": "2026-11-14"
-  },
-  "cleveland-cgc23078i-cart": {
-    "since": "2026-11-14",
-    "days": 1,
-    "last": "2026-11-14"
-  },
   "ecco-biom-c4-shoes": {
     "since": "2026-11-14",
-    "days": 1,
-    "last": "2026-11-14"
+    "days": 2,
+    "last": "2026-11-15"
   },
   "ecco-street-720-goretex-shoes": {
     "since": "2026-11-14",
+    "days": 2,
+    "last": "2026-11-15"
+  },
+  "majesty-royalgold-hybrid": {
+    "since": "2026-11-15",
     "days": 1,
-    "last": "2026-11-14"
+    "last": "2026-11-15"
+  },
+  "taylormade-qi10max-rescue": {
+    "since": "2026-11-15",
+    "days": 1,
+    "last": "2026-11-15"
+  },
+  "taylormade-qi35-fairway": {
+    "since": "2026-11-15",
+    "days": 1,
+    "last": "2026-11-15"
+  },
+  "taylormade-qi35-rescue": {
+    "since": "2026-11-15",
+    "days": 1,
+    "last": "2026-11-15"
+  },
+  "titleist-pro-v1x": {
+    "since": "2026-11-15",
+    "days": 1,
+    "last": "2026-11-15"
+  },
+  "titleist-pro-v1x-left-dash": {
+    "since": "2026-11-15",
+    "days": 1,
+    "last": "2026-11-15"
+  },
+  "adidas-s2g-shoes": {
+    "since": "2026-11-15",
+    "days": 1,
+    "last": "2026-11-15"
+  },
+  "callaway-elyte-women-fairway": {
+    "since": "2026-11-15",
+    "days": 1,
+    "last": "2026-11-15"
+  },
+  "evnroll-er22-putter": {
+    "since": "2026-11-15",
+    "days": 1,
+    "last": "2026-11-15"
+  },
+  "garmin-approach-s50": {
+    "since": "2026-11-15",
+    "days": 1,
+    "last": "2026-11-15"
   }
 }
