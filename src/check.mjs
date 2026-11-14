@@ -127,6 +127,20 @@ add(
   '최근 30일 쿠팡 클릭·조회가 많은 순서입니다. 같은 모델의 다른 쿠팡 판매글이 있으면 src/expand 로 찾아 링크를 바꾸고(gone 지움), 단종이면 그대로 둔다(주소 유지).',
 );
 
+// 2026-11-15: 곧 판매 종료 처리될 상품 — 쿠팡 API 에서 3~4일 연속 못 찾은 상품(5일이면 gone, 링크 숨김).
+// 판매 종료가 하루 10개 안팎씩 늘어 숨겨진 뒤에야 다시 잇기를 하게 되므로, 숨겨지기 전에 클릭·조회 많은 순으로 알린다.
+const GONE_DAYS = 5; // src/prices/coupang-refresh.mjs 와 같은 값
+const miss = readJson(join(ROOT, 'config', 'coupang-missing.json'), {});
+const nearGone = Object.entries(miss)
+  .filter(([id, m]) => !id.startsWith('_') && picks[id] && !picks[id].gone && m?.days >= GONE_DAYS - 2 && m.days < GONE_DAYS)
+  .sort(([a, x], [b, y]) => pv(b) - pv(a) || y.days - x.days || a.localeCompare(b));
+add(
+  `곧 판매 종료 처리될 상품 (쿠팡 API 에서 ${GONE_DAYS - 2}~${GONE_DAYS - 1}일 연속 못 찾음 → ${GONE_DAYS}일이면 링크 숨김)`,
+  nearGone.map(([id, m]) => `${name(id)} (\`${id}\`): ${m.since} 부터 ${m.days}일째${inGuides.has(id) ? '' : ' · 가이드에 없음'}${pvNote(id)}`),
+  '최근 30일 쿠팡 클릭·조회가 많은 순서입니다. 일시 품절이면 다시 찾는 날 저절로 풀립니다. 판매글이 내려간 것이면 숨겨지기 전에 같은 모델의 다른 쿠팡 판매글을 src/expand 로 찾아 링크를 바꾸면 클릭이 끊기지 않습니다.',
+  nearGone.length,
+);
+
 const total =sections.reduce((s, x) => s + x.count, 0);
 const md = [
   `## 데이터 점검 ${today}`,
