@@ -199,20 +199,20 @@
       "d": "2026-11-11"
     },
     "/p/titleist-players5-carbon-stand": {
-      "h": "babf92b1d7c1a1a8",
-      "d": "2026-11-11"
+      "h": "81ac7135f0962f8d",
+      "d": "2026-11-15"
     },
     "/p/sunmountain-h2no-stand": {
-      "h": "feaf58017bc45073",
-      "d": "2026-11-11"
+      "h": "1e2802b4d0cc737f",
+      "d": "2026-11-15"
     },
     "/p/titleist-cart14-bag": {
-      "h": "ad2c5206bfd69aae",
-      "d": "2026-11-11"
+      "h": "7ca4e5f927d569da",
+      "d": "2026-11-15"
     },
     "/p/ping-sporty-lt-bag": {
-      "h": "ef97518bc44d1969",
-      "d": "2026-11-11"
+      "h": "01f62e5b969d7fad",
+      "d": "2026-11-15"
     },
     "/p/footjoy-pure-touch-glove": {
       "h": "00853a88516176b6",
@@ -1199,8 +1199,8 @@
       "d": "2026-11-11"
     },
     "/p/pxg-xtreme-hybrid-stand": {
-      "h": "1718374050092e46",
-      "d": "2026-11-14"
+      "h": "3b01860bcced153c",
+      "d": "2026-11-15"
     },
     "/p/ping-pioneer-cart": {
       "h": "2fba075c6326ebe2",
@@ -1871,12 +1871,12 @@
       "d": "2026-11-11"
     },
     "/p/titleist-players4-carbon-stand": {
-      "h": "e3c2d90d9a67185f",
-      "d": "2026-11-14"
+      "h": "192f2899b266b3c5",
+      "d": "2026-11-15"
     },
     "/p/pxg-lightweight-carry-stand": {
-      "h": "a6d9092ba3f73c5b",
-      "d": "2026-11-14"
+      "h": "9357c9c9fa90270a",
+      "d": "2026-11-15"
     },
     "/p/ping-sporty-mj-cart": {
       "h": "fe0d6a998aa050b2",
@@ -1911,8 +1911,8 @@
       "d": "2026-11-11"
     },
     "/p/xxio-essential-cart": {
-      "h": "542c944d24c88dfe",
-      "d": "2026-11-14"
+      "h": "6dc24b8e471e2190",
+      "d": "2026-11-15"
     },
     "/p/cleveland-urban-cart": {
       "h": "9c163c8c0b52058d",
@@ -2475,20 +2475,20 @@
       "d": "2026-11-11"
     },
     "/p/callaway-racer-stand-2026": {
-      "h": "9ae7348766d0aa67",
-      "d": "2026-11-14"
+      "h": "4f4f8e9aa2f29ec6",
+      "d": "2026-11-15"
     },
     "/p/pxg-meshed-lightweight-stand": {
-      "h": "2ec166e8c6670378",
-      "d": "2026-11-14"
+      "h": "5aa165be35bce379",
+      "d": "2026-11-15"
     },
     "/p/pxg-aluminum-lightweight-stand": {
-      "h": "793debb61248ae9b",
-      "d": "2026-11-14"
+      "h": "da5d9d1bae2f9dc0",
+      "d": "2026-11-15"
     },
     "/p/pxg-fairway-lite-cart": {
-      "h": "25be4e154a5cb9c3",
-      "d": "2026-11-14"
+      "h": "41375f1607db1eba",
+      "d": "2026-11-15"
     },
     "/p/volvik-performance-wheel-stand": {
       "h": "40f286124590bc30",
@@ -2799,8 +2799,8 @@
       "d": "2026-11-11"
     },
     "/p/taylormade-global-tour-stand": {
-      "h": "86cdcb06f001ae85",
-      "d": "2026-11-14"
+      "h": "36434887f7f16d8f",
+      "d": "2026-11-15"
     },
     "/p/taylormade-play-lite-cart": {
       "h": "0bcc4e5e2ae5d06b",
@@ -3239,23 +3239,27 @@
       "d": "2026-11-15"
     },
     "/p/adidas-codechaos27-boa-shoes": {
-      "h": "d34c53b945dc81bb",
+      "h": "0950e1f7589ad1b2",
       "d": "2026-11-15"
     },
     "/p/ecco-biom-c5-shoes": {
-      "h": "062fa4d7be6da708",
+      "h": "affa557a61feb7af",
       "d": "2026-11-15"
     },
     "/p/adidas-adipower26-boa-shoes": {
-      "h": "67b302502a70bff2",
+      "h": "b0a6621764c61eba",
       "d": "2026-11-15"
     },
     "/p/adidas-adipower26-boa-women-shoes": {
-      "h": "9bf351e957bbec11",
+      "h": "d6ed28d8a5ce185c",
       "d": "2026-11-15"
     },
     "/p/wideangle-cloudium-fancy-women-shoes": {
-      "h": "7be0e0b4655c606f",
+      "h": "2cef86a23e0c6852",
+      "d": "2026-11-15"
+    },
+    "/p/sunmountain-c130-cart": {
+      "h": "ded77381e390e5a8",
       "d": "2026-11-15"
     },
     "/c/driver": {
@@ -3303,8 +3307,8 @@
       "d": "2026-11-15"
     },
     "/c/bag": {
-      "h": "952f31cb8ba6b916",
-      "d": "2026-11-14"
+      "h": "4f604f5c6a1b5553",
+      "d": "2026-11-15"
     },
     "/c/glove": {
       "h": "db12c0fd1a1f091b",
@@ -3371,7 +3375,7 @@
       "d": "2026-11-15"
     },
     "/g/golf-bag-recommend": {
-      "h": "f349382692592e4a",
+      "h": "a526d404857ff33a",
       "d": "2026-11-15"
     },
     "/g/golf-glove-recommend": {
@@ -3619,7 +3623,7 @@
       "d": "2026-11-06"
     },
     "/": {
-      "h": "13940bae9144c213",
+      "h": "fc113d9e5befbfeb",
       "d": "2026-11-15"
     },
     "/about": {
@@ -4115,12 +4119,12 @@
       "d": "2026-11-11"
     },
     "/vs/ping-sporty-lt-bag-vs-titleist-cart14-bag": {
-      "h": "8572187917c1b7c5",
-      "d": "2026-11-02"
+      "h": "dd0f80ba99f6890b",
+      "d": "2026-11-15"
     },
     "/vs/ping-sporty-lt-bag-vs-titleist-players5-carbon-stand": {
-      "h": "ef2eecb0755d7944",
-      "d": "2026-11-02"
+      "h": "1d5b13728ce94f28",
+      "d": "2026-11-15"
     },
     "/vs/pistop-topswing-trainer-vs-swingimpact-swingcaddie": {
       "h": "5bed75ebcea1453d",
@@ -4171,16 +4175,16 @@
       "d": "2026-10-25"
     },
     "/vs/sunmountain-h2no-stand-vs-ping-sporty-lt-bag": {
-      "h": "fc026dcc1ac2d811",
-      "d": "2026-10-24"
+      "h": "4f9cfbe61044f6ab",
+      "d": "2026-11-15"
     },
     "/vs/sunmountain-h2no-stand-vs-titleist-cart14-bag": {
-      "h": "f09f221e75078ee2",
-      "d": "2026-11-02"
+      "h": "27c1734fd714395c",
+      "d": "2026-11-15"
     },
     "/vs/sunmountain-h2no-stand-vs-titleist-players5-carbon-stand": {
-      "h": "039ea54b1349df95",
-      "d": "2026-11-02"
+      "h": "1dd1654c3f3af4c4",
+      "d": "2026-11-15"
     },
     "/vs/taylormade-p790-iron-vs-ping-i525-iron": {
       "h": "049703a190e8383d",
@@ -4271,8 +4275,8 @@
       "d": "2026-11-12"
     },
     "/vs/titleist-players5-carbon-stand-vs-titleist-cart14-bag": {
-      "h": "e2e2687f7a2b573b",
-      "d": "2026-11-02"
+      "h": "41402efa906cc915",
+      "d": "2026-11-15"
     },
     "/vs/titleist-pro-v1-vs-srixon-z-star": {
       "h": "3af2fd26a155bbe4",
@@ -4905,31 +4909,6 @@
       "d": "2026-11-15"
     },
     {
-      "url": "/p/adidas-codechaos27-boa-shoes",
-      "kind": "new",
-      "d": "2026-11-15"
-    },
-    {
-      "url": "/p/ecco-biom-c5-shoes",
-      "kind": "new",
-      "d": "2026-11-15"
-    },
-    {
-      "url": "/p/adidas-adipower26-boa-shoes",
-      "kind": "new",
-      "d": "2026-11-15"
-    },
-    {
-      "url": "/p/adidas-adipower26-boa-women-shoes",
-      "kind": "new",
-      "d": "2026-11-15"
-    },
-    {
-      "url": "/p/wideangle-cloudium-fancy-women-shoes",
-      "kind": "new",
-      "d": "2026-11-15"
-    },
-    {
       "url": "/c/shoes",
       "kind": "updated",
       "d": "2026-11-15"
@@ -5005,11 +4984,6 @@
       "d": "2026-11-15"
     },
     {
-      "url": "/g/golf-bag-recommend",
-      "kind": "updated",
-      "d": "2026-11-15"
-    },
-    {
       "url": "/g/golf-glove-recommend",
       "kind": "updated",
       "d": "2026-11-15"
@@ -5031,11 +5005,6 @@
     },
     {
       "url": "/g/golf-shoes-recommend-intermediate",
-      "kind": "updated",
-      "d": "2026-11-15"
-    },
-    {
-      "url": "/",
       "kind": "updated",
       "d": "2026-11-15"
     },
@@ -5096,6 +5065,146 @@
     },
     {
       "url": "/vs/footjoy-pulse-boa-women-shoes-vs-footjoy-flow2-boa-women-shoes",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/titleist-players5-carbon-stand",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/sunmountain-h2no-stand",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/titleist-cart14-bag",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/ping-sporty-lt-bag",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/pxg-xtreme-hybrid-stand",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/titleist-players4-carbon-stand",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/pxg-lightweight-carry-stand",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/xxio-essential-cart",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/callaway-racer-stand-2026",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/pxg-meshed-lightweight-stand",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/pxg-aluminum-lightweight-stand",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/pxg-fairway-lite-cart",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/taylormade-global-tour-stand",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/adidas-codechaos27-boa-shoes",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/ecco-biom-c5-shoes",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/adidas-adipower26-boa-shoes",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/adidas-adipower26-boa-women-shoes",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/wideangle-cloudium-fancy-women-shoes",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/p/sunmountain-c130-cart",
+      "kind": "new",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/c/bag",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/g/golf-bag-recommend",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/vs/ping-sporty-lt-bag-vs-titleist-cart14-bag",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/vs/ping-sporty-lt-bag-vs-titleist-players5-carbon-stand",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/vs/sunmountain-h2no-stand-vs-ping-sporty-lt-bag",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/vs/sunmountain-h2no-stand-vs-titleist-cart14-bag",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/vs/sunmountain-h2no-stand-vs-titleist-players5-carbon-stand",
+      "kind": "updated",
+      "d": "2026-11-15"
+    },
+    {
+      "url": "/vs/titleist-players5-carbon-stand-vs-titleist-cart14-bag",
       "kind": "updated",
       "d": "2026-11-15"
     }
