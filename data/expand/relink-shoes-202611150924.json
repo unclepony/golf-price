@@ -1,0 +1,58 @@
+[
+ {
+  "id": "footjoy-premiere-packard-shoes",
+  "query": "풋조이 프리미어 패커드 골프화 남성",
+  "must": [
+   "풋조이",
+   "프리미어"
+  ],
+  "mustAny": [
+   "패커드",
+   "packard"
+  ],
+  "exclude": [
+   "깔창",
+   "여성",
+   "중고",
+   "직구",
+   "해외",
+   "병행"
+  ]
+ },
+ {
+  "id": "footjoy-flow2-boa-women-shoes",
+  "query": "풋조이 플로우 2.0 보아 여성 골프화",
+  "must": [
+   "풋조이",
+   "플로우"
+  ],
+  "exclude": [
+   "중고",
+   "남성",
+   "직구",
+   "해외",
+   "병행"
+  ]
+ },
+ {
+  "id": "footjoy-pro-sl",
+  "query": "풋조이 프로SL 골프화",
+  "must": [
+   "풋조이"
+  ],
+  "mustAny": [
+   "prosl",
+   "프로sl"
+  ],
+  "exclude": [
+   "깔창",
+   "스파이크징",
+   "slx",
+   "프로slx",
+   "중고",
+   "직구",
+   "해외",
+   "병행"
+  ]
+ }
+]
