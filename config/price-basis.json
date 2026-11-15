@@ -1747,8 +1747,8 @@
       "d": "2026-11-08"
     },
     "onoff-lp425-women-driver": {
-      "won": 649000,
-      "d": "2026-11-08"
+      "won": 890000,
+      "d": "2026-11-15"
     },
     "onoff-lp425-women-fairway": {
       "won": 530000,
@@ -1943,8 +1943,8 @@
       "d": "2026-11-13"
     },
     "ping-gle3-women-driver": {
-      "won": 560000,
-      "d": "2026-11-08"
+      "won": 730000,
+      "d": "2026-11-15"
     },
     "ping-gle3-women-fairway": {
       "won": 350000,
@@ -2109,6 +2109,10 @@
     "prgr-superegg-fairway": {
       "won": 380930,
       "d": "2026-11-09"
+    },
+    "prgr-superegg-hexa-women-driver": {
+      "won": 1310000,
+      "d": "2026-11-15"
     },
     "prgr-superegg-hybrid": {
       "won": 306040,
