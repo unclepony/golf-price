@@ -101,8 +101,16 @@ jobs:
           git status --short | grep -v '^??' || true
           for i in 1 2 3; do
             if ! git pull --rebase --autostash; then
-              if [ "$(git diff --name-only --diff-filter=U)" = "config/content-state.json" ]; then
-                git checkout --ours config/content-state.json
+              # 11-16 새벽: 상품 늘리기 작업과 config/coupang-missing.json 도 충돌해 실패 → 그 파일은 src/merge-missing.mjs 로 합친다
+              CONFLICTS="$(git diff --name-only --diff-filter=U)"
+              echo "충돌 파일: $CONFLICTS"
+              if [ -n "$CONFLICTS" ] && ! echo "$CONFLICTS" | grep -qvxE 'config/content-state\.json|config/coupang-missing\.json'; then
+                if echo "$CONFLICTS" | grep -qx 'config/coupang-missing.json'; then
+                  node src/merge-missing.mjs
+                fi
+                if echo "$CONFLICTS" | grep -qx 'config/content-state.json'; then
+                  git checkout --ours config/content-state.json
+                fi
                 node src/build.mjs > /dev/null
                 git add data config
                 GIT_EDITOR=true git rebase --continue
