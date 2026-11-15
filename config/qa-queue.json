@@ -208,6 +208,13 @@
       "slug": "golf-first-round-checklist",
       "file": "content/qa/029-golf-first-round-checklist.md",
       "date": "2026-11-15"
+    },
+    {
+      "no": 25,
+      "kw": "드라이버 MAX LS 차이",
+      "slug": "driver-max-vs-ls",
+      "file": "content/qa/025-driver-max-vs-ls.md",
+      "date": "2026-11-16"
     }
   ]
 }
