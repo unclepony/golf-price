@@ -40,11 +40,6 @@
     "days": 8,
     "last": "2026-11-15"
   },
-  "mizuno-stmax230-hybrid": {
-    "since": "2026-11-07",
-    "days": 5,
-    "last": "2026-11-14"
-  },
   "ping-gle4-women-fairway": {
     "since": "2026-11-07",
     "days": 5,
@@ -70,11 +65,6 @@
     "days": 4,
     "last": "2026-11-15"
   },
-  "majesty-prestigio13-hybrid": {
-    "since": "2026-11-09",
-    "days": 5,
-    "last": "2026-11-14"
-  },
   "majesty-prestigio13-women-fairway": {
     "since": "2026-11-09",
     "days": 5,
@@ -84,11 +74,6 @@
     "since": "2026-11-09",
     "days": 4,
     "last": "2026-11-14"
-  },
-  "taylormade-qi35max-rescue": {
-    "since": "2026-11-09",
-    "days": 4,
-    "last": "2026-11-15"
   },
   "bridgestone-tour-b-rxs": {
     "since": "2026-11-10",
@@ -126,11 +111,6 @@
     "last": "2026-11-15"
   },
   "xxio-prime-women-fairway": {
-    "since": "2026-11-11",
-    "days": 3,
-    "last": "2026-11-15"
-  },
-  "xxio13-hybrid": {
     "since": "2026-11-11",
     "days": 3,
     "last": "2026-11-15"
