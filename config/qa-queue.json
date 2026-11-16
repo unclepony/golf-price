@@ -215,6 +215,13 @@
       "slug": "driver-max-vs-ls",
       "file": "content/qa/025-driver-max-vs-ls.md",
       "date": "2026-11-16"
+    },
+    {
+      "no": 24,
+      "kw": "블레이드 말렛 퍼터 차이",
+      "slug": "blade-vs-mallet-putter",
+      "file": "content/qa/024-blade-vs-mallet-putter.md",
+      "date": "2026-11-17"
     }
   ]
 }

@@ -3535,8 +3535,8 @@
       "d": "2026-11-16"
     },
     "/g/putter-recommend": {
-      "h": "6a731d26274e2bf6",
-      "d": "2026-11-15"
+      "h": "9069e1a7a75a6bc6",
+      "d": "2026-11-17"
     },
     "/g/golf-shoes-recommend": {
       "h": "947bbab778dbadb1",
@@ -3807,24 +3807,28 @@
       "d": "2026-11-11"
     },
     "/qa/womens-driver-beginner": {
-      "h": "e7d88bc3df45c06f",
-      "d": "2026-11-16"
+      "h": "490286a0d5f0f8cc",
+      "d": "2026-11-17"
     },
     "/qa/golf-first-round-checklist": {
-      "h": "354506c8636e1dd5",
-      "d": "2026-11-16"
+      "h": "a6b5387f63259660",
+      "d": "2026-11-17"
     },
     "/qa/womens-iron-beginner": {
-      "h": "f9bf46782a9c6eb3",
-      "d": "2026-11-16"
+      "h": "a42f510b3c672f3c",
+      "d": "2026-11-17"
     },
     "/qa/golf-gps-watch-beginner": {
-      "h": "cd5cdd93bec276a9",
-      "d": "2026-11-16"
+      "h": "c2a712c92c08d18d",
+      "d": "2026-11-17"
     },
     "/qa/driver-max-vs-ls": {
-      "h": "c1bf7d4ff99ee670",
-      "d": "2026-11-16"
+      "h": "2372bb49533bb473",
+      "d": "2026-11-17"
+    },
+    "/qa/blade-vs-mallet-putter": {
+      "h": "3f541b9250e49e41",
+      "d": "2026-11-17"
     },
     "/qa/sand-vs-gap-wedge": {
       "h": "bb8641be7d5cfc5b",
@@ -3919,8 +3923,8 @@
       "d": "2026-11-16"
     },
     "/qa": {
-      "h": "43b25ea1250a8346",
-      "d": "2026-11-16"
+      "h": "5e9c4ba7795a41c2",
+      "d": "2026-11-17"
     },
     "/vs/adidas-adipower-sl-women-shoes-vs-footjoy-pulse-boa-women-shoes": {
       "h": "b3fa85dc7bf6c11d",
@@ -4790,11 +4794,6 @@
     },
     {
       "url": "/g/rangefinder-recommend",
-      "kind": "updated",
-      "d": "2026-11-15"
-    },
-    {
-      "url": "/g/putter-recommend",
       "kind": "updated",
       "d": "2026-11-15"
     },
@@ -5984,31 +5983,6 @@
       "d": "2026-11-16"
     },
     {
-      "url": "/qa/womens-driver-beginner",
-      "kind": "updated",
-      "d": "2026-11-16"
-    },
-    {
-      "url": "/qa/golf-first-round-checklist",
-      "kind": "updated",
-      "d": "2026-11-16"
-    },
-    {
-      "url": "/qa/womens-iron-beginner",
-      "kind": "updated",
-      "d": "2026-11-16"
-    },
-    {
-      "url": "/qa/golf-gps-watch-beginner",
-      "kind": "updated",
-      "d": "2026-11-16"
-    },
-    {
-      "url": "/qa/driver-max-vs-ls",
-      "kind": "new",
-      "d": "2026-11-16"
-    },
-    {
       "url": "/qa/sand-vs-gap-wedge",
       "kind": "updated",
       "d": "2026-11-16"
@@ -6120,11 +6094,6 @@
     },
     {
       "url": "/qa/beginner-golf-club-set",
-      "kind": "updated",
-      "d": "2026-11-16"
-    },
-    {
-      "url": "/qa",
       "kind": "updated",
       "d": "2026-11-16"
     },
@@ -8465,6 +8434,46 @@
     },
     {
       "url": "/vs/taylormade-qi35-fairway-vs-taylormade-qi4dmax-fairway",
+      "kind": "updated",
+      "d": "2026-11-17"
+    },
+    {
+      "url": "/g/putter-recommend",
+      "kind": "updated",
+      "d": "2026-11-17"
+    },
+    {
+      "url": "/qa/womens-driver-beginner",
+      "kind": "updated",
+      "d": "2026-11-17"
+    },
+    {
+      "url": "/qa/golf-first-round-checklist",
+      "kind": "updated",
+      "d": "2026-11-17"
+    },
+    {
+      "url": "/qa/womens-iron-beginner",
+      "kind": "updated",
+      "d": "2026-11-17"
+    },
+    {
+      "url": "/qa/golf-gps-watch-beginner",
+      "kind": "updated",
+      "d": "2026-11-17"
+    },
+    {
+      "url": "/qa/driver-max-vs-ls",
+      "kind": "updated",
+      "d": "2026-11-17"
+    },
+    {
+      "url": "/qa/blade-vs-mallet-putter",
+      "kind": "new",
+      "d": "2026-11-17"
+    },
+    {
+      "url": "/qa",
       "kind": "updated",
       "d": "2026-11-17"
     }
