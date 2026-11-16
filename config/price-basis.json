@@ -327,7 +327,7 @@
       "d": "2026-11-08"
     },
     "callaway-elyte-women-fairway": {
-      "won": 260000,
+      "won": 269000,
       "d": "2026-11-16"
     },
     "callaway-elyte-women-hybrid": {
@@ -1091,8 +1091,8 @@
       "d": "2026-11-16"
     },
     "honma-aizu-women-fairway": {
-      "won": 361000,
-      "d": "2026-11-08"
+      "won": 286000,
+      "d": "2026-11-16"
     },
     "honma-aizu-women-hybrid": {
       "won": 290160,
@@ -1207,7 +1207,7 @@
       "d": "2026-11-09"
     },
     "honma-kiwami6-women-fairway": {
-      "won": 259000,
+      "won": 253630,
       "d": "2026-11-16"
     },
     "honma-nx-women-driver": {
@@ -1215,8 +1215,8 @@
       "d": "2026-11-16"
     },
     "honma-nx-women-fairway": {
-      "won": 109000,
-      "d": "2026-11-08"
+      "won": 170000,
+      "d": "2026-11-16"
     },
     "honma-tw747-putter": {
       "won": 200000,
@@ -1403,8 +1403,8 @@
       "d": "2026-11-08"
     },
     "majesty-prestigio13-women-fairway": {
-      "won": 1030000,
-      "d": "2026-11-08"
+      "won": 910030,
+      "d": "2026-11-16"
     },
     "majesty-prestigio13-women-iron": {
       "won": 2795000,
@@ -1966,6 +1966,10 @@
       "won": 690000,
       "d": "2026-11-08"
     },
+    "ping-g440hl-women-fairway": {
+      "won": 390000,
+      "d": "2026-11-16"
+    },
     "ping-g440k-driver": {
       "won": 865000,
       "d": "2026-11-16"
@@ -2158,6 +2162,10 @@
       "won": 626300,
       "d": "2026-11-16"
     },
+    "prgr-crystalegg-women-fairway": {
+      "won": 488000,
+      "d": "2026-11-16"
+    },
     "prgr-superegg-fairway": {
       "won": 380920,
       "d": "2026-11-16"
@@ -2165,6 +2173,10 @@
     "prgr-superegg-hexa-women-driver": {
       "won": 1310000,
       "d": "2026-11-15"
+    },
+    "prgr-superegg-hexa-women-fairway": {
+      "won": 830370,
+      "d": "2026-11-16"
     },
     "prgr-superegg-hybrid": {
       "won": 277500,
@@ -2273,6 +2285,10 @@
     "pxg-lightning-tourmid-driver": {
       "won": 690000,
       "d": "2026-11-08"
+    },
+    "pxg-lightning-women-fairway": {
+      "won": 440000,
+      "d": "2026-11-16"
     },
     "pxg-lightweight-carry-stand": {
       "won": 299000,
@@ -2546,6 +2562,10 @@
       "won": 715200,
       "d": "2026-11-08"
     },
+    "taylormade-glory27-women-fairway": {
+      "won": 578000,
+      "d": "2026-11-16"
+    },
     "taylormade-hitoe3-wedge": {
       "won": 139000,
       "d": "2026-11-11"
@@ -2679,8 +2699,8 @@
       "d": "2026-11-16"
     },
     "taylormade-qi35maxlite-women-fairway": {
-      "won": 338530,
-      "d": "2026-11-08"
+      "won": 289000,
+      "d": "2026-11-16"
     },
     "taylormade-qi35maxlite-women-hybrid": {
       "won": 257290,
@@ -3235,8 +3255,8 @@
       "d": "2026-11-16"
     },
     "xxio14-women-fairway": {
-      "won": 474000,
-      "d": "2026-11-08"
+      "won": 545990,
+      "d": "2026-11-16"
     },
     "xxio14-women-hybrid": {
       "won": 439000,
