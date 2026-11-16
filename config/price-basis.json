@@ -110,6 +110,10 @@
       "won": 290000,
       "d": "2026-11-08"
     },
+    "bridgestone-bld-women-hybrid": {
+      "won": 280000,
+      "d": "2026-11-16"
+    },
     "bridgestone-brm2-wedge": {
       "won": 270000,
       "d": "2026-11-08"
@@ -634,6 +638,10 @@
       "won": 495500,
       "d": "2026-11-11"
     },
+    "cobra-airx2-women-hybrid": {
+      "won": 170500,
+      "d": "2026-11-16"
+    },
     "cobra-darkspeed-hybrid": {
       "won": 159000,
       "d": "2026-11-08"
@@ -685,6 +693,10 @@
     "cobra-dsadapt-iron": {
       "won": 1120000,
       "d": "2026-11-08"
+    },
+    "cobra-dsadapt-women-hybrid": {
+      "won": 350000,
+      "d": "2026-11-16"
     },
     "cobra-dsadaptmax-women-fairway": {
       "won": 479400,
@@ -1095,8 +1107,8 @@
       "d": "2026-11-16"
     },
     "honma-aizu-women-hybrid": {
-      "won": 290160,
-      "d": "2026-11-08"
+      "won": 420000,
+      "d": "2026-11-16"
     },
     "honma-aizu-women-iron": {
       "won": 1454960,
@@ -1183,8 +1195,8 @@
       "d": "2026-11-16"
     },
     "honma-bezeal3-women-hybrid": {
-      "won": 360000,
-      "d": "2026-11-08"
+      "won": 210000,
+      "d": "2026-11-16"
     },
     "honma-bezeal3-women-iron": {
       "won": 1820000,
@@ -2023,8 +2035,8 @@
       "d": "2026-11-08"
     },
     "ping-gle4-women-hybrid": {
-      "won": 360000,
-      "d": "2026-11-08"
+      "won": 345000,
+      "d": "2026-11-16"
     },
     "ping-gle4-women-iron": {
       "won": 1790000,
@@ -2166,6 +2178,10 @@
       "won": 488000,
       "d": "2026-11-16"
     },
+    "prgr-crystalegg-women-utility": {
+      "won": 436900,
+      "d": "2026-11-16"
+    },
     "prgr-superegg-fairway": {
       "won": 380920,
       "d": "2026-11-16"
@@ -2193,6 +2209,10 @@
     "prgr-superegg-women-utility": {
       "won": 290000,
       "d": "2026-11-08"
+    },
+    "prgr-superegg2026-women-utility": {
+      "won": 587580,
+      "d": "2026-11-16"
     },
     "prgr-sweep-women-driver": {
       "won": 210000,
@@ -2288,6 +2308,10 @@
     },
     "pxg-lightning-women-fairway": {
       "won": 440000,
+      "d": "2026-11-16"
+    },
+    "pxg-lightning-women-hybrid": {
+      "won": 400000,
       "d": "2026-11-16"
     },
     "pxg-lightweight-carry-stand": {
@@ -3174,6 +3198,10 @@
       "won": 2900000,
       "d": "2026-11-10"
     },
+    "xxio-primeroyal6-women-hybrid": {
+      "won": 590000,
+      "d": "2026-11-16"
+    },
     "xxio-primeroyal6-women-iron": {
       "won": 2750000,
       "d": "2026-11-08"
@@ -3259,8 +3287,8 @@
       "d": "2026-11-16"
     },
     "xxio14-women-hybrid": {
-      "won": 439000,
-      "d": "2026-11-08"
+      "won": 392820,
+      "d": "2026-11-16"
     },
     "xxio14-women-iron": {
       "won": 1485170,
@@ -3271,8 +3299,8 @@
       "d": "2026-11-16"
     },
     "yamaha-cs-hmplus-women-hybrid": {
-      "won": 224900,
-      "d": "2026-11-08"
+      "won": 196800,
+      "d": "2026-11-16"
     },
     "yamaha-drivestar-women-fairway": {
       "won": 385000,
