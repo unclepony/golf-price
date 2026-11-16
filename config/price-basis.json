@@ -2,9 +2,17 @@
   "_설명": "build.mjs 가 관리한다(gp-1108-1). 상품별 순서용 기준 가격(won)과 정한 날(d). 동점 순위·예산 추천·가장 싼 모델 고르기에만 쓴다. 판매가가 ±30% 넘게 바뀌거나 월요일에만 갱신. 직접 고치지 않는다.",
   "band": 0.3,
   "items": {
+    "18h-fastswing-trainer": {
+      "won": 58000,
+      "d": "2026-11-16"
+    },
     "18h-maxspeed-trainer": {
       "won": 78000,
       "d": "2026-11-08"
+    },
+    "2dend-swingfit": {
+      "won": 29900,
+      "d": "2026-11-16"
     },
     "adidas-adipower-sl-boa-shoes": {
       "won": 119000,
@@ -838,6 +846,10 @@
       "won": 125000,
       "d": "2026-11-08"
     },
+    "fieldman-putting-mat": {
+      "won": 129380,
+      "d": "2026-11-16"
+    },
     "footjoy-cabrettasof-glove": {
       "won": 42760,
       "d": "2026-11-16"
@@ -1034,6 +1046,10 @@
       "won": 54900,
       "d": "2026-11-09"
     },
+    "gil-wood-rail-putting-mat": {
+      "won": 45900,
+      "d": "2026-11-16"
+    },
     "golfbuddy-aim-w12": {
       "won": 203000,
       "d": "2026-11-08"
@@ -1054,9 +1070,17 @@
       "won": 44000,
       "d": "2026-11-09"
     },
+    "golflex-gbox-bodyturn": {
+      "won": 46900,
+      "d": "2026-11-16"
+    },
     "golflex-shot-tracker-2": {
       "won": 19900,
       "d": "2026-11-08"
+    },
+    "golflex-wrist-trainer": {
+      "won": 16700,
+      "d": "2026-11-16"
     },
     "goodprep-chipping-net": {
       "won": 20830,
@@ -1295,8 +1319,12 @@
       "d": "2026-11-09"
     },
     "jogeuman-tempoflex": {
-      "won": 34900,
-      "d": "2026-11-08"
+      "won": 37470,
+      "d": "2026-11-16"
+    },
+    "jogeuman-triangle-body-swing": {
+      "won": 19900,
+      "d": "2026-11-16"
     },
     "kasco-dolphin-dw123-wedge": {
       "won": 239500,
@@ -1625,6 +1653,10 @@
     "mutsumihonma-mh622-women-fairway": {
       "won": 305000,
       "d": "2026-11-08"
+    },
+    "myaiming-aimtempo": {
+      "won": 129000,
+      "d": "2026-11-16"
     },
     "mycaddie-gps-m2": {
       "won": 225000,
@@ -2115,8 +2147,8 @@
       "d": "2026-11-11"
     },
     "pistop-topswing-trainer": {
-      "won": 23980,
-      "d": "2026-11-08"
+      "won": 32000,
+      "d": "2026-11-16"
     },
     "powerrack-speedup-trainer": {
       "won": 25800,
@@ -2301,6 +2333,10 @@
     "roycow-swing-mat": {
       "won": 39000,
       "d": "2026-11-09"
+    },
+    "ruti-click-swing-trainer": {
+      "won": 49330,
+      "d": "2026-11-16"
     },
     "saintnine-n-pro": {
       "won": 37200,
@@ -2922,6 +2958,10 @@
       "won": 198000,
       "d": "2026-11-16"
     },
+    "todin-impact-powerbag-plus": {
+      "won": 36300,
+      "d": "2026-11-16"
+    },
     "todin-perfect-swing-trainer": {
       "won": 39000,
       "d": "2026-11-16"
@@ -2937,6 +2977,10 @@
     "ua-phantom-fore-boa-shoes": {
       "won": 224400,
       "d": "2026-11-08"
+    },
+    "under72-impact-sticker": {
+      "won": 14700,
+      "d": "2026-11-16"
     },
     "voicecaddie-l6": {
       "won": 279800,
@@ -3055,12 +3099,16 @@
       "d": "2026-11-08"
     },
     "winnerspirit-miracle-205": {
-      "won": 115900,
-      "d": "2026-11-08"
+      "won": 105600,
+      "d": "2026-11-16"
     },
     "winnerspirit-miracle-580-v3": {
       "won": 132000,
       "d": "2026-11-08"
+    },
+    "winnerspirit-play707-chipping-net": {
+      "won": 126000,
+      "d": "2026-11-16"
     },
     "wixx-speed-stick": {
       "won": 25900,
@@ -3242,6 +3290,10 @@
       "won": 510000,
       "d": "2026-11-08"
     },
+    "yeko-swing-mirror": {
+      "won": 48300,
+      "d": "2026-11-16"
+    },
     "yonex-ezonegt-hybrid": {
       "won": 360000,
       "d": "2026-11-16"
@@ -3262,9 +3314,17 @@
       "won": 350000,
       "d": "2026-11-08"
     },
+    "zenmore-wrist-trainer": {
+      "won": 19800,
+      "d": "2026-11-16"
+    },
     "zeroputt-digital-putting": {
-      "won": 235600,
-      "d": "2026-11-08"
+      "won": 258000,
+      "d": "2026-11-16"
+    },
+    "zikandi-body-swing-ball": {
+      "won": 13320,
+      "d": "2026-11-16"
     },
     "zikandi-foam-ball": {
       "won": 20900,
