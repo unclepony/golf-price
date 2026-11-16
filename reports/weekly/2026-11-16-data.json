@@ -1,0 +1,156 @@
+{
+  "date": "2026-11-16",
+  "sources": {
+    "gsc": "2026-11-16.json",
+    "clicks": "2026-11-16.json"
+  },
+  "gscRange": {
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-13"
+  },
+  "clicksTotal": 0,
+  "priceChecks": [
+    {
+      "id": "odyssey-ai-one-putter",
+      "name": "오디세이 Ai-ONE 퍼터",
+      "coupangTitle": "한국캘러웨이정품 (오디세이) Ai-ONE 퍼터, (DW DB) 83.82cm(33인치)",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "voicecaddie-sl3",
+      "name": "보이스캐디 SL3 거리측정기",
+      "coupangTitle": "보이스캐디 골프 거리측정기, SL3, 그린",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "footjoy-pro-sl",
+      "name": "풋조이 프로 SL 골프화",
+      "coupangTitle": "[아쿠쉬네트코리아] 2026 풋조이 PRO SL 남성 골프화 골프신발, 화이트/블랙/틸 (56956)",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "ping-anser-2-putter",
+      "name": "핑 앤서 2 퍼터 (2024)",
+      "coupangTitle": "삼양정품 핑 2024년 ANSER 2 퍼터 블레이드, 33인치 [사은품 포함]",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "srixon-z-star",
+      "name": "스릭슨 Z-STAR 골프공 (1더즌)",
+      "coupangTitle": "스릭슨 던롭 골프공 3피스 Z-STAR9 디바이드, 화이트+옐로우, 1개, 12개입",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "callaway-chrome-soft",
+      "name": "캘러웨이 크롬소프트 골프공 (1더즌)",
+      "coupangTitle": "캘러웨이 크롬소프트 360 트리플트랙 골프공 3피스, 옐로우, 12개입, 1개",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "taylormade-tp5-ball",
+      "name": "테일러메이드 TP5 골프공 (1더즌)",
+      "coupangTitle": "테일러메이드 TP5 골프공 5피스, 화이트, 12개입, 1개",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "taylormade-qi35-maxlite-women-driver",
+      "name": "테일러메이드 Qi35 MAX Lite 여성용 드라이버",
+      "coupangTitle": "테일러메이드 여성용 Qi35 MAX Lite 드라이버, 12도, L",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "mizuno-jpx925-forged-iron",
+      "name": "미즈노 JPX925 포지드 아이언 세트",
+      "coupangTitle": "한국미즈노정품 미즈노 JPX925 포지드 8개세트 아이언 사은품증정, NS PRO 950GH S",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "taylormade-mg4-wedge",
+      "name": "테일러메이드 MG4 웨지",
+      "coupangTitle": "[테일러메이드코리아] MG4 크롬 52.09 / 56.12 DG TI EX S200 다이나믹골드 투어이슈 밀드그라인드4, S, 52도",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "orange-whip-trainer",
+      "name": "오렌지윕 스윙 트레이너 (풀 사이즈)",
+      "coupangTitle": "골프 스윙 트레이너 오렌지윕 비거리 향상 연습기, 풀 사이즈, 1개",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "ping-gle4-women-iron",
+      "name": "핑 GLE4 여성용 아이언 세트",
+      "coupangTitle": "핑 GLE4 아이언세트 여성용 7개+5번 유틸리티, (삼양정품)5번유틸+7개세트 L 여성용",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "callaway-elyte-maxfast-women-iron",
+      "name": "캘러웨이 엘리트 맥스 패스트 여성용 아이언",
+      "coupangTitle": "캘러웨이 (25)엘리트 맥스 패스트 여성 아이언 7i, (UST LINQ GREEN 여성 L), L",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "taylormade-qi-maxlite-women-iron",
+      "name": "테일러메이드 Qi MAX Lite 여성용 아이언",
+      "coupangTitle": "테일러메이드 여성용 Qi MAX Lite 카본 7아이언, L, 26.5도",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "taylormade-sim2max-women-driver",
+      "name": "테일러메이드 SIM2 MAX 여성 드라이버",
+      "coupangTitle": "테일러메이드 여성용 심2 맥스 드라이버, L, 10.5도",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "taylormade-qi4d-maxlite-women-driver",
+      "name": "테일러메이드 Qi4D MAX LITE 여성 드라이버",
+      "coupangTitle": "테일러메이드 QI4D 맥스 라이트 여성 드라이버, 10.5도",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "titleist-vokey-sm8",
+      "name": "타이틀리스트 보키 SM8 웨지",
+      "coupangTitle": "타이틀리스트 SM8 보키 웨지 투어크롬 58도, [투어크롬] 58도 12D NSPRO, S",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "ping-g430-iron",
+      "name": "핑 G430 아이언",
+      "coupangTitle": "핑 삼양정품 G430 경량스틸 9아이언 AWT2 LITE, 22도, R",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "mizuno-jpx925-hmpro-iron",
+      "name": "미즈노 JPX925 핫메탈 프로 아이언",
+      "coupangTitle": "미즈노 JPX925 핫메탈 프로 아이언 (8I) NS950 S 미즈노코리아 정품, S, 28도",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "xxio13-iron",
+      "name": "젝시오 13 아이언 (남성)",
+      "coupangTitle": "젝시오 남성용 던롭코리아 젝시오 13 카본 8 아이언 세트, R, 22도",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    }
+  ],
+  "lowCtr": [],
+  "contentCandidates": []
+}
