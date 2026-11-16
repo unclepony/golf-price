@@ -1,0 +1,306 @@
+[
+ {
+  "id": "d01",
+  "query": "골프 그립 교정 연습기",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d02",
+  "query": "골프 임팩트 스프레이 타점",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d03",
+  "query": "골프 줄공 스윙 연습",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d04",
+  "query": "골프 퍼팅 레이저 포인터",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d05",
+  "query": "골프 퍼팅 경사 연습판",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d06",
+  "query": "골프 스윙 미러 거울",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d07",
+  "query": "골프 머리 고정 스윙 연습기",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d08",
+  "query": "골프 무릎 밴드 하체 고정",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d09",
+  "query": "골프 스윙 링 플레인",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d10",
+  "query": "골프 웨이트 링 워밍업",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d11",
+  "query": "골프 치핑 타겟 게임",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d12",
+  "query": "골프 손목 각도 센서",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d13",
+  "query": "퍼트아웃 퍼팅",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d14",
+  "query": "펠츠 퍼팅 튜터",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d15",
+  "query": "조그만골프 연습",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d16",
+  "query": "지칸디 골프",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d17",
+  "query": "골플렉스 골프 연습",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d18",
+  "query": "루키루키 골프",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d19",
+  "query": "SKLZ 골프 스윙",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d20",
+  "query": "골프 연습용 그립 트레이닝",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d21",
+  "query": "골프 템포 메트로놈",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d22",
+  "query": "골프 벙커 연습 매트",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d23",
+  "query": "골프 퍼팅 스트로크 레일",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "d24",
+  "query": "골프 어프로치 연습 클럽",
+  "must": [
+   "__없음__"
+  ],
+  "exclude": []
+ },
+ {
+  "id": "relink-bj-sml-putting-trainer",
+  "query": "BJ 편백나무 SML 퍼팅연습기",
+  "must": [
+   "sml"
+  ],
+  "exclude": [
+   "하이브리드",
+   "thr",
+   "매트만",
+   "미러",
+   "중고",
+   "부품",
+   "교체용",
+   "리퍼",
+   "아이포스"
+  ],
+  "mustAny": [
+   "bj",
+   "비제이"
+  ]
+ },
+ {
+  "id": "relink-winnerspirit-miracle-205",
+  "query": "위너스피릿 미라클205 템포교정 스윙연습기",
+  "must": [
+   "205"
+  ],
+  "exclude": [
+   "201",
+   "580",
+   "중고",
+   "부품",
+   "교체용",
+   "리퍼"
+  ],
+  "mustAny": [
+   "위너스피릿",
+   "미라클"
+  ]
+ },
+ {
+  "id": "relink-jogeuman-tempoflex",
+  "query": "조그만골프 템포플렉스 스윙연습기",
+  "must": [
+   "템포플렉스"
+  ],
+  "exclude": [
+   "주니어",
+   "중고",
+   "부품",
+   "교체용",
+   "리퍼"
+  ]
+ },
+ {
+  "id": "relink-sklz-gold-flex-trainer",
+  "query": "SKLZ 골드플렉스 스윙 트레이너",
+  "must": [
+   "골드플렉스"
+  ],
+  "exclude": [
+   "중고",
+   "부품",
+   "교체용"
+  ]
+ },
+ {
+  "id": "relink-sklz-home-driving-range-kit",
+  "query": "SKLZ 홈 드라이빙 레인지 키트 골프 네트",
+  "must": [
+   "sklz",
+   "드라이빙레인지"
+  ],
+  "exclude": [
+   "중고",
+   "부품",
+   "교체용"
+  ]
+ },
+ {
+  "id": "relink-orange-whip-trainer",
+  "query": "오렌지윕 스윙 트레이너",
+  "must": [
+   "오렌지윕"
+  ],
+  "exclude": [
+   "중고",
+   "퍼트마스터",
+   "퍼팅"
+  ]
+ },
+ {
+  "id": "relink-pistop-topswing-trainer",
+  "query": "피스탑 탑스윙 골프스윙연습기",
+  "must": [
+   "탑스윙"
+  ],
+  "exclude": [
+   "중고"
+  ]
+ },
+ {
+  "id": "relink-zeroputt-digital-putting",
+  "query": "제로펏 디지털 퍼팅연습기",
+  "must": [
+   "제로펏"
+  ],
+  "exclude": [
+   "중고"
+  ]
+ }
+]
