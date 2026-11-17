@@ -146,7 +146,13 @@ export async function onRequestPost({ request, env, waitUntil }) {
     } else if (b.f) {
       // 사이트 안 이동: 앞 페이지|이 페이지 (둘 다 사이트맵 경로일 때만)
       const prev = norm(String(b.f).slice(0, 200));
-      if (PATHS.has(prev) && prev !== path) rows.push(['nav', `${prev}|${path}`]);
+      if (PATHS.has(prev) && prev !== path) {
+        rows.push(['nav', `${prev}|${path}`]);
+        // 이동을 일으킨 링크 묶음(2026-11-18) — 키: 묶음|앞 종류→다음 종류(예: '같은 비교 다른 상품|/p→/p'). 페이지 주소는 nav 에 있으므로 종류만
+        const kind = (x) => (x === '/' ? '/' : x.match(/^\/[^/]+/)?.[0] ?? '?');
+        const w = String(b.nw ?? '').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20);
+        if (w) rows.push(['navpos', `${w}|${kind(prev)}→${kind(path)}`]);
+      }
     }
   } else if (b.t === 'out') {
     const href = String(b.h ?? '');

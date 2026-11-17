@@ -43,7 +43,43 @@
   try { const u = new URL(document.referrer); if (!fresh && u.origin === location.origin) prev = u.pathname; } catch {}
   // 상품 페이지의 가격 표시 상태(2026-11-07): 가격 상자에 확인한 가격이 보이는지·숨겨졌는지·쿠팡 링크가 없는지(판매 종료 등) → '가격이 보여야 클릭이 난다'를 매일 숫자로 본다
   const ps = location.pathname.startsWith('/p/') ? ($('.bbox-price') ? '가격 보임' : $('.bbox') ? '가격 숨김' : '링크 없음') : '';
-  beacon({ t: 'pv', v: fresh ? 1 : 0, ...(prev && { f: prev }), ...(ps && { ps }) });
+  // 사이트 안 이동을 일으킨 링크 묶음(2026-11-18 셀프 개선): nav('앞|다음')만으로는 상품 → 상품 이동이 '같은 비교 다른 상품'(11-17 실험)에서 났는지
+  // 메뉴·최근 본 상품·아래쪽 비교 링크에서 났는지 가를 수 없다. 누를 때 이 탭에만 묶음 이름을 적어 두고, 다음 페이지뷰가 바로 그 링크일 때만 함께 보낸다(사용자 ID 없음)
+  let nw = '';
+  try {
+    const nl = JSON.parse(sessionStorage.getItem('gp_nl') || 'null');
+    sessionStorage.removeItem('gp_nl');
+    if (nl && prev && nl.f === prev && nl.p === location.pathname) nw = String(nl.w || '');
+  } catch {}
+  beacon({ t: 'pv', v: fresh ? 1 : 0, ...(prev && { f: prev }), ...(ps && { ps }), ...(nw && { nw }) });
+  const navWhere = (a) =>
+    a.closest('.pd-peer') ? '같은 비교 다른 상품'
+    : a.closest('.pd-alt') ? '대체 상품'
+    : a.closest('.answer') ? '결론 표'
+    : a.closest('.conclusion') ? '한 줄 결론'
+    : a.closest('.plp') ? '상품 목록'
+    : a.closest('.pd-cmp') ? '실력별 비교 링크'
+    : a.closest('.vs-links, .vs-list') ? '1대1 비교'
+    : a.closest('.ig') ? '비교 카드'
+    : a.closest('.recent-panel') ? '최근 본 상품'
+    : a.closest('.search, .suggest') ? '검색'
+    : a.closest('.hd, .mega, .util') ? '메뉴'
+    : a.closest('.crumb') ? '경로'
+    : a.closest('.foot') ? '바닥글'
+    : a.closest('.qa-rel, .qa-list') ? '초보 QA'
+    : a.closest('.fitem') ? '장비 찾기'
+    : a.closest('.tiers') ? '실력별 탭'
+    : a.closest('.pick') ? '상품 소개'
+    : a.closest('table') ? '비교표'
+    : a.closest('.ggrid, .gcard') ? '가이드 카드'
+    : '본문';
+  document.addEventListener('click', (e) => {
+    try {
+      const a = e.target.closest?.('a[href]');
+      if (!a || a.origin !== location.origin || a.pathname === location.pathname || a.dataset.out) return;
+      sessionStorage.setItem('gp_nl', JSON.stringify({ f: location.pathname, p: a.pathname, w: navWhere(a) }));
+    } catch {}
+  }, true);
   const where = (a) =>
     a.closest('.stickybuy') ? '하단 고정 버튼'
     : a.closest('.fitem') ? '장비 찾기'
