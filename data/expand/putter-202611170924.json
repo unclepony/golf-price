@@ -1,0 +1,757 @@
+[
+ {
+  "category": "putter",
+  "id": "odyssey-s2s-tri-hot-putter",
+  "name": "오디세이 스퀘어 2 스퀘어 트라이 핫 퍼터 (2025)",
+  "query": "오디세이 S2S 트라이핫 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "트라이핫",
+   "트라이 핫",
+   "tri-hot",
+   "tri hot",
+   "trihot"
+  ],
+  "summary": "오디세이 스퀘어 2 스퀘어 트라이 핫은 제로토크(S2S) 설계에 알루미늄·스틸과 140g 넘는 텅스텐을 섞어 무게중심을 앞으로 옮긴 퍼터입니다. 기존 S2S보다 샤프트가 페이스 쪽에 더 가깝게 붙습니다(2025년 11월 국내 출시).",
+  "points": [
+   "제로토크(S2S) 설계 · 토가 위를 향해 서는 구조",
+   "알루미늄·스틸·텅스텐 140g 이상 복합 소재",
+   "무게중심을 앞으로 · 샤프트를 페이스 쪽에 더 가깝게"
+  ],
+  "guidePick": {
+   "role": "프리미엄 제로토크",
+   "forWhom": "제로토크 퍼터를 쓰되 일반 퍼터처럼 샤프트가 앞에 보이는 셋업을 원하는 골퍼",
+   "short": "샤프트가 앞으로 온 제로토크",
+   "plus": "방향 안정성",
+   "minus": "높은 가격",
+   "pros": [
+    "헤드 회전을 줄이는 제로토크 설계",
+    "샤프트 위치가 앞으로 와서 셋업이 익숙함"
+   ],
+   "cons": [
+    "일반 말렛보다 값이 크게 높음",
+    "제로토크 특유의 감각에 적응이 필요"
+   ],
+   "scores": [
+    5,
+    4,
+    4,
+    2
+   ],
+   "specs": [
+    "말렛 (제로토크)",
+    "TBD",
+    "S2S 제로토크 · 텅스텐 140g+"
+   ],
+   "verdict": "제로토크의 방향 안정성과 익숙한 셋업을 함께 원하는 고급자용",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://www.pgatour.com/article/news/equipment-report/2025/10/30/odyssey-moves-zero-torque-putting-category-forward-with-new-s2s-tri-hot-putters",
+   "https://odyssey.callawaygolf.com/putters/putters-2026-square-to-square-tri-hot-seven.html"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행",
+   "5k",
+   "ai-one",
+   "ai 원"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "odyssey-damascus-milled-putter",
+  "name": "오디세이 다마스커스 밀드 퍼터 (2026)",
+  "query": "오디세이 다마스커스 밀드 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "다마스커스",
+   "damascus"
+  ],
+  "summary": "오디세이 다마스커스 밀드는 헤드를 100% 깎아 만들고 다마스커스 스틸 인서트를 넣은 한정 프리미엄 퍼터입니다. 세븐·투·원 와이드·로시·제일버드 미니 등 여러 헤드로 나왔습니다(2026년 국내 출시).",
+  "points": [
+   "100% 밀링 헤드 · 블라스트 실버 마감",
+   "다마스커스 스틸 인서트",
+   "한정 수량으로 나오는 프리미엄 라인"
+  ],
+  "guidePick": {
+   "role": "한정 밀드 프리미엄",
+   "forWhom": "깎아 만든 헤드와 금속 인서트 손맛을 원하는 상급 골퍼",
+   "short": "다마스커스 인서트 밀드",
+   "plus": "손맛·완성도",
+   "minus": "매우 높은 가격",
+   "pros": [
+    "통째로 깎은 헤드로 단단한 타감",
+    "헤드 모양을 골라 스트로크에 맞출 수 있음"
+   ],
+   "cons": [
+    "오디세이 퍼터 중 값이 가장 높은 편",
+    "한정 판매라 원하는 헤드가 없을 수 있음"
+   ],
+   "scores": [
+    4,
+    5,
+    4,
+    1
+   ],
+   "specs": [
+    "블레이드·말렛 (헤드별)",
+    "TBD",
+    "100% 밀링 · 다마스커스 스틸 인서트"
+   ],
+   "verdict": "값보다 손맛과 소장 가치를 보는 상급자용 밀드 퍼터",
+   "skill": "프로"
+  },
+  "sources": [
+   "https://golf.com/gear/putters/odyssey-damascus-milled-mark-push-premium-putters/",
+   "https://odyssey.callawaygolf.com/product/putters-2026-damascus-milled-seven-db"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "odyssey-aione-giraffe-beam-putter",
+  "name": "오디세이 Ai-ONE 지래프 빔 퍼터 (2025)",
+  "query": "오디세이 Ai-ONE 지래프빔 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "지래프",
+   "giraffe",
+   "기린"
+  ],
+  "summary": "오디세이 Ai-ONE 지래프 빔은 크랭크 호젤을 길게 늘린 '지래프 빔' 넥으로 크랭크 넥 모양을 유지하면서 페이스 밸런스가 되게 한 퍼터입니다. 2번·더블 와이드·7번·제일버드 미니·제일버드 크루저 5종, 로프트 3°·라이 70°(2025년 6월 국내 출시).",
+  "points": [
+   "긴 크랭크 넥으로 페이스 밸런스",
+   "Ai-ONE 인서트(알루미늄 뒷판 + 화이트 핫 우레탄)",
+   "블레이드 2종·말렛 3종, 구리색 PVD 마감"
+  ],
+  "guidePick": {
+   "role": "크랭크 넥 페이스밸런스",
+   "forWhom": "크랭크 넥 모양이 익숙하지만 직선형 스트로크에 맞는 퍼터를 원하는 골퍼",
+   "short": "긴 넥 페이스밸런스",
+   "plus": "정렬·직진성",
+   "minus": "독특한 넥 모양",
+   "pros": [
+    "크랭크 넥 모양 그대로 페이스 밸런스",
+    "Ai-ONE 인서트로 빗맞아도 거리 손실이 적음"
+   ],
+   "cons": [
+    "긴 넥 모양이 낯설 수 있음",
+    "일반 Ai-ONE보다 값이 높음"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    3
+   ],
+   "specs": [
+    "블레이드·말렛 (헤드별)",
+    "TBD",
+    "지래프 빔 넥 · 페이스 밸런스"
+   ],
+   "verdict": "직선형 스트로크에 크랭크 넥 셋업을 원하는 중급자용",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://golf.com/gear/putters/odyssey-giraffe-beam-putters",
+   "https://odyssey.callawaygolf.com/putters/ai-one/putters-2025-ai-one-giraffe-beam-seven-ch.html"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "odyssey-aione-s2s-max-putter",
+  "name": "오디세이 Ai-ONE 스퀘어 2 스퀘어 맥스 퍼터 (2025)",
+  "query": "오디세이 스퀘어2스퀘어 맥스 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "맥스",
+   "max"
+  ],
+  "summary": "오디세이 Ai-ONE 스퀘어 2 스퀘어 맥스는 S2S 라인에서 관성모멘트(MOI)가 가장 높은 말렛입니다. 샤프트가 가운데 붙어 토가 위를 향해 서고, 맥스 1은 MOI 6000 이상, 로프트 3°·라이 72°·헤드 360g(2025년 5월 국내 출시).",
+  "points": [
+   "S2S 라인 최고 MOI(맥스 1 6000 이상)",
+   "센터 샤프트 · 토가 위를 향하는 제로토크 계열",
+   "Ai-ONE 인서트 · 헤드 360g"
+  ],
+  "guidePick": {
+   "role": "고관성 제로토크 말렛",
+   "forWhom": "짧은 퍼트에서 페이스가 열리고 닫히는 게 고민인 초심자",
+   "short": "가장 안정적인 S2S",
+   "plus": "방향 안정성",
+   "minus": "큰 헤드",
+   "pros": [
+    "S2S 중 가장 높은 관성으로 빗맞아도 흔들림이 적음",
+    "헤드 회전이 적어 짧은 퍼트 방향이 안정적"
+   ],
+   "cons": [
+    "헤드가 커서 가방·셋업에서 부담될 수 있음",
+    "제로토크 감각에 적응이 필요"
+   ],
+   "scores": [
+    5,
+    3,
+    5,
+    3
+   ],
+   "specs": [
+    "대형 말렛 (제로토크)",
+    "TBD",
+    "센터 샤프트 · MOI 6000+(맥스 1)"
+   ],
+   "verdict": "방향이 흔들리는 초심자에게 가장 안정적인 오디세이 제로토크",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://odyssey.callawaygolf.com/square2square/putters-2025-square-to-square-le-max-1.html",
+   "https://sports.khan.co.kr/article/202505201648003"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행",
+   "트라이",
+   "tri"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "taylormade-systm2-putter",
+  "name": "테일러메이드 SYSTM2 퍼터 (2026)",
+  "query": "테일러메이드 SYSTM2 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "systm2",
+   "systm 2",
+   "시스템2",
+   "시스템 2",
+   "시스템투"
+  ],
+  "summary": "테일러메이드 SYSTM2는 304 스테인리스 스틸 헤드에 밀링 페이스를 넣은 퍼터 라인입니다. 블레이드 소토·주노·델몬트, 말렛 밴던·아드모어로 스트로크 형태에 맞춰 고르게 했습니다(2026년 3월 출시).",
+  "points": [
+   "304 스테인리스 스틸 · 밀링 페이스",
+   "블레이드 3종·말렛 2종",
+   "L넥·싱글벤드로 스트로크 형태별 선택"
+  ],
+  "guidePick": {
+   "role": "스트로크별 밀드 라인",
+   "forWhom": "스파이더보다 단정한 모양에 깎은 페이스 손맛을 원하는 골퍼",
+   "short": "스트로크별로 고르는 밀드",
+   "plus": "거리감·선택 폭",
+   "minus": "말렛 관용성은 스파이더보다 낮음",
+   "pros": [
+    "밀링 페이스로 또렷한 타감",
+    "블레이드·말렛 중 스트로크에 맞게 고름"
+   ],
+   "cons": [
+    "스파이더 계열보다 관성은 낮은 편",
+    "헤드 모양마다 넥이 달라 확인이 필요"
+   ],
+   "scores": [
+    3,
+    4,
+    4,
+    4
+   ],
+   "specs": [
+    "블레이드·말렛 (헤드별)",
+    "TBD",
+    "304 스테인리스 · 밀링 페이스"
+   ],
+   "verdict": "스파이더가 부담스러운 중급자에게 맞는 테일러메이드 밀드 퍼터",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://golf.com/gear/putters/taylormade-debuts-systm2-putters",
+   "https://golfwrx.com/775261/taylormade-unveils-new-systm-2-putters/"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "ping-pld-milled-tyne4-putter",
+  "name": "핑 PLD 밀드 프라임 타인 4 퍼터",
+  "query": "핑 PLD 밀드 타인4 퍼터",
+  "must": [
+   "pld",
+   "퍼터"
+  ],
+  "mustAny": [
+   "타인4",
+   "타인 4",
+   "tyne4",
+   "tyne 4"
+  ],
+  "summary": "핑 PLD 밀드 프라임 타인 4는 303 단조 스테인리스를 깎아 만든 말렛 퍼터로, 페이스에 깊은 밀링 무늬가 있습니다. 헤드 360g, 로프트 3°.",
+  "points": [
+   "303 단조 스테인리스 통째 밀링",
+   "깊은 밀링 페이스",
+   "헤드 360g · 로프트 3°"
+  ],
+  "guidePick": {
+   "role": "밀드 말렛",
+   "forWhom": "말렛의 안정감과 깎아 만든 손맛을 함께 원하는 상급 골퍼",
+   "short": "깎아 만든 타인 4",
+   "plus": "안정감·손맛",
+   "minus": "높은 가격",
+   "pros": [
+    "말렛이라 블레이드보다 방향이 안정적",
+    "통째로 깎은 헤드로 단단한 타감"
+   ],
+   "cons": [
+    "일반 타인 4보다 값이 크게 높음",
+    "인서트 퍼터보다 타감이 단단해 거리 조절에 적응 필요"
+   ],
+   "scores": [
+    4,
+    5,
+    4,
+    2
+   ],
+   "specs": [
+    "말렛",
+    "TBD",
+    "PLD 밀드 · 303 단조 스테인리스"
+   ],
+   "verdict": "말렛을 쓰는 상급자가 고르는 핑 투어 밀드 퍼터",
+   "skill": "프로"
+  },
+  "sources": [
+   "https://golf.com/?p=15536459",
+   "https://www.globalgolf.com/golf-clubs/1061998-ping-pld-milled-prime-tyne-4-stealth-putter/"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행",
+   "앤서",
+   "anser",
+   "ds72",
+   "오슬로",
+   "oslo",
+   "앨리",
+   "ally",
+   "스캇데일",
+   "scottsdale"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "ping-pld-milled-oslo3-putter",
+  "name": "핑 PLD 밀드 오슬로 3 퍼터 (2024)",
+  "query": "핑 PLD 밀드 오슬로3 퍼터",
+  "must": [
+   "pld",
+   "퍼터"
+  ],
+  "mustAny": [
+   "오슬로",
+   "oslo"
+  ],
+  "summary": "핑 2024 PLD 밀드 오슬로 3은 단조 303 스테인리스를 CNC로 깎고 건메탈로 마감한 미드말렛 퍼터입니다(2024년 2월 PLD 밀드에 추가된 5종 중 하나).",
+  "points": [
+   "단조 303 스테인리스 CNC 밀링",
+   "건메탈 마감",
+   "2024 PLD 밀드 신모델"
+  ],
+  "guidePick": {
+   "role": "밀드 미드말렛",
+   "forWhom": "블레이드보다 조금 큰 헤드에 밀드 손맛을 원하는 상급 골퍼",
+   "short": "건메탈 밀드 미드말렛",
+   "plus": "손맛·정렬",
+   "minus": "높은 가격",
+   "pros": [
+    "작은 말렛이라 셋업이 단정함",
+    "통째로 깎은 헤드로 또렷한 타감"
+   ],
+   "cons": [
+    "큰 말렛보다 관용성 낮음",
+    "값이 높음"
+   ],
+   "scores": [
+    4,
+    5,
+    4,
+    2
+   ],
+   "specs": [
+    "미드말렛",
+    "TBD",
+    "PLD 밀드 · 303 단조 스테인리스 · 건메탈"
+   ],
+   "verdict": "블레이드와 말렛 사이를 원하는 상급자용 핑 밀드 퍼터",
+   "skill": "프로"
+  },
+  "sources": [
+   "https://www.pgatour.com/article/news/equipment-report/2024/02/13/ping-five-new-models-join-pld-milled-putter-series-custom-options-added",
+   "https://golf.com/gear/ping-new-putters-pld-line-everything-to-know-2024/"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행",
+   "오슬로 h",
+   "oslo h"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "ping-pld-milled-ally-blue4-putter",
+  "name": "핑 PLD 밀드 앨리 블루 4 퍼터 (2024)",
+  "query": "핑 PLD 밀드 앨리블루4 퍼터",
+  "must": [
+   "pld",
+   "퍼터"
+  ],
+  "mustAny": [
+   "앨리",
+   "ally",
+   "알리"
+  ],
+  "summary": "핑 2024 PLD 밀드 앨리 블루 4는 핑 PLD 밀드 라인의 말렛 퍼터로 2024년 2월 추가된 5종 중 하나입니다. 다른 2024 신모델과 달리 건메탈 단조 303 스테인리스가 아닌 별도 사양입니다(핑 발표).",
+  "points": [
+   "2024 PLD 밀드 신모델 말렛",
+   "통째로 깎은 밀드 헤드",
+   "투어 선수용 PLD 라인"
+  ],
+  "guidePick": {
+   "role": "밀드 말렛",
+   "forWhom": "투어용 말렛 모양에 밀드 손맛을 원하는 고급 골퍼",
+   "short": "투어용 밀드 말렛",
+   "plus": "안정감·손맛",
+   "minus": "높은 가격",
+   "pros": [
+    "말렛이라 방향이 안정적",
+    "통째로 깎은 헤드로 단단한 타감"
+   ],
+   "cons": [
+    "값이 높음",
+    "인서트 퍼터보다 타감이 단단함"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    2
+   ],
+   "specs": [
+    "말렛",
+    "TBD",
+    "PLD 밀드"
+   ],
+   "verdict": "말렛 안정감과 밀드 손맛을 함께 원하는 고급자용",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://www.pgatour.com/article/news/equipment-report/2024/02/13/ping-five-new-models-join-pld-milled-putter-series-custom-options-added",
+   "https://www.tgw.com/p/ping-pld-milled-2024-ally-blue-4-gun-metal-putter"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행",
+   "스캇데일",
+   "scottsdale",
+   "tec",
+   "onset",
+   "온셋"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "ping-pld-milled-anser2d-putter",
+  "name": "핑 PLD 밀드 앤서 2D 퍼터 (2024)",
+  "query": "핑 PLD 밀드 앤서 2D 퍼터",
+  "must": [
+   "pld",
+   "퍼터"
+  ],
+  "mustAny": [
+   "2d"
+  ],
+  "summary": "핑 2024 PLD 밀드 앤서 2D는 단조 303 스테인리스를 CNC로 깎고 건메탈로 마감한 앤서형 블레이드 퍼터입니다(2024년 2월 PLD 밀드에 추가된 5종 중 하나).",
+  "points": [
+   "단조 303 스테인리스 CNC 밀링",
+   "건메탈 마감 앤서형 블레이드",
+   "2024 PLD 밀드 신모델"
+  ],
+  "guidePick": {
+   "role": "밀드 블레이드",
+   "forWhom": "앤서 모양의 블레이드에 밀드 손맛을 원하는 상급 골퍼",
+   "short": "건메탈 밀드 앤서",
+   "plus": "손맛·거리감",
+   "minus": "높은 가격",
+   "pros": [
+    "익숙한 앤서 모양이라 셋업이 편함",
+    "통째로 깎은 헤드로 또렷한 타감"
+   ],
+   "cons": [
+    "말렛보다 빗맞을 때 방향이 흔들림",
+    "값이 높음"
+   ],
+   "scores": [
+    3,
+    5,
+    3,
+    2
+   ],
+   "specs": [
+    "블레이드",
+    "TBD",
+    "PLD 밀드 · 303 단조 스테인리스 · 건메탈"
+   ],
+   "verdict": "정통 앤서 블레이드를 밀드로 원하는 상급자용",
+   "skill": "프로"
+  },
+  "sources": [
+   "https://www.pgatour.com/article/news/equipment-report/2024/02/13/ping-five-new-models-join-pld-milled-putter-series-custom-options-added",
+   "https://golf.com/gear/ping-new-putters-pld-line-everything-to-know-2024/"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행",
+   "스캇데일",
+   "scottsdale",
+   "앤서4",
+   "anser4",
+   "앤서30",
+   "anser30"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "odyssey-white-hot-versa-putter",
+  "name": "오디세이 화이트 핫 버사 퍼터 (2023)",
+  "query": "오디세이 화이트핫 버사 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "버사",
+   "versa"
+  ],
+  "summary": "오디세이 화이트 핫 버사는 검정-흰색-검정 고대비 정렬로 페이스가 목표에 직각인지 보기 쉽게 한 퍼터입니다. 두 겹 우레탄 화이트 핫 인서트, 무게 조절 추가 있습니다(2023년 출시).",
+  "points": [
+   "검정-흰색-검정 고대비 정렬",
+   "화이트 핫 우레탄 인서트",
+   "무게 조절 추"
+  ],
+  "guidePick": {
+   "role": "고대비 정렬 입문",
+   "forWhom": "조준이 자주 틀어지는 초심자",
+   "short": "보기 쉬운 고대비 정렬",
+   "plus": "정렬 편의·가성비",
+   "minus": "직전 세대",
+   "pros": [
+    "흑백 대비로 페이스 방향이 잘 보임",
+    "부드러운 화이트 핫 인서트 타감"
+   ],
+   "cons": [
+    "Ai-ONE·Ai-DUAL 이전 세대",
+    "인서트 기술은 최신 모델보다 단순"
+   ],
+   "scores": [
+    4,
+    3,
+    5,
+    4
+   ],
+   "specs": [
+    "말렛·블레이드 (헤드별)",
+    "TBD",
+    "고대비 버사 정렬 · 화이트 핫 인서트"
+   ],
+   "verdict": "조준이 어려운 초심자에게 값 부담이 적은 정렬형 퍼터",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://golf.com/gear/putters/odyssey-versa-putters-2023-first-look/",
+   "https://mygolfspy.com/news-opinion/first-look/odyssey-white-hot-versa-and-new-og-putters/"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행",
+   "ai-one",
+   "ai one",
+   "제일버드",
+   "jailbird",
+   "og"
+  ]
+ }
+]
