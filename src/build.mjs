@@ -1141,6 +1141,20 @@ function altBox(p) {
   const why = GONE[p.id] ? '이 상품은 지금 쿠팡에서 찾을 수 없습니다.' : '이 상품은 쿠팡 판매처가 없습니다.';
   return `<!--phist--><div class="pd-alt"><p class="pd-alt-k">${why} 같은 비교에서 지금 볼 수 있는 상품${sk ? ` (${esc(sk)} 먼저)` : ''}</p><ul>${list.map((x) => `<li><a href="/p/${x.id}">${esc(byId[x.id].p.name)}${x.skill ? ` <small>${esc(x.skill)}</small>` : ''} ›</a></li>`).join('')}</ul></div><!--/phist-->`;
 }
+// 판매 중인 상품 페이지: 요약 아래에 같은 비교의 다른 상품 3개(같은 실력 단계 먼저, 점수가 가까운 순)를 보여 준다.
+// 11-04·11-16 가이드에서 상품 페이지를 하나씩 열고 10초 안에 목록으로 돌아가 다음 상품을 여는 '목록 ↔ 상품 왕복' 방문(클릭 0)이 반복돼,
+// 상품 페이지 위쪽에서 바로 옆 상품으로 넘어갈 길을 낸다(2026-11-17 셀프 개선 실험). 순위·판매 상태로 바뀌는 영역이라 콘텐츠 지문에서 뺀다(phist)
+function peerBox(p) {
+  if (!sellable(p.id)) return '';
+  const mp = mainPick(p.id);
+  if (!mp?.pk) return '';
+  const pool = rankedPicks(mp.g).filter((x) => x.id !== p.id && !warned(mp.g, x));
+  const sk = mp.pk.skill ?? null;
+  const near = (a, b) => Math.abs(totalScore(a) - totalScore(mp.pk)) - Math.abs(totalScore(b) - totalScore(mp.pk));
+  const list = [...pool.filter((x) => (x.skill ?? null) === sk).sort(near), ...pool.filter((x) => (x.skill ?? null) !== sk)].slice(0, 3);
+  if (!list.length) return '';
+  return `<!--phist--><div class="pd-alt pd-peer"><p class="pd-alt-k">같은 비교의 다른 상품${sk && list.some((x) => (x.skill ?? null) === sk) ? ` (${esc(sk)} 먼저)` : ''}</p><ul>${list.map((x) => `<li><a href="/p/${x.id}">${esc(byId[x.id].p.name)}${x.skill ? ` <small>${esc(x.skill)}</small>` : ''} ›</a></li>`).join('')}</ul></div><!--/phist-->`;
+}
 // 사양 칸 중 구매 판단에 쓰는 것(번호·로프트·샤프트·구성·길이 등)을 '이름 값' 형태로
 const SPEC_KEYS = /번호|로프트|샤프트|사양|구성|길이|헤드|유형|구조|소재|조임/;
 function specPairs(g, pk) {
@@ -1629,7 +1643,7 @@ ${buyBox(rctx(), p) || `<div class="pd-price">${buyButton(p.id, hist)}</div>${al
 ${packBox(p)}
 ${links[p.id] && picks[p.id]?.title ? `<p class="linked">연결 상품: ${esc(picks[p.id].title)}</p>` : ''}
 ${infoTable(rctx(), p)}
-<p class="pd-sum">${esc(p.summary)}</p>
+<p class="pd-sum">${esc(p.summary)}</p>${peerBox(p)}
 </div>
 </section>
 ${pdTabs([['info', '상세 정보'], ...(pdVideo ? [['videos', '영상']] : []), ['history', '가격 기록']])}
