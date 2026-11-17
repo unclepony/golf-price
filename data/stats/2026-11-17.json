@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-17",
+  "by": {
+    "act": {
+      "캠페인: chatgpt.com|/c/rangefinder": 1,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 1,
+      "캠페인: chatgpt.com|/p/sunmountain-h2no-stand": 1,
+      "캠페인: ig|/": 3,
+      "캠페인: ig|/p/sunmountain-h2no-stand": 1
+    },
+    "asn": {
+      "AS3559 Korea Telecom": 1,
+      "AS53813 Zscaler, Inc": 1,
+      "AS9318 SK Broadband Co Ltd": 1,
+      "AS9644 SK Telecom": 1
+    },
+    "asncamp": {
+      "AS3559 Korea Telecom|ig / social|태블릿": 1,
+      "AS53813 Zscaler, Inc|chatgpt.com|PC": 1,
+      "AS9318 SK Broadband Co Ltd|ig / social|태블릿": 1,
+      "AS9644 SK Telecom|chatgpt.com|모바일": 1
+    },
+    "cty": {
+      "KR": 4
+    },
+    "depth": {
+      "/c/rangefinder|25%": 1,
+      "/g/golf-bag-recommend|첫 화면": 1,
+      "/p/sunmountain-h2no-stand|끝까지": 2,
+      "/|25%": 2,
+      "/|첫 화면": 1
+    },
+    "dev": {
+      "PC": 1,
+      "모바일": 1,
+      "태블릿": 2
+    },
+    "hour": {
+      "06": 2,
+      "07": 1,
+      "08": 1
+    },
+    "nav": {
+      "/g/golf-bag-recommend|/p/sunmountain-h2no-stand": 1,
+      "/|/p/sunmountain-h2no-stand": 1
+    },
+    "out": {
+      "/p/sunmountain-h2no-stand|sunmountain-h2no-stand": 1
+    },
+    "outact": {
+      "조작 후|캠페인: chatgpt.com": 1
+    },
+    "outcamp": {
+      "chatgpt.com|sunmountain-h2no-stand": 1
+    },
+    "outref": {
+      "캠페인: chatgpt.com": 1
+    },
+    "pos": {
+      "상품 페이지": 1
+    },
+    "pv": {
+      "/": 3,
+      "/c/rangefinder": 1,
+      "/g/golf-bag-recommend": 1,
+      "/p/sunmountain-h2no-stand": 2
+    },
+    "pvprice": {
+      "가격 보임|/p/sunmountain-h2no-stand": 2
+    },
+    "ref": {
+      "캠페인: chatgpt.com": 2,
+      "캠페인: ig": 2
+    },
+    "refland": {
+      "캠페인: chatgpt.com|/c/rangefinder": 1,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 1,
+      "캠페인: ig|/": 2
+    },
+    "refurl": {
+      "chatgpt.com": 2,
+      "ig / social": 2
+    },
+    "seen": {
+      "/c/rangefinder": 1,
+      "/g/golf-bag-recommend": 1,
+      "/p/sunmountain-h2no-stand": 2
+    },
+    "seenpos": {
+      "결론 표": 2,
+      "상품 페이지": 2
+    },
+    "seenref": {
+      "캠페인: chatgpt.com": 3,
+      "캠페인: ig": 1
+    },
+    "skip": {
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3
+    },
+    "stay": {
+      "/c/rangefinder|30초~1분": 1,
+      "/g/golf-bag-recommend|10초 미만": 1,
+      "/p/sunmountain-h2no-stand|10초 미만": 1,
+      "/p/sunmountain-h2no-stand|3분 이상": 1,
+      "/|10~30초": 1,
+      "/|10초 미만": 1,
+      "/|30초~1분": 1
+    },
+    "visit": {
+      "/": 2,
+      "/c/rangefinder": 1,
+      "/g/golf-bag-recommend": 1
+    },
+    "xpv": {
+      "/": 3,
+      "/c/rangefinder": 1,
+      "/g/golf-bag-recommend": 1,
+      "/p/sunmountain-h2no-stand": 2
+    }
+  },
+  "journey": [
+    {
+      "hour": "08",
+      "pid": "sunmountain-h2no-stand",
+      "page": "/p/sunmountain-h2no-stand",
+      "src": "캠페인: chatgpt.com",
+      "kw": "",
+      "url": "chatgpt.com",
+      "land": "/g/golf-bag-recommend",
+      "trail": "/g/golf-bag-recommend → /p/sunmountain-h2no-stand",
+      "steps": 2,
+      "secs": 253,
+      "dev": "PC",
+      "pos": "상품 페이지"
+    }
+  ]
+}

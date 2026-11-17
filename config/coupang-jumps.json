@@ -1,10 +1,10 @@
 {
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { price: 1.5배 넘게 튄 API 값(반영 보류), held: 그때 유지한 직전 값, first: 처음 본 날, last: 마지막으로 본 날 }. 다음 날 이후 같은 값이 다시 나오면 반영하고 지운다.",
   "saintnine-n-pro": {
-    "price": 69060,
+    "price": 72000,
     "held": 37200,
-    "first": "2026-11-14",
-    "last": "2026-11-14"
+    "first": "2026-11-17",
+    "last": "2026-11-17"
   },
   "ecco-biom-c4-women-shoes": {
     "price": 85990,
@@ -12,10 +12,22 @@
     "first": "2026-11-15",
     "last": "2026-11-15"
   },
-  "footjoy-lady-ecomfort-pair-glove": {
-    "price": 30400,
-    "held": 20200,
-    "first": "2026-11-15",
-    "last": "2026-11-15"
+  "monkeygrip-powerpad-glove": {
+    "price": 38000,
+    "held": 22000,
+    "first": "2026-11-17",
+    "last": "2026-11-17"
+  },
+  "adidas-adipower-sl-women-shoes": {
+    "price": 220000,
+    "held": 119000,
+    "first": "2026-11-17",
+    "last": "2026-11-17"
+  },
+  "callaway-winter-glory-women-pair-glove": {
+    "price": 26290,
+    "held": 48400,
+    "first": "2026-11-17",
+    "last": "2026-11-17"
   }
 }

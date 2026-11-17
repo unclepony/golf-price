@@ -1,0 +1,216 @@
+{
+  "date": "2026-11-16",
+  "by": {
+    "act": {
+      "직접·북마크|/c/rangefinder": 1,
+      "캠페인: chatgpt.com|/c/ball": 1,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 2,
+      "캠페인: chatgpt.com|/g/womens-shoes-recommend": 2,
+      "캠페인: chatgpt.com|/jp/xxio14-driver": 1,
+      "캠페인: chatgpt.com|/p/ping-fetch-putter": 1,
+      "캠페인: chatgpt.com|/p/ping-hoofer-stand": 1,
+      "캠페인: chatgpt.com|/p/sunmountain-h2no-stand": 1,
+      "캠페인: chatgpt.com|/p/voicecaddie-vc4": 2
+    },
+    "asn": {
+      "AS11404 Private Customer": 1,
+      "AS17853 LGTELECOM": 1,
+      "AS17858 LG POWERCOMM": 1,
+      "AS3356 Palo Alto Networks, Inc": 4,
+      "AS3786 LG DACOM Corporation": 2,
+      "AS3786 LG POWERCOMM": 2,
+      "AS45376 Korea Telecom": 1,
+      "AS45899 Vietnam Posts and Telecommunic": 1,
+      "AS4766 Korea Telecom": 1,
+      "AS55410 Idea Cellular Mumbai": 1,
+      "AS55836 Reliance Jio Infocomm Limited": 1,
+      "AS719 Elisa Oyj": 2
+    },
+    "asncamp": {
+      "AS17853 LGTELECOM|chatgpt.com|모바일": 1,
+      "AS17858 LG POWERCOMM|chatgpt.com|모바일": 1,
+      "AS3786 LG DACOM Corporation|chatgpt.com|PC": 2,
+      "AS3786 LG POWERCOMM|chatgpt.com|모바일": 2,
+      "AS45376 Korea Telecom|chatgpt.com|PC": 1,
+      "AS45899 Vietnam Posts and Telecommunic|chatgpt.com|모바일": 1,
+      "AS4766 Korea Telecom|chatgpt.com|모바일": 1,
+      "AS55410 Idea Cellular Mumbai|youtube / video / c-driver-recommend-2026-mid|PC": 1,
+      "AS55836 Reliance Jio Infocomm Limited|youtube / video / c-driver-recommend-2026-mid|PC": 1,
+      "AS719 Elisa Oyj|youtube / video / t-utility-recommend-1|PC": 2
+    },
+    "cty": {
+      "FI": 2,
+      "IN": 2,
+      "KR": 8,
+      "US": 5,
+      "VN": 1
+    },
+    "depth": {
+      "/c/ball|첫 화면": 1,
+      "/g/golf-bag-recommend|첫 화면": 2,
+      "/g/womens-shoes-recommend|첫 화면": 2,
+      "/p/adidas-adipower26-boa-women-shoes|첫 화면": 1,
+      "/p/ecco-biom-h4-women-shoes|25%": 1,
+      "/p/ecco-goretex-women-shoes|첫 화면": 1,
+      "/p/footjoy-pro-slx-women-shoes|25%": 1,
+      "/p/ping-fetch-putter|끝까지": 1,
+      "/p/ping-hoofer-stand|25%": 1,
+      "/p/sunmountain-h2no-stand|75%": 1,
+      "/p/voicecaddie-vc4|25%": 1,
+      "/p/voicecaddie-vc4|50%": 1
+    },
+    "dev": {
+      "PC": 10,
+      "모바일": 8
+    },
+    "hour": {
+      "10": 2,
+      "13": 1,
+      "14": 2,
+      "16": 1,
+      "18": 3,
+      "19": 4,
+      "22": 2,
+      "07": 2,
+      "08": 1
+    },
+    "nav": {
+      "/g/golf-bag-recommend|/p/ping-hoofer-stand": 1,
+      "/g/golf-bag-recommend|/p/sunmountain-h2no-stand": 1,
+      "/g/womens-shoes-recommend|/p/adidas-adipower26-boa-women-shoes": 1,
+      "/g/womens-shoes-recommend|/p/ecco-biom-h4-women-shoes": 1,
+      "/g/womens-shoes-recommend|/p/ecco-goretex-women-shoes": 1,
+      "/g/womens-shoes-recommend|/p/footjoy-pro-slx-women-shoes": 1
+    },
+    "pv": {
+      "/c/ball": 1,
+      "/c/rangefinder": 5,
+      "/g/driver-recommend-2026-intermediate": 2,
+      "/g/golf-bag-recommend": 2,
+      "/g/utility-recommend": 2,
+      "/g/womens-shoes-recommend": 2,
+      "/jp/xxio14-driver": 1,
+      "/p/adidas-adipower26-boa-women-shoes": 1,
+      "/p/ecco-biom-h4-women-shoes": 1,
+      "/p/ecco-goretex-women-shoes": 1,
+      "/p/footjoy-pro-slx-women-shoes": 1,
+      "/p/ping-fetch-putter": 1,
+      "/p/ping-hoofer-stand": 1,
+      "/p/sunmountain-h2no-stand": 1,
+      "/p/voicecaddie-vc4": 2
+    },
+    "pvprice": {
+      "가격 보임|/p/adidas-adipower26-boa-women-shoes": 1,
+      "가격 보임|/p/ecco-biom-h4-women-shoes": 1,
+      "가격 보임|/p/ecco-goretex-women-shoes": 1,
+      "가격 보임|/p/footjoy-pro-slx-women-shoes": 1,
+      "가격 보임|/p/ping-fetch-putter": 1,
+      "가격 보임|/p/ping-hoofer-stand": 1,
+      "가격 보임|/p/sunmountain-h2no-stand": 1,
+      "가격 보임|/p/voicecaddie-vc4": 2
+    },
+    "ref": {
+      "빙": 4,
+      "직접·북마크": 1,
+      "캠페인: chatgpt.com": 9,
+      "캠페인: youtube": 4
+    },
+    "refland": {
+      "빙|/c/rangefinder": 4,
+      "직접·북마크|/c/rangefinder": 1,
+      "캠페인: chatgpt.com|/c/ball": 1,
+      "캠페인: chatgpt.com|/g/golf-bag-recommend": 2,
+      "캠페인: chatgpt.com|/g/womens-shoes-recommend": 2,
+      "캠페인: chatgpt.com|/jp/xxio14-driver": 1,
+      "캠페인: chatgpt.com|/p/ping-fetch-putter": 1,
+      "캠페인: chatgpt.com|/p/voicecaddie-vc4": 2,
+      "캠페인: youtube|/g/driver-recommend-2026-intermediate": 2,
+      "캠페인: youtube|/g/utility-recommend": 2
+    },
+    "refurl": {
+      "chatgpt.com": 9,
+      "youtube / video / c-driver-recommend-2026-mid": 2,
+      "youtube / video / t-utility-recommend-1": 2
+    },
+    "seen": {
+      "/c/ball": 1,
+      "/c/rangefinder": 5,
+      "/g/driver-recommend-2026-intermediate": 2,
+      "/g/golf-bag-recommend": 2,
+      "/g/utility-recommend": 2,
+      "/g/womens-shoes-recommend": 2,
+      "/p/ping-fetch-putter": 1,
+      "/p/ping-hoofer-stand": 1,
+      "/p/sunmountain-h2no-stand": 1,
+      "/p/voicecaddie-vc4": 2
+    },
+    "seenpos": {
+      "결론 표": 12,
+      "상품 페이지": 5,
+      "한 줄 결론": 2
+    },
+    "seenref": {
+      "빙": 4,
+      "직접·북마크": 1,
+      "캠페인: chatgpt.com": 10,
+      "캠페인: youtube": 4
+    },
+    "skip": {
+      "데이터센터 AS14618 Amazon Technologies Inc.": 1,
+      "데이터센터 AS14618 Amazon.com, Inc.": 1,
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3,
+      "데이터센터 AS16509 Amazon Technologies Inc.": 2,
+      "데이터센터 AS396982 Google LLC": 2,
+      "데이터센터 AS8075 Microsoft Limited": 2,
+      "데이터센터 AS9009": 1
+    },
+    "stay": {
+      "/c/ball|10초 미만": 1,
+      "/g/golf-bag-recommend|10초 미만": 2,
+      "/g/womens-shoes-recommend|10~30초": 1,
+      "/g/womens-shoes-recommend|10초 미만": 1,
+      "/p/adidas-adipower26-boa-women-shoes|10초 미만": 1,
+      "/p/ecco-biom-h4-women-shoes|10초 미만": 1,
+      "/p/ecco-goretex-women-shoes|10초 미만": 1,
+      "/p/footjoy-pro-slx-women-shoes|10초 미만": 1,
+      "/p/ping-fetch-putter|30초~1분": 1,
+      "/p/ping-hoofer-stand|10초 미만": 1,
+      "/p/sunmountain-h2no-stand|10~30초": 1,
+      "/p/voicecaddie-vc4|10초 미만": 1,
+      "/p/voicecaddie-vc4|1~3분": 1
+    },
+    "visit": {
+      "/c/ball": 1,
+      "/c/rangefinder": 5,
+      "/g/driver-recommend-2026-intermediate": 2,
+      "/g/golf-bag-recommend": 2,
+      "/g/utility-recommend": 2,
+      "/g/womens-shoes-recommend": 2,
+      "/jp/xxio14-driver": 1,
+      "/p/ping-fetch-putter": 1,
+      "/p/voicecaddie-vc4": 2
+    },
+    "xpv": {
+      "/c/ball": 1,
+      "/c/rangefinder": 4,
+      "/g/driver-recommend-2026-intermediate": 2,
+      "/g/golf-bag-recommend": 2,
+      "/g/utility-recommend": 2,
+      "/g/womens-shoes-recommend": 2,
+      "/jp/xxio14-driver": 1,
+      "/p/adidas-adipower26-boa-women-shoes": 1,
+      "/p/ecco-biom-h4-women-shoes": 1,
+      "/p/ecco-goretex-women-shoes": 1,
+      "/p/footjoy-pro-slx-women-shoes": 1,
+      "/p/ping-fetch-putter": 1,
+      "/p/ping-hoofer-stand": 1,
+      "/p/sunmountain-h2no-stand": 1,
+      "/p/voicecaddie-vc4": 2
+    },
+    "ytbot": {
+      "youtube / video / c-driver-recommend-2026-mid": 2,
+      "youtube / video / t-utility-recommend-1": 2
+    }
+  },
+  "journey": []
+}
