@@ -3,39 +3,64 @@
   "by": {
     "act": {
       "캠페인: chatgpt.com|/c/rangefinder": 1,
+      "캠페인: chatgpt.com|/c/shoes": 1,
       "캠페인: chatgpt.com|/g/golf-bag-recommend": 1,
+      "캠페인: chatgpt.com|/g/womens-shoes-recommend": 1,
       "캠페인: chatgpt.com|/p/sunmountain-h2no-stand": 1,
+      "캠페인: chatgpt.com|/p/titleist-players4-carbon-stand": 1,
+      "캠페인: chatgpt.com|/p/titleist-players5-carbon-stand": 1,
+      "캠페인: chatgpt.com|/p/xxio-hitech-women-pair-glove": 1,
       "캠페인: ig|/": 3,
       "캠페인: ig|/p/sunmountain-h2no-stand": 1
     },
     "asn": {
+      "AS17511 OPTAGE Inc.": 1,
+      "AS17853 LGTELECOM": 2,
       "AS3559 Korea Telecom": 1,
+      "AS4766 KT": 2,
+      "AS4773 M1 LIMITED": 2,
       "AS53813 Zscaler, Inc": 1,
-      "AS9318 SK Broadband Co Ltd": 1,
+      "AS9318 SK Broadband Co Ltd": 2,
+      "AS9622 Kurashiki Cable TV Corporation": 1,
       "AS9644 SK Telecom": 1
     },
     "asncamp": {
+      "AS17511 OPTAGE Inc.|youtube / video / t-utility-recommend-2|PC": 1,
+      "AS17853 LGTELECOM|chatgpt.com|모바일": 2,
       "AS3559 Korea Telecom|ig / social|태블릿": 1,
+      "AS4766 KT|chatgpt.com|모바일": 2,
+      "AS4773 M1 LIMITED|youtube / comment / c-driver-recommend-2026-mid|PC": 2,
       "AS53813 Zscaler, Inc|chatgpt.com|PC": 1,
+      "AS9318 SK Broadband Co Ltd|chatgpt.com|모바일": 1,
       "AS9318 SK Broadband Co Ltd|ig / social|태블릿": 1,
+      "AS9622 Kurashiki Cable TV Corporation|youtube / video / t-utility-recommend-2|PC": 1,
       "AS9644 SK Telecom|chatgpt.com|모바일": 1
     },
     "cty": {
-      "KR": 4
+      "JP": 2,
+      "KR": 9,
+      "SG": 2
     },
     "depth": {
       "/c/rangefinder|25%": 1,
       "/g/golf-bag-recommend|첫 화면": 1,
       "/p/sunmountain-h2no-stand|끝까지": 2,
+      "/p/titleist-players4-carbon-stand|끝까지": 1,
+      "/p/titleist-players5-carbon-stand|끝까지": 1,
       "/|25%": 2,
       "/|첫 화면": 1
     },
     "dev": {
-      "PC": 1,
-      "모바일": 1,
+      "PC": 5,
+      "모바일": 6,
       "태블릿": 2
     },
     "hour": {
+      "10": 2,
+      "14": 2,
+      "18": 2,
+      "20": 2,
+      "21": 1,
       "06": 2,
       "07": 1,
       "08": 1
@@ -62,37 +87,66 @@
     "pv": {
       "/": 3,
       "/c/rangefinder": 1,
+      "/c/shoes": 1,
+      "/g/driver-recommend-2026-intermediate": 2,
       "/g/golf-bag-recommend": 1,
-      "/p/sunmountain-h2no-stand": 2
+      "/g/utility-recommend": 2,
+      "/g/womens-shoes-recommend": 1,
+      "/p/sunmountain-h2no-stand": 2,
+      "/p/titleist-players4-carbon-stand": 1,
+      "/p/titleist-players5-carbon-stand": 1,
+      "/p/xxio-hitech-women-pair-glove": 1
     },
     "pvprice": {
-      "가격 보임|/p/sunmountain-h2no-stand": 2
+      "가격 보임|/p/sunmountain-h2no-stand": 2,
+      "가격 보임|/p/titleist-players4-carbon-stand": 1,
+      "가격 보임|/p/titleist-players5-carbon-stand": 1,
+      "가격 보임|/p/xxio-hitech-women-pair-glove": 1
     },
     "ref": {
-      "캠페인: chatgpt.com": 2,
-      "캠페인: ig": 2
+      "캠페인: chatgpt.com": 7,
+      "캠페인: ig": 2,
+      "캠페인: youtube": 4
     },
     "refland": {
       "캠페인: chatgpt.com|/c/rangefinder": 1,
+      "캠페인: chatgpt.com|/c/shoes": 1,
       "캠페인: chatgpt.com|/g/golf-bag-recommend": 1,
-      "캠페인: ig|/": 2
+      "캠페인: chatgpt.com|/g/womens-shoes-recommend": 1,
+      "캠페인: chatgpt.com|/p/titleist-players4-carbon-stand": 1,
+      "캠페인: chatgpt.com|/p/titleist-players5-carbon-stand": 1,
+      "캠페인: chatgpt.com|/p/xxio-hitech-women-pair-glove": 1,
+      "캠페인: ig|/": 2,
+      "캠페인: youtube|/g/driver-recommend-2026-intermediate": 2,
+      "캠페인: youtube|/g/utility-recommend": 2
     },
     "refurl": {
-      "chatgpt.com": 2,
-      "ig / social": 2
+      "chatgpt.com": 7,
+      "ig / social": 2,
+      "youtube / comment / c-driver-recommend-2026-mid": 2,
+      "youtube / video / t-utility-recommend-2": 2
     },
     "seen": {
       "/c/rangefinder": 1,
+      "/c/shoes": 1,
+      "/g/driver-recommend-2026-intermediate": 2,
       "/g/golf-bag-recommend": 1,
-      "/p/sunmountain-h2no-stand": 2
+      "/g/utility-recommend": 2,
+      "/g/womens-shoes-recommend": 1,
+      "/p/sunmountain-h2no-stand": 2,
+      "/p/titleist-players4-carbon-stand": 1,
+      "/p/titleist-players5-carbon-stand": 1,
+      "/p/xxio-hitech-women-pair-glove": 1
     },
     "seenpos": {
-      "결론 표": 2,
-      "상품 페이지": 2
+      "결론 표": 6,
+      "상품 페이지": 5,
+      "한 줄 결론": 2
     },
     "seenref": {
-      "캠페인: chatgpt.com": 3,
-      "캠페인: ig": 1
+      "캠페인: chatgpt.com": 8,
+      "캠페인: ig": 1,
+      "캠페인: youtube": 4
     },
     "skip": {
       "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3
@@ -102,6 +156,8 @@
       "/g/golf-bag-recommend|10초 미만": 1,
       "/p/sunmountain-h2no-stand|10초 미만": 1,
       "/p/sunmountain-h2no-stand|3분 이상": 1,
+      "/p/titleist-players4-carbon-stand|10~30초": 1,
+      "/p/titleist-players5-carbon-stand|10~30초": 1,
       "/|10~30초": 1,
       "/|10초 미만": 1,
       "/|30초~1분": 1
@@ -109,13 +165,30 @@
     "visit": {
       "/": 2,
       "/c/rangefinder": 1,
-      "/g/golf-bag-recommend": 1
+      "/c/shoes": 1,
+      "/g/driver-recommend-2026-intermediate": 2,
+      "/g/golf-bag-recommend": 1,
+      "/g/utility-recommend": 2,
+      "/g/womens-shoes-recommend": 1,
+      "/p/titleist-players4-carbon-stand": 1,
+      "/p/titleist-players5-carbon-stand": 1,
+      "/p/xxio-hitech-women-pair-glove": 1
     },
     "xpv": {
       "/": 3,
       "/c/rangefinder": 1,
+      "/c/shoes": 1,
+      "/g/driver-recommend-2026-intermediate": 2,
       "/g/golf-bag-recommend": 1,
-      "/p/sunmountain-h2no-stand": 2
+      "/g/utility-recommend": 2,
+      "/g/womens-shoes-recommend": 1,
+      "/p/sunmountain-h2no-stand": 2,
+      "/p/titleist-players4-carbon-stand": 1,
+      "/p/titleist-players5-carbon-stand": 1,
+      "/p/xxio-hitech-women-pair-glove": 1
+    },
+    "ytbot": {
+      "youtube / video / t-utility-recommend-2": 2
     }
   },
   "journey": [

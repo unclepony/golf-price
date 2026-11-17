@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-18",
+  "by": {
+    "asn": {
+      "AS31117 ENERGOTEL a.s.": 1,
+      "AS42841 ANTIK_88_212_9_0": 1,
+      "AS64286 LogicWeb Inc.": 1
+    },
+    "asncamp": {
+      "AS31117 ENERGOTEL a.s.|youtube / video / lesson-wood-sweep|PC": 1,
+      "AS42841 ANTIK_88_212_9_0|youtube / video / lesson-wood-sweep|PC": 1
+    },
+    "cty": {
+      "SK": 2,
+      "US": 1
+    },
+    "depth": {
+      "/|25%": 1
+    },
+    "dev": {
+      "PC": 3
+    },
+    "hour": {
+      "00": 1,
+      "07": 2
+    },
+    "pv": {
+      "/": 1,
+      "/g/fairway-wood-recommend": 2
+    },
+    "ref": {
+      "직접·북마크": 1,
+      "캠페인: youtube": 2
+    },
+    "refland": {
+      "직접·북마크|/": 1,
+      "캠페인: youtube|/g/fairway-wood-recommend": 2
+    },
+    "refurl": {
+      "youtube / video / lesson-wood-sweep": 2
+    },
+    "seen": {
+      "/g/fairway-wood-recommend": 2
+    },
+    "seenpos": {
+      "결론 표": 2
+    },
+    "seenref": {
+      "캠페인: youtube": 2
+    },
+    "stay": {
+      "/|10초 미만": 1
+    },
+    "visit": {
+      "/": 1,
+      "/g/fairway-wood-recommend": 2
+    },
+    "xpv": {
+      "/g/fairway-wood-recommend": 2
+    },
+    "ytbot": {
+      "youtube / video / lesson-wood-sweep": 2
+    }
+  },
+  "journey": []
+}
