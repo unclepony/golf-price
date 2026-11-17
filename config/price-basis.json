@@ -1774,6 +1774,10 @@
       "won": 380000,
       "d": "2026-11-08"
     },
+    "odyssey-aione-giraffe-beam-putter": {
+      "won": 350000,
+      "d": "2026-11-17"
+    },
     "odyssey-aione-jailbird-mini-putter": {
       "won": 240000,
       "d": "2026-11-08"
@@ -1781,6 +1785,10 @@
     "odyssey-aione-milled-seven-t-putter": {
       "won": 400000,
       "d": "2026-11-08"
+    },
+    "odyssey-aione-s2s-max-putter": {
+      "won": 470000,
+      "d": "2026-11-17"
     },
     "odyssey-aione-s2s-putter": {
       "won": 470000,
@@ -1794,9 +1802,17 @@
       "won": 240000,
       "d": "2026-11-08"
     },
+    "odyssey-damascus-milled-putter": {
+      "won": 660000,
+      "d": "2026-11-17"
+    },
     "odyssey-dfx-2ball-blade-putter": {
       "won": 193000,
       "d": "2026-11-08"
+    },
+    "odyssey-s2s-tri-hot-putter": {
+      "won": 699600,
+      "d": "2026-11-17"
     },
     "odyssey-tri-hot-5k-putter": {
       "won": 249000,
@@ -1805,6 +1821,10 @@
     "odyssey-white-hot-og-2ball-putter": {
       "won": 352000,
       "d": "2026-11-08"
+    },
+    "odyssey-white-hot-versa-putter": {
+      "won": 165240,
+      "d": "2026-11-17"
     },
     "onoff-aka-utility": {
       "won": 370000,
@@ -2117,6 +2137,14 @@
     "ping-pld-milled-ds72-putter": {
       "won": 489000,
       "d": "2026-11-14"
+    },
+    "ping-pld-milled-oslo3-putter": {
+      "won": 590000,
+      "d": "2026-11-17"
+    },
+    "ping-pld-milled-tyne4-putter": {
+      "won": 489000,
+      "d": "2026-11-17"
     },
     "ping-s159-wedge": {
       "won": 249270,
@@ -2865,6 +2893,10 @@
     "taylormade-stratus-soft-glove": {
       "won": 9900,
       "d": "2026-11-08"
+    },
+    "taylormade-systm2-putter": {
+      "won": 289000,
+      "d": "2026-11-17"
     },
     "taylormade-t-heat-pair-glove": {
       "won": 31410,
