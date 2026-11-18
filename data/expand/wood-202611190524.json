@@ -1,0 +1,256 @@
+[
+ {
+  "category": "wood",
+  "id": "callaway-quantum-mini-buffy-fairway",
+  "name": "캘러웨이 퀀텀 미니 버피(QUANTUM MINI BUFFY) 페어웨이 우드 (남성)",
+  "query": "캘러웨이 퀀텀 미니 버피 페어웨이우드",
+  "must": [
+   "퀀텀"
+  ],
+  "mustAny": [
+   "버피",
+   "buffy"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "우먼",
+   "ladies",
+   "lady",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "커버만",
+   "중고",
+   "병행",
+   "직수입",
+   "무게추",
+   "웨이트",
+   "호환",
+   "시타",
+   "드라이버",
+   "유틸",
+   "하이브리드",
+   "레스큐",
+   "아이언",
+   "풀세트",
+   "왼손",
+   "좌타",
+   "슬리브",
+   "보호필름",
+   "필름",
+   "렌치",
+   "스피너",
+   "spinner"
+  ],
+  "summary": "캘러웨이 퀀텀 시리즈의 4번(BUFFY) 우드로, 일반 우드보다 샤프트가 짧은(42.25인치) 17도 모델입니다. 일본에서 2026년 4월 나왔고 국내는 한국캘러웨이골프가 수입합니다.",
+  "points": [
+   "로프트 17도, 길이 42.25인치(일반 5번 우드보다 짧음)",
+   "솔 안쪽 스피드웨이브 2.0, 조절 호젤 OptiFit 4",
+   "2026년 4월 출시(일본), 샤프트·강도는 판매처 확인"
+  ],
+  "sources": [
+   "https://assets.contentstack.io/v3/assets/blt3676dfd2ccbb1401/bltf4f31b5b8214189a/69a92cf0c7edd12eb421ae44/20260306_QUANTUM_MINI_BUFFY_web.pdf",
+   "https://www.golfdigest-minna.jp/_ct/17825727"
+  ],
+  "guidePick": {
+   "role": "짧은 샤프트 4번 우드",
+   "forWhom": "3번 우드가 길어 부담스러운 중급 골퍼",
+   "short": "퀀텀 미니 버피",
+   "plus": "짧아서 맞히기 쉬움",
+   "minus": "로프트 한 가지",
+   "pros": [
+    "42.25인치 짧은 샤프트로 정확히 맞히기 쉬움",
+    "17도로 3번과 5번 사이 거리"
+   ],
+   "cons": [
+    "로프트 17도 한 가지",
+    "국내 판매처가 적음"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    3
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2026년 4월"
+   ],
+   "verdict": "3번 우드가 어려운 중급자의 티샷·세컨드용 대안",
+   "skill": "중급"
+  }
+ },
+ {
+  "category": "wood",
+  "id": "titleist-gts3-fairway",
+  "name": "타이틀리스트 GTS3 페어웨이 우드",
+  "query": "타이틀리스트 GTS3 페어웨이우드",
+  "must": [
+   "gts3"
+  ],
+  "mustAny": [
+   "페어웨이",
+   "우드"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "우먼",
+   "ladies",
+   "lady",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "커버만",
+   "중고",
+   "병행",
+   "직수입",
+   "무게추",
+   "웨이트",
+   "호환",
+   "시타",
+   "드라이버",
+   "유틸",
+   "하이브리드",
+   "레스큐",
+   "아이언",
+   "풀세트",
+   "왼손",
+   "좌타",
+   "슬리브",
+   "보호필름",
+   "필름",
+   "렌치",
+   "gts2",
+   "gts4"
+  ],
+  "summary": "타이틀리스트가 2026년 6월 국내에 내놓은 GTS 페어웨이 우드 중 깊은 페이스·작은 헤드의 GTS3입니다. 다운블로로 치는 상급자를 위한 모델입니다.",
+  "points": [
+   "2026년 6월 국내 출시(GTS2와 함께)",
+   "깊은 페이스·컴팩트 헤드, 다운블로 골퍼용",
+   "로프트 15·16.5·18·21도(21도 새로 추가)"
+  ],
+  "sources": [
+   "https://www.hankyung.com/article/202606168728i",
+   "https://www.titleist.eu/golf-clubs/fairways/gts3"
+  ],
+  "guidePick": {
+   "role": "상급자 컴팩트 최신형",
+   "forWhom": "공을 찍어 치며 탄도를 다루고 싶은 상급자",
+   "short": "GTS3",
+   "plus": "정교한 컨트롤",
+   "minus": "관용성 낮음",
+   "pros": [
+    "깊은 페이스·작은 헤드로 볼 컨트롤 유리",
+    "2026년 최신 타이틀리스트"
+   ],
+   "cons": [
+    "초보에겐 어려움",
+    "값이 높은 편"
+   ],
+   "scores": [
+    4,
+    3,
+    2,
+    2
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2026년 6월"
+   ],
+   "verdict": "탄도를 다루는 상급자·프로용 최신 우드",
+   "skill": "프로"
+  }
+ },
+ {
+  "category": "wood",
+  "id": "taylormade-qi35max-fairway",
+  "name": "테일러메이드 Qi35 MAX 페어웨이 우드 (남성)",
+  "query": "테일러메이드 남성용 Qi35 MAX 페어웨이우드 DIA BLUE",
+  "must": [
+   "qi35"
+  ],
+  "mustAny": [
+   "max",
+   "맥스"
+  ],
+  "exclude": [
+   "여성",
+   "레이디",
+   "우먼",
+   "ladies",
+   "lady",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "커버만",
+   "중고",
+   "병행",
+   "직수입",
+   "무게추",
+   "웨이트",
+   "호환",
+   "시타",
+   "드라이버",
+   "유틸",
+   "하이브리드",
+   "레스큐",
+   "아이언",
+   "풀세트",
+   "왼손",
+   "좌타",
+   "슬리브",
+   "보호필름",
+   "필름",
+   "렌치",
+   "lite",
+   "라이트",
+   "tour",
+   "투어",
+   "qi4d",
+   "qi10",
+   "ls"
+  ],
+  "summary": "테일러메이드 Qi35 시리즈(2025년 1월 발표)에서 가장 관용성이 높은 MAX 페어웨이 우드입니다. 200cc 큰 헤드와 뒤쪽 34g 텅스텐으로 공이 쉽게 뜹니다.",
+  "points": [
+   "Qi35 라인에서 가장 큰 200cc 헤드",
+   "뒤쪽 고정 텅스텐 34g, 높은 관용성",
+   "3번·5번은 4도 로프트 조절 슬리브"
+  ],
+  "sources": [
+   "https://www.taylormadegolf.fr/clubhouse/890709-taylormade-introduces-qi35-fairway-woods-and-hybrids.html?lang=fr_FR",
+   "https://www.golfmagic.com/equipment/news/unlocking-another-level-distance-forgiveness-and-adjustability-taylormade-introduces"
+  ],
+  "guidePick": {
+   "role": "직전 세대 관용성형",
+   "forWhom": "우드가 잘 안 뜨는 초심자·중급자",
+   "short": "Qi35 MAX",
+   "plus": "큰 헤드·쉬운 탄도",
+   "minus": "직전 세대",
+   "pros": [
+    "200cc 큰 헤드로 미스에 강함",
+    "3·5번 로프트 조절"
+   ],
+   "cons": [
+    "직전 세대(후속 Qi4D)",
+    "스핀이 많아 강한 스윙엔 뜰 수 있음"
+   ],
+   "scores": [
+    3,
+    5,
+    5,
+    4
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2025년 1월"
+   ],
+   "verdict": "쉽게 띄우고 싶은 초심자·중급자에게 맞는 관용성 우드",
+   "skill": "초심자"
+  }
+ }
+]
