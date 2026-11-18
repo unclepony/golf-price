@@ -53,7 +53,8 @@
   } catch {}
   beacon({ t: 'pv', v: fresh ? 1 : 0, ...(prev && { f: prev }), ...(ps && { ps }), ...(nw && { nw }) });
   const navWhere = (a) =>
-    a.closest('.pd-peer') ? '같은 비교 다른 상품'
+    a.closest('.stickybuy') ? '하단 고정 바' // 2026-11-19: 고정 바의 1위 상품 이름 → 상품 상세
+    : a.closest('.pd-peer') ? '같은 비교 다른 상품'
     : a.closest('.pd-alt') ? '대체 상품'
     : a.closest('.answer') ? '결론 표'
     : a.closest('.conclusion') ? '한 줄 결론'

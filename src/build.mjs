@@ -1002,7 +1002,9 @@ function stickyBuy(pk, label = '1위') {
   if (!pk) return '';
   const p = byId[pk.id].p;
   const sp = freshPrice(p.id);
-  return `<div class="stickybuy" role="complementary" aria-label="1위 상품 바로가기"><span class="sb-t"><b>${esc(label)}</b> ${esc(p.name)}${sp ? ` · ${won(sp.won)}` : ''}</span>${buyBtn(p.id, 'btn sm', '1위 상품 가격 보기')}</div>`;
+  // 2026-11-19 셀프 개선: 상품 이름을 상품 상세(/p/) 링크로 — 10-20~11-18 고정 버튼 쿠팡 클릭 0건(가이드 페이지뷰 217), 쿠팡 클릭은 상품 페이지에서 가장 많이 남.
+  // .sb-t 는 통째로 콘텐츠 지문에서 빠지므로(contentKey) '마지막 업데이트'·IndexNow 는 바뀌지 않는다
+  return `<div class="stickybuy" role="complementary" aria-label="1위 상품 바로가기"><span class="sb-t"><b>${esc(label)}</b> <a class="sb-p" href="/p/${p.id}">${esc(p.name)}</a>${sp ? ` · ${won(sp.won)}` : ''}</span>${buyBtn(p.id, 'btn sm', '1위 상품 가격 보기')}</div>`;
 }
 // 구형 모델이 실력별 1위일 때 이유와 최신 모델 1위
 function oldModelNote(g, reps) {
