@@ -3633,7 +3633,7 @@
       "id": "xxio12-fairway",
       "category": "wood",
       "name": "젝시오 12 페어웨이 우드 (9번)",
-      "query": "젝시오 12 페어웨이 우드 (9번)",
+      "query": "젝시오12 남성 페어웨이우드 MP1200",
       "must": [
         "젝시오12",
         "페어웨이"
@@ -3790,7 +3790,7 @@
       "id": "callaway-roguest-fairway",
       "category": "wood",
       "name": "캘러웨이 로그 ST MAX 페어웨이 우드",
-      "query": "캘러웨이 로그 ST MAX 페어웨이 우드",
+      "query": "캘러웨이 로그ST 맥스 페어웨이 남성",
       "must": [
         "로그st",
         "페어웨이"
@@ -3863,7 +3863,7 @@
       "id": "srixon-zxmk2-fairway",
       "category": "wood",
       "name": "스릭슨 ZX MK2 페어웨이 우드",
-      "query": "스릭슨 ZX MK2 페어웨이 우드",
+      "query": "스릭슨 ZX MK2 페어웨이우드",
       "must": [
         "zx mk2",
         "페어웨이"
