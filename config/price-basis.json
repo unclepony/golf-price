@@ -462,6 +462,10 @@
       "won": 1400000,
       "d": "2026-11-08"
     },
+    "callaway-quantum-mini-buffy-fairway": {
+      "won": 461990,
+      "d": "2026-11-19"
+    },
     "callaway-quantum-td-driver": {
       "won": 669600,
       "d": "2026-11-16"
@@ -1191,8 +1195,8 @@
       "d": "2026-11-08"
     },
     "honma-beres09-fairway": {
-      "won": 446160,
-      "d": "2026-11-08"
+      "won": 856000,
+      "d": "2026-11-19"
     },
     "honma-beres09-hybrid": {
       "won": 523160,
@@ -2877,6 +2881,10 @@
     "taylormade-qi35max-driver": {
       "won": 459000,
       "d": "2026-11-08"
+    },
+    "taylormade-qi35max-fairway": {
+      "won": 268990,
+      "d": "2026-11-19"
     },
     "taylormade-qi35max-rescue": {
       "won": 249000,
