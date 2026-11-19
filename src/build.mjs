@@ -179,6 +179,8 @@ for (const [id, v] of Object.entries(variants)) {
 const siteConf = readJson(join(ROOT, 'config', 'site.json'), {});
 const VERIFY = [
   siteConf.googleVerification && `<meta name="google-site-verification" content="${siteConf.googleVerification}">`,
+  // Bing 웹마스터 소유 확인(2026-11-19) — ChatGPT 검색이 Bing 색인을 쓴다
+  siteConf.bingVerification && `<meta name="msvalidate.01" content="${siteConf.bingVerification}">`,
   siteConf.naverVerification && `<meta name="naver-site-verification" content="${siteConf.naverVerification}">`,
   `<link rel="alternate" type="application/rss+xml" title="${SITE.name ?? ''}" href="${SITE_URL}/rss.xml">`,
 ]
