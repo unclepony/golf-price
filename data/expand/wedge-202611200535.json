@@ -1,0 +1,549 @@
+[
+ {
+  "id": "cleveland-rtz2-wedge",
+  "category": "wedge",
+  "name": "클리브랜드 RTZ 2 웨지",
+  "query": "클리브랜드 RTZ 2 웨지",
+  "must": [
+   "rtz",
+   "웨지"
+  ],
+  "mustAny": [
+   "rtz 2",
+   "rtz2",
+   "rtz-2"
+  ],
+  "exclude": [
+   "중고",
+   "병행",
+   "직수입",
+   "헤드만",
+   "샤프트만",
+   "시타",
+   "헤드커버",
+   "커버만",
+   "드라이버",
+   "우드",
+   "유틸",
+   "아이언세트",
+   "풀세트",
+   "퍼터",
+   "좌타",
+   "왼손",
+   "lefty",
+   "그립만",
+   "캐디백",
+   "골프백",
+   "여성",
+   "레이디",
+   "우먼",
+   "ladies",
+   "일본",
+   "낱개",
+   "해외",
+   "구매대행",
+   "풀페이스",
+   "full face",
+   "fullface",
+   "rtx",
+   "cbx",
+   "스마트솔"
+  ],
+  "summary": "클리브랜드가 2026년 8월 발표하고 9월 4일 미국에서 내놓은 RTZ 후속 웨지입니다. 자체 Z-Alloy 강철 헤드에 로프트·그라인드별로 맞춘 ZipCore iQ 호젤 코어와 HydraZip 페이스를 넣었고, MID·FULL·LOW·ADAPT·588 다섯 가지 그라인드를 46~64도로 냅니다(제조사 발표).",
+  "points": [
+   "Z-Alloy 강철 헤드 + 로프트별 ZipCore iQ 코어(제조사 발표)",
+   "그라인드 5종(MID·FULL·LOW·ADAPT·588), 로프트 46~64°",
+   "2026년 신형 — 국내 정식 판매 사양은 판매처 확인"
+  ],
+  "guidePick": {
+   "role": "2026 클리브랜드 투어 웨지",
+   "forWhom": "최신 투어형 웨지로 스핀과 그라인드 선택을 원하는 중·상급자",
+   "short": "RTZ 2",
+   "plus": "최신 스핀 웨지",
+   "minus": "신형 가격",
+   "pros": [
+    "로프트별로 무게중심을 맞춘 ZipCore iQ 코어(제조사 발표)",
+    "다섯 가지 그라인드로 코스·스윙에 맞춰 고르기 쉬움",
+    "마감 투어 새틴·블랙 새틴·투어 랙(제조사 발표)"
+   ],
+   "cons": [
+    "2026년 신형이라 값이 높은 편",
+    "연결 상품 로프트·바운스·샤프트는 판매처 확인",
+    "관용성은 캐비티형보다 낮음"
+   ],
+   "scores": [
+    5,
+    3,
+    5,
+    3
+   ],
+   "specs": [
+    "판매처 확인",
+    "판매처 확인",
+    "판매처 확인"
+   ],
+   "verdict": "2026년 최신 클리브랜드 투어 웨지를 원하는 중·상급자에게 맞습니다",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://golf.com/gear/wedges/clevelands-rtz-2-wedges-roger-cleveland/",
+   "https://www.golfdigest.com/story/cleveland-rtz-2-wedges--what-you-need-to-know",
+   "https://www.todays-golfer.com/news-and-events/equipment-news/cleveland-reveal-new-rtz-2-wedges/"
+  ]
+ },
+ {
+  "id": "callaway-opus-sp-plus-wedge",
+  "category": "wedge",
+  "name": "캘러웨이 오퍼스 SP+ 웨지",
+  "query": "캘러웨이 오퍼스 SP+ 웨지",
+  "must": [
+   "오퍼스",
+   "웨지"
+  ],
+  "mustAny": [
+   "sp+",
+   "sp 플러스",
+   "sp플러스",
+   "sp plus"
+  ],
+  "exclude": [
+   "중고",
+   "병행",
+   "직수입",
+   "헤드만",
+   "샤프트만",
+   "시타",
+   "헤드커버",
+   "커버만",
+   "드라이버",
+   "우드",
+   "유틸",
+   "아이언세트",
+   "풀세트",
+   "퍼터",
+   "좌타",
+   "왼손",
+   "lefty",
+   "그립만",
+   "캐디백",
+   "골프백",
+   "여성",
+   "레이디",
+   "우먼",
+   "ladies",
+   "일본",
+   "낱개",
+   "해외",
+   "구매대행",
+   "플래티넘",
+   "platinum",
+   "풀토",
+   "full toe",
+   "jaws",
+   "죠스"
+  ],
+  "summary": "캘러웨이가 2026년 3월 6일 내놓은 오퍼스 SP 후속 웨지입니다. 솔 안쪽의 빈 스핀 포켓을 오퍼스 SP 보다 25% 키워 낮은 탄도·많은 스핀을 노렸고, MIM 스테인리스 페이스·8620 주조 바디·텅스텐 조합입니다. 로프트 54·56·58·60°, 그라인드 Z·S·X(제조사 발표).",
+  "points": [
+   "오퍼스 SP 보다 25% 큰 스핀 포켓(제조사 발표)",
+   "로프트 54·56·58·60°, 그라인드 Z·S·X",
+   "기본 샤프트 다이나믹 골드 S200(제조사 사양)"
+  ],
+  "guidePick": {
+   "role": "2026 캘러웨이 저탄도 스핀 웨지",
+   "forWhom": "낮은 탄도로 세우는 어프로치를 원하는 상급자",
+   "short": "오퍼스 SP+",
+   "plus": "낮은 탄도·스핀",
+   "minus": "높은 가격",
+   "pros": [
+    "스핀 포켓을 키워 낮은 탄도·높은 스핀 설계(제조사 발표)",
+    "텅스텐을 더해 무게중심 조절(제조사 발표)",
+    "그라인드 Z·S·X 중 선택"
+   ],
+   "cons": [
+    "샌드·로브 로프트(54~60°) 위주",
+    "2026년 신형이라 값이 높은 편",
+    "연결 상품 로프트·그라인드는 판매처 확인"
+   ],
+   "scores": [
+    5,
+    3,
+    5,
+    3
+   ],
+   "specs": [
+    "판매처 확인",
+    "판매처 확인",
+    "DG S200"
+   ],
+   "verdict": "오퍼스 SP 보다 낮은 탄도와 스핀을 원하는 상급자에게 맞습니다",
+   "skill": "프로"
+  },
+  "sources": [
+   "https://www.callawaygolf.com/press/callaway-golf-introduces-opus-sp-plus-wedges",
+   "https://www.golfdigest.com/story/callaway-opus-sp-plus-wedges-equipment",
+   "https://golf.com/gear/wedges/callaways-opus-sp-plus/"
+  ]
+ },
+ {
+  "id": "callaway-full-toe-sp-wedge",
+  "category": "wedge",
+  "name": "캘러웨이 풀토 SP 웨지",
+  "query": "캘러웨이 풀토 SP 웨지",
+  "must": [
+   "웨지"
+  ],
+  "mustAny": [
+   "풀토",
+   "full toe",
+   "풀 토"
+  ],
+  "exclude": [
+   "중고",
+   "병행",
+   "직수입",
+   "헤드만",
+   "샤프트만",
+   "시타",
+   "헤드커버",
+   "커버만",
+   "드라이버",
+   "우드",
+   "유틸",
+   "아이언세트",
+   "풀세트",
+   "퍼터",
+   "좌타",
+   "왼손",
+   "lefty",
+   "그립만",
+   "캐디백",
+   "골프백",
+   "여성",
+   "레이디",
+   "우먼",
+   "ladies",
+   "일본",
+   "낱개",
+   "해외",
+   "구매대행",
+   "jaws",
+   "죠스",
+   "플래티넘",
+   "sp+",
+   "플러스"
+  ],
+  "summary": "캘러웨이가 2026년 8월 발표하고 9월 내놓은 하이토 모양 풀페이스 그루브 웨지입니다. 페이스 전체에 Spin Gen 2.0 그루브를 넣어 일반 웨지보다 그루브 면적이 44% 넓고, 캘러웨이 웨지 중 무게중심이 가장 높다고 밝혔습니다. 로프트 54~62°, J 그라인드(62° JW 는 주문 제작)(제조사 발표).",
+  "points": [
+   "페이스 전체 그루브(Spin Gen 2.0), 그루브 면적 44% 넓음(제조사 발표)",
+   "로프트 54~62°, J 그라인드",
+   "기본 샤프트 다이나믹 골드 S200(제조사 사양)"
+  ],
+  "guidePick": {
+   "role": "풀페이스 하이토 샌드·로브",
+   "forWhom": "벙커·플롭 샷처럼 페이스를 여는 샷이 많은 중·상급자",
+   "short": "풀토 SP",
+   "plus": "페이스 연 샷",
+   "minus": "풀스윙용 아님",
+   "pros": [
+    "토 쪽까지 그루브가 있어 페이스를 열어도 스핀 유지(제조사 발표)",
+    "무게중심이 높아 탄도를 낮게 누르기 쉬움(제조사 발표)",
+    "샌드·로브 로프트 54~62°"
+   ],
+   "cons": [
+    "풀스윙 갭웨지 용도로는 맞지 않음",
+    "헤드가 커 보여 취향이 갈림",
+    "연결 상품 로프트는 판매처 확인"
+   ],
+   "scores": [
+    5,
+    3,
+    4,
+    3
+   ],
+   "specs": [
+    "판매처 확인",
+    "판매처 확인",
+    "DG S200"
+   ],
+   "verdict": "그린 주변에서 페이스를 열어 치는 샷이 많은 골퍼에게 맞습니다",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://www.callawaygolf.com/press/callaway-golf-announces-new-full-toe-sp-wedge",
+   "https://www.golfdigest.com/story/callaway-full-toe-sp-wedges-insights",
+   "https://golf.com/gear/wedges/callaways-full-toe-sp-wedges-creativity/"
+  ]
+ },
+ {
+  "id": "cleveland-cbx-zipcore-wedge",
+  "category": "wedge",
+  "name": "클리브랜드 CBX 집코어 웨지",
+  "query": "클리브랜드 CBX 집코어 웨지",
+  "must": [
+   "cbx",
+   "웨지"
+  ],
+  "mustAny": [
+   "집코어",
+   "zipcore",
+   "zip core"
+  ],
+  "exclude": [
+   "중고",
+   "병행",
+   "직수입",
+   "헤드만",
+   "샤프트만",
+   "시타",
+   "헤드커버",
+   "커버만",
+   "드라이버",
+   "우드",
+   "유틸",
+   "아이언세트",
+   "풀세트",
+   "퍼터",
+   "좌타",
+   "왼손",
+   "lefty",
+   "그립만",
+   "캐디백",
+   "골프백",
+   "여성",
+   "레이디",
+   "우먼",
+   "ladies",
+   "일본",
+   "낱개",
+   "해외",
+   "구매대행",
+   "cbx4",
+   "cbx 4",
+   "풀페이스",
+   "full face",
+   "cbx2",
+   "cbx 2",
+   "rtx",
+   "rtz"
+  ],
+  "summary": "클리브랜드가 2021년 12월 내놓은 CBX 3세대 캐비티 웨지입니다. 힐 쪽 빈 캐비티와 토 쪽 무게로 관용성을 높이고, 저밀도 ZipCore·젤백 TPU 인서트로 진동을 줄였습니다. 솔은 V(44~52°)·S(54~56°)·C(58~60°)로 로프트마다 다릅니다(제조사 발표).",
+  "points": [
+   "캐비티 + 토 무게로 관용성 높임(제조사 발표)",
+   "로프트별 솔 V·S·C, UltiZip 그루브",
+   "후속 CBX4 가 나온 직전 세대 — 재고 위주"
+  ],
+  "guidePick": {
+   "role": "관용성 캐비티 웨지(직전 세대)",
+   "forWhom": "아이언처럼 편하게 치는 웨지를 찾는 초보·중급자",
+   "short": "CBX 집코어",
+   "plus": "높은 관용성",
+   "minus": "직전 세대",
+   "pros": [
+    "캐비티 구조로 빗맞아도 거리 손실이 적은 편(제조사 발표)",
+    "로프트마다 솔 모양을 달리해 쓰기 쉬움",
+    "후속작보다 낮은 값이 나올 수 있음"
+   ],
+   "cons": [
+    "후속 CBX4 가 나온 직전 세대",
+    "손맛·조작성은 투어형보다 덜함",
+    "연결 상품 로프트·샤프트는 판매처 확인"
+   ],
+   "scores": [
+    3,
+    5,
+    3,
+    4
+   ],
+   "specs": [
+    "판매처 확인",
+    "판매처 확인",
+    "판매처 확인"
+   ],
+   "verdict": "웨지를 아이언처럼 편하게 치고 싶은 초보·중급자에게 맞습니다",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://news.dunlopsports.com/news/introducing-cbx-zipcore--forgiveness-is-a-virtue/s/a77200d5-5ca3-482c-b41b-3991864a37ca",
+   "https://golf.com/gear/wedges/cleveland-golf-cbx-zipcore-wedge-first-look/",
+   "https://sports.khan.co.kr/article/202202172024003"
+  ]
+ },
+ {
+  "id": "cleveland-smartsole4-wedge",
+  "category": "wedge",
+  "name": "클리브랜드 스마트솔 4 웨지",
+  "query": "클리브랜드 스마트솔4 웨지",
+  "must": [
+   "웨지"
+  ],
+  "mustAny": [
+   "스마트솔4",
+   "스마트솔 4",
+   "smart sole 4",
+   "smartsole 4"
+  ],
+  "exclude": [
+   "중고",
+   "병행",
+   "직수입",
+   "헤드만",
+   "샤프트만",
+   "시타",
+   "헤드커버",
+   "커버만",
+   "드라이버",
+   "우드",
+   "유틸",
+   "아이언세트",
+   "풀세트",
+   "퍼터",
+   "좌타",
+   "왼손",
+   "lefty",
+   "그립만",
+   "캐디백",
+   "골프백",
+   "여성",
+   "레이디",
+   "우먼",
+   "ladies",
+   "일본",
+   "낱개",
+   "해외",
+   "구매대행",
+   "치퍼",
+   "c42",
+   "풀페이스",
+   "full face"
+  ],
+  "summary": "클리브랜드가 2020년 내놓은 초보용 넓은 솔 웨지입니다. C(42° 치퍼)·G(50° 갭)·S(58° 샌드) 세 가지이고, S 는 가장 넓은 솔과 큰 바운스로 벙커에서 잘 빠지게 만들었다고 밝혔습니다. 2022년 블랙 새틴 마감이 추가됐습니다(제조사 발표).",
+  "points": [
+   "G(50°)·S(58°) 넓은 솔 웨지(제조사 발표)",
+   "S 는 가장 넓은 솔·큰 바운스 — 벙커용",
+   "2022년 블랙 새틴 마감 추가"
+  ],
+  "guidePick": {
+   "role": "초보 벙커·어프로치 웨지",
+   "forWhom": "벙커 탈출과 짧은 어프로치가 어려운 초보",
+   "short": "스마트솔 4",
+   "plus": "벙커 탈출",
+   "minus": "풀스윙 한계",
+   "pros": [
+    "넓은 솔이 모래·잔디에 덜 박힘(제조사 발표)",
+    "로프트가 정해져 있어 고르기 쉬움(G 50°·S 58°)",
+    "값이 투어 웨지보다 낮은 편"
+   ],
+   "cons": [
+    "페이스를 여는 기술 샷에는 맞지 않음",
+    "후속 풀페이스형이 나온 이전 모델",
+    "연결 상품 종류(G·S)는 판매처 확인"
+   ],
+   "scores": [
+    2,
+    5,
+    2,
+    4
+   ],
+   "specs": [
+    "판매처 확인",
+    "판매처 확인",
+    "판매처 확인"
+   ],
+   "verdict": "벙커와 짧은 어프로치에서 실수를 줄이고 싶은 초보에게 맞습니다",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://www.golfmonthly.com/gear/gear-news/cleveland-smart-sole-4-wedges-unveiled-190842",
+   "https://us.dunlopsports.com/cleveland-golf/clubs/wedges/smart-sole-4-wedge/11192032.html",
+   "https://www.insidegolf.ca/read/15891-cleveland-golf-announces-the-smart-sole-4-black-satin"
+  ]
+ },
+ {
+  "id": "callaway-sure-out2-wedge",
+  "category": "wedge",
+  "name": "캘러웨이 슈어아웃 2 웨지",
+  "query": "캘러웨이 슈어아웃2 웨지",
+  "must": [
+   "웨지"
+  ],
+  "mustAny": [
+   "슈어아웃",
+   "sure out",
+   "sureout"
+  ],
+  "exclude": [
+   "중고",
+   "병행",
+   "직수입",
+   "헤드만",
+   "샤프트만",
+   "시타",
+   "헤드커버",
+   "커버만",
+   "드라이버",
+   "우드",
+   "유틸",
+   "아이언세트",
+   "풀세트",
+   "퍼터",
+   "좌타",
+   "왼손",
+   "lefty",
+   "그립만",
+   "캐디백",
+   "골프백",
+   "여성",
+   "레이디",
+   "우먼",
+   "ladies",
+   "일본",
+   "낱개",
+   "해외",
+   "구매대행",
+   "jaws",
+   "죠스",
+   "오퍼스"
+  ],
+  "summary": "캘러웨이가 2019년 4월 내놓은 초보용 넓은 솔 웨지입니다. 솔 반경·바운스를 다듬고 힐 릴리프를 늘려 전작보다 여러 라이에서 치기 쉽게 했고, 페이스 전체 17개 그루브와 거리 조절 표시가 있는 램킨 그립을 썼습니다. 로프트 56·58·60·64°(제조사 발표).",
+  "points": [
+   "넓은 솔·힐 릴리프로 벙커 탈출을 돕는 설계(제조사 발표)",
+   "풀페이스 그루브 17개",
+   "로프트 56·58·60·64°"
+  ],
+  "guidePick": {
+   "role": "초보 벙커 전용 웨지",
+   "forWhom": "벙커 한 번에 나오기가 목표인 초보",
+   "short": "슈어아웃 2",
+   "plus": "벙커 탈출",
+   "minus": "오래된 모델",
+   "pros": [
+    "넓은 솔로 모래에 덜 박힘(제조사 발표)",
+    "페이스 전체 그루브",
+    "거리 조절 표시가 있는 그립(제조사 발표)"
+   ],
+   "cons": [
+    "2019년 모델 — 재고 위주",
+    "풀스윙·기술 샷용은 아님",
+    "연결 상품 로프트·샤프트는 판매처 확인"
+   ],
+   "scores": [
+    2,
+    5,
+    2,
+    4
+   ],
+   "specs": [
+    "판매처 확인",
+    "판매처 확인",
+    "판매처 확인"
+   ],
+   "verdict": "벙커가 가장 두려운 초보의 두 번째 샌드웨지로 맞습니다",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://eu.callawaygolf.com/en/sure-out-2-news.html",
+   "https://golf.com/gear/wedges/callaway-sure-out-2-wedge/",
+   "https://www.golfdigest.com/story/callaway-golf-offers-help-for-those-who-struggle-in-the-sand-with-its-sure-out-2-wedge"
+  ]
+ }
+]
