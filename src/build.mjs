@@ -2337,6 +2337,16 @@ if (!DEMO) {
       .join('\n')}\n</channel></rss>\n`,
   );
 }
+// Bing·ChatGPT 검색용 상품 쪽 목록(2026-11-20 관제탑, 사장님 승인): 구글용 sitemap.xml 에서 뺀 상품 쪽(/p/)을 따로 적는다.
+// 11/11 사이트맵에서 뺀 뒤 ChatGPT 손님의 상품 쪽 착지와 구매가 끊겼다. 구글은 이 쪽들에 googlebot noindex 가 그대로라 영향 없다.
+// robots.txt 에는 적지 않는다(구글이 읽지 않게). Bing 웹마스터에 직접 제출하고 IndexNow 로 알린다. 되돌리기: 이 블록 삭제.
+if (!DEMO) rawWrite(
+  join(OUT, 'sitemap-products.xml'),
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
+    .filter(([u]) => u.startsWith('/p/') && NOINDEX.has(u))
+    .map(([u, d]) => `<url><loc>${SITE_URL}${u}</loc><lastmod>${d}</lastmod></url>`)
+    .join('\n')}\n</urlset>\n`,
+);
 writeText(join(OUT, 'robots.txt'), DEMO ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nDisallow: /go/\nDisallow: /admin\nDisallow: /api/\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
 {
