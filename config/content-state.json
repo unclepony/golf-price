@@ -2675,8 +2675,8 @@
       "d": "2026-11-18"
     },
     "/p/pxg-0311-gen6-hybrid": {
-      "h": "216f72ef87c6ce05",
-      "d": "2026-11-18"
+      "h": "3f847baccb163fca",
+      "d": "2026-11-19"
     },
     "/p/honma-beres-aizu-hybrid": {
       "h": "7a571c9f93db995e",
@@ -3151,12 +3151,12 @@
       "d": "2026-11-19"
     },
     "/p/callaway-gbb23-hybrid": {
-      "h": "791880e61182e69a",
-      "d": "2026-11-18"
+      "h": "6c91e438d3fb8998",
+      "d": "2026-11-19"
     },
     "/p/majesty-sublime-hybrid": {
-      "h": "771f62416b8104c2",
-      "d": "2026-11-18"
+      "h": "ff7777258d30fa2e",
+      "d": "2026-11-19"
     },
     "/p/elord-dynas8-hybrid": {
       "h": "92ba85e45b6c7e1a",
@@ -3590,6 +3590,18 @@
       "h": "4b26aa2fba1e40fc",
       "d": "2026-11-19"
     },
+    "/p/ping-idi-utility": {
+      "h": "0b8ec6c7926d1daf",
+      "d": "2026-11-19"
+    },
+    "/p/srixon-zxiu-utility": {
+      "h": "9cfdc7e48f932e94",
+      "d": "2026-11-19"
+    },
+    "/p/yamaha-drivestar-hybrid": {
+      "h": "c7a669da43a63b26",
+      "d": "2026-11-19"
+    },
     "/c/driver": {
       "h": "55006b1eec94c519",
       "d": "2026-11-19"
@@ -3599,8 +3611,8 @@
       "d": "2026-11-19"
     },
     "/c/utility": {
-      "h": "de8b299a2811dc88",
-      "d": "2026-11-18"
+      "h": "c81328079c07ed5a",
+      "d": "2026-11-19"
     },
     "/c/iron": {
       "h": "a2672f4047111a14",
@@ -3655,8 +3667,8 @@
       "d": "2026-11-19"
     },
     "/g/utility-recommend": {
-      "h": "fef06252320d0491",
-      "d": "2026-11-18"
+      "h": "fbd20600f0f3f5f6",
+      "d": "2026-11-19"
     },
     "/g/womens-fairway-wood-recommend": {
       "h": "d954df0b344ea493",
@@ -3759,20 +3771,20 @@
       "d": "2026-11-17"
     },
     "/g/utility-recommend-beginner": {
-      "h": "2899cbe083e7939a",
-      "d": "2026-11-16"
+      "h": "dfc2dd3315750904",
+      "d": "2026-11-19"
     },
     "/g/utility-recommend-intermediate": {
       "h": "da6c4876ea05ae5d",
       "d": "2026-11-16"
     },
     "/g/utility-recommend-advanced": {
-      "h": "a2e46c3434614544",
-      "d": "2026-11-16"
+      "h": "29b095cdedb90e4e",
+      "d": "2026-11-19"
     },
     "/g/utility-recommend-pro": {
-      "h": "cfd4a40f415f2a08",
-      "d": "2026-11-16"
+      "h": "b0d3c7463e1c907c",
+      "d": "2026-11-19"
     },
     "/g/womens-fairway-wood-recommend-beginner": {
       "h": "5f18a5cea47c29ce",
@@ -3955,7 +3967,7 @@
       "d": "2026-11-16"
     },
     "/": {
-      "h": "4364067bdb35c0b0",
+      "h": "842fe770a28fa782",
       "d": "2026-11-19"
     },
     "/about": {
@@ -4771,5 +4783,66 @@
       "d": "2026-10-19"
     }
   },
-  "pending": []
+  "pending": [
+    {
+      "url": "/p/pxg-0311-gen6-hybrid",
+      "kind": "updated",
+      "d": "2026-11-19"
+    },
+    {
+      "url": "/p/callaway-gbb23-hybrid",
+      "kind": "updated",
+      "d": "2026-11-19"
+    },
+    {
+      "url": "/p/majesty-sublime-hybrid",
+      "kind": "updated",
+      "d": "2026-11-19"
+    },
+    {
+      "url": "/p/ping-idi-utility",
+      "kind": "new",
+      "d": "2026-11-19"
+    },
+    {
+      "url": "/p/srixon-zxiu-utility",
+      "kind": "new",
+      "d": "2026-11-19"
+    },
+    {
+      "url": "/p/yamaha-drivestar-hybrid",
+      "kind": "new",
+      "d": "2026-11-19"
+    },
+    {
+      "url": "/c/utility",
+      "kind": "updated",
+      "d": "2026-11-19"
+    },
+    {
+      "url": "/g/utility-recommend",
+      "kind": "updated",
+      "d": "2026-11-19"
+    },
+    {
+      "url": "/g/utility-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-11-19"
+    },
+    {
+      "url": "/g/utility-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-11-19"
+    },
+    {
+      "url": "/g/utility-recommend-pro",
+      "kind": "updated",
+      "d": "2026-11-19"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-11-19"
+    }
+  ]
 }
