@@ -153,6 +153,10 @@ export async function onRequestPost({ request, env, waitUntil }) {
         const w = String(b.nw ?? '').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20);
         if (w) rows.push(['navpos', `${w}|${kind(prev)}→${kind(path)}`]);
       }
+    } else if (b.nr) {
+      // 앞 페이지(referrer) 없이 이어진 페이지뷰(2026-11-20) — 키: 이 탭의 바로 앞 페이지|이 페이지. 같은 페이지면 '(같은 쪽)'(새로 고침·뒤로 가기), 사이트맵 밖이면 '(모름)'
+      const tp = norm(String(b.nr).slice(0, 200));
+      rows.push(['navnoref', `${tp === path ? '(같은 쪽)' : PATHS.has(tp) ? tp : '(모름)'}|${path}`]);
     }
   } else if (b.t === 'out') {
     const href = String(b.h ?? '');
