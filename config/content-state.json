@@ -131,8 +131,8 @@
       "d": "2026-11-17"
     },
     "/p/ping-s259-wedge": {
-      "h": "723c152b0af85585",
-      "d": "2026-11-16"
+      "h": "3a8be1252ab6be73",
+      "d": "2026-11-20"
     },
     "/p/ping-g440-max-fairway": {
       "h": "123c95e2a07814f7",
@@ -787,24 +787,24 @@
       "d": "2026-11-16"
     },
     "/p/cleveland-cgone-wedge": {
-      "h": "a4af98d6eb090be4",
-      "d": "2026-11-16"
+      "h": "c985f7237d72ffa0",
+      "d": "2026-11-20"
     },
     "/p/david-woody2-wedge": {
       "h": "7b9d307f09fdf622",
       "d": "2026-11-16"
     },
     "/p/cleveland-smartsole-chipper": {
-      "h": "bb991b42e8cfe5ff",
-      "d": "2026-11-16"
+      "h": "1ec203aea804a442",
+      "d": "2026-11-20"
     },
     "/p/ping-bunker-wedge": {
-      "h": "f6d33fd50792381d",
-      "d": "2026-11-16"
+      "h": "55e9f393847fee88",
+      "d": "2026-11-20"
     },
     "/p/ping-chip-wedge": {
-      "h": "a36cda41372623ec",
-      "d": "2026-11-16"
+      "h": "fb36c97f255ab772",
+      "d": "2026-11-20"
     },
     "/p/callaway-jaws-forged-wedge": {
       "h": "763e3e25c533a2ab",
@@ -827,12 +827,12 @@
       "d": "2026-11-17"
     },
     "/p/taylormade-hitoe5-wedge": {
-      "h": "d3f5c5fc2265c852",
-      "d": "2026-11-17"
+      "h": "5f9c4301c838fd32",
+      "d": "2026-11-20"
     },
     "/p/ping-s159-wedge": {
-      "h": "41e6ddaab8c343d6",
-      "d": "2026-11-17"
+      "h": "d2b62d8adeac63ae",
+      "d": "2026-11-20"
     },
     "/p/pxg-0311-3x-wedge": {
       "h": "7ba20311461688ca",
@@ -1267,8 +1267,8 @@
       "d": "2026-11-16"
     },
     "/p/pxg-stickem-wedge": {
-      "h": "afcfb15d01595597",
-      "d": "2026-11-17"
+      "h": "791d5a8ff15ec7fe",
+      "d": "2026-11-20"
     },
     "/p/mizuno-t24-wedge": {
       "h": "0aacffbe9e1ba183",
@@ -2063,8 +2063,8 @@
       "d": "2026-11-18"
     },
     "/p/kasco-dolphin-dw123-wedge": {
-      "h": "0dc177146e4dd047",
-      "d": "2026-11-16"
+      "h": "e6cb7cac519b8294",
+      "d": "2026-11-20"
     },
     "/p/fourteen-dj6-wedge": {
       "h": "8f75a827c5593cc5",
@@ -2371,8 +2371,8 @@
       "d": "2026-11-16"
     },
     "/p/pxg-sugar-daddy3-wedge": {
-      "h": "6e8b68d4f162037a",
-      "d": "2026-11-17"
+      "h": "74b864b83cf50d3c",
+      "d": "2026-11-20"
     },
     "/p/cobra-snakebite-wedge": {
       "h": "8b2bf87d4f8ab9b3",
@@ -2719,8 +2719,8 @@
       "d": "2026-11-17"
     },
     "/p/bridgestone-biting-spin-wedge": {
-      "h": "907f4aa62fb2e5e8",
-      "d": "2026-11-17"
+      "h": "e7cb5172b65f2563",
+      "d": "2026-11-20"
     },
     "/p/cleveland-rtx-zipcore-wedge": {
       "h": "b0f412dc5d404e16",
@@ -3027,8 +3027,8 @@
       "d": "2026-11-14"
     },
     "/p/cleveland-rtz-fullface-wedge": {
-      "h": "947bb8fac48841b4",
-      "d": "2026-11-17"
+      "h": "c37e4095103199b9",
+      "d": "2026-11-20"
     },
     "/p/taylormade-hitoe3-wedge": {
       "h": "cc42954722572fcb",
@@ -3615,15 +3615,23 @@
       "d": "2026-11-19"
     },
     "/p/cobra-kingmax-women-iron": {
-      "h": "40c648c694f68522",
-      "d": "2026-11-19"
+      "h": "fbce4e190f2a8900",
+      "d": "2026-11-20"
     },
     "/p/wilson-staffmodel-xb-iron": {
-      "h": "599b6ed812769971",
+      "h": "4100fdc2f3e34ba6",
       "d": "2026-11-20"
     },
     "/p/yamaha-rmx-vdx-iron": {
-      "h": "45c2882aa832ae9d",
+      "h": "148b9c70fc4c4247",
+      "d": "2026-11-20"
+    },
+    "/p/cleveland-rtz2-wedge": {
+      "h": "547b7460c382cbd7",
+      "d": "2026-11-20"
+    },
+    "/p/cleveland-cbx-zipcore-wedge": {
+      "h": "7a787a5d6369bbc3",
       "d": "2026-11-20"
     },
     "/c/driver": {
@@ -3643,8 +3651,8 @@
       "d": "2026-11-20"
     },
     "/c/wedge": {
-      "h": "4a0bd402797bd674",
-      "d": "2026-11-17"
+      "h": "8faa8d7b09194ad5",
+      "d": "2026-11-20"
     },
     "/c/putter": {
       "h": "ffb83f83ab16f815",
@@ -3707,8 +3715,8 @@
       "d": "2026-11-18"
     },
     "/g/wedge-recommend": {
-      "h": "21be9f3c4719963a",
-      "d": "2026-11-18"
+      "h": "ec1e52da3a003a35",
+      "d": "2026-11-20"
     },
     "/g/golf-ball-compare": {
       "h": "acd8dd9b56e326bf",
@@ -3859,16 +3867,16 @@
       "d": "2026-11-16"
     },
     "/g/wedge-recommend-beginner": {
-      "h": "dc15f4b2d50d3f85",
-      "d": "2026-11-16"
+      "h": "ab6a976717b519d0",
+      "d": "2026-11-20"
     },
     "/g/wedge-recommend-intermediate": {
       "h": "c3b9861d065b124e",
       "d": "2026-11-17"
     },
     "/g/wedge-recommend-advanced": {
-      "h": "001cb93ae555be2e",
-      "d": "2026-11-17"
+      "h": "ff4739a43db422cf",
+      "d": "2026-11-20"
     },
     "/g/wedge-recommend-pro": {
       "h": "9cf87ede5e44d3a8",
@@ -3991,7 +3999,7 @@
       "d": "2026-11-16"
     },
     "/": {
-      "h": "be40e38ac99baf06",
+      "h": "bd19e0d3aa891a05",
       "d": "2026-11-20"
     },
     "/about": {
@@ -4275,8 +4283,8 @@
       "d": "2026-11-17"
     },
     "/vs/cleveland-rtx6-wedge-vs-cleveland-smartsole-chipper": {
-      "h": "49bbb62d1e0cef33",
-      "d": "2026-11-17"
+      "h": "07b2d79570cbdcdf",
+      "d": "2026-11-20"
     },
     "/vs/cleveland-rtz-wedge-vs-cleveland-rtx6-wedge": {
       "h": "a66f83530bfc8129",
@@ -4343,8 +4351,8 @@
       "d": "2026-11-17"
     },
     "/vs/fourteen-rm4-wedge-vs-ping-s159-wedge": {
-      "h": "a68b66c0e82c7a1a",
-      "d": "2026-11-17"
+      "h": "04fec04c765ba4bb",
+      "d": "2026-11-20"
     },
     "/vs/garmin-approach-r10-vs-voicecaddie-sc4-pro": {
       "h": "0ae708d874642a98",
@@ -4531,12 +4539,12 @@
       "d": "2026-11-16"
     },
     "/vs/ping-s159-wedge-vs-ping-glide4-wedge": {
-      "h": "b7cc7de812eea6ae",
-      "d": "2026-11-17"
+      "h": "51fe735c40de9c4e",
+      "d": "2026-11-20"
     },
     "/vs/ping-s259-wedge-vs-cleveland-smartsole-chipper": {
-      "h": "59a3fba3fd84f3dc",
-      "d": "2026-11-11"
+      "h": "64ca9e84a8c6f462",
+      "d": "2026-11-20"
     },
     "/vs/ping-sporty-lt-bag-vs-titleist-cart14-bag": {
       "h": "ba8888879893c3d5",
@@ -5394,11 +5402,6 @@
       "d": "2026-11-19"
     },
     {
-      "url": "/p/cobra-kingmax-women-iron",
-      "kind": "new",
-      "d": "2026-11-19"
-    },
-    {
       "url": "/g/driver-recommend-2026",
       "kind": "updated",
       "d": "2026-11-19"
@@ -5934,16 +5937,6 @@
       "d": "2026-11-20"
     },
     {
-      "url": "/p/wilson-staffmodel-xb-iron",
-      "kind": "new",
-      "d": "2026-11-20"
-    },
-    {
-      "url": "/p/yamaha-rmx-vdx-iron",
-      "kind": "new",
-      "d": "2026-11-20"
-    },
-    {
       "url": "/c/driver",
       "kind": "updated",
       "d": "2026-11-20"
@@ -6014,7 +6007,132 @@
       "d": "2026-11-20"
     },
     {
+      "url": "/p/ping-s259-wedge",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/cleveland-cgone-wedge",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/cleveland-smartsole-chipper",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/ping-bunker-wedge",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/ping-chip-wedge",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/taylormade-hitoe5-wedge",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/ping-s159-wedge",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/pxg-stickem-wedge",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/kasco-dolphin-dw123-wedge",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/pxg-sugar-daddy3-wedge",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/bridgestone-biting-spin-wedge",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/cleveland-rtz-fullface-wedge",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/cobra-kingmax-women-iron",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/wilson-staffmodel-xb-iron",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/yamaha-rmx-vdx-iron",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/cleveland-rtz2-wedge",
+      "kind": "new",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/cleveland-cbx-zipcore-wedge",
+      "kind": "new",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/c/wedge",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/g/wedge-recommend",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/g/wedge-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/g/wedge-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
       "url": "/",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/vs/cleveland-rtx6-wedge-vs-cleveland-smartsole-chipper",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/vs/fourteen-rm4-wedge-vs-ping-s159-wedge",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/vs/ping-s159-wedge-vs-ping-glide4-wedge",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/vs/ping-s259-wedge-vs-cleveland-smartsole-chipper",
       "kind": "updated",
       "d": "2026-11-20"
     }
