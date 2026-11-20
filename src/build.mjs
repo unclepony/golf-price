@@ -1135,15 +1135,28 @@ const mainPick = (id) => {
 };
 // 판매 종료·쿠팡 판매처 없는 상품 페이지: 쿠팡 가격 상자 대신 같은 가이드에서 지금 쿠팡 링크가 있는 상품 3개(같은 실력 단계 먼저)를 보여 준다.
 // 막다른 화면에서 바로 나가는 방문을 비교 상품으로 잇기 위함(2026-11-04 셀프 개선). 판매 상태에 따라 바뀌는 영역이라 가격처럼 콘텐츠 지문에서 뺀다(phist)
+// 2026-11-21: 성별이 섞인 가이드(장갑 등)에서 '여성 겨울 양손 장갑' 판매 종료 페이지에 남성 양피 장갑 3개가 대신 나와(11-20 ChatGPT 방문, 이동 0),
+// 상품명·역할·사양에 같은 성별·용도 낱말(여성, 겨울·방한, 양손)이 있는 상품을 먼저 보여 준다. 성별이 다르면 뒤로 보낸다
+const ALT_FEATS = [/여성|레이디|우먼|women/i, /겨울|방한|보온|윈터/, /양손/];
+const altText = (x) => [byId[x.id]?.p.name, x.role, ...(x.specs ?? [])].join(' ');
+function altLike(base, x) {
+  const a = altText(base), b = altText(x);
+  return ALT_FEATS.reduce((n, re, i) => n + (re.test(a) && re.test(b) ? 1 : 0) - (i === 0 && re.test(a) !== re.test(b) ? 1 : 0), 0);
+}
 function altBox(p) {
   const mp = mainPick(p.id);
   if (!mp) return '';
   const pool = rankedPicks(mp.g).filter((x) => x.id !== p.id && !warned(mp.g, x));
   const sk = mp.pk?.skill ?? null;
-  const list = [...pool.filter((x) => (x.skill ?? null) === sk), ...pool.filter((x) => (x.skill ?? null) !== sk)].slice(0, 3);
+  const base = mp.pk ?? { id: p.id };
+  const list = [...pool.filter((x) => (x.skill ?? null) === sk), ...pool.filter((x) => (x.skill ?? null) !== sk)]
+    .map((x, i) => ({ x, i, s: altLike(base, x) }))
+    .sort((a, b) => b.s - a.s || a.i - b.i)
+    .map((o) => o.x)
+    .slice(0, 3);
   if (!list.length) return '';
   const why = GONE[p.id] ? '이 상품은 지금 쿠팡에서 찾을 수 없습니다.' : '이 상품은 쿠팡 판매처가 없습니다.';
-  return `<!--phist--><div class="pd-alt"><p class="pd-alt-k">${why} 같은 비교에서 지금 볼 수 있는 상품${sk ? ` (${esc(sk)} 먼저)` : ''}</p><ul>${list.map((x) => `<li><a href="/p/${x.id}">${esc(byId[x.id].p.name)}${x.skill ? ` <small>${esc(x.skill)}</small>` : ''} ›</a></li>`).join('')}</ul></div><!--/phist-->`;
+  return `<!--phist--><div class="pd-alt"><p class="pd-alt-k">${why} 같은 비교에서 지금 볼 수 있는 상품${sk && (list[0].skill ?? null) === sk ? ` (${esc(sk)} 먼저)` : ''}</p><ul>${list.map((x) => `<li><a href="/p/${x.id}">${esc(byId[x.id].p.name)}${x.skill ? ` <small>${esc(x.skill)}</small>` : ''} ›</a></li>`).join('')}</ul></div><!--/phist-->`;
 }
 // 판매 중인 상품 페이지: 요약 아래에 같은 비교의 다른 상품 3개(같은 실력 단계 먼저, 점수가 가까운 순)를 보여 준다.
 // 11-04·11-16 가이드에서 상품 페이지를 하나씩 열고 10초 안에 목록으로 돌아가 다음 상품을 여는 '목록 ↔ 상품 왕복' 방문(클릭 0)이 반복돼,
