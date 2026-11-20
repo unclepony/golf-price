@@ -1,0 +1,174 @@
+[
+ {
+  "id": "relink-odyssey-ai-one-putter",
+  "query": "오디세이 Ai-ONE 퍼터 DW",
+  "must": [
+   "aione",
+   "퍼터"
+  ],
+  "exclude": [
+   "그립",
+   "스퀘어",
+   "square",
+   "s2s",
+   "제일버드",
+   "jailbird",
+   "밀드",
+   "투볼",
+   "여성",
+   "크루저",
+   "cruiser",
+   "직구",
+   "해외",
+   "구매대행",
+   "일본",
+   "정규품"
+  ]
+ },
+ {
+  "id": "relink-callaway-twoball-ten-putter",
+  "query": "투볼 텐 S 퍼터",
+  "must": [
+   "투볼",
+   "텐",
+   "퍼터"
+  ],
+  "exclude": [
+   "og",
+   "ai",
+   "중고",
+   "헤드만",
+   "커버",
+   "직구",
+   "해외",
+   "구매대행",
+   "일본",
+   "정규품"
+  ]
+ },
+ {
+  "id": "relink-cleveland-hbsoft2-putter",
+  "query": "클리브랜드 HB 소프트2 퍼터 11 34인치",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "hb소프트2",
+   "hbsoft2"
+  ],
+  "exclude": [
+   "밀드",
+   "milled",
+   "중고",
+   "헤드만",
+   "커버",
+   "직구",
+   "해외",
+   "구매대행",
+   "일본",
+   "정규품"
+  ]
+ },
+ {
+  "id": "relink-odyssey-aione-twoball-putter",
+  "query": "오디세이 Ai-ONE 투볼 CH 퍼터",
+  "must": [
+   "aione",
+   "투볼",
+   "퍼터"
+  ],
+  "exclude": [
+   "트라이빔",
+   "여성",
+   "og",
+   "밀드",
+   "중고",
+   "헤드만",
+   "커버",
+   "직구",
+   "해외",
+   "구매대행",
+   "일본",
+   "정규품"
+  ]
+ },
+ {
+  "id": "relink-ping-mundy-putter",
+  "query": "핑 MUNDY 퍼터",
+  "must": [
+   "mundy",
+   "퍼터"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "커버",
+   "탐캣",
+   "케치",
+   "직구",
+   "해외",
+   "구매대행",
+   "일본",
+   "정규품"
+  ]
+ },
+ {
+  "id": "relink-ping-shea-putter",
+  "query": "핑 SHEA 퍼터",
+  "must": [
+   "shea",
+   "퍼터"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "커버",
+   "직구",
+   "해외",
+   "구매대행",
+   "일본",
+   "정규품"
+  ]
+ },
+ {
+  "id": "relink-ping-scottsdale-anser4-putter",
+  "query": "핑 스캇데일 앤서4 2D 퍼터",
+  "must": [
+   "앤서4",
+   "퍼터"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "커버",
+   "직구",
+   "해외",
+   "구매대행",
+   "일본",
+   "정규품"
+  ]
+ },
+ {
+  "id": "relink-evnroll-er22-putter",
+  "query": "이븐롤 ER2.2 퍼터",
+  "must": [
+   "er2",
+   "퍼터"
+  ],
+  "mustAny": [
+   "er2.2",
+   "er22"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "커버",
+   "시타",
+   "직구",
+   "해외",
+   "구매대행",
+   "일본",
+   "정규품"
+  ]
+ }
+]
