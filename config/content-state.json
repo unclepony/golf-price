@@ -3651,7 +3651,7 @@
       "d": "2026-11-21"
     },
     "/p/ping-g430-hl-max-driver": {
-      "h": "5387fc3109d2e8d3",
+      "h": "3ae94bb0be65d861",
       "d": "2026-11-21"
     },
     "/c/driver": {
@@ -3771,8 +3771,8 @@
       "d": "2026-11-19"
     },
     "/g/golf-glove-recommend": {
-      "h": "734caf64c3cdd885",
-      "d": "2026-11-19"
+      "h": "666e9d87bf967c4d",
+      "d": "2026-11-21"
     },
     "/g/practice-gear-recommend": {
       "h": "4c8deca70e0bc85a",
@@ -4027,136 +4027,140 @@
       "d": "2026-11-11"
     },
     "/qa/forgiving-iron-beginner": {
-      "h": "0851197d85ad9c38",
-      "d": "2026-11-20"
+      "h": "9f3d9d9a15171278",
+      "d": "2026-11-21"
+    },
+    "/qa/winter-golf-glove": {
+      "h": "0fd6fbba4624e56a",
+      "d": "2026-11-21"
     },
     "/qa/light-golf-bag-weight": {
-      "h": "7bf25e09d6acdb85",
-      "d": "2026-11-20"
+      "h": "8cbf41c88292827b",
+      "d": "2026-11-21"
     },
     "/qa/womens-driver-beginner": {
-      "h": "e4b06ed3aacc3d71",
-      "d": "2026-11-20"
+      "h": "13705bd8bfcf700d",
+      "d": "2026-11-21"
     },
     "/qa/golf-first-round-checklist": {
-      "h": "b8c3cc09b7f483ec",
-      "d": "2026-11-20"
+      "h": "97c71d4ef202d3da",
+      "d": "2026-11-21"
     },
     "/qa/womens-iron-beginner": {
-      "h": "ac13b0a358d54c4a",
-      "d": "2026-11-20"
+      "h": "0821a056b02ad0e0",
+      "d": "2026-11-21"
     },
     "/qa/golf-gps-watch-beginner": {
-      "h": "6b24c869a7ce6559",
-      "d": "2026-11-20"
+      "h": "03092e8cb1bed6c3",
+      "d": "2026-11-21"
     },
     "/qa/when-to-replace-golf-ball": {
-      "h": "a18c37a68fa9009a",
-      "d": "2026-11-20"
+      "h": "d386fc1e51a7f82e",
+      "d": "2026-11-21"
     },
     "/qa/driver-max-vs-ls": {
-      "h": "87fb519ab2533630",
-      "d": "2026-11-20"
+      "h": "aed5b5db5b17465b",
+      "d": "2026-11-21"
     },
     "/qa/blade-vs-mallet-putter": {
-      "h": "4e09ae6c9327950c",
-      "d": "2026-11-20"
+      "h": "e2fc8cc257b41e4f",
+      "d": "2026-11-21"
     },
     "/qa/sand-vs-gap-wedge": {
-      "h": "44d740fe7d0782eb",
-      "d": "2026-11-20"
+      "h": "5c1fa16a26b62a05",
+      "d": "2026-11-21"
     },
     "/qa/golf-gift-for-beginners": {
-      "h": "2a2fac4dbfddaef3",
-      "d": "2026-11-20"
+      "h": "dd8d99d1e9815bda",
+      "d": "2026-11-21"
     },
     "/qa/senior-golf-clubs-beginner": {
-      "h": "436dd2603f780f40",
-      "d": "2026-11-20"
+      "h": "18750ede3408ffff",
+      "d": "2026-11-21"
     },
     "/qa/womens-utility-beginner": {
-      "h": "88147f9eb1668d48",
-      "d": "2026-11-20"
+      "h": "df52a256c6fda04d",
+      "d": "2026-11-21"
     },
     "/qa/driver-best-time-to-buy": {
-      "h": "03477414a2049e13",
-      "d": "2026-11-20"
+      "h": "47ba0771f48cf40b",
+      "d": "2026-11-21"
     },
     "/qa/vokey-wedge-grind": {
-      "h": "c893500f722a8ddb",
-      "d": "2026-11-20"
+      "h": "07dcdf1847563ddf",
+      "d": "2026-11-21"
     },
     "/qa/golf-practice-gear-beginner": {
-      "h": "924ad1ce98e13b84",
-      "d": "2026-11-20"
+      "h": "53d6acc861825364",
+      "d": "2026-11-21"
     },
     "/qa/golf-glove-beginner": {
-      "h": "abc5c55647c0e41a",
-      "d": "2026-11-20"
+      "h": "51ac2c7cd8b00476",
+      "d": "2026-11-21"
     },
     "/qa/golf-bag-stand-vs-caddie": {
-      "h": "7552d13d289ba8bd",
-      "d": "2026-11-20"
+      "h": "a4a210c2b1ef0e99",
+      "d": "2026-11-21"
     },
     "/qa/golf-swing-analyzer-beginner": {
-      "h": "37d6b38313eeff25",
-      "d": "2026-11-20"
+      "h": "e7a8a4294ec8d867",
+      "d": "2026-11-21"
     },
     "/qa/used-golf-clubs-beginner": {
-      "h": "d40e66967ae25042",
-      "d": "2026-11-20"
+      "h": "d6b39014025fc6c2",
+      "d": "2026-11-21"
     },
     "/qa/womens-golf-shoes-beginner": {
-      "h": "16b9d4e1e15b001e",
-      "d": "2026-11-20"
+      "h": "9d6f9bf6843f0107",
+      "d": "2026-11-21"
     },
     "/qa/iron-steel-vs-carbon-shaft": {
-      "h": "46ae6ab1bbeca052",
-      "d": "2026-11-20"
+      "h": "b658a3a39dce080f",
+      "d": "2026-11-21"
     },
     "/qa/how-many-fairway-woods": {
-      "h": "8ba77108c2e12889",
-      "d": "2026-11-20"
+      "h": "dd692bf0ddcd514f",
+      "d": "2026-11-21"
     },
     "/qa/mens-golf-shoes-beginner": {
-      "h": "10413ba65597f7a7",
-      "d": "2026-11-20"
+      "h": "8d414ad9a14461d7",
+      "d": "2026-11-21"
     },
     "/qa/utility-4-recommend": {
-      "h": "3d02bf19e86bfb28",
-      "d": "2026-11-20"
+      "h": "f4a903447239abf3",
+      "d": "2026-11-21"
     },
     "/qa/golf-rangefinder-recommend": {
-      "h": "a399b0a5c64ed5cd",
-      "d": "2026-11-20"
+      "h": "57e056e8e8a95462",
+      "d": "2026-11-21"
     },
     "/qa/golf-ball-recommend": {
-      "h": "04d2b3227f458f44",
-      "d": "2026-11-20"
+      "h": "50ad4ccd47f4efe4",
+      "d": "2026-11-21"
     },
     "/qa/zero-torque-putter": {
-      "h": "0fd6e223c96762a5",
-      "d": "2026-11-20"
+      "h": "eb43efbbb03b315b",
+      "d": "2026-11-21"
     },
     "/qa/womens-golf-club-recommend": {
-      "h": "3e92a03a62649ab5",
-      "d": "2026-11-20"
+      "h": "9daf324abbdde7a3",
+      "d": "2026-11-21"
     },
     "/qa/wedge-recommend-loft": {
-      "h": "6424f7e87f915690",
-      "d": "2026-11-20"
+      "h": "d51f8bbbdf455a79",
+      "d": "2026-11-21"
     },
     "/qa/beginner-driver-recommend": {
-      "h": "4cdacb6cf5db500e",
-      "d": "2026-11-20"
+      "h": "42cf3e39931daa09",
+      "d": "2026-11-21"
     },
     "/qa/beginner-golf-club-set": {
-      "h": "87d4afa785d63149",
-      "d": "2026-11-20"
+      "h": "4e3911227d1ffb25",
+      "d": "2026-11-21"
     },
     "/qa": {
-      "h": "f0715ef0bcd09267",
-      "d": "2026-11-20"
+      "h": "73ac6076beaa2c10",
+      "d": "2026-11-21"
     },
     "/vs/adidas-adipower-sl-women-shoes-vs-footjoy-pulse-boa-women-shoes": {
       "h": "ddde50c63c38f888",
@@ -5686,11 +5690,6 @@
       "d": "2026-11-21"
     },
     {
-      "url": "/p/ping-g430-hl-max-driver",
-      "kind": "new",
-      "d": "2026-11-21"
-    },
-    {
       "url": "/c/driver",
       "kind": "updated",
       "d": "2026-11-21"
@@ -5782,6 +5781,186 @@
     },
     {
       "url": "/vs/taylormade-qi4dls-driver-vs-taylormade-qi35ls-driver",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/p/ping-g430-hl-max-driver",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/g/golf-glove-recommend",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/forgiving-iron-beginner",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/winter-golf-glove",
+      "kind": "new",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/light-golf-bag-weight",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/womens-driver-beginner",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/golf-first-round-checklist",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/womens-iron-beginner",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/golf-gps-watch-beginner",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/when-to-replace-golf-ball",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/driver-max-vs-ls",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/blade-vs-mallet-putter",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/sand-vs-gap-wedge",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/golf-gift-for-beginners",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/senior-golf-clubs-beginner",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/womens-utility-beginner",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/driver-best-time-to-buy",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/vokey-wedge-grind",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/golf-practice-gear-beginner",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/golf-glove-beginner",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/golf-bag-stand-vs-caddie",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/golf-swing-analyzer-beginner",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/used-golf-clubs-beginner",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/womens-golf-shoes-beginner",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/iron-steel-vs-carbon-shaft",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/how-many-fairway-woods",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/mens-golf-shoes-beginner",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/utility-4-recommend",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/golf-rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/golf-ball-recommend",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/zero-torque-putter",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/womens-golf-club-recommend",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/wedge-recommend-loft",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/beginner-driver-recommend",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa/beginner-golf-club-set",
+      "kind": "updated",
+      "d": "2026-11-21"
+    },
+    {
+      "url": "/qa",
       "kind": "updated",
       "d": "2026-11-21"
     }
