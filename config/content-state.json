@@ -847,16 +847,16 @@
       "d": "2026-11-17"
     },
     "/p/callaway-twoball-ten-putter": {
-      "h": "a35f60b90555723e",
-      "d": "2026-11-11"
+      "h": "6218d41a8ea9b657",
+      "d": "2026-11-20"
     },
     "/p/cleveland-hbsoft2-putter": {
-      "h": "d41e117aabf6fbac",
-      "d": "2026-11-11"
+      "h": "5817f2f527601245",
+      "d": "2026-11-20"
     },
     "/p/odyssey-aione-twoball-putter": {
-      "h": "9ad43e599a82eee6",
-      "d": "2026-11-11"
+      "h": "1247b67bff641546",
+      "d": "2026-11-20"
     },
     "/p/odyssey-aidual-s2s-putter": {
       "h": "2f2b442a4c5a2e22",
@@ -1435,8 +1435,8 @@
       "d": "2026-11-11"
     },
     "/p/odyssey-white-hot-og-2ball-putter": {
-      "h": "542487bfb2294f0c",
-      "d": "2026-11-11"
+      "h": "0bc47941af387b87",
+      "d": "2026-11-20"
     },
     "/p/odyssey-tri-hot-5k-putter": {
       "h": "9905fa839c5dca42",
@@ -3634,6 +3634,10 @@
       "h": "3573f29b20632706",
       "d": "2026-11-20"
     },
+    "/p/cobra-3dp-grandsport35-putter": {
+      "h": "9e2da25b0aa140b7",
+      "d": "2026-11-20"
+    },
     "/c/driver": {
       "h": "c9d501346bd05637",
       "d": "2026-11-20"
@@ -3655,7 +3659,7 @@
       "d": "2026-11-20"
     },
     "/c/putter": {
-      "h": "04620e31ec71213c",
+      "h": "c8cca47916ac7e20",
       "d": "2026-11-20"
     },
     "/c/ball": {
@@ -3731,7 +3735,7 @@
       "d": "2026-11-19"
     },
     "/g/putter-recommend": {
-      "h": "e2f80a8630dde7ea",
+      "h": "539ebaaa57cfb01e",
       "d": "2026-11-20"
     },
     "/g/golf-shoes-recommend": {
@@ -3767,8 +3771,8 @@
       "d": "2026-11-18"
     },
     "/g/golf-gift-guide-2026": {
-      "h": "db25e831b3723d94",
-      "d": "2026-11-18"
+      "h": "70286f61a2594caf",
+      "d": "2026-11-20"
     },
     "/g/driver-recommend-2026-beginner": {
       "h": "c5e95a53c573333e",
@@ -3931,12 +3935,12 @@
       "d": "2026-11-15"
     },
     "/g/putter-recommend-beginner": {
-      "h": "054470019345a13b",
-      "d": "2026-11-17"
+      "h": "4c31ff277b05b9ce",
+      "d": "2026-11-20"
     },
     "/g/putter-recommend-intermediate": {
-      "h": "1d98f25219c16f09",
-      "d": "2026-11-17"
+      "h": "e096887c2654cf63",
+      "d": "2026-11-20"
     },
     "/g/putter-recommend-advanced": {
       "h": "11cab4d95aa5cf61",
@@ -3999,7 +4003,7 @@
       "d": "2026-11-16"
     },
     "/": {
-      "h": "a18b68cc57d68f6b",
+      "h": "267cea4bc7ea47c9",
       "d": "2026-11-20"
     },
     "/about": {
@@ -4267,8 +4271,8 @@
       "d": "2026-11-16"
     },
     "/vs/callaway-twoball-ten-putter-vs-cleveland-hbsoft2-putter": {
-      "h": "ce89d510971bdb16",
-      "d": "2026-10-23"
+      "h": "add77a954b5b2671",
+      "d": "2026-11-20"
     },
     "/vs/callaway-xforged-max-iron-vs-callaway-xforged-starplus-iron": {
       "h": "780535e0cdb14f26",
@@ -4819,5 +4823,66 @@
       "d": "2026-10-19"
     }
   },
-  "pending": []
+  "pending": [
+    {
+      "url": "/p/callaway-twoball-ten-putter",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/cleveland-hbsoft2-putter",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/odyssey-aione-twoball-putter",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/odyssey-white-hot-og-2ball-putter",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/cobra-3dp-grandsport35-putter",
+      "kind": "new",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/c/putter",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/g/putter-recommend",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/g/golf-gift-guide-2026",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/g/putter-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/g/putter-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/vs/callaway-twoball-ten-putter-vs-cleveland-hbsoft2-putter",
+      "kind": "updated",
+      "d": "2026-11-20"
+    }
+  ]
 }
