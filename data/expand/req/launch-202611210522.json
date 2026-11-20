@@ -1,0 +1,4 @@
+[
+ {"id":"flightscope-mevo-gen2","query":"미보 젠2 런치모니터","must":["미보"],"mustAny":["gen2","젠2","2세대","gen 2"],"exclude":["중고","케이스","파우치","필름","거치대","리퍼","직구","병행","해외","플러스","plus","+"]},
+ {"id":"flightscope-mevo-gen2-b","query":"FlightScope Mevo Gen2","must":[],"mustAny":["mevo gen2","mevo gen 2","미보 gen2","미보 젠2"],"exclude":["중고","케이스","파우치","필름","거치대","리퍼","직구","병행","해외","플러스","plus"]}
+]
