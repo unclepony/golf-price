@@ -1,6 +1,0 @@
-[
- {"id":"relink-golfbuddy-atom","query":"골프버디 GB LASER atom 아톰 레이저 거리측정기","must":["골프버디"],"mustAny":["아톰","atom"],"exclude":["케이스","중고","배터리","리퍼","필름"]},
- {"id":"relink-voicecaddie-sl3","query":"보이스캐디 골프 거리측정기 SL3","must":["보이스캐디","sl3"],"exclude":["배터리","케이스","중고","리퍼","필름","sl2","일본"]},
- {"id":"voicecaddie-laser-fit-2","query":"보이스캐디 레이저핏2 거리측정기","must":["보이스캐디"],"mustAny":["레이저핏2","laserfit2","레이저fit2"],"exclude":["케이스","파우치단품","배터리","중고","필름","리퍼","키트단품","컬러키트단품","sl3","sl2","slmini","l6","cl3"]},
- {"id":"voicecaddie-laser-fit-2-en","query":"보이스캐디 LASER FIT 2 레이저 골프 거리측정기","must":["보이스캐디"],"mustAny":["레이저핏2","laserfit2","레이저fit2"],"exclude":["케이스","파우치단품","배터리","중고","필름","리퍼","키트단품","컬러키트단품","sl3","sl2","slmini","l6","cl3"]}
-]
