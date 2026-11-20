@@ -99,8 +99,8 @@
       "d": "2026-11-15"
     },
     "/p/bushnell-tour-v6-shift": {
-      "h": "24e5b43ec48ac70f",
-      "d": "2026-11-11"
+      "h": "c774f55f66ed69ff",
+      "d": "2026-11-20"
     },
     "/p/footjoy-premiere-packard-shoes": {
       "h": "38f05d01e3945570",
@@ -1075,7 +1075,7 @@
       "d": "2026-11-20"
     },
     "/p/bushnell-a1-slope": {
-      "h": "8a585d3d0e199064",
+      "h": "1be7f5e949a4b6ba",
       "d": "2026-11-20"
     },
     "/p/golfbuddy-atom": {
@@ -1823,8 +1823,8 @@
       "d": "2026-11-11"
     },
     "/p/r2g-mate-mini": {
-      "h": "ab87d72b0c0a8e2c",
-      "d": "2026-11-11"
+      "h": "20a8d18eba83d8a3",
+      "d": "2026-11-20"
     },
     "/p/r2g-mate-hybrid": {
       "h": "752acddabb9c2179",
@@ -2143,8 +2143,8 @@
       "d": "2026-11-11"
     },
     "/p/mycaddie-ms3-oled": {
-      "h": "0a4734b58cf82ab6",
-      "d": "2026-11-11"
+      "h": "f46ba2c46a6b661f",
+      "d": "2026-11-20"
     },
     "/p/mycaddie-mh3": {
       "h": "76760717a3bcda34",
@@ -2423,8 +2423,8 @@
       "d": "2026-11-11"
     },
     "/p/wellsense-black-eagle-zero": {
-      "h": "8945553507de5989",
-      "d": "2026-11-11"
+      "h": "bd4932291e24ab57",
+      "d": "2026-11-20"
     },
     "/p/voicecaddie-l6": {
       "h": "3da108849250df7e",
@@ -2771,8 +2771,8 @@
       "d": "2026-11-11"
     },
     "/p/caddytalk-minion": {
-      "h": "c6a42eed814f1898",
-      "d": "2026-11-11"
+      "h": "2f326bba1acf98a1",
+      "d": "2026-11-20"
     },
     "/p/voicecaddie-ss10": {
       "h": "2c073625c71eef27",
@@ -3639,11 +3639,15 @@
       "d": "2026-11-20"
     },
     "/p/volvik-bellows-candy": {
-      "h": "6cd386fb94332d46",
+      "h": "e616bff9f102a48b",
       "d": "2026-11-20"
     },
     "/p/srixon-distance": {
-      "h": "59bdbd705c5b2a81",
+      "h": "9b4034cf2dd416ca",
+      "d": "2026-11-20"
+    },
+    "/p/voicecaddie-laser-fit-2": {
+      "h": "ebff2d97e44eff0a",
       "d": "2026-11-20"
     },
     "/c/driver": {
@@ -3675,7 +3679,7 @@
       "d": "2026-11-20"
     },
     "/c/rangefinder": {
-      "h": "985032d8886c36ad",
+      "h": "a82f354394dceb19",
       "d": "2026-11-20"
     },
     "/c/gps": {
@@ -3735,8 +3739,8 @@
       "d": "2026-11-20"
     },
     "/g/rangefinder-recommend": {
-      "h": "51545f11f41c7ddc",
-      "d": "2026-11-18"
+      "h": "93ad04460cc88023",
+      "d": "2026-11-20"
     },
     "/g/womens-driver-recommend": {
       "h": "6e9d7ce5d83fb4ac",
@@ -3911,8 +3915,8 @@
       "d": "2026-11-17"
     },
     "/g/rangefinder-recommend-beginner": {
-      "h": "355c8d6e627b7082",
-      "d": "2026-11-08"
+      "h": "047839661ad7c5e2",
+      "d": "2026-11-20"
     },
     "/g/rangefinder-recommend-intermediate": {
       "h": "4711dd8389039d84",
@@ -4011,7 +4015,7 @@
       "d": "2026-11-16"
     },
     "/": {
-      "h": "bb5e1d77844a8c36",
+      "h": "d3dfda7ff4e2d1ee",
       "d": "2026-11-20"
     },
     "/about": {
@@ -4763,8 +4767,8 @@
       "d": "2026-11-15"
     },
     "/vs/voicecaddie-sl3-vs-bushnell-tour-v6-shift": {
-      "h": "de003d560c3f3e53",
-      "d": "2026-11-04"
+      "h": "cec1203b88684d99",
+      "d": "2026-11-20"
     },
     "/vs/voicecaddie-t13-pro-vs-garmin-approach-s50": {
       "h": "f27479e4d2edc48e",
@@ -4933,16 +4937,6 @@
       "d": "2026-11-20"
     },
     {
-      "url": "/p/volvik-bellows-candy",
-      "kind": "new",
-      "d": "2026-11-20"
-    },
-    {
-      "url": "/p/srixon-distance",
-      "kind": "new",
-      "d": "2026-11-20"
-    },
-    {
       "url": "/c/ball",
       "kind": "updated",
       "d": "2026-11-20"
@@ -4958,7 +4952,72 @@
       "d": "2026-11-20"
     },
     {
+      "url": "/p/bushnell-tour-v6-shift",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/bushnell-a1-slope",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/r2g-mate-mini",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/mycaddie-ms3-oled",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/wellsense-black-eagle-zero",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/caddytalk-minion",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/volvik-bellows-candy",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/srixon-distance",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/voicecaddie-laser-fit-2",
+      "kind": "new",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/c/rangefinder",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/g/rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/g/rangefinder-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
       "url": "/",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/vs/voicecaddie-sl3-vs-bushnell-tour-v6-shift",
       "kind": "updated",
       "d": "2026-11-20"
     }
