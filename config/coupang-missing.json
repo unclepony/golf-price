@@ -7,8 +7,8 @@
   },
   "ping-pioneer-cart": {
     "since": "2026-11-03",
-    "days": 11,
-    "last": "2026-11-19"
+    "days": 12,
+    "last": "2026-11-21"
   },
   "voicecaddie-t-ultra": {
     "since": "2026-11-06",
@@ -17,8 +17,8 @@
   },
   "bridgestone-e6": {
     "since": "2026-11-07",
-    "days": 12,
-    "last": "2026-11-20"
+    "days": 13,
+    "last": "2026-11-21"
   },
   "srixon-z-star-diamond": {
     "since": "2026-11-07",
@@ -27,28 +27,28 @@
   },
   "bridgestone-tour-b-rxs": {
     "since": "2026-11-10",
-    "days": 10,
-    "last": "2026-11-20"
+    "days": 11,
+    "last": "2026-11-21"
   },
   "callaway-reva-women-driver": {
     "since": "2026-11-10",
-    "days": 10,
-    "last": "2026-11-20"
+    "days": 11,
+    "last": "2026-11-21"
   },
   "majesty-royalgold-fairway": {
     "since": "2026-11-10",
-    "days": 6,
-    "last": "2026-11-19"
+    "days": 7,
+    "last": "2026-11-21"
   },
   "mizuno-stmax230-driver": {
     "since": "2026-11-10",
-    "days": 5,
-    "last": "2026-11-19"
+    "days": 6,
+    "last": "2026-11-21"
   },
   "ping-g440sft-driver": {
     "since": "2026-11-10",
-    "days": 5,
-    "last": "2026-11-19"
+    "days": 6,
+    "last": "2026-11-21"
   },
   "xxio-prime-women-fairway": {
     "since": "2026-11-11",
@@ -57,23 +57,18 @@
   },
   "bj-sml-putting-trainer": {
     "since": "2026-11-11",
-    "days": 9,
-    "last": "2026-11-20"
+    "days": 10,
+    "last": "2026-11-21"
   },
   "ping-womens-mesh-pair-glove": {
     "since": "2026-11-12",
-    "days": 4,
-    "last": "2026-11-19"
-  },
-  "pxg-0311xp-gen7-iron": {
-    "since": "2026-11-12",
-    "days": 4,
-    "last": "2026-11-19"
+    "days": 5,
+    "last": "2026-11-21"
   },
   "sklz-home-driving-range-kit": {
     "since": "2026-11-12",
-    "days": 4,
-    "last": "2026-11-19"
+    "days": 5,
+    "last": "2026-11-21"
   },
   "taylormade-qi4dmax-fairway": {
     "since": "2026-11-13",
@@ -87,23 +82,23 @@
   },
   "adidas-women-cool-pair-glove": {
     "since": "2026-11-13",
-    "days": 7,
-    "last": "2026-11-20"
+    "days": 8,
+    "last": "2026-11-21"
   },
   "footjoy-wintersof-women-pair-glove": {
     "since": "2026-11-13",
-    "days": 6,
-    "last": "2026-11-19"
+    "days": 7,
+    "last": "2026-11-21"
   },
   "ping-tomcat14-putter": {
     "since": "2026-11-14",
-    "days": 3,
-    "last": "2026-11-19"
+    "days": 4,
+    "last": "2026-11-21"
   },
   "majesty-royalgold-hybrid": {
     "since": "2026-11-15",
-    "days": 3,
-    "last": "2026-11-19"
+    "days": 4,
+    "last": "2026-11-21"
   },
   "taylormade-qi35-fairway": {
     "since": "2026-11-15",
@@ -127,73 +122,73 @@
   },
   "ping-g440-lst-fairway": {
     "since": "2026-11-17",
-    "days": 2,
-    "last": "2026-11-19"
+    "days": 3,
+    "last": "2026-11-21"
   },
   "ping-g440-max-fairway": {
     "since": "2026-11-17",
-    "days": 2,
-    "last": "2026-11-19"
+    "days": 3,
+    "last": "2026-11-21"
   },
   "ping-g440k-driver": {
     "since": "2026-11-17",
-    "days": 2,
-    "last": "2026-11-19"
+    "days": 3,
+    "last": "2026-11-21"
   },
   "ping-gle3-women-fairway": {
     "since": "2026-11-17",
-    "days": 2,
-    "last": "2026-11-19"
+    "days": 3,
+    "last": "2026-11-21"
   },
   "ping-i525-iron": {
     "since": "2026-11-17",
-    "days": 2,
-    "last": "2026-11-19"
+    "days": 3,
+    "last": "2026-11-21"
   },
   "prgr-sweep-women-utility": {
     "since": "2026-11-17",
-    "days": 2,
-    "last": "2026-11-19"
+    "days": 3,
+    "last": "2026-11-21"
   },
   "roycow-swing-mat": {
     "since": "2026-11-17",
-    "days": 2,
-    "last": "2026-11-19"
+    "days": 3,
+    "last": "2026-11-21"
   },
   "skechers-go-golf-flight-shoes": {
     "since": "2026-11-17",
-    "days": 2,
-    "last": "2026-11-19"
+    "days": 3,
+    "last": "2026-11-21"
   },
   "srixon-zxi5-iron": {
     "since": "2026-11-17",
-    "days": 2,
-    "last": "2026-11-19"
+    "days": 3,
+    "last": "2026-11-21"
   },
   "adidas-adipower26-boa-shoes": {
     "since": "2026-11-17",
-    "days": 4,
-    "last": "2026-11-20"
+    "days": 5,
+    "last": "2026-11-21"
   },
   "bridgestone-bx2-driver": {
     "since": "2026-11-17",
-    "days": 4,
-    "last": "2026-11-20"
+    "days": 5,
+    "last": "2026-11-21"
   },
   "callaway-quantum-maxfast-fairway": {
     "since": "2026-11-17",
-    "days": 4,
-    "last": "2026-11-20"
+    "days": 5,
+    "last": "2026-11-21"
   },
   "majesty-royale-women-iron": {
     "since": "2026-11-17",
-    "days": 2,
-    "last": "2026-11-19"
+    "days": 3,
+    "last": "2026-11-21"
   },
   "ping-womens-sheepskin-glove": {
     "since": "2026-11-17",
-    "days": 2,
-    "last": "2026-11-19"
+    "days": 3,
+    "last": "2026-11-21"
   },
   "taylormade-qi35maxlite-women-hybrid": {
     "since": "2026-11-18",
@@ -227,8 +222,8 @@
   },
   "adidas-adipower26-boa-women-shoes": {
     "since": "2026-11-18",
-    "days": 3,
-    "last": "2026-11-20"
+    "days": 4,
+    "last": "2026-11-21"
   },
   "footjoy-lady-ecomfort-pair-glove": {
     "since": "2026-11-18",
@@ -237,68 +232,53 @@
   },
   "kasco-dolphin-dw125g-wedge": {
     "since": "2026-11-19",
-    "days": 1,
-    "last": "2026-11-19"
+    "days": 2,
+    "last": "2026-11-21"
   },
   "majesty-royale-women-hybrid": {
     "since": "2026-11-19",
-    "days": 1,
-    "last": "2026-11-19"
+    "days": 2,
+    "last": "2026-11-21"
   },
   "mizuno-jpx923-forged-iron": {
     "since": "2026-11-19",
-    "days": 1,
-    "last": "2026-11-19"
+    "days": 2,
+    "last": "2026-11-21"
   },
   "mizuno-jpxq-women-iron": {
     "since": "2026-11-19",
-    "days": 1,
-    "last": "2026-11-19"
+    "days": 2,
+    "last": "2026-11-21"
   },
   "mizuno-jpxs40-women-iron": {
     "since": "2026-11-19",
-    "days": 1,
-    "last": "2026-11-19"
-  },
-  "mizuno-stz230-fairway": {
-    "since": "2026-11-19",
-    "days": 1,
-    "last": "2026-11-19"
+    "days": 2,
+    "last": "2026-11-21"
   },
   "nike-air-max-90-g-women-shoes": {
     "since": "2026-11-19",
-    "days": 1,
-    "last": "2026-11-19"
+    "days": 2,
+    "last": "2026-11-21"
   },
   "ping-blueprint-t-iron": {
     "since": "2026-11-19",
-    "days": 1,
-    "last": "2026-11-19"
+    "days": 2,
+    "last": "2026-11-21"
   },
   "ping-g440-driver": {
     "since": "2026-11-19",
-    "days": 1,
-    "last": "2026-11-19"
-  },
-  "ping-tyne-g-putter": {
-    "since": "2026-11-19",
-    "days": 1,
-    "last": "2026-11-19"
-  },
-  "ping-womens-color-pair-glove": {
-    "since": "2026-11-19",
-    "days": 1,
-    "last": "2026-11-19"
+    "days": 2,
+    "last": "2026-11-21"
   },
   "ecco-golf-street-vibe-shoes": {
     "since": "2026-11-19",
-    "days": 2,
-    "last": "2026-11-20"
+    "days": 3,
+    "last": "2026-11-21"
   },
   "footjoy-raingrip-women-pair-glove": {
     "since": "2026-11-19",
-    "days": 1,
-    "last": "2026-11-19"
+    "days": 2,
+    "last": "2026-11-21"
   },
   "garmin-approach-z82": {
     "since": "2026-11-20",
@@ -315,34 +295,79 @@
     "days": 1,
     "last": "2026-11-20"
   },
-  "bridgestone-blady-women-fairway": {
-    "since": "2026-11-20",
-    "days": 1,
-    "last": "2026-11-20"
-  },
   "bridgestone-tour-b-x": {
     "since": "2026-11-20",
-    "days": 1,
-    "last": "2026-11-20"
+    "days": 2,
+    "last": "2026-11-21"
   },
   "bridgestone-tour-b-xs": {
     "since": "2026-11-20",
-    "days": 1,
-    "last": "2026-11-20"
+    "days": 2,
+    "last": "2026-11-21"
   },
   "bridgestone-v300x-iron": {
     "since": "2026-11-20",
-    "days": 1,
-    "last": "2026-11-20"
-  },
-  "ecco-biom-g5-boa-shoes": {
-    "since": "2026-11-20",
-    "days": 1,
-    "last": "2026-11-20"
+    "days": 2,
+    "last": "2026-11-21"
   },
   "evnroll-z5s-putter": {
     "since": "2026-11-20",
     "days": 1,
     "last": "2026-11-20"
+  },
+  "footjoy-weathersof-women-glove": {
+    "since": "2026-11-21",
+    "days": 1,
+    "last": "2026-11-21"
+  },
+  "honma-tw767px-iron": {
+    "since": "2026-11-21",
+    "days": 1,
+    "last": "2026-11-21"
+  },
+  "lab-mezz1-max-putter": {
+    "since": "2026-11-21",
+    "days": 1,
+    "last": "2026-11-21"
+  },
+  "mizuno-jpxone-fairway": {
+    "since": "2026-11-21",
+    "days": 1,
+    "last": "2026-11-21"
+  },
+  "odyssey-white-hot-og-2ball-putter": {
+    "since": "2026-11-21",
+    "days": 1,
+    "last": "2026-11-21"
+  },
+  "ping-anser-2-putter": {
+    "since": "2026-11-21",
+    "days": 1,
+    "last": "2026-11-21"
+  },
+  "ping-tyne-h-putter": {
+    "since": "2026-11-21",
+    "days": 1,
+    "last": "2026-11-21"
+  },
+  "sklz-quickster-chipping-net": {
+    "since": "2026-11-21",
+    "days": 1,
+    "last": "2026-11-21"
+  },
+  "bridgestone-biting-spin-wedge": {
+    "since": "2026-11-21",
+    "days": 1,
+    "last": "2026-11-21"
+  },
+  "cleveland-hbsoft2-putter": {
+    "since": "2026-11-21",
+    "days": 1,
+    "last": "2026-11-21"
+  },
+  "cleveland-urban-cart": {
+    "since": "2026-11-21",
+    "days": 1,
+    "last": "2026-11-21"
   }
 }
