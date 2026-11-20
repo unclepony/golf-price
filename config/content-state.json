@@ -1063,7 +1063,7 @@
       "d": "2026-11-20"
     },
     "/p/titleist-velocity": {
-      "h": "1f3b54f21d011d10",
+      "h": "7d7f73a9a9e757af",
       "d": "2026-11-20"
     },
     "/p/callaway-supersoft": {
@@ -1071,7 +1071,7 @@
       "d": "2026-11-20"
     },
     "/p/taylormade-distance-plus": {
-      "h": "e190ee16009b1ae0",
+      "h": "fe1ae21f0a8fbd32",
       "d": "2026-11-20"
     },
     "/p/bushnell-a1-slope": {
@@ -1311,8 +1311,8 @@
       "d": "2026-11-17"
     },
     "/p/volvik-vivid": {
-      "h": "63d44ebb865eb4f2",
-      "d": "2026-11-14"
+      "h": "cbef6a4f3853561f",
+      "d": "2026-11-20"
     },
     "/p/volvik-axia-iv": {
       "h": "7e180a9102ce6dd9",
@@ -1683,12 +1683,12 @@
       "d": "2026-11-11"
     },
     "/p/callaway-warbird": {
-      "h": "a84f6ee668a77d9c",
-      "d": "2026-11-14"
+      "h": "317ec7d7dacf249e",
+      "d": "2026-11-20"
     },
     "/p/callaway-reva": {
-      "h": "85e7e8d01fc5556c",
-      "d": "2026-11-14"
+      "h": "1237097e6a9ee21e",
+      "d": "2026-11-20"
     },
     "/p/honma-d1": {
       "h": "796e88fdbae4893d",
@@ -1699,8 +1699,8 @@
       "d": "2026-11-16"
     },
     "/p/wilson-duo-soft": {
-      "h": "baa5e7a7b5c83817",
-      "d": "2026-11-14"
+      "h": "3efb78b5f8cabdb7",
+      "d": "2026-11-20"
     },
     "/p/volvik-power-soft": {
       "h": "35ce1f5409315b42",
@@ -3067,16 +3067,16 @@
       "d": "2026-11-17"
     },
     "/p/taylormade-speedsoft": {
-      "h": "5071ce6bbbdd76ed",
-      "d": "2026-11-12"
+      "h": "7b21f1e899269935",
+      "d": "2026-11-20"
     },
     "/p/xxio-premium-ball": {
       "h": "359c45762771e0ef",
       "d": "2026-11-17"
     },
     "/p/honma-d1-speedmonster": {
-      "h": "f2c4a91f9174c275",
-      "d": "2026-11-14"
+      "h": "a5c3c4bce0343a4d",
+      "d": "2026-11-20"
     },
     "/p/garmin-approach-z10": {
       "h": "c54ac2291f98c43b",
@@ -3203,8 +3203,8 @@
       "d": "2026-11-17"
     },
     "/p/bridgestone-e12-straight": {
-      "h": "f23cb6278448b1dc",
-      "d": "2026-11-14"
+      "h": "4d40c75f25827387",
+      "d": "2026-11-20"
     },
     "/p/ping-pld-milled-anser30-putter": {
       "h": "eb3aa2acb1482ef2",
@@ -3635,7 +3635,15 @@
       "d": "2026-11-20"
     },
     "/p/cobra-3dp-grandsport35-putter": {
-      "h": "9e2da25b0aa140b7",
+      "h": "588c2c6fb6194099",
+      "d": "2026-11-20"
+    },
+    "/p/volvik-bellows-candy": {
+      "h": "6cd386fb94332d46",
+      "d": "2026-11-20"
+    },
+    "/p/srixon-distance": {
+      "h": "59bdbd705c5b2a81",
       "d": "2026-11-20"
     },
     "/c/driver": {
@@ -3663,7 +3671,7 @@
       "d": "2026-11-20"
     },
     "/c/ball": {
-      "h": "fcad4e1f146326a8",
+      "h": "a310108743cc2d96",
       "d": "2026-11-20"
     },
     "/c/rangefinder": {
@@ -3723,8 +3731,8 @@
       "d": "2026-11-20"
     },
     "/g/golf-ball-compare": {
-      "h": "acd8dd9b56e326bf",
-      "d": "2026-11-18"
+      "h": "94e435b5b773a6e4",
+      "d": "2026-11-20"
     },
     "/g/rangefinder-recommend": {
       "h": "51545f11f41c7ddc",
@@ -3887,8 +3895,8 @@
       "d": "2026-11-17"
     },
     "/g/golf-ball-compare-beginner": {
-      "h": "b1c76722a3560dd9",
-      "d": "2026-11-14"
+      "h": "47c6d3ca7ffd5ce9",
+      "d": "2026-11-20"
     },
     "/g/golf-ball-compare-intermediate": {
       "h": "29ea48a8290cec2f",
@@ -4003,7 +4011,7 @@
       "d": "2026-11-16"
     },
     "/": {
-      "h": "267cea4bc7ea47c9",
+      "h": "bb5e1d77844a8c36",
       "d": "2026-11-20"
     },
     "/about": {
@@ -4845,11 +4853,6 @@
       "d": "2026-11-20"
     },
     {
-      "url": "/p/cobra-3dp-grandsport35-putter",
-      "kind": "new",
-      "d": "2026-11-20"
-    },
-    {
       "url": "/c/putter",
       "kind": "updated",
       "d": "2026-11-20"
@@ -4875,12 +4878,87 @@
       "d": "2026-11-20"
     },
     {
-      "url": "/",
+      "url": "/vs/callaway-twoball-ten-putter-vs-cleveland-hbsoft2-putter",
       "kind": "updated",
       "d": "2026-11-20"
     },
     {
-      "url": "/vs/callaway-twoball-ten-putter-vs-cleveland-hbsoft2-putter",
+      "url": "/p/titleist-velocity",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/taylormade-distance-plus",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/volvik-vivid",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/callaway-warbird",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/callaway-reva",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/wilson-duo-soft",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/taylormade-speedsoft",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/honma-d1-speedmonster",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/bridgestone-e12-straight",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/cobra-3dp-grandsport35-putter",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/volvik-bellows-candy",
+      "kind": "new",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/p/srixon-distance",
+      "kind": "new",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/c/ball",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/g/golf-ball-compare",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/g/golf-ball-compare-beginner",
+      "kind": "updated",
+      "d": "2026-11-20"
+    },
+    {
+      "url": "/",
       "kind": "updated",
       "d": "2026-11-20"
     }
