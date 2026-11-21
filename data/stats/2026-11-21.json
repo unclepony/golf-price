@@ -1,63 +1,307 @@
 {
   "date": "2026-11-21",
   "by": {
+    "act": {
+      "캠페인: chatgpt.com|/g/womens-shoes-recommend": 2,
+      "캠페인: chatgpt.com|/p/ecco-biom-h4-women-shoes": 1,
+      "캠페인: chatgpt.com|/p/ecco-goretex-women-shoes": 1
+    },
+    "asn": {
+      "AS3559 Korea Telecom": 1,
+      "AS4766 KT": 2,
+      "AS9318 SK Broadband Co Ltd": 1,
+      "AS9644 SK Telecom": 2
+    },
+    "asncamp": {
+      "AS3559 Korea Telecom|chatgpt.com|모바일": 1,
+      "AS4766 KT|chatgpt.com|모바일": 2,
+      "AS9318 SK Broadband Co Ltd|youtube / video / t-womens-utility-recommend-2|PC": 1,
+      "AS9644 SK Telecom|youtube / video / t-womens-utility-recommend-2|PC": 1
+    },
     "bot": {
+      "ChatGPT-User|/": 5,
+      "ChatGPT-User|/c/rangefinder": 1,
+      "ChatGPT-User|/g/rangefinder-recommend": 1,
+      "ChatGPT-User|/p/mizuno-amazing-leather-glove": 1,
+      "ChatGPT-User|/p/odyssey-aidual-s2s-putter": 1,
+      "GPTBot|/sitemap.xml": 1,
+      "Googlebot|/robots.txt": 2,
+      "Googlebot|/sitemap.xml": 1,
       "OAI-SearchBot|/": 1,
-      "OAI-SearchBot|/c/bag": 1,
-      "OAI-SearchBot|/c/ball": 5,
-      "OAI-SearchBot|/c/driver": 2,
+      "OAI-SearchBot|/c/bag": 9,
+      "OAI-SearchBot|/c/ball": 22,
+      "OAI-SearchBot|/c/driver": 6,
+      "OAI-SearchBot|/c/glove": 1,
       "OAI-SearchBot|/c/gps": 1,
-      "OAI-SearchBot|/c/iron": 1,
-      "OAI-SearchBot|/c/launch": 2,
-      "OAI-SearchBot|/c/practice": 2,
-      "OAI-SearchBot|/c/putter": 1,
-      "OAI-SearchBot|/c/rangefinder": 1,
-      "OAI-SearchBot|/c/shoes": 2,
+      "OAI-SearchBot|/c/iron": 6,
+      "OAI-SearchBot|/c/launch": 7,
+      "OAI-SearchBot|/c/practice": 5,
+      "OAI-SearchBot|/c/putter": 5,
+      "OAI-SearchBot|/c/rangefinder": 5,
+      "OAI-SearchBot|/c/shoes": 8,
+      "OAI-SearchBot|/c/utility": 1,
       "OAI-SearchBot|/c/wedge": 1,
-      "OAI-SearchBot|/g/driver-recommend-2026": 2,
-      "OAI-SearchBot|/g/golf-bag-recommend": 1,
-      "OAI-SearchBot|/g/golf-ball-compare": 1,
+      "OAI-SearchBot|/c/wood": 1,
+      "OAI-SearchBot|/g/driver-recommend-2026": 5,
+      "OAI-SearchBot|/g/driver-recommend-2026-advanced": 1,
+      "OAI-SearchBot|/g/driver-recommend-2026-beginner": 1,
+      "OAI-SearchBot|/g/driver-recommend-2026-intermediate": 1,
+      "OAI-SearchBot|/g/fairway-wood-recommend": 1,
+      "OAI-SearchBot|/g/fairway-wood-recommend-advanced": 1,
+      "OAI-SearchBot|/g/fairway-wood-recommend-beginner": 1,
+      "OAI-SearchBot|/g/golf-bag-recommend": 6,
+      "OAI-SearchBot|/g/golf-ball-compare": 5,
       "OAI-SearchBot|/g/golf-ball-compare-advanced": 1,
-      "OAI-SearchBot|/g/golf-gift-guide-2026": 2,
-      "OAI-SearchBot|/g/golf-shoes-recommend": 1,
-      "OAI-SearchBot|/g/golf-watch-recommend": 1,
-      "OAI-SearchBot|/g/iron-recommend": 3,
-      "OAI-SearchBot|/g/launch-monitor-recommend": 2,
-      "OAI-SearchBot|/g/practice-gear-recommend": 3,
+      "OAI-SearchBot|/g/golf-ball-compare-beginner": 1,
+      "OAI-SearchBot|/g/golf-ball-compare-pro": 1,
+      "OAI-SearchBot|/g/golf-gift-guide-2026": 5,
+      "OAI-SearchBot|/g/golf-glove-recommend": 1,
+      "OAI-SearchBot|/g/golf-shoes-recommend": 6,
+      "OAI-SearchBot|/g/golf-watch-recommend": 6,
+      "OAI-SearchBot|/g/golf-watch-recommend-beginner": 1,
+      "OAI-SearchBot|/g/golf-watch-recommend-intermediate": 1,
+      "OAI-SearchBot|/g/golf-watch-recommend-pro": 1,
+      "OAI-SearchBot|/g/iron-recommend": 6,
+      "OAI-SearchBot|/g/iron-recommend-advanced": 1,
+      "OAI-SearchBot|/g/iron-recommend-beginner": 1,
+      "OAI-SearchBot|/g/iron-recommend-intermediate": 1,
+      "OAI-SearchBot|/g/iron-recommend-pro": 1,
+      "OAI-SearchBot|/g/launch-monitor-recommend": 7,
+      "OAI-SearchBot|/g/launch-monitor-recommend-beginner": 1,
+      "OAI-SearchBot|/g/practice-gear-recommend": 6,
+      "OAI-SearchBot|/g/practice-gear-recommend-advanced": 1,
       "OAI-SearchBot|/g/practice-gear-recommend-beginner": 1,
-      "OAI-SearchBot|/g/putter-recommend": 2,
-      "OAI-SearchBot|/g/putter-recommend-beginner": 2,
+      "OAI-SearchBot|/g/putter-recommend": 6,
+      "OAI-SearchBot|/g/putter-recommend-advanced": 1,
+      "OAI-SearchBot|/g/putter-recommend-beginner": 5,
+      "OAI-SearchBot|/g/putter-recommend-intermediate": 1,
       "OAI-SearchBot|/g/putter-recommend-pro": 1,
-      "OAI-SearchBot|/g/rangefinder-recommend": 1,
+      "OAI-SearchBot|/g/rangefinder-recommend": 5,
       "OAI-SearchBot|/g/rangefinder-recommend-advanced": 1,
       "OAI-SearchBot|/g/rangefinder-recommend-beginner": 1,
+      "OAI-SearchBot|/g/rangefinder-recommend-intermediate": 1,
       "OAI-SearchBot|/g/rangefinder-recommend-pro": 1,
-      "OAI-SearchBot|/g/wedge-recommend": 1,
+      "OAI-SearchBot|/g/utility-recommend": 1,
+      "OAI-SearchBot|/g/wedge-recommend": 6,
+      "OAI-SearchBot|/g/wedge-recommend-advanced": 1,
+      "OAI-SearchBot|/g/wedge-recommend-beginner": 1,
+      "OAI-SearchBot|/g/wedge-recommend-intermediate": 1,
       "OAI-SearchBot|/g/womens-driver-recommend": 1,
-      "OAI-SearchBot|/g/womens-fairway-wood-recommend": 2,
-      "OAI-SearchBot|/g/womens-iron-recommend": 3,
+      "OAI-SearchBot|/g/womens-driver-recommend-advanced": 1,
+      "OAI-SearchBot|/g/womens-driver-recommend-intermediate": 1,
+      "OAI-SearchBot|/g/womens-driver-recommend-pro": 1,
+      "OAI-SearchBot|/g/womens-fairway-wood-recommend": 6,
+      "OAI-SearchBot|/g/womens-fairway-wood-recommend-beginner": 1,
+      "OAI-SearchBot|/g/womens-iron-recommend": 7,
+      "OAI-SearchBot|/g/womens-iron-recommend-beginner": 1,
+      "OAI-SearchBot|/g/womens-iron-recommend-intermediate": 1,
+      "OAI-SearchBot|/g/womens-shoes-recommend": 1,
       "OAI-SearchBot|/g/womens-utility-recommend": 1,
       "OAI-SearchBot|/jp": 1,
+      "OAI-SearchBot|/p/adidas-adizero-zg-boa-shoes": 1,
+      "OAI-SearchBot|/p/adidas-adizero-zg-boa-women-shoes": 1,
+      "OAI-SearchBot|/p/adidas-alphamotion-boa-shoes": 1,
+      "OAI-SearchBot|/p/callaway-apex-ai300-iron": 1,
+      "OAI-SearchBot|/p/callaway-cg-csports-cart": 1,
+      "OAI-SearchBot|/p/callaway-cg-csports-stand": 1,
+      "OAI-SearchBot|/p/callaway-cg-tour-flagship-cart": 1,
+      "OAI-SearchBot|/p/mizuno-br-d4-stand": 1,
+      "OAI-SearchBot|/p/mizuno-nexlite-gs-boa-shoes": 1,
+      "OAI-SearchBot|/p/mizuno-pro-camo-stand": 1,
+      "OAI-SearchBot|/p/nike-free-golf-nn-shoes": 1,
       "OAI-SearchBot|/p/ping-g430-hl-max-driver": 1,
+      "OAI-SearchBot|/p/ping-sporty-mx3-cart": 1,
+      "OAI-SearchBot|/p/taylormade-qi-max-iron": 1,
+      "OAI-SearchBot|/qa/golf-gps-watch-beginner": 1,
+      "OAI-SearchBot|/qa/golf-swing-analyzer-beginner": 1,
       "OAI-SearchBot|/qa/winter-golf-glove": 1,
-      "OAI-SearchBot|/robots.txt": 2,
+      "OAI-SearchBot|/robots.txt": 6,
       "OAI-SearchBot|/vs/bushnell-pro-x3-vs-nikon-coolshot-pro3": 1,
+      "Yeti|/c/rangefinder": 1,
+      "Yeti|/c/shoes": 1,
       "Yeti|/p/garmin-approach-r10": 1,
+      "Yeti|/p/taylormade-qi-maxlite-women-iron": 1,
+      "Yeti|/qa/golf-ball-recommend": 1,
+      "Yeti|/robots.txt": 1,
+      "bingbot|/c/glove": 1,
+      "bingbot|/c/rangefinder": 1,
+      "bingbot|/g/golf-gift-guide-2026": 1,
+      "bingbot|/g/rangefinder-recommend": 1,
       "bingbot|/g/wedge-recommend": 1,
       "bingbot|/p/footjoy-raingrip-women-pair-glove": 1,
+      "bingbot|/p/mizuno-jpx925f-women-iron": 1,
       "bingbot|/p/ping-i240-iron": 1,
       "bingbot|/p/ping-i530-iron": 1,
+      "bingbot|/p/prgr-superegg-women-utility": 1,
       "bingbot|/p/sunmountain-h2no-stand": 1,
+      "bingbot|/p/swingimpact-swingcaddie": 1,
+      "bingbot|/p/taylormade-glory-women-driver": 1,
       "bingbot|/p/titleist-performance-cart-2026": 1,
+      "bingbot|/p/voicecaddie-sl3": 1,
+      "bingbot|/p/volvik-vivid": 1,
+      "bingbot|/p/xxio12-fairway": 1,
       "bingbot|/p/xxio13-fairway": 1,
-      "bingbot|/sitemap.xml": 2,
+      "bingbot|/p/xxio14-fairway": 1,
+      "bingbot|/p/xxio14plus-driver": 1,
+      "bingbot|/qa": 1,
+      "bingbot|/qa/iron-steel-vs-carbon-shaft": 1,
+      "bingbot|/robots.txt": 1,
+      "bingbot|/sitemap.xml": 6,
       "bingbot|/vs/callaway-elyte-maxfast-women-driver-vs-ping-gle3-women-driver": 1,
       "bingbot|/vs/callaway-elyte-women-hybrid-vs-callaway-roguest-women-hybrid": 1,
-      "bingbot|/vs/ping-g440max-women-driver-vs-ping-gle4-women-driver": 1
+      "bingbot|/vs/evnroll-z5s-putter-vs-ping-anser-2-putter": 1,
+      "bingbot|/vs/ping-g440lst-driver-vs-ping-g440-driver": 1,
+      "bingbot|/vs/ping-g440max-women-driver-vs-ping-gle4-women-driver": 1,
+      "bingbot|/vs/taylormade-stealth-women-rescue-vs-xxio14-women-hybrid": 1
+    },
+    "cty": {
+      "KR": 6
+    },
+    "depth": {
+      "/c/rangefinder|첫 화면": 1,
+      "/g/womens-shoes-recommend|첫 화면": 3,
+      "/p/ecco-biom-h4-women-shoes|25%": 1,
+      "/p/ecco-biom-h4-women-shoes|50%": 1,
+      "/p/ecco-goretex-women-shoes|75%": 1
+    },
+    "dev": {
+      "PC": 2,
+      "모바일": 4
+    },
+    "hour": {
+      "13": 2,
+      "15": 2,
+      "18": 2
+    },
+    "nav": {
+      "/g/womens-shoes-recommend|/p/ecco-biom-h4-women-shoes": 2,
+      "/p/ecco-biom-h4-women-shoes|/p/ecco-goretex-women-shoes": 1
+    },
+    "navnoref": {
+      "/p/ecco-biom-h4-women-shoes|/g/womens-shoes-recommend": 1
+    },
+    "navpos": {
+      "같은 비교 다른 상품|/p→/p": 1,
+      "결론 표|/g→/p": 1
+    },
+    "out": {
+      "/g/womens-shoes-recommend|ecco-biom-c4-women-shoes": 1,
+      "/p/ecco-goretex-women-shoes|ecco-goretex-women-shoes": 1
+    },
+    "outact": {
+      "조작 후|캠페인: chatgpt.com": 2
+    },
+    "outcamp": {
+      "chatgpt.com|ecco-biom-c4-women-shoes": 1,
+      "chatgpt.com|ecco-goretex-women-shoes": 1
+    },
+    "outref": {
+      "캠페인: chatgpt.com": 2
+    },
+    "pos": {
+      "비교표": 1,
+      "상세 끝 구매 상자": 1
+    },
+    "pv": {
+      "/": 1,
+      "/c/rangefinder": 1,
+      "/g/womens-shoes-recommend": 3,
+      "/g/womens-utility-recommend": 2,
+      "/p/ecco-biom-h4-women-shoes": 2,
+      "/p/ecco-goretex-women-shoes": 1
+    },
+    "pvprice": {
+      "가격 보임|/p/ecco-biom-h4-women-shoes": 2,
+      "가격 보임|/p/ecco-goretex-women-shoes": 1
+    },
+    "ref": {
+      "직접·북마크": 1,
+      "캠페인: chatgpt.com": 3,
+      "캠페인: youtube": 2
+    },
+    "refland": {
+      "직접·북마크|/": 1,
+      "캠페인: chatgpt.com|/c/rangefinder": 1,
+      "캠페인: chatgpt.com|/g/womens-shoes-recommend": 2,
+      "캠페인: youtube|/g/womens-utility-recommend": 2
+    },
+    "refurl": {
+      "chatgpt.com": 3,
+      "youtube / video / t-womens-utility-recommend-2": 2
+    },
+    "seen": {
+      "/c/rangefinder": 1,
+      "/g/womens-shoes-recommend": 3,
+      "/g/womens-utility-recommend": 2,
+      "/p/ecco-biom-h4-women-shoes": 1,
+      "/p/ecco-goretex-women-shoes": 1
+    },
+    "seenpos": {
+      "결론 표": 6,
+      "상품 페이지": 2
+    },
+    "seenref": {
+      "캠페인: chatgpt.com": 6,
+      "캠페인: youtube": 2
     },
     "skip": {
-      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 1
+      "데이터센터 AS16509 AWS Asia Pacific (Seoul) Regio": 3,
+      "데이터센터 AS32934 Meta Platforms Ireland Limited": 2
+    },
+    "stay": {
+      "/c/rangefinder|10~30초": 1,
+      "/g/womens-shoes-recommend|10~30초": 1,
+      "/g/womens-shoes-recommend|10초 미만": 1,
+      "/g/womens-shoes-recommend|1~3분": 1,
+      "/p/ecco-biom-h4-women-shoes|10~30초": 1,
+      "/p/ecco-biom-h4-women-shoes|10초 미만": 1,
+      "/p/ecco-goretex-women-shoes|30초~1분": 1
+    },
+    "visit": {
+      "/": 1,
+      "/c/rangefinder": 1,
+      "/g/womens-shoes-recommend": 2,
+      "/g/womens-utility-recommend": 2
+    },
+    "xpv": {
+      "/c/rangefinder": 1,
+      "/g/womens-shoes-recommend": 3,
+      "/g/womens-utility-recommend": 2,
+      "/p/ecco-biom-h4-women-shoes": 2,
+      "/p/ecco-goretex-women-shoes": 1
+    },
+    "ytbot": {
+      "youtube / video / t-womens-utility-recommend-2": 2
     }
   },
-  "journey": []
+  "journey": [
+    {
+      "hour": "15",
+      "pid": "ecco-biom-c4-women-shoes",
+      "page": "/g/womens-shoes-recommend",
+      "src": "캠페인: chatgpt.com",
+      "kw": "",
+      "url": "chatgpt.com",
+      "land": "/g/womens-shoes-recommend",
+      "trail": "/g/womens-shoes-recommend",
+      "steps": 1,
+      "secs": 64,
+      "dev": "모바일",
+      "pos": "비교표"
+    },
+    {
+      "hour": "15",
+      "pid": "ecco-goretex-women-shoes",
+      "page": "/p/ecco-goretex-women-shoes",
+      "src": "캠페인: chatgpt.com",
+      "kw": "",
+      "url": "chatgpt.com",
+      "land": "/g/womens-shoes-recommend",
+      "trail": "/g/womens-shoes-recommend → /p/ecco-biom-h4-women-shoes → /p/ecco-goretex-women-shoes",
+      "steps": 3,
+      "secs": 83,
+      "dev": "모바일",
+      "pos": "상세 끝 구매 상자"
+    }
+  ]
 }

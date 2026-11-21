@@ -1,33 +1,15 @@
 {
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { price: 1.5배 넘게 튄 API 값(반영 보류), held: 그때 유지한 직전 값, first: 처음 본 날, last: 마지막으로 본 날 }. 다음 날 이후 같은 값이 다시 나오면 반영하고 지운다.",
-  "callaway-winter-glory-women-pair-glove": {
-    "price": 26150,
-    "held": 48400,
-    "first": "2026-11-21",
-    "last": "2026-11-21"
-  },
-  "mizuno-elite-glove": {
-    "price": 24000,
-    "held": 12900,
-    "first": "2026-11-20",
-    "last": "2026-11-20"
-  },
-  "wixx-magic-swing-trainer": {
-    "price": 29900,
-    "held": 55000,
-    "first": "2026-11-20",
-    "last": "2026-11-20"
-  },
   "voicecaddie-sc300i": {
     "price": 699000,
     "held": 399000,
     "first": "2026-11-21",
     "last": "2026-11-21"
   },
-  "callaway-opti-grip-glove": {
-    "price": 20760,
-    "held": 31480,
-    "first": "2026-11-21",
-    "last": "2026-11-21"
+  "voicecaddie-sc200-plus": {
+    "price": 316250,
+    "held": 199000,
+    "first": "2026-11-22",
+    "last": "2026-11-22"
   }
 }
