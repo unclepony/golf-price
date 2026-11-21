@@ -1194,3 +1194,5 @@ table.answer-t td.al { font-size: 12px; white-space: nowrap; color: var(--muted)
 /* 결론 표의 '쿠팡에서 보기'를 글자 링크(12px·높이 19px)에서 버튼으로 (2026-11-22 관제탑: 57번 보이고 0번 눌림) */
 table.answer-t td a.answer-go { display: block; margin-top: 6px; padding: 10px 8px; min-height: 40px; box-sizing: border-box; border-radius: 10px; background: var(--accent); color: var(--accent-ink); font-size: 13.5px; font-weight: 700; line-height: 1.4; text-align: center; text-decoration: none; white-space: normal; }
 table.answer-t td a.answer-go:hover { filter: brightness(1.06); text-decoration: none; }
+/* 상품 쪽 휴대폰 사진이 아래가 잘려 보이던 것 바로잡기(2026-11-22): 높이를 직접 정해 전체가 보이게 */
+@media (max-width: 760px) { .pd .gal:not(.gal-empty) .gal-main img { width: auto; max-width: 100%; height: 180px; object-fit: contain; } }
