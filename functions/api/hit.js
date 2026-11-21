@@ -125,6 +125,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
   // 외부 유입 여부(2026-10-22 사장님: 실제 외부 유입만 보고 싶다) — 직접·북마크·카카오톡(지인)·제휴사 관리 화면·운영 페이지에서 온 것은 외부가 아님
   const ext = !/^(직접·북마크|카카오톡)$/.test(src) && !/linkprice.com|ops.unclepony.com/.test(src);
   const d = day();
+  const pageKind = (p) => (p === '/' ? '홈' : `/${String(p).split('/')[1] ?? ''}`.slice(0, 12)); // 쪽 종류: 홈, /p, /g, /c, /vs …
   const rows = [];
   if (b.t === 'pv') {
     rows.push(['pv', path]);
@@ -132,7 +133,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
     // 상품 페이지 가격 표시 상태별 페이지뷰(2026-11-07) — 키: 상태|페이지. out(페이지|상품)과 견주면 '가격 보임 vs 숨김' 쿠팡 클릭률이 나온다
     if (path.startsWith('/p/') && ['가격 보임', '가격 숨김', '링크 없음'].includes(b.ps)) rows.push(['pvprice', `${b.ps}|${path}`]);
     if (b.v) {
-      rows.push(['visit', path], ['ref', src], ['refland', `${src}|${path}`], ['dev', device(ua)], ['cty', String(request.cf?.country ?? '??').slice(0, 4)]);
+      rows.push(['visit', path], ['ref', src], ['refland', `${src}|${path}`], ['dev', device(ua)], ['landdev', `${pageKind(path)}|${device(ua)}|${ext ? '외부' : '직접·지인'}`], ['cty', String(request.cf?.country ?? '??').slice(0, 4)]);
       // 통과한 방문의 네트워크(ASN)·시간대 — 유튜브 링크마다 하루 2번씩 들어오는 방문이 사람인지 검사기인지 망으로 가린다(2026-10-23 관제탑, youtubeking 과 같은 형식, 개인 식별 정보 아님)
       if (request.cf?.asn) rows.push(['asn', `AS${request.cf.asn} ${String(request.cf?.asOrganization ?? '').slice(0, 30)}`.trim()]);
       // 캠페인(utm) 방문의 망|캠페인|기기(2026-10-29, techprice 6c3978a 와 같은 형식) — 영상 링크마다 2번씩 오는 방문이 같은 망·PC·공개 직후인지 가린다
@@ -164,7 +165,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
     if (s.url && src.startsWith('캠페인')) rows.push(['outcamp', `${s.url}|${id}`.slice(0, 160)]); // 영상(utm_campaign)별 쿠팡 클릭
     // 클릭 전에 사람 조작(마우스·터치·키)이 있었나(2026-10-24) — '조작 없이'는 프로그램이 누른 클릭(AI 에이전트·자동화)일 가능성. 키: 조작 여부|유입 경로
     rows.push(['outact', `${b.a === 1 ? '조작 후' : b.a === 0 ? '조작 없이' : '알 수 없음'}|${src}`]);
-    rows.push(['out', `${path}|${id}`], ['outref', src], ['pos', String(b.w ?? '기타').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20) || '기타']);
+    rows.push(['out', `${path}|${id}`], ['outref', src], ['outdev', `${pageKind(path)}|${device(ua)}|${String(b.w ?? '기타').replace(/[^p{L}p{N} ·]/gu, '').slice(0, 20) || '기타'}`], ['pos', String(b.w ?? '기타').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20) || '기타']);
     journey(env.CLICKS, waitUntil, { pid: id, page: path, src, kw: s.kw, url: s.url, j: b.j, dev: device(ua), pos: b.w });
   } else if (b.t === 'aff') {
     // 쿠팡 외 제휴 링크 클릭(예: agoda-tokyo) — 쿠팡 클릭(out)과 따로 센다
@@ -173,7 +174,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
     rows.push(['aff', `${path}|${k}`], ['affref', src]);
   } else if (b.t === 'seen') {
     // 쿠팡 버튼이 화면에 처음 보인 페이지뷰(페이지당 1회) — 키: 페이지, 그리고 처음 보인 버튼 위치
-    rows.push(['seen', path], ['seenpos', String(b.w ?? '기타').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20) || '기타']);
+    rows.push(['seen', path], ['seendev', `${pageKind(path)}|${device(ua)}`], ['seenpos', String(b.w ?? '기타').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20) || '기타']);
     // 유입 경로별 '버튼 봄'(2026-10-26) — outref 와 견주면 경로별 '버튼 본 뒤 클릭률'(예: ChatGPT vs 유튜브)이 나온다
     rows.push(['seenref', src]);
   } else if (b.t === 'eng') {
