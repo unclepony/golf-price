@@ -165,7 +165,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
     if (s.url && src.startsWith('캠페인')) rows.push(['outcamp', `${s.url}|${id}`.slice(0, 160)]); // 영상(utm_campaign)별 쿠팡 클릭
     // 클릭 전에 사람 조작(마우스·터치·키)이 있었나(2026-10-24) — '조작 없이'는 프로그램이 누른 클릭(AI 에이전트·자동화)일 가능성. 키: 조작 여부|유입 경로
     rows.push(['outact', `${b.a === 1 ? '조작 후' : b.a === 0 ? '조작 없이' : '알 수 없음'}|${src}`]);
-    rows.push(['out', `${path}|${id}`], ['outref', src], ['outdev', `${pageKind(path)}|${device(ua)}|${String(b.w ?? '기타').replace(/[^p{L}p{N} ·]/gu, '').slice(0, 20) || '기타'}`], ['pos', String(b.w ?? '기타').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20) || '기타']);
+    rows.push(['out', `${path}|${id}`], ['outref', src], ['outdev', `${pageKind(path)}|${device(ua)}|${String(b.w ?? '기타').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20) || '기타'}`], ['pos', String(b.w ?? '기타').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20) || '기타']);
     journey(env.CLICKS, waitUntil, { pid: id, page: path, src, kw: s.kw, url: s.url, j: b.j, dev: device(ua), pos: b.w });
   } else if (b.t === 'aff') {
     // 쿠팡 외 제휴 링크 클릭(예: agoda-tokyo) — 쿠팡 클릭(out)과 따로 센다
