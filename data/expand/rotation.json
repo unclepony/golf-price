@@ -23,7 +23,7 @@
   "last": {
     "driver": "2026-11-21",
     "wedge": "2026-11-20",
-    "womens-driver": "2026-11-19",
+    "womens-driver": "2026-11-22",
     "ball": "2026-11-20",
     "wood": "2026-11-19",
     "utility": "2026-11-19",
@@ -47,6 +47,8 @@
     "_설명": "2-2 다시 잇기에서 연속 \"유지\" 횟수 — 3이 되면 그 상품은 2-2 에서 뺀다",
     "bridgestone-242cb-iron": 2,
     "taylormade-p790-women-iron": 2,
-    "footjoy-pro-sl": 2
+    "footjoy-pro-sl": 2,
+    "taylormade-qi35-maxlite-women-driver": 2,
+    "taylormade-qi4d-maxlite-women-driver": 2
   }
 }
