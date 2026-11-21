@@ -94,6 +94,10 @@
       "won": 13900,
       "d": "2026-11-18"
     },
+    "baro-putting-gate": {
+      "won": 63700,
+      "d": "2026-11-22"
+    },
     "bettinardi-queen-b-putter": {
       "won": 539000,
       "d": "2026-11-08"
@@ -461,6 +465,10 @@
     "callaway-paradym-iron": {
       "won": 794100,
       "d": "2026-11-08"
+    },
+    "callaway-portable-putting-cup": {
+      "won": 11000,
+      "d": "2026-11-22"
     },
     "callaway-quantum-max-driver": {
       "won": 674000,
@@ -842,6 +850,10 @@
       "won": 169000,
       "d": "2026-11-09"
     },
+    "develop-swing-trainer": {
+      "won": 35000,
+      "d": "2026-11-22"
+    },
     "ecco-biom-c4-shoes": {
       "won": 139990,
       "d": "2026-11-08"
@@ -1109,6 +1121,10 @@
     "fourteen-rm4-wedge": {
       "won": 139000,
       "d": "2026-11-08"
+    },
+    "fzcspeed-sound-swing-stick": {
+      "won": 30520,
+      "d": "2026-11-22"
     },
     "galaxy-watch8-classic-golf": {
       "won": 544000,
@@ -1418,6 +1434,10 @@
       "won": 169000,
       "d": "2026-11-09"
     },
+    "jama-carpet-putting-mat": {
+      "won": 35000,
+      "d": "2026-11-22"
+    },
     "jestime-fairlady-women-iron": {
       "won": 1190000,
       "d": "2026-11-10"
@@ -1453,6 +1473,10 @@
     "jogeuman-triangle-body-swing": {
       "won": 19900,
       "d": "2026-11-16"
+    },
+    "joygolf-swing-training-band": {
+      "won": 23900,
+      "d": "2026-11-22"
     },
     "kasco-dolphin-dw123-wedge": {
       "won": 239500,
@@ -1621,6 +1645,10 @@
     "melelinks-swing-trainer": {
       "won": 55800,
       "d": "2026-11-18"
+    },
+    "mggolf-swing-spring": {
+      "won": 20000,
+      "d": "2026-11-22"
     },
     "missile-axg-women-hybrid": {
       "won": 99000,
@@ -2026,6 +2054,10 @@
       "won": 11000,
       "d": "2026-11-13"
     },
+    "paso-swing-band": {
+      "won": 48900,
+      "d": "2026-11-22"
+    },
     "pgm-approach-slope-trainer": {
       "won": 99000,
       "d": "2026-11-09"
@@ -2041,6 +2073,14 @@
     "pgm-swing-path-mat": {
       "won": 12000,
       "d": "2026-11-18"
+    },
+    "pgm-swing-track-trainer": {
+      "won": 520000,
+      "d": "2026-11-22"
+    },
+    "pgm-thick-practice-mat-150": {
+      "won": 175000,
+      "d": "2026-11-22"
     },
     "pgm-warmup-power-trainer": {
       "won": 82000,
@@ -2806,6 +2846,14 @@
       "won": 420000,
       "d": "2026-11-08"
     },
+    "swingclassic-elbow-trainer": {
+      "won": 18000,
+      "d": "2026-11-22"
+    },
+    "swingclassic-wrist-trainer": {
+      "won": 22000,
+      "d": "2026-11-22"
+    },
     "swingimpact-swingcaddie": {
       "won": 270000,
       "d": "2026-11-08"
@@ -3282,6 +3330,10 @@
       "won": 198000,
       "d": "2026-11-16"
     },
+    "tmax-impact-mat": {
+      "won": 22000,
+      "d": "2026-11-22"
+    },
     "todin-impact-powerbag-plus": {
       "won": 36300,
       "d": "2026-11-16"
@@ -3289,6 +3341,10 @@
     "todin-perfect-swing-trainer": {
       "won": 39000,
       "d": "2026-11-16"
+    },
+    "twogreenhole-tgh-504": {
+      "won": 85000,
+      "d": "2026-11-22"
     },
     "ua-drive-fade-2-shoes": {
       "won": 129260,
