@@ -973,6 +973,25 @@ function brandSection(g) {
 // 계절 묶음(2026-11-11 장갑 3번: 11월 장갑 주문·겨울 수요): guides.json season { id, title, months, match, lead, home } — 그 달(한국 시간)에만
 // 가이드·분류 첫 화면(바로 답 아래)과 홈 '많이 찾는 주제'에 보인다. 상품 이름에 match 낱말이 든 모델만, 같은 성별 안에서 편집 점수 순. 가격·확인일은 지문에서 뺀다
 const seasonOn = (g) => !!g.season?.months?.includes(Number(TODAY.slice(5, 7)));
+// 예산별 1순위 표(2026-11-22 관제탑): 가이드 위쪽에 '○○만원 미만 / ○~○만원 / ○○만원 이상' 가격 구간마다 편집 점수 순위가 가장 높은 상품을
+// 가격·쿠팡 버튼과 함께 둔다. 실력 단계 표만으로는 "20만원대 골프백 추천" 같은 예산 질문의 답이 쪽 안에 없었다(새 쪽은 만들지 않는다).
+// 구간 경계는 그 가이드 상품들의 실제 쿠팡 판매가 분포(3등분)를 만원 단위로 맞춘 값이고, 순위는 rankedPicks 그대로다. 가격은 콘텐츠 지문에서 뺀다.
+function budgetBox(g) {
+  const ps = rankedPicks(g).filter((pk) => !GONE[pk.id] && outHref(pk.id) && freshPrice(pk.id) && !warned(g, pk));
+  if (ps.length < 9) return '';
+  const prices = ps.map((pk) => freshPrice(pk.id).won).sort((a, b) => a - b);
+  const unit = prices[prices.length - 1] >= 300000 ? 100000 : prices[prices.length - 1] >= 60000 ? 10000 : 5000;
+  const cut = (q) => Math.max(unit, Math.round(prices[Math.floor((prices.length - 1) * q)] / unit) * unit);
+  const c1 = cut(1 / 3), c2 = cut(2 / 3);
+  if (!(c1 < c2)) return '';
+  const man = (w) => (w % 10000 === 0 ? `${w / 10000}만원` : won(w));
+  const bands = [[`${man(c1)} 미만`, (w) => w < c1], [`${man(c1)}~${man(c2)}`, (w) => w >= c1 && w < c2], [`${man(c2)} 이상`, (w) => w >= c2]];
+  const rows = bands.map(([label, f]) => [label, ps.find((pk) => f(freshPrice(pk.id).won)), ps.filter((pk) => f(freshPrice(pk.id).won)).length]).filter(([, pk]) => pk);
+  if (rows.length < 2) return '';
+  return `<section class="answer budget" aria-label="예산별 1순위"><h2 class="budget-h">예산별 1순위</h2><!--phist--><table class="answer-t"><thead><tr><th>예산</th><th>모델 · 특징</th><th>쿠팡 판매가</th></tr></thead><tbody>${rows
+    .map(([label, pk, n]) => { const sp = freshPrice(pk.id); return `<tr><td class="ar"><b>${esc(label)}</b><small>${n}종 중</small></td><td><a href="/p/${pk.id}">${esc(byId[pk.id].p.name)}</a><small>${esc(pk.short ?? pk.role ?? '')}${pk.skill ? ` · ${esc(pk.skill)}` : ''}</small></td><td class="aw">${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small><a class="answer-go" href="${esc(outHref(pk.id))}" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a></td></tr>`; })
+    .join('')}</tbody></table><p class="note">가격 구간은 이 비교에 있는 상품의 쿠팡 판매가 분포로 나눴고, 구간마다 편집 점수 순위가 가장 높은 상품입니다(주관적 편집 점수 기준).</p><!--/phist--></section>`;
+}
 function seasonSection(g, inCat = false) {
   if (!seasonOn(g)) return '';
   const re = new RegExp(g.season.match);
@@ -1849,7 +1868,7 @@ ${crit.map((_, i) => `<td class="sc">${pk.scores ? dots(pk.scores[i]) : '-'}</td
       body: `<nav class="crumb"><a href="/">홈</a> › <a href="/c/${guideCat(g)?.id}">${esc(guideCat(g)?.name ?? '')}</a>${g.gender && g.gender !== '공용' ? ` › ${esc(g.gender)}` : ''}</nav>
 <p class="g-kicker">${g.gender ? `<span class="gender g-${esc(g.gender)}">${esc(g.genderBadge ?? (g.gender === '공용' ? '남녀공용' : g.gender))}</span>` : ''}${esc(guideName(g))}</p>
 <h1>${esc(g.title)}</h1>
-${updatedTag(g.updated)}${stageAnswer(g)}${seasonSection(g)}
+${updatedTag(g.updated)}${stageAnswer(g)}${budgetBox(g)}${seasonSection(g)}
 ${skillGroups(g).length ? '' : conclusionBox(g, rankedPicks(g), null)}
 <section class="prose"><p>${esc(String(g.intro ?? '').replace(/(?:[0-9]+|[가-힣]{1,5})[ ]?(?:가지|종)[를을]? 비교했습니다/, `${rankedPicks(g).length}종을 비교했습니다`))}</p></section>
 ${criteriaBox(g)}

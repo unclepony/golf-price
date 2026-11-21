@@ -1206,3 +1206,8 @@ table.answer-t td a.answer-go:hover { filter: brightness(1.06); text-decoration:
 .acc-t small { font-size: 11.5px; color: var(--muted); font-weight: 700; }
 .acc-t a { color: var(--text); overflow-wrap: anywhere; }
 .acc-row .btn { flex: 0 0 auto; padding: 10px 12px; }
+
+/* 예산별 1순위 표 (2026-11-22 관제탑) */
+.answer.budget { margin-top: 12px; }
+.answer.budget .budget-h { font-size: 17px; margin: 0 0 6px; }
+.answer.budget td.ar small { display: block; font-weight: 400; color: var(--muted); }
