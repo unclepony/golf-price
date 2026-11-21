@@ -298,6 +298,18 @@
       "won": 165000,
       "d": "2026-11-08"
     },
+    "callaway-cg-csports-cart": {
+      "won": 458940,
+      "d": "2026-11-21"
+    },
+    "callaway-cg-csports-stand": {
+      "won": 458940,
+      "d": "2026-11-21"
+    },
+    "callaway-cg-tour-flagship-cart": {
+      "won": 370880,
+      "d": "2026-11-21"
+    },
     "callaway-chev-glove": {
       "won": 14000,
       "d": "2026-11-09"
@@ -1618,6 +1630,10 @@
       "won": 19800,
       "d": "2026-11-08"
     },
+    "mizuno-br-d4-stand": {
+      "won": 199000,
+      "d": "2026-11-21"
+    },
     "mizuno-brd3-stand": {
       "won": 436770,
       "d": "2026-11-08"
@@ -1733,6 +1749,10 @@
     "mizuno-pro-245-iron": {
       "won": 1829200,
       "d": "2026-11-08"
+    },
+    "mizuno-pro-camo-stand": {
+      "won": 216900,
+      "d": "2026-11-21"
     },
     "mizuno-pro-m13-iron": {
       "won": 1320000,
@@ -2321,6 +2341,10 @@
     "ping-sporty-mj-cart": {
       "won": 242100,
       "d": "2026-11-08"
+    },
+    "ping-sporty-mx3-cart": {
+      "won": 260000,
+      "d": "2026-11-21"
     },
     "ping-synthetic-glove": {
       "won": 20000,
