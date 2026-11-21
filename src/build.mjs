@@ -1290,6 +1290,16 @@ function productAnswer(p) {
   return `<p class="answer-lead pd-answer"><b>결론:</b> ${esc(nm)}${hasBatchim(nm) ? '은' : '는'} ${pk.skill ? `${esc(SKILL_WORD[pk.skill])}용으로 ` : ''}${esc(pk.forWhom)}께 맞는 모델입니다.${pk.cons?.[0] ? ` 감안할 점: ${esc(pk.cons[0].replace(/[.。]$/, ''))}.` : ''}${sp ? phist(` 쿠팡 판매가 ${won(sp.won)}(${dayLabel(sp.d)} 확인, 현재 가격과 다를 수 있음).`) : ''}${rankTxt}</p>`;
 }
 // 상품 FAQ '비슷한 모델과 차이'(2026-10-28 관제탑: ChatGPT 에 'A vs B'·'○○ 어때?'로 묻는다). 같은 단계 비교 상품 1~2개, 편집 점수·가격대·판매가만
+// 상품 쪽 질문 2개 추가(2026-11-22 관제탑): "단점은?", "누구에게 맞나요?" — 답은 가이드 자료(cons·pros·forWhom) 그대로, 새로 지은 내용 없음.
+// 근거: ChatGPT 손님은 "○○ 단점"처럼 묻는데 상품 쪽에 '단점' 낱말이 한 번도 없었다(감안할 점·아쉬운 점으로만 적음).
+function extraFaq(p) {
+  const pk = mainPick(p.id)?.pk;
+  if (!pk) return [];
+  const out = [];
+  if (pk.cons?.length) out.push({ q: `${p.name} 단점은?`, a: `단점(감안할 점)은 ${pk.cons.join(', ')}입니다.${pk.pros?.length ? ` 강점은 ${pk.pros.join(', ')}입니다.` : ''}` });
+  if (pk.forWhom) out.push({ q: `${p.name} 누구에게 맞나요?`, a: `이런 분께 맞습니다: ${pk.forWhom}.` });
+  return out;
+}
 function productFaq(p) {
   const m = mainPick(p.id);
   if (!m) return [];
@@ -1679,6 +1689,7 @@ for (const { p, hist, a } of entries) {
   const title = tm && tBase && tm.pk.plus ? `${p.name} 쿠팡 ${manwonBand(tBase)} · ${tm.pk.plus}` : `${p.name} 가격·스펙·추천 대상`;
   const desc = productDesc(p);
   const faq = productFaq(p);
+  const xfaq = extraFaq(p);
   const sc = scoreOf[p.id];
   const top = guidesOf(p.id).filter((g) => !g.mergeInto).map((g) => ({ g, sr: stageRank(g, p.id) }));
   const pdVideo = guidesOf(p.id).map((g) => videoBlock(g)).find(Boolean)?.replace('<section id="videos" class="videos">', '<section id="videos" class="videos">') ?? '';
@@ -1712,14 +1723,14 @@ ${vsProductBlock(p.id)}
 ${newsBlock(p.id)}
 <section class="prose"><h2>${esc(cat.name)} 고르는 법</h2><p>${esc(cat.intro)}</p>${figure(p.category)}<ul>${cat.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>
 </details>
-${faq.length ? `<section class="prose pd-faq"><h2>자주 묻는 질문</h2>${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}${pdep4(esc(f.lv))}${f.pr ? phist(esc(f.pr)) : ''} <a href="/p/${f.x}">${esc(byId[f.x].p.name)} 보기 ›</a></p>`).join('')}<p class="note">점수 비교는 이 사이트의 주관적 편집 점수 기준이며, 가격은 확인일 기준이라 현재 가격과 다를 수 있습니다.</p></section>` : ''}
+${faq.length || xfaq.length ? `<section class="prose pd-faq"><h2>자주 묻는 질문</h2>${xfaq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}${pdep4(esc(f.lv))}${f.pr ? phist(esc(f.pr)) : ''} <a href="/p/${f.x}">${esc(byId[f.x].p.name)} 보기 ›</a></p>`).join('')}<p class="note">점수 비교는 이 사이트의 주관적 편집 점수 기준이며, 가격은 확인일 기준이라 현재 가격과 다를 수 있습니다.</p></section>` : ''}
 </section>
 ${pdVideo}
 <div id="history">${priceHistory(p, hist, a)}</div>
 ${outHref(p.id) || extOf(p.id) ? stickyBuy({ id: p.id }, '이 상품', '가격 보기') : ''}`;
   writeText(
     join(OUT, 'p', `${p.id}.html`),
-    layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' }, ld: [crumbLd([['홈', '/'], [cat.name, `/c/${p.category}`], [p.name, `/p/${p.id}`]]), productLd(p, hist), ...(faq.length ? [faqLd(faq.map((f) => ({ q: f.q, a: f.a + f.lv })))] : [])] }),
+    layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' }, ld: [crumbLd([['홈', '/'], [cat.name, `/c/${p.category}`], [p.name, `/p/${p.id}`]]), productLd(p, hist), ...(faq.length || xfaq.length ? [faqLd([...xfaq, ...faq.map((f) => ({ q: f.q, a: f.a + f.lv }))])] : [])] }),
   );
 }
 
