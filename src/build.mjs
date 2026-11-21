@@ -1840,7 +1840,7 @@ ${crit.map((_, i) => `<td class="sc">${pk.scores ? dots(pk.scores[i]) : '-'}</td
 <h1>${esc(g.title)}</h1>
 ${updatedTag(g.updated)}${stageAnswer(g)}${seasonSection(g)}
 ${skillGroups(g).length ? '' : conclusionBox(g, rankedPicks(g), null)}
-<section class="prose"><p>${esc(g.intro)}</p></section>
+<section class="prose"><p>${esc(String(g.intro ?? '').replace(/(?:[0-9]+|[가-힣]{1,5})[ ]?(?:가지|종)[를을]? 비교했습니다/, `${rankedPicks(g).length}종을 비교했습니다`))}</p></section>
 ${criteriaBox(g)}
 ${brandSection(g)}
 <nav class="toc">${mergedInto(g).some((m) => m.grinds) ? '<a href="#vokey">보키 그라인드 비교</a>' : ''}<a href="#cmp">비교표</a><a href="#tiers">수준별 비교</a>${g.picks.some((pk) => pk.dist) ? '<a href="#dist">비거리 비교</a>' : ''}<a href="#scores">항목별 점수</a><a href="#models">모델별 분석</a><a href="#choose">선택 가이드</a><a href="#faq">자주 묻는 질문</a></nav>
