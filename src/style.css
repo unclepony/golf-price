@@ -1183,3 +1183,14 @@ table.answer-t td.al { font-size: 12px; white-space: nowrap; color: var(--muted)
 @media (max-width: 560px) { .answer.season .season-go { display: block; margin: 4px 0 0; } }
 /* 상품 정보 표(pd-tbl): 전역 th,td nowrap 때문에 긴 사양(예: '합성 위주 (FiberSof 계열·세부 소재는 판매처 확인)')이 칸 밖으로 넘치고 휴대폰에서 가로 스크롤이 생김(2026-11-11 화면 점검) → 줄바꿈 허용 */
 .pd-tbl th, .pd-tbl td { white-space: normal; word-break: keep-all; overflow-wrap: anywhere; }
+
+/* 상품 쪽 휴대폰 첫 화면(2026-11-22 관제탑): 사진이 화면을 다 차지해 이름·가격·구매 버튼이 안 보였다 → 사진 높이를 줄인다 */
+@media (max-width: 760px) {
+  .pd .gal:not(.gal-empty) .gal-main { aspect-ratio: auto; height: 200px; padding: 10px; }
+  .pd .gal:not(.gal-empty) .gal-main img { width: 100%; height: 100%; object-fit: contain; }
+  .pd .gal-note { display: none; }
+}
+
+/* 결론 표의 '쿠팡에서 보기'를 글자 링크(12px·높이 19px)에서 버튼으로 (2026-11-22 관제탑: 57번 보이고 0번 눌림) */
+table.answer-t td a.answer-go { display: block; margin-top: 6px; padding: 10px 8px; min-height: 40px; box-sizing: border-box; border-radius: 10px; background: var(--accent); color: var(--accent-ink); font-size: 13.5px; font-weight: 700; line-height: 1.4; text-align: center; text-decoration: none; white-space: normal; }
+table.answer-t td a.answer-go:hover { filter: brightness(1.06); text-decoration: none; }

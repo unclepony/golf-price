@@ -1000,13 +1000,13 @@ ${card(hard || ei < 0 ? '성능 기준 추천' : '쉬움 기준 추천', man.eas
 </div></section>`;
 }
 // 모바일 하단 고정: 1위 상품 가격 보기
-function stickyBuy(pk, label = '1위') {
+function stickyBuy(pk, label = '1위', btnText = '1위 상품 가격 보기') {
   if (!pk) return '';
   const p = byId[pk.id].p;
   const sp = freshPrice(p.id);
   // 2026-11-19 셀프 개선: 상품 이름을 상품 상세(/p/) 링크로 — 10-20~11-18 고정 버튼 쿠팡 클릭 0건(가이드 페이지뷰 217), 쿠팡 클릭은 상품 페이지에서 가장 많이 남.
   // .sb-t 는 통째로 콘텐츠 지문에서 빠지므로(contentKey) '마지막 업데이트'·IndexNow 는 바뀌지 않는다
-  return `<div class="stickybuy" role="complementary" aria-label="1위 상품 바로가기"><span class="sb-t"><b>${esc(label)}</b> <a class="sb-p" href="/p/${p.id}">${esc(p.name)}</a>${sp ? ` · ${won(sp.won)}` : ''}</span>${buyBtn(p.id, 'btn sm', '1위 상품 가격 보기')}</div>`;
+  return `<div class="stickybuy" role="complementary" aria-label="1위 상품 바로가기"><span class="sb-t"><b>${esc(label)}</b> <a class="sb-p" href="/p/${p.id}">${esc(p.name)}</a>${sp ? ` · ${won(sp.won)}` : ''}</span>${buyBtn(p.id, 'btn sm', btnText)}</div>`;
 }
 // 구형 모델이 실력별 1위일 때 이유와 최신 모델 1위
 function oldModelNote(g, reps) {
@@ -1654,10 +1654,10 @@ ${gallery(p, hist)}
 <span class="pt-cat">${esc(cat.name)}</span>
 <h1>${esc(p.name)}</h1>
 ${updatedTag(p.updated)}
-${productAnswer(p)}
 <div class="pt-badges">${isNew(p) ? '<span class="new-mark">NEW</span>' : ''}${GONE[p.id] ? `<span class="tag none">판매 종료·품절 추정 (${ymd(GONE[p.id])} 이후 쿠팡에서 찾을 수 없음)</span>` : ''}${picks[p.id]?.rocket ? '<span class="tag rocket">로켓배송</span>' : ''}${sc ? `<span class="tag score">편집 점수 ${sc.toFixed(1)}</span>` : ''}${top.map(({ g, sr }) => (sr ? `<span class="tag ${sr.warn ? 'warn' : 'rank'}">${esc(guideName(g).replace(' 비교 및 선택 가이드', ''))} ${esc(sr.label)}</span>` : '')).join('')}${sellable(p.id) ? '' : '<span class="tag none">쿠팡 판매처 없음</span>'}</div>
 ${buyBox(rctx(), p) || `<div class="pd-price">${buyButton(p.id, hist)}</div>${altBox(p)}`}
 ${packBox(p)}
+${productAnswer(p)}
 ${links[p.id] && picks[p.id]?.title ? `<p class="linked">연결 상품: ${esc(picks[p.id].title)}</p>` : ''}
 ${infoTable(rctx(), p)}
 <p class="pd-sum">${esc(p.summary)}</p>${peerBox(p)}
@@ -1679,7 +1679,8 @@ ${newsBlock(p.id)}
 ${faq.length ? `<section class="prose pd-faq"><h2>자주 묻는 질문</h2>${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}${pdep4(esc(f.lv))}${f.pr ? phist(esc(f.pr)) : ''} <a href="/p/${f.x}">${esc(byId[f.x].p.name)} 보기 ›</a></p>`).join('')}<p class="note">점수 비교는 이 사이트의 주관적 편집 점수 기준이며, 가격은 확인일 기준이라 현재 가격과 다를 수 있습니다.</p></section>` : ''}
 </section>
 ${pdVideo}
-<div id="history">${priceHistory(p, hist, a)}</div>`;
+<div id="history">${priceHistory(p, hist, a)}</div>
+${outHref(p.id) || extOf(p.id) ? stickyBuy({ id: p.id }, '이 상품', '가격 보기') : ''}`;
   writeText(
     join(OUT, 'p', `${p.id}.html`),
     layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' }, ld: [crumbLd([['홈', '/'], [cat.name, `/c/${p.category}`], [p.name, `/p/${p.id}`]]), ...(faq.length ? [faqLd(faq.map((f) => ({ q: f.q, a: f.a + f.lv })))] : [])] }),
