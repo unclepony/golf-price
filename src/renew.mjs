@@ -193,7 +193,7 @@ export function homeHero(ctx, items) {
     .map((it, i) => {
       const [a, b] = TONE[it.cat] ?? TONE.driver;
       return `<a class="hs" href="/p/${esc(it.id)}" style="--a:${a};--b:${b}" aria-label="${esc(it.name)}"${i > 2 ? ' data-lazy="1"' : ''}>
-<span class="hs-img">${it.image ? `<img src="${esc(it.image)}" alt="" ${i < 3 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" width="512" height="512">` : ''}</span>
+<span class="hs-img">${it.image ? `<img src="${esc(it.image)}" alt="" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" width="512" height="512">` : ''}</span>
 <span class="hs-txt"><small>${esc(it.kicker)}</small><b>${esc(it.name)}</b><span>${esc(it.sub)}</span>${it.price ? `<em><!--phist-->${won(it.price)}<!--/phist--> <i>쿠팡 판매가</i></em>` : ''}</span></a>`;
     })
     .join('');

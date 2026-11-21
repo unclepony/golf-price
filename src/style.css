@@ -1211,3 +1211,6 @@ table.answer-t td a.answer-go:hover { filter: brightness(1.06); text-decoration:
 .answer.budget { margin-top: 12px; }
 .answer.budget .budget-h { font-size: 17px; margin: 0 0 6px; }
 .answer.budget td.ar small { display: block; font-weight: 400; color: var(--muted); }
+
+/* 휴대폰 속도(2026-11-22 관제탑): 가이드의 상품 소개 카드(.pick)는 화면에 가까워질 때만 그린다 — 가이드 쪽 요소 4,600~6,800개, 첫 긴 작업 1.7~2.8초 */
+.pick { content-visibility: auto; contain-intrinsic-size: auto 700px; }
