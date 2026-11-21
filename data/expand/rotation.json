@@ -32,7 +32,7 @@
     "rangefinder": "2026-11-20",
     "gps": "2026-11-20",
     "launch": "2026-11-21",
-    "shoes": "2026-11-18",
+    "shoes": "2026-11-21",
     "bag": "2026-11-18",
     "glove": "2026-11-18",
     "practice": "2026-11-18",
@@ -46,6 +46,7 @@
   "relinkKeep": {
     "_설명": "2-2 다시 잇기에서 연속 \"유지\" 횟수 — 3이 되면 그 상품은 2-2 에서 뺀다",
     "bridgestone-242cb-iron": 2,
-    "taylormade-p790-women-iron": 2
+    "taylormade-p790-women-iron": 2,
+    "footjoy-pro-sl": 2
   }
 }
