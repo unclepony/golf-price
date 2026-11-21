@@ -1,0 +1,70 @@
+[
+ {
+  "id": "relink-sklz-home-driving-range-kit",
+  "query": "SKLZ 홈 드라이빙 레인지 키트 골프 네트",
+  "must": [
+   "sklz",
+   "드라이빙레인지"
+  ],
+  "exclude": [
+   "중고",
+   "부품",
+   "교체용"
+  ]
+ },
+ {
+  "id": "relink-sklz-home-driving-range-kit__2",
+  "query": "스킬즈 홈 골프 드라이빙 레인지 키트",
+  "mustAny": [
+   "sklz",
+   "스킬즈"
+  ],
+  "must": [
+   "드라이빙레인지"
+  ],
+  "exclude": [
+   "중고",
+   "부품",
+   "교체용"
+  ]
+ },
+ {
+  "id": "relink-bj-sml-putting-trainer",
+  "query": "비제이 BJ 편백나무 SML 자동리턴 퍼팅연습기",
+  "must": [
+   "sml"
+  ],
+  "mustAny": [
+   "bj",
+   "비제이"
+  ],
+  "exclude": [
+   "하이브리드",
+   "thr",
+   "매트만",
+   "미러",
+   "중고",
+   "부품",
+   "교체용",
+   "리퍼",
+   "아이포스",
+   "파크골프"
+  ]
+ },
+ {
+  "id": "relink-orange-whip-trainer",
+  "query": "오렌지윕 스윙 트레이너 풀 사이즈",
+  "must": [
+   "오렌지윕",
+   "풀사이즈"
+  ],
+  "exclude": [
+   "중고",
+   "퍼트마스터",
+   "퍼팅",
+   "컴팩트",
+   "라이트스피드",
+   "미드사이즈"
+  ]
+ }
+]

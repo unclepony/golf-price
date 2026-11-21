@@ -1,0 +1,107 @@
+[
+ {
+  "id": "d01",
+  "query": "캘러웨이 퍼팅 연습",
+  "must": [
+   "zzqxnomatch"
+  ]
+ },
+ {
+  "id": "d02",
+  "query": "테일러메이드 골프 연습 도구",
+  "must": [
+   "zzqxnomatch"
+  ]
+ },
+ {
+  "id": "d03",
+  "query": "타이틀리스트 골프 트레이닝",
+  "must": [
+   "zzqxnomatch"
+  ]
+ },
+ {
+  "id": "d04",
+  "query": "골프 스윙 저항 밴드 트레이닝",
+  "must": [
+   "zzqxnomatch"
+  ]
+ },
+ {
+  "id": "d05",
+  "query": "골프 연습 케이지 대형 네트",
+  "must": [
+   "zzqxnomatch"
+  ]
+ },
+ {
+  "id": "d06",
+  "query": "골프 팝업 치핑 타겟",
+  "must": [
+   "zzqxnomatch"
+  ]
+ },
+ {
+  "id": "d07",
+  "query": "골프 퍼팅 게이트 연습",
+  "must": [
+   "zzqxnomatch"
+  ]
+ },
+ {
+  "id": "d08",
+  "query": "골프 스윙 연습 클럽 원플레인",
+  "must": [
+   "zzqxnomatch"
+  ]
+ },
+ {
+  "id": "d09",
+  "query": "골프 인조잔디 스윙 매트 대형",
+  "must": [
+   "zzqxnomatch"
+  ]
+ },
+ {
+  "id": "d10",
+  "query": "골프 스윙 회전 허리 벨트 교정",
+  "must": [
+   "zzqxnomatch"
+  ]
+ },
+ {
+  "id": "d11",
+  "query": "골프 티 꽂이 연습 매트 고무티",
+  "must": [
+   "zzqxnomatch"
+  ]
+ },
+ {
+  "id": "d12",
+  "query": "골프 퍼팅 스트로크 분석기",
+  "must": [
+   "zzqxnomatch"
+  ]
+ },
+ {
+  "id": "d13",
+  "query": "골프 실내 연습 스윙 스틱 템포",
+  "must": [
+   "zzqxnomatch"
+  ]
+ },
+ {
+  "id": "d14",
+  "query": "골프 어프로치 연습 볼 회수",
+  "must": [
+   "zzqxnomatch"
+  ]
+ },
+ {
+  "id": "d15",
+  "query": "골프 손목 힌지 트레이너",
+  "must": [
+   "zzqxnomatch"
+  ]
+ }
+]
