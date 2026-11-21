@@ -1,0 +1,130 @@
+[
+ {
+  "category": "driver",
+  "id": "ping-g440k-women-driver",
+  "name": "핑 G440 K 여성용 드라이버",
+  "query": "핑 G440 K 여성 드라이버",
+  "must": ["g440k", "드라이버"],
+  "mustAny": ["여성", "레이디", "women"],
+  "exclude": ["중고", "헤드만", "헤드커버", "샤프트만", "풀세트", "세트", "남성", "시타", "우드", "하이브리드", "유틸", "아이언"],
+  "summary": "핑 G440 K 는 2026년 1월에 나온 G440 시리즈의 최고 관성모먼트(MOI) 드라이버입니다. 솔·크라운에 카본을 쓰고 아낀 무게를 헤드 뒤쪽 아래로 옮겨 빗맞아도 방향이 덜 흔들리게 만든 모델로, 여성용(초경량 HL) 사양으로도 나옵니다.",
+  "points": [
+   "상품명에 G440 K 와 여성용이 함께 적혀 있는지 확인(G440 MAX·HL MAX 와 다른 모델)",
+   "여성 초보는 로프트 11.5° 전후·L 샤프트 확인",
+   "삼양인터내셔날 정품 여부 확인"
+  ],
+  "sources": [
+   "https://ping.com/en-us/clubs/drivers/g440-k",
+   "https://www.hankyung.com/article/202601190127i",
+   "https://www.pgatour.com/pt/article/news/equipment-report/2026/01/13/ping-adds-g440-k-driver-with-highest-moi-in-lineup-launches-new-line-of-s259-wedges-harris-english-sahith-theegala"
+  ],
+  "guidePick": {
+   "role": "최고 관용성",
+   "forWhom": "빗맞을 때 공이 크게 휘는 것이 고민인 여성 골퍼",
+   "short": "직진성 최우선",
+   "plus": "관용성 최고",
+   "minus": "가격 높음",
+   "pros": ["G440 시리즈 중 관성모먼트가 가장 큰 헤드", "카본 솔·크라운으로 무게중심을 낮고 깊게"],
+   "cons": ["프리미엄 가격", "여성용 사양 재고가 판매처마다 다름"],
+   "scores": [5, 4, 4, 2],
+   "specs": ["TBD", "TBD", "G440 최고 MOI·카본 솔·크라운"],
+   "verdict": "방향 안정이 가장 급한 여성 골퍼에게 맞는 2026년 핑 최고 관용성 모델",
+   "skill": "중급"
+  }
+ },
+ {
+  "category": "driver",
+  "id": "callaway-quantum-maxd-women-driver",
+  "name": "캘러웨이 퀀텀 MAX D 여성용 드라이버",
+  "query": "캘러웨이 여성용 퀀텀 MAX D 드라이버",
+  "must": ["퀀텀", "maxd", "드라이버", "여성"],
+  "exclude": ["중고", "헤드만", "헤드커버", "샤프트만", "풀세트", "세트", "남성", "시타", "패스트", "fast", "트리플", "triple", "미니", "mini", "우드", "하이브리드", "유틸", "아이언"],
+  "summary": "캘러웨이 퀀텀 MAX D 여성용은 2026년 퀀텀 시리즈의 드로우(슬라이스 줄이기) 모델입니다. 세 가지 소재를 합친 트라이포스 페이스를 쓰고, 높은 탄도와 약한 드로우 성향으로 오른쪽으로 휘는 공을 줄이도록 만들었습니다.",
+  "points": [
+   "상품명에 퀀텀 MAX D 와 여성용이 함께 적혀 있는지 확인(MAX FAST 는 다른 모델)",
+   "로프트·샤프트(L) 확인",
+   "캘러웨이골프코리아 정품 여부 확인"
+  ],
+  "sources": [
+   "https://www.callawaygolf.com/golf-clubs/drivers/drivers-2026-quantum-max-d-womens.html",
+   "https://osen.co.kr/article/G1112732282",
+   "https://www.heraldk.com/article/2026012622472611623"
+  ],
+  "guidePick": {
+   "role": "슬라이스 줄이기",
+   "forWhom": "공이 자꾸 오른쪽으로 휘는 여성 골퍼",
+   "short": "드로우 성향 최신형",
+   "plus": "슬라이스 완화",
+   "minus": "가격 높음",
+   "pros": ["드로우 성향으로 오른쪽 휘는 공을 줄여 줌", "2026 트라이포스 페이스"],
+   "cons": ["프리미엄 가격", "훅이 나는 골퍼에게는 맞지 않음"],
+   "scores": [5, 4, 5, 2],
+   "specs": ["TBD", "TBD", "드로우 성향·트라이포스 페이스"],
+   "verdict": "슬라이스가 고민인 여성 골퍼에게 맞는 2026년 퀀텀 드로우 모델",
+   "skill": "중급"
+  }
+ },
+ {
+  "category": "driver",
+  "id": "callaway-elyte-x-women-driver",
+  "name": "캘러웨이 엘리트 X 여성용 드라이버",
+  "query": "캘러웨이 여성용 엘리트 X 드라이버",
+  "must": ["엘리트", "드라이버", "여성"],
+  "mustAny": ["엘리트x"],
+  "exclude": ["중고", "헤드만", "헤드커버", "샤프트만", "풀세트", "세트", "남성", "시타", "max", "패스트", "fast", "트리플", "triple", "우드", "하이브리드", "유틸", "아이언"],
+  "summary": "캘러웨이 엘리트 X 여성용은 2025년 엘리트 시리즈의 고관용·고탄도 여성 드라이버입니다. Ai 10x 페이스와 열성형 카본 크라운을 쓰고, 13g 조절 추로 중립·드로우 세팅을 고를 수 있습니다(로프트 10.5°·12°, 여성용 샤프트).",
+  "points": [
+   "상품명에 엘리트 X 와 여성용이 함께 적혀 있는지 확인(엘리트 맥스 패스트와 다른 모델)",
+   "여성 초보는 12° 확인",
+   "캘러웨이골프코리아 정품 여부 확인"
+  ],
+  "sources": [
+   "https://www.callawaygolf.com/golf-clubs/drivers/drivers-2025-elyte-x-womens.html",
+   "https://eu.callawaygolf.com/drivers/drivers-2025-elyte-x-womens.html"
+  ],
+  "guidePick": {
+   "role": "직전 세대 조절형",
+   "forWhom": "공이 잘 뜨는 드라이버에 방향 조절 추까지 원하는 여성 골퍼",
+   "short": "고탄도·추 조절",
+   "plus": "추로 드로우 조절",
+   "minus": "직전 세대",
+   "pros": ["13g 조절 추로 중립·드로우 선택", "Ai 10x 페이스·열성형 카본 크라운"],
+   "cons": ["2026 퀀텀이 나와 직전 세대", "국내 재고가 판매처마다 다름"],
+   "scores": [5, 4, 4, 3],
+   "specs": ["TBD", "TBD", "Ai 10x 페이스·13g 조절 추"],
+   "verdict": "높은 탄도와 방향 조절을 함께 원하는 여성 골퍼에게 맞는 2025년 모델",
+   "skill": "중급"
+  }
+ },
+ {
+  "category": "driver",
+  "id": "ping-g430max-women-driver",
+  "name": "핑 G430 MAX 여성용 드라이버",
+  "query": "핑 G430 MAX 여성 드라이버",
+  "must": ["g430", "max", "드라이버", "여성"],
+  "exclude": ["중고", "헤드만", "헤드커버", "샤프트만", "풀세트", "세트", "남성", "시타", "10k", "hl", "lst", "sft", "우드", "하이브리드", "유틸", "아이언"],
+  "summary": "핑 G430 MAX 여성용은 G440 직전 세대(2022년 말 출시)의 관용성 드라이버입니다. 25g 텅스텐 뒤 추를 헤드 뒤쪽에 두어 관용성을 높였고, 여성용은 로프트 9°·10.5°·12°로 나왔습니다.",
+  "points": [
+   "상품명에 G430 MAX 와 여성용이 함께 적혀 있는지 확인(10K·HL 은 다른 모델)",
+   "여성 초보는 12° 확인",
+   "삼양인터내셔날 정품 여부 확인"
+  ],
+  "sources": [
+   "https://ping.com/clubs/drivers/g430-max",
+   "https://www.dickssportinggoods.com/p/ping-womens-g430-max-driver-22pngwg430mxdrltqdrv/22pngwg430mxdrltqdrv"
+  ],
+  "guidePick": {
+   "role": "직전 세대 관용성",
+   "forWhom": "핑의 관용성을 최신 모델보다 낮은 가격에 원하는 여성 골퍼",
+   "short": "직전 G430",
+   "plus": "관용성",
+   "minus": "직전 세대",
+   "pros": ["25g 뒤 추로 관용성이 높은 헤드", "후속 G440 이 나와 가격 부담이 줄어든 편"],
+   "cons": ["최신 모델이 아님", "여성용 사양 재고가 판매처마다 다름"],
+   "scores": [5, 4, 4, 4],
+   "specs": ["TBD", "TBD", "25g 뒤 추·관용성 헤드"],
+   "verdict": "핑 관용성을 합리적인 가격에 찾는 여성 골퍼에게 맞는 직전 세대 모델",
+   "skill": "중급"
+  }
+ }
+]
