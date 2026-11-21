@@ -9,7 +9,7 @@ const NEW_ORIGIN = 'https://choicegolf.unclepony.com';
 // - ChatGPT-User = 손님 질문에 답하려고 그때 읽는 것, OAI-SearchBot = ChatGPT 검색 색인, bingbot = Bing 색인
 // - 글(HTML) 쪽과 llms.txt·sitemap.xml·robots.txt 만 센다. 기록은 응답 뒤에 하고, 실패해도 응답에는 영향이 없다.
 const BOTS = [['ChatGPT-User', /ChatGPT-User/i], ['OAI-SearchBot', /OAI-SearchBot/i], ['GPTBot', /GPTBot/i], ['bingbot', /bingbot/i], ['PerplexityBot', /PerplexityBot/i], ['Perplexity-User', /Perplexity-User/i], ['ClaudeBot', /ClaudeBot/i], ['Claude-User', /Claude-User/i], ['Claude-SearchBot', /Claude-SearchBot/i], ['Googlebot', /Googlebot/i], ['Yeti', /Yeti/i]];
-const BOT_PATH = /^\/(|about|qa(\/[\w-]+)?|jp(\/[\w-]+)*|[cgp]\/[\w-]+|vs\/[\w-]+|llms\.txt|sitemap\.xml|robots\.txt)$/;
+const BOT_PATH = /^\/(|about|qa(\/[\w-]+)?|jp(\/[\w-]+)*|[cgp]\/[\w-]+|vs\/[\w-]+|llms\.txt|sitemap\.xml|sitemap-products\.xml|robots\.txt)$/;
 const kstDay = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
 
 export async function onRequest({ request, next, env, waitUntil }) {

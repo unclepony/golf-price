@@ -361,6 +361,24 @@ const listLd = (name, ids) => ({
   numberOfItems: ids.length,
   itemListElement: ids.map((id, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE_URL}/p/${id}`, name: config.products.find((p) => p.id === id)?.name })),
 });
+// 상품 쪽 구조화 자료(2026-11-22 관제탑): Product + Offer. 평점·리뷰는 넣지 않는다(없는 것을 지어내지 않음).
+// 가격은 화면에 보일 때(판매처 링크가 있고 최근 확인한 가격)만 offers 로 넣는다. <head> 에 들어가므로 콘텐츠 지문(본문 <main>)에는 영향이 없다.
+// 근거: ChatGPT 쇼핑·Bing 이 상품 선택 자료로 가격·설명 구조화 자료를 쓴다고 밝혔는데 상품 쪽에 Product 자료가 없었다.
+const productLd = (p, hist) => {
+  const sp = sellable(p.id) && !GONE[p.id] ? freshPrice(p.id) : null;
+  const img = bigImage(imageOf(p.id, hist));
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: p.name,
+    brand: { '@type': 'Brand', name: p.name.split(' ')[0] },
+    ...(catName[p.category] ? { category: catName[p.category] } : {}),
+    ...(img ? { image: img } : {}),
+    ...(p.summary ? { description: String(p.summary).slice(0, 300) } : {}),
+    url: `${SITE_URL}/p/${p.id}`,
+    ...(sp ? { offers: { '@type': 'Offer', price: sp.won, priceCurrency: 'KRW', url: `${SITE_URL}/p/${p.id}`, seller: { '@type': 'Organization', name: '쿠팡' } } } : {}),
+  };
+};
 const ymd = (d) => (d ? d.replaceAll('-', '.') : '');
 // 날짜는 페이지를 쓸 때 본문 지문으로 정한다 (d 는 처음 기록할 때의 씨앗)
 const updatedTag = (d) => `<p class="updated"${d ? ` data-seed="${d}"` : ''}>마지막 업데이트 <time datetime="%%UPD%%">%%UPDL%%</time></p>`;
@@ -1701,7 +1719,7 @@ ${pdVideo}
 ${outHref(p.id) || extOf(p.id) ? stickyBuy({ id: p.id }, '이 상품', '가격 보기') : ''}`;
   writeText(
     join(OUT, 'p', `${p.id}.html`),
-    layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' }, ld: [crumbLd([['홈', '/'], [cat.name, `/c/${p.category}`], [p.name, `/p/${p.id}`]]), ...(faq.length ? [faqLd(faq.map((f) => ({ q: f.q, a: f.a + f.lv })))] : [])] }),
+    layout({ title, desc, path: `/p/${p.id}`, body, recent: { id: p.id, n: p.name, i: imageOf(p.id, hist) ?? '' }, ld: [crumbLd([['홈', '/'], [cat.name, `/c/${p.category}`], [p.name, `/p/${p.id}`]]), productLd(p, hist), ...(faq.length ? [faqLd(faq.map((f) => ({ q: f.q, a: f.a + f.lv })))] : [])] }),
   );
 }
 
@@ -1720,7 +1738,7 @@ for (const c of cats) {
       title: `${c.name} 추천 순위·비교 (2026): 브랜드별 상위 모델 점수·장단점`,
       desc: `${c.name} ${items.filter((e) => sellable(e.p.id)).length}종을 실력 단계·가격대별로 비교하고 장단점과 주관적 편집 점수, 쿠팡 판매가를 정리했습니다. ${items.slice(0, 6).map((e) => e.p.name).join(', ')} 등.`.slice(0, 160),
       path: `/c/${c.id}`,
-      ld: [crumbLd([['홈', '/'], [c.name, `/c/${c.id}`]])],
+      ld: [crumbLd([['홈', '/'], [c.name, `/c/${c.id}`]]), ...(related[0] ? [listLd(`${c.name} 추천 순위`, rankedPicks(related[0]).slice(0, 30).map((pk) => pk.id))] : [])],
       body: `<nav class="crumb"><a href="/">홈</a> › ${esc(c.name)}</nav>
 <h1>${esc(c.name)}</h1>
 ${updatedTag(max2(...related.map((g) => g.updated)))}${related.map((g) => stageAnswer(g, true)).join('')}${related.map((g) => seasonSection(g, true)).join('')}
