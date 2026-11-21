@@ -72,6 +72,7 @@
     : a.closest('.crumb') ? '경로'
     : a.closest('.foot') ? '바닥글'
     : a.closest('.qa-rel, .qa-list') ? '초보 QA'
+    : a.closest('.accbox') ? '소모품 상자'
     : a.closest('.fitem') ? '장비 찾기'
     : a.closest('.tiers') ? '실력별 탭'
     : a.closest('.pick') ? '상품 소개'
@@ -87,6 +88,7 @@
   }, true);
   const where = (a) =>
     a.closest('.stickybuy') ? '하단 고정 버튼'
+    : a.closest('.accbox') ? '소모품 상자'
     : a.closest('.fitem') ? '장비 찾기'
     : a.closest('.season') ? '계절 묶음' // 2026-11-11: 겨울 방한 장갑 등 계절 묶음 표
     : a.closest('.answer') ? '결론 표' // 2026-11-13: 첫 화면 '바로 답' 결론 표(가이드·분류)의 쿠팡에서 보기

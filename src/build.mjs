@@ -1161,6 +1161,23 @@ function altBox(p) {
 // 판매 중인 상품 페이지: 요약 아래에 같은 비교의 다른 상품 3개(같은 실력 단계 먼저, 점수가 가까운 순)를 보여 준다.
 // 11-04·11-16 가이드에서 상품 페이지를 하나씩 열고 10초 안에 목록으로 돌아가 다음 상품을 여는 '목록 ↔ 상품 왕복' 방문(클릭 0)이 반복돼,
 // 상품 페이지 위쪽에서 바로 옆 상품으로 넘어갈 길을 낸다(2026-11-17 셀프 개선 실험). 순위·판매 상태로 바뀌는 영역이라 콘텐츠 지문에서 뺀다(phist)
+// 소모품 상자(2026-11-22 관제탑, 실험): 채·장비 상품 쪽에 장갑·공 1순위를 가격·쿠팡 버튼과 함께 둔다.
+// 근거(쿠팡 주문 10/01~11/21): 골프채 클릭 46회에 골프채 구매 0건, 장갑은 클릭 7회에 자연 주문 5건(4건이 실제 장갑).
+// 순위·가격은 장갑·공 가이드 자료 그대로(새 문구·숫자 없음). 장갑·공·연습용품 쪽에는 두지 않는다.
+const ACC_FROM = new Set(['driver', 'wood', 'utility', 'iron', 'wedge', 'putter', 'rangefinder', 'gps', 'launch', 'shoes', 'bag']);
+function accBox(p) {
+  if (!ACC_FROM.has(p.category)) return '';
+  const top = (cat) => {
+    const g = guidesFor(cat)[0];
+    const pk = g && rankedPicks(g).find((x) => byId[x.id]?.p.category === cat && !warned(g, x) && !GONE[x.id] && outHref(x.id) && freshPrice(x.id));
+    return pk ? [catName[cat] ?? cat, pk] : null;
+  };
+  const rows = [top('glove'), top('ball')].filter(Boolean);
+  if (!rows.length) return '';
+  return `<div class="accbox"><p class="accbox-h">함께 준비할 소모품</p>${rows
+    .map(([label, x]) => `<div class="acc-row"><span class="acc-t"><small>${esc(label)} 편집 점수 1순위</small><a href="/p/${x.id}">${esc(byId[x.id].p.name)}</a><!--phist--><b>${won(freshPrice(x.id).won)}</b><!--/phist--></span>${buyBtn(x.id, 'btn sm', '가격 보기')}</div>`)
+    .join('')}</div>`;
+}
 function peerBox(p) {
   if (!sellable(p.id)) return '';
   const mp = mainPick(p.id);
@@ -1658,6 +1675,7 @@ ${updatedTag(p.updated)}
 ${buyBox(rctx(), p) || `<div class="pd-price">${buyButton(p.id, hist)}</div>${altBox(p)}`}
 ${packBox(p)}
 ${productAnswer(p)}
+${accBox(p)}
 ${links[p.id] && picks[p.id]?.title ? `<p class="linked">연결 상품: ${esc(picks[p.id].title)}</p>` : ''}
 ${infoTable(rctx(), p)}
 <p class="pd-sum">${esc(p.summary)}</p>${peerBox(p)}
