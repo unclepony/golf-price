@@ -22,7 +22,7 @@
   ],
   "last": {
     "driver": "2026-11-21",
-    "wedge": "2026-11-20",
+    "wedge": "2026-11-23",
     "womens-driver": "2026-11-22",
     "ball": "2026-11-20",
     "wood": "2026-11-22",
@@ -56,6 +56,9 @@
     "callaway-roguest-fairway": 2,
     "srixon-zxmk2-fairway": 2,
     "srixon-zxhmk2-hybrid": 1,
-    "taylormade-qi-maxlite-women-iron": 1
+    "taylormade-qi-maxlite-women-iron": 1,
+    "cleveland-smartsole-chipper": 2,
+    "ping-glide4-wedge": 2,
+    "fourteen-rm4-wedge": 2
   }
 }
