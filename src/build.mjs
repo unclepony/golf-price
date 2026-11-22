@@ -1055,9 +1055,12 @@ function stickyBuy(pk, label = '1위', btnText = '1위 상품 가격 보기') {
 // 분류 쪽(/c) 하단 고정 버튼 — 2026-11-22 낮 관제탑: ChatGPT 착지 36 중 /c 11(31%)인데 이동 0.
 // 휴대폰에서 첫 쿠팡 버튼이 첫 화면 맨 아래(577~601px)에 걸쳐 있었고 가이드·상품 쪽과 달리 고정 버튼이 없었다.
 // 첫 번째 관련 가이드의 첫 실력 단계 1위(가이드 쪽과 같은 상품), 링크가 없으면 링크 있는 다음 순위.
+// 꺼 둠(2026-11-22 낮 관제탑): 질문함 #69 '쿠팡 파트너스 플로팅 배너 금지에 우리 하단 고정 버튼이 해당되는지' 답 전에는 고정 버튼을 새 쪽으로 늘리지 않는다.
+// 사장님이 '해당 없음'으로 답하면 true 로 바꾸면 된다(지문에서 빠지므로 날짜·IndexNow 영향 없음).
+const CAT_STICKY = false;
 function catSticky(related) {
   const g = related[0];
-  if (!g) return '';
+  if (!CAT_STICKY || !g) return '';
   const ranked = rankedPicks(g).filter((pk) => !GONE[pk.id] && (outHref(pk.id) || extOf(pk.id)));
   const lead = skillGroups(g).length ? ranked.find((pk) => pk.skill === SKILLS[0]) : null;
   // cat-sb: 화면만 더한 것이라 콘텐츠 지문에서 통째로 뺀다(분류 쪽 '마지막 업데이트'·IndexNow 가 바뀌지 않게, contentKey)
