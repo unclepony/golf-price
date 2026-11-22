@@ -2675,7 +2675,7 @@
       "d": "2026-11-22"
     },
     "/p/pxg-0311-gen6-hybrid": {
-      "h": "a9903c49876ebecc",
+      "h": "08d10618b199c882",
       "d": "2026-11-22"
     },
     "/p/honma-beres-aizu-hybrid": {
@@ -3591,7 +3591,7 @@
       "d": "2026-11-22"
     },
     "/p/ping-idi-utility": {
-      "h": "7f63b7d663b0f86c",
+      "h": "88dbbe18e7b2b5a7",
       "d": "2026-11-22"
     },
     "/p/srixon-zxiu-utility": {
@@ -3790,6 +3790,22 @@
       "h": "6dca0e7ac59a7052",
       "d": "2026-11-22"
     },
+    "/p/taylormade-pudi-utility": {
+      "h": "02f0d7f8514ce527",
+      "d": "2026-11-22"
+    },
+    "/p/mizuno-profli-hi-utility": {
+      "h": "ec186033bb810a13",
+      "d": "2026-11-22"
+    },
+    "/p/srixon-zxumk2-utility": {
+      "h": "e695b0a1a82c7e46",
+      "d": "2026-11-22"
+    },
+    "/p/cobra-kingtec-utility": {
+      "h": "77012b65b1b62b21",
+      "d": "2026-11-22"
+    },
     "/c/driver": {
       "h": "bdbdda663d8e8469",
       "d": "2026-11-22"
@@ -3799,8 +3815,8 @@
       "d": "2026-11-22"
     },
     "/c/utility": {
-      "h": "52e574f5d9bb00fa",
-      "d": "2026-11-21"
+      "h": "3c10f3d9fa5413f4",
+      "d": "2026-11-22"
     },
     "/c/iron": {
       "h": "ea9b050e5df1faa3",
@@ -3855,7 +3871,7 @@
       "d": "2026-11-22"
     },
     "/g/utility-recommend": {
-      "h": "fb12545e414267b1",
+      "h": "cb02d2a374a2fcc2",
       "d": "2026-11-22"
     },
     "/g/womens-fairway-wood-recommend": {
@@ -3963,12 +3979,12 @@
       "d": "2026-11-19"
     },
     "/g/utility-recommend-intermediate": {
-      "h": "da6c4876ea05ae5d",
-      "d": "2026-11-16"
+      "h": "671640c711b65981",
+      "d": "2026-11-22"
     },
     "/g/utility-recommend-advanced": {
-      "h": "29b095cdedb90e4e",
-      "d": "2026-11-19"
+      "h": "0d8f0d1ef1efcca1",
+      "d": "2026-11-22"
     },
     "/g/utility-recommend-pro": {
       "h": "b0d3c7463e1c907c",
@@ -4155,7 +4171,7 @@
       "d": "2026-11-21"
     },
     "/": {
-      "h": "73e9fa43e5266680",
+      "h": "e56a069952402916",
       "d": "2026-11-22"
     },
     "/about": {
@@ -5681,11 +5697,6 @@
       "d": "2026-11-22"
     },
     {
-      "url": "/",
-      "kind": "updated",
-      "d": "2026-11-22"
-    },
-    {
       "url": "/vs/mizuno-jpxone-fairway-vs-mizuno-stmax230-fairway",
       "kind": "updated",
       "d": "2026-11-22"
@@ -5693,6 +5704,61 @@
     {
       "url": "/vs/mizuno-stmax230-fairway-vs-majesty-royalgold-fairway",
       "kind": "new",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/pxg-0311-gen6-hybrid",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/ping-idi-utility",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/taylormade-pudi-utility",
+      "kind": "new",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/mizuno-profli-hi-utility",
+      "kind": "new",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/srixon-zxumk2-utility",
+      "kind": "new",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/cobra-kingtec-utility",
+      "kind": "new",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/c/utility",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/g/utility-recommend",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/g/utility-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/g/utility-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
       "d": "2026-11-22"
     }
   ]

@@ -257,8 +257,8 @@
  {
   "category": "utility",
   "id": "mizuno-profli-hi-utility",
-  "name": "미즈노 프로 플라이하이 유틸리티 아이언 (남성, 2026)",
-  "query": "미즈노 프로 플라이하이 유틸리티 아이언",
+  "name": "미즈노 프로 플라이하이 유틸리티 아이언 (남성)",
+  "query": "미즈노 플라이하이",
   "must": [
    "미즈노"
   ],
@@ -510,7 +510,7 @@
   "category": "utility",
   "id": "srixon-zxumk2-utility",
   "name": "스릭슨 ZX MK2 유틸리티 아이언 (남성)",
-  "query": "스릭슨 ZX MK2 유틸리티 아이언",
+  "query": "스릭슨 ZX MK2 드라이빙 아이언",
   "must": [
    "스릭슨",
    "mk2"
