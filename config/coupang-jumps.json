@@ -1,15 +1,21 @@
 {
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { price: 1.5배 넘게 튄 API 값(반영 보류), held: 그때 유지한 직전 값, first: 처음 본 날, last: 마지막으로 본 날 }. 다음 날 이후 같은 값이 다시 나오면 반영하고 지운다.",
-  "voicecaddie-sc300i": {
-    "price": 699000,
-    "held": 399000,
-    "first": "2026-11-21",
-    "last": "2026-11-21"
-  },
   "voicecaddie-sc200-plus": {
     "price": 316250,
     "held": 199000,
     "first": "2026-11-22",
     "last": "2026-11-22"
+  },
+  "techskin-elite-fit-women-pair-glove": {
+    "price": 18520,
+    "held": 31840,
+    "first": "2026-11-23",
+    "last": "2026-11-23"
+  },
+  "adidas-adipower-sl-boa-shoes": {
+    "price": 220000,
+    "held": 119000,
+    "first": "2026-11-23",
+    "last": "2026-11-23"
   }
 }
