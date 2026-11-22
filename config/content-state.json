@@ -1975,11 +1975,11 @@
       "d": "2026-11-22"
     },
     "/p/yonex-ezonegt3-women-fairway": {
-      "h": "84cc22b9907ef10e",
+      "h": "1ac3ab9504f8ef02",
       "d": "2026-11-22"
     },
     "/p/bridgestone-blady-women-fairway": {
-      "h": "839762ae50bf133c",
+      "h": "c000649b4a7e312b",
       "d": "2026-11-22"
     },
     "/p/majesty-prestigio13-women-fairway": {
@@ -1987,7 +1987,7 @@
       "d": "2026-11-22"
     },
     "/p/majesty-sublime-women-fairway": {
-      "h": "6a7f5a1f2299baef",
+      "h": "9e7e4a784edef810",
       "d": "2026-11-22"
     },
     "/p/yamaha-cs-hmplus-women-hybrid": {
@@ -2267,7 +2267,7 @@
       "d": "2026-11-22"
     },
     "/p/onoff-lp425-women-fairway": {
-      "h": "a1921b8d6901a364",
+      "h": "6af7a4e245ff4133",
       "d": "2026-11-22"
     },
     "/p/majesty-sterna-women-fairway": {
@@ -2587,7 +2587,7 @@
       "d": "2026-11-22"
     },
     "/p/jestime-ponytail-women-fairway": {
-      "h": "96c069ef7311b991",
+      "h": "465caee8628b5a6e",
       "d": "2026-11-22"
     },
     "/p/mutsumihonma-mh622-women-fairway": {
@@ -3163,7 +3163,7 @@
       "d": "2026-11-22"
     },
     "/p/honma-bezeal3-women-fairway": {
-      "h": "941af417c08daedc",
+      "h": "ce62765f3847917d",
       "d": "2026-11-22"
     },
     "/p/xxio12-women-iron": {
@@ -3363,11 +3363,11 @@
       "d": "2026-11-22"
     },
     "/p/prgr-superegg-hexa-women-fairway": {
-      "h": "6cc194ebf2d9be60",
+      "h": "a0f32205191e2209",
       "d": "2026-11-22"
     },
     "/p/taylormade-glory27-women-fairway": {
-      "h": "6bd0354f54bb885a",
+      "h": "08c7f0efeafa036a",
       "d": "2026-11-22"
     },
     "/p/ping-g440hl-women-fairway": {
@@ -3791,19 +3791,27 @@
       "d": "2026-11-22"
     },
     "/p/taylormade-pudi-utility": {
-      "h": "02f0d7f8514ce527",
+      "h": "1b942bf8d98817be",
       "d": "2026-11-22"
     },
     "/p/mizuno-profli-hi-utility": {
-      "h": "ec186033bb810a13",
+      "h": "e6cc4a87d8838a23",
       "d": "2026-11-22"
     },
     "/p/srixon-zxumk2-utility": {
-      "h": "e695b0a1a82c7e46",
+      "h": "edbd38e5d471372e",
       "d": "2026-11-22"
     },
     "/p/cobra-kingtec-utility": {
-      "h": "77012b65b1b62b21",
+      "h": "37932d56d4f9dcda",
+      "d": "2026-11-22"
+    },
+    "/p/majesty-prestigio14-women-fairway": {
+      "h": "a638c131bdc53dc6",
+      "d": "2026-11-22"
+    },
+    "/p/ryoma-f-women-fairway": {
+      "h": "0fb0828d412871e2",
       "d": "2026-11-22"
     },
     "/c/driver": {
@@ -3811,7 +3819,7 @@
       "d": "2026-11-22"
     },
     "/c/wood": {
-      "h": "c67f30469d678db1",
+      "h": "33d8fae8ce06669e",
       "d": "2026-11-22"
     },
     "/c/utility": {
@@ -3875,7 +3883,7 @@
       "d": "2026-11-22"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "5ae61702a105a36a",
+      "h": "ebf8971a51e4a3e7",
       "d": "2026-11-22"
     },
     "/g/iron-recommend": {
@@ -3995,12 +4003,12 @@
       "d": "2026-11-20"
     },
     "/g/womens-fairway-wood-recommend-intermediate": {
-      "h": "6a108c0da9591bdf",
-      "d": "2026-11-19"
+      "h": "2a0a031a3fab61e2",
+      "d": "2026-11-22"
     },
     "/g/womens-fairway-wood-recommend-advanced": {
-      "h": "a09f528b105105d3",
-      "d": "2026-11-16"
+      "h": "2fdd5b239ccef7d3",
+      "d": "2026-11-22"
     },
     "/g/womens-fairway-wood-recommend-pro": {
       "h": "8b98fadc63465113",
@@ -4171,7 +4179,7 @@
       "d": "2026-11-21"
     },
     "/": {
-      "h": "e56a069952402916",
+      "h": "5871d807e7329fcd",
       "d": "2026-11-22"
     },
     "/about": {
@@ -5677,11 +5685,6 @@
       "d": "2026-11-22"
     },
     {
-      "url": "/c/wood",
-      "kind": "updated",
-      "d": "2026-11-22"
-    },
-    {
       "url": "/g/fairway-wood-recommend",
       "kind": "updated",
       "d": "2026-11-22"
@@ -5717,26 +5720,6 @@
       "d": "2026-11-22"
     },
     {
-      "url": "/p/taylormade-pudi-utility",
-      "kind": "new",
-      "d": "2026-11-22"
-    },
-    {
-      "url": "/p/mizuno-profli-hi-utility",
-      "kind": "new",
-      "d": "2026-11-22"
-    },
-    {
-      "url": "/p/srixon-zxumk2-utility",
-      "kind": "new",
-      "d": "2026-11-22"
-    },
-    {
-      "url": "/p/cobra-kingtec-utility",
-      "kind": "new",
-      "d": "2026-11-22"
-    },
-    {
       "url": "/c/utility",
       "kind": "updated",
       "d": "2026-11-22"
@@ -5753,6 +5736,96 @@
     },
     {
       "url": "/g/utility-recommend-advanced",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/yonex-ezonegt3-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/bridgestone-blady-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/majesty-sublime-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/onoff-lp425-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/jestime-ponytail-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/honma-bezeal3-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/prgr-superegg-hexa-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/taylormade-glory27-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/taylormade-pudi-utility",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/mizuno-profli-hi-utility",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/srixon-zxumk2-utility",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/cobra-kingtec-utility",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/majesty-prestigio14-women-fairway",
+      "kind": "new",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/p/ryoma-f-women-fairway",
+      "kind": "new",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/c/wood",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-11-22"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend-advanced",
       "kind": "updated",
       "d": "2026-11-22"
     },
