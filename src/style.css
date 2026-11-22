@@ -1214,3 +1214,12 @@ table.answer-t td a.answer-go:hover { filter: brightness(1.06); text-decoration:
 
 /* 휴대폰 속도(2026-11-22 관제탑): 가이드의 상품 소개 카드(.pick)는 화면에 가까워질 때만 그린다 — 가이드 쪽 요소 4,600~6,800개, 첫 긴 작업 1.7~2.8초 */
 .pick { content-visibility: auto; contain-intrinsic-size: auto 700px; }
+
+/* PC 손님용 '휴대폰으로 이어 보기' QR(2026-11-22, 질문함 #68): app.js 가 넓은 PC 화면에서만 넣는다. QR 은 어두운 화면에서도 흰 바탕·검은 점 */
+.qrbox { position: fixed; right: 16px; bottom: 96px; z-index: 25; width: 148px; padding: 12px 12px 10px; background: var(--surface, #fff); color: var(--text, #111); border: 1px solid var(--line, #ddd); border-radius: 12px; box-shadow: 0 4px 16px rgba(0, 0, 0, .12); text-align: center; font-size: 12px; line-height: 1.45; }
+.qrbox b { display: block; font-size: 13px; margin: 0 14px 8px; }
+.qrbox svg { display: block; width: 124px; height: 124px; margin: 0 auto 8px; border-radius: 4px; }
+.qrbox span { display: block; opacity: .75; }
+.qrbox-x { position: absolute; top: 4px; right: 4px; width: 24px; height: 24px; padding: 0; border: 0; background: none; color: inherit; font-size: 18px; line-height: 1; cursor: pointer; opacity: .6; }
+.qrbox-x:hover { opacity: 1; }
+@media print { .qrbox { display: none; } }

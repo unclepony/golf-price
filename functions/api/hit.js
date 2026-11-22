@@ -172,6 +172,9 @@ export async function onRequestPost({ request, env, waitUntil }) {
     const k = String(b.k ?? '').replace(/[^\w-]/g, '').slice(0, 40);
     if (!k) return done;
     rows.push(['aff', `${path}|${k}`], ['affref', src]);
+  } else if (b.t === 'qr') {
+    // PC '휴대폰으로 이어 보기' QR 상자(2026-11-22 실험): 보임·닫음 — 키: 쪽 종류|보임·닫음. 찍고 온 방문은 유입 '캠페인: qr' 로 잡힌다
+    rows.push(['qr', `${pageKind(path)}|${b.k === 'close' ? '닫음' : '보임'}`]);
   } else if (b.t === 'seen') {
     // 쿠팡 버튼이 화면에 처음 보인 페이지뷰(페이지당 1회) — 키: 페이지, 그리고 처음 보인 버튼 위치
     rows.push(['seen', path], ['seendev', `${pageKind(path)}|${device(ua)}`], ['seenpos', String(b.w ?? '기타').replace(/[^\p{L}\p{N} ·]/gu, '').slice(0, 20) || '기타']);

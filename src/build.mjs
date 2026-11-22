@@ -578,6 +578,8 @@ const updated = tracked.map((e) => e.a.last.d).sort().at(-1) ?? todayKst();
 rmSync(OUT, { recursive: true, force: true });
 writeText(join(OUT, 'assets', 'style.css'), readFileSync(join(ROOT, 'src', 'style.css'), 'utf8'));
 writeText(join(OUT, 'assets', 'app.js'), readFileSync(join(ROOT, 'src', 'app.js'), 'utf8'));
+// PC 손님용 '휴대폰으로 이어 보기' QR(2026-11-22 사장님 승인, 질문함 #68): app.js 가 넓은 PC 화면에서만 받는다. qrcode-generator 1.4.4(MIT)
+writeText(join(OUT, 'assets', 'qr.js'), readFileSync(join(ROOT, 'src', 'vendor', 'qrcode.js'), 'utf8'));
 // 로고(2026-10-23 사장님 그림: 조랑말+골프클럽, 'CHOICE GOLF'): 머리글 그림·아이콘(탭·홈 화면)·공유 이미지. 만든 방법: README '로고'
 for (const f of ['logo-mark.png', 'icon-48.png', 'icon-180.png', 'icon-512.png', 'og.png']) copyFileSync(join(ROOT, 'src', 'figures', f), join(OUT, 'assets', f));
 copyFileSync(join(ROOT, 'src', 'figures', 'icon-48.png'), join(OUT, 'favicon.ico')); // /favicon.ico 를 바로 찾는 브라우저·검색엔진용(PNG 내용, 대부분 읽음)

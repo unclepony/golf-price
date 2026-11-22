@@ -493,4 +493,43 @@ ${pk.sc.map((s) => `<td class="sc"><span class="dots">${'●'.repeat(s)}<i>${'�
       render();
     }).catch(() => {});
   }
+  // ---------- PC 손님용 '휴대폰으로 이어 보기' QR (2026-11-22 사장님 승인, 질문함 #68) ----------
+  // 쿠팡 주문 기록이 전부 휴대폰·태블릿이고 PC 쿠팡 클릭 80회는 주문 0건이었다 → PC 에서 보던 쪽을 휴대폰에서 이어 열게 한다.
+  // QR 에는 쿠팡 주소가 아니라 이 사이트의 같은 쪽 주소만 넣는다. 본문을 가리지 않는 넓은 화면·마우스 기기에서만 띄운다.
+  (() => {
+    if (!/^\/(p|g|c)\//.test(location.pathname)) return;
+    if (!window.matchMedia || !matchMedia('(min-width: 1400px) and (hover: hover) and (pointer: fine)').matches) return;
+    if (!$$('a[href]').some((a) => /(^|\.)coupang\.com$/.test(a.hostname) || a.pathname.startsWith('/go/'))) return;
+    try { if (sessionStorage.getItem('gp_qrx') === '1') return; } catch {}
+    const show = () => {
+      if (typeof qrcode !== 'function') return;
+      const url = location.origin + location.pathname + '?utm_source=qr&utm_medium=pc';
+      const q = qrcode(0, 'M');
+      q.addData(url);
+      q.make();
+      const n = q.getModuleCount();
+      let dpath = '';
+      for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (q.isDark(r, c)) dpath += 'M' + (c + 4) + ' ' + (r + 4) + 'h1v1h-1z';
+      const box = document.createElement('aside');
+      box.className = 'qrbox';
+      box.setAttribute('aria-label', '휴대폰으로 이어 보기');
+      box.innerHTML = '<button type="button" class="qrbox-x" aria-label="닫기">×</button><b>휴대폰으로 이어 보기</b>'
+        + '<svg viewBox="0 0 ' + (n + 8) + ' ' + (n + 8) + '" role="img" aria-label="이 쪽 주소 QR"><rect width="100%" height="100%" fill="#fff"/><path d="' + dpath + '" fill="#000"/></svg>'
+        + '<span>카메라로 찍으면 이 화면이 휴대폰에서 열립니다</span>';
+      document.body.appendChild(box);
+      beacon({ t: 'qr', k: 'seen' });
+      $('.qrbox-x', box).addEventListener('click', () => {
+        box.remove();
+        try { sessionStorage.setItem('gp_qrx', '1'); } catch {}
+        beacon({ t: 'qr', k: 'close' });
+      });
+    };
+    const load = () => {
+      const sc = document.createElement('script');
+      sc.src = '/assets/qr.js';
+      sc.onload = show;
+      document.head.appendChild(sc);
+    };
+    if ('requestIdleCallback' in window) requestIdleCallback(load, { timeout: 3000 }); else setTimeout(load, 1500);
+  })();
 })();
