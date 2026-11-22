@@ -26,7 +26,7 @@
     "womens-driver": "2026-11-22",
     "ball": "2026-11-20",
     "wood": "2026-11-22",
-    "utility": "2026-11-19",
+    "utility": "2026-11-22",
     "iron": "2026-11-21",
     "putter": "2026-11-20",
     "rangefinder": "2026-11-20",
@@ -54,6 +54,7 @@
     "xxio14-fairway": 2,
     "srixon-zxi-fairway": 2,
     "callaway-roguest-fairway": 2,
-    "srixon-zxmk2-fairway": 2
+    "srixon-zxmk2-fairway": 2,
+    "srixon-zxhmk2-hybrid": 1
   }
 }
