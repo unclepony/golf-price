@@ -842,6 +842,10 @@ function buyBtn(id, cls = 'btn sm', label = '쿠팡에서 현재 가격 보기')
 // 1만 원 아래는 '0만원대'가 되지 않게 천원 단위로(2026-10-27 관제탑: 장갑 제목 '0만원대부터')
 const manwonBand = (n) => (n >= 1e6 ? `${Math.floor(n / 1e5) * 10}만원대` : n >= 1e4 ? `${Math.floor(n / 1e4)}만원대` : n >= 1e3 ? `${Math.floor(n / 1e3)}천원대` : `${n}원`);
 function baseMin(ids) {
+  // 제목의 'N만원대부터'는 본문에 보이는 가격 범위(확인한 지 14일 안의 판매가)와 같은 값에서 계산한다(2026-11-22 관제탑:
+  // 홈기어 로봇청소기 제목 '45만원대부터' vs 본문 '498,800원~' — 숨겨진 옛 가격이 제목에만 남아 있었다). 보이는 가격이 하나도 없을 때만 기록된 가격을 쓴다.
+  const fresh = ids.map((id) => freshPrice(id)?.won).filter(Boolean);
+  if (fresh.length) return Math.min(...fresh);
   const xs = ids.map((id) => pickPrice(id)).filter(Boolean);
   return xs.length ? Math.min(...xs) : null;
 }
