@@ -74,6 +74,7 @@ function contentKey(html, v = KEY_V) {
       ? main.replace(/<!--\/?tbl5-->/g, '').replace(/<!--tbl4:[A-Za-z0-9+/=]*-->/g, '')
       : main.replace(/<!--tbl5-->[\s\S]*?<!--\/tbl5-->/g, '').replace(/<!--tbl4:([A-Za-z0-9+/=]*)-->/g, (_, b) => Buffer.from(b, 'base64').toString());
   main = main
+    .replace(/<div class="stickybuy cat-sb"[\s\S]*?<\/div>/g, '')
     .replace(/"pr":\d+,"pd":"[^"]*"/g, '')
     .replace(/<p class="updated"[\s\S]*?<\/p>/g, '')
     // 가격 기록에서 나오는 부분(판단 문구·그래프·통계·가격 하락 목록)은 가격만 바뀌어도 달라지므로 뺀다
@@ -1051,6 +1052,17 @@ function stickyBuy(pk, label = '1위', btnText = '1위 상품 가격 보기') {
   // .sb-t 는 통째로 콘텐츠 지문에서 빠지므로(contentKey) '마지막 업데이트'·IndexNow 는 바뀌지 않는다
   return `<div class="stickybuy" role="complementary" aria-label="1위 상품 바로가기"><span class="sb-t"><b>${esc(label)}</b> <a class="sb-p" href="/p/${p.id}">${esc(p.name)}</a>${sp ? ` · ${won(sp.won)}` : ''}</span>${buyBtn(p.id, 'btn sm', btnText)}</div>`;
 }
+// 분류 쪽(/c) 하단 고정 버튼 — 2026-11-22 낮 관제탑: ChatGPT 착지 36 중 /c 11(31%)인데 이동 0.
+// 휴대폰에서 첫 쿠팡 버튼이 첫 화면 맨 아래(577~601px)에 걸쳐 있었고 가이드·상품 쪽과 달리 고정 버튼이 없었다.
+// 첫 번째 관련 가이드의 첫 실력 단계 1위(가이드 쪽과 같은 상품), 링크가 없으면 링크 있는 다음 순위.
+function catSticky(related) {
+  const g = related[0];
+  if (!g) return '';
+  const ranked = rankedPicks(g).filter((pk) => !GONE[pk.id] && (outHref(pk.id) || extOf(pk.id)));
+  const lead = skillGroups(g).length ? ranked.find((pk) => pk.skill === SKILLS[0]) : null;
+  // cat-sb: 화면만 더한 것이라 콘텐츠 지문에서 통째로 뺀다(분류 쪽 '마지막 업데이트'·IndexNow 가 바뀌지 않게, contentKey)
+  return (lead ? stickyBuy(lead, `${SKILLS[0]} 1위`) : stickyBuy(ranked[0])).replace('class="stickybuy"', 'class="stickybuy cat-sb"');
+}
 // 구형 모델이 실력별 1위일 때 이유와 최신 모델 1위
 function oldModelNote(g, reps) {
   const lines = reps
@@ -1783,7 +1795,7 @@ ${listBlock(rctx(), c, items)}
 ${related.length ? `<h2 class="plp-h2">${esc(c.name)} 실력별 비교 가이드</h2>` : ''}
 ${related.length > 1 ? `<nav class="gtabs">${related.map((g) => `<a href="#g-${g.slug}">${esc(genderLabel(g, c))}</a>`).join('')}</nav>` : ''}
 ${related.map((g) => `<section id="g-${g.slug}" class="cat-cmp">${related.length > 1 ? `<h2 class="cat-cmp-h"><span class="gender g-${esc(g.gender ?? '공용')}">${esc(g.gender ?? '공용')}</span>${esc(c.name)} 비교</h2>` : ''}${infographic(g)}${tierCompare(g)}<a class="more-link" href="/g/${g.slug}">장단점·고르는 법 전체 보기 ›</a></section>`).join('')}
-<section class="prose"><h2>${esc(c.name)} 고르는 법</h2><p>${esc(c.intro)}</p>${figure(c.id)}<ul>${c.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>`,
+<section class="prose"><h2>${esc(c.name)} 고르는 법</h2><p>${esc(c.intro)}</p>${figure(c.id)}<ul>${c.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>${catSticky(related)}`,
     }),
   );
 }
