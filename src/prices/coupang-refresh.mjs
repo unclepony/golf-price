@@ -89,6 +89,9 @@ for (const [i, id] of targets.entries()) {
   let hit = pk.productId
     ? (rows.find((r) => r.id === String(pk.productId) && words(r.name) === want && sane(r)) ?? rows.find((r) => r.id === String(pk.productId) && sane(r)))
     : rows.find((r) => words(r.name) === want && sane(r) && (pk.rocket === undefined || !!pk.rocket === r.rocket));
+  // 판매 종료 근거 기록(2026-11-23 셀프 개선): 상품 번호가 있는데 못 맞춘 날, 그 번호가 검색 결과에 '보였는데 가격이 범위(0.5~2배) 밖'이었는지
+  // '아예 없었는지'를 coupang-missing.json 에 남긴다. 곧 판매 종료가 하루 몇 개씩 늘어(11-15: 21 → 11-23: 31) 진짜 판매 종료인지 가격 범위 탓인지 가를 자료가 없었다. 판단·가격·링크는 그대로
+  let pidRow = pk.productId ? rows.find((r) => r.id === String(pk.productId)) : null;
   // 2단계(2026-11-02 gp-1102-2): 완전 일치가 없고 productId 도 없을 때만. 아래를 모두 만족하는 상품 번호가 '딱 1개'일 때만 쓴다.
   if (!hit && !pk.productId) {
     const two = match2(prods[id], pk, rows.filter(sane));
@@ -111,6 +114,7 @@ for (const [i, id] of targets.entries()) {
     await sleep(GAP);
     try { rows = await search(q2.replace(/\s+/g, ' ').trim().slice(0, 50), 10); } catch (e) { console.log(`오류로 멈춤 (${id}): ${e.message}`); break; }
     hit = rows.find((r) => r.id === String(pk.productId) && sane(r));
+    pidRow ??= rows.find((r) => r.id === String(pk.productId));
   }
   if (!hit) {
     miss++;
@@ -125,6 +129,7 @@ for (const [i, id] of targets.entries()) {
     }
     const m = (missing[id] ??= { since: today, days: 0, last: '' });
     if (m.last !== today) { m.days++; m.last = today; }
+    m.why = pidRow ? `상품 번호는 검색 결과에 있음 · 가격 ${Number(pidRow.price).toLocaleString('ko-KR')}원(기존 ${Number(pk.price || 0).toLocaleString('ko-KR')}원의 0.5~2배 밖)` : `검색 결과 ${rows.length}건에 상품 번호 없음`;
     if (m.days >= GONE_DAYS && !pk.gone) { picks[id] = { ...pk, gone: today }; console.log(`판매 종료 추정: ${id} (${m.days}일 연속 못 찾음, ${m.since}부터)`); }
     else console.log(`건너뜀: ${id} (검색 ${rows.length}건 중 같은 상품으로 확신할 결과 없음 — 기존 값 유지, 연속 ${m.days}일)`);
     save();
