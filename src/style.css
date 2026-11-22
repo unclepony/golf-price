@@ -743,7 +743,6 @@ table.answer-t td a.answer-go { display: block; margin-top: 3px; font-size: 12px
 .sb-t { flex: 1; min-width: 0; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .sb-p { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 .stickybuy .btn { flex: 0 0 auto; }
-body:has(.stickybuy) { padding-bottom: 76px; }
 @media (max-width: 767px) {
   /* 상단 고지 문구는 모바일에서도 잘리지 않게 */
   .util-in span { white-space: normal; overflow: visible; line-height: 1.4; padding: 4px 0; }
@@ -1223,3 +1222,7 @@ table.answer-t td a.answer-go:hover { filter: brightness(1.06); text-decoration:
 .qrbox-x { position: absolute; top: 4px; right: 4px; width: 24px; height: 24px; padding: 0; border: 0; background: none; color: inherit; font-size: 18px; line-height: 1; cursor: pointer; opacity: .6; }
 .qrbox-x:hover { opacity: 1; }
 @media print { .qrbox { display: none; } }
+
+/* 하단 고정 구매 버튼 내림(2026-11-22 관제탑, 질문함 #69): 쿠팡 파트너스 운영정책 4.1 8) '플로팅 배너 광고 — 스크롤 중 계속 따라다니면서 본문을 가리고 클릭을 유도'에 걸릴 수 있다(제재수준 A).
+   최근 한 달 이 버튼의 쿠팡 클릭은 세 사이트 합쳐 1건. 되돌리기: 이 커밋 git revert. 마크업은 다음 지문 판(KEY_V) 올릴 때 같이 지운다(지금 지우면 모든 쪽의 '마지막 업데이트'가 바뀐다). */
+.stickybuy { display: none !important; }
