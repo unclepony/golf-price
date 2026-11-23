@@ -1,0 +1,56 @@
+# 관리자 에이전트 사건 알림 (2026-11-23 사장님 지시: 사건이 생기면 담당 에이전트가 깨어나 고친다)
+# 이 저장소의 자동 작업이 실패하면 이슈를 하나 연다 → 이슈가 열리면 이 사이트 담당 에이전트(클라우드 루틴 site-golf-price)가 깨어난다.
+# 이미 열린 사건 이슈(라벨 agent-incident)가 있으면 새로 열지 않고 댓글만 단다(에이전트를 거듭 깨우지 않게).
+# 성공한 실행에서는 작업이 건너뛰어져 Actions 분을 쓰지 않는다. 기준 문서: unclepony-ops docs/routines/site-agent.md
+name: agent-incident
+
+on:
+  workflow_run:
+    workflows: [daily-check, weekly-analysis, coupang-pick, detail-render, gsc-sitemap]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      note:
+        description: '시험용 사건 이슈를 연다(실제 고장 아님)'
+        required: false
+        default: '시험'
+
+permissions:
+  issues: write
+
+jobs:
+  open-issue:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'failure' || github.event.workflow_run.conclusion == 'timed_out'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: 사건 이슈 열기
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          KIND: ${{ github.event_name }}
+          NAME: ${{ github.event.workflow_run.name }}
+          RESULT: ${{ github.event.workflow_run.conclusion }}
+          RUN_URL: ${{ github.event.workflow_run.html_url }}
+          NOTE: ${{ github.event.inputs.note }}
+        run: |
+          if [ "$KIND" = workflow_dispatch ]; then
+            title="[시험] 사건 실행 연결 확인 (고칠 것 없음)"
+            body="관리자 에이전트 사건 실행 시험입니다($NOTE). 실제 고장은 없습니다. 저장소를 고치지 말고 이 이슈에 '확인' 댓글을 달고 닫아 주세요."
+          else
+            title="[자동] $NAME 실패"
+            body="자동 작업 **$NAME** 이(가) 실패했습니다($RESULT).
+
+- 실행 기록: $RUN_URL
+
+담당 에이전트가 원인을 확인해 고치고, 끝나면 이 이슈에 결과를 적고 닫습니다."
+          fi
+          gh label create agent-incident -R "$REPO" --color B60205 --description "자동 작업 실패 — 담당 에이전트가 처리" 2>/dev/null || true
+          open=$(gh issue list -R "$REPO" --label agent-incident --state open --json number -q '.[0].number' || true)
+          if [ -n "$open" ] && [ "$KIND" != workflow_dispatch ]; then
+            printf '%b' "또 실패: **$NAME** ($RESULT)
+- 실행 기록: $RUN_URL" | gh issue comment "$open" -R "$REPO" --body-file -
+            echo "열린 사건 이슈 #$open 에 댓글만 달았습니다"
+          else
+            printf '%b' "$body" | gh issue create -R "$REPO" --label agent-incident --title "$title" --body-file -
+          fi
