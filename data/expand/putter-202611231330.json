@@ -1,0 +1,489 @@
+[
+ {
+  "category": "putter",
+  "id": "odyssey-trtl-ch-putter",
+  "name": "오디세이 TRTL CH 퍼터 (2026)",
+  "query": "오디세이 TRTL CH 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "trtlch",
+   "터틀ch",
+   "trtl크랭크",
+   "터틀크랭크"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행",
+   "여성",
+   "db",
+   "더블벤드",
+   "슬랜트",
+   "max",
+   "s2s",
+   "스퀘어"
+  ],
+  "summary": "오디세이 TRTL CH은 정렬과 높은 관성모멘트(MOI)를 위해 만든 미드 말렛 TRTL 헤드에 크랭크 호젤(토우 행 약 20°) 단 퍼터입니다(2026). 우레탄·알루미늄 두 겹 Ai-Star 인서트를 씁니다. 국내는 캘러웨이골프 코리아가 판매합니다.",
+  "points": [
+   "TRTL 미드 말렛 · 높은 MOI",
+   "크랭크 호젤(토우 행 약 20°)",
+   "Ai-Star 인서트(우레탄+알루미늄)"
+  ],
+  "guidePick": {
+   "role": "말렛인데 블레이드처럼",
+   "forWhom": "아크 스트로크지만 말렛의 안정성을 원하는 중급자",
+   "short": "토우 행 있는 TRTL",
+   "plus": "정렬·안정성",
+   "minus": "헤드 크기 적응",
+   "pros": [
+    "미드 말렛 TRTL 헤드로 빗맞아도 방향이 덜 흔들림",
+    "Ai-Star 인서트로 일정한 볼 스피드·구름"
+   ],
+   "cons": [
+    "블레이드보다 헤드가 커서 손맛이 둔하게 느껴질 수 있음",
+    "2026년 새 모델이라 판매처·길이 확인 필요"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    3
+   ],
+   "specs": [
+    "미드 말렛 (TRTL)",
+    "TBD",
+    "크랭크 호젤(토우 행 약 20°) · Ai-Star 인서트"
+   ],
+   "verdict": "말렛 안정성에 블레이드식 스트로크를 원하는 중급자용",
+   "skill": "중급"
+  },
+  "sources": [
+   "https://www.callawaygolf.com/press/odyssey-golf-announces-new-trtl-putters",
+   "https://golf.com/gear/putters/odyssey-new-trtl-putters/",
+   "https://www.golfdigest.com/story/odyssey-trtl-putters-preview-equipment",
+   "https://biz.heraldcorp.com/article/10809428"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "odyssey-trtl-db-putter",
+  "name": "오디세이 TRTL DB 퍼터 (2026)",
+  "query": "오디세이 TRTL DB 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "trtldb",
+   "터틀db",
+   "trtl더블벤드",
+   "터틀더블벤드"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행",
+   "여성",
+   "ch",
+   "크랭크",
+   "슬랜트",
+   "max",
+   "s2s",
+   "스퀘어"
+  ],
+  "summary": "오디세이 TRTL DB은 정렬과 높은 관성모멘트(MOI)를 위해 만든 미드 말렛 TRTL 헤드에 더블 벤드 넥(페이스 밸런스) 단 퍼터입니다(2026). 우레탄·알루미늄 두 겹 Ai-Star 인서트를 씁니다. 국내는 캘러웨이골프 코리아가 판매합니다.",
+  "points": [
+   "TRTL 미드 말렛 · 높은 MOI",
+   "더블 벤드 넥(페이스 밸런스)",
+   "Ai-Star 인서트(우레탄+알루미늄)"
+  ],
+  "guidePick": {
+   "role": "곧게 미는 TRTL",
+   "forWhom": "스트로크가 곧은 초심자·중급자",
+   "short": "페이스 밸런스 TRTL",
+   "plus": "정렬·안정성",
+   "minus": "헤드 크기 적응",
+   "pros": [
+    "미드 말렛 TRTL 헤드로 빗맞아도 방향이 덜 흔들림",
+    "Ai-Star 인서트로 일정한 볼 스피드·구름"
+   ],
+   "cons": [
+    "블레이드보다 헤드가 커서 손맛이 둔하게 느껴질 수 있음",
+    "2026년 새 모델이라 판매처·길이 확인 필요"
+   ],
+   "scores": [
+    5,
+    3,
+    5,
+    3
+   ],
+   "specs": [
+    "미드 말렛 (TRTL)",
+    "TBD",
+    "더블 벤드 넥(페이스 밸런스) · Ai-Star 인서트"
+   ],
+   "verdict": "곧게 밀어 치는 초심자에게 쉬운 2026 말렛",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://www.callawaygolf.com/press/odyssey-golf-announces-new-trtl-putters",
+   "https://golf.com/gear/putters/odyssey-new-trtl-putters/",
+   "https://www.golfdigest.com/story/odyssey-trtl-putters-preview-equipment",
+   "https://biz.heraldcorp.com/article/10809428"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "odyssey-trtl-s-putter",
+  "name": "오디세이 TRTL S 퍼터 (2026)",
+  "query": "오디세이 TRTL S 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "trtls",
+   "터틀s",
+   "trtl슬랜트",
+   "터틀슬랜트"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행",
+   "여성",
+   "ch",
+   "크랭크",
+   "db",
+   "더블벤드",
+   "max",
+   "s2s",
+   "스퀘어"
+  ],
+  "summary": "오디세이 TRTL S은 정렬과 높은 관성모멘트(MOI)를 위해 만든 미드 말렛 TRTL 헤드에 숏 슬랜트 넥(토우 행 약 30°) 단 퍼터입니다(2026). 우레탄·알루미늄 두 겹 Ai-Star 인서트를 씁니다. 국내는 캘러웨이골프 코리아가 판매합니다.",
+  "points": [
+   "TRTL 미드 말렛 · 높은 MOI",
+   "숏 슬랜트 넥(토우 행 약 30°)",
+   "Ai-Star 인서트(우레탄+알루미늄)"
+  ],
+  "guidePick": {
+   "role": "슬랜트 넥 TRTL",
+   "forWhom": "아크가 큰 스트로크의 중급·고급자",
+   "short": "토우 행 큰 TRTL",
+   "plus": "정렬·안정성",
+   "minus": "헤드 크기 적응",
+   "pros": [
+    "미드 말렛 TRTL 헤드로 빗맞아도 방향이 덜 흔들림",
+    "Ai-Star 인서트로 일정한 볼 스피드·구름"
+   ],
+   "cons": [
+    "블레이드보다 헤드가 커서 손맛이 둔하게 느껴질 수 있음",
+    "2026년 새 모델이라 판매처·길이 확인 필요"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    3
+   ],
+   "specs": [
+    "미드 말렛 (TRTL)",
+    "TBD",
+    "숏 슬랜트 넥(토우 행 약 30°) · Ai-Star 인서트"
+   ],
+   "verdict": "아크 스트로크에 맞춘 말렛을 찾는 고급자용",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://www.callawaygolf.com/press/odyssey-golf-announces-new-trtl-putters",
+   "https://golf.com/gear/putters/odyssey-new-trtl-putters/",
+   "https://www.golfdigest.com/story/odyssey-trtl-putters-preview-equipment",
+   "https://biz.heraldcorp.com/article/10809428"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "odyssey-trtl-max-s2s-putter",
+  "name": "오디세이 TRTL MAX S2S 퍼터 (2026)",
+  "query": "오디세이 TRTL MAX S2S 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "trtlmax",
+   "터틀max"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행",
+   "여성",
+   "ch",
+   "db"
+  ],
+  "summary": "오디세이 TRTL MAX S2S는 TRTL보다 약 6% 큰 헥사곤형 말렛 헤드에 제로토크 스퀘어 투 스퀘어(S2S) 넥을 단 퍼터입니다(2026, MOI 약 20%↑ — 골프다이제스트). Ai-Star 인서트를 씁니다. 캘러웨이골프 코리아 국내 출시.",
+  "points": [
+   "TRTL보다 큰 말렛(약 6%)",
+   "제로토크 S2S 넥",
+   "Ai-Star 인서트"
+  ],
+  "guidePick": {
+   "role": "가장 큰 제로토크 TRTL",
+   "forWhom": "짧은 퍼트에서 페이스가 돌아가는 초심자",
+   "short": "크고 제로토크",
+   "plus": "정렬·안정성",
+   "minus": "헤드 크기 적응",
+   "pros": [
+    "미드 말렛 TRTL 헤드로 빗맞아도 방향이 덜 흔들림",
+    "Ai-Star 인서트로 일정한 볼 스피드·구름"
+   ],
+   "cons": [
+    "블레이드보다 헤드가 커서 손맛이 둔하게 느껴질 수 있음",
+    "2026년 새 모델이라 판매처·길이 확인 필요"
+   ],
+   "scores": [
+    5,
+    3,
+    5,
+    3
+   ],
+   "specs": [
+    "대형 말렛 (TRTL MAX)",
+    "TBD",
+    "제로토크 S2S · Ai-Star 인서트"
+   ],
+   "verdict": "페이스 회전을 줄이고 싶은 초심자에게 맞는 큰 제로토크 말렛",
+   "skill": "초심자"
+  },
+  "sources": [
+   "https://www.callawaygolf.com/press/odyssey-golf-announces-new-trtl-putters",
+   "https://golf.com/gear/putters/odyssey-new-trtl-putters/",
+   "https://www.golfdigest.com/story/odyssey-trtl-putters-preview-equipment",
+   "https://biz.heraldcorp.com/article/10809428",
+   "https://biz.heraldcorp.com/article/10910774"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "mizuno-mcraft-kyoto-putter",
+  "name": "미즈노 M.CRAFT 교토 퍼터 (2026)",
+  "query": "미즈노 엠크래프트 교토 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "교토",
+   "kyoto"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행",
+   "여성",
+   "omoi",
+   "오모이",
+   "오사카",
+   "osaka",
+   "나고야",
+   "nagoya",
+   "도쿄",
+   "tokyo"
+  ],
+  "summary": "미즈노 M.CRAFT 교토는 연철(1025E)을 한 덩어리로 단조하고 구리 언더레이를 넣은 앤서형 블레이드 퍼터입니다(2026 시티 시리즈). 플러머 넥(P)·슬랜트 넥(S) 두 가지, 바닥 무게추 교체. 한국미즈노 국내 출시.",
+  "points": [
+   "단조 연철 + 구리 언더레이",
+   "앤서형 블레이드 · P/S 넥",
+   "깊은 페이스 밀링"
+  ],
+  "guidePick": {
+   "role": "단조 블레이드",
+   "forWhom": "부드러운 손맛과 거리감을 중시하는 고급자·프로",
+   "short": "단조 앤서형",
+   "plus": "손맛",
+   "minus": "관용성",
+   "pros": [
+    "단조 연철과 구리 언더레이로 부드러운 타감",
+    "전통 앤서형이라 정렬이 익숙함"
+   ],
+   "cons": [
+    "블레이드라 빗맞으면 거리 손실이 큼",
+    "넥(P/S)·마감을 골라야 함"
+   ],
+   "scores": [
+    3,
+    5,
+    3,
+    3
+   ],
+   "specs": [
+    "블레이드 (앤서형)",
+    "TBD",
+    "단조 연철 · 구리 언더레이 · P/S 넥"
+   ],
+   "verdict": "단조 손맛을 원하는 고급자용 앤서형 블레이드",
+   "skill": "프로"
+  },
+  "sources": [
+   "https://golf.com/gear/putters/mizuno-m-craft-city-series-putters",
+   "https://mygolfspy.com/news-opinion/exploring-the-new-mizuno-m-craft-city-series-putters/",
+   "https://www.heraldk.com/article/2026032216073236973"
+  ]
+ },
+ {
+  "category": "putter",
+  "id": "mizuno-mcraft-tokyo-putter",
+  "name": "미즈노 M.CRAFT 도쿄 퍼터 (2026)",
+  "query": "미즈노 엠크래프트 도쿄 퍼터",
+  "must": [
+   "퍼터"
+  ],
+  "mustAny": [
+   "도쿄",
+   "tokyo"
+  ],
+  "exclude": [
+   "중고",
+   "헤드만",
+   "시타",
+   "커버",
+   "그립만",
+   "무게추",
+   "왼손",
+   "좌타",
+   "스티커",
+   "보호필름",
+   "주니어",
+   "어린이",
+   "일본",
+   "정규품",
+   "직수입",
+   "usa",
+   "병행",
+   "구매대행",
+   "여성",
+   "omoi",
+   "오모이",
+   "오사카",
+   "osaka",
+   "나고야",
+   "nagoya",
+   "교토",
+   "kyoto"
+  ],
+  "summary": "미즈노 M.CRAFT 도쿄는 연철(1025E) 단조·구리 언더레이의 팽(채널 윙) 미드 말렛 퍼터입니다(2026 시티 시리즈). 더블 벤드·슬랜트 넥, 바닥 무게추 교체. 한국미즈노 국내 출시.",
+  "points": [
+   "단조 연철 + 구리 언더레이",
+   "팽형 미드 말렛 · DB/S 넥",
+   "깊은 페이스 밀링"
+  ],
+  "guidePick": {
+   "role": "단조 말렛",
+   "forWhom": "말렛의 정렬과 단조 손맛을 함께 원하는 중급·고급자",
+   "short": "단조 팽 말렛",
+   "plus": "손맛+정렬",
+   "minus": "가격",
+   "pros": [
+    "단조 연철 말렛이라 손맛이 부드러움",
+    "팽 모양 날개로 정렬이 쉬움"
+   ],
+   "cons": [
+    "대형 말렛보다 관용성은 작음",
+    "판매처·넥 구성 확인 필요"
+   ],
+   "scores": [
+    4,
+    5,
+    4,
+    3
+   ],
+   "specs": [
+    "미드 말렛 (팽형)",
+    "TBD",
+    "단조 연철 · 구리 언더레이 · DB/S 넥"
+   ],
+   "verdict": "단조 손맛과 말렛 정렬을 함께 원하는 고급자용",
+   "skill": "고급"
+  },
+  "sources": [
+   "https://golf.com/gear/putters/mizuno-m-craft-city-series-putters",
+   "https://mygolfspy.com/news-opinion/exploring-the-new-mizuno-m-craft-city-series-putters/",
+   "https://www.heraldk.com/article/2026032216073236973",
+   "https://www.nationalclubgolfer.com/reviews/putters/mizuno-m-craft-tokyo-putter-review-forgiveness-and-easy-alignment/"
+  ]
+ }
+]
