@@ -1,0 +1,48 @@
+{
+ "relink-golfbuddy-atom": {
+  "none": "검색 1개 중 조건 맞는 상품 없음",
+  "seen": [
+   "골프버디 GB 레이저 거리측정기 2S PRO 삼각측정 손떨림방지"
+  ]
+ },
+ "relink-golfbuddy-atom-b": {
+  "none": "검색 8개 중 조건 맞는 상품 없음",
+  "seen": [
+   "GOLF BUDDY 골프버디 보이스 3S+ 음성형 GPS 골프거리측정기 국내배송(시계밴드 화이트,블랙 중1개 증정)+볼빅마블세트, 블랙, 3S+",
+   "이누어 미니 초경량 레이저 골프 거리측정기 삼각측정 U800+, 블랙, U800+",
+   "이누어 미니 초경량 레이저 골프 거리측정기 삼각측정 U800+, 화이트, U800+",
+   "인피테 레이저 골프 거리측정기 초경량 미니 차쉬넬 캐디 파우치세트, IXG2000 PRO 화이트, 화이트",
+   "인피테 캐리뷰 미니 레이저 골프 거리측정기 삼각측정 와이드 디스플레이 + 자석파우치, 블랙그레이, IXG3000"
+  ]
+ },
+ "relink-voicecaddie-sl3": {
+  "none": "검색 10개 중 조건 맞는 상품 없음",
+  "seen": [
+   "골프 거리측정기 케이스 기능성 보호용 골프용품 소형",
+   "보이스캐디 레이저 핏 골프 거리 측정기",
+   "락골프 정품 앱송 거리측정기 케이스",
+   "[보이스캐디] 보이스캐디 SL mini 미니 LASER형 거리측정기",
+   "러블리썬 골프 거리측정기 케이스 hit*67584Jl"
+  ]
+ },
+ "relink-garmin-approach-z82": {
+  "link": "https://link.coupang.com/re/AFFSDP?lptag=AF1139540&pageKey=9789483243&itemId=29309512757&vendorItemId=96224729935&traceid=V0-153-ee218fb0574dc74a&requestid=20261123172359675122732564&token=31850C%7CGM&pt=0&slot=1",
+  "title": "가민 어프로치 Z82, 골프 GPS 레이저 거리 측정기, 깃대에서 10인치 이내의밀도, 2차원 코스 오버레이",
+  "rocket": false,
+  "productId": "9789483243",
+  "price": 1113600,
+  "image": "https://ads-partners.coupang.com/image1/otr566UJcFMYZo-ZoiIWZPifp9EXMYf8EMwiuQ3A2o2bgUGE3Dw2JdIpvGQYz7MYK7iD3AlFB8guomn5ngm5D9-IBqqh46T8zB3VrOAOCwVxUtiPbDrTWVgQk4xdYs3iyfDznj4ICIvXljdZa7rsbK-s17wPg_cVFZyX0mfxSdR_qQnQx6EOA72ho_6wKw1qjb4_zHlH24KPpLqugzH7V0TMcnVOY_bDtgu2nsmtb8hZpz9L63QTZwu0XUQ9o1P2V_9jt2M-ZOCHbVe2-02D6-DGXkNXSxMhB0vEoXeX8bgwkLRPihwUBkyCcd6Nydo8L55zNKxV-uo0jxlM-0JVXpcuMHytAkXN84lbTHiAuKqy3lhILv4eIpJTM5kQH3E1ICrUH6RvHznNTDO3kUT5DuFnCcS-P7YKCQATXTRKeRNcGmpwMYzXg_pW6H9xAeyopIR1Y1O8K18MEugnZoAkFaNAc5t4mz7P60veAWG-QIkeAvwSn83Lr4mmMuRTltKlJ1Lsay4gIoaXmMPqZmuEGYeQiRDveThVvnbnkbImGFwSFmUVeCkuh4a2iMNM2-2WbcM9UFmbW19m",
+  "checked": "2026-11-23",
+  "cands": 9
+ },
+ "relink-caddytalk-cube": {
+  "none": "검색 10개 중 조건 맞는 상품 없음",
+  "seen": [
+   "2026 캐디톡 미니 프로(PRO) 레이저 골프 거리측정기+파우치 증정(삼각측정/안개모드 탑재), 루미너스 화이트, 2026 캐디톡 미니 프로",
+   "인피테 캐리뷰 미니 레이저 골프 거리측정기 삼각측정 와이드 디스플레이 + 자석파우치, 오프화이트, IXG3000",
+   "인피테 레이저 골프 거리측정기 초경량 미니 차쉬넬 캐디 파우치세트, IXG2000 PRO 블랙, 블랙",
+   "인피테 캐리뷰 미니 레이저 골프 거리측정기 삼각측정 와이드 디스플레이 + 자석파우치, 블랙그레이, IXG3000",
+   "이누어 미니 초경량 레이저 골프 거리측정기 삼각측정 U800+, 블랙, U800+"
+  ]
+ }
+}
