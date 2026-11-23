@@ -29,7 +29,7 @@
     "utility": "2026-11-22",
     "iron": "2026-11-21",
     "putter": "2026-11-23",
-    "rangefinder": "2026-11-20",
+    "rangefinder": "2026-11-23",
     "gps": "2026-11-20",
     "launch": "2026-11-21",
     "shoes": "2026-11-21",
@@ -67,6 +67,7 @@
     "callaway-twoball-ten-putter": 2,
     "ping-mundy-putter": 2,
     "ping-shea-putter": 2,
-    "ping-scottsdale-anser4-putter": 2
+    "ping-scottsdale-anser4-putter": 2,
+    "voicecaddie-sl3": 2
   }
 }
