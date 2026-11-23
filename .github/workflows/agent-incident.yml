@@ -39,17 +39,12 @@ jobs:
             body="관리자 에이전트 사건 실행 시험입니다($NOTE). 실제 고장은 없습니다. 저장소를 고치지 말고 이 이슈에 '확인' 댓글을 달고 닫아 주세요."
           else
             title="[자동] $NAME 실패"
-            body="자동 작업 **$NAME** 이(가) 실패했습니다($RESULT).
-
-- 실행 기록: $RUN_URL
-
-담당 에이전트가 원인을 확인해 고치고, 끝나면 이 이슈에 결과를 적고 닫습니다."
+            body="자동 작업 **$NAME** 이(가) 실패했습니다($RESULT).\n\n- 실행 기록: $RUN_URL\n\n담당 에이전트가 원인을 확인해 고치고, 끝나면 이 이슈에 결과를 적고 닫습니다."
           fi
           gh label create agent-incident -R "$REPO" --color B60205 --description "자동 작업 실패 — 담당 에이전트가 처리" 2>/dev/null || true
           open=$(gh issue list -R "$REPO" --label agent-incident --state open --json number -q '.[0].number' || true)
           if [ -n "$open" ] && [ "$KIND" != workflow_dispatch ]; then
-            printf '%b' "또 실패: **$NAME** ($RESULT)
-- 실행 기록: $RUN_URL" | gh issue comment "$open" -R "$REPO" --body-file -
+            printf '%b' "또 실패: **$NAME** ($RESULT)\n- 실행 기록: $RUN_URL" | gh issue comment "$open" -R "$REPO" --body-file -
             echo "열린 사건 이슈 #$open 에 댓글만 달았습니다"
           else
             printf '%b' "$body" | gh issue create -R "$REPO" --label agent-incident --title "$title" --body-file -
