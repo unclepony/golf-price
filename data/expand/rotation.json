@@ -28,7 +28,7 @@
     "wood": "2026-11-22",
     "utility": "2026-11-22",
     "iron": "2026-11-21",
-    "putter": "2026-11-20",
+    "putter": "2026-11-23",
     "rangefinder": "2026-11-20",
     "gps": "2026-11-20",
     "launch": "2026-11-21",
@@ -44,7 +44,7 @@
     "_설명": "2-2(상품 번호 없는 상품 가격 다시 잇기)에서 한 번도 검색 요청에 안 들어간 상품 — 그 분야 차례에 이 id 를 먼저 넣고, 요청에 넣었으면 여기서 지운다(gp-1121-2, 2026-11-21). #66(사장님 확인 기다림) 위 11줄은 넣지 않음"
   },
   "relinkKeep": {
-    "_설명": "2-2 다시 잇기에서 연속 \"유지\" 횟수 — 3이 되면 그 상품은 2-2 에서 뺀다",
+    "_설명": "2-2 다시 잇기에서 연속 \"유지\" 횟수 — 3이 되면 그 상품은 2-2 에서 뺀다 (퍼터 5종은 11/20 첫 시도를 1회로 셈, 11/23 2회)",
     "bridgestone-242cb-iron": 2,
     "taylormade-p790-women-iron": 3,
     "footjoy-pro-sl": 2,
@@ -62,6 +62,11 @@
     "fourteen-rm4-wedge": 2,
     "srixon-z-star": 1,
     "callaway-chrome-soft": 1,
-    "taylormade-tp5-ball": 1
+    "taylormade-tp5-ball": 1,
+    "odyssey-ai-one-putter": 2,
+    "callaway-twoball-ten-putter": 2,
+    "ping-mundy-putter": 2,
+    "ping-shea-putter": 2,
+    "ping-scottsdale-anser4-putter": 2
   }
 }
