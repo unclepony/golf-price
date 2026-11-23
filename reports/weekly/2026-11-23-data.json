@@ -1,0 +1,156 @@
+{
+  "date": "2026-11-23",
+  "sources": {
+    "gsc": "2026-11-23.json",
+    "clicks": "2026-11-23.json"
+  },
+  "gscRange": {
+    "startDate": "2026-11-14",
+    "endDate": "2026-11-20"
+  },
+  "clicksTotal": 0,
+  "priceChecks": [
+    {
+      "id": "odyssey-ai-one-putter",
+      "name": "오디세이 Ai-ONE 퍼터",
+      "coupangTitle": "한국캘러웨이정품 (오디세이) Ai-ONE 퍼터, (DW DB) 83.82cm(33인치)",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "voicecaddie-sl3",
+      "name": "보이스캐디 SL3 거리측정기",
+      "coupangTitle": "보이스캐디 골프 거리측정기, SL3, 그린",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "footjoy-pro-sl",
+      "name": "풋조이 프로 SL 골프화",
+      "coupangTitle": "[아쿠쉬네트코리아] 2026 풋조이 PRO SL 남성 골프화 골프신발, 화이트/블랙/틸 (56956)",
+      "lastCheck": "2026-10-15",
+      "clicks": 0
+    },
+    {
+      "id": "srixon-z-star",
+      "name": "스릭슨 Z-STAR 골프공 (1더즌)",
+      "coupangTitle": "스릭슨 던롭 골프공 3피스 Z-STAR9 디바이드, 화이트+옐로우, 1개, 12개입",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "callaway-chrome-soft",
+      "name": "캘러웨이 크롬소프트 골프공 (1더즌)",
+      "coupangTitle": "캘러웨이 크롬소프트 360 트리플트랙 골프공 3피스, 옐로우, 12개입, 1개",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "taylormade-tp5-ball",
+      "name": "테일러메이드 TP5 골프공 (1더즌)",
+      "coupangTitle": "테일러메이드 TP5 골프공 5피스, 화이트, 12개입, 1개",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "taylormade-qi35-maxlite-women-driver",
+      "name": "테일러메이드 Qi35 MAX Lite 여성용 드라이버",
+      "coupangTitle": "테일러메이드 여성용 Qi35 MAX Lite 드라이버, 12도, L",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "mizuno-jpx925-forged-iron",
+      "name": "미즈노 JPX925 포지드 아이언 세트",
+      "coupangTitle": "한국미즈노정품 미즈노 JPX925 포지드 8개세트 아이언 사은품증정, NS PRO 950GH S",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "taylormade-qi-maxlite-women-iron",
+      "name": "테일러메이드 Qi MAX Lite 여성용 아이언",
+      "coupangTitle": "테일러메이드 여성용 Qi MAX Lite 카본 7아이언, L, 26.5도",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "taylormade-qi4d-maxlite-women-driver",
+      "name": "테일러메이드 Qi4D MAX LITE 여성 드라이버",
+      "coupangTitle": "테일러메이드 QI4D 맥스 라이트 여성 드라이버, 10.5도",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "ping-g430-iron",
+      "name": "핑 G430 아이언",
+      "coupangTitle": "핑 삼양정품 G430 경량스틸 9아이언 AWT2 LITE, 22도, R",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "xxio13-iron",
+      "name": "젝시오 13 아이언 (남성)",
+      "coupangTitle": "젝시오 남성용 던롭코리아 젝시오 13 카본 8 아이언 세트, R, 22도",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "bridgestone-242cb-iron",
+      "name": "브리지스톤 242CB+ 아이언",
+      "coupangTitle": "석교 정품 브리지스톤 242CB+ 아이언 6개세트, NS PRO 950 S",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "taylormade-p790-women-iron",
+      "name": "테일러메이드 P790 여성 아이언",
+      "coupangTitle": "테일러메이드 P790 아이언 세트 2025년 여성용 7개(6-P.50.56) L(50g)",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "xxio12-fairway",
+      "name": "젝시오 12 페어웨이 우드 (9번)",
+      "coupangTitle": "던롭 젝시오12 남성 페어웨이우드 MP1200 카본샤프트 R 23도(9번)",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "xxio14-fairway",
+      "name": "젝시오 14 페어웨이 우드",
+      "coupangTitle": "젝시오14 남성 페어웨이 우드 던롭스포츠코리아100%, 5번(18도) R",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "srixon-zxi-fairway",
+      "name": "스릭슨 ZXi 페어웨이 우드",
+      "coupangTitle": "던롭코리아 정품 스릭슨 ZXi 우드 VENTUS ZXi 샤프트 2025년, 5번 벤투스 ZXi 6 S",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "callaway-roguest-fairway",
+      "name": "캘러웨이 로그 ST MAX 페어웨이 우드",
+      "coupangTitle": "캘러웨이 로그ST 맥스 페어웨이 TourAD Tensei 남성, 3번 S",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "srixon-zxmk2-fairway",
+      "name": "스릭슨 ZX MK2 페어웨이 우드",
+      "coupangTitle": "스릭슨 ZX MK2 페어웨이우드, 5번 Tour AD ZX 5 R",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    },
+    {
+      "id": "srixon-zxhmk2-hybrid",
+      "name": "스릭슨 ZXH MK2 하이브리드",
+      "coupangTitle": "스릭슨 ZXH MK2 하이브리드, 4번 Tour AD ZX 7 R",
+      "lastCheck": "2026-10-16",
+      "clicks": 0
+    }
+  ],
+  "lowCtr": [],
+  "contentCandidates": []
+}
