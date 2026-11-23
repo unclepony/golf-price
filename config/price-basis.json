@@ -490,6 +490,10 @@
       "won": 360000,
       "d": "2026-11-16"
     },
+    "callaway-quantum-maxfast-driver": {
+      "won": 600000,
+      "d": "2026-11-24"
+    },
     "callaway-quantum-maxfast-fairway": {
       "won": 480000,
       "d": "2026-11-08"
@@ -1831,8 +1835,8 @@
       "d": "2026-11-16"
     },
     "mizuno-stmax230-driver": {
-      "won": 382850,
-      "d": "2026-11-08"
+      "won": 590000,
+      "d": "2026-11-24"
     },
     "mizuno-stmax230-fairway": {
       "won": 220000,
@@ -2165,6 +2169,10 @@
     "ping-fetch-putter": {
       "won": 317310,
       "d": "2026-11-23"
+    },
+    "ping-g425-max-driver": {
+      "won": 730000,
+      "d": "2026-11-24"
     },
     "ping-g430-hl-max-driver": {
       "won": 810000,
