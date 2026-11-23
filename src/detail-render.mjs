@@ -23,20 +23,27 @@ const hashOf = (d) => createHash('sha1').update(detailHtml(d)).digest('hex').sli
 const todo = data.filter((d) => only.length || idx[d.id] !== hashOf(d) || !existsSync(join(OUTDIR, `${d.id}.webp`)));
 if (!todo.length) { console.log('바뀐 상세 이미지 없음'); process.exit(0); }
 
-const port = 9300 + Math.floor(Math.random() * 400);
-const profile = join(tmpdir(), `detail-chrome-${port}`);
-const chrome = spawn(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', `--remote-debugging-port=${port}`, `--user-data-dir=${profile}`, 'about:blank'], { stdio: 'ignore' });
+// 2026-11-23 사건 #3: GitHub 러너에서 크롬이 10초 안에 디버그 포트를 열지 못해 11/22·11/23 두 번 실패 →
+//   한 번에 30초까지 기다리고, 그래도 안 되면 새 포트·새 프로필로 한 번 더 띄운다.
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-let ws;
-for (let i = 0; i < 50 && !ws; i++) {
-  await sleep(200);
-  try {
-    const list = await (await fetch(`http://127.0.0.1:${port}/json`)).json();
-    const page = list.find((t) => t.type === 'page');
-    if (page) ws = new WebSocket(page.webSocketDebuggerUrl);
-  } catch {}
+let chrome, ws, profile;
+for (let attempt = 1; attempt <= 2 && !ws; attempt++) {
+  const port = 9300 + Math.floor(Math.random() * 400);
+  profile = join(tmpdir(), `detail-chrome-${port}`);
+  chrome = spawn(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--no-first-run', '--no-default-browser-check', `--remote-debugging-port=${port}`, `--user-data-dir=${profile}`, 'about:blank'], { stdio: 'ignore' });
+  let exited = false;
+  chrome.once('exit', () => { exited = true; });
+  for (let i = 0; i < 150 && !ws && !exited; i++) {
+    await sleep(200);
+    try {
+      const list = await (await fetch(`http://127.0.0.1:${port}/json`)).json();
+      const page = list.find((t) => t.type === 'page');
+      if (page) ws = new WebSocket(page.webSocketDebuggerUrl);
+    } catch {}
+  }
+  if (!ws) { console.warn(`크롬 띄우기 ${attempt}번째 실패${exited ? '(크롬이 먼저 꺼짐)' : '(30초 안에 응답 없음)'}`); chrome.kill(); }
 }
-if (!ws) { chrome.kill(); throw new Error('크롬을 열지 못했습니다'); }
+if (!ws) throw new Error('크롬을 열지 못했습니다');
 await new Promise((r) => ws.addEventListener('open', r, { once: true }));
 let seq = 0;
 const waits = new Map();
