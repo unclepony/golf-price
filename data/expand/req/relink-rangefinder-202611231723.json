@@ -1,0 +1,7 @@
+[
+ {"id":"relink-golfbuddy-atom","query":"골프버디 GB LASER atom 거리측정기","must":["골프버디"],"mustAny":["아톰","atom"],"exclude":["케이스","중고","배터리","파우치단품","필름","리퍼","직구","해외"]},
+ {"id":"relink-golfbuddy-atom-b","query":"골프버디 아톰","must":["골프버디"],"mustAny":["아톰","atom"],"exclude":["케이스","중고","배터리","파우치단품","필름","리퍼","직구","해외"]},
+ {"id":"relink-voicecaddie-sl3","query":"보이스캐디 SL3 레이저 거리측정기","must":["보이스캐디","sl3"],"exclude":["배터리","하이브리드","케이스","중고","리퍼","필름","직구"]},
+ {"id":"relink-garmin-approach-z82","query":"가민 어프로치 Z82 거리측정기","must":["z82"],"mustAny":["가민","garmin"],"exclude":["케이스","중고","배터리","필름","직구","일본","해외","병행"]},
+ {"id":"relink-caddytalk-cube","query":"캐디톡 큐브 거리측정기","must":["캐디톡","큐브"],"exclude":["케이스","실리콘","배터리","중고","필름","리퍼"]}
+]
