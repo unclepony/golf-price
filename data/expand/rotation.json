@@ -27,7 +27,7 @@
     "ball": "2026-11-23",
     "wood": "2026-11-22",
     "utility": "2026-11-22",
-    "iron": "2026-11-21",
+    "iron": "2026-11-24",
     "putter": "2026-11-23",
     "rangefinder": "2026-11-23",
     "gps": "2026-11-23",
@@ -45,7 +45,7 @@
   },
   "relinkKeep": {
     "_설명": "2-2 다시 잇기에서 연속 \"유지\" 횟수 — 3이 되면 그 상품은 2-2 에서 뺀다 (퍼터 5종은 11/20 첫 시도를 1회로 셈, 11/23 2회)",
-    "bridgestone-242cb-iron": 2,
+    "bridgestone-242cb-iron": 3,
     "taylormade-p790-women-iron": 3,
     "footjoy-pro-sl": 2,
     "taylormade-qi35-maxlite-women-driver": 2,
