@@ -183,8 +183,8 @@
       "d": "2026-11-22"
     },
     "/p/garmin-approach-r10": {
-      "h": "40be4ee37fadec57",
-      "d": "2026-11-22"
+      "h": "e3f090478b15c5a8",
+      "d": "2026-11-25"
     },
     "/p/voicecaddie-sc4-pro": {
       "h": "dab905449e5d08e1",
@@ -1259,8 +1259,8 @@
       "d": "2026-11-22"
     },
     "/p/superspeed-speed-sticks-pro": {
-      "h": "eb7d127441778928",
-      "d": "2026-11-22"
+      "h": "272b8fbb8c0bee97",
+      "d": "2026-11-25"
     },
     "/p/callaway-cb12-wedge": {
       "h": "f011a601839caf44",
@@ -3675,8 +3675,8 @@
       "d": "2026-11-22"
     },
     "/p/adidas-adizero-zg-boa-shoes": {
-      "h": "a8dcaf76724de15b",
-      "d": "2026-11-22"
+      "h": "a0d173490914191b",
+      "d": "2026-11-25"
     },
     "/p/adidas-adizero-zg-boa-women-shoes": {
       "h": "9fecd5ed5bb7d8c6",
@@ -6973,6 +6973,21 @@
     },
     {
       "url": "/qa",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/garmin-approach-r10",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/superspeed-speed-sticks-pro",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/adidas-adizero-zg-boa-shoes",
       "kind": "updated",
       "d": "2026-11-25"
     }

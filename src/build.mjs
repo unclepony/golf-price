@@ -1252,10 +1252,11 @@ function productDesc(p) {
 }
 // 같은 실력 단계의 비교 상품(순위에 든 상품 중 점수가 가까운 순)
 function peersOf(g, pk, n = 2) {
-  return rankedPicks(g)
-    .filter((x) => x.id !== pk.id && (x.skill ?? null) === (pk.skill ?? null) && !warned(g, x))
-    .sort((x, y) => Math.abs(totalScore(x) - totalScore(pk)) - Math.abs(totalScore(y) - totalScore(pk)))
-    .slice(0, n);
+  const near = (list) => list.sort((x, y) => Math.abs(totalScore(x) - totalScore(pk)) - Math.abs(totalScore(y) - totalScore(pk))).slice(0, n);
+  const same = near(rankedPicks(g).filter((x) => x.id !== pk.id && (x.skill ?? null) === (pk.skill ?? null) && !warned(g, x)));
+  if (same.length) return same;
+  // 같은 단계에 다른 모델이 없으면(가이드에서 그 단계 1종뿐) 다른 단계에서 점수가 가까운 모델과 비교 — 2026-11-25 '비슷한 모델 차이'가 빠진 상품 쪽 3곳
+  return near(rankedPicks(g).filter((x) => x.id !== pk.id && !warned(g, x)));
 }
 // 본문 2~3문단: 이런 분께 맞아요 / 이런 분은 다른 선택이 나아요 / 비슷한 상품과 차이
 function productStory(p) {
@@ -1292,8 +1293,9 @@ function productStory(p) {
         if (d <= -1) down.push(c);
       });
       const lv = priceLevel(pk.id)?.label && priceLevel(x.id)?.label ? pdep(` 가격대는 ${esc(priceLevel(pk.id).label)}, ${esc(josa(name(x.id), '은', '는'))} ${esc(priceLevel(x.id).label)}입니다.`) : '';
-      if (!up.length && !down.length) return `<li>${link(x.id)}와는 항목별 점수가 비슷합니다.${lv}</li>`;
-      return `<li>${link(x.id)}보다 ${up.length ? `${esc(up.join('·'))} 점수는 높게` : ''}${up.length && down.length ? ', ' : ''}${down.length ? `${esc(down.join('·'))} 점수는 낮게` : ''} 매겼습니다.${lv}</li>`;
+      const stg = (x.skill ?? null) !== (pk.skill ?? null) ? `(${x.skill ? `${esc(SKILL_WORD[x.skill])} 단계` : '단계 미지정'})` : '';
+      if (!up.length && !down.length) return `<li>${link(x.id)}${stg}와는 항목별 점수가 비슷합니다.${lv}</li>`;
+      return `<li>${link(x.id)}${stg}보다 ${up.length ? `${esc(up.join('·'))} 점수는 높게` : ''}${up.length && down.length ? ', ' : ''}${down.length ? `${esc(down.join('·'))} 점수는 낮게` : ''} 매겼습니다.${lv}</li>`;
     })
     .join('');
   const near = diffs ? `<h3>비슷한 상품과 차이</h3><ul>${diffs}</ul><p class="note">점수 비교는 이 사이트의 주관적 편집 점수 기준입니다.</p>` : '';
@@ -1340,7 +1342,8 @@ function productFaq(p) {
       if (d >= 1) up.push(c);
       if (d <= -1) down.push(c);
     });
-    const same = pk.skill ? `두 모델 모두 ${guideName(g)}에서 ${SKILL_WORD[pk.skill]} 단계로 분류했습니다.` : `두 모델 모두 ${guideName(g)}에서 비교했습니다.`;
+    const tw = (k, w) => `${k}${hasBatchim(k) ? '은' : '는'} ${w ? `${SKILL_WORD[w]} 단계` : '단계를 따로 정하지 않은 모델'}`;
+    const same = (x.skill ?? null) !== (pk.skill ?? null) ? `${guideName(g)}에서 ${tw(nm, pk.skill)}, ${tw(xn, x.skill)}입니다.` : pk.skill ? `두 모델 모두 ${guideName(g)}에서 ${SKILL_WORD[pk.skill]} 단계로 분류했습니다.` : `두 모델 모두 ${guideName(g)}에서 비교했습니다.`;
     const diff = up.length || down.length
       ? ` ${nm}${hasBatchim(nm) ? '은' : '는'} ${[up.length ? `${up.join('·')} 점수를 더 높게` : '', down.length ? `${down.join('·')} 점수를 더 낮게` : ''].filter(Boolean).join(', ')} 매겼습니다(주관적 편집 점수).`
       : ' 항목별 편집 점수는 비슷합니다.';
