@@ -962,6 +962,10 @@
       "won": 450000,
       "d": "2026-11-10"
     },
+    "evio-grip-trainer-d22": {
+      "won": 49900,
+      "d": "2026-11-25"
+    },
     "evnroll-er2-putter": {
       "won": 500000,
       "d": "2026-11-11"
@@ -1158,6 +1162,10 @@
       "won": 139000,
       "d": "2026-11-08"
     },
+    "fzcspeed-body-turn-trainer": {
+      "won": 17860,
+      "d": "2026-11-25"
+    },
     "fzcspeed-sound-swing-stick": {
       "won": 30520,
       "d": "2026-11-22"
@@ -1253,6 +1261,10 @@
     "goodprep-chipping-net": {
       "won": 20830,
       "d": "2026-11-08"
+    },
+    "homeswing-package-trainer": {
+      "won": 34800,
+      "d": "2026-11-25"
     },
     "honma-aizu-women-driver": {
       "won": 535000,
@@ -1498,6 +1510,10 @@
       "won": 35940,
       "d": "2026-11-09"
     },
+    "jogeuman-figure8-body-swing": {
+      "won": 15900,
+      "d": "2026-11-25"
+    },
     "jogeuman-lower-body-balance": {
       "won": 40300,
       "d": "2026-11-18"
@@ -1526,9 +1542,17 @@
       "won": 340000,
       "d": "2026-11-08"
     },
+    "kaxiya-elbow-trainer": {
+      "won": 5500,
+      "d": "2026-11-25"
+    },
     "kero-putting-mat-3m": {
       "won": 35000,
       "d": "2026-11-16"
+    },
+    "kukmin-control-tee": {
+      "won": 5300,
+      "d": "2026-11-25"
     },
     "lab-df3-putter": {
       "won": 740000,
@@ -1693,6 +1717,10 @@
     "mggolf-swing-spring": {
       "won": 20000,
       "d": "2026-11-22"
+    },
+    "minit-swing-band": {
+      "won": 29900,
+      "d": "2026-11-25"
     },
     "missile-axg-women-hybrid": {
       "won": 99000,
@@ -1986,6 +2014,10 @@
       "won": 19800,
       "d": "2026-11-18"
     },
+    "obino-swing-trainer-20a228": {
+      "won": 19800,
+      "d": "2026-11-25"
+    },
     "odyssey-ai-one-putter": {
       "won": 215000,
       "d": "2026-11-08"
@@ -2142,6 +2174,14 @@
       "won": 99000,
       "d": "2026-11-09"
     },
+    "pgm-ball-retriever": {
+      "won": 18500,
+      "d": "2026-11-25"
+    },
+    "pgm-pinwheel-speed-trainer": {
+      "won": 19900,
+      "d": "2026-11-25"
+    },
     "pgm-putting-mat-3m": {
       "won": 42800,
       "d": "2026-11-16"
@@ -2149,6 +2189,10 @@
     "pgm-realarc94-trainer": {
       "won": 109000,
       "d": "2026-11-09"
+    },
+    "pgm-swing-angle-plate": {
+      "won": 37800,
+      "d": "2026-11-25"
     },
     "pgm-swing-path-mat": {
       "won": 12000,
@@ -3630,6 +3674,10 @@
       "won": 55000,
       "d": "2026-11-18"
     },
+    "wixx-single-swing-trainer": {
+      "won": 59000,
+      "d": "2026-11-25"
+    },
     "wixx-sound-control-trainer": {
       "won": 72500,
       "d": "2026-11-18"
@@ -3870,13 +3918,25 @@
       "won": 258000,
       "d": "2026-11-16"
     },
+    "zikandi-ball-picker": {
+      "won": 11900,
+      "d": "2026-11-25"
+    },
     "zikandi-body-swing-ball": {
       "won": 13320,
       "d": "2026-11-16"
     },
+    "zikandi-divot-check-mat": {
+      "won": 17900,
+      "d": "2026-11-25"
+    },
     "zikandi-foam-ball": {
       "won": 20900,
       "d": "2026-11-13"
+    },
+    "zikandi-swing-arm-band": {
+      "won": 9630,
+      "d": "2026-11-25"
     },
     "zikandi-swing-rail": {
       "won": 27900,
