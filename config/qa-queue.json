@@ -271,6 +271,13 @@
       "slug": "laser-rangefinder-slope",
       "file": "content/qa/035-laser-rangefinder-slope.md",
       "date": "2026-11-24"
+    },
+    {
+      "no": 41,
+      "kw": "3번 우드 5번 우드 차이",
+      "slug": "3-wood-vs-5-wood",
+      "file": "content/qa/041-3-wood-vs-5-wood.md",
+      "date": "2026-11-25"
     }
   ]
 }
