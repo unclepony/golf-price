@@ -1719,12 +1719,12 @@
       "d": "2026-11-24"
     },
     "/p/honma-beres09-women-driver": {
-      "h": "ae2d592065b00fd8",
-      "d": "2026-11-24"
+      "h": "f75bc7a068ca2a39",
+      "d": "2026-11-25"
     },
     "/p/majesty-prestigio13-women-driver": {
-      "h": "f8bb018108918cec",
-      "d": "2026-11-24"
+      "h": "274a3f4a8dab6f33",
+      "d": "2026-11-25"
     },
     "/p/callaway-roguestmax-iron": {
       "h": "193a634b27efd163",
@@ -3903,68 +3903,76 @@
       "d": "2026-11-25"
     },
     "/p/minit-swing-band": {
-      "h": "55c6dd4999378278",
+      "h": "2606d3500be7a734",
       "d": "2026-11-25"
     },
     "/p/zikandi-swing-arm-band": {
-      "h": "df36d63abc02f6d0",
+      "h": "e2c7b593c7f405c1",
       "d": "2026-11-25"
     },
     "/p/pgm-ball-retriever": {
-      "h": "f0503825cb4e2be3",
+      "h": "adb78607b8f203e5",
       "d": "2026-11-25"
     },
     "/p/kukmin-control-tee": {
-      "h": "06eac0707a98e7d7",
+      "h": "19e67c184cb0f64d",
       "d": "2026-11-25"
     },
     "/p/homeswing-package-trainer": {
-      "h": "53029e6a0dbf0e40",
+      "h": "d0e318803383fb8b",
       "d": "2026-11-25"
     },
     "/p/pgm-swing-angle-plate": {
-      "h": "1bcefe9ba2fac25e",
+      "h": "c475b28aa010ce5c",
       "d": "2026-11-25"
     },
     "/p/obino-swing-trainer-20a228": {
-      "h": "55478a9ec960f1db",
+      "h": "425bd9bb6a015a0d",
       "d": "2026-11-25"
     },
     "/p/kaxiya-elbow-trainer": {
-      "h": "afbeeaf7500ee267",
+      "h": "e78f7eca25bf0c20",
       "d": "2026-11-25"
     },
     "/p/zikandi-ball-picker": {
-      "h": "205805c68ee32a0d",
+      "h": "a69d75feaab27ccc",
       "d": "2026-11-25"
     },
     "/p/zikandi-divot-check-mat": {
-      "h": "a83e0ec96d692a57",
+      "h": "63657333809801e4",
       "d": "2026-11-25"
     },
     "/p/fzcspeed-body-turn-trainer": {
-      "h": "6d20052d993a853a",
+      "h": "145c40d13191d217",
       "d": "2026-11-25"
     },
     "/p/wixx-single-swing-trainer": {
-      "h": "51522eadbda4c23c",
+      "h": "0ae284933270603b",
       "d": "2026-11-25"
     },
     "/p/pgm-pinwheel-speed-trainer": {
-      "h": "c4d728f473243b6f",
+      "h": "a6ee850fdc68d5de",
       "d": "2026-11-25"
     },
     "/p/jogeuman-figure8-body-swing": {
-      "h": "5ae1f670f4360e0a",
+      "h": "0790155ffc8d9209",
       "d": "2026-11-25"
     },
     "/p/evio-grip-trainer-d22": {
-      "h": "5cdda689ef4d4da9",
+      "h": "ffe7aa7bd13b542a",
+      "d": "2026-11-25"
+    },
+    "/p/honma-beres10-women-driver": {
+      "h": "db59b1525c6cf475",
+      "d": "2026-11-25"
+    },
+    "/p/majesty-prestigio14-women-driver": {
+      "h": "9a1004d6effc1255",
       "d": "2026-11-25"
     },
     "/c/driver": {
-      "h": "a7dbfe24bbc7f07a",
-      "d": "2026-11-24"
+      "h": "97ce220cd5ccf1dc",
+      "d": "2026-11-25"
     },
     "/c/wood": {
       "h": "6e7692bc30756230",
@@ -4055,8 +4063,8 @@
       "d": "2026-11-24"
     },
     "/g/womens-driver-recommend": {
-      "h": "b1516102d32558aa",
-      "d": "2026-11-24"
+      "h": "2aad4cb48b28fd0c",
+      "d": "2026-11-25"
     },
     "/g/putter-recommend": {
       "h": "0e64213106404f75",
@@ -4251,8 +4259,8 @@
       "d": "2026-11-22"
     },
     "/g/womens-driver-recommend-advanced": {
-      "h": "07705d41933b2578",
-      "d": "2026-11-15"
+      "h": "c8282c56bdffae32",
+      "d": "2026-11-25"
     },
     "/g/womens-driver-recommend-pro": {
       "h": "d7c17d0ff769a839",
@@ -4331,7 +4339,7 @@
       "d": "2026-11-24"
     },
     "/": {
-      "h": "c1e9941161892383",
+      "h": "da93a4046dfd6639",
       "d": "2026-11-25"
     },
     "/about": {
@@ -5431,11 +5439,6 @@
     },
     {
       "url": "/g/rangefinder-recommend",
-      "kind": "updated",
-      "d": "2026-11-24"
-    },
-    {
-      "url": "/g/womens-driver-recommend",
       "kind": "updated",
       "d": "2026-11-24"
     },
@@ -6650,81 +6653,6 @@
       "d": "2026-11-25"
     },
     {
-      "url": "/p/minit-swing-band",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/zikandi-swing-arm-band",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/pgm-ball-retriever",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/kukmin-control-tee",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/homeswing-package-trainer",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/pgm-swing-angle-plate",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/obino-swing-trainer-20a228",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/kaxiya-elbow-trainer",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/zikandi-ball-picker",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/zikandi-divot-check-mat",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/fzcspeed-body-turn-trainer",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/wixx-single-swing-trainer",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/pgm-pinwheel-speed-trainer",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/jogeuman-figure8-body-swing",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/evio-grip-trainer-d22",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
       "url": "/c/iron",
       "kind": "updated",
       "d": "2026-11-25"
@@ -6766,6 +6694,116 @@
     },
     {
       "url": "/g/practice-gear-recommend-intermediate",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/honma-beres09-women-driver",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/majesty-prestigio13-women-driver",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/minit-swing-band",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/zikandi-swing-arm-band",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/pgm-ball-retriever",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/kukmin-control-tee",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/homeswing-package-trainer",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/pgm-swing-angle-plate",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/obino-swing-trainer-20a228",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/kaxiya-elbow-trainer",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/zikandi-ball-picker",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/zikandi-divot-check-mat",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/fzcspeed-body-turn-trainer",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/wixx-single-swing-trainer",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/pgm-pinwheel-speed-trainer",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/jogeuman-figure8-body-swing",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/evio-grip-trainer-d22",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/honma-beres10-women-driver",
+      "kind": "new",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/majesty-prestigio14-women-driver",
+      "kind": "new",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/c/driver",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/g/womens-driver-recommend",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/g/womens-driver-recommend-advanced",
       "kind": "updated",
       "d": "2026-11-25"
     },
