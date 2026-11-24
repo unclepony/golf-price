@@ -1,21 +1,27 @@
 {
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { price: 1.5배 넘게 튄 API 값(반영 보류), held: 그때 유지한 직전 값, first: 처음 본 날, last: 마지막으로 본 날 }. 다음 날 이후 같은 값이 다시 나오면 반영하고 지운다.",
-  "voicecaddie-sc200-plus": {
-    "price": 316250,
-    "held": 199000,
-    "first": "2026-11-22",
-    "last": "2026-11-22"
-  },
   "techskin-elite-fit-women-pair-glove": {
     "price": 18520,
     "held": 31840,
     "first": "2026-11-23",
     "last": "2026-11-23"
   },
-  "adidas-adipower-sl-boa-shoes": {
-    "price": 220000,
-    "held": 119000,
-    "first": "2026-11-23",
-    "last": "2026-11-23"
+  "prgr-superegg-hexa-women-driver": {
+    "price": 700000,
+    "held": 1310000,
+    "first": "2026-11-24",
+    "last": "2026-11-24"
+  },
+  "srixon-zxumk2-utility": {
+    "price": 150000,
+    "held": 250000,
+    "first": "2026-11-24",
+    "last": "2026-11-24"
+  },
+  "taylormade-tp-genuine-leather-glove": {
+    "price": 22190,
+    "held": 42000,
+    "first": "2026-11-24",
+    "last": "2026-11-24"
   }
 }
