@@ -429,7 +429,7 @@
  "cobra-darkspeed-max-women-driver": "cc8687cec030",
  "cobra-ds-adapt-maxd-women-driver": "51a18092636b",
  "honma-beres09-women-driver": "cba10ba97d1b",
- "majesty-prestigio13-women-driver": "a08d445c7e8d",
+ "majesty-prestigio13-women-driver": "a654bcfcd7c9",
  "callaway-roguestmax-iron": "29cdfe0c47e7",
  "callaway-bigbertha23-iron": "b074caa60054",
  "ping-g430hl-iron": "9d20ecd2eeac",
@@ -988,5 +988,7 @@
  "wixx-single-swing-trainer": "53720919a509",
  "pgm-pinwheel-speed-trainer": "7276984eb02d",
  "jogeuman-figure8-body-swing": "3b3a680aba80",
- "evio-grip-trainer-d22": "340c2aa59885"
+ "evio-grip-trainer-d22": "340c2aa59885",
+ "honma-beres10-women-driver": "c9023b9f558f",
+ "majesty-prestigio14-women-driver": "2612cdbf6d24"
 }
