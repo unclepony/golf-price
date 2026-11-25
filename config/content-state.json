@@ -2591,8 +2591,8 @@
       "d": "2026-11-25"
     },
     "/p/mutsumihonma-mh622-women-fairway": {
-      "h": "9a7c14b1e972f54b",
-      "d": "2026-11-22"
+      "h": "b923a5edc95591f9",
+      "d": "2026-11-25"
     },
     "/p/ping-gle3-women-hybrid": {
       "h": "98b635a5e3332a28",
@@ -3979,11 +3979,15 @@
       "d": "2026-11-25"
     },
     "/p/callaway-quantum-maxos-hybrid": {
-      "h": "3220092484f8de3a",
+      "h": "4a6e49f725d2832d",
       "d": "2026-11-25"
     },
     "/p/callaway-quantum-maxfast-hybrid": {
-      "h": "febd739079b8e858",
+      "h": "0234527ea0628962",
+      "d": "2026-11-25"
+    },
+    "/p/yamaha-cs-women-fairway": {
+      "h": "43f08e61e1669cbe",
       "d": "2026-11-25"
     },
     "/c/driver": {
@@ -3991,7 +3995,7 @@
       "d": "2026-11-25"
     },
     "/c/wood": {
-      "h": "2494a6452f4a6341",
+      "h": "6340ba090cc31459",
       "d": "2026-11-25"
     },
     "/c/utility": {
@@ -4055,7 +4059,7 @@
       "d": "2026-11-25"
     },
     "/g/womens-fairway-wood-recommend": {
-      "h": "1acd02170ebfbc19",
+      "h": "9714e1452869491d",
       "d": "2026-11-25"
     },
     "/g/iron-recommend": {
@@ -4171,7 +4175,7 @@
       "d": "2026-11-25"
     },
     "/g/womens-fairway-wood-recommend-beginner": {
-      "h": "81c8a1b757c900ab",
+      "h": "8d10746b0f5379b7",
       "d": "2026-11-25"
     },
     "/g/womens-fairway-wood-recommend-intermediate": {
@@ -4355,7 +4359,7 @@
       "d": "2026-11-24"
     },
     "/": {
-      "h": "5c13a4eade42c694",
+      "h": "2216d8271931f1ea",
       "d": "2026-11-25"
     },
     "/about": {
@@ -5484,17 +5488,7 @@
       "d": "2026-11-25"
     },
     {
-      "url": "/c/wood",
-      "kind": "updated",
-      "d": "2026-11-25"
-    },
-    {
       "url": "/g/fairway-wood-recommend",
-      "kind": "updated",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/g/womens-fairway-wood-recommend",
       "kind": "updated",
       "d": "2026-11-25"
     },
@@ -5515,11 +5509,6 @@
     },
     {
       "url": "/g/fairway-wood-recommend-pro",
-      "kind": "updated",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/g/womens-fairway-wood-recommend-beginner",
       "kind": "updated",
       "d": "2026-11-25"
     },
@@ -5829,16 +5818,6 @@
       "d": "2026-11-25"
     },
     {
-      "url": "/p/callaway-quantum-maxos-hybrid",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/p/callaway-quantum-maxfast-hybrid",
-      "kind": "new",
-      "d": "2026-11-25"
-    },
-    {
       "url": "/c/utility",
       "kind": "updated",
       "d": "2026-11-25"
@@ -5865,11 +5844,6 @@
     },
     {
       "url": "/g/utility-recommend-pro",
-      "kind": "updated",
-      "d": "2026-11-25"
-    },
-    {
-      "url": "/",
       "kind": "updated",
       "d": "2026-11-25"
     },
@@ -5920,6 +5894,46 @@
     },
     {
       "url": "/vs/xxio13x-hybrid-vs-xxio14-hybrid",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/mutsumihonma-mh622-women-fairway",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/callaway-quantum-maxos-hybrid",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/callaway-quantum-maxfast-hybrid",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/p/yamaha-cs-women-fairway",
+      "kind": "new",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/c/wood",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/g/womens-fairway-wood-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-11-25"
+    },
+    {
+      "url": "/",
       "kind": "updated",
       "d": "2026-11-25"
     }
