@@ -2,9 +2,9 @@
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { since: 처음 못 찾은 날, days: 연속으로 못 찾은 날 수, last: 마지막으로 못 찾은 날 }. 5일이면 picks.json gone.",
   "golfbuddy-atom": {
     "since": "2026-10-31",
-    "days": 20,
-    "last": "2026-11-24",
-    "why": "검색 결과 10건에 상품 번호 없음"
+    "days": 21,
+    "last": "2026-11-26",
+    "why": "검색 결과 8건에 상품 번호 없음"
   },
   "ping-pioneer-cart": {
     "since": "2026-11-03",
@@ -14,39 +14,39 @@
   },
   "bridgestone-e6": {
     "since": "2026-11-07",
-    "days": 17,
-    "last": "2026-11-25",
-    "why": "검색 결과 5건에 상품 번호 없음"
+    "days": 18,
+    "last": "2026-11-26",
+    "why": "검색 결과 6건에 상품 번호 없음"
   },
   "srixon-z-star-diamond": {
     "since": "2026-11-07",
-    "days": 9,
-    "last": "2026-11-24",
-    "why": "검색 결과 9건에 상품 번호 없음"
+    "days": 10,
+    "last": "2026-11-26",
+    "why": "검색 결과 10건에 상품 번호 없음"
   },
   "bridgestone-tour-b-rxs": {
     "since": "2026-11-10",
-    "days": 15,
-    "last": "2026-11-25",
+    "days": 16,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "callaway-reva-women-driver": {
     "since": "2026-11-10",
-    "days": 15,
-    "last": "2026-11-25",
-    "why": "검색 결과 10건에 상품 번호 없음"
+    "days": 16,
+    "last": "2026-11-26",
+    "why": "검색 결과 5건에 상품 번호 없음"
   },
   "xxio-prime-women-fairway": {
     "since": "2026-11-11",
-    "days": 7,
-    "last": "2026-11-24",
+    "days": 8,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "bj-sml-putting-trainer": {
     "since": "2026-11-11",
-    "days": 14,
-    "last": "2026-11-25",
-    "why": "검색 결과 2건에 상품 번호 없음"
+    "days": 15,
+    "last": "2026-11-26",
+    "why": "검색 결과 6건에 상품 번호 없음"
   },
   "sklz-home-driving-range-kit": {
     "since": "2026-11-12",
@@ -56,20 +56,20 @@
   },
   "taylormade-qi4dmax-fairway": {
     "since": "2026-11-13",
-    "days": 6,
-    "last": "2026-11-24",
+    "days": 7,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "taylormade-stealth-women-iron": {
     "since": "2026-11-13",
-    "days": 6,
-    "last": "2026-11-24",
+    "days": 7,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "adidas-women-cool-pair-glove": {
     "since": "2026-11-13",
-    "days": 12,
-    "last": "2026-11-25",
+    "days": 13,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "footjoy-wintersof-women-pair-glove": {
@@ -86,14 +86,14 @@
   },
   "titleist-pro-v1x-left-dash": {
     "since": "2026-11-15",
-    "days": 5,
-    "last": "2026-11-24",
+    "days": 6,
+    "last": "2026-11-26",
     "why": "검색 결과 1건에 상품 번호 없음"
   },
   "evnroll-er22-putter": {
     "since": "2026-11-15",
-    "days": 7,
-    "last": "2026-11-24",
+    "days": 8,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "ping-g440k-driver": {
@@ -140,38 +140,38 @@
   },
   "taylormade-qi35maxlite-women-hybrid": {
     "since": "2026-11-18",
-    "days": 4,
-    "last": "2026-11-24",
+    "days": 5,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "taylormade-warm-fit-pair-glove": {
     "since": "2026-11-18",
-    "days": 4,
-    "last": "2026-11-24",
+    "days": 5,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "titleist-pro-v1": {
     "since": "2026-11-18",
-    "days": 4,
-    "last": "2026-11-24",
+    "days": 5,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "voicecaddie-sc4-pro": {
     "since": "2026-11-18",
-    "days": 4,
-    "last": "2026-11-24",
-    "why": "검색 결과 6건에 상품 번호 없음"
+    "days": 5,
+    "last": "2026-11-26",
+    "why": "검색 결과 10건에 상품 번호 없음"
   },
   "xxio14-women-driver": {
     "since": "2026-11-18",
-    "days": 4,
-    "last": "2026-11-24",
+    "days": 5,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "yamaha-cs-hmplus-women-hybrid": {
     "since": "2026-11-18",
-    "days": 4,
-    "last": "2026-11-24",
+    "days": 5,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "kasco-dolphin-dw125g-wedge": {
@@ -218,38 +218,20 @@
   },
   "garmin-approach-z82": {
     "since": "2026-11-20",
-    "days": 3,
-    "last": "2026-11-24",
-    "why": "검색 결과 10건에 상품 번호 없음"
-  },
-  "mizuno-stz230-hybrid": {
-    "since": "2026-11-20",
-    "days": 3,
-    "last": "2026-11-24",
+    "days": 4,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "xxio14-hybrid": {
     "since": "2026-11-20",
-    "days": 3,
-    "last": "2026-11-24",
+    "days": 4,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
-  },
-  "bridgestone-tour-b-x": {
-    "since": "2026-11-20",
-    "days": 6,
-    "last": "2026-11-25",
-    "why": "검색 결과 3건에 상품 번호 없음"
   },
   "bridgestone-v300x-iron": {
     "since": "2026-11-20",
-    "days": 6,
-    "last": "2026-11-25",
-    "why": "검색 결과 10건에 상품 번호 없음"
-  },
-  "evnroll-z5s-putter": {
-    "since": "2026-11-20",
-    "days": 3,
-    "last": "2026-11-24",
+    "days": 7,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "footjoy-weathersof-women-glove": {
@@ -296,50 +278,44 @@
   },
   "bridgestone-biting-spin-wedge": {
     "since": "2026-11-21",
-    "days": 5,
-    "last": "2026-11-25",
-    "why": "검색 결과 10건에 상품 번호 없음"
+    "days": 6,
+    "last": "2026-11-26",
+    "why": "검색 결과 5건에 상품 번호 없음"
   },
   "cleveland-urban-cart": {
     "since": "2026-11-21",
-    "days": 3,
-    "last": "2026-11-24",
+    "days": 4,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "garmin-approach-s50": {
     "since": "2026-11-22",
-    "days": 2,
-    "last": "2026-11-24",
+    "days": 3,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "ping-gle4-women-fairway": {
     "since": "2026-11-22",
-    "days": 2,
-    "last": "2026-11-24",
-    "why": "검색 결과 10건에 상품 번호 없음"
-  },
-  "srixon-zxi-rkt-driver": {
-    "since": "2026-11-22",
-    "days": 2,
-    "last": "2026-11-24",
+    "days": 3,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "taylormade-qi-iron": {
     "since": "2026-11-22",
-    "days": 2,
-    "last": "2026-11-24",
+    "days": 3,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "taylormade-sim2max-women-driver": {
     "since": "2026-11-22",
-    "days": 2,
-    "last": "2026-11-24",
+    "days": 3,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "caddytalk-cube": {
     "since": "2026-11-22",
-    "days": 4,
-    "last": "2026-11-25",
+    "days": 5,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "cobra-ultralight-pro-stand": {
@@ -392,80 +368,62 @@
   },
   "bridgestone-v300-iron": {
     "since": "2026-11-23",
-    "days": 3,
-    "last": "2026-11-25",
-    "why": "검색 결과 10건에 상품 번호 없음"
-  },
-  "cleveland-rtx6-wedge": {
-    "since": "2026-11-24",
-    "days": 1,
-    "last": "2026-11-24",
+    "days": 4,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "cobra-darkspeed-hybrid": {
     "since": "2026-11-24",
-    "days": 1,
-    "last": "2026-11-24",
+    "days": 2,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "majesty-prestigio14-women-fairway": {
     "since": "2026-11-24",
-    "days": 1,
-    "last": "2026-11-24",
+    "days": 2,
+    "last": "2026-11-26",
     "why": "검색 결과 9건에 상품 번호 없음"
   },
   "pgm-thick-practice-mat-150": {
     "since": "2026-11-24",
-    "days": 1,
-    "last": "2026-11-24",
-    "why": "검색 결과 10건에 상품 번호 없음"
-  },
-  "tmax-golf-net-2m": {
-    "since": "2026-11-24",
-    "days": 1,
-    "last": "2026-11-24",
-    "why": "검색 결과 10건에 상품 번호 없음"
+    "days": 2,
+    "last": "2026-11-26",
+    "why": "검색 결과 4건에 상품 번호 없음"
   },
   "ua-phantom-fore-boa-shoes": {
     "since": "2026-11-24",
-    "days": 1,
-    "last": "2026-11-24",
+    "days": 2,
+    "last": "2026-11-26",
     "why": "상품 번호는 검색 결과에 있음 · 가격 102,600원(기존 210,900원의 0.5~2배 밖)"
   },
   "xxio-hitech-women-pair-glove": {
     "since": "2026-11-24",
-    "days": 1,
-    "last": "2026-11-24",
+    "days": 2,
+    "last": "2026-11-26",
     "why": "상품 번호는 검색 결과에 있음 · 가격 35,000원(기존 16,800원의 0.5~2배 밖)"
   },
   "xxio13-hybrid": {
     "since": "2026-11-24",
-    "days": 1,
-    "last": "2026-11-24",
-    "why": "검색 결과 4건에 상품 번호 없음"
+    "days": 2,
+    "last": "2026-11-26",
+    "why": "검색 결과 9건에 상품 번호 없음"
   },
   "xxio13x-hybrid": {
     "since": "2026-11-24",
-    "days": 1,
-    "last": "2026-11-24",
-    "why": "검색 결과 7건에 상품 번호 없음"
-  },
-  "xxio14-driver": {
-    "since": "2026-11-24",
-    "days": 1,
-    "last": "2026-11-24",
+    "days": 2,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "adidas-adipower26-boa-shoes": {
     "since": "2026-11-24",
-    "days": 2,
-    "last": "2026-11-25",
+    "days": 3,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "callaway-epic-superhybrid": {
     "since": "2026-11-24",
-    "days": 2,
-    "last": "2026-11-25",
+    "days": 3,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "cleveland-hb-soft-milled-putter": {
@@ -584,20 +542,68 @@
   },
   "callaway-apex-tcb24-iron": {
     "since": "2026-11-25",
-    "days": 1,
-    "last": "2026-11-25",
+    "days": 2,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "callaway-paradym-aismoke-max-driver": {
     "since": "2026-11-25",
-    "days": 1,
-    "last": "2026-11-25",
+    "days": 2,
+    "last": "2026-11-26",
     "why": "검색 결과 10건에 상품 번호 없음"
   },
   "callaway-roguest-pro-iron": {
     "since": "2026-11-25",
+    "days": 2,
+    "last": "2026-11-26",
+    "why": "검색 결과 9건에 상품 번호 없음"
+  },
+  "cobra-kingtec-utility": {
+    "since": "2026-11-26",
     "days": 1,
-    "last": "2026-11-25",
+    "last": "2026-11-26",
+    "why": "검색 결과 2건에 상품 번호 없음"
+  },
+  "garmin-fenix-8-amoled": {
+    "since": "2026-11-26",
+    "days": 1,
+    "last": "2026-11-26",
+    "why": "검색 결과 10건에 상품 번호 없음"
+  },
+  "ping-g430lst-fairway": {
+    "since": "2026-11-26",
+    "days": 1,
+    "last": "2026-11-26",
+    "why": "검색 결과 10건에 상품 번호 없음"
+  },
+  "srixon-all-weather-glove": {
+    "since": "2026-11-26",
+    "days": 1,
+    "last": "2026-11-26",
+    "why": "검색 결과 10건에 상품 번호 없음"
+  },
+  "taylormade-glory27-women-fairway": {
+    "since": "2026-11-26",
+    "days": 1,
+    "last": "2026-11-26",
     "why": "검색 결과 5건에 상품 번호 없음"
+  },
+  "taylormade-qi35ls-driver": {
+    "since": "2026-11-26",
+    "days": 1,
+    "last": "2026-11-26",
+    "why": "검색 결과 10건에 상품 번호 없음"
+  },
+  "taylormade-stealth-women-rescue": {
+    "since": "2026-11-26",
+    "days": 1,
+    "last": "2026-11-26",
+    "why": "검색 결과 10건에 상품 번호 없음"
+  },
+  "volvik-bellows-candy": {
+    "since": "2026-11-26",
+    "days": 1,
+    "last": "2026-11-26",
+    "why": "검색 결과 4건에 상품 번호 없음"
   }
 }
