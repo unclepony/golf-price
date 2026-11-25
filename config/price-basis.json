@@ -774,6 +774,10 @@
       "won": 730000,
       "d": "2026-11-15"
     },
+    "cobra-darkspeed-x-fairway": {
+      "won": 504400,
+      "d": "2026-11-25"
+    },
     "cobra-darkspeedmax-women-fairway": {
       "won": 430000,
       "d": "2026-11-08"
@@ -2333,6 +2337,10 @@
     "ping-g440-max-fairway": {
       "won": 360000,
       "d": "2026-11-08"
+    },
+    "ping-g440-max-hl-fairway": {
+      "won": 380000,
+      "d": "2026-11-25"
     },
     "ping-g440-sft-fairway": {
       "won": 345500,

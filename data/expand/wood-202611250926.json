@@ -4,62 +4,159 @@
   "id": "cobra-darkspeed-x-fairway",
   "name": "코브라 다크스피드 X 페어웨이 우드 (남성)",
   "query": "코브라 다크스피드 X 남성 페어웨이우드",
-  "must": ["다크스피드x", "페어웨이"],
+  "must": [
+   "다크스피드x",
+   "페어웨이"
+  ],
   "summary": "코브라가 2024년 내놓은 DARKSPEED 페어웨이 우드 중 비거리와 관용성을 함께 노린 X 모델입니다. 2025년 DS-ADAPT, 2026년 OPTM이 나오면서 두 세대 전 모델이 됐습니다.",
   "points": [
-    "3번·3HF·5번·7번 4가지 번호",
-    "코브라 설명: 속도와 관용성을 함께, 높은 탄도와 안정성",
-    "같은 시리즈에 저스핀 LS·관용형 MAX가 따로 있음"
+   "3번·3HF·5번·7번 4가지 번호",
+   "코브라 설명: 속도와 관용성을 함께, 높은 탄도와 안정성",
+   "같은 시리즈에 저스핀 LS·관용형 MAX가 따로 있음"
   ],
   "sources": [
-    "https://www.cobragolf.com/collections/golf-clubs-fairways/products/darkspeed-x-fairway",
-    "https://www.cobragolf.com/collections/darkspeed"
+   "https://www.cobragolf.com/collections/golf-clubs-fairways/products/darkspeed-x-fairway",
+   "https://www.cobragolf.com/collections/darkspeed"
   ],
   "guidePick": {
-    "role": "두 세대 전 가성비 비거리형",
-    "forWhom": "최신형 값이 부담스러운 중급 골퍼",
-    "short": "다크스피드 X",
-    "plus": "3HF 포함 4가지 번호",
-    "minus": "두 세대 전 모델",
-    "pros": ["비거리와 관용성을 함께 노린 설계", "3HF(높은 탄도 3번) 선택지"],
-    "cons": ["두 세대 전 모델(후속 DS-ADAPT·OPTM)", "판매처마다 샤프트 구성이 다름"],
-    "scores": [4, 4, 4, 4],
-    "specs": ["TBD", "TBD", "2024년"],
-    "verdict": "최신 코브라보다 값을 낮추고 싶은 중급자의 대안",
-    "skill": "중급"
+   "role": "두 세대 전 비거리형",
+   "forWhom": "다크스피드 시리즈를 원하는 중급 골퍼",
+   "short": "다크스피드 X",
+   "plus": "3HF 포함 4가지 번호",
+   "minus": "두 세대 전 모델",
+   "pros": [
+    "비거리와 관용성을 함께 노린 설계",
+    "3HF(높은 탄도 3번) 선택지"
+   ],
+   "cons": [
+    "두 세대 전 모델(후속 DS-ADAPT·OPTM)",
+    "판매글 값이 최신형과 비슷해 비교 필요"
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    3
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2024년"
+   ],
+   "verdict": "값이 최신형과 비슷하면 DS-ADAPT X·OPTM X와 먼저 비교",
+   "skill": "중급"
   },
-  "exclude": ["여성","레이디","우먼","ladies","lady","헤드만","샤프트만","헤드커버","커버만","중고","병행","직수입","무게추","웨이트","호환","시타","드라이버","유틸","하이브리드","레스큐","아이언","풀세트","왼손","좌타","슬리브","어댑트","adapt","max","ls","optm"]
+  "exclude": [
+   "여성",
+   "레이디",
+   "우먼",
+   "ladies",
+   "lady",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "커버만",
+   "중고",
+   "병행",
+   "직수입",
+   "무게추",
+   "웨이트",
+   "호환",
+   "시타",
+   "드라이버",
+   "유틸",
+   "하이브리드",
+   "레스큐",
+   "아이언",
+   "풀세트",
+   "왼손",
+   "좌타",
+   "슬리브",
+   "어댑트",
+   "adapt",
+   "max",
+   "ls",
+   "optm"
+  ]
  },
  {
   "category": "wood",
   "id": "ping-g440-max-hl-fairway",
   "name": "핑 G440 MAX HL 페어웨이 우드 (남성, 높은 탄도 경량)",
   "query": "핑 G440 MAX HL 페어웨이우드 남성",
-  "must": ["g440", "hl"],
-  "mustAny": ["페어웨이", "우드"],
+  "must": [
+   "g440",
+   "hl"
+  ],
+  "mustAny": [
+   "페어웨이",
+   "우드"
+  ],
   "summary": "핑 G440 MAX 페어웨이 우드를 스윙이 느린 골퍼용으로 가볍게 만든 HL(High Launch) 사양입니다. 가벼운 뒤쪽 무게추·초경량 샤프트·가벼운 그립으로 전체 무게를 줄여 더 높이, 더 멀리 날리게 했다고 핑은 설명합니다.",
   "points": [
-    "HL = High Launch, 스윙 속도가 느린 골퍼용 경량 사양",
-    "가벼운 뒤쪽 무게추·초경량 샤프트·경량 그립",
-    "G440 MAX 페어웨이는 4번 우드를 더해 로프트 5종"
+   "HL = High Launch, 스윙 속도가 느린 골퍼용 경량 사양",
+   "가벼운 뒤쪽 무게추·초경량 샤프트·경량 그립",
+   "G440 MAX 페어웨이는 4번 우드를 더해 로프트 5종"
   ],
   "sources": [
-    "https://ping.com/en-us/golf-clubs/fairways/g440-max-hl-fairway",
-    "https://ping.com/en-us/media/news/2025/g440-series-intro"
+   "https://ping.com/en-us/golf-clubs/fairways/g440-max-hl-fairway",
+   "https://ping.com/en-us/media/news/2025/g440-series-intro"
   ],
   "guidePick": {
-    "role": "느린 스윙용 경량 관용형",
-    "forWhom": "스윙 속도가 느린 초심자·시니어",
-    "short": "G440 MAX HL",
-    "plus": "가벼워서 높이 뜸",
-    "minus": "스윙 빠르면 부적합",
-    "pros": ["가벼운 구성으로 휘두르기 쉬움", "G440 MAX의 관용성을 그대로"],
-    "cons": ["스윙이 빠른 분에게는 너무 가벼움", "일반 G440 MAX와 이름이 비슷해 구분 필요"],
-    "scores": [3, 5, 5, 3],
-    "specs": ["TBD", "TBD", "2025년"],
-    "verdict": "스윙이 느려 우드가 잘 안 뜨는 분에게 맞는 경량 G440",
-    "skill": "초심자"
+   "role": "느린 스윙용 경량 관용형",
+   "forWhom": "스윙 속도가 느린 초심자·시니어",
+   "short": "G440 MAX HL",
+   "plus": "가벼워서 높이 뜸",
+   "minus": "스윙 빠르면 부적합",
+   "pros": [
+    "가벼운 구성으로 휘두르기 쉬움",
+    "G440 MAX의 관용성을 그대로"
+   ],
+   "cons": [
+    "스윙이 빠른 분에게는 너무 가벼움",
+    "일반 G440 MAX와 이름이 비슷해 구분 필요"
+   ],
+   "scores": [
+    3,
+    5,
+    5,
+    3
+   ],
+   "specs": [
+    "TBD",
+    "TBD",
+    "2025년"
+   ],
+   "verdict": "스윙이 느려 우드가 잘 안 뜨는 분에게 맞는 경량 G440",
+   "skill": "초심자"
   },
-  "exclude": ["여성","레이디","우먼","ladies","lady","헤드만","샤프트만","헤드커버","커버만","중고","병행","직수입","무게추","호환","시타","드라이버","유틸","하이브리드","레스큐","아이언","풀세트","왼손","좌타","g430","lst","sft"]
+  "exclude": [
+   "여성",
+   "레이디",
+   "우먼",
+   "ladies",
+   "lady",
+   "헤드만",
+   "샤프트만",
+   "헤드커버",
+   "커버만",
+   "중고",
+   "병행",
+   "직수입",
+   "무게추",
+   "호환",
+   "시타",
+   "드라이버",
+   "유틸",
+   "하이브리드",
+   "레스큐",
+   "아이언",
+   "풀세트",
+   "왼손",
+   "좌타",
+   "g430",
+   "lst",
+   "sft"
+  ]
  }
 ]
