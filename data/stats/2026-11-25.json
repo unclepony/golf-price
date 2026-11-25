@@ -1,0 +1,115 @@
+{
+  "date": "2026-11-25",
+  "by": {
+    "asn": {
+      "AS22773 Chiron Software LLC": 1
+    },
+    "bot": {
+      "ChatGPT-User|/p/callaway-quantum-maxd-driver": 1,
+      "ChatGPT-User|/p/cleveland-cbx-zipcore-wedge": 1,
+      "ChatGPT-User|/p/mizuno-jpx925-forged-iron": 1,
+      "ChatGPT-User|/p/ping-ketsch-g-putter": 1,
+      "ChatGPT-User|/vs/ping-g440lst-driver-vs-titleist-gt3-driver": 1,
+      "ChatGPT-User|/vs/xxio13-iron-vs-bridgestone-v300-iron": 1,
+      "Googlebot|/robots.txt": 2,
+      "OAI-SearchBot|/c/ball": 4,
+      "OAI-SearchBot|/c/driver": 3,
+      "OAI-SearchBot|/c/iron": 2,
+      "OAI-SearchBot|/c/launch": 3,
+      "OAI-SearchBot|/c/practice": 3,
+      "OAI-SearchBot|/c/putter": 3,
+      "OAI-SearchBot|/c/rangefinder": 2,
+      "OAI-SearchBot|/c/shoes": 3,
+      "OAI-SearchBot|/g/driver-recommend-2026": 3,
+      "OAI-SearchBot|/g/golf-bag-recommend": 1,
+      "OAI-SearchBot|/g/golf-ball-compare": 2,
+      "OAI-SearchBot|/g/golf-gift-guide-2026": 3,
+      "OAI-SearchBot|/g/golf-shoes-recommend": 2,
+      "OAI-SearchBot|/g/iron-recommend": 3,
+      "OAI-SearchBot|/g/launch-monitor-recommend": 1,
+      "OAI-SearchBot|/g/practice-gear-recommend": 3,
+      "OAI-SearchBot|/g/putter-recommend": 1,
+      "OAI-SearchBot|/g/rangefinder-recommend": 2,
+      "OAI-SearchBot|/g/womens-iron-recommend": 4,
+      "OAI-SearchBot|/p/evio-grip-trainer-d22": 1,
+      "OAI-SearchBot|/p/fzcspeed-body-turn-trainer": 1,
+      "OAI-SearchBot|/p/homeswing-package-trainer": 1,
+      "OAI-SearchBot|/p/honma-beres10-women-driver": 1,
+      "OAI-SearchBot|/p/jogeuman-figure8-body-swing": 1,
+      "OAI-SearchBot|/p/kaxiya-elbow-trainer": 1,
+      "OAI-SearchBot|/p/kukmin-control-tee": 1,
+      "OAI-SearchBot|/p/majesty-prestigio14-women-driver": 1,
+      "OAI-SearchBot|/p/minit-swing-band": 1,
+      "OAI-SearchBot|/p/obino-swing-trainer-20a228": 1,
+      "OAI-SearchBot|/p/pgm-ball-retriever": 1,
+      "OAI-SearchBot|/p/pgm-pinwheel-speed-trainer": 1,
+      "OAI-SearchBot|/p/pgm-swing-angle-plate": 1,
+      "OAI-SearchBot|/p/wixx-single-swing-trainer": 1,
+      "OAI-SearchBot|/p/zikandi-ball-picker": 1,
+      "OAI-SearchBot|/p/zikandi-divot-check-mat": 1,
+      "OAI-SearchBot|/p/zikandi-swing-arm-band": 1,
+      "OAI-SearchBot|/qa/3-wood-vs-5-wood": 1,
+      "OAI-SearchBot|/robots.txt": 2,
+      "PerplexityBot|/p/mizuno-stmax230-driver": 1,
+      "PerplexityBot|/robots.txt": 1,
+      "Yeti|/": 7,
+      "Yeti|/robots.txt": 1,
+      "Yeti|/sitemap.xml": 3,
+      "bingbot|/c/practice": 1,
+      "bingbot|/c/rangefinder": 1,
+      "bingbot|/g/womens-driver-recommend-beginner": 1,
+      "bingbot|/g/womens-utility-recommend-advanced": 1,
+      "bingbot|/p/air-jordan-1-low-g-shoes": 1,
+      "bingbot|/p/cobra-ds-adapt-maxd-women-driver": 1,
+      "bingbot|/p/cobra-dsadaptmax-women-fairway": 1,
+      "bingbot|/p/nike-victory-tour-4-boa-shoes": 1,
+      "bingbot|/p/taylormade-sim2max-driver": 1,
+      "bingbot|/robots.txt": 2,
+      "bingbot|/sitemap.xml": 1,
+      "bingbot|/vs/callaway-xforged-starplus-iron-vs-ping-g430-iron": 1
+    },
+    "cty": {
+      "US": 1
+    },
+    "dev": {
+      "PC": 1
+    },
+    "hour": {
+      "02": 1
+    },
+    "landdev": {
+      "/p|PC|외부": 1
+    },
+    "pv": {
+      "/p/ping-g430hl-hybrid": 1
+    },
+    "pvprice": {
+      "가격 보임|/p/ping-g430hl-hybrid": 1
+    },
+    "ref": {
+      "구글": 1
+    },
+    "refland": {
+      "구글|/p/ping-g430hl-hybrid": 1
+    },
+    "seen": {
+      "/p/ping-g430hl-hybrid": 1
+    },
+    "seendev": {
+      "/p|PC": 1
+    },
+    "seenpos": {
+      "상품 페이지": 1
+    },
+    "seenref": {
+      "구글": 1
+    },
+    "visit": {
+      "/p/ping-g430hl-hybrid": 1
+    },
+    "xpv": {
+      "/p/ping-g430hl-hybrid": 1
+    }
+  },
+  "journey": []
+}

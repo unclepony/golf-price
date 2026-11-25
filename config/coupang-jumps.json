@@ -1,11 +1,5 @@
 {
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { price: 1.5배 넘게 튄 API 값(반영 보류), held: 그때 유지한 직전 값, first: 처음 본 날, last: 마지막으로 본 날 }. 다음 날 이후 같은 값이 다시 나오면 반영하고 지운다.",
-  "techskin-elite-fit-women-pair-glove": {
-    "price": 18520,
-    "held": 31840,
-    "first": "2026-11-23",
-    "last": "2026-11-23"
-  },
   "prgr-superegg-hexa-women-driver": {
     "price": 700000,
     "held": 1310000,
@@ -23,5 +17,29 @@
     "held": 42000,
     "first": "2026-11-24",
     "last": "2026-11-24"
+  },
+  "cleveland-cgone-wedge": {
+    "price": 75000,
+    "held": 127500,
+    "first": "2026-11-25",
+    "last": "2026-11-25"
+  },
+  "majesty-sublime-women-fairway": {
+    "price": 3400000,
+    "held": 2105200,
+    "first": "2026-11-25",
+    "last": "2026-11-25"
+  },
+  "monkeygrip-powerpad-glove": {
+    "price": 22000,
+    "held": 38000,
+    "first": "2026-11-25",
+    "last": "2026-11-25"
+  },
+  "saintnine-n-pro": {
+    "price": 72000,
+    "held": 37200,
+    "first": "2026-11-25",
+    "last": "2026-11-25"
   }
 }
