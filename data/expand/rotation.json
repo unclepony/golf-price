@@ -28,7 +28,7 @@
     "wood": "2026-11-25",
     "utility": "2026-11-25",
     "iron": "2026-11-24",
-    "putter": "2026-11-23",
+    "putter": "2026-11-26",
     "rangefinder": "2026-11-23",
     "gps": "2026-11-23",
     "launch": "2026-11-24",
@@ -63,11 +63,11 @@
     "srixon-z-star": 1,
     "callaway-chrome-soft": 1,
     "taylormade-tp5-ball": 1,
-    "odyssey-ai-one-putter": 2,
-    "callaway-twoball-ten-putter": 2,
-    "ping-mundy-putter": 2,
-    "ping-shea-putter": 2,
-    "ping-scottsdale-anser4-putter": 2,
+    "odyssey-ai-one-putter": 3,
+    "callaway-twoball-ten-putter": 3,
+    "ping-mundy-putter": 3,
+    "ping-shea-putter": 3,
+    "ping-scottsdale-anser4-putter": 3,
     "voicecaddie-sl3": 2
   }
 }
