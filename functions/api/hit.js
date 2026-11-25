@@ -7,8 +7,11 @@ const BOT = /bot|crawl|spider|slurp|preview|monitor|headless|lighthouse|facebook
 let PATHS = null; // 사이트맵의 경로
 let HREF2ID = null; // 쿠팡 링크 → 상품ID (assets/go.json 을 뒤집음)
 
+// 2026-11-26(과제 gp-1126-3): 쪽 목록을 못 읽으면(빈 목록) 담아 두지 않고 다음 요청에서 다시 읽는다.
+// 전에는 한 번 빈 목록이 담기면 그 작업 공간이 살아 있는 동안 모든 방문이 '목록에 없는 쪽'으로 조용히 버려질 수 있었다
+// (11/25 낮 외부 방문 기록이 1건으로 끊김 — 같은 날 skip·bot 기록은 정상이라 이 단계가 가장 유력한 후보. 확정은 아님).
 async function tables(env, url) {
-  if (!PATHS) {
+  if (!PATHS || !PATHS.size) {
     // 전체 쪽 목록(assets/pages.txt, 2026-11-11): 사이트맵에서 뺀 noindex 쪽도 방문·쿠팡 이동을 센다. 목록이 없으면 사이트맵
     const txt = await env.ASSETS.fetch(new URL('/assets/pages.txt', url)).then((r) => (r.ok ? r.text() : '')).catch(() => '');
     if (txt.trim()) PATHS = new Set(txt.split('\n').map((s) => s.trim()).filter(Boolean).map(norm));
@@ -116,7 +119,14 @@ export async function onRequestPost({ request, env, waitUntil }) {
   try { b = JSON.parse(raw); } catch { return done; }
   await tables(env, url);
   const path = norm(String(b.p ?? '').slice(0, 200));
-  if (!PATHS.has(path)) return done;
+  if (!PATHS.has(path)) {
+    // 버린 방문 수를 남긴다(2026-11-26): 키 '목록 비어 있음' 또는 '목록에 없음|쪽 종류'. 방문 첫 페이지뷰만, 하루 합계(개인 정보 없음)
+    if (b.t === 'pv' && b.v) {
+      const why = PATHS.size ? `목록에 없음|${path === '/' ? '홈' : `/${path.split('/')[1] ?? ''}`.slice(0, 12)}` : '목록 비어 있음';
+      waitUntil(env.CLICKS.prepare('INSERT INTO stats (day, kind, k, n) VALUES (?1, ?2, ?3, 1) ON CONFLICT(day, kind, k) DO UPDATE SET n = n + 1').bind(day(), 'miss', why).run().catch(() => {}));
+    }
+    return done;
+  }
 
   const host = url.hostname.replace(/^www\./, '');
   // 이 방문의 유입 경로: 첫 페이지의 출처·주소 조건을 브라우저 탭이 기억했다가 매 신호에 함께 보낸다(sessionStorage, 서버에 사용자 ID 없음)
