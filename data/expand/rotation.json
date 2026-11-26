@@ -29,7 +29,7 @@
     "utility": "2026-11-25",
     "iron": "2026-11-24",
     "putter": "2026-11-26",
-    "rangefinder": "2026-11-23",
+    "rangefinder": "2026-11-26",
     "gps": "2026-11-23",
     "launch": "2026-11-24",
     "shoes": "2026-11-24",
@@ -68,6 +68,6 @@
     "ping-mundy-putter": 3,
     "ping-shea-putter": 3,
     "ping-scottsdale-anser4-putter": 3,
-    "voicecaddie-sl3": 2
+    "voicecaddie-sl3": 3
   }
 }
