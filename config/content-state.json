@@ -99,8 +99,8 @@
       "d": "2026-11-22"
     },
     "/p/bushnell-tour-v6-shift": {
-      "h": "1937af67ea9d52ad",
-      "d": "2026-11-22"
+      "h": "63ce438f62267758",
+      "d": "2026-11-26"
     },
     "/p/footjoy-premiere-packard-shoes": {
       "h": "c71e85a371880e7f",
@@ -1075,8 +1075,8 @@
       "d": "2026-11-26"
     },
     "/p/bushnell-a1-slope": {
-      "h": "adc5f9b477b23ae0",
-      "d": "2026-11-22"
+      "h": "762f867b04cbfdaa",
+      "d": "2026-11-26"
     },
     "/p/golfbuddy-atom": {
       "h": "237a33e344070818",
@@ -1823,8 +1823,8 @@
       "d": "2026-11-25"
     },
     "/p/r2g-mate-mini": {
-      "h": "4d93ed1fbd9fd172",
-      "d": "2026-11-25"
+      "h": "3d52196604cc527f",
+      "d": "2026-11-26"
     },
     "/p/r2g-mate-hybrid": {
       "h": "c5dcd1dacbf11448",
@@ -2143,8 +2143,8 @@
       "d": "2026-11-22"
     },
     "/p/mycaddie-ms3-oled": {
-      "h": "ec870f68e05b28e7",
-      "d": "2026-11-22"
+      "h": "62ee17100dcab4c7",
+      "d": "2026-11-26"
     },
     "/p/mycaddie-mh3": {
       "h": "2064ad257d06502a",
@@ -2423,8 +2423,8 @@
       "d": "2026-11-26"
     },
     "/p/wellsense-black-eagle-zero": {
-      "h": "15c8de52e4cb2bf1",
-      "d": "2026-11-22"
+      "h": "e2bf859317df509d",
+      "d": "2026-11-26"
     },
     "/p/voicecaddie-l6": {
       "h": "535cc95f25ac67f1",
@@ -2771,8 +2771,8 @@
       "d": "2026-11-26"
     },
     "/p/caddytalk-minion": {
-      "h": "c8e9c1cbea6dcc73",
-      "d": "2026-11-22"
+      "h": "6b57b3180dd73969",
+      "d": "2026-11-26"
     },
     "/p/voicecaddie-ss10": {
       "h": "7d9b1690cd7c02bf",
@@ -4011,15 +4011,19 @@
       "d": "2026-11-26"
     },
     "/p/bridgestone-tour-b-x-2026": {
-      "h": "4ff5a3ec2a019964",
+      "h": "02d0a972a80b8e2b",
       "d": "2026-11-26"
     },
     "/p/srixon-z-star-diamond-2025": {
-      "h": "b0569e6bfd97522b",
+      "h": "37dadb80bf1109e9",
       "d": "2026-11-26"
     },
     "/p/vice-drive": {
-      "h": "a58d105e6484e0d1",
+      "h": "ac026ba87eabebeb",
+      "d": "2026-11-26"
+    },
+    "/p/voicecaddie-el3": {
+      "h": "33e0fe831323fc7c",
       "d": "2026-11-26"
     },
     "/c/driver": {
@@ -4051,7 +4055,7 @@
       "d": "2026-11-26"
     },
     "/c/rangefinder": {
-      "h": "427887b4d612cde0",
+      "h": "40c3fe37ed5c64fd",
       "d": "2026-11-26"
     },
     "/c/gps": {
@@ -4111,7 +4115,7 @@
       "d": "2026-11-26"
     },
     "/g/rangefinder-recommend": {
-      "h": "c082057376bdcb4d",
+      "h": "61904f3461159397",
       "d": "2026-11-26"
     },
     "/g/womens-driver-recommend": {
@@ -4287,8 +4291,8 @@
       "d": "2026-11-26"
     },
     "/g/rangefinder-recommend-beginner": {
-      "h": "047839661ad7c5e2",
-      "d": "2026-11-20"
+      "h": "56e002b158d6e037",
+      "d": "2026-11-26"
     },
     "/g/rangefinder-recommend-intermediate": {
       "h": "e5dc3028e4955040",
@@ -4391,7 +4395,7 @@
       "d": "2026-11-24"
     },
     "/": {
-      "h": "967bf516da61d893",
+      "h": "69e6964e549c069e",
       "d": "2026-11-26"
     },
     "/about": {
@@ -5135,7 +5139,7 @@
       "d": "2026-11-17"
     },
     "/vs/voicecaddie-sl3-vs-bushnell-tour-v6-shift": {
-      "h": "fe8bcc3db1b89ea7",
+      "h": "2a6b89909b67bc3f",
       "d": "2026-11-26"
     },
     "/vs/voicecaddie-t13-pro-vs-garmin-approach-s50": {
@@ -5300,21 +5304,6 @@
       "d": "2026-11-26"
     },
     {
-      "url": "/p/bridgestone-tour-b-x-2026",
-      "kind": "new",
-      "d": "2026-11-26"
-    },
-    {
-      "url": "/p/srixon-z-star-diamond-2025",
-      "kind": "new",
-      "d": "2026-11-26"
-    },
-    {
-      "url": "/p/vice-drive",
-      "kind": "new",
-      "d": "2026-11-26"
-    },
-    {
       "url": "/c/ball",
       "kind": "updated",
       "d": "2026-11-26"
@@ -5335,7 +5324,77 @@
       "d": "2026-11-26"
     },
     {
+      "url": "/p/bushnell-tour-v6-shift",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/bushnell-a1-slope",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/r2g-mate-mini",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/mycaddie-ms3-oled",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/wellsense-black-eagle-zero",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/caddytalk-minion",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/bridgestone-tour-b-x-2026",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/srixon-z-star-diamond-2025",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/vice-drive",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/voicecaddie-el3",
+      "kind": "new",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/c/rangefinder",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/g/rangefinder-recommend",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/g/rangefinder-recommend-beginner",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
       "url": "/",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/vs/voicecaddie-sl3-vs-bushnell-tour-v6-shift",
       "kind": "updated",
       "d": "2026-11-26"
     }
