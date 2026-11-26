@@ -1,0 +1,130 @@
+[
+ {
+  "id": "relink-golfbuddy-atom",
+  "query": "골프버디 GB LASER atom 거리측정기",
+  "must": [
+   "골프버디"
+  ],
+  "mustAny": [
+   "아톰",
+   "atom"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리",
+   "2s",
+   "3s",
+   "보이스"
+  ]
+ },
+ {
+  "id": "relink-golfbuddy-atom-b",
+  "query": "골프버디 아톰 초소형 레이저",
+  "must": [
+   "골프버디"
+  ],
+  "mustAny": [
+   "아톰",
+   "atom"
+  ],
+  "exclude": [
+   "케이스",
+   "중고",
+   "배터리",
+   "2s",
+   "3s",
+   "보이스"
+  ]
+ },
+ {
+  "id": "relink-caddytalk-cube",
+  "query": "캐디톡 큐브 레이저 거리측정기",
+  "must": [
+   "캐디톡",
+   "큐브"
+  ],
+  "exclude": [
+   "케이스",
+   "실리콘",
+   "배터리",
+   "중고",
+   "필름"
+  ]
+ },
+ {
+  "id": "relink-caddytalk-cube-b",
+  "query": "캐디톡 큐브",
+  "must": [
+   "캐디톡",
+   "큐브"
+  ],
+  "exclude": [
+   "케이스",
+   "실리콘",
+   "배터리",
+   "중고",
+   "필름"
+  ]
+ },
+ {
+  "id": "relink-voicecaddie-sl3",
+  "query": "보이스캐디 SL3 레이저 거리측정기",
+  "must": [
+   "보이스캐디",
+   "sl3"
+  ],
+  "exclude": [
+   "배터리",
+   "케이스"
+  ]
+ },
+ {
+  "id": "voicecaddie-el3",
+  "query": "보이스캐디 EL3 레이저 거리측정기",
+  "must": [
+   "보이스캐디"
+  ],
+  "mustAny": [
+   "el3"
+  ],
+  "exclude": [
+   "케이스",
+   "파우치단품",
+   "배터리",
+   "중고",
+   "필름",
+   "리퍼",
+   "sl3",
+   "slmini",
+   "l6",
+   "cl3",
+   "레이저핏",
+   "el1"
+  ]
+ },
+ {
+  "id": "voicecaddie-el3-b",
+  "query": "보이스캐디 EL3",
+  "must": [
+   "보이스캐디"
+  ],
+  "mustAny": [
+   "el3"
+  ],
+  "exclude": [
+   "케이스",
+   "파우치단품",
+   "배터리",
+   "중고",
+   "필름",
+   "리퍼",
+   "sl3",
+   "slmini",
+   "l6",
+   "cl3",
+   "레이저핏",
+   "el1"
+  ]
+ }
+]
