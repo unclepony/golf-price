@@ -84,7 +84,7 @@
   "id": "yamaha-rmx-vdr-iron",
   "category": "iron",
   "name": "야마하 RMX VD/R 아이언 세트",
-  "query": "야마하 RMX VD R 아이언 세트 정품",
+  "query": "야마하 리믹스 VDR 아이언",
   "must": [
    "야마하",
    "아이언"
@@ -164,7 +164,7 @@
   "id": "cleveland-halo-xl-fullface-iron",
   "category": "iron",
   "name": "클리브랜드 헤일로 XL 풀페이스 아이언 세트",
-  "query": "클리브랜드 헤일로 XL 풀페이스 아이언 세트 남성",
+  "query": "클리브랜드 헤일로 XL 풀페이스 아이언",
   "must": [
    "헤일로",
    "아이언"
@@ -195,7 +195,6 @@
    "병행",
    "직수입",
    "웨지",
-   "런처",
    "우먼",
    "women"
   ],
