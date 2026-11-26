@@ -1031,23 +1031,23 @@
       "d": "2026-11-25"
     },
     "/p/titleist-pro-v1x": {
-      "h": "e2fc4e658fd2a776",
+      "h": "25214c05028c515a",
       "d": "2026-11-26"
     },
     "/p/callaway-chrome-tour": {
-      "h": "b08b89715446acc8",
+      "h": "5649bb2d519eee0c",
       "d": "2026-11-26"
     },
     "/p/taylormade-tp5x": {
-      "h": "b9754ee4c1724009",
+      "h": "5557e8291eaed70c",
       "d": "2026-11-26"
     },
     "/p/bridgestone-tour-b-x": {
-      "h": "2bc3a62be97a1aa3",
+      "h": "5828a59ce0732245",
       "d": "2026-11-26"
     },
     "/p/srixon-z-star-xv": {
-      "h": "4983f06ae08f8814",
+      "h": "2bbedb1717bd4d8b",
       "d": "2026-11-26"
     },
     "/p/titleist-avx": {
@@ -1063,7 +1063,7 @@
       "d": "2026-11-26"
     },
     "/p/titleist-velocity": {
-      "h": "439c009a2570adf8",
+      "h": "391a0561f865754e",
       "d": "2026-11-26"
     },
     "/p/callaway-supersoft": {
@@ -1071,7 +1071,7 @@
       "d": "2026-11-26"
     },
     "/p/taylormade-distance-plus": {
-      "h": "081977bf1392bc70",
+      "h": "acac09654c5530cb",
       "d": "2026-11-26"
     },
     "/p/bushnell-a1-slope": {
@@ -1287,7 +1287,7 @@
       "d": "2026-11-26"
     },
     "/p/callaway-chrome-tour-x": {
-      "h": "4d062eabf2455691",
+      "h": "44ad213a6bd33379",
       "d": "2026-11-26"
     },
     "/p/callaway-chrome-tour-triple-diamond": {
@@ -1295,7 +1295,7 @@
       "d": "2026-11-26"
     },
     "/p/bridgestone-tour-b-xs": {
-      "h": "ff2f740483bf2739",
+      "h": "8ae5235ebd654600",
       "d": "2026-11-26"
     },
     "/p/srixon-soft-feel-lady": {
@@ -1311,7 +1311,7 @@
       "d": "2026-11-26"
     },
     "/p/volvik-vivid": {
-      "h": "526390064ede5869",
+      "h": "6f2e1d58c98f00ae",
       "d": "2026-11-26"
     },
     "/p/volvik-axia-iv": {
@@ -1683,11 +1683,11 @@
       "d": "2026-11-26"
     },
     "/p/callaway-warbird": {
-      "h": "fd48901670ca8592",
+      "h": "64ee918ac0c73ac1",
       "d": "2026-11-26"
     },
     "/p/callaway-reva": {
-      "h": "c53420db07a0e5db",
+      "h": "14cf1d4cba9e1f3f",
       "d": "2026-11-26"
     },
     "/p/honma-d1": {
@@ -1699,7 +1699,7 @@
       "d": "2026-11-26"
     },
     "/p/wilson-duo-soft": {
-      "h": "00545601cc9bb511",
+      "h": "5b4becd386ab7eee",
       "d": "2026-11-26"
     },
     "/p/volvik-power-soft": {
@@ -2083,7 +2083,7 @@
       "d": "2026-11-26"
     },
     "/p/bridgestone-e6": {
-      "h": "c4ea37bfb3e4b0d4",
+      "h": "af23d63a2e6bd14b",
       "d": "2026-11-26"
     },
     "/p/volvik-condor-s3": {
@@ -2759,7 +2759,7 @@
       "d": "2026-11-26"
     },
     "/p/taylormade-tp5x-pix": {
-      "h": "c462eb40034f7f5d",
+      "h": "90bcdc3fdbaec439",
       "d": "2026-11-26"
     },
     "/p/volvik-magma": {
@@ -3067,7 +3067,7 @@
       "d": "2026-11-26"
     },
     "/p/taylormade-speedsoft": {
-      "h": "37adeee43a7f4509",
+      "h": "44805be0dc761e0e",
       "d": "2026-11-26"
     },
     "/p/xxio-premium-ball": {
@@ -3075,7 +3075,7 @@
       "d": "2026-11-26"
     },
     "/p/honma-d1-speedmonster": {
-      "h": "f1bba543db5cc95e",
+      "h": "5289d277d68414ef",
       "d": "2026-11-26"
     },
     "/p/garmin-approach-z10": {
@@ -3203,7 +3203,7 @@
       "d": "2026-11-26"
     },
     "/p/bridgestone-e12-straight": {
-      "h": "13bb9a54300cdc84",
+      "h": "2e5245be8b1b4182",
       "d": "2026-11-26"
     },
     "/p/ping-pld-milled-anser30-putter": {
@@ -3639,7 +3639,7 @@
       "d": "2026-11-26"
     },
     "/p/volvik-bellows-candy": {
-      "h": "fc6a3b33425d65de",
+      "h": "837764733e96abe5",
       "d": "2026-11-26"
     },
     "/p/srixon-distance": {
@@ -4010,6 +4010,18 @@
       "h": "0bffa8d8aab31a0d",
       "d": "2026-11-26"
     },
+    "/p/bridgestone-tour-b-x-2026": {
+      "h": "4ff5a3ec2a019964",
+      "d": "2026-11-26"
+    },
+    "/p/srixon-z-star-diamond-2025": {
+      "h": "b0569e6bfd97522b",
+      "d": "2026-11-26"
+    },
+    "/p/vice-drive": {
+      "h": "a58d105e6484e0d1",
+      "d": "2026-11-26"
+    },
     "/c/driver": {
       "h": "dae8869ff8badb9d",
       "d": "2026-11-26"
@@ -4035,7 +4047,7 @@
       "d": "2026-11-26"
     },
     "/c/ball": {
-      "h": "aa879817aafe6849",
+      "h": "bf723ff4fb65ac29",
       "d": "2026-11-26"
     },
     "/c/rangefinder": {
@@ -4095,7 +4107,7 @@
       "d": "2026-11-26"
     },
     "/g/golf-ball-compare": {
-      "h": "2c1198b69f0902a2",
+      "h": "b889efdee464710c",
       "d": "2026-11-26"
     },
     "/g/rangefinder-recommend": {
@@ -4259,8 +4271,8 @@
       "d": "2026-11-26"
     },
     "/g/golf-ball-compare-beginner": {
-      "h": "47c6d3ca7ffd5ce9",
-      "d": "2026-11-20"
+      "h": "67857d536ca89568",
+      "d": "2026-11-26"
     },
     "/g/golf-ball-compare-intermediate": {
       "h": "10a0bed37458d294",
@@ -4271,7 +4283,7 @@
       "d": "2026-11-26"
     },
     "/g/golf-ball-compare-pro": {
-      "h": "081668caa8f5b814",
+      "h": "3e1480ca894ec9e4",
       "d": "2026-11-26"
     },
     "/g/rangefinder-recommend-beginner": {
@@ -4379,7 +4391,7 @@
       "d": "2026-11-24"
     },
     "/": {
-      "h": "9386d3accbf4d56a",
+      "h": "967bf516da61d893",
       "d": "2026-11-26"
     },
     "/about": {
@@ -5191,5 +5203,141 @@
       "d": "2026-10-19"
     }
   },
-  "pending": []
+  "pending": [
+    {
+      "url": "/p/titleist-pro-v1x",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/callaway-chrome-tour",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/taylormade-tp5x",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/bridgestone-tour-b-x",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/srixon-z-star-xv",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/titleist-velocity",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/taylormade-distance-plus",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/callaway-chrome-tour-x",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/bridgestone-tour-b-xs",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/volvik-vivid",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/callaway-warbird",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/callaway-reva",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/wilson-duo-soft",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/bridgestone-e6",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/taylormade-tp5x-pix",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/taylormade-speedsoft",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/honma-d1-speedmonster",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/bridgestone-e12-straight",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/volvik-bellows-candy",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/bridgestone-tour-b-x-2026",
+      "kind": "new",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/srixon-z-star-diamond-2025",
+      "kind": "new",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/p/vice-drive",
+      "kind": "new",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/c/ball",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/g/golf-ball-compare",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/g/golf-ball-compare-beginner",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/g/golf-ball-compare-pro",
+      "kind": "updated",
+      "d": "2026-11-26"
+    },
+    {
+      "url": "/",
+      "kind": "updated",
+      "d": "2026-11-26"
+    }
+  ]
 }
