@@ -1,28 +1,10 @@
 {
   "_설명": "src/prices/coupang-refresh.mjs 가 관리한다. 상품 id → { price: 1.5배 넘게 튄 API 값(반영 보류), held: 그때 유지한 직전 값, first: 처음 본 날, last: 마지막으로 본 날 }. 다음 날 이후 같은 값이 다시 나오면 반영하고 지운다.",
   "cleveland-cgone-wedge": {
-    "price": 75000,
+    "price": 75100,
     "held": 127500,
-    "first": "2026-11-25",
-    "last": "2026-11-25"
-  },
-  "majesty-sublime-women-fairway": {
-    "price": 3400000,
-    "held": 2105200,
-    "first": "2026-11-25",
-    "last": "2026-11-25"
-  },
-  "monkeygrip-powerpad-glove": {
-    "price": 22000,
-    "held": 38000,
-    "first": "2026-11-25",
-    "last": "2026-11-25"
-  },
-  "saintnine-n-pro": {
-    "price": 72000,
-    "held": 37200,
-    "first": "2026-11-25",
-    "last": "2026-11-25"
+    "first": "2026-11-27",
+    "last": "2026-11-27"
   },
   "taylormade-tp5-pix": {
     "price": 57000,
@@ -41,5 +23,23 @@
     "held": 47600,
     "first": "2026-11-26",
     "last": "2026-11-26"
+  },
+  "ecco-biom-c5-shoes": {
+    "price": 282280,
+    "held": 453000,
+    "first": "2026-11-27",
+    "last": "2026-11-27"
+  },
+  "adidas-adipower-sl-women-shoes": {
+    "price": 119000,
+    "held": 220000,
+    "first": "2026-11-27",
+    "last": "2026-11-27"
+  },
+  "baro-putting-gate": {
+    "price": 33850,
+    "held": 63700,
+    "first": "2026-11-27",
+    "last": "2026-11-27"
   }
 }
