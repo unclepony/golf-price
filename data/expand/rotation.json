@@ -38,7 +38,7 @@
     "practice": "2026-11-25",
     "womens-wood": "2026-11-25",
     "womens-utility": "2026-11-25",
-    "womens-iron": "2026-11-23"
+    "womens-iron": "2026-11-26"
   },
   "relinkFirst": {
     "_설명": "2-2(상품 번호 없는 상품 가격 다시 잇기)에서 한 번도 검색 요청에 안 들어간 상품 — 그 분야 차례에 이 id 를 먼저 넣고, 요청에 넣었으면 여기서 지운다(gp-1121-2, 2026-11-21). #66(사장님 확인 기다림) 위 11줄은 넣지 않음"
@@ -56,7 +56,7 @@
     "callaway-roguest-fairway": 3,
     "srixon-zxmk2-fairway": 3,
     "srixon-zxhmk2-hybrid": 2,
-    "taylormade-qi-maxlite-women-iron": 1,
+    "taylormade-qi-maxlite-women-iron": 2,
     "cleveland-smartsole-chipper": 3,
     "ping-glide4-wedge": 3,
     "fourteen-rm4-wedge": 3,
