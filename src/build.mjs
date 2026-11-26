@@ -932,6 +932,11 @@ function stageAnswer(g, inCat = false) {
   const total = rankedPicks(g).length; // 제목·h1 과 같은 계산(쿠팡 판매처가 있는 모델 수)
   const cnt = total > all.length ? `${all.length}종(전체 ${total}종 중 옵션 확인이 끝난 모델)` : `${all.length}종`;
   const lead = `<p class="answer-lead"><b>결론:</b> ${esc(word)} ${cnt}을 ${noSkill ? `비교하면 ${topLink(tops[0])}${hasBatchim(nm(tops[0].pk)) ? '이' : '가'} 1위, 그다음은 ${tops.slice(1).map(topLink).join(', ')} 순입니다(주관적 편집 점수 기준).` : `실력 단계별로 비교하면 ${tops.map((x) => `${esc(SKILL_WORD[x.s])}는 ${topLink(x)}`).join(', ')}가 1위입니다(주관적 편집 점수 기준).`}${ws.length ? ph(` ${all.length}종의 쿠팡 판매가는 ${won(Math.min(...ws))}~${won(Math.max(...ws))}(${dRange} 확인, 현재 가격과 다를 수 있음)입니다.`) : ''}</p>`;
+  // 여성 1순위 한 줄(2026-11-27 관제탑 gp-1127-2, 11-26 제안): 남녀 공용 가이드(guides.json womenTop)는 결론 표 상위가 모두 남성용이라 여성 질문의 답이 첫 화면에 없었다.
+  // 결론 문장 끝에만 붙인다(결론 표·예산 표는 실험 #57~#60 판단 전이라 그대로). 여성 모델 = 상품 이름에 여성·우먼·레이디가 든 모델, 순서는 rankedPicks(편집 점수) 그대로
+  const wAll = g.womenTop && g.gender === '공용' ? all.filter((pk) => /여성|우먼|레이디/.test(nm(pk)) && !GONE[pk.id]) : [];
+  const wTop = wAll.length >= 3 ? wAll[0] : null;
+  const wLine = wTop ? `<p class="answer-lead"><b>여성용:</b> 이름에 여성용 표기가 있는 ${wAll.length}종 중에서는 <a href="/p/${wTop.id}"><b>${esc(nm(wTop))}</b></a>${hasBatchim(nm(wTop)) ? '이' : '가'} 1위입니다(주관적 편집 점수 ${totalScore(wTop).toFixed(1)}점${freshPrice(wTop.id) ? ph(`, 쿠팡 판매가 ${won(freshPrice(wTop.id).won)}·${dayLabel(freshPrice(wTop.id).d)} 확인`) : ''}).</p>` : '';
   // 용도별 줄(2026-11-10 관제탑: /c 첫 화면 이탈이 많아 '용도별 1순위·가격대·확인일'을 표에): 예산 1순위 = 편집 점수가 중간값 이상인 모델 중 기준가가 가장 낮은 것
   const sc = all.map(totalScore).sort((a, b) => b - a);
   const median = sc[Math.floor((sc.length - 1) / 2)];
@@ -946,7 +951,7 @@ function stageAnswer(g, inCat = false) {
       return `<tr><td class="ar">${label}</td><td><a href="/p/${pk.id}">${esc(nm(pk))}</a><small>${esc(pk.short ?? pk.role ?? '')}</small></td><td class="as">${totalScore(pk).toFixed(1)}</td><td class="al">${esc(priceLevel(pk.id)?.label ?? '-')}</td><td class="aw">${ph((sp ? `${won(sp.won)}<small>${+sp.d.slice(5, 7)}.${+sp.d.slice(8, 10)} 확인</small>` : '<small>판매처에서 확인</small>') + (go ? `<a class="answer-go" href="${esc(go)}" target="_blank" rel="sponsored nofollow noopener">쿠팡에서 보기</a>` : ''))}</td></tr>`;
     })
     .join('');
-  return `<section class="answer" aria-label="바로 답">${lead}
+  return `<section class="answer" aria-label="바로 답">${lead}${wLine}
 <div class="tablewrap"><table class="answer-t"><caption>${esc(word)} ${noSkill ? '상위 3개' : '실력별 1위'}${budget ? '·예산 1순위' : ''} 결론 표 · 순위는 ${noSkill ? '' : '같은 실력 단계 안의 '}주관적 편집 점수(5점 만점)${budget ? ', 예산 1순위는 점수가 중간 이상인 모델 중 가장 싼 모델' : ''}, 가격대는 같은 분류 안 비교</caption><thead><tr><th>${noSkill ? '순위' : '실력'}</th><th>모델 · 특징</th><th>점수</th><th>가격대</th><th>쿠팡 판매가</th></tr></thead><tbody>${tr}</tbody></table></div></section>`;
 }
 // 브랜드별 정리(2026-11-10 관제탑: '골프백·골프공·장갑 브랜드 순위' 검색 수요). guides.json brandSection 이 켜진 가이드에만.

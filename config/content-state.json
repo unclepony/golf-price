@@ -4035,7 +4035,7 @@
       "d": "2026-11-27"
     },
     "/p/yamaha-rmx-vdm-iron": {
-      "h": "11896c7b816631c1",
+      "h": "0408f72b88cd0c68",
       "d": "2026-11-27"
     },
     "/c/driver": {
@@ -4087,8 +4087,8 @@
       "d": "2026-11-26"
     },
     "/c/glove": {
-      "h": "fe17cb5b47d67e3b",
-      "d": "2026-11-26"
+      "h": "828a4b570e2036bd",
+      "d": "2026-11-27"
     },
     "/c/practice": {
       "h": "2501290c908a989c",
@@ -4155,8 +4155,8 @@
       "d": "2026-11-24"
     },
     "/g/golf-glove-recommend": {
-      "h": "f8f7f9775822a128",
-      "d": "2026-11-26"
+      "h": "befe9aaf2b90aaf7",
+      "d": "2026-11-27"
     },
     "/g/practice-gear-recommend": {
       "h": "50d5a24aae5fe8dd",
@@ -6110,11 +6110,6 @@
       "d": "2026-11-27"
     },
     {
-      "url": "/p/yamaha-rmx-vdm-iron",
-      "kind": "new",
-      "d": "2026-11-27"
-    },
-    {
       "url": "/c/iron",
       "kind": "updated",
       "d": "2026-11-27"
@@ -6176,6 +6171,21 @@
     },
     {
       "url": "/vs/titleist-t250-iron-vs-mizuno-jpx925-hmpro-iron",
+      "kind": "updated",
+      "d": "2026-11-27"
+    },
+    {
+      "url": "/p/yamaha-rmx-vdm-iron",
+      "kind": "updated",
+      "d": "2026-11-27"
+    },
+    {
+      "url": "/c/glove",
+      "kind": "updated",
+      "d": "2026-11-27"
+    },
+    {
+      "url": "/g/golf-glove-recommend",
       "kind": "updated",
       "d": "2026-11-27"
     }
