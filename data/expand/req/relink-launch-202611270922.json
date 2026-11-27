@@ -1,0 +1,5 @@
+[
+ {"id":"voicecaddie-sc4-pro","query":"보이스캐디 SC4 PRO 런치모니터","must":["sc4"],"mustAny":["보이스캐디","voicecaddie"],"exclude":["중고","필름","보호","케이스","파우치","거치대","리퍼","직구","해외"]},
+ {"id":"voicecaddie-sc4-pro-b","query":"보이스캐디 SC4 프로 론치 모니터","must":["sc4"],"mustAny":["프로","pro"],"exclude":["중고","필름","보호","케이스","파우치","거치대","리퍼","직구","해외"]},
+ {"id":"garmin-approach-g82","query":"가민 어프로치 G82 정품","must":["g82"],"mustAny":["가민","garmin"],"exclude":["중고","케이스","거치대","파우치","필름","보호","충전기","케이블","리퍼","직구","병행","해외","미국","번들","bundle","playbetter","르메이어","스마트워치"]}
+]
