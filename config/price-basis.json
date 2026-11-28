@@ -94,6 +94,10 @@
       "won": 181130,
       "d": "2026-11-08"
     },
+    "anychip-chipping-net": {
+      "won": 18550,
+      "d": "2026-11-28"
+    },
     "apex-7iron-short-trainer": {
       "won": 26800,
       "d": "2026-11-13"
@@ -1006,6 +1010,10 @@
       "won": 450000,
       "d": "2026-11-10"
     },
+    "esnbro-backswing-tempo-trainer": {
+      "won": 29800,
+      "d": "2026-11-28"
+    },
     "evio-grip-trainer-d22": {
       "won": 49900,
       "d": "2026-11-25"
@@ -1273,6 +1281,10 @@
     "gfore-mg4-plus-o2-shoes": {
       "won": 430000,
       "d": "2026-11-27"
+    },
+    "gil-bounce-guard-putting-trainer": {
+      "won": 34800,
+      "d": "2026-11-28"
     },
     "gil-wood-rail-putting-mat": {
       "won": 45900,
@@ -1550,6 +1562,10 @@
       "won": 35000,
       "d": "2026-11-22"
     },
+    "jama-wrist-brace-trainer": {
+      "won": 9000,
+      "d": "2026-11-28"
+    },
     "jestime-fairlady-women-iron": {
       "won": 1190000,
       "d": "2026-11-10"
@@ -1609,6 +1625,10 @@
     "kaxiya-elbow-trainer": {
       "won": 5500,
       "d": "2026-11-25"
+    },
+    "kaxiya-straight-putting-mirror": {
+      "won": 24900,
+      "d": "2026-11-28"
     },
     "kero-putting-mat-3m": {
       "won": 35000,
@@ -2081,6 +2101,10 @@
     "northdeer-wrist-trainer-set": {
       "won": 19800,
       "d": "2026-11-18"
+    },
+    "nuber-putting-trainer": {
+      "won": 33900,
+      "d": "2026-11-28"
     },
     "obino-swing-trainer-20a228": {
       "won": 19800,
@@ -2634,6 +2658,14 @@
       "won": 32000,
       "d": "2026-11-16"
     },
+    "planstick-swing-plate": {
+      "won": 75790,
+      "d": "2026-11-28"
+    },
+    "popnine-chipping-net": {
+      "won": 9000,
+      "d": "2026-11-28"
+    },
     "powerrack-speedup-trainer": {
       "won": 25800,
       "d": "2026-11-08"
@@ -2886,6 +2918,10 @@
       "won": 42180,
       "d": "2026-11-23"
     },
+    "sharon-tent-practice-net": {
+      "won": 33480,
+      "d": "2026-11-28"
+    },
     "skechers-go-golf-elite-6-shoes": {
       "won": 152150,
       "d": "2026-11-08"
@@ -2905,6 +2941,10 @@
     "sklz-gold-flex-trainer": {
       "won": 129500,
       "d": "2026-11-08"
+    },
+    "sklz-grip-trainer": {
+      "won": 18900,
+      "d": "2026-11-28"
     },
     "sklz-home-driving-range-kit": {
       "won": 237220,
@@ -3770,6 +3810,10 @@
       "won": 1029900,
       "d": "2026-11-20"
     },
+    "winnersgolf-auto-return-putting-mat": {
+      "won": 132000,
+      "d": "2026-11-28"
+    },
     "winnerspirit-miracle-201-v3": {
       "won": 114400,
       "d": "2026-11-08"
@@ -4065,6 +4109,10 @@
     "zikandi-swing-rail": {
       "won": 27900,
       "d": "2026-11-13"
+    },
+    "zikandi-wrist-brace-trainer": {
+      "won": 11900,
+      "d": "2026-11-28"
     }
   }
 }
