@@ -1782,6 +1782,10 @@
       "won": 1538000,
       "d": "2026-11-13"
     },
+    "majesty-sublime-women-driver": {
+      "won": 2600000,
+      "d": "2026-11-28"
+    },
     "majesty-sublime-women-fairway": {
       "won": 3400000,
       "d": "2026-11-27"
@@ -1882,6 +1886,10 @@
       "won": 285000,
       "d": "2026-11-16"
     },
+    "mizuno-jpxq-women-driver": {
+      "won": 290700,
+      "d": "2026-11-28"
+    },
     "mizuno-jpxq-women-fairway": {
       "won": 179950,
       "d": "2026-11-09"
@@ -1893,6 +1901,10 @@
     "mizuno-jpxq-women-iron": {
       "won": 696080,
       "d": "2026-11-23"
+    },
+    "mizuno-jpxq2-women-driver": {
+      "won": 512380,
+      "d": "2026-11-28"
     },
     "mizuno-jpxq2-women-fairway": {
       "won": 297000,
@@ -3993,6 +4005,10 @@
     "yamaha-cs-hmplus-women-hybrid": {
       "won": 196800,
       "d": "2026-11-16"
+    },
+    "yamaha-cs-women-driver": {
+      "won": 399000,
+      "d": "2026-11-28"
     },
     "yamaha-cs-women-fairway": {
       "won": 254200,
